@@ -264,9 +264,15 @@ def render_home_page(scores_data):
     stocks = scores_data["stocks"]
     df = pd.DataFrame(stocks)
 
-    # ─── Header ───
-    st.title("WisdomInvest")
-    st.caption(f"AI-powered analysis through 10 legendary investor personas | Each persona scores 0-10 | Last updated: {scores_data.get('computed_at', 'N/A')[:10]}")
+    # ─── Header with Home button ───
+    header_left, header_right = st.columns([6, 1])
+    with header_left:
+        st.title("WisdomInvest")
+        st.caption(f"AI-powered analysis through 10 legendary investor personas | Each persona scores 0-10 | Last updated: {scores_data.get('computed_at', 'N/A')[:10]}")
+    with header_right:
+        if st.button("Home", use_container_width=True):
+            st.query_params.clear()
+            st.rerun()
 
     # ─── Top Metrics ───
     col1, col2, col3, col4, col5 = st.columns(5)
@@ -407,7 +413,7 @@ def render_home_page(scores_data):
     else:
         st.subheader(f"IPO Rankings ({len(filtered_df)} stocks)")
 
-    # ─── Sortable Table ───
+    # ─── Sortable Table with row selection ───
     display_cols = {
         "symbol": "Symbol",
         "company_name": "Company",
@@ -419,12 +425,15 @@ def render_home_page(scores_data):
         "ipo_return_pct": "IPO Return %",
         "analysis_coverage": "Analyses",
     }
-    table_df = filtered_df[list(display_cols.keys())].rename(columns=display_cols)
+    table_df = filtered_df[list(display_cols.keys())].rename(columns=display_cols).reset_index(drop=True)
 
-    st.dataframe(
+    st.caption("Click a row to view detailed analysis")
+    event = st.dataframe(
         table_df,
         use_container_width=True,
         hide_index=True,
+        on_select="rerun",
+        selection_mode="single-row",
         column_config={
             "Score": st.column_config.ProgressColumn(
                 score_label,
@@ -439,16 +448,11 @@ def render_home_page(scores_data):
         },
     )
 
-    # ─── Stock detail navigation ───
-    st.markdown("---")
-    symbol_list = filtered_df["symbol"].tolist()
-    selected = st.selectbox(
-        "Select a stock to view detailed analysis",
-        options=[""] + symbol_list,
-        format_func=lambda x: f"{x} — {filtered_df[filtered_df['symbol']==x]['company_name'].values[0]}" if x else "Choose a stock...",
-    )
-    if selected:
-        st.query_params["stock"] = selected
+    # Navigate to detail page on row selection
+    if event and event.selection and event.selection.rows:
+        selected_row = event.selection.rows[0]
+        selected_symbol = table_df.iloc[selected_row]["Symbol"]
+        st.query_params["stock"] = selected_symbol
         st.rerun()
 
     # Auto-refresh while analyses are still running
