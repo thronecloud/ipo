@@ -151,10 +151,17 @@ def render_detail_page(symbol, scores_data):
 
     persona_scores = stock.get("persona_scores", {})
 
-    # Back button
-    if st.button("< Back to Rankings"):
-        st.query_params.clear()
-        st.rerun()
+    # Header with logo + back
+    nav_left, nav_right = st.columns([1, 4])
+    with nav_left:
+        if st.button("WisdomInvest", type="tertiary"):
+            st.query_params.clear()
+            st.rerun()
+    with nav_right:
+        if st.button("< Back to Rankings"):
+            st.query_params.clear()
+            st.query_params["page"] = "app"
+            st.rerun()
 
     st.title(f"{stock['company_name']}")
     st.caption(f"{symbol} | {stock.get('sector', 'N/A')} | {stock.get('industry', 'N/A')}")
@@ -264,15 +271,15 @@ def render_home_page(scores_data):
     stocks = scores_data["stocks"]
     df = pd.DataFrame(stocks)
 
-    # ─── Header with Home button ───
+    # ─── Header with clickable logo ───
     header_left, header_right = st.columns([6, 1])
     with header_left:
-        st.title("WisdomInvest")
-        st.caption(f"AI-powered analysis through 10 legendary investor personas | Each persona scores 0-10 | Last updated: {scores_data.get('computed_at', 'N/A')[:10]}")
-    with header_right:
-        if st.button("Home", use_container_width=True):
+        if st.button("WisdomInvest", type="tertiary"):
             st.query_params.clear()
             st.rerun()
+        st.caption(f"AI-powered analysis through 10 legendary investor personas | Each persona scores 0-10 | Last updated: {scores_data.get('computed_at', 'N/A')[:10]}")
+    with header_right:
+        st.markdown("")  # spacer
 
     # ─── Top Metrics ───
     col1, col2, col3, col4, col5 = st.columns(5)

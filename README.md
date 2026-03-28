@@ -1,12 +1,16 @@
-# Indian IPO Analyzer
+# WisdomInvest -- Indian IPO Stock Analyzer
 
-**AI-powered stock analysis of 200+ Indian IPOs through the lenses of 10 legendary investor personas -- from Warren Buffett to Rakesh Jhunjhunwala.**
+**AI-powered fundamental analysis of 370+ Indian IPO stocks using 10 legendary investor personas -- Warren Buffett, Charlie Munger, Benjamin Graham, Peter Lynch, Rakesh Jhunjhunwala, and more.**
+
+An open-source Indian stock market analysis tool that uses large language models (LLMs) to evaluate IPO stocks listed on NSE and BSE. Built with Python, Claude AI, Streamlit, yfinance, and screener.in.
+
+**Keywords:** Indian stock analysis, IPO analysis tool, NSE BSE stock screener, AI stock picker, value investing India, fundamental analysis automation, stock scoring system, investment persona analysis, fintech open source, Python stock analyzer, Indian equity research, IPO rating system, quantitative stock screening, Claude AI finance, LLM stock analysis
 
 ---
 
 ## Why This Project
 
-India's IPO market has exploded. In 2025 alone, over 200 companies listed on NSE and BSE. For retail investors, evaluating each one is overwhelming: most lack multi-year financial track records, coverage from institutional research desks is thin, and the hype cycle around listing day makes rational analysis difficult.
+India's IPO market has exploded. In 2025 alone, over 370 companies listed on NSE and BSE -- mainboard and SME. For retail investors, evaluating each one is overwhelming: most lack multi-year financial track records, coverage from institutional research desks is thin for small and mid-cap IPOs, and the hype cycle around listing day makes rational analysis difficult.
 
 This project solves that problem by automating deep fundamental analysis across every recent IPO, viewed through 10 distinct investment philosophies. Instead of a single opinion, each stock receives a structured evaluation from value investors, growth investors, quantitative screeners, and India-market specialists -- producing a composite score grounded in the frameworks that have generated the best long-term returns in investing history.
 
@@ -312,6 +316,20 @@ The data layer is intentionally simple: JSON files on disk, organized by convent
 ### Separation of Compute and Presentation
 
 The dashboard (`app.py`) makes zero API calls. All analysis, scoring, and data fetching happens in the pipeline stages. The dashboard reads pre-computed JSON and renders it. This means the dashboard loads instantly and can be deployed as a static data app.
+
+---
+
+## Use Cases
+
+- **Retail investors** evaluating which recent Indian IPOs are worth buying for long-term wealth creation
+- **Portfolio managers** screening 370+ IPO stocks with quantitative and qualitative fundamental analysis
+- **Finance students** learning how different investment philosophies (value investing, GARP, magic formula) evaluate the same stock differently
+- **Fintech developers** building AI-powered stock analysis tools with structured LLM output
+- **Data engineers** studying multi-source data pipeline design with idempotent caching and atomic writes
+
+## Related Topics
+
+Indian stock market analysis, NSE stock screener, BSE IPO listing analysis, value investing India, growth investing tools, Warren Buffett stock picks India, Rakesh Jhunjhunwala portfolio analysis, Indian equity fundamental analysis, AI-powered investment research, Python financial analysis, stock scoring algorithm, IPO performance tracker India, quantitative investing India, small-cap stock screening BSE NSE, multi-factor stock analysis, investment decision support system
 
 ---
 
