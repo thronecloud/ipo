@@ -271,14 +271,23 @@ def render_detail_page(symbol, scores_data):
                     "Score": sc,
                 })
         if chart_rows:
+            import altair as alt
             chart_data = pd.DataFrame(chart_rows)
-            st.bar_chart(
-                chart_data.set_index("Investor"),
-                y="Score",
-                y_label="Score (0-10)",
-                horizontal=True,
-                height=350,
-            )
+            chart = alt.Chart(chart_data).mark_bar().encode(
+                x=alt.X("Score:Q", scale=alt.Scale(domain=[0, 10]), title="Score (out of 10)"),
+                y=alt.Y("Investor:N", sort="-x", title=""),
+                color=alt.condition(
+                    alt.datum.Score >= 7,
+                    alt.value("#22c55e"),
+                    alt.condition(
+                        alt.datum.Score >= 4,
+                        alt.value("#eab308"),
+                        alt.value("#ef4444"),
+                    ),
+                ),
+                tooltip=["Investor", "Score"],
+            ).properties(height=350)
+            st.altair_chart(chart, use_container_width=True)
     else:
         st.info("No persona scores available for this stock.")
 
