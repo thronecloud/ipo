@@ -134,8 +134,6 @@ def build_financial_summary(stock_data):
     # Share data
     section = []
     for key, label, fmt in [
-        ("sharesOutstanding", "Shares Outstanding", format_currency),
-        ("floatShares", "Float Shares", format_currency),
         ("heldPercentInsiders", "Insider Holding", format_pct),
         ("heldPercentInstitutions", "Institutional Holding", format_pct),
         ("dividendYield", "Dividend Yield", format_pct),
@@ -147,25 +145,11 @@ def build_financial_summary(stock_data):
         lines.append("\nSHAREHOLDING:")
         lines.extend(f"  {s}" for s in section)
 
-    # Price history
-    history = stock_data.get("history_summary", {})
-    if history:
-        lines.append("\nPRICE HISTORY:")
-        if history.get("first_date"):
-            lines.append(f"  Trading since: {history['first_date']}")
-        if history.get("high_52w") is not None:
-            lines.append(f"  52-week High: INR {history['high_52w']:.2f}")
-        if history.get("low_52w") is not None:
-            lines.append(f"  52-week Low: INR {history['low_52w']:.2f}")
-        if history.get("avg_volume_30d") is not None:
-            lines.append(f"  Avg Volume (30d): {history['avg_volume_30d']:,.0f}")
-
     # Income statement highlights (from financials)
     financials = stock_data.get("financials", {})
     if financials:
         lines.append("\nINCOME STATEMENT (available years):")
-        key_metrics = ["Total Revenue", "Net Income", "EBITDA", "EBIT",
-                       "Gross Profit", "Operating Revenue", "Operating Income"]
+        key_metrics = ["Total Revenue", "Net Income", "EBITDA"]
         for metric in key_metrics:
             if metric in financials:
                 row = financials[metric]
@@ -176,13 +160,12 @@ def build_financial_summary(stock_data):
     # Business description
     desc = info.get("longBusinessSummary", "")
     if desc:
-        # Truncate to ~300 chars
-        if len(desc) > 300:
-            desc = desc[:297] + "..."
+        if len(desc) > 200:
+            desc = desc[:197] + "..."
         lines.append(f"\nBUSINESS: {desc}")
 
     if not lines:
-        return "LIMITED DATA AVAILABLE — This is a recent IPO with minimal public financial history on yfinance."
+        return "LIMITED DATA AVAILABLE — This is a recent IPO with minimal public financial history."
 
     return "\n".join(lines)
 

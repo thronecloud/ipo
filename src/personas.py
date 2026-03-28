@@ -23,10 +23,10 @@ IPO Return: {ipo_return_pct}
 {financial_summary}
 
 === INSTRUCTIONS ===
-Analyze this stock thoroughly from your investment perspective. Be specific about numbers.
-If data is limited (recent IPO), say so explicitly and penalize the score for uncertainty.
-Score on a scale of 0 to 10 (integer only). Most IPO stocks should score 3-5. Only truly exceptional businesses deserve 7+.
-A score of 9-10 should be extremely rare — reserved for once-in-a-decade opportunities.
+Be concise and specific. Use numbers from the data.
+Score 0-10 (integer). Most IPOs should score 3-5. A 7+ is rare. 9-10 is once-in-a-decade.
+Keep investment_thesis to 2 sentences. Keep detailed_analysis to 2 short paragraphs max.
+Limit key_strengths and key_risks to 3 items each. Be brief — one line per item.
 """
 
 PERSONAS = {
