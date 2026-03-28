@@ -181,6 +181,7 @@ def run_claude_analysis(system_prompt, user_prompt, model="opus"):
         "claude", "-p",
         "--no-session-persistence",
         "--model", model,
+        "--tools", "",
         "--system-prompt", system_prompt,
         "--output-format", "json",
         "--json-schema", schema_str,
