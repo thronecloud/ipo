@@ -413,28 +413,46 @@ def render_home_page(scores_data):
     else:
         st.subheader(f"IPO Rankings ({len(filtered_df)} stocks)")
 
-    # ─── Sortable Table with row selection ───
-    display_cols = {
-        "symbol": "Symbol",
-        "company_name": "Company",
-        "composite_score": "Score",
-        "consensus_recommendation": "Rec",
-        "sector": "Sector",
-        "market_cap_cr": "MCap (Cr)",
-        "pe_ratio": "P/E",
-        "ipo_return_pct": "IPO Return %",
-        "analysis_coverage": "Analyses",
-    }
-    table_df = filtered_df[list(display_cols.keys())].rename(columns=display_cols).reset_index(drop=True)
+    # ─── Sortable Table with clickable Symbol/Company ───
+    table_df = filtered_df[[
+        "symbol", "company_name", "composite_score", "consensus_recommendation",
+        "sector", "market_cap_cr", "pe_ratio", "ipo_return_pct", "analysis_coverage",
+    ]].copy().reset_index(drop=True)
 
-    st.caption("Click a row to view detailed analysis")
-    event = st.dataframe(
-        table_df,
+    # Create link columns pointing to detail page
+    # Format: ?stock=SYMBOL~~CompanyName so we can extract both with regex
+    table_df["Symbol"] = table_df["symbol"].apply(lambda s: f"?stock={s}")
+    table_df["Company"] = table_df.apply(
+        lambda r: f"?stock={r['symbol']}~~{r['company_name']}", axis=1
+    )
+
+    # Build display dataframe
+    display_df = pd.DataFrame({
+        "Symbol": table_df["Symbol"],
+        "Company": table_df["Company"],
+        "Score": table_df["composite_score"],
+        "Rec": table_df["consensus_recommendation"],
+        "Sector": table_df["sector"],
+        "MCap (Cr)": table_df["market_cap_cr"],
+        "P/E": table_df["pe_ratio"],
+        "IPO Return %": table_df["ipo_return_pct"],
+        "Analyses": table_df["analysis_coverage"],
+    })
+
+    st.caption("Click Symbol or Company name to view detailed analysis")
+    st.dataframe(
+        display_df,
         use_container_width=True,
         hide_index=True,
-        on_select="rerun",
-        selection_mode="single-row",
         column_config={
+            "Symbol": st.column_config.LinkColumn(
+                "Symbol",
+                display_text=r"\?stock=(.*)",
+            ),
+            "Company": st.column_config.LinkColumn(
+                "Company",
+                display_text=r"~~(.+)$",
+            ),
             "Score": st.column_config.ProgressColumn(
                 score_label,
                 min_value=0,
@@ -447,13 +465,6 @@ def render_home_page(scores_data):
             "Analyses": st.column_config.NumberColumn(format="%d/10"),
         },
     )
-
-    # Navigate to detail page on row selection
-    if event and event.selection and event.selection.rows:
-        selected_row = event.selection.rows[0]
-        selected_symbol = table_df.iloc[selected_row]["Symbol"]
-        st.query_params["stock"] = selected_symbol
-        st.rerun()
 
     # Auto-refresh while analyses are still running
     total_analyses = sum(
