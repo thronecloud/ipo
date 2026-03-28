@@ -1,5 +1,5 @@
 """
-Indian IPO Analyzer Dashboard
+WisdomInvest Dashboard
 
 Multi-page Streamlit dashboard:
   - Home: lightweight sortable/filterable table
@@ -24,7 +24,7 @@ TOTAL_TARGET = 3740  # 374 stocks x 10 personas
 
 
 st.set_page_config(
-    page_title="Indian IPO Analyzer",
+    page_title="WisdomInvest",
     page_icon="",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -265,7 +265,7 @@ def render_home_page(scores_data):
     df = pd.DataFrame(stocks)
 
     # ─── Header ───
-    st.title("Indian IPO Analyzer 2025")
+    st.title("WisdomInvest")
     st.caption(f"AI-powered analysis through 10 legendary investor personas | Each persona scores 0-10 | Last updated: {scores_data.get('computed_at', 'N/A')[:10]}")
 
     # ─── Top Metrics ───
@@ -469,7 +469,7 @@ def render_landing_page():
     """Render the landing/intro page."""
     st.markdown("""
     <div class="landing-hero">
-        <h1>Indian IPO Analyzer</h1>
+        <h1>WisdomInvest</h1>
         <p class="subtitle">
             AI-powered stock analysis of 370+ Indian IPOs through the lenses of 10 legendary investors
         </p>
@@ -532,7 +532,7 @@ def main():
     elif page == "app" and scores_data and scores_data.get("stocks"):
         render_home_page(scores_data)
     elif page == "app":
-        st.title("Indian IPO Analyzer 2025")
+        st.title("WisdomInvest")
         st.warning("No scores data found. Run the analysis pipeline first.")
         st.code("python run_pipeline.py --stages 1,2,3,4")
     else:
