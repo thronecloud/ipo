@@ -1,9 +1,9 @@
 """
 Indian IPO Analyzer Dashboard
 
-Streamlit dashboard that reads pre-computed JSON files and displays
-composite scores, per-persona analysis, with filtering and sorting.
-No API calls at runtime.
+Multi-page Streamlit dashboard:
+  - Home: lightweight sortable/filterable table
+  - Detail: full per-persona analysis for a selected stock
 """
 
 import json
@@ -20,6 +20,7 @@ SCORES_PATH = "data/scores.json"
 ANALYSES_DIR = "data/analyses"
 STOCKS_DIR = "data/stocks"
 AUTO_REFRESH_SECONDS = 60
+TOTAL_TARGET = 3740  # 374 stocks x 10 personas
 
 
 st.set_page_config(
@@ -28,6 +29,82 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded",
 )
+
+# ─── Mobile-responsive CSS ───
+st.markdown("""
+<style>
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .block-container { padding: 1rem 0.5rem !important; }
+    [data-testid="stMetric"] { padding: 0.5rem !important; }
+    [data-testid="stMetricValue"] { font-size: 1.2rem !important; }
+    [data-testid="stMetricLabel"] { font-size: 0.7rem !important; }
+    .stTabs [data-baseweb="tab-list"] { gap: 2px; }
+    .stTabs [data-baseweb="tab"] { padding: 4px 8px; font-size: 0.75rem; }
+}
+
+/* Landing page styles */
+.landing-hero {
+    text-align: center;
+    padding: 3rem 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.landing-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+.landing-hero .subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+.landing-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+.feature-card {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+}
+.feature-card h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+.feature-card p {
+    font-size: 0.85rem;
+    color: #555;
+}
+.persona-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 0.75rem;
+    max-width: 900px;
+    margin: 1rem auto;
+    padding: 0 1rem;
+}
+.persona-chip {
+    background: #eef;
+    border-radius: 6px;
+    padding: 0.5rem 0.75rem;
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+/* Stock row styling */
+.stock-row {
+    border-bottom: 1px solid #f0f0f0;
+    padding: 4px 0;
+}
+</style>
+""", unsafe_allow_html=True)
 
 
 def recompute_scores():
@@ -45,27 +122,9 @@ def load_scores():
 
 
 def load_analysis(symbol, persona_slug):
-    """Load a single analysis file (no cache — always fresh)."""
+    """Load a single analysis file."""
     path = os.path.join(ANALYSES_DIR, symbol, f"{persona_slug}.json")
     return load_json(path)
-
-
-def score_color(score):
-    """Return color for score value."""
-    if score >= 70:
-        return "#22c55e"  # green
-    elif score >= 50:
-        return "#eab308"  # yellow
-    elif score >= 30:
-        return "#f97316"  # orange
-    else:
-        return "#ef4444"  # red
-
-
-def rec_color(rec):
-    """Return color for recommendation."""
-    colors = {"BUY": "#22c55e", "HOLD": "#eab308", "AVOID": "#ef4444"}
-    return colors.get(rec, "#6b7280")
 
 
 def format_market_cap(mc_cr):
@@ -77,26 +136,137 @@ def format_market_cap(mc_cr):
     return f"{mc_cr:,.0f} Cr"
 
 
-def main():
-    scores_data = load_scores()
+def render_detail_page(symbol, scores_data):
+    """Render the detailed analysis page for a single stock."""
+    # Find the stock in scores
+    stock = None
+    for s in scores_data["stocks"]:
+        if s["symbol"] == symbol:
+            stock = s
+            break
 
-    if not scores_data or not scores_data.get("stocks"):
-        st.title("Indian IPO Analyzer 2025")
-        st.warning("No scores data found. Run the analysis pipeline first:")
-        st.code("""
-python3 -m src.fetch_ipo_list          # Stage 1: Scrape IPO list
-python3 -m src.fetch_stock_data        # Stage 2: Fetch financial data
-python3 -m src.analyze                 # Stage 3: Run AI persona analysis
-python3 -m src.score                   # Stage 3b: Compute composite scores
-        """)
+    if not stock:
+        st.error(f"Stock {symbol} not found in scores data.")
         return
 
+    persona_scores = stock.get("persona_scores", {})
+
+    # Back button
+    if st.button("< Back to Rankings"):
+        st.query_params.clear()
+        st.rerun()
+
+    st.title(f"{stock['company_name']}")
+    st.caption(f"{symbol} | {stock.get('sector', 'N/A')} | {stock.get('industry', 'N/A')}")
+
+    # Top metrics row
+    col1, col2, col3, col4, col5, col6 = st.columns(6)
+    with col1:
+        st.metric("Composite Score", f"{stock['composite_score']}/100")
+    with col2:
+        st.metric("Recommendation", stock["consensus_recommendation"])
+    with col3:
+        price = stock.get("current_price")
+        st.metric("Price", f"INR {price:,.2f}" if price else "N/A")
+    with col4:
+        st.metric("Market Cap", format_market_cap(stock.get("market_cap_cr")))
+    with col5:
+        pe = stock.get("pe_ratio")
+        st.metric("P/E", f"{pe:.1f}" if pe else "N/A")
+    with col6:
+        ret = stock.get("ipo_return_pct")
+        st.metric("IPO Return", f"{ret:+.1f}%" if ret is not None else "N/A")
+
+    st.divider()
+
+    # Score bar chart across all personas
+    if persona_scores:
+        st.subheader("Scores by Investor Persona")
+        chart_data = pd.DataFrame([
+            {"Investor": PERSONAS[slug]["display_name"], "Score": sc}
+            for slug, sc in persona_scores.items()
+            if slug in PERSONAS
+        ])
+        if not chart_data.empty:
+            st.bar_chart(
+                chart_data.set_index("Investor"),
+                y="Score",
+                use_container_width=True,
+            )
+
+    st.divider()
+
+    # Per-persona detailed analysis in tabs
+    if persona_scores:
+        st.subheader("Detailed Persona Analysis")
+        persona_tabs = st.tabs([
+            f"{PERSONAS[slug]['display_name']} ({persona_scores.get(slug, '?')})"
+            for slug in persona_scores
+            if slug in PERSONAS
+        ])
+
+        for tab, slug in zip(persona_tabs, persona_scores):
+            if slug not in PERSONAS:
+                continue
+            with tab:
+                analysis_data = load_analysis(symbol, slug)
+                if analysis_data and "analysis" in analysis_data:
+                    a = analysis_data["analysis"]
+
+                    # Score and recommendation
+                    s_col, r_col, spacer = st.columns([1, 1, 3])
+                    with s_col:
+                        st.metric("Score", f"{a.get('score', 'N/A')}/10")
+                    with r_col:
+                        st.metric("Recommendation", a.get("recommendation", "N/A"))
+
+                    # Thesis
+                    st.markdown(f"**Investment Thesis:** {a.get('investment_thesis', 'N/A')}")
+
+                    # Strengths and risks side by side
+                    str_col, risk_col = st.columns(2)
+                    with str_col:
+                        st.markdown("**Key Strengths:**")
+                        for s in a.get("key_strengths", []):
+                            st.markdown(f"- {s}")
+                    with risk_col:
+                        st.markdown("**Key Risks:**")
+                        for r in a.get("key_risks", []):
+                            st.markdown(f"- {r}")
+
+                    # Red flags
+                    red_flags = a.get("red_flags", [])
+                    if red_flags:
+                        st.markdown("**Red Flags:**")
+                        for rf in red_flags:
+                            st.markdown(f"- {rf}")
+
+                    # Metrics evaluated
+                    metrics = a.get("metrics_evaluated", {})
+                    if metrics:
+                        st.markdown("**Metrics Evaluated:**")
+                        m_cols = st.columns(5)
+                        for i, (k, v) in enumerate(metrics.items()):
+                            label = k.replace("_", " ").title()
+                            m_cols[i % 5].markdown(f"*{label}:* {v}")
+
+                    # Full detailed analysis
+                    detailed = a.get("detailed_analysis", "")
+                    if detailed:
+                        with st.expander("Full Analysis"):
+                            st.markdown(detailed)
+                else:
+                    st.info(f"No analysis available for {PERSONAS[slug]['display_name']}")
+
+
+def render_home_page(scores_data):
+    """Render the main rankings table page."""
     stocks = scores_data["stocks"]
     df = pd.DataFrame(stocks)
 
     # ─── Header ───
     st.title("Indian IPO Analyzer 2025")
-    st.caption(f"AI-powered analysis through 10 legendary investor personas | Each persona scores 0-10, total out of 100 | Last updated: {scores_data.get('computed_at', 'N/A')[:10]}")
+    st.caption(f"AI-powered analysis through 10 legendary investor personas | Each persona scores 0-10 | Last updated: {scores_data.get('computed_at', 'N/A')[:10]}")
 
     # ─── Top Metrics ───
     col1, col2, col3, col4, col5 = st.columns(5)
@@ -166,13 +336,39 @@ python3 -m src.score                   # Stage 3b: Compute composite scores
         else:
             selected_quality = quality_options
 
-        # Persona filter
-        st.subheader("Sort by Persona Score")
+        # Persona selector
+        st.subheader("Investor Personas")
+        all_persona_names = [PERSONAS[s]["display_name"] for s in PERSONAS]
+        selected_persona_names = st.multiselect(
+            "Include in score",
+            options=all_persona_names,
+            default=all_persona_names,
+            help="Select which investors' scores to include. Score recalculates as sum of selected personas.",
+        )
+        selected_persona_slugs = [
+            s for s, p in PERSONAS.items()
+            if p["display_name"] in selected_persona_names
+        ]
+
+        # Sort by
+        st.subheader("Sort by")
+        sort_options = ["Composite Score"] + [PERSONAS[s]["display_name"] for s in PERSONAS]
         persona_sort = st.selectbox(
             "Sort by",
-            options=["Composite Score"] + [PERSONAS[s]["display_name"] for s in PERSONAS],
+            options=sort_options,
             index=0,
         )
+
+    # ─── Recompute scores based on selected personas ───
+    max_possible = len(selected_persona_slugs) * 10
+    if selected_persona_slugs and len(selected_persona_slugs) < len(PERSONAS):
+        df["composite_score"] = df["persona_scores"].apply(
+            lambda ps: sum(ps.get(slug, 0) for slug in selected_persona_slugs)
+            if isinstance(ps, dict) else 0
+        )
+        score_label = f"Score (out of {max_possible}, {len(selected_persona_slugs)} personas)"
+    else:
+        score_label = "Score (out of 100)"
 
     # ─── Apply Filters ───
     mask = (
@@ -195,7 +391,6 @@ python3 -m src.score                   # Stage 3b: Compute composite scores
     if persona_sort == "Composite Score":
         filtered_df = filtered_df.sort_values("composite_score", ascending=False)
     else:
-        # Find persona slug from display name
         slug = None
         for s, p in PERSONAS.items():
             if p["display_name"] == persona_sort:
@@ -207,159 +402,141 @@ python3 -m src.score                   # Stage 3b: Compute composite scores
             )
             filtered_df = filtered_df.sort_values(f"_sort_{slug}", ascending=False)
 
-    st.subheader(f"IPO Rankings ({len(filtered_df)} stocks)")
+    if len(selected_persona_slugs) < len(PERSONAS):
+        st.subheader(f"IPO Rankings ({len(filtered_df)} stocks) -- {len(selected_persona_slugs)} personas selected, max score {max_possible}")
+    else:
+        st.subheader(f"IPO Rankings ({len(filtered_df)} stocks)")
 
-    # ─── Main Table ───
-    display_cols = {
-        "symbol": "Symbol",
-        "company_name": "Company",
-        "composite_score": "Score",
-        "consensus_recommendation": "Rec",
-        "sector": "Sector",
-        "market_cap_cr": "MCap (Cr)",
-        "pe_ratio": "P/E",
-        "ipo_return_pct": "IPO Return %",
-        "analysis_coverage": "Analyses",
-        "data_quality": "Quality",
-    }
-
-    table_df = filtered_df[list(display_cols.keys())].rename(columns=display_cols)
-
-    st.dataframe(
-        table_df,
-        use_container_width=True,
-        hide_index=True,
-        column_config={
-            "Score": st.column_config.ProgressColumn(
-                "Score",
-                min_value=0,
-                max_value=100,
-                format="%.1f",
-            ),
-            "MCap (Cr)": st.column_config.NumberColumn(format="%.0f"),
-            "P/E": st.column_config.NumberColumn(format="%.1f"),
-            "IPO Return %": st.column_config.NumberColumn(format="%.1f%%"),
-        },
-    )
-
-    # ─── Detail Views ───
-    st.divider()
-    st.subheader("Detailed Analysis")
-
+    # ─── Main Table with clickable stock names ───
     for _, row in filtered_df.iterrows():
         symbol = row["symbol"]
         company = row["company_name"]
         score = row["composite_score"]
         rec = row["consensus_recommendation"]
-        persona_scores = row["persona_scores"] if isinstance(row["persona_scores"], dict) else {}
+        sector = row.get("sector", "")
+        mcap = format_market_cap(row.get("market_cap_cr"))
+        pe = f"{row['pe_ratio']:.1f}" if row.get("pe_ratio") else "-"
+        ipo_ret = f"{row['ipo_return_pct']:+.1f}%" if row.get("ipo_return_pct") is not None else "-"
+        coverage = row.get("analysis_coverage", 0)
 
-        # Expander header with score badge
-        with st.expander(f"{symbol} | {company} | Score: {score:.1f} | {rec}"):
-            # Stock info columns
-            info_col, chart_col = st.columns([1, 2])
+        # Color-code recommendation
+        if rec == "BUY":
+            rec_badge = f":green[{rec}]"
+        elif rec == "HOLD":
+            rec_badge = f":orange[{rec}]"
+        else:
+            rec_badge = f":red[{rec}]"
 
-            with info_col:
-                st.markdown(f"**{company}**")
-                st.markdown(f"Sector: {row.get('sector', 'N/A')}")
-                st.markdown(f"Industry: {row.get('industry', 'N/A')}")
-                if row.get("current_price"):
-                    st.markdown(f"Price: INR {row['current_price']:,.2f}")
-                if row.get("market_cap_cr"):
-                    st.markdown(f"Market Cap: {format_market_cap(row['market_cap_cr'])}")
-                if row.get("pe_ratio"):
-                    st.markdown(f"P/E: {row['pe_ratio']:.1f}")
-                if row.get("issue_price"):
-                    st.markdown(f"IPO Price: INR {row['issue_price']}")
-                if row.get("ipo_return_pct") is not None:
-                    ret = row["ipo_return_pct"]
-                    st.markdown(f"IPO Return: {ret:+.1f}%")
-                st.markdown(f"Data Quality: {row.get('data_quality', 'N/A')}")
-
-            with chart_col:
-                # Score bar chart across personas
-                if persona_scores:
-                    chart_data = pd.DataFrame([
-                        {"Investor": PERSONAS[slug]["display_name"], "Score": sc}
-                        for slug, sc in persona_scores.items()
-                        if slug in PERSONAS
-                    ])
-                    if not chart_data.empty:
-                        st.bar_chart(
-                            chart_data.set_index("Investor"),
-                            y="Score",
-                            use_container_width=True,
-                        )
-
-            # Per-persona analysis tabs
-            if persona_scores:
-                persona_tabs = st.tabs([
-                    PERSONAS[slug]["display_name"]
-                    for slug in persona_scores
-                    if slug in PERSONAS
-                ])
-
-                for tab, slug in zip(persona_tabs, persona_scores):
-                    if slug not in PERSONAS:
-                        continue
-                    with tab:
-                        analysis_data = load_analysis(symbol, slug)
-                        if analysis_data and "analysis" in analysis_data:
-                            a = analysis_data["analysis"]
-
-                            # Score and recommendation
-                            s_col, r_col = st.columns(2)
-                            with s_col:
-                                st.metric("Score", a.get("score", "N/A"))
-                            with r_col:
-                                st.metric("Recommendation", a.get("recommendation", "N/A"))
-
-                            # Thesis
-                            st.markdown(f"**Investment Thesis:** {a.get('investment_thesis', 'N/A')}")
-
-                            # Strengths and risks side by side
-                            str_col, risk_col = st.columns(2)
-                            with str_col:
-                                st.markdown("**Key Strengths:**")
-                                for s in a.get("key_strengths", []):
-                                    st.markdown(f"- {s}")
-                            with risk_col:
-                                st.markdown("**Key Risks:**")
-                                for r in a.get("key_risks", []):
-                                    st.markdown(f"- {r}")
-
-                            # Red flags
-                            red_flags = a.get("red_flags", [])
-                            if red_flags:
-                                st.markdown("**Red Flags:**")
-                                for rf in red_flags:
-                                    st.markdown(f"- {rf}")
-
-                            # Metrics
-                            metrics = a.get("metrics_evaluated", {})
-                            if metrics:
-                                st.markdown("**Metrics Evaluated:**")
-                                m_cols = st.columns(5)
-                                for i, (k, v) in enumerate(metrics.items()):
-                                    label = k.replace("_", " ").title()
-                                    m_cols[i % 5].markdown(f"*{label}:* {v}")
-
-                            # Full analysis (collapsed)
-                            detailed = a.get("detailed_analysis", "")
-                            if detailed:
-                                with st.expander("Full Analysis"):
-                                    st.markdown(detailed)
-                        else:
-                            st.info(f"No analysis available for {PERSONAS[slug]['display_name']}")
+        cols = st.columns([2, 3, 1, 1, 2, 1.5, 1, 1.5, 1])
+        with cols[0]:
+            if st.button(symbol, key=f"btn_{symbol}", use_container_width=True):
+                st.query_params["stock"] = symbol
+                st.rerun()
+        with cols[1]:
+            st.caption(company)
+        with cols[2]:
+            st.markdown(f"**{score:.0f}**/{max_possible}")
+        with cols[3]:
+            st.markdown(rec_badge)
+        with cols[4]:
+            st.caption(sector)
+        with cols[5]:
+            st.caption(mcap)
+        with cols[6]:
+            st.caption(pe)
+        with cols[7]:
+            st.caption(ipo_ret)
+        with cols[8]:
+            st.caption(f"{coverage}/10")
 
     # Auto-refresh while analyses are still running
-    total_analyses = sum(len(os.listdir(os.path.join(ANALYSES_DIR, d))) for d in os.listdir(ANALYSES_DIR) if os.path.isdir(os.path.join(ANALYSES_DIR, d))) if os.path.isdir(ANALYSES_DIR) else 0
-    if total_analyses < 2210:
+    total_analyses = sum(
+        len(os.listdir(os.path.join(ANALYSES_DIR, d)))
+        for d in os.listdir(ANALYSES_DIR)
+        if os.path.isdir(os.path.join(ANALYSES_DIR, d))
+    ) if os.path.isdir(ANALYSES_DIR) else 0
+
+    if total_analyses < TOTAL_TARGET:
         st.sidebar.divider()
-        st.sidebar.caption(f"Analysis progress: {total_analyses}/2210")
+        st.sidebar.caption(f"Analysis progress: {total_analyses}/{TOTAL_TARGET}")
         st.sidebar.caption(f"Auto-refreshing every {AUTO_REFRESH_SECONDS}s")
         import time
         time.sleep(AUTO_REFRESH_SECONDS)
         st.rerun()
+
+
+def render_landing_page():
+    """Render the landing/intro page."""
+    st.markdown("""
+    <div class="landing-hero">
+        <h1>Indian IPO Analyzer</h1>
+        <p class="subtitle">
+            AI-powered stock analysis of 370+ Indian IPOs through the lenses of 10 legendary investors
+        </p>
+    </div>
+    """, unsafe_allow_html=True)
+
+    st.markdown("---")
+
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        st.markdown("#### Data-Driven")
+        st.markdown("Financial data from yfinance and screener.in -- P&L, balance sheet, cash flow, ratios for every IPO.")
+    with col2:
+        st.markdown("#### Multi-Persona AI")
+        st.markdown("Each stock analyzed by 10 investor personas with distinct philosophies, from deep value to growth to small-cap hunting.")
+    with col3:
+        st.markdown("#### Actionable Scores")
+        st.markdown("Composite scoring (0-100) with per-persona breakdown. Filter by sector, market cap, recommendation.")
+
+    st.markdown("---")
+    st.markdown("#### The 10 Investor Personas")
+
+    st.markdown("""
+    <div class="persona-grid">
+        <div class="persona-chip">Warren Buffett</div>
+        <div class="persona-chip">Charlie Munger</div>
+        <div class="persona-chip">Benjamin Graham</div>
+        <div class="persona-chip">Peter Lynch</div>
+        <div class="persona-chip">Philip Fisher</div>
+        <div class="persona-chip">Joel Greenblatt</div>
+        <div class="persona-chip">Howard Marks</div>
+        <div class="persona-chip">Rakesh Jhunjhunwala</div>
+        <div class="persona-chip">Radhakishan Damani</div>
+        <div class="persona-chip">Vijay Kedia</div>
+    </div>
+    """, unsafe_allow_html=True)
+
+    st.markdown("")
+    st.markdown("")
+
+    _, center, _ = st.columns([1, 2, 1])
+    with center:
+        if st.button("Open Analyzer", use_container_width=True, type="primary"):
+            st.query_params["page"] = "app"
+            st.rerun()
+
+    st.markdown("---")
+    st.caption("Built with Python, Streamlit, Claude AI, yfinance, and screener.in data.")
+
+
+def main():
+    scores_data = load_scores()
+
+    # Route based on query params
+    page = st.query_params.get("page")
+    selected_stock = st.query_params.get("stock")
+
+    if selected_stock and scores_data and scores_data.get("stocks"):
+        render_detail_page(selected_stock, scores_data)
+    elif page == "app" and scores_data and scores_data.get("stocks"):
+        render_home_page(scores_data)
+    elif page == "app":
+        st.title("Indian IPO Analyzer 2025")
+        st.warning("No scores data found. Run the analysis pipeline first.")
+        st.code("python run_pipeline.py --stages 1,2,3,4")
+    else:
+        render_landing_page()
 
 
 if __name__ == "__main__":
