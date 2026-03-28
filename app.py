@@ -273,18 +273,18 @@ def render_detail_page(symbol, scores_data):
         if chart_rows:
             import altair as alt
             chart_data = pd.DataFrame(chart_rows)
+            # Color-code: green (7+), yellow (4-6), red (0-3)
+            chart_data["Color"] = chart_data["Score"].apply(
+                lambda s: "green" if s >= 7 else ("yellow" if s >= 4 else "red")
+            )
+            color_scale = alt.Scale(
+                domain=["green", "yellow", "red"],
+                range=["#22c55e", "#eab308", "#ef4444"],
+            )
             chart = alt.Chart(chart_data).mark_bar().encode(
                 x=alt.X("Score:Q", scale=alt.Scale(domain=[0, 10]), title="Score (out of 10)"),
                 y=alt.Y("Investor:N", sort="-x", title=""),
-                color=alt.condition(
-                    alt.datum.Score >= 7,
-                    alt.value("#22c55e"),
-                    alt.condition(
-                        alt.datum.Score >= 4,
-                        alt.value("#eab308"),
-                        alt.value("#ef4444"),
-                    ),
-                ),
+                color=alt.Color("Color:N", scale=color_scale, legend=None),
                 tooltip=["Investor", "Score"],
             ).properties(height=350)
             st.altair_chart(chart, use_container_width=True)
