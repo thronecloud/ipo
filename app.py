@@ -407,47 +407,49 @@ def render_home_page(scores_data):
     else:
         st.subheader(f"IPO Rankings ({len(filtered_df)} stocks)")
 
-    # ─── Main Table with clickable stock names ───
-    for _, row in filtered_df.iterrows():
-        symbol = row["symbol"]
-        company = row["company_name"]
-        score = row["composite_score"]
-        rec = row["consensus_recommendation"]
-        sector = row.get("sector", "")
-        mcap = format_market_cap(row.get("market_cap_cr"))
-        pe = f"{row['pe_ratio']:.1f}" if row.get("pe_ratio") else "-"
-        ipo_ret = f"{row['ipo_return_pct']:+.1f}%" if row.get("ipo_return_pct") is not None else "-"
-        coverage = row.get("analysis_coverage", 0)
+    # ─── Sortable Table ───
+    display_cols = {
+        "symbol": "Symbol",
+        "company_name": "Company",
+        "composite_score": "Score",
+        "consensus_recommendation": "Rec",
+        "sector": "Sector",
+        "market_cap_cr": "MCap (Cr)",
+        "pe_ratio": "P/E",
+        "ipo_return_pct": "IPO Return %",
+        "analysis_coverage": "Analyses",
+    }
+    table_df = filtered_df[list(display_cols.keys())].rename(columns=display_cols)
 
-        # Color-code recommendation
-        if rec == "BUY":
-            rec_badge = f":green[{rec}]"
-        elif rec == "HOLD":
-            rec_badge = f":orange[{rec}]"
-        else:
-            rec_badge = f":red[{rec}]"
+    st.dataframe(
+        table_df,
+        use_container_width=True,
+        hide_index=True,
+        column_config={
+            "Score": st.column_config.ProgressColumn(
+                score_label,
+                min_value=0,
+                max_value=max_possible,
+                format="%.0f",
+            ),
+            "MCap (Cr)": st.column_config.NumberColumn(format="%.0f"),
+            "P/E": st.column_config.NumberColumn(format="%.1f"),
+            "IPO Return %": st.column_config.NumberColumn(format="%.1f%%"),
+            "Analyses": st.column_config.NumberColumn(format="%d/10"),
+        },
+    )
 
-        cols = st.columns([2, 3, 1, 1, 2, 1.5, 1, 1.5, 1])
-        with cols[0]:
-            if st.button(symbol, key=f"btn_{symbol}", use_container_width=True):
-                st.query_params["stock"] = symbol
-                st.rerun()
-        with cols[1]:
-            st.caption(company)
-        with cols[2]:
-            st.markdown(f"**{score:.0f}**/{max_possible}")
-        with cols[3]:
-            st.markdown(rec_badge)
-        with cols[4]:
-            st.caption(sector)
-        with cols[5]:
-            st.caption(mcap)
-        with cols[6]:
-            st.caption(pe)
-        with cols[7]:
-            st.caption(ipo_ret)
-        with cols[8]:
-            st.caption(f"{coverage}/10")
+    # ─── Stock detail navigation ───
+    st.markdown("---")
+    symbol_list = filtered_df["symbol"].tolist()
+    selected = st.selectbox(
+        "Select a stock to view detailed analysis",
+        options=[""] + symbol_list,
+        format_func=lambda x: f"{x} — {filtered_df[filtered_df['symbol']==x]['company_name'].values[0]}" if x else "Choose a stock...",
+    )
+    if selected:
+        st.query_params["stock"] = selected
+        st.rerun()
 
     # Auto-refresh while analyses are still running
     total_analyses = sum(
