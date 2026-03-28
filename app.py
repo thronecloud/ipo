@@ -425,16 +425,16 @@ def render_home_page(scores_data):
     ]].copy().reset_index(drop=True)
 
     # Create link columns pointing to detail page
-    # Format: ?stock=SYMBOL~~CompanyName so we can extract both with regex
-    table_df["Symbol"] = table_df["symbol"].apply(lambda s: f"?stock={s}")
-    table_df["Company"] = table_df.apply(
-        lambda r: f"?stock={r['symbol']}~~{r['company_name']}", axis=1
+    # Encode company name in URL fragment so display_text regex can extract it
+    table_df["_sym_link"] = table_df["symbol"].apply(lambda s: f"?stock={s}")
+    table_df["_co_link"] = table_df.apply(
+        lambda r: f"?stock={r['symbol']}#{r['company_name']}", axis=1
     )
 
     # Build display dataframe
     display_df = pd.DataFrame({
-        "Symbol": table_df["Symbol"],
-        "Company": table_df["Company"],
+        "Symbol": table_df["_sym_link"],
+        "Company": table_df["_co_link"],
         "Score": table_df["composite_score"],
         "Rec": table_df["consensus_recommendation"],
         "Sector": table_df["sector"],
@@ -456,7 +456,7 @@ def render_home_page(scores_data):
             ),
             "Company": st.column_config.LinkColumn(
                 "Company",
-                display_text=r"~~(.+)$",
+                display_text=r"#(.+)$",
             ),
             "Score": st.column_config.ProgressColumn(
                 score_label,
