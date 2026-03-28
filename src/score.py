@@ -56,9 +56,14 @@ def compute_stock_score(symbol):
     # Composite score = SUM of persona scores (each 0-10, total 0-100)
     composite = sum(persona_scores.values())
 
-    # Consensus recommendation = majority vote
+    # Recommendation derived from composite score (consistent with displayed score)
     rec_counts = Counter(recommendations)
-    consensus = rec_counts.most_common(1)[0][0] if rec_counts else "N/A"
+    if composite >= 60:
+        consensus = "BUY"
+    elif composite >= 40:
+        consensus = "HOLD"
+    else:
+        consensus = "AVOID"
 
     # Load stock data for additional info
     stock_data = load_json(os.path.join(STOCKS_DIR, f"{symbol}.json"))
