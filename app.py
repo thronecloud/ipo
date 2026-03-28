@@ -271,15 +271,8 @@ def render_home_page(scores_data):
     stocks = scores_data["stocks"]
     df = pd.DataFrame(stocks)
 
-    # ─── Header with clickable logo ───
-    header_left, header_right = st.columns([6, 1])
-    with header_left:
-        if st.button("WisdomInvest", type="tertiary"):
-            st.query_params.clear()
-            st.rerun()
-        st.caption(f"AI-powered analysis through 10 legendary investor personas | Each persona scores 0-10 | Last updated: {scores_data.get('computed_at', 'N/A')[:10]}")
-    with header_right:
-        st.markdown("")  # spacer
+    # ─── Header ───
+    st.caption(f"AI-powered analysis through 10 legendary investor personas | Each persona scores 0-10 | Last updated: {scores_data.get('computed_at', 'N/A')[:10]}")
 
     # ─── Top Metrics ───
     col1, col2, col3, col4, col5 = st.columns(5)
@@ -300,8 +293,13 @@ def render_home_page(scores_data):
 
     st.divider()
 
-    # ─── Sidebar Filters ───
+    # ─── Sidebar ───
     with st.sidebar:
+        st.markdown("<h2 style='text-align:center; cursor:pointer;'>WisdomInvest</h2>", unsafe_allow_html=True)
+        if st.button("Home", use_container_width=True, type="tertiary"):
+            st.query_params.clear()
+            st.rerun()
+        st.divider()
         st.header("Filters")
 
         # Score range
