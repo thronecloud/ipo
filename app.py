@@ -580,10 +580,17 @@ def render_home_page(scores_data):
 
     table_df = filtered_df[required_cols].copy().reset_index(drop=True)
 
-    # Build display dataframe with clean data
+    # Create link columns pointing to detail page
+    # Encode company name in URL fragment so display_text regex can extract it
+    table_df["_sym_link"] = table_df["symbol"].apply(lambda s: f"?stock={s}")
+    table_df["_co_link"] = table_df.apply(
+        lambda r: f"?stock={r['symbol']}#{r['company_name']}", axis=1
+    )
+
+    # Build display dataframe
     display_df = pd.DataFrame({
-        "Symbol": table_df["symbol"],
-        "Company": table_df["company_name"],
+        "Symbol": table_df["_sym_link"],
+        "Company": table_df["_co_link"],
         "Score": table_df["composite_score"],
         "Rec": table_df["consensus_recommendation"],
         "Sector": table_df["sector"],
@@ -593,14 +600,20 @@ def render_home_page(scores_data):
         "Analyses": table_df["analysis_coverage"],
     })
 
-    st.caption("Select a stock below to view detailed analysis")
-
-    # Sortable table
+    st.caption("Click Symbol or Company name to view detailed analysis")
     st.dataframe(
         display_df,
         hide_index=True,
         height=735,
         column_config={
+            "Symbol": st.column_config.LinkColumn(
+                "Symbol",
+                display_text=r"\?stock=(.*)",
+            ),
+            "Company": st.column_config.LinkColumn(
+                "Company",
+                display_text=r"#(.+)$",
+            ),
             "Score": st.column_config.ProgressColumn(
                 score_label,
                 min_value=0,
@@ -613,16 +626,6 @@ def render_home_page(scores_data):
             "Analyses": st.column_config.NumberColumn(format="%d/10"),
         },
     )
-
-    # Stock selector for navigation
-    symbol_list = table_df["symbol"].tolist()
-    company_list = table_df["company_name"].tolist()
-    options = [""] + [f"{s} — {c}" for s, c in zip(symbol_list, company_list)]
-    selected = st.selectbox("Open detailed analysis", options=options, label_visibility="collapsed")
-    if selected:
-        sym = selected.split(" — ")[0]
-        st.query_params["stock"] = sym
-        st.rerun()
 
     # Auto-refresh while analyses are still running
     total_analyses = 0
