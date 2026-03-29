@@ -253,25 +253,8 @@ The system is designed as an AI-augmented screening layer, not a replacement for
 
 ### 7.1 Pipeline Overview
 
-```
-                                  PIPELINE ORCHESTRATOR
-                                   (run_pipeline.py)
-                                         |
-            +----------------------------+----------------------------+
-            |              |                  |                       |
-        Stage 1        Stage 2           Stage 3                 Stage 4
-     Scrape IPOs     Fetch Data       AI Analysis            Compute Scores
-            |              |                  |                       |
-   screener.in -->   yfinance API -->   Claude CLI -->         Aggregation
-   HTML scraper      + screener.in      10 personas x          Weighted avg
-            |         enrichment         N stocks               Consensus rec
-            v              v                  v                       v
-   ipo_list.json   stocks/{SYM}.json  analyses/{SYM}/         scores.json
-                                       {persona}.json                |
-                                                                     v
-                                                             Streamlit Dashboard
-                                                                  (app.py)
-```
+![Pipeline Architecture](assets/pipeline_architecture.png)
+*Figure 7: End-to-end pipeline architecture. Data flows from three sources (screener.in HTML, yfinance API, screener.in company pages) through four processing stages into a JSON data store, AI persona analysis engine, composite scoring module, and finally the interactive dashboard. All intermediate outputs are idempotent JSON files with atomic write guarantees.*
 
 ### 7.2 Token Optimization
 
