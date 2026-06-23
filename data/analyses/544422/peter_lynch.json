@@ -1,0 +1,69 @@
+{
+  "symbol": "544422",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-20T20:04:19.726457Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Abram Food is a tiny INR 32.5 Cr micro-cap agro-products trader with a disturbingly low 0.52% ROE, meaning the business is essentially not earning anything on its capital. There's no visible growth story or niche moat here — just a thinly-traded BSE SME with a P/E of 10.6 that looks cheap only because earnings are minuscule.",
+    "key_strengths": [
+      "High promoter holding at 67.33% signals skin in the game",
+      "P/E of 10.6 is optically undemanding for an FMCG name",
+      "Operates in agro-based food — a sector with structural Indian tailwinds"
+    ],
+    "key_risks": [
+      "ROE of 0.52% is abysmal — capital is effectively idle",
+      "INR 32.5 Cr market cap = illiquid BSE micro-cap with governance/disclosure risk",
+      "Undifferentiated agro trading business with no visible moat or brand"
+    ],
+    "red_flags": [
+      "ROE near zero despite reported P/E of 10.6 suggests wafer-thin absolute profit",
+      "Micro-cap SME with minimal public financial history (incorporated 2009, recently listed)",
+      "No disclosed earnings growth rate — impossible to compute a PEG"
+    ],
+    "detailed_analysis": "From a Lynch lens, I always ask \"what's the story?\" — and with Abram Food, I can't find one. A 0.52% ROE is not a business, it's a savings account earning less than inflation. At INR 32.5 Cr market cap with a P/E of 10.6, reported earnings are roughly INR 3 Cr — on what must be a meaningful equity base given it's a trading/processing agro operation, this is barely breakeven economics. I have no earnings growth rate disclosed, so I can't even compute the PEG that I live by; that alone is disqualifying for a GARP investor.\n\nAgro-based food in India has real tailwinds, and the 67% promoter holding is a positive alignment signal, but those are table stakes, not a thesis. Without brand power, scale, or a clear niche-domination story, this looks like a commodity trader dressed up as FMCG. I'd rather pay up for a proven small-cap compounder with 20%+ earnings growth and a PEG under 1 than bottom-fish a sub-1% ROE micro-cap hoping for a turnaround that hasn't been articulated. Pass.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 34806,
+    "model_used": "opus",
+    "total_cost_usd": 0.09355125,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8853,
+      "cache_read_input_tokens": 13380,
+      "output_tokens": 1260,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8853,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 142,
+          "cache_read_input_tokens": 10536,
+          "cache_creation_input_tokens": 1161,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1161
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

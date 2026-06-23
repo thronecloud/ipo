@@ -1,0 +1,69 @@
+{
+  "symbol": "CROMPTON",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-19T13:05:06.139771Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Crompton is a sound consumer electricals franchise with minimal debt (D/E 0.05) and a 7-year positive earnings record, but the price of INR 261 offers no margin of safety — it trades at 2.6× my Graham Number of ~INR 100 (sqrt(22.5 × EPS ~8.6 × BVPS ~51.9)). At P/E 34.4 and P/B 4.93, the market is paying a growth premium that the cautious investor has no business paying.",
+    "key_strengths": [
+      "Near-zero leverage: D/E of 0.05 and borrowings collapsed from INR 1,686 Cr (2022) to INR 186 Cr (2025), demonstrating disciplined post-acquisition debt repayment",
+      "Consistent operating cash generation: OCF positive all 5 years reviewed (INR 411–843 Cr range), FCF positive every year including INR 635 Cr in 2025",
+      "Long earnings track record: 7 consecutive years of positive net profit (INR 324–617 Cr), satisfying my minimum history requirement"
+    ],
+    "key_risks": [
+      "Earnings have declined from the 2021 peak of INR 617 Cr to INR 442 Cr in 2024, only partially recovering to INR 564 Cr in 2025 — the Butterfly Gandhimathi acquisition disrupted margin stability",
+      "Operating margin of only 7.99% leaves little buffer; any input cost spike or competitive pricing pressure can rapidly erode thin profits",
+      "P/E of 34.4 embeds optimistic growth assumptions; if net profit growth continues at its 7Y CAGR of 8.2%, the growth story cannot justify this premium"
+    ],
+    "red_flags": [
+      "P/B of 4.93 — paying nearly 5× book value for a consumer durables manufacturer with no unique proprietary assets",
+      "Net profit declined three consecutive years (FY22–FY24) while revenue grew — a margin compression alarm",
+      "Graham Number ~INR 100 versus market price INR 261: the stock requires earnings and book value to roughly double before it reaches fair value by my standards"
+    ],
+    "detailed_analysis": "Crompton's financial profile is that of a respectable but fully-priced consumer brand. Revenue has compounded at 9.8% over seven years (INR 4,080 Cr to INR 7,864 Cr) and the balance sheet has been substantially repaired after the debt-funded Butterfly acquisition in FY22 inflated borrowings to INR 1,686 Cr — now down to INR 186 Cr. Operating cash flows are reliable and free cash flow averaged INR 652 Cr over the last three years. These are the characteristics of a well-run business.\n\nHowever, my discipline begins and ends with price. At INR 261, the stock trades at P/E 34.4 and P/B 4.93 — more than double my maximum acceptable thresholds of 15 and 1.5 respectively. The Graham Number (sqrt(22.5 × ~8.6 EPS × ~51.9 BVPS)) yields roughly INR 100, meaning the current price embeds 2.6× the margin Mr. Market should be asking for. An intelligent investor waits for Mr. Market's pessimism to offer the stock nearer that figure.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 216169,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.27410685,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 26067,
+      "cache_read_input_tokens": 15372,
+      "output_tokens": 11449,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 26067,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 805,
+          "cache_read_input_tokens": 15372,
+          "cache_creation_input_tokens": 10695,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 10695
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

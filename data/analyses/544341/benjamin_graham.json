@@ -1,0 +1,70 @@
+{
+  "symbol": "544341",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-20T09:49:38.357873Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Landmark Global is a micro-cap (INR 51.8 Cr) immigration consultancy with an optically low P/E of 5.25 but a trivial ROE of 0.21%, suggesting either collapsed earnings or an accounting artifact. Without a multi-year earnings record, dividend history, or balance-sheet visibility, this fails every Graham quantitative filter.",
+    "key_strengths": [
+      "P/E of 5.25 is superficially below my <15 threshold",
+      "Promoter holding of 72.44% signals skin in the game",
+      "Asset-light consultancy model requires limited capex"
+    ],
+    "key_risks": [
+      "ROE of 0.21% is essentially zero — no real earning power",
+      "Micro-cap (INR 51.8 Cr) with near-zero institutional ownership (0% FII, 3.37% DII)",
+      "Recent listing (BSE code 544341) means no multi-year audited track record"
+    ],
+    "red_flags": [
+      "ROE of 0.21% contradicts the low P/E — earnings quality is suspect",
+      "No visible dividend history or balance-sheet disclosure (current ratio, D/E, book value unknown)",
+      "Recent IPO — the seller always knows more than the buyer",
+      "Tiny float and virtually no institutional validation"
+    ],
+    "detailed_analysis": "The headline P/E of 5.25 would normally catch my eye, but a 0.21% ROE tells the real story: this company is earning roughly nothing on its equity base. Either the denominator (equity) is inflated by recent IPO proceeds not yet deployed, or earnings are a one-off rounding. Either way, there is no \"proven earning power\" here — the cornerstone of intrinsic value in my framework. At a INR 51.8 Cr market cap with essentially no institutional following, Mr. Market is not offering a bargain; he is offering a lottery ticket.\n\nI have no visibility into the current ratio, debt-to-equity, interest coverage, book value, or dividend record — all non-negotiable inputs for a Graham-style valuation. An immigration consultancy is a cyclical, regulation-sensitive, people-dependent service business with negligible tangible assets to underwrite a margin of safety. Combined with the IPO-vintage listing and a 72%+ promoter holding that leaves a thin public float, this is a speculation, not an investment. Avoid.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "insufficient_data",
+      "valuation": "insufficient_data",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 20102,
+    "model_used": "opus",
+    "total_cost_usd": 0.09091075,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8901,
+      "cache_read_input_tokens": 13499,
+      "output_tokens": 1140,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8901,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10613,
+          "cache_creation_input_tokens": 1174,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1174
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

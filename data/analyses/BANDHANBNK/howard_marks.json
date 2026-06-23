@@ -1,0 +1,69 @@
+{
+  "symbol": "BANDHANBNK",
+  "persona": "howard_marks",
+  "persona_display_name": "Howard Marks",
+  "analyzed_at": "2026-04-19T06:33:47.911485Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Bandhan Bank has recovered impressively from its FY22 near-wipeout (126 Cr profit) to 2,745 Cr in FY25, and forward P/E of 10.92x looks superficially cheap. But with ROE barely at 11% — below most estimates of equity cost — a P/B of 1.14x offers no margin of safety, and the MFI sector is entering another stress cycle.",
+    "key_strengths": [
+      "Balance sheet has strengthened — total debt down from 24,711 Cr (FY23) to 11,138 Cr (FY25), equity up to 24,605 Cr",
+      "Net profit recovery from 126 Cr (FY22) to 2,745 Cr (FY25) demonstrates the franchise survived a severe stress event",
+      "P/B of 1.14x is near book — limited downside if earnings stabilize"
+    ],
+    "key_risks": [
+      "Finance costs growing at 26.6% CAGR (5,157 → 10,458 Cr in 3 years) vs. revenue CAGR of 7.8% — NIM compression structurally erodes profitability",
+      "Core MFI segment concentrated in Bengal/East India faces renewed stress in FY25-26 cycle as borrower overleveraging resurfaces across the sector",
+      "ROE of 11.16% barely covers cost of equity — intrinsic P/B approximates ROE/COE ≈ 0.9x, implying current price is modestly above intrinsic book value"
+    ],
+    "red_flags": [
+      "Promoter at 39.74% — RBI has been pushing Bandhan to reduce promoter concentration; regulatory overhang is persistent",
+      "Operating cash flow swings wildly: +902 Cr (FY22), -4,245 Cr (FY23), +14,808 Cr (FY24), +2,752 Cr (FY25) — predictability is low",
+      "Forward P/E of 10.92x assumes a substantial earnings jump that is far from assured given MFI sector headwinds and rising funding costs"
+    ],
+    "detailed_analysis": "Bandhan's core problem is structural, not cyclical: a microfinance-heavy book with a regionally concentrated customer base is inherently high-beta, and the market has correctly discounted this with a sub-1.2x P/B. The FY22 collapse to 126 Cr in profit was a stress-test that the bank passed, but only barely. The recovery looks spectacular on a percentage basis purely due to the low base, not because the underlying ROE profile has improved — 11% ROE in FY25 is roughly where it was pre-IPO.\n\nThe second-order question: what does the forward P/E of 10.92x require? It implies earnings approaching ~2,575 Cr+ on a normalized basis. That's achievable, but it's priced in. Any adverse development — another MFI stress cycle, rate hike, West Bengal political disruption — compresses earnings sharply. Risk/reward is roughly balanced. I neither want to pay up nor short it.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 196022,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.2610465,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 25202,
+      "cache_read_input_tokens": 15100,
+      "output_tokens": 10800,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 25202,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 577,
+          "cache_read_input_tokens": 15100,
+          "cache_creation_input_tokens": 10102,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 10102
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

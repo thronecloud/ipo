@@ -1,0 +1,68 @@
+{
+  "symbol": "FWSTC",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-21T07:56:18.522510Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Flywings scores well on return on capital (ROCE 25%) but fails the Magic Formula's valuation test — at P/E 17, the implied earnings yield of ~5.9% is far below the 12%+ threshold I require for a compelling buy. One leg of the Magic Formula is solid; the other is not.",
+    "key_strengths": [
+      "ROCE of 25% clears Greenblatt's 'excellent business' threshold (>25%), suggesting capital-efficient operations",
+      "Regulated aviation simulator niche creates meaningful barriers to entry for a micro-cap",
+      "Promoter holding at 59.87% with FII+DII at ~15% combined signals some institutional conviction"
+    ],
+    "key_risks": [
+      "Earnings yield ~5.9% (1/P/E proxy) is well below Magic Formula's 12% minimum — not cheap",
+      "Micro-cap at INR 192 Cr with very limited public data — EBIT, debt, and EV unknown, so full Magic Formula cannot be computed",
+      "Aviation simulators are capital-intensive assets; any debt load would compress the true earnings yield further"
+    ],
+    "red_flags": [
+      "Insufficient data: no revenue, EBIT, or balance sheet figures — Magic Formula cannot be fully computed",
+      "At P/E 17, the stock is priced for quality but not at a bargain — violates the 'cheap AND good' requirement"
+    ],
+    "detailed_analysis": "Running the Magic Formula on available data: ROCE of 25% clears my 'excellent business' bar, suggesting the company earns strong returns on its deployed capital — likely driven by the regulated, high-barrier nature of aviation simulator certification. However, the valuation leg fails badly. Using P/E 17 as a proxy for earnings yield gives ~5.9%, versus my minimum threshold of 12%. Even being generous — assuming zero debt so EV ≈ market cap — the stock is priced at more than 16x earnings with no margin of safety.\n\nThe bigger problem is data insufficiency. With no EBIT, no debt schedule, and no revenue growth disclosed, I cannot run a clean Magic Formula ranking. For a INR 192 Cr micro-cap in a niche aviation training business, that opacity is a real concern. The business may well be good — but 'good' at 17x earnings is not what I buy. I need a company to be both a good business AND cheap. This one is only halfway there at best. Wait for a meaningful price pullback to ~P/E 10-11 (earnings yield ~9-10%) before revisiting.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "insufficient_data",
+      "financial_health": "insufficient_data",
+      "valuation": "overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 45569,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.06808320000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9296,
+      "cache_read_input_tokens": 7564,
+      "output_tokens": 2063,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9296,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 362,
+          "cache_read_input_tokens": 7564,
+          "cache_creation_input_tokens": 1732,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1732
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

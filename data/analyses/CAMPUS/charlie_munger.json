@@ -1,0 +1,69 @@
+{
+  "symbol": "CAMPUS",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T16:54:51.072769Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "AVOID",
+    "investment_thesis": "Campus is India's largest domestic sports footwear brand with genuine ROCE of 31.8% and improving FCF, but operating margins have structurally compressed from 20.3% (FY22) to 11.5% (FY25), and the market is asking you to pay 55x earnings for that deteriorating profitability — a classic case of a decent business at a decidedly indecent price.",
+    "key_strengths": [
+      "ROCE of 31.8% demonstrates real capital efficiency in a competitive footwear market",
+      "FCF/Net Income of 145% (₹176 Cr / ₹121 Cr in FY25) confirms high-quality earnings with no accounting games",
+      "Debt/EBITDA of only 0.9x (₹232 Cr debt vs ₹259 Cr EBITDA) — balance sheet risk is contained"
+    ],
+    "key_risks": [
+      "Severe margin compression: operating margin fell from 20.3% in FY22 → 11.5% in FY25, suggesting pricing power erosion under competitive pressure from Nike, Adidas, and domestic discounters",
+      "Revenue stagnation in the mass-market segment — FY24 revenue actually declined (₹1,448 Cr vs ₹1,484 Cr in FY23), with FY25 recovery only modest",
+      "55x P/E is pricing in perfection; any further margin slip or growth disappointment will destroy significant market cap"
+    ],
+    "red_flags": [
+      "Secular operating margin decline over 3 consecutive years (FY22–FY25) — classic sign of weak pricing power",
+      "Net profit of ₹121 Cr in FY25 still barely exceeds FY23's ₹117 Cr — two years of zero earnings growth at 55x P/E is indefensible",
+      "Value-segment footwear has no durable moat — easily disrupted by better-funded global brands or private-label e-commerce"
+    ],
+    "detailed_analysis": "Campus occupies an interesting niche — India's largest domestic sports footwear brand by volume, serving the mass-to-mid market. ROCE of 31.8% and clean FCF generation (₹176 Cr FCF vs ₹121 Cr net profit in FY25) are genuinely commendable. Promoter holding of 72% suggests alignment. However, applying Munger's inversion: what could permanently impair this business? The answer is obvious — margin erosion from competition, which is already happening. Operating margins have collapsed from 20.3% in FY22 to 11.5% in FY25. That is not a cyclical blip; it is a structural squeeze as global brands deepen Indian distribution and e-commerce commoditizes footwear pricing.\n\nThe valuation commits the most grievous investment sin: paying 55x P/E for a business whose earnings have essentially flatlined for two years (₹117 Cr FY23 → ₹89 Cr FY24 → ₹121 Cr FY25). At EV/EBITDA of 33x, the market is extrapolating a compounding machine that the fundamentals do not yet support. A business in a commoditizing segment, with declining margins and no defensible moat beyond brand familiarity, deserves a 20–25x multiple at best. At ₹248, I would need to see sustained margin recovery above 16%+ and consistent double-digit revenue growth before reconsidering. The current price offers no margin of safety whatsoever — and margin of safety is the cornerstone of sensible investing.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 121354,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0843237,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11014,
+      "cache_read_input_tokens": 8674,
+      "output_tokens": 2694,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11014
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 412,
+          "cache_read_input_tokens": 8674,
+          "cache_creation_input_tokens": 2340,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2340,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

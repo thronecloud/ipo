@@ -1,0 +1,69 @@
+{
+  "symbol": "TENNIND",
+  "persona": "rakesh_jhunjhunwala",
+  "persona_display_name": "Rakesh Jhunjhunwala",
+  "analyzed_at": "2026-04-21T08:07:19.853068Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Tenneco India is an operationally excellent auto parts maker — 57% ROCE, debt-free, strong FCF — but its core exhaust/catalytic converter business faces secular extinction as India accelerates EV adoption across two-wheelers, three-wheelers, and eventually CVs. At 42x P/E, the market is pricing in growth for a business whose revenue already fell 10.6% in FY2025 (₹5,468 Cr → ₹4,890 Cr).",
+    "key_strengths": [
+      "Exceptional capital efficiency: ROCE 57.3%, ROE 42.6%, nearly debt-free (D/E 0.02)",
+      "Strong FCF generation: ₹500 Cr free cash flow in FY2025 on operating CF of ₹562 Cr",
+      "Margin expansion despite revenue decline: EBITDA margin jumped from 12.5% to 17.5% in FY2025"
+    ],
+    "key_risks": [
+      "Structural EV disruption: exhaust systems, catalytic converters, mufflers become obsolete as ICE penetration falls — India's 2W/3W segment electrifying rapidly",
+      "Revenue already declining: FY2025 revenue at ₹4,890 Cr is below FY2023 levels (₹4,827 Cr), suggesting demand erosion well ahead of consensus EV timelines",
+      "Capital extraction by MNC parent: reserves collapsed from ₹895 Cr (FY2023) to ₹514 Cr (FY2025) via ₹433–686 Cr annual financing outflows — minority shareholders benefit minimally"
+    ],
+    "red_flags": [
+      "Tenneco Inc. globally filed for bankruptcy in 2022 and restructured — parent instability creates overhang on India subsidiary strategy",
+      "Revenue declined 10.6% YoY in FY2025 despite India auto sector volume growth — early structural displacement signal",
+      "MNC subsidiary with aggressive upstream dividend payments; India P&L quality but capital allocation decisions made in Mauritius/USA, not in shareholder interest"
+    ],
+    "detailed_analysis": "Tenneco Clean Air India is a textbook example of a high-quality business in the wrong sector at the wrong time. The financial ratios are genuinely impressive — ROCE of 57.3%, near-zero debt, and ₹500 Cr of FCF — but these are backward-looking metrics for a company whose primary products (catalytic converters, mufflers, exhaust pipes) are tied directly to internal combustion engines. India's two-wheeler and three-wheeler segments, which are key Tenneco customers, are electrifying faster than any other vehicle category. When revenue falls 10.6% in a year when overall auto production was healthy, that is not a cyclical dip — it is an early structural signal that I cannot ignore.\n\nAt 42x P/E and 26x P/B, the market is still pricing this as a growth compounder, which it is not. I need to buy cheap or buy growth — this offers neither. Additionally, as an MNC subsidiary, the equity base has shrunk from ₹1,208 Cr to ₹918 Cr over three years as the parent extracts capital through dividends. I have no desire to be a minority passenger while the promoter drives capital abroad. India has hundreds of auto-ancillary opportunities riding EV supply chains, premiumization, and the CV upcycle — I would rather deploy capital there than in a legacy ICE exhaust business priced like a champion.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 56761,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0830976,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8836,
+      "cache_read_input_tokens": 10512,
+      "output_tokens": 3120,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8836,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 636,
+          "cache_read_input_tokens": 8409,
+          "cache_creation_input_tokens": 2530,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2530
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

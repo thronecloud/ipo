@@ -1,0 +1,69 @@
+{
+  "symbol": "AFCONS",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-19T06:25:01.679235Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Afcons is the most attractively valued stock in this group on Magic Formula metrics, trading at 10.74x EV/EBITDA (earnings yield ~7-9%) with ROCE of 19.6% approaching the 20% threshold — a near-miss on both criteria rather than a clear failure. However, 4.8% revenue CAGR, finance costs that exceed net profit, and a first-ever negative OCF in FY2025 cap this at a HOLD rather than a buy.",
+    "key_strengths": [
+      "EV/EBITDA of 10.74x and P/S of 0.98x — meaningfully cheaper than peers and the cheapest in this group by Magic Formula metrics",
+      "ROCE of 19.6% approaching the 20% Magic Formula threshold, with EBITDA growing 10.5% CAGR over 5 years despite thin sector margins",
+      "Specialized expertise in complex infrastructure (marine, metro, tunnels, LNG tanks) creates differentiation vs. generic EPC peers"
+    ],
+    "key_risks": [
+      "Finance costs of INR 629 Cr in FY25 actually exceed net profit of INR 487 Cr — the interest burden is only covered by INR 469 Cr of 'Other Income' which is non-recurring in nature",
+      "Revenue CAGR of only 4.8% over 5 years is sluggish; Magic Formula favors companies where high ROIC compounds through revenue growth",
+      "FY2025 OCF turned negative (-INR 132 Cr) for the first time — working capital deterioration in construction projects is a classic warning sign"
+    ],
+    "red_flags": [
+      "Other Income of INR 469 Cr (27% of EBITDA in FY25) is inflating profitability metrics — strip this out and EBIT coverage of interest costs becomes very thin",
+      "Finance costs grew from INR 391 Cr (FY20) to INR 629 Cr (FY25) — borrowings rose to INR 3,565 Cr, materially above reported 'Total Debt' of INR 2,343 Cr",
+      "FCF turned to -INR 470 Cr in FY25 after being modestly positive in FY23-24 — capex of INR 344 Cr plus working capital bleed is a concern"
+    ],
+    "detailed_analysis": "Afcons stands apart from this group because it is the only stock where both Magic Formula metrics are in the same zip code as the required thresholds — earnings yield in the 7–9% range and ROCE at 19.6% vs. the 12% and 20% targets respectively. The EV/EBITDA of 10.74x is also the most reasonable multiple here, and a P/S under 1x signals genuine value relative to business scale. The company has real specialized expertise in technically complex, large-ticket infrastructure projects that not every EPC firm can execute.\n\nThe Math on interest coverage, however, is alarming: FY2025 interest costs of INR 629 Cr against EBIT of INR 1,361 Cr gives an interest coverage ratio of ~2.2x before considering Other Income. Stripping the INR 469 Cr of Other Income from EBIT (which includes income from investments and JV profits), core operating earnings cover interest by only 1.4x — far too thin for a construction company exposed to project delays. The negative OCF in FY2025 warrants monitoring. Afcons would cross into BUY territory if earnings yield reaches 12%+ and OCF recovers; at current levels it's a HOLD for existing investors.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 267843,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.3708348,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 31622,
+      "cache_read_input_tokens": 15761,
+      "output_tokens": 16501,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 31622,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 521,
+          "cache_read_input_tokens": 15761,
+          "cache_creation_input_tokens": 15861,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 15861
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

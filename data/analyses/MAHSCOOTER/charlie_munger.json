@@ -1,0 +1,69 @@
+{
+  "symbol": "MAHSCOOTER",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T18:26:58.710748Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Maharashtra Scooters is a passive Bajaj-group holding vehicle trading at a steep 55% discount to book value (P/B 0.45, market cap INR 15,007 Cr vs. equity INR 30,863 Cr), offering Graham-style asset cheapness. However, this is structurally not a wonderful business — reported ROE of 0.69% and ROCE of 0.55% are disqualifying by quality-investor standards, and the holding company discount in India rarely closes without a catalyst.",
+    "key_strengths": [
+      "Deep NAV discount — buying ~INR 30,863 Cr of Bajaj-group equities for INR 15,007 Cr, a 55% margin of safety on book",
+      "Net profit compounding at 14.5% CAGR (2022→2025, INR 143 Cr → 214 Cr) driven by underlying portfolio appreciation and dividends",
+      "Near-zero capex, 4/4 years of positive OCF, and 86% operating margins — lean holding company with minimal operational drag"
+    ],
+    "key_risks": [
+      "Holding company discount is structurally permanent in Indian markets — no management incentive or mechanism to close the 55% NAV gap",
+      "Revenue declining at -1.9% CAGR and EBITDA contracting -9.6% CAGR; net profit growth relies on mark-to-market portfolio gains, not durable operating income",
+      "FCF/Net Income at 74% (INR 159 Cr / INR 214 Cr) — below the 80% quality threshold, suggesting earnings quality concerns for a pure investment vehicle"
+    ],
+    "red_flags": [
+      "ROE of 0.69% and ROCE of 0.55% — catastrophically below any quality threshold; capital is essentially idle",
+      "P/S of 47.87x and EV/EBITDA of 47.84x signal the market is not valuing this as an operating business at all — pure NAV play with no earnings power logic",
+      "Revenue fell from INR 222 Cr (2024) to INR 183 Cr (2025) — a 17.5% single-year drop suggesting dividend income from portfolio is lumpy and unreliable"
+    ],
+    "detailed_analysis": "Invert first: what makes this a bad investment? A holding company with 0.69% ROE cannot compound capital — it is warehousing assets, not deploying them intelligently. The reported ROIC is far below my 15% minimum threshold, and no amount of cheapness compensates for a business that cannot earn its cost of capital. The operating metrics (86% margins, zero capex) are illusory — they simply reflect that no real business is being conducted. Revenue is essentially dividend and interest income from the portfolio, which fell 17.5% in FY2025 alone (INR 222 Cr → 183 Cr), exposing the lumpiness of the income stream.\n\nThe one genuine attraction is the NAV discount: you are paying INR 15,007 Cr for INR 30,863 Cr of equity, predominantly high-quality Bajaj-group holdings (Bajaj Auto, Bajaj Finance). This is textbook Graham — buying a dollar for 45 cents. But as I have said before, I evolved past cigar butts. The holding company discount in India has persisted for decades across the Bajaj group structure, and there is no activist pressure, buyback mechanism, or liquidation trigger to close it. Management at Bajaj Holdings/Maharashtra Scooters has zero incentive to collapse the structure. Existing shareholders receive steady but unspectacular dividends (net profit INR 214 Cr; financing CF -INR 193 Cr suggests most profits are paid out), making this more a bond-like income vehicle than a compounder. Not a business I would put significant capital into — hold if already owned, but do not add.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "undervalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 60321,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08858669999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10842,
+      "cache_read_input_tokens": 8134,
+      "output_tokens": 3032,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10842
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 372,
+          "cache_read_input_tokens": 8134,
+          "cache_creation_input_tokens": 2708,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2708,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

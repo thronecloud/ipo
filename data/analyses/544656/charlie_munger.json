@@ -1,0 +1,69 @@
+{
+  "symbol": "544656",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-20T11:05:27.243469Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "A tiny aluminium fabrication contractor trading at 105x P/E on a 0.34% ROE is a textbook example of priced-for-fantasy speculation. Invert: what must go right to justify this multiple? Practically everything — and in a commoditized, project-based business with no evident moat.",
+    "key_strengths": [
+      "High promoter skin-in-the-game at 72.49%",
+      "Some institutional interest (FII 4.78% + DII 8.13%)",
+      "Participates in India's real-estate/façade capex cycle"
+    ],
+    "key_risks": [
+      "ROE of 0.34% — capital is earning essentially nothing",
+      "P/E of 105 on negligible earnings is speculative froth",
+      "Commoditized installation business with no pricing power or moat"
+    ],
+    "red_flags": [
+      "ROE <1% paired with P/E >100 suggests multiple is untethered from fundamentals",
+      "Recently listed (2012-incorporated) micro-cap with limited audited track record",
+      "Project-based revenue in industrial products typically has working-capital and receivable risks"
+    ],
+    "detailed_analysis": "Applying inversion first: what makes this a bad investment? A 0.34% ROE tells you the business is destroying capital relative to any reasonable cost-of-equity (~13-14% in India). Paying 105x earnings for a ₹540 Cr aluminium window-and-curtain-wall fabricator means the market is pricing in a miracle — either a 50x jump in earnings or a continued speculative bid. Neither qualifies as investing in the Graham-Buffett sense; it's gambling on a small-cap narrative.\n\nThe business itself — designing and installing aluminium windows, doors, glazing — is a classic commoditized, project-based industrial with thin margins, lumpy cash flows, and no durable competitive advantage. There is no evidence of scale economies, switching costs, brand, or IP. Promoter holding at 72.49% is the only mildly positive signal, but high promoter stakes in micro-caps often coincide with low float-driven price distortions rather than quality. I would not allocate capital here at any size; the asymmetry is wrong.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 20581,
+    "model_used": "opus",
+    "total_cost_usd": 0.08767525,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8827,
+      "cache_read_input_tokens": 13203,
+      "output_tokens": 1035,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8827,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10476,
+          "cache_creation_input_tokens": 1078,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1078
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

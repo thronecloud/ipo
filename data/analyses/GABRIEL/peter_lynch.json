@@ -1,0 +1,68 @@
+{
+  "symbol": "GABRIEL",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-22T16:41:22.301969Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Gabriel India is a genuine fast-grower — 20.6% revenue CAGR and 39.9% net profit CAGR over 3 years — riding India's auto production boom and railway modernization (Vande Bharat), but at a trailing P/E of 56x and a PEG of ~1.4, the market has already priced in much of the excitement. At the forward P/E of 32x, the risk/reward improves but isn't yet the compelling GARP entry Lynch demands.",
+    "key_strengths": [
+      "Exceptional earnings momentum: Net profit CAGR of 39.9% (FY22→FY25), operating income nearly tripling from ₹131 Cr to ₹390 Cr",
+      "Near-zero leverage (D/E 0.08) — gives financial firepower without the distress risk typical of capital-heavy auto suppliers",
+      "Expanding margin story: Operating margin visibly compressing upward (~5.7% → ~9.6% on revenue/EBIT basis) as operating leverage kicks in"
+    ],
+    "key_risks": [
+      "PEG ratio ~1.4x trailing (56 P/E ÷ ~40% growth) — Lynch wants <1.0; stretched valuation leaves no margin of safety if growth disappoints",
+      "Free cash flow collapsed to ~₹0 in FY25 (OCF ₹204 Cr vs. capex ₹209 Cr) — heavy investment phase makes intrinsic value hard to pin down",
+      "Auto-sector cyclicality: revenue is 100% tied to vehicle production cycles; any slowdown in 2W/PV OEM demand hits top-line and operating leverage in reverse"
+    ],
+    "red_flags": [
+      "Capex surging 2.7x in 3 years (₹76 Cr → ₹209 Cr) while FCF trends to zero — must validate this is capacity-led growth, not a capex trap",
+      "Operating margin reported at 6.91% in the data field is materially lower than the implied 9.6% from income statement figures — warrants reconciliation before trusting forward estimates"
+    ],
+    "detailed_analysis": "Gabriel India is a textbook fast-grower in the Lynch playbook — a boring-sounding shock absorber maker quietly compounding earnings at 40% for three straight years. The story is easy to tell: India's vehicle production is booming, railways are electrifying (Vande Bharat dampers), and Gabriel is the dominant OEM supplier with near-zero debt and improving returns (ROE 22.2%, ROCE 28.4%). That's the kind of niche dominance Lynch loves to find at a regional auto parts show rather than a Wall Street conference.\n\nThe problem is price. At ₹1,014 and a trailing P/E of 56x, the market has already spotted the story. The PEG sits at ~1.4x on trailing earnings — above Lynch's 1.0 comfort zone. The forward P/E of 32x is more interesting and implies the Street is penciling in ~75% earnings jump, or more likely a moderation toward sustainable 20-25% growth. If that materializes, the forward PEG is still 1.3-1.6x — not a screaming buy. The FCF going to zero in FY25 from aggressive capex is fine if the capacity creates future earnings, but it removes near-term cash return optionality. Watch for FCF recovery in FY26 as the capex cycle matures — that would be the signal to upgrade to BUY.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 64847,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0903942,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11434,
+      "cache_read_input_tokens": 8759,
+      "output_tokens": 2992,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11434,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 378,
+          "cache_read_input_tokens": 8759,
+          "cache_creation_input_tokens": 2675,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2675
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

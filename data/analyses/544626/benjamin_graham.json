@@ -1,0 +1,70 @@
+{
+  "symbol": "544626",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-20T11:01:44.273546Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Exato is a recently listed micro-cap IT services firm trading at ~35x earnings and ~6.8x book value with only three years of audited results — failing nearly every quantitative filter I require. There is no margin of safety; the price embeds heroic growth assumptions that I refuse to underwrite.",
+    "key_strengths": [
+      "Three consecutive years of positive net profit (5, 5, 10 Cr)",
+      "Strong reported ROE 28.2% and ROCE 26.5%",
+      "Promoter holding 54.73% provides skin in the game"
+    ],
+    "key_risks": [
+      "P/B ~6.8x and P/E 35 — no margin of safety vs. Graham number (~₹130 vs price ₹414)",
+      "Borrowings ballooned 6→17→28 Cr; D/E 0.56 exceeds my 0.5 ceiling",
+      "FY24 OCF was -14 Cr and FY25 FCF effectively zero — earnings not converting to cash"
+    ],
+    "red_flags": [
+      "Recently listed BSE micro-cap (symbol 544626) — insufficient 5-year earnings history",
+      "No dividend track record disclosed",
+      "Rapid balance-sheet expansion funded by debt + equity issuance (financing CF 5→9→19 Cr)",
+      "IPO-era pricing — sellers/underwriters set the price, not the disciplined buyer"
+    ],
+    "detailed_analysis": "From a strict Graham lens, this security fails the most basic tests. Net worth is only ₹50 Cr against a market capitalization of ₹338 Cr — investors are paying nearly seven rupees for every rupee of book equity in a commoditized \"IT enabled services\" niche with no demonstrated moat. The Graham Number, computed at roughly ₹130 per share (sqrt(22.5 × 12.25 EPS × 61.3 BVPS)), is less than a third of the ₹414 quoted price. A P/E of 35 on a three-year-old earnings record is precisely the kind of speculative pricing Mr. Market offers to the impatient.\n\nThe operating story is not without merit — revenue grew 73→124 Cr and net profit doubled to 10 Cr in FY25 — but the cash flow tells a less flattering tale: FY24 operating cash flow was negative 14 Cr and cumulative three-year FCF is roughly negative 10 Cr, financed by ₹22 Cr of new borrowings and equity raises. This is a growth-funded enterprise, not a self-sustaining compounder. Until Exato delivers 5+ years of earnings, lowers leverage below 0.5x equity, and trades closer to book value, it remains squarely in the speculative bucket. Avoid.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "insufficient_data",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 29824,
+    "model_used": "opus",
+    "total_cost_usd": 0.10833975,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 9899,
+      "cache_read_input_tokens": 14032,
+      "output_tokens": 1577,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9899,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 11146,
+          "cache_creation_input_tokens": 1639,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1639
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

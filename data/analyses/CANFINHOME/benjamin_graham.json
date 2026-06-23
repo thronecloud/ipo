@@ -1,0 +1,69 @@
+{
+  "symbol": "CANFINHOME",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-19T12:49:04.950631Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Can Fin Homes is the only stock in this group where the P/E ratio (11.87) passes my primary valuation screen, and the earnings record — albeit limited to four years of data — shows consistent, growing profits with a 22.1% CAGR. However, P/B of 2.12 fails my threshold, and the structural leverage of a housing finance company (Debt/Equity 6.59) requires a degree of faith in credit quality that my method does not extend lightly.",
+    "key_strengths": [
+      "P/E of 11.87 — the only stock in this group passing my 15x ceiling, with forward P/E of 10.49 suggesting further improvement",
+      "Consistent earnings growth: net profit rose from INR 471 Cr (FY22) to INR 857 Cr (FY25), a 22.1% CAGR with no loss years in the available record",
+      "Strong promoter backing from Canara Bank (29.99%) provides implicit regulatory support and funding access typical of bank-sponsored HFCs"
+    ],
+    "key_risks": [
+      "Structural leverage of 6.59x Debt/Equity (total debt INR 34,898 Cr vs equity INR 5,067 Cr) — any deterioration in housing asset quality could impair equity rapidly",
+      "Finance costs growing at 29.3% CAGR (INR 2,485 Cr in FY25) outpacing revenue CAGR of 18.8% — the spread is compressing",
+      "OCF was negative in two of four years (FY22: -3,916 Cr, FY23: -4,044 Cr), driven by aggressive loan book expansion; this requires constant access to external funding"
+    ],
+    "red_flags": [
+      "P/B of 2.12 exceeds both my 1.5 ceiling and the 2.0 red-flag threshold — I am overpaying for the asset base",
+      "Only 4 years of financial data provided — insufficient to verify the 5-year consecutive earnings requirement with confidence",
+      "Highly interest-rate sensitive business model: if borrowing costs rise or housing demand softens, earnings could reverse sharply"
+    ],
+    "detailed_analysis": "Can Fin Homes occupies an interesting middle ground in my framework. The P/E of 11.87 is genuinely reasonable by my standards, and the earnings trajectory is commendable — a business that has compounded profits at 22% annually deserves attention. The Canara Bank parentage provides a funding advantage and regulatory comfort that pure private HFCs lack. These are real positives.\n\nHowever, I have always been wary of financial intermediaries with high leverage, and a Debt/Equity of 6.59 — even accepting this as structural for an HFC — represents a towering pile of obligations relative to the equity cushion. If NPAs rise from current levels or interest rates spike, the equity could be eroded quickly. P/B of 2.12 means I am paying a meaningful premium over the book value of that cushion. I would be more comfortable near 1.0–1.3x book, which would imply a price closer to INR 410–530 — a 40–50% discount to current levels. At INR 869, this is fairly priced for a good company, not cheaply priced for a safe investment.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 150406,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.204411,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 22348,
+      "cache_read_input_tokens": 15340,
+      "output_tokens": 7733,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 22348,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 610,
+          "cache_read_input_tokens": 15340,
+          "cache_creation_input_tokens": 7008,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 7008
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

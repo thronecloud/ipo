@@ -1,0 +1,70 @@
+{
+  "symbol": "MRPL",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-22T16:30:52.593709Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "MRPL is a capital-intensive PSU refiner with zero durable competitive advantage — a textbook commodity business where earnings are dictated by crack spreads, not management skill. With ROE of 0.45%, a net profit collapse of 98% YoY (₹3,597 Cr → ₹56 Cr in FY25), and a 9-year net profit CAGR of -21.7%, the business destroys rather than creates shareholder value.",
+    "key_strengths": [
+      "ONGC backing (88.58% promoter) provides financial lifeline and crude supply security during downturns",
+      "Debt reduction trajectory: borrowings fell from ₹24,062 Cr (2021) to ₹10,824 Cr (2025), reducing financial fragility",
+      "Revenue scale at ₹94,682 Cr with 10.1% 9-year CAGR gives it refinery utilization advantages over smaller peers"
+    ],
+    "key_risks": [
+      "No economic moat — refining margins (GRMs) are entirely commodity-driven and collapsed in FY25, wiping 98% of net profits",
+      "Structurally poor returns: ROE 0.45%, ROCE 4.38% — both well below cost of capital, meaning the business is value-destructive",
+      "Extreme earnings volatility: net profit swung from -₹4,043 Cr (2020) to +₹3,597 Cr (2024) to +₹56 Cr (2025) — unpredictability kills intrinsic value estimation"
+    ],
+    "red_flags": [
+      "FY25 net profit crashed 98% YoY to just ₹56 Cr — P/E of 14.7x is on a near-zero earnings base, masking true overvaluation",
+      "EBITDA fell from ₹8,005 Cr (2024) to ₹2,433 Cr (2025) — a 70% collapse in one year reveals zero earnings predictability",
+      "FCF cratered from ₹5,509 Cr to ₹918 Cr in one year — dividend sustainability and debt repayment capacity severely impaired",
+      "PSU governance: government controls capital allocation decisions, pricing policy, and dividend payouts — minority shareholders are passengers"
+    ],
+    "detailed_analysis": "MRPL embodies everything I avoid in a business. Oil refining is a brutally competitive commodity industry where the product is indistinguishable and pricing power is nonexistent — the refinery that processes crude cheapest survives, not the one with the best brand. The numbers confirm this: a 9-year EBITDA CAGR of -1.2% and net profit CAGR of -21.7% mean this business has gotten worse in real terms over nearly a decade, despite revenue growing 10% annually on the back of crude price inflation. ROE of 0.45% is not a typo — the company earned essentially nothing on ₹13,318 Cr of equity in FY25.\n\nThe FY25 collapse is the story in a single line: net profit fell from ₹3,597 Cr to ₹56 Cr as GRMs compressed, and operating cash flow dropped from ₹7,051 Cr to ₹1,878 Cr. At ₹183/share and 2.41x book, investors are paying a meaningful premium for a PSU that earned 0.45% on equity. The debt reduction since 2021 is the one genuine positive, but with ₹13,143 Cr of total debt still on the books against ₹56 Cr of annual profit, the balance sheet remains hostage to the next margin downturn. I need a business I can predict with confidence for 10 years — MRPL's earnings cannot be predicted for 10 months.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 39944,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0770931,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11186,
+      "cache_read_input_tokens": 9272,
+      "output_tokens": 2157,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11186,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 302,
+          "cache_read_input_tokens": 9272,
+          "cache_creation_input_tokens": 1914,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1914
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

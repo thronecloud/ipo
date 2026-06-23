@@ -1,0 +1,69 @@
+{
+  "symbol": "AZAD",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T16:42:17.119447Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "AVOID",
+    "investment_thesis": "Azad Engineering occupies a genuinely moated niche — OEM-certified precision aerospace and defense components with extraordinary 88% gross margins and 39% revenue CAGR — but it has burned cash every single year for five consecutive years while trading at 101x P/E. This is speculation on future earnings delivery, not investment in present reality.",
+    "key_strengths": [
+      "Exceptional 88% gross margins signal true pricing power and high-tolerance manufacturing capability that commodity shops cannot replicate",
+      "OEM qualification moat: aerospace/defense certifications (likely GE, Honeywell, Safran-tier) take years to obtain and create deep switching costs",
+      "Revenue CAGR of 39% with EBITDA CAGR of 45% shows genuine operating leverage as scale builds"
+    ],
+    "key_risks": [
+      "FCF has been negative all 5 years — FY25 FCF of -240 Cr vs net profit of 87 Cr makes earnings quality deeply suspect and ROIC calculation unreliable",
+      "101x P/E on 8.57% ROE: even if FCF eventually normalizes, the price demands near-flawless execution for the next decade with zero margin of safety",
+      "Massive FY25 capex cycle (investing CF -918 Cr, CWIP jumped to 155 Cr) creates significant execution risk — any delay or cost overrun compounds the FCF deficit"
+    ],
+    "red_flags": [
+      "FY23 finance cost spiked to 52 Cr against net profit of just 8 Cr — evidence of prior debt mismanagement that nearly wiped out earnings",
+      "Borrowings surged from 39 Cr (FY24) to 312 Cr (FY25) simultaneously with a massive equity raise (equity 645→1,479 Cr) — dilution + re-leveraging in the same year is a yellow flag",
+      "OCF positive only 3 of 5 years; FY25 OCF of 54 Cr vs net profit 87 Cr implies FCF conversion ratio of roughly -275%, far below my 80% minimum threshold"
+    ],
+    "detailed_analysis": "Azad Engineering is a legitimately interesting business — the kind of precision niche manufacturer that Munger admires in structure. An 88% gross margin in manufacturing is extraordinary and signals genuine value-add that cannot be competed away easily; most industrial manufacturers operate at 30–50% gross margins. OEM certifications in aerospace are multi-year affairs that create durable switching costs. Revenue growing at 39% CAGR from 123 Cr (FY21) to 457 Cr (FY25) with EBITDA margins expanding from 30% to 36% confirms real operating leverage. The balance sheet is not alarming on the surface — D/E at 0.21 and promoter holding at 55.84% are reassuring.\n\nHowever, inversion exposes the fatal flaw: free cash flow has been negative every single year (-16, -96, -94, -78, -240 Cr across FY21-FY25). Net profit of 87 Cr in FY25 accompanied by FCF of -240 Cr means the business is consuming 327 Cr more cash than it earns in reported profits. The capex machine is running at full throttle — FY25 investing outflows of 918 Cr dwarfing revenues of 457 Cr. This might be justified if ROIC were 20%+, but ROCE sits at only 12.2% and ROE at 8.57%, both below my 15% hurdle. Mr. Market is pricing this at 101x P/E and 62x EV/EBITDA — pricing in perfection on a business that has yet to demonstrate it can generate cash at scale. Even if revenues double again in four years, the current price still demands heroic assumptions. A wonderful business at a terrible price is still a terrible investment.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "exceptional"
+    }
+  },
+  "metadata": {
+    "duration_ms": 59178,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09771075,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11805,
+      "cache_read_input_tokens": 8860,
+      "output_tokens": 3385,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11805
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 470,
+          "cache_read_input_tokens": 8860,
+          "cache_creation_input_tokens": 2945,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2945,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

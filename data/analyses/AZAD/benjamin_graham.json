@@ -1,0 +1,70 @@
+{
+  "symbol": "AZAD",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T16:38:00.492688Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "Azad Engineering trades at INR 1,904 — approximately 7.2x its Graham Number of ~INR 263 (√(22.5 × EPS₁₃.₄₇ × BVPS₂₂₈.₉)), offering zero margin of safety by any quantitative standard. With a P/E of 101, P/B of 8.35, and free cash flow negative every single year for five consecutive years, this is a speculative growth story masquerading as an investment.",
+    "key_strengths": [
+      "Revenue CAGR of 38.8% and operating income CAGR of 54.9% over four years demonstrate genuine business momentum",
+      "Low debt/equity of 0.21 and a reasonable operating margin of 30%+ indicate the core operations carry sound economics once capital is deployed",
+      "Precision aerospace/defense/nuclear components with high gross margins (88%) suggest proprietary manufacturing capability with some pricing power"
+    ],
+    "key_risks": [
+      "P/E of 101 is nearly 7x my maximum threshold of 15 — the price already discounts many years of perfection with no room for error",
+      "Free cash flow has been negative all five years (2021–2025), including -INR 240 Cr in 2025; a business that perpetually consumes cash is not returning value to shareholders",
+      "Net profit collapsed to INR 8 Cr in FY2023 on INR 252 Cr revenue — earnings quality is fragile and highly sensitive to finance costs and capital structure"
+    ],
+    "red_flags": [
+      "P/B of 8.35 is more than 5x my ceiling of 1.5 — shareholders are paying INR 8.35 for every INR 1 of net assets",
+      "Borrowings swung violently: INR 88 → 301 → 39 → 312 Cr in four years, signaling erratic financial management and dependence on external capital",
+      "Equity surged from INR 204 Cr (FY2023) to INR 1,479 Cr (FY2025), suggesting a large equity raise/IPO that diluted shareholders; massive CWIP of INR 155 Cr and investing outflows of -INR 918 Cr in FY2025 indicate unproven capital allocation on a grand scale",
+      "No dividend history — shareholders receive no current return while management deploys capital at ROE of only 8.57%"
+    ],
+    "detailed_analysis": "By every quantitative measure I have ever employed, Azad Engineering is deeply and dangerously overvalued. The Graham Number — the geometric mean of what a rational buyer should pay relative to earnings and assets — stands at roughly INR 263. The market asks INR 1,904, a 623% premium. My rule has always been simple: never pay more than you must for what you can prove. Here, the market is pricing in a decade of flawless execution for a company that earned only INR 8 Cr in profit as recently as FY2023 and has never generated positive free cash flow. Finance costs ballooned to INR 52 Cr in FY2023 — nearly wiping out all operating profit — exposing how leveraged growth can hollow out reported earnings overnight.\n\nThe business narrative is seductive — precision airfoils for GE, Rolls-Royce, nuclear turbines, defense — but I have seen many compelling stories end in ruin when the balance sheet could not support the ambition. Investing outflows of INR 918 Cr in FY2025 with only INR 54 Cr of operating cash flow means the company is funding expansion almost entirely through equity and debt issuance, not from its own operations. Mr. Market, in his manic phase, has assigned a P/S of 21.64 to a company with INR 457 Cr in revenue. The intelligent investor waits for Mr. Market's inevitable despondency to offer this business at a fraction of today's price — perhaps near or below book value — before committing a single rupee.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 51897,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0776139,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9192,
+      "cache_read_input_tokens": 11033,
+      "output_tokens": 2655,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9192
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 438,
+          "cache_read_input_tokens": 8983,
+          "cache_creation_input_tokens": 2259,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2259,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

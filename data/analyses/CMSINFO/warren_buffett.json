@@ -1,0 +1,69 @@
+{
+  "symbol": "CMSINFO",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T16:57:22.045544Z",
+  "analysis": {
+    "score": 6,
+    "recommendation": "HOLD",
+    "investment_thesis": "CMS Info Systems is a decent quasi-monopoly in India's regulated cash logistics industry — high ROCE (23.7%), near-zero debt, and 24.6% net profit CAGR at a P/E of just 15.9x makes the price fair. However, zero promoter ownership and the structural headwind from UPI-driven cash displacement prevent me from calling it a wonderful business worth owning forever.",
+    "key_strengths": [
+      "Regulatory moat and physical network: RBI-licensed cash handling with armored infrastructure across India creates high barriers to entry in a duopoly market",
+      "Exceptional capital discipline: Debt/Equity of 0.10, OCF positive all 5 years, FCF of ₹331 Cr in FY25, and ROCE of 23.7% — the business earns well on capital employed",
+      "Cheap valuation for the quality: Forward P/E of 13.45x and EV/EBITDA of 9.56x for a business growing net profit at 24.6% CAGR over 7 years is genuinely inexpensive"
+    ],
+    "key_risks": [
+      "Secular digital disruption: UPI transactions in India are growing explosively — every rupee going digital permanently reduces the cash management addressable market, an irreversible structural headwind",
+      "Zero promoter ownership: No skin in the game from founders/promoters is a serious governance concern; management incentives may not align with long-term shareholder wealth creation",
+      "EBITDA margin compression in FY25: EBITDA fell from ₹717 Cr (FY24) to ₹649 Cr (FY25) even as revenue grew 7% — a warning sign that pricing power or cost discipline may be eroding"
+    ],
+    "red_flags": [
+      "0% promoter shareholding — the company is entirely institutionally owned post-PE exit; no owner-operator at the helm",
+      "Finance cost CAGR of 51% over 7 years; borrowings of ₹223 Cr appeared suddenly in FY25 balance sheet after being zero for years",
+      "CWIP surged to ₹142 Cr in FY25 from ₹18 Cr — a large, unexplained capital commitment cycle beginning"
+    ],
+    "detailed_analysis": "CMS Info Systems operates in a structurally defensible niche — cash-in-transit, ATM management, and card services — where regulatory approvals, physical infrastructure, and long-term bank contracts create meaningful switching costs. The financial track record is genuinely impressive: revenue grew from ₹978 Cr to ₹2,425 Cr (13.9% CAGR), net profit compounded at 24.6%, ROE sits at 17% and ROCE at a very healthy 23.7%, all while maintaining a near-clean balance sheet. At forward P/E of 13.45x and EV/EBITDA of 9.56x, Mr. Market is pricing in modest expectations — which I generally find appealing.\n\nMy hesitation is twofold. First, I insist on management with skin in the game, and 0% promoter ownership after a PE-backed IPO tells me the people who built this business have already cashed out — who is now the steward of capital? Second, India's cash economy is shrinking structurally: UPI and digital wallets are displacing physical cash with every passing year. Unlike a Coca-Cola, where habit and brand defend the moat indefinitely, CMS's moat is being slowly drained by a force beyond its control. The FY25 EBITDA dip (down ₹68 Cr despite revenue growth) and the sudden appearance of ₹223 Cr in borrowings with CWIP jumping to ₹142 Cr suggest management may be making a large bet to diversify — wise or not, I'd want to understand it better before committing capital.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 68912,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.094953,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11734,
+      "cache_read_input_tokens": 9005,
+      "output_tokens": 3216,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11734
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 530,
+          "cache_read_input_tokens": 9005,
+          "cache_creation_input_tokens": 2729,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2729,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

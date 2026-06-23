@@ -1,0 +1,71 @@
+{
+  "symbol": "ICIL",
+  "persona": "radhakishan_damani",
+  "persona_display_name": "Radhakishan Damani",
+  "analyzed_at": "2026-04-18T17:35:04.875474Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Indo Count is a commodity-grade textile exporter with razor-thin 4.86% operating margins, ballooning debt (D/E 0.54), and a net profit CAGR of essentially zero over nine years — the very antithesis of a quality compounder. At 48x trailing P/E for a cyclical, leveraged business with no earnings growth, the market is pricing in perfection that the financials simply do not justify.",
+    "key_strengths": [
+      "Promoter holding at 58.74% is reasonable and provides some alignment",
+      "Revenue has expanded from INR 2,063 Cr to INR 4,151 Cr over 9 years (8.1% CAGR), showing operational scale-up",
+      "Gross margin of 52.37% suggests some product differentiation in bedding brands"
+    ],
+    "key_risks": [
+      "Debt exploded from INR 349 Cr (2020) to INR 1,243 Cr (2025); finance costs jumped from INR 28 Cr to INR 123 Cr, directly crushing net profit",
+      "Net profit CAGR of -0.2% over 9 years — earnings in 2025 (INR 246 Cr) are below 2016 levels (INR 251 Cr); zero value creation for a decade",
+      "Operating margin of 4.86% is dangerously thin — any FX headwind, cotton price spike, or US demand slowdown turns profits to losses"
+    ],
+    "red_flags": [
+      "D/E of 0.54 violates my hard limit of 0.3 — and the trajectory is worsening (was 0.27 in 2020, now 0.54)",
+      "Finance costs grew at 9.4% CAGR while net profit shrank — debt is eating the business alive",
+      "OCF negative in 2021 and 2022; FCF swung from -INR 489 Cr to +416 Cr to +11 Cr — extreme volatility signals a weak underlying business model",
+      "Capex of INR 452 Cr in 2022 + INR 342 Cr in 2023 funded almost entirely by debt, with questionable returns (ROCE only 13.5%)",
+      "P/E of 48x for a zero-earnings-growth, leveraged textile exporter is deeply irrational pricing"
+    ],
+    "detailed_analysis": "Indo Count fails my core checklist at every critical checkpoint. The D/E of 0.54 is a hard stop — I built DMart on the principle that debt is poison for a business with thin margins, and at 4.86% operating margins, ICIL has essentially no buffer. Finance costs have tripled from INR 42 Cr (2017) to INR 123 Cr (2025), and in FY25 that interest burden consumed roughly half the operating profit. This is the classic debt trap: borrow to expand capacity, watch margins compress, service debt with operating cash that should belong to shareholders. The nine-year net profit CAGR of -0.2% is damning — shareholders who held since 2016 have received nothing in earnings growth despite revenue doubling.\n\nThe valuation makes no sense to me. At 48x trailing earnings, the market is paying a premium quality multiple for a decidedly non-premium business. Yes, forward P/E drops to ~19.7x, implying a sharp earnings recovery — but textile exporters have been promising recovery for years, and the volatile history (INR 60 Cr profit in 2019, INR 359 Cr in 2022, back to INR 246 Cr in 2025) shows this is a deeply cyclical, FX-exposed, commodity-adjacent business. Working capital is erratic (OCF positive only 3 of last 5 years). I see no durable moat — the branded home textile names are niche and the distribution is largely export wholesale. This is not the kind of quiet compounder I hold for decades.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 52129,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07525364999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9167,
+      "cache_read_input_tokens": 11228,
+      "output_tokens": 2500,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9167
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 419,
+          "cache_read_input_tokens": 9138,
+          "cache_creation_input_tokens": 2119,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2119,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "symbol": "GAEL",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T17:21:01.013290Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "GAEL trades at INR 148 versus a Graham Number of ~INR 91 (sqrt(22.5 × EPS ~5.4 × BVPS ~67.4)), a 63% premium to my fair value ceiling — there is no margin of safety whatsoever. With a P/E of 33.3 and P/B of 2.19, Mr. Market is asking me to pay a speculator's price for a commodity processor with 4.45% operating margins.",
+    "key_strengths": [
+      "Near-debt-free balance sheet (D/E 0.09, borrowings only INR 288 Cr vs equity INR 3,093 Cr)",
+      "Interest coverage of ~24x (operating income INR 401 Cr / finance cost INR 17 Cr) — fortress-level coverage",
+      "Decade-long positive earnings history with consistent OCF (5/5 years positive)"
+    ],
+    "key_risks": [
+      "P/E of 33.3x violates my 15x ceiling by more than double; price is 63% above the Graham Number",
+      "Net profit has collapsed 48% from peak — INR 475 Cr (FY22) to INR 249 Cr (FY25) — proven earning power is deteriorating",
+      "Other income comprised 33% of FY25 net profit (INR 82 Cr of INR 249 Cr) — operating earnings are far weaker than headlines suggest"
+    ],
+    "red_flags": [
+      "P/B of 2.19 exceeds my hard limit of 1.5 — paying a 119% premium over book",
+      "Free cash flow nearly zero in FY24 (INR 4 Cr) and weak in FY25 (INR 47 Cr) vs reported net profit of INR 346/249 Cr — earnings are not converting to real cash",
+      "CWIP surged to INR 335 Cr in FY25 with ongoing heavy capex (INR 296 Cr) — capital allocation is aggressive and unproven",
+      "Operating margin of only 4.45% in a commodity agro-processing business offers no buffer against input price shocks"
+    ],
+    "detailed_analysis": "GAEL fails virtually every quantitative filter I demand. The Graham Number — my ceiling price of sqrt(22.5 × ~5.4 EPS × ~67.4 BVPS) — computes to roughly INR 91, yet the stock trades at INR 148. A disciplined buyer does not pay 63% above intrinsic value. The P/E of 33.3x and P/B of 2.19x confirm that the market has priced in a rosy future that the business has thus far failed to deliver — profits peaked in FY22 and have since fallen nearly in half. ROE of only 8.59% and ROCE of 11.5% on a near-debt-free business are frankly unimpressive; the company is not earning its cost of capital in any meaningful sense.\n\nThe earnings quality problem is equally troubling. In FY25, INR 82 Cr of other income (largely investment returns and treasury gains) propped up a net profit of INR 249 Cr — strip that out and operating earnings shrink dramatically. Free cash flow has been negligible (INR 4 Cr in FY24, INR 47 Cr in FY25) while the company is spending INR 200–300 Cr annually on capex. I require a business to demonstrate *proven* earning power through cash, not accounting profits subsidised by investment income. Until this stock corrects toward the INR 80–90 range — offering a genuine margin of safety — the intelligent investor has no business owning it.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 49989,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08036175,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9401,
+      "cache_read_input_tokens": 11180,
+      "output_tokens": 2783,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9401
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 503,
+          "cache_read_input_tokens": 9130,
+          "cache_creation_input_tokens": 2321,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2321,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

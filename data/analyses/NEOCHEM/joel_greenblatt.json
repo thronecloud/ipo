@@ -1,0 +1,69 @@
+{
+  "symbol": "NEOCHEM",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-21T08:00:09.719242Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "AVOID",
+    "investment_thesis": "Neochem Bio shows genuine business improvement with ROCE of 27.2% and explosive operating profit growth (4→13 Cr in 2 years), but the Magic Formula earnings yield of ~8.6% (EBIT 13 Cr / EV ~151 Cr) falls well below the 12% minimum threshold. You're paying a fair-to-full price for a highly leveraged micro-cap with barely any free cash flow — not the cheap+good combination the formula demands.",
+    "key_strengths": [
+      "ROCE of 27.2% clears the 25%+ excellence bar — operating capital is being deployed effectively",
+      "Strong revenue CAGR (~32%): INR 48→84 Cr, with operating income tripling from 4→13 Cr, suggesting genuine operating leverage",
+      "Promoter holding at 66.7% with meaningful DII interest (13.2%) signals some institutional validation"
+    ],
+    "key_risks": [
+      "Earnings yield ~8.6% (EBIT 13 Cr / EV ~151 Cr) fails the Magic Formula 12% minimum — the stock is not cheap enough to justify the risks",
+      "Debt burden of INR 36 Cr vs. equity of 20 Cr (D/E ~1.8x); finance costs of 4 Cr consumed ~31% of operating income in FY25",
+      "FCF barely turned positive at 1 Cr in FY25 after two years of negative FCF — high earnings quality risk for a reported 8 Cr net profit"
+    ],
+    "red_flags": [
+      "Other income of 2 Cr represents ~25% of net profit (8 Cr) — strips out to a thinner underlying earnings base",
+      "Cumulative FCF over 3 years: -4 + -3 + 1 = -6 Cr despite 3-year cumulative net profit of ~11 Cr — severe cash conversion problem",
+      "Micro-cap at INR 117 Cr market cap with INR 36 Cr debt — any business disruption has limited balance sheet cushion"
+    ],
+    "detailed_analysis": "On the Magic Formula scorecard, Neochem Bio passes on business quality but fails on valuation. ROCE of 27.2% is legitimately good and the trajectory is encouraging — operating margins expanded from ~8% to ~15% in two years. However, the earnings yield of ~8.6% (EBIT 13 Cr against an enterprise value of roughly 151 Cr: 117 Cr market cap + 36 Cr debt) sits well below the 12% floor where the formula begins to find value. At a P/E of 16x on what looks like a cyclically or one-time boosted profit figure, the market is pricing in continued growth without compensating investors for the risk.\n\nThe bigger concern from a capital quality standpoint is the persistent gap between reported profits and free cash flow. Three-year cumulative net profit of ~11 Cr against cumulative FCF of -6 Cr means earnings are being absorbed into working capital and capex — typical for rapidly growing specialty chemical manufacturers, but it means the \"cheap\" earnings on the income statement aren't landing in the bank. With 36 Cr of borrowings and 4 Cr in annual finance costs, this micro-cap has limited margin of safety. The Magic Formula works by buying great businesses at bargain prices; Neochem Bio is improving but is neither cheap enough nor proven enough at this stage.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 59869,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08906415,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10863,
+      "cache_read_input_tokens": 8013,
+      "output_tokens": 3061,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10863,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 252,
+          "cache_read_input_tokens": 8013,
+          "cache_creation_input_tokens": 2850,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2850
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

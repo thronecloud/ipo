@@ -1,0 +1,71 @@
+{
+  "symbol": "EPWINDIA",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-21T07:47:19.670791Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "EPW India trades at ~118 INR against a Graham Number of ~19 INR (6x overvalued), with a Price-to-Book of ~25x on a razor-thin equity base of INR 5 Cr. Despite reporting INR 4 Cr net profit, operating cash flow was -11 Cr in FY25 — a fundamental breakdown in earnings quality that disqualifies this stock entirely.",
+    "key_strengths": [
+      "Revenue growing rapidly: 7 → 19 → 53 Cr in three years, demonstrating some commercial traction.",
+      "Minimal finance costs (near zero) until FY25 when borrowings jumped to INR 12 Cr.",
+      "High promoter holding at 71.43% signals owner-operator alignment."
+    ],
+    "key_risks": [
+      "Severe earnings quality failure: INR 4 Cr reported profit vs. -11 Cr operating cash flow — profit is not translating to cash.",
+      "Debt-to-Equity of 2.4x (INR 12 Cr borrowings vs. INR 5 Cr equity) — far exceeds my 0.5x limit.",
+      "Commoditised refurbished hardware business with no durable competitive moat, operating in a race-to-the-bottom pricing environment."
+    ],
+    "red_flags": [
+      "Price-to-Book of ~25.8x — I require <1.5x; this is 17x beyond my ceiling.",
+      "Graham Number: ~INR 19 vs. market price of INR 118 — stock is trading at a 6x premium to intrinsic asset-earning value.",
+      "Free Cash Flow of -12 Cr in FY25 — the business is consuming, not generating, capital.",
+      "Earnings history of just 3 years, with FY23 showing essentially zero profit — fails my 5-year positive earnings requirement.",
+      "Micro-cap (INR 129 Cr) with virtually no book value — one bad quarter could wipe equity entirely."
+    ],
+    "detailed_analysis": "EPW India fails nearly every quantitative filter I have established over decades of security analysis. The Graham Number — computed as √(22.5 × EPS of ~3.67 × Book Value per share of ~4.58) — yields approximately INR 19, against a market price of INR 118. This means Mr. Market is pricing this company at over six times what arithmetic prudence permits. The P/B of roughly 26x is the most damning single number: investors are paying INR 26 for every rupee of net assets in a commoditised refurbishing business with no proprietary technology, no patents, and no switching costs. The ROE of 139% is a statistical artifact of near-zero equity, not a sign of a durable franchise.\n\nThe cash flow statement reveals the deeper problem. A business reporting INR 4 Cr in net profit while burning INR 11 Cr in operating cash flow is either aggressively booking receivables or suffering from working capital deterioration — neither is acceptable. The sudden jump in borrowings from zero to INR 12 Cr in FY25, coinciding with negative free cash flow of -12 Cr, tells me the growth is being funded by creditors, not earned organically. This is precisely the type of speculative, asset-light-in-name-only operation that the intelligent investor must shun. At INR 129 Cr market cap on INR 53 Cr of revenue and INR 5 Cr of equity, there is no margin of safety whatsoever.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 45918,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0672777,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 7932,
+      "cache_read_input_tokens": 10079,
+      "output_tokens": 2300,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 7932,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 398,
+          "cache_read_input_tokens": 8029,
+          "cache_creation_input_tokens": 1953,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1953
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

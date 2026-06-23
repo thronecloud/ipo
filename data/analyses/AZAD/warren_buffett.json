@@ -1,0 +1,69 @@
+{
+  "symbol": "AZAD",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T16:37:31.042681Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Azad Engineering operates in a genuinely interesting niche — precision aerospace/defense components with real certification-based moats — but at 101x P/E with persistently negative free cash flow every single year, the market is pricing in perfection for a business still burning capital at scale. I never pay a wonderful price for a wonderful business, let alone a wonderful price for an unproven cash-burner.",
+    "key_strengths": [
+      "Niche aerospace precision components (airfoils, turbine blades) carry genuine qualification/certification moats — customers don't switch suppliers easily in safety-critical applications",
+      "Impressive 38.8% revenue CAGR and 30.23% operating margins signal pricing power and high value-add manufacturing",
+      "Low D/E of 0.21 post-IPO equity infusion; strong promoter holding at 55.84% aligns management with shareholders"
+    ],
+    "key_risks": [
+      "FCF has been negative all 5 years (-16, -96, -94, -78, -240 Cr), with 2025 the worst yet — this business has never generated a rupee of free cash at scale",
+      "ROE of only 8.57% is far below my 15% threshold; heavy capex (293 Cr in 2025, CWIP surging to 155 Cr) destroys returns on capital in a capital-intensive model",
+      "Valuation at 101x P/E, 62x EV/EBITDA, and 21.6x P/S leaves zero margin of safety — any execution stumble or order delay could cut the stock in half"
+    ],
+    "red_flags": [
+      "Free cash flow deteriorating sharply to -240 Cr in 2025 despite revenue of only 457 Cr — company is burning more cash than it earns",
+      "Finance costs spiked to 52 Cr in FY23 (on 8 Cr net profit) — prior debt load nearly destroyed earnings; new borrowing of 312 Cr in FY25 bears watching",
+      "Revenue base of 457 Cr vs. market cap of 12,298 Cr implies a P/S of 21.6x — priced as if this is a software company, not a machined-parts manufacturer"
+    ],
+    "detailed_analysis": "Azad Engineering makes precision-engineered components — airfoils, turbine blades, actuator parts — for aerospace, defense, and energy OEMs. The business is conceptually appealing: aerospace suppliers that achieve customer qualification certifications enjoy sticky, long-duration relationships, and the 88% gross margin and 30% operating margin reflect genuine value-add manufacturing. Revenue growth at 38.8% CAGR and net profit CAGR of 64% over four years are real achievements for a Hyderabad-based industrial firm competing globally. I understand the bull case.\n\nBut the numbers that matter most to me tell a different story. This business has never produced positive free cash flow in any of the five years shown — and 2025's -240 Cr FCF is the worst figure yet, coinciding with 293 Cr of capex and 918 Cr of investing outflows. An 8.57% ROE on a capital-intensive model means the company must continuously raise external financing just to grow, which is precisely the opposite of the self-funding compounders I love (See's Candies, Coca-Cola). At 101x trailing P/E and 62x EV/EBITDA for a business generating negative free cash, the market has already priced in a decade of flawless execution. I've made my fortune buying businesses where the price gives me protection when I'm wrong — here, there is none.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 56858,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0855678,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11288,
+      "cache_read_input_tokens": 8946,
+      "output_tokens": 2703,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11288
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 395,
+          "cache_read_input_tokens": 8946,
+          "cache_creation_input_tokens": 2342,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2342,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

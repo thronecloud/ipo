@@ -1,0 +1,70 @@
+{
+  "symbol": "MARC",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-21T07:48:50.725824Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Marc Technocrats is a financially clean, debt-free consulting micro-cap with impressive 41% net profit CAGR from ₹3Cr to ₹7Cr — but at ₹48Cr revenue with no identifiable economic moat, it's a small, undifferentiated business I cannot assess with confidence. Without valuation data and with no institutional following, I lack the margin of safety to act.",
+    "key_strengths": [
+      "Pristine balance sheet: debt-to-equity of ~0.04x (₹1Cr debt vs ₹28Cr equity), essentially zero leverage",
+      "High capital returns: ROE 26.86% and ROCE 36.27% indicate the business earns well above its cost of capital",
+      "Consistent profitability: OCF positive all 4 years, 41% net profit CAGR (2022–2025), expanding margins"
+    ],
+    "key_risks": [
+      "No discernible moat: generic 'consulting services' label offers no pricing power, switching costs, or defensibility",
+      "Nano-cap scale: ₹48Cr revenue and ₹7Cr net profit — a single client loss could be catastrophic",
+      "Investing outflows exceed or match OCF every year (₹4–6Cr) despite minimal capex, raising questions about where capital is going"
+    ],
+    "red_flags": [
+      "Exchange listed as 'YHD-ERR' — likely BSE SME or regional exchange with poor liquidity and governance oversight",
+      "Near-zero institutional ownership (FII 0.27%, DII 1.38%) means no independent scrutiny of financials",
+      "Valuation entirely unknown — without P/E or market cap, I cannot assess whether price offers any margin of safety",
+      "Finance costs growing at 71% CAGR, even if negligible in absolute terms — bears watching"
+    ],
+    "detailed_analysis": "Marc Technocrats shows the financial hygiene I admire — zero meaningful debt, strong ROEs above 25%, and four consecutive years of positive operating cash flow. The 35–41% CAGRs across revenue, EBITDA, and net profit are eye-catching, but I must remind myself that growing from ₹3Cr to ₹7Cr in profit is not the same as Coca-Cola compounding billions. A single large client, a key employee departure, or a pricing dispute could erase years of progress at this scale. I see numbers I like, but I don't see a business I understand well enough to trust.\n\nThe investing cash outflows (₹4–6Cr annually) consistently match or exceed operating cash inflows, which is unusual for a supposedly asset-light consulting firm. Free cash flow plateaus at ₹3Cr despite rapid earnings growth — that divergence deserves scrutiny. Combined with 73.55% promoter concentration, near-zero institutional coverage, and an apparent SME exchange listing, the governance and liquidity risks are real. Without a clear moat and without valuation data, I cannot establish a margin of safety. I would watch this business, not buy it today.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "insufficient_data",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 40971,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0721341,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10102,
+      "cache_read_input_tokens": 8142,
+      "output_tokens": 2120,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10102,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 200,
+          "cache_read_input_tokens": 8142,
+          "cache_creation_input_tokens": 1960,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1960
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

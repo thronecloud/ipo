@@ -1,0 +1,69 @@
+{
+  "symbol": "ELGIEQUIP",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-22T16:27:55.124232Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Elgi is a genuinely good business — ROIC ~22%, expanding margins, and consistent FCF — but at an EV of ~INR 17,768 Cr against EBIT of INR 529 Cr, the earnings yield is a paltry ~3%, catastrophically far from the Magic Formula's 12%+ threshold. You're paying 42x earnings for a mid-teens revenue grower; the formula says good businesses at bad prices are still bad investments.",
+    "key_strengths": [
+      "ROIC/ROCE of ~22% sustained and expanding — clears the Magic Formula's >20% quality bar",
+      "Solid FCF generation: OCF positive all 5 years, FY2025 FCF of INR 298 Cr on INR 529 Cr EBIT (~56% conversion)",
+      "Low financial leverage (D/E 0.26) and strong equity build-up from INR 769 Cr (2020) to INR 2,008 Cr (2025)"
+    ],
+    "key_risks": [
+      "Earnings yield (~3%) is 4x below the Magic Formula's minimum attractive threshold of 12% — the stock is pricing in perfection",
+      "FY2023 Other Income of INR 175 Cr (vs. normal INR 14–63 Cr) inflated Net Profit CAGR; underlying earnings power is lower than headline suggests",
+      "Revenue growth of 10.7% 9Y CAGR doesn't justify 42x P/E or 32x EV/EBITDA — any margin or growth disappointment compresses the multiple sharply"
+    ],
+    "red_flags": [
+      "Earnings Yield (EBIT/EV) = 529/17,768 = ~3% — far below Magic Formula's 12% floor",
+      "FY2023 Other Income spike of INR 175 Cr appears one-time; normalized net profit CAGR is materially lower than reported 23.9%",
+      "Capex accelerating (INR 95 Cr in FY2025 vs. INR 41 Cr in FY2022) with CWIP jumping to INR 77 Cr — watch for FCF compression"
+    ],
+    "detailed_analysis": "Running the Magic Formula: EV = Market Cap (17,311) + Debt (577) - Cash (120) = INR 17,768 Cr. EBIT (FY2025 Operating Income) = INR 529 Cr. Earnings Yield = 529/17,768 = **2.98%** — catastrophically unattractive. ROIC using Invested Capital (Equity 2,008 + Debt 577 - Cash 120 = 2,465 Cr): 529/2,465 = **21.5%**, corroborated by the reported ROCE of 21.9%. So Elgi scores well on business quality but fails spectacularly on cheapness — exactly the half-good, half-bad case the Magic Formula penalizes.\n\nThe underlying business does have merit: margins have expanded structurally (operating margin 9.1% in 2016 → 15.1% in 2025), global diversification in air compressors is real, and FCF is growing. But the market has already priced this story richly at 32x EV/EBITDA. The anomalous FY2023 Other Income (INR 175 Cr) also overstates the earnings CAGR story. At current prices, there is no margin of safety — the Magic Formula would rank Elgi in the bottom decile on earnings yield, making it an automatic avoid regardless of business quality.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 45294,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0803799,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11236,
+      "cache_read_input_tokens": 9253,
+      "output_tokens": 2364,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11236,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 418,
+          "cache_read_input_tokens": 9253,
+          "cache_creation_input_tokens": 1983,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1983
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

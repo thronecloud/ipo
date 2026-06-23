@@ -1,0 +1,69 @@
+{
+  "symbol": "PRICOLLTD",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T22:06:25.769419Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Pricol is a genuinely recovering business with ROCE improving to ~23% and consistent positive FCF over 5 years, but at an Earnings Yield of only ~4.4% (EBIT ₹313 Cr / EV ~₹7,186 Cr), the Magic Formula finds it expensive — the valuation captures most of the good news. The formula demands both quality and cheapness; Pricol delivers one, not the other.",
+    "key_strengths": [
+      "ROCE of 22.9% is approaching Greenblatt's threshold — reflecting a real business quality improvement from near-zero returns in 2019-2020",
+      "Debt dramatically reduced (₹431 Cr in 2020 → ₹61 Cr in 2024) before modest re-leveraging, and D/E is still just 0.11",
+      "Operating CF positive all 5 years (₹128-309 Cr range), with operating income CAGR of 14.2% over 8 years"
+    ],
+    "key_risks": [
+      "Earnings Yield of ~4.4% (EBIT/EV) is well below the 6% floor — the stock is priced for perfection at P/E 33.6x and EV/EBITDA 17.8x",
+      "Capex surged to ₹216 Cr in 2025, exceeding FCF of ₹113 Cr — free cash is being consumed, not generated, in the current investment phase",
+      "Total assets jumped ₹843 Cr in a single year (2024→2025) while investing CF hit -₹377 Cr — a large unspecified deployment that adds execution and return risk"
+    ],
+    "red_flags": [
+      "Earnings Yield ~4.4% fails Magic Formula minimum threshold of 6% — stock is overvalued on this metric",
+      "Borrowings nearly tripled in one year (₹61 Cr → ₹169 Cr) coinciding with the asset surge — re-leveraging after years of deleveraging",
+      "Operating margins thin at 8.77% for an auto ancillary — limited pricing power buffer if OEM customers push back"
+    ],
+    "detailed_analysis": "Magic Formula verdict is clear: Pricol scores well on quality but poorly on cheapness. EBIT of ₹313 Cr against an EV of approximately ₹7,186 Cr (Market Cap ₹7,152 Cr + net debt ~₹34 Cr) produces an Earnings Yield of just 4.4% — barely half the 12% I consider attractive. ROCE of 22.9% (a reasonable proxy for Greenblatt's ROIC) is respectable and above the 20% threshold, but the formula requires both dials to be turned up. When cheapness fails, the stock is essentially pricing in the next several years of growth already.\n\nThe business story is legitimate: a turnaround from deep losses (net loss ₹174 Cr in FY19) to ₹167 Cr profit in FY25 driven by India's two-wheeler and EV component demand. Finance costs collapsed from ₹38 Cr to ₹13 Cr. But FY25 saw a sudden ₹216 Cr capex and ₹377 Cr investing outflow that ballooned total assets by 59% in one year — suggesting an acquisition or major greenfield not yet earning returns. Until that capital deployment proves its return, the ROIC picture will likely deteriorate before improving, making the current multiple doubly hard to justify.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "good",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 51952,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08534025,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11379,
+      "cache_read_input_tokens": 9050,
+      "output_tokens": 2663,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11379,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 401,
+          "cache_read_input_tokens": 9050,
+          "cache_creation_input_tokens": 2329,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2329
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

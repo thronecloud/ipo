@@ -1,0 +1,69 @@
+{
+  "symbol": "AXISCADES",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-18T16:40:54.136505Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "AXISCADES is an engineering services company with real defense/aerospace tailwinds, but at P/E 73x on freshly-recovered earnings and a PEG ratio of ~4-5x, this is the opposite of Growth at a Reasonable Price. The erratic profit history — losses in 2018, 2019, 2021, and 2023 — makes 73x earnings a dangerous multiple to pay.",
+    "key_strengths": [
+      "Defense/aerospace exposure is a genuine tailwind — India's defense modernization is a multi-decade secular story I'd want to own",
+      "Debt/Equity of 0.37 is manageable, and OCF has been positive all 5 of the last 5 years (~INR 61-88 Cr range)",
+      "FY2025 net profit of INR 75 Cr is the strongest in the company's history, suggesting an operational inflection may be underway"
+    ],
+    "key_risks": [
+      "PEG ratio is 4-5x: P/E 73 divided by revenue CAGR of ~15% gives PEG ~4.9 — I never pay more than 1.5x, let alone 5x",
+      "Finance costs grew at 37% CAGR over 9 years while revenue grew only 12% — the debt burden is eating the economics",
+      "Earnings are structurally unreliable: four loss years in a decade; you can't build a Lynch-style conviction story on profits this inconsistent"
+    ],
+    "red_flags": [
+      "Debt spiked from INR 72 Cr to INR 346 Cr in one year (2023) — looks acquisition-driven; integration risk is real and the acquired earnings haven't proven themselves",
+      "FII + DII combined ownership is only 2.79% — institutional analysts aren't buying this story at these prices",
+      "\"Other Income\" has swung wildly from -62 Cr (2023) to +16 Cr — earnings quality is questionable when other income distorts the P&L this dramatically"
+    ],
+    "detailed_analysis": "Peter Lynch's first question is always: \"What's the story, and can I explain it in two minutes?\" AXISCADES' story is a reasonable one — engineering services for aerospace, defense, automotive and semiconductor with India's defense spend as the tailwind. But the valuation completely destroys the thesis. At P/E 73x and EV/EBITDA 51x, I'd need this company to grow earnings at 50%+ annually for several years just to work back to a fair PEG. Revenue grew from INR 524 Cr (2021) to INR 1,031 Cr (2025) — that's about 18.5% CAGR, decent, but net profit in that same window went -21, +23, -5, +33, +75. You can't assign a 73x multiple to earnings that have been in the red four times in the last decade.\n\nThe balance sheet story is also concerning from a Lynch lens. Debt exploded from INR 72 Cr to INR 346 Cr in FY2023 — clearly an acquisition — while finance costs have compounded at 37% annually for nine years versus 12% revenue growth. That's a treadmill, not a growth compounder. FY2025's INR 75 Cr net profit is the best ever, and if that becomes a durable floor and grows 25-30% annually, I'd revisit in 2-3 years when the track record is established and the valuation has re-rated. Right now, I'm not paying 73x for what is essentially a just-turned-profitable engineering services business. There are better stories at better prices.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 56489,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08677259999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11534,
+      "cache_read_input_tokens": 9187,
+      "output_tokens": 2717,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11534
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 408,
+          "cache_read_input_tokens": 9187,
+          "cache_creation_input_tokens": 2347,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2347,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

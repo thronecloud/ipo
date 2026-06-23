@@ -1,0 +1,70 @@
+{
+  "symbol": "AGARWALEYE",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T16:16:42.150046Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Dr. Agarwal's is a capital-hungry hospital rollup expanding aggressively in India's underpenetrated eye care market, but with ROE of just 4.76%, ROCE of 10%, and net profits stagnating at ~100 Cr despite revenues doubling — the business is currently destroying economic value at a P/E of 110x. A great theme does not make a great investment at any price.",
+    "key_strengths": [
+      "India's aging demographics and massive unmet eye care demand provide a genuine long-term tailwind — cataract surgeries alone are a recurring, non-discretionary need",
+      "Revenue CAGR of 26.4% and EBITDA CAGR of 17.7% over 5 years show the expansion machine is working operationally",
+      "OCF consistently positive (5/5 years), with OCF reaching INR 360 Cr in 2025 — the core hospital business does generate cash before capex"
+    ],
+    "key_risks": [
+      "Capital intensity is brutal: INR 321 Cr capex in 2025 against only INR 110 Cr net profit, with FCF collapsing to just INR 40 Cr — shareholders are funding expansion, not receiving returns",
+      "Finance costs of INR 115 Cr nearly equal net profit of INR 110 Cr; strip other income (INR 43 Cr) and the core business earns almost nothing after interest",
+      "Valuation is irrational: P/E of 110x and EV/EBITDA of 31x for a business with ROE of 4.76% and stagnating profits (INR 103 Cr in 2023 → INR 95 Cr in 2024 → INR 110 Cr in 2025)"
+    ],
+    "red_flags": [
+      "ROIC/ROCE at ~10% is below cost of capital — the business is destroying economic value with every rupee deployed",
+      "Net profit went BACKWARDS from INR 103 Cr (2023) to INR 95 Cr (2024) even as revenue grew 31% — a deeply troubling divergence",
+      "Promoter holding at just 32.35% is low for a founder-led hospital chain; FII concentration at 57.94% creates sentiment-driven volatility risk",
+      "Total assets nearly quintupled (INR 751 → 3,786 Cr) in 5 years with minimal profit growth — classic capital trap pattern"
+    ],
+    "detailed_analysis": "Dr. Agarwal's presents the classic illusion of a growth business that is actually a capital consumption machine. Invert the story: the company deployed over INR 1,400 Cr in capex and acquisitions over just 2023-2025, raised equity capital (reserves jumped from INR 206 Cr to INR 1,899 Cr, suggesting dilutive fundraising), grew revenue 2.5x, and the net profit reward to shareholders? A mere INR 7 Cr incremental profit from 2023 to 2025. The finance cost line — growing at 16.3% CAGR to INR 115 Cr — is now essentially consuming the entire operating profit generated. At P/E of 110x, the market is pricing in a future where this capital deployment eventually earns strong returns. That may happen. But we are paying a certainty price for a deeply uncertain outcome.\n\nThe moat question is unresolved. Eye hospitals benefit from surgeon reputation and local brand trust, but the industry is increasingly competitive (Dr. Lal's, Sankara, LVPEI, and dozens of regional chains). The low promoter stake (32.35%) is a yellow flag — great operators tend to retain large ownership in their capital-efficient businesses. The OCF trend is healthy at INR 360 Cr, but the investing CF of negative INR 750 Cr in 2025 alone tells you this is a story of growth funded by external capital, not self-generated wealth. Charlie Munger's dictum applies perfectly here: a business that must keep consuming capital to grow is not a compounding machine — it is a treadmill. Wait for either a dramatic improvement in ROIC above 15% or a price that compensates for the uncertainty. Neither condition is met today.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 66350,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08753715000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11227,
+      "cache_read_input_tokens": 8773,
+      "output_tokens": 2853,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11227,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 448,
+          "cache_read_input_tokens": 8773,
+          "cache_creation_input_tokens": 2454,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2454
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

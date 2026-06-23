@@ -1,0 +1,70 @@
+{
+  "symbol": "LLOYDSENGG",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T18:21:52.870814Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "AVOID",
+    "investment_thesis": "Lloyds Engineering is a legitimate Indian capex-cycle beneficiary that has grown revenue 16x in three years, but the market has already priced in a decade of perfection at 48x PE and EV/EBITDA of 47.6x. A project-based EPC fabricator with 9.8% ROCE has no business trading at a software multiple.",
+    "key_strengths": [
+      "Explosive revenue growth (157% CAGR, INR 50→846 Cr) with expanding operating margins now at 17%",
+      "Virtually debt-free balance sheet (D/E 0.16, only INR 83 Cr debt), providing financial flexibility",
+      "2025 FCF finally positive at INR 92 Cr vs net profit of INR 105 Cr — 87.6% FCF conversion suggests real earnings"
+    ],
+    "key_risks": [
+      "ROCE of 9.8% fails Munger's 12% minimum threshold — capital is not being deployed productively",
+      "EPC/project business: lumpy revenues, no recurring income, high working capital (OCF negative 3 of 4 years)",
+      "Valuation is disconnected from quality: EV/EBITDA 47.6x prices perfection into a commoditized fabrication business"
+    ],
+    "red_flags": [
+      "ROCE 9.8% — below the absolute floor of 12% for an investable business",
+      "Balance sheet ballooned from INR 571 Cr to INR 1,845 Cr in one year via equity raise (equity INR 411→1,188 Cr) — massive dilution with unclear deployment",
+      "Revenue base was just INR 50 Cr in 2022 — growth from a tiny base is statistically misleading and sustainability is unproven",
+      "Promoter holding only 41.9% with near-zero institutional conviction (FII+DII = 2.1%)"
+    ],
+    "detailed_analysis": "Lloyds Engineering is a genuine story — from a sleepy INR 50 Cr revenue base in FY2022 to INR 846 Cr in FY2025, riding India's infrastructure and hydrocarbon capex wave with marine loading arms, pressure vessels, and EPC projects. The operating margin expansion to 17% and the first meaningful positive FCF year (INR 92 Cr) in FY2025 show operational progress. However, invert first: what makes this a dangerous investment? ROCE at 9.8% is the answer. A business earning less than 10% on its capital is a mediocre business regardless of its growth rate. The INR 1,845 Cr asset base in FY2025 — nearly tripled from INR 571 Cr a year prior — was funded by a massive equity raise of ~INR 777 Cr. That capital has yet to prove its worth.\n\nThe market is pricing this at EV/EBITDA of 47.6x and P/S of 7.9x — multiples appropriate for a SaaS business with 80%+ gross margins and recurring revenue, not an engineering fabricator competing in a crowded capital goods market with project-by-project revenue. EPC businesses inherently lack the predictability and moat characteristics Munger demands. There is no pricing power evidence, no switching cost, no network effect — just a tailwind from India's capex cycle that every competitor also benefits from. At a fair multiple of 20-25x EBITDA (INR 159 Cr), this stock would trade around INR 25-28 — 50% below current levels. The story is real; the price is the problem.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 59082,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08441459999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10732,
+      "cache_read_input_tokens": 8402,
+      "output_tokens": 2776,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10732
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 486,
+          "cache_read_input_tokens": 8402,
+          "cache_creation_input_tokens": 2330,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2330,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

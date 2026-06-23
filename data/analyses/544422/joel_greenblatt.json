@@ -1,0 +1,69 @@
+{
+  "symbol": "544422",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-20T20:05:35.688017Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Abram Food fails the Magic Formula's core test: ROE of 0.52% signals near-zero return on capital, so even a cheap-looking P/E of 10.6 is meaningless. A \"cheap\" company that doesn't earn a decent return on its capital is a value trap, not a bargain.",
+    "key_strengths": [
+      "P/E of 10.6 is optically cheap versus FMCG peers",
+      "Promoter holding of 67.33% shows skin in the game",
+      "Asset-light agro-trading model can theoretically scale"
+    ],
+    "key_risks": [
+      "ROE of 0.52% implies negligible return on capital — fails Magic Formula",
+      "Tiny 32.5 Cr microcap with limited disclosure and liquidity",
+      "Commodity agro-trading offers no moat or pricing power"
+    ],
+    "red_flags": [
+      "ROE <1% — capital is being deployed with essentially zero productivity",
+      "Earnings/equity mismatch suggests recent IPO cash dilution or weak core economics",
+      "Undifferentiated 'other food products' business in a commodity segment"
+    ],
+    "detailed_analysis": "The Magic Formula ranks companies on earnings yield AND return on capital — a business must be both cheap and good. Abram Food clears the first bar only weakly (P/E 10.6 ≈ earnings yield ~9.4%, below my 12% threshold once you adjust for enterprise value) and fails the second bar dramatically. A 0.52% ROE is effectively a company earning nothing on its capital base — far below the 20%+ ROIC I look for. No amount of cheapness compensates for capital that doesn't compound.\n\nThe ROE vs. market cap math also hints at data quality problems (likely a recent IPO with fresh cash bloating the denominator), which is itself a reason for a quant approach to skip the name — the Magic Formula works best on seasoned businesses with clean, multi-year EBIT histories. Commodity agro-trading at sub-1% ROE, in a 32.5 Cr microcap with no disclosed EBIT margin, operating cash flow, or capex profile, is exactly the kind of name the systematic screen should filter out. Avoid.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "insufficient_data",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 33442,
+    "model_used": "opus",
+    "total_cost_usd": 0.09920224999999999,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 9141,
+      "cache_read_input_tokens": 13432,
+      "output_tokens": 1413,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9141,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10562,
+          "cache_creation_input_tokens": 1449,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1449
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

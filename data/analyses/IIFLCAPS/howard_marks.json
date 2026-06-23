@@ -1,0 +1,69 @@
+{
+  "symbol": "IIFLCAPS",
+  "persona": "howard_marks",
+  "persona_display_name": "Howard Marks",
+  "analyzed_at": "2026-04-18T17:53:25.614954Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "IIFL Capital Services trades at an optically cheap 17x P/E, but that multiple sits on peak-cycle FY2025 earnings of ₹713 Cr — nearly 3x the FY2023 trough of ₹250 Cr, implying a normalized/trough P/E of 28-39x on current market cap of ₹9,771 Cr. The price already reflects the Indian capital markets bull run; the margin of safety against a cycle turn is thin.",
+    "key_strengths": [
+      "Exceptional capital efficiency: ROE 31.6%, ROCE 33.3% with D/E of only 0.62x — rare combination in a capital-light broking model",
+      "Revenue and profit inflection is real: net profit CAGR 21.6% over 7 years, operating margin expanding to 38%, suggesting structural mix-shift toward higher-value wealth/IB revenue",
+      "FY2025 FCF of ₹922 Cr gives a 9.4% FCF yield on current market cap — attractive if earnings prove durable"
+    ],
+    "key_risks": [
+      "Peak-cycle earnings distortion: FY2025 profits nearly tripled from FY2023 (₹250→₹713 Cr) — a 30-40% market volume decline snaps normalized earnings back, making the stock expensive in hindsight",
+      "Volatile, unreliable cash generation: OCF was negative in FY2023 (-₹793 Cr) and FY2024 (-₹118 Cr); only 3 of 5 years positive — a capital markets downturn could stress liquidity when it is needed most",
+      "Low promoter skin-in-the-game: 30.93% promoter holding is weak for an Indian financial services firm; minority shareholders bear most of the cycle risk"
+    ],
+    "red_flags": [
+      "Borrowings have surged 4.8x from ₹459 Cr (FY2020) to ₹1,742 Cr (FY2025) — balance sheet is expanding aggressively at cycle peak, not contracting",
+      "Name change from 'IIFL Securities' to 'IIFL Capital Services' in Nov 2024 — rebranding at a market top is a classic cycle-peak signaling behavior",
+      "IIFL group-level regulatory scrutiny (RBI action on IIFL Finance in 2024) creates headline/contagion risk even though Capital Services is a distinct entity"
+    ],
+    "detailed_analysis": "The second-level question here is not \"is IIFL Capital a good business?\" — it clearly is, with 31% ROE and an expanding operating margin. The real question is: what do current prices already reflect? At ₹9,771 Cr market cap against FY2025 net profit of ₹713 Cr, the market is pricing in the continuation of peak-cycle Indian capital market volumes. Revenue has nearly doubled from FY2023 to FY2025 (₹1,361→₹2,520 Cr) — almost entirely a function of bull market activity. In any meaningful market contraction, Indian broking and IB revenues historically fall 30-50%, which would revert earnings toward FY2022-23 levels of ₹250-310 Cr. At that trough, the market cap implies 31-39x earnings — that is expensive for a cyclical financial intermediary with no regulatory moat.\n\nThe balance sheet expansion is the subtler risk: borrowings have grown from ₹459 Cr to ₹1,742 Cr over five years, and OCF has been negative in two of the last five years. For a capital markets firm, this is acceptable during expansion, but it means the company is consuming capital at the top of the cycle rather than building dry powder. The 17x headline P/E creates an illusion of value that evaporates the moment you stress-test earnings. The FCF yield of ~9.4% on FY2025 numbers is the one genuine bright spot — but only if those earnings prove durable. Marks' framework demands a margin of safety against the adverse scenario; at current prices, there is very little of it.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 65134,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08754585000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9827,
+      "cache_read_input_tokens": 11152,
+      "output_tokens": 3156,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9827
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 431,
+          "cache_read_input_tokens": 9098,
+          "cache_creation_input_tokens": 2783,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2783,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

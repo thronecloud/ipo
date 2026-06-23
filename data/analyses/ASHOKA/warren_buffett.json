@@ -1,0 +1,69 @@
+{
+  "symbol": "ASHOKA",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T16:28:05.270666Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Ashoka Buildcon's headline P/E of 3.73x is deeply misleading — the 2025 net profit of ₹1,734 Cr is inflated by BOT asset monetization (equity surged ₹2,000 Cr while borrowings fell ₹3,461 Cr), not sustainable operations. The underlying EPC construction business is capital-intensive, moat-free, and government-dependent — precisely the type of ordinary business I've spent a lifetime avoiding.",
+    "key_strengths": [
+      "Strong revenue CAGR of 15.1% over 9 years (₹2,825 Cr → ₹10,037 Cr) with consistent OCF positive all 5 recent years",
+      "Dramatic deleveraging in 2025: borrowings collapsed from ₹5,450 Cr to ₹1,989 Cr, D/E now a manageable 0.44x",
+      "Operating margins of 21.54% and EBITDA of ₹3,038 Cr in 2025 show scale benefits in EPC execution"
+    ],
+    "key_risks": [
+      "Finance costs remain enormous at ₹1,245 Cr in 2025 — nearly equal to 2024 net profit — indicating the balance sheet is still fragile beneath the surface",
+      "Earnings are violently lumpy and non-recurring: net profit swung from -₹224 Cr (2016) to ₹1,734 Cr (2025), driven by BOT project sales, not durable business operations",
+      "No competitive moat: EPC/construction is a commodity bid-based business with no pricing power, entirely dependent on government project pipelines (NHAI, state PWDs)"
+    ],
+    "red_flags": [
+      "2025 ROE of 54.8% is a statistical artifact of historically depressed equity base plus one-time asset sale gains — entirely misleading as a quality signal",
+      "Forward P/E of 11.95x vs. trailing 3.73x confirms the market already prices in that 2025 earnings are non-recurring; the 'cheapness' is a value trap",
+      "Seven consecutive years (2016–2022) of either losses or negligible profit reveal the true underlying earning power of this business model"
+    ],
+    "detailed_analysis": "Ashoka Buildcon is fundamentally an EPC and BOT infrastructure contractor — a business I would never call wonderful. The apparent cheapness (P/E 3.73x, P/B 0.93x, EV/EBITDA 1.94x) evaporates under scrutiny. The ₹1,734 Cr net profit in 2025 was manufactured by selling BOT assets: equity reserves jumped ~₹2,000 Cr while borrowings cratered by ~₹3,461 Cr in a single year. Normalized operating earnings — better approximated by the forward P/E of ~12x — paint a far more modest picture. Finance costs of ₹1,245 Cr in 2025, despite the massive debt paydown, tell you just how leverage-dependent this business has been historically.\n\nThe business model itself fails every test I apply: it requires constant capital recycling, wins orders through competitive bidding with no pricing power, and depends entirely on government spending cycles. The nine-year net profit history — losses from 2016–2019, erratic gains since — demonstrates there is no earnings predictability, no franchise value, and no moat. FCF improved to ₹1,573 Cr in 2025 but averaged barely ₹436 Cr over the prior four years. I don't buy complexity dressed up as cheapness. Give me a See's Candies over a toll road SPV any day.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 80799,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09389355,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11725,
+      "cache_read_input_tokens": 9036,
+      "output_tokens": 3147,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11725,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 502,
+          "cache_read_input_tokens": 9036,
+          "cache_creation_input_tokens": 2689,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2689
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

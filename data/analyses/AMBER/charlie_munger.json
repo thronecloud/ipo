@@ -1,0 +1,69 @@
+{
+  "symbol": "AMBER",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-19T06:23:34.889853Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Amber is a contract manufacturer for air conditioners — a business model that structurally traps value with the brand owners (Voltas, LG, Daikin) while leaving the manufacturer to compete on cost with razor-thin margins (5.26% operating, 2.5% net). Paying 120x trailing earnings for a company with 11.3% ROE and INR 2,793 Cr in rising debt is precisely the combination I find most dangerous: a mediocre business at an extreme price.",
+    "key_strengths": [
+      "Dominant market position in RAC (room air conditioner) components in India with ~28% revenue CAGR over 9 years — volume scale is real and India's AC penetration (~7%) has decades of runway",
+      "OCF consistently positive (5/5 years, INR 711 Cr in FY2025) — the business does generate cash at the operating level before growth capex",
+      "Diversification into railways, defense, and EV components provides optionality beyond the commodity AC market"
+    ],
+    "key_risks": [
+      "Operating margin of 5.26% provides essentially no buffer — a 100bps increase in commodity input costs (copper, aluminium) or logistics could wipe out the entire operating profit",
+      "Borrowings tripled from INR 399 Cr (FY2021) to INR 2,793 Cr (FY2025) while finance costs reached INR 209 Cr — 83% of FY2025 net profit is consumed by interest; financial fragility is high",
+      "ROE of 11.3% and ROCE of 14.5% are below my required thresholds; management has deployed massive capital (INR 1,663 Cr capex FY22-25) at substandard returns — value destruction in progress"
+    ],
+    "red_flags": [
+      "P/E of 120x for a 2.5% net margin contract manufacturer is one of the most extreme valuation mismatches I can recall — this pricing requires absolute perfection across a decade of execution",
+      "Customer concentration risk is severe — a decision by major OEM customers to in-source manufacturing or switch suppliers would be catastrophic given the asset-heavy balance sheet",
+      "Debt/Equity at 0.74 and growing rapidly while ROCE barely covers cost of capital — the equity dilution (INR 1.5x equity base from FY2021 to FY2022 via QIP) and debt buildup are simultaneously diluting and encumbering shareholders"
+    ],
+    "detailed_analysis": "Amber embodies what I call the 'volume trap' — a company that substitutes scale for quality of business. Yes, India will install hundreds of millions of ACs over the next two decades. But the margin economics of assembling them under contract will not improve materially; brand owners capture the pricing power while manufacturers compete to offer the lowest cost. Amber's financials tell the story clearly: INR 9,973 Cr of revenue generates INR 251 Cr of net profit (2.5% margin) while requiring INR 2,793 Cr of debt and INR 3,647 Cr of equity to finance the working capital and fixed assets. That capital could earn far more in businesses with genuine pricing power. The 120x P/E is a reflection of narrative over fundamentals — India's AC growth story is real, but Amber's shareholders will not capture most of it. Avoid.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 175950,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.23654370000000002,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 24380,
+      "cache_read_input_tokens": 15649,
+      "output_tokens": 9361,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 24380,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 502,
+          "cache_read_input_tokens": 15649,
+          "cache_creation_input_tokens": 8731,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8731
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

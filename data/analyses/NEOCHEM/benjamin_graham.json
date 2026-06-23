@@ -1,0 +1,70 @@
+{
+  "symbol": "NEOCHEM",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-21T07:59:10.771929Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Neochem Bio trades at INR 71.90 against a Graham Number of ~INR 37, implying a 95% premium to intrinsic value — precisely the opposite of the margin of safety I require. With debt-to-equity of 1.8x and a price-to-book of 5.85x, the market is pricing in a growth story I am not willing to pay for.",
+    "key_strengths": [
+      "Revenue compounding strongly: 48→61→84 Cr (~32% CAGR), with operating income tripling to 13 Cr in 2025",
+      "Promoter holding at 66.7% with meaningful DII interest (13.2%) suggests some institutional conviction",
+      "Earnings positive for all 3 years (1→2→8 Cr net profit), clearing my minimum earnings continuity test"
+    ],
+    "key_risks": [
+      "Debt-to-equity of 1.8x (36 Cr borrowings vs 20 Cr equity) — far exceeds my 0.5x ceiling; finance costs consuming 4 Cr of 13 Cr operating income",
+      "Price-to-book of 5.85x (117 Cr market cap vs 20 Cr equity) — I never pay this kind of premium over net assets",
+      "Free cash flow barely turned positive in 2025 (1 Cr) after two negative years; OCF of 3 Cr is dangerously thin versus 36 Cr in debt obligations"
+    ],
+    "red_flags": [
+      "Graham Number ~INR 37 vs market price INR 71.90 — stock is nearly 100% above its quantitative fair value",
+      "Interest coverage ratio of 3.25x (13 Cr EBIT / 4 Cr finance cost) — below my 3.5x minimum safety threshold",
+      "No dividend history disclosed — retained earnings are being consumed by debt service, not returned to shareholders",
+      "Tiny absolute scale: INR 117 Cr market cap on INR 8 Cr net profit leaves zero margin for operational error"
+    ],
+    "detailed_analysis": "Neochem Bio fails on virtually every quantitative filter I have established over decades of security analysis. The price-to-book ratio of 5.85x is the most damning: I am being asked to pay INR 5.85 for every rupee of net assets, in a specialty chemicals business with no demonstrated competitive moat and a balance sheet carrying INR 36 Cr of borrowings against INR 20 Cr of equity. My Graham Number computation — the square root of (22.5 × EPS of ~4.91 × BVPS of ~12.28) — yields approximately INR 37, against which the current price of INR 71.90 represents a near-100% speculative premium. That premium belongs to the seller, not the buyer.\n\nThe 2025 profit jump to INR 8 Cr from INR 2 Cr is notable but suspect as a basis for valuation: operating cash flow is only INR 3 Cr and free cash flow barely positive at INR 1 Cr, suggesting accrual-based profits outrunning actual cash generation. The business has funded its asset growth (51→79 Cr in two years) almost entirely through borrowings, not retained earnings — a pattern that historically ends poorly in commodity-adjacent industries during downturns. There is no dividend, no margin of safety, and no fortress balance sheet. Mr. Market is offering me this stock at a speculative price; I decline.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 45982,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.06939870000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8030,
+      "cache_read_input_tokens": 10074,
+      "output_tokens": 2417,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8030,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 407,
+          "cache_read_input_tokens": 8024,
+          "cache_creation_input_tokens": 2056,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2056
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

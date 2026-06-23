@@ -1,0 +1,70 @@
+{
+  "symbol": "PRSMJOHNSN",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T22:08:25.913633Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Prism Johnson fails both legs of the Magic Formula catastrophically — an Earnings Yield of ~0.35% (EBIT ≈ INR 26 Cr on a INR 7,393 Cr EV) and ROCE of just 2.22% make it uninvestable by any quantitative value screen. This is a capital-heavy, low-margin building materials business destroying shareholder value at current prices.",
+    "key_strengths": [
+      "Consistent OCF generation (5/5 years positive, INR 737 Cr in FY25) — high depreciation masks EBITDA-to-cash conversion",
+      "Debt declining: borrowings fell from INR 2,425 Cr (FY20) to INR 1,694 Cr (FY25), D/E improving",
+      "Strong promoter holding (74.87%) and established multi-brand portfolio (Johnson Tiles, Champion Cement) with some pricing power"
+    ],
+    "key_risks": [
+      "Near-zero EBIT (~INR 26 Cr, 0.35% margin) leaves virtually no buffer — any cost spike turns the business loss-making",
+      "Earnings quality is poor: INR 293 Cr 'Other Income' in FY25 is the only reason PAT is positive; strip it out and the company loses money",
+      "EBITDA in structural decline: peaked at INR 922 Cr (FY21), collapsed to INR 472 Cr (FY25), 9Y CAGR of -1.4%"
+    ],
+    "red_flags": [
+      "P/E of 862x — effectively a zero-earnings company priced as a going concern",
+      "ROE of -4%: equity is being destroyed, not compounded",
+      "Other Income (INR 293 Cr) now exceeds EBIT (~INR 26 Cr) — operating business is economically non-viable at this scale",
+      "Finance costs of INR 230 Cr nearly equal total EBIT, making the business highly interest-rate sensitive"
+    ],
+    "detailed_analysis": "Applying the Magic Formula, Prism Johnson scores at the very bottom on both required axes. Earnings Yield = EBIT/EV ≈ 26/7,393 = 0.35% — the threshold for \"attractive\" is 12%+. Return on Capital (ROCE as provided) = 2.22% against a required hurdle of 20%+. The company is essentially a large fixed-asset base (INR 7,302 Cr total assets) generating almost no operating profit after depreciation. The gross margin of 43.29% looks decent in isolation, but enormous depreciation (implied ~INR 446 Cr to bridge EBITDA of 472 Cr down to ~26 Cr EBIT) and finance costs of INR 230 Cr consume all operating economics. Revenue growth of just 3.8% CAGR over 9 years doesn't compensate.\n\nThe one redeeming feature is free cash flow (INR 526 Cr in FY25), but this is a product of high non-cash charges rather than genuine earnings power — and it's being used primarily to service debt and capex rather than compound capital. With a forward P/E still at 150x, the market is pricing in a turnaround that the fundamental trajectory — contracting EBITDA, near-zero EBIT, declining operating margins — does not support. By Magic Formula standards, there is no scenario where this stock ranks in the top two deciles on either earnings yield or ROIC. Avoid entirely.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 68423,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.10374030000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 12386,
+      "cache_read_input_tokens": 9146,
+      "output_tokens": 3636,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 12386,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 421,
+          "cache_read_input_tokens": 9146,
+          "cache_creation_input_tokens": 3240,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 3240
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

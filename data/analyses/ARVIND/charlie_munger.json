@@ -1,0 +1,70 @@
+{
+  "symbol": "ARVIND",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T16:26:44.374953Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Arvind is a commodity textile business with near-zero revenue growth (0.4% CAGR over 9 years) and EBITDA that has actually shrunk from INR 1,213 Cr to INR 914 Cr over the same period, yet trades at 24x earnings. You do not get paid to own mediocre businesses at fair prices — a great business at a fair price is what I want, and this is neither great nor cheap.",
+    "key_strengths": [
+      "Debt reduction is disciplined — borrowings cut from INR 2,640 Cr (2020) to INR 1,537 Cr (2025), D/E now 0.39x",
+      "Operating cash flow positive all 5 years and consistently exceeds INR 600 Cr, indicating real earnings quality",
+      "Technical textiles / advanced materials segment (filtration, composites, protective wear) offers modest differentiation vs. pure commodity weaving"
+    ],
+    "key_risks": [
+      "Returns are structurally sub-par: ROE 9.3%, ROCE 13% — both well below my 15% minimum threshold for a quality business",
+      "Capex is surging (INR 186 Cr → INR 535 Cr in 3 years) with CWIP jumping to INR 331 Cr, collapsing FCF to just INR 280 Cr vs. INR 687 Cr in 2021 — capital intensity is rising, not falling",
+      "Business is a conglomerate sprawl: textiles, water treatment, e-commerce, agriculture, telecom, real estate — complexity is the enemy of understanding, and I refuse to own what I cannot understand"
+    ],
+    "red_flags": [
+      "9-year revenue CAGR of 0.4% — a business that hasn't grown in a decade in nominal INR terms has no pricing power",
+      "EBITDA CAGR of -3.1% over 9 years; the business was more profitable in 2016 than in 2025 — that is capital destruction in real terms",
+      "Net profit swung to a loss in FY21 and remains volatile (INR 413 Cr in FY23 → INR 367 Cr in FY25) — not the predictable earnings stream I require",
+      "FCF/Net Income ratio fell to ~76% in FY25, below my 80% quality threshold, as capex intensification consumes cash"
+    ],
+    "detailed_analysis": "Arvind Limited is a textbook example of a business that appears cheap on a cursory glance but is anything but a bargain on closer inspection. At 24x trailing earnings and 2.64x book, the market is pricing in a recovery that the underlying economics do not support. ROE of 9.3% means the business is earning roughly its cost of equity — there is no excess return being generated. ROCE of 13% is barely adequate but has not compounded wealth over time; EBITDA in absolute terms is lower today than it was in 2016. The classic Munger question is: what happens if you invest INR 100 in this business? After 9 years you get back roughly INR 100 in real purchasing power. That is not investing — that is a treadmill.\n\nThe surge in capex (INR 535 Cr in FY25, nearly 3x the FY22 level) and the ballooning CWIP (INR 331 Cr) signal a heavy reinvestment phase. Management may be building something valuable in advanced materials, but the conglomerate structure — textiles alongside water treatment, e-commerce, agriculture, telecom, and real estate — makes it nearly impossible to assess capital allocation discipline with confidence. Invert: what would cause permanent capital loss here? A prolonged textile downturn while the company is mid-capex-cycle, combined with a strong INR and Chinese competition, would be devastating. The promoter holds only 39.5% — skin-in-the-game is moderate. Pass.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 52258,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08311125000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11207,
+      "cache_read_input_tokens": 9020,
+      "output_tokens": 2558,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11207,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 424,
+          "cache_read_input_tokens": 9020,
+          "cache_creation_input_tokens": 2187,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2187
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

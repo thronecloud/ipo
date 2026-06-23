@@ -1,0 +1,70 @@
+{
+  "symbol": "BORORENEW",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T16:48:49.527904Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Borosil Renewables fails both Magic Formula tests decisively: Earnings Yield of ~0.8% (EBIT ₹58 Cr / EV ~₹7,186 Cr) is near-zero, and ROIC of ~5.3% (EBIT / capital employed of ~₹1,092 Cr) is well below the 20% threshold for a quality business. This is an expensive, capital-intensive, loss-making manufacturer with no near-term Magic Formula merit.",
+    "key_strengths": [
+      "India's only domestic solar glass manufacturer — structural import-substitution positioning",
+      "Revenue doubled from ₹642 Cr (FY2022) to ₹1,476 Cr (FY2025), showing real demand growth",
+      "Low D/E of 0.23 and borrowings down sharply to ₹203 Cr in FY2025 after peaking at ₹576 Cr"
+    ],
+    "key_risks": [
+      "Severe margin collapse: operating income plunged from ₹223 Cr (FY2022) to ₹58 Cr (FY2025) as revenue nearly doubled — cost structure deeply broken",
+      "Persistent free cash flow destruction: FCF negative in 4 of last 5 years, cumulative capex of ₹1,047 Cr since FY2022 with no earnings to show for it",
+      "Chinese solar glass dumping risk — Chinese producers have crushed global solar glass prices, directly threatening Borosil's margins and business model"
+    ],
+    "red_flags": [
+      "Net profit negative for two consecutive years: -₹50 Cr (FY2024), -₹87 Cr (FY2025) — worsening losses",
+      "ROE -8.9% and ROCE -4.41%: destroying shareholder capital, not creating it",
+      "Earnings Yield of ~0.8% on EV of ₹7,186 Cr — stock priced for perfection despite operational deterioration",
+      "Operating income collapsed 74% (₹223 Cr → ₹58 Cr) even as revenue grew 130% — catastrophic operating leverage in reverse"
+    ],
+    "detailed_analysis": "Magic Formula math is damning. EBIT stands at ₹58 Cr on an Enterprise Value of ~₹7,186 Cr (market cap ₹6,987 Cr + net debt ₹199 Cr), yielding an Earnings Yield of just 0.81% — against my 12% threshold. Return on Capital (EBIT ÷ capital employed of ~₹1,092 Cr) is ~5.3%, far below the 20% minimum. A P/E of 73x (on whatever normalized earnings basis the market is using) and EV/EBITDA of 20x for a business earning negative net returns is speculation, not investing. This stock ranks in the bottom decile on both Magic Formula dimensions simultaneously.\n\nThe business narrative is sympathetic — India needs domestic solar glass and Borosil is the sole local producer. But the economics have deteriorated sharply: operating margins collapsed from 34% in FY2022 to just 4% in FY2025, almost certainly due to Chinese price pressure. The company has deployed ₹1,047 Cr in capex over three years and generated cumulatively negative free cash flow. Until Chinese anti-dumping duties provide real relief and ROIC sustainably exceeds cost of capital, the Magic Formula demands we pass entirely.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 47801,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07850565000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10881,
+      "cache_read_input_tokens": 8843,
+      "output_tokens": 2336,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10881
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 362,
+          "cache_read_input_tokens": 8843,
+          "cache_creation_input_tokens": 2038,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2038,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "symbol": "LOTUSDEV",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T18:14:08.889586Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "LOTUSDEV fails both Magic Formula tests: Earnings Yield of ~4.4% (EBIT 289 Cr / EV ~6,627 Cr) is well below my 6% minimum, and as a real estate developer the capital structure distorts ROIC in ways that make the framework unreliable. The stock is expensive relative to reported earnings and generates no real cash despite accounting profits.",
+    "key_strengths": [
+      "Explosive revenue/profit CAGR (84%/205% 3-year) from a small base, signaling a genuine ramp in Mumbai luxury real estate",
+      "Near-zero debt (D/E 0.08) and INR 334 Cr cash after likely IPO raise — clean balance sheet",
+      "High ROCE (37%) and ROE (41%) suggest excellent capital efficiency on the legacy book"
+    ],
+    "key_risks": [
+      "OCF is negative (-20 Cr in FY25) against INR 228 Cr net profit — classic real estate cash trap; earnings are accounting entries, not cash",
+      "Entire growth story is 2–3 years old; Magic Formula demands 3+ years of sustained high ROIC, not a single inflection",
+      "Equity ballooned from INR 170 Cr to INR 1,748 Cr in one year (likely IPO), creating massive dilution and a much higher capital base for future ROIC to justify"
+    ],
+    "red_flags": [
+      "OCF negative in FY25 despite INR 228 Cr profit — profits trapped in WC/inventory",
+      "P/S of 10.5x for a construction/real estate company is extremely rich",
+      "Earnings Yield of ~4.4% well below my 6% floor — the market has already priced in the growth",
+      "Real estate sector: Magic Formula explicitly struggles here; capital structure and revenue recognition distort both metrics"
+    ],
+    "detailed_analysis": "Running the Magic Formula: EV = 6,838.7 + 122 − 334 = ~6,627 Cr. EBIT (Operating Income) = 289 Cr. Earnings Yield = 4.4% — that's a failing grade in my system; I want at least 12% to get excited. Invested Capital ≈ Equity + Debt − Cash = 1,748 + 122 − 334 = 1,536 Cr, giving ROIC of ~19% — borderline, and inflated by a single explosive year. Neither leg of the Magic Formula is strong enough to act.\n\nThe cash flow picture is the kill shot. INR 228 Cr in net profit but −20 Cr operating cash flow in FY25. In real estate, this means cash is locked in land/development inventory and advances. The business reported profits look outstanding, but I'm not buying something where the profits don't show up in the bank account. Add in that promoters own 82% (float is thin, liquidity risk is real) and the growth is concentrated in luxury Mumbai projects that are highly cyclical. The forward P/E of 11.66x implies the market already expects another earnings doubling — that's a lot of execution risk baked in at zero margin of safety.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 43848,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0779718,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10666,
+      "cache_read_input_tokens": 8551,
+      "output_tokens": 2360,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10666
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 275,
+          "cache_read_input_tokens": 8551,
+          "cache_creation_input_tokens": 2115,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2115,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "symbol": "BBOX",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T16:42:05.792930Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Black Box Limited is a low-margin IT infrastructure integrator with no discernible economic moat, rapidly rising debt, and negative free cash flow in FY25 — the antithesis of a Berkshire-quality business. At 35x earnings with declining revenue and erratic profit history, the market is pricing in a turnaround that the fundamentals don't yet support.",
+    "key_strengths": [
+      "ROE of 44% and ROCE of 30% look attractive on the surface, reflecting improving profitability since the 2021 turnaround",
+      "Revenue scaled from INR 881 Cr to INR 5,967 Cr over 9 years (23.7% CAGR), largely via the Black Box brand acquisition",
+      "High promoter holding (70%) signals skin in the game"
+    ],
+    "key_risks": [
+      "Surging debt: borrowings tripled from INR 328 Cr (2021) to INR 1,038 Cr (2025), with D/E at 1.15 — well above my comfort threshold of 0.5",
+      "Cash flow crisis: FY25 operating CF turned negative (-88 Cr) and FCF was -129 Cr, meaning the INR 205 Cr reported profit is not being converted to real cash",
+      "Revenue is contracting — peaked at INR 6,288 Cr in FY23, down to INR 5,967 Cr in FY25 — the wrong direction for a growth-priced stock"
+    ],
+    "red_flags": [
+      "Negative FCF of -129 Cr in FY25 while reporting INR 205 Cr net profit — a serious earnings quality red flag",
+      "Finance costs of INR 145 Cr consumed 71% of net profit; debt is strangling the income statement",
+      "History of losses: net losses in FY16, FY19, FY20 — not the consistent, predictable earnings I demand",
+      "Negative total equity as recently as FY20 (-176 Cr) — the balance sheet has only recently stabilized",
+      "Operating margins of just 7.3% in a commoditized IT services/integration business — zero pricing power"
+    ],
+    "detailed_analysis": "Black Box is an IT infrastructure integrator — the kind of business I find structurally unappealing. System integration is a project-driven, people-intensive, low-margin industry where customers have enormous bargaining power and switching costs are modest once a project is delivered. The 7.3% operating margin and 3.4% net margin confirm this: there is no pricing power here, no tollbooth. The impressive 44% ROE is partially a mathematical artifact of the equity base being near-zero or negative until FY21; on FY25's INR 905 Cr equity, the true ROE is closer to 23%, which is decent but fragile given the debt load.\n\nThe most alarming signal is the FY25 cash flow collapse. The company reported INR 205 Cr of net profit yet generated negative INR 88 Cr of operating cash flow — a INR 293 Cr divergence that points to working capital deterioration (receivables bloat, likely). Meanwhile, borrowings have surged to INR 1,038 Cr and finance costs of INR 145 Cr now consume the majority of operating earnings. At 35x P/E and 10x book, the market is paying a premium multiple for a business with declining revenue, negative FCF, D/E of 1.15, and a history of episodic losses. Charlie and I have a simple rule: when in doubt, don't. This business leaves me in considerable doubt.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 45673,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0808143,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11230,
+      "cache_read_input_tokens": 9176,
+      "output_tokens": 2396,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11230
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 384,
+          "cache_read_input_tokens": 9176,
+          "cache_creation_input_tokens": 2054,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2054,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

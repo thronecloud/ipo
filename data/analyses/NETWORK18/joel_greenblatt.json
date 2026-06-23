@@ -1,0 +1,71 @@
+{
+  "symbol": "NETWORK18",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T18:29:58.568875Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "Network18 fails the Magic Formula on both dimensions — Earnings Yield is near-zero (~0.5% at EBIT of ₹44 Cr vs EV of ~₹8,900 Cr) and ROIC is equally negligible (~0.5%), making it uninvestable by any quantitative screen. A business that has generated positive operating cash flow in only 1 of the last 5 years, with cumulative FCF destruction of over ₹15,000 Cr since FY23, is not a business — it's a cash incinerator.",
+    "key_strengths": [
+      "Reliance Industries parentage provides financial backstop and potential strategic synergies (JioCinema/Star India JV)",
+      "Strong brand portfolio: CNBC-TV18, MoneyControl, News18, Forbes India — meaningful consumer mindshare",
+      "Minimal EBITDA turning positive in FY26 (₹177 Cr) may signal post-restructuring stabilization"
+    ],
+    "key_risks": [
+      "Magic Formula metrics are near-zero: Earnings Yield ~0.5% (EBIT ₹44 Cr / EV ~₹8,900 Cr) — far below the 12% threshold",
+      "Free cash flow deeply negative in 4 of last 5 years: -₹8,869 Cr (FY24), -₹2,809 Cr (FY25), -₹77 Cr (FY26)",
+      "Finance costs growing at 11% CAGR while revenue contracts; borrowings rose to ₹3,288 Cr in FY26"
+    ],
+    "red_flags": [
+      "Operating CF positive in only 1/5 years — this is a fundamental business quality failure, not a temporary blip",
+      "Revenue collapsed from ₹9,297 Cr (FY24) to ₹2,121 Cr (FY26) — likely demerger of Viacom18/JioCinema, leaving a rump entity",
+      "Net loss of ₹1,777 Cr in FY25; net profit has been negative in 7 of last 10 years",
+      "EV/EBITDA of -98.59 and ROCE of just 3.02% — capital is being destroyed, not compounded",
+      "Massive balance sheet volatility (assets swung from ₹39,881 Cr in FY24 to ₹8,498 Cr in FY25) signals corporate complexity and opacity"
+    ],
+    "detailed_analysis": "Applying the Magic Formula, Network18 is disqualifying on both axes. Earnings Yield (EBIT/EV) comes in at roughly 0.5% — EBIT of ₹44 Cr in the most recent period against an Enterprise Value of ~₹8,900 Cr (Market Cap ₹5,616 Cr + Borrowings ₹3,288 Cr - minimal cash). The Magic Formula threshold is 12%+; this company is at 1/24th of that. Return on Capital is similarly broken at ~0.5% (₹44 Cr EBIT / ~₹8,200 Cr capital employed). A P/E of 153x on what appears to be a one-quarter blip of profitability, against a decade of mostly negative earnings, is not a \"cheap\" stock by any measure.\n\nThe structural picture is worse than the snapshot. The company appears to have shed its Viacom18/JioCinema assets into the Star India JV, leaving a rump media operation. Revenue has collapsed from ₹9,297 Cr (FY24) to ₹2,121 Cr (FY26). FCF has been negative for four consecutive years, destroying over ₹15,000 Cr in cumulative free cash. Finance costs are compounding at 11% annually. Even if the remaining business (news channels, MoneyControl, digital) stabilizes, the capital allocation history and corporate complexity under a Reliance holding structure make this deeply unattractive. The Magic Formula demands high returns on tangible capital at bargain prices — Network18 offers neither.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 46479,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08781765,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11495,
+      "cache_read_input_tokens": 9058,
+      "output_tokens": 2799,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11495
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 417,
+          "cache_read_input_tokens": 9058,
+          "cache_creation_input_tokens": 2437,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2437,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

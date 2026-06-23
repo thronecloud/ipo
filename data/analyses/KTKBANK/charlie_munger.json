@@ -1,0 +1,69 @@
+{
+  "symbol": "KTKBANK",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T18:20:49.985348Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Karnataka Bank is a century-old regional franchise trading at 0.74x book — cheap, but cheapness alone is not a virtue. With ROE of only 11.1%, barely clearing cost of equity, and no discernible moat against the private-sector giants, the discount is largely deserved.",
+    "key_strengths": [
+      "Attractive statistical cheapness: P/E 8x, forward P/E 6x, P/B 0.74x — provides a margin of safety against further earnings compression",
+      "Strong equity capital accumulation: book value doubled from INR 5,971 Cr to INR 12,589 Cr in 5 years, improving solvency",
+      "Net profit 5-year CAGR of 24.1% (INR 432→1,273 Cr), even if partly driven by NPA normalisation and provision write-backs"
+    ],
+    "key_risks": [
+      "No moat whatsoever — a regional Karnataka-focused bank facing HDFC Bank, ICICI, Kotak, fintechs, and digital challengers with far superior brands and distribution",
+      "ROE of 11.1% barely exceeds cost of equity, and FY25 FCF/Net Income collapsed to just 3.8% (INR 48 Cr FCF vs INR 1,273 Cr net profit) — deeply suspect earnings quality",
+      "Profit growth stalled and reversed in FY25 (1,307→1,273 Cr) as finance costs accelerated to INR 5,703 Cr — a 14% YoY rise — signalling margin pressure ahead"
+    ],
+    "red_flags": [
+      "FY25 free cash flow of INR 48 Cr against reported net profit of INR 1,273 Cr — a 96% divergence that violates my FCF/NI >80% quality threshold",
+      "Net profit declined in FY25 despite 8.6% revenue growth — operating leverage is running in reverse",
+      "Other income (treasury/non-core) flat over 5 years (INR 1,262 Cr → 1,270 Cr, 0.1% CAGR) — the bank earns little from fee-based, capital-light activities"
+    ],
+    "detailed_analysis": "Karnataka Bank is precisely the kind of investment I try to avoid: a commodity business masquerading as a value opportunity. Banking is not inherently a bad business — HDFC Bank proved that — but Karnataka Bank has none of the qualities that made HDFC exceptional: no CASA dominance, no pricing power, no technology edge, no superior underwriting culture that we can verify from the outside. The 24.1% net profit CAGR is a statistical artefact of a very low base in FY20-22 and subsequent NPA normalisation; the FY25 profit actually shrank, and the INR 48 Cr free cash flow against INR 1,273 Cr reported earnings is a glaring quality warning. Invert the thesis: what does it take for this bank to compound at 15%+ for a decade? It would need to grow loans aggressively, maintain credit quality in a competitive regional market, fend off digital challengers, and improve ROE by ~400 bps — none of which is structurally visible here.\n\nThe statistical cheapness (0.74x book, 8x earnings) provides a floor, which is why this is a HOLD rather than an outright AVOID. A Graham-style net-asset buyer might find it interesting. But I am not a Graham buyer — I want businesses that are worth more every year they exist, not merely cheap because mediocrity is correctly priced. Management quality is unknowable from the outside; shareholding pattern with 11.7% FII and 15.8% DII is unremarkable. The bank's 100-year history in Karnataka is a cultural asset but not an economic moat in 2026 when every smartphone is a banking portal. At the current price, existing holders need not panic, but fresh capital has far better destinations.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "undervalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 51286,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08944875000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11241,
+      "cache_read_input_tokens": 8770,
+      "output_tokens": 2977,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11241
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 556,
+          "cache_read_input_tokens": 8770,
+          "cache_creation_input_tokens": 2471,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2471,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

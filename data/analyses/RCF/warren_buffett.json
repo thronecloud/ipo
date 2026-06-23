@@ -1,0 +1,70 @@
+{
+  "symbol": "RCF",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T22:11:40.692414Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "RCF is a government-owned commodity fertilizer business with no pricing power, earning a measly 5% ROE on regulated urea — precisely the kind of capital-intensive, moat-free enterprise I have spent a lifetime avoiding. At 23x earnings for a business that earned INR 242 Cr in FY25 versus INR 966 Cr in FY23, the market is pricing in a recovery that the structural economics do not support.",
+    "key_strengths": [
+      "Government (PSU) backing provides implicit financial safety net and assured offtake — 75% promoter holding means no existential risk",
+      "Revenue scale of ~INR 17,000 Cr with diversified product mix (fertilizers + industrial chemicals + trading segments)",
+      "P/S of 0.44x appears superficially cheap, reflecting the low-margin commodity nature of the business"
+    ],
+    "key_risks": [
+      "Urea prices are government-regulated — zero pricing power, subsidy delays squeeze working capital and create wild cash flow swings (OCF ranged from -592 Cr to +5,211 Cr over 5 years)",
+      "Profitability collapsed 77% from INR 966 Cr (FY23 peak) to INR 225 Cr (FY24) as global fertilizer price cycle normalized post-Ukraine — earnings are entirely hostage to commodity and policy cycles",
+      "Rising capex (INR 827 Cr in FY25 vs 170 Cr in FY22) is deploying capital at sub-cost returns — ROCE of 7.49% likely sits below cost of capital, destroying value with every rupee invested"
+    ],
+    "red_flags": [
+      "ROE of 5.03% — one-third of my 15% minimum threshold; a business that cannot earn on its own equity has no moat",
+      "Operating CF negative in 3 of the last 5 years (FY20, FY22, FY24) — this is not a business that generates cash reliably",
+      "Finance costs growing at 6.5% CAGR while EBITDA CAGR is only 3% — debt is becoming structurally more expensive relative to earnings power",
+      "23.4x P/E on trough normalized earnings with no evidence the FY23 profit peak will recur — valuation embeds optimism the fundamentals don't justify"
+    ],
+    "detailed_analysis": "RCF is a textbook example of what Charlie and I call a \"terrible business at a fair price.\" The core urea segment operates under government price controls, meaning management has no ability to pass through cost increases — the single most important attribute I look for in any business is pricing power, and RCF has none. ROCE of 7.49% and ROE of 5.03% confirm that the business earns well below any reasonable cost of capital. The INR 827 Cr capex in FY25 (rising sharply) on a business earning INR 242 Cr in net profit is capital being deployed into a return-destroying machine. Operating margins at 4% leave zero buffer for any cost shock — natural gas prices, global ammonia costs, or subsidy payment delays can instantly flip this company to losses.\n\nThe FY23 earnings spike to INR 966 Cr was a mirage — a one-time gift from the post-Ukraine global fertilizer price shock. The market appears to be valuing RCF at 23x on the hope that FY23 normalizes back up, but the structural subsidy-dependent model, volatile government policy environment, and commodity cost exposure make that unpredictable at best. I can find dozens of Indian businesses compounding at 15-20% ROE selling for comparable multiples. There is absolutely no reason to own RCF.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 51413,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08043884999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11237,
+      "cache_read_input_tokens": 9287,
+      "output_tokens": 2367,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11237,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 464,
+          "cache_read_input_tokens": 9287,
+          "cache_creation_input_tokens": 1950,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1950
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

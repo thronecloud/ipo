@@ -1,0 +1,69 @@
+{
+  "symbol": "CARBORUNIV",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-19T12:52:36.768447Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Carborundum Universal has an admirable 9-year earnings track record and negligible debt, but at 74x earnings and 4.75x book, Mr. Market is pricing in a quality business at a speculative premium far beyond any margin of safety. The Graham Number (approx. INR 264) is less than one-third of the current price of INR 940.",
+    "key_strengths": [
+      "Unbroken profitability since at least 2016, meeting Graham's multi-year earnings continuity requirement",
+      "Debt/Equity of 0.08 — balance sheet virtually debt-free, survivability in downturns is not a concern",
+      "OCF positive all 5 of 5 measured years; operating cash flow broadly tracks reported earnings"
+    ],
+    "key_risks": [
+      "P/E of 74.2x is nearly 5x Graham's maximum threshold of 15x — price embeds extraordinary growth expectations",
+      "Net profit fell sharply to INR 299 Cr in FY2025 from INR 476 Cr in FY2024 — a 37% collapse that calls into question the earnings quality",
+      "Other income turned negative (-23 Cr) in FY2025 after sizable contributions in prior years, suggesting non-recurring gains had inflated historical profits"
+    ],
+    "red_flags": [
+      "Graham Number ~INR 264 vs market price INR 940 — trading at a 256% premium to intrinsic value by Graham's formula",
+      "P/B of 4.75x versus Graham's ceiling of 1.5x — nearly all market capitalisation is goodwill and future expectations, not tangible assets",
+      "FY2025 net profit drop of 37% with simultaneously negative other income suggests a potential structural or one-time impairment that has not been explained"
+    ],
+    "detailed_analysis": "Carborundum Universal is a legitimate industrial business with a real moat in abrasives, ceramics, and electrominerals built over 70 years. Its balance sheet is clean (D/E 0.08, cash INR 378 Cr) and its revenue has compounded at a respectable 10.8% over nine years. From Graham's standpoint, this is a company one could study with interest — but not buy at the current price. With a Graham Number of approximately INR 264 (based on FY2025 EPS of ~INR 15.7 and BVPS of ~INR 197) against a market price of INR 940, the stock commands a 256% premium to the formula's implied fair value — there is no margin of safety whatsoever. The FY2025 profit collapse from INR 476 Cr to INR 299 Cr is particularly troubling; the intelligent investor demands consistent earning power, not volatile results hidden behind prior-year other income. Until the price corrects dramatically or earnings recover sustainably, this remains firmly in speculative territory by my standards.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 206309,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.22340055,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 23531,
+      "cache_read_input_tokens": 15501,
+      "output_tokens": 8700,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 23531,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 526,
+          "cache_read_input_tokens": 15501,
+          "cache_creation_input_tokens": 8030,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8030
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

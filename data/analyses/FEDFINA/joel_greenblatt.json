@@ -1,0 +1,70 @@
+{
+  "symbol": "FEDFINA",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T17:19:08.770315Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Fedbank Financial Services is an NBFC — a financial company that the Magic Formula explicitly excludes because debt is the raw material of its business, making EBIT/EV and ROIC meaningless. Even setting that aside, a declining earnings year (FY25 net profit INR 225 Cr vs INR 245 Cr in FY24) and ROE of only 8.84% do not clear Greenblatt's bar.",
+    "key_strengths": [
+      "Strong revenue CAGR of 32.2% (FY22–25) shows the loan book is scaling rapidly",
+      "Promoter stake of 60.79% (Federal Bank parent) provides institutional credibility and funding access",
+      "Forward P/E of 11.35x suggests the market is pricing in earnings recovery — cheap on stated earnings"
+    ],
+    "key_risks": [
+      "ROE of 8.84% is well below my 20%+ ROIC threshold — this is not a high-quality compounder",
+      "Earnings are actually shrinking: net profit fell from INR 245 Cr (FY24) to INR 225 Cr (FY25) — negative growth momentum",
+      "D/E of 3.83x is structurally necessary for an NBFC, but leaves zero margin of safety if credit quality deteriorates"
+    ],
+    "red_flags": [
+      "Financial company — Magic Formula is explicitly inapplicable; EBIT/EV and ROIC metrics are distorted by leverage that is core to operations",
+      "Operating CF negative all 4 years (-978 Cr in FY25); FCF negative every year — cash is consumed, not generated",
+      "Finance cost data (INR 12 Cr) appears inconsistent with INR 10,437 Cr of debt — suggests reported 'revenue' may be net interest income, understating true cost structure and making margin metrics unreliable",
+      "Operating income also declined YoY (INR 337 Cr FY24 → INR 316 Cr FY25) — revenue growth is not converting to profit growth"
+    ],
+    "detailed_analysis": "The Magic Formula starts and ends with one hard rule: exclude financial companies. Fedbank Financial Services is an NBFC — it borrows money to lend it out. Debt (INR 10,437 Cr) is not a liability to be subtracted from enterprise value; it IS the business. This means EBIT/EV is a fiction, and ROIC (EBIT / Net Working Capital + Net Fixed Assets) captures nothing meaningful when the loan book is the only real asset. No ranking, no comparison, no formula output is valid here. I simply cannot run the screen.\n\nLooking past the formula, the underlying business quality is mediocre. ROE of 8.84% means Fedfina earns less than 9 cents on every rupee of equity — I want businesses earning 20–25%+. More worrying, despite 30%+ revenue CAGR, profits actually shrank in FY25 (net profit –8.2% YoY, operating income –6.2% YoY), suggesting rising credit costs or funding pressures are eroding the spread. The data anomaly around finance costs (INR 12 Cr on INR 10,437 Cr of debt is a ~0.1% borrowing cost — impossible) further reduces confidence in the reported margins. There is no Magic Formula case here, and no compelling general-value case either.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "insufficient_data",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 60030,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08526689999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10850,
+      "cache_read_input_tokens": 8468,
+      "output_tokens": 2802,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10850
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 469,
+          "cache_read_input_tokens": 8468,
+          "cache_creation_input_tokens": 2382,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2382,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

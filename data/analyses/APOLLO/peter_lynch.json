@@ -1,0 +1,70 @@
+{
+  "symbol": "APOLLO",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-18T16:26:19.927550Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Apollo Micro Systems is a legitimate defense electronics niche player riding India's indigenization tailwind with 32% net profit CAGR — but at P/E 113x and a PEG of ~2.1 (forward P/E 65.79 / 32% growth), you're paying an absurd price for a story the market already knows. Chronically negative free cash flow (-₹82 Cr in FY25 despite ₹56 Cr net profit) signals profit quality problems that make the headline growth numbers deeply suspect.",
+    "key_strengths": [
+      "Defense electronics niche with genuine Make-in-India tailwind — government indigenization mandates create a captive, growing order book",
+      "Net profit CAGR of 32% over 5 years and revenue accelerating to ₹562 Cr in FY25 (+51% YoY) shows real execution momentum",
+      "Low debt/equity of 0.33 and operating margins of 17.6% indicate a defensible, specialized product portfolio"
+    ],
+    "key_risks": [
+      "PEG ratio of ~2.1 even on forward earnings — Lynch's hard ceiling is 1.5, anything above screams overvaluation for the growth rate delivered",
+      "Free cash flow has been negative three of the last four years (-₹131 Cr in FY24, -₹82 Cr in FY25) while net profit grows — classic working capital trap typical in defense contracts with long payment cycles",
+      "ROE of only 10% is below Lynch's 12% floor, worsening as the equity base ballooned from ₹519 Cr to ₹1,080 Cr via dilution — growth is becoming capital-hungry"
+    ],
+    "red_flags": [
+      "FCF deeply negative (-₹82 Cr) while reporting ₹56 Cr net profit — profits are trapped in receivables/WIP, not hitting the bank",
+      "Operating CF swung from -₹76 Cr (FY24) to barely +₹10 Cr (FY25) — unsustainable trend masks as reported profit growth",
+      "Borrowings nearly doubled YoY (₹208 Cr → ₹361 Cr) while simultaneously raising equity — financing both sides of the balance sheet signals structural cash burn",
+      "P/S of 13.77x for a sub-20% revenue grower is pricing in perfection for years to come"
+    ],
+    "detailed_analysis": "Apollo Micro Systems tells a compelling story — a specialized defense electronics company in Hyderabad building missile guidance systems, avionics, and battlefield electronics for a government that is explicitly committed to reducing imports. Revenue has accelerated to ₹562 Cr (+51% in FY25) and net profit hit ₹56 Cr with a 5-year CAGR of 32%. From a Lynch \"fast grower\" lens, the narrative is easy to understand and the sector tailwind is real. But the story is priced as if the company has already won every contract it will ever bid on: at P/E 113x and forward P/E 65.79x, even using the generous 32% earnings growth rate, the PEG sits at 2.1 — well past Lynch's \"stop buying\" threshold of 1.5, let alone the sub-1.0 level needed for excitement.\n\nThe deeper problem is cash flow. Defense companies in India routinely get squeezed on working capital — long project cycles, government payment delays, and heavy upfront investment. Apollo's FCF has been negative for three of the last four years, including -₹131 Cr in FY24 and -₹82 Cr in FY25. The company simultaneously raised equity (reserves jumped ₹490 Cr → ₹1,046 Cr) and debt (borrowings up to ₹361 Cr) just to fund operations and capex. ROE has compressed to 10% as a result. This is exactly the kind of capital-intensive \"growth\" Lynch warned against — a company that has to keep asking shareholders for money just to stay in the race. Pass at this price; revisit if it corrects 50%+ to a PEG near 1.0.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 52327,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08076405,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11163,
+      "cache_read_input_tokens": 9096,
+      "output_tokens": 2411,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11163,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 411,
+          "cache_read_input_tokens": 9096,
+          "cache_creation_input_tokens": 2067,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2067
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

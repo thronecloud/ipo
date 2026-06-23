@@ -1,0 +1,69 @@
+{
+  "symbol": "METROPOLIS",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T18:22:51.061941Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Metropolis fails both Magic Formula tests: earnings yield of ~3.1% (EBIT INR 308 Cr / EV ~INR 9,945 Cr) is far below the 6% minimum threshold, and ROCE of 14.7% falls short of the 20%+ standard for a quality business. At 55.9x P/E and EV/EBITDA of 39.4x with net profits still below their 2022 peak, you are paying a premium price for a mediocre return on capital.",
+    "key_strengths": [
+      "Consistently positive FCF every year (~INR 196-263 Cr range, 5/5 years), with capex well-covered by operating cash flow",
+      "High gross margins (77.5%) and asset-light diagnostics model provide durable unit economics",
+      "Low debt (D/E 0.14, borrowings declining from INR 379 Cr in FY22 to INR 201 Cr in FY25)"
+    ],
+    "key_risks": [
+      "Earnings yield of ~3.1% is catastrophically low for Magic Formula — paying nearly 32x EBIT in enterprise value",
+      "Net profit collapsed post-COVID peak: INR 215 Cr (FY22) → INR 128 Cr (FY24), with only partial recovery to INR 146 Cr in FY25 — no earnings momentum",
+      "Finance costs compounding at 31.8% CAGR over 9 years while net profit CAGR is only 6.6% — interest burden eating into returns"
+    ],
+    "red_flags": [
+      "Earnings yield ~3.1% — one of the worst valuation readings possible under Magic Formula",
+      "Net profit in FY25 (INR 146 Cr) is still 32% below FY22 peak (INR 215 Cr) despite higher revenues — structural margin compression",
+      "ROE of only 11.5% for a business trading at 6.82x book — deeply destroys value on a Magic Formula ranking"
+    ],
+    "detailed_analysis": "Running the Magic Formula numbers: EBIT for FY25 is INR 308 Cr; Enterprise Value is roughly INR 9,945 Cr (market cap INR 9,780 Cr + net debt INR 165 Cr), yielding an earnings yield of just 3.1%. Greenblatt's threshold for \"attractive\" is 12%+. ROCE at 14.7% is also below his 20% quality bar. On a combined Magic Formula ranking this stock would sit in the bottom quintile — expensive and mediocre simultaneously, the worst outcome in the framework.\n\nThe business narrative is similarly uninspiring. Revenue has grown at a respectable 12.1% CAGR, but operating leverage has not materialized — operating income CAGR (11.5%) trails revenue, and net profit CAGR is a paltry 6.6% over 9 years. Post-COVID normalization exposed that FY21-22 earnings were anomalous, not structural. FCF is steady but not growing (~INR 196 Cr in FY25 vs. INR 179 Cr in FY20), and at the current price you are paying roughly 50x free cash flow. Unless ROIC expands sharply and valuations compress by 50%+, there is no Magic Formula case here.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 45198,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07781535,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11041,
+      "cache_read_input_tokens": 9092,
+      "output_tokens": 2245,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11041
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 339,
+          "cache_read_input_tokens": 9092,
+          "cache_creation_input_tokens": 1949,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1949,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

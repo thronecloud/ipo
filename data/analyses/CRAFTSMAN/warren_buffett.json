@@ -1,0 +1,69 @@
+{
+  "symbol": "CRAFTSMAN",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-19T06:09:34.523111Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Craftsman Automation is a capital-intensive auto parts manufacturer with everything I dislike: ROE of 9.4% (far below my 15% minimum), D/E of 1.09, a 40% collapse in net profit in FY25 (Rs 337 Cr → Rs 201 Cr), deeply negative FCF of -Rs 706 Cr, and a P/E of 52x on deteriorating earnings — a textbook example of paying a premium price for a mediocre business in an expansion-driven debt cycle.",
+    "key_strengths": [
+      "Impressive revenue scale: Rs 5,690 Cr in FY25, diversified across Powertrain, Aluminium, and Industrial segments, reducing single-customer concentration risk",
+      "22.8% revenue CAGR over 8 years demonstrates genuine business execution and market-share gains in auto components",
+      "High institutional ownership (DII: 28.3%, FII: 15.2%) suggests sophisticated investors have conviction in the management team"
+    ],
+    "key_risks": [
+      "ROE of 9.4% and ROCE of 11.7% are deeply inadequate — the business is not earning its cost of capital, let alone creating the kind of above-average returns I require",
+      "Debt/Equity of 1.09 with Rs 3,311 Cr in borrowings (up from Rs 1,755 Cr in FY24) in a cyclical automotive business is exactly the combination that causes permanent capital loss in downturns",
+      "Capex of Rs 992 Cr in FY25 against OCF of Rs 283 Cr means the company is consuming Rs 709 Cr more cash than it generates — this expansion is being funded by debt, creating a fragile balance sheet"
+    ],
+    "red_flags": [
+      "Net profit fell 40% in FY25 (Rs 337 Cr → Rs 201 Cr) while revenue grew — margins are being crushed, likely by interest costs growing 24% to Rs 217 Cr",
+      "Total assets nearly doubled in FY25 (Rs 4,706 Cr → Rs 8,266 Cr) — a massive acquisition or expansion at peak cycle, exactly when capital should be conserved",
+      "Free cash flow of -Rs 706 Cr in FY25 following -Rs 115 Cr in FY24 — two consecutive years of deeply negative FCF signals the business is in an unsustainable investment phase"
+    ],
+    "detailed_analysis": "Auto parts manufacturing is not a business that earns wonderful returns on capital — it is capital-intensive, cyclical, and subject to OEM pricing pressure. Craftsman's history confirms this: net profit has been volatile (Rs 32 Cr in FY18, Rs 40 Cr in FY20, Rs 97 Cr in FY21, and now Rs 201 Cr in FY25 after peaking at Rs 337 Cr last year). The company is in a massive capex cycle — Rs 992 Cr spent in FY25 alone, total assets nearly doubling — and is funding this with debt that has quadrupled the interest burden to Rs 217 Cr. When a cyclical company's interest bill is running at 43% of net profit, I become very concerned.\n\nAt P/E 52x and EV/EBITDA 19.9x, the market is paying a premium for a business that earns below-average returns on capital, carries significant debt, and just saw its profits fall 40%. The forward P/E of 32x reflects analyst hopes for earnings recovery as the capex cycle matures, but I have seen this story before — companies over-invest at the top of cycles, saddle themselves with debt, and then face a demand slowdown. I would not buy this at any significant premium to book value. At P/B of 6x for a 9.4% ROE business, the math simply does not work in my favor.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 169262,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.23907825000000002,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 24727,
+      "cache_read_input_tokens": 15910,
+      "output_tokens": 9438,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 24727,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 542,
+          "cache_read_input_tokens": 15910,
+          "cache_creation_input_tokens": 8817,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8817
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

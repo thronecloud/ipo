@@ -1,0 +1,70 @@
+{
+  "symbol": "544368",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-20T19:43:29.493498Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "Swasth Foodtech fails the Magic Formula on both legs: ROE of 0.17% implies near-zero ROIC, and with negligible earnings there is no meaningful earnings yield at an INR 8.88 Cr market cap. A commodity refined-oil micro-cap started in 2021 with no track record is precisely the kind of stock a systematic quant screen should reject.",
+    "key_strengths": [
+      "Promoter holding healthy at 72.89% — skin in the game",
+      "Operates in FMCG/edible oils, a consumption-linked space",
+      "Small base could theoretically allow high % growth if execution improves"
+    ],
+    "key_risks": [
+      "ROE of 0.17% → ROIC effectively zero, failing the 'good business' leg",
+      "Negligible earnings make EBIT/EV uncomputable and likely unattractive",
+      "Refined oils is a low-margin, capital-intensive commodity with pricing pressure"
+    ],
+    "red_flags": [
+      "ROE <1% — capital earns nothing",
+      "Only 5 years old (incorporated 2021), no 3-year ROIC track record",
+      "Micro-cap (INR 8.88 Cr) with thin liquidity and disclosure",
+      "Commodity refined-oil business with structurally thin margins"
+    ],
+    "detailed_analysis": "The Magic Formula ranks companies on two axes — return on capital (quality) and earnings yield (price). Swasth Foodtech fails the quality leg outright: ROE of 0.17% means the business is essentially not earning anything on shareholder capital, and ROIC will be in the same ballpark, nowhere near my 20%+ threshold. Without a meaningful EBIT figure, the earnings yield (EBIT/EV) is effectively non-computable — and at an INR 8.88 Cr market cap on near-zero profits, it is almost certainly below my 12% hurdle on any normalized basis. Both legs of the formula fail.\n\nBeyond the metrics, refined edible oils is a commodity business dominated by scale players (Adani Wilmar, Ruchi, Marico, Emami Agrotech) where gross margins are razor-thin and pricing tracks crude palm/soy. A 2021-incorporated micro-cap has no moat, no track record of sustained ROIC, and no cost advantage. Systematic investing means no storytelling — the numbers here say avoid, full stop.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "insufficient_data",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 21287,
+    "model_used": "opus",
+    "total_cost_usd": 0.08939875,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8829,
+      "cache_read_input_tokens": 13425,
+      "output_tokens": 1099,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8829,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10555,
+          "cache_creation_input_tokens": 1144,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1144
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

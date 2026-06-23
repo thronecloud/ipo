@@ -1,0 +1,69 @@
+{
+  "symbol": "ANUP",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-18T16:23:59.752607Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "ANUP is a quality niche process equipment manufacturer riding India's energy capex supercycle, with an impressive 24.5% revenue CAGR (₹245Cr → ₹733Cr) and 17.9% operating margins. However, at P/E 34.8x the PEG sits at ~1.55 using the 5Y earnings CAGR — above my comfort zone — and FY25 free cash flow turned sharply negative, signaling the story needs to prove itself before paying this price.",
+    "key_strengths": [
+      "24.5% revenue CAGR over 5 years with clear acceleration in last 3 years — a classic fast grower",
+      "17.9% operating margins are exceptional for a capital goods fabricator, showing real pricing power in niche heat exchangers and reactors",
+      "Low D/E of 0.25 with ROE of 18.9% — historically disciplined capital allocation before recent borrowing ramp"
+    ],
+    "key_risks": [
+      "PEG ratio ~1.55 (P/E 34.8 / 22.4% earnings CAGR) exceeds my 1.0 threshold; using the more recent 14.5% earnings growth, PEG balloons to ~2.4x",
+      "FY25 operating cash flow turned negative (-₹7Cr) against ₹118Cr net profit — massive working capital absorption that is inconsistent with reported earnings quality",
+      "Earnings growth decelerated sharply to 14.5% in FY25 (₹103Cr → ₹118Cr) even as revenue surged 35.7% — margin story showing early cracks"
+    ],
+    "red_flags": [
+      "FY25 FCF of -₹51Cr and OCF of -₹7Cr despite strong reported profits — divergence between earnings and cash is a classic red flag I never ignore",
+      "Borrowings exploded from ₹0 to ₹158Cr in two years while cash collapsed to ₹3Cr — the balance sheet is quietly leveraging up",
+      "Gross margin reported at 3.79% is anomalously low — suggests either a revenue recognition/pass-through materials issue or structural cost pressure worth investigating"
+    ],
+    "detailed_analysis": "ANUP is exactly the kind of specialized industrial manufacturer I've always liked — a 60-year-old Ahmedabad-based niche player in process equipment (heat exchangers, reactors, pressure vessels) serving oil & gas, fertilizers, hydrogen, and pharma. The revenue growth story is real: ₹245Cr in FY20 to ₹733Cr in FY25 at a 24.5% CAGR, with operating margins expanding from ~28% to ~22% on operating income (still healthy). India's energy capex supercycle — refineries, fertilizer plants, green hydrogen — gives this company a legitimate long runway. ROE at 18.9% and D/E at 0.25 historically showed management knew how to deploy capital prudently. This is the kind of story I'd tell my wife — \"they make the pressure vessels for every new refinery being built in India.\"\n\nThe problem is the price. At P/E 34.8x with earnings growing at ~22% historically but only 14.5% in the most recent year, the PEG is at best 1.55 and more honestly closer to 2.4x — well past where I'd feel comfortable. Worse, FY25 cash flow is a serious warning sign: the company earned ₹118Cr in net profit but generated negative ₹7Cr from operations, implying massive receivables or inventory build. FCF was -₹51Cr. Meanwhile, borrowings have jumped from zero to ₹158Cr and cash is nearly gone at ₹3Cr. This company is growing into a capex cycle and that's fine — but the current valuation prices in perfection. I'd want to see the PEG come below 1.0 (stock near ₹1,200–1,400 or earnings accelerating back above 20%+) before getting excited. Watch the next two quarters of order book execution and cash conversion closely.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 60624,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09453135,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11677,
+      "cache_read_input_tokens": 8812,
+      "output_tokens": 3206,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11677,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 400,
+          "cache_read_input_tokens": 8812,
+          "cache_creation_input_tokens": 2865,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2865
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

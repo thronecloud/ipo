@@ -1,0 +1,70 @@
+{
+  "symbol": "KNRCON",
+  "persona": "radhakishan_damani",
+  "persona_display_name": "Radhakishan Damani",
+  "analyzed_at": "2026-04-18T17:57:41.202091Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "KNR Constructions shows impressive headline ROE (27%) and cheap opticals (P/E 6.4x, P/B 0.73x), but the business is fundamentally incompatible with my philosophy — government-dependent, capital-intensive, with deeply erratic cash flows and borrowings that nearly quadrupled in two years (₹652 Cr → ₹2,321 Cr). A business that generates positive operating cash flow only 1 out of 5 years is not a compounder; it is a working capital trap.",
+    "key_strengths": [
+      "Revenue CAGR of 16.6% over 9 years with expanding operating margins (20.4%) — solid execution record in its niche",
+      "Attractive opticals: P/E 6.4x, P/B 0.73x, EV/EBITDA 4.6x suggest the market has already priced in significant risk",
+      "ROCE of 28.6% is genuinely high, indicating the projects themselves earn well when working capital behaves"
+    ],
+    "key_risks": [
+      "Debt explosion: Borrowings surged from ₹652 Cr (FY23) to ₹2,321 Cr (FY25) — D/E now at 0.49, crossing my 0.5 red-flag threshold, driven by HAM project equity obligations",
+      "Cash flow is structurally unreliable: OCF was positive only 1 of the last 5 years; FY25 OCF was -₹567 Cr on ₹1,002 Cr reported profit — earnings and cash are completely disconnected",
+      "Government concentration risk: 100% revenue from public infrastructure contracts means payment delays, policy changes, or election cycles can freeze working capital overnight"
+    ],
+    "red_flags": [
+      "Borrowings nearly 4x in two years (₹652 Cr → ₹2,321 Cr) — aggressive debt-funded expansion, exactly what I avoid",
+      "Finance costs doubled YoY (₹106 Cr → ₹208 Cr in FY25) as debt ballooned",
+      "Promoter holding at 48.81% — below my 55% threshold and signals incomplete skin-in-the-game",
+      "Forward P/E of 15.85x vs trailing 6.41x implies the ₹1,002 Cr FY25 profit includes significant non-recurring HAM monetization gains — normalized earnings are far lower"
+    ],
+    "detailed_analysis": "KNR Constructions is not a business I would own. My philosophy is built around businesses where cash is real, predictable, and compounds quietly — retail, FMCG, conservative financials. Infrastructure construction is the opposite: lumpy revenues, government counterparty risk, and a working capital cycle that can swing ₹1,800 Cr in a single year (FY23 OCF: +₹1,194 Cr vs FY25: -₹567 Cr). The ₹1,002 Cr net profit in FY25 looks extraordinary, but free cash flow was -₹592 Cr that same year. When profit and cash diverge this violently, the profit number is fiction until the cash arrives. The HAM model forces the company to inject equity into toll road SPVs upfront and wait years for annuity receipts — structurally a leveraged bet on government payments.\n\nThe balance sheet deterioration from FY23 to FY25 is disqualifying for me. Borrowings went from ₹652 Cr to ₹2,321 Cr in just two years — D/E breaching 0.49, dangerously close to my hard limit of 0.5. Finance costs nearly doubled in one year alone. The forward P/E of 15.85x versus trailing 6.41x tells the real story: the market understands that FY25 earnings were inflated by project completions and HAM stake sales, and normalized earnings power is much lower. The valuation may look cheap on trailing numbers, but the underlying business is capital-hungry, government-dependent, and generates cash only intermittently. I would rather own nothing than own something I cannot fully trust.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 49578,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0774528,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9268,
+      "cache_read_input_tokens": 11146,
+      "output_tokens": 2623,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9268
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 387,
+          "cache_read_input_tokens": 9056,
+          "cache_creation_input_tokens": 2302,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2302,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

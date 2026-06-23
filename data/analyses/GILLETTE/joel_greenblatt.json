@@ -1,0 +1,68 @@
+{
+  "symbol": "GILLETTE",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-22T16:41:10.559888Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Gillette India is an exceptional business — ROCE of 58.78%, zero debt, and consistent FCF — but the Magic Formula demands BOTH quality AND cheapness; at an earnings yield of ~2.2% (EBIT INR 571 Cr / EV ~INR 25,398 Cr), it fails the cheapness test catastrophically. A great company at a terrible price is still a terrible investment.",
+    "key_strengths": [
+      "Exceptional return on capital: ROCE 58.78% sustained over multiple years — a genuinely rare, durable business",
+      "Asset-light, cash-generative: FCF INR 442 Cr on capex of just INR 67 Cr (87% OCF conversion)",
+      "Zero debt, INR 473 Cr net cash — fortress balance sheet with no financial risk"
+    ],
+    "key_risks": [
+      "Earnings yield ~2.2% (EBIT/EV) is one-seventh of our 15% threshold — market price embeds decades of perfection",
+      "Revenue CAGR of 9.4% is modest for a stock trading at 48x earnings — growth must accelerate sharply to justify valuation",
+      "75% promoter (P&G) ownership caps free-float and creates governance concentration risk"
+    ],
+    "red_flags": [
+      "Earnings Yield (EBIT/EV) of ~2.2% is far below the 6% floor where the Magic Formula even considers a stock",
+      "P/E of 48x and EV/EBITDA of 28x price in flawless execution for 15+ years with no margin for error"
+    ],
+    "detailed_analysis": "Running the Magic Formula: EBIT ≈ INR 571 Cr (operating income 2024); Enterprise Value = INR 25,871 Cr market cap minus INR 473 Cr cash = ~INR 25,398 Cr. Earnings Yield = 571/25,398 = **2.2%** — a disaster by our criteria where anything below 6% is overvalued and anything above 15% is attractive. ROCE at 58.78% is world-class and the business earns it honestly: gross margins of 63%, operating margins of 29%, and capex of just INR 67 Cr against INR 509 Cr of operating cash flow. This is exactly the kind of business the Magic Formula loves to own — when it's cheap.\n\nThe problem is price. At 48x earnings with 9.4% revenue CAGR, an investor pays a massive premium for a business growing at single-digit rates. FCF yield to market cap is a mere 1.7% (INR 442 Cr / INR 25,871 Cr). The Magic Formula ranks stocks on BOTH earnings yield AND ROIC; Gillette India would rank in the top decile on ROIC but bottom decile on earnings yield — disqualifying it from the combined ranking entirely. This is a stock to watch at half the price (implied ~24x P/E, earnings yield ~4-5%), not to buy today.",
+    "metrics_evaluated": {
+      "moat_strength": "strong",
+      "management_quality": "excellent",
+      "financial_health": "excellent",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 45658,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0751086,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10454,
+      "cache_read_input_tokens": 8607,
+      "output_tokens": 2221,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10454,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 402,
+          "cache_read_input_tokens": 8607,
+          "cache_creation_input_tokens": 1847,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1847
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

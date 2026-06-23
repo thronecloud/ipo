@@ -1,0 +1,69 @@
+{
+  "symbol": "JLHL",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T17:53:23.012694Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Jupiter Life Line Hospitals has a decent business with 18% ROCE and strong revenue growth, but the Magic Formula rejects it on valuation — at 3.5% earnings yield (EBIT INR 297 Cr / EV ~INR 8,430 Cr), it trades at nearly 3x the 12% threshold I require. You're paying a premium growth multiple for a capital-intensive hospital business that generated negative FCF of -INR 67 Cr in FY25.",
+    "key_strengths": [
+      "Revenue growing at 22% CAGR (5Y) with EBITDA margins expanding from 24% to 25%, showing operating leverage",
+      "Finance costs collapsed from INR 44 Cr (FY22) to INR 11 Cr (FY25), indicating disciplined capital structure before recent expansion debt",
+      "OCF positive all 5 years; FY25 OCF of INR 253 Cr is strong, suggesting the core hospital business generates real cash"
+    ],
+    "key_risks": [
+      "Earnings Yield of ~3.5% (EBIT/EV) is far below my 12% minimum — the stock is priced for perfection at 26.6x EV/EBITDA",
+      "Massive capex cycle underway: INR 321 Cr capex in FY25 + CWIP of INR 296 Cr; took on INR 403 Cr new debt after being debt-free in FY24 — FCF turned -INR 67 Cr",
+      "ROIC of ~18% is moderate for a hospital operator, not exceptional; future capacity additions will dilute returns during ramp-up"
+    ],
+    "red_flags": [
+      "INR 29 Cr 'Other Income' in FY25 is ~10% of EBIT — likely IPO float interest income, not operational; strips core earnings yield even lower",
+      "Reserves jumped from INR 309 Cr (FY23) to INR 1,103 Cr (FY24) via IPO — post-IPO capital base inflates equity, making ROCE optically lower going forward",
+      "Free Cash Flow negative in FY21 (-118 Cr) and FY25 (-67 Cr); hospital expansion capex is lumpy and long payback"
+    ],
+    "detailed_analysis": "Running the Magic Formula: EBIT FY25 = INR 297 Cr. Enterprise Value = Market Cap (INR 8,405 Cr) + Debt (INR 393 Cr) - Cash (INR 368 Cr) = ~INR 8,430 Cr. Earnings Yield = 297/8,430 = 3.52% — an outright fail. My minimum is 12% attractive, 15% very attractive. On ROIC, using stated ROCE of 18% (capital employed ~INR 1,844 Cr), the business passes the 12% floor but falls short of the 25% \"excellent\" bar. When both metrics are ranked together, this company would land in the bottom quartile of the Magic Formula universe — expensive on earnings yield, mediocre on capital returns.\n\nThe business narrative is genuinely improving: revenue CAGR of 22%, operating leverage visible in EBITDA margins expanding from 24% to 25%, and finance costs shrinking sharply as the company paid down debt post-IPO. However, Jupiter is now re-leveraging (INR 403 Cr new borrowings in FY25) to fund a significant expansion (CWIP surged to INR 296 Cr). Hospital bed additions take 3-5 years to generate returns, so near-term ROIC will compress before it improves. The market is pricing in that expansion at a 43.5x P/E — a forward-looking bet I don't make with the Magic Formula, which values only current earning power.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 54537,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08656064999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11325,
+      "cache_read_input_tokens": 8893,
+      "output_tokens": 2761,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11325
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 363,
+          "cache_read_input_tokens": 8893,
+          "cache_creation_input_tokens": 2432,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2432,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

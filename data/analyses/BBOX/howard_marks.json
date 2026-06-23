@@ -1,0 +1,70 @@
+{
+  "symbol": "BBOX",
+  "persona": "howard_marks",
+  "persona_display_name": "Howard Marks",
+  "analyzed_at": "2026-04-18T16:47:35.533741Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "At 21.7x EV/EBITDA and 35x P/E, the market is paying a software-grade multiple for a thin-margin systems integrator whose revenue is contracting (-5% in FY25 to INR 5,967 Cr) and whose INR 536 Cr EBITDA produced negative free cash flow of -INR 129 Cr. The price reflects optimism; the cash flows reflect a business under stress.",
+    "key_strengths": [
+      "EBITDA margin expanding sharply — from ~8.4% in FY20 to ~9.0% in FY25, with operating income nearly doubling to INR 538 Cr over two years.",
+      "High promoter holding at 70% suggests alignment; no evidence of insider selling at elevated prices.",
+      "Diversified global client base across 20+ verticals (defense, healthcare, government) provides revenue stickiness."
+    ],
+    "key_risks": [
+      "Revenue is shrinking — peaked at INR 6,288 Cr in FY23, now INR 5,967 Cr in FY25; a 35x P/E on declining topline has no margin of safety.",
+      "Free cash flow collapsed to -INR 129 Cr in FY25 despite INR 536 Cr EBITDA — a INR 665 Cr gap signaling severe working capital deterioration or aggressive revenue recognition.",
+      "Debt surged 46% to INR 1,038 Cr in FY25; finance costs INR 145 Cr are rising into a negative FCF environment — stress scenario risk is high."
+    ],
+    "red_flags": [
+      "Operating cash flow turned deeply negative (-INR 88 Cr) in FY25 despite net profit of INR 205 Cr — earnings quality is highly suspect.",
+      "Persistent negative 'Other Income' line (-INR 68 Cr in FY25) suggests recurring FX losses or hidden charges that systematically erode reported EBIT.",
+      "Debt/Equity of 1.15x on a business with 7.3% operating margins — one revenue down-cycle away from covenant stress.",
+      "Classified as 'Software - Application' but is effectively a hardware-led systems integrator; market may be awarding wrong sector multiple."
+    ],
+    "detailed_analysis": "Black Box is a classic second-level thinking trap. First-level observation: ROE of 44%, EBITDA CAGR of 50% over nine years, improving margins — looks compelling. Second-level reality: ROE was built on a near-zero equity base (equity was negative as recently as FY20 at -INR 176 Cr), revenue is now declining, and — most damningly — INR 536 Cr of EBITDA produced -INR 129 Cr of free cash flow in FY25. That INR 665 Cr EBITDA-to-FCF gap is the single most disqualifying fact in this data set. A business that cannot convert earnings to cash is not compounding value; it is consuming it. The rising debt (INR 596 Cr → INR 1,038 Cr in five years) is filling the gap that operations cannot.\n\nOn valuation: 21.7x EV/EBITDA for a systems integrator earning 7.3% operating margins is unjustifiable unless one believes margin expansion will be both sustained and rapid. The market apparently does — but the cash flow statement is the referee, and it says otherwise. At EV/EBITDA of 21.7x versus a sector median closer to 12-14x for comparable IT infrastructure players, the stock embeds substantial growth and margin assumptions. In a stress scenario — slower government/enterprise spend, rupee depreciation lifting USD debt costs, or a working capital unwind — downside to 12x EBITDA implies a stock price near INR 280-300, roughly 45% below current levels. That is not an acceptable risk/reward profile. I require a margin of safety, not a premium to perfection.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 68227,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08635155,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9815,
+      "cache_read_input_tokens": 11271,
+      "output_tokens": 3077,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9815
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 460,
+          "cache_read_input_tokens": 9217,
+          "cache_creation_input_tokens": 2652,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2652,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

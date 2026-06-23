@@ -1,0 +1,69 @@
+{
+  "symbol": "AFCONS",
+  "persona": "howard_marks",
+  "persona_display_name": "Howard Marks",
+  "analyzed_at": "2026-04-19T06:24:53.463328Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Afcons is India's largest specialized infrastructure contractor (marine, tunnels, metro) with a reasonable EV/EBITDA of 10.7x and P/S below 1x — on surface metrics, the cheapest stock in this group. However, this is a recent Shapoorji Pallonji group IPO sold when the seller needed liquidity, FY2025 revenue declined and OCF turned negative, and 'other income' of INR 469 Cr nearly equals reported net profit of INR 487 Cr — meaning core construction contributed almost nothing to the bottom line.",
+    "key_strengths": [
+      "Specialized niche in marine works, tunnels, and metro — genuine technical differentiation that few Indian contractors can replicate",
+      "Relatively attractive absolute valuation: EV/EBITDA ~10.7x and P/S of 0.98x, ROCE of 19.6% suggests decent capital efficiency",
+      "Strong order backlog in a structurally supported India infrastructure spending cycle; 50% promoter holding provides some alignment"
+    ],
+    "key_risks": [
+      "Revenue declined from INR 13,268 Cr (FY24) to INR 12,548 Cr (FY25) in what should be an infrastructure supercycle — execution miss is a serious yellow flag",
+      "OCF turned sharply negative in FY2025 (-INR 132 Cr), FCF was -INR 470 Cr, signaling working capital stress or project delays — a structural risk in construction",
+      "Finance costs of INR 629 Cr on EBITDA of INR 1,750 Cr yield interest coverage of only 2.8x — thin cushion if margins compress further"
+    ],
+    "red_flags": [
+      "IPO company (Shapoorji Pallonji group under financial stress) — insiders had strong incentive to sell at cycle peak, classic adverse selection for public buyers",
+      "Other income of INR 469 Cr in FY25 nearly equals reported net profit of INR 487 Cr — stripping this out reveals core construction earnings are negligible",
+      "Borrowings surged to INR 3,565 Cr in FY25 from INR 2,062 Cr in FY23 — leverage increasing as revenue stagnates"
+    ],
+    "detailed_analysis": "Afcons looks deceptively cheap at P/B 2.3x and P/S 0.98x — the kind of metrics that attract value-oriented screens. But stripping the INR 469 Cr of 'other income' from FY2025 net profit of INR 487 Cr reveals that the actual construction business generated almost zero earnings. Finance costs of INR 629 Cr eat deeply into the INR 1,750 Cr EBITDA. The EV/EBITDA of 10.7x is fair, not cheap, given these structural liabilities.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 236343,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.3212043,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 28946,
+      "cache_read_input_tokens": 15776,
+      "output_tokens": 13861,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 28946,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 513,
+          "cache_read_input_tokens": 15776,
+          "cache_creation_input_tokens": 13170,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 13170
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

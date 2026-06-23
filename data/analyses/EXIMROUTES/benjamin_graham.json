@@ -1,0 +1,70 @@
+{
+  "symbol": "EXIMROUTES",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-21T07:52:29.485652Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Exim Routes fails nearly every quantitative filter I require: P/B of ~9.9x, P/E of 37.5, only two years of positive earnings, and zero years of positive operating cash flow in five years. The stock trades at roughly 3.7x its Graham Number (~INR 39), offering no margin of safety whatsoever.",
+    "key_strengths": [
+      "Revenue grew rapidly from INR 4 Cr (2021) to INR 121 Cr (2025), demonstrating operational scaling",
+      "Debt-to-Equity of 0.36 (Borrowings INR 9 Cr vs Equity INR 25 Cr) is the one metric that passes my filter",
+      "ROCE of 55% and ROE of 54% are superficially impressive, though unconfirmed by cash flows"
+    ],
+    "key_risks": [
+      "Cash flow destruction: OCF negative every single year (0/5 positive); FCF was -INR 9 Cr in 2025 despite INR 8 Cr reported net profit — earnings quality is deeply suspect",
+      "Minimal earnings track record: Net profit was zero for 2021, 2022, and 2023 — only two years of profitability; Graham requires at minimum 3-5 consecutive profitable years",
+      "Extreme overvaluation: P/B ~9.9x (Graham ceiling is 1.5x) and price of INR 146 vs Graham Number of ~INR 39 means you are paying nearly 4x fair value for unproven earning power"
+    ],
+    "red_flags": [
+      "OCF negative all 5 years — profits are not being converted to cash, suggesting aggressive revenue recognition or severe working capital drag",
+      "Incorporated April 2019 — only a 6-year-old company with a mere 2-year profit history; no durability established",
+      "No dividend history whatsoever; shareholders receive nothing while management consumes capital",
+      "Market cap of INR 248 Cr vs Total Equity of INR 25 Cr implies the market is pricing in decades of growth that may never materialise"
+    ],
+    "detailed_analysis": "By every quantitative standard I have applied for over fifty years, Exim Routes is a speculation dressed as an investment. The Graham Number — computed as √(22.5 × ~INR 4.7 EPS × ~INR 14.7 BVPS) — yields approximately INR 39, against a market price of INR 146. That is a 275% premium to intrinsic value, the precise opposite of my required margin of safety. P/E at 37.5 is nearly 2.5× my maximum threshold of 15, and the Price-to-Book of roughly 9.9× makes this company appear priced for perfection in a commodity recycled-paper business where no durable competitive advantage is evident.\n\nWhat troubles me most is the disconnect between reported profits and cash reality. The company shows INR 8 Cr net profit in FY2025 yet generated negative INR 5 Cr from operations and negative INR 9 Cr free cash flow. In my experience, when a company cannot convert reported earnings into cash, one must question whether those earnings are real. The business is funded almost entirely by external financing (Financing CF +INR 11 Cr in 2025) rather than its own operations — a pattern I associate with capital consumption, not wealth creation. Mr. Market may be excited by 134% revenue CAGR, but I will not pay for a story; I insist on demonstrated, cash-backed earning power. This company has neither the history nor the price to merit a disciplined investor's capital.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 47169,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07035225,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8297,
+      "cache_read_input_tokens": 10315,
+      "output_tokens": 2409,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8297,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 359,
+          "cache_read_input_tokens": 8265,
+          "cache_creation_input_tokens": 2082,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2082
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

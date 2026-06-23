@@ -1,0 +1,70 @@
+{
+  "symbol": "544399",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-20T19:56:08.546969Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Srigee DLM is a recently-listed micro-cap (BSE code 544399, ₹38 Cr market cap) with essentially no earning power — an ROE of 0.30% means the business is producing almost nothing on its capital base. The seemingly low P/E of 9.46 is illusory: when earnings are negligible, a low multiple offers no margin of safety.",
+    "key_strengths": [
+      "P/E of 9.46 is nominally below my 15x threshold",
+      "Promoter holding of 45.23% provides some skin in the game",
+      "Asset-backed business (plastic manufacturing) with tangible operations"
+    ],
+    "key_risks": [
+      "ROE of 0.30% signals virtually no earning power — disqualifying",
+      "Recent IPO/listing — no multi-year earnings track record I require",
+      "Micro-cap at ₹38 Cr with 2.25% FII and 0% DII — illiquid and uninstitutional"
+    ],
+    "red_flags": [
+      "0.30% ROE is indistinguishable from capital destruction",
+      "No demonstrated 3-5 year earnings history as a listed entity",
+      "IPO/SME-style listing — pricing favors the seller, not the investor",
+      "No dividend history provided"
+    ],
+    "detailed_analysis": "From my perspective, the cardinal test is proven, sustained earning power — and Srigee DLM fails it outright. An ROE of 0.30% means shareholders' capital is earning roughly what a zero-interest current account earns; this is not a business producing value, it is capital sitting idle. The optically attractive P/E of 9.46 is a statistical artifact of tiny earnings on a small equity base. I would need to see Book Value, Current Ratio, Debt/Equity, and at least five years of post-listing earnings before the Graham Number could even be computed meaningfully — and none of that evidence is on offer.\n\nThis is precisely the sort of situation I warned about in The Intelligent Investor: a recently-listed small enterprise, promoted into public markets, where the seller and underwriters possess information the buyer does not. At ₹38 Cr market cap with negligible institutional ownership (2.25% FII, 0% DII), Mr. Market here is thinly populated and the price discovery is unreliable. There is no margin of safety, no dividend record, and no demonstrated earning power. AVOID.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "insufficient_data",
+      "valuation": "overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 23531,
+    "model_used": "opus",
+    "total_cost_usd": 0.09586374999999998,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 9077,
+      "cache_read_input_tokens": 13505,
+      "output_tokens": 1294,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9077,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10619,
+          "cache_creation_input_tokens": 1344,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1344
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

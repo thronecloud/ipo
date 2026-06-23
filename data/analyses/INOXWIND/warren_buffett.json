@@ -1,0 +1,69 @@
+{
+  "symbol": "INOXWIND",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-19T12:56:51.229445Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Inox Wind is a capital-intensive, policy-dependent wind turbine manufacturer that spent six straight years (2018–2023) destroying capital with negative earnings and catastrophic free cash flows. A single year of profitability in FY25 does not erase a decade of poor returns on a commoditised product in a cyclical industry dependent on government tenders.",
+    "key_strengths": [
+      "Revenue recovered sharply to INR 3,557 Cr in FY25 — near the 2016 peak — suggesting the wind sector policy cycle has turned favorably",
+      "Debt is being reduced: borrowings fell from INR 2,637 Cr (2022) to INR 1,140 Cr (2025), improving the balance sheet after the equity raise",
+      "Forward P/E of 15.8x is materially lower than trailing 33.7x, implying the market expects earnings to continue recovering"
+    ],
+    "key_risks": [
+      "Free cash flow has been negative every year since 2021 (FY25: -INR 483 Cr) — the business is still consuming cash despite reported profits due to heavy capex of INR 620 Cr",
+      "No durable competitive advantage: wind turbine components are commoditised and subject to intense price competition from Suzlon, Siemens Gamesa, and Chinese OEMs",
+      "Returns are structurally mediocre: ROE 11.7%, ROCE 11.5% even in a good year, well below my 15% threshold — this is a business that barely earns its cost of capital"
+    ],
+    "red_flags": [
+      "Nine-year revenue CAGR of -2.4% — the company is not actually a growth business; it is a cyclical that fluctuates with policy",
+      "Six consecutive years of net losses (2018–2023) wiped out equity and required emergency fundraising — management failed catastrophically during the last down-cycle",
+      "OCF positive only 1 of the last 5 years, and cumulative FCF over the period is deeply negative — the reported net profit does not translate to cash"
+    ],
+    "detailed_analysis": "I look for businesses that generate high returns on capital consistently, not businesses that alternate between feast and famine based on government procurement cycles. Inox Wind's history is precisely that: INR 461 Cr profit in 2016, then six years of losses totalling over INR 2,000 Cr, then a recovery in FY25. This is not a wonderful business — it is a cyclical capital-intensive manufacturer with no pricing power operating in an industry where the customer (government utilities) holds all the negotiating leverage.\n\nEven in the best year (FY25), FCF remains negative at -INR 483 Cr because the business needs massive ongoing capital investment to fulfil orders. ROE of 11.7% in a boom year is telling — when the cycle turns again, equity will be destroyed. At 33.7x trailing P/E for a company with this history, I see no margin of safety. I would not own this business at any price that reflects a normalised cycle.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "poor",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 123404,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.18002430000000003,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 20972,
+      "cache_read_input_tokens": 15301,
+      "output_tokens": 6452,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 20972,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 626,
+          "cache_read_input_tokens": 15301,
+          "cache_creation_input_tokens": 5671,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 5671
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

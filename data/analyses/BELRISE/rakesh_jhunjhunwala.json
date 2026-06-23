@@ -1,0 +1,69 @@
+{
+  "symbol": "BELRISE",
+  "persona": "rakesh_jhunjhunwala",
+  "persona_display_name": "Rakesh Jhunjhunwala",
+  "analyzed_at": "2026-04-22T16:22:52.130132Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Belrise is a decent auto-component play riding India's vehicle production cycle, with 15.4% revenue CAGR and clean promoter holding — but at 39.6x P/E for a business delivering only 10.7% net profit CAGR with sub-15% ROE, the market is asking me to pay Titan prices for a commodity supplier. Wait for either a meaningful valuation correction or visible margin expansion before building a position.",
+    "key_strengths": [
+      "Revenue compounding at 15.4% CAGR (FY22-25) across 2W/3W/4W — diversified OEM exposure reduces single-customer risk",
+      "IPO proceeds slashed borrowings from ₹2,504 Cr to ₹1,418 Cr; D/E now a comfortable 0.29 — balance sheet materially cleaner post-listing",
+      "Promoter at 66.46% with 35+ year track record (founded 1988); FII+DII already at 18.2% signals institutional validation"
+    ],
+    "key_risks": [
+      "Margin squeeze is structural: operating margin only 8.29% and net profit CAGR (10.7%) is lagging revenue growth (15.4%) — OEMs extract pricing concessions relentlessly",
+      "FCF deeply negative in FY25 (-₹163 Cr) with capex surging to ₹868 Cr; this is a capital-hungry treadmill with no durable FCF yet",
+      "Finance cost still ₹307 Cr (growing 12.4% CAGR) and total debt ₹2,964 Cr vs borrowings ₹1,418 Cr — nearly ₹1,550 Cr in lease/other obligations warrant scrutiny"
+    ],
+    "red_flags": [
+      "P/E of 39.6x for 10.7% profit CAGR implies PEG ~3.7x — this is not growth-at-reasonable-price, this is hope-at-premium-price",
+      "ROE of 14.1% and ROCE of 14.3% both below my 15% floor — capital is not being deployed efficiently enough",
+      "Total debt (₹2,964 Cr) versus reported borrowings (₹1,418 Cr) leaves ~₹1,546 Cr unexplained in the summary — needs balance sheet transparency"
+    ],
+    "detailed_analysis": "Belrise (formerly Badve Engineering) is a competent tier-1/tier-2 auto component manufacturer with a credible 35-year operating history, reasonable scale at ₹8,291 Cr revenue, and a sensible product mix spanning shock absorbers, chassis sub-assemblies, exhaust systems, and polymer parts. The structural story is fine — India's vehicle production has a long runway and Belrise participates across all segments. But competence in execution does not justify a 39.6x earnings multiple when net profit grew only 10.7% CAGR and stood flat from FY23 to FY24 (both ₹314 Cr). The forward P/E compressing to 27.6x is encouraging, but that assumes meaningful earnings acceleration I don't yet see in the margin trajectory.\n\nWhat truly concerns me is the capital intensity and margin arithmetic. Operating margins at 8.29% leave almost no buffer — one input cost cycle or OEM price renegotiation and profits disappear. Capex exploded to ₹868 Cr in FY25, making FCF negative (-₹163 Cr), and even OCF of ₹704 Cr is thin relative to ₹2,964 Cr in total debt obligations. The IPO equity infusion (reserves jumped from ₹2,015 Cr to ₹4,526 Cr) cleaned the balance sheet optics, but the underlying business still has a high fixed-cost structure with modest returns on capital. I would want to see two consecutive years of ROE crossing 17%, operating margins expanding past 10%, and FCF turning sustainably positive before treating this as a high-conviction India manufacturing bet.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 59837,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08348610000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9420,
+      "cache_read_input_tokens": 11157,
+      "output_tokens": 2987,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9420,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 575,
+          "cache_read_input_tokens": 9054,
+          "cache_creation_input_tokens": 2469,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2469
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

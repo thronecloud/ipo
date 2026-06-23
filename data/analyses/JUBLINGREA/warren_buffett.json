@@ -1,0 +1,69 @@
+{
+  "symbol": "JUBLINGREA",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-19T13:04:38.179861Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Jubilant Ingrevia is a capital-intensive specialty chemicals business with earnings well below my 15% ROE threshold and operating margins barely above 7%, offering no durable pricing power in a commodity-pressured sector. At 38.6x P/E with profits that have nearly halved from the 2022 peak (477 Cr to 251 Cr), the market is pricing in a recovery I'm not willing to pay for.",
+    "key_strengths": [
+      "Debt/Equity of 0.27 is conservative, limiting financial distress risk",
+      "Diversified end-markets (pharma, agro, nutrition) reduce single-sector dependence",
+      "Operating cash flow positive all 5 years, showing the core business does generate real cash"
+    ],
+    "key_risks": [
+      "ROE of only 8.88% — far below my 15% minimum — suggests no durable competitive advantage",
+      "Revenue and profits have shrunk materially from 2022 peak; no sign of sustained recovery",
+      "Heavy and rising capex (CWIP spiked to 633 Cr) with negative FCF in 2023-2024, funded by debt that has tripled since 2021 (556 → 806 Cr borrowings)"
+    ],
+    "red_flags": [
+      "Finance costs compounding at 68% CAGR — debt load growing faster than earnings",
+      "Operating margin of 7.76% leaves almost no buffer for a cyclical downturn or Chinese price competition",
+      "Net profit in 2025 (251 Cr) is barely half the 2022 peak (477 Cr) yet the stock trades at 38.6x current earnings"
+    ],
+    "detailed_analysis": "The revenue jump from 684 Cr (2021) to 4,949 Cr (2022) reflects a corporate restructuring/demerger, not organic growth, making headline CAGRs misleading. The underlying business reality since 2022 is one of contraction: revenue fell from 4,949 to 4,136 Cr and profits dropped 62% before a partial bounce to 251 Cr in 2025. This is a specialty chemicals business competing in global markets where Chinese producers consistently undercut on price — not the kind of moat I look for.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 125561,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.19234935000000003,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 21843,
+      "cache_read_input_tokens": 15647,
+      "output_tokens": 7049,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 21843,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 656,
+          "cache_read_input_tokens": 15647,
+          "cache_creation_input_tokens": 6196,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 6196
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

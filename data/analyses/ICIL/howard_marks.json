@@ -1,0 +1,69 @@
+{
+  "symbol": "ICIL",
+  "persona": "howard_marks",
+  "persona_display_name": "Howard Marks",
+  "analyzed_at": "2026-04-18T17:51:16.733022Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "At 48x trailing P/E, Indo Count's price reflects earnings recovery optimism that its 9-year net profit CAGR of -0.2% does nothing to justify — revenue has doubled since 2016, yet profits are essentially flat. Finance costs have 4x'd in four years (INR 28 Cr → 123 Cr), and the forward P/E of 19.7x demands a near-perfect cyclical rebound in a tariff-exposed, US-consumer-dependent business — that is not a margin of safety, that is a prayer.",
+    "key_strengths": [
+      "Revenue compounding at 8.1% CAGR over 9 years with clear export franchise in the US bed linen market — a genuine scale advantage.",
+      "Promoter holding at 58.74% with meaningful FII/DII participation signals credibility and skin in the game.",
+      "Debt/Equity of 0.54 is nominally manageable, and Debt/EBITDA (~2.5x) is not yet crisis-level."
+    ],
+    "key_risks": [
+      "Finance costs have surged from INR 28 Cr (2021) to INR 123 Cr (2025) — up 4.4x in four years — quietly destroying earnings even as revenue grows.",
+      "Net profit in FY2025 (INR 246 Cr) is barely above FY2016 (INR 251 Cr) — nine years of revenue growth generated zero incremental earnings, a devastating indictment of capital allocation.",
+      "OCF positive in only 3 of 5 years; total debt jumped to INR 1,449 Cr with another large capex cycle underway (INR 485 Cr investing CF in FY2025) — in a downturn, this leverage is dangerous."
+    ],
+    "red_flags": [
+      "48x trailing P/E on a cyclical textile exporter with flat 9-year earnings — the price already discounts perfection.",
+      "Forward P/E of 19.7x implies earnings nearly doubling to ~INR 277 Cr — a bold bet on US consumer demand and stable trade policy simultaneously.",
+      "Free cash flow was deeply negative in FY2022 (-INR 489 Cr) and near-zero in FY2024 (INR 11 Cr); a business burning capital at cycle peaks is a red flag for cycle troughs."
+    ],
+    "detailed_analysis": "Indo Count is a textbook second-level-thinking trap. First-level thinking says: growing revenue, decent promoter holding, expanding exports — buy. Second-level thinking asks: what has that growth actually produced? The answer is sobering — FY2025 net profit of INR 246 Cr is *lower* than FY2016's INR 251 Cr. Management has compounded revenue 2x in nine years while compounding earnings at -0.2%. The culprit is visible: finance costs have exploded from INR 28 Cr in FY2021 to INR 123 Cr in FY2025 as the company loaded up on debt (borrowings up from INR 577 Cr to INR 1,243 Cr). With an operating margin of only 4.86%, every 50bps move in borrowing rates or input costs hits the bottom line hard. This is a fragile P&L at a rich multiple.\n\nThe valuation leaves no room for error in a business that has historically been error-prone. At 48x trailing P/E, the stock is essentially a leveraged bet on a cyclical inflection — that US bed linen demand holds, that no new tariffs hit Indian textile exporters, and that the ongoing capex (INR 252 Cr in FY2025) delivers the EBITDA needed to service INR 1,449 Cr of total debt. The forward P/E of 19.7x, while more palatable, still assumes earnings nearly doubling from current depressed levels — the definition of consensus optimism with no margin of safety. Per my framework: the upside is already priced in; the downside is not. That asymmetry is wrong-way round.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 71997,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09839205,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10407,
+      "cache_read_input_tokens": 11156,
+      "output_tokens": 3734,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10407
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 414,
+          "cache_read_input_tokens": 9102,
+          "cache_creation_input_tokens": 3359,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 3359,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

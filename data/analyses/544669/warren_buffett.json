@@ -1,0 +1,69 @@
+{
+  "symbol": "544669",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-20T11:11:10.615268Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Admach Systems is a sub-scale (Rs 130 Cr) custom machine builder earning a paltry 0.44% ROE — well below its cost of capital and a fraction of the >15% I demand. At 14.9x earnings on near-zero returns, the market is paying for hope, not for a business; this sits firmly outside my circle of competence and quality bar.",
+    "key_strengths": [
+      "Promoter holding 52.95% — reasonable skin in the game",
+      "P/E of 14.9 not optically expensive in absolute terms",
+      "Niche in special-purpose machines/automation, an area with secular tailwinds in India"
+    ],
+    "key_risks": [
+      "ROE of 0.44% indicates capital is essentially being destroyed",
+      "Custom-built machinery is lumpy, working-capital heavy and lacks recurring revenue",
+      "Tiny float, negligible institutional ownership (FII 1.06%, DII 1.00%) — illiquid micro-cap"
+    ],
+    "red_flags": [
+      "ROE below a savings-account rate suggests poor unit economics or accounting opacity",
+      "Recent BSE listing with thin disclosure history — IPO-era pricing concerns",
+      "P/E of 14.9 implies the market is capitalising near-zero earnings at a premium to the underlying economics"
+    ],
+    "detailed_analysis": "A wonderful business compounds capital at high rates over long periods. Admach is the opposite: a 0.44% ROE means a rupee retained inside this business creates almost no value — you would do dramatically better leaving the money in a fixed deposit. Special-purpose machinery is by nature project-based, capital-intensive, and contains zero pricing power once a contract is signed; it is the antithesis of the toll-bridge economics I look for. There is no discernible moat — no brand, no switching costs, no network effects, no scale advantage at Rs 130 Cr revenue base.\n\nAt 14.9x earnings, the stock is not \"cheap\" — it is expensive relative to the quality of the underlying earnings stream. If ROE were to mean-revert toward an industrial cost of capital (12-14%), earnings would need to multiply many-fold to justify even today's price; absent that, you're paying a real multiple for a business returning nothing. I would need to see several years of demonstrated ROE >15%, clean cash conversion, and a defensible niche before even reading the annual report seriously. Pass.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 23428,
+    "model_used": "opus",
+    "total_cost_usd": 0.0928195,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8974,
+      "cache_read_input_tokens": 13404,
+      "output_tokens": 1200,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8974,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10567,
+          "cache_creation_input_tokens": 1244,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1244
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

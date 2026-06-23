@@ -1,0 +1,70 @@
+{
+  "symbol": "EDELWEISS",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T17:08:41.649518Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Edelweiss fails virtually every quantitative filter I require — P/E of 19x exceeds my limit of 15, P/B of 1.86x exceeds 1.5, and the stock trades at INR 119 versus a Graham Number of approximately INR 77, a 55% premium to intrinsic value. The catastrophic FY2020 loss of INR 2,044 Cr permanently breaks the 5-year consecutive earnings requirement that is non-negotiable to me.",
+    "key_strengths": [
+      "Meaningful deleveraging: borrowings reduced from INR 36,657 Cr (2020) to INR 19,459 Cr (2025), reducing existential risk",
+      "OCF positive all 5 years with cash growing from INR 2,024 Cr to INR 4,938 Cr, showing real liquidity improvement",
+      "Finance costs declining (4,793→2,537 Cr), modestly expanding net profit recovery from the 2020 disaster"
+    ],
+    "key_risks": [
+      "Debt/Equity of 3.51x — seven times my maximum threshold of 0.5; finance costs of INR 2,537 Cr dwarf net profit of INR 536 Cr nearly 5:1",
+      "Shareholders' equity is shrinking, not growing: equity fell from INR 6,744 Cr (2023) to INR 4,419 Cr (2025) — a deeply troubling erosion of the asset base I rely upon",
+      "Operating income CAGR of just 0.4% over 9 years with a contracting trend; the business is fundamentally stagnant despite vast financial leverage"
+    ],
+    "red_flags": [
+      "FY2020 net loss of INR 2,044 Cr — permanently disqualifies the stock from my earnings continuity requirement",
+      "Price of INR 119 is ~55% above the Graham Number of ~INR 77 (sqrt(22.5 × EPS ~5.65 × BVPS ~46.6))",
+      "Equity declining from 6,744 to 4,419 Cr over two years — capital is being consumed, not compounded",
+      "Revenue CAGR of only 6.7% over 9 years with contracting last-5-year trend despite operating a leveraged financial conglomerate"
+    ],
+    "detailed_analysis": "Edelweiss fails my quantitative filters at virtually every checkpoint. At INR 119, the stock trades at 19x earnings (my ceiling is 15x), 1.86x book (my ceiling is 1.5x), and 55% above the Graham Number of ~INR 77. For a value investor, overpaying for assets is not a matter of degree — it eliminates the margin of safety entirely. The most disqualifying fact is the FY2020 loss of INR 2,044 Cr, which obliterated years of accumulated earnings and demonstrates that this business model carries severe cyclical and credit risk. An intelligent investor does not buy a company that can lose more than five years of normal profits in a single year.\n\nThe debt structure is the other decisive concern. A Debt/Equity of 3.51x is appropriate for a bank with deposit insurance and central bank backstops — it is dangerous for an NBFC/financial conglomerate. Finance costs of INR 2,537 Cr against net profit of INR 536 Cr means the lenders extract five rupees for every one rupee shareholders earn. The declining equity base (INR 6,744 Cr in 2023 to INR 4,419 Cr in 2025) signals capital erosion, not accumulation. While management has meaningfully reduced borrowings and cash has grown, I require a margin of safety in purchase price, not a bet on continued management execution. Mr. Market is offering this stock at a premium — I see no reason to accept his price.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 51006,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07964055,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9481,
+      "cache_read_input_tokens": 11226,
+      "output_tokens": 2714,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9481
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 404,
+          "cache_read_input_tokens": 9176,
+          "cache_creation_input_tokens": 2355,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2355,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

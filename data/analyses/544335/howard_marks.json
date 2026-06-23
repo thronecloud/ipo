@@ -1,0 +1,69 @@
+{
+  "symbol": "544335",
+  "persona": "howard_marks",
+  "persona_display_name": "Howard Marks",
+  "analyzed_at": "2026-04-20T09:47:12.157694Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "A small civil-construction contractor trading at a modest 8.4x P/E with decent ROCE (17.9%), but the 2025 IPO proceeds (equity jumped 127→245 Cr) arrived precisely as OCF flipped to -36 Cr and FCF to -58 Cr — a classic late-cycle Indian infra story where working-capital absorption is masking the underlying economics. Price isn't euphoric, but neither is there a margin of safety sufficient to compensate for cyclicality, receivables risk, and unproven execution at scale.",
+    "key_strengths": [
+      "Reasonable headline valuation: P/E 8.4x with ROCE 17.9% and 25.6% net profit CAGR (2020→2025)",
+      "Promoter skin-in-the-game at 73.6% — incentive alignment with minority holders",
+      "Post-IPO balance sheet de-risked: borrowings only 77 Cr vs equity 245 Cr (D/E ~0.31x)"
+    ],
+    "key_risks": [
+      "OCF collapsed to -36 Cr and FCF to -58 Cr in FY25 despite profit growth — earnings quality is deteriorating",
+      "Revenue fell 589→510 Cr (-13%) in FY25, suggesting order-book lumpiness in a cyclical EPC business",
+      "Recent IPO near an Indian infra/capex peak — priced to reflect continued government ordering, little downside cushion"
+    ],
+    "red_flags": [
+      "FY25 net profit 25 Cr but operating cash flow -36 Cr — a 61 Cr gap is a significant accrual-vs-cash divergence",
+      "Capital raise coincides with working-capital blowout — need to scrutinize receivables/WIP buildup",
+      "Tiny 270 Cr market cap with 0.41% FII holding implies thin institutional scrutiny"
+    ],
+    "detailed_analysis": "Second-level thinking here: the market sees 8.4x P/E, 25.6% profit CAGR, and 73.6% promoter holding and concludes \"cheap growth story.\" What the price may not yet reflect is that FY25's reported profit of 25 Cr is not being converted to cash — operating cash flow of -36 Cr and free cash flow of -58 Cr point to receivables or unbilled revenue ballooning, which is the classic pattern of Indian civil-construction companies when government counterparties slow payments or when order execution accelerates past billing. Revenue also contracted 13% in FY25, which is inconsistent with the \"expanding\" capex-cycle narrative used to justify listing small infra names at this stage.\\n\\nOn cycle positioning: this is a 2024/25 IPO in the middle of an Indian infra-capex euphoria, and Marks' pendulum is clearly closer to greed than fear for this sub-sector. The post-IPO balance sheet is genuinely cleaner (borrowings 77 Cr against equity 245 Cr), and promoter alignment is high — so this isn't a \"zero\" scenario. But at 270 Cr market cap the downside in a capex pause or receivables-cycle stress is meaningful (multiple de-rate to 5x plus earnings compression could halve the stock), while the upside requires the company to execute the bigger order book cleanly and convert profits to cash — something it has not demonstrated at scale. Risk/reward is roughly symmetric, not asymmetric in our favor. Pass unless price offers a wider margin of safety or FY26 interims show working capital normalizing.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 30396,
+    "model_used": "opus",
+    "total_cost_usd": 0.11581825,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 10549,
+      "cache_read_input_tokens": 14564,
+      "output_tokens": 1703,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10549,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 11682,
+          "cache_creation_input_tokens": 1749,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1749
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

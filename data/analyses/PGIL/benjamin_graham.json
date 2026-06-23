@@ -1,0 +1,71 @@
+{
+  "symbol": "PGIL",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T22:00:45.101595Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Pearl Global trades at INR 1,643 against a calculated Graham Number of approximately INR 560 — nearly 3x intrinsic value by my standards — offering no margin of safety whatsoever. At P/E 29x and P/B 5.87x, the market is paying a speculative premium for growth stories I cannot verify with certainty.",
+    "key_strengths": [
+      "Nine consecutive years of positive net profits (2016–2025), satisfying my earnings continuity requirement",
+      "Interest coverage of 3.7x (EBIT INR 417 Cr ÷ Finance Cost INR 112 Cr) barely clears my 3.5x floor",
+      "Operating income CAGR of 23.8% over nine years shows genuine operational improvement — though I refuse to pay for future growth"
+    ],
+    "key_risks": [
+      "Price is roughly 3x my Graham Number (~INR 560); any earnings disappointment destroys the speculative premium instantly",
+      "Finance costs grew at 20.4% CAGR — nearly matching profit growth — indicating debt-fueled expansion with rising fragility",
+      "FCF collapsed to INR 81 Cr in 2025 despite net profit of INR 231 Cr, revealing heavy working capital consumption that calls into question earnings quality"
+    ],
+    "red_flags": [
+      "P/B of 5.87 is nearly 4x my maximum threshold of 1.5 — the market is paying INR 5.87 for every INR 1 of net assets",
+      "P/E of 29.1x is nearly double my ceiling of 15x; no margin of safety at this price",
+      "Debt/Equity of 0.59 exceeds my 0.50 limit, and borrowings grew from INR 588 Cr to INR 773 Cr in a single year",
+      "No dividend history mentioned — shareholders receive no tangible cash returns to validate the valuation",
+      "Operating margin of only 6.29% leaves almost no buffer against revenue or cost shocks in a cyclical apparel business"
+    ],
+    "detailed_analysis": "Pearl Global is a genuine business with a real earnings record — nine years of positive net profits and a respectable 22.6% profit CAGR. I acknowledge that. But the intelligent investor does not pay for past excellence; he demands a discount to intrinsic value. My Graham Number — calculated as √(22.5 × EPS ~INR 50 × Book Value/Share ~INR 279) — yields roughly INR 560. The stock trades at INR 1,643, a 193% premium to that figure. At P/E 29x and P/B 5.87x, every rupee of future optimism is already priced in, and then some. Mr. Market is in an euphoric mood about apparel exporters, and the disciplined investor steps aside.\n\nThe balance sheet raises further concern. Borrowings jumped from INR 588 Cr to INR 773 Cr in one year, and finance costs compound at 20.4% annually — nearly as fast as net profit. Free cash flow in 2025 was a paltry INR 81 Cr against reported net profit of INR 231 Cr, a divergence that suggests significant working capital absorption as the company scales. Operating margins of 6.29% are thin and cyclical; apparel manufacturing is not a fortress business. I require a substantial margin of safety precisely because the future is uncertain. Here there is none. The intelligent investor waits for Mr. Market's pessimism to offer this stock at a fair price — perhaps INR 500–600. At INR 1,643, I will not participate.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 47024,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07191705,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9131,
+      "cache_read_input_tokens": 11156,
+      "output_tokens": 2288,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9131,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 247,
+          "cache_read_input_tokens": 9106,
+          "cache_creation_input_tokens": 2075,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2075
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

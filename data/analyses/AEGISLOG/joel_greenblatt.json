@@ -1,0 +1,69 @@
+{
+  "symbol": "AEGISLOG",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-19T06:25:01.674950Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Aegis Logistics has compounded EBITDA at 22.6% per year for nine years atop a genuinely defensible port terminal infrastructure franchise — the kind of durable competitive position Greenblatt respects. However, at 23x EV/EBITDA (earnings yield ~3.7%) with ROIC of only 13.2%, both Magic Formula metrics fail their thresholds; the market has already priced the quality in full.",
+    "key_strengths": [
+      "22.6% EBITDA CAGR over 9 years with steady margin expansion — compounding quality at scale is rare in capital-intensive logistics",
+      "Critical port terminal infrastructure (LPG, liquid chemicals, petrochemicals) creates high barriers to entry; no competitor can cheaply replicate licensed coastal real estate",
+      "100% OCF positivity track record (5/5 years) and net profit growing from INR 126 Cr (FY16) to INR 787 Cr (FY25)"
+    ],
+    "key_risks": [
+      "ROIC/ROCE of only 13.2% — well below the 20% Magic Formula threshold; capital intensity of terminal infrastructure structurally limits returns",
+      "Finance costs have ballooned from INR 18 Cr (FY16) to INR 165 Cr (FY25), a 27.9% CAGR — debt is being used aggressively to fund expansion, compressing returns",
+      "Total debt jumped to INR 4,606 Cr in FY25 (vs INR 835 Cr in FY22) — three years of aggressive leverage expansion; FCF was -INR 386 Cr in FY25"
+    ],
+    "red_flags": [
+      "Earnings yield ~3.7% (EBIT INR 1,098 Cr / EV ~INR 30,000 Cr) is nearly 3x below Magic Formula's minimum threshold",
+      "Total debt (INR 4,606 Cr) vs borrowings (INR 2,439 Cr) discrepancy likely reflects large lease liabilities — true leverage is higher than headline D/E of 0.28 suggests",
+      "Other Income (INR 208 Cr in FY25) represents ~16% of EBITDA — recurring reliance on non-operating income to support profitability metrics"
+    ],
+    "detailed_analysis": "Aegis operates genuinely scarce infrastructure assets — shore-based tank farms, LPG terminals, and chemical handling facilities at Indian ports. These assets have taken decades and regulatory approvals to build; entry barriers are real. The nine-year EBITDA compounding of 22.6% is impressive, as is the consistent OCF generation. This is a quality business by any reasonable standard.\n\nBut the Magic Formula is a valuation discipline first. At 23x EV/EBITDA, Aegis yields only ~3.7% on EBIT — you need the stock to decline ~60% before it reaches the 12% earnings yield threshold for a strong buy signal. ROIC of 13.2% reflects the structural drag of capital-intensive terminal infrastructure; no matter how good the competitive position, you cannot compound at 25%+ ROIC when every new project requires hundreds of crores in construction. The explosive debt growth (from INR 835 Cr to INR 4,606 Cr in three years) to fund the INR 2,000+ Cr annual capex program is a concern — today's growth is being financed, not earned.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 267843,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.3708348,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 31622,
+      "cache_read_input_tokens": 15761,
+      "output_tokens": 16501,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 31622,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 521,
+          "cache_read_input_tokens": 15761,
+          "cache_creation_input_tokens": 15861,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 15861
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

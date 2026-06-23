@@ -1,0 +1,71 @@
+{
+  "symbol": "DIACABS",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T17:06:57.325297Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "DIACABS is a post-insolvency turnaround trading at 74.9x P/E on embryonic earnings of just ₹34 Cr, with negative shareholder equity of -₹714 Cr — a company that by every Graham quantitative measure is technically insolvent and priced for perfection. The market is paying ₹7,884 Cr for a business that generated near-zero revenue as recently as 2022; this is pure speculation dressed as recovery.",
+    "key_strengths": [
+      "Revenue recovery is real and accelerating: ₹14 Cr (2023) → ₹343 Cr (2024) → ₹1,115 Cr (2025)",
+      "Debt dramatically restructured: Total Debt fell from ₹2,355 Cr (2024) to ₹463 Cr (2025), suggesting NCLT resolution completed",
+      "Operating cash flow turned positive at ₹77 Cr in FY2025, confirming at least minimal operational viability"
+    ],
+    "key_risks": [
+      "Negative equity of -₹714 Cr means liabilities overwhelm all assets — the Graham Number cannot even be computed",
+      "P/E of 74.9x on ₹34 Cr net profit; revenue must sustain 5x+ further growth just to justify half this price by conservative standards",
+      "Management destroyed ₹3,153 Cr revenue business by 2014 down to zero by 2022 — accumulated losses of -₹767 Cr in reserves represent permanent capital destruction"
+    ],
+    "red_flags": [
+      "Negative book value (-₹714 Cr equity) — P/B of -10.95 is not a valuation metric, it signals insolvency",
+      "No dividends ever paid; no reasonable expectation of dividends given negative retained earnings",
+      "Finance costs soaring again: ₹13 Cr (2025) vs ₹7 Cr (2024) as borrowings grew from ₹456 Cr to ₹610 Cr — re-leveraging at earliest stage of recovery",
+      "EV/EBITDA of 68.19x on ₹67 Cr EBITDA is grotesquely expensive for an industrial commodity business",
+      "84% promoter concentration leaves minimal float and price discovery is unreliable"
+    ],
+    "detailed_analysis": "From my perspective as a practitioner of security analysis, DIACABS fails every quantitative filter I have ever prescribed. The Graham Number requires positive earnings AND positive book value per share — here book value is deeply negative at -₹714 Cr, rendering the calculation impossible. P/E at 74.9x exceeds my maximum threshold of 15x by a factor of five. P/B at -10.95 is not merely above my 1.5x ceiling; it signals the company's liabilities exceed its assets in total. The company went through what appears to be an NCLT insolvency resolution — revenues collapsed from ₹3,153 Cr (2014) to literally ₹0 (2022). This is not a temporary earnings dip; it is a total business failure. Accumulated reserves of -₹767 Cr represent real wealth permanently destroyed.\n\nThe bull case — a genuine power infrastructure revival riding India's grid capex boom — is a story, not a security. Mr. Market has already priced the recovery at ₹7,884 Cr market cap for a business earning ₹34 Cr. Even if revenue reaches ₹3,000 Cr (matching the 2014 peak) and margins normalize to 5% net, that yields ₹150 Cr of earnings — still implying a forward P/E of ~53x at current prices. There is no margin of safety here; there is only margin of hope. An intelligent investor does not buy hope at any price, let alone at 75x earnings with negative net worth.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 55193,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07385145,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9145,
+      "cache_read_input_tokens": 10979,
+      "output_tokens": 2417,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9145
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 217,
+          "cache_read_input_tokens": 8929,
+          "cache_creation_input_tokens": 2266,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2266,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

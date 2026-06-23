@@ -1,0 +1,71 @@
+{
+  "symbol": "GOKEX",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T17:24:35.510946Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Gokaldas is a commodity garment exporter with a razor-thin 2.92% operating margin, an 8.16% ROE, and negative free cash flow for two straight years — the antithesis of a wonderful business. At 45.5x trailing P/E, the market is pricing in a business quality that simply does not exist here.",
+    "key_strengths": [
+      "Revenue CAGR of 14.5% over 9 years shows consistent top-line momentum, accelerating to INR 3,864 Cr in FY25 (74% jump via acquisitions)",
+      "Debt/Equity of 0.46 is still below 0.5, leaving some balance sheet room before crisis territory",
+      "Diversified across 50 countries with established relationships with global fashion brands, providing some demand diversification"
+    ],
+    "key_risks": [
+      "Promoter holding is an alarming 9.15% — management has almost no skin in the game, a fundamental red flag for any Buffett-style investment",
+      "FCF deeply negative: -INR 865 Cr in FY24 and -INR 131 Cr in FY25; the company is consuming cash, not generating it",
+      "Operating margin of 2.92% leaves zero room for error — any FX headwind, raw material spike, or demand slowdown wipes out profitability entirely"
+    ],
+    "red_flags": [
+      "Borrowings surged from INR 154 Cr (FY23) to INR 993 Cr (FY25) — a 6x increase — funding acquisitions with debt",
+      "Total assets nearly tripled (INR 1,342 Cr → INR 3,899 Cr) in two years via inorganic growth; integration risk is enormous",
+      "Finance costs doubled YoY to INR 77 Cr in FY25, squeezing an already paper-thin bottom line",
+      "Net profit was negative in FY17 and FY18, confirming high cyclicality and operational fragility",
+      "Operating CF swung to -INR 177 Cr in FY24 — the core business consumed cash even before capex"
+    ],
+    "detailed_analysis": "Gokaldas Exports is exactly the type of business I have spent my career avoiding. A garment manufacturer competing on price against Bangladesh, Vietnam, and Cambodia has no durable competitive advantage — no brand, no switching costs, no pricing power. The numbers confirm this: a 2.92% operating margin means the business is perpetually one bad season away from losses (which it actually experienced in FY17 and FY18). ROE of 8.16% and ROCE of 10.60% destroy capital in real terms once you account for inflation and cost of equity. The gross margin of ~50% is misleading — it evaporates into selling, overhead, and finance costs, leaving almost nothing for shareholders.\n\nThe capital allocation picture is alarming. Management has aggressively lever-loaded the balance sheet — borrowings exploded from INR 154 Cr to INR 993 Cr in just two years, funding what appears to be acquisition-driven growth (total assets nearly tripled). This has produced negative FCF of -INR 865 Cr in FY24 and -INR 131 Cr in FY25. The financing cash flows (INR 753 Cr in FY24, INR 473 Cr in FY25) reveal the company is surviving by continuously raising external capital. The coup de grâce: promoters own just 9.15% — they have little financial stake in the outcome. Paying 45.5x trailing earnings for a low-margin, debt-laden, promoter-light commodity exporter is, in my view, a recipe for permanent capital loss.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 55667,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08127525,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11143,
+      "cache_read_input_tokens": 8950,
+      "output_tokens": 2453,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11143
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 301,
+          "cache_read_input_tokens": 8950,
+          "cache_creation_input_tokens": 2193,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2193,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

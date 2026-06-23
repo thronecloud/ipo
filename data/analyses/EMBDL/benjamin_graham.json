@@ -1,0 +1,72 @@
+{
+  "symbol": "EMBDL",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T17:11:35.718222Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Embassy Developments fails nearly every Graham quantitative filter — three consecutive years of net losses (2022: -137 Cr, 2023: -608 Cr, 2024: -517 Cr), an operating margin of -81%, and a catastrophic equity collapse to -1,446 Cr in 2024. The sole attraction, a P/B of 0.67, is illusory given the balance sheet instability and lack of proven earning power.",
+    "key_strengths": [
+      "P/B of 0.67 is below Graham's 1.5 ceiling — the only metric that passes",
+      "Debt/Equity of 0.46 is technically within my <0.5 threshold (FY2025)",
+      "2025 showed a tentative recovery: net profit 194 Cr, OCF +1,461 Cr — first positivity in years"
+    ],
+    "key_risks": [
+      "Three consecutive years of net losses destroy the earnings track record Graham requires",
+      "Equity swung from -1,446 Cr (2024) to +10,258 Cr (2025) — unexplained restructuring or capital infusion demands scrutiny",
+      "Borrowings exploded from 693 Cr (2023) to 7,749 Cr (2024); cash held just 69 Cr — liquidity is precarious"
+    ],
+    "red_flags": [
+      "Negative stockholders' equity in FY2024 (-1,446 Cr) — a company technically insolvent is not a Graham investment",
+      "Operating margin of -81.17% is not a cyclical dip; this is structural destruction of capital",
+      "EV/EBITDA of -100.6 signals the enterprise cannot cover its obligations from operations",
+      "Revenue 9Y CAGR of -3.3% — the business is smaller today than in 2016",
+      "OCF positive only 2 of last 5 years; free cash flow negative in 4 of 5 years",
+      "P/E of 35.99 — more than double my maximum threshold of 15, on earnings that just barely turned positive"
+    ],
+    "detailed_analysis": "By my strict quantitative standards, Embassy Developments is uninvestable at this price. The P/E of 35.99 is more than twice my ceiling of 15, and that ratio is built on a single year of fragile profitability (194 Cr in FY2025) following three years of compounding losses totalling -1,262 Cr. My Graham Number — computed as √(22.5 × EPS ~1.40 × BVPS ~73.80) — yields roughly INR 48, meaning the stock at INR 50.20 trades slightly above even this generous floor. More damning is ROE of a mere 2.53% and ROCE of 3.19%; the company is earning less than a bank deposit on its asset base.\n\nThe balance sheet tells a story of disorder, not value. Total equity was negative in FY2024, implying accumulated losses had wiped out all reserves; borrowings spiked fivefold in a single year to 7,749 Cr, then partially unwound. Mr. Market may have priced in a recovery narrative following the name change from Equinox India Developments to Embassy Developments in February 2025, but I insist on facts, not names. Real estate is a capital-intensive, cyclically fragile business, and this company has demonstrated an inability to consistently generate cash — OCF positive only 2 of 5 years. Until at least three to five consecutive years of positive earnings and normalized margins are established, no margin of safety exists here.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 44146,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07273199999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9104,
+      "cache_read_input_tokens": 11060,
+      "output_tokens": 2351,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9104
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 249,
+          "cache_read_input_tokens": 9010,
+          "cache_creation_input_tokens": 2144,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2144,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

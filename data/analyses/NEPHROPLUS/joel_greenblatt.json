@@ -1,0 +1,69 @@
+{
+  "symbol": "NEPHROPLUS",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-21T07:53:58.111571Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "NEPHROPLUS operates in an attractive chronic-disease niche with 27.5% revenue CAGR, but at a 3.1% earnings yield (EBIT ₹167 Cr / EV ₹5,392 Cr) it fails the Magic Formula's most basic valuation test. The business is improving but the market has already priced in years of future growth at a 74.7x P/E.",
+    "key_strengths": [
+      "Revenue CAGR of 27.5% (2021-2025) with operating income exploding from ₹37 Cr to ₹167 Cr — clear operating leverage kicking in",
+      "ROIC ~19-20% (EBIT ₹167 Cr / capital employed ~₹850 Cr) is approaching the Magic Formula's 20% threshold",
+      "Sticky recurring revenue model — dialysis is a non-discretionary, life-sustaining treatment with high patient retention"
+    ],
+    "key_risks": [
+      "Earnings Yield of only 3.1% — nearly 4x below the 12% Magic Formula hurdle; you are overpaying massively for growth",
+      "Capex-heavy expansion: ₹101 Cr capex vs ₹135 Cr OCF in 2025, FCF only just turned positive (₹35 Cr) after years of destruction",
+      "Fragile profitability history — net losses in 2022 (-₹21 Cr) and 2023 (-₹12 Cr); one operational setback could push it back to loss-making"
+    ],
+    "red_flags": [
+      "Earnings Yield 3.1% — well below Magic Formula's 6% minimum threshold",
+      "Net profit was negative as recently as FY2023; insufficient earnings history for reliable ROIC calculation",
+      "P/E of 74.7x for a business with ROCE of only 14.1% — growth is priced in but not yet structurally proven"
+    ],
+    "detailed_analysis": "Running the Magic Formula on NEPHROPLUS: EBIT = ₹167 Cr (FY2025 operating income), Enterprise Value = Market Cap ₹5,260 Cr + Debt ₹258 Cr - Cash ₹126 Cr = ₹5,392 Cr. Earnings Yield = 3.1% — catastrophically below the 12% threshold I look for and even below the 6% \"don't bother\" cutoff. On the quality side, ROIC of ~19-20% (EBIT/Capital Employed) is approaching acceptable, but ROCE of 14.1% reported tells a more muted story once you account for all capital including lease liabilities typical in a clinic-chain model. One metric is borderline decent; the other is disqualifying.\n\nThe business narrative is genuinely interesting — dialysis is a chronic, recurring, non-discretionary service with 27.5% revenue growth and real operating leverage (operating income 4.5x in 4 years). But the market knows this and has priced it at 74.7x trailing earnings and 22.5x EV/EBITDA. For the Magic Formula to work, I need to buy good businesses at bargain prices — not pay a luxury price for a business that only recently emerged from losses. Free cash flow just turned positive at ₹35 Cr in FY2025 against a ₹5,260 Cr market cap (0.7% FCF yield). Pass.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 43047,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07606335,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10599,
+      "cache_read_input_tokens": 8677,
+      "output_tokens": 2247,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10599,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 380,
+          "cache_read_input_tokens": 8677,
+          "cache_creation_input_tokens": 1922,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1922
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

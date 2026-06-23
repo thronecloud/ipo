@@ -1,0 +1,68 @@
+{
+  "symbol": "MASTEK",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T18:21:32.438008Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Mastek passes several of my quantitative tests — P/E of 12.8x, D/E of 0.20, and a decade of unbroken earnings — but at INR 1,746 the price sits essentially at its Graham Number (~INR 1,682), leaving no meaningful margin of safety. A disciplined investor must wait for Mr. Market to offer a genuine discount before committing capital.",
+    "key_strengths": [
+      "10-year unbroken earnings record with net profit CAGR of 32.5% — exactly the kind of proven earning power I require",
+      "Debt/Equity of 0.20 and interest coverage ~18x (EBIT 586 Cr / finance cost 32 Cr) — balance sheet is conservatively financed",
+      "Free cash flow positive every year (5/5), INR 515 Cr in 2026 — earnings are real, not accounting fiction"
+    ],
+    "key_risks": [
+      "P/B of 2.02 breaches my 2.0 ceiling — the market is pricing in goodwill from the INR 719 Cr acquisition spend in 2023, which I treat with deep suspicion",
+      "Borrowings nearly doubled from 273 Cr (2021) to 583 Cr (2025) before partially reversing — rising finance costs (4 Cr → 44 Cr peak) bear watching",
+      "IT services revenue is entirely dependent on discretionary enterprise spending cycles; a client spending freeze or currency headwind (UK, US exposure) can rapidly compress margins"
+    ],
+    "red_flags": [
+      "Price at Graham Number (~1,682) with no margin of safety — I never buy at fair value, only at a discount to it",
+      "Large 2023 acquisition (investing outflow -719 Cr) likely inflated intangible assets; book value may overstate true liquidation value"
+    ],
+    "detailed_analysis": "Mastek is a rare technology business that a quantitative screen actually does not reject outright. Its P/E of 12.8x is comfortably below my 15x ceiling, its debt is trivial (D/E 0.20), interest is covered eighteen times over, and operating cash flow has been positive in every one of the last five years — culminating in INR 515 Cr of free cash flow in 2026. A nine-year net profit CAGR of 32.5% is the kind of proven earning power that earns my attention. Computing the Graham Number: EPS ≈ INR 130 (404 Cr profit / ~3.1 Cr shares) × BVPS ≈ INR 965 (2,992 Cr equity / ~3.1 Cr shares) yields sqrt(22.5 × 130 × 965) ≈ INR 1,682 — the stock trades at INR 1,746, essentially at par with fair value. I do not buy at fair value; I require a discount of at minimum 30–40%.\n\nThe P/B of 2.02 is a second disqualifier: it barely crosses my 2.0 red-flag threshold and likely reflects goodwill from the large 2023 acquisition (investing outflow of 719 Cr in that year). In a liquidation scenario, intangibles evaporate and the true asset backing would be considerably lower than stated equity. Promoter holding at only 35.8% is modest, and the company does not appear to return meaningful cash to shareholders via dividends — further reducing the yield cushion I insist upon. Mastek is a solid, well-run business, but \"solid\" and \"cheap\" are two different things. I would revisit seriously below INR 1,200 — a price that would restore the margin of safety the intelligent investor must demand.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "fair",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 58879,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09035805,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9937,
+      "cache_read_input_tokens": 11251,
+      "output_tokens": 3314,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9937
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 570,
+          "cache_read_input_tokens": 9201,
+          "cache_creation_input_tokens": 2786,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2786,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

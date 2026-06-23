@@ -1,0 +1,69 @@
+{
+  "symbol": "544353",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-20T09:49:50.931482Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Amwill Health is a tiny INR 61 Cr pharma wholesale trader with an anemic 0.25% ROE — the low 7.54 P/E is a value trap, not a bargain. There's no visible growth story, no moat in distribution, and nothing that screams \"ten-bagger\" to a Lynch-style GARP investor.",
+    "key_strengths": [
+      "Low headline P/E of 7.54 and high promoter holding of 70.65% show skin in the game",
+      "Pharma wholesale is a steady, non-cyclical end market with long runway in India",
+      "Micro-cap size (INR 60.9 Cr) leaves theoretical room to scale if execution improves"
+    ],
+    "key_risks": [
+      "ROE of 0.25% is effectively zero — capital is earning nothing",
+      "Wholesale pharma trading is a low-margin, commoditized middleman business with no moat",
+      "Micro-cap BSE listing with negligible FII (1.16%) means poor liquidity and disclosure"
+    ],
+    "red_flags": [
+      "0.25% ROE signals the P/E is optically cheap only because earnings are vanishingly small",
+      "No disclosed growth rate — PEG cannot even be computed, which means no 'story'",
+      "Pure trading business with likely thin working-capital-heavy margins"
+    ],
+    "detailed_analysis": "From a Lynch perspective, every stock needs a simple story — \"this company sells X, the market is growing Y%, and earnings will compound at Z%.\" Amwill Health has none of that on the table. A 0.25% ROE against a 7.54 P/E tells me earnings are a rounding error; the multiple is cheap because there's almost nothing to multiply. Wholesale pharma trading is a classic middleman model with razor-thin margins, high working capital, and zero pricing power — it's the opposite of the niche dominator with hidden growth that I look for.\n\nI'd classify this as a \"no-growth micro-cap\" rather than a fast grower, stalwart, or turnaround — and without evidence of a turnaround catalyst or a consumer-visible edge, there's nothing to underwrite. The 70.65% promoter stake is fine, but promoter holding alone never made anyone rich. Pass. I'd rather wait for a pharma formulation or branded generics play growing 20%+ at a PEG under 1.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 24361,
+    "model_used": "opus",
+    "total_cost_usd": 0.09381400000000001,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8922,
+      "cache_read_input_tokens": 13393,
+      "output_tokens": 1253,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8922,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 79,
+          "cache_read_input_tokens": 10549,
+          "cache_creation_input_tokens": 1217,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1217
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

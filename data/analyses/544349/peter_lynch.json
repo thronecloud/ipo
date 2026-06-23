@@ -1,0 +1,68 @@
+{
+  "symbol": "544349",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-20T09:50:07.592519Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "H.M. Electro Mech is a tiny INR 52.6 Cr micro-cap infrastructure contractor with a headline P/E of 7.12 that masks an abysmal 0.17% ROE — the \"cheap\" valuation is a statistical illusion because there are essentially no earnings. Without a visible growth story, order-book detail, or margin recovery, there's no GARP thesis here.",
+    "key_strengths": [
+      "Promoter skin-in-the-game at 73.07% is healthy and aligned",
+      "Optically low P/E of 7.12 offers some downside cushion if earnings normalize",
+      "Niche in turnkey pumping + O&M services — asset-light recurring revenue potential"
+    ],
+    "key_risks": [
+      "ROE of 0.17% is effectively zero — capital is earning nothing",
+      "Micro-cap civil construction: working-capital heavy, lumpy government receivables",
+      "Negligible institutional interest (FII 2.17%, DII 1.46%) = no price discovery, low liquidity"
+    ],
+    "red_flags": [
+      "P/E of 7 on a 0.17% ROE implies earnings are a rounding error — trailing EPS likely distorted by one-offs",
+      "No disclosed revenue/earnings growth rate — can't compute PEG, the story is unverifiable"
+    ],
+    "detailed_analysis": "From my GARP lens, every stock needs a simple story: \"this company grows X% because Y.\" H.M. Electro doesn't tell me that story. A 0.17% ROE on a civil construction / pumping O&M business means the company is generating almost no profit on its equity base — that's a slow-grower at best and a value-trap candidate at worst. The P/E of 7.12 looks cheap, but a P/E on near-zero earnings is mathematical noise; a small EPS swing could make this a 50x stock tomorrow. I need to see the growth rate to compute a PEG, and there's no indication earnings are inflecting.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "insufficient_data",
+      "valuation": "insufficient_data",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 18908,
+    "model_used": "opus",
+    "total_cost_usd": 0.08612924999999999,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8769,
+      "cache_read_input_tokens": 13436,
+      "output_tokens": 983,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8769,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10592,
+          "cache_creation_input_tokens": 1021,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1021
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

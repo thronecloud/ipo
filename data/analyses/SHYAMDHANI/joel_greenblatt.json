@@ -1,0 +1,69 @@
+{
+  "symbol": "SHYAMDHANI",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-21T07:45:44.140477Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Shyam Dhani fails both legs of the Magic Formula: ROE of 0.41% signals near-zero return on capital, while a P/E of 13.40 (~7.5% earnings yield) is insufficient compensation for a commoditized, low-quality business. There is no reason to own a bad business even at a seemingly moderate price.",
+    "key_strengths": [
+      "Moderate valuation at P/E 13.40 (~7.5% earnings yield) — not egregiously expensive",
+      "Strong promoter holding at 72% aligns management skin-in-the-game",
+      "Established since 1995 with export presence across spice categories"
+    ],
+    "key_risks": [
+      "ROE of 0.41% is catastrophically low — ROIC likely well below the 20%+ Magic Formula threshold, signaling capital is being destroyed in real terms",
+      "Commodity spices business has no discernible pricing power or moat — margins are structurally thin",
+      "Micro-cap at INR 108 Cr with negligible institutional float creates liquidity and governance risk"
+    ],
+    "red_flags": [
+      "ROE 0.41% — essentially zero profitability on equity; ROIC almost certainly single-digit or negative in real terms",
+      "Earnings yield ~7.5% (1/P/E) is below the Magic Formula's 12% minimum threshold for 'cheap'",
+      "No evidence of sustained earnings power — spice manufacturing is a low-differentiation, high-competition sector"
+    ],
+    "detailed_analysis": "The Magic Formula demands two things simultaneously: a cheap price AND a high-quality business. Shyam Dhani delivers neither convincingly. The ROE of 0.41% is the critical disqualifier — a business that earns virtually nothing on shareholder equity cannot rank well on Return on Capital (EBIT / Net Working Capital + Net Fixed Assets). At best, this is a break-even operation. The P/E of 13.40 gives an earnings yield of ~7.5%, which is below the 12% minimum I look for and well short of the 15%+ that would indicate a genuine bargain.\n\nThe spice manufacturing business is inherently commoditized — no pricing power, no switching costs, intense competition from organized and unorganized players alike. With a market cap of only INR 108 Cr and ROE barely above zero, this company likely has significant asset intensity or leverage that suppresses returns. Greenblatt's formula would rank this near the bottom on quality, and the valuation is not cheap enough to compensate. Pass entirely.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 35762,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0616386,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8984,
+      "cache_read_input_tokens": 7582,
+      "output_tokens": 1711,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8984,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 342,
+          "cache_read_input_tokens": 7582,
+          "cache_creation_input_tokens": 1402,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1402
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

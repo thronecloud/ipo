@@ -1,0 +1,69 @@
+{
+  "symbol": "AFFLE",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-19T06:23:34.886120Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Affle has built a respectable mobile advertising technology platform with a 45% revenue CAGR over 7 years and — importantly — consistently positive free cash flow, which is rare in ad tech. However, the CPCU (cost-per-converted-user) model's moat is unclear in a world where Google, Meta, and Apple control the underlying inventory and data, and the company's serial acquisition of 5 platforms (Appnext, Mediasmart, Jampp, RevX, YouAppi) raises integration risk and obscures organic vs. inorganic returns.",
+    "key_strengths": [
+      "Consistent FCF generation (positive every year FY2020-FY2025, reaching INR 266 Cr in FY2025) with nearly no debt (D/E 0.01) and INR 1,047 Cr cash — financial discipline is real",
+      "Revenue CAGR of 45.1% over 7 years with operating margin expansion from 27% to 21% (still healthy) — demonstrated ability to scale the business model",
+      "Strong promoter holding (54.92%) with significant FII/DII participation (34.5% combined) — market confidence with aligned founder incentives"
+    ],
+    "key_risks": [
+      "ROCE of 16.8% and ROE of 14% are mediocre for a business growing at 45% — serial acquisitions have diluted per-rupee returns substantially; equity base grew from INR 230 Cr to INR 3,256 Cr in 5 years largely through capital raises",
+      "Existential platform risk: Apple's App Tracking Transparency (ATT) and Google's deprecation of third-party cookies directly threaten the targeting capabilities that underpin the CPCU model",
+      "Operating margin compressed from ~27% (FY2021) to 21.3% (FY2025) even during a high-growth phase — suggests mix shift toward lower-margin geographies or competitive pricing pressure"
+    ],
+    "red_flags": [
+      "Five major acquisitions (Appnext, Mediasmart, Jampp, RevX, YouAppi) in roughly 5 years — serial acquirers rarely compound capital as well as organic growers; goodwill/intangibles risk",
+      "Total assets grew 9.7x from INR 402 Cr to INR 3,914 Cr while net profit grew 5.8x from INR 66 Cr to INR 382 Cr — assets are growing faster than earnings, suggesting acquisition premium dilution",
+      "Other income of INR 94 Cr in FY2025 represents 25% of operating income — inflating headline profitability with what is likely treasury income on the large cash pile"
+    ],
+    "detailed_analysis": "Affle deserves credit for what it has built — a cash-generative, nearly debt-free mobile ad platform growing quickly in the right geography (India plus emerging markets) at the right time (smartphone penetration). The FCF track record is the most encouraging data point; most ad tech companies consume cash. But the 14% ROE on a business growing revenue at 45% is a troubling signal — each acquisition appears to be accreting revenue while diluting returns. The classic Munger test: does this business earn high returns on incremental capital without acquisitions? The evidence is ambiguous. At 47x P/E, you need both the growth to continue AND the returns on capital to improve — a demanding dual condition. I'd watch for margin expansion and acquisition discipline before committing meaningful capital.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 175950,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.23654370000000002,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 24380,
+      "cache_read_input_tokens": 15649,
+      "output_tokens": 9361,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 24380,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 502,
+          "cache_read_input_tokens": 15649,
+          "cache_creation_input_tokens": 8731,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8731
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "MAHSCOOTER",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T18:16:41.456866Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Maharashtra Scooters trades at a compelling 0.45x book value — a 55% discount to its INR 30,863 Cr equity portfolio — which satisfies my core asset-value criterion. However, P/E of 41.8x and a catastrophic ROE of 0.69% mean the earning power test fails decisively, and I refuse to pay 41 times earnings for a portfolio that earns essentially nothing on its assets.",
+    "key_strengths": [
+      "Deep discount to book value (P/B 0.45) — buying the equity portfolio at nearly half price, the classic Graham bargain trigger",
+      "Minimal leverage: Debt-to-Equity ~0.12 (well under my 0.5 ceiling), equity of INR 30,863 Cr dwarfs liabilities",
+      "Consistent positive free cash flow all 4 years (INR 119–209 Cr) with near-full dividend payout (~INR 193 Cr financing outflow vs INR 214 Cr net profit)"
+    ],
+    "key_risks": [
+      "P/E of 41.8x obliterates any margin of safety — my ceiling is 15x; Graham Number (~INR 10,657) sits 23% below the current price of INR 13,116",
+      "ROE of 0.69% is barely above zero — INR 30,863 Cr of equity generating only INR 214 Cr of earnings is economically feeble and destroys compounding",
+      "Revenue and EBITDA in structural decline (-1.9% and -9.6% CAGR 2022–2025) — the earning power underpinning any intrinsic value is eroding, not growing"
+    ],
+    "red_flags": [
+      "P/E 41.8x — more than 2.7× my maximum threshold of 15x; speculative premium for a stagnant holding company",
+      "ROE 0.69% implies the massive equity base is largely inert capital; a treasury bill outperforms these assets",
+      "Net profit growth (14.5% CAGR) is likely investment gains/mark-to-market, not operational earning power — unreliable by my standards"
+    ],
+    "detailed_analysis": "Maharashtra Scooters is effectively a closed-end investment fund subsidiary of Bajaj Holdings, holding a large equity portfolio (Total Assets INR 34,588 Cr, Equity INR 30,863 Cr). The P/B of 0.45 is superficially attractive — Mr. Market is offering the portfolio at a 55% discount, and I have always been drawn to such net-asset-value gaps in holding companies. The balance sheet is fortress-strong: debt of roughly INR 3,725 Cr against equity of INR 30,863 Cr gives a D/E of 0.12, and the company has paid out nearly its entire net profit as dividends in each of the last three years, demonstrating genuine cash returns to shareholders.\n\nThe fatal flaw is earning power. INR 30,863 Cr of equity generating INR 214 Cr of net profit is a 0.69% ROE — a number I find almost embarrassing for a listed company. The P/E of 41.8x means the market has already capitalised the thin earnings generously, leaving no margin of safety by any measure I apply: the Graham Number of ~INR 10,657 is 23% below the current price of INR 13,116. Revenue has declined and EBITDA has contracted at -9.6% CAGR. I would require the price to fall to roughly INR 8,000–9,000 (below Graham Number with a safety buffer) before the discount to book justifies the dismal earning power. At today's price, I hold if already owned, but I do not buy.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 57657,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0848661,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8908,
+      "cache_read_input_tokens": 10307,
+      "output_tokens": 3224,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 8908
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 570,
+          "cache_read_input_tokens": 8257,
+          "cache_creation_input_tokens": 2701,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2701,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

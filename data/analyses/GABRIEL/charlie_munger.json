@@ -1,0 +1,68 @@
+{
+  "symbol": "GABRIEL",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-22T16:39:14.121916Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "AVOID",
+    "investment_thesis": "Gabriel India is a decent auto ancillary business with strong ROCE (28.4%) and impressive profit CAGR (39.9%), but at 56x trailing P/E and near-zero free cash flow in FY2025, the price already discounts a decade of perfection. A thin-margin (6.9% operating) auto parts supplier does not deserve this multiple — invert the question: what would have to go right for this to work out?",
+    "key_strengths": [
+      "Strong ROCE of 28.4% and ROE of 22.2% — well above cost of capital, suggesting real competitive value in OEM relationships",
+      "Virtually debt-free (D/E 0.08, net debt negative) with consistent positive OCF across all 4 years — clean balance sheet",
+      "Meaningful operating leverage: operating income CAGR 44% vs. revenue CAGR 20.6%, margins expanded from ~5.7% (FY22) to ~9.6% (FY25)"
+    ],
+    "key_risks": [
+      "FCF collapsed to zero in FY2025 (Capex INR 209 Cr vs OCF INR 204 Cr) — the reported INR 245 Cr net profit is not converting to cash, a cardinal sin",
+      "Valuation is extreme for the industry: P/E 56x, EV/EBITDA 34.5x for a business with 6.91% operating margins in a competitive, cyclical sector",
+      "Auto parts moat is structurally weak — OEMs run multi-vendor sourcing, pricing power is limited, and EV disruption (fewer dampers per EV platform) is a long-term headwind"
+    ],
+    "red_flags": [
+      "FCF/Net Income ≈ 0% in FY2025 vs. 39.9% net profit CAGR — earnings quality has deteriorated sharply as capex tripled from INR 76 Cr (FY22) to INR 209 Cr (FY25)",
+      "At P/B of 11.4x, the stock is priced for a business with durable pricing power — a ride-control manufacturer supplying cyclical OEMs rarely earns that right"
+    ],
+    "detailed_analysis": "Gabriel India has real operational momentum — revenue crossed INR 4,000 Cr, margins expanded meaningfully, and ROCE at 28.4% is respectable. The balance sheet is genuinely clean with INR 69 Cr debt against INR 1,277 Cr equity. Promoter holding at 55% and rising DII interest (16.2%) suggest institutional confidence. However, as I always say, invert first: the business earned INR 245 Cr in net profit in FY2025 but generated zero free cash flow. Every rupee of earnings was plowed back into capex (INR 209 Cr) just to maintain competitive position. That is not a compounding machine — that is a treadmill. A truly great business generates cash without constantly reinvesting at this intensity.\n\nThe valuation is the fatal flaw. At 56x trailing earnings and 34.5x EV/EBITDA, the market is pricing Gabriel as if it were a consumer franchise with pricing power, not an auto ancillary supplier locked in negotiation with OEM procurement teams. The forward P/E of 32x still implies premium for a 6.9% operating margin business in a sector where global peers trade at 10-15x. Even if earnings double in 5 years — a heroic assumption for a capital-intensive cyclical — the entry price today offers no margin of safety. Munger's rule: a great business at a fair price beats a fair business at a great price. Gabriel India is a fair business at a great price — avoid.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 52033,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08199555,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10899,
+      "cache_read_input_tokens": 8651,
+      "output_tokens": 2568,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10899,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 361,
+          "cache_read_input_tokens": 8651,
+          "cache_creation_input_tokens": 2248,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2248
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

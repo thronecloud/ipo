@@ -1,0 +1,70 @@
+{
+  "symbol": "ACTIVEINFR",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-20T11:12:01.405604Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Active Infra is a recently-listed micro-cap infrastructure contractor trading at 26x earnings and ~2.3x book, with a suspicious revenue jump from ₹1 Cr (2022) to ₹89 Cr (2023) and a large 2025 equity raise (₹63 Cr financing inflow) — hallmarks of a speculative IPO lacking the multi-year earnings record I require. With no margin of safety and failing the Graham Number test (price ₹170 vs calculated ~₹117), this is speculation, not investment.",
+    "key_strengths": [
+      "Borrowings reduced from ₹109 Cr (2022) to ₹60 Cr (2025); D/E now ~0.52",
+      "Operating CF positive in 3 of last 4 years; ROCE 15.5%",
+      "High promoter holding (72.38%) aligns management interest"
+    ],
+    "key_risks": [
+      "P/E 26 and P/B ~2.3 — no margin of safety; fails Graham Number (₹170 > ₹117)",
+      "Revenue explosion from ₹1 Cr to ₹89 Cr in one year suggests reverse-merger/restructuring — no genuine track record",
+      "Cyclical civil-construction business with lumpy earnings (Net profit ₹10→9→13 Cr) and FCF collapsing to ₹2 Cr in 2025"
+    ],
+    "red_flags": [
+      "No multi-year earnings history predating 2023",
+      "Recent ₹63 Cr equity raise — insiders/bankers sold at premium pricing",
+      "No dividend history",
+      "OCF collapsed from ₹32 Cr (2024) to ₹5 Cr (2025) despite revenue being flat — working-capital red flag"
+    ],
+    "detailed_analysis": "From a strict Graham lens, this security fails nearly every quantitative filter. The P/E of 26 is nearly double my 15x ceiling, and P/B of ~2.3x (market cap ₹267 Cr vs equity ₹116 Cr) exceeds my 1.5x limit. The Graham Number — sqrt(22.5 × EPS ~8.3 × BVPS ~74) ≈ ₹117 — sits 31% below the current ₹170 price, so there is no margin of safety; I am being asked to pay a premium for a speculative growth assumption. The revenue jump from ₹1 Cr to ₹89 Cr between 2022 and 2023 is not organic growth — it signals a corporate restructuring or reverse-listing, which means the \"earnings history\" is effectively only two reliable years. I require five.\n\nThe 2025 financing inflow of ₹63 Cr combined with equity leaping from ₹27 Cr to ₹116 Cr confirms a fresh capital raise — the classic scenario where the seller knows more than the buyer. Construction contracting is inherently cyclical, working-capital intensive (OCF collapsed from ₹32 Cr to ₹5 Cr on flat revenue), and offers no durable economics. While debt reduction and a 72% promoter stake are mildly reassuring, none of this compensates for paying 26x earnings for an unproven, lumpy micro-cap with no dividend record. Mr. Market is offering exuberance here, not a bargain. Avoid.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 31427,
+    "model_used": "opus",
+    "total_cost_usd": 0.11742925000000001,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 10295,
+      "cache_read_input_tokens": 14161,
+      "output_tokens": 1839,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10295,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 11275,
+          "cache_creation_input_tokens": 1906,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1906
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "MAPMYINDIA",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-22T16:27:44.319867Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "MapMyIndia owns India's most comprehensive proprietary mapping dataset built over 30+ years — a genuine, hard-to-replicate moat — but at 39.7x trailing P/E and 11x P/S on INR 463 Cr revenue, the market has already priced in substantial growth, leaving little margin of safety. A wonderful business, but not at a wonderful price.",
+    "key_strengths": [
+      "30-year proprietary map data for India — impossible to replicate quickly; Google Maps cannot match HD automotive/ADAS-grade accuracy for Indian roads",
+      "Debt-free balance sheet (D/E: 0.01) with 68% gross margins and expanding operating income (37.5% CAGR, 2019–2025) — capital-light compounding machine",
+      "51.36% promoter holding signals strong owner-operator alignment; revenue diversified across automotive OEMs, government, and enterprise verticals with high switching costs"
+    ],
+    "key_risks": [
+      "Google Maps is free and aggressive — MapMyIndia must continually justify premium pricing to enterprise/government clients who have a free alternative",
+      "Other income (INR 52 Cr in FY25) contributes ~35% of net profit (148 Cr) — strips out treasury/IPO proceeds and core operating earnings look thinner than reported P/E implies",
+      "Rising capex (INR 49 Cr in FY25 vs 4 Cr in FY22) and FCF of only INR 73 Cr against a INR 5,231 Cr market cap gives a FCF yield of ~1.4% — dangerously thin for a value buyer"
+    ],
+    "red_flags": [
+      "Other income (INR 52 Cr) flatters net profit; core operating P/E is materially higher than headline 39.7x",
+      "FCF yield ~1.4% — market is pricing perfection with no room for execution stumbles",
+      "Revenue base still small (INR 463 Cr) for a INR 5,231 Cr market cap; any growth deceleration would reprice shares sharply"
+    ],
+    "detailed_analysis": "MapMyIndia is the rare Indian tech company I genuinely admire at a business level. Thirty years of proprietary surveying data, a government partnership for Survey of India content, and deeply embedded automotive navigation SDKs (NCASE/NaviMaps) in Indian OEM dashboards create real switching costs that remind me of the newspaper moats I loved in an earlier era — once your map is inside a Maruti or Tata vehicle, nobody rips it out. Revenue has compounded at 22.8% and operating income at 37.5% over six years, margins are expanding, and the balance sheet carries almost no debt (borrowings INR 10 Cr against equity of INR 833 Cr). ROCE of 24.1% is respectable though not extraordinary. This is a business I understand and respect.\n\nThe problem, as always, is price. At INR 956, I am being asked to pay 39.7x trailing earnings — and those earnings include INR 52 Cr of other income (treasury/investment returns on IPO proceeds) that will mean-revert as cash is deployed. Strip that out and the true operating P/E is closer to 45–50x. Free cash flow of INR 73 Cr against a market cap of INR 5,231 Cr is a 1.4% FCF yield — I would need extraordinarily confident growth projections to feel safe here. Forward P/E of 27x is more palatable if the business executes a step-change in government or international revenues, but I do not pay for hope. I would want to own this at INR 600–650 (roughly 25x forward earnings) to get an adequate margin of safety. For now, I watch and wait.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 60502,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0909225,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11540,
+      "cache_read_input_tokens": 9045,
+      "output_tokens": 2995,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11540,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 541,
+          "cache_read_input_tokens": 9045,
+          "cache_creation_input_tokens": 2495,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2495
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "ASHOKA",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T16:28:22.770026Z",
+  "analysis": {
+    "score": 6,
+    "recommendation": "BUY",
+    "investment_thesis": "Ashoka Buildcon trades at P/B of 0.93 — below net asset value — with a P/E of 3.73, satisfying my most fundamental valuation tests. Even using the more conservative 2024 earnings (INR 521 Cr, EPS ~18.6), the Graham Number computes to approximately INR 250, implying a 45% margin of safety at the current price of INR 139.",
+    "key_strengths": [
+      "Trading below book value (P/B 0.93) and far below Graham Number (~INR 250-460 range depending on earnings normalisation) — genuine quantitative margin of safety",
+      "Dramatic balance sheet repair: borrowings collapsed from INR 5,450 Cr (2024) to INR 1,989 Cr (2025), D/E now a manageable 0.44 — below my 0.5 threshold",
+      "Six consecutive years of positive earnings (2020–2025) with operating cash flow positive all five trackable years, confirming the business generates real cash"
+    ],
+    "key_risks": [
+      "Interest coverage is only ~2.3x (Operating Income INR 2,920 Cr ÷ Finance Cost INR 1,245 Cr) — well below my required 3.5x, signalling the debt burden still consumes a dangerous share of earnings",
+      "Earnings quality is deeply suspect: net profit surged from INR 521 Cr (2024) to INR 1,734 Cr (2025) while forward P/E jumps to 11.95x, implying analysts expect normalised earnings near INR 326 Cr — the 2025 figure likely reflects one-time BOT asset monetisation, not recurring power",
+      "Four consecutive years of net losses (2016–2019, totalling ~INR 608 Cr) demonstrate the business is highly cyclical and was serially loss-making — the earnings record does not yet meet my standard of uninterrupted profitability over a full cycle"
+    ],
+    "red_flags": [
+      "2025 net profit of INR 1,734 Cr vs forward earnings implying ~INR 326 Cr — a 5x gap signals large non-recurring items; paying 3.7x trailing P/E for what may be 12x forward P/E is a different proposition entirely",
+      "Finance costs have exceeded INR 1,000 Cr every year since 2020 — despite massive debt repayment, the residual interest burden still dwarfs net profit in most historical years",
+      "No dividend paid — a company with alleged earning power should return cash; the absence of dividends over this period raises questions about free cash flow quality"
+    ],
+    "detailed_analysis": "Ashoka Buildcon clears my most prized quantitative hurdles. Price-to-book of 0.93 means I am buying INR 100 of net assets for INR 93 — the kind of arithmetic that excites a disciplined value investor. Revenue has compounded at 15.1% over nine years (INR 2,825 Cr to INR 10,037 Cr), EBITDA margins are expanding, and the recent collapse in debt (total borrowings halved in a single year to INR 1,989 Cr) represents a genuine structural improvement. The promoter retaining 54.47% of equity is a further comfort — they have skin in the game.\n\nHowever, I must temper my enthusiasm with the sober facts. The INR 1,734 Cr net profit in 2025 is almost certainly inflated by proceeds from BOT asset divestiture — note that financing cash flow absorbed INR 1,052 Cr in repayments while investing outflow was INR 626 Cr, consistent with an asset sale cycle rather than organic earnings. The forward P/E of 11.95x tells me the market's own analysts expect normalised profits closer to INR 326 Cr — a figure far less flattering than the headline. Interest coverage at 2.3x also falls short of my 3.5x safety threshold, meaning a revenue downturn could quickly expose the company to financial stress. I would treat this as a speculative value purchase with a strict position limit, appropriate only for an investor who understands infrastructure project finance and can tolerate earnings volatility.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "undervalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 95826,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.1118634,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11054,
+      "cache_read_input_tokens": 11123,
+      "output_tokens": 4471,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11054,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 489,
+          "cache_read_input_tokens": 9073,
+          "cache_creation_input_tokens": 4031,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 4031
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

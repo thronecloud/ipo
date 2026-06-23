@@ -1,0 +1,69 @@
+{
+  "symbol": "CGCL",
+  "persona": "howard_marks",
+  "persona_display_name": "Howard Marks",
+  "analyzed_at": "2026-04-19T13:00:00.129047Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Capri Global Capital has delivered genuinely impressive growth — 37.2% revenue CAGR and 30.4% net profit CAGR over nine years — but this growth has been purchased with continuous equity dilution (equity nearly doubled from INR 3,565 Cr to INR 6,673 Cr between 2023-2025) and aggressive leverage (D/E at 2.52x, finance costs compounding at 67.9% CAGR), and the loan book has never been stress-tested through a real Indian credit downturn. At P/S of 7.2x, the market is paying for perfection in an industry where credit cycles destroy capital with little warning.",
+    "key_strengths": [
+      "Revenue CAGR of 37.2% and net profit CAGR of 30.4% over nine years demonstrate genuine business momentum and a successful diversification into home loans, MSME, and gold loans",
+      "Forward P/E of 12.96x is materially lower than current P/E of 20.8x, suggesting the earnings growth trajectory may justify a step-down in the multiple if execution continues",
+      "Promoter holding of 59.92% with DII ownership of 20.09% indicates institutional conviction; the promoter has maintained significant skin in the game through multiple capital raises"
+    ],
+    "key_risks": [
+      "D/E of 2.52x with total debt of INR 15,577 Cr (growing from INR 4,832 Cr in 2022) means a 150-200bps rise in funding costs or a credit quality deterioration could compress ROE to near-zero or force emergency capital raises",
+      "Finance costs compounding at 67.9% CAGR are growing faster than revenue — the spread compression risk is embedded in the trajectory itself",
+      "No NPA data is provided, and NBFCs focused on MSME, construction finance, and gold loans carry elevated tail risk in a slowdown — the FY2020-2021 NBFC crisis is the recent precedent"
+    ],
+    "red_flags": [
+      "OCF has been negative in all 5 of the last 5 years (INR -4,312 Cr in FY2025) — while structurally expected for a growing lender, the magnitude signals the business is entirely dependent on continuous external financing to operate",
+      "Equity nearly tripled from FY2023 to FY2025 through dilution events — existing shareholders have been consistently diluted even as the stock price reflects a premium multiple",
+      "P/S of 7.2x for an NBFC is a red flag: the market is ascribing exceptional value to revenue that is almost entirely interest income, which is both levered and credit-quality-dependent"
+    ],
+    "detailed_analysis": "Capri Global sits in the most dangerous quadrant for a Howard Marks risk framework: high growth, high leverage, and high valuation, with no track record through a credit cycle. The 37% revenue CAGR is real, but it has been manufactured primarily by running the leverage ratio from negligible levels to D/E of 2.52x and by repeatedly raising equity capital. When finance costs are compounding at 68% per year, you are not building a moat — you are building exposure. The net interest margin compression that occurs when wholesale funding costs rise will be captured acutely by this balance sheet.\n\nThe forward P/E of 12.96x is the most interesting data point here, implying the market expects another strong earnings jump in FY2026. If the NBFC sector remains benign and credit costs stay low, that may be achievable. But the second-level question is: what happens if Gujarat or Maharashtra MSME delinquencies rise, or if the real estate sector (where construction finance is deployed) experiences a demand correction? At INR 15,577 Cr of total debt against an equity base that was partially raised at recent prices, the downside scenario is severe. The risk/reward is not asymmetric in the favorable direction — I see roughly equal probability of a 30-40% re-rating (execution on growth) versus a 40-60% de-rating (credit event or macro shock). That is not a bet worth making at 2.63x book.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 202755,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.2360994,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 24562,
+      "cache_read_input_tokens": 15943,
+      "output_tokens": 9280,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 24562,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 484,
+          "cache_read_input_tokens": 15943,
+          "cache_creation_input_tokens": 8619,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8619
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

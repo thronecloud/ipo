@@ -1,0 +1,70 @@
+{
+  "symbol": "ARIS",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-20T11:15:33.556331Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Arisinfra is a thinly-margined construction-materials distributor incorporated in 2021 with a 1.48% ROE, chronically negative free cash flow (-INR 37 Cr in 2025), and a recent IPO-inflated balance sheet — a commodity middleman business with no discernible moat. At 32x P/E on barely-positive earnings (INR 6 Cr net profit after three years of losses), the market is paying a growth multiple for a business that has never earned its cost of capital.",
+    "key_strengths": [
+      "Revenue growth 19.3% CAGR (INR 452 Cr → 768 Cr) with EBITDA turning meaningfully positive (INR 64 Cr in 2025)",
+      "Post-IPO deleveraging: borrowings cut from INR 276 Cr to INR 56 Cr, D/E now just 0.08",
+      "Addressable market is large — Indian real estate/infrastructure materials spend"
+    ],
+    "key_risks": [
+      "Commodity distribution with 15.6% gross margin — no pricing power, no moat against peers or direct OEM sales",
+      "ROE 1.48% and FCF negative 4/4 years (-INR 271, -24, -8, -37 Cr) — business consumes, not generates, cash",
+      "Finance costs growing 101% CAGR and OCF was -INR 21 Cr in 2025 despite net profit turning positive — quality-of-earnings red flag"
+    ],
+    "red_flags": [
+      "Company incorporated only in 2021 — unproven through a full construction cycle",
+      "Promoter holding only 37.73% — low skin-in-the-game for a founder-led startup",
+      "Equity jumped INR 142 Cr → 699 Cr in 2025 (IPO dilution) yet cash balance is near zero — where did proceeds go?",
+      "32x P/E on INR 6 Cr profit that is barely distinguishable from zero"
+    ],
+    "detailed_analysis": "This is precisely the kind of business I avoid: a capital-hungry commodity reseller with no structural advantage. Selling cement, steel, aggregates and tiles to developers is a price-taker business — gross margins of 15.6% confirm there is no brand, no switching cost, and no network effect. Developers buy on price and credit terms, which is why operating cash flow has been negative in 3 of the last 4 years even as revenue grew. The 2025 \"turnaround\" to INR 6 Cr net profit looks optically nice but OCF was still -INR 21 Cr and FCF -INR 37 Cr; the reported earnings are not being converted to cash, which usually means working capital (receivables/inventory) is absorbing every rupee of growth. That is a treadmill, not a compounder.\n\nThe balance sheet looks clean (D/E 0.08) only because a fresh IPO just stuffed INR 557 Cr of reserves into the company — a one-time event, not operational strength. Meanwhile ROE is 1.48% on that enlarged equity base, meaning management is earning far below any reasonable cost of capital. At 32x P/E for a sub-2% ROE distributor with negative FCF, incorporated only five years ago, with no track record through a property downturn, there is no margin of safety whatsoever. I would want to see 3-5 years of positive FCF, ROE above 15%, and a demonstrable moat before even opening the annual report again. Pass.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 30138,
+    "model_used": "opus",
+    "total_cost_usd": 0.1186395,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 10670,
+      "cache_read_input_tokens": 14494,
+      "output_tokens": 1787,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10670,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 11657,
+          "cache_creation_input_tokens": 1850,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1850
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

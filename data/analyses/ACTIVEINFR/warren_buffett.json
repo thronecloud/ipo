@@ -1,0 +1,69 @@
+{
+  "symbol": "ACTIVEINFR",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-20T11:10:51.160306Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Active Infrastructures is a tiny, cyclical civil construction contractor with no discernible moat, lumpy cash flows, and a revenue base that barely existed three years ago. At 26x P/E for a 13.6% ROE commodity-like contractor, there is no margin of safety and this sits well outside my circle of competence.",
+    "key_strengths": [
+      "Debt reduced from INR 109 Cr (2022) to INR 60 Cr (2025); equity raised to INR 116 Cr strengthens balance sheet",
+      "Promoter holding at 72.38% shows skin in the game",
+      "ROCE of 15.5% and expanding EBITDA (INR 13→28 Cr) show operational improvement"
+    ],
+    "key_risks": [
+      "Civil construction is a low-moat, project-based, working-capital-heavy business with no pricing power",
+      "Revenue exploded from INR 1 Cr (2022) to INR 90 Cr (2025) — unproven durability; FY25 revenue actually dipped vs FY24",
+      "FCF collapsed from INR 11 Cr (2023) to INR 2 Cr (2025) despite higher profits — cash conversion is poor"
+    ],
+    "red_flags": [
+      "FY25 financing inflow of INR 63 Cr (likely IPO/fresh equity) inflating book value — recent listing with limited public track record",
+      "OCF crashed from INR 32 Cr (2024) to INR 5 Cr (2025) while net profit rose — working capital red flag typical of contractors",
+      "P/E of 26x on a ~INR 13 Cr profit base for a sub-INR 300 Cr micro-cap contractor is rich"
+    ],
+    "detailed_analysis": "This is precisely the kind of business I avoid: a small civil construction contractor whose financial history effectively begins in FY2023. The 348% revenue CAGR is mathematical noise from a near-zero base, and FY25 revenue (INR 90 Cr) actually declined from FY24 (INR 97 Cr), suggesting the growth narrative is already wobbling. Construction is a bid-based business with no brand power, no switching costs, no network effects, and no cost advantage at this scale — the definition of a fair business, not a wonderful one. ROE of 13.6% is below my 15% threshold, and with the recent equity raise diluting that base further, returns on the enlarged capital will likely compress.\n\nThe cash flow statement tells the real story: despite growing profits, FCF fell to just INR 2 Cr in FY25, and the INR 63 Cr financing inflow indicates this is a freshly capitalized entity still proving itself. Paying 26x earnings for a INR 267 Cr micro-cap contractor with lumpy cash conversion and no moat offers zero margin of safety. I'd pass without hesitation — there is nothing here a patient owner-investor should pay up for.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 27720,
+    "model_used": "opus",
+    "total_cost_usd": 0.1025365,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 9740,
+      "cache_read_input_tokens": 14063,
+      "output_tokens": 1384,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9740,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 86,
+          "cache_read_input_tokens": 11226,
+          "cache_creation_input_tokens": 1351,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1351
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

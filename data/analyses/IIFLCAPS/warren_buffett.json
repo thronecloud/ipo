@@ -1,0 +1,69 @@
+{
+  "symbol": "IIFLCAPS",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T17:36:28.943800Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "IIFL Capital Services is a well-run capital markets franchise with exceptional returns (ROE 31.6%, ROCE 33.3%) trading at a reasonable 17x P/E, but the cyclical, capital-intensive nature of Indian broking and investment banking — coupled with volatile cash flows — keeps it outside my circle of truly wonderful businesses. At current price, it's a fair business at a fair price, not a wonderful business at a wonderful price.",
+    "key_strengths": [
+      "Exceptional capital efficiency: ROE 31.6% and ROCE 33.3% far exceed my 15% threshold, with net profit CAGR of 21.6% over 7 years",
+      "India's secular capital market growth tailwind: revenue has nearly tripled from INR 870 Cr (2019) to INR 2,520 Cr (2025) as retail participation surges",
+      "Reasonable valuation at 17x P/E with 38% operating margins — not egregiously priced for the quality on offer"
+    ],
+    "key_risks": [
+      "Cyclicality and cash flow volatility: OCF was negative in 2023 (-793 Cr) and 2024 (-118 Cr) — I don't like businesses that can't consistently convert earnings to cash",
+      "Rapidly rising borrowings: debt has ballooned from INR 292 Cr (2021) to INR 1,742 Cr (2025), D/E at 0.62 and climbing — a capital markets firm loading up on leverage in a bull market is a classic warning sign",
+      "Weak competitive moat: Indian broking is intensely competitive (Zerodha, Angel One, HDFC Securities); no durable pricing power, and regulatory changes can compress margins overnight"
+    ],
+    "red_flags": [
+      "Free cash flow was negative in 2 of the last 5 years, making stated earnings less reliable as a measure of economic value",
+      "Borrowings nearly 6x higher in 2025 vs. 2021 — this leverage amplifies downside in a market correction",
+      "Low promoter holding at 30.93% signals limited skin-in-the-game versus what I'd prefer"
+    ],
+    "detailed_analysis": "IIFL Capital Services earns impressive headline returns — 31.6% ROE, 33.3% ROCE, 38% operating margins — and has compounded net profit at 21.6% CAGR over seven years. At 17x P/E and 3.46x P/B, the valuation is not stretched for this level of profitability. India's structural capital market deepening (rising retail SIPs, IPO boom, wealth management growth) provides a real long-term tailwind, and IIFL's multi-product platform — broking, investment banking, distribution — gives it some revenue diversification relative to pure-play discount brokers.\n\nHowever, this is precisely the kind of business I find difficult to underwrite with confidence. Capital markets firms are inherently cyclical: IIFL's operating cash flow swung from +INR 795 Cr (2022) to -INR 793 Cr (2023) to -INR 118 Cr (2024) before recovering to +INR 871 Cr (2025) — that kind of volatility tells me earnings quality is lumpy and tied to market volumes. Borrowings have surged nearly 6x from INR 292 Cr to INR 1,742 Cr in four years; leverage expanding in a bull market is precisely when I worry most. The moat is moderate at best — there's no structural switching cost or network effect that would protect margins in a protracted downturn. I'd watch this business, but wouldn't buy aggressively until cash flows are consistently positive across a full market cycle.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 44737,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0797661,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10944,
+      "cache_read_input_tokens": 9057,
+      "output_tokens": 2400,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10944
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 545,
+          "cache_read_input_tokens": 9057,
+          "cache_creation_input_tokens": 1887,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1887,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

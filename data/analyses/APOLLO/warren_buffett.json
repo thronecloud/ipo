@@ -1,0 +1,70 @@
+{
+  "symbol": "APOLLO",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T16:24:00.380383Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Apollo Micro Systems is a small Indian defense electronics firm riding genuine Atmanirbhar Bharat tailwinds, but at 113x trailing P/E with a 10% ROE and chronically negative free cash flow, investors are paying a spectacular price for a mediocre business. I don't pay 113 times earnings for a company that hasn't generated meaningful free cash in four of five years.",
+    "key_strengths": [
+      "Genuine defense sector tailwinds: India's indigenization push (Atmanirbhar Bharat) provides a structural long runway for domestic defense electronics suppliers.",
+      "Solid revenue and profit trajectory: revenue 5Y CAGR of 18%, net profit CAGR of 32% — growth is real, not illusory.",
+      "Manageable leverage: Debt/Equity of 0.33 is within acceptable limits, and the 2025 equity raise (reserves jumped from 490 to 1,046 Cr) has shored up the balance sheet."
+    ],
+    "key_risks": [
+      "Chronic free cash flow destruction: FCF was negative in 4 of 5 years (-16, -50, -131, -82 Cr), meaning reported profits are largely paper — working capital and capex devour every rupee earned.",
+      "ROE of 10% is well below my 15% threshold and completely inconsistent with a 113x P/E multiple — the market is pricing in a business quality that doesn't yet exist.",
+      "Finance costs growing at 17.8% CAGR (now 34 Cr vs. 56 Cr net profit) — interest consumes 61% of net earnings, making profitability fragile to any revenue slowdown."
+    ],
+    "red_flags": [
+      "P/E of 113x on a 10% ROE business is indefensible — even at forward P/E of 65.8x, you need flawless execution for years just to break even.",
+      "Operating CF of just 10 Cr on 56 Cr reported net profit in FY2025 signals severe working capital deterioration — a hallmark of government defense contractors with long collection cycles.",
+      "Capex surging to 92 Cr in FY2025 (vs. 23 Cr in FY2022) while generating essentially no free cash flow — this is a capital-hungry business, not a compounder.",
+      "Equity dilution: reserves nearly doubled in one year (490→1,046 Cr) suggesting a large QIP/fundraise, meaning existing shareholders bore dilution to fund a cash-burning machine."
+    ],
+    "detailed_analysis": "Apollo Micro Systems operates in the right sector — Indian defense electronics with government mandates to source domestically — and the revenue trajectory is encouraging at 18% CAGR. But the operating metrics tell a sobering story. ROE sits at a pedestrian 10%, well below the 15% minimum I require before even considering a purchase. Operating margins of 17.56% sound decent, but after finance costs that consumed 61% of FY2025 net profit, true economic earnings are thin. Critically, the free cash flow record is dismal: -16, -50, -131, and -82 Cr in the last four years. When a business reports 56 Cr in net profit but generates only 10 Cr in operating cash flow, I know working capital is swallowing the business — a chronic problem for defense suppliers dependent on slow-paying government customers.\n\nThe valuation borders on the absurd. At 113x trailing earnings and 58.6x EV/EBITDA, this stock is priced as though it is a near-monopoly compounder with decades of visible earnings at 25%+ ROE. It is neither. A wonderful business at a fair price this is not — it is a fair business at a wonderful price for the seller. The defense sector story is genuine, but story and reality must be distinguished. I would need to see sustained ROE above 15%, consistent free cash generation, and a P/E below 30x before this would warrant even a second look.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 69363,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0781662,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10944,
+      "cache_read_input_tokens": 9074,
+      "output_tokens": 2293,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10944,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 470,
+          "cache_read_input_tokens": 9074,
+          "cache_creation_input_tokens": 1870,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1870
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

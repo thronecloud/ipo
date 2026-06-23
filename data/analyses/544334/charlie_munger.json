@@ -1,0 +1,69 @@
+{
+  "symbol": "544334",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-20T09:44:09.262478Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "Indobell Insulation is a sub-scale (INR 45 Cr market cap) insulation manufacturer earning a trivial 0.21% ROE against a 20x P/E — the arithmetic is absurd. Invert: what could go wrong? Practically everything already has; earnings are de minimis and there is no discernible moat in commodity insulation.",
+    "key_strengths": [
+      "Long operating history since 1972 — survived multiple cycles",
+      "Promoter holding of 65% signals skin-in-the-game",
+      "Debt-free micro-cap status is plausible at this size (not confirmed)"
+    ],
+    "key_risks": [
+      "ROE of 0.21% — essentially no return on capital, fails quality test outright",
+      "P/E of 20x on near-zero earnings implies extreme overvaluation relative to fundamentals",
+      "Micro-cap (INR 45 Cr) in commodity insulation — no pricing power, no moat"
+    ],
+    "red_flags": [
+      "ROE far below cost of capital (~14% in India) — value-destroying",
+      "P/E disconnected from underlying profitability",
+      "Negligible institutional coverage (DII 1.79%, likely illiquid)"
+    ],
+    "detailed_analysis": "Applying inversion: a business earning 0.21% ROE is worse than a bank fixed deposit and destroys capital after accounting for India's ~14% cost of equity. Paying 20x earnings for such returns is the textbook definition of a bad bet — you are buying a compounding machine running in reverse. Commodity insulation manufacturing has no durable competitive advantage: no switching costs, no network effects, no scale economies at INR 45 Cr. A 54-year history without building meaningful scale is itself evidence of the absent moat.\n\nMy mental model here is simple: over the long term, an investment's return converges to the business's ROIC. At 0.21%, the terminal outcome is abysmal regardless of entry price. The only bull case is a turnaround or asset-value/real-estate angle, but there is no evidence provided of either. This fails every Munger quality test — avoid.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 21176,
+    "model_used": "opus",
+    "total_cost_usd": 0.08828825,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8765,
+      "cache_read_input_tokens": 13154,
+      "output_tokens": 1076,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8765,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 58,
+          "cache_read_input_tokens": 10427,
+          "cache_creation_input_tokens": 1065,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1065
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

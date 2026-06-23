@@ -1,0 +1,70 @@
+{
+  "symbol": "RBA",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T22:10:45.476817Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Restaurant Brands Asia is a capital-hungry, perpetually loss-making QSR franchise operator that has burned through five consecutive years of net losses (totaling ~INR 1,229 Cr) while piling debt from INR 901 Cr to INR 1,789 Cr. At EV/EBITDA of 40.79x for a business earning negative returns on capital, the market is pricing in a profitable future that has stubbornly refused to arrive.",
+    "key_strengths": [
+      "Burger King brand provides some recognition moat in a competitive Indian QSR market",
+      "Operating cash flow is positive all 5 years and grew sharply to INR 350 Cr in FY2025, showing real customer demand",
+      "Revenue CAGR of 26.3% over 4 years shows network expansion and market penetration are working"
+    ],
+    "key_risks": [
+      "Perpetual net losses: -INR 233 to -282 Cr every single year for 5 years with no inflection in sight",
+      "Debt rising dangerously: borrowings up 98% from INR 901 Cr (2021) to INR 1,789 Cr (2025) with D/E at 2.29x — lethal in a cyclical consumer business",
+      "Promoter skin-in-the-game is nearly absent at just 11.26%, meaning the people running this business have little personal financial stake in its success"
+    ],
+    "red_flags": [
+      "ROCE of -3.01% — the business destroys capital on every rupee invested, a cardinal sin in my book",
+      "Finance costs ballooning from INR 95 Cr (2022) to INR 161 Cr (2025), consuming a growing share of thin operating margins",
+      "FCF only turned barely positive (+INR 73 Cr in FY2025) against INR 277 Cr in annual capex — the business is not self-funding growth",
+      "EV/EBITDA of 40.79x is egregiously expensive for a loss-making, highly-leveraged restaurant operator with no demonstrated path to double-digit returns"
+    ],
+    "detailed_analysis": "I've watched many restaurant businesses over the decades, and the pattern here is all too familiar: a brand with genuine consumer appeal being crushed by the economics of physical expansion. RBA's gross margin of 45.76% is actually respectable — customers like the product. But the moment you look below the gross line, the story falls apart. After rent (embedded in lease liabilities), labor, finance costs of INR 161 Cr, and relentless capex of INR 277 Cr, the company has lost money every single year since inception. That's not a temporary problem — that's a structural one. A wonderful business earns high returns on the capital it deploys; RBA earns -3% on invested capital.\n\nThe balance sheet tells an equally uncomfortable story. Equity has swung wildly — from INR 85 Cr (2021) to INR 1,041 Cr (2022, post-IPO capital raise) back down to INR 803 Cr (2025) — while debt has nearly doubled. The promoter holding of just 11.26% means management has limited alignment with shareholders. I want to own businesses where the people running the show are eating the same cooking they serve me. DII ownership of 45.6% suggests institutional investors are hopeful, but hope is not an investment thesis. At INR 63.30 per share with no earnings, no credible near-term profitability, and debt growing faster than cash flow, there is no margin of safety here whatsoever. I'd pass decisively.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 44325,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07554105,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10585,
+      "cache_read_input_tokens": 8661,
+      "output_tokens": 2216,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10585,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 322,
+          "cache_read_input_tokens": 8661,
+          "cache_creation_input_tokens": 1924,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1924
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "DCBBANK",
+  "persona": "philip_fisher",
+  "persona_display_name": "Philip Fisher",
+  "analyzed_at": "2026-04-18T17:08:17.303227Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "DCB Bank is a small regional lender with adequate but uninspiring growth — revenue CAGR of 16.3% and ROE of only 10.81% fall well short of the exceptional, innovation-driven compounders I seek. Volatile, frequently negative operating cash flows and a dangerously low promoter stake signal neither the management conviction nor the business quality I require.",
+    "key_strengths": [
+      "Net profit CAGR of 28.9% over 3 years shows earnings leverage is working, at least recently",
+      "P/B of 1.0x provides a margin of safety if book value holds — limited downside at current price",
+      "Diversified product mix (retail, corporate, treasury) reduces single-segment concentration risk"
+    ],
+    "key_risks": [
+      "Finance costs growing at 26.5% CAGR vs. revenue at 16.3% signals NIM compression — the bank is paying more for money than it earns on growth",
+      "Operating cash flow negative in 2 of 4 years (2023: -1,566 Cr; 2025: -441 Cr) — a fundamental red flag for a bank claiming growth",
+      "Promoter stake of only 16.23% is alarmingly low, suggesting management has minimal skin in the game and ownership discipline is absent"
+    ],
+    "red_flags": [
+      "OCF positive in only 2/4 years — banks with good loan books should generate consistent operating cash",
+      "Finance cost CAGR (26.5%) significantly outpacing revenue CAGR (16.3%) — structural NIM erosion underway",
+      "ROE of 10.81% is barely above cost of equity for an Indian bank — no economic value being created above hurdle rate"
+    ],
+    "detailed_analysis": "Applying my scuttlebutt framework, DCB Bank offers nothing that resembles the exceptional, innovation-driven growth businesses I have devoted my career to finding. Revenue growth at 16.3% CAGR is mediocre — well below my 20-30% threshold — and more troubling, finance costs are compounding at 26.5%, meaning the bank is funding its asset growth at an accelerating cost it cannot fully pass on. ROE of 10.81% is barely adequate and shows no trend of expansion; great growth companies reliably earn 20%+ on equity and improve year after year. There is no R&D, no product innovation moat, and no pricing power — commoditized deposit and lending products in a hyper-competitive Indian banking market.\n\nThe cash flow profile is disqualifying on its own. A bank generating negative operating cash flow in half the years under review (2023 and 2025) is either misclassifying loan book growth as operations or is funding growth with hot wholesale liabilities — neither is reassuring. The promoter holding of 16.23% is among the lowest I would ever accept; great management teams own the business they are building. DII ownership at 32.8% suggests institutional tolerance, not institutional enthusiasm. At P/B of 1.0x this is priced for mediocrity, which is precisely what it delivers. I would much rather own one exceptional company at 25x earnings than a bank compounding at 10% ROE at any price.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 41938,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.06470505000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8081,
+      "cache_read_input_tokens": 10541,
+      "output_tokens": 2082,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 8081
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 475,
+          "cache_read_input_tokens": 8487,
+          "cache_creation_input_tokens": 1648,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1648,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

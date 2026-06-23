@@ -1,0 +1,69 @@
+{
+  "symbol": "MARC",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-21T07:48:53.993988Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Marc Technocrats is a financially clean micro-cap with zero meaningful debt and consistent earnings, but at ₹48 Cr revenue it is far too small and illiquid for a prudent investor, and the absence of any valuation metrics (P/E, P/B, dividend yield) makes it impossible to ascertain a margin of safety. Without knowing what price Mr. Market is demanding, no rational purchase decision can be made.",
+    "key_strengths": [
+      "Virtually debt-free balance sheet (Total Debt ₹1 Cr vs Equity ₹28 Cr) — the kind of financial conservatism I admire.",
+      "Four consecutive years of positive earnings and OCF — meeting my minimum track-record threshold.",
+      "Excellent capital efficiency: ROCE of 36.27% suggests the business earns well on what it deploys."
+    ],
+    "key_risks": [
+      "No valuation data (P/E, P/B, market cap) provided — I cannot calculate a Graham Number or assess any margin of safety whatsoever.",
+      "Dangerously small scale (₹48 Cr revenue, ₹7 Cr net profit) — a single client loss could be catastrophic; Graham preferred established, substantial enterprises.",
+      "No dividend history cited — shareholders receive no current return while promoters hold 73.55% of the float, concentrating control and limiting liquidity."
+    ],
+    "red_flags": [
+      "SME-exchange listing (YHD-ERR) implies extreme illiquidity and minimal regulatory scrutiny — the intelligent investor avoids such speculative instruments.",
+      "Free cash flow (₹3 Cr) materially lags reported net profit (₹7 Cr) in 2025 — earnings quality is questionable when cash generation is less than half of stated profits.",
+      "FII ownership of 0.27% signals that institutional analysts have examined and passed — this is not necessarily contrarian opportunity; it may simply reflect legitimate concerns about the company's size and governance."
+    ],
+    "detailed_analysis": "From my vantage point, the first duty of an analyst is to establish what a business is worth and then compare that rigorously to price. I have been given four years of income statements, a balance sheet, and cash flows — but no price, no P/E, no price-to-book. I cannot compute the Graham Number (√22.5 × EPS × BVPS) without market price data. This alone disqualifies the stock from serious consideration under my method. The framework demands I know the price of what I am buying before I buy it.\n\nThat said, the underlying business is not without merit. Zero finance costs across all four years, equity growing from ₹14 Cr to ₹28 Cr organically, and ROCE of 36% tell me the consulting operation is genuinely profitable. However, this is a ₹7 Cr net-profit business listed on a thin SME exchange — precisely the terrain where promoter manipulation, accounting opacity, and sudden earnings reversals are endemic. The gap between net profit (₹7 Cr) and free cash flow (₹3 Cr) in 2025 demands explanation before trust is extended. Until I can verify valuation, confirm a dividend policy, and satisfy myself on earnings quality, the intelligent investor's answer is a firm no.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "insufficient_data",
+      "financial_health": "good",
+      "valuation": "insufficient_data",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 44628,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.06437894999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8027,
+      "cache_read_input_tokens": 10229,
+      "output_tokens": 2080,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8027,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 237,
+          "cache_read_input_tokens": 8179,
+          "cache_creation_input_tokens": 1898,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1898
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

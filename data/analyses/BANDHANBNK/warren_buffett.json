@@ -1,0 +1,69 @@
+{
+  "symbol": "BANDHANBNK",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-19T05:53:47.966931Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Bandhan Bank is a microfinance-rooted bank undergoing a painful transformation, operating in a segment where asset quality can deteriorate violently during economic stress — as FY22's near-zero profit of ₹126 Cr illustrated. With ROE of only 11.2%, no identifiable deposit franchise moat, and finance costs growing at a 26.6% CAGR (faster than revenues), I see no compelling reason to own this over better-run Indian private banks.",
+    "key_strengths": [
+      "Impressive earnings recovery: net profit rose from ₹126 Cr (FY22) to ₹2,745 Cr (FY25) as MFI stress normalized",
+      "Total debt declining sharply (₹24,711 Cr → ₹11,138 Cr over 3 years), improving the liability structure",
+      "Forward P/E of 10.9x and P/B of 1.14x mean the stock is not pricing in a rosy scenario"
+    ],
+    "key_risks": [
+      "Microfinance credit cycles are brutal: FY22 showed profits can collapse from ₹2,000 Cr+ to ₹126 Cr in one year; this can repeat given India's rural borrower stress",
+      "Finance costs rising at 26.6% CAGR vs revenue CAGR of 7.8% — the cost of liabilities is growing far faster than earning assets, compressing spreads",
+      "Promoter at 39.7% (Bandhan Life Insurance) creates ownership complexity; RBI has historically flagged promoter concentration issues with this bank"
+    ],
+    "red_flags": [
+      "OCF was −₹4,245 Cr in FY23, reflecting the extreme volatility of a bank with heavy MFI concentration — banks with this profile are fundamentally difficult to analyze",
+      "ROE of 11.2% is below my 15% minimum threshold — a bank this risky should be delivering materially higher returns to justify the complexity",
+      "I do not understand the MFI credit cycle well enough to predict when the next stress event occurs; the geography of Bandhan's borrowers (eastern India, Bengal) concentrates political and flood risk"
+    ],
+    "detailed_analysis": "Banking is a business I approach very carefully — I want the best-run bank at a fair price, not a recovering bank at a cheap price. Bandhan started as a microfinance institution and converted to a bank in 2015. Its historical strength was deep distribution in underbanked eastern India, but that same geographic concentration and borrower profile creates acute credit risk. FY22 demonstrated this: the COVID aftermath nearly wiped out profits entirely (₹126 Cr on a ₹138,995 Cr asset base). The recovery since is commendable, but the ROE still sits at 11.2% — not exceptional for the risk taken.\n\nThe forward P/E of 10.9x implies the market expects earnings to roughly double from FY25 levels. That may or may not materialize, but I am not the right person to bet on MFI credit cycles normalizing. Finance costs have risen 26.6% annually for three years, squeezing spreads as rates rose. The bank is pivoting toward home loans and secured credit, which is sensible but takes years to meaningfully shift the portfolio. I prefer to watch from the sidelines.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 193249,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.24341295000000002,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 24391,
+      "cache_read_input_tokens": 15059,
+      "output_tokens": 9828,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 24391,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 516,
+          "cache_read_input_tokens": 15059,
+          "cache_creation_input_tokens": 9332,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 9332
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

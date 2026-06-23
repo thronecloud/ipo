@@ -1,0 +1,68 @@
+{
+  "symbol": "EPL",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-18T17:20:26.739805Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "EPL is a steady global packaging stalwart serving defensive end markets (oral care, pharma, food), but its 7.9% revenue CAGR and chronically erratic net profit (flat at INR 210-244 Cr for four years before a suspicious 2025 spike to INR 364 Cr) fail to excite a growth investor. At P/E 18x with normalized earnings growth of ~10%, the PEG of ~1.8 leaves no margin of safety for a business without a compelling acceleration story.",
+    "key_strengths": [
+      "Global footprint across 6 regions reduces single-market risk; ~55% revenue from outside India",
+      "Free cash flow surged to INR 439 Cr in FY25, confirming improving business quality after the FY22 capex-heavy dip",
+      "Conservative balance sheet — D/E of 0.32, borrowings actually declining from INR 912 Cr (FY24) to INR 850 Cr (FY25)"
+    ],
+    "key_risks": [
+      "Revenue growth of ~8% CAGR is a stalwart at best — far below the 15-20%+ Lynch demands for a compelling growth thesis",
+      "Finance costs ballooned from INR 40 Cr (FY22) to INR 114 Cr (FY25), quietly eating into earnings even as EBITDA recovered",
+      "Low promoter stake of 26.38% signals limited management skin in the game — a governance yellow flag Lynch would dislike"
+    ],
+    "red_flags": [
+      "Net profit was stuck in INR 210-244 Cr range for four consecutive years (FY21-FY24), then spiked 73% to INR 364 Cr in FY25 — origin of that jump needs scrutiny before trusting it as the new baseline",
+      "EBITDA collapsed from INR 846 Cr (FY21) to INR 576 Cr (FY22) — suggests significant input-cost/execution vulnerability"
+    ],
+    "detailed_analysis": "EPL is a classic Lynch stalwart: durable, globally diversified, serving non-discretionary industries (oral care, pharma, food), but with no obvious growth engine to drive 15%+ sustained earnings expansion. Revenue has compounded at just 7.9% over nine years, and the operating income margin, while improving recently (837/4,213 = ~19.9% in FY25 vs. ~19% in FY16), hasn't expanded meaningfully enough to compensate for tepid top-line growth. The FY25 net profit of INR 364 Cr is a jarring outlier against a 4-year average of roughly INR 229 Cr (FY21-FY24); Lynch would demand to understand whether this reflects genuine operating leverage or a one-time cost tailwind (resin prices, FX, non-recurring items).\n\nOn valuation, forward P/E of 15.3x implies the market is pricing in ~18% earnings growth — which would give a PEG near 1.0 and make this mildly interesting. But given the erratic earnings history, Lynch would apply a skeptic's discount and anchor to normalized growth of ~10-12%, yielding a PEG of ~1.5-1.8. That's simply not cheap enough for a packaging company in a commoditized industry. The business is worth holding if you own it — the FCF is real (INR 439 Cr in FY25), the balance sheet is clean, and the end markets are sticky. But it lacks the \"what's the story?\" catalyst that Lynch needs to pound the table and call it a buy.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 60621,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08816399999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11438,
+      "cache_read_input_tokens": 9125,
+      "output_tokens": 2835,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11438
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 560,
+          "cache_read_input_tokens": 9125,
+          "cache_creation_input_tokens": 2313,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2313,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "FINPIPE",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T17:20:44.108689Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Finolex Industries fails both Magic Formula screens — Earnings Yield of ~4.3% (EBIT INR 476 Cr / EV ~INR 10,988 Cr) is less than half my 12% minimum, and ROCE of 9.24% sits far below the 20% threshold I require. Reported net profit of INR 800 Cr is grossly misleading, being turbo-charged by INR 703 Cr of \"Other Income\" that masks a mediocre core PVC pipe business.",
+    "key_strengths": [
+      "Zero net debt (borrowings collapsed to INR 21 Cr in 2025), pristine balance sheet with INR 5,914 Cr equity",
+      "Consistent positive OCF across all 5 years; FCF stable at ~INR 268 Cr in 2025",
+      "Dominant promoter holding (52.47%) with 66-year operating history in the PVC pipes market"
+    ],
+    "key_risks": [
+      "Operating EBIT declining — peaked at INR 1,023 Cr (2022), now just INR 476 Cr (2025); core business is clearly deteriorating",
+      "Revenue contracting: INR 4,647 Cr (2022) → INR 4,142 Cr (2025) — no growth engine visible",
+      "Net profit (INR 800 Cr) is 68% dependent on Other Income (INR 703 Cr); strip this out and the P/E balloons well above 40x"
+    ],
+    "red_flags": [
+      "Other Income of INR 703 Cr in FY25 nearly equals operating EBIT of INR 476 Cr — reported earnings are investment-driven, not operational",
+      "EBITDA contracted from INR 1,070 Cr (2022) to INR 606 Cr (2025) — a 43% collapse in 3 years",
+      "Operating margin at 10.76% with no pricing power in a commoditized PVC pipe market"
+    ],
+    "detailed_analysis": "Running the Magic Formula on Finolex produces two failing scores. Earnings Yield = EBIT (INR 476 Cr) / EV (Market Cap INR 10,795 Cr + Debt INR 237 Cr – Cash INR 44 Cr = INR 10,988 Cr) = **4.3%** — a full 8 percentage points below my 12% floor and signaling significant overvaluation on operating earnings. Return on Capital, proxied by the disclosed ROCE of **9.24%**, falls well short of the 20% hurdle I demand for a business worth owning. The company simply cannot clear either bar of the formula simultaneously.\n\nThe biggest distortion here is the INR 703 Cr \"Other Income\" in FY25 that inflates reported net profit to INR 800 Cr, masking the true state of the PVC pipe operation. Strip that away and the core business earns roughly INR 100-150 Cr, implying an operational P/E north of 70x. The revenue trend confirms the story: four straight years of decline/stagnation after the 2022 peak. At P/E 21.6x and EV/EBITDA 17.5x, the market is paying a premium for a business with contracting operating earnings. The Magic Formula says pass.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 40638,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07944165,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11081,
+      "cache_read_input_tokens": 9063,
+      "output_tokens": 2344,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11081
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 363,
+          "cache_read_input_tokens": 9063,
+          "cache_creation_input_tokens": 2018,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2018,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

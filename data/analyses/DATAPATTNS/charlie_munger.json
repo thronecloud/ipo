@@ -1,0 +1,69 @@
+{
+  "symbol": "DATAPATTNS",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-19T13:08:20.324144Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "AVOID",
+    "investment_thesis": "Data Patterns has a genuinely exceptional underlying business — 43% operating margins, zero debt, 31.6% revenue CAGR — in a structurally protected niche of Indian defense electronics. But at P/E 79.45x, EV/EBITDA 60x, and P/S 20x, the price bakes in flawless execution for a decade, and the FCF conversion is alarming: INR -196 Cr FCF against INR 222 Cr net profit in FY25 (-88%), revealing a working-capital trap endemic to government defense contracts.",
+    "key_strengths": [
+      "Extraordinary operating margins of 43.13% with 53% gross margins — hallmark of a niche technology monopoly with high barriers to entry (DRDO qualification cycles span years)",
+      "Completely debt-free balance sheet (D/E 0.00) with strong promoter holding of 42.41%; India's defense indigenization policy (DPP, Make-in-India) is a structural tailwind",
+      "Revenue CAGR of 31.6% and net profit CAGR of 33.1% over 3 years demonstrate genuine business momentum"
+    ],
+    "key_risks": [
+      "FCF deeply negative: INR -196 Cr in FY25 against INR 222 Cr net profit — government procurement delays trap cash in receivables; OCF positive in only 2 of 4 years",
+      "Extreme valuation leaves zero margin of safety — any contract slip, audit query, or earnings miss risks a 40-50% drawdown from current levels",
+      "Revenue base of only INR 708 Cr against a INR 19,562 Cr market cap (P/S 20x) means execution must be perfect for many years; scale risk is real"
+    ],
+    "red_flags": [
+      "FCF/Net Income of -88% in FY25 (INR -196 Cr / INR 222 Cr) — when a business earns INR 222 Cr but generates negative INR 196 Cr in cash, the reported profits are not real cash wealth for shareholders",
+      "At P/E 79.45x, the business must grow earnings 25%+ annually for 10+ years just to justify today's price at a reasonable terminal multiple — a heroic assumption for a company dependent on Indian government procurement timelines",
+      "Single-customer concentration risk: essentially all revenue comes from Indian defense ministry entities; policy changes, budget reallocations, or procurement freezes have outsized impact"
+    ],
+    "detailed_analysis": "Data Patterns is the kind of business Charlie Munger dreams about: extraordinary margins, impenetrable technical moats (radar, electronic warfare, avionics — you cannot enter this market without years of DRDO qualification), zero debt, and an aligned promoter. India's defense indigenization drive under successive governments is a genuine secular tailwind, and Data Patterns sits squarely in the path of that capital flow. I admire the business.\n\nBut inversion forces a hard look: at P/E 79.45 and EV/EBITDA 60x, the market is already pricing in this dream. More troublingly, reported profits are not being converted to cash — FY25 FCF was -INR 196 Cr against net profit of INR 222 Cr. Government defense customers in India are notorious for 18-36 month payment cycles; the balance sheet is accumulating receivables, not cash. OCF was positive only twice in four years. A wonderful business at a terrible price is not a wonderful investment — and the margin of safety here is deeply negative. I would revisit at 30-35x earnings with demonstrated FCF improvement.",
+    "metrics_evaluated": {
+      "moat_strength": "strong",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "exceptional"
+    }
+  },
+  "metadata": {
+    "duration_ms": 218166,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.2727762,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 25826,
+      "cache_read_input_tokens": 15249,
+      "output_tokens": 11423,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 25826,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 726,
+          "cache_read_input_tokens": 15249,
+          "cache_creation_input_tokens": 10577,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 10577
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

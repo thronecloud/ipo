@@ -1,0 +1,70 @@
+{
+  "symbol": "PFOCUS",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T21:53:24.299945Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Prime Focus is a chronically loss-making, debt-laden media services company trading at an absurd 102x P/E with negative ROE of -16.7% — exactly the kind of business I wouldn't touch regardless of price. With INR 538 Cr in annual finance costs consuming the bulk of operating profits and free cash flow negative in 3 of the last 5 years, this company destroys shareholder value.",
+    "key_strengths": [
+      "Global VFX/post-production platform with Hollywood studio relationships provides some revenue visibility",
+      "Gross margins of 93.97% suggest a services-light asset model with pricing power on the top line",
+      "Revenue CAGR of 11.2% over 9 years shows the underlying demand for media services is real"
+    ],
+    "key_risks": [
+      "Chronic losses — net profit negative in 8 of 10 years, including -488 Cr (FY24) and -458 Cr (FY25)",
+      "Crushing debt burden: borrowings rose to INR 5,255 Cr with finance costs of INR 538 Cr/year, D/E at 2.46x",
+      "Revenue now declining — peaked at INR 4,644 Cr (FY23), fell to INR 3,599 Cr (FY25), with FCF -337 Cr in FY24"
+    ],
+    "red_flags": [
+      "Negative ROE of -16.7% — the business is actively destroying equity capital",
+      "Equity nearly wiped out by FY23 (INR 25 Cr from INR 392 Cr in FY20), recovered only via likely equity dilution to INR 1,739 Cr by FY25",
+      "P/E of 102x and EV/EBITDA of 46x for a company with no sustained earnings history is speculative fantasy pricing",
+      "Free cash flow negative in FY23, FY24, FY25 — the business cannot fund itself organically"
+    ],
+    "detailed_analysis": "Prime Focus is precisely the type of business I spend my career avoiding. Despite a respectable 93.97% gross margin suggesting intellectual-capital-based services, the financial reality is brutal: the company has produced net losses in 8 of the past 10 years. Finance costs of INR 538 Cr in FY25 devour the entirety of meaningful operating cash generation — EBITDA of INR 951 Cr sounds impressive until you subtract INR 538 Cr in interest and heavy depreciation on a INR 9,643 Cr asset base, leaving nothing for equity holders. Borrowings have compounded from INR 3,371 Cr (FY20) to INR 5,255 Cr (FY25) while equity was nearly obliterated by FY23.\n\nAt INR 345/share and a market cap of INR 26,776 Cr, the market is pricing this as though the turnaround is certain and imminent — it is doing neither. The EV/EBITDA of 46x and P/B of 6.66x are pricing-in perfection for a business with zero demonstrated ability to convert revenues into shareholder returns. The Hollywood/streaming industry headwinds (post-strike pullback, streaming budget cuts) are hammering revenue, which has shrunk 22% from its FY23 peak. I would need to see at minimum three consecutive years of meaningful net profit, debt reduction below 1x D/E, and positive FCF before reconsidering. As it stands, this is a speculation dressed as an investment.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 44385,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0788982,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10792,
+      "cache_read_input_tokens": 9014,
+      "output_tokens": 2381,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10792,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 635,
+          "cache_read_input_tokens": 9014,
+          "cache_creation_input_tokens": 1778,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1778
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

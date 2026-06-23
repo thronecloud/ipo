@@ -1,0 +1,70 @@
+{
+  "symbol": "544435",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-20T20:10:38.791338Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Adcounty Media is a recently-listed micro-cap adtech company with a P/E of 19 and an abysmal ROE of 0.47% — there is no multi-year earnings track record and no margin of safety. By Graham's standards, this is a speculation, not an investment.",
+    "key_strengths": [
+      "Promoter holding at 65.52% shows skin in the game",
+      "Positive (if negligible) earnings — P/E of 19 implies the company is not loss-making",
+      "Low institutional float (FII 0.30% + DII 1.90%) means limited forced-selling risk"
+    ],
+    "key_risks": [
+      "ROE of 0.47% is essentially capital destruction — far below risk-free rate",
+      "Recent IPO (2017-incorporated, just listed) — fails the 5-year earnings stability test",
+      "P/E of 19 on near-zero ROE implies extreme P/B premium with no earnings power to justify it"
+    ],
+    "red_flags": [
+      "No multi-year audited earnings history available",
+      "ROE under 1% suggests either bloated equity from IPO proceeds or negligible profits",
+      "Adtech/digital media is a fad-prone, low-moat industry — classic speculative territory",
+      "IPO pricing set by sellers, not buyers — asymmetric information risk"
+    ],
+    "detailed_analysis": "From my perspective, this security fails virtually every quantitative filter I require. A ROE of 0.47% on a P/E of 19 is a mathematical contradiction of value — it implies investors are paying ~19x for earnings that represent less than half a percent return on book equity. Either the equity base has been inflated by fresh IPO proceeds (common — and a warning sign that the float is overcapitalized relative to earning power) or the business genuinely earns almost nothing. Either way, there is no demonstrated earning power to anchor intrinsic value, and without that anchor, any price is speculation.\n\nThe company was incorporated only in 2017 and lacks the 5–10 year record of stable, positive earnings I demand before even beginning valuation work. Adtech is also a notoriously fickle industry with no durable moat, dominated by Google and Meta. The 65.5% promoter holding is the only mildly reassuring data point, but insider ownership does not substitute for earnings, a strong current ratio, or a price below book value — none of which are evidenced here. Mr. Market is not offering a bargain; he is offering a story. Pass.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "insufficient_data",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 26063,
+    "model_used": "opus",
+    "total_cost_usd": 0.09340525,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8893,
+      "cache_read_input_tokens": 13488,
+      "output_tokens": 1242,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8893,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 121,
+          "cache_read_input_tokens": 10602,
+          "cache_creation_input_tokens": 1177,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1177
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

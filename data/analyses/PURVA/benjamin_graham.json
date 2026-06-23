@@ -1,0 +1,71 @@
+{
+  "symbol": "PURVA",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T22:11:13.307996Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Puravankara is a debt-laden real estate developer with negative net profit of ₹183 Cr in FY25, an interest coverage ratio below 1x (EBITDA ₹377 Cr vs. finance costs ₹555 Cr), and a P/B of 3.30 — a severe violation of every margin-of-safety principle I demand. The business is consuming its equity (down from ₹2,042 Cr in FY22 to ₹1,619 Cr in FY25) while borrowings have surged 71% to ₹4,497 Cr, making this a speculation, not an investment.",
+    "key_strengths": [
+      "Long operating history since 1975 with established brand in Bengaluru residential real estate",
+      "Gross margin of 44.42% demonstrates real pricing power in underlying project economics",
+      "Revenue recovery to ₹2,185 Cr in FY24 after COVID trough shows some demand resilience"
+    ],
+    "key_risks": [
+      "Interest coverage below 1x — EBITDA of ₹377 Cr cannot cover finance costs of ₹555 Cr; the company is insolvent on an earnings basis",
+      "Debt/Equity of 2.75 (borrowings ₹4,497 Cr vs. equity ₹1,619 Cr) is 5.5x my maximum threshold of 0.5",
+      "FY25 OCF collapsed to -₹531 Cr from +₹896 Cr in FY24 — cash burn is accelerating, not abating"
+    ],
+    "red_flags": [
+      "Net loss of ₹183 Cr in FY25; two loss years in last five — fails my consecutive positive earnings requirement",
+      "Graham Number cannot be computed — negative EPS makes intrinsic value calculation impossible",
+      "P/B of 3.30 is more than double my ceiling of 1.5; paying ₹3.30 for each rupee of shrinking book value",
+      "Equity has declined for three straight years (FY23: ₹1,987 → FY25: ₹1,619) — assets are being financed by creditors, not owners",
+      "Finance costs growing at 9.6% CAGR, more than triple the 2.7% revenue CAGR — a debt trap in motion"
+    ],
+    "detailed_analysis": "Puravankara fails every quantitative filter I apply. The P/B of 3.30 already disqualifies it on first inspection — I want to pay less than book, not 3.3 times. But the more alarming fact is that the book itself is being destroyed: equity fell from ₹2,042 Cr (FY22) to ₹1,619 Cr (FY25), even as total assets ballooned to ₹15,335 Cr. The difference is debt — borrowings now stand at ₹4,497 Cr, with a Debt/Equity of 2.75 against my hard ceiling of 0.5. The interest burden of ₹555 Cr in FY25 exceeds the entire EBITDA of ₹377 Cr, meaning the company cannot service its debt from operations. This is not a balance sheet I would touch at any price.\n\nThe income statement tells an equally grim story. Net profit over nine years shows no compound growth — the 9Y CAGR is effectively zero, punctuated by two loss years (FY21, FY25). The ₹183 Cr net loss in FY25 alongside a shocking swing to -₹531 Cr in operating cash flow (from +₹896 Cr in FY24) suggests project timing and working capital volatility are extreme — precisely the kind of unpredictability that destroys the defensive investor. Mr. Market has priced this at a forward P/E of 23x and EV/EBITDA of 21x, embedding optimistic recovery assumptions I am not willing to pay for. Real estate developers with this leverage profile are the first to suffer in any credit tightening. There is no margin of safety here — only margin of risk.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 45210,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07158435,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8989,
+      "cache_read_input_tokens": 11022,
+      "output_tokens": 2304,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8989,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 300,
+          "cache_read_input_tokens": 8972,
+          "cache_creation_input_tokens": 2067,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2067
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

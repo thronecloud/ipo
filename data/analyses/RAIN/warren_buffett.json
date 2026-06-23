@@ -1,0 +1,71 @@
+{
+  "symbol": "RAIN",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T22:07:04.342759Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Rain Industries is a highly cyclical, debt-laden commodity chemicals business with no discernible economic moat, delivering a -8.4% net profit CAGR over nine years and a paltry 0.60% ROE. The combination of INR 9,824 Cr in debt, rising finance costs (INR 922 Cr in FY25), and a negative forward P/E makes this precisely the kind of business I avoid — high capital intensity, no pricing power, and earnings at the mercy of aluminum/steel industry cycles.",
+    "key_strengths": [
+      "Trades at 0.60x book value — assets worth more than market cap on paper",
+      "Consistent positive operating cash flow all 5 years; FY25 OCF INR 897 Cr",
+      "EV/EBITDA of 5.94x is cheap, suggesting modest asset-level value"
+    ],
+    "key_risks": [
+      "Crushing debt burden: INR 9,824 Cr borrowings vs. INR 7,449 Cr equity (D/E 1.28), with finance costs nearly doubling from INR 479 Cr (2021) to INR 922 Cr (2025)",
+      "Deeply cyclical commodity business — net losses of INR 796 Cr (2023) and INR 450 Cr (2024), barely breakeven at INR 136 Cr in 2025",
+      "Forward P/E is negative (-87x), indicating the market expects the company to slip back into losses"
+    ],
+    "red_flags": [
+      "ROE of 0.60% — essentially destroying shareholder value while carrying massive debt",
+      "Net profit CAGR of -8.4% over 9 years; business earns less today than it did in 2016 (INR 301 Cr → INR 136 Cr)",
+      "EBITDA CAGR of only 0.8% over 9 years despite 6.9% revenue growth — costs are growing faster than revenue",
+      "Finance costs expanding rapidly while earnings contract — a dangerous leverage trap in a cyclical industry",
+      "Negative forward P/E signals anticipated losses; no earnings visibility or predictability"
+    ],
+    "detailed_analysis": "Rain Industries is a textbook example of what I call a \"toll booth without pricing power\" — a capital-intensive business that processes commodities (calcined petroleum coke, coal tar pitch) for industries it cannot control. The gross margin of 43% looks attractive superficially, but operating costs, depreciation, and especially finance charges consume virtually all of it, leaving a paper-thin 5.81% operating margin and a ROE of just 0.60%. This is a business that requires enormous capital (INR 20,759 Cr in assets) to generate INR 136 Cr in net profit — a return on assets of roughly 0.65%. I would sooner own a See's Candies that needs no capital than a Rain Industries that needs an ocean of it.\n\nThe balance sheet is the most alarming chapter. Debt of INR 9,824 Cr against equity of INR 7,449 Cr means every swing in the commodity cycle — which we saw vividly in 2023's INR -796 Cr loss — can wipe out multiple years of earnings in one stroke. The company did generate positive free cash flow across the last five years (including an impressive INR 2,470 Cr in FY23 during debt paydown mode), but FCF has since cratered to INR 441 Cr in FY25 while debt is rising again. The low P/B of 0.60x may tempt a deep-value cigar-butt investor looking for one last puff, but this is not my style. I want businesses that compound wealth, not ones that oscillate between thin profits and significant losses based on aluminum smelter utilization rates halfway around the world.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 48842,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08629319999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11338,
+      "cache_read_input_tokens": 9239,
+      "output_tokens": 2733,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11338,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 672,
+          "cache_read_input_tokens": 9239,
+          "cache_creation_input_tokens": 2099,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2099
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "symbol": "DBL",
+  "persona": "vijay_kedia",
+  "persona_display_name": "Vijay Kedia",
+  "analyzed_at": "2026-04-18T17:05:58.284199Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "DBL is a mid-cap EPC contractor at INR 7,424 Cr market cap — far outside my sweet spot — buried under INR 10,375 Cr debt that consumed INR 1,249 Cr in finance costs in FY25, leaving no meaningful free cash flow. There is no SMILE story here: no size advantage, no early-stage market expansion, and no escape from the capital-intensive debt trap.",
+    "key_strengths": [
+      "Promoter holding at 63.14% — strong skin in the game",
+      "Net profit recovery to INR 840 Cr in FY25 after two near-loss years (FY22: -550 Cr)",
+      "P/B of 0.98 — trading below book value, some asset floor exists"
+    ],
+    "key_risks": [
+      "Debt/Equity of 1.71 with borrowings surging from INR 6,658 Cr (FY23) to INR 10,375 Cr (FY25) — deeply leveraged and worsening",
+      "Free cash flow persistently negative every year (-INR 4,134 Cr in FY25); finance costs of INR 1,249 Cr nearly swallow the INR 840 Cr net profit",
+      "Forward P/E of 26.91 vs trailing 11.40 implies FY25 earnings are unsustainable or a sharp earnings decline is expected ahead"
+    ],
+    "red_flags": [
+      "Market cap INR 7,424 Cr — 7-10x outside my small-cap sweet spot; zero information asymmetry edge",
+      "Borrowings jumped INR 3,717 Cr in a single year (FY24→FY25), suggesting aggressive new project bidding funded entirely by debt",
+      "OCF collapsed from INR 2,845 Cr (FY23) to INR 131 Cr (FY25) — working capital deterioration is severe",
+      "Other income of INR 417–462 Cr artificially flatters reported profitability; strip it out and operating earnings are thin",
+      "ROE of only 9.97% on a heavily leveraged balance sheet signals poor capital allocation despite scale"
+    ],
+    "detailed_analysis": "Dilip Buildcon fails every major SMILE filter. At INR 7,424 Cr market cap it is a mid-cap, not a small-cap, and institutional coverage already exists — my edge disappears. Revenue grew at a modest 11.6% CAGR over nine years, while EBITDA CAGR was just 5.5%, meaning costs scaled faster than revenue. The FY22 loss of INR 550 Cr exposed how fragile margins are in this commodity EPC model, and the FY25 \"recovery\" to INR 840 Cr net profit is heavily supported by INR 417 Cr other income that is non-recurring in nature.\n\nThe debt picture is the real dealbreaker. Borrowings of INR 10,375 Cr against equity of INR 5,772 Cr gives a D/E of 1.71 — more than 4x my hard limit of 0.4. Finance costs of INR 1,249 Cr in FY25 alone exceed net profit if you remove other income. Free cash flow has been negative every single year in the dataset, with cumulative FCF destruction of over INR 20,000 Cr across five years. The company is a cash incinerator, not a cash compounder. For me to find a multibagger, I need a business that generates surplus cash to fund its own growth — DBL does the opposite, perpetually tapping lenders and equity markets to stay alive. This is a leveraged infrastructure bet, not a SMILE candidate.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 47012,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0739014,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9160,
+      "cache_read_input_tokens": 11458,
+      "output_tokens": 2407,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9160
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 415,
+          "cache_read_input_tokens": 9293,
+          "cache_creation_input_tokens": 2032,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2032,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

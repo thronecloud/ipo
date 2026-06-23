@@ -1,0 +1,71 @@
+{
+  "symbol": "DBL",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T17:10:26.751150Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Dilip Buildcon is a capital-devouring EPC contractor with no competitive moat, perpetually negative free cash flow (every year 2020–2025), and leverage at ~5x EBITDA — the antithesis of a Munger-style compounding machine. The gap between trailing P/E (11.4x) and forward P/E (26.9x) signals the market expects earnings to collapse by more than half, exposing 2025's ₹840 Cr profit as likely unsustainable.",
+    "key_strengths": [
+      "Scale with 9Y revenue CAGR of 11.6%, diversified across roads, metro, tunnels, and irrigation",
+      "Promoter skin-in-the-game at 63.1% holding with operational focus",
+      "ROCE of 14.8% is at least above cost of capital, and OCF was positive all 5 years"
+    ],
+    "key_risks": [
+      "Debt/EBITDA ~5x (₹9,528 Cr debt vs ₹1,917 Cr EBITDA) — well above my 2.5x ceiling, and borrowings surged ₹3,135 Cr in a single year (2024→2025)",
+      "Free cash flow deeply negative every single year shown (-₹1,071 Cr to -₹5,554 Cr) — this business consumes capital like a furnace",
+      "Finance costs of ₹1,249 Cr consume 65% of EBITDA, leaving razor-thin coverage and near-zero margin for error in a government-payment-delay environment"
+    ],
+    "red_flags": [
+      "Forward P/E (26.9x) vs trailing P/E (11.4x) — implies >50% earnings decline expected; 2025 net profit of ₹840 Cr is not trusted by the market",
+      "Other income of ₹417–462 Cr inflates net profits; strip it out and 2025 net profit collapses toward ₹400 Cr, making current earnings quality very poor",
+      "Borrowings re-exploded to ₹10,375 Cr in 2025 after deleveraging progress in 2022–2023 — management appears unable to escape the debt trap",
+      "EBITDA 9Y CAGR of only 5.5% vs revenue CAGR of 11.6% — the business is growing revenues but margins are structurally deteriorating over time",
+      "FII ownership at 1.97% — sophisticated global capital is essentially absent, a damning vote of no confidence"
+    ],
+    "detailed_analysis": "Inversion first: what would make this a terrible investment? A capital-intensive business with no pricing power, perpetually negative free cash flow, excessive leverage, government-dependent receivables, and earnings inflated by non-operating income. Dilip Buildcon checks every one of those boxes. EPC contracting is a commodity business — DBL wins contracts through competitive bidding, not through any durable advantage. The business has generated negative FCF in all six years of available data, ranging from -₹1,071 Cr (the \"best\" year) to -₹5,554 Cr. Capex alone ran ₹4,265–5,554 Cr annually while operating cash flow reached a peak of only ₹2,845 Cr. This is a business that must perpetually borrow to exist.\n\nThe balance sheet tells the real story: borrowings surged from ₹7,240 Cr to ₹10,375 Cr in a single year (FY25), reversing hard-won deleveraging. With finance costs at ₹1,249 Cr against EBITDA of ₹1,917 Cr, interest coverage is barely 1.5x — one bad quarter or payment delay from a government agency could tip this into distress again (as it did in FY22: net loss of -₹550 Cr). The forward P/E of 26.9x vs trailing 11.4x is the market's way of screaming that FY25 profits of ₹840 Cr — partly propped by ₹417 Cr of \"other income\" — are not repeatable. ROE at 9.97% is below any reasonable hurdle rate for the leverage carried. At P/B of 0.98x it may look \"cheap,\" but a business that destroys cash and re-levers relentlessly deserves to trade below book.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 59394,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08907299999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11446,
+      "cache_read_input_tokens": 9055,
+      "output_tokens": 2895,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11446
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 568,
+          "cache_read_input_tokens": 9055,
+          "cache_creation_input_tokens": 2391,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2391,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

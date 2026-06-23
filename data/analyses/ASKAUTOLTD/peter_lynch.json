@@ -1,0 +1,68 @@
+{
+  "symbol": "ASKAUTOLTD",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-18T16:31:39.664713Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "ASK Automotive is a quality auto components player with excellent capital returns (ROE 26.6%, ROCE 27.6%) and an accelerating revenue story (+20% in FY2025) anchored by EV-relevant aluminum lightweighting. However, at P/E 30.4x with a PEG of ~1.4x (using 22% forward growth), the stock offers a good business at a price that leaves little margin of safety — I'd rather wait for the capex cycle to prove out in free cash flow.",
+    "key_strengths": [
+      "Exceptional capital efficiency: ROE 26.6% and ROCE 27.6% are well above auto-parts peers, indicating genuine competitive moat in niche segments",
+      "Accelerating fundamentals: FY2025 revenue +20% and net profit +43% (174→248 Cr) suggest the story is getting better, not worse",
+      "EV optionality via aluminum lightweighting solutions positions the company to benefit from India's OEM EV transition"
+    ],
+    "key_risks": [
+      "Near-zero free cash flow despite strong earnings: FCF only ₹30 Cr in FY2025 vs. net profit of ₹248 Cr — capex of ₹346 Cr is consuming virtually all cash generated",
+      "Debt surged 77% in one year (₹346 Cr → ₹612 Cr borrowings FY2024→FY2025) while cash sits at just ₹20 Cr — leverage rising fast in a cyclical industry",
+      "100% OEM dependency limits pricing power; any volume slowdown at 2-wheeler/4-wheeler OEMs flows directly to top line with no aftermarket buffer"
+    ],
+    "red_flags": [
+      "Borrowings nearly doubled in FY2025 (₹346 Cr → ₹612 Cr) with minimal cash on hand — financing risk if growth disappoints",
+      "FCF conversion is broken: ₹248 Cr net profit yields only ₹30 Cr FCF; the business is consuming capital faster than it generates it"
+    ],
+    "detailed_analysis": "ASK Automotive is a classic Lynch stalwart trying to reinvent itself as a fast grower. The numbers are genuinely impressive in spots — ROE of 26.6% is the kind of return I love to see in a manufacturing business, and the FY2025 acceleration (revenue ₹2,995→₹3,601 Cr, net profit ₹174→₹248 Cr) tells me management is executing. The aluminum lightweighting story is real: as Indian OEMs electrify, weight reduction becomes a procurement mandate, and ASK is already in those conversations. The 6Y revenue CAGR of 12.4% is decent but not exciting by itself; what matters is whether the recent re-acceleration to 20% is the new normal.\n\nThe problem is price and cash flow. At P/E 30.4x on earnings that grew at 13.8% over six years, the PEG is roughly 1.4x on a through-cycle basis — borderline by my standards, and I don't pay 1.4x PEG for OEM-dependent auto parts. The capex story is the real wildcard: ₹346 Cr of capex in FY2025 against ₹360 Cr of operating cash flow leaves virtually nothing free. Borrowings jumped 77% in a single year. This is a company betting heavily on growth, and that bet could pay off beautifully — but the margin of safety isn't there yet. I'd want to see the CWIP (₹163 Cr) convert to productive assets, FCF recover toward ₹150+ Cr, and either a lower entry price or another year of 20%+ earnings growth before getting excited.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 60725,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09238875,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11579,
+      "cache_read_input_tokens": 8895,
+      "output_tokens": 3086,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11579,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 462,
+          "cache_read_input_tokens": 8895,
+          "cache_creation_input_tokens": 2684,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2684
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

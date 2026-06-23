@@ -1,0 +1,70 @@
+{
+  "symbol": "AARTIPHARM",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T16:11:42.346270Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Aarti Pharmalabs trades at INR 698 versus a calculated Graham Number of ~INR 390 — a 79% premium to intrinsic value by my method — while carrying a P/E of 29.3x and P/B of 3.09x, both nearly double my maximum thresholds. The market is asking me to pay for future growth, and I never pay for what has not yet been earned.",
+    "key_strengths": [
+      "Debt/Equity of 0.33 passes my <0.5 threshold — balance sheet is not yet dangerously levered",
+      "Strong interest coverage of ~17.5x (EBITDA 473 Cr ÷ Finance Cost 27 Cr) — debt service well protected",
+      "Four consecutive years of rising net profit (INR 122→272 Cr, 2022–2025) establishes a minimum earnings track record"
+    ],
+    "key_risks": [
+      "Valuation demands growth: P/E 29.3x and P/B 3.09x leave zero margin of safety — any earnings stumble would be punishing",
+      "Free cash flow deeply negative in 2025 (–INR 112 Cr) as capex of INR 444 Cr swamped net profit of INR 272 Cr — earnings are not yet converting to cash",
+      "Borrowings nearly tripled in one year (INR 285→659 Cr, 2024→2025) and cash fell to just INR 7 Cr — liquidity position has deteriorated sharply"
+    ],
+    "red_flags": [
+      "Price INR 698 is 79% above calculated Graham Number of ~INR 390 (sqrt(22.5 × ~30 EPS × ~225 BVPS))",
+      "No dividend history evident — no proven cash return to shareholders",
+      "Incorporated only in 2019 — six-year operating history is too short to establish the durable earning power I require",
+      "Capex of INR 444 Cr in 2025 exceeds net profit of INR 272 Cr — the business is consuming more capital than it earns"
+    ],
+    "detailed_analysis": "Measured against my strict quantitative filters, Aarti Pharmalabs fails on the two most important counts. A P/E of 29.3x is nearly twice my ceiling of 15x, and a P/B of 3.09x is more than double my preferred maximum of 1.5x. The Graham Number — the geometric mean of earnings and book value — yields approximately INR 390, meaning the market charges a 79% premium above what the numbers alone justify. I have no interest in paying for stories about future growth; I require a discount to proven value, not a premium to hoped-for value.\n\nThe balance sheet tells a cautionary tale beneath the headline growth numbers. Net profit grew admirably at 30.6% CAGR, but free cash flow was negative in 2025 because the company spent INR 444 Cr on capital expenditures — 1.6× its entire net profit. Simultaneously, borrowings surged from INR 285 Cr to INR 659 Cr while cash shrank to a bare INR 7 Cr. The business is in an aggressive expansion phase, and while that may ultimately prove rewarding, it is precisely the kind of speculative capital allocation that Mr. Market prices optimistically and that I price skeptically. At a fair price I might find this interesting; at 29× earnings, I will wait.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 46445,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.04896225,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 2175,
+      "cache_read_input_tokens": 17540,
+      "output_tokens": 2369,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 2175,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 265,
+          "cache_read_input_tokens": 8770,
+          "cache_creation_input_tokens": 2175,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2175
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

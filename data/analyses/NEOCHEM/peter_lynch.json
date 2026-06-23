@@ -1,0 +1,68 @@
+{
+  "symbol": "NEOCHEM",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-21T08:00:24.430033Z",
+  "analysis": {
+    "score": 6,
+    "recommendation": "BUY",
+    "investment_thesis": "Neochem Bio is a classic micro-cap fast grower — revenue compounding at ~32% CAGR (FY23–25) with explosive earnings leverage (net profit 1→8 Cr), yet trading at just P/E 16x, giving a PEG of roughly 0.4 that would make any GARP investor sit up. The story is simple: a small specialty chemicals manufacturer hitting an operating leverage inflection point, but high debt and thin operating cash flows demand a cautious position size.",
+    "key_strengths": [
+      "Exceptional PEG ~0.4 (P/E 16x on ~38% revenue growth) — deeply undervalued for its growth rate",
+      "Massive operating leverage: EBITDA margin expanded from 10% (FY23) to 16.7% (FY25) as revenue scaled",
+      "ROE 48% and ROCE 27% signal strong capital productivity; promoter skin-in-the-game at 66.7%"
+    ],
+    "key_risks": [
+      "Debt/Equity ~1.8x (Borrowings 36 Cr vs Equity 20 Cr) — 3x Lynch's 0.6 threshold; finance cost ate 50% of operating income",
+      "OCF only 3 Cr vs Net Profit 8 Cr in FY25 — large divergence signals working capital strain or earnings quality concern",
+      "Micro-cap at 117 Cr market cap with 84 Cr revenue — customer concentration, liquidity, and scale risks are real"
+    ],
+    "red_flags": [
+      "Operating cash flow chronically lags reported net profit — needs explanation",
+      "Debt rising every year (26→33→36 Cr) while FCF only just turned positive at 1 Cr in FY25"
+    ],
+    "detailed_analysis": "Neochem Bio fits the Lynch playbook as a fast grower: tiny, under-followed, growing 30%+, and priced like a slow grower at P/E 16x. Revenue grew 75% in two years (48→84 Cr) while EBITDA nearly tripled (5→14 Cr), proving real operating leverage rather than top-line illusion. The PEG of ~0.4 is the kind of number that gets me excited — the market simply hasn't noticed the earnings inflection yet. DII buying at 13% hints that smarter hands are accumulating.\n\nThe worry is the balance sheet. Borrowings of 36 Cr against equity of 20 Cr (D/E 1.8x) means the interest clock ticks hard — finance costs of 4 Cr consumed half of FY25 operating income. More troubling, OCF was just 3 Cr against 8 Cr net profit; if receivables or inventory are masking true profitability, the story breaks fast. I'd want a small, tracking position here — let FY26 results confirm that (1) cash conversion improves, and (2) debt doesn't keep climbing. If those check out, this could be a genuine ten-bagger candidate.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "undervalued",
+      "growth_potential": "exceptional"
+    }
+  },
+  "metadata": {
+    "duration_ms": 54476,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08429295,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10455,
+      "cache_read_input_tokens": 8009,
+      "output_tokens": 2845,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10455,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 434,
+          "cache_read_input_tokens": 8009,
+          "cache_creation_input_tokens": 2446,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2446
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

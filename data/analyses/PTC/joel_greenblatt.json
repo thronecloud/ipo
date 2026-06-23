@@ -1,0 +1,70 @@
+{
+  "symbol": "PTC",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T22:10:27.530924Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "PTC India is automatically disqualified from the Magic Formula — it sits in the Utilities sector AND operates an NBFC subsidiary (PTC India Financial Services), both categories Greenblatt explicitly excludes due to capital structure distortions. Even overlooking eligibility, operating income has been stagnant/declining for a decade with the 2025 profit spike driven almost entirely by one-time other income (INR 467 Cr vs. historical 8–75 Cr range).",
+    "key_strengths": [
+      "Massive debt reduction: borrowings collapsed from INR 11,408 Cr (2020) → INR 2,264 Cr (2025), slashing finance costs from INR 1,159 Cr to INR 356 Cr",
+      "Genuinely cheap valuation: EV/EBITDA of 3.44x and P/B of 0.94x reflect the market's skepticism on earnings quality",
+      "Consistent FCF generation: 5/5 years positive OCF averaging ~INR 2,900 Cr, near-zero capex (INR 5 Cr in 2025)"
+    ],
+    "key_risks": [
+      "Sector exclusion from Magic Formula: utilities/regulated trading companies distort both Earnings Yield and ROIC calculations — the framework simply doesn't apply cleanly",
+      "One-time profit inflation: 2025 net profit of INR 976 Cr masks INR 467 Cr in other income (vs. normalized ~INR 30 Cr); strip that out and PAT is ~INR 600 Cr at best",
+      "Structural operational decline: operating income CAGR of 0.2% over 9 years; EBITDA actually lower in 2025 (INR 1,200 Cr) than 2016 (INR 1,124 Cr) — zero real growth"
+    ],
+    "red_flags": [
+      "Utilities sector + NBFC subsidiary = double disqualification from Magic Formula universe",
+      "2025 other income of INR 467 Cr is almost certainly linked to PTCFS demerger/asset event — non-recurring, inflates both EPS and stated ROE of 12.3%",
+      "Promoter holding of only 16.22% signals weak insider alignment in a government-linked entity",
+      "Revenue contracted from INR 18,101 Cr (2020) to INR 16,241 Cr (2025) — a trading company shrinking its book is a structural problem"
+    ],
+    "detailed_analysis": "Running the Magic Formula numbers anyway: EBIT ≈ INR 1,137 Cr (2025 operating income); EV = Market Cap INR 5,469 Cr + Net Debt INR 1,252 Cr = ~INR 6,721 Cr → Earnings Yield ≈ 16.9% (optically attractive). ROIC on total capital employed (equity + debt - cash ≈ INR 7,097 Cr) = ~16%. On paper this would rank moderately well, but both numbers are contaminated: the EBIT figure includes INR 467 Cr non-recurring other income, and the capital base has been artificially shrunk by the PTCFS demerger. Normalized Earnings Yield is closer to 9–10% and ROIC closer to 12–13% — mediocre at best.\n\nThe business itself is a low-value-add power trading intermediary with thin 5% operating margins and no pricing power. Revenue has gone nowhere in a decade (2.1% CAGR). The real story since 2020 is financial engineering: aggressive debt paydown and asset shedding inflated per-share book value and reduced interest drag, which explains the stock's past re-rating. But with borrowings now at just INR 2,264 Cr, this deleveraging tailwind is largely exhausted. For Greenblatt's framework, Utilities are excluded for precisely this reason — regulated pass-through businesses with government-set margins don't produce the high, durable ROIC that the Magic Formula seeks to identify.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 70640,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.1032147,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 12288,
+      "cache_read_input_tokens": 9169,
+      "output_tokens": 3625,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 12288,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 540,
+          "cache_read_input_tokens": 9169,
+          "cache_creation_input_tokens": 3119,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 3119
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

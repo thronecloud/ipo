@@ -1,0 +1,69 @@
+{
+  "symbol": "AEGISVOPAK",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-20T11:10:31.594278Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "A capital-intensive storage-terminal operator trading at 109x earnings with a mediocre 8.7% ROE and 7% ROCE — the economics simply don't justify the price. At ~INR 22,244 Cr market cap for INR 127 Cr of profit, the margin of safety is inverted.",
+    "key_strengths": [
+      "Infrastructure moat: LPG/chemical terminals have regulatory and location-based barriers",
+      "Strong parentage (Aegis Logistics + Royal Vopak JV) with operational know-how",
+      "48% operating margins and OCF turning solidly positive (INR 478 Cr in FY25)"
+    ],
+    "key_risks": [
+      "Extreme valuation: 109x P/E, 55x EV/EBITDA, 31x sales for a utility-like business",
+      "Weak returns on capital (ROCE 7%) — doesn't clear the cost of debt (finance cost INR 193 Cr)",
+      "Heavy capex cycle; FCF only turned positive in FY25 and remains lumpy"
+    ],
+    "red_flags": [
+      "Recent IPO/listing hype driving valuation disconnected from earnings power",
+      "Borrowings INR 2,004 Cr with interest cost consuming ~60% of operating income",
+      "Net profit margin ~20% translating to just 8.7% ROE signals capital inefficiency"
+    ],
+    "detailed_analysis": "This is precisely the sort of business I avoid: capital-intensive infrastructure earning sub-cost-of-capital returns, dressed up at a speculative IPO multiple. Total assets have ballooned from INR 103 Cr to INR 7,072 Cr in three years, yet net profit is only INR 127 Cr — producing a ROCE of 7% that doesn't even cover the cost of the INR 2,000 Cr of debt funding it. Finance costs of INR 193 Cr exceed net profit by 50%. A terminal business can be a fine toll-booth, but only if purchased at a price where the owner earnings actually compound for the buyer.\n\nAt 109x earnings and 31x sales, the market is pricing in flawless execution on an enormous expansion pipeline while ignoring that the last three years of investing cash flow (INR -3,021 Cr cumulative) still yields a single-digit ROE. I'd happily own terminal infrastructure at 10-12x EBITDA if returns were north of 15%; here you pay 55x EBITDA for 7% ROCE. Be fearful when others are greedy — this is a pass until valuation compresses by 60-70% or returns on capital double.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 27636,
+    "model_used": "opus",
+    "total_cost_usd": 0.112017,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 10316,
+      "cache_read_input_tokens": 14474,
+      "output_tokens": 1611,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10316,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 129,
+          "cache_read_input_tokens": 11637,
+          "cache_creation_input_tokens": 1516,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1516
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "BSOFT",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-19T12:49:04.944530Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Birlasoft possesses a commendably clean balance sheet (Debt/Equity 0.04) with consistent profits across all nine years of data and interest coverage exceeding 30x, qualities I genuinely respect. However, at P/E 22.4 and P/B 2.95, the market is pricing in optimistic growth assumptions that I am not willing to pay for — there is no margin of safety.",
+    "key_strengths": [
+      "Near-debt-free balance sheet (D/E 0.04, total borrowings INR 151 Cr vs equity INR 3,701 Cr) — the kind of financial fortress I demand",
+      "Unbroken profitability over all nine years shown (2016–2025) with positive OCF in every one of the last five years",
+      "Interest coverage >30x (EBIT INR 698 Cr / Finance Cost INR 23 Cr) — virtually no financial risk from debt service"
+    ],
+    "key_risks": [
+      "Revenue CAGR of only 5.8% over nine years is modest; earnings are lumpy (net profit swung from INR 624 Cr in FY24 to INR 517 Cr in FY25 — a decline year-over-year)",
+      "IT services face structural headwinds from AI-driven automation and client budget compression, threatening future earning power",
+      "P/B of 2.95 means I am paying nearly 3x for assets; if earnings revert, the downside is severe"
+    ],
+    "red_flags": [
+      "P/E of 22.4 is 50% above my 15x ceiling — no margin of safety at this price",
+      "Net profit declined from INR 624 Cr (FY24) to INR 517 Cr (FY25) despite revenue growing — margin compression is real",
+      "Revenue contracted sharply between FY17–FY18 (INR 3,320 Cr to INR 2,250 Cr), reminding us this sector is not immune to severe disruption"
+    ],
+    "detailed_analysis": "Birlasoft is one of the financially healthier companies in this group. The balance sheet is admirable — minimal debt, growing reserves (INR 3,645 Cr in FY25), consistent free cash flow (INR 541 Cr in FY25), and negligible finance costs. ROCE of 21% demonstrates that the business earns meaningfully above its cost of capital. These are the qualities I seek, and they distinguish Birlasoft from many Indian IT peers.\n\nYet the price is wrong. At INR 391, I am being asked to pay 22.4x earnings and 2.95x book. My Graham Number, using EPS of ~INR 18.5 and BVPS of ~INR 133, yields approximately INR 236 — implying the stock would need to fall roughly 40% before offering a satisfactory margin of safety. The modest 5.8% revenue CAGR over nine years does not justify a growth premium. I would place this on a watchlist at fair prices, but at current levels the disciplined investor must wait.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "excellent",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 150406,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.204411,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 22348,
+      "cache_read_input_tokens": 15340,
+      "output_tokens": 7733,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 22348,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 610,
+          "cache_read_input_tokens": 15340,
+          "cache_creation_input_tokens": 7008,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 7008
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

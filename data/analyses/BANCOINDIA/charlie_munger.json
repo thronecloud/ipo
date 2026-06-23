@@ -1,0 +1,69 @@
+{
+  "symbol": "BANCOINDIA",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T16:46:07.380284Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Banco Products is a genuine quality compounder in auto thermal/sealing components — ROCE of 32% and 17%+ operating profit CAGR over nine years are genuinely impressive for an auto parts supplier. However, the sharp deterioration in FCF quality (2025 FCF/Net Profit of only 22%), rapid debt accumulation from near-zero to ₹729 Cr, and a suspicious balance sheet leap from ₹1,982 Cr to ₹3,078 Cr in a single year suggest an acquisition that must be scrutinized before adding capital.",
+    "key_strengths": [
+      "ROCE/ROE consistently above 32% — rare capital efficiency for an auto parts manufacturer, indicating genuine pricing power or operational superiority",
+      "Revenue CAGR 12% with operating profit CAGR 17% — clear operating leverage and margin expansion from 10% in 2020 to 19% in 2025",
+      "Promoter holding at 67.88% signals skin-in-the-game alignment; valuation at 18.7x PE is not stretched for the quality of returns"
+    ],
+    "key_risks": [
+      "FCF/Net Profit collapsed to 22% in FY25 (₹86 Cr FCF vs ₹392 Cr net profit) — earnings are not converting to cash, a cardinal sin by Munger's quality test (requires >80%)",
+      "Borrowings exploded from ₹14 Cr (2021) to ₹729 Cr (2025), with finance costs growing at 27% CAGR — far outpacing revenue growth and eroding the debt-light business model",
+      "Likely major acquisition hidden in the 2025 balance sheet surge (+₹1,100 Cr assets in one year) — Munger's rule: frequent acquirers rarely earn their cost of capital on deals"
+    ],
+    "red_flags": [
+      "FY25 FCF of only ₹86 Cr against net profit of ₹392 Cr — 78% of reported earnings are non-cash or working capital absorbed; this is the single biggest quality concern",
+      "FY23 produced negative OCF (-₹41 Cr) and negative FCF (-₹135 Cr) simultaneously — volatile cash generation is inconsistent with a 'compounding machine' thesis",
+      "Borrowings up 52x from ₹14 Cr to ₹729 Cr in four years while cash remains a trivial ₹22 Cr — net debt position has become structurally meaningful"
+    ],
+    "detailed_analysis": "Banco Products earns the respect of any disciplined investor on the return metrics: ROCE at 32.4% and ROE at 32.2% are far above the 15% threshold I require, and the nine-year operating profit CAGR of 17% demonstrates that management has actually improved the business rather than merely riding an industry cycle. The product mix — cooling systems and precision gaskets for vehicles, tractors, data-centre gensets, and mining equipment — gives reasonable diversification within the auto ancillary ecosystem, and the gross margin of 46% suggests either proprietary engineering value or favorable raw material pass-through pricing.\n\nThe problem is the cash register. In FY25, the company reported ₹392 Cr of net profit but generated only ₹86 Cr of free cash flow — a conversion ratio of 22%. Over five years, OCF has been wildly volatile (₹52 Cr → ₹157 Cr → ₹57 Cr → -₹41 Cr → ₹458 Cr → ₹164 Cr), which tells me working capital management is poor or the earnings quality is exaggerated. The balance sheet leap of ₹1,100 Cr in a single year, accompanied by ₹306 Cr of new borrowings, almost certainly signals an acquisition — and Munger's inversion principle demands we ask: how many acquisitions in Indian manufacturing have compounded at 15%+ ROIC? Not many. At ₹625 / 18.7x PE, the market is already pricing in continued quality; if the acquisition proves dilutive or the debt proves sticky, the margin of safety evaporates. This is a business worth watching closely, not buying urgently.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 56946,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0883245,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11442,
+      "cache_read_input_tokens": 9010,
+      "output_tokens": 2847,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11442
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 481,
+          "cache_read_input_tokens": 9010,
+          "cache_creation_input_tokens": 2432,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2432,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

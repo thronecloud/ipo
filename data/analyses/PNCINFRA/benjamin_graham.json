@@ -1,0 +1,70 @@
+{
+  "symbol": "PNCINFRA",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T22:02:46.529890Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "PNC Infratech trades below book value (P/B 0.79) and the Graham Number (~INR 429 vs. price INR 203) suggests statistical cheapness, but the company has generated negative operating cash flow in 4 of the last 5 years, meaning reported profits are not real cash earnings. With finance costs of INR 852 Cr now exceeding net profit of INR 815 Cr in FY2025, the business is in effect borrowing to report earnings — a fatal flaw by my standards.",
+    "key_strengths": [
+      "P/B of 0.79 trades below book value; Graham Number of ~INR 429 implies 111% upside to intrinsic value floor",
+      "9+ consecutive years of reported positive net earnings (16.3% CAGR) and P/E of 12.70 passes the <15 threshold",
+      "High promoter holding at 56.07% and 24.55% DII ownership signals insider and institutional conviction"
+    ],
+    "key_risks": [
+      "Finance costs (INR 852 Cr) now exceed net profit (INR 815 Cr) in FY2025 — interest coverage of only 2.51x (EBITDA/Finance Cost), well below my 3.5x minimum",
+      "Operating cash flow was negative in 4 of 5 years (-1,454 Cr in FY2023, -56 Cr in FY2025); free cash flow negative in 4 of 5 years — reported profits are accounting constructs, not cash",
+      "Total debt surged from INR 4,793 Cr (2022) to INR 9,364 Cr (2025), a 95% increase in 3 years, while FY2025 revenue actually fell 22% (8,650→6,769 Cr)"
+    ],
+    "red_flags": [
+      "Finance costs exceed net profit in FY2025 — the company earns less than it pays its creditors",
+      "Negative OCF in 4 of 5 years means profits exist only on paper; cash is being consumed, not generated",
+      "Revenue collapsed 22% YoY in FY2025 (8,650→6,769 Cr) while debt kept rising — a dangerous divergence",
+      "Debt/Equity of 0.77 on borrowings alone (1.41x on total debt) far exceeds my 0.50 ceiling"
+    ],
+    "detailed_analysis": "On surface metrics, PNC Infratech appears to offer Graham-style value: P/B at 0.79 (below book), P/E at 12.70 (below 15), and a Graham Number near INR 429 against a price of INR 203. The nine-year earnings track record with 16.3% net profit CAGR is also superficially pleasing. However, I insist on cash earnings, not accounting earnings — and here the record is damning. Operating cash flow was negative in FY2022 (-499 Cr), FY2023 (-1,454 Cr), FY2024 (-231 Cr), and FY2025 (-56 Cr). Only FY2020 produced positive OCF. The company has been funding operations through the financing window: financing cash flows were positive every year, meaning it borrows to sustain what it reports as profit.\n\nThe debt trajectory is alarming even for a capital-intensive infrastructure business. Total debt rose from INR 4,793 Cr in FY2022 to INR 9,364 Cr in FY2025 — nearly doubling in three years — while finance costs of INR 852 Cr now exceed the entire reported net profit of INR 815 Cr. Interest coverage by EBITDA stands at a mere 2.51x, below my required 3.5x. The FY2025 revenue decline of 22% adds further uncertainty about earning power. Mr. Market may be offering this stock at a discount to book, but a balance sheet loaded with HAM project receivables and debt that outpaces earnings is not the margin of safety I require — it is the illusion of one.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 58608,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0849444,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9704,
+      "cache_read_input_tokens": 11218,
+      "output_tokens": 3012,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9704,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 461,
+          "cache_read_input_tokens": 9168,
+          "cache_creation_input_tokens": 2586,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2586
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

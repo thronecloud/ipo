@@ -1,0 +1,67 @@
+{
+  "symbol": "AHCL",
+  "persona": "howard_marks",
+  "persona_display_name": "Howard Marks",
+  "analyzed_at": "2026-04-20T11:13:06.361230Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Anlon reports impressive accounting profits (ROE 25.5%, ROCE 38%) but has burned cash every single year (OCF 0/4 positive, FCF -23 Cr in 2025 against a reported PAT of 21 Cr) — the earnings aren't real cash. At a recent listing with P/E 17.75 and EV/EBITDA ~11x on a working-capital-heavy small-cap API maker, the price reflects optimism that the cycle and the balance sheet simply don't support.",
+    "key_strengths": [
+      "Reported operating margin 33.7% and ROCE 38% are genuinely high if sustainable"
+    ],
+    "key_risks": [
+      "OCF negative 4/4 years; PAT-to-cash conversion is broken — classic working-capital trap",
+      "Revenue lumpy (57→113→67→120 Cr) — no demonstrated through-cycle stability",
+      "Recent equity raise (equity 21→80 Cr) suggests IPO-peak capital gathering; D/E still 0.27 with only 1 Cr cash"
+    ],
+    "red_flags": [
+      "PAT 21 Cr vs FCF -23 Cr in FY25 — a 44 Cr gap is a major earnings-quality warning",
+      "Zero years of positive operating cash flow across the shown history",
+      "Tiny float, freshly-listed micro-cap in a hot pharma/API theme — textbook late-cycle IPO setup"
+    ],
+    "detailed_analysis": "Second-level thinking here is simple: the first-level story is \"high-growth Indian API maker, 28% revenue CAGR, 38% ROCE, reasonable 17x P/E.\" The second-level reality is that every rupee of reported profit has been more than consumed by receivables and inventory — FY25 shows 21 Cr PAT but -23 Cr operating cash flow, a 44 Cr quality gap. Financing cash flow (+19 Cr) and the recent equity infusion (equity jumped from 21 to 80 Cr) are what's keeping the lights on, not the business. In API/intermediate manufacturing, working-capital-heavy growth without cash generation is how small pharma companies blow up when a customer delays payment or a cycle turns.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 23765,
+    "model_used": "opus",
+    "total_cost_usd": 0.10573975000000001,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 10203,
+      "cache_read_input_tokens": 14532,
+      "output_tokens": 1387,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10203,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 11650,
+          "cache_creation_input_tokens": 1435,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1435
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

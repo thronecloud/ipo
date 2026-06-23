@@ -1,0 +1,69 @@
+{
+  "symbol": "INDIAGLYCO",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T17:49:40.230702Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "India Glycols is a capital-intensive commodity chemical conglomerate with sub-threshold returns (ROE 11.1%, ROCE 12.4%) and chronically negative free cash flow (-₹391 Cr in FY25), now aggressively leveraging up to fund capex. At 24x P/E with no discernible moat, the market is pricing in optimism that the business fundamentals do not yet justify.",
+    "key_strengths": [
+      "Expanding operating leverage — operating income CAGR of 12.9% over 9Y outpacing revenue CAGR of 5.5%, with EBITDA reaching ₹545 Cr in FY25",
+      "Promoter holding of 59.6% aligns management with long-term outcomes and reduces governance drift",
+      "Bio-based/green chemistry positioning may benefit from ESG tailwinds and specialty chemical premiums over time"
+    ],
+    "key_risks": [
+      "FCF has been negative for 4 of the last 5 years (FY25: -₹391 Cr), with capex surging to ₹760 Cr — this business consumes capital faster than it generates it",
+      "Debt is deteriorating rapidly: borrowings jumped 52% YoY to ₹2,055 Cr; Debt/EBITDA is ~3.5x, well above my 2.5x ceiling",
+      "FY22 net profit of ₹340 Cr was massively inflated by ₹260 Cr 'other income' — normalized earnings power is far lower than headline history suggests"
+    ],
+    "red_flags": [
+      "Free cash flow -₹391 Cr in FY25 against net profit of ₹231 Cr — FCF/Net Income ratio is deeply negative, signaling earnings are not converting to cash",
+      "Borrowings spiked from ₹1,348 Cr (FY24) to ₹2,055 Cr (FY25), a ₹707 Cr increase in a single year, while cash sits at a mere ₹7 Cr",
+      "Highly complex multi-segment structure (bio-chemicals, potable spirits, biopharma, specialty gases) — hard to understand, hard to value, and likely destroying focus"
+    ],
+    "detailed_analysis": "India Glycols fails the most basic Munger quality test: it cannot generate free cash flow. Despite consistently positive operating cash flows (₹362 Cr in FY25), the company is pouring capital into infrastructure at a pace that destroys value at current returns. Capex has run ₹439 Cr → ₹553 Cr → ₹760 Cr over the last three years, and CWIP jumped back to ₹267 Cr in FY25. With ROCE at 12.4% and the cost of new debt rising, each new rupee of capital invested is unlikely to clear a hurdle rate — precisely the trap Munger warns against in capital-intensive businesses.\n\nThe conglomerate structure is an additional strike. Munger demands businesses he can understand deeply. India Glycols operates across bio-specialty chemicals, ENA/spirits, pharma actives, and industrial gases — four distinct competitive environments, each with different dynamics. The FY22 anomaly (₹260 Cr other income inflating profits to ₹340 Cr) further muddies earnings quality. At 24x P/E and 12.58x EV/EBITDA, the market is paying a quality premium for what is, at best, a mediocre-returning, capital-hungry commodity business undergoing a large reinvestment cycle with uncertain payoffs.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 48104,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07915604999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11153,
+      "cache_read_input_tokens": 9111,
+      "output_tokens": 2306,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11153
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 322,
+          "cache_read_input_tokens": 9111,
+          "cache_creation_input_tokens": 2042,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2042,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

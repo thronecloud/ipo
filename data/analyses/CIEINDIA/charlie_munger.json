@@ -1,0 +1,68 @@
+{
+  "symbol": "CIEINDIA",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T17:01:39.688793Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "AVOID",
+    "investment_thesis": "CIE Automotive India is a well-run but mediocre auto components business — nearly debt-free with solid FCF, but delivering sub-threshold ROCE of 14.7% and ROE of 11.8% while trading at a demanding 22.5x P/E that assumes a quality moat which isn't there. At this price, you're paying a premium for a cyclical, commoditized business in a sector facing structural EV disruption.",
+    "key_strengths": [
+      "Aggressive deleveraging: borrowings collapsed from INR 1,648 Cr (2020) to 426 Cr (2025), D/E now 0.06 — near debt-free balance sheet",
+      "Strong FCF quality: FCF/Net Income of 107% (INR 885 Cr FCF vs 828 Cr net profit in FY25), OCF positive all 5 years",
+      "Operating leverage evident: operating income CAGR of 11% outpacing revenue CAGR of 6.5% over 9 years"
+    ],
+    "key_risks": [
+      "EV disruption: core products (crankshafts, CV joints, transmission parts) are ICE-heavy — structural demand risk as India's EV adoption accelerates",
+      "Mediocre returns: ROCE 14.7% and ROE 11.8% are below Munger's 15%+ minimum threshold; not a compounder at these economics",
+      "Revenue cyclicality: revenue swung from 8,032 Cr (2018) down to 6,050 Cr (2020) and net profit turned negative in 2022 — confirms deep cyclicality with OEM volume dependence"
+    ],
+    "red_flags": [
+      "Highly volatile 'Other Income': swung from -749 Cr (2022) to +409 Cr (2023) — this is almost certainly goodwill impairment/write-offs, making reported net profit unreliable; 2022 net loss of -136 Cr was largely driven by this line",
+      "Valuation mismatch: 22.5x P/E and 19.85x EV/EBITDA for a business with 11.8% ROE and 6.5% 9-year revenue CAGR is pricing in excellence that isn't present in the numbers"
+    ],
+    "detailed_analysis": "Applying inversion first: what makes this a bad investment? A cyclical auto components supplier with ROCE of 14.7% — barely above the cost of capital for such a business — selling at 22.5x earnings. The operating margin of 8.19% is thin, leaving little buffer against volume declines (as 2020 showed with operating profit halving to 502 Cr). The \"Other Income\" volatility is deeply concerning: -749 Cr in FY22 (likely impairment on the Mahindra CIE restructuring when Mahindra exited) followed by +409 Cr in FY23 (reversal/disposal gains). This makes the reported 19.3% net profit CAGR misleading — underlying operating earnings compound at a far more modest pace. Management has done an excellent job eliminating debt, but that's a one-time tailwind now largely exhausted.\n\nThe business is structurally exposed to EV transition risk — crankshafts, CV joints, turbocharger housings, and transmission components are ICE-specific or heavily ICE-weighted. Unlike bearing or brake companies that carry over to EVs, CIE's product mix skews toward powertrain components under threat. At 19.85x EV/EBITDA with EBITDA margins of ~15% and tepid revenue growth, the stock is priced for a quality moat that doesn't exist. A fair price for this business would be 12-14x EV/EBITDA — implying 25-35% downside. I'd want to see ROCE sustain above 18%, revenue accelerating to 10%+ CAGR, and a credible EV pivot before revisiting. As Munger says: a fair business at a fair price is still just a fair business.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 68495,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0877158,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11542,
+      "cache_read_input_tokens": 9181,
+      "output_tokens": 2778,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11542
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 448,
+          "cache_read_input_tokens": 9181,
+          "cache_creation_input_tokens": 2361,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2361,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

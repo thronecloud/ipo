@@ -1,0 +1,69 @@
+{
+  "symbol": "KNRCON",
+  "persona": "howard_marks",
+  "persona_display_name": "Howard Marks",
+  "analyzed_at": "2026-04-18T18:23:08.568052Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "KNR's P/E of 6.41x and P/B of 0.73x look optically cheap, but this is a trap — the trailing earnings are almost certainly a one-time spike (EBITDA surged 60% on only 7% revenue growth in FY2025), and the market's own forward P/E of 15.85x signals that consensus expects a ~60% earnings collapse. The real story is chronic cash destruction: negative OCF in 4 of the last 5 years despite reporting INR 1,002 Cr profit, with borrowings nearly doubling to INR 2,321 Cr in FY2025 alone.",
+    "key_strengths": [
+      "Revenue CAGR of 16.6% and profit CAGR of 27.6% over 9 years — genuine long-run execution quality in a difficult sector",
+      "Strong operating margins (~20%) and ROCE of 28.6% suggest a competitively positioned EPC franchise with pricing power",
+      "P/B of 0.73x provides an asset-backed floor; promoter holding of 48.81% with DII at 19.32% signals institutional conviction"
+    ],
+    "key_risks": [
+      "Earnings quality is deeply suspect: FY2025 EBITDA margin expanded from ~27% to ~40% on flat revenue — likely a project-completion lump, not a structural improvement",
+      "Borrowings nearly doubled YoY (INR 1,262 Cr → INR 2,321 Cr); finance costs doubled to INR 208 Cr — the company is funding operations with debt because it cannot generate operating cash",
+      "Forward P/E of 15.85x vs trailing 6.41x is the market pricing in a ~60% earnings reset — the 'cheapness' is entirely illusory if FY2025 profits do not repeat"
+    ],
+    "red_flags": [
+      "Negative operating cash flow in 4 of last 5 years (-567 Cr, -297 Cr, -336 Cr, -76 Cr) despite consistently positive net income — a classic sign of working capital deterioration or aggressive revenue recognition in government EPC",
+      "FY2025 EBITDA of INR 1,913 Cr on revenue of INR 4,753 Cr implies a ~40% EBITDA margin — structurally implausible for an Indian roads/infrastructure EPC; likely reflects annuity/HAM recognition timing, not sustainable profitability",
+      "Free cash flow -592 Cr in FY2025 even as net profit hit INR 1,002 Cr — the INR 1,595 Cr gap between reported profit and cash reality is the single most important number in this analysis"
+    ],
+    "detailed_analysis": "The first-level investor sees a P/E of 6.41x and P/B of 0.73x and concludes KNR is bargain-priced. The second-level question is: what does the price already reflect, and why is the market offering this at 73 cents on book? The answer is embedded in the cash flow statement. In FY2025, KNR reported INR 1,002 Cr in net profit while destroying INR 567 Cr in operating cash — a gap of nearly INR 1,600 Cr. This is not a rounding error; it is the structural reality of Indian government infrastructure EPC, where receivables from NHAI or state agencies can sit for years. The company funded this gap by nearly doubling borrowings to INR 2,321 Cr. The forward P/E of 15.85x — 2.5x the trailing figure — is the market telling you that FY2025's INR 1,002 Cr profit is not the run-rate; it expects earnings to normalize closer to INR 220 Cr. That is the correct skepticism to apply.\n\nThe business itself is not bad — 9-year revenue CAGR of 16.6%, ROCE of 28.6%, and strong margins in a competitive market indicate genuine operational skill. But Oaktree's primary discipline is avoiding permanent capital loss, and the risk here is clear: if government payments slow (a recurring reality in Indian infra), KNR's working capital hole widens, debt costs balloon (finance charges already doubled to INR 208 Cr), and the balance sheet erodes toward book value. At 0.73x P/B, there is modest margin of safety on assets, but not enough to compensate for an asset base increasingly encumbered by rising debt. This is a HOLD — not cheap enough to own confidently, not broken enough to short.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 75643,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.10486994999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10649,
+      "cache_read_input_tokens": 11074,
+      "output_tokens": 4107,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10649
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 471,
+          "cache_read_input_tokens": 9020,
+          "cache_creation_input_tokens": 3683,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 3683,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

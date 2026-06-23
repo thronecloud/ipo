@@ -1,0 +1,70 @@
+{
+  "symbol": "AEGISVOPAK",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-20T11:11:59.769194Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "At a P/E of 109 and P/B of 4.66, Aegis Vopak trades at roughly 6x my Graham Number (~₹33 vs market ₹201) with no multi-year earnings history — the 2022 revenue was zero and net profit only turned meaningful in FY24. This is a recently-listed, capex-heavy terminalling venture priced as a growth story; there is no margin of safety whatsoever.",
+    "key_strengths": [
+      "Tangible infrastructure asset base (terminals, storage) backing equity of ₹4,742 Cr",
+      "Operating cash flow turned meaningfully positive (₹478 Cr in FY25) and FCF positive first time",
+      "Debt/Equity dropped to 0.42 post-IPO equity infusion — balance sheet de-risked"
+    ],
+    "key_risks": [
+      "P/E 109, P/B 4.66, EV/EBITDA 55.8 — speculative premium with zero margin of safety",
+      "Only 2 years of real profits (FY24 ₹87 Cr, FY25 ₹127 Cr); fails my 5-year earnings test",
+      "Finance cost ₹193 Cr vs operating income ₹458 Cr — interest coverage only ~2.4x, below my 3.5x floor"
+    ],
+    "red_flags": [
+      "Fresh IPO with sellers (promoter Aegis/Vopak JV) setting price — inherent information asymmetry",
+      "No dividend history",
+      "ROCE of 7.01% is below cost of debt — capital is not yet earning its keep",
+      "Negative cumulative FCF over 2022-2024; profitability is unproven through a cycle"
+    ],
+    "detailed_analysis": "From a strict Graham lens, this security fails nearly every quantitative filter I apply. The Graham Number using FY25 EPS ~₹1.15 and BVPS ~₹42.9 computes to approximately ₹33; the market asks ₹201 — a sixfold premium over defensive value. P/E of 109 and P/S of 31 imply the market has already capitalised a decade of flawless execution. The earnings record is too short (meaningful profit only since FY24) to establish \"proven earning power,\" and interest coverage of ~2.4x (EBIT 458 / Finance cost 193) sits below my 3.5x threshold, leaving little cushion if throughput or tariffs soften.\n\nThe business itself — regulated LPG/chemical terminalling with a strong promoter (86.94%) and Royal Vopak parentage — is not without merit; tangible assets and 48% operating margins are real. But Mr. Market is pricing it as a utility-plus-growth hybrid while the financials still resemble a start-up: ₹7,072 Cr of assets generating just ₹127 Cr of profit (1.8% ROA), with ROCE of 7% below even Indian sovereign yields. I would require the price to fall below book value (~₹43) and at least three more years of clean earnings before considering this. Until then: avoid.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "insufficient_data",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 31293,
+    "model_used": "opus",
+    "total_cost_usd": 0.11662225,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 10589,
+      "cache_read_input_tokens": 14572,
+      "output_tokens": 1725,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10589,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 11686,
+          "cache_creation_input_tokens": 1789,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1789
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

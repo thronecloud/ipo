@@ -1,0 +1,69 @@
+{
+  "symbol": "544434",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-20T20:09:24.422251Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "A five-year-old ferrous castings micro-cap with gaudy reported ROE (51%) but chronically negative free cash flow (-1, -9, -7, -3 Cr across four years) — the accounting returns aren't turning into owner earnings. Invert: recently IPO'd (equity jumped 20→123 Cr in FY25), commodity industry, no track record through a cycle — this is speculation dressed up as quality.",
+    "key_strengths": [
+      "Headline ROCE 46% and ROE 51% with rapid revenue scaling (5→71 Cr, 142% CAGR)",
+      "Operating margins expanded materially (OI 0→23 Cr) and debt kept modest (14 Cr vs 123 Cr equity post-IPO)",
+      "Promoter holding high at 70%, so incentives at least nominally aligned"
+    ],
+    "key_risks": [
+      "FCF negative every year (cum. ~-20 Cr) despite reported PAT — earnings quality is poor; growth funded by IPO + debt",
+      "Incorporated Jan 2020 — no cycle-tested track record in a cyclical castings/forgings industry with little pricing power",
+      "Tiny scale (71 Cr revenue, 302 Cr mcap) on BSE with thin float — volatile, illiquid, easy to manipulate"
+    ],
+    "red_flags": [
+      "Persistent OCF < Net Profit and zero cumulative FCF while PAT compounds — classic working-capital/capex-funded earnings",
+      "Equity base ballooned 6x in one year (fresh issue) — returns on new capital unproven",
+      "Customized ferrous castings is a low-moat, customer-concentrated business; 51% ROE at this maturity is suspicious"
+    ],
+    "detailed_analysis": "Invert first: what makes this a bad investment? A company five years old, in a capital-intensive, cyclical, commodity-adjacent business (ferrous castings), with FCF of -1, -9, -7, -3 Cr over four consecutive years, yet reporting 46% ROCE. The reported profitability and the cash register are telling different stories — Investing CF of -17 Cr in FY25 vs OCF of 12 Cr means every rupee of operating cash (and then some) is being consumed by capex/working capital. Reserves leapt from 16 to 104 Cr in FY25 not from retained earnings but from a share issuance. Buying this is buying a prospectus, not a proven compounder.\\n\\nOn valuation, 20x earnings for a micro-cap with one good year of scale and no FCF is not cheap — it is a bet that today's margins and growth persist against competitors who can buy the same induction furnaces. I have no way to assess management's intellectual honesty or capital allocation discipline with this short a history. Munger's rule applies: when in doubt, do nothing. This goes in the \"too hard / too new\" pile. Pass, watch it survive a down-cycle, then revisit in 2030.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 40953,
+    "model_used": "opus",
+    "total_cost_usd": 0.10982650000000001,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 10048,
+      "cache_read_input_tokens": 13843,
+      "output_tokens": 1603,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10048,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 11116,
+          "cache_creation_input_tokens": 1659,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1659
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

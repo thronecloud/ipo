@@ -1,0 +1,71 @@
+{
+  "symbol": "LLOYDSENT",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T18:13:00.230845Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Lloyds Enterprises trades at 37x P/E and 2x book — more than triple my Graham Number of ~INR 19.80 — with virtually no margin of safety. Reported earnings are largely fictitious from an operating standpoint, as \"Other Income\" (INR 83 Cr in FY25) accounts for the majority of net profit (INR 123 Cr), masking the fragility of the core business.",
+    "key_strengths": [
+      "Debt/Equity of 0.16 is the one balance sheet metric within acceptable range",
+      "Revenue CAGR of 30.9% from 2016-2025 shows genuine commercial activity has resumed after near-zero years",
+      "Low promoter pledge risk implied by 62.72% promoter holding with modest debt"
+    ],
+    "key_risks": [
+      "Earnings quality is fraudulently thin — Other Income (INR 83 Cr) propped up FY25 net profit (INR 123 Cr); true operating earnings after INR 27 Cr finance cost are barely INR 90 Cr",
+      "Revenue was INR 1 Cr in both FY20 and FY21 — no multi-year earnings stability required by my methods; OCF positive only 3 of last 5 years",
+      "Conglomerate sprawl (steel trading, real estate, pizza outlets, mining) destroys analytical clarity and signals management chasing narratives over compounding"
+    ],
+    "red_flags": [
+      "Graham Number ~INR 19.80 vs. current price INR 63.40 — stock trades at 3.2x intrinsic value by my formula",
+      "EV/EBITDA of 78.44x is grotesque for a basic materials/steel trading company with 6% operating margins",
+      "ROE of 2.48% and ROCE of 5.97% — capital is being destroyed in real terms against any reasonable hurdle rate",
+      "Borrowings exploded from INR 125 Cr (FY24) to INR 671 Cr (FY25) while total assets doubled — rapid, unexplained balance sheet inflation",
+      "Company renamed itself from Shree Global Tradefin Ltd in September 2023 — a classic warning sign of reinvention over substance"
+    ],
+    "detailed_analysis": "Lloyds Enterprises fails every quantitative filter I apply. The P/E of 37.2x is 2.5x my maximum threshold of 15x; the P/B of 2.01x exceeds my 1.5x ceiling; and my Graham Number — computed as √(22.5 × EPS ~INR 0.81 × BVPS ~INR 21.67) — yields roughly INR 19.80, meaning the stock trades at a 220% premium to intrinsic value. An EV/EBITDA of 78.44x for a steel trading and real estate conglomerate is simply indefensible under any earnings-based valuation framework. Mr. Market has priced in a decade of flawless execution that has not yet occurred and may never occur.\n\nThe earnings record is the deeper problem. Revenue was INR 1 Cr in FY20 and FY21 — this company was commercially dormant just five years ago. Since revival, reported net profits have been dominated by Other Income (INR 159 Cr in FY22, INR 135 Cr in FY24, INR 83 Cr in FY25), which in each year equals or exceeds the operating income. True recurring earning power is therefore a fraction of reported figures, and the ROE of 2.48% confirms capital is not being productively employed. The sudden debt surge to INR 671 Cr in FY25 — up 5x in one year — alongside a doubling of total assets to INR 5,582 Cr raises serious questions about acquisition accounting and balance sheet integrity. I require at least five consecutive years of stable, operating-income-driven earnings before I will consider a purchase; this company provides none of that.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 52045,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07933499999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9268,
+      "cache_read_input_tokens": 10970,
+      "output_tokens": 2752,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9268
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 393,
+          "cache_read_input_tokens": 8920,
+          "cache_creation_input_tokens": 2398,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2398,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

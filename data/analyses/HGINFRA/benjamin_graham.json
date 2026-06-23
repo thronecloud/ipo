@@ -1,0 +1,70 @@
+{
+  "symbol": "HGINFRA",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T17:37:07.141535Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "HGINFRA's P/E of 10.6x and P/B of 1.32x appear superficially acceptable, and the stock trades below my Graham Number (~INR 909 vs. price of INR 621), but chronically negative free cash flow and a debt explosion in 2025 render the accounting profits illusory. A business that has generated negative operating cash flow in 4 of 5 years while borrowings nearly quadrupled from INR 1,513 Cr to INR 5,669 Cr in a single year is consuming capital, not creating it.",
+    "key_strengths": [
+      "Nine consecutive years of positive reported earnings (2016–2025), with Net Profit CAGR of 36.8% — a rare operating track record.",
+      "Valuation metrics within Graham thresholds: P/E 10.6x (<15), P/B 1.32x (<1.5), and price below estimated Graham Number of ~INR 909.",
+      "Operating margins of 18.6% are respectable for an EPC contractor, indicating real project execution discipline."
+    ],
+    "key_risks": [
+      "Debt-to-Equity of 1.83x far exceeds my maximum of 0.5x; borrowings exploded from INR 1,513 Cr to INR 5,669 Cr in a single year (FY2025) — a 3.7x jump that demands explanation.",
+      "Free cash flow was negative in all 5 recent years, reaching -INR 2,415 Cr in FY2025; profits are accounting constructs, not cash in hand.",
+      "Finance costs grew at 36.6% CAGR — matching net profit growth — meaning the earnings engine is fuelled by ever-rising debt, with interest coverage barely above my 3.5x floor at ~4.0x."
+    ],
+    "red_flags": [
+      "FY2025 borrowings nearly quadrupled YoY (INR 1,513 Cr → INR 5,669 Cr); CWIP surged from INR 14 Cr to INR 1,322 Cr — massive undisclosed capital commitment.",
+      "Operating cash flow turned deeply negative at -INR 878 Cr in FY2025; only 1 of 5 years showed positive OCF — profits exist only on paper.",
+      "Revenue and net profit both declined in FY2025 (revenue INR 5,378→5,056 Cr; profit INR 539→505 Cr) while debt surged — deteriorating returns on expanding capital base.",
+      "No dividend history noted — a business generating real profits returns cash to shareholders; this one does not."
+    ],
+    "detailed_analysis": "From my perspective, the first test of any enterprise is whether it generates real cash for its owners. HGINFRA fails this test emphatically. Net profit of INR 505 Cr in FY2025 looks attractive at 10.6x earnings, but operating cash flow was -INR 878 Cr and free cash flow was -INR 2,415 Cr. The working capital machine of EPC contracting — mobilisation advances, retention money, long project cycles — devours every rupee of reported profit and then demands more from lenders. This is not a business; it is a conduit for debt.\n\nThe balance sheet deterioration in FY2025 is alarming even by the forgiving standards of infrastructure contractors. Total borrowings rose INR 4,156 Cr in a single year, pushing D/E to 1.83x against my ceiling of 0.50x. CWIP of INR 1,322 Cr and total assets doubling to INR 10,394 Cr suggest aggressive project-level debt being taken on, likely in HAM (Hybrid Annuity Model) projects where annuity receipts are spread over 15 years. Mr. Market may be pricing the forward earnings optimistically (Forward P/E 7.4x), but I do not pay for promises — I pay for proven earning power backed by cash. Until this company demonstrates sustained positive operating cash flow and brings leverage below 1.0x, the margin of safety is illusory despite the arithmetically low P/E.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 66546,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0865734,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9776,
+      "cache_read_input_tokens": 11098,
+      "output_tokens": 3105,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9776
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 380,
+          "cache_read_input_tokens": 9048,
+          "cache_creation_input_tokens": 2778,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2778,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

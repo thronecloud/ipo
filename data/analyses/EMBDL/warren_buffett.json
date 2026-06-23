@@ -1,0 +1,71 @@
+{
+  "symbol": "EMBDL",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T17:10:41.540279Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Embassy Developments is a deeply cyclical, capital-intensive real estate developer with no durable competitive moat, a near-bankruptcy in FY2024 (negative equity of -₹1,446 Cr), and a decade of value destruction — revenue CAGR of -3.3% and net profit CAGR of -5.4% over nine years. One year of recovery does not justify a 36x P/E on a business I would never understand as durable.",
+    "key_strengths": [
+      "P/B of 0.67 means the stock trades below restated book value, offering some asset-level cushion",
+      "FY2025 showed genuine operating recovery: OCF +₹1,461 Cr and net profit returned to +₹194 Cr after three years of losses",
+      "Debt/Equity contained at 0.46 post-recapitalization, down from the catastrophic leverage of FY2024"
+    ],
+    "key_risks": [
+      "No economic moat whatsoever — real estate development is a commodity, cyclical, and intensely capital-intensive business",
+      "Near-insolvency in FY2024 (equity turned negative at -₹1,446 Cr, reserves -₹1,555 Cr) reveals fragile capital structure and poor management capital allocation",
+      "Earnings are wildly unpredictable — net profit swung from +₹2,360 Cr (FY18) to -₹608 Cr (FY23) to +₹194 Cr (FY25), making any normalized P/E meaningless"
+    ],
+    "red_flags": [
+      "Equity went NEGATIVE in FY2024 (-₹1,446 Cr) — a sign of technical insolvency that required emergency recapitalization; total assets nearly doubled to ₹20,857 Cr in FY25, suggesting a complex restructuring I cannot fully understand",
+      "Name change from Equinox India to Embassy Developments in Feb 2025 coincides with the restructuring — opaque corporate identity shifts are a red flag",
+      "OCF positive in only 2 of last 5 years; operating margin currently -81.17% despite a recovering top line",
+      "EV/EBITDA of -100.6 signals the enterprise value far exceeds the operating earnings power — valuation is divorced from fundamentals",
+      "Revenue has not recovered to 2016 levels (₹2,180 Cr vs ₹2,959 Cr) after nine years, confirming long-run value destruction"
+    ],
+    "detailed_analysis": "Embassy Developments is precisely the kind of business I have spent my career avoiding. Real estate development offers no pricing power, no switching costs, no brand loyalty, and no recurring revenue — it is a project-by-project bet on land, permits, and interest rates. The financial history tells a damning story: revenue peaked at ₹4,944 Cr in FY2019 and has not come close since; net profit has swung violently from +₹2,360 Cr to -₹608 Cr across the decade; and most alarmingly, the company's equity turned deeply negative in FY2024, requiring what appears to be a massive equity infusion that nearly doubled total assets to ₹20,857 Cr in a single year. ROE of 2.53% and ROCE of 3.19% on a restated balance sheet tells me the business earns far less than its cost of capital.\n\nThe FY2025 recovery — positive OCF of ₹1,461 Cr and net profit of ₹194 Cr — is welcome but means very little after a decade of deterioration and a near-bankruptcy. Paying 36x earnings for one year of recovery in a cyclical, capital-intensive business with no moat is the opposite of a margin of safety. The name change, the corporate restructuring, the volatile accounting, and the highly leveraged balance sheet (₹4,714 Cr borrowings on ₹69 Cr cash) are layers of complexity I distrust. I want businesses that a fool could run, because someday one will. This business has already demonstrated that — and nearly failed.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 49634,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0824109,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11184,
+      "cache_read_input_tokens": 8973,
+      "output_tokens": 2518,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11184
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 368,
+          "cache_read_input_tokens": 8973,
+          "cache_creation_input_tokens": 2211,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2211,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

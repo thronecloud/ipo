@@ -1,0 +1,69 @@
+{
+  "symbol": "CARTRADE",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-19T12:52:36.775596Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "CarTrade has recorded net losses in at least three of the last ten years (FY2016, FY2017, FY2022), immediately disqualifying it under Graham's requirement of uninterrupted positive earnings. At 43.5x earnings, 3.79x book, and with no disclosed promoter holding, this is a speculative platform story with no margin of safety.",
+    "key_strengths": [
+      "Capital-light model — minimal capex (INR 3–7 Cr/yr) generates high-quality free cash flow when profitable",
+      "Debt/Equity of 0.05 — balance sheet carries almost no financial leverage",
+      "FY2025 operating margin of 32.85% demonstrates genuine pricing power within its marketplace segment"
+    ],
+    "key_risks": [
+      "Earnings record is disqualifying by Graham's standard — losses in FY2016, FY2017, and FY2022 show the business model is cyclically fragile",
+      "No disclosed promoter holding (FII 64.58%) — management's economic interests are not aligned with long-term shareholders; promoter-less companies carry governance risk",
+      "ROE of only 6.24% on a well-funded balance sheet (INR 2,330 Cr equity, INR 641 Cr revenue) suggests capital has been badly misallocated since IPO"
+    ],
+    "red_flags": [
+      "No multi-year unbroken earnings record — Graham's minimum filter is flatly failed",
+      "Graham Number ~INR 572 (FY2025 EPS ~INR 30, BVPS ~INR 484) against price INR 1,858 — stock trades at 225% premium to formula value",
+      "P/S of 11.98x for an automotive marketplace is extreme; intrinsic value must be grounded in demonstrated earning power, not topline momentum"
+    ],
+    "detailed_analysis": "CarTrade is an online automotive marketplace that has grown revenue from INR 298 Cr (FY2020) to INR 641 Cr (FY2025). The business model is intelligible and asset-light. However, the intelligent investor's first demand is a consistent record of earnings — and CarTrade fails immediately. Net losses in three separate years (including as recently as FY2022) mean this company cannot pass even my most lenient earnings-continuity test. The IPO in 2021 was priced to perfection for the seller, not the buyer. The complete absence of a promoter stake (zero percentage disclosed) is also unusual and warrants caution — when insiders are not invested alongside you, the alignment of interests is suspect. At INR 1,858, with a Graham Number of roughly INR 572, buyers are paying three times what the formula supports. I find nothing here that justifies ownership at today's price.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 206309,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.22340055,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 23531,
+      "cache_read_input_tokens": 15501,
+      "output_tokens": 8700,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 23531,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 526,
+          "cache_read_input_tokens": 15501,
+          "cache_creation_input_tokens": 8030,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8030
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

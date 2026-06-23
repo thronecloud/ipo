@@ -1,0 +1,69 @@
+{
+  "symbol": "CDSL",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-19T12:55:43.523699Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "CDSL is a financial services / capital markets infrastructure company, and my Magic Formula explicitly excludes financials because the capital structure distorts earnings yield and ROIC calculations. Even waiving that exclusion, the earnings yield is a disqualifying 2.15% (EBIT ₹625 Cr / EV ₹29,098 Cr) — the market has priced the monopoly franchise so richly that there is essentially no value left for new buyers at current prices.",
+    "key_strengths": [
+      "Regulated duopoly with NSDL — near-impenetrable competitive moat as the essential settlement infrastructure for Indian equity markets",
+      "Exceptional economics: 51.9% operating margin, 42% ROCE, zero debt, and 27.3% nine-year revenue CAGR — genuinely a world-class business",
+      "Asset-light and scalable: incremental accounts (₹1,082 Cr revenue on ₹1,743 Cr equity) drop to the bottom line with minimal marginal cost"
+    ],
+    "key_risks": [
+      "Earnings yield of 2.15% is the lowest in this batch — at 61× P/E and 42× EV/EBITDA, the stock requires flawless multi-year execution to justify ownership",
+      "Revenue is cyclically linked to equity market volumes and new demat account openings — when markets slow, CDSL's transaction fee income contracts sharply (see FY23: revenue flat at ₹555 Cr vs ₹551 Cr in FY22)",
+      "Regulatory risk is existential — SEBI controls pricing, fee structures, and market access; any adverse regulatory action would directly compress returns"
+    ],
+    "red_flags": [
+      "Financial services company — excluded from Magic Formula by design; earnings yield and ROIC comparisons are distorted by the capital-light regulatory structure",
+      "FY23 showed the cyclicality clearly: revenue stagnated, operating profit fell from ₹365 Cr to ₹319 Cr, net profit fell from ₹312 Cr to ₹276 Cr — investors are paying 61× for a business with boom-bust characteristics",
+      "Promoter holding only 15% — low skin-in-the-game for what is nominally a strategically important infrastructure institution"
+    ],
+    "detailed_analysis": "By rule, I exclude financial companies from the Magic Formula — capital structure, regulatory capital, and fee-based income make the EBIT/EV and EBIT/capital metrics unreliable. Even setting that aside and running the numbers: EV = ₹29,118 Cr + ₹3 Cr − ₹23 Cr = ₹29,098 Cr; EBIT = ₹625 Cr; earnings yield = 2.15%. That is catastrophically low. CDSL would need to trade at roughly ₹350–400 (from ₹1,393) to reach a 6% earnings yield — a 75% decline. The ROCE of 42% is exceptional, but ROIC quality alone cannot save a stock priced at 42× EV/EBITDA.\n\nThe business itself is outstanding — a regulated monopoly with 27% revenue CAGR, zero debt, and 52% operating margins. If CDSL traded at 15–18× EV/EBITDA it would be a strong Magic Formula buy. At 42× I am simply paying for the next decade of growth today, which removes all margin of safety. I would put this on a watchlist and revisit aggressively in any severe market correction that reprices it below 20× EV/EBITDA.",
+    "metrics_evaluated": {
+      "moat_strength": "strong",
+      "management_quality": "good",
+      "financial_health": "excellent",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "exceptional"
+    }
+  },
+  "metadata": {
+    "duration_ms": 212545,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.2804235,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 26770,
+      "cache_read_input_tokens": 15490,
+      "output_tokens": 11692,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 26770,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 543,
+          "cache_read_input_tokens": 15490,
+          "cache_creation_input_tokens": 11280,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 11280
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "symbol": "MANORAMA",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T18:18:42.142535Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Manorama Industries trades at 5x its Graham Number (price INR 1,418 vs. calculated Graham Number of ~INR 276), with a P/B of 15x and P/E of 39.5x — multiples I find wholly unjustifiable by any conservative earnings-power analysis. Worse, the company has generated negative free cash flow in 3 of 4 years despite reporting rising accounting profits, a divergence that history teaches us to treat with deep suspicion.",
+    "key_strengths": [
+      "Revenue growing at 40.5% CAGR and operating income at 69.2% CAGR — undeniably strong top-line momentum in specialty fats.",
+      "Interest coverage of ~4.8x (EBIT INR 186 Cr / Finance costs INR 39 Cr) barely clears my 3.5x floor.",
+      "High operating margins (27%) suggest some pricing power in a niche, export-oriented segment (shea, sal, cocoa butter equivalents)."
+    ],
+    "key_risks": [
+      "Chronic negative free cash flow — FCF was negative INR 93, -193, -89 Cr in three of four years; reported profits are not translating into real cash.",
+      "Debt has exploded 4.5x from INR 108 Cr to INR 482 Cr in three years, with finance costs growing at 100% CAGR — far outpacing revenue growth of 40.5%.",
+      "Valuation offers zero margin of safety — at P/B 15x the market is paying for a decade of flawless execution; any stumble collapses the thesis."
+    ],
+    "red_flags": [
+      "Graham Number ~INR 276 vs. market price INR 1,418 — stock is priced at 5.1x intrinsic value by my formula.",
+      "Cash position is effectively zero (INR 3 Cr) against INR 482 Cr of debt — no liquidity buffer whatsoever.",
+      "Operating CF is negative INR 57 Cr in FY2025 despite INR 110 Cr net profit — a INR 167 Cr gap demanding explanation; likely aggressive working capital absorption in commodities trading.",
+      "No dividend history mentioned — shareholders receive no cash return while management leverages the balance sheet aggressively.",
+      "Debt/Equity of 0.67 exceeds my 0.5 ceiling, and the trajectory (was 0.40 in 2022) is worsening."
+    ],
+    "detailed_analysis": "Manorama Industries fails virtually every quantitative filter I apply. The P/E of 39.5x is nearly three times my ceiling of 15x, and the P/B of 15.06 is ten times my preferred maximum of 1.5x. Running my Graham Number formula — √(22.5 × EPS of ~INR 35.9 × Book Value/share of ~INR 94.1) — yields approximately INR 276, against a market price of INR 1,418. Mr. Market is asking me to pay five times what the numbers justify. Debt/Equity of 0.67 breaches my 0.5 limit, and with INR 3 Cr of cash against INR 482 Cr of borrowings, the company has no margin for error if commodity markets turn or credit conditions tighten.\n\nThe most alarming signal is the persistent divergence between accounting profits and cash generation. In FY2025, the company reported INR 110 Cr of net profit yet consumed INR 57 Cr of operating cash and INR 89 Cr of free cash flow. Over four years, cumulative free cash flow is negative INR 367 Cr, funded almost entirely by debt. Finance costs have compounded at 100% annually — twice the revenue growth rate — meaning leverage is doing much of the heavy lifting in earnings. A business that earns on paper but bleeds cash while piling on debt is precisely the kind of enterprise I have warned investors to avoid since the first edition of Security Analysis. The growth story may be real; the price being asked for it is not one I will pay.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 52798,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07384995,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8779,
+      "cache_read_input_tokens": 10649,
+      "output_tokens": 2515,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 8779
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 333,
+          "cache_read_input_tokens": 8599,
+          "cache_creation_input_tokens": 2230,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2230,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

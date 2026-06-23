@@ -1,0 +1,70 @@
+{
+  "symbol": "JAYNECOIND",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-18T17:58:15.999853Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Jayaswal Neco is a commodity steel cyclical with no earnings growth story — net profit has cratered 95% from INR 2,247 Cr (2022) to INR 113 Cr (2025) on flat revenues of ~INR 6,000 Cr. At P/E 25x on collapsing earnings and negative ROE of -0.87%, this is a value trap dressed up as recovery.",
+    "key_strengths": [
+      "Strong 2025 FCF of INR 1,144 Cr (vs. INR 491 Cr in 2024) being used to aggressively repay debt (INR 3,845 Cr → INR 2,753 Cr since 2022)",
+      "Diversified product mix across steel, castings, and infrastructure serving automotive/railways/defense — insulates somewhat from single-sector downturns",
+      "Promoter holding at 55.15% provides alignment; OCF positive all 5 of last 5 years"
+    ],
+    "key_risks": [
+      "Earnings in freefall: net profit INR 2,247 Cr (2022) → INR 113 Cr (2025) — P/E of 25x on a declining earner is dangerously misleading",
+      "Finance costs rising to INR 554 Cr (2025) despite debt reduction — crowding out profitability with ROCE at a paltry 2.93%",
+      "Commodity cyclical with no moat: flat revenue for 4 years, operating income swinging wildly (INR 2,768 Cr → INR 657 Cr) exposing pure cycle dependence"
+    ],
+    "red_flags": [
+      "The 2022 net profit of INR 2,247 Cr on INR 5,955 Cr revenue (37.7% net margin) is almost certainly a one-time debt restructuring/write-off gain — not real operating earnings",
+      "ROE of -0.87%: the business is destroying shareholder equity in real terms",
+      "Virtually zero institutional conviction — FII at 0.90%, DII at 0.30% — smart money is absent",
+      "Debt crisis history: borrowings exploded from INR 1,244 Cr (2011) to INR 4,114 Cr (2016) — management has a track record of overleveraging capex (CWIP hit INR 3,163 Cr in 2015)"
+    ],
+    "detailed_analysis": "From a Lynch framework, Jayaswal Neco is a classic late-cycle industrial cyclical masquerading as a turnaround. The \"story\" here is debt reduction — and on that narrow metric there is genuine progress (total debt down from INR 3,845 Cr in 2022 to INR 2,753 Cr in 2025, driven by INR 1,144 Cr FCF in FY25). But Lynch warns that cyclicals are the most dangerous stocks when they *look* cheap on backward-looking earnings — and here the earnings trend is unambiguously wrong. Net profit is down 50% year-over-year to INR 113 Cr while finance costs have actually risen to INR 554 Cr. The EBITDA of INR 947 Cr (2025) is essentially consumed by interest (INR 554 Cr) leaving almost nothing for equity holders.\n\nThe valuation makes no sense for what this business actually is. A P/E of 25x is appropriate for a fast grower at 20%+ earnings CAGR — not a commodity steel maker with negative ROE, 2.93% ROCE, and earnings falling off a cliff. There is no PEG to calculate because growth is negative. Revenue has been essentially flat for 4 years (INR 5,955–6,332 Cr range), and the operating margin swings wildly from quarter to quarter confirming steel price sensitivity. I'd want to see sustained ROCE above 10%, debt below INR 1,500 Cr, and at least two consecutive years of earnings growth before revisiting. Until then, this is a pass.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 42380,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08002155,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11299,
+      "cache_read_input_tokens": 9221,
+      "output_tokens": 2325,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11299
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 302,
+          "cache_read_input_tokens": 9221,
+          "cache_creation_input_tokens": 2078,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2078,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

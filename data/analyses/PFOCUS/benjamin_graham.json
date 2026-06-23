@@ -1,0 +1,71 @@
+{
+  "symbol": "PFOCUS",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T21:59:54.306628Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "Prime Focus fails virtually every quantitative filter I apply: P/E of 102x (vs. my maximum of 15x), P/B of 6.66x (vs. my maximum of 1.5x), negative net profits in 8 of the last 10 years, and a debt-to-equity ratio of 2.46 against my ceiling of 0.5x. The market is offering this at a speculative premium with no margin of safety whatsoever.",
+    "key_strengths": [
+      "Operating margin of 18.83% and gross margin of 93.97% indicate a services business with genuine pricing power at the operational level.",
+      "Revenue has compounded at 11.2% over 9 years (INR 1,382 Cr → INR 3,599 Cr), demonstrating durable top-line demand.",
+      "60.76% promoter holding suggests founder-level skin in the game."
+    ],
+    "key_risks": [
+      "Chronic losses: Net profit negative in 8 of 10 years, including -INR 488 Cr (2024) and -INR 458 Cr (2025) — the business does not earn what it costs to run.",
+      "Debt is crushing: Finance costs of INR 538 Cr in 2025 consume most of EBITDA (INR 951 Cr), yielding interest coverage of only ~1.77x against my required 3.5x minimum.",
+      "Free cash flow has turned structurally negative (-INR 337 Cr in 2024, -INR 68 Cr in 2025) while capex continues at INR 300-360 Cr/year — the company is consuming capital, not generating it."
+    ],
+    "red_flags": [
+      "Negative ROE of -16.70% — the company is actively destroying book value.",
+      "Equity nearly evaporated to just INR 25 Cr in 2023 from INR 392 Cr in 2020; recovery to INR 1,739 Cr in 2025 likely reflects dilutive equity issuance, not earned profits.",
+      "No dividend history — shareholders receive nothing while debt holders are paid INR 538 Cr annually.",
+      "P/E of 102x is reported despite a net loss of INR 458 Cr in 2025 — a statistical ghost ratio that deceives rather than informs.",
+      "Borrowings have grown relentlessly from INR 3,371 Cr (2020) to INR 5,255 Cr (2025) with no deleveraging in sight."
+    ],
+    "detailed_analysis": "Prime Focus is, in my framework, a textbook example of what the speculative investor buys and the intelligent investor avoids. The operating business has surface appeal — a 19% operating margin in media services, a global client base of Hollywood studios and OTT platforms, and nine-year revenue growth of 11.2%. But the operating profits are entirely consumed — and more — by a debt mountain that has grown from INR 3,371 Cr to INR 5,255 Cr over five years. Interest payments alone totalled INR 538 Cr in 2025 against EBITDA of INR 951 Cr, leaving a razor-thin buffer. My required interest coverage of 3.5x is not met; actual coverage is barely 1.77x. A business that cannot service its debt comfortably from operations is one crisis away from insolvency.\n\nThe earnings record is disqualifying on its own. I require at minimum three to five consecutive years of positive earnings before I will consider a purchase — Prime Focus has delivered net profits in only two of the last ten years (2017 and 2023), with losses totalling well over INR 1,700 Cr across the decade. At P/B of 6.66x and a reported P/E of 102x (a meaningless figure given actual losses), the market is pricing in a turnaround story — precisely the kind of speculative narrative I have warned investors to avoid for sixty years. Mr. Market is being wildly optimistic here. The intelligent investor will decline the offer and wait for a business that earns its keep.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 48775,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0723393,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9028,
+      "cache_read_input_tokens": 11101,
+      "output_tokens": 2343,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9028,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 357,
+          "cache_read_input_tokens": 9051,
+          "cache_creation_input_tokens": 2027,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2027
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

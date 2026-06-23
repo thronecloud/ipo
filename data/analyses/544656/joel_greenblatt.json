@@ -1,0 +1,69 @@
+{
+  "symbol": "544656",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-20T11:07:13.090541Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "HRS Aluglaze fails both legs of the Magic Formula decisively — a P/E of 105 implies an earnings yield near 0.95% (vs. my 12%+ threshold), and an ROE of 0.34% signals return on capital nowhere near the 20%+ I require. This is the textbook opposite of \"cheap and good\" — it is expensive and unprofitable.",
+    "key_strengths": [
+      "High promoter skin-in-the-game at 72.49%",
+      "Exposure to India's construction/façade demand cycle",
+      "Small INR 540 Cr cap leaves room for operational scale-up if margins normalize"
+    ],
+    "key_risks": [
+      "Earnings yield ~0.95% — one of the most overvalued setups possible",
+      "ROE 0.34% suggests capital is essentially earning nothing",
+      "Commoditized fabrication/installation business with thin, cyclical margins"
+    ],
+    "red_flags": [
+      "P/E of 105 on negligible profitability — speculative pricing",
+      "ROE <1% implies EBIT/capital is likely in low single digits",
+      "Recently listed micro-cap with no demonstrated track record of high ROIC"
+    ],
+    "detailed_analysis": "The Magic Formula ranks companies on earnings yield (EBIT/EV) and return on capital. Even generously assuming EBIT roughly tracks net income, a trailing P/E of 105 implies an earnings yield under 1% — I want 12%+ and ideally 15%+. On the quality side, ROE of 0.34% tells me capital deployed into this aluminium fabrication business is not earning anywhere near a cost-of-capital return, let alone the 20–25% ROIC I look for. Failing both screens is disqualifying; there is no mechanical reason to own this.\n\nQualitatively, aluminium windows, doors and curtain-wall installation is a competitive, working-capital-heavy, project-execution business with limited pricing power and lumpy revenue recognition — exactly the kind of industry where durable high ROIC is rare. The 72.49% promoter holding is a positive governance signal, but it does not change the arithmetic. At this valuation, the market is pricing in a dramatic margin expansion that the current financials do not support. Pass until either price collapses materially or ROIC structurally steps up above 20%.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 20767,
+    "model_used": "opus",
+    "total_cost_usd": 0.09128075,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8933,
+      "cache_read_input_tokens": 13489,
+      "output_tokens": 1147,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8933,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10619,
+          "cache_creation_input_tokens": 1184,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1184
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

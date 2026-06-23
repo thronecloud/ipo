@@ -1,0 +1,71 @@
+{
+  "symbol": "GMDCLTD",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-22T16:44:11.252222Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "GMDC is a government-owned lignite miner selling an undifferentiated commodity at 36x earnings — precisely the combination of characteristics that destroys long-term capital. There is no durable competitive advantage, returns are below my 15% ROIC threshold, and the valuation assumes a commodity cycle that has already peaked.",
+    "key_strengths": [
+      "Near-zero debt (D/E: 0.04) and INR 119 Cr cash provide balance sheet resilience through commodity downturns",
+      "Government mining licenses and resource tenure create a quasi-monopoly on lignite deposits in Gujarat, limiting new entrants",
+      "OCF positive all 5 years reviewed, with FY25 operating CF of INR 1,059 Cr showing the business can generate cash at current coal prices"
+    ],
+    "key_risks": [
+      "Extreme earnings cyclicality: EBITDA swung from INR 84 Cr (FY21) to INR 1,730 Cr (FY23) to INR 984 Cr (FY25) — this is not a predictable earnings machine",
+      "No pricing power whatsoever — lignite is a low-grade commodity, and GMDC is a price-taker at the mercy of energy markets",
+      "Secularly declining industry: global and Indian energy transition away from thermal coal makes lignite a stranded asset risk over the next decade"
+    ],
+    "red_flags": [
+      "ROE of only 10.9% — well below the 15% minimum I require; paying 3.48x book for sub-par returns is irrational",
+      "INR 355 Cr of 'other income' in FY25 propped up net profit of INR 686 Cr — strip that out and core mining operations earned barely INR 330 Cr, implying true operating P/E closer to 70x",
+      "CWIP surged from INR 28 Cr (FY23) to INR 619 Cr (FY25) with capex of INR 644 Cr in FY25 — heavy capital deployment into a sunset industry is deeply concerning",
+      "Government (Gujarat state) owns 74%; management incentives are political, not value-creation oriented — a chronic problem for PSU miners",
+      "FY24 FCF was negative INR 366 Cr — the business consumed cash in a down year, highlighting how capital-intensive this business truly is"
+    ],
+    "detailed_analysis": "GMDC embodies every characteristic Munger warns against: it is a commodity business with zero pricing power, managed by government appointees whose incentives are misaligned with minority shareholders, operating in a secularly declining industry, and priced at 36x earnings as if it were a compounding machine. The gross margin of 83% is superficially impressive but collapses to a 13.59% operating margin once mining costs, D&A, and overheads are accounted for — exposing a capital-intensive operation masquerading as a high-margin business. The ROIC story is equally disappointing: ROE of 10.9% and ROCE of 14.1% fall short of the 15% threshold I consider the minimum for a quality business, and these returns were achieved at a cyclical peak. When coal prices normalized in FY21, the company lost money outright (net loss of INR 39 Cr).\n\nInvert the thesis to see the danger clearly: you are paying INR 23,433 Cr of market cap for a business that (a) earned INR 686 Cr net in FY25 but relied on INR 355 Cr of non-operating income to get there, (b) is now deploying INR 619 Cr of capital-in-progress into a commodity facing structural decline as India accelerates its renewable energy buildout, and (c) has demonstrated it can swing to losses in bad years. At EV/EBITDA of 34x, the market is pricing GMDC as a growth compounder — it is nothing of the sort. The only scenario where this works out is a sustained supercycle in lignite/coal prices, which is precisely the kind of macro bet I never make. Pass entirely.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "good",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 54734,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0819234,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11138,
+      "cache_read_input_tokens": 9073,
+      "output_tokens": 2495,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11138,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 474,
+          "cache_read_input_tokens": 9073,
+          "cache_creation_input_tokens": 2065,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2065
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

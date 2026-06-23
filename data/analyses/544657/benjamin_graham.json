@@ -1,0 +1,70 @@
+{
+  "symbol": "544657",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-20T11:05:43.468660Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Pajson Agro fails nearly every quantitative filter I demand: a P/E of 18.3 against a derisory 0.6% ROE, no multi-year earnings history (incorporated 2021), and a commodity cashew processing business with no moat. At INR 157 with virtually no earning power, there is no margin of safety — this is speculation, not investment.",
+    "key_strengths": [
+      "Promoter holding of 62.47% indicates skin in the game",
+      "Operates in a tangible, understandable business (cashew processing)",
+      "DII holding of 7.63% suggests some institutional comfort"
+    ],
+    "key_risks": [
+      "ROE of 0.60% is effectively no earning power — capital is unproductive",
+      "No 3-5 year earnings track record; incorporated only in 2021",
+      "Commodity processor with thin margins, no pricing power or moat"
+    ],
+    "red_flags": [
+      "P/E of 18.3 grossly unjustified for a 0.6% ROE business",
+      "Recent incorporation (2021) — typical speculative SME/IPO profile",
+      "Zero FII interest suggests serious investors see no value",
+      "Implied P/B given ROE × P/E ≈ 0.11 suggests extremely high price-to-book"
+    ],
+    "detailed_analysis": "From my framework, this security is uninvestable. A P/E of 18.3 paired with an ROE of merely 0.60% implies the market is paying roughly 30x book value for equity that earns almost nothing — the mathematical inverse of a Graham bargain. Incorporated in 2021, the company cannot possibly satisfy my requirement of 3-5 consecutive years of proven earning power, and cashew processing is a low-margin commodity trade subject to raw material price volatility, FX swings, and intense competition from established players in Kollam and Mangalore.\n\nAt INR 374 Cr market cap on negligible profits, the margin of safety is negative — Mr. Market is offering a price that assumes dramatic earnings expansion that has not been demonstrated. Without dividend history, without earnings stability, and with a P/E disconnected from underlying returns on capital, this is precisely the sort of speculative small-cap I warned investors against in Chapter 7 of The Intelligent Investor. Avoid.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "insufficient_data",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 19185,
+    "model_used": "opus",
+    "total_cost_usd": 0.088895,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8842,
+      "cache_read_input_tokens": 13505,
+      "output_tokens": 1074,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8842,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10619,
+          "cache_creation_input_tokens": 1109,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1109
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

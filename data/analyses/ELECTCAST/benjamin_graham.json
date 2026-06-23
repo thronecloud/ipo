@@ -1,0 +1,70 @@
+{
+  "symbol": "ELECTCAST",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T17:10:47.725947Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Electrosteel Castings trades at a genuine discount to book (P/B 0.84) and well below its estimated Graham Number (~INR 157 vs. price INR 80.80), offering real asset protection in a capital-intensive industrial business with manageable leverage. However, the intermittent losses (FY2016, FY2021), a reported operating margin of -0.71%, and a forward P/E of 35.11× versus trailing 14.20× signal earnings fragility that undermines confidence in a durable margin of safety.",
+    "key_strengths": [
+      "P/B of 0.84 — stock trades below net asset value, satisfying Graham's core asset-protection criterion",
+      "Debt/Equity 0.38 with borrowings declining from INR 2,967 Cr (FY22) to INR 2,223 Cr (FY25); interest coverage ~7x (EBITDA INR 1,149 Cr / finance cost INR 161 Cr)",
+      "Revenue CAGR of 14.3% and EBITDA CAGR 13.8% over 9 years demonstrate a real, growing industrial franchise in critical infrastructure (DI pipes for water/sewage)"
+    ],
+    "key_risks": [
+      "Earnings record has two loss years (FY16: -INR 27 Cr; FY21: -INR 91 Cr) — fails Graham's requirement of at least 5 consecutive profitable years",
+      "Forward P/E of 35.11× vs. trailing 14.20× implies the market expects earnings to roughly halve; current EPS of ~INR 11.49 may not be normalised",
+      "Reported operating margin of -0.71% is inconsistent with the EBITDA figures and raises questions about true operating profitability after D&A on a heavy, capital-intensive asset base (CWIP still INR 1,186 Cr)"
+    ],
+    "red_flags": [
+      "Forward P/E (35.11×) nearly 2.5× the trailing P/E — a glaring signal of expected earnings deterioration",
+      "Free cash flow turned sharply negative in FY22 (-INR 458 Cr) and has been erratic; FY25 FCF of only INR 206 Cr against net profit of INR 710 Cr shows poor cash conversion",
+      "No dividend history mentioned — Graham demands tangible cash returns to shareholders, not just reported earnings",
+      "Volatile 'Other Income' line (ranges from -INR 194 Cr to +INR 109 Cr) distorts true operating earnings and complicates normalised earnings power calculation"
+    ],
+    "detailed_analysis": "From a strict Graham standpoint, Electrosteel Castings has one genuinely compelling feature: the stock trades at INR 80.80 versus a computed Graham Number of approximately INR 157 (√[22.5 × EPS INR 11.49 × BVPS INR 95.4]), a ~49% discount. P/B of 0.84 means you are buying the industrial asset base at a haircut — exactly the kind of balance-sheet protection Graham prizes. Debt/Equity of 0.38 is acceptable, borrowings are declining, and interest coverage of ~7× is well above the 3.5× threshold. Revenue and EBITDA have compounded at a respectable 14% over nine years on the back of India's large public water infrastructure spend.\n\nYet the quantitative filter fails at several critical points. The earnings record shows two loss years (FY16 and FY21) within the decade, violating the consistency standard I insist upon. The alarming divergence between trailing P/E (14.2×) and forward P/E (35.1×) tells me the market expects current earnings to collapse — meaning the Graham Number calculation, based on FY25 EPS of ~INR 11.49, may be flattered by a cyclical peak. The reported operating margin of -0.71% alongside a negative 'Other Income' in prior years suggest lumpy, non-recurring items are propping up reported profits. Free cash flow in FY25 was only INR 206 Cr against net profit of INR 710 Cr — a cash conversion ratio below 30%, which a prudent investor must treat with suspicion. Without a dividend, shareholders receive no tangible return while waiting for earnings to recover. A disciplined value investor should demand a lower entry price or clearer evidence of sustained earnings power before committing capital.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 69988,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09596939999999998,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10338,
+      "cache_read_input_tokens": 11293,
+      "output_tokens": 3587,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10338
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 491,
+          "cache_read_input_tokens": 9243,
+          "cache_creation_input_tokens": 3145,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 3145,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

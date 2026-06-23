@@ -1,0 +1,69 @@
+{
+  "symbol": "544636",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-20T11:01:13.529106Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Western Overseas is a sub-10 Cr micro-cap visa/study-abroad advisory with a trivial 0.40% ROE — the business is generating essentially no return on shareholder capital despite a seemingly low 4.53x P/E. This is a classic value trap: tiny, unproven, no discernible moat, and well outside any sensible circle of competence.",
+    "key_strengths": [
+      "Promoter skin-in-the-game at 70.09% aligns insider interests",
+      "Optically low P/E of 4.53x suggests no speculative froth",
+      "Asset-light advisory model requires minimal capital reinvestment"
+    ],
+    "key_risks": [
+      "ROE of 0.40% is effectively zero — capital is earning nothing",
+      "Market cap of INR 9.97 Cr implies extreme illiquidity and governance opacity",
+      "No moat in commoditized visa/immigration advisory — low entry barriers"
+    ],
+    "red_flags": [
+      "0.40% ROE indicates either earnings manipulation or a fundamentally broken economic engine",
+      "Nano-cap size (< INR 10 Cr) typical of pump-and-dump risk on BSE SME-like listings",
+      "High promoter holding combined with tiny float enables price manipulation"
+    ],
+    "detailed_analysis": "At 0.40% ROE, Western Overseas fails the single most important Buffett filter — a business must earn a decent return on its owner's capital. A 4.53x P/E on near-zero earnings is arithmetic noise, not value; if earnings are INR 2.2 Cr on an equity base large enough to produce 0.40% ROE, the book value is substantial relative to profits, meaning the \"cheapness\" reflects the market's correct skepticism about earnings durability. Visa and study-abroad advisory is a fragmented, relationship-driven service business with zero switching costs, no brand moat, and constant regulatory/geopolitical risk (tightening Canadian/UK/US student visa policies in 2024-25 have already hammered the sector).\n\nA INR 9.97 Cr market cap on the BSE main board is effectively un-investable for any serious capital allocator — liquidity is nil, disclosures are minimal, and the opportunity cost versus a high-quality compounder is absurd. I wouldn't buy the whole business at this price, let alone a minority stake. Pass, and move on to companies where the moat and the math both work.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 26289,
+    "model_used": "opus",
+    "total_cost_usd": 0.092625,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8900,
+      "cache_read_input_tokens": 13390,
+      "output_tokens": 1211,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8900,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 70,
+          "cache_read_input_tokens": 10553,
+          "cache_creation_input_tokens": 1184,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1184
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

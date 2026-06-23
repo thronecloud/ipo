@@ -1,0 +1,70 @@
+{
+  "symbol": "BANDHANBNK",
+  "persona": "vijay_kedia",
+  "persona_display_name": "Vijay Kedia",
+  "analyzed_at": "2026-04-19T06:32:45.398839Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Bandhan Bank's forward P/E of ~11x looks superficially cheap for a recovering microfinance-heavy bank, but at ₹28,107 Cr market cap it is 14-28x outside my SMILE universe, promoter holding is only 39.74%, and the core MFI book still carries structural asset-quality fragility. This is a large-cap banking recovery trade, not a SMILE multibagger.",
+    "key_strengths": [
+      "Net profit recovering strongly: ₹126 Cr (FY22) → ₹2,745 Cr (FY25) as NPA cycle normalises",
+      "P/B of 1.14x with ROE of 11% — balance sheet reasonably priced if earnings recovery sustains",
+      "Significant CASA franchise and strong brand recall in eastern India's unbanked/underbanked segments"
+    ],
+    "key_risks": [
+      "MFI book concentration — repeat asset quality stress during macro/weather shocks (FY22 was nearly a wipeout with ₹126 Cr profit)",
+      "Finance cost CAGR of 26.6% outpacing revenue CAGR of 7.8% — net interest margin compression risk",
+      "Promoter below 50% (39.74%) and RBI regulatory overhang on promoter dilution timeline"
+    ],
+    "red_flags": [
+      "Market cap ₹28,107 Cr — 14-28x outside my SMILE sweet spot; this is a large-cap bank",
+      "Promoter holding 39.74% — fails my minimum 50% threshold decisively",
+      "OCF was -₹4,245 Cr in FY23 — banking cash flows are inherently volatile and hard to underwrite",
+      "Current P/E of 27.92x is not cheap; forward P/E recovery depends on earnings normalisation that MFI stress could derail again"
+    ],
+    "detailed_analysis": "Bandhan's story is a cautionary tale wrapped inside a recovery narrative. The FY22 near-wipeout (₹126 Cr net profit on ₹11,536 Cr revenue) exposed the extreme vulnerability of an MFI-heavy model to COVID disruption and subsequent collection deterioration. The recovery to ₹2,745 Cr in FY25 is real and reflects gradual portfolio diversification into secured retail loans, home loans, and SME — but the transition is slow and the eastern India geographical concentration remains a systemic risk.\n\nFrom the SMILE lens, there is nothing to like here as a new entry. Size (₹28K Cr) eliminates information asymmetry. Promoter holding at 39.74% means the founding shareholder has been forced to dilute significantly under RBI's promoter-cap regulations. Revenue growth of 7.8% CAGR over 3 years is below my 15-30% hurdle. I would need to see market cap below ₹5,000 Cr, promoter holding above 50%, and a differentiated liability franchise before even beginning my analysis — none of these are present.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 182319,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.2284548,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 21856,
+      "cache_read_input_tokens": 17336,
+      "output_tokens": 9419,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 21856,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 682,
+          "cache_read_input_tokens": 15211,
+          "cache_creation_input_tokens": 8770,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8770
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

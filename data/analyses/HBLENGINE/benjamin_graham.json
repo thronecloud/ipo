@@ -1,0 +1,69 @@
+{
+  "symbol": "HBLENGINE",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-22T16:44:46.388600Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "HBL Engineering is a genuinely improving business — nearly debt-free, consistently profitable, with excellent margins — but the market has priced in every drop of future optimism at P/B of 11x and a current price of ₹786 against a Graham Number of approximately ₹127. No margin of safety exists; this is speculation dressed as investment.",
+    "key_strengths": [
+      "Nearly debt-free (D/E: 0.04) with net cash position (cash ₹117 Cr vs debt ₹74 Cr) — a fortress balance sheet Graham would admire",
+      "Consistent positive OCF all 5 years (₹62–₹273 Cr) and a 9-year unbroken profit record — passes the earnings continuity test",
+      "Exceptional margins (33% operating, 51% gross) suggest real competitive differentiation in defense/rail niches"
+    ],
+    "key_risks": [
+      "Extreme overvaluation: Graham Number ≈ ₹127 vs market price ₹786 — stock must fall ~84% to reach intrinsic value by my method",
+      "Revenue contracted from ₹2,233 Cr (2024) to ₹1,967 Cr (2025) — the profit surge may reflect lumpy government orders, not durable earning power",
+      "P/B of 10.99x means the market is paying ₹11 for every ₹1 of net assets — any disappointment in government contract flow would be catastrophic for the price"
+    ],
+    "red_flags": [
+      "P/B of 10.99 — more than 7x my absolute ceiling of 1.5x; I have never paid this in my career",
+      "Graham Number ≈ ₹127 (sqrt(22.5 × EPS ₹9.95 × BVPS ₹71.6)) — price at 6.2x intrinsic value estimate",
+      "Net profit jumped from ₹14 Cr (2021) to ₹276 Cr (2025) — a 20x surge in 4 years almost always embeds mean-reversion risk that the market ignores"
+    ],
+    "detailed_analysis": "On the qualitative side, HBL Engineering is an admirable industrial enterprise: founded in 1977, diversified across defense batteries, rail signaling electronics, and fuzing systems, with high sovereign-customer stickiness and a promoter holding of 59%. The dramatic deleveraging (borrowings fell from ₹161 Cr in 2020 to ₹87 Cr in 2025 while equity nearly tripled to ₹1,985 Cr) tells the story of genuine financial improvement. Operating margins expanding from 7% in 2021 to 33% in 2025 suggest pricing power and mix-shift toward higher-value defense electronics — qualities I would prize in any era.\n\nHowever, the quantitative discipline I have practiced for fifty years makes this untouchable at current prices. My Graham Number — the geometric mean of 15x earnings and 1.5x book — yields approximately ₹127 per share. The stock trades at ₹786, a 520% premium to conservative intrinsic value. A P/E of 26.7x demands that profits continue compounding rapidly; yet revenues already shrank in 2025 and free cash flow collapsed from ₹228 Cr (2024) to ₹89 Cr (2025) as capex surged. Mr. Market has been generous to sellers of this stock. The intelligent investor waits for Mr. Market's pessimism — not his euphoria — to make a purchase.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 56347,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07687275,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9297,
+      "cache_read_input_tokens": 11200,
+      "output_tokens": 2576,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9297,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 463,
+          "cache_read_input_tokens": 9150,
+          "cache_creation_input_tokens": 2197,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2197
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

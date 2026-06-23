@@ -1,0 +1,69 @@
+{
+  "symbol": "EDELWEISS",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-18T17:14:06.809912Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "HOLD",
+    "investment_thesis": "Edelweiss is a slow-burning turnaround play — borrowings have been halved from INR 36,657 Cr (2020) to INR 19,459 Cr (2025) and the forward P/E of 7.56 implies a meaningful earnings re-rating, but the underlying business generates only ~3.8% net profit CAGR and 6.7% revenue CAGR over nine years — far too slow for a Lynch growth pick. Until ROE clears 12% and revenue inflects positively, this is dead money for growth investors.",
+    "key_strengths": [
+      "Aggressive deleveraging: borrowings down 47% from INR 36,657 Cr to INR 19,459 Cr, finance costs falling from INR 4,793 Cr to INR 2,537 Cr — structurally reducing interest drag.",
+      "Forward P/E of 7.56 vs. current 19x implies the market is pricing in a sharp near-term earnings doubling — cheap if the asset-light pivot (AMC, insurance) succeeds.",
+      "OCF positive all 5 recent years; cash on balance sheet surged to INR 4,938 Cr in 2025 from INR 2,024 Cr in 2022 — liquidity buffer is solid."
+    ],
+    "key_risks": [
+      "Equity base collapsing: total equity fell from INR 6,744 Cr (2023) to INR 4,419 Cr (2025) even while reporting profits — suggests ongoing write-offs, demergers, or capital returns that are not visible in P&L.",
+      "ROE of only 8.68% is below Lynch's minimum 12% threshold; a financial conglomerate earning sub-cost-of-equity returns destroys value over time.",
+      "Revenue is flat-to-contracting: last-5-year trend negative and absolute revenue in 2025 (INR 9,415 Cr) is still below 2019 peak (INR 11,078 Cr) — no topline growth story."
+    ],
+    "red_flags": [
+      "Debt/Equity of 3.51 — even for a financial services holding company this is extreme and leaves little margin for a credit-cycle shock.",
+      "2020 net loss of INR -2,044 Cr exposed catastrophic risk-management failures in wholesale credit; recovery has been anaemic (net profit only INR 536 Cr in FY25).",
+      "Promoter holding at 32.69% — low for an Indian promoter, signalling limited skin in the game."
+    ],
+    "detailed_analysis": "From a Lynch lens, Edelweiss is a **turnaround**, not a fast grower — and a slow-moving one at that. Revenue peaked at INR 11,078 Cr in FY19, crashed with the wholesale credit implosion in FY20 (net loss INR -2,044 Cr), and six years later still hasn't recovered that peak (FY25: INR 9,415 Cr). The 9-year revenue CAGR of 6.7% and earnings CAGR of 3.8% make this a stalwart at best — completely failing Lynch's 15–25% growth threshold. PEG on historical numbers is north of 5x, which is deeply unattractive. The only number that catches my eye is the forward P/E of 7.56, which would imply earnings roughly 2.5x from here — interesting, but I need to see *evidence* of that inflection, not just analyst hope.\n\nThe structural deleveraging story is real and I respect it: cutting borrowings by nearly INR 17,000 Cr in five years while staying OCF-positive shows operational discipline. But the equally real collapse in equity (INR 6,744 Cr → INR 4,419 Cr while reporting profits) tells me something messy is happening below the surface — likely demerger of profitable subsidiaries or goodwill write-downs — that is eroding the book faster than earnings rebuild it. At INR 119, you're paying 1.86x a shrinking book with a sub-9% ROE. I'd want to see two consecutive quarters of revenue growth and ROE crossing 12% before calling this a real turnaround. Until then, it belongs in the \"too hard\" pile for growth investing.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 63458,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09539730000000002,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11872,
+      "cache_read_input_tokens": 9161,
+      "output_tokens": 3208,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11872
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 539,
+          "cache_read_input_tokens": 9161,
+          "cache_creation_input_tokens": 2711,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2711,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

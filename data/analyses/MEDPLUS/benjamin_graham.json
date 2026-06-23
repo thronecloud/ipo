@@ -1,0 +1,71 @@
+{
+  "symbol": "MEDPLUS",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T18:22:20.125131Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "MedPlus trades at a price roughly 4× its estimated Graham Number (~₹208), with a P/E of 51× and P/B of 5.7× — both catastrophically above my maximum thresholds of 15× and 1.5× respectively. The thin 4.75% operating margin, volatile net profit history, and zero dividends offer no margin of safety whatsoever.",
+    "key_strengths": [
+      "Revenue CAGR of 15.1% over nine years shows genuine business growth",
+      "OCF positive in all last 5 years with a strong FY2025 FCF of ₹482 Cr — a meaningful recent improvement",
+      "Long operating track record since 2006 provides some earnings history, unlike pure IPO speculations"
+    ],
+    "key_risks": [
+      "Valuation is extreme: P/E 51× vs my ceiling of 15×; Graham Number ≈ ₹208 implies 76% downside to fair value",
+      "Net profit has been wildly erratic — ₹2 Cr in FY2020, ₹50 Cr in FY2023 vs ₹95 Cr prior year — no stable earnings power",
+      "Debt rising steadily to ₹1,193 Cr borrowings with only ₹86 Cr cash; D/E of 0.65 breaches my 0.50 limit and finance costs compound at 22% CAGR"
+    ],
+    "red_flags": [
+      "P/E of 50.9× is 3.4× my maximum acceptable multiple",
+      "P/B of 5.7× is nearly 4× my ceiling of 1.5× — paying an enormous premium over tangible assets",
+      "Graham Number estimated at ~₹208 (sqrt[22.5 × ₹12.5 EPS × ₹154 BVPS]) vs market price of ₹878 — a 320% premium",
+      "No dividends — zero cash returned to shareholders despite a decade of operations",
+      "ROE of only 8.8% on an inflated book value signals poor capital allocation"
+    ],
+    "detailed_analysis": "MedPlus is a pharmacy retail chain earning thin 4.75% operating margins on ₹6,136 Cr of revenue. Through my quantitative lens, the numbers are disqualifying across every dimension. The Graham Number, the most fundamental test I apply, works out to approximately ₹208 per share (√[22.5 × ~₹12.5 EPS × ~₹154 BVPS]) against a market price of ₹878 — the stock must fall over 75% just to reach my definition of fair value. A P/E of 51× and P/B of 5.7× are not merely elevated; they reflect pure speculation on future growth that has not yet materialised in the bottom line.\n\nThe earnings history further disqualifies this as a Graham investment. Net profit collapsed to ₹2 Cr in FY2020 and again fell from ₹95 Cr to ₹50 Cr in FY2023 — this is not the steady, predictable earning power I require over a minimum five-year span. Mr. Market has attached a premium as if this were a dominant, high-margin franchise, yet the business earns only 8.8% ROE and 10.3% ROCE while borrowings compound at 22% annually. The FY2025 FCF surge to ₹482 Cr is encouraging but represents a single data point, not the proven earning power I demand before deploying capital. The intelligent investor must insist on a margin of safety — here, none exists.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 43852,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0750816,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9118,
+      "cache_read_input_tokens": 11117,
+      "output_tokens": 2503,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9118
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 500,
+          "cache_read_input_tokens": 9067,
+          "cache_creation_input_tokens": 2101,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2101,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

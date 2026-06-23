@@ -1,0 +1,69 @@
+{
+  "symbol": "CGCL",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-19T12:56:22.748401Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Capri Global Capital is a high-growth NBFC priced for a future I am not qualified to underwrite: P/E of 20.8, P/B of 2.63, and operating cash flow negative in all 5 of the last 5 years. The computed Graham Number of approximately INR 88 implies the current price of INR 182 carries a 107% premium to my measure of intrinsic value.",
+    "key_strengths": [
+      "Revenue CAGR of 37.2% over 9 years is exceptional by any measure — the lending book is scaling rapidly in home loans and MSME segments",
+      "Net profit CAGR of 30.4% over 9 years demonstrates that growth is translating into earnings, not just volume",
+      "DII holding of 20.09% and Forward P/E of 12.96 suggest professional investors expect continued earnings growth"
+    ],
+    "key_risks": [
+      "Debt/Equity of 2.52 — five times my maximum of 0.5 — means the business is built on borrowed money; any credit cycle deterioration could rapidly impair equity",
+      "Finance costs have compounded at 67.9% annually over 9 years, growing far faster than revenue or profits — the liability side of the balance sheet is outrunning the asset side",
+      "Total debt grew from INR 4,832 Cr in FY22 to INR 15,577 Cr in FY25 — a 222% increase in three years; this pace of leverage expansion is precisely the pattern that precedes distress in NBFCs"
+    ],
+    "red_flags": [
+      "Operating cash flow has been negative every single year for the past 5 years, totaling a cumulative outflow of approximately INR 13,678 Cr — the business consumes cash by its very nature and depends entirely on external financing",
+      "P/B of 2.63 means I am paying INR 2.63 for every rupee of equity in a financial institution whose loan book quality I cannot independently verify",
+      "Financing cash flows of INR 5,118 Cr in FY25 reflect a business that must constantly return to capital markets — it is not self-funding"
+    ],
+    "detailed_analysis": "NBFCs are a category I approach with extreme caution. Unlike a manufacturing business where I can assess physical assets and inventory, a lending company's balance sheet quality depends entirely on whether borrowers repay — something I cannot ascertain from financial statements alone. The rapid tripling of total debt in three years and the explosive growth in finance costs tell me that Capri Global is essentially a leveraged bet on the Indian credit cycle and its own credit underwriting quality.\n\nThe growth story here is compelling as a narrative, but I have spent my career teaching investors to resist narratives and demand numbers. The numbers show a stock priced at more than double my computed intrinsic value, with negative cash flows, surging financial leverage, and thin equity as a cushion against loan losses. This is the profile of a speculative instrument. I will wait to assess what this business looks like in a credit downturn before paying anything above book value.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 220503,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.29222444999999997,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 27345,
+      "cache_read_input_tokens": 15939,
+      "output_tokens": 12326,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 27345,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 774,
+          "cache_read_input_tokens": 15939,
+          "cache_creation_input_tokens": 11406,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 11406
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

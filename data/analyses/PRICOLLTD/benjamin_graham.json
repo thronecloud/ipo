@@ -1,0 +1,70 @@
+{
+  "symbol": "PRICOLLTD",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T22:06:23.240313Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Pricol trades at 3.5× its Graham Number (~INR 169 vs. price of INR 587), with a P/E of 33.6 and P/B of 6.31 — both wildly exceeding my maximum thresholds of 15× and 1.5× respectively. The company's history of net losses as recently as 2020 (–INR 99 Cr) disqualifies it from the multi-year earnings record I demand before committing capital.",
+    "key_strengths": [
+      "Negligible financial leverage: D/E of 0.11 with finance costs declining from INR 43 Cr (2021) to INR 13 Cr (2025), and interest coverage of ~24×",
+      "Five consecutive years of positive OCF (2021–2025), reaching INR 309 Cr in FY25 — real cash generation, not accounting fiction",
+      "Debt reduction trajectory impressive: borrowings fell from INR 431 Cr (2020) to INR 61 Cr (2024), demonstrating management discipline"
+    ],
+    "key_risks": [
+      "Egregious overvaluation: Graham Number ≈ INR 169 (sqrt of 22.5 × EPS ~13.7 × BV/share ~92.9) — current price represents a 247% premium with zero margin of safety",
+      "Cyclical auto-parts exposure with a proven history of severe earnings collapse: net losses in three consecutive years (2018–2020), rendering the earnings record unreliable",
+      "Surging capex (INR 216 Cr in FY25) and investing outflows of INR 377 Cr driving leverage back up — borrowings rose from INR 61 Cr to INR 169 Cr in a single year, reversing the deleveraging trend"
+    ],
+    "red_flags": [
+      "P/B of 6.31 — paying INR 6.31 for every INR 1 of net assets; in a downturn, book value provides virtually no floor protection",
+      "Net losses in 2018, 2019, and 2020 — does not meet my minimum requirement of 5 consecutive years of uninterrupted positive earnings",
+      "No dividend history provided; auto-parts is a cyclical sector and retained earnings here carry real reinvestment risk given the capex ramp",
+      "Revenue CAGR of only 7.8% over 8 years yet the market prices the stock as a high-growth compounder — speculative premium baked in"
+    ],
+    "detailed_analysis": "By every quantitative measure I apply, Pricol Limited is grossly overvalued. The Graham Number — my fundamental anchor for intrinsic value — stands at approximately INR 169, calculated from trailing EPS of ~INR 13.7 and book value per share of ~INR 93. The stock trades at INR 587, a 247% premium. A P/E of 33.6× and P/B of 6.31× are not merely above my thresholds; they represent the kind of speculative pricing that Mr. Market applies when optimism is running hot in a sector. Operating margins of 8.77% for a cyclical manufacturer leave precious little cushion if volumes turn down, as they demonstrably did in 2019–2020.\n\nThe business does have genuine operational merits — declining debt, consistent operating cash flow, and improving ROCE of 22.9%. However, the intelligent investor does not pay for quality without a margin of safety, and there is none here. The recent capex surge (INR 216 Cr in FY25, up from INR 45 Cr in FY22) and the resulting jump in borrowings from INR 61 Cr to INR 169 Cr in a single year introduces execution and balance-sheet risk precisely when the stock price leaves no room for error. I would only consider revisiting this company at a price below INR 200 — roughly the Graham Number — and only after establishing a clean five-year earnings record without interruption.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 51617,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0769473,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9212,
+      "cache_read_input_tokens": 11111,
+      "output_tokens": 2604,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9212,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 462,
+          "cache_read_input_tokens": 9061,
+          "cache_creation_input_tokens": 2201,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2201
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

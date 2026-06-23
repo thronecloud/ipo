@@ -1,0 +1,70 @@
+{
+  "symbol": "NAZARA",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T18:27:16.426797Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Nazara fails both Magic Formula screens catastrophically — Earnings Yield of ~1.1% (EBIT ₹115 Cr / EV ₹10,046 Cr) and ROIC of ~2.5% are far below the 12% and 20% thresholds respectively. You are paying 100x EBITDA for a business whose EBIT has grown at only 4.7% CAGR over 9 years while net profit has actually shrunk.",
+    "key_strengths": [
+      "Revenue CAGR of 25.5% over 9 years shows genuine top-line scaling through acquisitions",
+      "71% gross margin reflects an IP/digital distribution model with strong unit economics at the product level",
+      "Minimal financial leverage (D/E 0.06) reduces near-term balance sheet risk despite heavy acquisition spend"
+    ],
+    "key_risks": [
+      "Massive gap between gross margin (71%) and operating margin (2%) signals acquisitions are consuming all economics — SG&A and integration costs destroy returns",
+      "Net profit declined from ₹75 Cr to ₹51 Cr in FY25 even as revenue grew ₹486 Cr — dilutive acquisitions at scale",
+      "FCF turned negative (−₹82 Cr, 2025) while investing outflows hit −₹1,139 Cr, funded entirely by dilutive equity raises (+₹805 Cr financing CF)"
+    ],
+    "red_flags": [
+      "Earnings Yield ~1.1% — one-tenth of the 12% Magic Formula minimum; massively overvalued by any earnings-based metric",
+      "Net profit CAGR of −2.7% over 9 years despite 25.5% revenue CAGR — scale is destroying value, not creating it",
+      "Other income (₹80 Cr) nearly equals net profit (₹51 Cr) — the operating business alone barely earns anything; remove investment income and operating economics are near zero",
+      "Total assets surged from ₹2,753 Cr to ₹4,260 Cr in one year, almost entirely from acquisitions — goodwill risk is substantial and untested"
+    ],
+    "detailed_analysis": "Magic Formula verdict is swift and unambiguous: Nazara scores near-zero on both screens. EBIT of ₹115 Cr against an Enterprise Value of ~₹10,046 Cr produces a 1.1% Earnings Yield — roughly one-tenth of the 12% minimum required. ROCE of 2.5% is similarly disqualifying; a business must earn well above its cost of capital to merit a premium, and Nazara earns far below it. The EV/EBITDA of 100.8x and trailing P/E of 133.6x confirm the market is pricing in a decade of flawless execution before a reasonable return is possible.\n\nThe structural problem is the acquisition treadmill. Gross margins of 71% look enticing until you realize that nine years of 25% revenue growth have compressed net profit CAGR to −2.7%. Every acquisition adds revenue but also adds overhead, amortization, and minority interests that eat the economics. FY25 investing outflows of ₹1,139 Cr required ₹805 Cr of fresh equity; free cash flow was −₹82 Cr. The balance sheet is clean only because shareholders keep funding the gap. Until Nazara demonstrates that its portfolio of IPs can generate sustained EBIT margins above 10% and ROIC above 15% organically — without constant capital injections — there is no Magic Formula case to be made here.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 43997,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07989494999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11077,
+      "cache_read_input_tokens": 9074,
+      "output_tokens": 2375,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11077
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 434,
+          "cache_read_input_tokens": 9074,
+          "cache_creation_input_tokens": 2003,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2003,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

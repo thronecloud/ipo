@@ -1,0 +1,69 @@
+{
+  "symbol": "544656",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-20T11:05:53.259735Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "At a P/E of 105 and a barely-positive ROE of 0.34%, HRS Aluglaze trades at a speculative premium with no demonstrated earning power. There is no margin of safety here — this is precisely the kind of freshly-listed issue I warn investors to avoid.",
+    "key_strengths": [
+      "Promoter holding of 72.49% shows insider skin in the game",
+      "Institutional sponsorship (FII 4.78% + DII 8.13% = 12.91%) provides some validation",
+      "Operates in a tangible industrial products niche (aluminium fabrication)"
+    ],
+    "key_risks": [
+      "P/E of 105 is ~7x my ceiling of 15 — no margin of safety",
+      "ROE of 0.34% is effectively zero — capital is not earning its keep",
+      "Recent BSE listing with no multi-year audited earnings track record"
+    ],
+    "red_flags": [
+      "Valuation implies speculative growth assumptions rather than proven earnings",
+      "Near-zero profitability inconsistent with a 540 Cr market cap",
+      "Typical IPO dynamic: seller (promoter/banker) sets the price, not the buyer"
+    ],
+    "detailed_analysis": "From my quantitative perspective, this security fails nearly every test. A P/E of 105 against an ROE of 0.34% implies the market is capitalizing essentially nothing into a 540 Cr valuation — EPS is on the order of INR 2.67 against a price of INR 280. Without book value disclosed I cannot compute the Graham Number precisely, but with ROE near zero, book value would have to approach INR 780/share to justify the price at a P/B of 0.36 — improbable for a small aluminium fabricator. The required earning power simply is not there, and the price is built on projection, not proof.\n\nCompounding the concern, this is a recently listed small-cap industrial with no visible track record of consecutive profitable years, no stated dividend history, and no disclosed balance-sheet data on current ratio or debt-to-equity — all of which I require before committing capital. Mr. Market is offering this at a fever pitch; the disciplined investor waits. AVOID until the company delivers 3–5 years of audited earnings, the P/E compresses below 15, and the P/B falls under 1.5.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "insufficient_data",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 20230,
+    "model_used": "opus",
+    "total_cost_usd": 0.09059675,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8913,
+      "cache_read_input_tokens": 13521,
+      "output_tokens": 1124,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8913,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10635,
+          "cache_creation_input_tokens": 1164,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1164
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

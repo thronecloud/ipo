@@ -1,0 +1,69 @@
+{
+  "symbol": "DEEPAKNTR",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-19T13:11:01.445135Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "AVOID",
+    "investment_thesis": "Deepak Nitrite's headline 9-year numbers are seductive, but the last 5 years tell the real story: EBITDA has contracted from INR 1,637 Cr (FY22) to INR 1,151 Cr (FY25) while the stock still commands a P/E of 38.7x on declining earnings. You are being asked to pay a premium growth multiple for a business in earnings retreat.",
+    "key_strengths": [
+      "Genuinely impressive 9-year revenue and profit CAGR (22% and 31%) demonstrate historical execution capability",
+      "Low legacy debt — D/E at 0.22 and finance costs declining for years until recent capex ramp",
+      "DII ownership at 23.5% suggests institutional confidence in long-term specialty chemicals thesis"
+    ],
+    "key_risks": [
+      "Phenolics segment (cumene → phenol/acetone) is commodity-like and has been crushed by Chinese overcapacity, driving EBITDA down ~30% from peak",
+      "ROE at 13.4% — below my 15% threshold — and declining: this is a business whose returns are compressing, not expanding",
+      "Large CWIP of INR 2,046 Cr in FY25 signals a big bet on new capacity, but if margins don't recover, this capex will destroy value"
+    ],
+    "red_flags": [
+      "Free cash flow turned sharply negative in FY25 (-INR 494 Cr) as capex surged to INR 1,136 Cr — earnings quality is deteriorating at the worst time",
+      "Operating income trend is explicitly contracting over the last 5 years — the business peaked in FY22 and has not recovered despite rising revenue",
+      "Paying P/E 38.7x for a business with net profit declining four consecutive years (INR 1,067 Cr → INR 852 → 811 → 697 Cr) is the definition of paying too much for too little"
+    ],
+    "detailed_analysis": "The Deepak Nitrite story is a cautionary tale in mistaking cyclical earnings peaks for structural compounding. The FY20-FY22 phenolics boom — driven by COVID-era demand for sanitisers and disrupted Chinese supply — inflated margins to levels that were never repeatable. Since FY22, every profitability metric has trended down while the stock retains a premium valuation anchored to peak-cycle memories. ROCE at 16.3% is barely above my threshold, and the direction is wrong.\n\nApplying inversion: what would need to go right for this investment to work? Phenolics margins would need to recover (requires sustained Chinese capacity discipline — unlikely), the new speciality investments in CWIP would need to generate >20% ROIC (unproven), and you'd need to wait years of capital absorption before seeing the payoff — all while paying 38.7x. I'd rather own a better business at a similar price or wait for a significant de-rating.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 155449,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.21406755000000002,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 23423,
+      "cache_read_input_tokens": 15891,
+      "output_tokens": 8097,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 23423,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 435,
+          "cache_read_input_tokens": 15891,
+          "cache_creation_input_tokens": 7532,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 7532
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

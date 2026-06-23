@@ -1,0 +1,71 @@
+{
+  "symbol": "GMRP&UI",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T17:24:36.773838Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "GMR Power & Urban Infra sits in the infrastructure/utility space — explicitly excluded from my Magic Formula universe — with an earnings yield of ~8.5% and ROCE of just 13.2%, both well below my minimum thresholds. The business barely covers its interest expense (Finance Cost ₹1,571 Cr vs. Operating Income ₹1,534 Cr), making reported profits entirely dependent on volatile \"Other Income.\"",
+    "key_strengths": [
+      "Strong OCF trajectory: operating cash flow grew from ₹588 Cr (2021) to ₹2,833 Cr (2025), 5/5 years positive",
+      "Revenue CAGR of 23.4% over 4 years signals real business scale-up",
+      "Low capex intensity (₹270 Cr capex vs. ₹2,833 Cr OCF in FY25) — good FCF conversion at the operating level"
+    ],
+    "key_risks": [
+      "Interest coverage is essentially zero: Finance Cost (₹1,571 Cr) nearly equals Operating Income (₹1,534 Cr) — one bad year destroys solvency",
+      "Net profit is illusory — ₹1,552 Cr profit in FY25 driven by ₹2,228 Cr 'Other Income'; operating profit alone cannot service debt",
+      "Equity was negative for four consecutive years (2021–2024), turning positive only in FY25; D/E of 7.31 reflects extreme balance sheet fragility"
+    ],
+    "red_flags": [
+      "Infrastructure/utility company — excluded from Magic Formula universe by design",
+      "Earnings Yield (EBIT/EV) ~8.5%: EBIT ₹1,534 Cr / EV ~₹18,151 Cr — below my 12% minimum",
+      "ROCE of 13.2% is well below the 20% threshold for a 'good business'",
+      "Net profit swings wildly: -₹2,185 Cr → -₹652 Cr → +₹1,139 Cr → -₹127 Cr → +₹1,552 Cr — driven by non-operational items, not durable earnings",
+      "ROE of 110.2% is a statistical artifact of a near-zero equity base — not genuine capital efficiency"
+    ],
+    "detailed_analysis": "Magic Formula math disqualifies this immediately on two fronts. First, infrastructure/utility companies are excluded from my universe because heavy leverage distorts both metrics. Second, even ignoring that exclusion: Earnings Yield = EBIT ₹1,534 Cr / EV ~₹18,151 Cr (Market Cap ₹8,590 Cr + Debt ₹10,250 Cr - Cash ₹689 Cr) = ~8.5% — below my 12% floor. ROCE of 13.2% is similarly below my 20% threshold for a business worth owning. Both Magic Formula legs fail simultaneously.\n\nThe balance sheet tells an even grimmer story. Finance costs of ₹1,571 Cr in FY25 consume essentially all of the ₹1,534 Cr operating income, meaning the business cannot service its debt from operations alone. The ₹1,552 Cr net profit is a mirage — strip out the ₹2,228 Cr \"Other Income\" and the company loses money operationally. With ₹10,250 Cr of debt against ₹1,408 Cr of freshly-turned-positive equity, one adverse year in \"Other Income\" (asset sales, one-time gains) erases the equity cushion entirely. The operating cash flow improvement is encouraging but insufficient to change the fundamental picture of a heavily indebted infrastructure vehicle earning subpar returns on capital.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 46489,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07853025,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10859,
+      "cache_read_input_tokens": 8800,
+      "output_tokens": 2344,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10859
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 374,
+          "cache_read_input_tokens": 8800,
+          "cache_creation_input_tokens": 2059,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2059,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

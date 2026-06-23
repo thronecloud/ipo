@@ -1,0 +1,69 @@
+{
+  "symbol": "ARVIND",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T16:25:44.133706Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Arvind fails both Magic Formula screens: Earnings Yield of ~7.7% (EBIT 895 Cr / EV ~11,646 Cr) is well below my 12% threshold, and ROCE of 13% sits below the 20% minimum I require for a business worth owning. Zero revenue growth over nine years with exploding capex makes this a capital-intensive, mediocre compounder — exactly the type I avoid.",
+    "key_strengths": [
+      "Debt reduction: borrowings cut from INR 2,640 Cr (2020) to INR 1,537 Cr (2025), improving balance sheet",
+      "Consistent positive OCF across all 5 years, averaging ~INR 700 Cr — business does generate cash",
+      "Diversified segments (Advanced Materials, technical textiles) offer some differentiation above commodity fabric peers"
+    ],
+    "key_risks": [
+      "Capex explosion destroying FCF: capex jumped to INR 535 Cr in 2025 (was INR 186 Cr in 2022), FCF collapsed to INR 280 Cr — capex now consuming 60% of EBIT",
+      "Nine-year revenue CAGR of 0.4% and EBITDA CAGR of -3.1% — this business has not grown in a decade in real terms",
+      "ROE of 9.32% likely below cost of equity — management is destroying value with each incremental rupee of retained capital"
+    ],
+    "red_flags": [
+      "Capex surge (INR 535 Cr in 2025 vs INR 278 Cr in 2024) with no corresponding revenue growth — CWIP at INR 331 Cr raises questions about returns on new investment",
+      "EBIT/EV ~7.7%: earnings yield is below even my minimum acceptable threshold of 12%",
+      "Net Profit swung to loss in FY2021 (-27 Cr), signaling cyclical vulnerability; thin 8.5% operating margins leave no margin of safety"
+    ],
+    "detailed_analysis": "Running Arvind through the Magic Formula: EV = market cap INR 10,137 Cr + debt INR 1,562 Cr − cash INR 53 Cr = ~INR 11,646 Cr. EBIT (operating income) FY2025 = INR 895 Cr. Earnings Yield = 7.7% — comfortably below my 12% \"attractive\" floor. ROCE is disclosed at 13%, confirming the second screen also fails; I need 20%+ to consider a business genuinely good. A textile manufacturer earning 13% on capital at 24x trailing earnings is simply not a Magic Formula candidate — I'm being asked to pay a growth company multiple for a no-growth, capital-intensive operation.\n\nThe structural picture is worse on closer inspection. Revenue in 2025 (INR 8,329 Cr) barely exceeds 2016 levels (INR 8,011 Cr) — a 0.4% nine-year CAGR in nominal rupees means real decline. FCF has collapsed from INR 687 Cr (2021) to INR 280 Cr (2025) as capex more than doubled year-on-year to INR 535 Cr. High capex intensity combined with stagnant revenues and sub-cost-of-capital returns is the antithesis of what I look for. Unless this capex cycle generates materially higher ROIC, I see no reason to own Arvind over better-ranked businesses available at similar or cheaper valuations.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 46802,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08040735,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11165,
+      "cache_read_input_tokens": 9132,
+      "output_tokens": 2386,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11165,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 390,
+          "cache_read_input_tokens": 9132,
+          "cache_creation_input_tokens": 2033,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2033
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

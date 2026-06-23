@@ -1,0 +1,69 @@
+{
+  "symbol": "EQUITASBNK",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-18T17:21:23.638931Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Equitas SFB is a turnaround story with a forward P/E of 11.28 and P/B of 1.28 that looks optically cheap — but the 82% profit collapse (INR 799 Cr → INR 147 Cr) and exploding finance costs (29.1% CAGR vs 17.4% revenue CAGR) mean the \"story\" is broken until margin recovery is proven. I'd need two consecutive quarters of ROE climbing back above 10% before getting excited.",
+    "key_strengths": [
+      "Forward P/E of 11.28 and P/B of 1.28 provide valuation floor if earnings recover toward FY24 levels",
+      "Revenue CAGR of 17.4% and total assets nearly doubling (INR 26,948→52,836 Cr) show a growing loan franchise",
+      "Strong DII ownership at 50.87% and healthy cash build (INR 2,133→5,536 Cr) indicate institutional confidence and liquidity"
+    ],
+    "key_risks": [
+      "Finance costs exploding at 29.1% CAGR vastly outpacing revenue at 17.4% — classic spread compression destroying profitability",
+      "Net profit CAGR of -19.4% with FY25 profit crashing 82% YoY; the earnings story is broken, not just paused",
+      "ROE of just 2.42% is catastrophic for a bank — Lynch requires 12%+ to believe in a durable business model"
+    ],
+    "red_flags": [
+      "Revenue growth decelerating sharply: 23% in FY24 slowing to 8.4% in FY25 — the growth engine is stalling",
+      "Finance costs of INR 3,060 Cr now consuming 75% of revenue vs 57% in FY22 — the interest margin is being eaten alive",
+      "Current P/E of 50.93 is dangerously misleading; recovery to forward P/E of 11.28 requires a 4x earnings jump that management has yet to demonstrate"
+    ],
+    "detailed_analysis": "Through my GARP lens, the first thing I check is the PEG ratio — and here, I can't even calculate a meaningful one because net earnings are in freefall (-19.4% CAGR). The current P/E of 50.93 is a trap number reflecting depressed FY25 profits of just INR 147 Cr. The forward P/E of 11.28 is intriguing, but it prices in a recovery from INR 147 Cr back to roughly INR 660 Cr — a near 4.5x earnings bounce — with zero proof it's coming. Finance costs grew from INR 1,421 Cr to INR 3,060 Cr in three years; that's the real story here, and it's ugly. A bank borrowing at rates growing faster than its lending revenue will keep getting squeezed until either deposit costs fall or loan pricing improves.\n\nWhat really kills this for me is the ROE of 2.42%. I've always said a bank needs to earn its cost of capital — 2.42% ROE means this institution is destroying shareholder value right now. The P/B of 1.28 looks cheap but isn't when book value itself is earning nothing. Equitas SFB classifies as a turnaround in my framework — it had a genuine earnings story (INR 799 Cr profit in FY24) that has since unraveled. I'd sit on the sidelines, watch for two solid quarters of margin recovery and ROE climbing back toward 10%, and then revisit. Until then, this is a HOLD, not a BUY.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 53092,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0850827,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10880,
+      "cache_read_input_tokens": 8479,
+      "output_tokens": 2782,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10880
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 418,
+          "cache_read_input_tokens": 8479,
+          "cache_creation_input_tokens": 2401,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2401,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

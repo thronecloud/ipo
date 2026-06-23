@@ -1,0 +1,69 @@
+{
+  "symbol": "HEG",
+  "persona": "philip_fisher",
+  "persona_display_name": "Philip Fisher",
+  "analyzed_at": "2026-04-22T16:41:49.631913Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "HEG is a commodity graphite electrode manufacturer whose fortunes are dictated by global steel production cycles and Chinese supply dynamics — precisely the kind of business Fisher avoided. With ROE of just 2.59%, revenue collapsing from ₹6,591 Cr (FY19) to ₹2,158 Cr (FY25), and no R&D moat, this offers no basis for the compounding growth Fisher demanded.",
+    "key_strengths": [
+      "Low leverage (D/E 0.14) and a clean balance sheet with ₹4,666 Cr in equity provides cyclical resilience",
+      "High promoter holding (56.27%) signals owner-operator alignment and skin in the game",
+      "Decent gross margin (58.69%) reflects some pricing power in specialty graphite grades vs. pure commodity producers"
+    ],
+    "key_risks": [
+      "Violent earnings cyclicality: net profit swung from ₹3,026 Cr (FY19) → -₹18 Cr (FY21) → ₹115 Cr (FY25) — no Fisher-style compounding possible",
+      "Zero R&D or innovation moat — graphite electrode manufacturing is mature 1970s technology; pricing follows global EAF steel capacity, not competitive differentiation",
+      "Valuation is punitive on trough earnings: P/E 32x with ROE of 2.59% and ROCE of 3.96% means the market is pricing in a recovery that may be structurally constrained by Chinese electrode overcapacity"
+    ],
+    "red_flags": [
+      "Revenue in FY25 (₹2,158 Cr) is barely above FY16 (₹870 Cr) adjusted for the FY18-19 super-cycle — secular stagnation, not growth",
+      "Operating income collapsed from ₹4,662 Cr (FY19) to ₹255 Cr (FY25) — an 94% decline showing zero structural earnings floor",
+      "FCF was negative in FY22 (-₹499 Cr) and FY23 (-₹364 Cr) during the capex cycle; FY25 FCF of only ₹102 Cr on a ₹12,215 Cr market cap is a 0.8% FCF yield"
+    ],
+    "detailed_analysis": "Fisher's first question is always: \"Does the company have products with sufficient market potential for significant sales growth over many years?\" HEG fails immediately. Graphite electrodes are a commodity input to electric arc furnaces — demand tracks global steel production, not technological progress or management genius. The FY18-19 revenue explosion (₹870 Cr → ₹6,591 Cr) was entirely driven by anti-dumping duties on Chinese electrodes and a temporary supply squeeze, not any durable competitive advantage. That windfall has fully normalized, and FY25 revenue of ₹2,158 Cr is back near decade-ago levels. There is no evidence of product innovation, no R&D pipeline, and no proprietary process that would allow HEG to escape commodity pricing dynamics.\n\nOn management quality and capital allocation, the picture is mixed but uninspiring for a Fisher investor. The heavy capex in FY22-FY24 (₹360–₹480 Cr/year) expanded capacity into a declining price environment, destroying FCF during those years. Current ROE of 2.59% and ROCE of 3.96% on a largely debt-free balance sheet indicate the core business is barely earning its cost of capital. The P/E of 32x is being justified by a forward P/E of 22x — essentially a bet on an electrode price recovery — which is the definition of a cyclical speculation, not a Fisher-style growth investment. I would not pay 2.6x book for a business earning sub-3% on equity with no identifiable innovation engine.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 46274,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07017825,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9073,
+      "cache_read_input_tokens": 11185,
+      "output_tokens": 2186,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9073,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 252,
+          "cache_read_input_tokens": 9131,
+          "cache_creation_input_tokens": 1996,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1996
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

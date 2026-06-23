@@ -1,0 +1,70 @@
+{
+  "symbol": "BELRISE",
+  "persona": "radhakishan_damani",
+  "persona_display_name": "Radhakishan Damani",
+  "analyzed_at": "2026-04-22T16:22:37.433492Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Belrise is a capable auto-component manufacturer with 15% revenue CAGR, but at 39.6x P/E it is priced for perfection in a cyclical, OEM-dependent business where ROE of 14.1% does not justify the premium. The capex-heavy model and inconsistent free cash flow make this fundamentally misaligned with my requirement for steady compounders at sensible prices.",
+    "key_strengths": [
+      "Revenue compounding at 15.4% CAGR (2022–2025) — steady and consistent, within my preferred range",
+      "Promoter holding at 66.46% is stable and reasonably concentrated — skin in the game is present",
+      "Borrowings-to-equity at 0.29 (borrowings: ₹1,418 Cr vs equity: ₹4,971 Cr post-IPO) — nominally within acceptable limits"
+    ],
+    "key_risks": [
+      "P/E of 39.6x is double my ceiling of 20x — no margin of safety; even forward P/E of 27.6x remains unacceptable for a cyclical",
+      "FCF is deeply unreliable: ₹555 Cr in FY23, collapsed to -₹163 Cr in FY25 on a capex surge of ₹868 Cr — this is not a self-funding business",
+      "Finance costs of ₹307 Cr growing at 12.4% CAGR eat into thin net margins (~4.3%); total debt is ₹2,964 Cr implying true leverage is far higher than the headline D/E"
+    ],
+    "red_flags": [
+      "Total debt of ₹2,964 Cr vs borrowings of ₹1,418 Cr — the headline D/E of 0.29 is misleading; total debt/equity = 0.60, which violates my hard limit",
+      "ROE of 14.1% is below my 15% floor and well short of my 18–22% core-holding target — capital is being deployed inefficiently",
+      "FY25 capex of ₹868 Cr (nearly 4x the FY23 spend) — aggressive debt-funded expansion into a cyclical sector is exactly the pattern I avoid",
+      "Large equity raise (reserves jumped ₹2,500 Cr in FY25 — IPO proceeds) reduced reported D/E optically; the underlying debt burden has not shrunk materially"
+    ],
+    "detailed_analysis": "Belrise operates a diversified auto-components business supplying 2W, 3W, and 4W OEMs, with decent revenue growth of 15.4% CAGR. However, almost every financial quality metric falls short of my standards. ROE at 14.1% and ROCE at 14.3% are below threshold. Operating margin of 8.3% sits at the very bottom of my acceptable range and is actually compressing at the PAT level — net profit CAGR is only 10.7% against 15.4% revenue growth, with finance costs consuming an ever-larger share. The net profit was flat at ₹314 Cr in both FY23 and FY24 before recovering modestly. This is not the earnings consistency I demand.\n\nThe balance sheet tells a cautionary tale: the IPO in FY25 inflated equity to ₹4,971 Cr, making headline D/E look acceptable at 0.29 (borrowings basis), but total debt stands at ₹2,964 Cr and the business just burned ₹868 Cr in capex in one year, producing negative FCF of -₹163 Cr. I have spent decades building DMart on the principle that a good business funds its own growth. Belrise is doing the opposite — raising equity, borrowing, and spending aggressively in a sector that faces structural disruption from EV transitions. Auto-component businesses are cyclical, OEM-dependent, and capital-intensive — precisely the opposite of the boring, cash-generative compounders I seek. At 39.6x P/E, the market is pricing in flawless execution for years. I will not pay that price for this level of risk.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 58218,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0831708,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9562,
+      "cache_read_input_tokens": 11131,
+      "output_tokens": 2931,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9562,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 389,
+          "cache_read_input_tokens": 9041,
+          "cache_creation_input_tokens": 2611,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2611
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "544637",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-20T11:00:36.302229Z",
+  "analysis": {
+    "score": 6,
+    "recommendation": "HOLD",
+    "investment_thesis": "Methodhub is a classic Lynch \"fast grower\" microcap — revenue nearly quadrupled from INR 35 Cr to INR 135 Cr in two years, ROE is 42.7%, and P/E is just 14, giving a PEG well under 0.3. However, weak cash conversion (OCF of INR 5 Cr vs net profit of INR 11 Cr), low promoter holding (26.85%), and commoditized IT services positioning keep this from being a conviction ten-bagger.",
+    "key_strengths": [
+      "Explosive growth: revenue 35→57→135 Cr; PAT 1→5→11 Cr — PEG far below 1",
+      "Stellar capital efficiency: ROE 42.7%, ROCE 31.1%, margins holding as it scales",
+      "Microcap at 144 Cr in an expanding IT services TAM — room for multi-bagger re-rating"
+    ],
+    "key_risks": [
+      "OCF (5 Cr) lags PAT (11 Cr) — receivables-funded growth is a classic quality red flag",
+      "Promoter holding only 26.85% with 39 Cr debt and 5 Cr finance cost — thin skin in the game",
+      "Tiny, undifferentiated IT services shop; no visible moat or client concentration disclosure"
+    ],
+    "red_flags": [
+      "Net profit up 10x in 2 years but cumulative FCF barely grew — earnings quality suspect",
+      "Equity jumped from 11 Cr to 57 Cr in FY25 (likely IPO/placement), inflating ratios and needing re-validation",
+      "Low promoter stake under 27% in a newly-listed microcap"
+    ],
+    "detailed_analysis": "From a Lynch GARP lens, the headline story is irresistible: revenue +137% YoY, profit +120% YoY, ROE 42.7%, and a P/E of 14 against triple-digit growth means a PEG of roughly 0.1–0.3 — exactly the mispricing we hunt for in microcaps. The balance sheet also improved meaningfully with equity expanding from 11 to 57 Cr in FY25, which likely reflects an IPO raise (the stock lists under BSE code 544637). If the growth story is real and durable, this could be a 3–5x from here as the market discovers it.\n\nBut the \"story\" has holes. Operating cash flow of just 5 Cr against 11 Cr reported profit tells me the accrual quality is poor — receivables or unbilled revenue are doing heavy lifting. Borrowings of 39 Cr on an equity raise, 5 Cr of finance cost, and a sub-27% promoter stake in a freshly-listed IT services microcap are precisely the setup Lynch warned about (\"hot issue, no pedigree\"). Indian IT services is also brutally competitive; without a niche or named anchor clients, margins rarely hold. I'd watch two more quarters of cash conversion and promoter behavior before committing — HOLD / track, don't chase.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "insufficient_data",
+      "financial_health": "adequate",
+      "valuation": "undervalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 33317,
+    "model_used": "opus",
+    "total_cost_usd": 0.13006774999999998,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 12827,
+      "cache_read_input_tokens": 11088,
+      "output_tokens": 1773,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 12827,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 87,
+          "cache_read_input_tokens": 11088,
+          "cache_creation_input_tokens": 1739,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1739
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

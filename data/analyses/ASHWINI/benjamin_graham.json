@@ -1,0 +1,70 @@
+{
+  "symbol": "ASHWINI",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-21T07:51:35.820493Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Ashwini Container Movers offers a P/E of 13.60 that superficially passes my threshold, but a ROE of 0.72% reveals earnings so thin they offer no real return on the underlying assets. With no balance sheet data to verify margin of safety, this is speculation dressed as value.",
+    "key_strengths": [
+      "P/E of 13.60 narrowly satisfies my <15 requirement",
+      "High promoter holding of 66.67% suggests skin in the game",
+      "FII/DII combined at 14.57% indicates some institutional scrutiny"
+    ],
+    "key_risks": [
+      "ROE of 0.72% is near-zero — the business earns almost nothing on shareholders' capital",
+      "Road transport is a commoditized, low-barrier industry with no discernible moat",
+      "Critical Graham metrics (P/B, current ratio, D/E, dividend history) are unavailable — cannot confirm margin of safety"
+    ],
+    "red_flags": [
+      "ROE of 0.72% fails any reasonable profitability test — I demand businesses that demonstrate earning power",
+      "No balance sheet data provided — cannot calculate Graham Number or assess solvency",
+      "Small regional operator (Maharashtra/Gujarat only) with INR 208 Cr market cap — illiquid and operationally fragile",
+      "No dividend history mentioned — no evidence of real cash returns to shareholders"
+    ],
+    "detailed_analysis": "A P/E of 13.60 catches the eye, but it is a hollow figure when ROE stands at a mere 0.72%. That means for every 100 rupees of shareholders' equity, this company generates less than 1 rupee of profit. The Graham Number requires both earnings and book value to yield a fair price; with such feeble earning power, the Graham Number would be negligible regardless of book value. Incorporated only in 2012, this company also lacks the long earnings track record — ideally 5–10 years of uninterrupted profits — that I require before committing capital.\n\nRoad transport in India is a brutally competitive, low-margin commodity business. Ashwini operates regionally, confined largely to Maharashtra and Gujarat, giving it no geographic scale and no pricing power. The absence of P/B ratio, current ratio, debt-to-equity, and dividend history means I cannot complete even my basic checklist. Mr. Market may occasionally offer genuine bargains, but a business that earns practically nothing on its equity is not a bargain at any price — it is a slow drain on capital. I require a significant margin of safety, and here I cannot even determine what is safe.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "insufficient_data",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 36536,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.05489535,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 6947,
+      "cache_read_input_tokens": 9617,
+      "output_tokens": 1730,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 6947,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 340,
+          "cache_read_input_tokens": 7567,
+          "cache_creation_input_tokens": 1430,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1430
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

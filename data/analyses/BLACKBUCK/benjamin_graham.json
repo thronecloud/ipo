@@ -1,0 +1,70 @@
+{
+  "symbol": "BLACKBUCK",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T16:45:19.735722Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "BlackBuck has never produced a single year of positive net earnings in its recorded history — a disqualifying condition under any serious value framework. At P/B of 8.66 and P/E of 29.5 (on barely-there earnings), the market is pricing a speculative growth story with zero margin of safety.",
+    "key_strengths": [
+      "Debt virtually eliminated — D/E of 0.04, borrowings collapsed from INR 394 Cr to 48 Cr",
+      "EBITDA turned positive in 2025 (INR 128 Cr) after four consecutive negative years — operational inflection point",
+      "Gross margin of 74% signals software-like economics if the platform scales"
+    ],
+    "key_risks": [
+      "Zero earnings track record — five straight years of net losses (2021–2025), including -9 Cr in 2025",
+      "Revenue has CONTRACTED at -16.2% CAGR over four years (INR 867 Cr → 427 Cr) — a business shrinking in nominal terms",
+      "Valuation is stratospheric — P/B 8.66, P/S 19.27, EV/EBITDA 74.28 — any disappointment causes severe capital destruction"
+    ],
+    "red_flags": [
+      "No positive net earnings in any of the five years provided — Graham requires 3-5 consecutive years minimum",
+      "Other Income line collapsed to -308 Cr in 2025, masking operating reality and distorting reported figures",
+      "Recent IPO listing — investment banks priced this for sellers, not buyers; promoter holds only 25%, suggesting early investors distributed at peak",
+      "Forward P/E of 49.24 implies the market has already priced in years of future growth — pure speculation"
+    ],
+    "detailed_analysis": "BlackBuck fails virtually every quantitative test I require before committing capital. The Graham Number is mathematically inapplicable — you cannot take the square root of a negative number, and net profit remained negative (-INR 9 Cr) even in the most recent year. The P/B of 8.66 is nearly six times my upper threshold of 1.5; I would need to see assets liquidated at a massive premium just to break even. The revenue CAGR of -16.2% over four years is not a minor blemish — it tells me the original business model (freight marketplace) was abandoned and the company is rebuilding on a smaller, fee-based platform. That is entrepreneurial risk, not the stable earning power I demand.\n\nThe one concession I will make: the balance sheet has been cleaned up admirably — debt is near zero and EBITDA turned positive in FY2025. But cleaning up a balance sheet is not the same as demonstrating durable earning power. Mr. Market has already rewarded this inflection at a P/S of 19.27 and EV/EBITDA of 74.28, leaving absolutely no margin of safety for the ordinary investor. The \"Other Income\" line swinging to -308 Cr in FY2025 further clouds the true picture. This is precisely the kind of speculative situation — a recently listed technology platform with a checkered financial history, priced for perfection — that I have warned against throughout my career. The intelligent investor will wait on the sidelines until either the price falls dramatically or the earnings record becomes convincing over several years.",
+    "metrics_evaluated": {
+      "moat_strength": "insufficient_data",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 50603,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07131870000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8654,
+      "cache_read_input_tokens": 10674,
+      "output_tokens": 2377,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 8654
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 350,
+          "cache_read_input_tokens": 8624,
+          "cache_creation_input_tokens": 2080,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2080,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

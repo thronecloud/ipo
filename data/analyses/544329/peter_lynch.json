@@ -1,0 +1,69 @@
+{
+  "symbol": "544329",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-20T09:45:18.717687Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Leo Dryfruits is a tiny, newly-listed commodity trader in spices/dryfruits with near-zero profitability (ROE 0.17%) — the P/E of 6 is a mirage because the \"E\" is essentially nothing. There's no growth story, no moat, and no consumer brand I can identify — exactly the kind of microcap I walk away from.",
+    "key_strengths": [
+      "FMCG dryfruits/spices category has long-term secular demand tailwinds in India",
+      "P/E of 6 optically cheap if earnings ever normalize higher",
+      "Small 78 Cr market cap leaves theoretical room for scale-up"
+    ],
+    "key_risks": [
+      "ROE of 0.17% means the business is barely earning on its capital base",
+      "Low promoter holding (38.11%) for a 2019-incorporated microcap signals weak skin-in-the-game",
+      "Commodity trading of spices/dryfruits is a no-moat, price-taker business with thin margins"
+    ],
+    "red_flags": [
+      "ROE of 0.17% is effectively zero profitability",
+      "Only 38% promoter holding in a 5-year-old microcap is unusual",
+      "Zero DII and negligible FII (0.91%) — no institutional validation"
+    ],
+    "detailed_analysis": "Every stock needs a story, and I can't find one here. Leo Dryfruits was incorporated in November 2019 and trades spices and dry fruits — this is a commodity pass-through business, not a branded FMCG play like Haldiram's or Tata Consumer. The 0.17% ROE tells you everything: the company generates essentially no economic return on its capital. The low P/E of 6 is meaningless when earnings are this thin — a small cost shock or inventory write-down flips this to a loss. I want ROE above 12% and improving; this is two orders of magnitude short.\n\nFrom a GARP lens there's no \"G\" to pay for and no \"R\" worth owning. Growth data isn't provided, promoter holding at 38% is low for a founder-led microcap (good ones run 50-70%+), and institutional interest is near-zero. This looks like a recent SME-style listing riding FMCG-category enthusiasm without the economics to back it up. I'd need multi-year evidence of margin expansion, a branded SKU gaining shelf space, or promoter buying before revisiting. Pass.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 34432,
+    "model_used": "opus",
+    "total_cost_usd": 0.138172,
+    "usage": {
+      "input_tokens": 7,
+      "cache_creation_input_tokens": 10104,
+      "cache_read_input_tokens": 25324,
+      "output_tokens": 2493,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10104,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 83,
+          "cache_read_input_tokens": 11894,
+          "cache_creation_input_tokens": 1054,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1054
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

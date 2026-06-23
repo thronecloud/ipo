@@ -1,0 +1,69 @@
+{
+  "symbol": "544343",
+  "persona": "howard_marks",
+  "persona_display_name": "Howard Marks",
+  "analyzed_at": "2026-04-20T09:53:01.628485Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Small-cap IT services at P/E 8.9x with net cash (post-IPO equity jumped ₹67cr→₹171cr in FY25) offers some margin of safety, but revenue growth has collapsed from a 28% 5Y CAGR to just 2% YoY in FY25 and operating income actually contracted (₹34cr→₹30cr). Cheap optics mask a potentially broken growth story in a commoditized niche — fair value, not a bargain.",
+    "key_strengths": [
+      "Clean balance sheet: zero debt; IPO proceeds deployed (investing CF -₹77cr in FY25)",
+      "Strong returns on capital: ROE 20%, ROCE 26.5%; 5/5 years positive OCF",
+      "Undemanding P/E 8.9x with 74.67% promoter holding providing alignment"
+    ],
+    "key_risks": [
+      "Growth has stalled: revenue +2% YoY, EBITDA -9%, OCF -14% in FY25 — deceleration is real",
+      "Commoditized small-cap IT services; no visible moat vs global captive/offshoring giants",
+      "Recent IPO at cycle peak; float small (25%), liquidity and valuation de-rating risk"
+    ],
+    "red_flags": [
+      "FY25 operating income declined despite IPO cash infusion — margins compressing",
+      "₹6cr 'other income' boosting FY25 net profit; underlying operating profitability weakened",
+      "Investing CF -₹77cr suggests large treasury/non-core deployment rather than reinvestment in the business"
+    ],
+    "detailed_analysis": "Second-level thinking here: the market sees a ₹203cr IT micro-cap at 8.9x earnings with ~40% of market cap in net cash and asks \"why so cheap?\" The answer is in the FY25 print — revenue growth has essentially stopped (₹98cr→₹100cr), EBITDA contracted from ₹35cr to ₹32cr, and net profit only held flat because of a ₹6cr spike in other income (likely IPO-cash treasury yield). Strip that out and FY25 operating earnings are materially worse than FY24. That is the cycle-peak tell: the company IPO'd after a multi-year tailwind (global digital services boom post-2020) and the tailwind has turned.\\n\\nThat said, downside is contained. Book value is ~₹171cr against ₹203cr market cap, so you're paying ~₹32cr for a cash-generating business earning ₹26cr — a ~5x EV/earnings once you net cash. Promoter at 74.67% won't dump. If growth re-accelerates even to 10-12%, re-rating is plausible; if it doesn't, you're unlikely to lose much capital but your money dead-weights. Classic fair-risk/fair-reward — no margin-of-safety scream, no compelling asymmetry. Pass unless bought materially cheaper, or wait a quarter or two to see if FY26 revenue inflects before committing.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "excellent",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 38754,
+    "model_used": "opus",
+    "total_cost_usd": 0.14026575,
+    "usage": {
+      "input_tokens": 7,
+      "cache_creation_input_tokens": 11035,
+      "cache_read_input_tokens": 27174,
+      "output_tokens": 2307,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11035,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 173,
+          "cache_read_input_tokens": 12643,
+          "cache_creation_input_tokens": 1274,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1274
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

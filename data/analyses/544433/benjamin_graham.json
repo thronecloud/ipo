@@ -1,0 +1,70 @@
+{
+  "symbol": "544433",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-20T20:10:03.344809Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Valencia India is a sub-₹20 Cr micro-cap hotel operator incorporated only in 2017 with a derisory 0.21% ROE — the P/E of 8.77 is arithmetically low but rests on near-zero earnings, offering no demonstrable earning power. Without a multi-year profit record, adequate size, or any margin of safety, this fails virtually every quantitative test in Security Analysis.",
+    "key_strengths": [
+      "Headline P/E of 8.77 is below my <15 threshold",
+      "Promoter holding of 60% signals aligned insider ownership",
+      "Hospitality is a tangible-asset business (land/building collateral)"
+    ],
+    "key_risks": [
+      "ROE of 0.21% indicates earnings are effectively nil — 'cheap' P/E is illusory",
+      "Incorporated 2017 — lacks the 5–10 year uninterrupted earnings history I require",
+      "₹16.3 Cr market cap is far below my minimum-size rule; illiquid and fragile"
+    ],
+    "red_flags": [
+      "Negligible profitability (ROE 0.21%) inconsistent with genuine earning power",
+      "No visible dividend record for a capital-intensive hotel business",
+      "Zero institutional (FII) ownership — no external scrutiny",
+      "Micro-cap in a cyclical industry vulnerable to downturns"
+    ],
+    "detailed_analysis": "From a Graham standpoint, this security fails at the threshold tests. I require adequate size, a strong financial condition, and earnings stability over at least the past decade — Valencia India, incorporated in 2017 at ₹16.3 Cr market cap and generating a 0.21% return on equity, clears none of these. A P/E of 8.77 computed on essentially zero earnings is a statistical artifact, not evidence of value; multiplying a trivial EPS by any multiple yields a trivial price, and the Graham Number cannot be meaningfully computed without genuine earning power and disclosed book value.\n\nThe hospitality industry is cyclical and capital-hungry, which makes a tiny, young, barely-profitable operator precisely the kind of speculation I warn defensive investors against. Without current ratio, debt-to-equity, interest coverage, or dividend history in evidence, and with no margin of safety against intrinsic value that I can compute, prudence demands avoidance. Mr. Market is not offering a bargain here — he is offering a lottery ticket disguised as a low P/E.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "insufficient_data",
+      "valuation": "overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 30567,
+    "model_used": "opus",
+    "total_cost_usd": 0.100631,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 9142,
+      "cache_read_input_tokens": 13477,
+      "output_tokens": 1469,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9142,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 83,
+          "cache_read_input_tokens": 10591,
+          "cache_creation_input_tokens": 1437,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1437
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

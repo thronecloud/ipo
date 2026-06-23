@@ -1,0 +1,70 @@
+{
+  "symbol": "ICIL",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T17:38:00.737293Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "At a P/E of 48x and P/B of 2.37x, ICIL trades at roughly 53% above its Graham Number (~INR 180), offering zero margin of safety. A 9-year net profit CAGR of -0.2% while debt has ballooned 3.5x destroys any case for paying a premium.",
+    "key_strengths": [
+      "9+ consecutive years of positive (if stagnant) earnings — passes the earnings continuity test",
+      "Revenue growing at 8.1% CAGR with expanding top-line; INR 4,151 Cr in FY25",
+      "Interest coverage of ~4.6x (EBITDA 568 / Finance Cost 123) still clears my 3.5x floor"
+    ],
+    "key_risks": [
+      "Debt explosion: borrowings surged from INR 349 Cr (2020) to INR 1,243 Cr (2025); total debt INR 1,449 Cr — finance costs grew at 9.4% CAGR, reaching INR 123 Cr in FY25",
+      "Net profit CAGR of -0.2% over nine years — revenue grows, profits shrink; operating margin a razor-thin 4.86%",
+      "OCF positive in only 3 of last 5 years; FCF was -489 Cr (2022) and only +143 Cr (2025) — earnings quality is poor"
+    ],
+    "red_flags": [
+      "P/E of 48.1x — more than 3x my maximum threshold of 15x",
+      "P/B of 2.37x — well above my 1.5x ceiling; Graham Number ~INR 180 vs market price INR 276",
+      "Net profit in FY25 (INR 246 Cr) is BELOW FY16 levels (INR 251 Cr) — a decade of zero earnings growth",
+      "Debt/Equity at 0.54 breaches my 0.50 ceiling, and the trajectory is worsening — borrowings nearly doubled in one year (FY24: 956 Cr → FY25: 1,243 Cr)"
+    ],
+    "detailed_analysis": "ICIL fails virtually every quantitative filter I apply. The Graham Number — derived from EPS of roughly INR 12.4 and book value per share of roughly INR 117 — yields approximately INR 180, against a market price of INR 276. The buyer today pays a 53% premium above the Graham Number, meaning there is no margin of safety whatsoever. A P/E of 48x demands that earnings grow robustly; yet the 9-year net profit CAGR is -0.2%. Mr. Market is pricing in a story that the numbers simply do not support.\n\nThe balance sheet deterioration compounds the valuation problem. Total debt has risen from INR 876 Cr in FY23 to INR 1,449 Cr in FY25, while cash sits at only INR 106 Cr. Finance costs jumped to INR 123 Cr in FY25 — up from INR 28 Cr in FY21 — and are now consuming a meaningful share of EBITDA. Operating cash flow was negative in 2 of the last 5 years, and free cash flow has been deeply erratic. A textile manufacturer with a 4.86% operating margin carrying this debt load is highly vulnerable to any demand softness or currency headwind. The intelligent investor demands facts, not forward promises — and the facts here counsel avoidance.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 49730,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07549965,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9211,
+      "cache_read_input_tokens": 11148,
+      "output_tokens": 2507,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9211
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 394,
+          "cache_read_input_tokens": 9098,
+          "cache_creation_input_tokens": 2163,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2163,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

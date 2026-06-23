@@ -1,0 +1,70 @@
+{
+  "symbol": "544431",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-20T20:08:02.220354Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "ACE Alpha Tech fails nearly every Graham quantitative filter — ROE of 0.41% indicates negligible earning power, and the P/E of 12.4 on such trivial earnings implies the stock is expensive relative to true profitability. A tiny ₹156 Cr consultancy with no demonstrable earnings record offers no margin of safety.",
+    "key_strengths": [
+      "P/E of 12.4 is nominally below my 15 threshold",
+      "Promoter holding of 43.90% indicates some owner skin-in-the-game",
+      "Low institutional ownership (FII 0.19%) means no crowded momentum trade"
+    ],
+    "key_risks": [
+      "ROE of 0.41% is effectively zero — the business barely earns on capital",
+      "Recent listing / micro-cap with no 3-5 year proven earnings history visible",
+      "Consultancy business with no moat, no tangible assets, no dividend data provided"
+    ],
+    "red_flags": [
+      "ROE below risk-free rate — capital is being destroyed in real terms",
+      "No earnings track record disclosed; IPO/recent listing speculation risk",
+      "No balance sheet data — current ratio, D/E, book value all unknown; cannot verify solvency",
+      "Business description (legal/accounting/consultancy) inconsistent with 'IT - Software' classification — categorization ambiguity"
+    ],
+    "detailed_analysis": "From a Graham perspective this is a speculation, not an investment. The P/E of 12.4 is superficially attractive, but an ROE of 0.41% tells me earnings are a rounding error — on a ₹156 Cr market cap the company earns roughly ₹12.6 Cr at that P/E, but ROE near zero implies either a bloated equity base or razor-thin, unstable profits. I have no visibility into book value, current ratio, debt-to-equity, interest coverage, or dividend history — all of which I require before committing a rupee. The Graham Number cannot even be computed with the data given.\n\nFurthermore, the business itself — a micro-cap consultancy incorporated in 2012 and only recently visible on the exchange — has none of the durability I demand: no tangible asset backing, no multi-decade earnings record, no dividend stream. Mr. Market is offering this at a price with zero margin of safety against operational stumbles. I would avoid entirely and redirect capital toward established enterprises trading near or below book value with proven earning power.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "insufficient_data",
+      "valuation": "overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 54720,
+    "model_used": "opus",
+    "total_cost_usd": 0.09421125,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8939,
+      "cache_read_input_tokens": 13525,
+      "output_tokens": 1262,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8939,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 117,
+          "cache_read_input_tokens": 10639,
+          "cache_creation_input_tokens": 1186,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1186
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

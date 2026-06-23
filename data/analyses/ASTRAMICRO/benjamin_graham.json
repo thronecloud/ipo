@@ -1,0 +1,70 @@
+{
+  "symbol": "ASTRAMICRO",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T16:30:11.134740Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Astra Microwave trades at 64.7x earnings and 8.9x book value — roughly 5x my calculated Graham Number of ~₹211 — offering zero margin of safety. Despite a legitimate defense franchise, the price embeds pure speculation and the cash flow record disqualifies it on quantitative grounds.",
+    "key_strengths": [
+      "Defense/space moat: sole-source supplier of RF/microwave subsystems for DRDO, ISRO — durable government demand",
+      "Debt/Equity 0.24 and interest coverage ~4.7x (EBIT ₹269 Cr / finance cost ₹57 Cr) — balance sheet is not dangerous",
+      "Revenue and net profit both expanding with 9-year positive earnings track record (11–12% CAGR)"
+    ],
+    "key_risks": [
+      "Valuation extreme: P/E 64.7x vs my 15x ceiling; P/B 8.92x vs my 1.5x ceiling — Graham Number ~₹211 implies 80% downside to fair value",
+      "Chronic cash flow failure: OCF negative in 4 of last 5 years; FY25 net profit ₹154 Cr but OCF -₹90 Cr — earnings quality is deeply suspect",
+      "Finance costs growing at 16.9% CAGR, outpacing revenue (11.1%) — rising leverage burden eating into real returns"
+    ],
+    "red_flags": [
+      "P/B of 8.92x — paying nearly 9x net assets with no margin of safety whatsoever",
+      "Free cash flow negative ₹169 Cr in FY25 and ₹229 Cr in FY24 — profits are accounting constructs, not cash",
+      "Promoter holding only 6.54% — insiders have minimal skin in the game",
+      "Total debt jumped from ₹70 Cr (FY22) to ₹424 Cr (FY25) in three years while cash fell to ₹25 Cr"
+    ],
+    "detailed_analysis": "By every quantitative measure I have used for fifty years, Astra Microwave is a speculation masquerading as an investment. The Graham Number — √(22.5 × EPS ~₹16.2 × BVPS ~₹122) — yields roughly ₹211. The market charges ₹1,093, a 5.2x premium. A P/E of 64.7x demands that earnings grow rapidly and indefinitely; history shows the company earned only ₹10 Cr in FY19 and ₹29 Cr in FY21. Mr. Market is pricing perfection; I demand a discount to proven value.\n\nThe cash flow record is the final disqualifier. A business that earns ₹154 Cr on paper yet burns ₹90 Cr in operating cash in the same year is telling me something is wrong — whether it is working capital trapped in government receivables, aggressive revenue recognition, or both. Over five years, free cash flow was positive exactly once (FY22: +₹87 Cr). Meanwhile borrowings have ballooned sixfold since FY22 and finance costs now consume ₹57 Cr annually. The defense sector franchise is real and the operating margins (27%) are respectable, but I will not pay any price for a franchise. I require a price low enough that even a mediocre outcome leaves me whole. That price is nowhere near ₹1,093.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 54904,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07386899999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9320,
+      "cache_read_input_tokens": 11350,
+      "output_tokens": 2367,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9320,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 361,
+          "cache_read_input_tokens": 9300,
+          "cache_creation_input_tokens": 2070,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2070
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

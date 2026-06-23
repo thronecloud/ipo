@@ -1,0 +1,70 @@
+{
+  "symbol": "AVALON",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T16:34:12.356236Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Avalon Technologies fails both legs of the Magic Formula: earnings yield of ~1.5% (EBIT ₹115 Cr / EV ~₹7,568 Cr) is a fraction of the 12% minimum required, and ROCE of 12.8% falls well short of the 20%+ threshold for a \"good\" business. At P/E 77.8x and EV/EBITDA 52x, the market is pricing in perfection for a business with thin margins, volatile profits, and consistently negative free cash flow.",
+    "key_strengths": [
+      "Revenue growing at 11.3% CAGR (2020-2025) with operating income recovering to ₹115 Cr in FY25 after FY24 dip",
+      "Debt reduction underway — borrowings fell from ₹342 Cr (FY23) to ₹163 Cr (FY25), D/E now a modest 0.25x",
+      "Diversified EMS platform across aerospace, clean energy, and railways provides some end-market resilience"
+    ],
+    "key_risks": [
+      "Earnings yield of ~1.5% (EBIT/EV) is catastrophically low — Magic Formula requires >12%; stock is ~8x overpriced on this metric",
+      "Free cash flow has been negative for 3 consecutive years (FY23: -₹41 Cr, FY24: -₹18 Cr, FY25: -₹21 Cr) despite reported profits — working capital and capex are consuming all earnings",
+      "Net profit is wildly volatile (₹67 Cr → ₹28 Cr → ₹63 Cr in three years), suggesting no durable earnings power; operating margin at 9.6% is thin for capital-intensive EMS"
+    ],
+    "red_flags": [
+      "Earnings yield ~1.5% — one-tenth of Magic Formula's minimum 12% threshold",
+      "FCF negative in FY23, FY24, and FY25 despite accounting profits — earnings quality is poor",
+      "Net profit collapsed 58% from FY22 to FY24 then recovered; this is not the stable, high-ROIC business the Magic Formula targets",
+      "ROCE of 12.8% and ROE of 10.4% both below cost of capital for a mid-cap growth stock in India"
+    ],
+    "detailed_analysis": "Running the Magic Formula on Avalon: EBIT (FY25) = ₹115 Cr; Enterprise Value = ₹7,473 Cr market cap + ₹164 Cr debt − ₹69 Cr cash = ~₹7,568 Cr. Earnings Yield = 1.52% — a disaster. ROCE of 12.8% also fails the 20%+ threshold. Both legs of the formula point to the same conclusion: this is an average-quality business trading at a premium price, the exact opposite of what the Magic Formula seeks. The EV/EBITDA of 52x prices in a decade of flawless execution that the historical financials do not support.\n\nThe business fundamentals are mediocre at best. Revenue CAGR is a respectable 11%, but it comes with razor-thin operating margins (9.6%), high capital intensity (capex rising from ₹16 Cr to ₹46 Cr over three years), and working capital that consistently consumes operating cash flow — hence negative FCF every year since FY22. The IPO (FY23 equity jump from ₹87 Cr to ₹537 Cr) raised cash that has largely been deployed back into the business without visible ROIC improvement. Until Avalon demonstrates sustained ROCE above 20% and an earnings yield above 12% — which would require either a ~75% price drop or a 5-8x earnings expansion — the Magic Formula says stay away.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 44104,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07840995,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10891,
+      "cache_read_input_tokens": 8899,
+      "output_tokens": 2326,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10891,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 393,
+          "cache_read_input_tokens": 8899,
+          "cache_creation_input_tokens": 1992,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1992
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

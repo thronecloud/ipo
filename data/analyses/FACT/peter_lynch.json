@@ -1,0 +1,71 @@
+{
+  "symbol": "FACT",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-22T16:34:26.864640Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "FACT is a government-owned fertilizer PSU trading at a P/E of 3,944x on collapsing earnings of just INR 41 Cr, with no credible growth story to justify any premium. With negative operating margins, doubling debt, and revenues retreating 35% from peak, the stock is a value trap, not a ten-bagger.",
+    "key_strengths": [
+      "Brand recognition and distribution network across South India with farmer-facing services (soil testing, drones)",
+      "Gross margin of 47.47% suggests raw product pricing power when subsidy tailwinds align",
+      "90% government promoter backstop reduces near-term insolvency risk"
+    ],
+    "key_risks": [
+      "Borrowings nearly doubled from INR 1,810 Cr (FY24) to INR 3,837 Cr (FY25) — leverage crisis unfolding with D/E of 2.79x",
+      "Revenue collapsed 35% from INR 6,198 Cr peak (FY23) to INR 4,051 Cr (FY25), with net profit down 93% to INR 41 Cr",
+      "Operating margin is -3.28% — the core business is losing money operationally, not earning it"
+    ],
+    "red_flags": [
+      "P/E of 3,944x and EV/EBITDA of 136.5x — PEG ratio is effectively infinite on collapsing, near-zero earnings",
+      "FY2020 net profit of INR 976 Cr was fueled by INR 1,004 Cr 'Other Income' (government grants) — not real operating earnings; repeat is not plausible",
+      "Free cash flow turned negative in FY25 (-INR 13 Cr) while capex is rising (INR 153 Cr in FY25)",
+      "ROE of just 1.61% on a market cap of INR 58,414 Cr — shareholders earn essentially nothing",
+      "Debt surge in FY25 (borrowings +INR 2,027 Cr YoY) with no corresponding revenue or profit growth — capital being destroyed"
+    ],
+    "detailed_analysis": "From my seat at Magellan, I always ask: what's the story? FACT's story is a government fertilizer company that had a fleeting profit surge in FY20-23 driven largely by volatile \"Other Income\" — including INR 1,004 Cr in FY20 and INR 457 Cr in FY19 — that masked the operational reality. Strip those out and you see a business that has never demonstrated consistent, self-sustaining profitability. The operating margin is now -3.28%, revenues are sliding back toward pre-boom levels (INR 4,051 Cr in FY25 vs. INR 2,770 Cr in FY20), and the company has inexplicably doubled its borrowings in a single year to INR 3,837 Cr — a giant red flag with no clear revenue rationale.\n\nThe valuation is simply absurd by any GARP framework. A P/E of 3,944x on INR 41 Cr of earnings at a INR 58,414 Cr market cap requires an extraordinary growth story — and there isn't one here. Revenue CAGR over 9 years is only 9.8%, and the trajectory is now downward. I look for PEG below 1.0; this company doesn't even have a credible denominator. With 90% government ownership, there's no activist catalyst, no buyback lever, and a history of decisions driven by policy rather than shareholder value. This is precisely the kind of \"hot PSU\" that retail investors bid up on subsidy hopes, only to suffer for years. Hard pass.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 50181,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08204324999999998,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11149,
+      "cache_read_input_tokens": 9235,
+      "output_tokens": 2497,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11149,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 622,
+          "cache_read_input_tokens": 9235,
+          "cache_creation_input_tokens": 1914,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1914
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

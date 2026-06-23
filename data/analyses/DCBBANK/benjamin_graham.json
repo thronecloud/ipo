@@ -1,0 +1,69 @@
+{
+  "symbol": "DCBBANK",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T17:05:58.339737Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "DCB Bank trades at P/B of 1.0 and P/E of 8.59 — both within my quantitative filters — and at INR 189.8 sits meaningfully below my calculated Graham Number of ~INR 276, suggesting a nominal margin of safety. However, the opacity of a bank's true asset quality (NPAs absent from this data), volatile operating cash flows, and an alarmingly low promoter stake of 16.23% prevent me from endorsing it as a confident purchase.",
+    "key_strengths": [
+      "Graham Number ~INR 276 vs price INR 189.8 — stock trades at ~31% discount to this intrinsic value benchmark",
+      "Consistent 4-year earnings growth: net profit rose from INR 288 Cr (2022) to INR 615 Cr (2025), a 28.9% CAGR — exactly the earnings stability I demand",
+      "P/E of 8.59 and P/B of 1.0 satisfy my core valuation filters; the intelligent investor is not overpaying for assets"
+    ],
+    "key_risks": [
+      "Finance costs rising at 26.5% CAGR vs revenue CAGR of only 16.3% — cost of funds is outpacing earning power, a dangerous squeeze",
+      "Operating cash flow negative in 2 of 4 years (FY23: −INR 1,566 Cr; FY25: −INR 441 Cr) — a bank that cannot generate reliable operating cash is a bank I cannot trust",
+      "Promoter holding of only 16.23% signals that insiders have little skin in the game — the owner-operators I respect hold far more of their own enterprise"
+    ],
+    "red_flags": [
+      "No NPA, GNPA, or Net NPA data provided — for a bank, this is the single most important number; without it, the balance sheet is a black box",
+      "No dividend history referenced — I require a demonstrated record of returning cash to shareholders, and this bank provides none",
+      "Finance cost CAGR of 26.5% exceeds revenue CAGR of 16.3% — margins are being silently eroded"
+    ],
+    "detailed_analysis": "DCB Bank clears several of my most important quantitative hurdles. A P/E below 10, a price-to-book at precisely 1.0, and a price well beneath my Graham Number (sqrt(22.5 × ~19.1 EPS × ~176.7 BVPS) ≈ INR 276) all suggest the market is not demanding a speculative premium. Four consecutive years of growing net profit — from INR 288 Cr to INR 615 Cr — satisfies my requirement for a proven earnings record. These are not trivial achievements; most businesses I am asked to evaluate fail far earlier in the checklist.\n\nYet I am a conservative man, and banks demand conservatism above all else. The true hazard of any bank lies in its loan book — specifically, what fraction is impaired — and that data is entirely absent here. I am being asked to trust a balance sheet of INR 76,810 Cr without knowing the quality of the assets within it. Furthermore, finance costs growing at 26.5% CAGR against revenue growth of 16.3% is an arithmetic warning: the spread is narrowing. Negative operating cash flow in two of the last four years is consistent with aggressive loan-book expansion but is nonetheless disquieting. With a promoter holding of only 16.23%, I have little confidence that management's interests are aligned with mine. I would require NPA ratios below 2%, a dividend record, and a deeper discount — perhaps P/B closer to 0.7 — before converting this HOLD to a BUY.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 63852,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08391015,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9023,
+      "cache_read_input_tokens": 10533,
+      "output_tokens": 3127,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9023
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 587,
+          "cache_read_input_tokens": 8483,
+          "cache_creation_input_tokens": 2590,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2590,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

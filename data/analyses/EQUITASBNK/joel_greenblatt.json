@@ -1,0 +1,69 @@
+{
+  "symbol": "EQUITASBNK",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T17:16:07.466058Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Equitas SFB is a bank — explicitly excluded from the Magic Formula because financial companies' capital structures make EBIT/EV and ROIC meaningless. On the metrics that do apply, ROE of 2.42% and an 82% collapse in net profit (₹799 Cr → ₹147 Cr in FY25) signal a business earning far below its cost of equity.",
+    "key_strengths": [
+      "Revenue growing at 17.4% CAGR (2022→2025), showing franchise expansion",
+      "Forward P/E of 11.28x implies significant earnings recovery expectation, offering optionality if NIM normalizes",
+      "Strong DII backing at 50.87% provides institutional confidence and stability"
+    ],
+    "key_risks": [
+      "Finance costs ballooning 29.1% CAGR vs revenue 17.4% CAGR — cost of funds is crushing margins structurally",
+      "Net profit collapsed 82% from ₹799 Cr (FY24) to ₹147 Cr (FY25) — earnings base is unreliable",
+      "ROE of 2.42% is catastrophically below the ~12–15% cost of equity for an Indian SFB, indicating value destruction"
+    ],
+    "red_flags": [
+      "Magic Formula explicitly excludes financial companies — EBIT/EV and ROIC are not computable for a bank",
+      "Trailing P/E of 50.93x on collapsed earnings — 'cheap' forward multiple depends entirely on unproven recovery",
+      "Finance cost (₹3,060 Cr) is 75% of revenue (₹4,066 Cr) — structural margin squeeze with no near-term relief visible"
+    ],
+    "detailed_analysis": "Equitas SFB is a non-starter under the Magic Formula framework — Greenblatt explicitly excludes banks and financial institutions because leverage is core to their business model, making traditional EBIT/Enterprise Value and Return on Invested Capital calculations meaningless. A bank's \"debt\" is its deposits (raw material), not financial risk in the conventional sense. Applying Magic Formula here would produce nonsensical numbers and that's precisely why the methodology carves them out entirely.\n\nSetting the framework aside and evaluating on bank-specific merits, the picture is still poor. Finance costs have grown at 29.1% CAGR versus revenue at 17.4%, meaning the liability side is outpacing the asset side — a dangerous trajectory for any lender. FY25 net profit of ₹147 Cr (down from ₹799 Cr in FY24) reflects this squeeze dramatically, and ROE of 2.42% is essentially zero in real terms. A good bank compounds equity at 15–18% ROE; at 2.42%, Equitas is destroying value for shareholders. The forward P/E of 11.28x implies a ~4x earnings recovery — possible if rates ease and credit costs normalize, but that's a speculative bet, not a Magic Formula investment.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 34980,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.06901515,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10111,
+      "cache_read_input_tokens": 8483,
+      "output_tokens": 1903,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10111
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 324,
+          "cache_read_input_tokens": 8483,
+          "cache_creation_input_tokens": 1628,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1628,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

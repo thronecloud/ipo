@@ -1,0 +1,69 @@
+{
+  "symbol": "ASHOKA",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T16:30:21.235734Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Ashoka Buildcon is a government-dependent infrastructure EPC/BOT company whose apparently cheap P/E of 3.73x is a statistical mirage — the INR 1,734 Cr 2025 net profit was inflated by BOT asset monetisation (debt collapsed from INR 5,450 Cr to INR 1,989 Cr in a single year), with the forward P/E of 11.95x implying normalised earnings near ~INR 326 Cr. A capital-intensive construction business with no pricing power, recurring ~INR 1,000+ Cr annual finance costs, and loss-making years as recently as 2016–2019 does not meet the bar of a compounding machine worth owning.",
+    "key_strengths": [
+      "Aggressive deleveraging in 2025 (borrowings down ~64% to INR 1,989 Cr), structurally improving balance sheet quality",
+      "15.1% revenue CAGR over 9 years with consistently positive OCF in last 5 years, showing execution capability",
+      "Promoter holding of 54.47% and 50-year operating history provide management alignment and institutional credibility"
+    ],
+    "key_risks": [
+      "Earnings quality is severely compromised — Other Income has ranged from INR 64 Cr to INR 485 Cr year-to-year, and 2025's profit boom is largely non-recurring asset-sale gains, not underlying EPC profitability",
+      "Finance costs have been INR 800–1,310 Cr every single year since 2016, devouring 12–40% of revenue annually — this is structural leverage risk, not a temporarily overleveraged business",
+      "Zero economic moat: infrastructure EPC/BOT is a bid-driven, policy-dependent commodity business where contracts are won on price and government payment delays destroy FCF predictability"
+    ],
+    "red_flags": [
+      "Company was loss-making for 4 consecutive years (2016–2019, net losses of INR 224 Cr to INR 40 Cr) — this is not the historical record of a quality compounder",
+      "2025 net profit of INR 1,734 Cr vs. operating income of INR 2,920 Cr is arithmetically impossible without non-operating/exceptional gains; the forward P/E of 11.95x confirms normalised earnings are ~5x lower than the headline figure",
+      "Highly lumpy and government-dependent revenue — FCF ranged from INR 73 Cr (2021) to INR 1,573 Cr (2025), making any DCF exercise unreliable"
+    ],
+    "detailed_analysis": "Inversion first: what makes this a bad investment? Ashoka Buildcon operates in a sector I fundamentally distrust for long-term wealth creation — competitive EPC contracting, where the 'asset' walks out the door with every project completion and the moat is essentially zero. The business won contracts by bidding against dozens of rivals, then uses INR 1,000+ Cr of annual debt financing to fund working capital and BOT assets. The 2025 financials look spectacular (ROE 54.8%, ROCE 39.7%, net profit INR 1,734 Cr) but are almost entirely an accounting artefact: the company monetised BOT road assets, collapsed debt from INR 5,450 Cr to INR 1,989 Cr, and booked the resulting gains. The forward P/E of 11.95x (implying ~INR 326 Cr normalised earnings) is the honest number — at that level, you are paying 12x earnings for a cyclical, no-moat construction firm. The 9-year revenue CAGR of 15.1% and expanding EBITDA (INR 1,187 Cr → INR 3,038 Cr) are real achievements, but the business required ever-growing finance costs (INR 800 Cr → INR 1,245 Cr) to generate them, and EBITDA/finance cost coverage remains thin in normalised years.\n\nFrom a Munger mental-model perspective, this fails the 'great business at a fair price' test on almost every dimension. The business model is complex (EPC + BOT + HAM + RMC + Real estate), earnings are lumpy and non-auditable without deep project-level analysis, and the long operating history includes four straight years of net losses. The balance sheet improvement is real and worth watching, but the underlying earnings power — stripped of asset sales and 'Other Income' — is far too volatile and government-dependent for any sensible long-duration investment. P/B of 0.93x looks like a margin of safety, but construction book values are largely illiquid project assets and receivables. I would not own this business at any price that requires forecasting government payment behaviour and EPC margin sustainability simultaneously.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 68928,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.10336274999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 12201,
+      "cache_read_input_tokens": 8950,
+      "output_tokens": 3661,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 12201,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 448,
+          "cache_read_input_tokens": 8950,
+          "cache_creation_input_tokens": 3251,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 3251
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

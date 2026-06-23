@@ -1,0 +1,70 @@
+{
+  "symbol": "GOKULAGRO",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T17:27:51.635983Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Gokul Agro trades at INR 206 against a calculated Graham Number of ~INR 88 — a 134% premium — with P/B of 5.01 versus my maximum threshold of 1.5, making this a speculative price for a commodity edible-oil business. The razor-thin 2.33% operating margin and interest coverage of only ~2.9x (below my 3.5x floor) leave no margin of safety whatsoever.",
+    "key_strengths": [
+      "Unbroken earnings record across all 9 years (2016–2025) — passes my continuity test",
+      "Debt/Equity of 0.48 just clears my 0.5 threshold; absolute borrowings stable at ~INR 586 Cr in 2025",
+      "Operating cash flow positive all 5 available years; FCF recovered to INR 230 Cr in FY25"
+    ],
+    "key_risks": [
+      "P/B of 5.01 — paying five times book for a commodity business with no durable pricing power",
+      "Finance costs of INR 183 Cr consumed 74% of net profit (INR 246 Cr) in FY25 — perilous if margins compress even slightly",
+      "Operating margin of 2.33% in edible oils is structurally fragile; any input-cost shock (crude palm, soybean) erases profit"
+    ],
+    "red_flags": [
+      "Graham Number ≈ INR 88 vs. market price INR 206 — stock trades at 2.3× intrinsic value by my formula",
+      "Interest coverage ~2.9× (EBITDA INR 534 Cr ÷ finance cost INR 183 Cr) — below my 3.5× minimum",
+      "No dividend evidence — INR 246 Cr net profit with no documented return to shareholders; retained for working capital in a low-return commodity cycle",
+      "Total assets nearly doubled in two years (INR 3,207 Cr → INR 5,327 Cr) — aggressive balance sheet expansion in a thin-margin business is a hallmark of speculative leverage"
+    ],
+    "detailed_analysis": "Applying my strict quantitative filters, Gokul Agro fails on every valuation measure I consider essential. At P/E 20.3× I require ≤15×; at P/B 5.01× I require ≤1.5×. The Graham Number — the geometric mean of 22.5 times earnings per share and book value — computes to roughly INR 88 (EPS ~INR 8.3, BVPS ~INR 41.2), implying the stock must fall 57% before I would even begin to consider it. Mr. Market has assigned a growth premium to an edible-oil refiner whose entire business model is structurally constrained to sub-3% operating margins. That is not a franchise; it is a toll-road with no toll.\n\nThe balance sheet expansion is alarming from a conservative standpoint. Total assets surged from INR 3,207 Cr (2024) to INR 5,327 Cr (2025) — largely on the back of trade payables and working capital — while finance costs compounded at 18.4% annually and now absorb three-quarters of reported net profit. The nine-year earnings continuity is the sole genuine merit I can credit, but continuity of thin profits in a commodity sector is not the same as the durable earning power I require. An intelligent investor demands a margin of safety; here the margin of danger is self-evident.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 53691,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0780309,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9290,
+      "cache_read_input_tokens": 11098,
+      "output_tokens": 2657,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9290
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 433,
+          "cache_read_input_tokens": 9048,
+          "cache_creation_input_tokens": 2292,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2292,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

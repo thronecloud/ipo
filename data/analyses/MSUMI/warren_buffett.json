@@ -1,0 +1,69 @@
+{
+  "symbol": "MSUMI",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-22T16:31:40.133698Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "MSUMI is a capital-efficient wiring harness supplier with impressive ROCE (48.86%) and clean balance sheet (D/E: 0.14), but the stock trades at a punishing 42x P/E with operating margins of just 7.18% and catastrophically collapsed free cash flow (₹19 Cr in FY25 vs. ₹606 Cr net profit). A wonderful business at a wonderful price this is not — it's a decent business at a dangerous price.",
+    "key_strengths": [
+      "Exceptional capital efficiency: ROCE 48.86%, ROE 35.68% — rare for an auto parts supplier",
+      "Clean balance sheet with D/E of 0.14 and low finance costs (₹24 Cr on ₹9,272 Cr revenue)",
+      "Strong 3-year revenue CAGR of 18.4%, with EV/hybrid harness opportunity as a tailwind"
+    ],
+    "key_risks": [
+      "Cash flow collapse: OCF fell from ₹501 Cr (FY22) to ₹36 Cr (FY25) while net profit rose to ₹606 Cr — a ₹587 Cr gap demanding explanation",
+      "Customer concentration: 100% OEM-dependent with no pricing power; automakers squeeze suppliers relentlessly",
+      "42x P/E for a 7.18% operating margin business leaves zero margin of safety if growth disappoints"
+    ],
+    "red_flags": [
+      "Severe FCF-to-earnings divergence: FY25 net profit ₹606 Cr vs. FCF ₹19 Cr — suggests massive working capital buildup or aggressive earnings recognition",
+      "Cash position nearly wiped out: ₹293 Cr in FY22 to just ₹14 Cr in FY25 despite supposedly profitable operations",
+      "EBITDA declined year-over-year in FY25 (₹1,008 Cr vs. ₹1,020 Cr) while revenue grew 12% — margin compression already visible"
+    ],
+    "detailed_analysis": "MSUMI has the surface appearance of a quality business — high returns on capital, low debt, and a clear growth runway tied to India's auto sector. But I learned long ago that earnings are an opinion, and cash is a fact. This company reported ₹606 Cr in net profit in FY25 while generating only ₹19 Cr in free cash flow. That ₹587 Cr divergence is not a rounding error — it's a flashing red light. A business that can't convert its profits into cash is either consuming capital voraciously in working capital or managing its reported numbers too aggressively. Either way, it's not a business I'd want to own.\n\nThe valuation compounds the problem. At 42x P/E and 14x book, the market is pricing MSUMI like a consumer brand with a durable moat and predictable cash flows. But this is a contract manufacturer of wiring harnesses — a business where OEMs dictate pricing, switching costs are moderate at best, and margins are thin at 7.18%. The stock needs flawless execution just to justify today's price. Charlie and I prefer businesses where even a mediocre manager can do well. This one requires exceptional management just to tread water on valuation. I'd rather watch this from the sidelines.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 43835,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07742745,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10741,
+      "cache_read_input_tokens": 8649,
+      "output_tokens": 2303,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10741,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 262,
+          "cache_read_input_tokens": 8649,
+          "cache_creation_input_tokens": 2092,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2092
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

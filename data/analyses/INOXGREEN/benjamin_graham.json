@@ -1,0 +1,70 @@
+{
+  "symbol": "INOXGREEN",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T17:44:07.654746Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Inox Green trades at 163 INR against a computed Graham Number of ~25 INR — a 550% premium — with only two years of thin, declining profits (INR 28 Cr → 22 Cr) after six consecutive years of losses. At P/E 81.6x, P/B 3.04x, and ROE of just 1.02%, there is no margin of safety whatsoever.",
+    "key_strengths": [
+      "Debt almost eliminated: borrowings collapsed from INR 1,411 Cr (2021) to INR 95 Cr (2025), D/E now 0.05",
+      "Recurring O&M revenue model provides some earnings visibility in India's expanding wind fleet",
+      "Finance costs falling sharply (INR 57 Cr → 19 Cr) — structural improvement in interest burden"
+    ],
+    "key_risks": [
+      "Earnings history is disqualifying: net losses every year from 2018–2023; only 2 years profitable and profit is already shrinking (28 → 22 Cr)",
+      "Extreme valuation: EV/EBITDA 129x, P/E 81.6x on contracting EBITDA (94 Cr in 2025 vs 128 Cr in 2020)",
+      "Revenue stagnation: 7-year CAGR of -6.1%; 2025 revenue (236 Cr) is below 2018 (368 Cr)"
+    ],
+    "red_flags": [
+      "Graham Number ~INR 25 (sqrt(22.5 × 0.55 EPS × 50.27 BVPS)) versus market price of INR 163 — 6.5x overvalued by this measure",
+      "ROE 1.02% and ROCE 2.60%: equity base swelled via dilution (43 Cr → 2,020 Cr) yet earns almost nothing on it",
+      "OCF positive only 3 of last 5 years; FCF negative in 3 of 5 years; no dividend history",
+      "Massive investing outflow in 2025 (INR -637 Cr) funded entirely by equity raise (financing +572 Cr) — growth burns cash with no demonstrated payoff yet"
+    ],
+    "detailed_analysis": "Every quantitative filter I apply condemns this stock. The P/E of 81.6x exceeds my 15x ceiling by more than five times, the P/B of 3.04x doubles my 1.5x limit, and the computed Graham Number of roughly INR 25 exposes the current price of INR 163 as speculation, not investment. The company bled losses for six straight years (2018–2023), only squeaking into profit in 2024–2025 — and those profits are already declining. A business that earns INR 22 Cr on an equity base of INR 2,020 Cr produces an ROE of barely 1%, meaning shareholders are receiving almost nothing in return for their capital.\n\nThe debt reduction is genuine and commendable, but it was achieved through massive equity dilution rather than cash generation, which explains why the equity base sextupled while earnings remain negligible. The renewable energy narrative is fashionable, but Mr. Market has already priced in decades of growth that has not yet materialised — EV/EBITDA of 129x on contracting EBITDA is precisely the kind of speculative premium I warn the intelligent investor to avoid. The business may eventually earn its way to respectability, but at this price, the buyer bears all the risk and receives none of the reward.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 43218,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07333365,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8955,
+      "cache_read_input_tokens": 10928,
+      "output_tokens": 2431,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 8955
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 348,
+          "cache_read_input_tokens": 8878,
+          "cache_creation_input_tokens": 2127,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2127,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

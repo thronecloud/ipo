@@ -1,0 +1,69 @@
+{
+  "symbol": "544417",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-20T20:00:59.461654Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Aten Papers is a tiny (INR 16 Cr mcap), newly-listed paper intermediary with ROE of 0.67% — effectively no return on capital — in a commoditized, cyclical industry with no discernible moat. The optically low P/E of 2.94 is a value trap; I'd invert and ask what goes wrong, and the answer is almost everything.",
+    "key_strengths": [
+      "High promoter holding of 67.96% indicates skin in the game",
+      "Optically low P/E of 2.94 (though meaningless at 0.67% ROE)",
+      "Debt/earnings profile unknown but business is asset-light intermediary"
+    ],
+    "key_risks": [
+      "ROE of 0.67% — capital earns essentially nothing, failing basic quality test",
+      "Commoditized paper intermediary with zero pricing power or moat",
+      "Micro-cap (INR 16 Cr), incorporated 2019 — no long-term track record, high disruption risk"
+    ],
+    "red_flags": [
+      "ROE 0.67% is catastrophically below 12% minimum threshold",
+      "Zero FII/DII ownership — no institutional diligence",
+      "SME-scale paper trader with no differentiated business model"
+    ],
+    "detailed_analysis": "Inverting first: what makes this a bad investment? A 0.67% ROE means the business destroys value against any reasonable cost of capital (8%+). P/E of 2.94 sounds cheap, but cheap multiplied by garbage earnings quality equals a value trap. A paper supply-chain intermediary incorporated in 2019 has no durable advantage — it is a spread business dependent on volume and credit, exactly the kind of operation that gets squeezed when paper prices or working capital cycles turn.\n\nAt INR 16 Cr market cap with no institutional holders, this is a micro-cap that fails my first screen on quality. Munger's rule: a great business at a fair price beats a fair business at a great price; this is neither great nor even fair — it's a marginal business at an optically low price. Pass. The only rational action is to put it in the \"too hard\" pile and move on.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 31008,
+    "model_used": "opus",
+    "total_cost_usd": 0.0888295,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8778,
+      "cache_read_input_tokens": 13174,
+      "output_tokens": 1094,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8778,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 79,
+          "cache_read_input_tokens": 10447,
+          "cache_creation_input_tokens": 1058,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1058
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

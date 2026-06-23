@@ -1,0 +1,70 @@
+{
+  "symbol": "BEML",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-19T12:49:22.881945Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "BEML is a PSU conglomerate with 3.4% revenue CAGR over nine years, currently reporting a negative operating margin of -1.63% while trading at 59x earnings — a combination that insults the basic principle of paying a fair price for quality. Government ownership and bureaucratic management structurally suppress returns, with ROE of only 10.5% well below my 15% minimum threshold.",
+    "key_strengths": [
+      "Expanding operating income CAGR of 14.6% over 9 years signals improving operational leverage in defense/metro segments",
+      "Low Debt/Equity of 0.24 and improving equity base (reserves grew from INR 2,211 Cr to INR 2,759 Cr) provide balance sheet stability",
+      "Structural tailwinds from India's defense indigenisation and metro rail expansion underpin long-term order visibility"
+    ],
+    "key_risks": [
+      "Revenue growth of only 3.4% CAGR over 9 years in a capital-intensive business means returns are being ground away by inflation and reinvestment needs",
+      "Free cash flow is deeply erratic — negative in FY2021 and barely positive in FY2025 (INR -8 Cr) despite INR 293 Cr net profit, indicating poor earnings quality",
+      "Capex surging (INR 193 Cr in FY2025 vs INR 39 Cr in FY2022) while revenues stagnate around INR 4,000 Cr signals a capital trap in the making"
+    ],
+    "red_flags": [
+      "Negative operating margin (-1.63%) in the current period — a business earning negative returns on its core operations has no business trading at 59x P/E",
+      "Government PSU structure virtually guarantees management incentives misaligned with long-term value creation",
+      "FCF/Net Income ratio was essentially zero in FY2025 (INR -8 Cr FCF vs INR 293 Cr net profit) — earnings quality is poor",
+      "Borrowings spiked from INR 71 Cr (FY2024) to INR 666 Cr (FY2025) in a single year with no clear explanation in the data"
+    ],
+    "detailed_analysis": "BEML illustrates why I distrust government-run industrial conglomerates. Nine years of effort produced only 3.4% revenue CAGR — barely above India's inflation — while the business consumed enormous capital. The balance sheet borrowings nearly ten-tupled in one year (FY2024: INR 71 Cr → FY2025: INR 666 Cr) as capex accelerated to INR 193 Cr, yet revenues actually declined slightly from FY2024. This is the classic pattern of a capital-intensive business on a treadmill, running hard to stay in place.\n\nThe current negative operating margin (-1.63%) is disqualifying at any valuation, let alone 59x trailing P/E and 35x EV/EBITDA. Even accepting the optimistic view that defense/metro orders accelerate, the structural disadvantage of PSU management, government pricing constraints, and slow procurement cycles means the business cannot compound capital at rates that justify this price. Inversion tells me: the most likely outcome is continued mediocrity at an expensive price.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 169935,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.22379985000000002,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 23207,
+      "cache_read_input_tokens": 15132,
+      "output_tokens": 8815,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 23207,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 589,
+          "cache_read_input_tokens": 15132,
+          "cache_creation_input_tokens": 8075,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8075
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "symbol": "PRUDENT",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T22:02:28.361853Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Prudent is a genuinely wonderful, asset-light financial distribution business with exceptional returns (ROE 34%, ROCE 44%) and near-debt-free balance sheet, but the market has priced this quality well — 53x trailing P/E leaves precious little margin of safety for a business whose revenues are tethered to equity market levels and SEBI's regulatory mood.",
+    "key_strengths": [
+      "Asset-light distribution model: capex only INR 18 Cr on INR 1,133 Cr revenue, generating consistent FCF (5/5 years positive, INR 143 Cr in FY25)",
+      "Exceptional capital efficiency: ROE 34%, ROCE 44%, D/E of 0.04 — essentially a self-funding compounder with reserves growing from INR 111 Cr (2020) to INR 742 Cr (2025)",
+      "Explosive and consistent growth: revenue CAGR 30.9%, net profit CAGR 45.1% over 6 years with operating leverage visible (op income CAGR 39.3% > revenue CAGR)"
+    ],
+    "key_risks": [
+      "Regulatory risk: SEBI has a track record of disrupting distributor economics (banned upfront commissions 2018); a trail-commission cap or direct-plan push could structurally compress margins overnight",
+      "AUM/market-linked revenues: in a prolonged bear market, both new flows and trail income contract simultaneously — earnings are far less predictable than they appear in a bull-market 6-year window",
+      "Valuation offers no margin of safety at 53x P/E and 14.9x P/B — even modest growth disappointment or regulatory headwind could halve the multiple"
+    ],
+    "red_flags": [
+      "Heavy investing outflows (INR -142 Cr in FY25 vs OCF INR 161 Cr) warrant scrutiny — capital deployed into financial instruments needs monitoring for quality",
+      "P/E of 53x is well above my comfort zone; I've rarely paid above 20-25x even for exceptional businesses"
+    ],
+    "detailed_analysis": "Prudent is the kind of business I genuinely admire: it distributes mutual funds and financial products through a large IFA network, earns recurring trail commissions, requires almost no physical capital (zero CWIP, trivial capex), and converts earnings to cash at high rates. The numbers are nearly flawless — net profit compounded at 45% for six years, ROE consistently above 30%, and borrowings of just INR 32 Cr against equity of INR 763 Cr. The promoter holds 55% and institutions collectively own another 38%, signaling alignment and credibility. This is a business Charlie Munger would call a \"tollbooth on the Indian wealth management highway.\"\n\nThe problem, as always, is price. At INR 2,752 and 53x trailing earnings, the market has already awarded Prudent a valuation that demands perfection. The PEG looks tolerable (~1.2x on 6-year CAGR), but that CAGR was achieved in one of India's greatest bull markets for equities and SIPs. SEBI's regulatory hand is unpredictable, and direct mutual fund platforms (Zerodha, Groww) create secular pressure on distributor economics. I'd want to own this at 30-35x earnings — closer to INR 1,600-1,800 — where I'd have a genuine margin of safety. At today's price, it's a fine business I'd watch closely but would not buy.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "excellent",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 53487,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08124690000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11038,
+      "cache_read_input_tokens": 8818,
+      "output_tokens": 2480,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11038,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 291,
+          "cache_read_input_tokens": 8818,
+          "cache_creation_input_tokens": 2220,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2220
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

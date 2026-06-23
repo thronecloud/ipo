@@ -1,0 +1,69 @@
+{
+  "symbol": "544340",
+  "persona": "radhakishan_damani",
+  "persona_display_name": "Radhakishan Damani",
+  "analyzed_at": "2026-04-20T19:37:58.384961Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Rikhav Securities is a small-cap stockbroker riding the retail broking boom — revenue tripled to INR 328 Cr in 2025 but net profit fell to INR 24 Cr from INR 42 Cr and operating cash flow swung to -INR 188 Cr. Broking is a cyclical, commoditised business that sits outside my circle of competence; the cheap 6.6x P/E reflects earnings volatility, not value.",
+    "key_strengths": [
+      "Low borrowings (INR 5 Cr vs equity of INR 244 Cr) — conservative balance sheet",
+      "Promoter holding healthy at 64.06%",
+      "Reported ROCE 16.7% and P/E 6.63 optically cheap"
+    ],
+    "key_risks": [
+      "Net profit fell 43% YoY (INR 42→24 Cr) despite revenue tripling — margin collapse",
+      "Operating CF negative in 3 of last 4 years (-188 Cr in 2025) — poor earnings quality",
+      "Broking is cyclical and commoditised; earnings tied to market volumes and retail euphoria"
+    ],
+    "red_flags": [
+      "Operating CF -INR 188 Cr in 2025 vs reported PAT of +INR 24 Cr — huge divergence",
+      "Profit declining while revenue explodes suggests unsustainable trading income or pricing pressure",
+      "Tiny INR 159 Cr market cap with FII/DII near zero — low institutional scrutiny"
+    ],
+    "detailed_analysis": "This is not the kind of business I buy. Stockbroking earnings are tied to market cycles — volumes, IPO activity, F&O churn — and the last two years of Indian retail exuberance have inflated the entire sector. Rikhav's numbers tell the story: revenue 36→49→111→328 Cr, but net profit peaked at 42 Cr in FY24 and has already dropped to 24 Cr in FY25. Operating cash flow of -INR 188 Cr against a reported PAT of +INR 24 Cr is a massive red flag; in broking this usually reflects client funding/margin book swings, but it means accounting profit is not cash. I want predictable consumer demand, not market-linked earnings.\n\nThe balance sheet is clean (debt of just INR 5 Cr, equity of INR 244 Cr after what looks like a fresh equity raise) and promoter holding at 64% is acceptable — those are the only positives. But ROE of 12.9% is below my 15% floor, there is no dividend history visible, and the business has no moat against bigger discount brokers like Zerodha, Groww, or Angel One. The optically low P/E of 6.6x is a classic cyclical trap: cheap on peak earnings that are already rolling over. I would leave this alone and wait for a quality consumer or financial compounder at a fair price.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 29347,
+    "model_used": "opus",
+    "total_cost_usd": 0.10887875,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 10031,
+      "cache_read_input_tokens": 14460,
+      "output_tokens": 1557,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10031,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 150,
+          "cache_read_input_tokens": 11516,
+          "cache_creation_input_tokens": 1459,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1459
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

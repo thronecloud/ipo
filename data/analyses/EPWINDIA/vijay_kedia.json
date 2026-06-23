@@ -1,0 +1,69 @@
+{
+  "symbol": "EPWINDIA",
+  "persona": "vijay_kedia",
+  "persona_display_name": "Vijay Kedia",
+  "analyzed_at": "2026-04-21T07:47:54.378364Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "EPW India shows explosive top-line growth (7 Cr → 53 Cr in 3 years) with strong promoter holding, but the refurbished electronics business is inherently commoditized with no moat, and the current P/E of 31x on a cash-burning, debt-funded growth model is far outside my SMILE entry zone. Growth alone does not make a multibagger — free cash flow does.",
+    "key_strengths": [
+      "Hyper-growth revenue trajectory — 7x in 3 years (FY23: 7 Cr → FY25: 53 Cr) signals real execution",
+      "Promoter holding at 71.43% — strong skin in the game, no dilution observed",
+      "ROCE of 65.7% shows capital is being deployed productively at an operational level"
+    ],
+    "key_risks": [
+      "P/E at 31.2x is double my upper limit of 15x for small-caps — market has already priced in the story",
+      "Borrowings surged from zero to 12 Cr in FY25, pushing D/E to ~2.4x (my red-flag threshold is 0.6)",
+      "FCF deeply negative at -12 Cr in FY25 — operating CF of -11 Cr means the business is burning cash to fund working capital, a dangerous sign in a thin-margin hardware distribution model"
+    ],
+    "red_flags": [
+      "Refurbished electronics is structurally commoditized — no pricing power, no moat, easy to replicate by any distributor",
+      "Revenue growing 7x but net profit only 4 Cr — absolute profitability is tiny relative to 129 Cr market cap (P/B astronomically high on 5 Cr equity)",
+      "Negative OCF in FY25 with 12 Cr debt raised via financing CF — classic sign of working capital-heavy trading business, not a scalable tech company"
+    ],
+    "detailed_analysis": "EPW India fits the 'S' (small size) box but fails almost every other SMILE criterion. The revenue growth is visually impressive but masks a fundamental issue: this is a hardware distribution/refurbishing business, not a technology company. Gross margins in refurbished electronics are structurally 8–15%, and operating income of 6 Cr on 53 Cr revenue (11% EBITDA) on a base of near-zero equity inflates ROE/ROCE metrics to meaningless levels. The 'E' (extra-large market) case is weak — the refurb laptop TAM exists, but it is fragmented, commoditized, and requires no differentiation to enter, which means EPW has no durable competitive advantage.\n\nThe financial picture in FY25 is actually deteriorating in quality even as revenue grows: operating cash flow was -11 Cr (working capital consumption from rapid scaling), free cash flow was -12 Cr, and the company borrowed 12 Cr just to fund this growth. At a P/E of 31.2x on a 4 Cr net profit, the market is pricing EPW like a software company. I want to enter at 8–15x P/E with positive FCF and D/E below 0.4. EPW meets none of these criteria at the current price of 118. I would revisit only if price corrects 60–70% or the business demonstrates a clear move into higher-margin, defensible product categories.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 52088,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07473044999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8273,
+      "cache_read_input_tokens": 10309,
+      "output_tokens": 2707,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8273,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 459,
+          "cache_read_input_tokens": 8144,
+          "cache_creation_input_tokens": 2294,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2294
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

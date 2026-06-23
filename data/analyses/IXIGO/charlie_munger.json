@@ -1,0 +1,69 @@
+{
+  "symbol": "IXIGO",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T17:55:34.763114Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "IXIGO operates an asset-light OTA business with an interesting tier-2/3 India niche and strong FCF conversion in FY25, but ROCE of 12.6% fails my 15% threshold and the market is charging 133x trailing earnings for a 7% operating margin business. At this price, there is no margin of safety whatsoever.",
+    "key_strengths": [
+      "Asset-light model with 81.7% gross margins and near-zero debt (D/E: 0.04), showing genuine capital efficiency at the gross level",
+      "Strong revenue trajectory: ₹40 Cr (2019) → ₹914 Cr (2025), 68.5% CAGR, with FCF turning robustly positive at ₹118 Cr in FY25",
+      "Defensible train + bus niche (ConfirmTkt, AbhiBus brands) targeting underserved tier-2/3 India travelers where MakeMyTrip is weaker"
+    ],
+    "key_risks": [
+      "Intensely competitive OTA market with MakeMyTrip/Goibibo having far deeper pockets and brand recall — switching costs for consumers are essentially zero",
+      "Operating margins at 7.08% leave no room for error; net profit actually declined from ₹73 Cr (FY24) to ₹60 Cr (FY25) despite 39% revenue growth — margin dilution is happening",
+      "ROIC proxies (ROE 9.74%, ROCE 12.60%) are structurally below the 15% floor required to justify a quality premium, let alone a 133x P/E"
+    ],
+    "red_flags": [
+      "'Other Income' of ₹39 Cr (FY24) and ₹23 Cr (FY25) is contributing materially to net profit — strip it out and FY24 operating profit was only ₹38 Cr; earnings quality is weaker than headline suggests",
+      "Forward P/E of 57x still requires extraordinary growth and margin expansion that is far from guaranteed in a commoditized travel aggregation business",
+      "FII ownership at 64.19% creates crowded-trade risk; any global risk-off or re-rating of Indian internet/OTA multiples could compress the stock violently"
+    ],
+    "detailed_analysis": "Inverting first, as I always do: what would have to go wrong here? Almost everything already is, except the revenue line. The business earns a 7% operating margin in a sector where the dominant player (MakeMyTrip) with far superior scale earns only modestly better margins. IRCTC — the government monopoly on train ticketing — is IXIGO's upstream landlord on its largest volume category. That is not a moat; it is a dependency. ROCE at 12.6% tells me this business is not yet earning its cost of capital on an economic basis, yet the market prices it at 119x EV/EBITDA as though it already is a compounding machine. The math simply does not work.\n\nThe FY25 FCF of ₹118 Cr is genuinely encouraging and the balance sheet is clean. But the net profit actually fell from ₹73 Cr to ₹60 Cr year-over-year despite 39% revenue growth — a warning sign that costs are scaling faster than the topline. The reliance on \"Other Income\" (interest on IPO proceeds, one-time items) to flatter reported profits is precisely the kind of accounting murkiness I find uncomfortable. A great business does not need financial engineering to look profitable. At 133x trailing P/E, the market has priced in a decade of flawless execution in a business with thin margins, fierce competition, and no durable pricing power. I will not pay a premium price for a mediocre moat.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 53291,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08294145,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10915,
+      "cache_read_input_tokens": 8704,
+      "output_tokens": 2626,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10915
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 457,
+          "cache_read_input_tokens": 8704,
+          "cache_creation_input_tokens": 2211,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2211,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

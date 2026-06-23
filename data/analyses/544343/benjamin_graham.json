@@ -1,0 +1,68 @@
+{
+  "symbol": "544343",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-20T09:50:01.930153Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "CapitalNumbers passes most of my quantitative filters — P/E 8.91, P/B ~1.19, zero debt, 20% ROE, and six consecutive profitable years — a rarity among recent IPOs. However, the 2025 equity jump from 67 Cr to 171 Cr reveals fresh IPO proceeds that have yet to earn their keep, so I remain cautious until deployment is proven.",
+    "key_strengths": [
+      "Graham Number ~153 vs price 98.10 gives ~36% margin of safety",
+      "Debt-free balance sheet; finance cost has fallen to zero",
+      "Net profit CAGR 39% with 5/5 years of positive operating cash flow"
+    ],
+    "key_risks": [
+      "Recent IPO (2025) — no multi-year track record as a listed entity; promoter/seller knows more than buyer",
+      "77 Cr investing outflow in 2025 — IPO cash not yet productive, ROE will dilute",
+      "Small-cap IT services (100 Cr revenue) — vulnerable to client concentration and INR/wage cycles"
+    ],
+    "red_flags": [
+      "IPO premium pricing — fresh listing with unproven capital allocation of 64 Cr financing inflow",
+      "No meaningful dividend history disclosed — cash return to shareholders unproven"
+    ],
+    "detailed_analysis": "On the numbers alone, this security clears several of my defensive screens: P/E under 10, P/B comfortably below 1.5 (book value per share ~82.65 vs price 98.10), no borrowings, interest coverage effectively infinite, and earnings that have compounded from 5 Cr to 26 Cr over 2020–2025. The Graham Number calculation — sqrt(22.5 × 12.56 EPS × 82.65 BVPS) ≈ 153 — suggests intrinsic value roughly 55% above the current quote, an unusual finding for a recent listing. ROCE of 26.5% and operating CF positive in every year of the record further corroborate genuine earning power rather than accounting fiction.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "excellent",
+      "valuation": "undervalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 29296,
+    "model_used": "opus",
+    "total_cost_usd": 0.11219950000000001,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 10256,
+      "cache_read_input_tokens": 14539,
+      "output_tokens": 1632,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10256,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 197,
+          "cache_read_input_tokens": 11653,
+          "cache_creation_input_tokens": 1489,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1489
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

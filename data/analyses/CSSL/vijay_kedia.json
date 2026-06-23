@@ -1,0 +1,71 @@
+{
+  "symbol": "CSSL",
+  "persona": "vijay_kedia",
+  "persona_display_name": "Vijay Kedia",
+  "analyzed_at": "2026-04-21T08:03:21.734862Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "CSSL is a low-margin, capital-hungry facility management business that looks superficially attractive with 37% revenue growth but is burning cash aggressively (-₹26 Cr FCF in FY25) while debt nearly tripled to ₹128 Cr in a single year. Without operating leverage and with net profits actually declining despite top-line growth, this fails the SMILE test on the most critical financial hygiene criteria.",
+    "key_strengths": [
+      "Strong promoter holding at 73% — high skin in the game",
+      "Revenue momentum is real: 309→476 Cr in 2 years (54% growth)",
+      "ROCE at 20.4% suggests decent capital deployment at the operating level"
+    ],
+    "key_risks": [
+      "Debt explosion: borrowings jumped from ₹53 Cr to ₹128 Cr in one year — D/E now 0.94, well above my 0.6 threshold",
+      "Chronic cash burn: OCF positive only 1 of 3 years; FCF worsening to -₹26 Cr in FY25 despite scale",
+      "Margin trap: EBITDA margins stuck at ~7% with finance costs doubling to ₹10 Cr — net profit actually fell from ₹12 Cr to ₹10 Cr despite 37% revenue growth"
+    ],
+    "red_flags": [
+      "D/E of 0.94 — hard breach of my 0.6 ceiling",
+      "Free cash flow -₹26 Cr in FY25 and deteriorating year-on-year",
+      "Net profit DECLINED in FY25 (₹12 Cr → ₹10 Cr) despite strong revenue growth — a classic value-destruction signal",
+      "Other income turned negative (-₹2 Cr) in FY25 suggesting one-time losses or write-offs",
+      "CWIP spike to ₹22 Cr suggests heavy capex overhang with uncertain returns"
+    ],
+    "detailed_analysis": "CSSL operates in integrated facility management — security, maintenance, staffing, telecom/IT services — a sector that is fragmented, labor-intensive, and structurally thin-margin. At first glance, 37% revenue growth and 73% promoter holding look promising, and the ₹243 Cr market cap fits my small-cap sweet spot. But the financial quality beneath the surface is deeply concerning. Borrowings nearly tripled from ₹53 Cr to ₹128 Cr in FY25 alone, pushing D/E to 0.94 — far beyond my tolerance. Finance costs doubled to ₹10 Cr and are now consuming a disproportionate share of a thin profit pool. This is a business growing on borrowed money, not on operating leverage.\n\nThe hallmark of a multibagger is that profitability expands faster than revenue — the exact opposite is happening here. EBITDA margins have barely moved (6–7%), operating cash flow is structurally negative, and net profit fell despite top-line gains. The CWIP of ₹22 Cr signals ongoing capex commitments that will continue pressuring FCF. Facility management has genuine secular tailwinds from India's formalization and outsourcing trends, but this business shows no evidence of the pricing power or asset-light model needed to turn scale into compounding returns. At P/E of 18.8x for a company with declining profits and rising debt, valuation offers no margin of safety. Pass.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 46525,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.06941264999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8079,
+      "cache_read_input_tokens": 10308,
+      "output_tokens": 2401,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8079,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 357,
+          "cache_read_input_tokens": 8143,
+          "cache_creation_input_tokens": 2101,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2101
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "symbol": "ENCOMPAS",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-21T07:55:58.250307Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Encompass Design trades at 32x earnings while generating a near-zero ROE of 0.50%, making it one of the worst GARP mismatches I've seen — you're paying a growth premium for a business barely earning above nothing. There is no coherent \"story\" here that justifies the valuation.",
+    "key_strengths": [
+      "Promoter holding at 58.94% suggests reasonable skin in the game",
+      "Small market cap (INR 347 Cr) means a genuine turnaround could move the needle significantly",
+      "Consumer brand-building theme taps into India's long-term consumption story"
+    ],
+    "key_risks": [
+      "ROE of 0.50% is effectively zero — capital is being destroyed, not compounded",
+      "P/E of 32.2x with no visible earnings power makes PEG essentially infinite",
+      "Vague business description ('builds and scales brands') signals no identifiable competitive moat"
+    ],
+    "red_flags": [
+      "ROE 0.50% — catastrophically low; Lynch avoids businesses that can't earn their cost of equity",
+      "P/E 32x on near-zero profits is extreme overvaluation with zero margin of safety",
+      "No revenue or earnings growth data available — the 'story' is missing entirely",
+      "Name/brand pivot to 'ScaleSauce' signals identity confusion, not execution clarity"
+    ],
+    "detailed_analysis": "From a GARP standpoint, Encompass Design fails at the most basic level. A P/E of 32.2x demands strong earnings growth — I'd want to see 25-30%+ EPS growth to even consider that multiple. Instead, ROE sits at a laughable 0.50%, which tells me this business generates virtually no return on the capital shareholders have entrusted to management. My PEG ratio framework breaks down entirely here because the denominator (earnings growth) is negligible, making this stock astronomically overpriced relative to any realistic growth expectation.\n\nThe business narrative is also worryingly thin. \"Builds and scales consumer brands\" could mean anything — it's the kind of vague pitch that makes me nervous. Lynch's rule is simple: if you can't explain what a company does in two minutes, don't own it. Classified as a Trading & Distributor, this isn't even a true brand-builder with IP or recurring revenue — it's likely an intermediary with thin margins. With FII ownership at 7.87%, some institutional money is in, but given the fundamentals, that may reflect speculation rather than conviction. I'd walk away.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 32230,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0589146,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8776,
+      "cache_read_input_tokens": 7552,
+      "output_tokens": 1582,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8776,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 388,
+          "cache_read_input_tokens": 7552,
+          "cache_creation_input_tokens": 1224,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1224
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

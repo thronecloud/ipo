@@ -1,0 +1,71 @@
+{
+  "symbol": "DHARARAIL",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-21T07:44:47.014522Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "At P/E 36x and P/B ~7.4x, Dhara Rail Pro trades at 2.6× its Graham Number of ~₹44, offering zero margin of safety. Operating cash flow has been negative all three years, meaning reported profits are an accounting fiction with no cash substance.",
+    "key_strengths": [
+      "Revenue growing steadily: ₹27 Cr (2023) → ₹44 Cr (2025), ~27% CAGR",
+      "Near-zero finance costs and moderate absolute debt (₹21 Cr in 2025)",
+      "High promoter holding at 74.56% aligns management with long-term ownership"
+    ],
+    "key_risks": [
+      "Operating CF negative all 3 years (-₹2, -₹2, -₹5 Cr) — profits never convert to cash",
+      "Other Income (₹4 Cr) comprised ~57% of 2025 net profit (₹7 Cr) — operating earnings are far weaker than headline numbers suggest",
+      "Debt-to-Equity ~1.05x (₹21 Cr debt vs ₹20 Cr equity) — well above Graham's 0.5x threshold"
+    ],
+    "red_flags": [
+      "Graham Number ≈ ₹44 vs. current price ₹116 — trading at 2.6× intrinsic value by my formula",
+      "Zero dividends — no proven cash return to shareholders in any year",
+      "P/B ~7.4x (₹148 Cr market cap / ₹20 Cr equity) — vastly exceeds my 1.5x ceiling",
+      "Persistent negative free cash flow despite positive net income signals aggressive accrual accounting",
+      "Micro-cap (₹148 Cr) with only 3 years of earnings history — insufficient track record"
+    ],
+    "detailed_analysis": "By every quantitative standard I apply, Dhara Rail Pro fails the test for an intelligent investment. The P/E of 36x is more than double my ceiling of 15x, and the price-to-book of roughly 7.4x is nearly five times my preferred maximum of 1.5x. My Graham Number — the geometric mean anchored in actual earnings power and asset value — computes to approximately ₹44, meaning Mr. Market is demanding a 163% premium over what the business is worth by tangible standards. There is no margin of safety here; there is only speculation.\n\nThe earnings quality is deeply troubling. In 2025, ₹4 Cr of the ₹7 Cr net profit came from \"Other Income\" rather than core operations, yet operating cash flow was a negative ₹5 Cr. This is precisely the kind of divergence between accounting income and real cash that has ruined investors throughout history. A business that reports growing profits while consuming cash every single year is not creating wealth — it is deferring reckoning. Combined with a debt-to-equity ratio above 1.0x and no dividend record whatsoever, this company offers the speculator's cocktail: a compelling story, inflated valuation, and no cash evidence to support it.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 41733,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07499085,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10009,
+      "cache_read_input_tokens": 8027,
+      "output_tokens": 2336,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10009,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 434,
+          "cache_read_input_tokens": 8027,
+          "cache_creation_input_tokens": 1982,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1982
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "symbol": "CAPILLARY",
+  "persona": "howard_marks",
+  "persona_display_name": "Howard Marks",
+  "analyzed_at": "2026-04-18T16:56:13.433502Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Capillary Technologies trades at 420x P/E on its first year of marginal profitability (INR 13 Cr net profit), pricing in a decade of perfect execution while free cash flow was deeply negative (-94 Cr in FY2025) and operating cash flow *deteriorated* despite the so-called earnings turnaround. The price leaves zero margin of safety and assumes no stumble on a journey that has stumbled every single year from 2021–2024.",
+    "key_strengths": [
+      "Strong revenue CAGR of 36.7% over 4 years (INR 171 Cr → 598 Cr), demonstrating real product-market fit in enterprise loyalty/CRM SaaS",
+      "Balance sheet is relatively clean with net cash position (cash INR 201 Cr vs. total debt INR 106 Cr) and low D/E of 0.17",
+      "First profitable year (FY2025 EBITDA INR 72 Cr) after years of losses signals an inflection — if sustained, operating leverage could materialize"
+    ],
+    "key_risks": [
+      "Valuation is euphoric: 420x P/E and 51.78x EV/EBITDA on 5.2% operating margins — the business must execute perfectly for many years just to grow into this price",
+      "Cash flow quality is deeply suspect: FY2025 EBITDA was +72 Cr yet OCF was -46 Cr and FCF was -94 Cr — earnings and cash are diverging sharply, a serious red flag",
+      "Profitability track record is essentially nonexistent: four consecutive years of net losses (cumulative ~INR 269 Cr), and ROE/ROCE of ~2.6-2.9% even in the 'good' year — capital returns are near-zero"
+    ],
+    "red_flags": [
+      "P/E of 420x on just INR 13 Cr net profit — one bad quarter erases the entire earnings base",
+      "Operating cash flow turned negative in FY2025 (-46 Cr) after being positive in FY2024 (+97 Cr) — a regression in the very year EBITDA turned positive, unexplained by capex alone",
+      "FCF of -94 Cr in FY2025 with rising capex (47 Cr vs. 37 Cr in FY2024) — this is not a cash-generative business yet",
+      "Consensus appears uniformly bullish on the turnaround narrative, with no acknowledgment that breakeven was achieved on an accounting basis only, not a cash basis"
+    ],
+    "detailed_analysis": "The core problem here is not whether Capillary is a good business — it may well be — but what the price already reflects. At INR 4,492 Cr market cap against INR 13 Cr net profit and *negative* free cash flow of -94 Cr, the market is not paying for what exists today; it is paying a very large price for a future that has yet to materialize. Second-level thinking demands we ask: what can go wrong? The answer is plenty. The company burned INR 269 Cr in cumulative net losses from 2021–2024, and FY2025's \"profitability\" is paper-thin — EBITDA of 72 Cr but operating cash outflow of 46 Cr suggests aggressive revenue recognition, rising receivables, or deferred costs coming due. ROE of 2.56% on a 597 Cr equity base is capital destruction territory.\n\nFrom a cycle and risk standpoint, this has all the hallmarks of a late-cycle enthusiasm trade: a loss-making tech company with a compelling SaaS narrative that just crossed accounting breakeven, immediately awarded a triple-digit earnings multiple before cash generation is proven. The EV/EBITDA of 51.78x demands not just sustained 35% growth, but *improving* margins and positive cash conversion for the next 7–10 years with no macro disruption. The downside scenario — if revenue growth decelerates to 15-20% or margins stall — implies a fair EV/EBITDA of 20-25x, suggesting 50-60% downside from current levels. There is no margin of safety here; the risk/reward is deeply asymmetric in the wrong direction.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 55990,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0719562,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 7564,
+      "cache_read_input_tokens": 9274,
+      "output_tokens": 2720,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 7564
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 369,
+          "cache_read_input_tokens": 7220,
+          "cache_creation_input_tokens": 2398,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2398,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

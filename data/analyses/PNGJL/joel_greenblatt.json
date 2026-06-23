@@ -1,0 +1,69 @@
+{
+  "symbol": "PNGJL",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T22:03:20.030252Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "PNGJL trades at an earnings yield of only ~3.4% (EBIT ₹337 Cr / EV ~₹9,897 Cr), far below the Magic Formula's 12%+ threshold, making it significantly overvalued by this framework despite decent ROCE of 19.4%. The capital-intensive, inventory-heavy jewelry model requires constant working capital funding that obliterates free cash flow, disqualifying it as a \"good and cheap\" business.",
+    "key_strengths": [
+      "Revenue CAGR of 25.3% over 5 years (₹2,458 Cr → ₹7,586 Cr) demonstrates strong execution",
+      "ROCE of 19.4% and ROE of 21% are decent but not exceptional for the Magic Formula",
+      "Net profit CAGR of 51.9% shows operating leverage as scale builds"
+    ],
+    "key_risks": [
+      "Earnings yield of ~3.4% (EBIT/EV) — needs to be 12%+ for Magic Formula attractiveness; stock is ~3.5x overvalued on this metric",
+      "FCF crashed to -₹1,109 Cr in FY25 as working capital consumed IPO proceeds; jewelry retail structurally destroys FCF during growth phases",
+      "Borrowings nearly tripled in one year (₹455 Cr → ₹1,291 Cr) to finance gold inventory — creates significant commodity and credit risk"
+    ],
+    "red_flags": [
+      "OCF turned sharply negative at -₹675 Cr in FY25 after being positive in 4 of prior 5 years — growth is not self-funding",
+      "Operating margin of only 6.94% on ₹7,586 Cr revenue means thin cushion against gold price swings or demand slowdown",
+      "Post-IPO asset base ballooned from ₹1,465 Cr to ₹4,341 Cr in one year — capital allocation discipline untested at this scale"
+    ],
+    "detailed_analysis": "Running the Magic Formula on PNGJL yields a clear verdict: it fails the cheapness test entirely. EBIT for FY25 is ₹337 Cr (operating income). Enterprise Value = Market Cap ₹9,061 Cr + Net Debt ₹836 Cr (debt ₹930 Cr - cash ₹94 Cr) ≈ ₹9,897 Cr. That gives an earnings yield of just 3.4% — you need 12%+ to even rank in the Magic Formula universe, and 15%+ to be attractive. At P/E 23.6x with a 6.94% operating margin, the market is pricing in years of flawless execution. The return on capital side is more respectable — ROCE of 19.4% is workable — but not exceptional enough (Greenblatt wants 25%+) to justify the valuation premium. Magic Formula requires BOTH legs to be strong simultaneously.\n\nThe structural issue is the business model itself: jewelry retail requires massive gold inventory, funded by borrowings (gold loans). Every rupee of revenue growth consumes working capital, which is why OCF was -₹675 Cr and FCF -₹1,109 Cr in FY25 despite ₹218 Cr of reported net profit. This is the opposite of what Greenblatt loves — a capital-light compounder that earns high returns on incremental invested capital. PNGJL is actually capital-intensive at the margin, with each new store requiring significant inventory financing. The 192-year-old brand (founded 1832) and strong Maharashtra presence provide some moat, but not enough to change the quantitative verdict at current valuations.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 66425,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09938115,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11991,
+      "cache_read_input_tokens": 8903,
+      "output_tokens": 3449,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11991,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 413,
+          "cache_read_input_tokens": 8903,
+          "cache_creation_input_tokens": 3088,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 3088
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

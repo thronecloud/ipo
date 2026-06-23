@@ -1,0 +1,69 @@
+{
+  "symbol": "DATAMATICS",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T17:09:23.539040Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Datamatics is a decent-quality mid-tier IT services company with proprietary automation products and excellent FCF conversion (~97%), but a pedestrian 8.7% revenue CAGR, actual EBITDA contraction in FY25 despite 11% revenue growth, and ~38% of PAT sourced from non-operating \"other income\" limit its compounding credentials. At 20x P/E with margin headwinds and a likely debt-funded acquisition obscuring the FY25 balance sheet, the risk-reward is balanced—not a business I'd put meaningful capital into today.",
+    "key_strengths": [
+      "Exceptional FCF quality — FY25 FCF of INR 201 Cr against net profit of INR 206 Cr (~97% conversion), signalling genuine cash earnings",
+      "Near net-cash balance sheet — Cash INR 218 Cr exceeds total debt of INR 190 Cr; D/E only 0.13x, so the fortress holds",
+      "Proprietary product IP (TruBot, TruCap+, TruBI) differentiates from pure-play IT labour arbitrage and enables some pricing power"
+    ],
+    "key_risks": [
+      "Margin deterioration in FY25 — revenue grew 11% but EBITDA fell INR 264→256 Cr and operating income fell INR 246→232 Cr; operating leverage is working in reverse",
+      "Earnings quality is suspect — INR 78 Cr of other income (up from INR 45 Cr) now represents ~38% of PAT INR 206 Cr; strip it out and the core business earned ~INR 128 Cr",
+      "Sudden balance sheet expansion — total assets surged INR 691 Cr in FY25 with debt jumping 10x (INR 17→186 Cr), indicating a likely undisclosed acquisition carrying integration risk"
+    ],
+    "red_flags": [
+      "Other income of INR 78 Cr = ~38% of reported PAT; the reported P/E of 20x flatters true operating economics",
+      "Total assets up INR 691 Cr in a single year with no explained inorganic event — CWIP is zero, capex only INR 36 Cr; something large was acquired",
+      "Combined FII + DII ownership of only 0.59% signals institutional disinterest — sophisticated capital is not accumulating this name"
+    ],
+    "detailed_analysis": "Applying inversion first: what would make Datamatics a value trap? The answer is right in the FY25 numbers. Revenue grew 11% to INR 1,723 Cr, yet EBITDA contracted to INR 256 Cr from INR 264 Cr the prior year — that is the textbook sign of a business absorbing cost inflation faster than it can pass it on, or integrating an acquisition at dilutive margins. Simultaneously, INR 78 Cr of other income (treasury gains, forex, dividends from subsidiaries) propped up a headline PAT of INR 206 Cr. A Munger-style \"look-through\" operating profit is closer to INR 128–140 Cr, implying the stock actually trades at ~31–34x look-through earnings — no longer cheap. ROCE of 15% is adequate but not exceptional, and with the balance sheet now inflated by an unexplained acquisition, return dilution is likely before integration benefits materialise.\n\nOn the positive side, the FCF track record is genuinely impressive — five consecutive years of positive OCF, and FY25 FCF of INR 201 Cr matches net profit almost exactly, confirming no aggressive accruals. The proprietary TruBot/TruCap+/TruBI product stack is a real differentiator from commodity BPO, and the promoter holding of 66.3% aligns management with long-term outcomes. Revenue CAGR of 8.7% over nine years, however, is below the quality bar I demand from technology compounders; truly great IT businesses compound revenue at 15%+ while expanding margins. Datamatics is a solid, conservatively run regional IT firm — but \"solid and conservatively run\" at 20x P/E with margin headwinds and acquisition uncertainty is not the quality-at-a-fair-price equation I seek.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 66966,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0980232,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11872,
+      "cache_read_input_tokens": 9014,
+      "output_tokens": 3386,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11872
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 577,
+          "cache_read_input_tokens": 9014,
+          "cache_creation_input_tokens": 2858,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2858,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

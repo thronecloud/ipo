@@ -1,0 +1,71 @@
+{
+  "symbol": "FACT",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-22T16:32:29.348099Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "FACT fails both Magic Formula tests catastrophically: Earnings Yield is ~0.16% (EBIT ₹95 Cr / EV ~₹60,011 Cr) against my required threshold of >12%, and ROIC is roughly 1-2% against my required >20%. At a P/E of 3,944x and EV/EBITDA of 136.5x, the market is paying an absurd premium for a business that barely earns anything.",
+    "key_strengths": [
+      "90% government promoter backing provides implicit sovereign support and subsidy access",
+      "Revenue CAGR of 9.8% over 9 years shows scale growth, though not quality growth",
+      "OCF positive all 5 of the last 5 years — company does generate some operating cash"
+    ],
+    "key_risks": [
+      "Earnings yield near zero (~0.16%) — stock is priced as if it earns 600x more than it does",
+      "Operating margin is NEGATIVE at -3.28%; operating income of ₹95 Cr is a rounding error on ₹4,051 Cr revenue",
+      "Borrowings spiked from ₹1,810 Cr (2024) to ₹3,837 Cr (2025) — a 2x debt increase in one year with deteriorating earnings"
+    ],
+    "red_flags": [
+      "P/E of 3,944x — virtually all 'earnings' are non-operating Other Income (₹241 Cr vs Net Profit ₹41 Cr in 2025)",
+      "Net profit collapsing: ₹613 Cr (2023) → ₹128 Cr (2024) → ₹41 Cr (2025) — 93% decline in 2 years",
+      "FCF turned negative in 2025 (-₹13 Cr) for the first time",
+      "ROCE of 8.65% barely covers cost of debt — no economic value creation",
+      "Profit history is lumpy and subsidy-driven: Other Income swings wildly (₹1,004 Cr in 2020, -₹42 Cr in 2024, ₹241 Cr in 2025)"
+    ],
+    "detailed_analysis": "Applying the Magic Formula, FACT is one of the worst-scoring stocks I can imagine. Earnings Yield (EBIT/EV) = ₹95 Cr / ~₹60,011 Cr ≈ 0.16%, roughly 75x below my 12% threshold. Return on Capital is equally dismal — with EBIT of ₹95 Cr on an asset base exceeding ₹6,677 Cr, ROIC is in the low single digits. The reported ROCE of 8.65% understates the problem since much of the profit is from volatile government subsidies and \"Other Income,\" not core operations. The operating margin of -3.28% means the fertilizer business itself is loss-making at the operating level.\n\nThe stock's valuation (P/E 3,944x, EV/EBITDA 136.5x, P/S 25x) is the result of PSU-driven market speculation, not fundamentals. This is a government-owned fertilizer company with Debt/Equity of 2.79, borrowings that doubled in FY2025, and a net profit that has collapsed 93% from its peak. The Magic Formula explicitly rejects businesses like this — no sustainable earnings yield, no return on capital, high capital intensity, and profits driven by one-time government transfers rather than durable competitive advantage. There is no price at which a deteriorating PSU with near-zero ROIC and negative operating margins qualifies as a \"good business bought cheap.\"",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 55621,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08822445000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11677,
+      "cache_read_input_tokens": 9239,
+      "output_tokens": 2777,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11677,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 407,
+          "cache_read_input_tokens": 9239,
+          "cache_creation_input_tokens": 2438,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2438
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

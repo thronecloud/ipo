@@ -1,0 +1,68 @@
+{
+  "symbol": "AAKAAR",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-20T11:12:03.797148Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Aakaar Medical fails the Magic Formula on the critical dimension — return on capital is essentially zero (ROE 0.34%), signaling the business earns almost nothing on deployed capital. Even at a P/E of 11.9, a business that cannot compound capital is not \"cheap and good\" — it's just mediocre and fragile.",
+    "key_strengths": [
+      "P/E of 11.90 implies ~8.4% earnings yield — adequate but not bargain territory",
+      "High promoter holding of 67.05% signals skin in the game",
+      "Operates in the structurally growing aesthetic/personal care niche"
+    ],
+    "key_risks": [
+      "ROE of 0.34% is near-zero — capital is not earning returns",
+      "Tiny INR 71.7 Cr market cap — illiquid SME with limited financial visibility",
+      "No FII participation (0%) — institutional validation absent"
+    ],
+    "red_flags": [
+      "ROE of 0.34% is a severe Magic Formula disqualifier — ROIC is almost certainly well below my 20% threshold",
+      "Positive P/E with near-zero ROE suggests unsustainably thin earnings base — one bad quarter turns EBIT negative"
+    ],
+    "detailed_analysis": "The Magic Formula demands two things simultaneously: a high earnings yield (cheap) and a high return on capital (good business). Aakaar scores poorly on the more important of the two. A 0.34% ROE means for every ₹100 of equity, the company earns 34 paise — this is not a business that compounds capital, it's a business that barely breaks even on its asset base. No matter how cheap the stock becomes, a company earning sub-1% on capital destroys shareholder value versus even a risk-free government bond yielding 7%+.\n\nThe 8.4% earnings yield (inverse of P/E 11.9) is not compensation enough for the absence of return-on-capital quality. In my framework, I would much rather pay a 6% earnings yield for a 30% ROIC business than an 8% yield for a 0.3% ROE business. The combination of micro-cap size (₹71.7 Cr), zero FII interest, and negligible profitability makes this a clear avoid on systematic quantitative grounds. This is precisely the kind of name the Magic Formula screen filters out.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 22289,
+    "model_used": "opus",
+    "total_cost_usd": 0.09140424999999999,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8949,
+      "cache_read_input_tokens": 13486,
+      "output_tokens": 1148,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8949,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10616,
+          "cache_creation_input_tokens": 1203,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1203
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

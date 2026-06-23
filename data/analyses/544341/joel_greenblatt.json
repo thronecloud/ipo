@@ -1,0 +1,69 @@
+{
+  "symbol": "544341",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-20T09:51:01.618517Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Landmark Global fails the Magic Formula decisively — while the 5.25 P/E screens cheap, a ROE of just 0.21% implies negligible return on capital, which is the more important of the two factors. A cheap price on a business earning sub-1% returns is a value trap, not a bargain.",
+    "key_strengths": [
+      "P/E of 5.25 suggests a superficially low earnings multiple",
+      "High promoter holding of 72.44% signals skin in the game",
+      "Small-cap immigration consultancy in a growing Indian outbound-migration market"
+    ],
+    "key_risks": [
+      "ROE of 0.21% implies ROIC is effectively zero — fails the 'good business' half of the formula",
+      "INR 51.8 Cr micro-cap with negligible institutional ownership (FII 0%, DII 3.37%) — illiquid and unresearched",
+      "Tiny absolute earnings make the P/E metric fragile; one bad quarter flips the screen"
+    ],
+    "red_flags": [
+      "ROE of 0.21% is an order of magnitude below the 20%+ ROIC threshold I require",
+      "Mismatch between low P/E and near-zero ROE suggests accounting earnings may not represent real economic returns",
+      "No institutional sponsorship in a consultancy business with low capital barriers"
+    ],
+    "detailed_analysis": "The Magic Formula demands two things: a cheap price (high EBIT/EV) and a good business (high EBIT/Capital). Landmark Global might pass the first test at a P/E of 5.25, but it utterly fails the second. A 0.21% ROE means capital deployed in this business is earning essentially nothing — you would do better in a savings account. In my framework, buying a mediocre business cheaply is worse than buying a great business fairly; this is a poor business at any price.\n\nAt a INR 51.8 Cr market cap with zero FII interest and only 3.37% DII holding, this is a sub-scale micro-cap consultancy where reported earnings can swing wildly on a single client contract. The 72.44% promoter holding is the one bright spot, but alignment doesn't fix economics. Magic Formula screens would rank this in the bottom decile on return on capital, which is an automatic exclusion regardless of how low the P/E goes. Skip.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "insufficient_data",
+      "valuation": "fair",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 25388,
+    "model_used": "opus",
+    "total_cost_usd": 0.09654475,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 9021,
+      "cache_read_input_tokens": 13467,
+      "output_tokens": 1336,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9021,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 75,
+          "cache_read_input_tokens": 10597,
+          "cache_creation_input_tokens": 1294,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1294
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

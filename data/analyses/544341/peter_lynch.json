@@ -1,0 +1,69 @@
+{
+  "symbol": "544341",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-20T09:50:03.123250Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Landmark Global is a micro-cap immigration consultancy with ROE of just 0.21% — the low P/E of 5.25 is a value trap, not a bargain. There's no visible growth story, no institutional interest (FII 0%), and no moat to justify taking a flyer at a INR 52 Cr market cap.",
+    "key_strengths": [
+      "High promoter holding of 72.44% signals skin in the game",
+      "Optically cheap at 5.25x P/E",
+      "Immigration consulting has secular tailwinds as Indians emigrate"
+    ],
+    "key_risks": [
+      "ROE of 0.21% is effectively zero — capital is not earning anything",
+      "Tiny INR 52 Cr market cap with near-zero institutional sponsorship (FII 0%, DII 3.37%)",
+      "Commoditized, low-barrier service business vulnerable to regulatory shifts (visa policy)"
+    ],
+    "red_flags": [
+      "ROE of 0.21% is a profitability crisis masquerading as a going concern",
+      "Low P/E with no growth = classic value trap — earnings likely inflated or non-recurring",
+      "Zero FII interest suggests no one with due diligence capacity sees a story here"
+    ],
+    "detailed_analysis": "What's the story here? I can't find one. Landmark Global is an immigration consultancy — a business I can understand from the consumer side (Indians wanting to move to Canada, Australia, US) — and that sector does have a tailwind. But a 0.21% ROE tells me this company isn't capturing any of it. A P/E of 5.25 looks tempting until you realize that with ROE this low, the \"E\" is a rounding error; one bad quarter and the P/E triples. Without a growth rate I can't even compute a PEG, which is my bread and butter.\n\nAt INR 52 Cr market cap this is the kind of obscure small-cap where ten-baggers hide — but only if there's execution. Here I see none. No FII interest, minimal DII (3.37%), and a business model (visa consulting) that's notoriously fragmented with low switching costs and heavy dependence on destination-country immigration policy. I'd pass and watch for a turnaround story with real earnings traction before revisiting.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 18948,
+    "model_used": "opus",
+    "total_cost_usd": 0.08784375000000001,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8801,
+      "cache_read_input_tokens": 13415,
+      "output_tokens": 1044,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8801,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10571,
+          "cache_creation_input_tokens": 1074,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1074
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "symbol": "APLLTD",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T16:24:03.080560Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Alembic scores poorly on both Magic Formula metrics — Earnings Yield of ~6.1% (EBIT ₹1,008 Cr / EV ~₹16,600 Cr) barely clears the minimum, while ROIC of ~13-15% falls well short of the 20%+ threshold for a \"good\" business. With FCF turning sharply negative in FY2025 (-₹466 Cr) and a 9-year net profit CAGR of -2.3%, this is a business that has consumed capital without compounding returns.",
+    "key_strengths": [
+      "High gross margins (71.5%) indicate strong product-level economics in its pharmaceutical portfolio.",
+      "Promoter holding at 69.74% with low D/E of 0.28 (pre-2025) signals owner-operated discipline.",
+      "Revenue has grown from ₹3,166 Cr to ₹6,672 Cr over 9 years — the top line is real."
+    ],
+    "key_risks": [
+      "EBITDA has gone nowhere in 9 years (₹1,079 Cr in 2016 → ₹1,052 Cr in 2025), meaning all revenue growth has been absorbed by costs.",
+      "FY2025 OCF collapsed to ₹88 Cr from ₹803 Cr in FY2024 — a severe red flag on earnings quality.",
+      "Borrowings surged from ₹513 Cr to ₹1,489 Cr in FY2025 while FCF is negative — balance sheet is deteriorating fast."
+    ],
+    "red_flags": [
+      "FY2025 Free Cash Flow: -₹466 Cr — the company burned cash despite reporting ₹582 Cr net profit.",
+      "Finance costs rose from ₹5 Cr (2016) to ₹79 Cr (2025), a 35.9% CAGR — debt addiction is worsening.",
+      "Net profit 9-year CAGR is -2.3% — a company trading at 23x P/E with shrinking earnings is expensive, not cheap.",
+      "EBITDA peaked at ₹1,663 Cr in FY2021 and has contracted since — the margin expansion story reversed."
+    ],
+    "detailed_analysis": "Running the Magic Formula: EV = Market Cap (₹15,425 Cr) + Net Debt (₹1,258 - ₹83 = ₹1,175 Cr) ≈ ₹16,600 Cr. EBIT (Operating Income) FY2025 = ₹1,008 Cr. Earnings Yield = 6.1% — barely at the minimum I'd consider (need >12% to be interesting). Invested Capital = Equity (₹5,319) + Debt (₹1,258) - Cash (₹83) ≈ ₹6,494 Cr. ROIC = ₹1,008/₹6,494 = 15.5% — confirmed by the given ROCE of 13%. Neither metric clears my bar. On the Magic Formula ranking, this company would sit in the bottom half of a screened universe.\n\nWhat concerns me more is the trajectory. The capex supercycle (CWIP peaked at ₹2,304 Cr in FY2022) was supposed to drive earnings. Instead, EBITDA in FY2025 (₹1,052 Cr) is essentially identical to FY2016 (₹1,079 Cr) — nine years of investment for zero EBITDA growth. The FY2025 OCF implosion to ₹88 Cr (from ₹1,463 Cr in FY2021) combined with fresh borrowings of nearly ₹1B suggests working capital stress or one-time cash drains. At 23x earnings with this capital efficiency and FCF track record, the stock is not cheap enough to compensate for the quality deficit.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 56102,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08697225,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11483,
+      "cache_read_input_tokens": 9090,
+      "output_tokens": 2745,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11483,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 417,
+          "cache_read_input_tokens": 9090,
+          "cache_creation_input_tokens": 2393,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2393
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

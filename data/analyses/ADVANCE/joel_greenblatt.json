@@ -1,0 +1,69 @@
+{
+  "symbol": "ADVANCE",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-20T11:12:39.373963Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Advance Agrolife scores well on Return on Capital (~27% ROCE) but fails the cheapness test with an Earnings Yield of only ~7.3% (EBIT 49 / EV ~674 Cr) and P/E of 28. Magic Formula requires BOTH metrics to be strong — this is a good business at a mediocre price.",
+    "key_strengths": [
+      "ROCE of 28% and ROE of 29% — clears the >25% 'excellent' bar on capital efficiency",
+      "EBIT CAGR of 49% over 3 years (15→49 Cr) with revenue scaling 25.5% CAGR",
+      "Promoter holding 69.89% — aligned skin in the game"
+    ],
+    "key_risks": [
+      "Earnings yield ~7.3% is below the 12% threshold — company is not cheap enough",
+      "FCF negative every year (-28 Cr in 2025) as capex (34 Cr) exceeds OCF (6 Cr) — ROIC may be inflated vs cash reality",
+      "Thin 4.3% operating margins + rising debt (21→80 Cr) + finance costs growing 44% CAGR"
+    ],
+    "red_flags": [
+      "Free cash flow negative in all 4 reported years despite accounting 'profits'",
+      "Debt more than tripled (21→80 Cr) while cash balance is near zero (1 Cr)",
+      "OCF of 6 Cr in 2025 is well below reported net profit of 26 Cr — earnings quality concern"
+    ],
+    "detailed_analysis": "Running the Magic Formula: EV ≈ 595 + 80 − 1 = 674 Cr; EBIT of 49 Cr gives an Earnings Yield of roughly 7.3% — well below my 12% \"attractive\" threshold. On the quality side, ROCE of 28% on invested capital of ~180 Cr is genuinely good and has been sustained while revenue compounded 25% and EBIT 49%. So this passes the \"good business\" test but fails the \"bargain\" test. At P/E 28 and EV/EBITDA 10.7, the market has already priced in the growth.\n\nThe bigger problem a systematic screen wouldn't catch but I'd flag: cumulative FCF has been deeply negative (-48 Cr over 4 years) while reported profits were +75 Cr. The ROIC looks clean on the income statement but the business is consuming cash, funding capex with debt that quadrupled. For the Magic Formula to work, high ROIC must translate to cash — here it hasn't yet. I'd pass until either the price corrects to give a double-digit earnings yield, or capex normalizes and FCF turns positive for 2+ years.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 24702,
+    "model_used": "opus",
+    "total_cost_usd": 0.10770424999999999,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 10249,
+      "cache_read_input_tokens": 14486,
+      "output_tokens": 1455,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10249,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 11616,
+          "cache_creation_input_tokens": 1503,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1503
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

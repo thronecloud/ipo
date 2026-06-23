@@ -1,0 +1,68 @@
+{
+  "symbol": "EXCELSOFT",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-21T08:04:58.380859Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Excelsoft clears the earnings yield hurdle (~14% EBIT/EV using stated EV/EBITDA of 5.98), but ROCE of 16.4% falls short of the Magic Formula's 20% threshold, making this a mediocre-quality business at a decent-but-not-cheap price. The 2025 net profit spike is partly driven by a one-time Other Income jump (INR 2→15 Cr), masking a weaker underlying earnings trend.",
+    "key_strengths": [
+      "Revenue growing at 17.7% CAGR (2020–25), a good top-line trajectory for a niche education SaaS player",
+      "Debt reduction is disciplined: borrowings slashed from INR 168 Cr (2020) to INR 45 Cr (2025), improving balance sheet quality",
+      "Operating CF positive all 5 years (INR 53–63 Cr range), demonstrating genuine cash conversion despite lumpy profits"
+    ],
+    "key_risks": [
+      "ROCE of 16.4% is sub-threshold; EBITDA CAGR of only 8.1% over 5 years signals margin erosion as revenue scales",
+      "Earnings quality concern: INR 15 Cr Other Income in FY25 (vs. INR 2 Cr norm) inflates reported net profit of INR 35 Cr — core earnings closer to INR 22–25 Cr",
+      "Tiny market cap (INR 812 Cr), highly niche (ed-tech SaaS in India), limited institutional interest (FII 1.4%, DII 4.1%) — liquidity and re-rating risk"
+    ],
+    "red_flags": [
+      "FY25 Free Cash Flow of INR 290 Cr is anomalous vs. OCF of INR 53 Cr and capex of INR 17 Cr — unreconciled gap suggests a large asset sale or investment liquidation not explained in the data",
+      "Net profit history is highly volatile: -5 → 11 → 15 → 22 → 13 → 35 Cr; forward P/E of 13x implies a near-doubling of earnings that has not yet been demonstrated operationally"
+    ],
+    "detailed_analysis": "Running the Magic Formula: using the stated EV/EBITDA of 5.98 and FY25 EBITDA of INR 87 Cr, implied EV ≈ INR 520 Cr. With EBIT (Operating Income) of INR 73 Cr, Earnings Yield = 73/520 ≈ 14% — this clears the 12% attractiveness threshold. However, Return on Capital (ROCE as reported) is 16.4%, which sits below the 20%+ bar the Magic Formula demands for a \"good business.\" A company that ranks well on earnings yield but poorly on ROIC is, at best, a cigar butt — cheap but not compounding. Excelsoft doesn't even qualify as fully cheap given the EV discrepancy versus the stated market cap (INR 812 Cr + net debt implies EV ~839 Cr, not ~520 Cr), suggesting substantial off-balance-sheet investments or liquid assets that need verification.\n\nThe business fundamentals are mixed. Revenue growth at 17.7% CAGR is encouraging, and the debt paydown story is real and positive (finance costs fell from INR 13 Cr to INR 5 Cr). But operating margins have been range-bound (19–30%) and EBITDA has actually contracted in CAGR terms (8.1%), meaning operating leverage is absent. The FY25 \"earnings beat\" is partly manufactured by INR 15 Cr of Other Income (vs. a normal INR 2 Cr), and the anomalous INR 290 Cr FCF figure warrants deeper scrutiny. For the Magic Formula, this is a weak double: earnings yield is borderline acceptable, ROIC is below threshold, and earnings quality is suspect. I'd pass unless the EV/Other Income anomaly resolves in favour of the bull case.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 79263,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.11257334999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 12675,
+      "cache_read_input_tokens": 8927,
+      "output_tokens": 4157,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 12675,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 453,
+          "cache_read_input_tokens": 8927,
+          "cache_creation_input_tokens": 3748,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 3748
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "JWL",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-19T13:04:38.233527Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "AVOID",
+    "investment_thesis": "Jupiter Wagons has real operating momentum — revenue up 4x in four years and ROCE at 21% — riding India's massive railway infrastructure push, but the business is fundamentally dependent on a single government customer (Indian Railways), making it cyclical and not a durable moat. At 48.5x P/E with free cash flow deeply negative (-403 Cr in 2025) and borrowings up from 138 to 749 Cr, investors are paying a premium price for growth that requires continued government favor and spending.",
+    "key_strengths": [
+      "ROE of 17.4% and ROCE of 21.1% are above my thresholds — the business earns real returns on capital",
+      "Revenue CAGR of 41% and net profit CAGR of 63.6% over four years show genuine operational execution",
+      "Conservative balance sheet with D/E of 0.27 and 441 Cr of cash providing liquidity runway"
+    ],
+    "key_risks": [
+      "Near-total dependence on Indian Railways as customer — any slowdown in government capex ends the growth story immediately",
+      "FCF deeply negative (-403 Cr in 2025) as the company funds expansion through equity (reserves up 10x since 2022) and rising debt",
+      "Business has diversified into commercial EVs, drones, and containers — complexity without proven competence in each area"
+    ],
+    "red_flags": [
+      "P/E of 48.5x for a capital-intensive, government-contract manufacturer with no consumer pricing power",
+      "Capex jumped to 508 Cr in 2025 vs. 37 Cr in 2022 — rapid scaling without demonstrated cash generation",
+      "Operating CF turned negative in 2024 (-19 Cr) raising working capital management questions at scale"
+    ],
+    "detailed_analysis": "I admire the execution here — this is a real business doing real things for India's railway network. The problem is valuation and moat. When the government is your primary customer, your pricing power belongs to them, not to you. The growth rate is impressive but it is borrowed from future government spending decisions, not earned from brand loyalty or switching costs. I've seen many capital goods companies with similar trajectories — strong for years, then brutal corrections when order books thin.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "good",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 125561,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.19234935000000003,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 21843,
+      "cache_read_input_tokens": 15647,
+      "output_tokens": 7049,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 21843,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 656,
+          "cache_read_input_tokens": 15647,
+          "cache_creation_input_tokens": 6196,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 6196
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

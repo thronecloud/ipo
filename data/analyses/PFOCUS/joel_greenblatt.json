@@ -1,0 +1,70 @@
+{
+  "symbol": "PFOCUS",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T21:59:03.128105Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Prime Focus fails the Magic Formula on both axes: Earnings Yield of ~2.5% (EBIT ₹787 Cr / EV ~₹31,441 Cr) is far below my 12% threshold, and ROCE of 7.95% is less than half my 20% minimum — you're paying a steep price for a mediocre-returning, debt-laden business. With net losses in 7 of 10 years and free cash flow negative three of the last four years, there is no \"magic\" here.",
+    "key_strengths": [
+      "High gross margin (93.97%) reflects asset-light services model typical of VFX/post-production",
+      "Revenue CAGR of 11.2% over 9 years shows resilient top-line demand from Hollywood/OTT clients",
+      "Promoter holding of 60.76% signals conviction, and equity has recently recovered (₹1,739 Cr in 2025 vs near-zero in 2023)"
+    ],
+    "key_risks": [
+      "Chronic net losses — negative in 7 of 10 years; FY2025 net loss of ₹458 Cr despite ₹787 Cr EBIT means finance costs (₹538 Cr) are consuming nearly all operating profit",
+      "Debt spiral: borrowings grew from ₹3,371 Cr (2020) to ₹5,255 Cr (2025) at 8.3% CAGR, D/E at 2.46x, leaving almost no equity cushion",
+      "Free cash flow negative ₹337 Cr in FY2024 and ₹68 Cr in FY2025 — capex of ₹366 Cr in 2025 is eating OCF, so the business cannot self-fund growth"
+    ],
+    "red_flags": [
+      "Earnings Yield of ~2.5% (EBIT ₹787 Cr / EV ₹31,441 Cr) — Magic Formula requires >12%; this is 5x too expensive",
+      "ROCE of 7.95% is below cost of debt, meaning borrowings are destroying value, not creating it",
+      "EV/EBITDA of 46x on a business with deeply negative ROE (-16.7%) and no sustained earnings — price embeds heroic assumptions",
+      "Operating CF turned negative in FY2024 (-₹32 Cr), a warning sign that the core business struggled to generate cash despite ₹975 Cr EBITDA just a year prior in FY2023 — volatility is extreme"
+    ],
+    "detailed_analysis": "Running the Magic Formula on Prime Focus yields two failing grades simultaneously. Earnings Yield = EBIT ₹787 Cr / EV (Market Cap ₹26,776 Cr + Debt ₹4,879 Cr − Cash ₹214 Cr = ₹31,441 Cr) = 2.5% — you need at least 12% to rank in the top decile, so this is priced like a premium growth compounder but delivers a mediocre-quality business. ROCE of 7.95% (and ROE of -16.7%) confirms the capital deployed is not earning adequate returns; this falls far below my 20% hurdle and 25% \"excellent\" threshold.\n\nThe structural problem is the debt load. Finance costs of ₹538 Cr in FY2025 consume 68% of EBIT, leaving nothing for equity holders — hence the ₹458 Cr net loss. Borrowings have grown every single year since 2020, and free cash flow has been negative three of the last four years. The FY2023 EBITDA spike to ₹1,232 Cr followed by a collapse to ₹383 Cr in FY2024 shows high earnings volatility, the opposite of the stable, high-ROIC businesses I seek. At P/E 102x (or even forward 49x) on a company that persistently loses money at the net level, the market is pricing in a dramatic turnaround that the capital structure makes very difficult to achieve.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 46687,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0794985,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10978,
+      "cache_read_input_tokens": 9040,
+      "output_tokens": 2374,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10978,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 495,
+          "cache_read_input_tokens": 9040,
+          "cache_creation_input_tokens": 1938,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1938
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

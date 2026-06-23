@@ -1,0 +1,69 @@
+{
+  "symbol": "ANANTAM",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-20T11:14:39.278322Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Anantam Highways is a capital-intensive HAM/toll road operator earning a pitiful 1.77% ROE — well below cost of capital and nowhere near the 15%+ ROIC threshold I demand. The optically cheap 5.45x P/E almost certainly reflects non-cash construction income or one-time gains rather than durable owner earnings, making this a classic value trap to invert away from.",
+    "key_strengths": [
+      "Concession-based revenue offers some annuity-like cash flow visibility from NHAI",
+      "Headline P/E of 5.45x looks superficially cheap",
+      "Infrastructure tailwind from India's road-building program"
+    ],
+    "key_risks": [
+      "ROE of 1.77% means the business is destroying economic value vs. cost of capital",
+      "Road assets are highly leveraged SPVs — debt-to-EBITDA likely well above my 2.5x limit",
+      "Counterparty/tariff risk concentrated in NHAI; concessions are finite-life, depleting assets"
+    ],
+    "red_flags": [
+      "ROE under 2% is incompatible with a quality business",
+      "P/E of 5x with 1.77% ROE suggests reported earnings are inflated by HAM construction-stage accruals, not cash",
+      "Recently listed micro-cap with limited operating history at scale"
+    ],
+    "detailed_analysis": "Inverting first: how do I lose money here? Easily. Road concessions are finite, depreciating SPV assets funded with heavy project debt. The 1.77% ROE tells me equity holders are essentially renting their capital to NHAI at sub-treasury yields. A 5.45x P/E on such a business is a warning, not a bargain — HAM accounting under Ind AS 115 front-loads construction revenue that never converts to free cash, so reported EPS is a fiction relative to distributable cash. This is precisely the kind of complex, leverage-dependent, accounting-opaque business I tell people to put in the \"too hard\" pile.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "insufficient_data",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 18632,
+    "model_used": "opus",
+    "total_cost_usd": 0.08500925000000001,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8649,
+      "cache_read_input_tokens": 13096,
+      "output_tokens": 975,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8649,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10369,
+          "cache_creation_input_tokens": 1007,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1007
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

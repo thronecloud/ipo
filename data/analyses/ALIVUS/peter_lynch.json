@@ -1,0 +1,69 @@
+{
+  "symbol": "ALIVUS",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-18T16:21:08.380469Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Alivus is a high-quality API manufacturer with exceptional margins (31% operating, 55% gross) and an essentially debt-free balance sheet, but recent profit growth has stalled at ~3% YoY (INR 471 Cr → 486 Cr), making the current P/E of 37.3x extremely hard to justify. The story only becomes interesting if new ownership (Nirma) can credibly re-accelerate earnings toward the implied forward P/E of 21x.",
+    "key_strengths": [
+      "Fortress balance sheet — D/E of 0.02, fortress-level; ROCE of 23.3% signals exceptional capital efficiency",
+      "Premium margins for an API player — 31.4% operating margin and 55% gross margin are best-in-class and durable",
+      "Diversified API portfolio across high-value therapeutic areas (oncology, CNS, cardiovascular) with global export reach"
+    ],
+    "key_risks": [
+      "Growth has decelerated sharply — net profit essentially flat for 3 years (INR 419→467→471→486 Cr), making 37x P/E indefensible on a PEG basis (PEG ~2.3)",
+      "Large mystery deployment in FY2025 — investing CF of -616 Cr dwarfs capex of -166 Cr; the remaining ~450 Cr allocation is unexplained and cash dropped from 301 to 71 Cr",
+      "Ownership/brand transition risk — renamed from Glenmark Life Sciences to Alivus under Nirma in Dec 2024; execution track record under new parent is unproven"
+    ],
+    "red_flags": [
+      "PEG ratio ~2.3x on current P/E (37.3 / 16% 6Y CAGR) — well above Lynch's 1.0 ceiling; even using forward P/E of 21 and assuming 20% growth, PEG is still ~1.05",
+      "Revenue growth has slowed to ~7% YoY (2024-2025) vs. 17.6% 6Y CAGR — the historical CAGR is misleading; the recent trend tells a stagnation story",
+      "Free cash flow declining trend: INR 465 Cr (2022) → 143 → 285 → 225 Cr (2025); OCF of 392 Cr in 2025 barely covers capex + big investment outflows"
+    ],
+    "detailed_analysis": "From a Lynch GARP standpoint, Alivus passes the quality test but fails the price test badly. The business is genuinely excellent — operating margins of 31.4% are extraordinary for an API manufacturer, ROCE of 23.3% signals real competitive advantage in process chemistry, and D/E of 0.02 means zero financial risk. The product mix (olmesartan, sitagliptin, oncology APIs like palbociclib/cabozantinib) is moving up the value chain. I can understand the business: it makes the ingredients inside branded pills and sells globally. Simple story. But the numbers don't support the price.\n\nThe PEG ratio is the deal-breaker. At P/E 37.3x divided by my preferred growth rate (I'd use the recent 3-year profit trend, not the 6Y CAGR), the PEG blows out to 3x+. Even on the 6Y CAGR of 16.3%, PEG is 2.3 — I start sweating above 1.5. The forward P/E of 21.14 is intriguing and implies a near-doubling of earnings; if Nirma-backed CDMO scale-up delivers that, the stock is a bargain today. But I need to see the growth before I pay for it. The massive 2025 investing outflow (₹616 Cr) could be the catalyst for re-acceleration — or it could be capital misallocation. Until the story clarifies under new ownership, this is a HOLD for existing investors and a pass for new money.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "excellent",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 73215,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09987915,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11807,
+      "cache_read_input_tokens": 8713,
+      "output_tokens": 3532,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11807,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 497,
+          "cache_read_input_tokens": 8713,
+          "cache_creation_input_tokens": 3094,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 3094
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

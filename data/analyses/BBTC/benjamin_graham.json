@@ -1,0 +1,69 @@
+{
+  "symbol": "BBTC",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-19T06:32:10.469867Z",
+  "analysis": {
+    "score": 7,
+    "recommendation": "BUY",
+    "investment_thesis": "The Bombay Burmah Trading Corporation is the rarest of creatures in today's market: a large, profitable, diversified operating enterprise trading below its Graham Number. At a P/E of 9.83, an EV/EBITDA of 3.66, and a price of INR 1,526 against a Graham Number of approximately INR 2,522, BBTC offers a genuine margin of safety — the cornerstone of all sound investment. Nine years of operating profit growth (8.5% revenue CAGR, 12% net profit CAGR), strong ROCE of 35.5%, rapidly declining debt, and consistent free cash flow make this the most Grahamesque opportunity in this group.",
+    "key_strengths": [
+      "P/E of 9.83 passes my threshold of 15; the combined P/E × P/B test yields 16.7, well below the Graham ceiling of 22.5",
+      "Debt has been slashed dramatically — borrowings fell from INR 6,542 Cr (FY23) to INR 1,574 Cr (FY25), and D/E is now 0.30, passing my 0.50 test",
+      "Free cash flow is growing and substantial: INR 2,017 Cr in FY25, up from 886 Cr in FY22 — operations are generating real cash, not accounting profits"
+    ],
+    "key_risks": [
+      "The FY23 net loss of -534 Cr (driven by other income of -781 Cr, likely investment write-downs) interrupts the consecutive positive earnings record Graham demands",
+      "Conglomerate holding-company structure — tea, healthcare, auto components, bakery, investments — creates complexity and the risk that consolidated earnings include items difficult to value independently",
+      "P/B of 1.70 is slightly above my 1.5 ceiling; the stock fails this individual test, though it passes the combined P/E × P/B screen"
+    ],
+    "red_flags": [
+      "FY23 net loss of INR -534 Cr — though attributable to investment write-downs rather than operating deterioration (EBITDA was 2,148 Cr that year)",
+      "Other income line is highly volatile: -781 Cr (FY23) vs +406 Cr (FY25), suggesting significant investment gains/losses that distort reported net profit",
+      "74% promoter holding limits liquidity and may cap institutional buying interest"
+    ],
+    "detailed_analysis": "BBTC passes the tests that matter most to me. The current price of INR 1,526 is approximately 40% below the Graham Number of INR 2,522 — that is a margin of safety I can act upon. The operating businesses have generated positive cash flow in every one of the last five years (total OCF: INR 9,787 Cr over 2021-2025), and ROCE of 35.5% tells me management is deploying capital productively. The dramatic reduction in borrowings — from INR 6,542 Cr to INR 1,574 Cr in just two years — suggests disciplined balance sheet management and likely reflects asset monetization, not financial distress.\n\nThe FY23 net loss warrants scrutiny but not alarm. Operating income in FY23 was a healthy INR 1,726 Cr; the -534 Cr consolidated net profit resulted from a -781 Cr 'other income' line, almost certainly an investment mark-to-market or write-down in the holding company's equity portfolio. The underlying normalized earnings power — averaging roughly INR 1,500 Cr annually over the last four years excluding FY23 — supports a P/E of 7 at the current market cap of INR 10,650 Cr. At that earnings power, this stock is cheap by any standard I apply. I recommend purchase with the caveat that the conglomerate structure demands ongoing monitoring of the investment portfolio.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "undervalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 257334,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.31753529999999996,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 27706,
+      "cache_read_input_tokens": 15096,
+      "output_tokens": 13940,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 27706,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 1203,
+          "cache_read_input_tokens": 15096,
+          "cache_creation_input_tokens": 12610,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 12610
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

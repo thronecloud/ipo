@@ -1,0 +1,70 @@
+{
+  "symbol": "LLOYDSENGG",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T18:12:04.287251Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Lloyds Engineering trades at a P/E of 48.4x and P/B of 6.2x — more than three times my maximum tolerable valuation on either metric — offering no margin of safety whatsoever. The Graham Number computes to roughly INR 11–12, meaning Mr. Market is asking you to pay nearly five times intrinsic value for what is, at its core, a capital equipment manufacturer with an unproven long-term earnings record.",
+    "key_strengths": [
+      "Low financial leverage: Debt/Equity of 0.16 and interest coverage ~15x (INR 135 Cr EBIT / INR 9 Cr finance cost) — the balance sheet is not a danger.",
+      "Revenue inflection is real: from INR 50 Cr (2022) to INR 846 Cr (2025) suggests genuine order-book expansion, not accounting fiction.",
+      "Operating cash flow turned solidly positive in FY2025 (INR 158 Cr) for the first time — the business may finally be generating real cash."
+    ],
+    "key_risks": [
+      "Valuation is purely speculative: P/E 48.4x and P/B 6.2x embed heroic growth assumptions; any earnings miss collapses the multiple.",
+      "Chronic cash-burn history: FCF was negative in 3 of 4 years (–INR 29, –38, –96 Cr); FY2025 positive FCF of INR 92 Cr is a single data point, not a proven pattern.",
+      "Equity dilution risk: Total equity ballooned from INR 135 Cr (2022) to INR 1,188 Cr (2025) — the company has been issuing shares aggressively to fund growth, continuously diluting existing holders."
+    ],
+    "red_flags": [
+      "Graham Number ~INR 11–12 vs. market price of INR 55.90 — stock trades at ~5x intrinsic value by the most basic measure I know.",
+      "No dividend history mentioned — shareholders receive no tangible cash return while insiders retain all optionality.",
+      "OCF positive in only 1 of 4 years; a manufacturer that cannot consistently convert profits to cash is not yet a proven business.",
+      "ROCE of 9.80% is below the cost of capital for most investors — the business is not yet earning an adequate return on the assets employed."
+    ],
+    "detailed_analysis": "Lloyds Engineering fails my quantitative screens at virtually every checkpoint. The Graham Number — the square root of (22.5 × EPS × Book Value per share) — computes to approximately INR 11–12, against a market price of INR 55.90. That is not a margin of safety; it is a margin of danger. A P/E of 48.4x requires the company to sustain its recent hypergrowth for many years with no missteps. The history of capital equipment businesses tells me that order books are lumpy, project execution risk is high, and the industrial cycle eventually turns. Mr. Market is euphoric about this story today; the intelligent investor must remain cold.\n\nThe only genuinely positive feature from my standpoint is the conservative balance sheet: Debt/Equity of 0.16 and interest coverage of roughly 15x mean the company will not be financially destroyed in a downturn. The revenue growth from INR 50 Cr to INR 846 Cr in three years is arresting, and I do not dispute that something real is happening operationally. But my discipline forbids me from paying 6x book value for a business whose operating cash flow was negative in three of the past four years and which has nearly tripled its share capital to fund that growth. I require a price that protects me if I am wrong. At INR 55.90, there is no such protection.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 50486,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07107525,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8501,
+      "cache_read_input_tokens": 10575,
+      "output_tokens": 2401,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 8501
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 426,
+          "cache_read_input_tokens": 8525,
+          "cache_creation_input_tokens": 2026,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2026,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

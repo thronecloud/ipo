@@ -1,0 +1,71 @@
+{
+  "symbol": "544671",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-20T11:11:53.331262Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "A recently-listed micro-cap with a suspiciously sharp pre-IPO earnings jump (net profit 1→3→14 Cr over 2023-2025), debt-to-equity of 1.16, and effectively zero cash — this fails nearly every quantitative filter I require. The 73.8% ROE is an arithmetic artefact of a tiny 29 Cr equity base, not evidence of durable earning power.",
+    "key_strengths": [
+      "P/E of 11.1 is within my <15 threshold on trailing earnings",
+      "Revenue CAGR of 20.5% (2021→2025) shows genuine top-line traction",
+      "OCF turned positive from 2023 and reached 15 Cr in 2025, matching reported profit"
+    ],
+    "key_risks": [
+      "Debt/equity of 1.16 is 2x my ceiling; borrowings 33 Cr vs cash ~0",
+      "No multi-year earnings record — profit was near-zero through 2022 and only meaningful in 2025",
+      "Pre-IPO earnings spike (3 Cr→14 Cr in one year) is classic IPO window-dressing pattern"
+    ],
+    "red_flags": [
+      "Zero cash on balance sheet in 2023, 2024, 2025 — severe liquidity fragility",
+      "Recent listing (BSE code 544671) — seller/underwriter knows more than buyer",
+      "Earnings quadrupled in the year immediately preceding/following listing",
+      "No dividend history disclosed",
+      "Promoter holding 73% — low public float, thin liquidity"
+    ],
+    "detailed_analysis": "From a Graham lens, this company fails the foundational test: a stable, demonstrated earning power over 5-10 years. Net profits of 0, 0, 1, 3, and 14 Cr do not constitute an earnings record — they constitute a hockey stick coinciding with a listing event. The headline ROE of 73.8% is produced by dividing 14 Cr of profit by a sliver-thin 29 Cr equity base, much of which is recently retained. Leverage is the mirror image of that thin equity: 33 Cr of borrowings against ~zero cash and 3 Cr of annual interest cost leaves a fragile interest-coverage picture that could unravel in any cyclical downturn in Indian construction capex.\n\nThe business itself — HDD and foundation drilling rigs — is legitimate and cyclically tied to Indian infrastructure build-out, but that is a story for a growth investor, not for me. I need a margin of safety measured in assets and proven earnings. With P/B implied near 3.4x (price 99.8 vs book ~29 Cr on a small share count) and only one year of material profit, there is no such margin. I would require either a 50%+ drawdown or three more consecutive years of stable 10+ Cr earnings with debt halved before reconsidering. Avoid.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 37855,
+    "model_used": "opus",
+    "total_cost_usd": 0.1346155,
+    "usage": {
+      "input_tokens": 7,
+      "cache_creation_input_tokens": 11160,
+      "cache_read_input_tokens": 27661,
+      "output_tokens": 2040,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11160,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 101,
+          "cache_read_input_tokens": 12807,
+          "cache_creation_input_tokens": 1239,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1239
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

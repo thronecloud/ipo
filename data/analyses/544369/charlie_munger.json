@@ -1,0 +1,69 @@
+{
+  "symbol": "544369",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-20T19:40:23.619368Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "A tiny, recently-listed explosives manufacturer with improving headline ROE/ROCE but persistently negative free cash flow (-12 Cr in FY25) and heavy reliance on IPO proceeds to fund growth. At 22x P/E on a 14 Cr profit with unproven through-cycle economics, the price demands quality the business has not yet demonstrated.",
+    "key_strengths": [
+      "Operating income CAGR 56.5% and EBITDA margin expansion from ~5% to ~12% (2022→2025)",
+      "Promoter holding 70.68% — skin in the game",
+      "ROCE 22.8% and ROE 20.2% on a lean capital base"
+    ],
+    "key_risks": [
+      "FCF negative all 4 years (cum. ~-28 Cr); growth funded by debt and equity issuance, not earnings",
+      "Equity jumped 24→105 Cr in FY25 (IPO cash) — ROE will mechanically decay as that capital sits",
+      "Commoditized explosives industry with customer concentration risk (mining/infra) and regulatory/safety exposure"
+    ],
+    "red_flags": [
+      "OCF of 5 Cr vs reported PAT of 14 Cr — earnings quality ratio only ~36%",
+      "Investing outflow of 35 Cr in FY25 with CWIP up to 13 Cr — capex binge ahead of proven returns",
+      "Micro-cap (288 Cr) with minimal institutional coverage; single short operating history post-listing"
+    ],
+    "detailed_analysis": "Inverting first: what kills this investment? A commodity explosives maker with 215 Cr revenue and 14 Cr profit just raised equity (reserves 14→92 Cr), and is plowing it into CWIP and investing activities (-35 Cr in FY25) while FCF remains negative for the fourth straight year. The reported ROE of 20% is a fossil from the pre-IPO small-equity base; on the FY25 closing equity of 105 Cr, forward ROE is closer to 13-14% unless the new capex earns >20% incremental returns — unproven. FCF/NI is deeply negative, which is the single ratio Munger watches hardest. This is not a compounder; it's a capital-consuming growth story priced at 22x.\n\nThe explosives industry itself is respectable (Solar Industries is the gold standard), but it's cyclical, regulated, and dependent on mining/infrastructure capex — a fair business, not a great one, and scale matters enormously (Solar does ~7,000 Cr revenue). Beezaasan at 215 Cr has no moat, no pricing power, and no demonstrated ability to convert accounting profit into cash. Promoter alignment at 70.68% is a positive, but intellectual honesty is shown through the cash flow statement, and here the signal is negative. Pass, revisit only after two consecutive years of positive FCF at the new asset base.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 26270,
+    "model_used": "opus",
+    "total_cost_usd": 0.10147375,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 9921,
+      "cache_read_input_tokens": 14025,
+      "output_tokens": 1297,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9921,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 11298,
+          "cache_creation_input_tokens": 1350,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1350
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

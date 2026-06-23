@@ -1,0 +1,69 @@
+{
+  "symbol": "KRN",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T18:03:43.804502Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "KRN is a fast-growing HVAC component manufacturer with decent margins, but at 116x P/E and EV/EBITDA of 85.7x, I'm being asked to pay a luxury tech price for a commodity OEM supplier. A business incorporated in 2017 with deeply negative free cash flow (-65 Cr) and voracious capex needs doesn't justify anywhere near this valuation.",
+    "key_strengths": [
+      "Strong revenue growth: 40.2% revenue CAGR and 71% net profit CAGR over 3 years with expanding margins",
+      "Nearly debt-free balance sheet: D/E of just 0.06 post-IPO capital infusion",
+      "Decent returns: ROCE of 20.8% and operating margins of 16.5% above typical manufacturing peers"
+    ],
+    "key_risks": [
+      "Extreme overvaluation: P/E of 116x for a B2B OEM component maker with no durable moat is indefensible",
+      "Capital intensity trap: capex surged to 151 Cr in FY25 (vs. 70 Cr prior year), generating FCF of -65 Cr — the business consumes far more cash than it generates",
+      "No economic moat: heat exchangers are commoditized; as an OEM supplier, KRN has limited pricing power and is exposed to customer concentration risk"
+    ],
+    "red_flags": [
+      "IPO-era euphoria pricing: 116x trailing P/E for a capital-intensive manufacturer incorporated only in 2017",
+      "Poor cash conversion: OCF of only 21 Cr vs. net profit of 53 Cr (40% conversion) signals working capital stress",
+      "Unproven through cycles: 7-year-old company has never faced a real HVAC demand downturn or competitive squeeze"
+    ],
+    "detailed_analysis": "KRN manufactures heat exchangers and evaporators for HVAC/refrigeration OEMs — a perfectly understandable business that I'd happily own at the right price. The growth numbers are genuinely impressive: revenues compound at 40% and net profit at 71% over three years, margins are expanding, and the balance sheet carries almost no debt. India's HVAC boom and export diversification across Asia, Europe, and the Americas provide real tailwinds. But I've learned that a great business at a terrible price is a terrible investment. Paying 116x earnings — or 85x EBITDA — for a component supplier to OEMs is the kind of speculation that ends badly. There is no brand, no network effect, and no meaningful switching cost that would justify this multiple.\n\nWhat troubles me further is that the reported profits are largely an accounting fiction at this stage of growth: the company earned 53 Cr in net profit in FY25 but burned 65 Cr in free cash flow, ploughing 151 Cr into capex. The equity base exploded from 130 Cr to 528 Cr in one year — this is an IPO-funded growth story, not an organically cash-generative franchise. I admire the ambition and the execution so far, but the market has priced in perfection and then some. My margin of safety here is negative. I'll wait on the sidelines and watch — perhaps in a few years, if the business proves its moat and the price corrects to something reasonable (say 20–25x earnings), this becomes worth revisiting.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 46780,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07402125,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10287,
+      "cache_read_input_tokens": 8420,
+      "output_tokens": 2194,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10287
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 345,
+          "cache_read_input_tokens": 8420,
+          "cache_creation_input_tokens": 1867,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1867,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "EQUITASBNK",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T17:13:54.689557Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Equitas SFB's net profit collapsed 82% (₹799 Cr → ₹147 Cr) even as revenue grew 17%, revealing severe asset quality and NIM compression problems that make the 50x trailing P/E unjustifiable. With ROE at a dismal 2.42% and finance costs growing at nearly double the revenue rate, this is a distressed bank, not a wonderful business.",
+    "key_strengths": [
+      "Revenue growing at 17.4% CAGR, showing loan book expansion in an underserved segment",
+      "P/B of 1.28x is modest and DII ownership at 50.87% provides institutional floor",
+      "Forward P/E of 11.28x implies market expects an earnings recovery — if it materializes, downside is limited"
+    ],
+    "key_risks": [
+      "Finance costs surging at 29.1% CAGR vs 17.4% revenue CAGR — NIM is being structurally crushed",
+      "Net profit down 82% YoY to ₹147 Cr in 2025 — likely driven by microfinance NPAs, a sector under acute stress nationally",
+      "No durable competitive moat: SFBs compete directly with MFIs, NBFCs, and now large private banks pushing into micro-lending"
+    ],
+    "red_flags": [
+      "ROE of 2.42% — catastrophically below my 15% threshold; this bank is barely covering its cost of equity",
+      "Current P/E of 50.93x for a bank in visible distress is irrational — the entire bull case rests on an unproven earnings recovery",
+      "Finance costs of ₹3,060 Cr in 2025 are now 75% of revenue (₹4,066 Cr) — the borrowing engine is consuming the business"
+    ],
+    "detailed_analysis": "The numbers here tell a troubling story. Revenue grew respectably from ₹2,513 Cr to ₹4,066 Cr over three years, but that growth was funded by debt that is now strangling profitability. Finance costs compounded at 29.1% annually — nearly double the revenue growth rate — and in FY2025 they consumed ₹3,060 Cr against ₹4,066 Cr in revenue. That left almost nothing for shareholders: net profit cratered to ₹147 Cr, producing a ROE of 2.42%. I require at least 15% ROE consistently before I get interested in a bank. At 2.42%, management is destroying shareholder value in real terms.\n\nThe microfinance industry in India has faced well-documented over-indebtedness and collection stress, and Equitas is exposed precisely here. A trailing P/E of 51x assumes this is a temporary blip — perhaps it is — but I never invest hoping for a recovery I can't verify. The forward P/E of 11.28x is intriguing on paper, but it rests entirely on faith that earnings will recover nearly 7x in one year. That is speculation, not investing. Equitas has no pricing power moat: depositors can go anywhere, and borrowers are being courted by everyone from Bandhan to HDFC. I'll sit this one out entirely.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 38949,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.06752985,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10081,
+      "cache_read_input_tokens": 8457,
+      "output_tokens": 1812,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10081
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 234,
+          "cache_read_input_tokens": 8457,
+          "cache_creation_input_tokens": 1624,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1624,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

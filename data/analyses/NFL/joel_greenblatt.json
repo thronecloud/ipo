@@ -1,0 +1,70 @@
+{
+  "symbol": "NFL",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T21:52:28.931781Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "NFL fails both legs of the Magic Formula: Earnings Yield of ~10.6% (EBIT INR 615 Cr / EV ~INR 5,781 Cr) sits below the 12% threshold, while ROCE of 7.57% is barely one-third of the 20% minimum required to qualify as a \"good business.\" A government-controlled urea pricing regime structurally caps returns on capital, making this a chronic value trap.",
+    "key_strengths": [
+      "P/S of 0.18 reflects near-trough revenue valuation on a large-scale operation (INR 19,798 Cr revenue)",
+      "74.71% government promoter ownership provides implicit backstop against bankruptcy",
+      "FY2025 FCF of INR 2,418 Cr shows working-capital normalization can generate cash in good years"
+    ],
+    "key_risks": [
+      "Structural margin compression: operating margin of 2.70% leaves no buffer — any input cost spike turns profits negative (happened in FY2020 and FY2022)",
+      "ROIC of 7.57% destroys economic value vs. cost of capital; 9-year EBITDA CAGR of only 2.1% on revenue CAGR of 11% shows revenue growth does not translate to earnings",
+      "Borrowings nearly tripled from INR 1,892 Cr (FY2021) to INR 4,537 Cr (FY2025) while equity barely grew — Debt/Equity of 1.77 is high for a thin-margin PSU"
+    ],
+    "red_flags": [
+      "Net profit CAGR of -0.8% over 9 years — earnings have gone nowhere despite 11% revenue growth",
+      "Net profit turned negative in both FY2020 (-INR 181 Cr) and FY2022 (-INR 95 Cr) — not a one-time event",
+      "OCF positive only 3/5 years; government subsidy receivables create chronic working-capital volatility",
+      "Operating income (EBIT) of INR 615 Cr in FY2025 is effectively unchanged from INR 560 Cr in FY2016 — zero real earnings growth in a decade"
+    ],
+    "detailed_analysis": "Running the Magic Formula on NFL produces a near-failing grade on both dimensions. Earnings Yield = EBIT/EV = 615 / (3,798 + 2,001 − 18) ≈ 10.6% — marginally below the 12% attractiveness floor and well below 15%. More damning is Return on Capital: ROCE of 7.57% indicates the business earns far less than its cost of capital. The 2.70% operating margin is a structural ceiling imposed by government-mandated urea pricing — NFL cannot reprice its core product regardless of input costs, so EBIT swings violently with natural gas and ammonia prices (see the FY2022 EBITDA collapse to INR 408 Cr from INR 1,216 Cr in FY2021).\n\nFrom a Magic Formula ranking perspective, NFL would sit in the bottom quartile of any large-cap universe on both metrics simultaneously — exactly the stocks the formula tells you to avoid. Capital intensity is moderate (capex ~INR 200–300 Cr/year) but working capital is massive and erratic, driven by subsidy receivables from the Indian government. Borrowings have risen from INR 1,892 Cr to INR 4,537 Cr in four years while equity stayed flat, further compressing any equity return. The P/E of 19.5x on suppressed, volatile earnings is not cheap in absolute terms. There is no identifiable moat, no pricing power, and no path to ROIC expansion without deregulation of urea prices — a political non-starter in India.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 44008,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0804213,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11210,
+      "cache_read_input_tokens": 9116,
+      "output_tokens": 2376,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11210,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 320,
+          "cache_read_input_tokens": 9116,
+          "cache_creation_input_tokens": 2094,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2094
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

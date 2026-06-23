@@ -1,0 +1,69 @@
+{
+  "symbol": "CENTRALBK",
+  "persona": "howard_marks",
+  "persona_display_name": "Howard Marks",
+  "analyzed_at": "2026-04-19T13:00:00.119521Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Central Bank of India trades at 0.82x book and 6.76x earnings, which superficially appears cheap, but the discount is warranted: this is a government-owned bank (89.27% promoter) with a catastrophic loss history (INR 5,611 Cr net loss in FY2019), a revenue CAGR of just 3% over nine years, and OCF positive in only 1 of the last 5 years. The current profitability recovery is real but cyclically driven, not structurally earned.",
+    "key_strengths": [
+      "The ongoing NPA clean-up has produced four consecutive years of profitability, with net profit reaching INR 3,943 Cr in FY2025 — the healing is real even if slow",
+      "Government ownership at 89.27% provides an implicit sovereign backstop, eliminating failure risk in the near term",
+      "Total assets have grown from INR 357,151 Cr (2020) to INR 504,923 Cr (2025), showing the franchise is expanding even if profitably is modest"
+    ],
+    "key_risks": [
+      "Revenue CAGR of just 3% over nine years against inflation means this bank is shrinking in real terms — institutional mediocrity is baked in by government ownership",
+      "OCF was positive in only 1 of the last 5 years; cash on the balance sheet is declining (INR 53,097 Cr in 2022 to INR 36,197 Cr in 2025) — the cash deployment pattern warrants scrutiny",
+      "With 89.27% government ownership and only 0.75% FII holding, the signal is clear: sophisticated global capital has no interest in owning this business"
+    ],
+    "red_flags": [
+      "Accumulated losses of INR 5,134 Cr (2018) and INR 5,611 Cr (2019) destroyed capital on a massive scale — the same governance structure that enabled those losses remains in place",
+      "The float of barely 10% means the stock price is heavily influenced by retail sentiment and government decisions, not fundamentals",
+      "Government-directed lending mandates and priority sector obligations structurally prevent this bank from earning commercial risk-adjusted returns on its loan book"
+    ],
+    "detailed_analysis": "0.82x book sounds like a margin of safety. It is not. The discount exists because the market correctly perceives that PSU banks like Central Bank cannot sustainably earn above their cost of equity. The ROE of 11.4% barely covers cost of capital for an institution with this credit history, and it has been achieved during a favorable credit cycle following the NPA recognition exercise of 2017-2020. The critical question is: what happens in the next downturn? The bank's governance — government-appointed board, political lending pressures, mandated priority sector exposure — is unchanged from the era that generated five straight years of losses.\n\nFrom a second-level thinking perspective, the near-universal narrative that PSU banks have 'turned the corner' has already been priced in. P/B at 0.82x for a bank earning 11.4% ROE in a benign credit environment is not a bargain. Private sector peers earning 15-18% ROE on similar or better asset quality trade at 2-3x book — the discount to private banks reflects genuine structural inferiority, not temporary mispricing. I see no catalyst for re-rating and meaningful downside if credit costs normalize upward.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "poor",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 202755,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.2360994,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 24562,
+      "cache_read_input_tokens": 15943,
+      "output_tokens": 9280,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 24562,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 484,
+          "cache_read_input_tokens": 15943,
+          "cache_creation_input_tokens": 8619,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8619
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

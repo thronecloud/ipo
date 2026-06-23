@@ -1,0 +1,70 @@
+{
+  "symbol": "544630",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-20T11:00:37.201982Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "Helloji Holidays fails nearly every quantitative filter I demand: a recent BSE SME-scale listing with a derisory 0.51% ROE paying 18.8x earnings offers no margin of safety whatsoever. This is speculation dressed as investment — the kind of issue Mr. Market dangles to the unwary.",
+    "key_strengths": [
+      "Promoter holding of 69.97% indicates skin in the game",
+      "Some institutional presence (FII 5.81% + DII 8.40%) provides minor validation",
+      "Reported positive earnings, however thin"
+    ],
+    "key_risks": [
+      "ROE of 0.51% is effectively no earning power — below any reasonable hurdle rate",
+      "P/E of 18.8 on near-zero profitability implies extreme overvaluation",
+      "Micro-cap (INR 39.4 Cr) with no multi-year track record — classic IPO speculation"
+    ],
+    "red_flags": [
+      "Absence of 3-5 year earnings history required by my framework",
+      "P/E 18.8 vastly exceeds my <15 ceiling given the earnings quality",
+      "No disclosed dividend — no proof of cash-generative business",
+      "ROE of 0.51% suggests a business barely distinguishable from holding cash"
+    ],
+    "detailed_analysis": "From a Graham framework, this security is uninvestable. A 0.51% ROE means the business earns roughly half a percent on its equity — a government bond returns materially more with no risk. Paying 18.8 times such meager earnings implies an earnings yield of 5.3%, but the underlying return on capital does not support that multiple. There is no Graham Number calculation that would justify INR 115 here; a 0.51% ROE tells us the equity base is either bloated or the earnings are trivially small — neither interpretation is favorable.\n\nAdditionally, this is a micro-cap tour operator with a market cap of just INR 39.4 Cr, recently listed, in a cyclical discretionary industry with negligible competitive moats. Travel agencies face commoditization from online platforms and have no durable earning power to speak of. The combination of recent listing, absent multi-year audited track record, speculative sector, and a valuation that prices in growth the ROE actively refutes is exactly the pattern I warned against. Mr. Market is offering a mediocre business at a premium price — the disciplined investor walks away.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "insufficient_data",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 31859,
+    "model_used": "opus",
+    "total_cost_usd": 0.13406775,
+    "usage": {
+      "input_tokens": 7,
+      "cache_creation_input_tokens": 10071,
+      "cache_read_input_tokens": 25378,
+      "output_tokens": 2336,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10071,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 90,
+          "cache_read_input_tokens": 11882,
+          "cache_creation_input_tokens": 1075,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1075
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

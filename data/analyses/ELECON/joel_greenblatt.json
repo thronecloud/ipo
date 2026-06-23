@@ -1,0 +1,69 @@
+{
+  "symbol": "ELECON",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-22T16:27:06.309510Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Elecon is a decent industrial compounder with improving ROCE (21%) but the Magic Formula rejects it at current prices — Earnings Yield of ~5.6% (EBIT INR 523 Cr / EV ~INR 9,366 Cr) sits below my 6% threshold, meaning the market is not offering a bargain. The FY2026 profit decline (INR 341 Cr vs INR 415 Cr in FY2025) further weakens the near-term case.",
+    "key_strengths": [
+      "Dramatic debt reduction (INR 335 Cr in 2021 → INR 52 Cr in 2023) slashed finance costs from INR 90 Cr to ~INR 14 Cr, driving the margin transformation",
+      "Consistently positive OCF (5/5 years) with operating margins expanding from ~15% to 17.5% over the cycle",
+      "High gross margin (46.75%) for a capital goods company signals real pricing power and a defensible niche in specialty gearboxes"
+    ],
+    "key_risks": [
+      "FY2026 shows margin compression — operating income fell from INR 543 Cr to INR 523 Cr and net profit dropped 18% YoY to INR 341 Cr despite revenue growth",
+      "Capex accelerating (INR 120 Cr in FY2026 vs INR 31 Cr in FY2024), dragging FCF down to INR 218 Cr from INR 368 Cr — capital intensity rising",
+      "Borrowings back on the rise (INR 273 Cr in FY2026 vs trough of INR 52 Cr in FY2023), reversing the deleveraging story"
+    ],
+    "red_flags": [
+      "Earnings Yield of ~5.6% (EBIT/EV) fails Magic Formula's 6% minimum — stock is not cheap",
+      "FY2026 PAT declined 18% YoY — first profit decline after a strong 4-year run; margin sustainability questionable",
+      "Revenue CAGR of only 7.8% over 9 years suggests limited secular growth; prior earnings growth was largely financial engineering (debt repayment) not operational scale"
+    ],
+    "detailed_analysis": "Running the Magic Formula on Elecon: EBIT in FY2026 was INR 523 Cr; EV = Market Cap (INR 9,262 Cr) + Debt (INR 273 Cr) − Cash (INR 169 Cr) ≈ INR 9,366 Cr, giving an Earnings Yield of 5.6% — just below the 6% floor I require. ROCE of 21% is respectable but short of the 25%+ I prefer for a Magic Formula candidate. The business scores moderately on quality but fails on cheapness, so the combination does not rank in the top tier of the universe.\n\nThe operational story is genuinely compelling over a 5-year arc: finance costs collapsed from INR 90 Cr to single digits as the company paid off debt, converting a heavily leveraged INR 11 Cr earner into a INR 415 Cr earner by FY2025. But FY2026 breaks the trend — operating income fell, PAT dropped 18%, FCF halved, and capex surged to INR 120 Cr. At 25.9x trailing P/E and an EV/EBITDA of 14.3x, the market is still pricing in the FY2021–25 golden run. Unless FY2027 shows a sharp earnings recovery (forward P/E implies 16.85x, so analysts expect ~INR 550 Cr+ PAT), the current price does not offer the margin of safety the Magic Formula demands.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 53141,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08428469999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11500,
+      "cache_read_input_tokens": 9269,
+      "output_tokens": 2558,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11500,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 360,
+          "cache_read_input_tokens": 9269,
+          "cache_creation_input_tokens": 2231,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2231
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "AZAD",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-18T16:41:54.906290Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Azad is a genuine fast grower — 38.8% revenue CAGR and 88% gross margins scream deep technical moat in precision aerospace components — but at a P/E of 101x and a trailing PEG of 1.57, the market has already priced in perfection. I'd love this story at half the price.",
+    "key_strengths": [
+      "88% gross margins + 30% operating margins in a manufacturing business signal extraordinary precision moat — customers can't easily substitute",
+      "Revenue CAGR of 38.8% and net profit CAGR of 64.1% over 4 years — this is a genuine fast grower in aerospace/defense/energy with long-cycle contracts",
+      "Post-IPO balance sheet cleaned up: D/E just 0.21, and 155 Cr CWIP signals capacity expansion that should drive next growth leg"
+    ],
+    "key_risks": [
+      "PEG ratio of 1.57 (101 P/E ÷ 64% growth) hits my red flag threshold — and at a more sustainable 35% growth rate, PEG balloons to nearly 3x",
+      "Free cash flow has been negative every single year: -16, -96, -94, -78, -240 Cr — this company consumes cash relentlessly; FY2025 capex alone was -293 Cr",
+      "ROE of only 8.57% despite elite margins exposes capital intensity — equity base ballooned from 204 Cr to 1,479 Cr in two years via IPO dilution, crushing return metrics"
+    ],
+    "red_flags": [
+      "Trailing PEG >1.5 — Lynch red flag; forward PEG ~1.8 even assuming 40% forward earnings growth",
+      "Free cash flow negative all 5 years reviewed (-240 Cr in FY2025 alone) — profits don't translate to cash",
+      "Net profit swung wildly: 29 Cr → 8 Cr → 59 Cr → 87 Cr — suggests earnings quality risk and sensitivity to finance costs (FY2023 finance cost was 52 Cr on just 252 Cr revenue)"
+    ],
+    "detailed_analysis": "Azad Engineering is the kind of niche manufacturer I instinctively love — precision blades and airfoils for GE Aviation-class customers, 88% gross margins that tell you no competitor can easily replicate their work, and a 38.8% revenue CAGR that says the market is growing fast and Azad is winning share. The business story is simple: India's precision aerospace supplier growing alongside global defense and energy capex cycles. The 155 Cr CWIP and -918 Cr investing CF in FY2025 tell me management is betting big on capacity — that's a company that believes its own order book.\n\nBut here's where I have to put down the checkbook: the P/E of 101x gives a PEG of 1.57 on the trailing 64% earnings growth — and that 64% includes some noise (finance costs cratered from 52 Cr in FY2023 to 18 Cr in FY2025 post-IPO, artificially boosting net profit growth). At a more normalized 30-35% growth rate, the PEG exceeds 2.9x. ROE at 8.57% is well below my 12% floor — the IPO equity injection diluted returns and the company hasn't yet earned its cost of capital on the new base. Until FCF turns durably positive and the new capacity starts generating returns, paying 101x earnings is paying for a story not yet written.",
+    "metrics_evaluated": {
+      "moat_strength": "strong",
+      "management_quality": "good",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "exceptional"
+    }
+  },
+  "metadata": {
+    "duration_ms": 56990,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09166440000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11640,
+      "cache_read_input_tokens": 8968,
+      "output_tokens": 3021,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11640
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 404,
+          "cache_read_input_tokens": 8968,
+          "cache_creation_input_tokens": 2672,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2672,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

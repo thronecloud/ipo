@@ -1,0 +1,71 @@
+{
+  "symbol": "INVICTA",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-21T08:00:09.260849Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Invicta Diagnostics is a micro-cap healthcare startup incorporated in 2021 with only three years of earnings history, a P/E of 21.5x that far exceeds my threshold, no dividend record, and a suspicious 275% revenue surge (INR 8→30 Cr) with no verifiable explanation — offering no margin of safety whatsoever. The intelligent investor demands proven earning power over years, not a single exceptional year that may not repeat.",
+    "key_strengths": [
+      "Zero debt (Finance Cost = 0 across all three years) — balance sheet is clean",
+      "Positive net profits for three consecutive years (INR 2→3→5 Cr), at least showing earnings exist",
+      "High ROCE of 46.4% suggests capital is deployed efficiently in its asset-light model"
+    ],
+    "key_risks": [
+      "Insufficient earnings history — incorporated January 2021, only 3 years of data vs. my required 5-10 year minimum",
+      "Unexplained 275% revenue spike (INR 8→30 Cr in FY25) — one extraordinary year is not proven earning power; reversion would devastate the investment case",
+      "P/E of 21.5x with market cap of INR 81.70 Cr on just INR 5 Cr net profit — no margin of safety; any earnings disappointment causes severe loss"
+    ],
+    "red_flags": [
+      "Company is only ~4 years old — no multi-year earnings track record as required by Security Analysis",
+      "No dividend ever paid — zero evidence of cash returns to shareholders",
+      "Revenue tripled in one year without disclosed explanation — acquisition, one-time contract, or accounting artifact all possible",
+      "Micro-cap (INR 81.70 Cr) with illiquidity risk — Mr. Market can be brutal to such small enterprises",
+      "P/B ratio unavailable but at a P/E of 21.5x on thin profits, price almost certainly exceeds book value by a wide margin"
+    ],
+    "detailed_analysis": "Invicta Diagnostics fails nearly every quantitative test I have prescribed over fifty years of practice. The P/E stands at 21.5x against my strict ceiling of 15x — and even that ceiling assumes a long, stable earnings record, which this company plainly lacks. Incorporated in January 2021 and showing only three annual data points, there is simply no way to determine what a normalized earning power looks like. The dramatic revenue leap from INR 8 Cr to INR 30 Cr in a single fiscal year is the kind of \"story\" that excites speculators and terrifies disciplined analysts — without knowing whether this reflects new diagnostic centers, an acquisition, or a one-time government contract, one cannot underwrite it. Net profit of INR 5 Cr on a market cap of INR 81.70 Cr implies the market is paying 16+ times earnings for a business that may already have peak-year results baked in.\n\nThe sole genuine virtue here is the balance sheet's cleanliness — zero finance cost across all three years means no creditor claims threaten the enterprise in a downturn. ROCE of 46.4% is attractive in isolation, but high returns on thin capital bases are common in early-stage service businesses and frequently compress as competition arrives or scale requires reinvestment. There is no dividend, no multi-year demonstration of earnings resilience, no P/B data to calculate a Graham Number, and the promoter holding of 66.7% — while aligning interests somewhat — concentrates risk in a company too young to have been tested through a full business cycle. Mr. Market may one day offer this at a price worthy of investigation; today it is not that price.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "insufficient_data",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 52011,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.06776805,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 7743,
+      "cache_read_input_tokens": 9776,
+      "output_tokens": 2386,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 7743,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 374,
+          "cache_read_input_tokens": 7726,
+          "cache_creation_input_tokens": 2067,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2067
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "544388",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-20T19:49:17.706690Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Identixweb is a tiny INR 9 Cr revenue Shopify-app shop with good ROE (24.8%) but no durable moat and no operating history to speak of. At INR 90 Cr market cap on ~INR 3 Cr profit, I'd rather wait a decade to see if the business is real.",
+    "key_strengths": [
+      "High ROCE of 34.3% and ROE of 24.8% on a debt-free balance sheet",
+      "Revenue up 50% in FY25 (6→9 Cr) with operating income doubling to 6 Cr",
+      "Promoter holding firm at 62.99%, no borrowings"
+    ],
+    "key_risks": [
+      "Micro-scale (9 Cr revenue) totally dependent on Shopify ecosystem — no moat, platform risk",
+      "Equity ballooned from 10→31 Cr in FY25 (IPO dilution); FCF negative two years running",
+      "P/E 18.6 on a 3 Cr profit base means any stumble collapses the multiple"
+    ],
+    "red_flags": [
+      "Recent IPO with equity jumping 3x in one year — cash sitting on balance sheet inflates ROE optics",
+      "Negative free cash flow in FY24 (-4) and FY25 (-2) despite reported profits",
+      "Business is essentially a services shop reselling on someone else's platform (Shopify)"
+    ],
+    "detailed_analysis": "This is exactly the kind of business I wouldn't touch. A five-year-old company doing INR 9 crore of revenue building apps on Shopify's platform has no circle of competence a long-term owner can rely on — Shopify changes its API or commercial terms and the whole thesis evaporates. The headline ROE of 24.8% and ROCE of 34.3% look attractive, but they're computed on a tiny capital base that just tripled via an IPO; the reserves line jumped from 3 to 21 Cr in FY25, so next year's ROE will mechanically compress as that cash sits idle. Meanwhile free cash flow has been negative in both FY24 and FY25 despite \"profits\" — a classic sign that reported earnings and actual owner cash don't line up.\n\nAt INR 90 Cr market cap on ~INR 3 Cr net profit, the trailing P/E of 18.6 is only reasonable if you believe the 50% revenue growth compounds for years. There's no evidence of pricing power, no switching costs (Shopify merchants churn apps constantly), no brand. Promoters at 63% is fine, but post-IPO insider behavior is unproven. I'd put this in the \"too hard / too small / too new\" pile and move on — there's no margin of safety and no moat worth paying for.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 23043,
+    "model_used": "opus",
+    "total_cost_usd": 0.09659050000000001,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 9500,
+      "cache_read_input_tokens": 13921,
+      "output_tokens": 1209,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9500,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 11084,
+          "cache_creation_input_tokens": 1253,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1253
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

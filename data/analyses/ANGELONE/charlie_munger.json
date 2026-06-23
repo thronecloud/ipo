@@ -1,0 +1,69 @@
+{
+  "symbol": "ANGELONE",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-19T06:26:34.230752Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Angel One built a credible discount broking platform on the back of India's retail participation boom, but the business is fundamentally commoditized with no pricing power, and FY2026 marks the first real crack — net profit fell 22% to INR 915 Cr as SEBI's F&O regulations bit into volumes. Borrowings tripling to INR 7,951 Cr in one year is the kind of balance sheet development that demands caution.",
+    "key_strengths": [
+      "Scale and brand in Indian retail broking — Super App platform with multi-product distribution (MF, insurance, credit) creates partial ecosystem stickiness",
+      "Revenue CAGR of 31.4% over 9 years demonstrates genuine business building; operating margins held above 30% through the cycle",
+      "Forward P/E of 19.97x is approaching a more reasonable entry zone given platform value, though business quality doesn't justify a premium"
+    ],
+    "key_risks": [
+      "Discount broking is a commoditized, low-switching-cost business — Zerodha, Groww, and bank-backed platforms compete on zero brokerage, making sustainable pricing power elusive",
+      "SEBI's F&O regulations fundamentally impaired the highest-margin revenue stream; FY2026 net profit decline of 22% is likely the beginning, not the end, of regulatory compression",
+      "Borrowings exploded from INR 2,541 Cr (FY2024) to INR 7,951 Cr (FY2026) — even if driven by margin funding growth, this leverage expansion in a weakening profit environment is dangerous"
+    ],
+    "red_flags": [
+      "OCF was negative INR 4,142 Cr in FY2026 — even accounting for margin client money flows, the acceleration is alarming",
+      "Finance costs rose from INR 137 Cr (FY2024) to INR 437 Cr (FY2026), growing faster than revenue — interest burden is compressing the economics",
+      "Promoter holding of 28.87% is low for a financial services business; management skin-in-the-game is insufficient"
+    ],
+    "detailed_analysis": "Angel One's trajectory follows a familiar pattern in financial services: ride a bull market wave, build distribution, then face the harsh reality that the core product is undifferentiated. The platform is real — the Super App with 20+ million clients has genuine value — but broking commissions are a race to zero, and the F&O regulatory changes have structurally reduced the most profitable segment. Net profit declining year-over-year while borrowings triple is not the capital discipline Munger looks for.\n\nThe positive case rests on India's long-term financialization story and Angel One's ability to monetize its customer base through adjacent products (credit, insurance, MF). At forward P/E of 20x this is not obscenely priced, but the business quality (ROE 15.6%, falling earnings) does not merit the premium implied. This is a speculative hold for those already invested — not a fresh allocation for a patient compounder.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 173721,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.22162395000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 23193,
+      "cache_read_input_tokens": 15154,
+      "output_tokens": 8673,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 23193,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 502,
+          "cache_read_input_tokens": 15154,
+          "cache_creation_input_tokens": 8039,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8039
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

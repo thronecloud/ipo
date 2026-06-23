@@ -1,0 +1,68 @@
+{
+  "symbol": "AHLUCONT",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-18T16:18:18.702923Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Ahluwalia Contracts is a clean-balance-sheet EPC stalwart riding India's infrastructure capex cycle with 14% revenue CAGR and near-zero debt (D/E 0.04), but razor-thin 6.6% operating margins and cyclical earnings dynamics cap its upside at a forward P/E of 17x. This is a decent stalwart, not the ten-bagger I'm hunting for.",
+    "key_strengths": [
+      "Pristine balance sheet — borrowings of just INR 76 Cr against equity of INR 1,924 Cr (D/E 0.04) with INR 318 Cr cash gives it crisis resilience rare in EPC",
+      "Consistent OCF generation — 5/5 years positive, INR 359 Cr in FY2025, confirming real earnings and not accounting mirages",
+      "India infrastructure tailwind — government + PSU revenue mix means a visible multi-year order pipeline as India's capex supercycle continues"
+    ],
+    "key_risks": [
+      "Margin compression risk — operating income actually fell from INR 388 Cr to INR 342 Cr in FY2025 even as revenue grew 6.3% to INR 4,099 Cr; margins are thin and deteriorating",
+      "Earnings quality concern — FY2024 net profit of INR 375 Cr included INR 232 Cr other income (vs. typical ~30 Cr), masking that normalized earnings are only ~INR 175–200 Cr",
+      "Capex escalation — investing CF surged to -INR 323 Cr in FY2025 (from -INR 46 Cr in FY2020), squeezing FCF to just INR 171 Cr (~3% FCF yield on market cap)"
+    ],
+    "red_flags": [
+      "FY2024 other income of INR 232 Cr (vs. FY2023: INR 30 Cr) inflated net profit to INR 375 Cr — the FY2025 collapse to INR 202 Cr exposes how weak core earnings power really is",
+      "Operating margin of 6.59% leaves almost no room for error on project execution, cost overruns, or commodity inflation — a single bad quarter can wipe the year"
+    ],
+    "detailed_analysis": "Ahluwalia Contracts is what I'd classify as a stalwart-cyclical — a solid, well-managed construction company growing steadily but not explosively. Revenue CAGR of 14.1% over 9 years is respectable, but this is a business where the earnings story is messy. The PEG looks appealing at first glance: forward P/E of 17x against ~15–18% expected growth implies a PEG of roughly 0.9–1.1. That's okay, but not the below-0.8 PEG I get excited about. More importantly, the 9-year net profit CAGR of only 10.2% tells me operating leverage is weak, and FY2025's INR 202 Cr earnings on INR 4,099 Cr revenue (net margin ~5%) is not the profile of a compounder.\n\nThe bull case rests on India's infrastructure boom — the company serves government, PSU, and private developers across hospitals, IT parks, metro stations, and data centers, which is exactly the sectors growing fast. The near-zero debt gives it staying power through cycles. But the ROE of 11.9% barely clears my 12% threshold, the operating margin has been stuck in a narrow band and is now slipping, and increasing capex (-INR 189 Cr in FY2025) is consuming cash that could otherwise compound equity. At INR 834, the stock is fairly valued for what it is — a dependable mid-size contractor — but I need to see margin expansion or a re-rating catalyst to get more excited. I'd watch for order book growth and margin recovery before building a position.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 77636,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08460014999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9893,
+      "cache_read_input_tokens": 7458,
+      "output_tokens": 3017,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9893,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 630,
+          "cache_read_input_tokens": 7458,
+          "cache_creation_input_tokens": 2435,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2435
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "GLAND",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-22T16:45:05.770486Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Gland Pharma's story is broken — revenue grew 16% over 5 years but net profit actually shrank (-2% CAGR), leaving the stock trading at P/E 34x with no earnings growth to justify it. Until margins stabilize and earnings recover, there's no classic Lynch \"fast grower\" thesis to own here.",
+    "key_strengths": [
+      "Virtually debt-free balance sheet (D/E: 0.03) with INR 2,556 Cr cash — fortress balance sheet",
+      "Specialized injectable formulations niche with CDMO capabilities — structurally defensible B2B moat",
+      "OCF positive all 5 years with INR 521 Cr FCF in FY25 — cash generation is real"
+    ],
+    "key_risks": [
+      "Earnings in structural decline — net profit fell from INR 1,212 Cr (FY22) to INR 699 Cr (FY25), below FY20 levels of INR 773 Cr",
+      "Margin compression is severe — operating margin down from ~36% (FY20) to 19.3% (FY25), ROE collapsed to 7.81% vs. my 12% minimum",
+      "Chinese promoter (Fosun Pharma, 51.83%) creates corporate governance overhang and geopolitical risk for US-market-dependent revenue"
+    ],
+    "red_flags": [
+      "PEG ratio is essentially undefined — P/E of 34.3 divided by negative earnings growth is infinite; no growth story supports this valuation",
+      "Net profit of INR 699 Cr in FY25 is lower than INR 773 Cr in FY20 despite revenue nearly doubling — something is structurally wrong with the cost structure",
+      "Finance costs surging 43% CAGR (INR 7 Cr → INR 42 Cr) signals new leverage being added just as profitability deteriorates"
+    ],
+    "detailed_analysis": "The cardinal rule in my playbook is simple: I want a company where earnings growth justifies the price. Gland Pharma fails this test completely. Revenue grew a respectable 16.4% CAGR from FY20–25, which normally excites me — but the bottom line tells a horror story. Net profit at INR 699 Cr in FY25 is actually *below* FY20's INR 773 Cr. That means five years of revenue growth produced zero earnings growth. At P/E 34x, I'm paying a premium growth multiple for a company whose profits are shrinking. Even on a forward basis, P/E of 25x demands earnings recovery that hasn't materialized in three years. The PEG ratio — my go-to metric — is essentially infinite here.\n\nThe margin collapse is the real story. Operating margins compressed from ~36% in FY20 to 19.3% today, and ROE of 7.81% is far below my 12% floor. Gland has real assets — near-zero debt, INR 2,556 Cr in cash, genuine FCF — but these are the marks of a stalwart at best, not a fast grower. The injectable CDMO niche has structural appeal, but intensifying US generic pricing pressure, USFDA compliance costs, and a Chinese promoter (Fosun) at 51.83% are all headwinds that explain why smart money isn't rushing in despite the cash pile. I'd watch for two consecutive quarters of margin expansion before revisiting.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 45211,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08234354999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11215,
+      "cache_read_input_tokens": 9111,
+      "output_tokens": 2503,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11215,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 446,
+          "cache_read_input_tokens": 9111,
+          "cache_creation_input_tokens": 2104,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2104
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

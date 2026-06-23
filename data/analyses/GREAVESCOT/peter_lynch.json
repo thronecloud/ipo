@@ -1,0 +1,70 @@
+{
+  "symbol": "GREAVESCOT",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-18T17:36:58.821176Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Greaves Cotton is a 165-year-old engine maker burning cash on an EV pivot — Ampere (2W) and ELE (3W) — that has produced negative free cash flow in 4 of the last 5 years and near-zero/negative net profit since 2021. At 34.6x P/E on essentially zero earnings, the market is paying a growth premium for a business that hasn't earned it yet.",
+    "key_strengths": [
+      "Low leverage: D/E of only 0.12 with INR 185 Cr borrowings limits near-term bankruptcy risk",
+      "Revenue recovery to INR 2,918 Cr in FY25, up 94% from the FY21 trough — the legacy engine business is alive",
+      "High promoter holding at 55.8% signals skin-in-the-game alignment"
+    ],
+    "key_risks": [
+      "Chronic FCF destruction: cumulative free cash flow -INR 553 Cr over FY22–FY25 with OCF positive just 1/5 years",
+      "Margins are dangerously thin at 3.94% operating margin and 4.11% ROE — both well below cost of capital",
+      "EV segment is capital-intensive with fierce funded competition (Ola Electric, TVS iQube, Bajaj Chetak) threatening Ampere's survival"
+    ],
+    "red_flags": [
+      "Net profit negative in FY21, FY22, FY24 (−INR 367 Cr write-down), and near-zero in FY25 (−INR 6 Cr) — 5 years of value destruction",
+      "Other Income swung to −INR 270 Cr in FY24, signaling large impairments likely on EV subsidiaries",
+      "Reserves eroding steadily: INR 1,540 Cr (FY23) → INR 1,329 Cr (FY25), a INR 211 Cr equity bleed in two years",
+      "Borrowings jumped 6.6x: INR 28 Cr (FY23) → INR 185 Cr (FY25) as the company funds losses with debt"
+    ],
+    "detailed_analysis": "Peter Lynch would ask: \"What's the story?\" For Greaves Cotton, the story is a slow-grower (6.8% revenue CAGR over 9 years) that tried to reinvent itself as an EV play, but the pivot has been a value-destroyer. Operating income CAGR is −4.3% over the same period — meaning the core business is shrinking faster than revenue implies. EBITDA collapsed from INR 324 Cr (FY19) to INR 44 Cr (FY22) and has only partially recovered to INR 176 Cr in FY25. At 3.94% operating margin, there is no margin of safety. Lynch loved finding stalwarts or fast-growers at bargain prices; this is neither — it's a turnaround story that hasn't turned.\n\nThe EV optionality is real but the execution has been painful and the competitive landscape brutal. The FY24 INR 367 Cr net loss (driven by a −INR 270 Cr \"Other Income\" line — almost certainly EV write-downs) wiped out years of accumulated reserves. Forward P/E of 18.55x assumes a meaningful earnings recovery, but with OCF negative in FY25 (−INR 23 Cr) and capex still running at ~INR 82 Cr, free cash flow improvement is not guaranteed. Lynch's PEG framework breaks down entirely when earnings are near zero — but if we assume INR 50 Cr normalized earnings, the implied P/E is ~75x. That's not GARP; that's hope at a premium. I'd pass until this company demonstrates two consecutive years of positive free cash flow and operating margins above 7%.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 56765,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0912195,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11756,
+      "cache_read_input_tokens": 9185,
+      "output_tokens": 2958,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11756
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 431,
+          "cache_read_input_tokens": 9185,
+          "cache_creation_input_tokens": 2571,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2571,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

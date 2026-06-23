@@ -1,0 +1,71 @@
+{
+  "symbol": "RBA",
+  "persona": "radhakishan_damani",
+  "persona_display_name": "Radhakishan Damani",
+  "analyzed_at": "2026-04-18T22:10:11.482409Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "RBA has posted net losses every single year for five years (-₹233 Cr in FY25), while borrowings have nearly doubled to ₹1,789 Cr — the opposite of the conservative balance sheet I require. With promoter skin-in-the-game at a mere 11.26%, I have no confidence in capital allocation discipline.",
+    "key_strengths": [
+      "Operating cash flow improving steadily — ₹350 Cr in FY25, positive all 5 years, showing restaurant-level cash generation",
+      "Gross margin of 45.76% is reasonable for QSR, suggesting unit economics are not broken at the store level",
+      "Revenue growing at 26.3% CAGR (₹1,004 Cr → ₹2,551 Cr), indicating brand acceptance in India"
+    ],
+    "key_risks": [
+      "Debt/Equity of 2.29 — nearly 8x my maximum threshold of 0.3; borrowings grew ₹888 Cr in just 3 years",
+      "Promoter holding at 11.26% is disqualifying — who is protecting minority shareholders here?",
+      "Five straight years of net losses (total ~₹1,229 Cr destroyed) with finance costs of ₹161 Cr in FY25 consuming any operating gains"
+    ],
+    "red_flags": [
+      "Promoter stake 11.26% — dangerously low, no alignment with minority investors",
+      "D/E of 2.29 with borrowings still rising (₹1,430 Cr → ₹1,789 Cr in one year)",
+      "ROCE of -3.01% — capital is being destroyed, not compounded",
+      "Aggressive debt-funded expansion in a competitive QSR market facing Zomato/Swiggy disruption",
+      "Negative operating margin (-1.25%) despite ₹2,551 Cr revenue — scale is not translating to profitability"
+    ],
+    "detailed_analysis": "I built DMart on one principle: never lose the owner's money. RBA has lost ₹1,229 Cr of equity over five years — every single year in the red — while management has simultaneously doubled the debt load to ₹1,789 Cr. Finance costs of ₹161 Cr alone are enough to wipe out any operating progress. The EV/EBITDA of 40.79x for a business with negative ROCE of -3% and negative operating margins is a valuation that makes no sense to me.\n\nThe promoter holding of 11.26% is the single biggest disqualifier. When I buy a business, I need the promoter to have more to lose than I do. Here, institutions (DII 45.6%) own far more than the promoters. That is not a business — that is a management team spending other people's money. The QSR business model in India is also under structural pressure from food delivery aggregators. Until this company proves sustained profitability, carries its debt below 0.5x D/E, and has promoters with genuine skin in the game, I will not touch it.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 38106,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.06163365,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8191,
+      "cache_read_input_tokens": 10828,
+      "output_tokens": 1844,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8191,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 366,
+          "cache_read_input_tokens": 8738,
+          "cache_creation_input_tokens": 1543,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1543
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

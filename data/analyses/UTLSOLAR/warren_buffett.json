@@ -1,0 +1,70 @@
+{
+  "symbol": "UTLSOLAR",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-21T08:03:18.150997Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Fujiyama Power Systems operates in a commoditized, capital-intensive solar hardware market with no discernible economic moat, trading at an absurd 402x earnings. Despite impressive revenue growth, the business consumes cash relentlessly — free cash flow was negative in 4 of the last 5 years, including -₹101 Cr in FY25 against reported profits of ₹156 Cr.",
+    "key_strengths": [
+      "Strong revenue CAGR of 38.8% over 5 years, reaching ₹1,539 Cr in FY25 — genuine top-line momentum",
+      "Operating margin expanding sharply to 17.2% with EBITDA CAGR of 44.1%, suggesting some operating leverage",
+      "UTL Solar brand has domestic recognition in inverters/solar; 86.76% promoter holding signals conviction"
+    ],
+    "key_risks": [
+      "P/E of 402x leaves zero margin of safety — any growth stumble causes catastrophic price correction",
+      "Free cash flow was -₹101 Cr in FY25 despite ₹156 Cr net profit; massive OCF-to-PAT divergence signals poor earnings quality and working capital strain",
+      "D/E of 1.38 is dangerous in a cyclical, commodity-adjacent business competing against subsidized Chinese imports"
+    ],
+    "red_flags": [
+      "FY25 net profit ₹156 Cr vs OCF only ₹18 Cr — a ₹138 Cr gap screams earnings quality problems",
+      "Negative FCF in 4 of 5 years; this business destroys cash even as it reports profit growth",
+      "P/E of 402x with no identifiable moat is speculative froth, not business value",
+      "Debt nearly tripled from ₹141 Cr (FY22) to ₹395 Cr (FY25) while cash sits at just ₹8 Cr"
+    ],
+    "detailed_analysis": "Fujiyama is a solar hardware manufacturer — panels, inverters, batteries — in one of India's most competitive and commoditized sectors. I look for businesses where the economics are so durable that I'd be comfortable owning them forever. Solar hardware has none of those qualities: products are commoditized, Chinese manufacturers undercut on price perpetually, government policy dictates demand, and customers have essentially zero switching costs. The ROCE of 16.6% versus a debt-inflated ROE of 58% tells me the underlying business returns are mediocre once you strip away financial leverage. That's the hallmark of a capital-consuming business, not a capital-generating one.\n\nThe financial picture worsens on closer inspection. In FY25, the company reported ₹156 Cr net profit but generated only ₹18 Cr of operating cash flow — a ₹138 Cr divergence that almost certainly reflects aggressive revenue recognition, ballooning receivables, or inventory build-up. Free cash flow has been negative in 4 of 5 years, including -₹101 Cr last year. Meanwhile, the stock trades at 402x earnings and 13.7x book. I paid 8x earnings for See's Candies and thought I was doing reasonably well. At 402x, you're not buying a business — you're buying a story. The price assumes perfection sustained for decades in an industry that offers anything but. I'd want no part of this at any price near current levels.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 37311,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07090605,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10249,
+      "cache_read_input_tokens": 8561,
+      "output_tokens": 1993,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10249,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 346,
+          "cache_read_input_tokens": 8561,
+          "cache_creation_input_tokens": 1688,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1688
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

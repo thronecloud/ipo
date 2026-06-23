@@ -1,0 +1,70 @@
+{
+  "symbol": "PURVA",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T22:11:12.274576Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Puravankara fails both Magic Formula screens decisively — Earnings Yield of ~3.2% (EBIT ₹291 Cr / EV ~₹8,976 Cr) is far below the 6% minimum, and ROCE of 6% is less than one-third the 20% threshold for a good business. With finance costs (₹555 Cr) nearly double EBIT (₹291 Cr), the underlying business cannot service its own debt — this is a capital-consuming enterprise, not a capital-compounding one.",
+    "key_strengths": [
+      "High promoter holding (75%) signals alignment and conviction in the business",
+      "Gross margin of 44% indicates pricing power at the project level",
+      "Revenue recovering — ₹2,185 Cr in FY24 from a trough of ₹955 Cr in FY22"
+    ],
+    "key_risks": [
+      "Finance cost (₹555 Cr) exceeds EBIT (₹291 Cr) — interest coverage ratio of 0.52x, deeply insolvent at the earnings level",
+      "Debt has surged to ₹4,497 Cr (2025) from ₹2,627 Cr (2022) while equity has shrunk from ₹2,042 Cr to ₹1,619 Cr",
+      "Operating cash flow flipped to -₹531 Cr in FY25 after a strong ₹896 Cr in FY24 — highly volatile, project-lumpy"
+    ],
+    "red_flags": [
+      "Net loss of ₹183 Cr in FY25 — Magic Formula requires positive EBIT to function; earnings yield is near-meaningless here",
+      "ROIC/ROCE of 6% is catastrophically below the 20% threshold — this business destroys capital at scale",
+      "Real estate developer: Greenblatt explicitly excludes capital-structure-distorted industries like this",
+      "Finance costs growing at 9.6% CAGR over 9 years while EBITDA grew only 0.6% — debt is compounding faster than earnings"
+    ],
+    "detailed_analysis": "Running the Magic Formula: EV = Market Cap (₹5,340 Cr) + Net Debt (₹4,332 Cr - ₹696 Cr cash) = ~₹8,976 Cr. EBIT (Operating Income 2025) = ₹291 Cr. Earnings Yield = 291/8,976 = 3.2% — needs to be above 12% to be attractive. ROCE at 6% is similarly disqualifying; the business earns barely above nothing on its capital base. Both legs of the Magic Formula are broken simultaneously. The company also earns a negative net profit (-₹183 Cr in FY25), meaning the formula cannot even be properly applied.\n\nThe structural problem is existential: annual finance costs of ₹555 Cr are nearly 2x EBIT. Every rupee earned from operations is consumed and then some by interest alone, forcing continued debt accumulation (borrowings up 70% in three years to ₹4,497 Cr). Equity has eroded from ₹2,042 Cr in FY22 to ₹1,619 Cr in FY25 — the company is slowly consuming its net worth. Real estate developers like Puravankara are explicitly the type of capital-intensive, balance-sheet-heavy businesses the Magic Formula is designed to avoid. At a 23x forward P/E and EV/EBITDA of 21x, the market is pricing in a recovery the fundamentals do not yet support.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 40891,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0784398,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10966,
+      "cache_read_input_tokens": 8961,
+      "output_tokens": 2308,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10966,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 363,
+          "cache_read_input_tokens": 8961,
+          "cache_creation_input_tokens": 2005,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2005
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

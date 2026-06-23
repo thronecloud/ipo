@@ -1,0 +1,69 @@
+{
+  "symbol": "544330",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-20T09:43:39.478000Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "A tiny copper-scrap recycler with a 0.20% ROE is not a business I'd ever own — there's no moat in recycling commodity metal, and the economics are dreadful. At 12x earnings this looks cheap only until you realize you're paying for near-zero profitability.",
+    "key_strengths": [
+      "High promoter skin-in-the-game at 72.03%",
+      "Modest headline P/E of 12 (optically cheap)",
+      "Simple, understandable scrap-recycling business model"
+    ],
+    "key_risks": [
+      "ROE of 0.20% — essentially destroying capital vs. cost of equity",
+      "Commodity pass-through business with zero pricing power or moat",
+      "Micro-cap (INR 189 Cr) with negligible institutional ownership (DII 0.03%, FII 0%)"
+    ],
+    "red_flags": [
+      "ROE near zero is incompatible with a real business franchise",
+      "Recent incorporation (2016) + recent listing — unproven through a full copper cycle",
+      "No competitive moat in copper scrap recycling — pure tolling margins"
+    ],
+    "detailed_analysis": "A 0.20% return on equity tells you everything you need to know. In my entire career I've insisted on businesses earning 15%+ on equity consistently; this one isn't even clearing a savings account rate. Copper-rod-from-scrap is a classic commodity conversion business — you buy scrap at spot, sell rod at spot minus a conversion charge, and your margin is dictated entirely by LME pricing and local competition. There is no brand, no switching cost, no network effect, no regulatory moat. The 12x P/E is meaningless when the \"E\" is a sliver on a fat equity base.\n\nThe 72% promoter holding is the one positive — owner mentality matters — but you cannot fix commodity economics with good intentions. A micro-cap at INR 189 Cr with virtually no institutional sponsorship, incorporated only in 2016, listed recently, operating in a cyclical metals niche — this sits well outside any reasonable circle of competence for a long-term compounder. I'd pass without a second look and wait for a wonderful business at a fair price instead.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 20092,
+    "model_used": "opus",
+    "total_cost_usd": 0.08769025,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8805,
+      "cache_read_input_tokens": 13408,
+      "output_tokens": 1037,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8805,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10571,
+          "cache_creation_input_tokens": 1071,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1071
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

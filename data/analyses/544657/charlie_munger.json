@@ -1,0 +1,70 @@
+{
+  "symbol": "544657",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-20T11:05:18.496919Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "A 2021-incorporated cashew processor earning a pathetic 0.60% ROE trading at 18.3x P/E is the opposite of a compounding machine — it's a commodity micro-cap priced like a franchise. Invert: what could go wrong? Almost everything already has, and the market hasn't noticed.",
+    "key_strengths": [
+      "Promoter skin in the game at 62.47% holding",
+      "Operating in a stable end-market (cashew/FMCG food)",
+      "Small DII presence (7.63%) suggests some institutional sniffing"
+    ],
+    "key_risks": [
+      "ROE of 0.60% — destroys capital vs India's ~7% risk-free rate",
+      "Commodity cashew processing has no moat; price-taker on both input and output",
+      "Four-year-old company with no long-term track record through a cycle"
+    ],
+    "red_flags": [
+      "ROE of 0.60% is roughly 20x below Munger's quality threshold",
+      "18.3x P/E on negligible earnings = tiny absolute profits relative to INR 374 Cr market cap",
+      "Zero FII ownership — no smart external scrutiny",
+      "BSE-listed SME-style micro-cap with thin disclosure history"
+    ],
+    "detailed_analysis": "Inversion first: what kills investments? Low returns on capital, commodity economics, short track records, and paying a growth multiple for a no-growth business. This stock checks every box. A 0.60% ROE means management is destroying economic value — an investor would do meaningfully better in a government bond with no business risk. Cashew processing is a brutally commoditized activity; margins depend on raw cashew nut (RCN) prices from Africa/Vietnam versus kernel prices — neither of which this company controls. There is no brand, no switching cost, no scale advantage, no network effect. Nothing to compound.\n\nThe valuation is the insult on top of the injury. Paying 18.3x earnings and roughly ~300x book-implied earnings power (0.60% ROE × book) for a 2021-vintage commodity processor is speculation, not investing. With a market cap of INR 374 Cr on razor-thin profits, the entire thesis depends on either a massive ROIC expansion that history doesn't support, or a greater fool. Munger's rule: a great business at a fair price beats a fair business at a great price — this is neither. Stay in the \"too hard\" pile, or more accurately, the \"easy no\" pile.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 23060,
+    "model_used": "opus",
+    "total_cost_usd": 0.09252350000000001,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8968,
+      "cache_read_input_tokens": 13187,
+      "output_tokens": 1194,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8968,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10460,
+          "cache_creation_input_tokens": 1235,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1235
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

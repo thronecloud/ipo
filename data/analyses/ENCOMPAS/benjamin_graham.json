@@ -1,0 +1,71 @@
+{
+  "symbol": "ENCOMPAS",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-21T07:54:55.279362Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "At a P/E of 32.2x with a ROE of a mere 0.50%, Encompass Design offers no margin of safety whatsoever — the market is pricing a growth story into a business that earns virtually nothing on shareholders' capital. Mr. Market is being wildly optimistic; the disciplined investor must refuse to join him.",
+    "key_strengths": [
+      "Promoter holding of 58.94% signals skin in the game",
+      "FII + DII combined 12.57% shows some institutional interest",
+      "Small market cap (INR 347 Cr) means it could theoretically be mispriced — but not in the investor's favour here"
+    ],
+    "key_risks": [
+      "ROE of 0.50% is near-zero — the business is destroying shareholder value in real terms after inflation",
+      "P/E of 32.2x demands flawless, sustained earnings growth that is wholly unproven",
+      "Insufficient balance sheet data (P/B, Current Ratio, Debt-to-Equity) — cannot assess solvency or asset backing"
+    ],
+    "red_flags": [
+      "P/E of 32.2x is more than double my strict ceiling of 15x — this is speculation, not investment",
+      "ROE of 0.50% means nearly all earnings are consumed just sustaining the business — no real return to owners",
+      "Vague business model ('builds and scales consumer brands' / 'ScaleSauce') — no tangible competitive moat",
+      "No dividend history provided — zero demonstrated cash return to shareholders",
+      "Micro-cap with INR 347 Cr market cap and a 'Trading & Distributors' tag — low barriers to entry, no durable franchise"
+    ],
+    "detailed_analysis": "Graham's first filter is P/E below 15; Encompass fails immediately at 32.2x. More damning is the ROE of 0.50% — a business that earns half a rupee on every INR 100 of equity is not a business, it is a balance sheet in stasis. Without P/B, current ratio, or debt-to-equity data, I cannot even compute the Graham Number, but given a near-zero ROE, book value per share is likely providing no meaningful floor to the price. The Graham Number formula (√22.5 × EPS × BVPS) would almost certainly produce a figure well below INR 245, confirming deep overvaluation.\n\nThe qualitative picture is no better. \"Builds and scales consumer brands\" is precisely the sort of narrative that lures speculators and traps investors. Trading & Distributors is a low-moat industry with no pricing power. The company was incorporated only in 2010, and I have no evidence of five consecutive years of meaningful positive earnings — a minimum requirement. At INR 245, this stock is priced for a future that has not yet arrived and may never arrive. I require a margin of safety; here I see only a margin of danger.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 39787,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.055326600000000004,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 7022,
+      "cache_read_input_tokens": 9617,
+      "output_tokens": 1740,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 7022,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 284,
+          "cache_read_input_tokens": 7567,
+          "cache_creation_input_tokens": 1505,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1505
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

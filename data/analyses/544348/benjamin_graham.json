@@ -1,0 +1,70 @@
+{
+  "symbol": "544348",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-20T09:49:46.820119Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "A P/E of 2.64 is statistically enticing, but GB Logistics was only incorporated in 2019 and lacks the 5-10 year earnings record I demand. Without balance sheet data (current ratio, debt/equity, book value) and with a tiny INR 29.5 Cr market cap, this is speculation, not investment.",
+    "key_strengths": [
+      "P/E of 2.64 is extraordinarily low — earnings yield ~38%",
+      "ROCE 28.2% and ROE 26.4% indicate strong capital efficiency",
+      "Promoter holding of 52.40% shows skin in the game"
+    ],
+    "key_risks": [
+      "Founded 2019 — no 5-year earnings record; likely a recent SME IPO",
+      "Market cap only INR 29.5 Cr — illiquid, manipulable, no institutional coverage (FII 0.29%)",
+      "No disclosed data on debt, current ratio, book value, or dividends"
+    ],
+    "red_flags": [
+      "Insufficient earnings history (<5 years) fails the Graham durability test",
+      "Trading of products alongside freight — low-moat commoditized business",
+      "Suspiciously low P/E often signals undisclosed quality or accounting concerns in micro-caps",
+      "No dividend history to verify real cash generation"
+    ],
+    "detailed_analysis": "The numbers at first glance tempt the value hunter: a P/E of 2.64 implies an earnings yield near 38%, and returns on capital of 28% suggest the business earns real money on its assets. Were this a seasoned enterprise with a decade of audited statements, it would merit immediate investigation. But GB Logistics was incorporated in 2019 — barely seven years of existence, of which only a fraction is likely as a listed entity. My rule is unambiguous: at least five, preferably ten, consecutive years of positive earnings before a stock qualifies as an investment rather than a speculation.\n\nFurther, the data provided is dangerously incomplete for my framework. I have no book value (cannot compute the Graham Number or P/B), no current ratio (cannot verify liquidity >2.0), no debt-to-equity (cannot confirm balance sheet conservatism), and no dividend record. A INR 29.5 Cr market cap with negligible institutional ownership (FII 0.29%, DII 2.18%) is precisely the kind of micro-cap where Mr. Market's quoted price may have little relation to realizable value — and where a low P/E often masks earnings quality issues, related-party trading, or one-off items in a thinly-traded \"trading of products\" segment. Pass.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "insufficient_data",
+      "financial_health": "insufficient_data",
+      "valuation": "insufficient_data",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 26727,
+    "model_used": "opus",
+    "total_cost_usd": 0.10052050000000001,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 9226,
+      "cache_read_input_tokens": 13506,
+      "output_tokens": 1443,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9226,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10620,
+          "cache_creation_input_tokens": 1492,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1492
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

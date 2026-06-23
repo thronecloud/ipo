@@ -1,0 +1,71 @@
+{
+  "symbol": "PWL",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-21T08:08:52.011059Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "PhysicsWallah scores near-zero on both Magic Formula metrics — Earnings Yield of ~0.6% (EBIT INR 199 Cr / EV ~INR 31,919 Cr) and negative ROCE of -2.12%, making it untouchable under any value-based framework. Exceptional revenue growth (131% CAGR) is entirely offset by an absurd valuation (EV/EBITDA 433x) and a track record of destroying capital over the past three years.",
+    "key_strengths": [
+      "Explosive revenue growth: INR 233 Cr (2022) → INR 2,887 Cr (2025), 131% CAGR — genuine brand resonance in Indian ed-tech",
+      "OCF turned consistently positive (4/4 years), with FY2025 OCF of INR 507 Cr and FCF of INR 340 Cr showing some cash generation",
+      "High promoter holding (72.3%) signals founder conviction; FII/DII combined 25% suggests institutional validation"
+    ],
+    "key_risks": [
+      "Near-zero earnings yield (~0.6%) — EV of ~INR 31,919 Cr against EBIT of only INR 199 Cr makes this one of the most expensive stocks in any screen",
+      "Serial capital destruction: cumulative net losses of INR 1,458 Cr over FY2023-25, equity was negative for two consecutive years (-INR 183 Cr, -INR 1,246 Cr)",
+      "Massive uninvestigated investing outflows: -INR 1,513 Cr in FY2025 investing CF with no clear return — FY2024's -INR 672 Cr 'other income' suggests prior acquisition impairments"
+    ],
+    "red_flags": [
+      "Earnings Yield of 0.62% — Magic Formula requires >12% to even consider",
+      "ROCE of -2.12% and ROE of -17.38% — capital is being destroyed, not compounded",
+      "Equity turned negative twice (2023, 2024) — balance sheet required a large capital infusion to survive",
+      "FY2024 net loss of INR 1,131 Cr driven by -INR 672 Cr other income — likely goodwill impairment from poorly-priced acquisitions",
+      "Borrowings spiked from zero to INR 2,461 Cr then collapsed to INR 970 Cr in one year — erratic and opaque capital structure"
+    ],
+    "detailed_analysis": "Through the Magic Formula lens, PhysicsWallah fails both tests catastrophically. Earnings Yield (EBIT/EV) = 199 / 31,919 = 0.62% — against my 12% minimum threshold. Return on Capital is negative per the reported ROCE of -2.12%, confirmed by three consecutive years of net losses totaling INR 1,458 Cr. The EV/EBITDA of 433x is not a typo — the market is pricing in decades of future profits that have yet to materialize. The Magic Formula explicitly requires BOTH cheapness AND business quality; PWL has neither today.\n\nThe revenue story is genuinely impressive — 131% CAGR is rare — and OCF of INR 507 Cr in FY2025 shows the underlying subscription/course model can generate cash. But this is a story stock, not a value stock. The balance sheet required a complete rescue: equity went from -INR 1,246 Cr (FY2024) to +INR 1,398 Cr (FY2025), almost certainly via the IPO. Continued heavy investing outflows (-INR 1,513 Cr in FY2025) suggest management is still in aggressive expansion mode with no demonstrated ability to earn above cost of capital. I'd revisit only if EBIT/EV exceeds 12% and ROCE sustains above 20% for two full fiscal years — both are years away at minimum.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 46470,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08127735,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10845,
+      "cache_read_input_tokens": 8632,
+      "output_tokens": 2534,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10845,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 373,
+          "cache_read_input_tokens": 8632,
+          "cache_creation_input_tokens": 2213,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2213
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

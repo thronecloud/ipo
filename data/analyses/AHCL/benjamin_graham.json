@@ -1,0 +1,67 @@
+{
+  "symbol": "AHCL",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-20T11:10:41.584228Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Anlon Healthcare fails nearly every Graham test: P/B of 2.27 exceeds my 1.5 ceiling, operating cash flow has been negative for four consecutive years (-23 Cr in 2025), and the earnings history is too short and erratic (loss in 2022). The apparent \"growth story\" is being financed entirely by debt and equity raises, not by genuine earning power — there is no margin of safety here.",
+    "key_strengths": [
+      "Reported ROE of 25.52% and ROCE of 38.12% in 2025 — strong if sustainable"
+    ],
+    "key_risks": [
+      "Operating cash flow negative in 0/4 years — reported profits not converting to cash",
+      "Equity jumped from 21 Cr to 80 Cr in 2025 (likely recent IPO/placement) — promoter-favorable pricing",
+      "Only 3 years of positive earnings; 2022 was a loss — fails Graham's 5-year stability test"
+    ],
+    "red_flags": [
+      "FCF of -23 Cr in 2025 while reporting 21 Cr net profit — severe working capital / receivables build",
+      "Total debt of 67 Cr vs cash of 1 Cr — thin liquidity cushion",
+      "Recent IPO/fundraise — seller (promoter/banker) has informational advantage"
+    ],
+    "detailed_analysis": "Mr. Market is asking me to pay 2.27x book and 17.75x earnings for a small API manufacturer whose reported net profit of 21 Cr in 2025 is completely belied by operating cash flow of -23 Cr. This 44 Cr gap between accrual earnings and cash is the single most important number in this filing, and it is the kind of disparity that has historically preceded accounting disappointments. Revenue itself is lumpy (57 → 113 → 67 → 120 Cr), which tells me the \"28% CAGR\" is an artifact of endpoint selection, not a durable earning power I can capitalize.\n\nThe balance sheet confirms the concern: equity ballooned from 21 Cr to 80 Cr in a single year — this is fresh capital from an IPO or placement, not retained earnings compounding. Debt of 67 Cr against 1 Cr of cash and persistently negative FCF means the business cannot self-fund; it depends on capital markets. There is no dividend record, no multi-year earnings stability, and no discount to intrinsic value. I require a margin of safety, and paying a premium over book for a cash-burning micro-cap recently floated by insiders is the opposite of that. Avoid.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 20988,
+    "model_used": "opus",
+    "total_cost_usd": 0.09900625,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 9989,
+      "cache_read_input_tokens": 14540,
+      "output_tokens": 1171,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9989,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 11654,
+          "cache_creation_input_tokens": 1221,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1221
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

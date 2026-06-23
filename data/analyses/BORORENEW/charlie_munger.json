@@ -1,0 +1,70 @@
+{
+  "symbol": "BORORENEW",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T16:52:45.791186Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Borosil Renewables is India's sole domestic solar glass manufacturer — a structurally interesting niche — but Chinese import dumping has obliterated margins so thoroughly that EBITDA collapsed 72% (₹256 Cr → ₹73 Cr) even as revenue grew 130% from 2022 to 2025. Owning the only factory doesn't matter if you can't price above cost of capital.",
+    "key_strengths": [
+      "Sole domestic solar glass manufacturer — regulatory protection via anti-dumping duties is a credible catalyst",
+      "Strong promoter commitment at 58.77% holding with manageable D/E of 0.23x after debt repayment in FY25",
+      "India's solar buildout (200 GW target) creates structural demand tailwind over a decade"
+    ],
+    "key_risks": [
+      "Margin destruction from Chinese imports: EBITDA/revenue collapsed from ~40% (2022) to ~5% (2025) with no floor visible",
+      "Chronic negative FCF every year shown (worst: -₹353 Cr in 2023); the business consumes capital rather than generating it",
+      "Valuation is disconnected from reality — P/B 5.93x and EV/EBITDA 20x on a business posting -₹87 Cr net loss in FY25"
+    ],
+    "red_flags": [
+      "ROE -8.90% and ROCE -4.41% — negative returns on capital are the cardinal sin for a Munger-style investor",
+      "Net losses accelerating: -₹50 Cr (FY24) → -₹87 Cr (FY25) despite 7.6% revenue growth to ₹1,476 Cr",
+      "Finance costs tripled (₹8 Cr → ₹32 Cr) while EBITDA halved — interest coverage is perilously thin at ~2.3x",
+      "OCF positive only 3 of 5 years; capex outstripped OCF every single year — growth funded entirely by debt/equity dilution"
+    ],
+    "detailed_analysis": "Inverting first, as one must: what kills this investment? Chinese manufacturers produce solar glass at a fraction of Borosil's cost, and they have been selling into India at predatory prices. The evidence is in the numbers — revenue grew from ₹642 Cr (FY22) to ₹1,476 Cr (FY25), a 130% jump, yet EBITDA collapsed from ₹256 Cr to ₹73 Cr. That is the signature of a commodity producer with no pricing power, selling more volume at ever-thinner margins. Operating income in FY25 is ₹58 Cr — identical to FY24 — on a cost base that keeps growing. A business that cannot translate revenue growth into earnings growth has no moat worth speaking of.\n\nThe capital structure tells the rest of the story. Borosil spent ₹1,047 Cr in capex over 2022–2025 to expand capacity, funded largely by borrowings (debt peaked at ₹576 Cr in FY24). FCF has been negative in every year shown. Now, with losses mounting and debt partially repaid (₹252 Cr by FY25), the company faces a binary outcome: either anti-dumping duties are imposed decisively and margins recover, or losses continue until equity is impaired. At ₹6,987 Cr market cap on -₹87 Cr net profit, the market is pricing in a full recovery with no margin of safety — exactly the kind of speculative, hope-driven pricing I avoid. The only scenario warranting attention is if the government imposes strong, lasting anti-dumping protection, but government policy is not a business model.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 74656,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09573704999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11617,
+      "cache_read_input_tokens": 8731,
+      "output_tokens": 3303,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11617
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 475,
+          "cache_read_input_tokens": 8731,
+          "cache_creation_input_tokens": 2886,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2886,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

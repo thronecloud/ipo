@@ -1,0 +1,69 @@
+{
+  "symbol": "544332",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-20T09:44:37.185518Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Fabtech is a tiny (INR 270 Cr mcap), lumpy turnkey engineering shop for pharma cleanrooms with decent headline ROCE (21.2%) but poor earnings quality — FY25 OCF of just INR 3 Cr against net profit of INR 13 Cr, and essentially zero free cash flow. Invert: project-based businesses with working-capital-heavy receivables, no visible moat, and a one-year-old listing are precisely the kind of thing I avoid at 27.6x earnings.",
+    "key_strengths": [
+      "ROCE 21.2% and ROE 18.1% — above cost of capital on reported numbers.",
+      "Low debt (INR 10 Cr vs INR 95 Cr equity); balance sheet not leveraged.",
+      "Niche exposure to pharma/biotech capex tailwind; revenue CAGR 11% over 5 years."
+    ],
+    "key_risks": [
+      "FCF/NI abysmal — FY25 FCF ~0 on INR 13 Cr PAT; earnings not converting to cash.",
+      "Lumpy EPC-style revenue (89→70→114→125→97→150) — no predictability.",
+      "Commoditized turnkey fabrication, no moat, no switching costs, no pricing power."
+    ],
+    "red_flags": [
+      "5-yr cumulative OCF ~INR 21 Cr vs cumulative PAT ~INR 36 Cr — cash-flow gap typical of EPC.",
+      "Microcap with zero FII ownership; limited institutional scrutiny.",
+      "Recent IPO (equity 52→95 Cr in FY25); unproven capital allocation of fresh INR 43 Cr."
+    ],
+    "detailed_analysis": "Applying inversion: what kills returns in a business like this? Working capital blowups on fixed-price turnkey contracts, a single bad project, loss of key clients, or a downcycle in pharma capex. The cash-flow statement already whispers the warning — despite revenue growing from 97 to 150 Cr and PAT doubling to 13 Cr, FY25 operating cash flow stayed at just 3 Cr. That is the signature of receivables and inventory soaking up profits, classic of EPC/turnkey vendors. A 27.6x multiple on earnings that don't translate to cash is not a margin of safety; it's the opposite.\n\nThe ROCE headline is flattering but earned on a small asset base, and the business just ballooned equity ~80% via fresh capital it has yet to deploy productively (INR 26 Cr investing outflow in FY25, CWIP still zero). Cleanroom engineering for pharma is a real niche, but fragmented and commoditized at the fabrication layer — no pricing power, no switching costs, no compounding flywheel. Fails my test of \"a wonderful business at a fair price.\" Pass.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "insufficient_data",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 40897,
+    "model_used": "opus",
+    "total_cost_usd": 0.16031225,
+    "usage": {
+      "input_tokens": 7,
+      "cache_creation_input_tokens": 11605,
+      "cache_read_input_tokens": 27342,
+      "output_tokens": 2963,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11605,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 90,
+          "cache_read_input_tokens": 13080,
+          "cache_creation_input_tokens": 1252,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1252
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

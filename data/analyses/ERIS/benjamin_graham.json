@@ -1,0 +1,70 @@
+{
+  "symbol": "ERIS",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-22T16:26:29.084912Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Eris Lifesciences trades at INR 1,446 against a Graham Number of ~INR 369 (P/E 45x, P/B 6.4x) — a 75% premium to intrinsic value with zero margin of safety. Worse, a debt explosion from zero to INR 2,478 Cr in three years has caused finance costs (INR 231 Cr in FY25) to consume 62% of net profit, leaving earnings flat despite a near-doubling of revenue.",
+    "key_strengths": [
+      "Nine consecutive years of positive net profit (2016–2025) — a genuine earnings record",
+      "Strong operating margin of 26.4% and gross margin of 73.9% reflect durable branded pharma pricing",
+      "OCF positive all 5 years with FY25 operating cash flow surging to INR 1,065 Cr"
+    ],
+    "key_risks": [
+      "Debt explosion: borrowings went from INR 0 (FY20) to INR 2,389 Cr (FY25); D/E now 0.68 vs Graham's 0.5 limit",
+      "Finance costs grew from INR 4 Cr (FY22) to INR 231 Cr (FY25), suppressing net profit which is actually down from FY22's INR 406 Cr to FY25's INR 375 Cr",
+      "Acquisition binge (Investing CF -INR 1,828 Cr in FY24 alone) introduces integration risk and inflated goodwill on the balance sheet"
+    ],
+    "red_flags": [
+      "Graham Number ~INR 369 vs market price INR 1,446 — stock is priced at 4x intrinsic value by my formula",
+      "P/E of 45.2 is 3x my upper limit of 15; P/B of 6.37 is over 4x my preferred ceiling of 1.5",
+      "Net profit DECLINED from INR 406 Cr (FY22) to INR 375 Cr (FY25) while revenue nearly doubled — the earnings 'E' is being hollowed out by debt servicing",
+      "Finance costs of INR 231 Cr represent 38% of EBIT — interest coverage is dangerously thin for a company Mr. Market prices as a compounder"
+    ],
+    "detailed_analysis": "Eris Lifesciences fails every quantitative test I have developed over decades of security analysis. The P/E of 45.2 is nearly three times my absolute ceiling. The P/B of 6.37 means you are paying INR 6.37 for every rupee of net assets — the market is pricing in a great deal of future speculation, not present reality. My Graham Number, calculated as √(22.5 × EPS₂₅ × BVPS₂₅) = √(22.5 × 27.1 × 223), yields roughly INR 369. The current price of INR 1,446 represents a 292% premium to that figure. I require a discount to intrinsic value, not a four-fold premium.\n\nThe balance sheet deterioration is what troubles me most. This company had virtually no debt in FY20; by FY25 it carries INR 2,478 Cr of debt with finance costs of INR 231 Cr — almost two-thirds of net profit. Revenue has grown impressively at 19.2% CAGR, and EBITDA has followed, but the net profit available to common shareholders has gone nowhere: INR 406 Cr in FY22, INR 374 Cr in FY23, INR 397 Cr in FY24, INR 375 Cr in FY25. This is the illusion of growth — reported at the top line, confiscated at the bottom by bankers. The intelligent investor does not pay 45 times earnings for a business whose true owner earnings are stagnant and whose debt load is rising sharply. Until this stock trades at or below its Graham Number — which would require a price decline exceeding 70% — I have no interest.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 51118,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07853759999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9380,
+      "cache_read_input_tokens": 11212,
+      "output_tokens": 2666,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9380,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 432,
+          "cache_read_input_tokens": 9162,
+          "cache_creation_input_tokens": 2268,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2268
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "KRBL",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T18:02:53.193470Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "India Gate is a genuine brand in basmati rice with a clean balance sheet and cheap valuation, but declining earnings (INR 701 Cr → 476 Cr in just two years) and a chronically sub-15% ROE disqualify it from the \"wonderful business\" category. At 12.4x P/E the price is fair for a mediocre business — not compelling enough to buy.",
+    "key_strengths": [
+      "India Gate brand — #1 basmati rice brand in India with strong Middle East export franchise, rare durable identity in an otherwise commodity category",
+      "Fortress balance sheet: D/E of 0.01, borrowings down to INR 71 Cr, equity growing steadily from INR 3,128 Cr to INR 5,483 Cr (2020–2025)",
+      "Cheap absolute valuation: P/E 12.4x, EV/EBITDA 6.67x, and a forward P/E of 9.36x provides downside cushion"
+    ],
+    "key_risks": [
+      "Earnings in sharp structural decline — net profit fell 32% in two years (INR 701 Cr FY23 → INR 476 Cr FY25), driven by margin compression from paddy input costs",
+      "ROE of 9.42% is well below my 15% hurdle; the business is capital-intensive (large aging rice inventory) and earns poor returns on that capital",
+      "Commodity exposure — paddy procurement prices whipsaw margins, and operating cash flow swung from +INR 1,212 Cr (FY20) to -INR 360 Cr (FY23), a highly unpredictable pattern"
+    ],
+    "red_flags": [
+      "Net profit CAGR of only 5.5% over 9 years with an accelerating downward trend in the last 3 years — precisely the opposite of the compounding profile I require",
+      "Operating income peaked at INR 939 Cr in FY23 and has fallen to INR 674 Cr in FY25 (-28%) — margin compression is getting worse, not better",
+      "Free cash flow of -INR 419 Cr in FY23 signals the working-capital intensity of rice aging; this is not a business that converts earnings to cash reliably"
+    ],
+    "detailed_analysis": "KRBL owns a genuinely enviable asset in the India Gate brand — founded in 1889, it commands premium pricing in basmati rice domestically and in export markets like the Middle East. The balance sheet is impeccable: debt has essentially been extinguished (INR 71 Cr borrowings vs. INR 5,483 Cr equity), and reserves have compounded from INR 3,104 Cr to INR 5,460 Cr. At a P/E of 12.4x and EV/EBITDA of 6.67x, the stock appears cheap in absolute terms. Promoter holding of 60.17% signals alignment with shareholders. These are real positives.\n\nHowever, the trajectory of the business troubles me deeply. Net profit has collapsed from INR 701 Cr in FY23 to INR 476 Cr in FY25 — a 32% decline in two years. Operating margins have contracted sharply as paddy procurement costs rose while pricing power proved insufficient to offset them. This is the core flaw: basmati rice, despite the India Gate brand, remains closer to a commodity than a franchise. ROE of just 9.42% reflects a business that ties up enormous capital in rice inventory and generates middling returns. I need businesses that earn 15%+ on equity consistently — KRBL has never reliably cleared that bar. The valuation offers some protection, but I don't buy declining businesses on the hope of a recovery cycle.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "undervalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 250782,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09813854999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11909,
+      "cache_read_input_tokens": 9086,
+      "output_tokens": 3383,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11909
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 600,
+          "cache_read_input_tokens": 9086,
+          "cache_creation_input_tokens": 2823,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2823,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

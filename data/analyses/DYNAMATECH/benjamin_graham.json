@@ -1,0 +1,71 @@
+{
+  "symbol": "DYNAMATECH",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T17:07:46.862296Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "Dynamatic Technologies trades at 150x earnings and 9.2x book value — approximately 8x above my calculated Graham Number of ~₹1,266 — offering zero margin of safety. With flat revenue over nine years, a loss in FY21, and ROE of only 6.21%, Mr. Market is pricing this as a high-growth compounder when the financial record shows the opposite.",
+    "key_strengths": [
+      "OCF positive in all 5 of the last 5 years, demonstrating the business generates real cash",
+      "Finance costs declining (₹75 Cr → ₹59 Cr over 9 years), modestly reducing interest burden",
+      "Diversified across aerospace, hydraulics, and automotive — some revenue stability across cycles"
+    ],
+    "key_risks": [
+      "Valuation is extreme: P/E 150, P/B 9.18 — both far beyond my hard limits of 15 and 1.5 respectively",
+      "FY2024 net profit of ₹122 Cr was largely illusory — ₹105 Cr came from Other Income, not operations; normalised earnings are ~₹43 Cr",
+      "Interest coverage ~2.7x (₹160 Cr operating income / ₹59 Cr finance cost) — below my 3.5x minimum, signalling balance sheet fragility"
+    ],
+    "red_flags": [
+      "Graham Number ~₹1,266 vs market price ₹10,328 — stock trades at 8x intrinsic value by my calculation",
+      "Net loss of ₹22 Cr in FY2021 — fails my requirement for 5 consecutive years of positive earnings",
+      "Revenue CAGR of -0.7% over 9 years; EBITDA CAGR -1.0% — a stagnant business priced for explosive growth",
+      "Debt/Equity of 0.78 exceeds my 0.5 ceiling; total borrowings still ₹594 Cr against equity of ₹765 Cr",
+      "ROE of 6.21% and ROCE of 8.96% — management is barely earning the cost of capital on shareholders' money"
+    ],
+    "detailed_analysis": "From a strict quantitative standpoint, Dynamatic Technologies fails nearly every test I apply. The P/E of 150 is ten times my ceiling; the P/B of 9.18 is six times my limit. My Graham Number — derived from normalised EPS of roughly ₹63 and book value per share of roughly ₹1,126 — yields approximately ₹1,266, meaning the market is asking me to pay over eight times what I calculate the business to be worth. Revenue has not grown in nine years (−0.7% CAGR), EBITDA has contracted, and the company posted a loss as recently as FY2021. The celebrated FY2024 profit of ₹122 Cr dissolves on inspection: ₹105 Cr was non-operating Other Income; underlying earnings were a meagre ₹43 Cr — identical to FY2025.\n\nThe balance sheet offers no comfort. Debt/Equity of 0.78 exceeds my threshold, and interest coverage of approximately 2.7x sits meaningfully below the 3.5x I demand as a buffer against adversity. Free cash flow has been declining (₹168 Cr in FY2020 to ₹22 Cr in FY2024, recovering to ₹78 Cr in FY2025) and ROE of 6.21% is an embarrassment for a cyclical industrial business. The aerospace segment may carry genuine long-term promise, but I do not pay for stories or projections — I pay for demonstrated earning power at a discount. Here there is no discount, only a substantial and unjustified premium.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 48096,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0782934,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9422,
+      "cache_read_input_tokens": 11273,
+      "output_tokens": 2638,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9422
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 459,
+          "cache_read_input_tokens": 9223,
+          "cache_creation_input_tokens": 2249,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2249,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

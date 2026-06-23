@@ -1,0 +1,69 @@
+{
+  "symbol": "CREDITACC",
+  "persona": "philip_fisher",
+  "persona_display_name": "Philip Fisher",
+  "analyzed_at": "2026-04-19T12:59:53.127010Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "CreditAccess Grameen operates an important social mission as India's leading listed microfinance institution, but it is not a Fisher investment: ROE has collapsed to 7.86%, net profit fell 63% in FY25 (INR 1,446 Cr → INR 531 Cr), OCF was negative for four of five years, and the business model structurally requires perpetual external debt funding at D/E of 2.81. The P/E of 41.8x on stress-trough earnings is unattractive regardless of the low forward multiple.",
+    "key_strengths": [
+      "Revenue CAGR of 28.4% over six years reflects genuine last-mile distribution scale and India's underpenetrated rural credit market",
+      "Diversified loan product evolution (from pure group microcredit to two-wheeler, housing, digital loans) shows management building a broader financial services platform",
+      "Promoter holding of 66.28% (CreditAccess India BV) provides strong institutional backing and governance alignment"
+    ],
+    "key_risks": [
+      "Net profit collapsed 63% in FY25 (INR 1,446 Cr → INR 531 Cr) reflecting sector-wide MFI stress from borrower overleveraging, a structural industry risk that recurs cyclically",
+      "ROE of 7.86% is far below Fisher's 20% threshold; a business that earns 7.86% on equity while taking on 2.81x leverage is not creating economic value at scale",
+      "Regulatory and political risk is existential for MFIs: state-level interest rate caps, loan waivers, and RBI guidelines can impair the business model overnight"
+    ],
+    "red_flags": [
+      "OCF was negative in 4 of 5 years (2020–2024): -INR 2,253 Cr, -455, -2,713, -3,290, -4,734—the business model requires constant external debt to fund loan disbursements, creating perpetual refinancing dependency",
+      "Finance costs growing at 29.4% CAGR (INR 417 Cr → INR 1,955 Cr) outpace net profit CAGR of 8.7% over the same period—the spread is compressing structurally",
+      "Total assets declined from INR 28,871 Cr to INR 27,679 Cr in FY25—loan book contraction signals active credit stress management, not growth"
+    ],
+    "detailed_analysis": "Fisher's qualitative framework was built around identifying innovative, growth-compounding businesses with expanding margins and visionary product development. Microfinance is a worthy sector but it does not fit that template. The business is a spread-compression machine during credit cycles: CreditAccess earned INR 1,446 Cr in FY24 and INR 531 Cr in FY25—a 63% drop in a single year with no warning—because the MFI sector simultaneously hit the wall on borrower overindebtedness. This cyclicality, driven by systemic borrower stress rather than company-specific execution, is exactly the kind of risk Fisher avoided.\n\nThe forward P/E of 13.65 might attract value investors anticipating earnings normalisation, but Fisher would note that this is a recovery bet, not a growth investment. The ROE of 7.86% on D/E of 2.81x means the unlevered return on assets is approximately 2-3%—not a compounding machine. Finance costs are compounding at 29.4% CAGR, faster than the business can grow revenue per rupee of equity. Until the MFI sector credit cycle fully resolves, ROE returns to 15%+, and the loan book resumes healthy growth, Fisher would deploy capital elsewhere.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 165678,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.2299743,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 24204,
+      "cache_read_input_tokens": 15951,
+      "output_tokens": 8961,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 24204,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 515,
+          "cache_read_input_tokens": 15951,
+          "cache_creation_input_tokens": 8253,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8253
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "544387",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-20T19:47:49.956588Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Desco Infra fails the Magic Formula on the critical quality dimension — a 0.26% ROE indicates near-zero return on capital, which no valuation discount can compensate for. A P/E of 10.4 looks cheap on the surface, but cheap + bad business is a value trap, not a bargain.",
+    "key_strengths": [
+      "Optically low P/E of 10.4 (~9.6% earnings yield on equity)",
+      "High promoter skin-in-the-game at 58.31%",
+      "Exposure to secular CGD/renewables/water infra themes"
+    ],
+    "key_risks": [
+      "ROE of 0.26% implies return on capital is effectively zero — fails Magic Formula quality test",
+      "Civil construction is capital-intensive with working-capital drag, suppressing ROIC",
+      "Micro-cap (INR 124 Cr) with negligible DII (2.2%) and zero FII — no institutional validation"
+    ],
+    "red_flags": [
+      "ROE of 0.26% is a near-fatal quality signal",
+      "P/E of 10.4 paired with sub-1% ROE suggests earnings are either one-off or book value is inflated",
+      "EPC contractors often show P/E on peak-cycle earnings that don't reflect through-cycle ROIC"
+    ],
+    "detailed_analysis": "The Magic Formula ranks companies jointly on earnings yield (cheapness) and return on capital (quality). Desco scores acceptably on the first — a P/E of 10.4 implies roughly a 9.6% earnings yield on equity, borderline attractive. But ROE of 0.26% is catastrophic: for every rupee of shareholder capital, the company earned a quarter of a paisa. Return on capital will be in the same ballpark given civil construction's asset + working-capital intensity. A business earning 0% on capital destroys value even if you buy it cheap — time works against you, not for you.\n\nThe promoter holding of 58.31% is a mild positive, but institutions have voted with their feet (0% FII, 2.2% DII) and at INR 124 Cr market cap this is a thinly-covered micro-cap in a sector (EPC civil construction) where ROIC is structurally poor outside a handful of best-in-class operators (L&T, KNR, PNC). Until Desco demonstrates sustained ROCE >18-20% for multiple years, the Magic Formula says pass — there are far better combinations of cheap + good elsewhere in the Indian small-cap universe.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 25512,
+    "model_used": "opus",
+    "total_cost_usd": 0.09842024999999999,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 9071,
+      "cache_read_input_tokens": 13493,
+      "output_tokens": 1398,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9071,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 123,
+          "cache_read_input_tokens": 10623,
+          "cache_creation_input_tokens": 1318,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1318
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

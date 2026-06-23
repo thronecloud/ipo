@@ -1,0 +1,69 @@
+{
+  "symbol": "AADHARHFC",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-19T06:17:47.508052Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Aadhar Housing Finance is a financial company — the Magic Formula explicitly excludes this category because debt is an operating input, not leverage, making EBIT/EV and ROIC meaningless. While the business shows a strong 33.4% net profit CAGR and 16.1% revenue CAGR, I cannot rank it against non-financial companies on my core metrics.",
+    "key_strengths": [
+      "Net Profit CAGR of 33.4% over 6 years (INR 162 Cr → 912 Cr) demonstrates real earnings compounding",
+      "Revenue expanding at 16.1% CAGR; operating income CAGR of 21.3% (FY22–25) shows operating leverage",
+      "Equity base grew from INR 2,347 Cr (2020) to INR 6,894 Cr (2025); strong capital position post-IPO"
+    ],
+    "key_risks": [
+      "ROE of 16.9% and ROCE of 11.4% are mediocre — not the kind of high-return business the Magic Formula targets",
+      "Debt/Equity of 2.55x is moderate for an HFC but borrowing costs (INR 1,174 Cr in FY25) are rising faster than revenue",
+      "P/B of 3.11x is elevated for a business with sub-17% ROE — implies premium that needs sustained growth to justify"
+    ],
+    "red_flags": [
+      "Operating CF persistently negative (0/5 years positive) — standard for lending but impossible to analyze via FCF yield",
+      "Magic Formula explicitly excludes financial companies: EBIT/EV and ROIC calculations are structurally inapplicable",
+      "Finance costs (INR 1,174 Cr FY25) now represent 38% of revenue — spread compression risk if rates rise"
+    ],
+    "detailed_analysis": "The Magic Formula cannot be applied here. Aadhar Housing Finance is a mortgage lender: its liabilities (INR 16,322 Cr debt) fund assets (loans), and 'negative OCF' simply means loan disbursements exceed collections — normal for a growing HFC. Earnings yield computed on EBIT/EV and ROIC on net working capital would produce nonsensical results because the capital structure IS the business model. I penalize this stock not because the business is bad, but because my methodology offers no insight.\n\nOn the qualitative side, AADHARHFC serves affordable housing in underbanked geographies with a government-backed tailwind. Net profit growth of 33% CAGR is real and sustained over 6 years. But at P/E 20.8x and P/B 3.11x with ROE only 16.9%, it is not a cheap business earning high returns on capital — the two criteria I require. A specialist financials analyst would evaluate NIM, credit quality, and AUM growth; that is not my framework.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 180544,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.25746959999999997,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 25350,
+      "cache_read_input_tokens": 15627,
+      "output_tokens": 10514,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 25350,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 679,
+          "cache_read_input_tokens": 15627,
+          "cache_creation_input_tokens": 9723,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 9723
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

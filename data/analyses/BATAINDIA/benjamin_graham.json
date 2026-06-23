@@ -1,0 +1,69 @@
+{
+  "symbol": "BATAINDIA",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-19T06:32:10.464127Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Bata India is a good business priced as if it were a great one: a P/E of 50.70 and P/B of 6.39 produce a Graham Number of approximately INR 262, meaning the market price of INR 757 is nearly three times the calculated intrinsic value. With a nine-year revenue CAGR of just 4.1% — barely keeping pace with inflation — there is no earnings momentum to justify this premium, and the company recorded a net loss in FY21.",
+    "key_strengths": [
+      "Gross margin of 54.97% is high, reflecting genuine brand pricing power in the Indian footwear market",
+      "Operating cash flow has been positive in all five of the last five years, with FCF growing to INR 670 Cr in FY25",
+      "Strong promoter holding of 50.16% and institutional ownership (29.31% DII) indicate confidence in management"
+    ],
+    "key_risks": [
+      "Revenue growth of 4.1% CAGR over nine years is sub-inflationary in real terms — this is a low-growth consumer franchise priced like a high-growth one",
+      "Net loss in FY21 (-89 Cr) breaks the consecutive positive earnings record I require, and FY24 profit declined to 263 Cr from 323 Cr in FY23",
+      "Finance costs have risen at 27.4% CAGR (largely Ind AS 116 lease capitalization), lifting D/E to 0.90 — above my 0.50 threshold"
+    ],
+    "red_flags": [
+      "P/E of 50.70 — more than 3x my maximum of 15",
+      "P/B of 6.39 — more than 4x my ceiling of 1.5",
+      "Price of INR 757 is 189% above the Graham Number of ~INR 262"
+    ],
+    "detailed_analysis": "Bata is a household name with a century-old presence in India, but popularity is not the same as value. Mr. Market is asking INR 757 for every rupee of book value times 6.39 — and doing so for a company that has grown revenues at 4.1% annually for nine years and lost money in FY21. The forward P/E of 38.55 still implies decades of growth priced in. I do not speculate on futures; I pay for proven earnings power, and the price here contains no margin of safety.\n\nThe structural shift in finance costs — from INR 15 Cr in FY18 to INR 141 Cr in FY25 — reflects lease liabilities on retail stores under Ind AS 116, which is economically real even if accounting-driven. This raises the effective D/E and reduces the true free cash flow available to equity holders. I would require a price near INR 260-310 (the Graham Number range) before this business offers the protection of principal I insist upon.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 257334,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.31753529999999996,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 27706,
+      "cache_read_input_tokens": 15096,
+      "output_tokens": 13940,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 27706,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 1203,
+          "cache_read_input_tokens": 15096,
+          "cache_creation_input_tokens": 12610,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 12610
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "symbol": "544637",
+  "persona": "howard_marks",
+  "persona_display_name": "Howard Marks",
+  "analyzed_at": "2026-04-20T11:02:17.207380Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "A freshly-listed micro-cap IT services outfit with suspiciously parabolic revenue (35→57→135 Cr in two years) but OCF stuck at 4-5 Cr while reported profit is 11 Cr — the accrual gap, thin 26.85% promoter holding, and 39 Cr debt tell me the reported earnings may not be what they seem. P/E of 14 looks cheap only if you trust the 2025 print; at 2x OCF-adjusted earnings, the margin of safety evaporates.",
+    "key_strengths": [
+      "Headline growth optically strong — revenue nearly 4x in two years",
+      "Reported ROE of 42.7% and ROCE of 31.1% on current base",
+      "OCF positive in each of last 3 years (though declining in quality)"
+    ],
+    "key_risks": [
+      "OCF (5 Cr) vs Net Profit (11 Cr) divergence in FY25 — classic accrual/receivables red flag",
+      "Low promoter holding (26.85%) and tiny float — minimal skin in the game, pump risk",
+      "Borrowings 39 Cr on 17 Cr EBITDA (~2.3x) with finance cost 5 Cr eating 45% of operating income"
+    ],
+    "red_flags": [
+      "Net profit 11 Cr but FCF only 4 Cr — earnings quality is questionable",
+      "Equity jumped 4→11→57 Cr — suggests recent IPO/fundraise at peak optimism",
+      "Revenue tripling in a commoditized IT services vertical is atypical and warrants forensic scrutiny",
+      "Finance cost flat at 5 Cr despite borrowings rising — possibly capitalized interest"
+    ],
+    "detailed_analysis": "Second-level thinking here: the market sees P/E 14 + 137% revenue growth and calls it cheap. I see a newly-listed micro-cap (equity jumped from 11 Cr to 57 Cr in one year — classic IPO dilution) where cash generation is telling a completely different story than the P&L. FY25 OCF of 5 Cr on reported net profit of 11 Cr means more than half the \"earnings\" are sitting in working capital, not the bank. In IT services — a business with structurally negative working capital for well-run firms — this is the opposite of what you want to see. The balance sheet expansion from 45 Cr to 123 Cr in a single year, funded partly by 10 Cr of incremental debt and 35 Cr of fresh reserves, reeks of a cycle-top capital raise.\n\nOn pricing: at 144 Cr market cap against 4 Cr of genuine FCF, the FCF yield is ~2.8% — you can get better in a liquid fund with zero equity risk. The downside scenario is brutal: if the 2025 revenue surge normalizes or reverses (common for small IT firms that front-load via a couple of lumpy contracts), you have a 39 Cr debt load against shrinking EBITDA, with only 26.85% promoter holding to defend the stock. No margin of safety, asymmetric downside, insufficient visibility into earnings quality. This is the kind of story where the pendulum of greed delivers most of the pain. Pass — the price does not adequately compensate for the probability of permanent capital loss.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 28978,
+    "model_used": "opus",
+    "total_cost_usd": 0.10799025,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 9873,
+      "cache_read_input_tokens": 14008,
+      "output_tokens": 1570,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9873,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 11126,
+          "cache_creation_input_tokens": 1629,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1629
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

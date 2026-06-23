@@ -1,0 +1,70 @@
+{
+  "symbol": "544659",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-20T11:04:12.282196Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Stanbik Agro is a 2021-vintage micro-cap (INR 44.6 Cr) agri-commodity trader with a paper-thin 0.38% ROE and 98.92% promoter holding — essentially an unproven business in a commoditized industry with no moat. At P/E 11.9 it looks optically cheap, but earning less than 1% on equity makes this a poor business at an unattractive price — the opposite of what I look for.",
+    "key_strengths": [
+      "Low absolute P/E of 11.9 suggests no speculative froth in the price",
+      "Promoters hold 98.92% — fully aligned skin in the game",
+      "Simple, understandable business model (agri-commodity trading)"
+    ],
+    "key_risks": [
+      "ROE of 0.38% is economically worthless — below a savings account",
+      "Agri-commodity trading has no moat, no pricing power, razor-thin margins",
+      "98.92% promoter holding means near-zero float, illiquid, and governance risk"
+    ],
+    "red_flags": [
+      "ROE 0.38% — capital is being destroyed on a real (inflation-adjusted) basis",
+      "Incorporated only in 2021 — no long-term track record of capital allocation",
+      "Extreme promoter concentration (98.92%) leaves minorities vulnerable",
+      "Sub-INR 50 Cr micro-cap with limited disclosure and scrutiny"
+    ],
+    "detailed_analysis": "A wonderful business earns high returns on equity without much leverage. Stanbik Agro earns 0.38% on equity — you'd be better off in a bank fixed deposit yielding 6-7% with zero business risk. Agricultural commodity wholesaling is a textbook commodity business: no brand power, no switching costs, no network effects, no cost advantage at this scale. A P/E of 11.9 looks cheap only in isolation; applied to a business that barely earns anything, it simply means you're paying 11.9 years of near-nothing.\n\nWith 98.92% promoter holding, the public float is a rounding error, which invites price manipulation and offers minorities no meaningful protection. Five years of operating history is not enough to assess management's integrity or capital-allocation skill, and the numbers so far suggest neither is evident. This is the antithesis of the See's Candies or Coca-Cola template — I'd put this firmly in the \"too unattractive\" pile. Pass.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 31863,
+    "model_used": "opus",
+    "total_cost_usd": 0.1314835,
+    "usage": {
+      "input_tokens": 7,
+      "cache_creation_input_tokens": 10036,
+      "cache_read_input_tokens": 25197,
+      "output_tokens": 2245,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10036,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 23,
+          "cache_read_input_tokens": 11803,
+          "cache_creation_input_tokens": 1070,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1070
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

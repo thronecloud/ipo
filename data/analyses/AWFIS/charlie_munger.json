@@ -1,0 +1,70 @@
+{
+  "symbol": "AWFIS",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T16:40:03.918384Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Awfis is a leveraged real estate arbitrage business — lease long, sublet short — with no durable moat, a 17% promoter holding, and a ROCE of only 12.9% achieved only after years of losses. WeWork's collapse is the canonical case study; I see no reason to believe Awfis has solved the fundamental structural problems of this model.",
+    "key_strengths": [
+      "Revenue CAGR of 41% over 6 years demonstrates genuine demand for flexible workspaces in India's growing office market.",
+      "Operating CF positive all 5 years (peaking at ₹363 Cr in FY25) and FCF turning meaningfully positive at ₹163 Cr — capital efficiency is improving.",
+      "High gross margin (82%) reflects asset-light managed aggregator contracts, partially insulating from raw lease costs."
+    ],
+    "key_risks": [
+      "Structural leverage trap: D/E of 2.91, borrowings nearly doubled in 2 years (₹695 Cr → ₹1,451 Cr), and finance costs (₹136 Cr) already exceed net profit (₹68 Cr) — any occupancy dip erases profitability.",
+      "Zero moat: co-working is commoditized; clients can switch desks in a week, and competition from IWG, WeWork India, and dozens of local operators keeps pricing power near zero.",
+      "17% promoter holding signals low conviction from founders; if insiders won't hold it, why should I?"
+    ],
+    "red_flags": [
+      "Finance cost CAGR of 73.4% — debt is compounding faster than the business can service it without perpetual equity dilution.",
+      "Six consecutive years of net losses before FY2025's thin ₹68 Cr profit; the profitability track record is one year old and fragile.",
+      "Reserves were negative as recently as FY2024 (−₹113 Cr); equity base built largely by FY2025 fundraise, not earned profits.",
+      "ROCE at 12.9% is below my minimum 15% hurdle even after years of scale-up — the model may structurally never earn above cost of capital."
+    ],
+    "detailed_analysis": "Awfis operates the classic coworking arbitrage: sign 5–9 year leases, chop them into monthly memberships, and pocket the spread. The spread exists, but it is thin and volatile — in a downturn, corporates cancel flexible seats first while Awfis is still paying fixed rent. WeWork burned through $40 billion proving this model has no moat and terrible unit economics at scale. Awfis's ROCE of 12.9% — barely above Indian risk-free rates — after six years of scale-up confirms the economics. The 44x trailing P/E on a one-year profitability record is pricing in permanent expansion of thin-margin, high-leverage operations.\n\nInversion exercise: what kills this investment? Occupancy drops 10–15% in a slowdown → finance costs (₹136 Cr) consume all operating profit → another equity raise at dilutive prices → promoter's already-low 17% stake becomes even less of a signal. The asset base grew 93% in one year (₹1,398 Cr → ₹2,695 Cr), almost entirely debt-funded. I want businesses that generate high returns on capital with minimal debt — this is the opposite. At P/B of 5.18x with D/E of 2.91, the market is pricing in a quality compounder; the financial history says this is a leveraged growth story that just found its first profitable year.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 105694,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0750231,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10596,
+      "cache_read_input_tokens": 8747,
+      "output_tokens": 2177,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10596
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 383,
+          "cache_read_input_tokens": 8747,
+          "cache_creation_input_tokens": 1849,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1849,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

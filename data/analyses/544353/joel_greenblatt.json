@@ -1,0 +1,69 @@
+{
+  "symbol": "544353",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-20T09:50:54.176012Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Amwill Health fails the Magic Formula's most important test — return on capital. A 0.25% ROE means the business generates essentially no economic return on shareholder capital, and the optically low 7.54x P/E is almost certainly a value trap on a tiny, low-margin pharma trading outfit.",
+    "key_strengths": [
+      "P/E of 7.54 screens as statistically cheap on headline earnings",
+      "High promoter skin-in-the-game at 70.65%",
+      "Asset-light wholesale distribution model (limited capex needs)"
+    ],
+    "key_risks": [
+      "ROE of 0.25% implies near-zero return on capital — fails the 'good business' leg of Magic Formula",
+      "Wholesale pharma trading is a commodity, razor-thin-margin business with no moat",
+      "INR 60.90 Cr micro-cap with negligible FII (1.16%) — illiquid, limited scrutiny"
+    ],
+    "red_flags": [
+      "ROE of 0.25% is effectively zero — either earnings are nominal or equity is bloated vs. operating needs",
+      "P/E without context of EBIT/EV is misleading on a trading business with working-capital heavy balance sheet",
+      "Cheap + terrible return profile = classic value trap Greenblatt explicitly warns against"
+    ],
+    "detailed_analysis": "The Magic Formula ranks companies on two axes: earnings yield (cheapness) and return on capital (quality). Amwill may pass the first screen — a 7.54x P/E suggests a mid-teens earnings yield if we assume moderate net debt — but it catastrophically fails the second. A 0.25% ROE on a trading business is a disqualifier: wholesale pharma distribution is working-capital-intensive (inventory + receivables dominate the balance sheet), so return on tangible capital is likely in the same low-single-digit zone. Greenblatt's whole point is that cheap + bad = trap; you want cheap + good.\n\nAt INR 60.90 Cr market cap with 70.65% promoter holding and a 2009 vintage in commoditized wholesale trading, there is no evidence of pricing power, scale economics, or a durable ROIC >20%. Without positive signals on EBIT margins, asset turns, or growth, the systematic answer is to pass. I'd rank this in the bottom quintile on return on capital and would not include it in a Magic Formula basket regardless of its earnings yield. Score: 2. Avoid.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "insufficient_data",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 31187,
+    "model_used": "opus",
+    "total_cost_usd": 0.09298375,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8949,
+      "cache_read_input_tokens": 13445,
+      "output_tokens": 1212,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8949,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10575,
+          "cache_creation_input_tokens": 1244,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1244
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

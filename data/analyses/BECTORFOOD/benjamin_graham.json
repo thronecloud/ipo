@@ -1,0 +1,70 @@
+{
+  "symbol": "BECTORFOOD",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T16:43:16.683026Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Mrs. Bectors Food trades at INR 192 against a Graham Number of approximately INR 64 (sqrt(22.5 × EPS ~4.55 × BVPS ~39.6)), meaning the market demands nearly 3x intrinsic asset-earning value — a speculation premium I refuse to pay. With a P/E of 42x and P/B of 4.85x against my hard limits of 15x and 1.5x respectively, no margin of safety exists.",
+    "key_strengths": [
+      "Continuous positive earnings across 8 years (2018–2025) — net profit CAGR of 21.8% satisfies my earnings consistency requirement",
+      "Conservative balance sheet: Debt/Equity of 0.15 and interest coverage of ~19x (Operating Income INR 252 Cr vs Finance Cost INR 13 Cr) — passes my solvency tests",
+      "Operating cash flow positive in all 5 measured years, confirming earnings are backed by real cash"
+    ],
+    "key_risks": [
+      "Price at 3x Graham Number (INR 192 vs ~INR 64) — any earnings disappointment could cause severe permanent capital loss",
+      "Free cash flow turned sharply negative: -INR 61 Cr (FY24) and -INR 97 Cr (FY25) as capex surged to INR 259 Cr; the business currently consumes more cash than it generates",
+      "Operating margin is thin at 8.6% — packaged food businesses with single-digit margins offer little buffer against input cost inflation or competitive pricing pressure"
+    ],
+    "red_flags": [
+      "P/E of 42x is nearly 3x my maximum threshold of 15x — price embeds years of speculative growth",
+      "P/B of 4.85x vs my limit of 1.5x — paying INR 4.85 for every rupee of book assets",
+      "CWIP jumped to INR 176 Cr (2025) with heavy ongoing capex — capital is being deployed but returns are unproven",
+      "No dividend yield data provided; a consumer staples company at this price should be demonstrating returns to shareholders"
+    ],
+    "detailed_analysis": "By my quantitative standards, Mrs. Bectors Food Specialities fails every valuation test that matters. At INR 192, the P/E of 42x is nearly three times my upper limit of 15x, and the P/B of 4.85x is more than three times my ceiling of 1.5x. The Graham Number — the maximum price a defensive investor should pay given earnings power and book value — computes to roughly INR 64, placing the stock at a 200% premium to that figure. The market is paying for a growth story, not proven asset value, and I do not pay for stories.\n\nThe business itself has genuine merits: eight consecutive years of positive earnings, a manageable debt load (D/E 0.15), and strong interest coverage (~19x). However, free cash flow has turned decidedly negative in the last two years (-INR 97 Cr in FY25) as the company embarks on an aggressive capex cycle (INR 259 Cr in FY25 alone). The thin 8.6% operating margin leaves little room for error. A disciplined investor must wait for either a dramatic price correction — the stock would need to fall approximately 65-70% to approach my comfort zone — or a sustained period of earnings growth that rebuilds the margin of safety. As Mr. Market oscillates, patience is the only sensible posture here.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 39788,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.06957795,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8775,
+      "cache_read_input_tokens": 10959,
+      "output_tokens": 2225,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 8775
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 355,
+          "cache_read_input_tokens": 8909,
+          "cache_creation_input_tokens": 1916,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1916,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "symbol": "GODREJAGRO",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T17:25:44.601403Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Godrej Agrovet fails nearly every quantitative filter I apply — P/B of 6.55x and P/E of 25.7x offer no margin of safety, with the Graham Number (~INR 211) implying a 66% discount to the current price of INR 616. The balance sheet has deteriorated sharply in 2025, with equity falling INR 707 Cr while borrowings surged INR 743 Cr — a simultaneous deleveraging of the equity base and expansion of debt that demands explanation.",
+    "key_strengths": [
+      "Ten consecutive years of positive net profit (2016–2025) — the earnings consistency Graham demands",
+      "Interest coverage of 6.2x (EBIT INR 821 Cr / Finance Cost INR 133 Cr) comfortably clears the 3.5x threshold",
+      "67.65% promoter holding under the Godrej name provides governance stability and aligns management with shareholders"
+    ],
+    "key_risks": [
+      "P/B of 6.55x is more than 4x my upper limit of 1.5x — you are paying a steep premium over net assets with no margin of safety",
+      "Debt-to-equity of 1.11 violates my 0.5x ceiling; worse, borrowings jumped from INR 1,416 Cr (2024) to INR 2,159 Cr (2025) — a 53% single-year surge",
+      "Net profit CAGR of only 4.9% over nine years against revenue CAGR of 10.7% signals chronic margin compression and poor earnings power relative to capital employed"
+    ],
+    "red_flags": [
+      "Graham Number ~INR 211 vs. market price INR 616 — stock trades at nearly 3x intrinsic value by my calculation",
+      "Equity fell from INR 2,517 Cr (2024) to INR 1,810 Cr (2025) while borrowings surged — a simultaneous equity erosion and debt expansion requires full explanation before any capital is committed",
+      "OCF was negative in two of the last five years (2021: -2 Cr, 2022: -120 Cr) and FCF was negative three of five years — the business has historically consumed, not generated, free cash",
+      "Operating margin of only 6.84% in a capital-intensive agri-business leaves little buffer against commodity price swings or interest rate moves"
+    ],
+    "detailed_analysis": "Godrej Agrovet is a respectable agri-conglomerate — animal feed, palm oil, crop protection, dairy, and poultry — but respectability is not a substitute for price discipline. At INR 616, the stock demands payment for a story of future improvement. My Graham Number, derived from 2025 EPS of approximately INR 20.95 and book value per share of approximately INR 94, yields a fair value ceiling of roughly INR 211. The market is asking INR 616 — nearly three times that ceiling. I do not speculate on what the future may bring; I demand proof of value that already exists in the balance sheet and earnings record.\n\nThe 2025 balance sheet inflects my concern further. Reserves collapsed from INR 2,324 Cr to INR 1,618 Cr while borrowings ballooned from INR 1,416 Cr to INR 2,159 Cr — a combination that shrinks the equity cushion precisely as the debt burden grows. Finance costs at INR 133 Cr are already consuming 33% of net profit (INR 403 Cr). The thin 6.84% operating margin offers scant protection if commodity cycles turn adverse. Mr. Market is pricing this business as though the Godrej brand alone guarantees prosperity; the intelligent investor knows that a name on the door does not put cash in the vault. I see no margin of safety here and will not pay for optimism.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 52945,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07753125,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9431,
+      "cache_read_input_tokens": 11270,
+      "output_tokens": 2585,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9431
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 366,
+          "cache_read_input_tokens": 9220,
+          "cache_creation_input_tokens": 2261,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2261,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

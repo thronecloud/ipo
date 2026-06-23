@@ -1,0 +1,70 @@
+{
+  "symbol": "KIRLOSENG",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-19T13:10:06.623678Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Kirloskar Oil Engines is a 79-year-old industrial franchise that has unfortunately transformed itself into a debt-fueled financial services entity, with borrowings exploding from ₹189 Cr (2020) to ₹5,526 Cr (2025) and operating cash flow negative every single year for five consecutive years. At 43x P/E with zero free cash generation and finance costs compounding at 55.7% annually, the market is paying a wonderful price for a deeply troubled business.",
+    "key_strengths": [
+      "Long-standing brand with 79-year heritage in diesel engines, gensets, and farm mechanization across diversified end-markets",
+      "Revenue CAGR of 11.1% and operating income CAGR of 17.5% over 9 years show underlying business expansion",
+      "Operating margin of 15.39% and gross margin of 41.86% suggest the core manufacturing business has pricing power"
+    ],
+    "key_risks": [
+      "Operating cash flow has been negative every year from 2020–2025 (₹-739 Cr in FY25); a business that cannot convert earnings to cash is not truly profitable",
+      "Borrowings surged from ₹189 Cr to ₹5,526 Cr in five years — Debt/Equity of 1.66 is dangerously high for an industrial cyclical",
+      "Finance costs grew at 55.7% CAGR to ₹483 Cr in FY25, nearly equaling net profit of ₹476 Cr — interest burden is swallowing the entire enterprise"
+    ],
+    "red_flags": [
+      "OCF negative 5/5 years — reported profits are an accounting fiction; real cash is being consumed, not generated",
+      "Total debt of ₹5,819 Cr against equity of ₹3,373 Cr: leverage ratio unsuitable for a cyclical capital equipment manufacturer",
+      "Complex corporate structure with Financial Services segment added opacity and is the primary driver of debt accumulation",
+      "FCF deeply negative every year (worst: ₹-1,165 Cr in FY22), yet stock trades at 43x earnings"
+    ],
+    "detailed_analysis": "Kirloskar Oil Engines presents a classic value trap: headline revenue and operating income are growing, but the company has fundamentally changed its business model by layering a captive financing arm on top of industrial machinery sales. This explains why total assets nearly quadrupled from ₹2,759 Cr (2020) to ₹10,673 Cr (2025) while equity grew only modestly — the difference is debt. The operating cash burn (₹-739 Cr in FY25 alone) confirms the company is a net consumer of capital, not a generator.\n\nFrom my perspective, a business that cannot produce free cash flow for five consecutive years — regardless of its earnings — is not one I would own. I do not care how venerable the Kirloskar name is. Finance costs at ₹483 Cr nearly consume the entire ₹476 Cr net profit, meaning shareholders are essentially working to service lenders. At 43x P/E with 1.66x Debt/Equity and zero OCF, the risk-reward is deeply unfavorable.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 152402,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.2028783,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 22584,
+      "cache_read_input_tokens": 15781,
+      "output_tokens": 7563,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 22584,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 693,
+          "cache_read_input_tokens": 15781,
+          "cache_creation_input_tokens": 6803,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 6803
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "symbol": "INDIGOPNTS",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T17:43:33.832958Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Indigo Paints is a decent-quality decorative paint franchise with ~19.5% ROCE, but the Magic Formula rejects it on valuation — earnings yield of ~5.8% (EBIT INR 233 Cr / EV ~INR 3,985 Cr) falls below my 6% minimum threshold. You're paying a fair price for a decent business, which is not the Magic Formula bargain I seek.",
+    "key_strengths": [
+      "Revenue CAGR of 14.2% (2022–2025) with EBITDA growing faster at 17.9%, showing operating leverage",
+      "Near-zero leverage (D/E 0.02) and strong promoter holding (53.9%) signal financial discipline",
+      "Operating CF turned strongly positive (INR 206 Cr in FY2025), showing improving cash generation"
+    ],
+    "key_risks": [
+      "Earnings yield ~5.8% is below my 6% floor — market is pricing in perfection, leaving no margin of safety",
+      "Capex-heavy model (INR 136 Cr in FY2025, CWIP spiked back to INR 221 Cr) suppresses FCF and keeps ROIC from reaching top-tier levels",
+      "FY2025 operating profit and net profit DECLINED (INR 238→233 Cr EBIT; INR 149→142 Cr PAT) — growth stall raises questions about competitive intensity from Asian Paints and Berger"
+    ],
+    "red_flags": [
+      "Net profit contracted YoY in FY2025 despite revenue growing — margin compression is a warning sign",
+      "FCF only turned positive in FY2024-25 after years of cash burn; sustainability of FCF versus heavy reinvestment cycle is unproven"
+    ],
+    "detailed_analysis": "Running the Magic Formula on Indigo Paints: Earnings Yield = EBIT/EV = INR 233 Cr / ~INR 3,985 Cr ≈ 5.8% — this fails my minimum 6% threshold and is nowhere near the 12–15%+ I want to see for a compelling buy. Return on Capital proxied by ROCE stands at 19.5%, which is respectable but short of the 25%+ that earns a top ranking. Both metrics are mediocre by Magic Formula standards: the business is decent but not cheap, and the capital returns are good but not exceptional. This combination scores firmly in the middle of my ranking universe.\n\nWhat concerns me more is the FY2025 earnings stall — both EBIT (INR 238→233 Cr) and net profit (INR 149→142 Cr) contracted despite 2.7% revenue growth, signaling pricing pressure or cost inflation. The heavy capex cycle (INR 560 Cr in four years) has depressed free cash flow, with FCF only recently positive at INR 70 Cr — just a 3.5% FCF yield on market cap. The decorative paints market in India is structurally attractive, but Indigo is a #4 player competing against entrenched giants. At P/E 26.9x and EV/EBITDA 15.4x, I am not getting paid to take that competitive risk. I would wait for the price to correct to an earnings yield of 9–10%+ (implying a market cap around INR 2,300–2,600 Cr) before getting interested.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 53888,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08559884999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11009,
+      "cache_read_input_tokens": 8537,
+      "output_tokens": 2783,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11009
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 346,
+          "cache_read_input_tokens": 8537,
+          "cache_creation_input_tokens": 2472,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2472,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

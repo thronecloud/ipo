@@ -1,0 +1,70 @@
+{
+  "symbol": "AMCL",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-20T11:14:55.430698Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "ANB Metal is a sub-scale aluminium extrusions maker (incorporated 2019) earning a trivial 0.46% ROE while trading at 37.9x P/E — a textbook case of paying a growth multiple for commodity-economics returns. Inversion test fails immediately: low-moat product, no pricing power, and capital returns below the risk-free rate.",
+    "key_strengths": [
+      "Promoter holding of 71.65% indicates aligned skin in the game",
+      "Operates in aluminium extrusions, which has secular demand from construction/auto",
+      "Small base (486 Cr mcap) leaves theoretical runway if execution improves"
+    ],
+    "key_risks": [
+      "ROE of 0.46% is catastrophically below cost of capital — value-destroying today",
+      "P/E of 37.9 on near-zero earnings implies extreme multiple compression risk",
+      "Commodity extrusion business with no discernible moat vs. Hindalco/Jindal Aluminium"
+    ],
+    "red_flags": [
+      "ROE <1% is far below Munger's 15% ROIC threshold",
+      "Valuation divorced from fundamentals (37.9x P/E on 0.46% ROE)",
+      "Very young company (2019) with no long-term earnings track record",
+      "Negligible institutional ownership (FII 2.71%, DII 0.58%) — no smart-money validation"
+    ],
+    "detailed_analysis": "Invert first: what would make this a bad investment? A commodity product with no moat, capital returns below the risk-free rate, a lofty multiple, and a five-year-old operating history — ANB Metal checks every one of those boxes. Aluminium extrusions is a price-taker business where scale, power costs, and customer relationships are the determinants of margin, and a 486 Cr micro-cap cannot compete structurally with Hindalco, Jindal, or even established mid-tier extruders. A 0.46% ROE means the business is effectively burning capital relative to its cost; reinvesting earnings at that rate compounds shareholder value downward, not upward.\n\nThe 37.9x P/E is the kind of multiple one pays for a compounder with durable 20%+ returns on capital — paying it for a sub-1% ROE business is a category error. Promoter holding of 71.65% is the only data point that resembles a positive, but alignment doesn't fix economics. Until ROIC demonstrably inflects above 15% for multiple years and the business shows evidence of a niche (specialty alloys, captive OEM contracts), this is a speculation, not an investment. Pass — and don't even put it on the watchlist.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 26257,
+    "model_used": "opus",
+    "total_cost_usd": 0.09797924999999999,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 9057,
+      "cache_read_input_tokens": 13186,
+      "output_tokens": 1390,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9057,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 105,
+          "cache_read_input_tokens": 10459,
+          "cache_creation_input_tokens": 1325,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1325
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

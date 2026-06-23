@@ -1,0 +1,70 @@
+{
+  "symbol": "CENTURYPLY",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-18T16:58:48.299861Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Century Plyboards is in a brutal capex cycle — debt exploded 10x from ₹165 Cr to ₹1,643 Cr in four years, crushing net profit 51% from ₹377 Cr (FY23) to ₹186 Cr (FY25) while FCF turned deeply negative (–₹666 Cr FY25). At P/E 69.8x on collapsing earnings, you are paying a premium price for a story that is actively deteriorating.",
+    "key_strengths": [
+      "Strong brand portfolio (SAINIK, CENTURYPLY) with wide distribution across India's housing construction market",
+      "Revenue growing at 16.5% in FY25 (₹3,886→₹4,528 Cr) — the top line is holding up even during the capex cycle",
+      "High gross margin of 47.3% suggests underlying product economics are sound if capacity utilization improves"
+    ],
+    "key_risks": [
+      "Earnings collapse is severe: net profit fell from ₹377 Cr (FY23) → ₹325 Cr (FY24) → ₹186 Cr (FY25), a 51% drop in two years",
+      "Debt explosion: borrowings surged from ₹165 Cr (FY21) to ₹1,643 Cr (FY25), driving finance costs from ₹13 Cr to ₹69 Cr — and still rising",
+      "Operating cash flow turned negative in FY25 (–₹3 Cr) — a business burning cash at the operating level cannot self-fund, creating dependency on further debt"
+    ],
+    "red_flags": [
+      "PEG ratio is incalculable — earnings growth is negative, making P/E 69.8x indefensible on any growth metric",
+      "FCF deeply negative three consecutive years: FY23 –₹45 Cr, FY24 –₹593 Cr, FY25 –₹666 Cr",
+      "ROE of 8.47% is far below my 12% threshold — and deteriorating as equity grows but profit collapses",
+      "Debt/Equity at 0.66 understates risk — total borrowings of ₹1,643 Cr vs. ₹186 Cr net profit means debt is 8.8x annual earnings"
+    ],
+    "detailed_analysis": "From a GARP perspective, Century Plyboards fails every key test I use. The PEG ratio — my favorite shortcut — is undefined here because earnings are not growing; they are shrinking dramatically. When a company reports P/E of 69.8x on a 51% profit decline, you're being asked to pay a winner's price for a loser's results. The capex cycle story (MDF and particle board capacity expansion totaling ~₹1,500 Cr+ over two years) might eventually pay off, but the market is already pricing in the recovery while the financials scream distress. Finance costs alone quintupled from ₹13 Cr to ₹69 Cr in four years, and CWIP sitting at ₹273 Cr means the assets aren't even generating revenue yet.\n\nThe one thing I look for in a turnaround is \"what's the story and when does it change?\" Here, the new MDF/particle board capacity needs to ramp to utilization levels that cover the interest burden AND restore margins. Operating margins already contracted from 16.0% (FY23) to 10.8% (FY25, EBITDA basis), and OCF turned negative in FY25 — meaning working capital is consuming cash at the same time capex is devouring it. ROE at 8.47% and ROCE at 10.40% are uninspiring for a business trading near 7x book. I'd want to see OCF recover above ₹400 Cr, D/E drop below 0.4, and net profit recover to ₹350+ Cr before revisiting. Until then, this is a value trap dressed up in a growth story.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 57027,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.085695,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11448,
+      "cache_read_input_tokens": 9170,
+      "output_tokens": 2667,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11448
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 480,
+          "cache_read_input_tokens": 9170,
+          "cache_creation_input_tokens": 2278,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2278,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

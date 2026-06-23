@@ -1,0 +1,70 @@
+{
+  "symbol": "AURIONPRO",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T16:32:07.543532Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Aurionpro trades at INR 923 against a Graham Number of roughly INR 472 — a 95% premium that offers zero margin of safety by my standards. Despite a clean balance sheet, the P/E of 25x and P/B of 2.97x demand a perfection of future earnings that no disciplined investor should pay for.",
+    "key_strengths": [
+      "Near-zero debt: D/E of 0.02, borrowings down to just INR 30 Cr in FY2025 — fortress balance sheet",
+      "Interest coverage of ~34x (Operating Income INR 242 Cr / Finance Cost INR 7 Cr) — negligible financial risk",
+      "Consecutive 4-year earnings recovery: net profit grew from INR 76 Cr (FY22) to INR 188 Cr (FY25)"
+    ],
+    "key_risks": [
+      "Valuation demands perfection: at P/E 25 and P/B 2.97, stock is priced ~2x Graham Number (~INR 472) — no margin of safety",
+      "Earnings inconsistency disqualifies: FY2021 net loss of INR 192 Cr breaks the mandatory 5-year positive earnings record I require",
+      "Free cash flow is erratic and thin (FY25: INR 62 Cr vs. net profit INR 188 Cr), with heavy investing outflows of INR 421 Cr suggesting acquisitive growth, not organic compounding"
+    ],
+    "red_flags": [
+      "FY2021 net loss of INR 192 Cr — a severe impairment that reveals the business is not the durable, consistent earner I demand",
+      "P/B of 2.97 — I am paying INR 3 for every INR 1 of net assets; if earnings stall, book value provides scant protection",
+      "Large and accelerating investing cash outflows (INR 421 Cr in FY25) with financing inflows of INR 283 Cr suggest growth is being funded by external capital, not retained earnings — precisely the speculative pattern I distrust",
+      "Promoter holding of only 26.88% is low — management's skin in the game is limited"
+    ],
+    "detailed_analysis": "From my quantitative filters, Aurionpro fails on nearly every valuation criterion I apply. The Graham Number — the geometric mean of 22.5 times earnings per share and book value — works out to approximately INR 472, placing the current price of INR 923 at a 96% premium. A P/E of 25x is nearly double my ceiling of 15x, and a P/B of 2.97x is twice my preferred maximum of 1.5x. Mr. Market is pricing in a rosy future; I insist on paying for the documented past. The one redeeming financial feature is the near-pristine balance sheet — debt of just INR 30 Cr against equity of INR 1,606 Cr — but a strong balance sheet is merely the absence of a vice, not a virtue sufficient to overcome a 100% valuation premium.\n\nMore troubling than the price is the earnings record. The FY2021 net loss of INR 192 Cr — likely reflecting goodwill write-downs given the \"Other Income\" line showing -INR 118 Cr that year — violates my core requirement of uninterrupted positive earnings over five consecutive years. The recovery since FY2022 is encouraging in direction, but four years of profits do not erase one catastrophic year from memory or from the ledger. Cash flow quality also concerns me: FY2025 net profit was INR 188 Cr yet free cash flow was only INR 62 Cr, and the company consumed INR 421 Cr in investing activities funded partly by fresh equity raises. This is a growth story dressed in technology clothing — precisely the narrative-driven investment I counsel the intelligent investor to resist.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 55776,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0782274,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9250,
+      "cache_read_input_tokens": 11203,
+      "output_tokens": 2678,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9250,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 573,
+          "cache_read_input_tokens": 9153,
+          "cache_creation_input_tokens": 2147,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2147
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

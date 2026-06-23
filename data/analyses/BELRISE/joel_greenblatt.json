@@ -1,0 +1,70 @@
+{
+  "symbol": "BELRISE",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-22T16:22:11.453493Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Belrise scores poorly on both Magic Formula metrics — Earnings Yield of ~4.7% (EBIT INR 1,021 Cr / EV ~INR 21,939 Cr) is well below the 6% minimum, and ROCE of 14.3% falls short of the 20%+ threshold for a high-quality business. At 39.6x P/E with negative FCF in 2025, the market is pricing in perfection for a thin-margin, capital-heavy auto parts supplier.",
+    "key_strengths": [
+      "Revenue growing at 15.4% CAGR (2022-2025), showing consistent top-line expansion",
+      "Debt/Equity improved to 0.29 after apparent IPO equity raise in 2025 (equity doubled to INR 4,971 Cr)",
+      "Diversified product portfolio across 2W/3W/4W segments with some export exposure"
+    ],
+    "key_risks": [
+      "Capital intensity is extreme: FY25 capex of INR 868 Cr vs Net Profit of INR 355 Cr → FCF was -INR 163 Cr",
+      "Operating margins of 8.3% are thin, leaving little buffer against input cost inflation or demand slowdown",
+      "Finance costs growing at 12.4% CAGR (INR 307 Cr in FY25) consume ~30% of operating income"
+    ],
+    "red_flags": [
+      "Earnings Yield of ~4.7% — fails Magic Formula minimum of 6%; significantly overvalued on EBIT/EV basis",
+      "ROCE of 14.3% and ROE of 14.1% — both below Magic Formula's 20% quality threshold",
+      "FCF is deeply negative in 2025 (-INR 163 Cr) with capex exceeding 2.4x net profit — poor cash conversion",
+      "Net Profit CAGR (10.7%) lagging Revenue CAGR (15.4%) — operating leverage not materializing"
+    ],
+    "detailed_analysis": "By the Magic Formula, Belrise fails on both axes simultaneously. Enterprise Value is approximately INR 21,939 Cr (Market Cap INR 19,052 Cr + Total Debt INR 2,964 Cr - Cash INR 77 Cr), giving an Earnings Yield (EBIT/EV) of just 4.7% — a red flag that screams overvaluation. ROCE of 14.3% confirms this is not a high-quality business; a great company earning 25%+ ROIC would at least justify a premium, but Belrise earns mediocre returns on a large and growing capital base. The P/E of 39.6x is simply unjustifiable for a business with 8.3% operating margins in a commoditized auto-components market.\n\nThe capital intensity story worsens on closer inspection. FY25 capex hit INR 868 Cr (vs. Net Profit of INR 355 Cr), producing negative FCF of -INR 163 Cr. Operating cash flow (INR 704 Cr) is decent, but it is being fully consumed by growth capex. Belrise appears to be in a \"grow at all costs\" mode funded by the 2025 equity raise; however, unless ROCE can push materially above the cost of capital (~14-15%+), this capital deployment destroys value rather than creating it. For a Magic Formula investor, this is a company to watch only after a significant price correction (EY needs to reach 12%+) or a sustained ROIC improvement above 20%.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 43943,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07775850000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10970,
+      "cache_read_input_tokens": 8990,
+      "output_tokens": 2261,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10970,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 317,
+          "cache_read_input_tokens": 8990,
+          "cache_creation_input_tokens": 1980,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1980
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

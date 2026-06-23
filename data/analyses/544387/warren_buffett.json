@@ -1,0 +1,69 @@
+{
+  "symbol": "544387",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-20T19:44:45.884139Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "A tiny INR 124 Cr civil construction contractor with a 0.26% ROE is the antithesis of a wonderful business — capital-intensive, commoditized, and earning essentially nothing on shareholder capital. The 10x P/E looks optically cheap only because earnings are negligible; this is a \"fair business at an unfair price\" I'd happily pass on.",
+    "key_strengths": [
+      "Promoter holding of 58.31% indicates aligned skin in the game",
+      "Exposure to structural themes — City Gas Distribution, renewables, water",
+      "Low absolute P/E of 10.4 suggests no speculative froth in price"
+    ],
+    "key_risks": [
+      "ROE of 0.26% — capital is earning less than a savings account",
+      "Civil construction is commoditized, working-capital heavy, and moatless",
+      "Micro-cap (INR 124 Cr) with negligible DII (2.2%) and zero FII scrutiny"
+    ],
+    "red_flags": [
+      "Return on equity near zero signals either weak economics or aggressive equity dilution post-listing",
+      "EPC/civil construction contractors are classic value traps — lumpy orders, receivable risk, thin margins",
+      "Lack of institutional ownership suggests limited transparency and liquidity"
+    ],
+    "detailed_analysis": "Civil construction EPC is precisely the kind of business I avoid — you bid for projects against many others, you finance long receivables, you carry execution and commodity risk, and at the end you earn a return barely above your cost of capital in the best years. Desco's 0.26% ROE tells me this business is not earning its keep; a P/E of 10 on near-zero earnings is mathematically meaningless. There is no brand, no switching cost, no network effect, no regulatory moat — just a contractor chasing tenders in CGD, water, and renewable EPC, competing with dozens of larger, better-capitalized players (L&T, KEC, Kalpataru, Welspun Enterprises).\n\nAt INR 124 Cr market cap, this is a micro-cap with no institutional following to validate the accounting or governance. Promoter skin in the game at 58% is the one positive, but promoter alignment cannot overcome structural industry economics. I'd need to see sustained ROE above 15%, a demonstrable niche, and a multi-year track record of disciplined capital allocation before even beginning to consider this — none of which is visible here. Pass, and wait for a wonderful business at a fair price instead.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 35526,
+    "model_used": "opus",
+    "total_cost_usd": 0.09063725,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8919,
+      "cache_read_input_tokens": 13427,
+      "output_tokens": 1126,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8919,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10590,
+          "cache_creation_input_tokens": 1166,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1166
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

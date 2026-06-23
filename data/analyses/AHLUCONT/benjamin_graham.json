@@ -1,0 +1,69 @@
+{
+  "symbol": "AHLUCONT",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T16:17:10.619589Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Ahluwalia Contracts possesses a genuinely sound balance sheet with near-zero debt and a decade of positive earnings, but at P/E 20.9x and P/B 2.90x it trades at roughly 89% above my calculated Graham Number of ~INR 441, offering no margin of safety whatsoever. A disciplined investor must wait for Mr. Market's pessimism to bring this to a price where safety exists — that price is not INR 834.",
+    "key_strengths": [
+      "Near-debt-free balance sheet (D/E 0.04) with net cash (INR 318 Cr cash vs. 76 Cr debt) — the bedrock of financial safety",
+      "9+ consecutive years of positive earnings with revenue CAGR of 14.1% (2016–2025), satisfying my multi-year earnings track record requirement",
+      "Operating cash flow positive in all 5 of the last 5 years, confirming earnings are backed by real cash"
+    ],
+    "key_risks": [
+      "Valuation grossly exceeds Graham Number: EPS ~INR 30, BVPS ~INR 287 yields Graham Number ~INR 441 — current price of INR 834 is an 89% premium",
+      "2025 net profit collapsed 46% (INR 375 Cr → INR 202 Cr) after 2024 was artificially inflated by INR 232 Cr of one-time 'Other Income'; normalised earning power is far lower than the headline FY24 figure suggests",
+      "Operating margin of only 6.59% offers minimal buffer — construction margins are thin and highly susceptible to input cost inflation, project delays, and working capital stress"
+    ],
+    "red_flags": [
+      "P/B of 2.90x far exceeds my 1.5x ceiling — investors are paying for goodwill and future promises, not proven asset value",
+      "FY2024 net profit of INR 375 Cr was largely fictitious from a recurring standpoint; strip out INR 232 Cr of other income and normalised profit is ~INR 143–200 Cr, implying true P/E is materially higher than the stated 20.9x",
+      "Rising finance costs (INR 35 Cr in 2020 → INR 58 Cr in 2025) despite negligible reported debt suggests heavy working-capital/bill-discounting borrowings not fully captured in the headline D/E figure"
+    ],
+    "detailed_analysis": "Ahluwalia Contracts is, by temperament, the kind of business I can respect: founded 1965, asset-light execution in construction, a promoter who retains 55% skin-in-the-game, and a balance sheet stripped clean of long-term debt. Revenue has compounded at 14.1% over nine years, OCF has been positive every year, and reserves have grown from INR 789 Cr to INR 1,911 Cr — these are the marks of a conservatively run enterprise. Yet the price asked by Mr. Market today grants no room for error. My Graham Number — anchored to actual EPS of ~INR 30 and book value per share of ~INR 287 — yields ~INR 441. To pay INR 834 is to hand over 89 paise of speculative premium for every rupee of defensible value. That is not investing; it is speculation dressed in respectable clothes.\n\nThe earnings quality concern compounds the valuation problem. FY2024's spectacular net profit of INR 375 Cr was propped up by INR 232 Cr of \"other income\" — likely a one-time asset sale or revaluation gain. Strip that away and the normalised profit is closer to INR 143–175 Cr, implying the true earnings yield is well below what even the stated P/E of 20.9x suggests. FY2025 confirmed this: profit returned to INR 202 Cr. For a business with 6.6% operating margins working on government and real-estate contracts in India — both historically prone to delays and receivable disputes — I require a price that gives me 30–40% downside protection. That protection does not exist here. I shall wait patiently for INR 400–450.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 70938,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08254755,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9513,
+      "cache_read_input_tokens": 11116,
+      "output_tokens": 2902,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9513,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 449,
+          "cache_read_input_tokens": 9066,
+          "cache_creation_input_tokens": 2497,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2497
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

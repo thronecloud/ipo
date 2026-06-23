@@ -1,0 +1,69 @@
+{
+  "symbol": "CHENNPETRO",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-19T13:01:39.063953Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Chennai Petroleum is a textbook example of a business Munger would never own: a commodity refiner with no pricing power, volatile earnings (ROE collapsed from 31% in FY24 to 2.5% in FY25), a 13.2% net profit CAGR decline over 9 years, and total dependence on crack spreads it cannot control. The only 'defense' is its 67% IOC promoter backing, which is itself a sign of PSU mediocrity.",
+    "key_strengths": [
+      "Debt has fallen dramatically — borrowings from ₹8,698 Cr (FY20) to ₹1,933 Cr (FY25), materially reducing financial risk",
+      "Consistent OCF in last 5 years (5/5 positive) shows the refinery generates cash when spreads are normal",
+      "P/E of 7.2x and P/S of 0.24x price in a great deal of pessimism, providing a statistical margin of safety"
+    ],
+    "key_risks": [
+      "Earnings are catastrophically unreliable — net profit swung from ₹3,532 Cr (FY23) to ₹2,745 Cr (FY24) to ₹214 Cr (FY25), a 92% collapse in one year",
+      "Operating income CAGR of -3.1% over 9 years and EBITDA CAGR of -4.1% confirm this is a structurally declining earnings business in real terms",
+      "ROE of 2.51% and ROCE of 4.30% are deeply sub-cost-of-capital — shareholders have been systematically destroyed over the medium term"
+    ],
+    "red_flags": [
+      "Gross margin equals operating margin at ~8.3% — there is essentially no value-add beyond the refining spread; no brand, no IP, no switching costs",
+      "Net profit CAGR of -13.2% over 9 years is one of the worst return profiles I've seen — the business is worth less in real terms each year",
+      "IOC subsidiary structure means capital allocation decisions are made for IOC's benefit, not minority shareholders — a structural governance problem"
+    ],
+    "detailed_analysis": "Applying inversion first: what makes CHENNPETRO a terrible investment? Commodity refining with zero pricing power, a PSU parent whose interests may conflict with minorities, earnings that are purely a function of the oil price cycle (crack spreads), and a 9-year record of declining operating profitability. The FY25 net profit of ₹214 Cr on ₹58,983 Cr of revenue is a 0.36% net margin — barely above zero. This is not cyclically depressed; it is structurally marginal.\n\nThe debt reduction is real and positive, but it was funded largely by the retained earnings bonanza of FY23 (₹3,532 Cr net profit) — a year of exceptional crack spreads that will not persist. I have no ability to predict when crack spreads will recover, and even when they do, the business earns its cost of capital only in the best of times. Low P/E multiples on commodity businesses are a value trap: the 'E' in P/E can go to zero or negative in bad years. CHENNPETRO is a AVOID.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 146706,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.2067753,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 22918,
+      "cache_read_input_tokens": 15796,
+      "output_tokens": 7739,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 22918,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 542,
+          "cache_read_input_tokens": 15796,
+          "cache_creation_input_tokens": 7122,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 7122
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

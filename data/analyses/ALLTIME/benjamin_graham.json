@@ -1,0 +1,69 @@
+{
+  "symbol": "ALLTIME",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-20T11:15:02.591869Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "All Time Plastics is a freshly-listed IPO (equity jumped from ₹202 Cr to ₹594 Cr in 2025, indicating fresh issue proceeds) trading at 36.5x earnings and 1.88x book — well beyond my quantitative thresholds. While the balance sheet is respectable and earnings are growing, the price embeds speculative assumptions with no margin of safety.",
+    "key_strengths": [
+      "Debt/Equity of 0.22 and post-IPO capital infusion leave the balance sheet conservative",
+      "Four consecutive years of positive operating cash flow (27→67→91→52 Cr)",
+      "ROE of 19% and 3-yr net profit CAGR of 24% show genuine earnings growth, not just promise"
+    ],
+    "key_risks": [
+      "P/E 36.5 and P/B 1.88 fail my thresholds (<15 and <1.5); Graham Number ≈ ₹133 vs price ₹217 — no margin of safety",
+      "Recent IPO — lacks the multi-year track record as a listed entity; investment bankers priced this for sellers",
+      "FY2025 FCF turned negative ₹62 Cr on ₹114 Cr capex, suggesting growth is consuming capital"
+    ],
+    "red_flags": [
+      "IPO premium pricing — equity base tripled in 2025 reflecting fresh issue at elevated multiples",
+      "No evident dividend record as a listed company",
+      "Commodity plasticware is a low-moat, competitive business; 10% operating margin is unremarkable"
+    ],
+    "detailed_analysis": "The stock fails nearly every quantitative filter I demand. P/E of 36.5x is more than double my ceiling of 15; P/B of 1.88 exceeds my 1.5 limit; and the Graham Number test — sqrt(22.5 × EPS ₹7.9 × BVPS ₹100) ≈ ₹133 — shows the intrinsic value anchor sits 39% below the market quote of ₹217. There is no margin of safety here. The balance sheet is the one redeeming feature: D/E 0.22, total debt ₹223 Cr against ₹594 Cr of equity, and interest coverage (EBITDA ₹102 Cr / finance cost ₹15 Cr ≈ 6.8x) is adequate.\n\nThe business itself — molded plastic household goods under the \"alltime\" brand since 1964 — is prosaic and competitive, with 10% operating margins suggesting limited pricing power. Earnings growth is real (net profit ₹25→₹47 Cr over three years), but this is precisely what speculators pay 36x for and what Mr. Market inevitably disappoints on. FY2025 FCF went to negative ₹62 Cr as capex accelerated, financed by the IPO proceeds. As always with IPOs, the seller knows more than the buyer — I would require the price to fall below ₹130 and demand a 3-5 year listed earnings record before considering this. AVOID.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 29335,
+    "model_used": "opus",
+    "total_cost_usd": 0.11780175000000001,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 10683,
+      "cache_read_input_tokens": 14756,
+      "output_tokens": 1745,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10683,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 107,
+          "cache_read_input_tokens": 11870,
+          "cache_creation_input_tokens": 1699,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1699
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

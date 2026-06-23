@@ -1,0 +1,69 @@
+{
+  "symbol": "544426",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-20T20:04:25.835881Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "At a P/E of 11.1 with ROE of a paltry 0.48%, this small-cap facilities manager earns next to nothing on its equity — a P/E that low on such meager profits signals either book-value inflation or unsustainable margins. Absent a multi-year earnings record and dividend history, and with IPO-era seller's premium still suspected, there is no margin of safety here.",
+    "key_strengths": [
+      "Modest P/E of 11.1, below my <15 threshold",
+      "Strong promoter skin-in-the-game at 70.75%",
+      "Established 2002 — 20+ year operating history in a defensive service niche"
+    ],
+    "key_risks": [
+      "ROE of 0.48% indicates earning power is virtually nil",
+      "Tiny market cap of INR 41 Cr — illiquid, volatile, easily manipulated",
+      "No disclosed data on current ratio, debt, book value, or dividend record"
+    ],
+    "red_flags": [
+      "ROE under 1% — barely distinguishable from a zero-earnings company",
+      "Recent BSE listing — lacks the 5+ year seasoned earnings record I require",
+      "Near-zero institutional ownership (DII 0.27%) — no sophisticated validation"
+    ],
+    "detailed_analysis": "The arithmetic here is damning. An ROE of 0.48% means that for every rupee of equity, the company generates less than half a paisa of profit — worse than a savings account. A P/E of 11.1 paired with such anemic profitability implies either the book value is overstated, earnings are temporarily depressed, or the market is pricing in speculative growth. None of these scenarios offer the margin of safety I require. I cannot compute a reliable Graham Number without EPS and book value per share, but an ROE this low almost guarantees the stock fails my P/B ceiling on any reasonable earning-power basis.\n\nFacilities management is a low-margin, competitive, labor-intensive business — exactly the kind that rewards scale and punishes sub-scale operators. At INR 41 Cr market cap, Icon Facilitators is a minnow with no demonstrated ability to compound capital. The absence of disclosed balance-sheet data (current ratio, debt-to-equity, interest coverage) is itself disqualifying; I do not invest in what I cannot measure. Mr. Market may occasionally pay 11x earnings for a shell of a business, but the intelligent investor waits for proven earning power offered at a genuine discount. This is not that.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "insufficient_data",
+      "valuation": "overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 22628,
+    "model_used": "opus",
+    "total_cost_usd": 0.093222,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8932,
+      "cache_read_input_tokens": 13484,
+      "output_tokens": 1225,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8932,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 49,
+          "cache_read_input_tokens": 10598,
+          "cache_creation_input_tokens": 1220,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1220
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

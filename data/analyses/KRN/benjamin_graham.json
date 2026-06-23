@@ -1,0 +1,70 @@
+{
+  "symbol": "KRN",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T18:08:13.362561Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "KRN trades at 116x earnings and 14.9x book value — roughly 10x my Graham Number of ~₹128 — offering precisely zero margin of safety. Despite admirable operating growth, the price demands perfection and embeds decades of future earnings that have not yet been proven.",
+    "key_strengths": [
+      "Low financial leverage: D/E of just 0.06 and debt down from ₹87 Cr to ₹33 Cr",
+      "Consistent profit growth: Net profit CAGR of 71% (₹11 Cr → ₹53 Cr, 2022–2025)",
+      "Operating CF positive all 4 years, with ROCE of 20.8% indicating decent capital deployment"
+    ],
+    "key_risks": [
+      "Extreme valuation: P/E 116x vs my maximum of 15x; P/B 14.9x vs my maximum of 1.5x",
+      "Persistently negative free cash flow: FCF was -₹9, -₹41, -₹65 Cr over 2023–2025 despite book profits",
+      "Capital-intensive expansion eating cash: capex of ₹151 Cr in FY25 funded almost entirely by IPO proceeds (financing CF +₹258 Cr)"
+    ],
+    "red_flags": [
+      "Graham Number ≈ ₹128; stock trades at ₹1,270 — a 10x premium over intrinsic value by my method",
+      "Incorporated 2017, listed 2023 — a recent IPO lacking the 5-year earnings track record I require",
+      "Equity tripled (₹130 Cr → ₹528 Cr) via IPO capital raise — investment bankers priced this for sellers, not buyers",
+      "No dividend — zero cash returned to shareholders; all earnings are reinvested under assumptions of future growth"
+    ],
+    "detailed_analysis": "By every quantitative test I apply, KRN is disqualifying. My Graham Number — derived from ₹8.54 EPS and ₹85 book value per share — yields roughly ₹128, against a market price of ₹1,270. The stock must decline 90% before I would consider it statistically cheap. P/E of 116x is nearly eight times my ceiling of 15x; P/B of 14.93x is ten times my ceiling of 1.5x. The market is pricing in many years of flawless 40–70% growth, and the intelligent investor does not pay for what has not yet occurred.\n\nThe balance sheet shows one genuine virtue — negligible debt — but the cash flow statement is troubling. Operating cash flow of ₹21 Cr in FY25 is dwarfed by ₹151 Cr of capex, producing -₹65 Cr of free cash flow. The equity surge from ₹130 Cr to ₹528 Cr reflects IPO proceeds, not retained earnings. This is a young company (incorporated 2017) in rapid, capital-hungry expansion, financed by public shareholders who have been handed an optically impressive growth story at an extreme price. Mr. Market is euphoric about this company today; the disciplined investor waits for the day Mr. Market despairs.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 46443,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.06692235,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8295,
+      "cache_read_input_tokens": 10507,
+      "output_tokens": 2177,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 8295
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 356,
+          "cache_read_input_tokens": 8457,
+          "cache_creation_input_tokens": 1888,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1888,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

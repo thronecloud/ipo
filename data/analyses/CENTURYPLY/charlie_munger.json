@@ -1,0 +1,70 @@
+{
+  "symbol": "CENTURYPLY",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T16:59:03.058058Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Century Plyboards is executing a debt-funded MDF capacity bet that has caused borrowings to explode 10x in four years (INR 165 Cr → INR 1,643 Cr), turned operating cash flow negative in FY25, and nearly halved net profits from INR 377 Cr to INR 186 Cr — yet the market prices the stock at 69.8x earnings. At ROCE of 10.4%, investors are paying a growth premium for a business with deteriorating returns in a commodity-adjacent industry.",
+    "key_strengths": [
+      "Brand equity — SAINIK and CENTURYPLY are among India's most recognised wood panel brands with deep distribution reach",
+      "Revenue CAGR of 11.9% over 9 years demonstrates genuine market share gains in a fragmented industry",
+      "High promoter holding (71.83%) provides alignment, and reserves have grown steadily from INR 1,068 Cr to INR 2,445 Cr"
+    ],
+    "key_risks": [
+      "ROCE of 10.4% is below my 12% minimum threshold and falling; net profit CAGR of just 1% over 9 years proves the business does not compound capital",
+      "Debt has exploded 10x in 4 years; financing costs jumped from INR 11 Cr (FY22) to INR 69 Cr (FY25), compressing already thin margins",
+      "MDF is a highly capital-intensive, increasingly competitive segment — the expansion thesis depends on execution that current results do not yet support"
+    ],
+    "red_flags": [
+      "Free cash flow catastrophically negative: -INR 666 Cr in FY25 and -INR 593 Cr in FY24; operating CF turned negative (-INR 3 Cr) in FY25 for the first time",
+      "Net profit nearly halved in 2 years: INR 377 Cr (FY23) → INR 325 Cr (FY24) → INR 186 Cr (FY25) — while revenue grew 24%",
+      "Valuation of 69.8x P/E with 8.47% ROE is divorced from business reality — the market is pricing in a recovery that depends on MDF capex paying off",
+      "Total assets nearly tripled (INR 1,660 Cr → INR 4,783 Cr) while net profit grew nowhere — massive capital destruction in the interim"
+    ],
+    "detailed_analysis": "Applying inversion first: how does this investment go badly wrong? The answer is obvious from the data — a business earning 10.4% ROCE has borrowed aggressively to fund expansion into MDF, a commodity product subject to oversupply. Finance costs have risen 6x since FY22, consuming margin precisely when revenues are growing fastest. The operating leverage that should accompany 11.9% revenue growth is entirely absent: EBITDA CAGR is 4.4% vs. revenue CAGR of 11.9%, meaning every rupee of growth comes at a cost. Net profits over 9 years have compounded at a mere 1% — this is not a compounder, it is a capital-consuming machine dressed up as a growth story.\n\nThe plywood segment does carry genuine brand value — SAINIK's sub-premium positioning is real, and Century has earned shelf space in a fragmented market. But great branding in a commodity-adjacent industry is a moderate moat at best, not the kind of durable advantage that justifies 6.87x book or 30.94x EV/EBITDA. With OCF going negative in FY25 and the company relying entirely on INR 660 Cr of financing cash to fund operations and capex, the capital structure is increasingly fragile. Unless MDF utilisation ramps sharply and margin recovery materialises in FY26-27, the forward P/E of 29.66 still prices in substantial optimism for a business with a 9-year net profit CAGR of 1%.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 54915,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09064634999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11697,
+      "cache_read_input_tokens": 9062,
+      "output_tokens": 2937,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11697
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 346,
+          "cache_read_input_tokens": 9062,
+          "cache_creation_input_tokens": 2635,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2635,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

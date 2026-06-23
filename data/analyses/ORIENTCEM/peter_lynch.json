@@ -1,0 +1,69 @@
+{
+  "symbol": "ORIENTCEM",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-18T22:05:53.238792Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Orient Cement is a deteriorating-earnings commodity cyclical with net profit collapsing at -29.8% CAGR and operating margins at a thin 6.56% — there is no growth story here. The clean balance sheet (D/E 0.04) prevents disaster but does nothing to create a ten-bagger thesis for a GARP investor.",
+    "key_strengths": [
+      "Near debt-free: total debt slashed from INR 316 Cr (2022) to INR 70 Cr (2025), finance costs down to INR 22 Cr",
+      "OCF positive all 4 years and equity base growing steadily from INR 1,525 Cr to INR 1,808 Cr — solid balance sheet foundation",
+      "Ambuja Cements (Adani group) parentage provides brand credibility and distribution scale under the Birla A1 umbrella"
+    ],
+    "key_risks": [
+      "Earnings freefall: net profit crashed from INR 263 Cr (2022) to INR 91 Cr (2025) with no recovery signal; forward P/E of 13.6x actually exceeds trailing 9.18x, implying further earnings weakness",
+      "Severe margin compression: EBITDA fell from INR 595 Cr to INR 320 Cr (-18.7% CAGR) and operating margin at 6.56% is a fraction of industry leaders running 15-20%+",
+      "Subsidiary structure caps strategic independence — capital allocation decisions rest with Ambuja, limiting any self-directed reinvestment or M&A optionality"
+    ],
+    "red_flags": [
+      "PEG ratio is meaningless here — earnings growth is deeply negative (-29.8% CAGR), the exact inverse of a Lynch growth stock",
+      "Forward P/E (13.6x) higher than trailing P/E (9.18x) — the market is pricing in continued earnings deterioration, not recovery",
+      "Revenue CAGR essentially 0% over 3 years (-0.2%) in a sector that should benefit from India's infra boom — company is losing the macro tailwind"
+    ],
+    "detailed_analysis": "Peter Lynch classifies stocks before buying them, and Orient Cement falls squarely into the \"deteriorating cyclical\" bucket — the worst place to be. Revenue is flat at ~INR 2,700-3,200 Cr range with no growth, while every profitability line is contracting: EBITDA -18.7% CAGR, operating income -28.1%, net profit -29.8%. The forward P/E of 13.6x vs. trailing 9.18x is the tell — a cheap trailing P/E in a business with collapsing earnings is a classic value trap. ROE of 5.05% and operating margin of 6.56% are well below my thresholds (ROE >12%, expanding margins), and there is simply no \"story\" I can tell myself about why earnings inflect from here.\n\nThe only redeeming quality is balance sheet hygiene — debt paid down aggressively to near zero, finance costs halved to INR 22 Cr, OCF positive throughout. But clean balance sheets don't make ten-baggers; growth does. Being a subsidiary of Ambuja means management's capital allocation agenda is set elsewhere. India's cement sector is supposed to be a tailwind from infrastructure spending, yet Orient's volumes and realizations are clearly underperforming peers. Until margins recover toward 12-15% EBITDA and earnings show two consecutive quarters of double-digit growth, this is a stock to watch from the sidelines.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 55867,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08429534999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10789,
+      "cache_read_input_tokens": 8442,
+      "output_tokens": 2753,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10789,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 443,
+          "cache_read_input_tokens": 8442,
+          "cache_creation_input_tokens": 2347,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2347
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

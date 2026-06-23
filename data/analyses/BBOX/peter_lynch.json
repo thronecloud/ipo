@@ -1,0 +1,70 @@
+{
+  "symbol": "BBOX",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-18T16:46:56.479490Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Black Box is a partial turnaround — operating income expanded from ₹273 Cr to ₹538 Cr over three years — but revenue is now declining (₹6,288 Cr → ₹5,967 Cr) and FY25 operating cash flow turned sharply negative (-₹88 Cr), suggesting the \"story\" is deteriorating. At 35x P/E with thin 7.3% operating margins, rising debt, and no real FCF, there is no margin of safety for a Lynch-style GARP investor.",
+    "key_strengths": [
+      "Operating income expanding sharply (₹273→₹538 Cr, 2023–2025) even as revenue softens — genuine margin improvement story",
+      "High promoter ownership (70%) signals skin in the game and alignment with long-term shareholders",
+      "ROE of 44% and ROCE of 30% look impressive, though the very low equity base (was negative until FY21) flatters these numbers"
+    ],
+    "key_risks": [
+      "Revenue in outright decline for two consecutive years (₹6,288 Cr → ₹5,967 Cr) — the growth engine has stalled, which kills a GARP thesis",
+      "Operating cash flow turned negative (-₹88 Cr) in FY25 despite reported ₹205 Cr net profit — a dangerous profits-vs-cash divergence that screams working capital trouble",
+      "Borrowings surged from ₹712 Cr to ₹1,038 Cr in one year, D/E at 1.15 (well above my 0.6 comfort level), with finance costs of ₹145 Cr eating 27% of EBITDA"
+    ],
+    "red_flags": [
+      "FY25 free cash flow: -₹129 Cr vs. reported net profit of ₹205 Cr — this gap is a serious quality-of-earnings red flag",
+      "Revenue declining two years straight — not what you want to see in a 'technology' company priced at 35x earnings",
+      "Debt ballooning (+46% YoY to ₹1,038 Cr) while the business is consuming rather than generating cash",
+      "FII/DII combined ownership only 6.25% — sophisticated institutional money is not buying this story"
+    ],
+    "detailed_analysis": "Black Box is a classic failed turnaround candidate by Lynch's checklist. The company — formerly AGC Networks — made a massive leap in scale via acquisition (revenue jumped from ₹1,853 Cr to ₹4,994 Cr in FY20), but is now running backwards on revenue (₹6,288 Cr peak in FY23, now ₹5,967 Cr in FY25). The PEG looks deceptively attractive (~0.72 using trailing 12-month earnings growth of ~49%), but Lynch would immediately flag that earnings growth built on a collapsing revenue base is unsustainable — it's purely a margin story, and at 7.32% operating margins there is almost no buffer. Gross margins of 15.5% are thin for a systems integrator, meaning the business lacks pricing power.\n\nThe cash flow picture is what kills this for me. A company reporting ₹538 Cr EBITDA and ₹205 Cr net profit should not be burning ₹88 Cr of operating cash. That divergence points to working capital consumption — likely stretched receivables in a project-based IT services model. Meanwhile, management is simultaneously levering up (borrowings +46% in one year to ₹1,038 Cr), which is exactly the wrong move when cash generation is negative. Finance costs of ₹145 Cr represent a 27% drain on EBITDA. Lynch's rule: never fall in love with a company that's borrowing to fund operations. AVOID until revenue growth resumes and operating cash flow turns consistently positive.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 64879,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09030089999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11710,
+      "cache_read_input_tokens": 9198,
+      "output_tokens": 2908,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11710
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 468,
+          "cache_read_input_tokens": 9198,
+          "cache_creation_input_tokens": 2512,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2512,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

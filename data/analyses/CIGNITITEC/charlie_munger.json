@@ -1,0 +1,69 @@
+{
+  "symbol": "CIGNITITEC",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T17:02:43.270760Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Cigniti is a financially disciplined, near-debt-free IT testing specialist with impressive ROCE of 34% and steadily expanding revenues — but software QA is a commoditizable niche increasingly threatened by AI-automated testing, and its new subsidiary status under Coforge creates structural minority shareholder risk that Munger would find deeply uncomfortable.",
+    "key_strengths": [
+      "Exceptional capital efficiency: ROCE 34.1%, ROE 26%, Debt/Equity near zero (borrowings collapsed from ₹121 Cr in 2020 to ₹20 Cr in 2025)",
+      "Revenue compounding at 14.5% CAGR over 9 years with OCF positive all 5 years and FCF of ₹147 Cr in FY25",
+      "Cheap valuation at 11.7x P/E and 9x EV/EBITDA for a profitable, growing IT services business"
+    ],
+    "key_risks": [
+      "AI disruption is existential: generative AI tools that write and run tests autonomously directly attack Cigniti's core business model",
+      "Subsidiary of Coforge since Dec 2024 — minority shareholders face classic risks: related-party pricing, potential delisting squeeze-out at unfavorable terms",
+      "Weak moat — IT testing has no pricing power or structural lock-in; TCS, Infosys, Wipro all have competing QA practices at scale"
+    ],
+    "red_flags": [
+      "2017 net loss of -₹395 Cr (massive write-down) reveals historical financial fragility and raises questions about past management discipline",
+      "FCF/Net Income of 73.5% (₹147 Cr / ₹200 Cr) falls below my 80% quality threshold — earnings slightly outpacing cash reality",
+      "Operating income was deeply erratic for years (₹-22 Cr in 2017, ₹52 Cr in 2018) — consistency of a quality business this is not"
+    ],
+    "detailed_analysis": "Invert first: what kills this business? Generative AI writing, running, and maintaining test suites is not a distant threat — it's happening now. A pure-play software testing firm is precisely the profile most vulnerable to AI automation hollowing out billable hours. Munger's mental model from physics applies: when the environment changes, organisms without an adaptive moat go extinct. Cigniti's financials look good today precisely because the business hasn't yet been disrupted — but quality testing work increasingly flows toward platforms, not service firms. The ROCE of 34% and debt-free balance sheet are genuinely excellent, but these metrics reflect a business in its prime before structural headwinds accelerate.\n\nThe Coforge subsidiary dynamic adds a governance layer Munger would find troubling. Minority shareholders in a listed subsidiary are perpetually at the mercy of the parent's capital allocation decisions, transfer pricing, and — most critically — potential delisting at the parent's chosen timing and price. The promoter stake of 54% (now Coforge) means minority interests are structurally subordinated. At P/E 11.7x and EV/EBITDA 9x, the market appears to already price in some of this uncertainty, but \"cheap\" is not a margin of safety when the business model faces secular disruption. This is a fair business at a fair price — not the great business at a fair price Munger demands.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 59764,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0819978,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11288,
+      "cache_read_input_tokens": 9046,
+      "output_tokens": 2463,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11288
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 268,
+          "cache_read_input_tokens": 9046,
+          "cache_creation_input_tokens": 2242,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2242,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

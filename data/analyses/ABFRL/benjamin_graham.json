@@ -1,0 +1,69 @@
+{
+  "symbol": "ABFRL",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-19T06:17:36.831891Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "Aditya Birla Fashion and Retail has been loss-making in five of the last six years, with negative ROE of -10.9% and ROCE of -2.87% — this company fails the most fundamental test in my framework: positive, consistent earning power. A business that persistently destroys capital is not cheap at any price-to-book ratio.",
+    "key_strengths": [
+      "P/B of 1.24x is the only metric in this group approaching Graham's preferred range, though it is hollow without earnings",
+      "Operating cash flow positive in all 5 of the last 5 years (INR 644 Cr → INR 1,644 Cr), suggesting the retail operations generate real cash before lease/debt charges",
+      "Strong brand portfolio (Louis Philippe, Van Heusen, Allen Solly, Pantaloons) represents genuine consumer recognition"
+    ],
+    "key_risks": [
+      "Five years of consecutive net losses totaling approximately INR 2,070 Cr — book value is being eroded, not built",
+      "Finance costs of INR 608 Cr in FY2025, rising at 18% CAGR since FY2019, will continue to consume any operating improvement",
+      "Revenue CAGR of -1.6% over six years means the business is not even keeping pace with inflation, let alone growing"
+    ],
+    "red_flags": [
+      "Loss-making in FY2020, 2021, 2022, 2023, 2024, and 2025 — this is not a temporary setback, it is a structural condition",
+      "EV/EBITDA of 197x is not a valuation multiple — it is a monument to speculation; the enterprise value dwarfs any reasonable earnings power",
+      "Debt has grown from INR 4,100 Cr (FY2022) to INR 9,450 Cr (FY2024) before partial reduction — the balance sheet is being funded by creditors, not earnings"
+    ],
+    "detailed_analysis": "The first and most important question I ask of any enterprise is: does it earn money? For Aditya Birla Fashion and Retail, the answer is unambiguously no — the company has lost a cumulative INR 2,000+ Cr over the past five years. I do not care about brand portfolios, market share, or analyst forward estimates when a company cannot produce a single profitable year. The reported P/B of 1.24x is superficially tempting, but book value built on borrowed capital and inflated by new equity issuances, while underlying operations hemorrhage cash, is a mirage.\n\nThe EV/EBITDA of 197x is perhaps the most alarming single number in this entire set of five companies. It implies the market values this enterprise at 197 times its operating earnings — a number that presupposes a dramatic and sustained operational turnaround that has not materialized despite years of promises. The forward P/E of 10.34x suggests analysts expect profitability; I require demonstrated, not projected, earning power. Until this company shows three to five consecutive years of genuine net profits, I will not look at it regardless of the price.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 170749,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.23166540000000002,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 24076,
+      "cache_read_input_tokens": 15638,
+      "output_tokens": 9112,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 24076,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 576,
+          "cache_read_input_tokens": 15638,
+          "cache_creation_input_tokens": 8438,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8438
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "ORIENTCEM",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T21:55:14.605048Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Orient Cement's near-zero debt (D/E: 0.04) and sub-15 P/E superficially appeal to a value investor, but the Graham Number (~INR 93.7) sits 35% below the current price of INR 144.9, confirming the stock offers no margin of safety. Worse, net profit has collapsed 65% in three years (INR 263 Cr → INR 91 Cr), violating the foundational requirement of stable, proven earning power.",
+    "key_strengths": [
+      "Fortress balance sheet — debt/equity of 0.04 with total debt down from INR 316 Cr (2022) to INR 70 Cr (2025)",
+      "Operating cash flow positive all four years; 2025 FCF of INR 146 Cr provides genuine, not accounting, earnings",
+      "Strong parent (Ambuja Cements / Adani group) reduces existential risk and supports brand credibility"
+    ],
+    "key_risks": [
+      "Earnings destruction: net profit CAGR -29.8% over three years — proven earning power is deteriorating, not stable",
+      "Price trades 54% above Graham Number (INR 93.7 calculated from EPS ~4.43 and BVPS ~88); no margin of safety exists",
+      "Operating margin compressed to 6.56% with EBITDA CAGR -18.7%; cement pricing and cost headwinds show no sign of reversal"
+    ],
+    "red_flags": [
+      "Net profit fell from INR 263 Cr to INR 91 Cr — a 65% collapse in three years; no intelligent investor buys a deteriorating business without a steep discount",
+      "Forward P/E (13.60) is HIGHER than trailing P/E (9.18), implying the market expects earnings to fall further — the denominator is shrinking, not growing",
+      "Revenue declined in FY2025 (INR 2,704 Cr) to below FY2022 levels (INR 2,716 Cr) — zero real growth over the period"
+    ],
+    "detailed_analysis": "Graham's first commandment is proven earning power. Orient Cement fails it badly. The Graham Number — my quantitative anchor, calculated as √(22.5 × EPS × BVPS) = √(22.5 × 4.43 × 88.02) ≈ INR 93.7 — is 35% below the market price of INR 144.9. A disciplined value investor demands to buy below this number, not above it. The P/B of 1.44 is marginal (my ceiling is 1.5), and while the P/E of 9.18 looks cheap in isolation, it is cheap only because earnings are cyclically or structurally impaired. When earnings are in freefall, a low P/E is a trap, not a bargain.\n\nThe one genuinely praiseworthy fact is the balance sheet — debt reduced from INR 316 Cr to INR 70 Cr, interest coverage exceeds 7x, and operating cash flow has been positive every year. These are characteristics of a financially sound enterprise. But financial soundness is necessary, not sufficient. Mr. Market is offering this stock at a price where, even with the most generous assumptions, there is no cushion against further earnings erosion. I require a large margin of safety precisely because the future is uncertain, and Orient Cement's trajectory is pointing downward. At INR 94 or below — closer to liquidation value — the calculus would change. At INR 145, the speculator is paying for a recovery that has not yet materialized.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 47705,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0747861,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8668,
+      "cache_read_input_tokens": 10507,
+      "output_tokens": 2608,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8668,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 383,
+          "cache_read_input_tokens": 8457,
+          "cache_creation_input_tokens": 2261,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2261
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

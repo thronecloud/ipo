@@ -1,0 +1,69 @@
+{
+  "symbol": "544373",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-20T19:47:00.520875Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "NAPS Global fails the Magic Formula decisively: while the P/E of 5.91 implies a superficially attractive earnings yield (~17%), the ROE of 0.16% signals near-zero return on capital — this is a low-margin fabric-trading middleman, not a high-quality business. Cheap does not equal good, and the Magic Formula requires both.",
+    "key_strengths": [
+      "Low P/E of 5.91 implies a high headline earnings yield (~17%)",
+      "Strong promoter skin-in-the-game at 70.20%",
+      "Asset-light import/distribution model (low fixed-asset intensity)"
+    ],
+    "key_risks": [
+      "ROE of 0.16% indicates virtually no return on capital — fails the ROIC test",
+      "Commoditized fabric-trading business with no pricing power or moat",
+      "₹15.7 Cr micro-cap with low liquidity and limited disclosure"
+    ],
+    "red_flags": [
+      "ROE of 0.16% is essentially zero — earnings may be inflated by one-time items or working-capital accounting",
+      "Earnings quality suspect: a 5.91 P/E on 0.16% ROE is arithmetically odd (suggests very low equity base or one-off profit)",
+      "Pure trading businesses typically destroy capital over a cycle"
+    ],
+    "detailed_analysis": "The Magic Formula ranks companies on two axes — how cheap (earnings yield) and how good (return on capital). NAPS Global appears cheap on the surface with a P/E of 5.91, translating to a ~17% earnings yield that would normally rank well. However, the second axis collapses the thesis: an ROE of 0.16% means the business generates essentially no return on the capital employed. Since ROIC is typically close to or below ROE for unlevered trading businesses, this is a textbook \"cheap for a reason\" setup. A fabric importer who buys and resells to garment makers has razor-thin margins, inventory/working-capital drag, and no structural moat — exactly the kind of business the Magic Formula is designed to screen out.\n\nSystematically, I would not own this. The combination fails both the quantitative test (need ROIC >20%, getting ~0%) and the qualitative sanity check (trading middleman with no durable economics). The 70% promoter holding and tiny ₹15.7 Cr market cap also mean this is effectively a promoter-controlled microcap with limited float — not a setup where the Magic Formula's statistical edge reliably plays out. Skip it; there are thousands of Indian listed names and the formula only works when both criteria are satisfied.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 25112,
+    "model_used": "opus",
+    "total_cost_usd": 0.09781899999999999,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 9110,
+      "cache_read_input_tokens": 13453,
+      "output_tokens": 1365,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9110,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10583,
+          "cache_creation_input_tokens": 1397,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1397
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

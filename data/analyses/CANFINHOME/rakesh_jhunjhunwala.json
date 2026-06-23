@@ -1,0 +1,68 @@
+{
+  "symbol": "CANFINHOME",
+  "persona": "rakesh_jhunjhunwala",
+  "persona_display_name": "Rakesh Jhunjhunwala",
+  "analyzed_at": "2026-04-19T12:49:06.500315Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Can Fin Homes is a focused affordable housing finance company with strong 3-year growth (revenue +18.8% CAGR, net profit +22.1% CAGR) and cheap valuation at 11.87x P/E, riding India's underpenetrated home loan market. But Canara Bank as the 30% PSU promoter introduces government interference risk, and finance costs growing at 29.3% CAGR signal NIM compression ahead.",
+    "key_strengths": [
+      "Strong 3-year earnings trajectory: net profit compounded at 22.1% from INR 471 Cr (FY22) to INR 857 Cr (FY25) on a disciplined loan book targeting first-time homebuyers",
+      "Cheap valuation at 11.87x P/E and 2.12x P/B — the market is pricing in minimal growth, creating a margin of safety if execution continues",
+      "India's housing finance penetration remains low; government focus on affordable housing (PMAY) and rising tier-2/3 city aspirations are structural tailwinds that directly benefit Can Fin's target segment"
+    ],
+    "key_risks": [
+      "Finance costs growing at 29.3% CAGR vs revenue growth of 18.8% — funding costs are rising faster than loan yields, squeezing net interest margins structurally",
+      "Promoter (Canara Bank) holds only 29.99% — PSU parent brings government mandate risk, potential forced priority sector lending, and management instability from bureaucratic churn",
+      "Total debt of INR 34,898 Cr on equity of INR 5,067 Cr (D/E 6.59x, normal for HFCs but vulnerable to ALM mismatches in rising rate environments)"
+    ],
+    "red_flags": [
+      "PSU promoter at 29.99% — lowest promoter stake in this peer set; Canara Bank's own capital pressures could lead to stake dilution, reducing governance accountability",
+      "OCF negative in FY22-23 (typical for fast-growing HFCs, but the swing to positive only in FY24-25 means the business was net cash-consuming for years)"
+    ],
+    "detailed_analysis": "Can Fin Homes has an appealing India thesis — affordable housing for first-time buyers in tier-2/3 cities is one of the most durable structural themes in the country. The numbers back this up: loan book growing, net profit up 22% CAGR over 3 years, ROE at 16.9%. At 11.87x P/E, this isn't expensive — you're buying a quality HFC at a discount to peers like HDFC Ltd or LIC HFL. The balance sheet is growing fast: total assets crossed INR 40,967 Cr in FY25 from INR 27,944 Cr in FY22.\n\nMy core concern is the promoter situation and the cost-of-funds trajectory. A PSU bank owning 30% is not the same as a visionary founder owning 50%+ — Canara Bank's priorities are its own capital adequacy and government mandates, not Can Fin's minority shareholders. Finance costs jumped from INR 1,150 Cr (FY22) to INR 2,485 Cr (FY25) — a 29.3% CAGR that outpaces revenue growth and will compress ROA/ROE if rates stay elevated. Decent business, adequate return, but not a high-conviction bet for me.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "undervalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 151795,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.2156094,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 23022,
+      "cache_read_input_tokens": 15393,
+      "output_tokens": 8310,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 23022,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 595,
+          "cache_read_input_tokens": 15393,
+          "cache_creation_input_tokens": 7629,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 7629
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

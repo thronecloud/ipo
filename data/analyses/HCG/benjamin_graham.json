@@ -1,0 +1,70 @@
+{
+  "symbol": "HCG",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T17:34:05.299582Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "HCG trades at 8× its Graham Number (≈INR 67 vs. current INR 565), with a P/E of 310 and P/B of 8.61 — offering zero margin of safety by any quantitative measure I respect. The company's history of deep losses from 2019–2021 and a surging debt pile disqualify it from serious value consideration.",
+    "key_strengths": [
+      "Revenue CAGR of 16% over 9 years demonstrates the business is growing",
+      "Operating cash flow positive all 5 of the last 5 years (INR 317 Cr in FY25), showing the operations do generate cash",
+      "Oncology specialization creates a narrow but defensible service niche with high capital barriers to entry"
+    ],
+    "key_risks": [
+      "Debt has exploded — borrowings surged from INR 1,274 Cr (FY24) to INR 1,768 Cr (FY25), and interest costs of INR 155 Cr yield an interest coverage ratio of only ~2.5×, below my minimum of 3.5×",
+      "Earnings history is deeply flawed — the company posted three consecutive years of heavy net losses (INR -31, -125, -221 Cr in 2019–2021); only INR 49 Cr profit in FY25 on INR 2,218 Cr revenue is razor-thin",
+      "P/E of 310 and P/B of 8.61 mean the market has priced in decades of flawless execution — any stumble destroys the investment case entirely"
+    ],
+    "red_flags": [
+      "Graham Number ≈ INR 67; stock trades at INR 565 — a 740% premium to fair asset-earnings value",
+      "D/E ratio of 1.78 is more than 3.5× my maximum threshold of 0.5 — the balance sheet is fragile",
+      "No dividends paid — shareholders receive nothing tangible while capital is aggressively reinvested at a low 5.14% ROE",
+      "Capex escalating rapidly (INR 209 Cr in FY25 vs. FCF of INR 110 Cr) — the company is spending more on growth than it earns in free cash"
+    ],
+    "detailed_analysis": "By every quantitative standard I have applied for decades, HCG is untouchable at this price. The Graham Number — computed from EPS of ≈INR 3.28 and book value per share of ≈INR 61.6 — yields approximately INR 67. The stock trades at INR 565, an 8.4× premium to that figure. The P/E of 310 is not merely elevated; it is a sign the market is paying for a fantasy of future earnings, not the proven record of past ones. With a P/B of 8.61 and D/E of 1.78, there is neither asset backing nor balance sheet safety to cushion any setback.\n\nThe earnings history is disqualifying on its own. The company lost INR 377 Cr cumulatively between 2019 and 2021 — during the very years it was burning through borrowed capital on hospital expansion. Net profit of INR 49 Cr on INR 2,218 Cr revenue represents a net margin of barely 2.2%. Finance costs alone consumed INR 155 Cr — more than three times the net profit. The \"Mr. Market\" of today has chosen to assign this company a valuation of INR 8,441 Cr. As an intelligent investor, I must respectfully decline to agree with him.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 46908,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07509405,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9365,
+      "cache_read_input_tokens": 11321,
+      "output_tokens": 2438,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9365
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 353,
+          "cache_read_input_tokens": 9271,
+          "cache_creation_input_tokens": 2144,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2144,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

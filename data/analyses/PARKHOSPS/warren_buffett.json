@@ -1,0 +1,69 @@
+{
+  "symbol": "PARKHOSPS",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T18:29:56.115717Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Park Medi World is a regionally branded hospital chain with decent ROE (21%) but trades at 44x earnings — a valuation that demands strong earnings growth that the business simply hasn't delivered (net profit CAGR of just 3.3% over 4 years). With finance costs compounding at 26% annually and FCF collapsing to ₹66 Cr against a ₹9,350 Cr market cap, the price is deeply disconnected from underlying business economics.",
+    "key_strengths": [
+      "ROE of 21% and ROCE of 20.4% indicate decent capital efficiency for a hospital operator",
+      "NABH-accredited multi-specialty brand with 16% revenue CAGR suggests genuine demand growth",
+      "OCF positive in all 5 years demonstrates the core business generates real cash"
+    ],
+    "key_risks": [
+      "Finance costs growing at 26% CAGR (₹24→₹61 Cr) are cannibalizing profits — earnings CAGR is only 3.3% despite 16% revenue growth",
+      "Debt/Equity of 0.58 with borrowings more than doubling to ₹734 Cr in a capital-intensive sector is uncomfortable",
+      "44x P/E on a business earning ₹213 Cr with volatile, low FCF yield (~0.7% on market cap) leaves zero margin of safety"
+    ],
+    "red_flags": [
+      "Net profit fell sharply in FY2024 (₹152 Cr vs ₹228 Cr prior year) — earnings are unstable, not the predictable compounders I require",
+      "FY2025 FCF of only ₹66 Cr vs ₹213 Cr reported profit reveals aggressive capitalization or working capital strain — poor earnings quality",
+      "FII ownership at 0.86% signals institutional skepticism about the growth story at current prices"
+    ],
+    "detailed_analysis": "Park Medi World operates in a sector I generally find difficult — hospitals are capital-intensive, require constant reinvestment, and compete on physician talent and location rather than durable brand advantages that compound over decades. While the \"Park\" brand carries regional recognition in Gurugram and the NABH accreditation provides some quality signal, this is nowhere near the pricing power moat I'd require to pay 44x earnings. Revenue has grown at a respectable 16% CAGR, but that growth is being funded by debt (borrowings up 2.5x since 2021) and is not converting to profit — a 4-year net profit CAGR of just 3.3% tells me the business is running hard to stand still profitably. Finance costs compounding at 26% annually are the culprit, and with capex jumping to ₹159 Cr in FY2025, there's no sign this dynamic reverses soon.\n\nThe FCF picture is the most damning signal. A ₹9,350 Cr market cap company generating ₹66 Cr of free cash flow in FY2025 is priced at roughly 142x FCF — that's a speculative growth stock valuation applied to a mature regional hospital chain. I require a margin of safety; here I see the opposite. The promoter holds 83% of the company (locking up the float), institutional ownership is negligible, and the P/E of 44x assumes sustained high-teens earnings growth that the historical record does not support. I'd want to see this business at perhaps 18-20x earnings — around ₹85-95/share — before considering it, representing a 55-60% discount to today's price. At ₹216, I'd rather wait and watch.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 48809,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08014964999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10649,
+      "cache_read_input_tokens": 8623,
+      "output_tokens": 2508,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10649
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 529,
+          "cache_read_input_tokens": 8623,
+          "cache_creation_input_tokens": 2026,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2026,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

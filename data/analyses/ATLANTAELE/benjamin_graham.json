@@ -1,0 +1,70 @@
+{
+  "symbol": "ATLANTAELE",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T16:31:07.979099Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Atlanta Electricals trades at INR 1,376 against a calculated Graham Number of approximately INR 188 — a 630% premium to intrinsic value — making this deeply speculative by any disciplined value standard. The genuine operational progress is entirely overshadowed by a price that demands flawless execution for many years into the future, offering zero margin of safety.",
+    "key_strengths": [
+      "Consistent earnings growth: net profit expanded from INR 7 Cr (2021) to INR 119 Cr (2025) — 103% CAGR over four years",
+      "Excellent capital returns: ROCE of 50.1% and ROE of 41% indicate strong business economics",
+      "Interest coverage of ~5.7x (Operating Income INR 194 Cr / Finance Cost INR 34 Cr) — comfortably above Graham's 3.5x floor"
+    ],
+    "key_risks": [
+      "Catastrophic overvaluation: P/E 73x and P/B 28.14x versus Graham's maximums of 15x and 1.5x respectively",
+      "Debt explosion: borrowings surged from INR 49 Cr to INR 362 Cr in a single year (FY25), raising leverage concerns",
+      "Negative FCF in FY25 (-INR 30 Cr) driven by INR 113 Cr capex, with only INR 4 Cr cash on hand — thin liquidity buffer"
+    ],
+    "red_flags": [
+      "Graham Number ~INR 188 (sqrt(22.5 × EPS ~15.5 × BVPS ~102)) versus market price of INR 1,376 — stock must decline ~86% to reach intrinsic value",
+      "No dividend payments evident — zero cash returned to shareholders despite strong profits",
+      "Promoter holding of 87.28% creates an illiquid, thinly traded float prone to sharp price dislocations",
+      "Borrowings increased 7x in one year (INR 49→362 Cr); total debt figure (INR 197 Cr) appears inconsistent with borrowings line — data warrants scrutiny"
+    ],
+    "detailed_analysis": "Atlanta Electricals is a transformer manufacturer with genuine operational momentum — revenues compounding at 34% and EBITDA at 54% over four years, with ROCE of 50% that any industrialist would admire. Yet Mr. Market, in his characteristic mania, has priced this company at 73 times earnings and 28 times book value. My Graham Number calculation yields roughly INR 188 per share. The current price of INR 1,376 represents a premium of over 600% to that figure. I am being asked to pay for decades of uninterrupted growth before I see a single rupee of real return. That is not investing — it is speculation of the most dangerous kind.\n\nThe balance sheet deteriorated sharply in FY25: borrowings leapt from INR 49 Cr to INR 362 Cr in twelve months to fund INR 113 Cr of capex, turning free cash flow negative at -INR 30 Cr. Cash on hand is a mere INR 4 Cr. The company pays no dividend. With a 87% promoter lock-up, the public float is negligible, amplifying price volatility. Even granting that this is a fine small industrial business, the intelligent investor must demand a margin of safety. There is none here — only the hope that growth continues and the market remains generous. I will not pay for hope.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 52992,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07094805,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8661,
+      "cache_read_input_tokens": 10751,
+      "output_tokens": 2349,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8661,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 391,
+          "cache_read_input_tokens": 8701,
+          "cache_creation_input_tokens": 2010,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2010
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

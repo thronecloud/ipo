@@ -1,0 +1,69 @@
+{
+  "symbol": "AARTIDRUGS",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T16:10:41.844762Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Aarti Drugs fails both legs of the Magic Formula — earnings yield of ~7.2% (EBIT 290 Cr / EV ~4,018 Cr) is well below my 12% threshold, and ROCE of 13.1% is far short of the 20%+ I require for a quality business. The combination of contracting earnings and heavy capex with poor FCF conversion makes this uninvestable on quantitative grounds.",
+    "key_strengths": [
+      "Moderate leverage (D/E 0.39) with 5/5 years of positive operating cash flow — decent balance sheet discipline",
+      "High promoter holding (55%) provides alignment; diversified API portfolio across anti-infectives, NSAIDs, antidiabetics",
+      "Long operating history since 1984 with international sales presence reducing single-market risk"
+    ],
+    "key_risks": [
+      "EBITDA has collapsed from peak 490 Cr (FY21) to 307 Cr (FY25) — a 37% decline with no recovery in sight",
+      "Capex of 177 Cr in FY25 against FCF of just 67 Cr; CWIP ballooned to 261 Cr in FY24, indicating heavy capital consumption with poor returns",
+      "Revenue declined two consecutive years (2,716→2,529→2,387 Cr) amid margin compression — operating margin a thin 6.16%"
+    ],
+    "red_flags": [
+      "ROIC/ROCE of 13.1% — well below Greenblatt's 20% floor, meaning capital is being consumed faster than value is created",
+      "Earnings yield of ~7.2% (EBIT 290 Cr ÷ EV ~4,018 Cr) — not cheap enough to compensate for poor business quality",
+      "Operating income CAGR 9Y of only 5.4% while net profit CAGR 9Y is 10.4% — divergence suggests one-time items and non-operating income distorting reported profits"
+    ],
+    "detailed_analysis": "Running the Magic Formula: Enterprise Value = Market Cap 3,408 Cr + Debt 615 Cr − Cash 5 Cr = ~4,018 Cr. EBIT (Operating Income) FY25 = 290 Cr. Earnings Yield = 290/4,018 = 7.2% — well below my 12% hurdle. ROCE (proxy for Greenblatt ROIC) = 13.1% — below the 20% minimum for a \"good\" business. Both legs of the formula are weak simultaneously, which in my ranking system would put Aarti Drugs near the bottom of the investable universe.\n\nThe operational story reinforces the numbers: the FY21 spike in profitability (EBITDA 490 Cr, net profit 280 Cr) was a COVID-era windfall, not structural quality. Since then, the company has invested aggressively — capex totaling ~720 Cr over FY22–25 — yet EBITDA is down 37% from peak and revenue is actually shrinking. This is capital destruction, not capital compounding. At P/E 16.8x with declining earnings and a 6% operating margin, the stock is neither cheap nor high-quality. I need both.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 47206,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07482285,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11155,
+      "cache_read_input_tokens": 9442,
+      "output_tokens": 2010,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11155,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 342,
+          "cache_read_input_tokens": 9442,
+          "cache_creation_input_tokens": 1713,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1713
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

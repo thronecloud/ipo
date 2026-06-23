@@ -1,0 +1,69 @@
+{
+  "symbol": "FSL",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-22T16:40:13.876524Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "FSL is a mid-cap BPO stalwart with a compelling FY25 revenue acceleration (26% YoY to ₹7,980 Cr), but underlying earnings growth (~15%) yields a PEG of ~1.6x at the trailing P/E — stretching Lynch's GARP discipline. Surging debt (borrowings nearly doubled to ₹2,369 Cr in FY25) and declining free cash flow (₹744 Cr → ₹477 Cr over 3 years) undercut what is otherwise a decent multi-geography IT services story.",
+    "key_strengths": [
+      "FY25 revenue surged 26% to ₹7,980 Cr — real top-line acceleration, likely acquisition-fueled, expanding into GenAI service lines",
+      "Strong promoter conviction at 53.66% + DII support at 25.49%; diversified across US/UK/India/UAE reduces single-market risk",
+      "Operating profit growing faster than revenue (EBIT CAGR 13.4% vs revenue CAGR 10.6%), showing margin discipline despite BPO's thin-margin nature"
+    ],
+    "key_risks": [
+      "PEG ~1.6x on trailing earnings growth (~15%) — Lynch's comfort zone is sub-1.0; not a bargain at 24x PE",
+      "Borrowings nearly doubled YoY (₹1,526 → ₹2,369 Cr); finance costs rose 19% to ₹184 Cr, eating into thin margins",
+      "Free cash flow deteriorating (₹744 Cr in FY23 → ₹477 Cr in FY25) despite revenue growth — capital allocation quality is declining"
+    ],
+    "red_flags": [
+      "Cash balance near zero: collapsed from ₹69 Cr to ₹13 Cr in one year — balance sheet fragility post-acquisition",
+      "Investing CF of -₹744 Cr in FY25 with near-zero disclosure on what was acquired — story opacity Lynch despises",
+      "Net profit CAGR of only 9.6% over 9 years for a 'tech-enabled' services firm is a slow-grower's track record, not a fast grower's"
+    ],
+    "detailed_analysis": "Firstsource is a classic Lynch stalwart — a steadily growing BPO business serving healthcare, BFSI, and CMT verticals across three continents. The 9-year story is honest: 10.6% revenue CAGR, 9.6% earnings CAGR — dependable but not exciting. What changes the narrative is FY25's 26% revenue jump, which almost certainly reflects an inorganic move (investing outflow of ₹744 Cr, borrowings up ₹843 Cr in one year, cash drained to ₹13 Cr). Lynch would want to understand this acquisition before getting excited — \"What did you buy, and at what price?\"\n\nThe valuation math is the problem. At ₹239, trailing P/E of 24.1x against realistic earnings growth of 12–15% gives a PEG of 1.6–2.0x — Lynch's \"overvalued for the growth rate\" zone. The forward P/E of 18.1x implies the market is pricing in ~33% earnings growth, which requires the FY25 acquisition to integrate flawlessly and organic momentum to sustain. With FCF declining even as revenues grow, ROE stuck at 15%, and operating margins only 11.9%, this is not a company printing money efficiently. Worth watching for a cleaner entry post-acquisition integration, but not a buy today.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 57773,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0889152,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11766,
+      "cache_read_input_tokens": 9379,
+      "output_tokens": 2798,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11766,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 471,
+          "cache_read_input_tokens": 9379,
+          "cache_creation_input_tokens": 2387,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2387
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

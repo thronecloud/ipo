@@ -1,0 +1,69 @@
+{
+  "symbol": "KTKBANK",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T18:11:09.983250Z",
+  "analysis": {
+    "score": 6,
+    "recommendation": "BUY",
+    "investment_thesis": "Karnataka Bank trades at 0.74x book and 8x earnings — a genuine statistical bargain by my quantitative standards, with the Graham Number (~INR 501) nearly double the current price of INR 246. Six consecutive years of profits, including a 24.1% net profit CAGR, satisfy my minimum earnings record requirement, though the opacity inherent in banking balance sheets demands a wider margin of safety than usual.",
+    "key_strengths": [
+      "P/B of 0.74 — stock trades below net asset value, the cornerstone of my margin of safety framework",
+      "P/E of 8.06, well below my 15x ceiling, with Forward P/E of 6.06 suggesting improving earnings power",
+      "Six-year unbroken profit record (INR 432 Cr → INR 1,273 Cr) with 24.1% five-year CAGR — proven earning power, not speculation"
+    ],
+    "key_risks": [
+      "Banking sector opacity: NPA/GNPA ratios are absent — loan book quality is the single most critical variable for a bank and cannot be assessed here",
+      "Highly volatile operating cash flows (ranging from -467 Cr in 2022 to +3,368 Cr in 2021) — banks' OCF is structurally lumpy but the magnitude of swings warrants caution",
+      "Regional concentration risk: a Mangalore-headquartered bank serving Karnataka is exposed to localised economic shocks with limited geographic diversification"
+    ],
+    "red_flags": [
+      "OCF turned sharply positive in FY25 only INR 210 Cr on INR 1,273 Cr profit — significant gap between reported earnings and cash generation",
+      "Finance costs surged from INR 3,731 Cr (2022) to INR 5,703 Cr (2025), signalling deposit cost pressure that may compress net interest margins going forward",
+      "No dividend data provided; Graham requires demonstrated cash returns to shareholders as proof of real earnings"
+    ],
+    "detailed_analysis": "By my strict quantitative filters, Karnataka Bank clears most hurdles convincingly. The Graham Number — derived from FY2025 EPS of approximately INR 33.6 and BVPS of approximately INR 333 — stands near INR 501, placing the current market price of INR 246 at roughly half of intrinsic asset value. P/E of 8x and P/B of 0.74x together satisfy both my earnings-based and asset-based valuation tests simultaneously, a combination I find genuinely rare. Non-deposit borrowings of INR 1,941 Cr against equity of INR 12,589 Cr represent a conservative INR 0.15 debt-to-equity, though of course a bank's true leverage includes the entire deposit base — which is the business, not a flaw per se.\n\nMy principal reservation, and it is a serious one, is that banking is the one sector where an apparently cheap balance sheet can conceal catastrophic hidden losses. I cannot evaluate Karnataka Bank's true intrinsic value without GNPA ratios, provision coverage, and net NPA data. The FY2025 free cash flow of just INR 48 Cr against net profit of INR 1,273 Cr is a stark disconnect. A disciplined investor should demand these disclosures before committing capital. I would assign a tentative buy only at current prices or below, and insist on reviewing the bank's asset quality disclosures in the most recent annual report and RBI inspection findings before sizing the position meaningfully.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "undervalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 55861,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0776319,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9196,
+      "cache_read_input_tokens": 10943,
+      "output_tokens": 2657,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9196
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 343,
+          "cache_read_input_tokens": 8893,
+          "cache_creation_input_tokens": 2353,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2353,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

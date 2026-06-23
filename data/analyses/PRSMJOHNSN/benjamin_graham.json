@@ -1,0 +1,71 @@
+{
+  "symbol": "PRSMJOHNSN",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T22:08:16.467502Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "Prism Johnson trades at INR 125 against a Graham Number of approximately INR 24 — a 5x premium to intrinsic value — with a P/E of 862x, negative ROE of -4%, and operating margins near zero. The erratic earnings record (losses in 2020 and 2023) and D/E of 0.93 make this a speculative holding utterly devoid of margin of safety.",
+    "key_strengths": [
+      "Positive operating cash flow all 5 years (INR 737 Cr in FY25), demonstrating real cash generation despite thin accounting profits",
+      "Established brand portfolio (Johnson Tiles, Johnson Bathware) with INR 7,310 Cr revenue providing operational scale",
+      "Borrowings reduced from INR 2,425 Cr (FY20) to INR 1,694 Cr (FY25), showing gradual deleveraging"
+    ],
+    "key_risks": [
+      "P/E of 862x and P/B of 4.01 — stock trades at roughly 5x its Graham Number (~INR 24); no margin of safety whatsoever",
+      "Earnings are deeply unreliable — net profit swung: +INR 140 Cr (FY21), +INR 44 Cr (FY22), -INR 158 Cr (FY23), +INR 162 Cr (FY24), +INR 45 Cr (FY25); fails Graham's 3–5 year consecutive positive earnings requirement",
+      "Interest coverage is ~1.85x (Operating Income INR 425 Cr ÷ Finance Cost INR 230 Cr), far below Graham's 3.5x minimum — debt remains an existential risk in a downturn"
+    ],
+    "red_flags": [
+      "P/B of 4.01 — paying INR 4 for every INR 1 of net assets; Graham demands <1.5",
+      "Operating margin of 0.35% — essentially zero; EBITDA CAGR is -1.4% over 9 years, meaning the business is shrinking in real profitability",
+      "Negative ROE of -4% and ROCE of only 2.22% — capital is being destroyed, not compounded",
+      "D/E of 0.93 — nearly double Graham's 0.5 ceiling; finance costs consumed INR 230 Cr vs. net profit of only INR 45 Cr",
+      "Net profit of INR 45 Cr justifies a market cap of INR 6,304 Cr only through heroic future assumptions — precisely the speculative pricing Graham warned against"
+    ],
+    "detailed_analysis": "Prism Johnson is a building materials conglomerate — cement, tiles, RMC, and insurance — with INR 7,310 Cr in revenue but almost nothing reaching shareholders. The operating margin of 0.35% means the business barely covers its operating costs before interest, which devoured INR 230 Cr in FY25 against operating income of only INR 425 Cr. The Graham Number — the maximum price a disciplined investor should pay — works out to approximately INR 24 per share (√(22.5 × EPS ~0.89 × BVPS ~28.97)). The market is asking INR 125. That is not a growth premium; it is speculation dressed as investment.\n\nThe earnings record is precisely what I warned against in \"Security Analysis\": ten years of volatility with two loss years (FY20, FY23) and profits ranging from INR 14 Cr to INR 162 Cr with no discernible trend. The sole redeeming feature is consistent operating cash flow, which tells me the business is real but not profitable enough to justify this valuation. Mr. Market is offering this stock at an 862 P/E because investors are paying for tile brand recognition and cement distribution, not for demonstrated earning power. The intelligent investor waits for Mr. Market to offer a price closer to INR 24 before even considering participation.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 48369,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0754011,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9220,
+      "cache_read_input_tokens": 11207,
+      "output_tokens": 2497,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9220,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 438,
+          "cache_read_input_tokens": 9157,
+          "cache_creation_input_tokens": 2113,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2113
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

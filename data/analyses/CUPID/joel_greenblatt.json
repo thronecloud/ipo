@@ -1,0 +1,70 @@
+{
+  "symbol": "CUPID",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T17:02:51.270717Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "Cupid Limited's Magic Formula earnings yield is ~0.30% (EBIT ₹42 Cr / EV ₹13,832 Cr), roughly 40x below the minimum 12% threshold — making it one of the most overvalued situations possible under this framework. The business is decent but not exceptional, and you are being asked to pay a catastrophically high price for it.",
+    "key_strengths": [
+      "Strong gross margins (62%) indicating genuine pricing power and brand moat in a niche regulated product",
+      "Near-debt-free balance sheet (D/E: 0.07) with a clean capital structure",
+      "Export diversification across Africa, Europe, and Asia-Pacific reduces India-concentration risk"
+    ],
+    "key_risks": [
+      "Valuation is irrational: EV/EBITDA of 150x, earnings yield of ~0.30% — no margin of safety whatsoever",
+      "Operating cash flow turned negative (-₹11 Cr in FY25) despite ₹41 Cr net profit — severe earnings quality problem",
+      "Revenue growth of only 5.3% CAGR and operating income flat at 0.6% CAGR cannot justify any premium valuation, let alone 150x EBITDA"
+    ],
+    "red_flags": [
+      "OCF -₹11 Cr vs. Net Profit ₹41 Cr in FY25 — a ₹52 Cr gap signals accruals, working capital build, or capitalized expenses masking cash burn",
+      "Other Income spiked to ₹19 Cr in FY25 (from ₹0 in prior years) — likely interest on QIP proceeds, inflating reported profits; strip it out and operating earnings deteriorated",
+      "FY24 financing CF of +₹99 Cr (equity raise) ballooned the balance sheet from ₹189 Cr to ₹320 Cr assets, yet operating earnings barely moved — capital is not being deployed productively",
+      "Free cash flow deeply negative two consecutive years: -₹17 Cr (FY24), -₹31 Cr (FY25)"
+    ],
+    "detailed_analysis": "Running the Magic Formula: EBIT (Operating Income) FY25 = ₹42 Cr. Enterprise Value = Market Cap ₹13,872 Cr + Debt ₹19 Cr – Cash ₹59 Cr = ₹13,832 Cr. Earnings Yield = 42/13,832 = **0.30%** — catastrophically below the 12%+ threshold. On ROIC, using the provided ROCE of 17.1% as a proxy, the business quality is adequate but not exceptional. The Magic Formula requires BOTH metrics to score well; here the valuation metric is among the worst possible, making this an automatic AVOID regardless of business quality. The P/B of 36x (market cap ₹13,872 Cr vs. equity ₹381 Cr) is the only ratio that reconciles with the stated market cap, confirming the absurdity of the price.\n\nBeyond the valuation problem, the business fundamentals are quietly deteriorating. Revenue CAGR is a sluggish 5.3%, operating income CAGR is essentially flat at 0.6% over four years, and the headline ₹41 Cr net profit in FY25 is propped up by ₹19 Cr of \"other income\" (almost certainly interest earned on QIP proceeds). Strip that out and core earnings are closer to ₹22–25 Cr — implying a true P/E north of 500x on operating business earnings. The negative OCF of -₹11 Cr versus ₹41 Cr reported profit is a textbook earnings quality red flag. This is a microcap condom manufacturer trading as if it were a high-growth pharma innovator. Pass.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 63515,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09973035,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11821,
+      "cache_read_input_tokens": 8692,
+      "output_tokens": 3519,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11821
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 444,
+          "cache_read_input_tokens": 8692,
+          "cache_creation_input_tokens": 3129,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 3129,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "symbol": "CUPID",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T17:00:39.484102Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Cupid Limited is a niche condom and IVD kit manufacturer with decent margins but catastrophically overvalued at 166x P/E for a business growing profits at 9% CAGR and generating negative free cash flow. The market is paying 13,872 Cr for a company earning ~41 Cr in net profit — a price I would never pay.",
+    "key_strengths": [
+      "Negligible debt (D/E: 0.07) with a clean balance sheet and growing cash reserves of INR 59 Cr",
+      "Solid operating margins (35%) and gross margins (62%) suggest pricing power in a niche product category",
+      "Diversified export revenues across Africa, Europe, and Asia reduce dependence on single geography"
+    ],
+    "key_risks": [
+      "Extreme overvaluation at 166x P/E and 150x EV/EBITDA for a business growing revenue at only 5.3% CAGR — margin of safety is non-existent",
+      "Free cash flow has collapsed to -31 Cr in 2025 and -17 Cr in 2024 despite reported net profits of 41 Cr — a serious earnings quality red flag",
+      "ROE of only 12.9% is below my 15% threshold, and 2025 'other income' of 19 Cr is inflating net profits — strip it out and the core business earned ~22 Cr"
+    ],
+    "red_flags": [
+      "OCF turned negative (-11 Cr) in 2025 while the company reports 41 Cr net profit — this divergence demands explanation",
+      "Other income surged from 0 to 19 Cr in 2025, representing ~46% of reported net profit; this is non-operational and unsustainable",
+      "Market cap of 13,872 Cr vs. revenue of 183 Cr implies a P/S of ~75x — the market is pricing in a transformation that the financials do not support",
+      "Financing CF of +99 Cr in 2024 suggests a large equity raise; yet despite infusing this capital, FCF is deeply negative — capital allocation is poor"
+    ],
+    "detailed_analysis": "Cupid Limited is a small-cap condom and diagnostics manufacturer with genuinely attractive gross margins of 62% and a debt-free balance sheet — characteristics I admire. However, the investment case collapses entirely on valuation and cash generation. At 166x P/E and 150x EV/EBITDA, the market is imputing extraordinary future growth that simply isn't visible in a 5.3% revenue CAGR and 9% net profit CAGR. I want to pay a fair price for a wonderful business, and this is a wonderful-price-for-a-fair-business scenario — the exact opposite of my philosophy.\n\nThe cash flow story is the most troubling element. Free cash flow has deteriorated sharply — from +38 Cr in 2021 to -31 Cr in 2025 — while reported profits suggest the business is thriving. This divergence, combined with a 19 Cr surge in \"other income\" that now constitutes nearly half of net profit, raises serious concerns about the quality and durability of earnings. The company raised ~99 Cr in equity financing in 2024 and has little to show for it in cash generation. Tender-based public health exports to Africa are inherently lumpy and provide no durable competitive advantage. I see no economic moat, no pricing power narrative consistent with the data, and no margin of safety at current prices.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 46827,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07841505,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10847,
+      "cache_read_input_tokens": 8666,
+      "output_tokens": 2342,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10847
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 202,
+          "cache_read_input_tokens": 8666,
+          "cache_creation_input_tokens": 2181,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2181,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

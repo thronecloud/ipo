@@ -1,0 +1,69 @@
+{
+  "symbol": "ANANTAM",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-20T11:14:14.830132Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Anantam Highways is a capital-intensive toll/HAM road operator earning a dismal 1.77% ROE — well below the cost of capital and far from the 15%+ threshold I require. A 5.45x P/E looks optically cheap, but it's a value trap: you cannot compound wealth owning a business that earns less on equity than a government bond yields.",
+    "key_strengths": [
+      "Long-dated, contractually-defined annuity/HAM cash flows offer some revenue visibility",
+      "Low headline P/E of 5.45 suggests limited downside if execution improves",
+      "Regulatory/concession-based moat — hard for new entrants on specific road stretches"
+    ],
+    "key_risks": [
+      "ROE of just 1.77% — capital is being destroyed, not compounded",
+      "Highly capital-intensive model typically funded with heavy project debt",
+      "Concession expiries, traffic risk on toll roads, and government counterparty risk on annuities"
+    ],
+    "red_flags": [
+      "Sub-2% ROE is a structural flag, not a cyclical dip",
+      "Road/HAM SPVs typically carry large off-balance-sheet-style project debt",
+      "Small-cap (INR 2,239 Cr) road asset owner — limited operating history as a listed entity"
+    ],
+    "detailed_analysis": "This is precisely the type of business I avoid. Road concessionaires are capital-hungry, heavily levered, and dependent on government counterparties and traffic assumptions. A 1.77% ROE tells me management is deploying shareholder capital at returns that don't even match a risk-free Indian G-Sec — over a full cycle, that destroys intrinsic value regardless of what the P/E screen says. Charlie and I would rather pay 20x earnings for a business compounding at 20% ROE than 5x earnings for one compounding at 2%.\n\nThe low P/E of 5.45 is not a margin of safety here; it's the market correctly pricing a low-quality earnings stream from depreciating infrastructure assets. Unless Anantam demonstrates several years of sustained ROE above 12-15% and disciplined, owner-oriented capital allocation, this sits well outside my circle of competence and my quality bar. I'd pass without a second look.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 23296,
+    "model_used": "opus",
+    "total_cost_usd": 0.09288175,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8827,
+      "cache_read_input_tokens": 13316,
+      "output_tokens": 1241,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8827,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 103,
+          "cache_read_input_tokens": 10479,
+          "cache_creation_input_tokens": 1185,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1185
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

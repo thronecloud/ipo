@@ -1,0 +1,69 @@
+{
+  "symbol": "544383",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-20T19:49:11.006051Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "The P/E of 6.53 looks superficially cheap, but a reported ROE of just 0.26% fails the Magic Formula's \"good business\" test — port logistics is capital-intensive and this company is not earning adequate returns on its capital base. Without evidence of high ROIC, cheapness alone is a value trap.",
+    "key_strengths": [
+      "Low headline P/E of 6.53 implies a reasonable earnings yield on price",
+      "Strong promoter skin-in-the-game at 65.96%",
+      "Niche moat from physical presence inside Paradip Port (switching costs, concession-based)"
+    ],
+    "key_risks": [
+      "ROE of 0.26% signals dismal return on capital — the opposite of what Magic Formula demands",
+      "Capital-intensive (rail sidings, warehousing, equipment) — high fixed assets depress ROIC structurally",
+      "Tiny ₹231 Cr market cap with negligible FII (0.65%) / DII (3.37%) ownership — illiquid and under-scrutinized"
+    ],
+    "red_flags": [
+      "Gross inconsistency between P/E 6.53 and ROE 0.26% — suggests one-time earnings item or reporting error inflating the P/E denominator",
+      "ROE effectively zero rules out the 'good company' half of Magic Formula",
+      "Customer concentration risk tied to a single port"
+    ],
+    "detailed_analysis": "Applying the Magic Formula: Earnings Yield = 1/6.53 ≈ 15.3% on an equity-price basis, which screens attractively (>12% threshold). However, Return on Capital — the second and equally important leg — is the problem. A reported ROE of 0.26% is essentially zero, and for a business owning railway sidings, material-handling equipment and warehouses, ROIC is almost certainly below the ~12% Magic Formula floor. The numbers also don't reconcile cleanly: a 231 Cr market cap at P/E 6.53 implies ~35 Cr of earnings, which cannot coexist with 0.26% ROE unless the equity base is absurdly large or one of the figures reflects a one-off. Either way, that's a red flag, not a buy signal.\n\nMagic Formula explicitly avoids capital-intensive businesses where fixed assets swamp EBIT, and port-logistics is the textbook example. The niche position at Paradip Port offers some moat, but without sustained high ROIC there's no compounding engine. I'd need to see 3+ years of ROIC >20% and a genuine EBIT/EV >12% before this ranks. As it stands, this fails the \"good business at a bargain price\" test — it's cheap but not good. Pass.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "insufficient_data",
+      "financial_health": "insufficient_data",
+      "valuation": "fair",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 30583,
+    "model_used": "opus",
+    "total_cost_usd": 0.1101405,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 9488,
+      "cache_read_input_tokens": 13521,
+      "output_tokens": 1762,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9488,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 108,
+          "cache_read_input_tokens": 10651,
+          "cache_creation_input_tokens": 1707,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1707
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

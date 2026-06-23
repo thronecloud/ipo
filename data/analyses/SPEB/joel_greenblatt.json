@@ -1,0 +1,69 @@
+{
+  "symbol": "SPEB",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-21T08:02:33.652260Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "SPEB Adhesives fails both legs of the Magic Formula — a P/E of 20 yields only ~5% earnings yield (well below my 12% threshold) while ROE of 0.27% signals the business earns virtually nothing on shareholder capital. A near-zero return business at a mediocre valuation is the worst of both worlds.",
+    "key_strengths": [
+      "High promoter holding at 73.18% signals founder skin-in-the-game",
+      "DII ownership of 10.15% provides some institutional validation",
+      "Solvent-based adhesives is a niche, not a pure commodity — theoretical moat potential"
+    ],
+    "key_risks": [
+      "ROE of 0.27% is effectively zero — capital is being destroyed in real terms after inflation",
+      "Earnings Yield (E/P) of ~5% is well below my 12% minimum for any buy consideration",
+      "Tiny INR 120 Cr market cap means severe illiquidity and limited margin of safety"
+    ],
+    "red_flags": [
+      "ROE 0.27% — implies Net Income ≈ INR 6 Cr on a massive equity base; business generates no real return",
+      "P/E of 20 for a near-breakeven company is unjustifiable on any earnings-yield framework",
+      "No EBIT data provided — likely EBIT/EV ratio is also unattractive given near-zero profitability"
+    ],
+    "detailed_analysis": "Running the Magic Formula: Market Cap of INR 120 Cr at P/E 20 implies Net Income of ~INR 6 Cr. Earnings Yield (E/P) comes out to ~5% — that's below my 12% \"attractive\" floor and nowhere near the 15%+ I want to get excited. ROE of 0.27% is the real killer: this means the business is earning essentially nothing on the equity deployed. Even if EBIT/EV were marginally better than E/P, the return-on-capital leg of the formula is catastrophically broken. Both metrics fail simultaneously.\n\nThe business itself — solvent-based synthetic rubber adhesives — operates in a sub-segment of specialty chemicals that could theoretically earn high returns, but the financials show no evidence of pricing power or operational efficiency. At INR 120 Cr market cap, liquidity is poor and the margin of safety is absent. A good business at a fair price beats a bad business at any price; here we have a near-zero profitability business at a P/E of 20. I pass.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 38027,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.06802995,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9323,
+      "cache_read_input_tokens": 7549,
+      "output_tokens": 2053,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9323,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 311,
+          "cache_read_input_tokens": 7549,
+          "cache_creation_input_tokens": 1774,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1774
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "MIDHANI",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T18:23:44.228118Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "MIDHANI fails both legs of the Magic Formula: earnings yield of ~3% (vs. 12%+ threshold) signals extreme overvaluation, while ROIC of ~12.6% is well below the 20%+ minimum for a \"good business.\" With net profits actually declining at -2.7% CAGR over six years, the market is paying a premium for a deteriorating earnings profile.",
+    "key_strengths": [
+      "Strategic defense/aerospace PSU with captive demand — sole domestic producer of superalloys and titanium alloys for ISRO, DRDO, HAL",
+      "Gross margin of 60.3% reflects genuine pricing power in specialized, import-substitution materials with no commodity exposure",
+      "Capex cycle winding down (CWIP collapsed from INR 549 Cr to 24 Cr); FCF turned decisively positive at INR 149 Cr in FY25"
+    ],
+    "key_risks": [
+      "Earnings yield ~3% (EBIT INR 219 Cr / EV ~INR 7,237 Cr) — the Magic Formula would rank this in the bottom decile on cheapness",
+      "ROIC ~12.6% (EBIT / invested capital of ~INR 1,740 Cr) — PSU inefficiencies keep returns well below the 20% threshold needed to justify a premium",
+      "Finance costs have compounded at 27.4% CAGR (INR 7 Cr → 30 Cr), pressuring a net profit that has fallen from INR 177 Cr (FY22) to INR 111 Cr (FY25) despite revenue growing 25% over the same period"
+    ],
+    "red_flags": [
+      "P/E of 63x on declining earnings (-2.7% net profit CAGR) — classic overvalued PSU re-rating with no earnings support",
+      "EV/EBITDA of 33.45x for a business with 13.7% operating margins and EBITDA that hasn't grown in 3 years (INR 250 Cr FY25 vs. INR 292 Cr FY22)",
+      "Operating cash flow was negative in FY23 (-INR 35 Cr); positive FY25 figure of INR 217 Cr partly reflects working capital release, not structural improvement"
+    ],
+    "detailed_analysis": "Magic Formula verdict is unambiguous: MIDHANI fails on both required dimensions. Earnings yield of ~3% is four times below my 12% threshold — you are paying INR 7,237 Cr of enterprise value for INR 219 Cr of EBIT. Even on a forward basis (using the implied Forward P/E of 38.5x), earnings yield barely reaches ~4.5%, still a failing grade. ROIC of ~12.6% using invested capital of ~INR 1,740 Cr (equity + debt - cash) is below my 20% floor for \"good business\" designation. A high-quality special materials franchise should generate 25%+ on tangible capital; MIDHANI does not, largely because it carries a bloated asset base (INR 2,950 Cr assets for INR 1,074 Cr revenue, implying asset turns of 0.36x).\n\nThe underlying business narrative is sympathetic — a strategic PSU with real moats in defense-grade superalloys and titanium — but narrative does not equal returns. Net profit has compounded at -2.7% annually since 2019 while revenue crept up at 7.1%, which means the company is getting worse at converting sales into profit. Finance costs have nearly quadrupled over six years, consuming margin gains. The government promoter holding of 74% and strategic importance may provide a valuation floor, but at 63x trailing earnings the stock requires a sustained earnings re-acceleration that the last several years of data simply do not support. The Magic Formula would rank this near the bottom of any large-cap screen.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 49345,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08635515000000002,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11233,
+      "cache_read_input_tokens": 8958,
+      "output_tokens": 2769,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11233
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 526,
+          "cache_read_input_tokens": 8958,
+          "cache_creation_input_tokens": 2275,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2275,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

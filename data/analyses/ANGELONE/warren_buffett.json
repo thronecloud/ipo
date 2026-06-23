@@ -1,0 +1,69 @@
+{
+  "symbol": "ANGELONE",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-19T05:47:46.224578Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Angel One is a discount broker with no durable competitive moat in a commoditised, regulation-sensitive industry — and the 2026 financials reveal exactly what happens when regulatory headwinds hit: revenue flat, net profit down 22% YoY to ₹915 Cr, and borrowings exploding from ₹788 Cr (2023) to ₹7,951 Cr (2026). This is a business whose best years may already be behind it.",
+    "key_strengths": [
+      "Demonstrated scale: revenue CAGR of 31.4% over 9 years, reaching ₹5,137 Cr — Angel One became a genuine mass-market platform",
+      "Strong technology infrastructure via Super App and Smart API, with large registered client base creating some network effect",
+      "Forward P/E of 20x is relatively modest, suggesting some of the bad news is now priced in"
+    ],
+    "key_risks": [
+      "SEBI's F&O regulation changes in 2024 directly decimated the industry's most profitable revenue stream — this regulatory risk is structural, not temporary",
+      "Borrowings grew 10x in three years (₹788 Cr → ₹7,951 Cr) while profits fell; the leverage trajectory is deeply concerning",
+      "Operating cash flow was -₹4,142 Cr in 2026 and -₹1,860 Cr in 2025 — the business is consuming capital at an alarming rate"
+    ],
+    "red_flags": [
+      "Net profit peaked at ₹1,172 Cr (2025) and fell 22% to ₹915 Cr (2026) — the earnings trajectory has reversed",
+      "Borrowings of ₹7,951 Cr vs equity of ₹6,118 Cr: D/E of 0.76 and rising fast, driven by margin funding book growth while core earnings shrink",
+      "Discount broking has zero moat — price competition is brutal, switching costs are nil, and platforms like Zerodha and Groww compete aggressively for the same customers"
+    ],
+    "detailed_analysis": "I have always been skeptical of financial intermediaries whose economics depend entirely on market activity levels they cannot control. Angel One's results validate that concern: when SEBI tightened F&O rules in 2024, the company's most profitable revenue stream was curtailed, and profits have since declined despite the company deploying enormous capital. Borrowings jumping from ₹788 Cr to ₹7,951 Cr over three years while profits fall is a combination that makes me deeply uncomfortable.\n\nThe business also lacks the pricing power I require. A discount broker is, by definition, competing on price — there is nothing proprietary about executing a stock trade. Angel One's impressive growth was largely a function of a bull market in Indian retail participation and F&O volumes, both of which have been constrained by regulation. I see no clear path to re-establishing the 2024-25 earnings peak, and I refuse to pay 32x earnings for a business in earnings decline with rapidly rising debt.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 168468,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.21405225000000003,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 22715,
+      "cache_read_input_tokens": 15240,
+      "output_tokens": 8286,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 22715,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 709,
+          "cache_read_input_tokens": 15240,
+          "cache_creation_input_tokens": 7475,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 7475
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

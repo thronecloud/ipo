@@ -1,0 +1,69 @@
+{
+  "symbol": "544626",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-20T11:00:37.193960Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Exato is a tiny, nine-year-old IT services outfit at 35x earnings on just INR 10 Cr of profit — decent ROE of 28% but no discernible moat and rapidly rising debt. I don't buy promises at 35 times earnings, especially when free cash flow was -20 Cr in 2024 and zero in 2025.",
+    "key_strengths": [
+      "ROE 28.2% and ROCE 26.5% — capital is earning its keep, at least for now",
+      "Revenue grew from 73 to 124 Cr (2023-2025), ~30% CAGR",
+      "Promoter holding a healthy 54.73% — skin in the game"
+    ],
+    "key_risks": [
+      "Borrowings tripled from 6 to 28 Cr while FCF collapsed to zero — growth is debt-funded",
+      "No identifiable moat in crowded ITeS/customer-engagement space dominated by giants",
+      "35x P/E on 10 Cr profit (338 Cr mcap) leaves no margin of safety"
+    ],
+    "red_flags": [
+      "Debt-to-equity rising: borrowings 28 Cr vs equity 50 Cr (0.56x)",
+      "FCF went from +10 Cr → -20 Cr → 0 Cr — unstable cash generation",
+      "Recently listed micro-cap (338 Cr) — limited operating history as public company"
+    ],
+    "detailed_analysis": "This is precisely the kind of business I step around. A 338 Cr market-cap IT services company with 124 Cr of revenue and 10 Cr of net profit is being asked to justify a 35x multiple — that's paying for perfection from a company incorporated only in 2016. The profitability ratios look attractive on paper (ROE 28%, ROCE 26%), but notice how equity nearly doubled from 27 to 50 Cr in a single year — likely IPO dilution — which will mechanically depress future ROE. Meanwhile borrowings jumped from 6 Cr to 28 Cr over two years to fund working capital and capex, and free cash flow over the last three years nets to roughly -10 Cr. Reported profits without cash is accounting, not earnings.\n\nThe deeper issue is the absence of a moat. \"Customer transformation partner\" is a commoditized space where TCS, Infosys, and thousands of smaller firms compete for the same rupee of outsourcing spend. Switching costs are low, pricing power is nil, and scale economics favor the giants. At a fair price — say 12-15x earnings with proven cash conversion — a high-growth niche ITeS player might warrant a small speculative position, but never at 35x with deteriorating cash flows and rising leverage. Be fearful when others are greedy about newly-listed micro-caps. Avoid.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 22797,
+    "model_used": "opus",
+    "total_cost_usd": 0.09771575,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 9555,
+      "cache_read_input_tokens": 13934,
+      "output_tokens": 1240,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9555,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 11097,
+          "cache_creation_input_tokens": 1295,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1295
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

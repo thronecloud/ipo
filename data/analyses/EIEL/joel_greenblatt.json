@@ -1,0 +1,69 @@
+{
+  "symbol": "EIEL",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T17:10:21.038158Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "EIEL is a genuinely high-quality infrastructure business (ROCE 31.7%, operating margins 24%) but at current prices the earnings yield of ~6.9% (EBIT INR 268 Cr / EV ~INR 3,870 Cr) falls well short of the Magic Formula's 12%+ attractive threshold. The Magic Formula demands both cheapness AND quality — here we have quality without cheapness.",
+    "key_strengths": [
+      "Exceptional ROCE of 31.7% sustained on a fast-growing revenue base (58% CAGR 5Y), signaling a genuinely capital-light model",
+      "Operating margins of 23.9% are unusually wide for an EPC/construction company, suggesting strong contract pricing power",
+      "Revenue nearly 10x'd from INR 108 Cr (2020) to INR 1,066 Cr (2025) — very rare execution in government infra"
+    ],
+    "key_risks": [
+      "Negative OCF (–INR 47 Cr) and FCF (–INR 93 Cr) in FY2025 despite INR 177 Cr reported profit — a glaring earnings-quality red flag that breaks the Magic Formula assumption",
+      "Government contractor concentration: payments from municipal bodies are notoriously slow, which explains working capital blowout (borrowings up 65% CAGR)",
+      "Equity base artificially inflated by IPO proceeds (reserves: INR 155 Cr → INR 963 Cr in one year), flattering the ROCE and masking capital intensity going forward"
+    ],
+    "red_flags": [
+      "OCF negative in 2 of last 2 years (-102 Cr, -47 Cr) — profits are not converting to cash, signaling large unbilled receivables/contract assets",
+      "Investing CF of -INR 263 Cr in FY2025 far exceeds operating cash generated — company is consuming cash, not generating it",
+      "Institutional ownership nearly zero (FII 0.58%, DII 0.87%) — smart money is absent despite headline growth numbers"
+    ],
+    "detailed_analysis": "Running the Magic Formula: Earnings Yield = EBIT/EV = INR 268 Cr / ~INR 3,870 Cr (Mkt Cap 3,740 + Borrowings 295 – Cash 162) = **6.9%** — below the 12% threshold where I get interested and barely above the 6% \"avoid\" cutoff. ROIC via ROCE is 31.7%, which is genuinely excellent and scores in the top quartile. But the Magic Formula requires BOTH to rank well simultaneously. One good leg and one weak leg is a mediocre composite rank, not a buy signal.\n\nThe deeper concern is that reported EBIT of INR 268 Cr is not backed by cash. Operating cash flow was –INR 47 Cr in FY2025 and –INR 102 Cr in FY2024. This is fatal for a Magic Formula investor — the formula uses EBIT as a proxy for real earnings power, and when OCF diverges this massively from net income, the numerator is fiction. The business model (government-awarded EPC contracts, long payment cycles) structurally produces this mismatch, but it means the 6.9% earnings yield is almost certainly overstated. Watch for OCF to turn consistently positive before revisiting.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "exceptional"
+    }
+  },
+  "metadata": {
+    "duration_ms": 58497,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0875136,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11262,
+      "cache_read_input_tokens": 8807,
+      "output_tokens": 2842,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11262
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 430,
+          "cache_read_input_tokens": 8807,
+          "cache_creation_input_tokens": 2455,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2455,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "CHENNPETRO",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-19T12:58:42.939986Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Chennai Petroleum's P/E of 7.2x and P/B of 1.76x look superficially cheap, but the earnings record is disqualifying: net profit collapsed from INR 2,745 Cr in FY2024 to just INR 214 Cr in FY2025 — a 92% decline — and the company reported massive losses in FY2019 and FY2020. A cyclical refiner with deteriorating margins and no pricing power does not meet my standard of 'proven earning power.'",
+    "key_strengths": [
+      "Debt reduced dramatically — borrowings fell from INR 9,238 Cr (FY2022) to INR 1,933 Cr (FY2025), D/E now only 0.22",
+      "P/S ratio of 0.24x and EV/EBITDA of 4.82x suggest the market is paying very little for revenues",
+      "OCF positive 5/5 recent years; the refining asset base is real and capital-intensive"
+    ],
+    "key_risks": [
+      "ROE of 2.51% and ROCE of 4.30% are below the cost of capital — the business is destroying value at current returns",
+      "Net profit fell from INR 3,532 Cr (FY2023) to INR 214 Cr (FY2025): refining margins are highly cyclical and currently compressed",
+      "Operating income CAGR is -3.1% over nine years — the business earns less in absolute terms than a decade ago"
+    ],
+    "red_flags": [
+      "Two years of large losses (FY2019: -205 Cr; FY2020: -2,056 Cr) within the past decade — fails earnings consistency test",
+      "FY2025 net profit of INR 214 Cr against a market cap of INR 15,514 Cr implies a trailing P/E far higher than the reported 7.2x (which appears to rely on a blended or stale earnings figure)",
+      "Subsidiary of IOC — limited strategic autonomy; dividend and capital decisions may not serve minority shareholders"
+    ],
+    "detailed_analysis": "The apparent cheapness of CHENNPETRO is a value trap, not a value opportunity. The refining business is cyclically sensitive to global crude spreads and domestic fuel price regulations; in FY2020 the company lost INR 2,056 Cr and in FY2025 profits collapsed 92% year-on-year to INR 214 Cr. An analyst applying my methods must ask: what is the 'normal' or average earning power? Averaging the last nine years of net profit (which includes large losses) yields a figure that justifies a much lower valuation than the reported 7.2x P/E implies.\n\nWhile I applaud management for dramatically reducing debt (from INR 9,238 Cr to INR 1,933 Cr in three years), a ROE of 2.51% tells me the assets are not productive enough to reward shareholders. A company that earns 2.5% on equity while the risk-free rate in India exceeds 6% is not creating wealth — it is consuming it. I require both low price and reliable earning power; CHENNPETRO provides the former but conspicuously lacks the latter.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 134607,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.20728095000000002,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 23027,
+      "cache_read_input_tokens": 15919,
+      "output_tokens": 7743,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 23027,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 473,
+          "cache_read_input_tokens": 15919,
+          "cache_creation_input_tokens": 7108,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 7108
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

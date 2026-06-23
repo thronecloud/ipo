@@ -1,0 +1,71 @@
+{
+  "symbol": "ALOKINDS",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T16:20:55.185795Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "Alok Industries is a technically insolvent textile company with negative equity of -₹21,527 Cr dwarfed by ₹26,106 Cr in borrowings — there is no asset base left for the equity holder, only debt. Nine consecutive years of net losses and a -9% revenue CAGR make this utterly incompatible with any margin-of-safety framework.",
+    "key_strengths": [
+      "Gross margin of 31.5% shows the underlying textile operations can generate product-level profit before overhead and interest",
+      "Operating cash flow was positive in 4 of 5 recent years, suggesting the business is at least marginally functioning",
+      "Reliance Industries' involvement post-IBC resolution provides minimal operational backstop"
+    ],
+    "key_risks": [
+      "Negative equity of -₹21,527 Cr means shareholders own nothing — total debt of ₹26,106 Cr exceeds total assets of ₹6,475 Cr by 4x",
+      "Finance costs of ₹615 Cr per year consume 16.5% of revenue, making sustained profitability arithmetically near-impossible",
+      "Revenue collapsed from ₹8,723 Cr (2017) to ₹3,715 Cr (2026) — a -9% CAGR with no recovery in sight"
+    ],
+    "red_flags": [
+      "Negative book value renders P/B ratio (-0.33) meaningless — standard Graham Number calculation is impossible",
+      "Net losses every single year from 2021–2026 (₹744 Cr loss in 2026) — zero earnings history required by my criteria",
+      "EV/EBITDA of 320.8x is catastrophic; the enterprise is priced as if substantial normalised earnings will eventually materialise",
+      "The 2019 'net profit' of ₹2,076 Cr was entirely a debt-waiver accounting gain, not operating earnings — the business has never been genuinely profitable in the data window",
+      "No dividends paid — ever — consistent with an entity that has no distributable surplus"
+    ],
+    "detailed_analysis": "Alok Industries fails every single quantitative test I have ever devised. The company carries ₹26,106 Cr in borrowings against total assets of only ₹6,475 Cr, yielding a staggering negative shareholders' equity of -₹21,527 Cr. There is no book value to speak of — the Graham Number cannot even be computed because both EPS and book value per share are negative. The current price of ₹14.30 and a market cap of ₹7,095 Cr are being assigned entirely on speculative hope, not on any recoverable asset base or earnings power. ROCE of -3.25% and an operating margin of -4.51% confirm that even before the crushing interest burden, the business destroys value at the operating level.\n\nThe earnings record is disqualifying on its face. Net losses span virtually the entire decade: ₹3,083 Cr (2017), ₹18,580 Cr (2018), brief accounting-gain-inflated \"profits\" in 2019–2020 from IBC debt waivers, then uninterrupted losses of ₹5,673 Cr, ₹209 Cr, ₹880 Cr, ₹847 Cr, ₹816 Cr, and ₹744 Cr through 2026. An intelligent investor requires at minimum five consecutive years of positive earnings — Alok has not achieved one genuine operating profit year in this entire dataset. Mr. Market may occasionally offer this stock at a lower price, but no price is low enough when the enterprise itself is insolvent and the debt load ensures any operational improvement is captured entirely by creditors, not equity holders. This is a speculation, not an investment.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 50342,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.06786750000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8780,
+      "cache_read_input_tokens": 11095,
+      "output_tokens": 2107,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8780,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 380,
+          "cache_read_input_tokens": 9045,
+          "cache_creation_input_tokens": 1785,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1785
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

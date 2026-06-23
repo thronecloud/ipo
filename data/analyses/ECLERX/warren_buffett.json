@@ -1,0 +1,68 @@
+{
+  "symbol": "ECLERX",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-19T06:20:26.737350Z",
+  "analysis": {
+    "score": 7,
+    "recommendation": "BUY",
+    "investment_thesis": "eClerx is a niche BPM operator with genuine switching costs — clients embed it deeply into financial services and cable/telecom workflows, making replacement costly and painful. At 18.9x forward earnings with 28% ROCE and growing free cash flow, this is a good business available at a fair price.",
+    "key_strengths": [
+      "Exceptional capital efficiency: ROCE 28%, ROE 22.8% sustained over multiple years with D/E of just 0.15",
+      "Consistent and growing free cash flow — FCF compounded from INR 299 Cr (FY20) to INR 539 Cr (FY25), ~12.5% CAGR, 5/5 years positive",
+      "Deep client integration in financial services and cable/telecom creates real switching costs; high promoter holding (54.5%) aligns management with shareholders"
+    ],
+    "key_risks": [
+      "Net profit 9Y CAGR of only 5.2% reflects a difficult 2016-2020 period; execution must sustain the recent 5Y recovery trajectory (~17% profit CAGR)",
+      "Business is people-intensive and exposed to INR/USD movements; wage inflation can compress margins faster than pricing adjustments allow",
+      "Larger IT services firms (TCS, Infosys) are aggressively expanding into BPM/analytics, threatening wallet share from shared clients"
+    ],
+    "red_flags": [
+      "Finance costs have risen from INR 1 Cr (2016) to INR 36 Cr (2025) — debt is creeping up even as the business throws cash",
+      "Revenue CAGR of 11% but operating profit CAGR of only 5.9% over 9 years shows historical margin erosion, though recent trend is recovering"
+    ],
+    "detailed_analysis": "eClerx is the kind of quietly excellent business I admire — it does unglamorous, highly specialized work that clients hate switching away from. ROCE of 28% and consistent FCF conversion (operating CF of INR 655 Cr against net profit of INR 541 Cr in FY25) tell me this is a real business, not one that consumes capital to grow. The balance sheet is clean with INR 542 Cr cash against INR 358 Cr total debt, and the promoter's 54.5% stake keeps incentives honest.\n\nThe one concern I have is that revenue growth at 11% CAGR is decent but not exciting, and the 9-year earnings CAGR of 5.2% masks a rough 2016-2020 patch. The good news: the recent 5-year trend is strongly expanding on every line. At 18.9x forward earnings for a capital-light business with genuine stickiness, the price is fair. I would not pay a premium, but at current levels, patient capital should be rewarded.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "excellent",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 169267,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.21994185,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 23861,
+      "cache_read_input_tokens": 16297,
+      "output_tokens": 8371,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 23861,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 636,
+          "cache_read_input_tokens": 16297,
+          "cache_creation_input_tokens": 7564,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 7564
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

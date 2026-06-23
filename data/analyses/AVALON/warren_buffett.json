@@ -1,0 +1,69 @@
+{
+  "symbol": "AVALON",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T16:32:48.397159Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Avalon is a capital-intensive contract electronics manufacturer with a 77x P/E, sub-11% ROE, and four consecutive years of negative free cash flow — precisely the kind of mediocre business at an outrageous price I have spent my career avoiding. No durable moat, no pricing power, and a valuation that prices in perfection in an inherently commoditized industry.",
+    "key_strengths": [
+      "Debt/Equity of 0.25 is conservative; finance costs have halved from INR 45 Cr to INR 17 Cr since 2020, reducing financial risk.",
+      "Diversified capabilities (PCB, cables, aerospace machined parts, magnetics) across clean energy and mobility sectors with genuine long-term tailwinds.",
+      "Revenue growing at 11.3% CAGR with operating income recovering to INR 115 Cr in FY25 after the FY24 dip, showing some operational resilience."
+    ],
+    "key_risks": [
+      "Valuation is egregious: 77.8x P/E, 52x EV/EBITDA for a contract manufacturer with 9.6% operating margins and 10.4% ROE — a classic 'fair business at a terrible price.'",
+      "Free cash flow has been negative in 4 of the last 5 years (FY25: -21 Cr), and capex is accelerating (-46 Cr in FY25 vs -16 Cr in FY22) — this business consumes, not generates, cash.",
+      "EMS is structurally low-moat: customers can multi-source, switch vendors, or vertically integrate; Avalon has no brand, no network effect, and no meaningful switching costs."
+    ],
+    "red_flags": [
+      "ROE of 10.4% is far below my 15% minimum — the business earns a mediocre return on the capital shareholders have entrusted to it.",
+      "Net profit is wildly volatile (INR 12 Cr → 67 Cr → 28 Cr → 63 Cr), signaling poor earnings quality and lack of business predictability.",
+      "Post-IPO equity ballooned from INR 87 Cr to INR 537 Cr in FY23, yet FCF remains deeply negative — IPO proceeds were consumed by working capital and capex, not value creation."
+    ],
+    "detailed_analysis": "Avalon Technologies is an integrated EMS (Electronic Manufacturing Services) company — a business model I find structurally unappealing. Contract manufacturers exist to serve their customers, not to extract value from them. There is no brand, no switching cost, no network effect, and no proprietary technology. The 9.58% operating margin and 10.4% ROE confirm what the business model implies: this is a toll road where the customer owns the economics. I require a business to earn >15% ROE consistently; Avalon has managed that only in the anomalous FY22 year, and that was partly an artifact of a low equity base pre-IPO.\n\nThe cash flow picture is disqualifying. A wonderful business generates cash; Avalon has burned free cash flow in four of the past five years, with FY25 FCF at -INR 21 Cr even as reported net profit was INR 63 Cr. The divergence between reported earnings and cash generation is a flag I take seriously. Meanwhile, capex is rising (INR 46 Cr in FY25), working capital is lumpy (OCF swings from -INR 13 Cr to +INR 25 Cr), and the market is paying 77x earnings for this. In Omaha we have a saying: price is what you pay, value is what you get. At these multiples, you are paying a luxury-goods price for a commodity-manufacturing business. I would not own this at any price above 15x earnings, and 15x would require a moat that simply does not exist here.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 52639,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0753384,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10718,
+      "cache_read_input_tokens": 8873,
+      "output_tokens": 2165,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10718,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 358,
+          "cache_read_input_tokens": 8873,
+          "cache_creation_input_tokens": 1845,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1845
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

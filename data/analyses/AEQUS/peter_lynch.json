@@ -1,0 +1,71 @@
+{
+  "symbol": "AEQUS",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-18T16:14:55.542622Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Aequs is a capital-intensive conglomerate burning cash across three unrelated verticals — aerospace, toys, and consumer goods — with no earnings, a forward P/E of 1,140x, and an accelerating FCF drain of -239 Cr in FY25. There is no \"story\" here that justifies the price.",
+    "key_strengths": [
+      "Aerospace & Defense tailwinds in India offer a real long-term secular trend",
+      "High gross margin of 56% suggests pricing power in certain segments",
+      "Heavy CWIP of 395 Cr signals capacity build that could eventually generate returns"
+    ],
+    "key_risks": [
+      "Extreme valuation — Forward P/E of 1,140x and EV/EBITDA of 288x with negative net profits (-102 Cr FY25) is completely unjustifiable",
+      "Free cash flow collapsed to -239 Cr in FY25 with capex of -265 Cr; company is burning through capital at an accelerating pace",
+      "Revenue actually declined from 965 Cr (FY24) to 925 Cr (FY25) while EBITDA collapsed from 163 Cr to 57 Cr — the story is getting worse, not better"
+    ],
+    "red_flags": [
+      "No PEG ratio computable — company is loss-making three years running (-110, -14, -102 Cr)",
+      "EBITDA destruction: down 65% YoY from 163 Cr to 57 Cr while revenue fell",
+      "Debt/Equity of 1.08 with only 61 Cr cash against 785 Cr borrowings — tight financial position during a capex surge",
+      "Other Income swung from +44 Cr to -6 Cr, suggesting the FY24 profit improvement was not operational",
+      "Conglomerate structure across aerospace, toys, and cookware — Lynch's worst nightmare for a simple story"
+    ],
+    "detailed_analysis": "Aequs is what I'd call a \"confused story\" — and confused stories get confused valuations. When I walk into a company that makes aircraft parts AND toys AND cookware AND runs industrial clusters AND logistics, I start worrying. Each of those is a separate business with different customers, different margins, different cycles. The aerospace piece is genuinely exciting — India's defense manufacturing push is real, and a vertically integrated player in Belgaum could become a niche dominator. But the toys and consumer goods divisions are diluting the narrative and apparently dragging down the numbers. FY25 EBITDA of 57 Cr on 925 Cr revenue is a 6.2% EBITDA margin — that's not aerospace economics, that's assembly line economics.\n\nThe valuation is simply absurd by any metric I've used in 40 years. A forward P/E of 1,140x means the market is pricing in a massive earnings recovery that hasn't even begun to show up. FCF deteriorated from -175 Cr to -239 Cr year-over-year while the 395 Cr CWIP tells me they're still building. That capital build could eventually pay off if aerospace orders materialize — but the P/S of 10x and P/B of 12.85x already price in a best-case scenario with no margin of safety. Lynch's Rule #1: Never pay a ridiculous price for a great story. At INR 171 with 11,200 Cr market cap, you're paying a premium for a turnaround that hasn't turned.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 48555,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.04274085,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 1703,
+      "cache_read_input_tokens": 16702,
+      "output_tokens": 2089,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1703,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 423,
+          "cache_read_input_tokens": 8351,
+          "cache_creation_input_tokens": 1703,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1703
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

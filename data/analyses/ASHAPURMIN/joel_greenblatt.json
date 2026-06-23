@@ -1,0 +1,70 @@
+{
+  "symbol": "ASHAPURMIN",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T16:28:10.094166Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Ashapura Minechem fails both Magic Formula screens — earnings yield of ~5.4% is below the 6% threshold and ROIC of ~15% is below the 20% hurdle, meaning you're paying a fair-to-full price for a mediocre-return business. Chronically negative free cash flow (-₹208 Cr in FY25 despite ₹377 Cr EBIT) reveals a capital-hungry operation where reported earnings are not translating into real cash for shareholders.",
+    "key_strengths": [
+      "Recovering revenue trajectory: ₹334 Cr (2020) → ₹2,739 Cr (2025), with EBITDA expanding strongly to ₹469 Cr",
+      "Diversified mineral portfolio (bauxite, bentonite, kaolin, proppants) across industrial, oil & gas, and specialty chemicals end-markets",
+      "ROE of 27.1% looks optically attractive, boosted by recent profitability recovery from deeply negative 2017–2020 period"
+    ],
+    "key_risks": [
+      "Persistently negative FCF for 5 straight years (-₹208 Cr in FY25); capex of ₹401 Cr consumed 85% of EBITDA — earnings yield is illusory without cash conversion",
+      "Debt nearly tripling: borrowings ₹441 Cr (2020) → ₹1,228 Cr (2025); finance costs CAGR 17.8% — debt-funded growth compresses true returns on capital",
+      "Severe historical cyclicality: revenue cratered 81% (2016→2020), operating income went deeply negative (-₹45 Cr in 2020); business is commodity-price and volume dependent"
+    ],
+    "red_flags": [
+      "Earnings Yield (EBIT/EV) = ₹377 Cr / ₹6,951 Cr EV ≈ 5.4% — below the Magic Formula's 6% minimum; stock is NOT cheap",
+      "FCF negative every single year shown (2020–2025); cumulative FCF burn ~-₹574 Cr while reporting net profits",
+      "Net profit in 2020 (₹383 Cr) was entirely driven by ₹487 Cr 'Other Income' vs. -₹45 Cr operating loss — earnings quality is poor",
+      "Revenue 9Y CAGR only 4.9% — essentially flat in real terms over a decade; no durable growth engine visible"
+    ],
+    "detailed_analysis": "Magic Formula math is straightforward here and unfavorable on both legs. Earnings Yield: EBIT of ₹377 Cr divided by Enterprise Value (₹5,897 Cr market cap + ₹1,054 Cr net debt = ₹6,951 Cr EV) yields just 5.4% — below the 6% minimum that makes a stock \"cheap\" by this framework. Return on Capital: EBIT / Invested Capital (equity ₹1,426 Cr + debt ₹1,163 Cr - cash ₹109 Cr = ₹2,480 Cr) = ~15.2%, which is mediocre — the business is not generating the 20%+ returns that signal a true competitive moat. ROCE of 18.6% (company-reported) is at best adequate, not excellent.\n\nThe deeper problem is cash conversion. The ₹377 Cr EBIT evaporates when you look at cash flows: capex of ₹401 Cr in FY25 alone exceeds operating income, and FCF has been negative in every visible year. The company is funding growth with debt (borrowings up ₹787 Cr in 5 years) while finance costs compound at 17.8% CAGR. This is exactly the capital trap the Magic Formula is designed to avoid — a business that looks profitable on an income statement but destroys capital through relentless reinvestment with subpar returns. The 2017–2020 collapse (revenue down 81%, operating losses) shows this is a cyclical miner, not a compounder.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 70547,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0861336,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11528,
+      "cache_read_input_tokens": 9182,
+      "output_tokens": 2676,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11528,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 408,
+          "cache_read_input_tokens": 9182,
+          "cache_creation_input_tokens": 2346,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2346
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

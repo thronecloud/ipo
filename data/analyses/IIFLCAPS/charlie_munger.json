@@ -1,0 +1,69 @@
+{
+  "symbol": "IIFLCAPS",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T17:47:45.010362Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "IIFL Capital Services is a cyclical capital markets franchise riding India's financialization wave with impressive ROCE of 33.3% and net profit CAGR of 21.6%, but violent cash flow swings (OCF: +795, -793, -118, +871 over four years) and a commoditizing broking moat limit this to a fair-price hold, not a compounder. At 17x P/E the valuation is reasonable but not compelling enough to compensate for the inherent cyclicality.",
+    "key_strengths": [
+      "Exceptional profitability metrics — ROCE 33.3%, ROE 31.6%, operating margin 38% — rare for a domestic capital markets firm",
+      "Strong net profit trajectory: INR 250 Cr (2023) → 513 Cr (2024) → 713 Cr (2025), aided by scale in wealth/IB and India bull market tailwinds",
+      "Low capex intensity (INR 48 Cr capex vs. INR 713 Cr PAT in 2025) means incremental returns on equity are high when markets cooperate"
+    ],
+    "key_risks": [
+      "Deep cyclicality — broking and IB revenue collapse in bear markets; the 2020 revenue trough (INR 758 Cr vs. 933 in 2018) and 2023 profit dip (250 Cr) confirm this is not a steady compounder",
+      "Operating cash flow is alarmingly volatile (negative in 2023 and 2024), raising earnings quality concerns; FCF/Net Income was deeply negative in those years",
+      "Borrowings tripled from INR 486 Cr (2023) to INR 1,742 Cr (2025) to fund margin book growth — balance sheet leverage amplifies downside in any market correction"
+    ],
+    "red_flags": [
+      "OCF negative two of last four years (2023: -793 Cr, 2024: -118 Cr) — a quality investor demands cash earnings, not just accounting profits",
+      "Low promoter holding at 30.93% is below comfort for a financial services business where management alignment is critical",
+      "IIFL Group contagion risk — parent group faced RBI regulatory action on IIFL Finance (gold loan disbursement ban, 2024), creating reputational overhang"
+    ],
+    "detailed_analysis": "Applying the inversion test first: what kills this investment? A sustained bear market crushes broking volumes, IB deal pipelines dry up, the margin funding book (funded by INR 1,742 Cr borrowings) generates credit stress, and the rosy ROCE of 33% reverts to single digits — exactly what happened in 2019-2020. The business model is inherently tournament-style: when markets are hot, everyone looks like a genius; when cold, the structurally weak players (and their shareholders) suffer disproportionately. The moat here is distribution scale and the IIFL brand, not a Berkshire-grade durable franchise. Zerodha, Angel One, and incoming fintechs continuously erode pricing power in retail broking.\n\nOn the positives: the wealth management and investment banking revenue streams add quality and stickiness versus pure discount broking. At 17x P/E on INR 713 Cr of FY2025 PAT, the market is not pricing in heroic assumptions — this is a reasonably priced cyclical, not a bubble. India's financialization (low equity penetration, rising HNI wealth) provides a decade-long structural tailwind that should support mid-teen revenue growth through cycles. But Munger's doctrine — \"a great business at a fair price beats a fair business at a great price\" — cuts against this stock. Until cash flows are consistently positive and the moat demonstrates pricing power through a full bear cycle, this earns a 5 and a watch-list seat, not fresh capital.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 62167,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0864003,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11236,
+      "cache_read_input_tokens": 8971,
+      "output_tokens": 2771,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11236
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 552,
+          "cache_read_input_tokens": 8971,
+          "cache_creation_input_tokens": 2265,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2265,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

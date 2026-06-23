@@ -1,0 +1,70 @@
+{
+  "symbol": "IXIGO",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T17:47:04.044589Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "IXIGO fails both legs of the Magic Formula catastrophically: Earnings Yield of ~0.9% (EBIT INR 72 Cr / EV ~INR 7,796 Cr) is nearly 15x below my 12% minimum threshold, and ROCE of 12.6% is well below the 20%+ I require for a quality business. This is a growth story priced for perfection with no margin of safety whatsoever.",
+    "key_strengths": [
+      "Revenue compounding at 68.5% CAGR over 6 years (INR 40 Cr → INR 914 Cr) shows genuine platform growth.",
+      "Asset-light OTA model with 81.74% gross margins and FCF finally positive at INR 118 Cr in FY25 — structural quality exists.",
+      "Near-zero debt (D/E: 0.04) with INR 81 Cr cash — clean balance sheet post-IPO cleanup."
+    ],
+    "key_risks": [
+      "Earnings Yield of ~0.9% is 13x below my 12% floor — paying 7,796x enterprise value for 72 Cr of EBIT is indefensible.",
+      "Net profit DECLINED from INR 73 Cr (FY24) to INR 60 Cr (FY25) despite 39% revenue growth — operating leverage is absent.",
+      "Operating margin of 7.08% is razor-thin for a platform business; any competitive pressure from MakeMyTrip/EaseMyTrip compresses it further."
+    ],
+    "red_flags": [
+      "Earnings Yield ~0.9% — Magic Formula requires >12%; this misses by 13x.",
+      "Net profit shrinking YoY (73→60 Cr) while revenue grew 39% — margin compression, not expansion.",
+      "FY24 net profit was inflated by INR 39 Cr 'other income' vs INR 23 Cr in FY25 — underlying earnings quality is weaker than headline numbers suggest.",
+      "EBIT was negative in 4 of the last 7 years — the track record of durable profitability is only 2-3 years old."
+    ],
+    "detailed_analysis": "The Magic Formula verdict on IXIGO is swift and brutal. Enterprise Value is approximately INR 7,796 Cr (Market Cap INR 7,837 Cr + Debt INR 40 Cr − Cash INR 81 Cr), against trailing EBIT of just INR 72 Cr. That gives an Earnings Yield of 0.92% — I need to see 12%+ before I'll even consider a business. The market is pricing in a decade of compounding before giving me a penny of value. On the capital quality side, ROCE of 12.6% and ROE of 9.74% are below my 20% quality hurdle as well. Both legs of the Magic Formula fail simultaneously, which is the clearest possible AVOID signal.\n\nThe business itself has genuine merit: 68.5% revenue CAGR, an asset-light model, strong gross margins at 82%, and FCF that finally turned meaningfully positive at INR 118 Cr in FY25. But the FY24 net profit of INR 73 Cr was padded by INR 39 Cr of other income (likely interest/investment returns post-IPO cash), and FY25 net profit actually fell to INR 60 Cr despite nearly 40% revenue growth — the operational leverage story is not materializing. At EV/EBITDA of 119x, the market is asking me to pay for 10+ years of flawless execution upfront. That's speculation, not investment. I'll watch from the sidelines until either the price corrects dramatically or EBIT scales to justify the valuation.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 49234,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08167754999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10961,
+      "cache_read_input_tokens": 8816,
+      "output_tokens": 2528,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10961
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 435,
+          "cache_read_input_tokens": 8816,
+          "cache_creation_input_tokens": 2145,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2145,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

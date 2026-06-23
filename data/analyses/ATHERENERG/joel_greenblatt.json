@@ -1,0 +1,71 @@
+{
+  "symbol": "ATHERENERG",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-22T16:21:23.711841Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "Ather Energy is a pre-profit EV startup with negative EBIT every single year since inception — the Magic Formula cannot be applied, and at 10x P/S with deeply negative returns on capital, there is no margin of safety. Revenue growth is real but irrelevant until the company demonstrates it can convert sales into earnings.",
+    "key_strengths": [
+      "Revenue CAGR of 130% over 5 years (INR 35 Cr → 2,255 Cr) shows genuine market traction",
+      "Positive gross margin of 19.43% confirms some unit-level economics exist",
+      "Low Debt/Equity of 0.16 and recent IPO equity infusion (equity surged to 2,721 Cr in 2025) reduce near-term insolvency risk"
+    ],
+    "key_risks": [
+      "Negative EBIT of -581 Cr in 2025 — Magic Formula requires positive EBIT; this company is unrankable",
+      "Free cash flow negative every year for 5 years (-1,060 Cr in 2025), fully dependent on external capital to survive",
+      "Valued at 10x sales with no earnings path in sight — any slowdown in revenue growth or funding could be catastrophic"
+    ],
+    "red_flags": [
+      "EBIT has never been positive in 6 years of history — Magic Formula produces no valid output",
+      "Operating Cash Flow negative all 5 years (0/5 positive); cash burn accelerating",
+      "ROE of -156% and ROCE of -65.7% — capital destruction at scale",
+      "EV/EBITDA of -50x and Forward P/E of -79x: valuation metrics are literally nonsensical",
+      "Net losses grew from -220 Cr (2020) to peak -1,060 Cr (2024); only modest improvement to -812 Cr in 2025"
+    ],
+    "detailed_analysis": "Applying the Magic Formula to Ather Energy is a non-starter. Earnings Yield = EBIT / EV requires positive EBIT. With operating income at -581 Cr in 2025 and an Enterprise Value of roughly 34,500 Cr, the earnings yield is approximately -1.7% — deeply negative. Return on Capital = EBIT / (Net Working Capital + Net Fixed Assets) is equally meaningless. The company has destroyed capital every year since 2020, and the cumulative free cash outflow exceeds 3,270 Cr. This is not a business that earns high returns on tangible capital; it is a business that consumes capital to subsidize growth.\n\nThe only faint green shoot is the 19.43% gross margin, which suggests the product itself isn't being sold below variable cost. But gross margin is miles away from EBIT profitability when operating losses run at -26% of revenue in 2025. At INR 2,255 Cr in revenue and INR 34,295 Cr in market cap, investors are paying 10x sales for a business that is still years from breakeven. Greenblatt's framework rewards companies that earn high returns on capital at cheap prices — Ather offers neither. This is pure speculation on a future that may or may not materialize.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 44330,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0736632,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10534,
+      "cache_read_input_tokens": 8789,
+      "output_tokens": 2101,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10534,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 389,
+          "cache_read_input_tokens": 8789,
+          "cache_creation_input_tokens": 1745,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1745
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

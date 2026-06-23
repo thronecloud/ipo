@@ -1,0 +1,69 @@
+{
+  "symbol": "NETWEB",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-22T16:37:08.533288Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Netweb is a fast-growing Indian HPC/AI hardware assembler riding the government and enterprise tech spend wave, but computer hardware is precisely the kind of capital-intensive, low-margin, commodity-adjacent business I've spent a career avoiding. At 120x earnings with negative free cash flow, Mr. Market is charging an exceptional price for a business without an exceptional moat.",
+    "key_strengths": [
+      "Explosive 3-year revenue CAGR of 66.6% and net profit CAGR of 72.1%, driven by India's AI/HPC buildout",
+      "Pristine balance sheet — debt/equity of 0.03, virtually debt-free with INR 170 Cr cash",
+      "High promoter holding (66.98%) signals owner-operator alignment; ROCE of 29.56% is respectable"
+    ],
+    "key_risks": [
+      "No durable economic moat — hardware assembly is commoditizable; global OEMs (Dell, HPE) can undercut or enter India any time",
+      "Negative FCF of -39 Cr in FY2025 despite INR 114 Cr reported profit — profits are not converting to cash, a classic working-capital trap in hardware",
+      "Valuation of 120x P/E and 86x EV/EBITDA prices in flawless execution for a decade — any order lumpiness or margin compression destroys the story"
+    ],
+    "red_flags": [
+      "Operating CF turned negative in FY2025 (-13 Cr) — growth is consuming cash faster than the business generates it",
+      "Gross margin of only 21.3% and operating margin of 11.7% leave no buffer; hardware margins historically compress, not expand",
+      "Revenue is heavily dependent on government/defense/PSU orders — inherently lumpy and subject to policy risk"
+    ],
+    "detailed_analysis": "Netweb assembles high-end servers, HPC clusters, and AI systems under the Tyrone brand. The growth numbers are genuinely impressive — revenue went from INR 247 Cr to INR 1,143 Cr in three years. But I must ask: what stops a larger, better-capitalized rival from replicating this? The answer, unfortunately, is very little. There's no proprietary silicon, no software lock-in, no network effect, no switching cost that would let Netweb raise prices tomorrow. Thin gross margins of 21% confirm the business is far closer to assembly and integration than to the kind of intellectual-property-driven technology I admire. When I look at a business, I want to understand what the moat is — and here, I genuinely cannot find one that will endure a decade.\n\nThe cash flow picture is the final straw. The company reported INR 114 Cr of net profit in FY2025 yet burned INR 39 Cr of free cash flow. That gap — roughly INR 150 Cr — is sitting in receivables and inventory, which is the hallmark of a working-capital-intensive business that needs to be fed constantly to grow. The market is paying 120x those accounting earnings, with the faith that growth continues uninterrupted, margins hold, and cash eventually materialises. Even on the more optimistic forward P/E of 57.6x, the price embeds perfection. I've learned that paying a wonderful price for a fair business is a reliable recipe for mediocre returns. I'll pass.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 42158,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07135215,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10311,
+      "cache_read_input_tokens": 8623,
+      "output_tokens": 2006,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10311,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 357,
+          "cache_read_input_tokens": 8623,
+          "cache_creation_input_tokens": 1688,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1688
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

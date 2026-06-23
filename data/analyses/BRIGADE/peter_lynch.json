@@ -1,0 +1,68 @@
+{
+  "symbol": "BRIGADE",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-19T12:48:58.521918Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Brigade is a cyclical real estate developer with a recovering profit story — net profit surged from -96 Cr (2021) to 680 Cr (2025) off a COVID-crushed base. At Forward P/E 18 with ~20-25% near-term earnings growth, the PEG hovers around 0.8, but this is a cyclical, not a true fast grower, and real estate cycles can snap quickly.",
+    "key_strengths": [
+      "Net profit CAGR of 19.3% over 9 years, accelerating sharply in 2024-25 with 680 Cr vs 401 Cr prior year",
+      "Operating margins held at 21%, EBITDA grew from 713 Cr (2021) to 1,630 Cr (2025) — cost discipline improving",
+      "Significant equity raise pushed total equity to 6,481 Cr (2025), nearly doubling, reducing effective leverage"
+    ],
+    "key_risks": [
+      "D/E of 0.76 exceeds my 0.6 threshold, and gross debt is still 5,950 Cr with finance costs of 495 Cr annually eating into profits",
+      "Revenue CAGR of only 10.7% over 9 years — this is a stalwart/cyclical, not a fast grower; real estate demand is interest-rate sensitive",
+      "Free cash flow was only 66 Cr in FY24 before rebounding to 358 Cr in FY25 — volatile and capital-hungry business"
+    ],
+    "red_flags": [
+      "Two consecutive years of net losses (2021: -96 Cr, 2022: -65 Cr) reveal cyclical vulnerability — this story can reverse fast",
+      "Capex jumped to 639 Cr in FY25 vs 269 Cr prior year — heavy capital deployment without guaranteed returns in real estate"
+    ],
+    "detailed_analysis": "Lynch would classify Brigade as a cyclical, not a fast grower. The 9-year revenue CAGR of 10.7% is solidly in stalwart/slow-grower territory, and the net profit recovery from deep losses makes the 19.3% profit CAGR misleading — it's base-effect arithmetic, not compounding quality. The business operates in a capital-intensive, leverage-dependent sector where demand correlates with RBI rate cycles and credit availability.\n\nThat said, the Bengaluru real estate market has genuine tailwinds from tech sector employment, and Brigade's hospitality + leasing segments provide some income diversification. At Forward P/E of 18 and with near-term earnings momentum, the stock is not egregiously priced. But with D/E at 0.76 and 5,375 Cr of borrowings, any demand slowdown could quickly reverse the profit trajectory. This is a 'Hold and monitor the cycle' situation — not something I'd add to aggressively.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 144188,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.19699275,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 21895,
+      "cache_read_input_tokens": 15325,
+      "output_tokens": 7352,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 21895,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 652,
+          "cache_read_input_tokens": 15325,
+          "cache_creation_input_tokens": 6570,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 6570
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

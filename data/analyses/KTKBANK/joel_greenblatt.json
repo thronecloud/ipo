@@ -1,0 +1,69 @@
+{
+  "symbol": "KTKBANK",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T18:11:46.776787Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Karnataka Bank is explicitly excluded from the Magic Formula — financial companies distort both EBIT/EV and ROIC calculations. Even substituting ROE as a proxy for return on capital, 11.1% is far below the 20%+ threshold required for a \"good business,\" making the cheap headline valuation a likely value trap rather than a genuine Magic Formula opportunity.",
+    "key_strengths": [
+      "Cheap valuation: P/B 0.74x and Forward P/E 6.06x suggest market is pricing in distress that may not materialize",
+      "Strong profit CAGR of 24.1% over 5Y (2020 INR 432 Cr → 2025 INR 1,273 Cr), even if partially provision-driven",
+      "Equity base growing solidly: total equity doubled from INR 5,971 Cr (2020) to INR 12,589 Cr (2025)"
+    ],
+    "key_risks": [
+      "ROE of only 11.1% — well below the 20%+ ROIC threshold Greenblatt requires; mediocre returns on capital at scale",
+      "Free cash flow collapsed: INR 1,743 Cr (2023) → INR 570 Cr (2024) → INR 48 Cr (2025); OCF diverging sharply from reported net profit",
+      "Revenue CAGR of only 6.8% for a bank — barely keeping pace with inflation; limited pricing power in a competitive regional market"
+    ],
+    "red_flags": [
+      "FINANCIAL COMPANY — Magic Formula explicitly excludes banks; EBIT/EV and ROIC are not computable or meaningful here",
+      "2023 profit spike (INR 508 Cr → INR 1,180 Cr, +132% YoY) is almost certainly provision reversals, not organic earning power improvement — profits since then are flat/declining (1,307 → 1,273)",
+      "2025 OCF of INR 210 Cr vs net profit of INR 1,273 Cr — a 6x gap signals low earnings quality; cash is not converting"
+    ],
+    "detailed_analysis": "Karnataka Bank fails the Magic Formula on first principles: it is a bank, and Greenblatt explicitly excludes financial companies because leverage is their business model, not a capital structure choice. You cannot compute a meaningful EBIT/EV or ROIC when the \"assets\" are loan books and deposits — working capital and net fixed assets are irrelevant constructs. Substituting ROE as the closest analog, 11.1% is uninspiring. Greenblatt wants businesses earning 20–25%+ on tangible capital deployed; Karnataka Bank is earning roughly half that and has shown no trend toward improvement.\n\nThe valuation looks superficially attractive (P/B 0.74, Forward P/E 6.06), but cheapness without quality is a trap. The 2023 profit spike from INR 508 Cr to INR 1,180 Cr (+132%) almost certainly reflects provision write-backs, not a structural improvement in earning power — profits have since stagnated at ~INR 1,270–1,307 Cr. Most worrying: free cash flow collapsed to just INR 48 Cr in FY25 against reported net profit of INR 1,273 Cr, a 26x divergence that signals aggressive accrual accounting or rising stressed assets consuming capital. For a Magic Formula investor, this is not a business worth owning at any price.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 47389,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07749734999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10793,
+      "cache_read_input_tokens": 8882,
+      "output_tokens": 2290,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10793
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 432,
+          "cache_read_input_tokens": 8882,
+          "cache_creation_input_tokens": 1911,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1911,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

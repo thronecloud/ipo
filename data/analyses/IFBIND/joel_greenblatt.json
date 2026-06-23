@@ -1,0 +1,69 @@
+{
+  "symbol": "IFBIND",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T17:39:04.354569Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "IFB Industries fails the Magic Formula test on the critical Earnings Yield metric — EBIT of INR 287 Cr against an EV of ~INR 4,673 Cr yields only ~6.1%, well below the 12%+ threshold I require. The business also has razor-thin operating margins (3.19%) with a history of volatile, near-zero earnings, making it structurally unfit for a high-confidence capital deployment.",
+    "key_strengths": [
+      "Revenue CAGR of 14.2% over 8 years shows consistent top-line compounding in a growing consumer durables market",
+      "ROCE of ~17-18% and rough ROIC near 22-24% (EBIT 287 / equity+debt ~1,173 Cr) shows capital is not being destroyed",
+      "Debt/Equity of 0.18 and declining finance costs (35→27 Cr) signal improving balance sheet discipline"
+    ],
+    "key_risks": [
+      "Earnings Yield of ~6.1% (EBIT 287/EV 4,673) is barely at the floor — nowhere near the 12-15%+ I need to buy",
+      "Operating margins at 3.19% are dangerously thin — any input cost pressure (steel, components) wipes out profits as seen in FY22 (net loss of INR 48 Cr)",
+      "FCF is deeply erratic — only INR 12 Cr in FY25 despite INR 119 Cr net profit; capex of INR 107 Cr vs EBITDA of INR 310 Cr shows high capital intensity"
+    ],
+    "red_flags": [
+      "Net loss in FY22 (INR -48 Cr) — Magic Formula requires sustained positive EBIT; this breaks the consistency test",
+      "Operating income swung from 213 Cr (FY21) to 49 Cr (FY22) to 287 Cr (FY25) — extreme earnings volatility disqualifies it as a quality compounder",
+      "P/E of 34.9x and EV/EBITDA of 16.3x for a business with 3% operating margins is speculative-grade valuation, not value investing"
+    ],
+    "detailed_analysis": "Running the Magic Formula numbers: EV = Market Cap (4,532) + Total Debt (250) - Cash (109) = ~INR 4,673 Cr. EBIT (Operating Income) FY25 = INR 287 Cr. Earnings Yield = 6.1% — this fails my 12% minimum threshold by a wide margin. Return on capital, using EBIT / (Equity + Debt - Cash) = 287 / 1,064 ≈ 27%, is actually decent and the one bright spot. But when a business has only one of the two Magic Formula legs working, I pass. The 35x P/E and 16x EV/EBITDA are pricing in continued execution that this company has not demonstrated consistently.\n\nThe deeper problem is structural margin fragility. Gross margin of 39% collapsing to 3.19% operating margin means SG&A and overheads consume virtually everything. This is a volume-dependent, competitive business where one bad year erases years of retained earnings — exactly what happened in FY22. Free cash flow of just INR 12 Cr in FY25 against net profit of INR 119 Cr signals aggressive working capital consumption and rising capex (INR 107 Cr). For the Magic Formula to work, I need businesses with fat, durable margins that generate cash reliably. IFB is not that.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 44776,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08021295,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11077,
+      "cache_read_input_tokens": 9034,
+      "output_tokens": 2397,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11077
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 391,
+          "cache_read_input_tokens": 9034,
+          "cache_creation_input_tokens": 2043,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2043,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

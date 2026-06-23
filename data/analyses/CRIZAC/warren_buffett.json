@@ -1,0 +1,69 @@
+{
+  "symbol": "CRIZAC",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T16:59:09.391999Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Crizac is a genuinely asset-light, high-return intermediary business with impressive 64%+ profit CAGR and zero debt, but its moat as a student recruitment agency is structurally fragile — dependent on foreign visa policy and vulnerable to disintermediation by universities building direct channels. At 20.8x trailing P/E the price is fair but not compelling enough given these existential risks.",
+    "key_strengths": [
+      "Exceptional capital efficiency: ROE 36%, ROCE 48%, zero debt, and OCF positive all 4 years — a genuinely Munger-quality balance sheet",
+      "Asset-light flywheel: capex negligible (INR 1 Cr in FY25) against INR 187 Cr operating cash flow, generating strong free cash at minimal reinvestment",
+      "Revenue CAGR of 66% over 4 years with operating leverage (EBITDA margin expanding, 21% operating margin) demonstrates genuine pricing power with university clients"
+    ],
+    "key_risks": [
+      "Regulatory concentration: revenues depend on visa policies of UK, Canada, Australia — Canada already cut student permits 35% in 2024, directly threatening Crizac's volume",
+      "Moat is thin: student recruitment is a fragmented, low-switching-cost industry; universities can build direct admissions offices and students use multiple agents simultaneously",
+      "Earnings quality concern: 'Other Income' was INR 45 Cr (2023), 53 Cr (2024), 35 Cr (2025) — representing 30-40% of reported net profit, masking the true operating earnings power"
+    ],
+    "red_flags": [
+      "Other income inflating net profit: in FY2023 other income of INR 45 Cr represented ~40% of the INR 112 Cr net profit — earnings quality is lower than headline numbers suggest",
+      "FY2024 capex spike to INR 119 Cr for an ostensibly asset-light business is unexplained and produced negative free cash flow (-7 Cr) — needs scrutiny",
+      "Promoter holding at 79.94% leaves very thin public float, limiting liquidity and price discovery"
+    ],
+    "detailed_analysis": "Crizac presents the surface attributes I love — zero debt, outstanding returns on capital, and a business that generates cash without hungry capital reinvestment. The numbers from FY2021 to FY2025 are genuinely impressive: revenue compounding at 66%, EBITDA growing from INR 27 Cr to INR 240 Cr, equity base self-funding from retained earnings alone. The P/E of 20.8x and forward P/E of 16x appear reasonable for this growth trajectory, and the P/B of 6.72x is justified by the extraordinary ROE. On pure financials, this looks like a well-run small business.\n\nHowever, the critical question I always ask is: what prevents a competitor from doing exactly the same thing tomorrow? Crizac is an intermediary — a matchmaker between Indian students and foreign universities. There are no patents, no network lock-in of consequence, no proprietary data moat. The UK and Canada, which likely represent the bulk of revenues, have actively tightened international student visa quotas through 2024-2025, and this is a policy risk that no management team can hedge. The high \"other income\" line (INR 35-53 Cr annually) further muddies earnings quality, suggesting core operating profits are materially lower than reported. I would want to understand this business across a full immigration-policy cycle before committing capital.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "good",
+      "financial_health": "excellent",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 46848,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0774129,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10600,
+      "cache_read_input_tokens": 8563,
+      "output_tokens": 2339,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10600
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 336,
+          "cache_read_input_tokens": 8563,
+          "cache_creation_input_tokens": 2037,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2037,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

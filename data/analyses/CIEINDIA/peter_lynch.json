@@ -1,0 +1,68 @@
+{
+  "symbol": "CIEINDIA",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-18T17:00:50.369713Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "CIE Automotive is a stalwart auto-parts supplier with nearly debt-free balance sheet and consistent free cash flow, but revenue growing at just 6.5% CAGR and net profit flat at ₹828 Cr in both FY24 and FY25 makes the 22.5x P/E unappealing for a growth investor. No ten-bagger potential here — this is a slow-grower trading at a stalwart's price.",
+    "key_strengths": [
+      "Near debt-free balance sheet (D/E: 0.06, borrowings collapsed from ₹1,648 Cr to ₹426 Cr in 5 years)",
+      "Rock-solid cash generation: OCF positive all 5 years, FY25 FCF of ₹885 Cr vs net profit ₹828 Cr — real earnings",
+      "Diversified product base (forgings, castings, gears, stampings) across cars, CVs, tractors and 2Ws — reduces single-customer risk"
+    ],
+    "key_risks": [
+      "Revenue growth is too slow for Lynch — 6.5% CAGR over 9 years, with FY23–FY25 effectively flat (₹9,280 → ₹8,964 → ₹9,406 Cr)",
+      "Net profit stalled: ₹828 Cr in both FY24 and FY25, making PEG ~2.25 at even 10% forward growth — well above Lynch's 1.0 threshold",
+      "Cyclical exposure to Indian and European OEM spending; EV transition threatens forging/combustion-engine component demand long-term"
+    ],
+    "red_flags": [
+      "'Other Income' swings are alarming: -₹749 Cr in FY22 (causing net loss of -₹136 Cr) then +₹409 Cr in FY23 (inflating profit to ₹1,125 Cr) — core earnings are masked by large non-operating items",
+      "ROE at 11.8% is below Lynch's 12% threshold despite the company holding minimal debt — asset returns are mediocre"
+    ],
+    "detailed_analysis": "Lynch classifies this as a stalwart sliding toward slow-grower territory. Revenue CAGR of 6.5% over nine years fails the Lynch minimum of 15%+, and the recent three-year plateau (FY23–FY25 revenue band of ₹8,964–₹9,406 Cr) signals the business has lost momentum. The PEG ratio is the killer: at P/E 22.5 with realistically 8–10% forward earnings growth, PEG sits at 2.25–2.8 — Lynch would walk away at anything above 1.5. The forward P/E of 17.4x offers mild comfort, but only if management can re-accelerate earnings growth, which the flat FY24–FY25 net profit (₹828 Cr each) doesn't support.\n\nThe balance sheet story is legitimately good — D/E of 0.06, borrowings down 74% in five years, and FCF of ₹885 Cr in FY25 that actually exceeds reported net profit (a sign of earnings quality). The 65.7% promoter holding by Spanish parent CIE Automotive provides stability. But this is a components business tied to ICE powertrain demand (crankshafts, gears, forged parts), which faces secular headwinds from electrification. Lynch would say the story here is \"decent business, wrong price for a growth fund\" — this belongs in an income or value portfolio, not a growth one.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 54524,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08775195000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11591,
+      "cache_read_input_tokens": 9289,
+      "output_tokens": 2766,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11591
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 536,
+          "cache_read_input_tokens": 9289,
+          "cache_creation_input_tokens": 2302,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2302,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "MAHSCOOTER",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-18T18:25:53.557146Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Maharashtra Scooters is a passive holding company (Bajaj Holdings subsidiary) with no operating business to speak of — revenue declining at -1.9% CAGR and ROE of just 0.69% make this uninvestable on a growth basis. The only angle is a deep P/B discount (0.45x) to NAV, but Lynch prefers businesses with stories, not conglomerate holding structures where discounts persist indefinitely.",
+    "key_strengths": [
+      "P/B of 0.45x means you buy INR 30,863 Cr of equity for INR 15,007 Cr market cap — a classic asset play discount",
+      "Consistent free cash flow (INR 159–209 Cr/year, 4/4 years positive) and 86%+ operating margins typical of low-cost holding structures",
+      "Net profit grew 14.5% CAGR (INR 143→214 Cr) driven by investment income from the Bajaj ecosystem"
+    ],
+    "key_risks": [
+      "PEG ratio ~2.9x (P/E 41.8 ÷ 14.5% earnings growth) — massively overvalued for a holding company with no real operating business",
+      "Revenue declining (-1.9% CAGR) and EBITDA contracting sharply (-9.6% CAGR, INR 204→128 Cr) — the story is going the wrong direction",
+      "ROE of 0.69% and ROCE of 0.55% are catastrophically low — management creates virtually no value on the asset base"
+    ],
+    "red_flags": [
+      "No operating business whatsoever — 'scooters' is a historical relic; this is purely a passive securities holding vehicle",
+      "P/S ratio of 47.87x on declining revenue (INR 183 Cr) with a INR 15,007 Cr market cap is absurd",
+      "Holding company discounts (P/B 0.45x) in India can persist for decades with no catalyst for NAV unlock"
+    ],
+    "detailed_analysis": "Maharashtra Scooters has zero business story — it's a shell holding company that owns Bajaj group securities and does treasury operations. Lynch's first question is always \"what's the story?\" and the answer here is: there isn't one. Revenue fell from INR 194 Cr (2022) to INR 183 Cr (2025), EBITDA collapsed from INR 204 Cr to INR 128 Cr, and ROE sits at a laughable 0.69%. The net profit growth of 14.5% CAGR is entirely driven by investment gains — not any operational improvement — making the P/E of 41.8x doubly misleading. PEG of ~2.9x is a hard no by Lynch's standards.\n\nThe only remotely interesting angle is the asset play: market cap of INR 15,007 Cr against book equity of INR 30,863 Cr implies a 55% discount to NAV. But Lynch learned to be wary of holding company discounts — they're structural in India (Bajaj Holdings itself trades at a similar discount) and there's no visible catalyst to close the gap. With essentially zero capital being deployed productively (total assets grew from INR 24,699 Cr to INR 34,588 Cr while earning only INR 214 Cr net profit), this is dead money dressed up in a famous name.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 45625,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07669409999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10234,
+      "cache_read_input_tokens": 8242,
+      "output_tokens": 2389,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10234
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 440,
+          "cache_read_input_tokens": 8242,
+          "cache_creation_input_tokens": 1992,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1992,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "symbol": "KSHINTL",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-21T07:50:26.809192Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "KSH International scores poorly on Greenblatt's Magic Formula: earnings yield of ~3.5% (EBIT INR 118 Cr / EV ~INR 3,381 Cr) is well below the 6% minimum threshold, meaning the market is pricing in perfection. Despite decent ROCE of 39%, persistently negative FCF (-INR 130 Cr in FY25) reveals that reported profits are not translating into real cash generation.",
+    "key_strengths": [
+      "Revenue CAGR of 31% (FY22–25) and EBITDA CAGR of 33% — genuine business momentum in a power/renewables cycle",
+      "Reported ROCE of 39.39% suggests efficient use of operating capital, a positive Magic Formula signal",
+      "High promoter holding (74.58%) and strong FII/DII interest (18.9% combined) reflects institutional conviction"
+    ],
+    "key_risks": [
+      "Earnings yield of ~3.5% (EBIT/EV) is far below Greenblatt's 12% threshold — the stock is expensive on Magic Formula",
+      "Free cash flow deeply negative in 3 of 4 years (FY25: -INR 130 Cr) despite INR 68 Cr net profit — working capital and capex are consuming all earnings",
+      "Finance costs growing at 46.3% CAGR vs. revenue at 31% — debt is becoming more expensive faster than the business grows"
+    ],
+    "red_flags": [
+      "OCF positive only 1/4 years — profits are accounting entries, not cash",
+      "Capex surged to INR 120 Cr in FY25 (nearly 2x net profit of INR 68 Cr) — heavy capital intensity destroys FCF conversion",
+      "Gross margin of only 10.68% and operating margin of 5.18% — commodity-like pricing power with no real moat",
+      "Debt doubled from INR 157 Cr (FY22) to INR 366 Cr (FY25) — growth is largely debt-funded"
+    ],
+    "detailed_analysis": "Running the Magic Formula: EBIT of INR 118 Cr against an Enterprise Value of ~INR 3,381 Cr (Market Cap INR 3,025 Cr + Debt INR 366 Cr – Cash INR 10 Cr) yields an earnings yield of just 3.5%. Greenblatt requires at least 12% for a stock to rank well — KSHINTL fails this test badly. The P/E of 32x and EV/EBITDA of 18.3x confirm the stock is priced for a high-quality compounder, which the fundamentals don't yet support. ROIC computed on invested capital (~INR 655 Cr) comes to ~18%, decent but not exceptional, and the reported ROCE of 39% may be flattering due to current liabilities netting against the denominator.\n\nThe FCF picture is disqualifying for a Greenblatt-style investor: three consecutive negative OCF years, with FY25 FCF of -INR 130 Cr despite INR 68 Cr net profit. This means the business is consuming cash, not generating it — working capital is ballooning alongside revenue (a classic sign of a stretched distribution chain), and capex of INR 120 Cr in FY25 alone equals nearly 2x net income. Finance costs growing at 46% CAGR signal rising debt servicing pressure. Until FCF turns consistently positive and the earnings yield approaches double digits, the Magic Formula gives this a clear pass.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 43289,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0804012,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10594,
+      "cache_read_input_tokens": 8449,
+      "output_tokens": 2542,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10594,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 445,
+          "cache_read_input_tokens": 8449,
+          "cache_creation_input_tokens": 2145,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2145
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

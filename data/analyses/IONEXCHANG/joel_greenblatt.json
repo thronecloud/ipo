@@ -1,0 +1,70 @@
+{
+  "symbol": "IONEXCHANG",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T17:46:10.979957Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Ion Exchange has a decent ROCE (~22%) in a structurally growing water treatment sector, but at an earnings yield of ~5.8% (EBIT INR 297 Cr / EV ~INR 5,106 Cr) it fails the Magic Formula's cheapness test. A massive capex surge (INR 320 Cr in FY25) has cratered FCF to -INR 287 Cr and nearly tripled borrowings — not the time to pay a premium.",
+    "key_strengths": [
+      "Consistent compounding: Revenue CAGR 13.6% and net profit CAGR 32.1% over 9 years — rare operational execution.",
+      "Adequate return on capital: ROCE of 22.3% clears my 20% floor, sustained across multiple years.",
+      "Secular demand tailwind: Water scarcity and ZLD mandates in Indian industry create durable, government-backed demand."
+    ],
+    "key_risks": [
+      "Earnings yield ~5.8% (EBIT/EV) is below my 6% minimum threshold — the stock is not cheap enough for the Magic Formula to reward.",
+      "FCF turned sharply negative in FY25 (-INR 287 Cr) as capex tripled to INR 320 Cr; OCF collapsed to INR 32 Cr vs. INR 197 Cr peak.",
+      "Borrowings nearly tripled in one year (INR 152 Cr → INR 421 Cr FY24→FY25) — capital intensity rising fast, financing risk elevated."
+    ],
+    "red_flags": [
+      "FY25 free cash flow: -INR 287 Cr — the business consumed more cash than it generated in a single year.",
+      "CWIP surged from INR 61 Cr to INR 203 Cr — major expansion with uncertain return timeline.",
+      "Operating margin of 5.54% is thin and leaves little buffer against project execution risk or input cost inflation.",
+      "Promoter holding at only 25.58% — among the lowest I'd want to see; limited skin in the game."
+    ],
+    "detailed_analysis": "**Magic Formula verdict: one metric passes, one fails.** EBIT for FY25 is INR 297 Cr on an EV of roughly INR 5,106 Cr (market cap INR 4,932 Cr + net debt INR 174 Cr), giving an earnings yield of ~5.8% — just below my 6% floor. ROCE of 22.3% clears the quality hurdle, and the 9-year net profit CAGR of 32.1% is genuinely impressive. But P/E of 30x and EV/EBITDA of 18.2x reflect a market that already knows this is a good business. The Magic Formula only works when you get quality AND cheapness — here you're paying full price.\n\n**The FY25 capex surge is the central concern.** The company spent INR 320 Cr on capex (vs. INR 120 Cr in FY24), ballooning CWIP to INR 203 Cr. This investment may well generate strong returns — water infrastructure projects in India have long payback periods — but it has temporarily destroyed FCF and required a debt raise that pushed borrowings from INR 152 Cr to INR 421 Cr. Until the new capacity is commissioned and starts generating cash, the stock is in a \"show me\" phase. I'd watch for OCF recovery and ROIC stability before revisiting.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 48477,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0832857,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11438,
+      "cache_read_input_tokens": 9264,
+      "output_tokens": 2507,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11438
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 380,
+          "cache_read_input_tokens": 9264,
+          "cache_creation_input_tokens": 2174,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2174,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

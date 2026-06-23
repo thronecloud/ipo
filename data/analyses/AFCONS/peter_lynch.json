@@ -1,0 +1,69 @@
+{
+  "symbol": "AFCONS",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-19T06:23:59.450699Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Afcons is a slow-growing, capital-intensive construction company where revenue has compounded at only 4.8% over five years, ROE sits below my 12% threshold at 11.1%, and operating cash flow turned negative in 2025 — there is no fast-growth story here. At P/E 24 with a PEG of ~1.7 (24 / 14.4% earnings CAGR), the market is charging a fair-company price for an average business.",
+    "key_strengths": [
+      "ROCE of 19.6% is healthy and suggests the underlying project returns are decent when working capital is managed well",
+      "Diversified across marine, metro, tunnel, highway, and oil & gas construction — no single project-type concentration risk",
+      "Net profit has grown 14.4% CAGR over 5 years, showing the business can grow earnings faster than revenue via mix and margin improvement"
+    ],
+    "key_risks": [
+      "Revenue CAGR of only 4.8% over 5 years — this is a slow grower in a sector Lynch avoids at stretched multiples; revenue actually declined from INR 13,268 Cr to INR 12,548 Cr in 2025",
+      "D/E of 0.66 exceeds Lynch's 0.6 threshold, and finance costs have grown from INR 391 Cr to INR 629 Cr over 5 years, eating into thin 10.65% operating margins",
+      "OCF turned negative at -INR 132 Cr in 2025 and FCF was -INR 470 Cr — construction working capital is consuming cash"
+    ],
+    "red_flags": [
+      "Revenue declined in 2025 vs 2024 (INR 12,548 vs 13,268 Cr) — a cyclical construction company with shrinking top-line is not a growth story",
+      "Operating cash flow negative in 2025 for the first time in 5 years — working capital deterioration in construction is a classic warning sign",
+      "Thin 10.65% operating margins combined with high and rising finance costs (INR 629 Cr) leave little room for error"
+    ],
+    "detailed_analysis": "Afcons is a competent infrastructure contractor with an impressive project portfolio — metros, marine works, tunnels — but competence alone does not make a great stock. The company's 5-year revenue CAGR of 4.8% places it firmly in Lynch's 'slow grower' bucket, a category he avoids unless the dividend yield compensates. The P/E of 24 sounds optically reasonable but the PEG of ~1.7 on 14.4% earnings growth, combined with ROE below 12%, tells me I am overpaying for mediocre returns on capital.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 187278,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.24071235000000002,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 24571,
+      "cache_read_input_tokens": 15757,
+      "output_tokens": 9589,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 24571,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 634,
+          "cache_read_input_tokens": 15757,
+          "cache_creation_input_tokens": 8814,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8814
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

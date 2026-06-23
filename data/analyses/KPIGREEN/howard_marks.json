@@ -1,0 +1,69 @@
+{
+  "symbol": "KPIGREEN",
+  "persona": "howard_marks",
+  "persona_display_name": "Howard Marks",
+  "analyzed_at": "2026-04-18T18:24:20.801811Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "KPI Green's extraordinary revenue growth (93% CAGR) and sector tailwinds are real, but the market's enthusiasm has priced in continued flawless execution while ignoring a capital model that burned INR 1,297 Cr in FCF in FY25 alone — dependent entirely on benign equity and debt markets to survive. At P/E 20.6x and EV/EBITDA 14.3x, valuation isn't euphoric, but there is essentially no margin of safety for anything going wrong in the capital cycle.",
+    "key_strengths": [
+      "Explosive, consistent revenue growth (92.6% CAGR over 6 years) with operating leverage — EBITDA margins holding at ~33% at scale",
+      "Debt/Equity of 0.88 and finance costs actually declining YoY (INR 86→79 Cr) despite massive asset expansion — suggests project-level discipline",
+      "Renewable energy in India has a secular government-backed tailwind; captive power producer model adds sticky B2B revenue"
+    ],
+    "key_risks": [
+      "Permanent capital dependency: FCF burned INR 1,297 Cr in FY25, every rupee of growth requires continuous equity dilution and debt — any capital market dislocation kills the model",
+      "Borrowings nearly tripled to INR 2,533 Cr in FY25 and CWIP surged to INR 709 Cr — massive project execution risk baked into the current balance sheet",
+      "Promoter holding at 49.5% leaves room for further dilution; reserves jumped INR 1,776 Cr in FY25 suggesting a large QIP — existing shareholders bear ongoing dilution cost"
+    ],
+    "red_flags": [
+      "Free cash flow deeply negative for 5 consecutive years and accelerating: -79, -90, -88, -151, -244, -1,297 Cr — this is not a profitable business in any cash sense",
+      "Financing CF of INR 1,807 Cr in FY25 entirely funds the growth — business exists only as long as markets will fund it",
+      "Total assets nearly tripled in one year (INR 2,436→6,164 Cr) — pace of capital deployment is difficult to audit for quality"
+    ],
+    "detailed_analysis": "The first-level story on KPI Green is seductive: a genuine hypergrowth renewable energy IPP in India, with revenue compounding at 93% and net profit at 82% over six years, solid margins (30.6% operating), and a reasonable headline P/E of 20.6x. But second-level thinking demands we ask what the price already reflects — and more importantly, what this business actually is. The answer: KPI Green is a financial intermediary dressed as an energy company. It raises equity and debt capital at scale, deploys it into solar/wind assets, and books project revenues. The underlying asset economics may be fine, but the *equity holder* has received zero free cash flow in six years and is increasingly diluted. The massive INR 1,807 Cr financing inflow in FY25 is what generated the INR 208 Cr operating cash — strip that away and there is no business to analyze at current scale.\n\nThe valuation is not extreme — EV/EBITDA at 14.3x for a fast-growing Indian renewables IPP is arguably fair — but there is no margin of safety for the cycle turning. Stress scenario: if equity markets reprice (sector rotation, rising rates, policy uncertainty around Indian renewable targets), KPI Green cannot self-fund its INR 1,500 Cr annual capex requirement and growth collapses. The CWIP balance of INR 709 Cr represents committed spending with no guaranteed revenue yet. With DII ownership at a mere 0.62%, domestic institutional conviction is conspicuously absent. This is not a terrible business, nor a terribly priced one — it is a high-beta, capital-cycle-dependent compounder where the risk/reward at current prices is roughly balanced, not asymmetric in the investor's favor.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 68437,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08686754999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9609,
+      "cache_read_input_tokens": 10966,
+      "output_tokens": 3169,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9609
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 468,
+          "cache_read_input_tokens": 8912,
+          "cache_creation_input_tokens": 2751,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2751,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

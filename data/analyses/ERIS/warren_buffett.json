@@ -1,0 +1,69 @@
+{
+  "symbol": "ERIS",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-19T06:23:06.771288Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Eris Lifesciences has built a real branded-pharma franchise in chronic therapies (diabetes, cardiovascular) with 19% revenue CAGR, but management has funded this growth by piling on debt from zero to INR 2,389 Cr in three years, pushing annual finance costs to INR 231 Cr and causing net profit to stagnate at INR 375 Cr (FY25 is actually below FY22's INR 406 Cr). You cannot pay 45x earnings for a business whose profits are being consumed by interest charges.",
+    "key_strengths": [
+      "Strong revenue CAGR of 19.2% over nine years and dominant positioning in high-value chronic therapy segments (diabetes, CVD) with sticky prescriber relationships",
+      "Gross margin of 73.9% reflects genuine branded pricing power — this is a high-quality product portfolio, not pure commodity generics",
+      "FY25 OCF surged to INR 1,065 Cr (vs INR 486 Cr FY24), suggesting the acquisition-driven asset base is beginning to generate cash — a potential future positive"
+    ],
+    "key_risks": [
+      "Debt explosion: borrowings went from INR 0 (FY20) to INR 2,389 Cr (FY25) with INR 231 Cr annual finance cost — net profit of INR 375 Cr means interest consumes ~38% of earnings",
+      "ROE collapsed from historically high levels to 12.9% and ROCE to 12.2% — both below my 15% threshold — as debt-funded acquisitions dilute capital efficiency",
+      "P/E of 45.2x is extreme for a business with flat profits; even the forward P/E of 28.6x assumes a sharp earnings recovery that is not yet visible in trailing numbers"
+    ],
+    "red_flags": [
+      "Net profit in FY25 (INR 375 Cr) is lower than FY22 (INR 406 Cr) despite revenue nearly doubling — the acquisitions have so far destroyed rather than created profit-per-rupee-invested",
+      "Total assets ballooned from INR 1,502 Cr (FY20) to INR 7,160 Cr (FY25) primarily via borrowed capital — this is the kind of aggressive balance sheet expansion that I find deeply uncomfortable at a 45x multiple",
+      "Finance costs of INR 231 Cr in FY25 versus INR 0 just five years ago represents a structural transformation of the risk profile that the stock price has not adequately discounted"
+    ],
+    "detailed_analysis": "I genuinely like Eris's underlying franchise — chronic disease branded pharma in India is a wonderful business — but the management has chosen to grow by borrowing aggressively, and the results so far are poor. A company that doubles revenue but cannot grow profits has made bad acquisitions, paid too much, or both. The interest coverage is uncomfortably thin. I would revisit Eris if management demonstrates two or three consecutive years of meaningful debt reduction alongside profit growth, and if the stock trades at a materially lower multiple. Today I must pass.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 154531,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.2115984,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 23366,
+      "cache_read_input_tokens": 16273,
+      "output_tokens": 7939,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 23366,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 679,
+          "cache_read_input_tokens": 16273,
+          "cache_creation_input_tokens": 7093,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 7093
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "COHANCE",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-19T13:04:04.000325Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Cohance (formerly Suven Pharma) fails both Magic Formula criteria simultaneously: earnings yield of only ~2.5% (EBIT INR 375 Cr / EV ~INR 15,150 Cr) and a mediocre ROCE of 14.9% that does not justify a premium CDMO valuation, all while profits have been declining steadily since the FY2022 peak. This is the worst Magic Formula outcome — an average-quality business priced like an exceptional one.",
+    "key_strengths": [
+      "CDMO model provides sticky, long-cycle contracts with global pharma/biotech customers; gross margins of 71.5% indicate genuine value-add in the manufacturing chain",
+      "Revenue CAGR of 21.2% since 2019 shows ability to win contracts; the recent rebranding to Cohance signals a broader CDMO-first strategic pivot",
+      "Strong promoter holding (57.5%) and institutional support (DII 21.6%) suggests confidence in the transformation thesis"
+    ],
+    "key_risks": [
+      "EBIT declining consecutively: INR 582 Cr (FY2022) → INR 574 Cr (FY2023) → INR 406 Cr (FY2024) → INR 375 Cr (FY2025) — this is a business in earnings contraction, not expansion",
+      "Enormous unexplained balance sheet expansion: total assets surged from INR 2,254 Cr to INR 5,568 Cr in a single year (FY2025) with borrowings jumping from INR 65 Cr to INR 451 Cr — a major acquisition with integration risk",
+      "Operating margin of only 8.89% is thin for a specialty CDMO; ROCE of 14.9% is mediocre and likely to compress further as newly acquired assets require utilisation ramp"
+    ],
+    "red_flags": [
+      "EV/EBITDA of 94.69x (as reported) is extreme — even on my own EV calc (~INR 15,150 Cr / INR 419 Cr EBITDA = 36x), this is rich for a declining-earnings business",
+      "Net profit has halved from its FY2022 peak of INR 454 Cr to INR 265 Cr in FY2025 — the market appears to be paying for past glory, not current earnings power",
+      "The sudden corporate restructuring (name change, massive balance sheet expansion in FY2025) obscures true normalized earnings and ROIC — accounting opacity is a hard no for systematic investors"
+    ],
+    "detailed_analysis": "The Magic Formula requires both a high earnings yield and high ROIC. Cohance delivers neither. Earnings yield (EBIT INR 375 Cr / EV ~INR 15,150 Cr) = ~2.5%, which is deeply unattractive — the market is embedding a recovery scenario that hasn't yet materialized in the income statement. ROCE of 14.9% falls below even my moderate 15% threshold, and the trend is deteriorating, not improving.\n\nThe FY2025 balance sheet explosion (total assets from INR 2,254 Cr to INR 5,568 Cr, equity from INR 2,051 Cr to INR 3,787 Cr) signals a major M&A event, likely the integration of a business under the Cohance umbrella. Until normalized post-merger ROIC is demonstrable and earnings return to growth, this remains uninvestable by Magic Formula standards. The P/S of 13.86 on INR 1,198 Cr revenue is pricing in a pharma-like margin profile that the current 8.89% operating margin simply does not support.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 186158,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.26926605000000003,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 26063,
+      "cache_read_input_tokens": 15936,
+      "output_tokens": 11116,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 26063,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 824,
+          "cache_read_input_tokens": 15936,
+          "cache_creation_input_tokens": 10127,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 10127
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

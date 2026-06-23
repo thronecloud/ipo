@@ -1,0 +1,69 @@
+{
+  "symbol": "AFFLE",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-19T05:44:52.132621Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Affle has built an impressive mobile advertising platform serving emerging markets with a performance-based CPCU model, compounding revenue and profits at 45% CAGR over 7 years while remaining nearly debt-free with growing free cash flow. The business has attractive unit economics, but at 47x trailing P/E and 40x EV/EBITDA, I am paying a premium for a moat in ad-tech — a sector where Google and Meta hold structural dominance and where today's platform advantage can evaporate quickly.",
+    "key_strengths": [
+      "Exceptional financial compounding: 45% revenue CAGR and 45% net profit CAGR over 7 years with OCF positive all 5 of the last 5 years and FCF growing to 266 Cr in FY25",
+      "Near debt-free (D/E 0.01) with 1,047 Cr cash on balance sheet — the company is self-funding its growth without diluting shareholders, which I deeply respect",
+      "CPCU (cost per converted user) performance model creates advertiser alignment and differentiation from impression-based ad networks, with scale advantages in emerging market data"
+    ],
+    "key_risks": [
+      "Ad-tech is a structurally competitive industry dominated by Google and Meta; Affle's moat — while real today — is less durable than brand moats or switching-cost moats in industrial businesses",
+      "ROE of 14% falls below my 15% threshold despite 45% growth, suggesting the serial acquisitions (Appnext, Mediasmart, Jampp, RevX, YouAppi) are diluting capital returns even as they add revenue",
+      "At 47x P/E, any slowdown in the 40%+ growth trajectory — due to macro, competition, or platform algorithm changes — will result in severe multiple compression"
+    ],
+    "red_flags": [
+      "ROE of 14% below my 15% floor despite exceptional revenue growth — the acquisition-heavy growth strategy is consuming equity without commensurate return improvement",
+      "Operating margin of 18.1% is modest for a technology platform; gross margin of 29% is low, suggesting meaningful traffic acquisition costs that constrain profitability expansion",
+      "Goodwill and intangibles from multiple acquisitions are likely a large component of the 3,914 Cr asset base — a 1,047 Cr cash pile against 3,256 Cr equity implies significant intangible assets"
+    ],
+    "detailed_analysis": "Affle is one of the more interesting technology businesses I have reviewed from India. The CPCU model — charging only for converted users — is a sensible performance contract that aligns incentives and creates a measurable value proposition. The consistent 45% revenue and profit growth while remaining debt-free is genuinely admirable execution by management. The 266 Cr FCF in FY25, up from near-zero a few years ago, shows the business is maturing and beginning to generate real owner earnings.\n\nHowever, I am cautious about paying 47x earnings for an ad-tech business, no matter how well-run. The advertising industry is ultimately subject to the gravitational pull of the largest platforms, and Affle's 18% operating margin leaves less room for error than I prefer. The company has made five significant acquisitions — Appnext, Mediasmart, Jampp, RevX, YouAppi — and while these appear well-integrated, each acquisition resets the clock on organic moat building. I would find this business significantly more attractive at 25–30x earnings, where I would be getting the growth at a price that offers some margin of safety.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "excellent",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 181833,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.23295825,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 24201,
+      "cache_read_input_tokens": 15735,
+      "output_tokens": 9165,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 24201,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 593,
+          "cache_read_input_tokens": 15735,
+          "cache_creation_input_tokens": 8466,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8466
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

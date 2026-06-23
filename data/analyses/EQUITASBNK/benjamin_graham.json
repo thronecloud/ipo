@@ -1,0 +1,70 @@
+{
+  "symbol": "EQUITASBNK",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T17:15:12.193966Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Equitas Small Finance Bank fails nearly every Graham quantitative filter: P/E of 50.93x is more than triple my maximum, the Graham Number (≈INR 39) sits 40% below the current price of INR 65.60, and net profit collapsed 82% in FY2025 — the very definition of unproven earning power. Until the bank demonstrates at least three consecutive years of stable or rising earnings at a price offering a genuine margin of safety, this is speculation, not investment.",
+    "key_strengths": [
+      "P/B of 1.28 is the one metric that marginally passes my <1.5 threshold",
+      "Revenue growing at 17.4% CAGR (2022-2025) shows the franchise is expanding",
+      "Cash position strengthened sharply to INR 5,536 Cr in FY2025, reducing near-term liquidity stress"
+    ],
+    "key_risks": [
+      "Finance costs growing at 29.1% CAGR vs. revenue at 17.4% — a structural margin squeeze that crushed FY2025 profit to INR 147 Cr from INR 799 Cr the prior year",
+      "P/E of 50.93x leaves no margin of safety; even the forward P/E of 11.28x is a promise, not a fact",
+      "ROE of 2.42% is catastrophically below any reasonable hurdle — the bank is barely earning above the cost of its equity"
+    ],
+    "red_flags": [
+      "Net profit CAGR -19.4% over three years with an 82% single-year collapse in FY2025 — earnings are neither stable nor growing",
+      "Graham Number ≈ INR 39 (√(22.5 × EPS 1.29 × BVPS 53.2)) vs. price of INR 65.60 — stock trades at a 67% premium to intrinsic value",
+      "No dividend history cited — no cash return to shareholders to anchor value",
+      "Finance costs (INR 3,060 Cr) now exceed total revenue of FY2022 (INR 2,513 Cr) — funding costs have become the dominant force in the P&L"
+    ],
+    "detailed_analysis": "Equitas Small Finance Bank fails my most fundamental requirement: a record of stable, demonstrated earning power. Net profit rose encouragingly from INR 281 Cr (FY2022) to INR 799 Cr (FY2024), only to crater to INR 147 Cr in FY2025 — an 82% decline in a single year. The culprit is plain in the numbers: finance costs compounding at 29.1% CAGR have completely overwhelmed revenue growth of 17.4%, destroying net interest margins and producing an ROE of a mere 2.42%. A bank that cannot earn adequately on its own book has no business commanding a premium valuation. My Graham Number calculation — √(22.5 × 1.29 × 53.2) ≈ INR 39 — is not a suggestion; it is a ceiling. The market is asking INR 65.60, a 67% premium to that ceiling.\n\nThe bulls will cite a forward P/E of 11.28x as evidence of imminent recovery, and Mr. Market is indeed excited. But I distrust forward earnings deeply — they are assumptions, not history. The bank may recover; the forward P/E may prove prescient. What I know with certainty is that at today's price, the buyer receives no margin of safety whatsoever. The balance sheet is growing (total assets INR 52,836 Cr), the cash position is rebuilding (INR 5,536 Cr), and DII ownership at 50.87% suggests professional confidence — but none of these facts change the arithmetic. I will wait at the sidelines, and if earnings stabilize at a level that brings the Graham Number above INR 65 and the P/E below 15, I will look again. Not before.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 53556,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07475219999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8704,
+      "cache_read_input_tokens": 10544,
+      "output_tokens": 2596,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 8704
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 390,
+          "cache_read_input_tokens": 8494,
+          "cache_creation_input_tokens": 2260,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2260,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

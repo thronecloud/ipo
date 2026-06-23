@@ -1,0 +1,71 @@
+{
+  "symbol": "CUPID",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T17:01:48.664025Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "Cupid Limited trades at P/E 166 and P/B 36.29 — more than 11x and 24x my maximum acceptable thresholds respectively — offering zero margin of safety on any reasonable earnings basis. The business generates merely INR 41 Cr in net profit on INR 183 Cr revenue, yet commands a market cap implying the market has priced in decades of perfect growth that the financials do not remotely support.",
+    "key_strengths": [
+      "Virtually debt-free with D/E of 0.07 and net cash of ~INR 40 Cr (59 cash minus 19 debt) — sound balance sheet structure",
+      "Five consecutive years of positive net profit (INR 17–41 Cr range) satisfies my earnings consistency test",
+      "Niche export business with 35% operating margins, suggesting some pricing power in a captive public-health procurement market"
+    ],
+    "key_risks": [
+      "Valuation is grotesque by any value standard — Graham Number likely below INR 5/share versus market price of INR 103",
+      "Free cash flow has turned deeply negative: -INR 17 Cr (2024) and -INR 31 Cr (2025), meaning reported profits are not converting to cash",
+      "INR 19 Cr of 'Other Income' in 2025 constitutes ~46% of net profit — strip this out and operating earnings power is far weaker than headline suggests"
+    ],
+    "red_flags": [
+      "P/E 166 vs. my hard ceiling of 15 — no margin of safety whatsoever",
+      "P/B 36.29 vs. my ceiling of 1.5 — you are paying 36x net assets for a commoditised contraceptive manufacturer",
+      "Operating cash flow went negative (-INR 11 Cr) in 2025 despite positive net income — a classic earnings-quality warning sign",
+      "Equity base nearly tripled from INR 131 Cr (2021) to INR 381 Cr (2025) via equity raise (Financing CF +99 Cr in 2024) — capital has been diluted, yet returns have not scaled proportionately",
+      "Revenue 5-year CAGR only 5.3% — impossible to justify a 166 P/E on single-digit top-line growth"
+    ],
+    "detailed_analysis": "By my strict quantitative framework, Cupid Limited fails every valuation test I have set. A P/E of 166 demands that an investor wait over a century merely to recoup the purchase price from earnings — this is not investing, it is speculation of the purest kind. The P/B of 36.29 means the market is paying INR 36 for every INR 1 of book value in a business that makes condoms and diagnostic kits, products which carry no durable pricing power or technological moat that could justify such a premium. My Graham Number — derived from sqrt(22.5 × EPS × BVPS) — would place fair value somewhere between INR 4 and INR 8 per share; the stock trades at roughly 15–25x that figure.\n\nThe operating fundamentals are also deteriorating in ways the income statement conceals. Free cash flow has been negative for two consecutive years (-INR 17 Cr, -INR 31 Cr), and in 2025 operating cash flow itself turned negative at -INR 11 Cr. Nearly half of the INR 41 Cr net profit in 2025 derived from \"Other Income\" (INR 19 Cr), likely interest on the large cash pile raised through the 2024 equity offering — not from the core manufacturing business. The promoter hold of 46% is adequate but unremarkable. Mr. Market has priced this modest Nashik manufacturer as though it were a global franchise; the intelligent investor will let Mr. Market keep it.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 66339,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09687989999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10032,
+      "cache_read_input_tokens": 10753,
+      "output_tokens": 3735,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10032
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 407,
+          "cache_read_input_tokens": 8703,
+          "cache_creation_input_tokens": 3379,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 3379,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "symbol": "AEQUS",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T16:14:11.987755Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Aequs is a capital-intensive contract manufacturer with three consecutive years of net losses, negative free cash flow (-₹239 Cr in FY25), and finance costs (₹64 Cr) that already consume virtually all EBITDA (₹57 Cr) — not a business I'd touch. At P/B of 12.85x and EV/EBITDA of 288x, the market is pricing in a turnaround that the fundamentals simply do not support.",
+    "key_strengths": [
+      "High gross margin of 56% suggests some pricing power in niche manufacturing segments",
+      "Promoter holding of 59% provides alignment and strategic commitment",
+      "Diversified across aerospace, toys, and consumer durables reduces single-sector risk"
+    ],
+    "key_risks": [
+      "Finance costs (₹64 Cr) consume 112% of EBITDA (₹57 Cr), making profitability nearly impossible at current debt levels",
+      "Free cash flow deeply negative at -₹239 Cr in FY25, with capex accelerating to -₹265 Cr and CWIP ballooning to ₹395 Cr — capital destruction cycle",
+      "Extreme overvaluation at 1,140x forward P/E and 12.85x P/B with no earnings to justify multiples"
+    ],
+    "red_flags": [
+      "Three consecutive years of net losses: -₹110 Cr, -₹14 Cr, -₹102 Cr — no earnings trajectory",
+      "ROCE of only 1.11% on a capital-heavy asset base of ₹1,903 Cr is economically destructive",
+      "Other income swung to -₹6 Cr in FY25 from +₹44 Cr in FY24, masking underlying deterioration",
+      "Equity nearly tripled FY23→FY24 (₹279→₹817 Cr) — likely dilutive fundraise to fund loss-making expansion"
+    ],
+    "detailed_analysis": "Aequs is precisely the kind of business I avoid: capital-intensive, loss-making, and priced as if it were a high-quality compounder. ROCE of 1.11% on ₹1,903 Cr in assets is not a business — it's a capital incinerator. The company is pouring money into a heavy capex cycle (₹265 Cr in FY25, CWIP up to ₹395 Cr) while its EBITDA of ₹57 Cr can't even cover its ₹64 Cr interest bill. Free cash flow has never been positive across the three-year window, deteriorating from -₹76 Cr to -₹239 Cr. Revenue growth has also stalled — from ₹965 Cr in FY24 to ₹925 Cr in FY25 — just as capex hit its peak.\n\nThere is no durable competitive moat here. Contract manufacturing in toys, cookware, and aerospace parts is commoditized and structurally low-return. The 56% gross margin sounds attractive but operating leverage is clearly absent — a -1.84% operating margin means every rupee of revenue is being consumed before financing costs. At 288x EV/EBITDA, the market is extrapolating a perfect execution of an unproven industrials thesis. I don't pay 288x for anything, let alone a loss-making manufacturer with negative equity returns. This is not my kind of business at any price, and certainly not at this price.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 42392,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.042941400000000005,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 1752,
+      "cache_read_input_tokens": 16658,
+      "output_tokens": 2091,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1752,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 402,
+          "cache_read_input_tokens": 8329,
+          "cache_creation_input_tokens": 1752,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1752
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

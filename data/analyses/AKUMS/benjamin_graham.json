@@ -1,0 +1,70 @@
+{
+  "symbol": "AKUMS",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T16:18:06.477743Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Akums trades at INR 546 against a Graham Number of ~INR 323 (a 69% premium), with a P/E of 26.5x and P/B of 2.66x — both far exceeding my strict thresholds of 15x and 1.5x respectively. The earnings record shows a catastrophic loss of INR 251 Cr in 2022 and near-zero profit of INR 1 Cr in 2024, disqualifying it from the consistent 5-year earnings record I require before committing capital.",
+    "key_strengths": [
+      "Balance sheet dramatically cleaned up post-IPO: Debt/Equity collapsed from ~0.80x (2024) to 0.03x (2025) as borrowings fell from INR 565 Cr to INR 90 Cr",
+      "Operating cash flow positive all 5 of the last 5 years, with a strong INR 465 Cr OCF in 2025",
+      "Revenue has compounded from INR 1,464 Cr (2015) to INR 4,118 Cr (2025) — solid top-line growth over a decade"
+    ],
+    "key_risks": [
+      "Earnings wildly erratic: net profit swings from INR 123 Cr (2021) → -251 Cr (2022) → INR 1 Cr (2024) → INR 344 Cr (2025) — no stable earning power to anchor intrinsic value",
+      "Heavy and persistent capex (INR 258–329 Cr/year 2022–2025) with FCF negative in 3 of last 5 years — capital is consumed, not generated",
+      "IPO-inflated equity base (reserves jumped INR 2,437 Cr in one year) flatters current ratios but masks true operating leverage history"
+    ],
+    "red_flags": [
+      "Net loss of INR 251 Cr in FY2022 and effectively zero profit (INR 1 Cr) in FY2024 — fails the 5-consecutive-years of positive earnings test",
+      "P/B of 2.66x: paying INR 2.66 for every rupee of book value — excessive by any value standard",
+      "2025 net profit of INR 344 Cr includes INR 69 Cr of 'Other Income' (vs. ~INR 8–15 Cr historically), suggesting earnings quality may be overstated",
+      "Recent large equity raise via IPO: equity jumped from INR 710 Cr to INR 3,149 Cr in a single year — the sellers (promoters/bankers) chose this moment to raise capital"
+    ],
+    "detailed_analysis": "Akums fails virtually every quantitative filter I apply before even considering a business. The Graham Number stands at roughly INR 323 (√(22.5 × ~22.5 EPS × ~206 BVPS)), yet the market demands INR 546 — a 69% premium with no margin of safety whatsoever. A P/E of 26.5x assumes earning power that the company has demonstrated only intermittently: FY2022 produced a INR 251 Cr loss, FY2024 delivered INR 1 Cr of profit. One cannot compute a reliable \"average normalized earnings\" when results oscillate this violently. The operating margin of 9.24% is modest for a CDMO business, and the INR 69 Cr of \"Other Income\" in FY2025 inflates what looks like a recovery year.\n\nThe balance sheet cleanup is genuinely impressive — borrowings down from INR 565 Cr to INR 90 Cr — but this was achieved through IPO proceeds, not organic cash generation. That is precisely the scenario I warn against: the seller (management/promoters retaining 75.26%) chose to monetize at this price, which should give any buyer pause. Free cash flow has been negative in three of the last five years due to relentless capex averaging INR 290 Cr annually. Until earnings stabilize across a full business cycle and the price corrects to offer a genuine margin of safety below INR 325, this stock is, at best, a speculation — not an investment.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 51890,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07672725,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9117,
+      "cache_read_input_tokens": 10865,
+      "output_tokens": 2618,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9117,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 323,
+          "cache_read_input_tokens": 8815,
+          "cache_creation_input_tokens": 2352,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2352
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

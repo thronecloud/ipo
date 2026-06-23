@@ -1,0 +1,69 @@
+{
+  "symbol": "BRIGADE",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-19T05:58:51.927286Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Brigade is a South India-focused real estate developer with improving profitability, but the business is inherently capital-intensive and cyclical — precisely the kind I avoid. The net losses in FY2021-22 and persistent high debt make this a mediocre business at a fair price, not a wonderful one.",
+    "key_strengths": [
+      "Strong revenue and EBITDA recovery — revenues grew from INR 1,950 Cr (FY21) to INR 5,074 Cr (FY25), operating income tripling in the same period",
+      "Diversified across residential, commercial leasing, and hospitality segments, providing some revenue cushion",
+      "OCF positive all 5 years with significant equity strengthening in FY25 (equity up from INR 3,516 Cr to INR 6,481 Cr, suggesting a capital raise)"
+    ],
+    "key_risks": [
+      "High leverage with D/E of 0.76 and gross borrowings of INR 5,375 Cr — in a cyclical industry, this is dangerous",
+      "FCF collapsed to just INR 66 Cr in FY24 on revenues of INR 4,897 Cr — real estate consumes capital voraciously",
+      "ROE of 14.90% barely misses my 15% minimum threshold and is heavily reliant on project completion timing"
+    ],
+    "red_flags": [
+      "Net losses in FY2021 (-INR 96 Cr) and FY2022 (-INR 65 Cr) — earnings quality is unreliable in real estate",
+      "Finance costs of INR 495 Cr in FY25 consume a third of operating income — interest burden is structural",
+      "Capital-intensive business with capex of INR 639 Cr in FY25, limiting true free cash generation"
+    ],
+    "detailed_analysis": "Brigade operates in a sector I have always struggled with — real estate development requires enormous capital, produces lumpy revenues tied to project completions, and offers no durable moat. The balance sheet shows borrowings stubbornly above INR 5,000 Cr for years, and the company had to absorb net losses during the COVID downturn, demonstrating the cyclical vulnerability. The 10.7% revenue CAGR and 19.3% net profit CAGR look attractive in isolation, but the profit base includes significant 'other income' contributions and the FY25 equity surge (INR 6,481 Cr vs INR 3,516 Cr prior year) appears to reflect a large equity issuance, diluting existing shareholders.\n\nAt P/E 24.6x and P/B 2.87x, the market is paying a premium for a business that earns 14.9% ROE with substantial financial leverage. I would need to see sustained ROE above 18%, consistent FCF generation above INR 500 Cr annually, and D/E below 0.5x before considering this a fair price. The Bengaluru commercial market exposure provides some quality, but I cannot buy this business with confidence.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 150234,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.20929365,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 22613,
+      "cache_read_input_tokens": 15303,
+      "output_tokens": 7993,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 22613,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 550,
+          "cache_read_input_tokens": 15303,
+          "cache_creation_input_tokens": 7310,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 7310
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

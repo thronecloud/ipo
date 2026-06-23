@@ -1,0 +1,70 @@
+{
+  "symbol": "544373",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-20T19:44:48.633856Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "A sub-scale fabric trader with ROE of 0.16% is not a business — it's a commodity middleman with no moat, no pricing power, and no compounding ability. Invert: what could go wrong? Almost everything, and at 5.91x P/E on near-zero earnings, \"cheap\" is an illusion.",
+    "key_strengths": [
+      "High promoter holding at 70.20% — skin in the game",
+      "Low reported P/E of 5.91x (optically cheap)",
+      "Asset-light trading model, no heavy capex"
+    ],
+    "key_risks": [
+      "ROE of 0.16% — effectively destroying capital vs cost of equity",
+      "Tiny market cap (INR 15.7 Cr) — micro-cap liquidity and governance risk",
+      "Pure import-trading of fabric — zero durable competitive advantage"
+    ],
+    "red_flags": [
+      "ROE of 0.16% is catastrophically below any reasonable hurdle rate",
+      "P/E of 5.91 on near-zero earnings means earnings are trivially small in absolute terms",
+      "Import-dependent model exposed to FX, tariffs, and customer concentration",
+      "Negligible institutional interest (DII 1.34%, no FII)"
+    ],
+    "detailed_analysis": "Inverting first: what does a bad business look like? It looks exactly like this. Fabric importing is a commission-taker's game — no IP, no brand, no switching costs, no scale economies at INR 15.7 Cr market cap. A 0.16% ROE tells you management cannot earn even a fraction of the cost of capital; every rupee reinvested is a rupee partially destroyed. The 5.91x P/E looks tempting only to those who confuse a low multiple with value — Graham would call this a cigar butt with no puff left, and I'd call it a waste of a thinking seat.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 25241,
+    "model_used": "opus",
+    "total_cost_usd": 0.0839135,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8680,
+      "cache_read_input_tokens": 13167,
+      "output_tokens": 922,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8680,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10440,
+          "cache_creation_input_tokens": 967,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 967
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

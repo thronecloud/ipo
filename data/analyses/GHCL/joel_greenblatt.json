@@ -1,0 +1,68 @@
+{
+  "symbol": "GHCL",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T17:22:42.347930Z",
+  "analysis": {
+    "score": 7,
+    "recommendation": "BUY",
+    "investment_thesis": "GHCL scores well on both Magic Formula pillars — Earnings Yield of ~18.5% (EBIT 877 Cr / EV ~4,744 Cr) and ROCE of 24.2% — while trading at an EV/EBIT of just 5.4x even at a post-peak cyclical trough. The balance sheet transformation (debt down from 1,254 Cr in 2020 to 97 Cr in 2025) means the entire enterprise value is essentially equity-backed, amplifying per-share value at current prices.",
+    "key_strengths": [
+      "Magic Formula metrics are genuinely compelling: ~18.5% earnings yield AND 24.2% ROCE simultaneously — both above my thresholds of 15% and 20% respectively.",
+      "Near-zero leverage (D/E 0.03, borrowings 97 Cr vs. equity 3,636 Cr) after a decade of deliberate deleveraging — finance costs collapsed from 165 Cr (2016) to just 17 Cr (2025), freeing earnings.",
+      "Consistent free cash flow generation — positive OCF all 5 of 5 years tracked (418–797 Cr range), with FCF conversion demonstrating real capital discipline despite capex cycles."
+    ],
+    "key_risks": [
+      "Soda ash is a commodity with a pronounced cycle — revenue peaked at 4,545 Cr (2023) and has since contracted 30% to 3,183 Cr (2025); net profit has nearly halved from 1,142 Cr to 624 Cr, exposing the earnings quality risk in Magic Formula inputs.",
+      "Rising CWIP (55 Cr in 2024 → 370 Cr in 2025) signals a heavy capex cycle underway — if new capacity arrives into a weak pricing environment, ROIC could compress meaningfully below the current 24%.",
+      "Promoter holding of just 19.87% is unusually low for a manufacturing company — limited skin-in-the-game raises governance and strategic alignment concerns."
+    ],
+    "red_flags": [
+      "2023 earnings were likely a peak-cycle anomaly (Net Profit 1,142 Cr, EBITDA 1,545 Cr) — the normalized earnings base is materially lower, so the Magic Formula earnings yield of 18.5% may be overstated relative to mid-cycle EBIT.",
+      "CWIP surge to 370 Cr in 2025 with global soda ash capacity expanding could pressure both returns on new capital and the commodity price environment simultaneously."
+    ],
+    "detailed_analysis": "Running the Magic Formula: EBIT (Operating Income) = 877 Cr for 2025. Enterprise Value = Market Cap (4,724) + Debt (119) − Cash (99) = ~4,744 Cr, giving an Earnings Yield of 18.5% — well above my 15% \"very attractive\" threshold. ROCE of 24.2% clears my 20% hurdle. On both axes of the Magic Formula ranking, GHCL lands in the top quartile. The EV/EBITDA of 5.19x and forward P/E of 7.81 independently corroborate the cheapness signal. Importantly, this is a trough-earnings valuation — the business earns 624 Cr net profit at a cyclical low, which is still a ~13% earnings yield on market cap alone.\n\nThe key nuance is that soda ash is structurally cyclical and 2023's 1,142 Cr net profit was clearly a peak driven by global supply disruptions. The reversion to 624 Cr (2025) is the normalized reality. That said, even at trough, ROIC holds above 20% and the company has eliminated nearly all debt — a combination that historically rewards Magic Formula investors who hold through the cycle. The 370 Cr CWIP bears watching; if that capacity comes online into a weak pricing environment, ROIC compression is the primary risk. On balance, the quantitative case is strong enough to warrant a buy at these levels.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "excellent",
+      "valuation": "undervalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 58569,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0963483,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 12012,
+      "cache_read_input_tokens": 9131,
+      "output_tokens": 3237,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 12012
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 403,
+          "cache_read_input_tokens": 9131,
+          "cache_creation_input_tokens": 2881,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2881,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

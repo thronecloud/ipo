@@ -1,0 +1,69 @@
+{
+  "symbol": "544347",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-20T09:50:18.465595Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "CLN Energy fails nearly every quantitative Graham filter: incorporated only in 2019, it lacks the 5-year earnings record I require, and at P/E 25.4 with an implied P/B near 3.5, the price offers no margin of safety. This is an EV-story IPO priced for growth, not a proven enterprise trading below intrinsic value.",
+    "key_strengths": [
+      "Promoter holding of 72.6% signals skin-in-the-game and reduces float-driven speculation.",
+      "ROE of 13.7% is respectable if sustainable — above cost of equity.",
+      "FII participation at 12.6% indicates some institutional diligence has occurred."
+    ],
+    "key_risks": [
+      "Only 6 years old (founded 2019) — no multi-year earnings track record to value.",
+      "P/E 25.4 and implied P/B ~3.5 (P/E × ROE) blow past my <15 and <1.5 ceilings.",
+      "Graham Number (~INR 205) is roughly half the market price of INR 406 — zero margin of safety."
+    ],
+    "red_flags": [
+      "Recent listing / IPO — seller (promoter + bankers) knows more than the buyer.",
+      "ROCE (12.25%) is below ROE (13.7%), hinting at financial leverage boosting returns.",
+      "Lithium-ion / EV components is a capital-intensive, commoditizing industry with unproven moats."
+    ],
+    "detailed_analysis": "From my strict quantitative lens, CLN Energy is disqualified before we even debate the business. I require at least five consecutive years of positive earnings; a company incorporated in 2019 cannot possibly satisfy that. The price of INR 406 against a P/E of 25.4 implies EPS of ~INR 16, and with ROE of 13.7% the book value per share is roughly INR 117 — giving a P/B near 3.5x and a Graham Number of only ~INR 205. The market is paying nearly double what my formula permits, with none of the cushion that protects against error or misfortune.\n\nThe narrative — lithium-ion batteries and EV powertrains — is precisely the sort of seductive growth story Mr. Market prices enthusiastically and later regrets. ROCE (12.25%) trailing ROE (13.7%) suggests leverage is doing work, and at a INR 296 Cr market cap this is a small, unseasoned enterprise in a capital-intensive, rapidly-evolving industry. I see no dividend yield, no liquidity data, no balance-sheet strength disclosed here that could compensate. Defensive and enterprising investor alike should pass; speculators are welcome to it.",
+    "metrics_evaluated": {
+      "moat_strength": "insufficient_data",
+      "management_quality": "insufficient_data",
+      "financial_health": "insufficient_data",
+      "valuation": "overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 25889,
+    "model_used": "opus",
+    "total_cost_usd": 0.10103525000000001,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 9259,
+      "cache_read_input_tokens": 13523,
+      "output_tokens": 1455,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9259,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10637,
+          "cache_creation_input_tokens": 1508,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1508
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

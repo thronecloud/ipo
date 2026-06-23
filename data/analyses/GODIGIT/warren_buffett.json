@@ -1,0 +1,69 @@
+{
+  "symbol": "GODIGIT",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-19T06:31:50.974655Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Go Digit is a fast-growing digital insurer with a compelling narrative, but paying 57.8x P/E for a company that only turned profitable in FY23, earns a 9.2% ROE, and carries a 6.32% operating margin leaves absolutely no margin of safety. I need to see at least one full underwriting cycle before trusting any insurance company's economics.",
+    "key_strengths": [
+      "Exceptional revenue growth — 35.9% CAGR from FY22 to FY25, reaching 9,716 Cr; scale is being built rapidly",
+      "Low capital intensity (capex only 18 Cr in FY25) and minimal debt (D/E 0.07) are insurance-appropriate characteristics",
+      "Strong promoter commitment (73%) and growing DII interest (14.3%) suggest institutional validation"
+    ],
+    "key_risks": [
+      "ROE of 9.21% is barely above cost of capital — wealth is not being created, it is being sustained; P/B of 6.28x prices in ROE expansion that hasn't materialized",
+      "Finance costs growing at 77.5% CAGR (12 Cr in FY22 to 69 Cr in FY25) while margins remain thin — leverage risk in a claim-heavy environment",
+      "Only 4 years of data, including losses in FY22 — the business has never been tested through a major catastrophe or hard insurance market cycle"
+    ],
+    "red_flags": [
+      "57.8x P/E and 6.28x P/B for a newly-profitable insurer with 9.2% ROE is speculative pricing, not value investing",
+      "Gross margin of 14.08% suggests combined ratio pressures typical of rapidly-growing insurers who sacrifice underwriting discipline for market share",
+      "Equity base fluctuated sharply (fell from 3,347 Cr in FY23 to 2,568 Cr in FY24, then jumped to 4,612 Cr in FY25 via fundraising), indicating capital burn"
+    ],
+    "detailed_analysis": "I have always admired the insurance float model — collect premiums today, invest them, pay claims later. Great insurers like GEICO generate extraordinary economics precisely because they underwrite with discipline. Go Digit's 14% gross margin and 6.3% operating margin do not yet suggest such discipline; instead, they reflect a company still buying market share. The track record is simply too short to distinguish between a future Geico and a future failed insurer.\n\nAt 57.8x trailing P/E for a company earning 9.2% ROE, the market is paying a steep premium for the growth story. I respect the 35.9% revenue CAGR, but insurance profitability is revealed over years and through adverse events, not during a benign growth phase. When the cycle turns — claims spike, reinsurance costs rise — we will learn whether Go Digit's underwriting is sound. I prefer to watch from the sidelines at a fair price rather than pay a speculative one today.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 170660,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.2104482,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 22612,
+      "cache_read_input_tokens": 15514,
+      "output_tokens": 8066,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 22612,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 791,
+          "cache_read_input_tokens": 15514,
+          "cache_creation_input_tokens": 7098,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 7098
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

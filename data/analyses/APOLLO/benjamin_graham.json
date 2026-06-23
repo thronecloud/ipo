@@ -1,0 +1,70 @@
+{
+  "symbol": "APOLLO",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T16:23:47.885878Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "Apollo Micro Systems trades at INR 283 against a computed Graham Number of approximately INR 31 — nearly nine times its intrinsic value by my formula — offering no margin of safety whatsoever. The business earns real profits, but the market has priced in decades of optimistic growth that a disciplined, quantitative investor cannot accept.",
+    "key_strengths": [
+      "Six consecutive years of positive net profits (INR 14 Cr → INR 56 Cr), satisfying my minimum earnings continuity requirement",
+      "Conservative leverage: Debt/Equity of 0.33 and interest coverage of ~3.8x (Finance Cost INR 34 Cr vs Operating Income INR 129 Cr) — debt is not reckless",
+      "Revenue CAGR of 18% and net profit CAGR of 32% over five years demonstrates genuine, not fictitious, business progress"
+    ],
+    "key_risks": [
+      "Valuation is catastrophic by every Graham metric: P/E 113x (my ceiling is 15), P/B 8.77x (my ceiling is 1.5), EV/EBITDA 59x — the price assumes perfection for a generation",
+      "Persistently negative free cash flow: FCF was -INR 50 Cr, -INR 131 Cr, and -INR 82 Cr in 2023–2025; accounting profits are not translating to cash, which is the only profit I trust",
+      "Borrowings have grown 4.3x in five years (INR 83 Cr → INR 361 Cr); the company is funding growth with debt, not retained earnings, which heightens vulnerability in a downturn"
+    ],
+    "red_flags": [
+      "Graham Number ≈ INR 31 (sqrt(22.5 × EPS ~1.49 × BVPS ~28.7)) vs. market price of INR 283 — trading at 9x intrinsic value",
+      "Free cash flow negative in 4 of the last 5 years despite reported profits — a classic warning that earnings quality is poor",
+      "No dividend evidence provided; a company earning profits for six years yet returning nothing to shareholders fails my income test",
+      "Total assets nearly doubled in a single year (INR 956 Cr → INR 1,782 Cr in 2025), suggesting an acquisition or capital raise that inflates the balance sheet and creates integration risk"
+    ],
+    "detailed_analysis": "Apollo Micro Systems is a legitimate defense electronics business with a real order book and growing revenues. I do not dispute the quality of its products or its position supplying the Indian armed forces. But my discipline demands I separate the quality of a business from the price paid for it. At P/E of 113 and P/B of nearly 9, an investor is paying for thirty or forty years of earnings in advance, leaving not a rupee of margin of safety. My Graham Number — the geometric mean of earnings power and asset value — yields approximately INR 31 per share. The stock at INR 283 is priced at nine times that figure. Mr. Market, in his manic enthusiasm for defense themes, has lost all connection to balance-sheet reality.\n\nWhat troubles me beyond the price is the cash flow statement, which I always read before the income statement. Net profit has grown from INR 14 Cr to INR 56 Cr, yet free cash flow has been negative in four of the last five years and deeply so — minus INR 131 Cr in FY24 and minus INR 82 Cr in FY25. The company has funded its growth by borrowing (borrowings up 4.3x in five years) and raising equity capital, not from the internal cash generation that characterizes a truly strong business. Finance costs are consuming INR 34 Cr annually and growing at 18% CAGR. A business that reports profits but cannot generate cash is, in my experience, far more fragile than its income statement suggests. I would require the price to fall to the vicinity of the Graham Number — below INR 35 — before this stock enters any discussion of a purchase.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 67680,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0792498,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9342,
+      "cache_read_input_tokens": 11161,
+      "output_tokens": 2724,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9342,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 499,
+          "cache_read_input_tokens": 9111,
+          "cache_creation_input_tokens": 2281,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2281
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

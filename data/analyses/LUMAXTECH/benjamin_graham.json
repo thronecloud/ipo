@@ -1,0 +1,69 @@
+{
+  "symbol": "LUMAXTECH",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T18:14:43.116661Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Lumax Auto Technologies is a legitimate, growing auto-components business with a decade of positive earnings — but at P/E 47.6x and P/B 11.59x, it trades at roughly 5.25x its Graham Number (≈INR 342), offering zero margin of safety by any quantitative standard I require. The speculator pays for growth stories; the intelligent investor demands a price anchored to provable asset value.",
+    "key_strengths": [
+      "10 consecutive years of positive net profit (2016–2025), including two mild downturns — exactly the earnings stability I look for",
+      "Operating CF positive all 5 years; EBITDA CAGR of 20.9% over 9 years shows genuine operational improvement",
+      "Promoter holding 55.98% — owner-operators with skin in the game"
+    ],
+    "key_risks": [
+      "Debt explosion: borrowings surged from INR 95 Cr (2020) to INR 1,111 Cr (2025) — an 11.7x increase; D/E of 0.87 far exceeds my 0.5 ceiling",
+      "Finance costs grew 36.1% CAGR (5 Cr → 80 Cr), the fastest-growing line on the P&L — rising debt service eats into earnings power",
+      "Free cash flow declining (INR 167 Cr → 118 Cr) while capex surges to INR 180 Cr — capital intensity is increasing, not shrinking"
+    ],
+    "red_flags": [
+      "Graham Number ≈ INR 342 vs. market price INR 1,795 — stock trades at 5.25x intrinsic value by my formula",
+      "P/B of 11.59x: you are paying INR 11.59 for every rupee of net assets — catastrophic if earnings disappoint",
+      "Acquisitive growth funded by debt (FY23 investing outflow -476 Cr, borrowings +499 Cr in one year) — integration risk never reflected in asset values"
+    ],
+    "detailed_analysis": "Applying my strict quantitative filters, Lumax fails on every valuation metric I consider non-negotiable. P/E of 47.6x is more than three times my ceiling of 15. P/B of 11.59x is nearly eight times my ceiling of 1.5. The Graham Number — computed as √(22.5 × EPS ~INR 33.6 × BVPS ~INR 155) — yields approximately INR 342, meaning the market demands you pay a 425% premium over fair value. The combined P/E × P/B of 551 is so far beyond my 22.5 threshold as to be almost comical. This is not a bargain; it is a speculation dressed in fine clothing.\n\nThe balance sheet tells a cautionary tale: a single large acquisition in FY2023 quintupled borrowings (INR 165 Cr → 664 Cr) and set the company on a debt trajectory that now reaches INR 1,111 Cr with finance costs consuming INR 80 Cr annually. Interest coverage from EBITDA (490/80 ≈ 6x) is technically adequate today, but the trend is alarming — finance costs grew at 36.1% CAGR versus net profit at 23.6%. Should revenue soften — as it did in FY2020 — with this debt load, the margin of safety evaporates entirely. Mr. Market is pricing in a perfect future; I insist on surviving an imperfect one.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 46782,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07006065,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9107,
+      "cache_read_input_tokens": 11268,
+      "output_tokens": 2168,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9107
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 282,
+          "cache_read_input_tokens": 9218,
+          "cache_creation_input_tokens": 1939,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1939,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

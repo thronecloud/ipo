@@ -1,0 +1,69 @@
+{
+  "symbol": "ANANTRAJ",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-19T06:26:34.227119Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Anant Raj operates in Indian real estate — a capital-intensive, project-dependent, cyclical business that reliably destroys compounding with 10.9% ROE and erratic cash flows over its entire recorded history. The data center pivot is intriguing but unproven at scale, and at 35x trailing P/E the market is paying growth-stock prices for a business with mediocre returns on capital.",
+    "key_strengths": [
+      "Dramatic debt reduction: borrowings fell from INR 1,691 Cr (2020) to INR 563 Cr (2025), improving financial safety significantly",
+      "Revenue recovered sharply from the 2019-2021 trough — CAGR of 19% over 9 years with strong recent momentum (INR 957 Cr in 2023 → INR 2,060 Cr in 2025)",
+      "Low Debt/Equity of 0.13 currently, and promoter holding of 57.4% provides some alignment of interest"
+    ],
+    "key_risks": [
+      "ROE of 10.9% and ROCE of 11.2% are below Munger's minimum quality threshold of 15% ROIC — this business does not earn its cost of capital reliably",
+      "Cash flow is chronically unreliable: OCF was positive in only 3 of 5 years; FCF has been negative in 4 of 5 years — real estate projects create working capital traps",
+      "Real estate revenue is project-lumpy, not recurring — the 2019-2021 collapse (revenue fell from INR 431 Cr to INR 250 Cr) shows how quickly this can unravel in a downcycle"
+    ],
+    "red_flags": [
+      "ROIC below 12% fails the most basic quality filter — capital is not being deployed productively despite the revenue growth",
+      "P/E of 35x for a cyclical real estate business with sub-11% ROCE is fundamentally mispriced; the forward P/E of 22x assumes continued expansion that may not materialize",
+      "OCF was negative in FY2024 (-26 Cr) despite record revenues — suggestive of working capital deterioration or aggressive revenue recognition"
+    ],
+    "detailed_analysis": "Anant Raj's history is a textbook lesson in inversion: this business earned INR 70 Cr in net profit in 2016, saw it collapse to INR 9 Cr in 2021, and only recovered to INR 426 Cr in 2025. Real estate developers in India are fundamentally hostage to government approvals, interest rate cycles, and buyer sentiment — none of which they control. The debt reduction is commendable, but it doesn't change the underlying economics of a business that earns 10-11% on capital.\n\nThe data center angle (referenced in the business description) could be a genuine pivot toward better economics, but there is no financial data yet to validate it as a standalone unit with superior returns. Until ROIC consistently clears 15% and OCF becomes reliably positive, this is a speculative story trading on a cyclical peak. Munger's rule: invert first. What happens to this stock if Indian real estate slows or interest rates rise? The 2019-2021 experience answers that question clearly.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 173721,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.22162395000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 23193,
+      "cache_read_input_tokens": 15154,
+      "output_tokens": 8673,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 23193,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 502,
+          "cache_read_input_tokens": 15154,
+          "cache_creation_input_tokens": 8039,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8039
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

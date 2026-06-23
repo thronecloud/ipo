@@ -1,0 +1,69 @@
+{
+  "symbol": "544340",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-20T09:50:57.861889Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Rikhav Securities is a classic Lynch \"cyclical\" dressed up as a fast grower — revenue tripled to INR 328 Cr in FY25 but net profit fell from INR 42 Cr to INR 24 Cr and operating income dropped from INR 55 Cr to INR 34 Cr, meaning margins are collapsing at the cycle peak. P/E of 6.63 looks cheap, but cyclicals are always cheapest right before the earnings roll over — and that's exactly what this print shows.",
+    "key_strengths": [
+      "Revenue 3Y CAGR of 108.9% shows strong client acquisition in broking bull run",
+      "Debt slashed from INR 40 Cr to INR 5 Cr; equity doubled to INR 244 Cr (IPO-funded, clean balance sheet)",
+      "Promoter holding a robust 64.06% — skin in the game for a microcap (INR 159 Cr)"
+    ],
+    "key_risks": [
+      "Net profit declined 43% YoY (INR 42→24 Cr) while revenue tripled — operating leverage working in reverse",
+      "Operating CF of -INR 188 Cr in FY25; only 1 of 4 years OCF positive — earnings quality is questionable",
+      "Stockbroking is deeply cyclical; retail F&O curbs + any bear market can halve revenue quickly"
+    ],
+    "red_flags": [
+      "Margins contracting despite revenue explosion — story is weakening fast",
+      "Other income collapsed from INR 7 Cr to 0 — possible treasury/prop-book losses masked",
+      "Recently listed (2024 IPO vintage) with limited track record as a public company"
+    ],
+    "detailed_analysis": "What's the story here? Rikhav is a small Mumbai broker that rode the 2022-24 retail trading boom — revenue 36→328 Cr in three years is eye-popping. But I always ask: is earnings following revenue? No. Net profit peaked at INR 42 Cr in FY24 and fell to INR 24 Cr in FY25 even as topline tripled. EBITDA margin collapsed from ~50% to ~11%. That's the telltale signature of a cyclical at peak — volumes are still high but pricing/mix is deteriorating. A PEG calculation is meaningless when earnings growth is negative; the 6.63 P/E on trailing earnings is a value trap if FY26 EPS normalizes lower after SEBI's F&O tightening.\n\nBalance sheet is genuinely cleaner post-IPO (equity INR 244 Cr, debt INR 5 Cr, ROE 12.9%, ROCE 16.7%), and at INR 159 Cr market cap this is small enough to ten-bag if they build a real distribution franchise. But Lynch's rule on cyclicals: buy them when they look expensive on trough earnings, not when they look cheap on peak earnings. I'd put this on the watchlist, wait two more quarters to see whether FY26 margins stabilize, and re-evaluate. Not a buy here — the growth story and the earnings story are pointing in opposite directions.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 34627,
+    "model_used": "opus",
+    "total_cost_usd": 0.11660375,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 10399,
+      "cache_read_input_tokens": 14260,
+      "output_tokens": 1778,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10399,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 11416,
+          "cache_creation_input_tokens": 1827,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1827
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

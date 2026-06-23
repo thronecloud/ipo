@@ -1,0 +1,70 @@
+{
+  "symbol": "MSTCLTD",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T18:25:40.117869Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "MSTC scores well on Return on Capital (~30%) but fails the Magic Formula's equally critical cheapness test — Earnings Yield of ~5.8% (EBIT INR 178 Cr / EV INR 3,089 Cr) is below the 6% minimum, and revenue has collapsed 90% over 9 years. The business is being kept alive by \"Other Income\" (INR 340 Cr in FY25) that now exceeds core revenue (INR 311 Cr), making reported profits fundamentally unreliable for valuation.",
+    "key_strengths": [
+      "High Return on Capital: EBIT/Invested Capital ~29.8% (830+145-378=597 Cr invested capital), well above the 25% 'excellent' threshold",
+      "Near-zero leverage: D/E of 0.17 with INR 378 Cr cash vs INR 145 Cr debt — strong balance sheet buffer",
+      "Asset-light e-auction platform economics: near-100% gross margins and 54% operating margins on whatever revenue it retains"
+    ],
+    "key_risks": [
+      "Catastrophic revenue decline: -22.9% CAGR over 9 years (INR 3,225 Cr → INR 311 Cr) — the core business has effectively collapsed",
+      "Earnings driven by 'Other Income' (INR 340 Cr FY25 vs INR 178 Cr EBIT) — interest/investment income masks operating weakness and is not durable",
+      "Extreme earnings volatility: operating income has been negative in 5 of the last 10 years, making normalized EBIT nearly impossible to compute reliably"
+    ],
+    "red_flags": [
+      "Other Income (INR 340 Cr) exceeds core revenue (INR 311 Cr) — Magic Formula EBIT is being artificially inflated if other income bleeds into reported metrics",
+      "P/S ratio of 9.78x on structurally shrinking revenue is dangerous; if revenue continues falling, this multiple re-rates violently",
+      "Free cash flow was deeply negative in FY24 (-INR 390 Cr) and recovering only partially in FY25 (INR 236 Cr) — inconsistent FCF generation",
+      "Net Profit (INR 407 Cr) is 2.3x EBIT (INR 178 Cr) — a massive divergence that screams non-operating income dependency, not business quality"
+    ],
+    "detailed_analysis": "Running the Magic Formula on MSTC: Earnings Yield = EBIT / EV = INR 178 Cr / (3,322 + 145 - 378) = 178/3,089 = 5.8% — below the 6% floor and far from the 12%+ target. Return on Capital = EBIT / Invested Capital = 178/597 Cr = ~29.8% — genuinely excellent. The problem is the Magic Formula demands BOTH metrics to be high simultaneously. Here, one passes and one fails, producing a mediocre combined rank. At P/E 14.6x the stock appears superficially cheap, but that P/E is computed on INR 407 Cr net profit, which is padded by INR 340 Cr \"Other Income.\" Strip that out and you're paying 18-20x true operating earnings — not cheap.\n\nThe structural story is deeply troubling. Revenue has fallen from INR 3,225 Cr (2016) to INR 311 Cr (2025), an almost total hollowing-out of the trading/marketing segment. MSTC is a PSU (GoI promoter at 64.75%) pivoting to fee-based e-auctions, but the scale of that pivot is tiny relative to what was lost. The GoI backing provides stability but also limits the upside optionality a private operator could capture. Until the e-commerce segment demonstrates consistent and growing EBIT without relying on treasury/investment income, the Magic Formula cannot endorse this at current prices.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 57973,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09227535,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11621,
+      "cache_read_input_tokens": 8892,
+      "output_tokens": 3068,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11621
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 381,
+          "cache_read_input_tokens": 8892,
+          "cache_creation_input_tokens": 2729,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2729,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

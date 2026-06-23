@@ -1,0 +1,69 @@
+{
+  "symbol": "544353",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-20T09:49:20.788633Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Amwill Health Care trades at a low P/E of 7.54 but its ROE of 0.25% indicates earnings are virtually non-existent relative to book value, making the \"cheap\" multiple illusory. Without a multi-year earnings record, dividend history, or operational scale, this micro-cap pharma trader fails the Graham margin-of-safety test.",
+    "key_strengths": [
+      "Low headline P/E of 7.54x suggests no speculative premium baked into price",
+      "Strong promoter skin-in-the-game at 70.65% ownership",
+      "Market cap of INR 60.9 Cr implies limited institutional froth"
+    ],
+    "key_risks": [
+      "ROE of 0.25% is negligible — earnings quality is essentially non-existent",
+      "Wholesale pharma trading is a thin-margin, low-moat distribution business",
+      "Micro-cap (INR 60.9 Cr) with no visible dividend or long earnings history"
+    ],
+    "red_flags": [
+      "ROE 0.25% — capital is generating almost nothing",
+      "Recently listed SME-style stock lacking the 3-5 year audited earnings track record I require",
+      "No disclosure of debt, current ratio, book value, or dividend — key Graham inputs missing"
+    ],
+    "detailed_analysis": "From a Graham perspective, the headline 7.54 P/E looks superficially attractive, but the 0.25% ROE exposes the trick: if earnings are this trivial relative to equity, then either book value is bloated or earning power is effectively zero. A P/E on near-zero earnings is meaningless — the E in the denominator must be durable, and here it plainly is not. Wholesale pharmaceutical trading is a commoditized, thin-margin business with no structural moat, and a 60.9 Cr market cap on an obscure BSE listing offers none of the operational scale or audited continuity I demand.\n\nI have no visibility into the current ratio, debt-to-equity, interest coverage, book value per share, or dividend record — the very quantitative filters that define my method. Without these, I cannot compute a Graham Number or verify a margin of safety, and I refuse to substitute optimism for arithmetic. The 70.65% promoter holding is a minor positive, but promoter conviction does not replace proven earning power. Mr. Market is not offering a bargain here; he is offering a lottery ticket. Avoid.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "insufficient_data",
+      "valuation": "overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 20835,
+    "model_used": "opus",
+    "total_cost_usd": 0.09217475,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8869,
+      "cache_read_input_tokens": 13477,
+      "output_tokens": 1199,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8869,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 82,
+          "cache_read_input_tokens": 10591,
+          "cache_creation_input_tokens": 1164,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1164
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

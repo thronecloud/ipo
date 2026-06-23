@@ -1,0 +1,68 @@
+{
+  "symbol": "LATENTVIEW",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-19T13:10:06.731202Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Latent View is a small but financially pristine data analytics firm — zero meaningful debt, consistent positive FCF, and clean operating margins near 19% — but ROE of 11.6% reflects a bloated cash-heavy balance sheet from its IPO, and the business lacks a discernible economic moat in a highly competitive analytics consulting market. Net profit grew only 9% in FY25 (₹173 Cr vs ₹159 Cr), and at 32x P/E for a consulting firm with no clear switching costs, the price is ahead of the fundamentals.",
+    "key_strengths": [
+      "Pristine balance sheet: Debt/Equity of 0.02, positive OCF all 5 years, and FCF of ₹115 Cr on ₹848 Cr revenue — capital-light model is genuinely attractive",
+      "Revenue growing at solid clip (₹306 Cr in FY21 to ₹848 Cr in FY25, ~29% CAGR over 4 years) in a secularly growing data and AI services market",
+      "Operating margin of 18.58% is respectable for a services business and shows some pricing discipline"
+    ],
+    "key_risks": [
+      "ROE of 11.6% — well below my 15% threshold — reflects both a cash-heavy balance sheet and mediocre returns on deployed capital",
+      "Other income of ₹69 Cr (mostly interest on IPO cash) represents 40% of operating income — strip this out and the earnings picture is far less compelling",
+      "Client concentration in US tech sector creates significant revenue risk; any slowdown in tech spending (as seen in FY24 with net profit near flat) amplifies quickly"
+    ],
+    "red_flags": [
+      "Net profit growth near-stagnant: ₹155 Cr (FY23) → ₹159 Cr (FY24) → ₹173 Cr (FY25) — this is not the earnings power trajectory that justifies 32x P/E",
+      "No identifiable switching costs or network effects — analytics consulting clients can and do shop for price and capability each engagement"
+    ],
+    "detailed_analysis": "Latent View passed through my financial health filter easily — the balance sheet is clean, cash flows are real, and the business does not destroy capital. What troubles me is the moat question: I cannot identify a durable reason why a Fortune 500 company would exclusively and permanently use Latent View over Mu Sigma, Tiger Analytics, or any of dozens of capable peers. Data analytics consulting is a people business with high attrition and low barriers to replication.\n\nThe financial optics are also somewhat misleading. Strip out ₹69 Cr of financial income from a ₹1,600 Cr cash pile sitting on the balance sheet (residue of its 2021 IPO), and operating profits are considerably thinner. The business is decent but ordinary — at 32x earnings, I am paying for a great business when I am getting an adequate one.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 152402,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.2028783,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 22584,
+      "cache_read_input_tokens": 15781,
+      "output_tokens": 7563,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 22584,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 693,
+          "cache_read_input_tokens": 15781,
+          "cache_creation_input_tokens": 6803,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 6803
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

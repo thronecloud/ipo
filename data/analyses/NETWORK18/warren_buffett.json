@@ -1,0 +1,71 @@
+{
+  "symbol": "NETWORK18",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T18:24:37.855377Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Network18 is a capital-destroying media conglomerate with a 0.76% ROE, persistently negative free cash flow, and a P/E of 153x on near-zero earnings — the antithesis of a wonderful business. The ongoing Reliance-driven restructuring has produced wildly erratic financials, making intrinsic value nearly impossible to calculate.",
+    "key_strengths": [
+      "Recognizable media brands (CNBC-TV18, MoneyControl, News18) with real audience reach in business and news segments",
+      "Reliance Industries parentage (56.89% promoter stake) provides implicit financial backstop and distribution muscle",
+      "P/B of 1.11x suggests limited further downside on a pure asset basis"
+    ],
+    "key_risks": [
+      "Chronically cash-destructive: operating CF negative in 4 of last 5 years, FCF was -8,869 Cr in FY24 and -2,809 Cr in FY25",
+      "Earnings are illusory — 'Other Income' swung from +801 Cr (FY24) to -734 Cr (FY25) to +449 Cr (FY26), masking operational rot; operating margin is -4.36%",
+      "Radical restructuring (total assets collapsed from 39,881 Cr in FY24 to 8,498 Cr in FY25) makes business continuity and true earnings power unknowable"
+    ],
+    "red_flags": [
+      "ROE of 0.76% — a company that earns nothing on equity is not a business, it's a liability",
+      "P/E of 153x on FY26 earnings of ~155 Cr that appear entirely driven by one-time Other Income (449 Cr), not operations",
+      "Revenue collapsed 77% from 9,297 Cr (FY24) to 2,121 Cr (FY26) — restructuring or not, this level of discontinuity disqualifies predictable earnings power",
+      "Net loss of 1,777 Cr in FY25 wiped out years of accumulated reserves",
+      "Minority shareholders are effectively passengers in a Reliance corporate reorganisation they did not vote for"
+    ],
+    "detailed_analysis": "I spent decades looking for businesses I can understand, with durable competitive advantages, run by honest managers, priced at fair values. Network18 fails on nearly every count. The ROE is 0.76% — I won't touch a business that earns less than a savings account on shareholder equity. The operating margin is negative (-4.36%), and free cash flow has been negative in four of the last five years, totalling roughly -13,300 Cr of cash burned. Finance costs have compounded at 11% annually (80 Cr in FY17 to 477 Cr in FY25), meaning the company is paying more and more just to stay afloat. A P/E of 153x for this kind of business is not a valuation — it is a speculation tax.\n\nThe restructuring story here is deeply opaque. Total assets ballooned to 39,881 Cr in FY24 (with CWIP alone at 11,627 Cr, likely Viacom18/JioCinema related), then shrank back to ~9,000 Cr in FY26. Revenue swung from 9,297 Cr to 2,121 Cr. Net profit went from -1,777 Cr in FY25 to +155 Cr in FY26, but that 155 Cr profit is entirely a mirage — Other Income alone was 449 Cr while operating income was just 44 Cr. I have a simple rule: if I cannot understand how a business earns its money, I do not own it. Network18 today is an accounting puzzle dressed up as a media company. At any price, this is not a business I would want to own.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 48879,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08356485000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11271,
+      "cache_read_input_tokens": 9032,
+      "output_tokens": 2572,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11271
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 360,
+          "cache_read_input_tokens": 9032,
+          "cache_creation_input_tokens": 2239,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2239,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

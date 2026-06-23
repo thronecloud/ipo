@@ -1,0 +1,69 @@
+{
+  "symbol": "544349",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-20T09:49:10.248141Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "H.M. Electro Mech is a tiny (INR 52.6 Cr) civil construction/turnkey contractor earning a rounding-error ROE of 0.17% — a capital-destroying business in a commoditized, working-capital-heavy industry. Invert: great businesses compound capital; this one barely earns its cost of paper, and a 7x P/E on near-zero earnings is a value trap, not a bargain.",
+    "key_strengths": [
+      "High promoter skin-in-the-game at 73.07% aligns ownership with outcomes",
+      "Long operating history since 2003 in pumping/O&M niche",
+      "Optically low headline P/E of 7.12x (on a tiny earnings base)"
+    ],
+    "key_risks": [
+      "ROE of 0.17% — business is effectively not earning on capital, fails basic quality test",
+      "Civil construction/EPC is low-moat, tender-driven, and cyclical with heavy receivables risk",
+      "Micro-cap (INR 52.6 Cr) with negligible institutional coverage (FII 2.17%, DII 1.46%) — liquidity and governance risk"
+    ],
+    "red_flags": [
+      "ROE of 0.17% is well below 12% minimum quality bar",
+      "P/E of 7.12 on near-zero earnings suggests the 'E' is unreliable, not that stock is cheap",
+      "Insufficient disclosure on debt, ROIC, FCF conversion — typical micro-cap opacity"
+    ],
+    "detailed_analysis": "Applying inversion: what makes a bad investment? Low returns on capital, commodity services, small scale, and opaque financials. H.M. Electro checks every one of those boxes. A 0.17% ROE means that for every rupee of equity, shareholders earn less than a bank savings account after tax — capital is being consumed, not compounded. Civil construction and turnkey pumping projects are classic moat-less businesses: you win work by underbidding competitors, and earnings are hostage to government/PSU payment cycles, commodity input costs, and execution risk.\\n\\nThe 7.12x P/E is a siren song — it is low because the market correctly discounts low-quality, volatile, micro-cap earnings. With a market cap of just INR 52.6 Cr and negligible institutional interest, this sits well outside the circle of competence for a serious compounder. Promoter holding at 73% is the only positive, but skin-in-the-game doesn't fix a structurally low-return business. Pass decisively.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "insufficient_data",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 26702,
+    "model_used": "opus",
+    "total_cost_usd": 0.091431,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8944,
+      "cache_read_input_tokens": 13202,
+      "output_tokens": 1156,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8944,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10475,
+          "cache_creation_input_tokens": 1196,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1196
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "symbol": "EMIL",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T17:13:40.730395Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "EMIL fails both legs of the Magic Formula — earnings yield of ~7.5% (EBIT INR 451 Cr / EV ~INR 5,991 Cr) is well below my 12% threshold, and ROIC of ~13% (EBIT / capital employed of ~INR 3,533 Cr) is below my 20% minimum. This is a low-margin retailer that consumes rather than generates capital.",
+    "key_strengths": [
+      "Revenue growing at 17% CAGR (2020-2025), demonstrating real store expansion traction in underpenetrated South India",
+      "High promoter holding of 65.17% aligns management with shareholders",
+      "Strong brand recognition across 6 retail formats with 40+ year operating history"
+    ],
+    "key_risks": [
+      "FCF has been negative 3 of last 3 years (-INR 247 Cr, -14 Cr, -159 Cr) — the business destroys cash as it grows",
+      "Borrowings surged from INR 872 Cr (2020) to INR 1,963 Cr (2025), with finance costs eating into thin 4% operating margins",
+      "Net profit fell from INR 184 Cr to INR 160 Cr in FY2025 despite revenue growing — operating leverage is absent in this model"
+    ],
+    "red_flags": [
+      "Earnings yield of ~7.5% is well below my 12% floor — paying too much for a mediocre business",
+      "ROIC ~12-13% (ROCE stated 10.4%) — specialty retail with no pricing power earns returns near its cost of capital",
+      "Capex of INR 335 Cr in FY2025 against OCF of INR 176 Cr means every rupee of growth requires borrowed capital",
+      "Net profit declining YoY (FY24: 184 Cr → FY25: 160 Cr) even as revenue grew 10.8% — margin compression accelerating"
+    ],
+    "detailed_analysis": "Running the Magic Formula on EMIL: EBIT is INR 451 Cr (FY2025); Enterprise Value = market cap INR 4,046 Cr + net debt INR 1,945 Cr ≈ INR 5,991 Cr. Earnings yield = 7.5% — below my 12% hurdle. Capital employed (equity + debt) is ~INR 3,533 Cr, giving ROIC of ~12.8%, consistent with the stated ROCE of 10.4%. Neither metric clears my thresholds, and a business that earns returns near its cost of capital has no moat worth paying for.\n\nThe structural problem is the consumer electronics retail model itself: 4% operating margins, thin gross margins of 14%, and a store-expansion strategy that requires perpetual debt-funded capex. The forward P/E of 23x implies a major earnings re-rating that I don't see a path to given rising finance costs (up 13.4% CAGR), negative FCF, and a debt/equity ratio of 1.26. Greenblatt's formula rewards businesses that earn high returns on tangible capital without needing much of it — EMIL is the opposite: capital-hungry, low-returning, and getting more indebted each year to sustain growth.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 46393,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07916475,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10969,
+      "cache_read_input_tokens": 8890,
+      "output_tokens": 2357,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10969
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 317,
+          "cache_read_input_tokens": 8890,
+          "cache_creation_input_tokens": 2079,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2079,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

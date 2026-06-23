@@ -1,0 +1,69 @@
+{
+  "symbol": "CREDITACC",
+  "persona": "howard_marks",
+  "persona_display_name": "Howard Marks",
+  "analyzed_at": "2026-04-19T13:07:28.883363Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "CreditAccess Grameen's net profit crashed 63% in FY2025 (INR 1,446 Cr → INR 531 Cr) as the Indian microfinance sector entered its worst credit cycle since demonetization, and the stock at 41.8x trailing P/E still prices in a near-full earnings recovery that credit cycles historically take 2–4 years to deliver, not one. With D/E of 2.81 on a loan book facing asset quality stress, the book value underpinning the 2.82x P/B multiple may itself be at risk of impairment.",
+    "key_strengths": [
+      "Strong promoter backing from CreditAccess India BV (66.28%) — an experienced international MFI operator with a long-term strategic commitment to the India franchise provides governance comfort",
+      "28.4% revenue CAGR over 6 years demonstrates real market penetration in underpenetrated rural and semi-urban India — the underlying market opportunity is genuine and large",
+      "Forward P/E of 13.65 reflects market acknowledgment of stress; if earnings normalize even partially toward FY2023 levels (INR 826 Cr), the valuation becomes more reasonable"
+    ],
+    "key_risks": [
+      "Net profit down 63% in a single year (FY2024: INR 1,446 Cr → FY2025: INR 531 Cr) — this is the signature of a severe asset quality crisis, not a transient blip; credit cycles in MFI historically take 2–4 years to normalize",
+      "D/E of 2.81 on a stressed loan book creates asymmetric downside — if credit costs remain elevated or NPAs rise further, equity can be impaired faster than in an industrial business",
+      "Operating income collapsed 58% in a single year (INR 2,157 Cr → INR 907 Cr), signaling that provisioning and credit costs have overwhelmed the interest income engine at the core of the business model"
+    ],
+    "red_flags": [
+      "Total assets contracted from INR 28,871 Cr (FY2024) to INR 27,679 Cr (FY2025) — first balance sheet shrinkage in the data history, indicating the company is actively pulling back from lending due to asset quality fears",
+      "OCF positive in only 1 of last 5 years (standard for an MFI, but the FY2025 positive OCF of INR 1,125 Cr likely reflects loan book contraction rather than operational improvement — a worrying signal)",
+      "Forward P/E of 13.65 implies earnings recovering to approximately INR 1,484 Cr — nearly matching the FY2024 peak — within 12 months; this assumption is dangerously optimistic given where the credit cycle is"
+    ],
+    "detailed_analysis": "CreditAccess Grameen has built one of India's strongest microfinance franchises over three decades — the 28.4% revenue CAGR and strong promoter backing are real. But the MFI sector is in its most severe credit cycle in years, driven by borrower over-indebtedness from multiple lenders, rising NPAs, and RBI regulatory tightening. The financial data confirms the severity: net profit down 63%, assets actually shrinking (first contraction in the data), and operating income down 58% — these are crisis-level numbers, not temporary blips.\n\nThe critical Marks question is: what is the price relative to reality? At 41.8x trailing P/E and 2.82x P/B, the stock is not cheap even after the profit crash. The forward P/E of 13.65 embeds a near-full recovery assumption that credit cycles simply don't deliver in one year. With D/E of 2.81, further NPA deterioration could impair book value itself, making the P/B metric misleading. The asymmetry here is unfavorable — limited upside if the recovery is swift; significant downside if the cycle is prolonged, which is the base case for Indian MFIs in their current state.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 269866,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.3363168,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 29986,
+      "cache_read_input_tokens": 15951,
+      "output_tokens": 14605,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 29986,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 498,
+          "cache_read_input_tokens": 15951,
+          "cache_creation_input_tokens": 14035,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 14035
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

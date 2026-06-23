@@ -1,0 +1,69 @@
+{
+  "symbol": "544406",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-20T19:57:15.895875Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Unified Data fails nearly every quantitative filter I demand: P/E of 21.1 exceeds my 15 ceiling, ROE of 0.36% is effectively zero earning power, and the 6-digit BSE code suggests a recent listing with no multi-year earnings record. This is speculation on a small IT services story, not a value investment.",
+    "key_strengths": [
+      "Promoter holding of 60.39% signals committed ownership",
+      "Positive (if meager) earnings — not yet loss-making",
+      "Small-cap in an industry with structural tailwinds"
+    ],
+    "key_risks": [
+      "ROE of 0.36% — capital is earning nothing productive",
+      "P/E 21.1 prices in growth I cannot verify from history",
+      "Negligible institutional ownership (FII 0.57%, DII 5.89%) signals weak scrutiny"
+    ],
+    "red_flags": [
+      "Likely recent IPO — no multi-year earnings track record",
+      "ROE 0.36% suggests the 21x P/E is wildly disconnected from earning power",
+      "No disclosed book value, current ratio, debt, or dividend history — cannot compute Graham Number or margin of safety"
+    ],
+    "detailed_analysis": "The central arithmetic is damning. A 21.1x P/E on a 0.36% ROE implies the market is capitalizing near-nonexistent earnings at a substantial premium — the opposite of the margin-of-safety equation I require. At ROE of 0.36%, earnings per rupee of equity are trivial; paying 21x for such earnings means the buyer is paying for a story, not for proven earning power. Without P/B, current ratio, debt-to-equity, or interest coverage disclosed, I cannot even construct a Graham Number — and the absence of those figures is itself a warning in Mr. Market's catalog.\n\nThe BSE 6-digit symbol and modest 619 Cr market cap are consistent with a recent SME-style listing, which by my doctrine is speculative by default: the seller knows more than the buyer. Combined with thin institutional ownership (under 6.5% FII+DII combined), no evidenced dividend history, and an ROE that cannot support reinvestment compounding, there is no foothold for the defensive investor. I would require several years of audited earnings above 10% ROE, a P/E below 15, P/B below 1.5, and current ratio above 2 before even opening the annual report again. Avoid.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "insufficient_data",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 27161,
+    "model_used": "opus",
+    "total_cost_usd": 0.09968725,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 9109,
+      "cache_read_input_tokens": 13502,
+      "output_tokens": 1439,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9109,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 101,
+          "cache_read_input_tokens": 10616,
+          "cache_creation_input_tokens": 1379,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1379
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

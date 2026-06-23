@@ -1,0 +1,69 @@
+{
+  "symbol": "BATAINDIA",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-19T06:32:44.741358Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Bata India is the textbook Lynch nightmare: a slow grower dressed in a growth stock valuation. Revenue of 3,489 Cr in FY25 is essentially identical to FY23's 3,452 Cr — three years of flat sales — yet the stock trades at P/E 50.7, implying a PEG ratio north of 10x.",
+    "key_strengths": [
+      "Strong brand equity and 1,500+ store network gives durable distribution and consumer recognition",
+      "Gross margin of 54.97% is exceptional, reflecting pricing power on branded footwear",
+      "Operating cash flow has been consistently positive (738 Cr in FY25), showing the business generates real cash"
+    ],
+    "key_risks": [
+      "Revenue growth has stalled completely: 3,452 / 3,479 / 3,489 Cr over FY23-25 — the story has no momentum",
+      "P/E of 50.7 on ~4-5% growth implies PEG of ~10x — I have never bought a stock with a PEG above 1.5, let alone 10",
+      "Debt/Equity of 0.90 is elevated, with borrowings growing from 1,094 to 1,446 Cr while earnings stay flat"
+    ],
+    "red_flags": [
+      "Revenue CAGR of only 4.1% over 9 years — a slow grower in a market growing faster than that",
+      "Net profit in FY25 (331 Cr) is barely above FY2019 (329 Cr) — six years of no earnings progression",
+      "Finance costs have ballooned 27.4% CAGR over 9 years, with FY25 at 141 Cr vs 16 Cr in FY16 — lease and debt costs eating growth"
+    ],
+    "detailed_analysis": "Bata is a stalwart brand — I'd buy the shoes, but I would not buy the stock at this price. The company has the hallmarks of a slow grower: an iconic franchise with saturated distribution, modest price increases, and no clear new market to conquer. India's footwear market is growing, but Bata isn't capturing that growth — D2C brands, sports labels, and unorganized players are taking share.\n\nAt P/E 50.7 and forward P/E 38.55, the market is assigning a premium multiple to a business growing revenues at 4% and with three years of flat top-line. That is precisely the kind of valuation trap Lynch spent his career avoiding. The gross margin is admirable, but good unit economics can't rescue the math when you're paying 50x earnings for low-single-digit growth. I'd want to see revenue growth consistently above 15% before revisiting.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 147089,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.2132958,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 22682,
+      "cache_read_input_tokens": 15081,
+      "output_tokens": 8247,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 22682,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 510,
+          "cache_read_input_tokens": 15081,
+          "cache_creation_input_tokens": 7601,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 7601
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

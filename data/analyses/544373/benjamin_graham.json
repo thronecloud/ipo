@@ -1,0 +1,70 @@
+{
+  "symbol": "544373",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-20T19:45:24.445421Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "NAPS Global is a tiny ₹15.7 Cr micro-cap fabric importer with a derisory 0.16% ROE — earning power is essentially absent despite the optically low P/E of 5.91. Without a multi-year earnings track record, meaningful returns on capital, or dividend history, this fails every Graham quantitative filter and offers no margin of safety.",
+    "key_strengths": [
+      "P/E of 5.91 is optically below the <15 Graham ceiling",
+      "Promoter holding of 70.20% shows skin in the game",
+      "Asset-light trading/import model requires limited capital"
+    ],
+    "key_risks": [
+      "ROE of 0.16% indicates essentially no earning power — P/E is meaningless",
+      "Recently listed micro-cap lacks the 5-10 year earnings record I require",
+      "Fabric importing is a commodity business with no moat and thin margins"
+    ],
+    "red_flags": [
+      "ROE 0.16% — near-zero profitability suggests a distressed or dormant operation",
+      "Recent SME/BSE listing — IPO seller knew more than the buyer",
+      "No dividend history disclosed",
+      "₹15.7 Cr market cap — liquidity and manipulation risk"
+    ],
+    "detailed_analysis": "A P/E of 5.91 might attract a careless bargain-hunter, but an ROE of 0.16% tells the real story: this company earns virtually nothing on its equity base. At that profitability level, the low P/E simply reflects a tiny absolute earnings number on a tiny ₹15.7 Cr market cap — the 'E' is nearly zero, making the ratio uninformative. A fabric import reseller has no durable competitive advantage, no pricing power, and no barrier to entry; it is a margin-compressed middleman business whose fortunes swing with currency, freight costs, and garment-sector demand.\n\nAs a recently listed micro-cap incorporated in 2014, NAPS Global cannot satisfy my requirement for 5–10 years of consecutive positive earnings at a reasonable scale, nor demonstrate dividend-paying capacity. Without disclosed book value, current ratio, or debt figures I cannot even test the Graham Number — but an ROE this weak combined with trading-business working-capital intensity is a near-certain disqualifier. This is speculation on a micro-cap story, not investment in proven earning power. Avoid.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "insufficient_data",
+      "valuation": "overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 30038,
+    "model_used": "opus",
+    "total_cost_usd": 0.11080100000000001,
+    "usage": {
+      "input_tokens": 7,
+      "cache_creation_input_tokens": 9348,
+      "cache_read_input_tokens": 24632,
+      "output_tokens": 1601,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9348,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 104,
+          "cache_read_input_tokens": 11147,
+          "cache_creation_input_tokens": 1087,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1087
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

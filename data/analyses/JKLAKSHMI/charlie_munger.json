@@ -1,0 +1,69 @@
+{
+  "symbol": "JKLAKSHMI",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T18:02:55.987184Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "JK Lakshmi Cement is a commodity business earning 10.5% ROCE — below any sensible cost of capital hurdle — while FY25 showed simultaneous revenue contraction (-8.8% YoY to ₹6,193 Cr) and a 43% net profit collapse (₹488→₹276 Cr). A capital-intensive, margin-thin, cyclically deteriorating business is precisely what Munger spends his time avoiding.",
+    "key_strengths": [
+      "OCF positive all 5 years (₹634–₹1,032 Cr range), demonstrating the business generates real cash even mid-cycle",
+      "10% revenue CAGR over 9 years with established regional brand presence in North/West India",
+      "Capex cycle appears to be normalizing (CWIP fell from ₹890 Cr in FY23 to ₹230 Cr in FY25), suggesting capacity build-out is largely done"
+    ],
+    "key_risks": [
+      "ROCE of 10.5% and ROE of 8.72% both sit below cost of capital — every rupee reinvested likely destroys value at the margin",
+      "FY25 revenue fell 8.8% while net profit collapsed 43%; EBITDA margins contracting with no pricing power in a commodity industry",
+      "Borrowings surged 28% YoY to ₹2,673 Cr; Debt/EBITDA ~3.0x in a cyclical business is uncomfortable when earnings are falling"
+    ],
+    "red_flags": [
+      "FCF was negative in FY23 (-₹98 Cr) and FY24 (-₹107 Cr) — the expansion capex (₹1,011 Cr in FY24) consumed all operating cash",
+      "Other income collapsed from ₹77 Cr (FY24) to ₹11 Cr (FY25), masking the true underlying earnings deterioration in prior years",
+      "Net profit CAGR of 60% over 9 years is an illusion — it started from a near-zero ₹4 Cr base in FY16, now clearly reverting"
+    ],
+    "detailed_analysis": "Invert first: what makes this unattractive? Cement is an archetypal commodity — you cannot raise prices above regional competitors, fuel and power costs (coal/pet coke) are volatile and outside management control, and the industry is consolidating rapidly around UltraTech and Adani, who have scale advantages JK Lakshmi cannot replicate. The numbers confirm the thesis: operating margin is just 7.56%, EBITDA has been contracting on a 5-year trend, and ROCE at 10.5% means the company earns less on incremental capital than a decent bond. The debt build-up (₹2,084 Cr → ₹2,673 Cr in a single year) to fund capacity expansion into a weakening pricing environment is exactly the kind of capital misallocation that compounds poorly over decades.\n\nThe valuation offers no compensation for these structural weaknesses. At P/E 17.5x on what are already depressed FY25 earnings of ₹276 Cr, the market is pricing in a meaningful recovery. Forward P/E of 14.5x requires earnings to re-rate toward ₹575 Cr — that would demand margin expansion back toward FY24 levels AND volume growth from the new capacity, simultaneously. With pricing power absent and finance costs now rising (₹150→₹181 Cr), that recovery is far from assured. Promoter holding of 45% and consistent OCF are the only redeeming features, but they cannot overcome a fundamentally mediocre business in a commodity industry at a price that already assumes the best case.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 249331,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0905301,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11700,
+      "cache_read_input_tokens": 9087,
+      "output_tokens": 2928,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11700
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 364,
+          "cache_read_input_tokens": 9087,
+          "cache_creation_input_tokens": 2613,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2613,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

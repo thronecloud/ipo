@@ -1,0 +1,70 @@
+{
+  "symbol": "EDELWEISS",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T17:07:48.597416Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Edelweiss is a sprawling financial conglomerate with an 8.68% ROE, 3.51x debt-to-equity, and operating income that has barely grown in nine years — the very definition of a mediocre business. The equity base has eroded from INR 6,744 Cr in 2023 to INR 4,419 Cr in 2025, a warning sign I cannot ignore.",
+    "key_strengths": [
+      "Active de-leveraging: borrowings fell from INR 36,657 Cr (2020) to INR 19,459 Cr (2025), reducing existential risk.",
+      "Consistent positive operating cash flows in all 5 of the last 5 years, with cash on hand growing to INR 4,938 Cr.",
+      "Diversified revenue streams across lending, ARC, asset management, and insurance provide some shock absorption."
+    ],
+    "key_risks": [
+      "Ruinous leverage: D/E of 3.51 means finance costs (INR 2,537 Cr in 2025) consume the majority of operating income, leaving razor-thin margins for error.",
+      "Chronic value destruction: ROE of 8.68% is well below my 15% threshold and far below the cost of equity — the business is not earning its keep.",
+      "Shrinking equity base: reserves collapsed from INR 6,654 Cr (2023) to INR 4,324 Cr (2025), suggesting write-downs or losses being absorbed quietly."
+    ],
+    "red_flags": [
+      "Net loss of INR -2,044 Cr in 2020 exposed extreme fragility — this is not a business I want to own through a credit cycle.",
+      "Operating income CAGR of just 0.4% over 9 years and contracting over the last 5 years — no real earnings power.",
+      "Low promoter holding of 32.69% signals limited insider conviction in the franchise.",
+      "Complex multi-segment conglomerate structure makes true earnings quality nearly impossible to assess from the outside."
+    ],
+    "detailed_analysis": "Edelweiss is exactly the kind of business I spend my career avoiding: a highly leveraged financial conglomerate operating across too many segments — retail lending, ARC, asset management, insurance, housing finance, investment banking — with no discernible durable moat in any of them. A business that earned INR 383 Cr in net profit in 2016 and only INR 536 Cr in 2025, while suffering a catastrophic INR 2,044 Cr loss in between, is not compounding value for shareholders. The 9-year net profit CAGR of 3.8% barely keeps pace with inflation, and operating income has essentially flatlined (+0.4% CAGR). Revenue itself is contracting over the last five years, sitting at INR 9,415 Cr in 2025 versus INR 11,078 Cr in 2019.\n\nThe balance sheet tells an even grimmer story. Total equity has shrunk from INR 6,744 Cr in 2023 to INR 4,419 Cr today — capital is disappearing, not compounding. The D/E of 3.51x means the company pays INR 2,537 Cr in annual finance costs against a net profit of just INR 536 Cr. While the forward P/E of 7.56x might tempt a trader, I am not interested in buying a mediocre, leveraged financial conglomerate at any price that doesn't reflect a wide margin of safety for permanent capital loss. Charlie and I look for businesses where the moat widens every year. Here, it is unclear there is a moat at all.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 52324,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07718445,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11073,
+      "cache_read_input_tokens": 9139,
+      "output_tokens": 2194,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11073
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 290,
+          "cache_read_input_tokens": 9139,
+          "cache_creation_input_tokens": 1934,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1934,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

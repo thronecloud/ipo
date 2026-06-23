@@ -1,0 +1,70 @@
+{
+  "symbol": "ICIL",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T17:34:48.439993Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Indo Count is a capital-intensive commodity textile exporter with no durable moat, near-zero net profit growth over nine years (-0.2% CAGR), and surging debt that is compressing earnings — precisely the kind of business I learned to avoid when I closed Berkshire's own textile mills. At 48x trailing P/E with declining FY25 profits (INR 246 Cr vs. INR 338 Cr in FY24), the market is paying a wonderful-company price for a mediocre-business reality.",
+    "key_strengths": [
+      "India's home-textile export leadership with China+1 tailwind driving 8.1% revenue CAGR over 9 years",
+      "High promoter ownership at 58.74% aligns management interests with shareholders",
+      "Revenue scale of INR 4,151 Cr with brand portfolio (Pure Earth, Boutique Living) providing some distribution leverage"
+    ],
+    "key_risks": [
+      "Surging finance costs (INR 70 Cr → INR 123 Cr in one year) on ballooning total debt (INR 956 Cr → INR 1,449 Cr) is squeezing net profit despite revenue growth",
+      "Erratic free cash flow (-489, +416, +11, +143 Cr over 4 years) signals a capital-hungry business unable to consistently convert earnings to cash",
+      "US export concentration creates severe tariff/trade-policy risk, as demonstrated by the volatile 2017-2020 earnings collapse"
+    ],
+    "red_flags": [
+      "Net profit CAGR of -0.2% over 9 years — revenue doubled but earnings went nowhere",
+      "FY25 net profit fell 27% YoY (338 → 246 Cr) even as revenue grew 17% — a deeply troubling divergence",
+      "Debt/Equity of 0.54 and rising, breaching my comfort threshold, in a cyclical, commodity-like business",
+      "OCF positive only 3 of last 5 years — not the steady cash-generating machine I require"
+    ],
+    "detailed_analysis": "Indo Count exemplifies the textile trap I learned about the hard way at Berkshire. Revenues have grown respectably at 8.1% CAGR, but profitability has been eaten alive by capital requirements, competition, and now financing costs. ROE of 11.3% and ROCE of 13.5% both fall below my 15% threshold for a business worth owning. The company has poured hundreds of crores into capex (INR 452 Cr in FY22, INR 342 Cr in FY23, INR 252 Cr in FY25) and yet net profit in FY25 (INR 246 Cr) is actually below FY16 levels (INR 251 Cr) — nine years of reinvested capital with zero earnings progress. That is a treadmill, not a compounder.\n\nThe valuation makes no sense for this quality of business. At 48x trailing P/E, the market is pricing in a transformation that the numbers flatly contradict. Yes, forward P/E of 19.7x looks more palatable, but it requires a sharp earnings recovery even as interest costs are accelerating and debt just jumped INR 493 Cr in a single year. There is no moat here — home bed linens are a commodity product where the next low-cost producer from Bangladesh or Vietnam can undercut pricing. I have famously said I would rather own a toll bridge than a textile mill. This is a textile mill.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 51931,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08680979999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11490,
+      "cache_read_input_tokens": 9061,
+      "output_tokens": 2733,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11490
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 343,
+          "cache_read_input_tokens": 9061,
+          "cache_creation_input_tokens": 2429,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2429,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "symbol": "IKS",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-19T12:54:42.107513Z",
+  "analysis": {
+    "score": 6,
+    "recommendation": "HOLD",
+    "investment_thesis": "IKS provides physician-outsourced clinical documentation and revenue-cycle services to US healthcare systems — a genuinely sticky, high-switching-cost business, evidenced by 38% revenue CAGR, 30%+ operating margins, and ROE of 33%. The P/E of 38.8x is demanding but not absurd for this quality; I would wait for a better entry point.",
+    "key_strengths": [
+      "Exceptional unit economics: 30.62% operating margin and 32.9% ROE in a services business indicate genuine pricing power and low capital intensity (capex only INR 42 Cr on INR 2,664 Cr revenue)",
+      "High switching costs: healthcare organizations embed IKS deeply into clinical workflows — EHR integrations and physician habits create multi-year retention",
+      "Consistent OCF generation: positive all 5 years, free cash flow of INR 276 Cr in FY2025 against net profit of INR 486 Cr (FCF conversion ~57%)"
+    ],
+    "key_risks": [
+      "Debt jumped from INR 52 Cr (FY2023) to INR 1,311 Cr (FY2024) for what appears to be an acquisition — integration risk and interest costs (INR 91 Cr in FY2025) now burden the income statement",
+      "Almost entirely US healthcare revenue — concentrated in a single geography and regulatory regime (HIPAA, CMS policy changes) with currency translation exposure",
+      "P/B of 11.18x leaves almost no margin of safety; any growth disappointment would reprice the stock sharply"
+    ],
+    "red_flags": [
+      "Borrowings of INR 1,311 Cr in FY2024 vs INR 52 Cr prior year — a 25x debt increase for an acquisition demands scrutiny of what was purchased and at what price",
+      "Finance costs surged from INR 6 Cr (FY2023) to INR 91 Cr (FY2025) — a 15x increase that will continue weighing on profit growth"
+    ],
+    "detailed_analysis": "IKS is a business I genuinely admire from a distance. Serving US physician groups with clinical documentation, medical coding, and care enablement solutions creates real sticky relationships — when a 500-physician group embeds your workflow tools into their daily operations, they do not switch lightly. The five-year revenue CAGR of 38.2%, paired with consistently expanding margins (EBITDA margins held steady even as revenue quadrupled), is the hallmark of a scalable platform business. OCF positive every year confirms the earnings are real.\n\nThe hesitation is purely price and the FY2024 debt surge. At 38.8x earnings, the market is pricing in continued 25–30%+ growth, which is a bold assumption. The large acquisition in FY2024 (evidenced by total assets more than doubling to INR 2,880 Cr) introduces execution risk I cannot fully evaluate without more disclosure. If IKS can sustain 20%+ growth, reduce its debt back toward zero, and maintain margins, this business would be a strong buy at 25–28x earnings. At current prices, I would hold existing positions but not add aggressively.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "exceptional"
+    }
+  },
+  "metadata": {
+    "duration_ms": 141107,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.20011440000000003,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 22012,
+      "cache_read_input_tokens": 15268,
+      "output_tokens": 7532,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 22012,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 612,
+          "cache_read_input_tokens": 15268,
+          "cache_creation_input_tokens": 6744,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 6744
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

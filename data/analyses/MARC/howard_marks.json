@@ -1,0 +1,69 @@
+{
+  "symbol": "MARC",
+  "persona": "howard_marks",
+  "persona_display_name": "Howard Marks",
+  "analyzed_at": "2026-04-21T07:50:03.589736Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Marc Technocrats is a financially clean micro-cap consulting firm with genuine operating momentum (41% net profit CAGR, zero meaningful debt, ROCE of 36%), but its INR 7 Cr net profit base makes it structurally illiquid and uninvestable at scale. Without knowing the price paid, no margin of safety can be established — and in a micro-cap with zero institutional presence, price discovery itself is suspect.",
+    "key_strengths": [
+      "Debt-free balance sheet (Total Debt INR 1 Cr) with strong ROCE of 36.27% — rare capital efficiency in services",
+      "Revenue doubled from INR 26 Cr to INR 48 Cr in one year (FY24→FY25), suggesting a contract inflection, not just organic drift",
+      "High promoter skin in the game at 73.55% with consistent OCF positive across all 4 years"
+    ],
+    "key_risks": [
+      "FCF (INR 3 Cr) is only 43% of net profit (INR 7 Cr) in FY2025 — earnings quality is poor; working capital or accruals are masking the real cash story",
+      "Micro-cap at INR 48 Cr revenue means a single client loss could crater 20–40% of the business overnight — there is no diversification buffer",
+      "Zero institutional coverage (FII 0.27%, DII 1.38%) means price discovery is driven by retail sentiment, not fundamentals — a dangerous setup for minority shareholders"
+    ],
+    "red_flags": [
+      "Exchange listed as 'YHD-ERR' — data integrity concern; likely BSE SME where liquidity is structurally thin and exit risk is severe",
+      "Investing CF has been consistently negative (INR -4 to -6 Cr/year) while OCF is only INR 3–5 Cr — a consulting firm burning more cash on investments than it generates operationally is a structural anomaly requiring explanation",
+      "No valuation data provided (market cap, P/E, EV/EBITDA) — impossible to assess margin of safety, which is the ONLY thing that matters"
+    ],
+    "detailed_analysis": "The business fundamentals are genuinely decent for its size. ROCE of 36% and ROE of 27% with a clean balance sheet tell you this is not a capital-destroys-value story. The revenue jump from INR 26 Cr to INR 48 Cr in FY2025 is notable — but I need to know whether that reflects a structural shift (new verticals, large client wins) or a lumpy project that reverses next year. What worries me more is the persistent gap between net profit (INR 7 Cr) and free cash flow (INR 3 Cr). That 57% gap doesn't close with accounting tricks; it means cash is going somewhere — into receivables, prepayments, or poorly disclosed investments. The investing outflows of INR 4–6 Cr annually in a consulting firm with INR 48 Cr revenue demand scrutiny. Consultants don't need capex like that.\n\nFrom a Howard Marks framework, the critical failure here is the absence of valuation data. The most important thing in investing is not finding a good company — it is finding a good company at a price where the odds are in your favor. With no market cap, no P/E, no EV/EBITDA, I cannot determine whether this trades at 10x earnings or 100x earnings. The SME listing and near-zero institutional participation suggest this likely trades at inflated retail multiples — Indian SME IPOs in the 2023–2025 wave routinely listed at 40–80x earnings. If that is the case here, even 41% profit CAGR would not save a buyer from significant multiple compression. Absent a price with a meaningful margin of safety, this is uninvestable on Howard Marks principles — not because the business is bad, but because price discipline is non-negotiable.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "insufficient_data",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 50743,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.06935759999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8166,
+      "cache_read_input_tokens": 10237,
+      "output_tokens": 2377,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8166,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 390,
+          "cache_read_input_tokens": 8183,
+          "cache_creation_input_tokens": 2037,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2037
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

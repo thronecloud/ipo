@@ -1,0 +1,69 @@
+{
+  "symbol": "IFCI",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-19T12:52:15.347183Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "IFCI is a government-owned NBFC that has spent the better part of a decade destroying capital — revenue has fallen at -9.2% CAGR over nine years, net losses totalled thousands of crores across FY17-FY22, and FCF was negative INR 1,011 Cr in FY25 alone. Trading at 41x trailing earnings with ROE of 2.6%, this is an expensive ticket to a business going nowhere.",
+    "key_strengths": [
+      "Government ownership provides an implicit sovereign guarantee, preventing outright failure and allowing continued borrowing access",
+      "Recent profitability (INR 349 Cr in FY25) and sharply reduced debt (INR 3,714 Cr vs INR 7,162 Cr in FY22) show some deleveraging progress",
+      "Large legacy asset base (total assets INR 23,540 Cr) with potential resolution value from NPA recoveries"
+    ],
+    "key_risks": [
+      "Revenue has shrunk from INR 4,465 Cr (FY16) to INR 1,879 Cr (FY25) — this is a franchise in secular decline, not a recovery story",
+      "ROE of only 2.6% means the business earns less than the cost of equity; shareholders would be better served by liquidation at book value",
+      "FCF was negative INR 1,011 Cr in FY25 and positive in only 1 of the last 5 years — the company consumes more cash than it generates"
+    ],
+    "red_flags": [
+      "Negative P/S ratio (-27.86x) is a data anomaly flagging deeply abnormal revenue accounting — not a business I can evaluate with confidence",
+      "Operating Margin reported at 117.9% is mathematically nonsensical for a lending institution and signals accounting complexity or data distortion",
+      "41x P/E on INR 349 Cr of profit for an institution with a nine-year history of losses is speculative, not value — the market is buying a government restructuring option, not a business"
+    ],
+    "detailed_analysis": "Charlie Munger and I have a simple rule: if you have to work very hard to understand why a business is good, it probably is not. IFCI fails at the first test — the reported operating margin of 117.9% and a negative P/S ratio signal financial statement irregularities or structural accounting that I cannot reconcile. Even setting that aside, the underlying business is unambiguously in decline: revenues have fallen by more than half over nine years, and the accumulated losses from FY17-FY22 wiped out a substantial portion of the equity base.\n\nThe recent return to profitability is real — INR 241 Cr in FY24 and INR 349 Cr in FY25 — and is primarily driven by reduced finance costs (down 84% since FY16) and NPA resolutions rather than franchise growth. But paying 41x earnings for a company with ROE of 2.6%, negative FCF, and a shrinking loan book is not value investing — it is speculation on a government restructuring that may never fully materialise. I have no interest in government-sponsored financial institutions with poor return track records at premium valuations.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 178497,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.23121345000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 23741,
+      "cache_read_input_tokens": 15219,
+      "output_tokens": 9174,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 23741,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 501,
+          "cache_read_input_tokens": 15219,
+          "cache_creation_input_tokens": 8522,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8522
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

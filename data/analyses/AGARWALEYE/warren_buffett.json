@@ -1,0 +1,70 @@
+{
+  "symbol": "AGARWALEYE",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T16:15:51.404069Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Dr. Agarwal's is a roll-up eye hospital chain with genuine revenue momentum (26% CAGR), but a 110x P/E for a business earning a 4.76% ROE with INR 40 Cr of free cash flow against a INR 14,075 Cr market cap is speculative pricing, not value investing. I will not pay a wonderful price for a fair business.",
+    "key_strengths": [
+      "Consistent revenue growth — 26.4% CAGR, scaling from INR 531 Cr to INR 1,711 Cr in 5 years",
+      "Branded franchise in a niche (eye care) with recurring surgical demand and some brand moat in South India/Africa",
+      "Operating cash flow positive all 5 years, growing from INR 103 Cr to INR 360 Cr"
+    ],
+    "key_risks": [
+      "Extreme overvaluation: 110x P/E, EV/EBITDA 31x for a business generating just INR 110 Cr net profit",
+      "Catastrophically low ROE of 4.76% — destroying value on each new rupee deployed; ROCE barely 10%",
+      "Free cash flow collapsing: INR 118 Cr (FY24) → INR 40 Cr (FY25) as capex balloons to INR 321 Cr — a treadmill business"
+    ],
+    "red_flags": [
+      "ROE 4.76% — far below my 15% minimum threshold; the business earns less than cost of capital",
+      "Capex growing faster than profits: INR 321 Cr capex vs INR 110 Cr net profit in FY25",
+      "Promoter stake only 32.35% — low owner alignment; 57.94% FII concentration creates herd-exit risk",
+      "Net losses as recently as 2020–2021; profitability track record is only 3 years old"
+    ],
+    "detailed_analysis": "Dr. Agarwal's runs a capital-hungry hospital roll-up: total assets exploded from INR 751 Cr to INR 3,786 Cr in five years while net profit reached only INR 110 Cr. The math is brutal — the market pays 14,075 Cr for a business generating 40 Cr of free cash flow, a 0.28% FCF yield. Every new eye hospital requires heavy capex (CWIP at INR 163 Cr, investing outflows of INR 750 Cr in FY25 alone), and the returns on that capital are poor: 4.76% ROE means management destroys value with each expansion rupee unless the terminal returns dramatically improve. Debt has grown from INR 162 Cr to INR 983 Cr, and finance costs now consume INR 115 Cr annually — more than the net profit margin can comfortably absorb.\n\nThe business concept is not without merit: eye care is a genuine societal need, cataract volumes are underpenetrated in India, and Dr. Agarwal's brand carries real recognition. But a wonderful business at a fair price it is not — it is a fair-to-good business at an extraordinarily expensive price. Foreign institutional investors hold 58% of the float, which often amplifies the pain when sentiment turns. I require a margin of safety; here I'd be paying a premium to hope. Charlie and I will watch from the sidelines.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 50960,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07655295,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10847,
+      "cache_read_input_tokens": 8859,
+      "output_tokens": 2214,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10847,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 267,
+          "cache_read_input_tokens": 8859,
+          "cache_creation_input_tokens": 1988,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1988
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

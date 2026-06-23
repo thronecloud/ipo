@@ -1,0 +1,69 @@
+{
+  "symbol": "CERA",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-18T16:59:51.900023Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Cera is a solid stalwart brand in Indian sanitaryware with a near-debt-free balance sheet, but at P/E 27.8x on revenue growth that has decelerated to ~3-4% annually (₹1,810→₹1,926 Cr over 2023-2025), the PEG ratio of ~2.1x (27.8/13%) is well above my 1.0 comfort zone. The story isn't broken, but the price is ahead of the reality.",
+    "key_strengths": [
+      "Near-debt-free balance sheet (D/E 0.04) with consistently positive OCF across all 5 years — financial fortress.",
+      "Strong brand with 50.6% gross margins indicating real pricing power in a commoditized segment.",
+      "ROCE of 22.4% shows capital is being deployed effectively despite thin operating margins."
+    ],
+    "key_risks": [
+      "Revenue growth has stalled — ₹1,810→₹1,879→₹1,926 Cr (2023-2025) is barely 3% annual growth, not fast-grower territory.",
+      "Operating margin of 8.27% is thin and vulnerable to input cost inflation or competitive pricing pressure from Jaquar and Hindware.",
+      "2025 FCF (₹94 Cr) is significantly below net profit (₹249 Cr), raising earnings quality questions — other income (₹57 Cr) is doing heavy lifting."
+    ],
+    "red_flags": [
+      "PEG ~2.1x (P/E 27.8 ÷ 9Y earnings CAGR 13%) — significantly above my 1.0 ceiling; overvalued for growth on offer.",
+      "Other income surged from ₹23 Cr (2023) to ₹57 Cr (2025) — nearly 23% of operating income is now non-operating, masking weak core momentum.",
+      "Revenue deceleration is structural: 9Y CAGR of 8.6% with no re-acceleration evident in last 3 years."
+    ],
+    "detailed_analysis": "Cera is a textbook stalwart — a respectable brand with good margins at the gross level, minimal debt, and a long operating history. But when I walk into a showroom and see what Cera is competing against, I realize this isn't a dominant niche player — it's fighting Jaquar, Hindware, and tile players for the same wallet. Revenue has gone from ₹1,224 Cr in 2021 to ₹1,926 Cr in 2025 — a 5Y CAGR of ~9.5% — and net profit grew faster (₹100→₹249 Cr, ~20% CAGR) largely thanks to operating leverage, but that leverage seems tapped out. The last two years show net profit growing at only 3-4% annually, with operating margin stuck at ~8%. At P/E 27.8x, I'm paying a growth premium for a company that isn't growing like a growth company anymore.\n\nThe balance sheet is admirable — D/E 0.04, reserves growing steadily from ₹764 Cr (2020) to ₹1,347 Cr (2025), OCF positive every year. But the 2025 cash flow tells a worrying story: OCF of ₹122 Cr against net profit of ₹249 Cr means cash conversion is only ~49%. Other income of ₹57 Cr (up from ₹23 Cr in 2023) is propping up reported profits, not the core sanitaryware business. India's housing boom should be a tailwind, but Cera isn't capturing it as aggressively as the valuation assumes. I'd revisit at P/E closer to 18-20x — roughly ₹3,400-3,800/share — where the PEG would approach 1.0-1.3x and the margin of safety makes sense.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 58858,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08667735,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11383,
+      "cache_read_input_tokens": 9007,
+      "output_tokens": 2752,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11383
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 429,
+          "cache_read_input_tokens": 9007,
+          "cache_creation_input_tokens": 2376,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2376,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

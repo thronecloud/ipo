@@ -1,0 +1,69 @@
+{
+  "symbol": "FIVESTAR",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-22T16:35:24.077232Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "FIVESTAR is an NBFC — a category the Magic Formula explicitly excludes because borrowed capital is the raw material of the business, not a distortion to adjust for. Even if we force the metrics, earnings yield of ~7.4% (EBIT 1,505 Cr / EV ~20,360 Cr) falls well below my 12% minimum threshold, and ROIC is computationally meaningless when loans are the asset.",
+    "key_strengths": [
+      "Exceptional revenue growth: 33%+ CAGR 2022-2025 (INR 1,233 Cr → 2,706 Cr) with net profit doubling in 2 years to INR 1,072 Cr",
+      "Focused niche: micro-entrepreneur small-ticket mortgage lending with 63.5% operating margins, implying pricing power and disciplined underwriting",
+      "Forward P/E of 11.1x is reasonable if FY2026 earnings deliver ~INR 1,254 Cr, suggesting limited downside from current valuation"
+    ],
+    "key_risks": [
+      "Financial company — Magic Formula explicitly excludes this; ROIC and earnings yield calculations are structurally distorted for lending businesses",
+      "Persistently negative OCF (0/5 years positive, -1,045 Cr in FY2025) — normal for NBFCs but means the business requires constant external capital and cannot self-fund growth",
+      "Debt tripled in 3 years (INR 2,559 Cr → 7,922 Cr), D/E at 1.23x; any credit cycle deterioration or funding cost spike compresses spreads immediately"
+    ],
+    "red_flags": [
+      "Financial company: Magic Formula does not apply — standard ROIC and EV-based earnings yield calculations break down",
+      "Promoter holding of only 18.56% is very low — limited skin in the game for the management team running a leveraged lending book",
+      "Trailing P/E of 88.9x is irreconcilable with Net Profit of INR 1,072 Cr and Market Cap of INR 13,935 Cr (implied P/E ~13x) — suggests a data quality issue or a large one-time item in the trailing period"
+    ],
+    "detailed_analysis": "Magic Formula applicability is near-zero here. Greenblatt's framework works by finding businesses that earn high returns on tangible capital purchased cheaply relative to EBIT. NBFCs break both sides of this equation: their \"capital employed\" is mostly borrowed money deployed as loans, so Net Working Capital + Net Fixed Assets tells you nothing useful about the engine of value creation. Forcing the math anyway, EV comes to roughly INR 20,360 Cr (Market Cap 13,935 + Debt 7,922 − Cash 1,497), and EBIT (using operating income) is INR 1,505 Cr, yielding an earnings yield of ~7.4% — well below my 12% floor for even a cursory look. ROIC on a balance sheet that is 55% borrowed loans makes no sense to compute.\n\nOn pure business quality (setting the formula aside), the company's 33% revenue CAGR and 16% ROE are respectable but not exceptional for a growth-stage NBFC with a clean book. The structural headwinds are real: every rupee of loan growth requires external debt, OCF has been negative all five years, and debt has tripled to INR 7,922 Cr. Promoter stake of 18.56% adds a governance concern. At a forward P/E of 11x, the market is pricing in continued strong growth with no credit cycle — a fragile assumption for an NBFC extending to micro-entrepreneurs. This is not a Magic Formula stock; it's a credit-cycle bet best left to NBFC specialists.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "insufficient_data",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 53370,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08712809999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11236,
+      "cache_read_input_tokens": 8747,
+      "output_tokens": 2824,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11236,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 374,
+          "cache_read_input_tokens": 8747,
+          "cache_creation_input_tokens": 2489,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2489
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

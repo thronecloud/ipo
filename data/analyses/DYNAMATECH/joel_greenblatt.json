@@ -1,0 +1,69 @@
+{
+  "symbol": "DYNAMATECH",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T17:08:27.663382Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "Dynamatic Technologies fails the Magic Formula on both key metrics: Earnings Yield is a dismal ~2.1% (EBIT ₹160 Cr / EV ~₹7,554 Cr) against a 12%+ threshold, and ROCE of 8.96% is well below the 20%+ standard for a high-quality business. At 150x trailing P/E with flat revenue over 9 years, the stock offers no margin of safety.",
+    "key_strengths": [
+      "Diversified across aerospace, automotive, and hydraulics — reduces single-sector risk",
+      "Consistent positive operating cash flow (5/5 years), averaging ~₹120 Cr/year",
+      "Debt reduction visible: borrowings down from ₹743 Cr (2020) to ₹571 Cr (2025)"
+    ],
+    "key_risks": [
+      "Revenue stagnant/declining: 9-year CAGR of -0.7%, from ₹1,490 Cr (2016) to ₹1,404 Cr (2025)",
+      "Capital returns are far too low for the price: ROCE 8.96%, ROE 6.21% — barely above cost of capital",
+      "Valuation is extreme: EV/EBITDA of 58x and P/E of 150x leave zero room for error or disappointment"
+    ],
+    "red_flags": [
+      "2024 net profit of ₹122 Cr was massively distorted by ₹105 Cr in 'Other Income' (likely one-time asset sale); normalized profit reverts to ~₹43 Cr",
+      "Earnings yield of ~2.1% (EBIT/EV) is among the worst possible scores on the Magic Formula — 6x below minimum threshold",
+      "Free cash flow collapsing: FCF fell from ₹168 Cr (2020) to ₹22 Cr (2024), recovering only partially to ₹78 Cr in 2025"
+    ],
+    "detailed_analysis": "Running the Magic Formula on Dynamatic Technologies produces a near-failing grade on both axes. Earnings Yield = EBIT ₹160 Cr / EV (~₹7,015.9 Cr market cap + ₹571 Cr debt − ₹33 Cr cash = ₹7,554 Cr) = **2.1%** — the Formula demands at least 12%. Return on Capital, proxied by the reported ROCE of **8.96%**, is barely above a savings account rate and well below the 20% minimum for a \"good business.\" The gross margin of 48% looks optically appealing, but it collapses to 7.2% at the operating level, indicating heavy overhead and depreciation drag — the hallmark of a capital-intensive business that struggles to earn its cost of capital.\n\nThe 2024 earnings spike (₹122 Cr net profit) is a textbook red flag: it was driven by ₹105 Cr of \"Other Income,\" likely a one-time asset disposal. Strip that out and normalized earnings are ~₹43 Cr, which is what FY2025 confirmed. At ₹43 Cr of earnings against a ₹7,016 Cr market cap, the stock trades at a staggering ~163x normalized earnings. The Magic Formula is a systematic screener that would rank this stock in the absolute bottom decile — expensive AND mediocre returns. There is no variant perception here that changes the math.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 41165,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07592385,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11039,
+      "cache_read_input_tokens": 9212,
+      "output_tokens": 2117,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11039
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 337,
+          "cache_read_input_tokens": 9212,
+          "cache_creation_input_tokens": 1827,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1827,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

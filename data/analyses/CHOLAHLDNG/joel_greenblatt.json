@@ -1,0 +1,69 @@
+{
+  "symbol": "CHOLAHLDNG",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-19T13:00:54.348370Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "HOLD",
+    "investment_thesis": "Cholamandalam Financial Holdings is a financial holding company explicitly excluded from the Magic Formula — its negative operating cash flows (0/5 years positive) reflect loan book expansion, not business deterioration, but the framework simply cannot be applied. The underlying Chola Investment & Finance franchise has strong ROE of 19.1% and impressive net profit CAGR of 16.7%, but the P/E of 13x is only cheap relative to growth expectations, not cheap on an absolute Magic Formula basis.",
+    "key_strengths": [
+      "Net profit has compounded at 16.7% CAGR over 9 years with consistent expansion — the underlying lending franchise is executing well",
+      "Diversified financial services (vehicle finance, LAP, home loans, insurance) reduces concentration risk vs pure-play NBFCs",
+      "Forward P/E of 10.7x suggests the market is beginning to price in some risk — relatively more reasonable than peers"
+    ],
+    "key_risks": [
+      "Total debt of INR 1,74,366 Cr (FY25) against equity of INR 13,670 Cr = D/E of 6.35x — enormous leverage that amplifies any credit cycle stress",
+      "Total assets have grown from INR 75,855 Cr (FY20) to INR 2,39,882 Cr (FY25) — a 3x expansion in 5 years that will face an asset quality test in any economic slowdown",
+      "Finance costs of INR 12,494 Cr in FY25 (vs INR 4,608 Cr in FY21) are growing faster than revenue — margin compression risk is real"
+    ],
+    "red_flags": [
+      "Financial company — Magic Formula cannot be applied; EBIT/EV and ROIC are structurally distorted by lending business model",
+      "Operating cash flow has been negative every single year for 5 years — this is normal for a growing NBFC but makes FCF-based analysis impossible",
+      "ROCE of 10.6% is below what I expect from a quality business, reflecting the capital-intensive nature of financial intermediation"
+    ],
+    "detailed_analysis": "Cholamandalam Financial Holdings sits outside the Magic Formula universe by design — it's a leveraged financial intermediary where 'earnings yield' and 'return on capital' have entirely different meaning than in an industrial company. The 6.35x debt-to-equity is not recklessness; it's the business model. That said, the franchise quality is evident: a 16.7% net profit CAGR sustained over nearly a decade is impressive, and the Murugappa Group backing provides governance comfort. The concern is that the loan book has tripled in 5 years and credit cycles are cruel — what looks like strong ROE in growth phase can deteriorate rapidly when NPAs rise. At P/E of 13x this is not outrageously expensive for a quality NBFC, but it's not a Magic Formula bargain either.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "insufficient_data",
+      "valuation": "fair",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 134339,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.20717639999999998,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 22732,
+      "cache_read_input_tokens": 15908,
+      "output_tokens": 7810,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 22732,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 800,
+          "cache_read_input_tokens": 15908,
+          "cache_creation_input_tokens": 6824,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 6824
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

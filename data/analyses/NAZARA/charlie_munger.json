@@ -1,0 +1,71 @@
+{
+  "symbol": "NAZARA",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T22:00:29.257946Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Nazara is a serial acquirer with a 71% gross margin that somehow converts to a 2% operating margin and ~2.5% ROCE — a classic sign of a business that buys growth but destroys capital in the process. At 133x trailing P/E and EV/EBITDA of 100x, the market is pricing perfection into a business that has delivered negative net profit CAGR over nine years.",
+    "key_strengths": [
+      "High gross margins (71%) suggest underlying IP and digital distribution economics, if ever realized at scale",
+      "Revenue CAGR of 25.5% over 9 years shows platform is gaining distribution and market penetration",
+      "Near-zero financial leverage (D/E: 0.06) leaves balance sheet optionality, though equity dilution is the real cost"
+    ],
+    "key_risks": [
+      "Capital destruction via serial M&A: investing CF was -₹1,139 Cr in FY25 alone, yet net profit fell from ₹75 Cr to ₹51 Cr — acquisitions are not accreting value",
+      "ROIC is approximately 2.2% (EBIT ₹115 Cr / invested capital ~₹3,961 Cr) — far below cost of capital; every rupee deployed destroys value",
+      "Valuation leaves no margin of safety: EV/EBITDA of 100x requires flawless execution for decades to justify current price"
+    ],
+    "red_flags": [
+      "Net profit CAGR of -2.7% over 9 years despite 25.5% revenue growth — scale is not producing earnings",
+      "Other income (₹80 Cr) exceeds core operating income net of finance costs — the business is not self-sustaining on operations",
+      "Constant equity raises (financing CF: +₹805 Cr in FY25, +₹946 Cr in FY24) to fund acquisitions = chronic shareholder dilution",
+      "Free cash flow turned negative in FY25 (-₹82 Cr) despite ₹1,624 Cr revenue — FCF/Net income ratio deeply negative",
+      "Total assets inflated from ₹752 Cr (2020) to ₹4,260 Cr (2025) largely via acquisitions, with likely substantial goodwill at risk of impairment"
+    ],
+    "detailed_analysis": "Invert first — what does a terrible gaming business look like? It buys 20 properties across esports, edtech, rummy, fantasy sports, and adtech; it reports high gross margins that evaporate entirely at the operating line; it raises equity perpetually; and it reports other income nearly equal to net profit, masking the operating reality. Nazara fits this description precisely. With ROCE at 2.5% and ROIC estimated at roughly 2.2%, management is systematically destroying value with every acquisition cheque written. The gross-to-operating margin collapse (71% → 2%) tells you that every revenue rupee is being consumed by content costs, marketing, and overhead across a sprawling, poorly integrated portfolio of assets.\n\nThe valuation is, frankly, absurd for a business of this quality. A P/E of 133x and EV/EBITDA of 100x demand that Nazara compound earnings at 25%+ annually for a decade just to reach a reasonable multiple. Yet net profit has gone nowhere in nine years, FCF is negative, and the balance sheet swells with acquisition consideration funded by dilutive equity issuances. The promoter holds only 35.45% — modest skin in the game for a company built on M&A trust. Until Nazara demonstrates it can organically convert its gross margin advantage into double-digit ROIC without perpetual capital injections, this remains a wealth-transfer machine from shareholders to sellers of gaming assets.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 47404,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0747351,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10862,
+      "cache_read_input_tokens": 8962,
+      "output_tokens": 2087,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10862,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 245,
+          "cache_read_input_tokens": 8962,
+          "cache_creation_input_tokens": 1900,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1900
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "AEGISVOPAK",
+  "persona": "howard_marks",
+  "persona_display_name": "Howard Marks",
+  "analyzed_at": "2026-04-20T11:14:16.080835Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "An infrastructure terminal operator earning 7% ROCE trading at 55x EV/EBITDA and 109x earnings is a textbook example of an IPO priced to perfection at the peak of the cycle. The gap between capital-intensive economic reality (mediocre returns, negative cumulative FCF) and euphoric market pricing offers negative margin of safety.",
+    "key_strengths": [
+      "Strategic infrastructure assets (LPG/chemical storage terminals) with high operating margins (48%) and sticky customers",
+      "JV with Royal Vopak brings global operating expertise and credibility",
+      "Post-IPO balance sheet deleveraged (borrowings fell from 3,273 Cr to 2,004 Cr as equity jumped to 4,742 Cr)"
+    ],
+    "key_risks": [
+      "Valuation extreme: 55x EV/EBITDA and 31x P/S for a 7% ROCE business — zero margin for error",
+      "Finance cost (193 Cr) nearly 1.5x net profit (127 Cr); cumulative FCF still negative across 4 years despite 2025 uptick",
+      "Recent IPO with no public-market track record through a downturn; promoter 87% = thin float amplifies mispricing"
+    ],
+    "red_flags": [
+      "Classic late-cycle IPO characteristic — infra story sold into euphoric capex/energy narrative",
+      "ROCE (7.01%) materially below cost of debt implied by finance cost run-rate — value destruction at the margin",
+      "P/S of 31x on a regulated-tariff-like storage business is disconnected from any reasonable DCF"
+    ],
+    "detailed_analysis": "Second-level thinking here is simple: the first-level view is \"scarce strategic infrastructure + Vopak partnership + India energy growth story.\" The price already reflects — and vastly overstates — all of that. At 55x EV/EBITDA, an investor is paying today for roughly 20 years of forward EBITDA at current run-rate, in a business whose ROCE (7%) barely covers its own cost of capital. Net profit of 127 Cr against a 22,244 Cr market cap is a 0.6% earnings yield; the 10-year G-Sec at ~7% offers eleven times the yield with no risk. There is no asymmetric payoff here — downside to fair value is easily 50-70%, upside requires heroic tariff and volume assumptions.\\n\\nOn the cycle question: this is a 2025 IPO that rode the Indian capex/infra euphoria into listing, with promoter holding 87% keeping float artificially tight. The balance sheet tells the real story — 7,072 Cr assets funded by continuous external capital (financing inflows of 1,629/603/386 Cr across three years), with FCF only turning positive in 2025 after four years of heavy negative investing cash flow. In a rate-tightening or energy-demand softening scenario, both multiple compression and earnings pressure compound. A Marks-style pass: wait for the pendulum to swing — this will be available at a fraction of today's price when the IPO-cycle mood sours.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 30445,
+    "model_used": "opus",
+    "total_cost_usd": 0.11321825,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 10461,
+      "cache_read_input_tokens": 14564,
+      "output_tokens": 1621,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10461,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 11682,
+          "cache_creation_input_tokens": 1661,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1661
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

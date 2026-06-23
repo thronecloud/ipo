@@ -1,0 +1,68 @@
+{
+  "symbol": "ASHOKA",
+  "persona": "howard_marks",
+  "persona_display_name": "Howard Marks",
+  "analyzed_at": "2026-04-18T16:30:58.312856Z",
+  "analysis": {
+    "score": 6,
+    "recommendation": "BUY",
+    "investment_thesis": "Ashoka Buildcon trades below book value (P/B 0.93x) with an EV/EBITDA of ~2.7x on normalized 2024 EBITDA, offering genuine margin of safety in a government-capex-backed infrastructure business that has materially deleveraged its balance sheet. Second-level insight: the market correctly discounts the inflated FY25 PAT of ₹1,734 Cr (forward P/E of 12x implies ~₹326 Cr normalized earnings), but even on that conservative basis, you're buying real infrastructure assets — toll roads, EPC order book — at a discount to replacement cost.",
+    "key_strengths": [
+      "Dramatic balance sheet transformation: borrowings collapsed from ₹5,450 Cr (FY24) to ₹1,989 Cr (FY25) via BOT asset monetization, while equity tripled from ₹414 Cr (FY20) to ₹4,210 Cr (FY25)",
+      "Revenue CAGR of 15.1% over 9 years with consistently positive OCF (5/5 years); FY25 OCF of ₹1,673 Cr is the strongest in the dataset",
+      "Sub-book valuation (P/B 0.93x) on a 50-year-old infrastructure business with irreplaceable project execution track record and 54.47% promoter skin in the game"
+    ],
+    "key_risks": [
+      "Finance cost of ₹1,245 Cr in FY25 against stated borrowings of only ₹1,989 Cr implies ~62% implied rate — the real consolidated debt including BOT SPVs is far higher than the standalone balance sheet reveals; interest coverage of 2.4x (EBITDA/finance cost) is thin",
+      "FY25 net profit of ₹1,734 Cr is almost certainly inflated by one-time BOT asset sale gains; normalized earnings are likely ₹300–500 Cr, making the trailing P/E of 3.73x deeply misleading and forward earnings visibility poor",
+      "EPC/infrastructure is highly cyclical and working-capital-intensive; any slowdown in government capex disbursements or policy shift post-elections would compress margins, stretch receivables, and re-lever the balance sheet quickly"
+    ],
+    "red_flags": [
+      "PAT jumped from ₹521 Cr (FY24) to ₹1,734 Cr (FY25) on essentially flat revenue (+2.4%) — one-time monetization gain, not operating leverage; effective tax rate implied is ~6%, confirming exceptional items",
+      "Finance costs of ₹800–1,310 Cr have persisted for a decade regardless of reported debt levels, signalling material off-balance-sheet project SPV leverage not reflected in the consolidated D/E of 0.44x"
+    ],
+    "detailed_analysis": "At ₹139 and a market cap of ₹3,897 Cr, the market is pricing Ashoka Buildcon as if FY25 earnings are entirely non-recurring — and it is largely right. The correct earnings base to anchor valuation is FY24's ₹521 Cr or a normalized ₹400–500 Cr range (implied by forward P/E of ~12x). On that basis, EV (market cap ₹3,897 Cr + net debt ₹2,059 Cr) = ~₹5,956 Cr against FY24 EBITDA of ₹2,228 Cr yields EV/EBITDA of ~2.7x — a genuine mispricing for a business with a 9-year revenue CAGR of 15.1% and an expanding order book backed by India's National Infrastructure Pipeline. The sub-book price provides a floor; the asset monetization engine (BOT highways) is a repeatable value-creation lever, not a one-time miracle.\n\nThe key risk Howard Marks would fixate on is hidden leverage. Finance costs of ₹1,245 Cr with only ₹1,989 Cr in stated borrowings is arithmetically impossible at any market interest rate — the actual consolidated debt picture across project SPVs is far more onerous. Interest coverage at 2.4x leaves little room for an economic or policy shock. The business has never been tested through a true credit crunch (FY20-21 slowdown only mildly stressed it). At current price, the asymmetry is modestly favorable: the downside is cushioned by asset value (below book) and the government's structural commitment to infrastructure spending, while the upside depends on sustained project execution and continued BOT monetization. This is a BUY for patient capital, not a high-conviction slam-dunk.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "undervalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 102999,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.1316658,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 12054,
+      "cache_read_input_tokens": 11131,
+      "output_tokens": 5541,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 12054,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 549,
+          "cache_read_input_tokens": 9077,
+          "cache_creation_input_tokens": 5031,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 5031
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

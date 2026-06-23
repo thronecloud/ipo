@@ -1,0 +1,69 @@
+{
+  "symbol": "CMSINFO",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T16:58:53.150705Z",
+  "analysis": {
+    "score": 6,
+    "recommendation": "HOLD",
+    "investment_thesis": "CMS Info Systems is a good-quality capital-light business earning ~24% ROIC at a borderline-attractive earnings yield of ~12%, placing it in the second tier of Magic Formula candidates — not cheap enough to be a screaming buy, but quality warrants holding. The 7-year net profit CAGR of 24.6% is impressive, but slowing EBITDA growth and 0% promoter stake limit conviction.",
+    "key_strengths": [
+      "High ROIC (~27% EBIT/Capital Employed) sustained over multiple years — the hallmark of a good Magic Formula business",
+      "Asset-light economics: 90.7% gross margin, low D/E of 0.10, and strong OCF of INR 483 Cr in FY2025",
+      "Net profit CAGR of 24.6% over 7 years with consistent positive free cash flow (5/5 years)"
+    ],
+    "key_risks": [
+      "Zero promoter holding is a serious corporate governance flag — no skin-in-the-game owner-operator",
+      "EBITDA declined FY2024→FY2025 (717→649 Cr) despite revenue growth — margin compression is a red flag",
+      "Structural headwind: India's digital payments shift (UPI) threatens long-term ATM cash management volumes"
+    ],
+    "red_flags": [
+      "0% promoter shareholding — no controlling owner with aligned incentives",
+      "EBITDA compressed by INR 68 Cr year-over-year in FY2025 — first reversal in the trend",
+      "CWIP surged to INR 142 Cr in FY2025 (from INR 18 Cr) and new borrowings of INR 223 Cr appeared — elevated capex cycle beginning"
+    ],
+    "detailed_analysis": "**Magic Formula metrics:** EBIT FY2025 = INR 627 Cr. Enterprise Value = Market Cap (5,243.5) + Total Debt (190) − Cash (231) = ~INR 5,203 Cr, giving an Earnings Yield of 12.1% — right at the attractive threshold but not compelling. ROIC using EBIT / (Equity + Debt − Cash) ≈ 627 / 2,292 = 27.4%, which is excellent. ROCE reported at 23.7% corroborates this. The business clearly earns high returns on invested capital and trades at a barely-acceptable price — solid but not a top-decile Magic Formula rank.\n\n**Business quality and concerns:** The 7-year operating income CAGR of 23% is impressive, but the FY2025 data shows a clear deceleration: revenue grew ~7% while EBITDA fell ~9% (717→649 Cr), suggesting cost inflation in the physical cash logistics network. The CWIP jump to INR 142 Cr and new long-term borrowings signal an upcoming capex cycle that may depress FCF. The zero promoter stake — a legacy of Blackstone's PE exit — remains the single biggest governance concern for a Greenblatt-style systematic buyer, who typically avoids businesses with no principal-agent alignment at the top.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 49177,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08116455,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11111,
+      "cache_read_input_tokens": 9031,
+      "output_tokens": 2452,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11111
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 415,
+          "cache_read_input_tokens": 9031,
+          "cache_creation_input_tokens": 2080,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2080,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

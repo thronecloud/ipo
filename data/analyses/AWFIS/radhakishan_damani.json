@@ -1,0 +1,71 @@
+{
+  "symbol": "AWFIS",
+  "persona": "radhakishan_damani",
+  "persona_display_name": "Radhakishan Damani",
+  "analyzed_at": "2026-04-18T16:35:05.637350Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "Awfis is a debt-laden co-working rollup that has only just turned profitable in FY2025 after six years of losses, funded almost entirely by borrowings growing at 73% CAGR. With D/E of 2.91 and promoter holding at a negligible 17%, this fails every foundational filter I apply before even looking at price.",
+    "key_strengths": [
+      "Revenue scaling rapidly — INR 154 Cr to INR 1,208 Cr in 6 years, showing real demand for flexible workspaces in India",
+      "Operating CF turned consistently positive (5/5 years), reaching INR 363 Cr in FY2025 — the business does generate cash before financing obligations",
+      "First full-year net profit of INR 68 Cr in FY2025 marks a business inflection, albeit fragile"
+    ],
+    "key_risks": [
+      "Debt/Equity of 2.91 is nearly 10x my absolute limit of 0.3 — borrowings of INR 1,451 Cr dwarf equity of INR 499 Cr; finance costs rose 73% CAGR, faster than revenue",
+      "Promoter holding of just 17% signals founders have little skin in the game — I won't trust a business where promoters themselves have largely exited",
+      "Co-working is structurally fragile: long-term lease liabilities, short-term customer contracts — the WeWork collapse globally is a live case study in this model's dangers during downturns"
+    ],
+    "red_flags": [
+      "D/E of 2.91 — absolute dealbreaker; I own nothing above 0.5",
+      "Promoter stake at 17% — far below my 55% minimum threshold",
+      "Negative reserves from 2020–2024 — company ran on borrowed equity for years",
+      "No dividend history — zero signal of real, distributable earnings quality",
+      "Finance costs of INR 136 Cr in FY2025 consume 2x the net profit of INR 68 Cr — earnings are hostage to lenders"
+    ],
+    "detailed_analysis": "Awfis is essentially a leveraged real estate arbitrage business — it signs long-term leases, fitouts spaces with borrowed capital, and sublets by the seat or hour. The model generates operating cash flow, but the balance sheet tells the true story: borrowings grew from INR 248 Cr in FY2020 to INR 1,451 Cr in FY2025, a 34% CAGR, while equity only turned meaningfully positive after a likely equity raise inflating FY2025 reserves to INR 427 Cr. The P/E of 44x on a single year of INR 68 Cr profit — after six consecutive loss years — is pure speculation, not investing. ROCE of 12.9% on this capital base is inadequate to justify the leverage carried.\n\nThe qualitative picture is equally troubling. A promoter holding of 17% tells me the founders have already monetised much of their interest — this is not a business where management and shareholders are aligned over decades. The co-working sector has no durable moat: leases can be replicated, pricing is competitive, and enterprise clients can walk away at contract end. I built DMart by owning the real estate, keeping zero debt, and never losing sleep over a landlord. Awfis has done the opposite. At any price, this does not qualify for my portfolio.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 52758,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.06647025000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8635,
+      "cache_read_input_tokens": 11000,
+      "output_tokens": 2052,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 6820,
+        "ephemeral_5m_input_tokens": 1815
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 293,
+          "cache_read_input_tokens": 8910,
+          "cache_creation_input_tokens": 1815,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1815,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

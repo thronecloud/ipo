@@ -1,0 +1,70 @@
+{
+  "symbol": "544648",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-20T11:06:16.610215Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Unisem Agritech fails nearly every quantitative test I require: a P/E of 15.90 exceeds my ceiling, ROE of 0.57% indicates essentially no earning power, and as a recently-listed 2016-founded micro-cap (INR 68 Cr) it lacks the multi-year earnings record I demand. This is a speculative IPO-style security priced as if profits existed, and it offers no margin of safety.",
+    "key_strengths": [
+      "High promoter skin-in-the-game at 70.88% aligns insider interest",
+      "Some institutional validation (FII 5.59% + DII 8.17% = 13.76%)",
+      "Operates in a defensive FMCG/agri-seeds niche with recurring demand"
+    ],
+    "key_risks": [
+      "ROE of 0.57% — capital is earning nothing; unacceptable for a value buyer",
+      "P/E of 15.90 exceeds my <15 threshold despite negligible profitability",
+      "Incorporated 2016, recently listed — no 5-year earnings track record, no dividend history"
+    ],
+    "red_flags": [
+      "P/E of ~16x on ROE of 0.57% implies absurd implicit P/B — paying a premium for non-earnings",
+      "No disclosed current ratio, debt-to-equity, or book value — insufficient balance-sheet data to assess safety",
+      "Recent listing on BSE — classic IPO setup where sellers know more than buyers",
+      "Micro-cap of INR 68 Cr limits liquidity and invites manipulation"
+    ],
+    "detailed_analysis": "From my framework, this security is a non-starter. A ROE of 0.57% means for every rupee of equity, the business earns barely half a paisa — that is not \"earning power,\" that is capital destruction once inflation is considered. Yet the market assigns a P/E of 15.90, which mathematically implies the price sits at roughly 9x book value (15.90 × 0.57% = 9.1% earnings yield on price, versus 0.57% on book). Paying 9x book for a business with no earning power is the opposite of a margin of safety; it is a speculative premium. I cannot compute a Graham Number without EPS and BVPS, but the ratios we do have already disqualify the name.\n\nIncorporation in September 2016 with a recent BSE listing means there is no 3-to-5-year record of consistent earnings available to the public investor, no dividend history to prove real cash returns, and no demonstration of resilience across a business cycle. Promoter holding of 70.88% is the one redeeming feature — it shows alignment — but alignment is not valuation. Until this company produces five consecutive years of material earnings, trades below 1.5x book, and demonstrates a current ratio above 2.0, it belongs in the speculative bucket, not the investment bucket. Mr. Market is offering me a story; I require numbers. Avoid.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "insufficient_data",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 26370,
+    "model_used": "opus",
+    "total_cost_usd": 0.10051625,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 9229,
+      "cache_read_input_tokens": 13510,
+      "output_tokens": 1442,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9229,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10624,
+          "cache_creation_input_tokens": 1491,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1491
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

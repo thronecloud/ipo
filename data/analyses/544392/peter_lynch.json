@@ -1,0 +1,69 @@
+{
+  "symbol": "544392",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-20T19:52:40.571339Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Spinaroo is a tiny ₹41 Cr micro-cap paper/aluminium maker trading at a nonsensical P/E of 32.7 on a ROE of just 0.21% — there is no growth story, no earnings power, and no margin of safety. Without visible revenue/earnings acceleration, this fails every GARP test I'd apply.",
+    "key_strengths": [
+      "Small base (₹41 Cr mcap) theoretically leaves room to scale if execution improves",
+      "Promoter holding at 47.66% is reasonable skin-in-the-game",
+      "Dual-product exposure (paper + aluminium) in commoditized but perennial demand categories"
+    ],
+    "key_risks": [
+      "ROE of 0.21% indicates near-zero earnings power — business barely profitable",
+      "P/E 32.7 on negligible earnings gives PEG that is either meaningless or astronomically high",
+      "Commodity paper/aluminium converter — no moat, no pricing power, no niche dominance"
+    ],
+    "red_flags": [
+      "32.7x P/E on 0.21% ROE is a classic micro-cap valuation disconnect",
+      "Sub-₹50 Cr BSE micro-cap — typical low-liquidity, operator-prone profile",
+      "No evidence of a clear growth story or earnings trajectory in the data provided"
+    ],
+    "detailed_analysis": "From my GARP lens this is an immediate pass. A P/E of 32.7x on an ROE of 0.21% tells me earnings are effectively a rounding error — you're paying a growth multiple for a business that isn't compounding capital. In paper and aluminium conversion, which is a low-margin commodity trade, the companies that win are scale leaders with captive customers or specialty niches; a ₹41 Cr BSE micro-cap incorporated in 2012 shows no such evidence. There's no \"what's the story\" here that I can articulate in two sentences, which is always my warning sign.\n\nI also don't see the Lynch small-cap sweet spot: niche dominator, visible consumer tailwind, accelerating earnings. Instead, I see the profile of a low-float BSE name where the price can move on flows unrelated to fundamentals. I'd want ROE climbing above 15%, revenue growing 20%+ with expanding margins, and a PEG under 1 before I'd even open the annual report. Until earnings demonstrably inflect, this belongs in the \"too hard / too small / too expensive\" bucket.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 23932,
+    "model_used": "opus",
+    "total_cost_usd": 0.09376499999999999,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8914,
+      "cache_read_input_tokens": 13395,
+      "output_tokens": 1253,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8914,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 97,
+          "cache_read_input_tokens": 10551,
+          "cache_creation_input_tokens": 1207,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1207
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

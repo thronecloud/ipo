@@ -1,0 +1,69 @@
+{
+  "symbol": "CRAFTSMAN",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-19T13:01:24.613302Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Craftsman Automation is a capital-intensive auto-components manufacturer burdened with debt/equity of 1.09x, finance costs of INR 217 Cr that nearly match net profit of INR 201 Cr, and two consecutive years of negative free cash flow (INR -115 Cr in FY24, INR -706 Cr in FY25). At 52.2x earnings and 6.1x book, the market is pricing a business I find financially precarious as though it were a quality compounder.",
+    "key_strengths": [
+      "Revenue has compounded at 22.8% over eight years (INR 1,102 Cr to INR 5,690 Cr), demonstrating genuine market share gains across powertrain, aluminium, and industrial segments",
+      "Operating cash flow has been positive all five years (INR 283–608 Cr), confirming the core operating business generates real cash before financing",
+      "Diversified customer base across CVs, tractors, two-wheelers, and industrial/warehousing reduces single-sector cyclicality"
+    ],
+    "key_risks": [
+      "Debt/equity of 1.09x breaches my absolute maximum of 0.5x; borrowings surged from INR 1,755 Cr to INR 3,311 Cr in a single year as total assets nearly doubled — a large leveraged acquisition with unproven returns",
+      "Finance costs of INR 217 Cr (FY25) against net profit of INR 201 Cr means the entire equity profit is consumed by interest payments; one bad quarter wipes out shareholder earnings entirely",
+      "Auto-components is a cyclical business; the combination of high leverage and declining net profit (INR 337 Cr in FY24 to INR 201 Cr in FY25, -40%) in a supposedly normal year is alarming"
+    ],
+    "red_flags": [
+      "Graham Number ≈ INR 2,050 (EPS ~INR 147, BVPS ~INR 1,269); stock at INR 7,691 is 3.75x that figure — the most extreme overvaluation in this set of five stocks",
+      "Negative free cash flow of INR -706 Cr in FY25 — the company is consuming capital faster than it generates it; this is financed by debt, not earnings",
+      "Net profit fell 40% year-over-year (FY24 to FY25) while debt nearly doubled; this is precisely the combination of factors that precedes a financial restructuring"
+    ],
+    "detailed_analysis": "My first concern with Craftsman is the balance sheet. Borrowings of INR 3,311 Cr against equity of INR 3,030 Cr (D/E 1.09x) violates one of my most fundamental rules — that a manufacturing business must not owe more than 50 pence for every pound of shareholder equity. The FY25 surge in borrowings and assets clearly reflects a major acquisition; total assets leapt from INR 4,706 Cr to INR 8,266 Cr, financed largely by debt. The ROE of 9.4% and ROCE of 11.7% do not justify such leverage.\n\nThe income statement compounds these concerns: finance costs have grown from INR 90 Cr (FY17) to INR 217 Cr (FY25), while net profit of INR 201 Cr barely covers those charges. Free cash flow of INR -706 Cr in FY25 means the company is destroying value in cash terms. I apply a Graham Number test: √(22.5 × 147 × 1,269) ≈ INR 2,050. The stock at INR 7,691 demands I overpay by 275%. A cyclical, capital-hungry business with deteriorating profits and rising debt should trade at a steep discount to intrinsic value, not a massive premium.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 156176,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.21759810000000002,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 23420,
+      "cache_read_input_tokens": 15947,
+      "output_tokens": 8332,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 23420,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 726,
+          "cache_read_input_tokens": 15947,
+          "cache_creation_input_tokens": 7473,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 7473
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

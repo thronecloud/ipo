@@ -1,0 +1,69 @@
+{
+  "symbol": "ABFRL",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-19T06:17:47.606812Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "Aditya Birla Fashion is a Magic Formula non-starter: negative EBIT at the net level, ROCE of -2.87%, ROE of -10.9%, and net losses in 5 of the last 6 years. The company cannot be ranked by Earnings Yield because the numerator (EBIT) is effectively negative after lease obligations, and an EV/EBITDA of 197x underscores how absurdly distorted the valuation is.",
+    "key_strengths": [
+      "Brand portfolio (Louis Philippe, Van Heusen, Allen Solly, Peter England) has genuine consumer recognition and pricing power in aspirational apparel",
+      "OCF positive for 5/5 years (INR 636–1,644 Cr) — the retail operations do generate pre-depreciation cash, which keeps the company solvent",
+      "Ongoing demerger/restructuring (ethnic wear business separated) could simplify the P&L and reduce complexity discount — Forward P/E of 10.34x implies market expects profitability if restructuring succeeds"
+    ],
+    "key_risks": [
+      "Persistent losses: Net Profit was negative in FY20, FY21, FY22 (partial), FY23, FY24, and FY25 — this is not a cyclical dip but a structural inability to earn returns above cost of capital",
+      "Finance costs exploded from INR 225 Cr (FY19) to INR 608 Cr (FY25) — up 170% — driven by Ind AS 116 lease liabilities that are real cash obligations in a capital-intensive retail model",
+      "Revenue has gone nowhere: INR 8,118 Cr (FY19) → INR 7,351 Cr (FY25), a -1.6% CAGR over 6 years after the demerger, suggesting the core business is stagnating"
+    ],
+    "red_flags": [
+      "Magic Formula cannot function: EBIT is negative at the operating profit level after lease-adjusted costs; Earnings Yield formula produces a negative number",
+      "EV/EBITDA of 197x is a nonsensical valuation — even if EBITDA is INR 1,239 Cr, enterprise value at ~INR 244,000 Cr implied is absurd; this metric is being distorted by Ind AS 116 treatment",
+      "Borrowings grew from INR 5,285 Cr (FY20) to INR 9,451 Cr (FY24) even as the business lost money — debt was funding operating losses, not growth investment"
+    ],
+    "detailed_analysis": "The Magic Formula requires positive EBIT — ABFRL fails at the first gate. With ROCE at -2.87% and ROE at -10.9%, this business is destroying capital, not compounding it. The INR 608 Cr finance cost in FY25 (nearly equal to operating income of INR 699 Cr) means the company barely covers its debt service even before taxes, depreciation on owned assets, and exceptional items. The reported EBITDA of INR 1,239 Cr is inflated by Ind AS 116 lease capitalization — add back the lease payments and the true cash earnings are far lower. I simply cannot compute a meaningful Earnings Yield or Return on Capital here.\n\nThe bull case rests on the demerger of the ethnic wear business (Sabyasachi, Tarun Tahiliani, etc.) simplifying the remaining entity, and the legacy western-wear brands (Louis Philippe, Van Heusen) eventually generating meaningful returns. The Forward P/E of 10.34x is optically cheap, but it requires a company that has lost money for 5+ consecutive years to suddenly achieve consistent profitability. Until EBIT is positive and sustained for at least two years, the Magic Formula has no basis for evaluating this company — and I have no basis for buying it.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 180544,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.25746959999999997,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 25350,
+      "cache_read_input_tokens": 15627,
+      "output_tokens": 10514,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 25350,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 679,
+          "cache_read_input_tokens": 15627,
+          "cache_creation_input_tokens": 9723,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 9723
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

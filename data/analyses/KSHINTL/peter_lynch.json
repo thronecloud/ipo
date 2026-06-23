@@ -1,0 +1,68 @@
+{
+  "symbol": "KSHINTL",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-21T07:50:40.859092Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "KSH is a legitimate fast grower riding India's power infrastructure and renewables buildout — 31% revenue CAGR and 35% earnings CAGR with a near-1 PEG are attractive. However, persistently negative free cash flow (-₹130 Cr in FY25) and debt/equity of 1.40 mean this growth is largely debt-financed, making it a \"show me the cash\" story before upgrading to a buy.",
+    "key_strengths": [
+      "Exceptional growth: 31% revenue CAGR and 35% net profit CAGR over 3 years, well above Lynch's 15-25% threshold",
+      "Sector tailwinds are visible and real — India's power capex, renewable energy generators, and railway electrification directly drive demand for magnet winding wires",
+      "Forward PEG of ~0.56 (Forward P/E 19.75 ÷ 35% growth) suggests meaningful re-rating potential if execution holds; ROCE of 39% shows capital is being deployed efficiently"
+    ],
+    "key_risks": [
+      "Debt/equity of 1.40 vs. Lynch's 0.6 ceiling — total debt nearly doubled from ₹214 Cr to ₹366 Cr in one year, with finance costs growing at 46% CAGR (faster than profits)",
+      "Free cash flow negative in 3 of 4 years, including -₹130 Cr in FY25 — growth is funded by borrowings, not operations; this is unsustainable if credit tightens",
+      "Operating margin of only 5.18% on a commodity-like product (copper/aluminum winding wire) leaves virtually no buffer against raw material price spikes or competition"
+    ],
+    "red_flags": [
+      "FCF deeply negative (-₹130 Cr) despite ₹1,805 Cr in revenue — classic working-capital trap in a B2B industrial supply chain",
+      "Finance costs growing at 46% CAGR will increasingly eat into earnings if debt keeps compounding at current pace"
+    ],
+    "detailed_analysis": "KSH fits Lynch's \"fast grower\" category — a small Pune-based industrial riding a powerful macro wave. India is wiring itself at historic speed: new transformer capacity, wind/solar generators, railway electrification, and EV motors all consume magnet winding wire. Revenue went ₹804→₹1,805 Cr in three years and net profit nearly tripled from ₹28 Cr to ₹68 Cr. The trailing PEG of 0.92 and forward PEG of ~0.56 are the kind of numbers Lynch would circle in red — the stock isn't obviously expensive for its growth rate. ROCE of 39% is genuinely impressive for a component manufacturer.\n\nThe problem is the plumbing. Operating cash flow has been negative or near-zero in 3 of 4 years, and the ₹120 Cr capex surge in FY25 produced -₹130 Cr FCF funded almost entirely by new borrowings (financing CF +₹123 Cr). Debt/equity of 1.40 is more than double Lynch's comfort zone. At 5% operating margins, a 1-2% compression from copper prices or order softness would disproportionately hit the bottom line. Lynch's rule: a company that can't generate cash is borrowing from its future. KSH needs to convert this revenue growth into real free cash flow before earning a strong buy conviction.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 47931,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07951124999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10629,
+      "cache_read_input_tokens": 8445,
+      "output_tokens": 2474,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10629,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 336,
+          "cache_read_input_tokens": 8445,
+          "cache_creation_input_tokens": 2184,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2184
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

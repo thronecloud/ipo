@@ -1,0 +1,68 @@
+{
+  "symbol": "CYIENT",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-19T13:05:06.168550Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Cyient presents the strongest quantitative case of the five companies examined: nine consecutive years of positive net profit (no losses even during FY20), minimal debt (D/E 0.07), and a Graham Number of approximately INR 816 (sqrt(22.5 × EPS ~58.7 × BVPS ~504)) versus a current price of INR 962 — only 18% above my intrinsic value benchmark. The shortfall from a Buy recommendation is the P/E of 19.1 and P/B of 1.91, both of which fall above my strict thresholds and deny the margin of safety I require.",
+    "key_strengths": [
+      "Nine-year unbroken earnings record (INR 320 Cr to INR 648 Cr) with no loss years — a rare and treasured attribute that distinguishes a durable enterprise from a speculative one",
+      "Near-negligible financial leverage: D/E of 0.07, total debt of INR 513 Cr against equity of INR 5,565 Cr; the balance sheet could withstand a severe business downturn without insolvency risk",
+      "OCF positive all five years reviewed (INR 554–856 Cr), generating genuine free cash flow (INR 489–761 Cr) that validates reported earnings as real cash"
+    ],
+    "key_risks": [
+      "Net profit declined from INR 703 Cr (FY24) to INR 648 Cr (FY25) — a 7.8% drop despite 3% revenue growth — indicating margin compression that warrants close monitoring",
+      "Finance costs have grown at a 21.6% CAGR over nine years (INR 16 Cr to INR 93 Cr), and other income has contracted from a meaningful contributor to near-zero — earnings quality is softening",
+      "Operating margin of only 9.04% in engineering services offers scant protection against pricing pressure from global competitors or client budget cuts"
+    ],
+    "red_flags": [
+      "P/E of 19.1 and P/B of 1.91 both exceed my maximum thresholds (15× and 1.5× respectively) — absent a margin of safety, even a fine business can be a poor investment",
+      "Promoter holding of only 23.28% is low — management has limited skin in the game relative to the institutional holders"
+    ],
+    "detailed_analysis": "Among these five stocks, Cyient comes closest to satisfying my quantitative requirements. The nine-year earnings history, minimal debt, and consistent cash generation are the foundations of the safety-first investor's checklist. At INR 816, my Graham Number suggests the stock is roughly 18% expensive — a far cry from the 160–610% overvaluation I observe in the other four companies. Revenue has compounded at 10.1% annually since 2016, and equity has grown from INR 2,561 Cr to INR 5,565 Cr over five years without dilutive share issuance of significance.\n\nThe obstacle to a Buy recommendation is principally one of price and margin compression. At P/E 19.1 and P/B 1.91, I am paying a modest but real premium to intrinsic value with no safety cushion. The FY25 earnings decline and contracting other income suggest the business may be in a softer patch. I would watch patiently for a price of INR 750–800 — nearer the Graham Number — where the stock would offer the 15–20% discount to intrinsic value that I require before committing capital.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 216169,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.27410685,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 26067,
+      "cache_read_input_tokens": 15372,
+      "output_tokens": 11449,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 26067,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 805,
+          "cache_read_input_tokens": 15372,
+          "cache_creation_input_tokens": 10695,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 10695
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "symbol": "CORONA",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-18T17:04:00.335177Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Corona Remedies is a quality pharma formulations fast-grower with exceptional gross margins (80.8%) and ROCE (31.5%), but at P/E 62x the PEG ratio clocks in at ~1.9x even using the impressive 2-year earnings CAGR of 32% — that's too rich for my taste. I'd love this story at half the price; right now the market has already priced in most of the growth.",
+    "key_strengths": [
+      "Exceptional gross margin of 80.8% signals premium branded formulations with real pricing power — classic pharma moat",
+      "Balance sheet cleaned up beautifully: D/E collapsed from 0.31 to 0.10, and OCF hit ₹190 Cr with FCF turning positive at ₹99 Cr in FY25",
+      "Operating margin nearly doubled from 14.5% to 20.1% in two years — FY25 earnings jumped 65.6% — this margin re-rating is the real story"
+    ],
+    "key_risks": [
+      "PEG ~1.9x (P/E 62 ÷ 32% 2Y earnings CAGR) — overvalued for Lynch's GARP discipline; even forward PEG of ~1.2x offers thin margin of safety",
+      "The FY25 profit surge (+65.6%) was driven heavily by margin expansion, not just revenue growth (+17.9%) — if margins mean-revert, the earnings story collapses fast",
+      "CWIP ballooning to ₹205 Cr (up from ₹65 Cr) signals another heavy capex cycle ahead — FY24 already produced ₹286 Cr capex and negative FCF of -₹129 Cr"
+    ],
+    "red_flags": [
+      "PEG ratio exceeds 1.5x threshold — Lynch red flag",
+      "Low FII ownership (1.84%) and missing market cap data makes liquidity and institutional interest hard to assess"
+    ],
+    "detailed_analysis": "Corona Remedies is the kind of story I'd find walking the aisles of a pharmacy — women's health, cardio-diabetes, pain management, thyroid — all high-growth Indian therapeutic segments with demographic tailwinds. Revenue compounded at ~16% over two years (₹884 Cr → ₹1,196 Cr), but the real headline is the operating margin leap from 14.5% to 20.1% between FY23 and FY25, which turbocharged net profit from ₹85 Cr to ₹149 Cr (+75% cumulative). ROCE of 31.5% and ROE of 27.6% are hallmarks of a genuinely good business, not financial engineering.\n\nThe problem is simple: the market knows all of this. At P/E 62x, you're paying a steep premium for a ₹1,200 Cr revenue company. My PEG using the 2-year earnings CAGR of ~32% comes to 1.94 — well above my comfort zone of 1.0. Even on forward P/E of 40x, you need 35%+ sustained earnings growth to justify the price, and that margin expansion (the key driver) is unlikely to repeat at the same magnitude. The growing CWIP of ₹205 Cr also signals capacity investment that may temporarily pressure FCF again, much like FY24's -₹129 Cr FCF. I'd put this on my watchlist and revisit at a forward P/E closer to 25-28x.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 57429,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08531219999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10650,
+      "cache_read_input_tokens": 8219,
+      "output_tokens": 2860,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10650
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 485,
+          "cache_read_input_tokens": 8219,
+          "cache_creation_input_tokens": 2431,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2431,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

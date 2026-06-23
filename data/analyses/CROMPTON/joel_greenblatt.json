@@ -1,0 +1,68 @@
+{
+  "symbol": "CROMPTON",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-19T13:06:47.724821Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Crompton is a decent consumer electricals franchise with ROIC of ~24% (EBIT 888 Cr / invested capital ~3,674 Cr), but the earnings yield is only ~5.1% (EBIT 888 Cr / EV ~17,363 Cr), well below the Magic Formula's 6% threshold. The stock is a quality business priced for quality — exactly the kind of situation the formula tells you to pass on until price corrects.",
+    "key_strengths": [
+      "ROIC ~24% demonstrates genuine capital efficiency in a competitive consumer durables market",
+      "Near-zero leverage (D/E 0.05) and 5/5 years of positive OCF show financial discipline post-Butterfly acquisition debt paydown",
+      "Revenue CAGR of 9.8% and EBITDA of 8.3% over 7 years show steady, if unspectacular, compounding"
+    ],
+    "key_risks": [
+      "Earnings yield of ~5.1% (EV/EBIT ~19.5x) is below the Magic Formula's minimum attractiveness threshold",
+      "Net profit peaked at 617 Cr in FY21 and only recovered to 564 Cr in FY25, suggesting the Butterfly acquisition diluted earnings quality",
+      "Operating margins are thin at ~8% — any input cost spike (copper, aluminum) can significantly dent profitability"
+    ],
+    "red_flags": [
+      "Finance costs spiked from 35 Cr (FY22) to 109 Cr (FY23) — the Butterfly acquisition loaded debt that is now being paid down but hurt earnings for 3 years",
+      "Net profit CAGR of 8.2% over 7 years is actually lower than revenue CAGR of 9.8% — margins are structurally compressing"
+    ],
+    "detailed_analysis": "Using FY2025 numbers: EBIT = 888 Cr, EV = Market Cap (17,088) + Net Debt (479 - 204) = ~17,363 Cr, giving Earnings Yield of 5.1%. Capital employed (equity 3,399 + debt 479 - cash 204) = ~3,674 Cr implies ROIC of ~24%, confirmed by the company-reported ROCE of 19%. The Magic Formula requires BOTH metrics to be attractive — Crompton clears the ROIC bar but fails on earnings yield at this price. The EV/EBITDA of 22.65x and P/E of 34x reflect that the market already prices in quality. Crompton is a Hold, not a Buy — I'd need the earnings yield to reach 10%+ (implying price around 130-140) to get excited.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 158171,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.23871105,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 24181,
+      "cache_read_input_tokens": 15361,
+      "output_tokens": 9561,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 24181,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 612,
+          "cache_read_input_tokens": 15361,
+          "cache_creation_input_tokens": 8820,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8820
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

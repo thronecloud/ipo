@@ -1,0 +1,70 @@
+{
+  "symbol": "MEESHO",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-21T07:57:50.519328Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Meesho is a fast-growing Indian social commerce play with 23% revenue growth and improving operating cash flows (INR 539 Cr in FY25), but without earnings there is no PEG ratio to anchor valuation, and the FY25 net loss ballooned to INR 3,942 Cr. Until there is a clear, credible path to profitability, this remains a story stock I cannot price.",
+    "key_strengths": [
+      "Revenue compounding at ~23% annually (INR 5,735 Cr → INR 9,390 Cr in 3 years), the kind of top-line momentum I look for in fast growers",
+      "Operating cash flow turned decisively positive — INR -2,303 Cr in FY23 to +INR 539 Cr in FY25 — suggesting unit economics are genuinely improving at the marketplace level",
+      "Near-zero debt (D/E 0.09, borrowings only INR 58 Cr) and a 92% gross margin on a commission-based model means the core business is capital-light if it can reach scale"
+    ],
+    "key_risks": [
+      "No earnings and no PEG ratio — my primary valuation tool is useless here; P/B of 50x on a company whose book value is shrinking (equity fell from INR 2,472 Cr to INR 1,446 Cr) is not a margin of safety",
+      "FY25 net loss exploded to INR 3,942 Cr from INR 328 Cr, driven by 'Other Income' swinging from +INR 231 Cr to -INR 835 Cr — likely investment write-downs — and EBITDA worsening to -INR 1,002 Cr; the headline story is deteriorating",
+      "Promoter holding of only 16.57% signals weak founder conviction; when insiders hold little, I hold little too"
+    ],
+    "red_flags": [
+      "PEG ratio incalculable — negative earnings make valuation discipline impossible",
+      "Net loss deteriorated 12x year-over-year (FY24: -328 Cr → FY25: -3,942 Cr); operating losses also widened to -INR 578 Cr",
+      "Investing cash outflow of -INR 2,638 Cr in FY25 (vs -INR 165 Cr prior year) without clear disclosure of what was acquired or written off",
+      "ROE of -264% and ROCE of -8.71% — capital is being destroyed, not created"
+    ],
+    "detailed_analysis": "Meesho fits my 'fast grower' classification on paper — revenue has compounded at roughly 28% over two years targeting India's Tier 2/3 cities, a huge and underpenetrated market I can observe firsthand. The operating cash flow flip from -INR 2,303 Cr to +INR 539 Cr is the most encouraging data point and suggests the underlying marketplace transactions generate real cash. But I always ask 'What's the story?' and here the story is clouded: the FY25 P&L shows a net loss nearly 12x worse than FY24, EBITDA regressed sharply to -INR 1,002 Cr, and total assets grew INR 3,065 Cr in one year while equity shrank INR 784 Cr — something large and unexplained happened on the balance sheet.\n\nAt a P/S of 6.5x with no earnings visibility, the market is pricing in a best-case outcome with no room for error. I have made my best returns buying companies where I can clearly see the earnings two or three years out — Meesho's earnings timeline is opaque, the promoter's 16.57% stake tells me even the founders aren't betting the house, and the 'Other Income' swing of over INR 1,000 Cr in a single year introduces accounting unpredictability I cannot get comfortable with. I would revisit if the company posts two consecutive quarters of EBITDA profitability and management articulates a concrete margin roadmap — until then, this is a pass.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 54682,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07861725,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10421,
+      "cache_read_input_tokens": 8365,
+      "output_tokens": 2468,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10421,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 464,
+          "cache_read_input_tokens": 8365,
+          "cache_creation_input_tokens": 2056,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2056
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

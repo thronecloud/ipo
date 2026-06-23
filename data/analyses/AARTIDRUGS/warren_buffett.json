@@ -1,0 +1,69 @@
+{
+  "symbol": "AARTIDRUGS",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T16:10:41.168474Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Aarti Drugs is a commodity API manufacturer with razor-thin 6.16% operating margins, no durable pricing power, and profits that have nearly halved from their 2021 COVID-windfall peak of INR 280 Cr to INR 168 Cr in 2025. The valuation appears optically reasonable at 16.8x P/E, but the underlying business quality does not warrant ownership.",
+    "key_strengths": [
+      "Manageable leverage at D/E 0.39 with no near-term solvency risk",
+      "Promoter skin-in-the-game at 55% holding signals alignment",
+      "Diversified API portfolio (NSAIDs, fluoroquinolones, antidiabetics) reduces single-product concentration risk"
+    ],
+    "key_risks": [
+      "Revenue contraction two consecutive years (2024: INR 2,529 Cr → 2025: INR 2,387 Cr) after peaking at INR 2,716 Cr — the trend is going the wrong way",
+      "Operating margins at 6.16% confirm commodity pricing with no moat — APIs face relentless Chinese competition and customer bargaining power",
+      "FCF is erratic and thin: INR 67 Cr in 2025 despite INR 177 Cr capex, while borrowings remain elevated at INR 573 Cr with minimal cash (INR 5 Cr)"
+    ],
+    "red_flags": [
+      "Net profit collapsed 40% from 2021 peak (INR 280 Cr) to INR 168 Cr — the COVID API supercycle masked structural weakness",
+      "ROE of 12.7% is below my 15% minimum threshold, and contracting EBITDA (INR 490 Cr in 2021 → INR 307 Cr in 2025) shows the business is not earning adequate returns on expanding assets",
+      "Large CWIP (INR 179-261 Cr range over 3 years) hasn't translated into earnings improvement — capital is being consumed without commensurate return"
+    ],
+    "detailed_analysis": "Aarti Drugs epitomizes what I call a \"fair business at a fair price\" — and I have no interest in either. The company's 9-year revenue CAGR of 8.6% looks passable, but the 2021 peak (INR 2,155 Cr → INR 440 Cr operating income) was entirely a COVID-era API shortage windfall, not a reflection of sustainable competitive advantage. Since that peak, operating income has contracted from INR 440 Cr to INR 290 Cr while revenues have also shrunk — the business is running faster just to fall further behind. A 6.16% operating margin is a confession that this is a commodity business where no one can sustainably price above cost of production.\n\nThe capital allocation story troubles me further. The company has spent INR 720 Cr in capex over 2022-2025 while generating cumulative FCF of roughly INR 87 Cr over the same period — capital is being destroyed, not created. Debt has risen from INR 351 Cr (2021) to INR 615 Cr (2025) to fund this expansion, yet ROCE sits at 13.1% and ROE at 12.7%. I want to own businesses that generate cash, not consume it. At 16.8x P/E, the market is not demanding an unreasonable price — but I require a wonderful business, not merely a reasonably priced mediocre one. This stays firmly outside my circle of interest.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 46865,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07744755,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11189,
+      "cache_read_input_tokens": 9416,
+      "output_tokens": 2177,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11189,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 444,
+          "cache_read_input_tokens": 9416,
+          "cache_creation_input_tokens": 1773,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1773
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

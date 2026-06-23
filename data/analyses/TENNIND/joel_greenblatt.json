@@ -1,0 +1,69 @@
+{
+  "symbol": "TENNIND",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-21T08:07:00.145994Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "TENNIND is a genuinely excellent business — ROCE of 57.3% and near-zero debt signal a high-quality compounder — but the Magic Formula rejects it on valuation: Earnings Yield (EBIT/EV) of ~3.6% is less than a third of the 12% minimum I require. You are paying a luxury price (P/E 42x, EV/EBITDA 26.7x) for a business exposed to an existential EV transition headwind.",
+    "key_strengths": [
+      "Exceptional ROIC: ROCE of 57.3% far exceeds the 25% threshold — truly rare capital efficiency",
+      "Near debt-free balance sheet (D/E 0.02) with strong FCF: INR 500 Cr in FY25, capex only 8% of EBIT",
+      "Operating margin expanded from 11.8% (FY23) to 16.7% (FY25) despite a revenue dip — pricing power at work"
+    ],
+    "key_risks": [
+      "Earnings Yield ~3.6% (EBIT INR 815 Cr / EV ~INR 22,900 Cr) — badly fails the 'cheap' half of the Magic Formula",
+      "Secular risk: catalytic converters, mufflers, exhaust pipes face near-certain volume decline as ICE vehicles are phased out for EVs",
+      "Cash being heavily extracted upstream: Financing CF was -INR 686 Cr (FY24) and -INR 433 Cr (FY25) — reserves fell from INR 895 Cr to INR 514 Cr in two years, likely large dividends to Mauritius parent"
+    ],
+    "red_flags": [
+      "Earnings Yield of ~3.6% is less than half the minimum 6% threshold — Magic Formula would not rank this stock",
+      "Revenue contracted FY25 vs FY24 (INR 4,890 Cr vs 5,468 Cr) — top-line growth is absent",
+      "Subsidiary structure with Tenneco Mauritius as promoter (74.79%) raises related-party capital extraction risk given aggressive financing outflows"
+    ],
+    "detailed_analysis": "Running the Magic Formula on TENNIND yields a split verdict. On Return on Capital, this is an outstanding business: ROCE of 57.3% (far above the 25% excellence threshold), capex/EBIT of just ~8%, and FCF conversion consistently above 60% of EBIT. FY25 EBIT of INR 815 Cr grew ~33% year-on-year despite a revenue decline — a sign of genuine operating leverage and pricing power. The business is essentially debt-free and has generated positive operating cash flow in all three years. On Earnings Yield, the story falls apart. Using EV/EBITDA of 26.74x and FY25 EBITDA of INR 857 Cr, implied EV ≈ INR 22,900 Cr. Earnings Yield = 815/22,900 ≈ 3.6% — less than a third of the 12% I require and below even the 6% 'not overvalued' threshold. A P/E of 42.3x on a clean-air auto parts manufacturer facing EV disruption is not a bargain.\n\nThe structural concern compounds the valuation issue. TENNIND's core products — exhaust systems, catalytic converters, mufflers — are tied entirely to internal combustion engines. The secular tailwind that drove ROCE above 50% (emissions regulations mandating aftertreatment systems) becomes a headwind as the auto fleet electrifies. Meanwhile, the Mauritius parent appears to be aggressively extracting cash: financing outflows of INR 686 Cr and INR 433 Cr in FY24/FY25 have shrunk reserves from INR 895 Cr to INR 514 Cr. For current holders, the business quality justifies a HOLD; for new buyers, the Magic Formula says wait for a far more attractive entry price.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 67775,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09734625,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11389,
+      "cache_read_input_tokens": 8345,
+      "output_tokens": 3475,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11389,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 466,
+          "cache_read_input_tokens": 8345,
+          "cache_creation_input_tokens": 3044,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 3044
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

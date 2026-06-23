@@ -1,0 +1,71 @@
+{
+  "symbol": "BLUESTONE",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T16:47:57.942473Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "BlueStone scores in the bottom decile on both Magic Formula metrics — Earnings Yield of ~0.78% (EBIT ₹76 Cr / EV ~₹9,805 Cr) and ROCE of just 2.33% — making it mathematically uninvestable under the formula. Despite impressive 56.5% revenue CAGR, the company is a capital-burning pre-profitability story with deeply negative free cash flow of -₹828 Cr in FY2025.",
+    "key_strengths": [
+      "Revenue compounding at 56.5% CAGR (₹461 Cr → ₹1,770 Cr), demonstrating real market traction",
+      "Operating income turned positive for first time (₹76 Cr in FY2025 vs. -₹6 Cr prior year)",
+      "High gross margin of 41.2% suggests attractive unit economics if overhead is controlled"
+    ],
+    "key_risks": [
+      "Free cash flow destruction accelerating: -₹828 Cr in FY2025 vs. -₹280 Cr prior year",
+      "Finance costs (₹208 Cr, CAGR 124%) now exceed EBIT (₹76 Cr), keeping net profit deeply negative at -₹222 Cr",
+      "Promoter holding dangerously low at 16.27% — minimal skin in the game from founders"
+    ],
+    "red_flags": [
+      "Earnings Yield ~0.78% — 15x below Magic Formula's minimum attractive threshold of 12%",
+      "ROCE of 2.33% — 8x below Magic Formula's minimum attractive threshold of 20%",
+      "Operating CF turned sharply negative: -₹666 Cr in FY2025 vs. +₹27 Cr in FY2023 — cash burn is accelerating, not shrinking",
+      "Total debt doubled in 2 years to ₹1,915 Cr while generating zero net profit",
+      "Net loss worsened to -₹222 Cr in FY2025 despite revenue growth — operating leverage is not materialising"
+    ],
+    "detailed_analysis": "Running the Magic Formula: EBIT is ₹76 Cr (FY2025 operating income, first positive year), Enterprise Value is ~₹9,805 Cr (market cap ₹7,939 Cr + debt ₹1,915 Cr - cash ₹49 Cr). Earnings Yield = 0.78% — catastrophically below the 12% threshold I require. ROCE from the data is 2.33%, far below the 20%+ floor for a quality business. Both pillars of the Magic Formula fail completely, placing BlueStone in the worst decile on valuation AND capital efficiency simultaneously. The EV/EBITDA of 60.6x and P/S of 3.58x confirm the market is pricing in a decade of future perfection.\n\nThe operating trajectory is directionally correct — EBITDA improved from -₹1,222 Cr to +₹121 Cr over three years, and gross margins at 41% are respectable for a jewellery retailer. But the free cash flow story is deteriorating, not improving: -₹828 Cr in FY2025, driven by operating cash burn of -₹666 Cr. Finance costs of ₹208 Cr are now 2.7x EBIT, meaning the business is not yet earning enough to service its own debt. The low 16.27% promoter holding is a structural concern. This is a venture-stage growth story masquerading as a public market stock — interesting operationally, but the Magic Formula says wait until ROIC clears 20% and the price reflects reality.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 43653,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07874865,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10491,
+      "cache_read_input_tokens": 8378,
+      "output_tokens": 2459,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10491
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 411,
+          "cache_read_input_tokens": 8378,
+          "cache_creation_input_tokens": 2113,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2113,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

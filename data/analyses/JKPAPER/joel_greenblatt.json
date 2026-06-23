@@ -1,0 +1,69 @@
+{
+  "symbol": "JKPAPER",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T17:52:24.675686Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "JK Paper fails both legs of the Magic Formula — ROIC of ~8.6% is well below the 20% threshold and earnings yield of ~10.7% (EBIT ₹928 Cr / EV ~₹8,662 Cr) falls short of the 12% minimum, reflecting a capital-intensive commodity business with collapsing margins. The 2023 super-cycle peak obscures structurally weak returns that are unacceptable by Magic Formula standards.",
+    "key_strengths": [
+      "Revenue CAGR of 11.9% over 9 years shows decent top-line compounding",
+      "Debt reduction from ₹3,137 Cr (2022) to ₹1,885 Cr (2025) — improving balance sheet",
+      "Promoter holding of 52.94% and OCF positive all 5 years provide some downside cushion"
+    ],
+    "key_risks": [
+      "EBIT collapsed 54% — from ₹2,012 Cr (2023) to ₹928 Cr (2025) — exposing deep cyclicality",
+      "ROIC ~8.6% and ROE 7.04% are structurally below cost of capital, destroying value over time",
+      "Commodity paper market offers no pricing power — margins hostage to pulp costs and demand cycles"
+    ],
+    "red_flags": [
+      "Operating margin cratered to 4.55% in 2025 from ~31% in 2023 — not a durable business",
+      "Free cash flow fell from ₹1,552 Cr (2023) to ₹365 Cr (2025) — earnings quality deteriorating fast",
+      "Net profit down 66% YoY (₹1,133 Cr → ₹412 Cr) while trailing P/E sits at 25.4x — very expensive on current earnings"
+    ],
+    "detailed_analysis": "Running the Magic Formula on JK Paper: EV = Market Cap ₹6,805 Cr + Net Debt ₹1,857 Cr = ~₹8,662 Cr. EBIT (Operating Income) 2025 = ₹928 Cr. Earnings Yield = 10.7% — just below the 12% threshold. ROIC using reported ROCE = 8.63%, far below the 20% minimum I require. This is a double-failure on the Magic Formula. Paper manufacturing is precisely the kind of capital-intensive, commodity-like business the formula is designed to avoid — high fixed assets, cyclical pricing, no durable competitive advantage.\n\nThe 2023 data is a mirage: EBITDA of ₹2,108 Cr and net profit of ₹1,208 Cr were driven by a post-COVID paper price supercycle, not structural moat. By 2025, EBITDA collapsed to ₹970 Cr (−54%) and net profit to ₹412 Cr (−66%) as prices normalized. The forward P/E of 7.64 implies ~₹890 Cr in projected earnings — optimistic given current margin pressure. Even if that recovery materializes, ROIC would still be sub-15% in a best-case scenario. I need businesses earning 25%+ ROIC that I can buy cheaply. JK Paper offers neither quality nor sufficient cheapness.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 45694,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0838053,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11340,
+      "cache_read_input_tokens": 9121,
+      "output_tokens": 2569,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11340
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 407,
+          "cache_read_input_tokens": 9121,
+          "cache_creation_input_tokens": 2219,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2219,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

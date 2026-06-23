@@ -1,0 +1,70 @@
+{
+  "symbol": "RAYMONDLSL",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T22:09:57.353535Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Raymond Lifestyle carries a century-old brand franchise with decent gross margins, but the post-demerger operating reality reveals a business in financial distress — EBITDA halved from ₹1,077 Cr to ₹626 Cr in a single year, net profit collapsed 99% to ₹38 Cr, and debt surged 49% to ₹2,290 Cr. At ROE of 0.67%, this is far from the durable, high-return business I require.",
+    "key_strengths": [
+      "Century-old brand portfolio (Raymond, Park Avenue, ColorPlus) with genuine consumer recognition and pricing power evidenced by 42% gross margins",
+      "P/B of 0.51x offers apparent asset-value cushion, and promoter holding of 58% signals skin in the game",
+      "OCF turned meaningfully positive at ₹404 Cr in FY25, suggesting the core textile business can generate cash when managed well"
+    ],
+    "key_risks": [
+      "Catastrophic earnings deterioration: EBITDA fell 42% YoY (₹1,077→₹626 Cr) and net profit crashed from ₹2,645 Cr to ₹38 Cr — FY24 profits were largely one-time demerger gains, not operating earnings",
+      "Debt spiraling upward: total debt rose from ₹1,540 Cr to ₹2,290 Cr (+49%) in one year, with finance costs at ₹207 Cr consuming a large share of operating income",
+      "Apparel is a brutally competitive, fashion-cyclical business with thin moats — branded mid-market clothing faces pressure from fast fashion, e-commerce, and private labels"
+    ],
+    "red_flags": [
+      "ROE of 0.67% and ROCE of 2.87% are disqualifying — a business that earns less than a savings account on equity is destroying value",
+      "Revenue actually declined 5.5% in FY25 (₹6,535→₹6,177 Cr) — the entity is not growing post-demerger",
+      "FY24 net profit of ₹2,645 Cr vs FY25 net profit of ₹38 Cr exposes that historical earnings were entirely distorted by demerger accounting, not operations",
+      "Trailing P/E of 50x on artificially suppressed earnings makes the stock look cheap on forward estimates that may never materialize"
+    ],
+    "detailed_analysis": "Raymond Lifestyle was carved out of Raymond Ltd via demerger in 2024, which explains the jarring discontinuity in all financial series — pre-2024 figures are effectively meaningless for trend analysis. What matters is the FY24-FY25 operating reality: revenue shrinking, EBITDA nearly halved, operating margin compressed from ~14% to 7.8%, and net profit imploding to ₹38 Cr. The ₹2,645 Cr FY24 profit was a one-time accounting gain from the demerger restructuring, not evidence of earning power. Meanwhile, debt has ballooned 49% in a single year and finance costs alone consume ₹207 Cr — more than 5x the net profit. This is not a business compounding owner capital.\n\nThe brand heritage is real — Raymond has dressed Indian men for 100 years and commands shelf space no startup can replicate overnight. The 42% gross margin confirms some pricing power. But branded apparel in India's mid-market is capital-intensive, fashion-cyclical, and increasingly contested by e-commerce and fast fashion. With ROE of 0.67%, the business is effectively renting its brand equity to customers at cost. The forward P/E of 15x is tempting on paper, but it requires a near-tripling of earnings from today's depressed base — a forecast I'd want to see executed, not assumed. Until operating margins stabilize above 12%, debt stops growing, and ROE meaningfully exceeds 15%, this fails my basic ownership test.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 49721,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08388105,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10903,
+      "cache_read_input_tokens": 8486,
+      "output_tokens": 2696,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10903,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 336,
+          "cache_read_input_tokens": 8486,
+          "cache_creation_input_tokens": 2417,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2417
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "ASAHIINDIA",
+  "persona": "howard_marks",
+  "persona_display_name": "Howard Marks",
+  "analyzed_at": "2026-04-19T06:30:26.246626Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Asahi India Glass is a solid niche business — market leader in automotive glass — but at 69x trailing P/E and 31.9x EV/EBITDA, the market is pricing in a decade of compounding returns upfront, leaving zero margin of safety for execution risk, cycle risk, or a re-rating. FCF has turned deeply negative (-₹536 Cr in FY25) just as debt has more than doubled in three years, creating a dangerous combination of expensive equity and rising leverage.",
+    "key_strengths": [
+      "Structural market leader in Indian automotive glass — captive OEM supply relationships create moderate switching costs",
+      "Operating margin has improved meaningfully (from ~17% pre-COVID to ~14% today after a dip), reflecting operating leverage",
+      "OCF consistently positive (5/5 years), indicating real earnings quality"
+    ],
+    "key_risks": [
+      "Revenue CAGR of only 8.5% over 9 years does not justify a 69x P/E multiple under any reasonable DCF framework",
+      "Debt has surged from ₹1,238 Cr (FY22) to ₹2,856 Cr (FY25) — Debt/EBITDA now ~3.65x — precisely as FCF has gone negative",
+      "Auto sector cyclicality: a slowdown in vehicle production directly hits both OEM volumes and aftermarket glass demand"
+    ],
+    "red_flags": [
+      "FCF deeply negative two consecutive years (-₹244 Cr FY24, -₹536 Cr FY25) while the stock trades at premium multiples — negative FCF yield at 69x P/E",
+      "ROE of 13.6% on a 5.86x P/B implies the market is paying for return improvement that hasn't materialised",
+      "Capex escalation (₹101 Cr in FY22 → ₹1,268 Cr in FY25) is funded by debt, not internal accruals — the expansion must succeed perfectly to justify the valuation"
+    ],
+    "detailed_analysis": "The standard first-level view of Asahi India is: 'leader in automotive glass, India's auto sector is growing, premium deserved.' The second-level question is: what exactly is priced in at 69x P/E? The business has grown revenue at 8.5% per annum over nine years and earns ROE of 13.6% — respectable, but not extraordinary. For this to be fairly valued at today's price, earnings would need to grow at 25%+ for several years without meaningful dilution or further debt. That is a very narrow path.\n\nThe balance-sheet picture is deteriorating: borrowings have risen 2.3x in three years to ₹2,856 Cr, and at Debt/EBITDA of ~3.65x, any earnings disappointment (auto slowdown, raw material cost spike, execution delay on the new capacity) will create financial stress. The massive capex programme (₹1,268 Cr in FY25 vs. OCF of ₹720 Cr) means the company is currently a net consumer of capital — the market is discounting this as 'growth investment,' but Marks' framework demands asking: what is the downside scenario? In a stress case, leverage, negative FCF, and an expensive multiple compound into material permanent capital loss.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 165665,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.23964059999999998,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 25390,
+      "cache_read_input_tokens": 16697,
+      "output_tokens": 9294,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 25390,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 572,
+          "cache_read_input_tokens": 16697,
+          "cache_creation_input_tokens": 8693,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8693
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

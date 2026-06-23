@@ -1,0 +1,70 @@
+{
+  "symbol": "EXIMROUTES",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-21T07:53:08.524543Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Exim Routes scores well on ROCE (55%) but catastrophically fails the Magic Formula on earnings yield (~3.9%) and shows zero years of positive operating cash flow — meaning the reported profits are not translating into real cash. At 37.5x P/E on a 5-year-old commodity paper trading business with INR 8 Cr net profit, the valuation is punishing for what is ultimately a thin-margin intermediary.",
+    "key_strengths": [
+      "Exceptional ROCE of 55.3% — suggests capital-light model with strong pricing power in its niche",
+      "Revenue hypergrowth: 4Y CAGR of 134.5%, growing from INR 4 Cr to INR 121 Cr",
+      "Moderate promoter holding (52.4%) with meaningful FII+DII participation (13.9%) for a micro-cap"
+    ],
+    "key_risks": [
+      "Negative OCF every single year (0/5 positive); FY25 OCF = -5 Cr despite INR 8 Cr net profit — profit quality is highly suspect",
+      "Earnings Yield ≈ 3.9% (EBIT INR 10 Cr / EV ~INR 257 Cr) — far below the 12% Magic Formula threshold; deeply overvalued",
+      "Commodity paper trading is a low-moat, volume-driven business exposed to input price swings, credit risk, and margin compression"
+    ],
+    "red_flags": [
+      "FCF has been negative all 5 years; FY25 FCF = -9 Cr while net profit = +8 Cr — a ~17 Cr divergence is alarming",
+      "Business funded entirely by external financing (Financing CF +11 Cr in FY25); operations and investments are cash drains",
+      "Incorporated April 2019 — only 2 years of meaningful profit; no track record through a full business cycle",
+      "Total equity jumped from 4 Cr (FY24) to 25 Cr (FY25) via capital raise, which inflated the balance sheet and may be distorting ROCE"
+    ],
+    "detailed_analysis": "Magic Formula verdict is swift: Earnings Yield of ~3.9% (EBIT ≈ INR 10 Cr ÷ EV ≈ INR 257 Cr) is less than one-third of Greenblatt's minimum attractive threshold of 12%. The only redeeming metric is ROCE of 55%, but one-half of the Magic Formula being broken means this stock simply doesn't qualify. A P/E of 37.5x on a commodity paper-trading intermediary incorporated in 2019 with INR 8 Cr of net profit embeds enormous growth expectations with no margin of safety.\n\nThe cash flow picture is the most disqualifying factor. Despite cumulative net profit turning positive in FY24-25, operating cash flow has been negative in every recorded year — including -5 Cr in FY25 against +8 Cr net profit. This gap is a hallmark of working capital-intensive trading models where receivables and inventory consume cash faster than profits are generated. The business is surviving on financing (equity raise + borrowings), not operations. Until OCF turns structurally positive and FCF follows, the reported ROIC numbers cannot be trusted as durable value creation. Greenblatt's framework explicitly requires real earnings; here, the earnings are not backed by cash.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 50900,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07790894999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10373,
+      "cache_read_input_tokens": 8254,
+      "output_tokens": 2435,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10373,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 352,
+          "cache_read_input_tokens": 8254,
+          "cache_creation_input_tokens": 2119,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2119
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "symbol": "ASKAUTOLTD",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T16:31:32.635963Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "ASK Automotive earns a genuinely exceptional ROCE of 27.6% — rare in auto components — driven by OEM switching costs and scale in braking/cable systems, but the business is mid-capex-cycle, consuming capital faster than it generates free cash (FCF of just ₹30 Cr against net profit of ₹248 Cr). At 30x earnings, the market is pricing in sustained high returns with no room for error in a cyclical, OEM-dependent sector.",
+    "key_strengths": [
+      "Exceptional ROCE of 27.6% and ROE of 26.6% — well above my 15% threshold, indicating genuine pricing power with OEM customers",
+      "Revenue CAGR 12.4% and net profit CAGR 13.8% (2019–2025) with accelerating EBITDA (₹263 Cr → ₹450 Cr), showing real operating leverage",
+      "OCF/Net Income ratio of ~145% (₹360 Cr OCF / ₹248 Cr NI) confirms earnings quality — accruals are real cash"
+    ],
+    "key_risks": [
+      "Capital consumption is extreme: capex of ₹346 Cr dwarfs net profit of ₹248 Cr, producing FCF/NI of only 12% — the opposite of what I look for in a compounder",
+      "Borrowings exploded 11x from ₹54 Cr (2021) to ₹612 Cr (2025); while Debt/EBITDA is still ~1.4x, the trajectory and CWIP of ₹163 Cr signal further leverage ahead",
+      "OEM supplier moat is narrow — braking and cable components face OEM price pressure, EV platform shifts, and no consumer brand to anchor pricing"
+    ],
+    "red_flags": [
+      "FCF of ₹30 Cr vs. net profit ₹248 Cr (12%) — the business is consuming its own earnings; sustained negative FCF in 2023 and near-zero in 2024–25",
+      "Debt binge funded by borrowings, not retained earnings — equity grew modestly while borrowings grew 4x since 2022; cash on hand is only ₹20 Cr against ₹612 Cr gross debt"
+    ],
+    "detailed_analysis": "ASK Automotive's headline ROCE of 27.6% is the first thing that catches my eye — that figure would be impressive in any sector, let alone auto components. The OEM qualification moat (long approval cycles for braking systems) and presence across 2W, 4W, and EV platforms explain some of it. Revenue recovered sharply post-COVID (₹1,544 Cr in 2021 → ₹3,601 Cr in 2025) and margins are expanding, with EBITDA margins implicitly moving from ~15% to ~12.5% on a larger base — the operating income line tells a cleaner story, growing from ₹166 Cr (2022 trough) to ₹432 Cr (2025). This is a business gaining operational scale.\n\nBut invert, always invert. The capex story is deeply uncomfortable: ₹346 Cr spent in FY25 against ₹248 Cr of net profit, with ₹163 Cr of CWIP signaling this isn't done. Borrowings jumped from ₹54 Cr to ₹612 Cr in four years — that's not compounding equity, that's leveraging equity. The 30x P/E for a capital-hungry, OEM-dependent cyclical demands that the new capacity comes online cleanly, wins contracts, and generates returns without an auto-cycle downturn. Munger's formula is simple: a truly great business funds its own growth. Right now, this one does not. I'd watch, not buy, until FCF normalizes above 60% of net income.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 67508,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09194385,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11437,
+      "cache_read_input_tokens": 8787,
+      "output_tokens": 3094,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11437,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 511,
+          "cache_read_input_tokens": 8787,
+          "cache_creation_input_tokens": 2650,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2650
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

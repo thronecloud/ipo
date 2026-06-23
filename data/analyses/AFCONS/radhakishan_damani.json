@@ -1,0 +1,70 @@
+{
+  "symbol": "AFCONS",
+  "persona": "radhakishan_damani",
+  "persona_display_name": "Radhakishan Damani",
+  "analyzed_at": "2026-04-19T06:23:20.708179Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Afcons is an infrastructure construction company — capital intensive, commoditised bidding, working-capital-hungry, and deeply cyclical — everything I have spent a career avoiding. With D/E at 0.66, revenue growing at only 4.8% CAGR, and OCF turning negative in FY2025, this does not come close to meeting my financial conservatism standards.",
+    "key_strengths": [
+      "Reasonable EV/EBITDA of 10.74x and P/S below 1x suggest the market is not pricing in heroic growth expectations on a revenue basis",
+      "ROCE of 19.6% is respectable for a construction company, though it is flattered by asset-light segments",
+      "Net profit CAGR of 14.4% over 5 years is decent, though largely driven by other income (469 Cr in FY2025) rather than operating leverage"
+    ],
+    "key_risks": [
+      "D/E of 0.66 — non-negotiable red flag; I do not invest in businesses that carry this level of financial risk",
+      "Revenue of 12,548 Cr in FY2025 is lower than FY2024's 13,268 Cr — a business shrinking at current scale is not compounding",
+      "Operating cash flow turned negative (-132 Cr) in FY2025 — a construction company with negative OCF has dangerous working capital dynamics"
+    ],
+    "red_flags": [
+      "D/E of 0.66 — more than double my maximum acceptable level of 0.3; construction companies with high leverage are one delayed project away from crisis",
+      "Finance cost of 629 Cr in FY2025 nearly equals net profit of 487 Cr — the lenders are making nearly as much as the equity holders",
+      "ROE of just 11.1% on a leveraged balance sheet is a very poor return; unleveraged ROE would be far lower",
+      "Promoter stake of 50.17% — below my 55% threshold; the Shapoorji Pallonji group owns just over half the company"
+    ],
+    "detailed_analysis": "I built DMart with the principle that you never borrow to grow faster than the business naturally allows. Afcons is the opposite model: a large construction company with borrowings of 3,565 Cr funding long-duration project execution where cash flows are lumpy, clients are often government entities with payment delays, and margins at 10.65% are thin enough that any cost overrun eliminates the year's profits. Finance costs of 629 Cr against operating income of 1,361 Cr means nearly half the operating profit goes directly to service debt before equity holders see a rupee.\n\nThe revenue trajectory is troubling: after a 5-year CAGR of just 4.8%, revenues actually declined in FY2025 versus FY2024. Net profit grew from retained earnings and other income (469 Cr — nearly equal to net profit of 487 Cr), not from operating strength. The FY2025 negative OCF of -132 Cr is the clearest signal that working capital is deteriorating. At 24x earnings for a business growing revenues at 4.8% with 0.66x leverage, I see no margin of safety and every reason for caution.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 203941,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.25620885,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 23967,
+      "cache_read_input_tokens": 17862,
+      "output_tokens": 10731,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 23967,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 400,
+          "cache_read_input_tokens": 15812,
+          "cache_creation_input_tokens": 10205,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 10205
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

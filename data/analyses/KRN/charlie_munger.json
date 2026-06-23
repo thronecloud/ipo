@@ -1,0 +1,70 @@
+{
+  "symbol": "KRN",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T18:17:26.536510Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "KRN is a fast-growing HVAC component manufacturer with genuine revenue momentum (40% revenue CAGR, ROCE of 20.8%), but the market has priced in perpetual perfection at 116x P/E and 85x EV/EBITDA — a valuation appropriate for a software platform, not a copper-and-aluminum parts maker competing on OEM contracts. Free cash flow is deeply negative (-₹65 Cr vs. ₹53 Cr net profit) despite positive GAAP earnings, signaling the business is not yet self-funding its own growth.",
+    "key_strengths": [
+      "Rapid profitable scaling: Net profit CAGR of 71% (FY22→25), ROCE at 20.8% — above my 15% hurdle",
+      "Near-zero leverage post-IPO: Debt/Equity of 0.06, total debt collapsed from ₹87 Cr to ₹33 Cr in FY25",
+      "Global OEM customer base across Asia, Europe, and Americas — reduces single-geography concentration risk"
+    ],
+    "key_risks": [
+      "Catastrophic valuation: 116x trailing P/E and 85x EV/EBITDA leave no margin of safety — any growth stumble is devastating",
+      "Poor earnings quality: OCF/Net Income = 40% (₹21 Cr / ₹53 Cr), well below my 80% threshold; FCF at -₹65 Cr reveals capital-hungry reality",
+      "Weak moat: Heat exchanger components for HVAC OEMs is a price-competitive, spec-driven market with low switching costs and abundant global suppliers"
+    ],
+    "red_flags": [
+      "FCF/Net Income deeply negative: -₹65 Cr FCF vs +₹53 Cr reported profit — earnings are not cash",
+      "₹151 Cr capex in FY25 on a ₹430 Cr revenue base — return on this expansion is entirely unproven",
+      "Company incorporated only in 2017; IPO-freshness premium of ₹500 Cr equity infusion in FY25 inflates book value and masks normalized ROIC",
+      "At ₹7,893 Cr market cap on ₹53 Cr net profit, the stock needs 20+ years of 20% earnings growth to justify today's price — that's not investing, that's speculation"
+    ],
+    "detailed_analysis": "KRN's operating story is genuinely impressive for a 7-year-old manufacturer: revenue compounded at 40% and operating income at 63% over three years, with ROCE holding at 20.8%. The massive equity raise in FY25 (equity jumped from ₹130 Cr to ₹528 Cr) funded ₹279 Cr of investing outflows, primarily a ₹151 Cr capex program — likely new capacity for the HVAC/R export market. Promoter holding at 70.8% is a positive alignment signal. However, the business is fundamentally a components manufacturer supplying OEMs on specification and price — the same structural position that makes it very difficult to sustain above-average returns on capital once the early-mover advantage fades.\n\nThe valuation is where this stock fails every Munger test. At 116x earnings and 14.3x revenue, the market is paying a software-business multiple for a fabricated-metals operation. The forward P/E of 58x still implies perfection. Critically, the company generated only ₹21 Cr of operating cash flow against ₹53 Cr of reported profits — a 40% conversion ratio that suggests aggressive working capital build or accounting that flatters GAAP earnings. Free cash flow of -₹65 Cr means every rupee of \"profit\" is actually being consumed and then some. I always ask: would I rather own the business or the cash? Here the business is burning cash while reporting profits. Invert this — the downside if growth slows to 15-20% (still excellent for a manufacturer) is a P/E compression from 116x to 30x, implying 75% downside. That asymmetry is unacceptable.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 49764,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0790767,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10566,
+      "cache_read_input_tokens": 8334,
+      "output_tokens": 2463,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10566
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 289,
+          "cache_read_input_tokens": 8334,
+          "cache_creation_input_tokens": 2232,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2232,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

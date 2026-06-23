@@ -1,0 +1,69 @@
+{
+  "symbol": "AURIONPRO",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T16:31:51.945415Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Aurionpro is a recovering mid-cap banking-tech player with a clean balance sheet (D/E 0.02) and decent near-term earnings momentum, but its sprawling product portfolio, low promoter ownership, and acquisition-heavy capital deployment make it difficult to underwrite a durable moat. At 25x trailing P/E with a 14.6% net profit CAGR and 5.7% revenue CAGR over nine years, the price is fair but not compellingly cheap for the quality on offer.",
+    "key_strengths": [
+      "Near debt-free balance sheet (borrowings collapsed from INR 154 Cr in FY20 to INR 30 Cr in FY25) gives financial flexibility",
+      "Accelerating revenue/profit since FY22 turnaround — revenue up 2.3x and net profit up 2.5x in three years to FY25",
+      "Banking/fintech software carries moderate switching costs; OCF positive all 5 of the last 5 years"
+    ],
+    "key_risks": [
+      "Promoter stake is only 26.88% — low skin-in-the-game is a yellow flag on management alignment",
+      "Acquisition-driven growth: investing CF -INR 421 Cr in FY25, -INR 203 Cr in FY24; equity doubled in two years via capital raises — dilutive and hard to value",
+      "FCF conversion is poor — FY25 FCF just INR 62 Cr against net profit of INR 188 Cr (33% conversion), as capex jumped to INR 95 Cr"
+    ],
+    "red_flags": [
+      "Net loss of INR 192 Cr in FY21 and revenue collapse from INR 710 Cr (FY16) to INR 374 Cr (FY21) — a decade of volatility that is inconsistent with the 'predictable earnings' I require",
+      "Total equity surged from INR 498 Cr (FY23) to INR 1,606 Cr (FY25) via aggressive capital raises — signals M&A-driven rather than organic compounding",
+      "Business spans banking software, data centres, smart cities, AI labs, trade finance, and supply chain — far outside my circle of competence and lacking the focus I expect in truly great businesses"
+    ],
+    "detailed_analysis": "Aurionpro ticks some basic boxes — minimal debt, positive operating cash flow, and a visible recovery in profitability since FY22. ROCE of 18.1% and ROE of 15.3% are acceptable but only marginally clear my 15% hurdle, and the nine-year revenue CAGR of just 5.7% tells me this business spent the better part of a decade going nowhere. The current growth narrative is real but young — I would need at least five consecutive years of clean, organic earnings growth before I felt comfortable calling it durable.\n\nWhat concerns me most is capital discipline. The company raised large amounts of equity in FY24–25 and ploughed INR 624 Cr into investments over two years; that kind of M&A pace often destroys as much value as it creates, and the poor FCF-to-profit conversion ratio (33% in FY25) suggests earnings quality is not high. With promoters holding barely 27%, I do not see the owner-operator mentality I prize. At a forward P/E of ~17x the price is not obviously expensive, but with a complex, unfocused portfolio and a chequered history of losses, I am not being paid enough to bear the uncertainty. I would watch from the sidelines.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 50579,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08167754999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11373,
+      "cache_read_input_tokens": 9116,
+      "output_tokens": 2419,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11373,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 205,
+          "cache_read_input_tokens": 9116,
+          "cache_creation_input_tokens": 2257,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2257
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

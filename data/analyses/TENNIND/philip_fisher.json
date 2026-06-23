@@ -1,0 +1,70 @@
+{
+  "symbol": "TENNIND",
+  "persona": "philip_fisher",
+  "persona_display_name": "Philip Fisher",
+  "analyzed_at": "2026-04-21T08:06:00.335649Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "AVOID",
+    "investment_thesis": "Tenneco Clean Air India is a profitably-run but structurally challenged auto parts manufacturer — excellent ROCE/ROE metrics mask a flat revenue trajectory and a near-existential threat from the EV transition that undermines the long-term growth potential I require. At 42x earnings with declining topline, you're paying a growth premium for a business whose core products (exhaust systems, catalytic converters, mufflers) face secular demand erosion.",
+    "key_strengths": [
+      "Exceptional capital efficiency: ROE 42.6%, ROCE 57.3% with near-zero debt (D/E 0.02) — management runs a lean, cash-generative operation",
+      "Margin expansion despite revenue headwinds: operating margin improved from ~11.8% (FY23) to ~16.7% (FY25) — discipline in cost control is visible",
+      "Consistent free cash flow (₹475–500 Cr/year) with no balance sheet stress — a well-managed subsidiary"
+    ],
+    "key_risks": [
+      "EV structural headwind: Exhaust systems, catalytic converters, and mufflers have zero addressable market in battery EVs — India's EV penetration curve directly erodes the core TAM",
+      "Revenue contraction: Top-line fell from ₹5,468 Cr (FY24) to ₹4,890 Cr (FY25), a ~10.6% decline — the wrong direction for a growth-oriented buy",
+      "Capital extraction over reinvestment: Financing CF of -₹433 to -₹686 Cr annually with reserves collapsing from ₹895 Cr to ₹514 Cr signals a harvest-mode subsidiary, not a compounder"
+    ],
+    "red_flags": [
+      "Revenue declined 10.6% YoY in FY25 — not a growth business by any measure",
+      "Reserves eroding rapidly (895→766→514 Cr) as parent extracts capital; equity shrinking from ₹1,208 Cr to ₹918 Cr",
+      "No evidence of R&D investment or product innovation pipeline to offset ICE obsolescence",
+      "Subsidiary of Tenneco Mauritius — global parent Tenneco Inc. went through bankruptcy reorganization, raising governance and strategic continuity concerns"
+    ],
+    "detailed_analysis": "From my standpoint, the first question I always ask is whether this company has products with sufficient market potential for many years of continued sales growth. The answer here is a clear no. Tenneco Clean Air India's bread-and-butter — exhaust aftertreatment systems, catalytic converters, and mufflers — is precisely the technology that becomes redundant as India pushes toward electric vehicles. Revenue has already contracted from ₹5,468 Cr to ₹4,890 Cr in FY25, and there is no indication of a meaningful pivot into EV components or new-generation ride technologies to offset this structural decline.\n\nWhat redeems this business operationally is its extraordinary capital efficiency: ROCE of 57.3% and ROE of 42.6% with virtually no debt are remarkable metrics, and the FY25 operating margin leap to ~16.7% from ~11.8% in FY23 shows real operational discipline. But these metrics partly flatter due to shrinking equity (reserves down ₹381 Cr in two years from parent-driven cash extraction). At 42x P/E and 26x P/B, you are paying a quality-growth multiple for a cash-cow-in-decline. My Scuttlebutt instinct tells me this is a well-managed subsidiary being milked rather than grown — the financing cash outflows alone (₹1,513 Cr extracted over three years) confirm the parent's intent. I would pass.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 47436,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07017945,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8471,
+      "cache_read_input_tokens": 10414,
+      "output_tokens": 2352,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8471,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 257,
+          "cache_read_input_tokens": 8360,
+          "cache_creation_input_tokens": 2165,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2165
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

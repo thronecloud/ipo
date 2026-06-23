@@ -1,0 +1,69 @@
+{
+  "symbol": "544383",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-20T19:46:33.015131Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Paradeep Parivahan is a capital-intensive port logistics operator with a paltry 0.26% ROE — far below my 15% threshold — suggesting the low 6.53x P/E reflects genuine quality issues, not a bargain. Single-port concentration at Paradip with commodity-like services offers no durable moat, so I pass.",
+    "key_strengths": [
+      "High promoter holding of 65.96% signals owner alignment",
+      "Entrenched physical presence inside Paradip Port creates local operational advantage",
+      "Optically cheap at 6.53x P/E versus broader logistics peers"
+    ],
+    "key_risks": [
+      "ROE of 0.26% indicates the business is barely earning its cost of capital",
+      "Heavy concentration on a single port exposes revenue to one customer/geography",
+      "Capital-intensive stevedoring/handling with thin margins and commoditized pricing"
+    ],
+    "red_flags": [
+      "ROE near zero despite apparent profitability — suggests bloated equity base or one-off earnings inflating P/E",
+      "Negligible institutional interest (FII 0.65%, DII 3.37%) — smart money is absent",
+      "Small-cap INR 231 Cr with limited disclosure on long-term capital efficiency"
+    ],
+    "detailed_analysis": "The headline 6.53x P/E looks tempting, but a 0.26% ROE tells the real story — this business is not compounding shareholder capital at anything resembling an acceptable rate. Either earnings are depressed and the P/E is misleading, or the equity base is inflated relative to true earning power. Port-adjacent logistics (stevedoring, intra-port transport, railway siding) is a capital-heavy, tariff-sensitive business with customers (large commodity shippers, port authorities) that hold the pricing power. I see no durable moat here — any competitor with equipment and a concession can replicate the service.\n\nPromoter holding of ~66% is a plus for alignment, but institutional absence (FII+DII under 5%) suggests seasoned analysts haven't found conviction. For Berkshire's standards — predictable earnings, high ROE, low capital intensity, clear pricing power — this fails on nearly every count. I'd rather pay a fair price for a toll-road-like business with 20% ROE than a \"cheap\" multiple for a capital-intensive operator earning sub-1% on equity. Pass.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 21834,
+    "model_used": "opus",
+    "total_cost_usd": 0.0909825,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8944,
+      "cache_read_input_tokens": 13455,
+      "output_tokens": 1133,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8944,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10618,
+          "cache_creation_input_tokens": 1163,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1163
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

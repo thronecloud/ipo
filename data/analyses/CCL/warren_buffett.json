@@ -1,0 +1,69 @@
+{
+  "symbol": "CCL",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-19T06:01:41.881239Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "AVOID",
+    "investment_thesis": "CCL Products has built a genuine scale advantage as India's largest instant coffee B2B exporter with 14.3% revenue CAGR, but the company is deep in a capital-intensive expansion cycle that has produced four consecutive years of deeply negative free cash flow (cumulative -INR 819 Cr from 2022-2025), tripled its debt to INR 1,813 Cr, and pushed finance costs up 10-fold — all while earning returns on capital that are declining. At 38.7x earnings, the risk-reward is unfavorable.",
+    "key_strengths": [
+      "Genuine scale moat in B2B instant coffee — among the world's largest private label processors with logistics and processing cost advantages",
+      "Strong revenue growth at 14.3% CAGR over 9 years with net profit growing at 10.9%, demonstrating underlying business momentum",
+      "Promoter holding of 46.11% aligns management interests with minority shareholders"
+    ],
+    "key_risks": [
+      "Free cash flow deeply negative for four years running (-INR 74 Cr, -159 Cr, -458 Cr, -128 Cr) — a business that consumes cash is not compounding wealth for me",
+      "Borrowings have tripled from INR 469 Cr (2020) to INR 1,628 Cr (2025), with finance costs exploding from INR 11 Cr to INR 113 Cr, consuming a growing share of operating profit",
+      "ROCE declining to 13.1% as the massive capex cycle (INR 513 Cr in FY2024) dilutes returns — the expansion is growing the top line but shrinking per-unit returns"
+    ],
+    "red_flags": [
+      "D/E ratio of 0.78 significantly exceeds my preferred ceiling of 0.3; for a business in a commodity-adjacent sector, this level of leverage is uncomfortable",
+      "Finance costs growing at 29.5% CAGR — debt is growing faster than the business, creating a financial leverage risk if coffee commodity prices turn adverse",
+      "P/E of 38.7x for a B2B industrial food processor with 14% operating margins and declining ROCE offers no margin of safety"
+    ],
+    "detailed_analysis": "CCL Products is a competent operator in a niche — instant coffee private label processing — where scale genuinely matters. The 14.3% revenue CAGR and steady profit growth up until recent years reflect real competitive execution. However, the company is in the middle of a heavy capacity expansion that has turned it into a serial cash consumer. When I see OCF of INR 290 Cr but capex of INR 418 Cr producing negative FCF for four straight years, I worry about whether the eventual returns will justify the cost of capital deployed.\n\nI prefer businesses that generate cash abundantly and require minimal reinvestment to maintain their competitive position. CCL is the opposite: it must invest heavily just to grow, and the debt accumulated to fund that growth introduces earnings fragility. If global coffee demand softens or interest rates stay elevated, the finance cost burden (INR 113 Cr in 2025) will become increasingly painful. At 38.7x earnings with these financial characteristics, I would rather watch from the sidelines.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 164242,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.21211695,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 22941,
+      "cache_read_input_tokens": 15464,
+      "output_tokens": 8096,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 22941,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 430,
+          "cache_read_input_tokens": 15464,
+          "cache_creation_input_tokens": 7477,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 7477
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

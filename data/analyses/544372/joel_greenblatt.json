@@ -1,0 +1,69 @@
+{
+  "symbol": "544372",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-20T19:42:08.171040Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Shreenath Paper fails the Magic Formula decisively — a 0.09% ROE indicates capital is earning essentially nothing, which makes this a low-quality business regardless of a superficially cheap 7.41 P/E. Trading and distribution is inherently low-ROC, and the tiny INR 19.8 Cr market cap offers no margin of safety when the underlying economics are this poor.",
+    "key_strengths": [
+      "Optically low P/E of 7.41 suggests some earnings yield",
+      "High promoter skin-in-the-game at 72.98%",
+      "Small base could, in theory, allow rapid proportional growth"
+    ],
+    "key_risks": [
+      "ROE of 0.09% is effectively zero — catastrophic on the quality axis of the Magic Formula",
+      "Paper trading/distribution is a structurally low-margin, low-ROC industry",
+      "Micro-cap (INR 19.8 Cr) with illiquidity and governance risk typical of BSE-only names"
+    ],
+    "red_flags": [
+      "ROE 0.09% — near-zero return on capital means earnings are a rounding error",
+      "Low P/E is a value trap signal when paired with sub-1% ROE",
+      "BSE-only micro-cap with limited disclosure/liquidity"
+    ],
+    "detailed_analysis": "The Magic Formula ranks companies on both cheapness (EBIT/EV) and quality (EBIT/Capital). Shreenath Paper may pass a crude cheapness screen with a 7.41 P/E, but it catastrophically fails the ROC leg — a 0.09% ROE implies EBIT/Capital is in the low single digits at best, nowhere near my 20%+ threshold. A wonderful business at a fair price beats a fair business at a wonderful price; this is a marginal business at a deceptively cheap price, which is the worst quadrant.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 19432,
+    "model_used": "opus",
+    "total_cost_usd": 0.08825,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8792,
+      "cache_read_input_tokens": 13440,
+      "output_tokens": 1062,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8792,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10570,
+          "cache_creation_input_tokens": 1092,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1092
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

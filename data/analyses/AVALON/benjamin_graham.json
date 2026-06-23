@@ -1,0 +1,70 @@
+{
+  "symbol": "AVALON",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T16:33:01.619795Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Avalon Technologies trades at INR 1,119 against a computed Graham Number of ~INR 144 — nearly 8x intrinsic value by my formula — with a P/E of 77.8x and P/B of 11.47x that make any margin of safety mathematically impossible. The business shows real operating capability but the market price embeds a decade of flawless execution that has not yet been delivered.",
+    "key_strengths": [
+      "Earnings continuity: net profit positive all 6 years (2020–2025), meeting my minimum track-record threshold",
+      "Debt reduction: borrowings fell from INR 316 Cr (2021) to INR 163 Cr (2025); D/E 0.25 is well within my 0.5 limit",
+      "Interest coverage ~7.2x (EBITDA 123 / finance cost 17) — comfortably above my 3.5x floor"
+    ],
+    "key_risks": [
+      "Extreme overvaluation: P/E 77.8x vs my 15x ceiling; P/B 11.47x vs my 1.5x ceiling — no margin of safety exists",
+      "Persistently negative free cash flow: FCF negative 4 of last 5 years despite reported profits — earnings are not converting to cash",
+      "Earnings volatility: net profit swung INR 12→67→52→28→63 Cr; operating income collapsed 44% in FY2024 before recovering — no stability"
+    ],
+    "red_flags": [
+      "Graham Number ~INR 144 vs market price INR 1,119 — stock is priced at 7.8x intrinsic value",
+      "Post-IPO equity surge (INR 87→537 Cr in FY2023) confirms recent listing; IPO cash of INR 422 Cr already largely consumed",
+      "Zero dividend history — shareholder returns are purely speculative capital gain",
+      "Operating CF of INR 25 Cr versus net profit of INR 63 Cr implies aggressive accrual accounting"
+    ],
+    "detailed_analysis": "By every quantitative filter I apply, Avalon Technologies fails. The P/E of 77.8x is over five times my ceiling of 15x; the P/B of 11.47x is nearly eight times my maximum of 1.5x. The Graham Number — the upper bound a defensive investor should ever pay — computes to roughly INR 144 (√(22.5 × EPS ~9.4 × BVPS ~97)), yet the market demands INR 1,119. That is not a valuation; it is a speculation on a future that may never arrive. EV/EBITDA of 52x confirms the absurdity. Mr. Market is in one of his most euphoric moods here.\n\nThe underlying business is not without merit — it is a legitimate EMS operator serving clean energy, aerospace, and rail, with manageable debt and a six-year profit record. But the financial quality is troubling: free cash flow has been negative in four of the last five years (−INR 21 Cr in FY2025 even as reported profit reached INR 63 Cr), operating margins are thin and erratic (collapsed to ~7% in FY2024), and no dividends have ever been paid. The 2023 IPO inflated the equity base with fresh capital that is already being consumed by capex. An intelligent investor does not pay 8x intrinsic value for a company that cannot yet consistently generate free cash. I would require a price closer to INR 150–175 before even beginning to consider this position.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 50241,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07084575,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8845,
+      "cache_read_input_tokens": 10960,
+      "output_tokens": 2292,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8845,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 361,
+          "cache_read_input_tokens": 8910,
+          "cache_creation_input_tokens": 1985,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1985
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

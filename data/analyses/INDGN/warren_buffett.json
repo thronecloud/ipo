@@ -1,0 +1,69 @@
+{
+  "symbol": "INDGN",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-19T12:54:42.111042Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Indegene is a capable digital services provider to global pharma companies, with a clean balance sheet, positive FCF, and respectable ROE of 20.6% — but FY2025 revenue growth slowed dramatically to ~9.6% (INR 2,590 Cr to INR 2,839 Cr) from a 31% six-year CAGR, making the 26.8x P/E hard to justify at today's growth velocity.",
+    "key_strengths": [
+      "ROE of 20.6% and ROCE of 24.8% with near-zero debt (D/E 0.04) demonstrate capital-efficient operations in a services business",
+      "Diversified pharma client base across medical, commercial, and clinical segments provides revenue stability against single-client concentration risk",
+      "FCF consistently positive (INR 412 Cr in FY2025), confirming that reported profits translate into real cash"
+    ],
+    "key_risks": [
+      "Revenue growth decelerated sharply to ~9.6% in FY2025 — a business that commands 26.8x P/E needs to grow much faster to earn that multiple",
+      "Operating margins at 12.73% are thin for a technology-enabled services company — limited buffer if wage inflation or pricing pressure materializes",
+      "No promoter shareholding data disclosed — for a company of this scale, the absence of promoter skin-in-the-game data is an information gap I dislike"
+    ],
+    "red_flags": [
+      "Revenue growth deceleration from 31% CAGR to single-digit FY2025 growth is a significant warning signal for a growth-priced stock",
+      "Equity was negative at -INR 105 Cr in FY2020, implying prior period balance sheet distress that was subsequently rectified — historical capital structure was aggressive",
+      "Large investing outflows in FY2025 (INR 677 Cr) without commensurate revenue acceleration suggests acquisitions that have yet to bear fruit"
+    ],
+    "detailed_analysis": "Indegene occupies an interesting niche — digitizing the commercial and medical operations of global pharma companies. The business generates clean cash, carries virtually no debt post-FY2025 (borrowings down from INR 490 Cr to INR 122 Cr), and has earned respectable returns on capital. These are attributes I respect. The concern is simple arithmetic: a company growing revenue at 9.6% annually cannot sustain a 26.8x P/E without eventual multiple compression.\n\nThe six-year net profit CAGR of 75.4% is misleading — it starts from a near-zero FY2019 base of INR 14 Cr after a loss year in FY2020 (-INR 12 Cr). The underlying business maturation is solid but unspectacular. I would revisit INDGN seriously if it traded closer to 18–20x earnings, which would represent fair value for a ~15% earnings grower with good capital returns. At current prices, the risk/reward is balanced at best.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 141107,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.20011440000000003,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 22012,
+      "cache_read_input_tokens": 15268,
+      "output_tokens": 7532,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 22012,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 612,
+          "cache_read_input_tokens": 15268,
+          "cache_creation_input_tokens": 6744,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 6744
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

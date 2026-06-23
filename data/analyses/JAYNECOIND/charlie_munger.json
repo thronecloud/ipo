@@ -1,0 +1,70 @@
+{
+  "symbol": "JAYNECOIND",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T17:58:42.685321Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Jayaswal Neco is a commodity steel producer with ROCE of 2.93% and ROE of -0.87%, earning far below its cost of capital while trading at 25x earnings on what appears to be near-trough, normalized profits. After a near-insolvency cycle (borrowings ballooned from ₹1,244 Cr in 2011 to ₹4,114 Cr by 2016), the company is deleveraging but remains saddled with ₹554 Cr annual finance costs that are *rising* even as debt falls.",
+    "key_strengths": [
+      "Debt genuinely declining — from ₹3,845 Cr (FY22) to ₹2,753 Cr (FY25), a ₹1,092 Cr reduction in 3 years",
+      "Strong FCF generation FY25 (₹1,144 Cr) and OCF positive all 5 years — underlying cash conversion is real",
+      "Diversified product portfolio (castings, pipes, automotive components) reduces pure commodity exposure"
+    ],
+    "key_risks": [
+      "ROIC is catastrophically low — ROCE of 2.93% destroys value vs. any reasonable 12-15% cost of capital hurdle",
+      "FY22 net profit of ₹2,247 Cr was a one-time event (NCLT/IBC write-back); normalized earnings of ~₹113-227 Cr make the 25x P/E expensive, not cheap",
+      "Finance costs rising (₹465 Cr FY24 → ₹554 Cr FY25) despite debt reduction — signals unfavorable debt repricing or new borrowings"
+    ],
+    "red_flags": [
+      "Net profit collapsed 95% from FY22 peak (₹2,247 Cr) to FY25 (₹113 Cr) — the earnings base investors are pricing off is illusory",
+      "P/B of 3.63x on a business earning negative ROE (-0.87%) is logically incoherent and pricing in a recovery that hasn't materialized",
+      "History of catastrophic capital allocation: CWIP ballooned from ₹199 Cr (2011) to ₹3,163 Cr (2015) — management destroyed enormous equity value",
+      "Low institutional interest (FII 0.90%, DII 0.30%) — smart money is absent"
+    ],
+    "detailed_analysis": "Inverted first: what makes this a terrible investment? Steel is a commodity with no pricing power, no moat, and perpetually mean-reverting margins. Jayaswal Neco's entire capital structure history — borrowings quintupling from ₹1,244 Cr to ₹4,114 Cr in five years while CWIP exploded to ₹3,163 Cr — is a textbook case of the \"edifice complex\" destroying shareholder wealth. The company almost certainly passed through NCLT proceedings; the ₹2,247 Cr FY22 \"profit\" is not operating brilliance but an accounting reversal from debt restructuring. Strip that out and the business earns ₹113-227 Cr annually on a ₹9,344 Cr market cap — a 1.2-2.4% earnings yield. ROCE of 2.93% means every rupee of capital deployed earns less than a savings account.\n\nThe only mitigating factor is the genuine deleveraging — ₹2,753 Cr net debt today vs. ₹3,845 Cr in FY22, with FCF of ₹1,144 Cr in FY25 doing the heavy lifting. But finance costs *rising* to ₹554 Cr despite lower gross debt is a yellow flag suggesting debt composition is worsening. At P/B of 3.63x and P/E of 25x, the market is pricing in a return to glory that the fundamentals do not support. A steel commodity business with no demonstrated ROIC above cost of capital, managed by a team that once destroyed ₹3,000+ Cr in CWIP, deserves a price-to-book near or below 1x — not 3.6x. This is precisely the kind of \"cigar butt\" with no final puff that Munger famously warned against.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 46441,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08330415,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11347,
+      "cache_read_input_tokens": 9113,
+      "output_tokens": 2534,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11347
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 365,
+          "cache_read_input_tokens": 9113,
+          "cache_creation_input_tokens": 2234,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2234,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

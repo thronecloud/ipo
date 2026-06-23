@@ -1,0 +1,68 @@
+{
+  "symbol": "JLHL",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-18T18:03:38.403931Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Jupiter is a genuine fast-grower in India's under-penetrated hospital sector — 22% revenue CAGR and expanding margins tell a clean story. But at P/E 43.5 with net profit growth decelerating sharply to ~10% in FY2025, you're paying a PEG north of 2.0, which violates my core discipline of buying growth at a reasonable price.",
+    "key_strengths": [
+      "Revenue compounding at 22.2% CAGR over 5 years in a structurally underpenetrated Indian hospital market",
+      "Finance costs collapsed from INR 44 Cr (2022) to INR 11 Cr (2025) — debt paydown via IPO materially boosts future EPS",
+      "Operating margin expanding (16.89%) with gross margins of 63.4% — strong unit economics per bed"
+    ],
+    "key_risks": [
+      "Net profit growth decelerated hard — only 9.6% in FY2025 (INR 177→194 Cr), making PEG ~4.5x on trailing growth, well above my 1.0 threshold",
+      "Heavy capex cycle: INR 321 Cr spent in FY2025 with CWIP ballooning to INR 296 Cr — FCF turned negative (-67 Cr); new capacity ROI is unproven",
+      "Borrowings restarted at INR 403 Cr after being zeroed in FY2024 — execution risk if new hospitals ramp slower than expected"
+    ],
+    "red_flags": [
+      "PEG ratio >2.0 on any reasonable forward growth assumption — Lynch's hard ceiling is 1.5",
+      "FCF negative in FY2025 despite strong OCF — capex intensity could persist 2-3 more years before payoff"
+    ],
+    "detailed_analysis": "Jupiter fits a classic hospital roll-up story I'd normally love — visible business, India's rising middle class demanding tertiary care, and a brand building real equity in western Mumbai. Revenue went from INR 463 Cr (2020) to INR 1,262 Cr (2025), and EBITDA margins held steady around 24-25%. The IPO proceeds wisely zeroed out debt in FY2024, and finance costs dropping from INR 44 Cr to INR 11 Cr will act as a multi-year EPS tailwind. The CWIP surge to INR 296 Cr tells me new beds are coming — this is where the next earnings leg lives.\n\nThe problem is price. At P/E 43.5, the market has already priced in the expansion. Net profit grew just 9.6% in FY2025 — a dramatic deceleration after the COVID-recovery spike. My PEG calculation: 43.5 divided by even an optimistic 20% forward earnings growth rate gives 2.17 — I want below 1.0 on fast growers, and 1.5 is my absolute ceiling. The stock needs either a 25-30% price correction or 2-3 years of 30%+ earnings growth to become interesting. I'd put this on my watchlist at INR 900-1,000 where the story gets compelling, but I won't chase it at current levels.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 56633,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0853782,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11226,
+      "cache_read_input_tokens": 8889,
+      "output_tokens": 2707,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11226
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 412,
+          "cache_read_input_tokens": 8889,
+          "cache_creation_input_tokens": 2337,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2337,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

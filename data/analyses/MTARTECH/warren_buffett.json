@@ -1,0 +1,70 @@
+{
+  "symbol": "MTARTECH",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T18:21:24.415900Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "MTAR is a niche defense/space/nuclear precision manufacturer with genuine barriers to entry, but at 226x trailing P/E with ROE of just 7.4% and near-zero free cash flow, the price demands perfection that the financials haven't delivered. Earnings have nearly halved from their FY2023 peak while the stock commands a valuation fit for a compounding machine.",
+    "key_strengths": [
+      "Genuine moat: sole-source supplier to ISRO, DRDO, and nuclear programs — switching costs are extraordinarily high",
+      "Healthy gross margin of 48.8% signals proprietary, technically complex products with pricing power",
+      "Revenue CAGR of 25.9% over 5 years demonstrates real demand from India's defense/space build-out"
+    ],
+    "key_risks": [
+      "Valuation is absurd: 226x P/E and 103x EV/EBITDA with ROE of only 7.4% — no margin of safety whatsoever",
+      "Earnings in structural decline: net profit collapsed from INR 103 Cr (FY23) to INR 53 Cr (FY25), a 49% drop",
+      "Capital-intensive trap: FCF was negative for 3 consecutive years (-121, -100, -36 Cr); capex consumes ~100 Cr/year with minimal cash conversion"
+    ],
+    "red_flags": [
+      "Net profit nearly halved in two years while revenue grew 18% — margin deterioration is severe and unexplained",
+      "Finance costs grew at 34.5% CAGR; cash on hand fell to just INR 2 Cr in FY25 — liquidity is dangerously thin",
+      "ROE of 7.4% is less than half my 15% threshold — capital is being deployed poorly despite premium pricing",
+      "Low promoter holding of 30.44% in a specialized industrial is a governance concern"
+    ],
+    "detailed_analysis": "MTAR is a genuinely interesting business — precision machining for India's space rockets, nuclear reactors, and defense systems is about as captive a customer base as one can find. The gross margins of 48.8% confirm real technical differentiation. But a wonderful business at a terrible price is still a terrible investment. At 226x trailing earnings, the market is pricing in decades of flawless execution. The actual results tell a different story: operating income peaked at INR 154 Cr in FY23 and has since shrunk to INR 121 Cr in FY25, while revenue grew from INR 574 Cr to INR 676 Cr. That means MTAR is growing revenue but destroying operating leverage — the opposite of what a great business does.\n\nThe capital intensity is the other disqualifier. I want businesses that generate cash, not consume it. MTAR has burned through free cash flow for three consecutive years, spending INR 91–108 Cr annually on capex while generating thin operating cash flows. Debt has risen from INR 17 Cr (FY21) to INR 186 Cr (FY25), and finance costs compounded at 34.5%. With only INR 2 Cr of cash remaining, this is a business that needs capital rather than returns it. The ROE of 7.4% seals the verdict: you're paying 20x book for a business earning less than a fixed deposit return on equity. I wouldn't buy it at half this price.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 41179,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07433775,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10675,
+      "cache_read_input_tokens": 8875,
+      "output_tokens": 2109,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10675
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 347,
+          "cache_read_input_tokens": 8875,
+          "cache_creation_input_tokens": 1800,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1800,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

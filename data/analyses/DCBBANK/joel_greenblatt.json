@@ -1,0 +1,69 @@
+{
+  "symbol": "DCBBANK",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T17:06:49.136954Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "DCB Bank is explicitly excluded from the Magic Formula — financial companies distort both EBIT/EV and ROIC calculations because their \"cost of funds\" is revenue, not an operating expense. Even setting that aside, ROE of 10.81% falls well short of my 20%+ return-on-capital threshold for a quality business.",
+    "key_strengths": [
+      "Cheap valuation: P/E 8.59x (forward 6.54x) and P/B 1.0x suggest limited downside",
+      "Net profit CAGR of 28.9% over 3 years shows earnings momentum",
+      "Strong DII holding (32.8%) signals domestic institutional confidence"
+    ],
+    "key_risks": [
+      "Finance costs growing at 26.5% CAGR vs revenue at 16.3% — spread compression threatens profitability",
+      "OCF only positive 2 of 4 years (including -441 Cr in 2025) — volatile and unreliable FCF",
+      "Low promoter holding of 16.23% — weak insider conviction in their own bank"
+    ],
+    "red_flags": [
+      "BANK — explicitly excluded from Magic Formula; EBIT/EV and ROIC are meaningless for this capital structure",
+      "ROE of 10.81% is mediocre — a bank earning less than 12% ROE is essentially destroying economic value after cost of equity",
+      "Negative free cash flow in 2023 (-1,732 Cr) and 2025 (-577 Cr) — not the high-FCF-conversion business I require"
+    ],
+    "detailed_analysis": "My Magic Formula simply does not apply here — banks are excluded by design. When a bank borrows at 6% and lends at 11%, the interest expense is the cost of goods sold, not an operating cost. Stripping it out to compute \"EBIT\" produces a nonsensical number, and there are no \"net working capital + net fixed assets\" to put in the denominator for ROIC. This isn't a technicality; it's why I've always said you cannot rank banks alongside industrials or retailers in the Magic Formula screen.\n\nOn pure banking fundamentals, DCB Bank is mediocre at best. ROE of 10.81% barely covers a reasonable cost of equity for a small Indian private bank — P/B of 1.0x is roughly fair for a bank earning its cost of capital, not a bargain. Finance costs are growing at 26.5% CAGR while revenue grows at 16.3% — that gap is a profitability warning. The stock looks statistically cheap on P/E, but cheap-on-earnings for a bank with deteriorating spreads and volatile cash flows is a value trap, not a Magic Formula opportunity.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 39291,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0682731,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10002,
+      "cache_read_input_tokens": 8472,
+      "output_tokens": 1881,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10002
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 388,
+          "cache_read_input_tokens": 8472,
+          "cache_creation_input_tokens": 1530,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1530,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

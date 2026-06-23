@@ -1,0 +1,70 @@
+{
+  "symbol": "IXIGO",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T17:43:32.580699Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "IXIGO is a commoditized OTA business trading at 133x earnings with a declining net profit (₹73 Cr → ₹60 Cr despite 39% revenue growth) and an ROE of just 9.74% — far below the 15% minimum I demand. At this price, I'm being asked to pay a luxury price for a tourist-class business in a fiercely competitive market where IRCTC holds the real moat.",
+    "key_strengths": [
+      "Asset-light model with 81.74% gross margin and near-zero debt (D/E: 0.04), generating ₹118 Cr FCF in FY25",
+      "Strong revenue trajectory — ₹914 Cr in FY25 vs ₹40 Cr in 2019, with diversified platforms (ixigo, Confirmtkt, AbhiBus) targeting India's price-sensitive traveler",
+      "Operating CF turned sharply positive in FY25 (₹122 Cr) after years of cash burn, showing early operational maturity"
+    ],
+    "key_risks": [
+      "No durable moat — OTA is a commodity; travelers routinely compare across MakeMyTrip, EaseMyTrip, Cleartrip with zero switching cost",
+      "IRCTC owns the actual train ticketing infrastructure and can squeeze OTA margins at will — ixigo's core segment is structurally exposed",
+      "Extreme valuation (P/E 133x, EV/EBITDA 119x) leaves no margin of safety; even at forward P/E of 57x, profitability must sustain explosive growth with no stumble"
+    ],
+    "red_flags": [
+      "Net profit fell from ₹73 Cr (FY24) to ₹60 Cr (FY25) despite 39% revenue growth — operating leverage is not materializing",
+      "Other Income was ₹39 Cr in FY24 and ₹23 Cr in FY25; strip it out and core operating profitability is razor-thin (operating income: ₹72 Cr)",
+      "Recent IPO (June 2024) — classic post-listing euphoria pricing; FII ownership at 64% means institutional momentum, not business value, is driving the price",
+      "Investing outflow of -₹203 Cr in FY25 with financing inflow of +₹104 Cr signals ongoing capital hunger despite claimed profitability"
+    ],
+    "detailed_analysis": "IXIGO operates in a segment I simply don't find investable at any reasonable price: a digitally-mediated travel marketplace where the product is identical across competitors and the customer's only loyalty is to the cheapest fare. The gross margin of 81.74% looks wonderful until you realize it's the nature of software-distribution economics — it says nothing about pricing power. When IRCTC can change its API fees or commission structure, ixigo has no recourse. That's the opposite of a moat; it's a dependency. ROE of 9.74% tells me the business earns less on equity than a good fixed deposit, and the profit actually shrank year-over-year despite 39% revenue growth — that's a troubling signal about cost structure and competitive intensity.\n\nThe valuation is simply unjustifiable by any framework I use. At 133x trailing earnings and 119x EV/EBITDA, the market is pricing in a decade of flawless execution in one of India's most brutally competitive digital sectors. I've seen this story before — exciting growth, thin margins, no moat, and a premium price that assumes nothing ever goes wrong. Charlie would remind me: invert, always invert. What does this stock need to go right? Everything. What could go wrong? Plenty — a regulatory change at IRCTC, MakeMyTrip cutting commissions, or simply a demand slowdown. I would not buy this business at ₹179, and frankly, I'm not sure what price would make it attractive given the structural absence of a durable competitive advantage.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 52708,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08215349999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10982,
+      "cache_read_input_tokens": 8790,
+      "output_tokens": 2555,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10982
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 416,
+          "cache_read_input_tokens": 8790,
+          "cache_creation_input_tokens": 2192,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2192,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

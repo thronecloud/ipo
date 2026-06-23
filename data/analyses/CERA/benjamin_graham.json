@@ -1,0 +1,69 @@
+{
+  "symbol": "CERA",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T16:53:47.160629Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Cera is a fundamentally sound business with 10 consecutive years of positive earnings and near-zero debt, but at a P/E of 27.8x and P/B of 5.01x, the price demands far too much optimism for a value investor — the Graham Number (≈INR 2,135) sits at less than half the current price of INR 5,325, offering no margin of safety whatsoever. Mr. Market is pricing in a rosy future; I prefer to pay for a proven past at a discount.",
+    "key_strengths": [
+      "10-year unbroken earnings record: Net profit grew from INR 83 Cr (2016) to INR 249 Cr (2025) at 13% CAGR — exactly the kind of stability I demand.",
+      "Near-zero leverage: Debt/Equity of 0.04 and finance costs of just INR 7 Cr against operating income of INR 302 Cr gives an interest coverage of ~43x — the balance sheet can survive almost any downturn.",
+      "Positive operating cash flow all 5 of the last 5 years, with FCF consistently positive — earnings are real, not accounting fictions."
+    ],
+    "key_risks": [
+      "Valuation is the primary risk: P/B of 5.01x means you are paying INR 5 for every INR 1 of net assets; any earnings disappointment or multiple compression could destroy capital rapidly.",
+      "Revenue growth is modest (8.6% CAGR over 9 years) and operating margins are thin (8.3%), leaving little buffer if input costs or competition intensify.",
+      "Operating cash flow halved in FY2025 (INR 122 Cr vs INR 236 Cr in FY2024) even as net profit grew — a divergence that warrants scrutiny of working capital management."
+    ],
+    "red_flags": [
+      "Graham Number ≈ INR 2,135 vs market price INR 5,325 — stock trades at 2.5x intrinsic value by my measure.",
+      "P/E of 27.8x is nearly double my maximum threshold of 15x; combined P/E × P/B = 27.8 × 5.01 = 139, far exceeding my ceiling of 22.5.",
+      "FY2025 investing CF turned positive (+INR 127 Cr) while OCF fell to INR 122 Cr — likely asset monetisation, not organic cash generation strength."
+    ],
+    "detailed_analysis": "Cera Sanitaryware passes every qualitative test I value: it has operated profitably for a full decade, carries trivial debt (borrowings of INR 67 Cr against equity of INR 1,354 Cr), and has never reported an annual loss in the data provided. ROCE of 22.4% and ROE of 18.2% demonstrate genuine capital efficiency. These are the hallmarks of a defensible, well-run business — the kind that deserves a place on a watch list. But deserving attention is not the same as deserving purchase at any price.\n\nThe arithmetic is damning. My Graham Number — the square root of (22.5 × EPS × Book Value Per Share) — yields approximately INR 2,135, using FY2025 net profit of INR 249 Cr and equity of INR 1,354 Cr across roughly 1.29 Cr shares. The market asks INR 5,325, a 150% premium to intrinsic value. A P/B of 5.0x and P/E of 27.8x leave no margin for error, no cushion against a slowdown in India's construction cycle, no protection if operating margins — already a slender 8.3% — compress further. The intelligent investor does not pay for hope; he pays for value. At INR 5,325, he is paying almost entirely for hope.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 52232,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0709506,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8948,
+      "cache_read_input_tokens": 11072,
+      "output_tokens": 2271,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 8948
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 347,
+          "cache_read_input_tokens": 9022,
+          "cache_creation_input_tokens": 1976,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1976,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

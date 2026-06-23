@@ -1,0 +1,69 @@
+{
+  "symbol": "EQUITASBNK",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T17:22:09.256457Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Equitas SFB's net profit collapsed 82% in FY25 (INR 799 Cr → 147 Cr) while finance costs compounded at 29.1% — nearly double revenue growth of 17.4% — revealing severe NIM compression and likely asset quality deterioration. At a 50.93x trailing P/E with ROE of just 2.42%, the market is pricing in a recovery that is far from certain in a stressed microfinance environment.",
+    "key_strengths": [
+      "Revenue growing at a steady 17.4% CAGR, demonstrating loan book expansion and deposit franchise building",
+      "Strong DII ownership at 50.87% signals institutional confidence and provides price support",
+      "P/B of 1.28x is modest, and forward P/E of 11.28x implies market has partially priced in recovery"
+    ],
+    "key_risks": [
+      "Finance costs (CAGR 29.1%) growing nearly 2x faster than revenue — classic NIM squeeze that destroys bank economics",
+      "Net profit crashed 82% YoY in FY25 despite top-line growth — almost certainly driven by rising credit provisions in the MFI/microfinance book",
+      "ROE of 2.42% is catastrophically below the cost of equity — the bank is destroying shareholder value at current profitability levels"
+    ],
+    "red_flags": [
+      "FY25 net profit of INR 147 Cr on assets of INR 52,836 Cr = ROA of ~0.28% — a bank barely earning its keep",
+      "Finance cost jumped INR 653 Cr in a single year (FY24→FY25) vs net profit of only INR 147 Cr — leverage eating the business alive",
+      "Trailing P/E of 50.93x on heavily depressed earnings creates significant downside if recovery is delayed or shallower than expected"
+    ],
+    "detailed_analysis": "Invert first, as always: what does it look like if this goes wrong? Equitas serves microfinance and MSME borrowers — the most credit-vulnerable segments in India. FY25 saw exactly the stress scenario that was always latent in this model: borrower over-leverage in the MFI sector caused provisions to spike, collapsing profits 82% even as the loan book grew. Finance costs compounding at 29.1% — driven by deposit rate competition among small finance banks — further squeezed margins. The bank's ROE of 2.42% means it is earning a fraction of its equity cost. A business that cannot earn its cost of capital over a cycle is not a business worth owning.\n\nThe balance sheet tells a sobering story: total assets nearly doubled to INR 52,836 Cr in three years, yet equity grew modestly to INR 6,073 Cr. The bank is growing assets aggressively while earning almost nothing on them in FY25. The forward P/E of 11.28x implies the market expects a dramatic earnings recovery — but I'd want to see evidence of asset quality stabilization (GNPA trends, PCR) before trusting that forecast. Management quality is unproven under stress; the profit collapse suggests either poor risk underwriting or inadequate provisioning in prior years. I require a margin of safety in both price and quality — this stock offers neither at current levels.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 48783,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07491779999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10162,
+      "cache_read_input_tokens": 8371,
+      "output_tokens": 2286,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10162
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 535,
+          "cache_read_input_tokens": 8371,
+          "cache_creation_input_tokens": 1791,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1791,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

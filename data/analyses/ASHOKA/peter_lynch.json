@@ -1,0 +1,68 @@
+{
+  "symbol": "ASHOKA",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-18T16:30:35.014312Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Ashoka Buildcon is a classic turnaround/asset-play story — India's infrastructure boom gives it order-book visibility, and aggressive BOT monetization has slashed debt from ₹5,450 Cr to ₹1,989 Cr — but the headline P/E of 3.73x is misleading since FY25's ₹1,734 Cr PAT includes large non-recurring asset-sale gains (forward P/E resets to 11.95x). At current price, it's fairly valued for a cyclical EPC player but lacks the compounding growth profile I look for.",
+    "key_strengths": [
+      "Dramatic deleveraging: borrowings cut from ₹5,450 Cr → ₹1,989 Cr in one year, D/E now 0.44 — company finally has a clean balance sheet",
+      "Strong operating metrics: 21.5% operating margins and OCF positive all 5 years (FY25 OCF ₹1,673 Cr) show real cash generation in a tough sector",
+      "India infrastructure tailwind: government capex on highways/roads is a visible, durable growth driver with years of runway"
+    ],
+    "key_risks": [
+      "FY25 PAT of ₹1,734 Cr is non-recurring — normalized earnings are far lower (implied ~₹326 Cr at forward P/E 11.95x), meaning the cheap P/E is an illusion",
+      "Revenue growth has stalled: FY24→FY25 revenue grew only 2.4% (₹9,798 Cr → ₹10,037 Cr), far below the 9-year CAGR of 15.1%",
+      "Finance costs remain punishing at ₹1,245 Cr even post-deleveraging — interest burden consumes ~41% of FY25 EBITDA of ₹3,038 Cr"
+    ],
+    "red_flags": [
+      "FY25 net profit tripled to ₹1,734 Cr while revenue barely moved — a classic sign of one-time asset disposal gains, not operational improvement",
+      "Earnings have been erratic: ₹771 Cr → ₹294 Cr → ₹521 Cr → ₹1,734 Cr — no consistent compounding trajectory that Lynch requires for conviction"
+    ],
+    "detailed_analysis": "From my vantage point, Ashoka Buildcon looks deceptively cheap — P/E of 3.73x and EV/EBITDA of 1.94x would make any value investor's eyes light up. But the \"story\" here is a turnaround/asset-play, not a fast grower. The FY25 profit explosion from ₹521 Cr to ₹1,734 Cr — while assets barely grew (₹19,009 Cr → ₹19,189 Cr) and equity surged from ₹2,220 Cr to ₹4,210 Cr — screams BOT asset monetization, not operating leverage. Normalized earnings are likely in the ₹300–600 Cr range, putting the real P/E closer to 7–13x. The PEG ratio is impossible to pin down confidently when earnings are this lumpy.\n\nThe constructive part of the story is real though: India's road construction boom, strong promoter skin-in-the-game at 54.5%, operating margins at 21.5% (high for construction), and free cash flow of ₹1,573 Cr in FY25 all paint a picture of an operationally sound business. The debt cleanup is genuinely value-unlocking. But for me to get truly excited, I need to see revenue re-accelerating above 15%, normalized earnings on a consistent upward slope, and a PEG under 1.0 — none of which are clearly visible here. This is a HOLD: worth owning if you already have it for the turnaround completion, but not a compelling fresh buy at ₹139.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 60684,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09409139999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11804,
+      "cache_read_input_tokens": 9058,
+      "output_tokens": 3140,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11804,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 468,
+          "cache_read_input_tokens": 9058,
+          "cache_creation_input_tokens": 2746,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2746
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

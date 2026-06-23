@@ -1,0 +1,69 @@
+{
+  "symbol": "EIDPARRY",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-19T06:20:26.746839Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "E.I.D. Parry is primarily a sugar company — a commodity business subject to government price controls, ethanol policy whims, and monsoon cycles — none of which management can control. With ROE below 10% and operating margins at 6%, this business fails my fundamental test of earning above-average returns on capital over time.",
+    "key_strengths": [
+      "Dramatic debt reduction — borrowings fell from INR 4,347 Cr (FY20) to INR 1,229 Cr (FY21) and have stayed relatively controlled since, reducing financial risk",
+      "Nutraceuticals segment (spirulina, chlorella, astaxanthin) is a genuinely differentiated niche with global markets and better margins than sugar",
+      "Cheap valuation (P/E 14.6x, EV/EBITDA 5.9x) reflects the commodity nature but provides some downside cushion"
+    ],
+    "key_risks": [
+      "ROE of 9.54% is well below my 15% threshold — the business does not earn good returns on shareholders' capital even in favorable sugar cycles",
+      "Operating margin of 6.12% on INR 31,609 Cr revenue leaves almost no buffer; a 2% swing in sugar prices or input costs destroys the profit",
+      "OCF was only INR 359 Cr in FY23 versus INR 4,771 Cr in FY21 — extreme volatility makes normalized earnings estimates unreliable"
+    ],
+    "red_flags": [
+      "Sugar pricing in India is heavily regulated by the government — management cannot freely set prices for its primary product, the antithesis of pricing power",
+      "Net profit of INR 1,773 Cr in FY25 includes INR 706 Cr of 'other income' — strip that out and the underlying operating business earned only ~INR 1,067 Cr, making the P/E much less attractive",
+      "CWIP jumped from INR 85 Cr (FY20) to INR 967 Cr (FY25) with heavy capex, but ROCE is still only 16.6% — capital is not being deployed productively enough"
+    ],
+    "detailed_analysis": "I have a simple rule: I don't invest in commodity businesses where the product is indistinguishable from competitors and prices are set by government committees or global markets rather than by the company's own quality and brand. Sugar is exactly that. The 6.12% operating margin and 9.54% ROE tell me the economics are poor, and no amount of cheap valuation changes the underlying business quality.\n\nThe nutraceuticals segment is genuinely interesting — spirulina and astaxanthin are niche specialty ingredients with real demand growth globally — but it remains a small fraction of a company dominated by a commodity business. If the nutraceuticals were spun out, that piece might deserve a look. As currently constituted, EID Parry is a pass.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 169267,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.21994185,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 23861,
+      "cache_read_input_tokens": 16297,
+      "output_tokens": 8371,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 23861,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 636,
+          "cache_read_input_tokens": 16297,
+          "cache_creation_input_tokens": 7564,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 7564
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

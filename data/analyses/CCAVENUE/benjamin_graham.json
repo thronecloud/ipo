@@ -1,0 +1,70 @@
+{
+  "symbol": "CCAVENUE",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T16:50:22.222825Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "AvenuesAI trades near book value (P/B 1.06) with a clean balance sheet and 10 consecutive years of profitability, satisfying some of my quantitative requirements — but P/E of 21.3x exceeds my 15x ceiling and the Graham Number (~INR 13.51) lies below the current price of INR 15.20, indicating no margin of safety. The \"AI\" rebranding smells of narrative speculation, and razor-thin 3.23% operating margins leave virtually no buffer against adversity.",
+    "key_strengths": [
+      "Fortress balance sheet — Debt/Equity of 0.02, net cash positive (Cash 331 Cr vs. Total Debt 172 Cr)",
+      "10 consecutive years of positive net earnings (2016–2025), satisfying my multi-year earnings requirement",
+      "Revenue and net profit growth at 31.6% and 43.8% 9-year CAGRs demonstrates real, compounding earnings power"
+    ],
+    "key_risks": [
+      "Operating margin of only 3.23% — one competitive or regulatory shock wipes out profits entirely",
+      "FCF turned sharply negative in FY2025 (–304 Cr) despite INR 236 Cr net profit, driven by INR 376 Cr capex; earnings are not yet converting to cash",
+      "Low promoter holding of only 27.29% and a conspicuous 'AI' rebrand in Jan 2026 — the seller of a story always knows more than the buyer"
+    ],
+    "red_flags": [
+      "Price (15.20) exceeds Graham Number (~13.51) — no margin of safety by my primary valuation tool",
+      "P/E of 21.3x is 42% above my hard 15x ceiling; no disciplined value buyer should pay this",
+      "ROE of 6.47% is sub-par — the business earns less than a mediocre bond on its equity base, suggesting a weak economic moat",
+      "'AvenuesAI' rebrand is textbook narrative dressing — Graham distrusts stories; I want numbers, not names"
+    ],
+    "detailed_analysis": "By my strict quantitative filters, AvenuesAI passes on balance sheet safety (D/E 0.02, net cash) and earnings continuity (10 years profitable), but fails on valuation and earning power quality. The Graham Number — the square root of (22.5 × EPS ~0.68 × BVPS ~11.97) — yields approximately INR 13.51, a full 11% below today's price. Mr. Market is asking me to pay a premium, and I do not pay premiums. P/E at 21.3x compounds this error. My ceiling is 15x, and I would prefer 10x; at 21.3x the market has already priced in the optimistic future I am not willing to fund.\n\nThe profitability picture troubles me further. A 3.23% operating margin and 6.62% gross margin in a payments infrastructure business suggest the company is a toll-road operator with a very leaky toll booth. ROE of 6.47% means shareholders are earning a pittance on their invested capital, and \"Other Income\" of INR 71 Cr in FY2025 constitutes nearly 30% of net profit — earnings that are neither predictable nor operational. FY2025 free cash flow of –304 Cr amid INR 376 Cr in capex reveals a company still in heavy build-out mode, not the steady earnings generator I require. I will not pay more than intrinsic value for a business still consuming capital at this rate, regardless of its growth trajectory.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 74349,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08246774999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9613,
+      "cache_read_input_tokens": 11300,
+      "output_tokens": 2868,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9613
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 499,
+          "cache_read_input_tokens": 9250,
+          "cache_creation_input_tokens": 2413,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2413,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

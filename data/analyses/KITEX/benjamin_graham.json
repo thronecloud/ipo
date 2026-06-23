@@ -1,0 +1,71 @@
+{
+  "symbol": "KITEX",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T18:04:27.832972Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Kitex Garments trades at 86.9x earnings and 3.2x book — nearly double my maximum thresholds — while simultaneously reporting a negative operating margin and carrying ₹1,184 Cr of debt accumulated in just four years. The Graham Number of approximately ₹89 per share implies the market price of ₹172 represents a 93% premium to conservatively calculated intrinsic value, leaving no margin of safety whatsoever.",
+    "key_strengths": [
+      "Revenue recovery in FY2025 to ₹983 Cr (+59% YoY) and net profit of ₹136 Cr represent genuine operational improvement",
+      "Promoter holding of 56.66% aligns management incentives with shareholders",
+      "Infant garments export business targets relatively stable demand with 52% gross margins suggesting a defensible niche"
+    ],
+    "key_risks": [
+      "Debt explosion from zero (2021) to ₹1,184 Cr (2025) with D/E of 0.98 — far above my 0.5 limit — funded entirely speculative CWIP of ₹1,283 Cr that has yet to generate returns",
+      "Negative operating margin of -2.58% in the current period and three consecutive years of negative free cash flow (-₹121, -₹655, -₹451 Cr) signal that the core business is consuming rather than generating capital",
+      "Nine-year earnings record is deeply erratic (₹110 Cr → ₹54 Cr → ₹125 Cr → ₹56 Cr → ₹136 Cr) — no stable earning power on which to anchor intrinsic value"
+    ],
+    "red_flags": [
+      "Graham Number ~₹89 vs market price ₹172 — stock trades at a 93% premium to intrinsic value",
+      "Borrowings surged from ₹0 (2021) to ₹1,184 Cr (2025) — a 9-year low-debt track record has been abandoned for a leveraged growth bet",
+      "CWIP of ₹1,283 Cr represents 123% of total equity — an enormous unproven asset funded by debt",
+      "Negative operating margin with EV/EBITDA of 71.8x implies the market is paying for future earnings that do not yet exist",
+      "OCF positive only 3 of 5 years; FY2024 OCF was -₹38 Cr — the business cannot self-fund at current scale"
+    ],
+    "detailed_analysis": "Kitex Garments fails every quantitative filter I apply. The P/E of 86.9 is nearly six times my maximum of 15, the P/B of 3.2 is more than twice my ceiling of 1.5, and the debt-to-equity ratio of 0.98 is double my allowable maximum of 0.5. The Graham Number — the bedrock of my valuation method — works out to roughly ₹89 per share (√(22.5 × EPS ~₹6.8 × BVPS ~₹52)), meaning the stock must fall 48% simply to reach fair value by my conservative arithmetic. At ₹172, the buyer is paying almost entirely for speculative future earnings from capacity that is still under construction.\n\nThe balance sheet transformation since 2021 is alarming in a way that Mr. Market has apparently chosen to ignore. The company was entirely debt-free in FY2021; it now carries ₹1,184 Cr of borrowings and ₹1,283 Cr of capital work-in-progress — together representing a bet that new capacity will produce earnings large enough to justify both the debt service and the current market multiple. Finance costs will compound as this debt matures, yet the current operating margin is negative. The forward P/E of 9.07 tells me the optimistic scenario is already priced in; should the capacity ramp disappoint, downside is severe. A disciplined investor demands a margin of safety, and there is none here.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 55758,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08361795000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9511,
+      "cache_read_input_tokens": 11009,
+      "output_tokens": 2976,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9511
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 468,
+          "cache_read_input_tokens": 8959,
+          "cache_creation_input_tokens": 2602,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2602,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

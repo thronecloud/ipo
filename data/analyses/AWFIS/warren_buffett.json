@@ -1,0 +1,70 @@
+{
+  "symbol": "AWFIS",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T16:35:40.335212Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Awfis is an India co-working operator masquerading as a tech business — it's a capital-intensive lease arbitrage model with a D/E of 2.91, no durable competitive moat, and a single year of net profitability (INR 68 Cr in FY2025) after six consecutive years of losses. At 44x trailing P/E on unproven earnings power, with finance costs compounding at 73% CAGR, the margin of safety is non-existent.",
+    "key_strengths": [
+      "Revenue compounding at 41% CAGR (FY2019→FY2025), reaching INR 1,208 Cr — genuine demand tailwind for flexible workspaces in India",
+      "Operating cash flow positive for all 5 tracked years; FCF improved sharply to INR 163 Cr in FY2025",
+      "82% gross margin indicates strong revenue quality before lease/overhead costs"
+    ],
+    "key_risks": [
+      "Dangerous leverage: D/E at 2.91, borrowings at INR 1,451 Cr growing at 73% CAGR — any demand softening could be existential",
+      "No meaningful moat: co-working is commoditized with near-zero switching costs and fierce competition (IndiQube, WeWork India, Smartworks)",
+      "Finance costs of INR 136 Cr (FY2025) and rising threaten newly-achieved profitability; net profit of INR 68 Cr barely covers one bad quarter"
+    ],
+    "red_flags": [
+      "Six years of consecutive net losses before FY2025 — earnings quality and sustainability are entirely unproven",
+      "Promoter stake of only 17% signals weak owner mentality and leaves the float dominated by institutional momentum money",
+      "Classic WeWork-style mismatch: long-term lease liabilities vs. short-term client contracts — recession risk is severe and asymmetric",
+      "EBITDA of INR 456 Cr is IND AS 116-inflated; strip out lease obligations and true economic earnings are far thinner than headline margins suggest"
+    ],
+    "detailed_analysis": "Awfis is precisely the kind of business I have spent 60 years learning to avoid. It is a lease arbitrage operation — signing long-term rental agreements with landlords, then sub-letting desks to corporates on short notice. There is no secret sauce here, no switching cost, no pricing power. Any competitor with capital can replicate a floor of desks and ergonomic chairs. The D/E ratio of 2.91 tells me management has been funding growth almost entirely on borrowed money — borrowings surged from INR 248 Cr in FY2020 to INR 1,451 Cr in FY2025, while equity only recently turned positive. Finance costs at INR 136 Cr versus net profit of INR 68 Cr means the lenders are earning more from this business than the owners are.\n\nThe valuation compounds the problem. At 44x trailing P/E on the company's very first year of net profitability, the market is pricing in a long runway of earnings growth that has yet to be demonstrated. ROCE of 12.9% in a high-debt structure is mediocre at best — a business that earns 12.9% on capital while borrowing at rising rates is not compounding wealth; it is redistributing it to creditors. The 17% promoter stake is a final signal: when the founders themselves don't own much of what they built, I don't feel compelled to own it either. I'd rather sit on cash.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 52209,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0786939,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10912,
+      "cache_read_input_tokens": 8833,
+      "output_tokens": 2341,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8833,
+        "ephemeral_5m_input_tokens": 2079
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 296,
+          "cache_read_input_tokens": 8833,
+          "cache_creation_input_tokens": 2079,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2079,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

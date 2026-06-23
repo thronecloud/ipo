@@ -1,0 +1,69 @@
+{
+  "symbol": "544370",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-20T19:43:54.055597Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Nukleus Office fails the Magic Formula on both axes: a P/E of 37 implies an earnings yield near 2.7% (far below my 12% threshold) while ROE of 0.10% signals capital is generating essentially no return. A capital-intensive co-working lessor priced like a growth story is the opposite of \"cheap and good.\"",
+    "key_strengths": [
+      "Promoter holding of 69.91% indicates aligned skin-in-the-game",
+      "Operates in a structurally growing flexible-workspace category in Delhi NCR",
+      "Small ₹85 Cr base could allow rapid scaling if unit economics turn"
+    ],
+    "key_risks": [
+      "ROE of 0.10% — capital is effectively earning nothing",
+      "P/E 37 with negligible profitability = earnings yield ~2.7%, deeply overvalued",
+      "Co-working is capex/lease-heavy with thin margins and operating-leverage downside"
+    ],
+    "red_flags": [
+      "Earnings yield well below 6% floor",
+      "ROE far below 12% minimum (0.10%)",
+      "Recent incorporation (Dec 2019) — no multi-year track record of high ROIC"
+    ],
+    "detailed_analysis": "From a Magic Formula lens, this is a near-textbook reject. Earnings yield, approximated by 1/P/E, sits at ~2.7% — investors are paying ₹37 for ₹1 of earnings in a business where each rupee of equity is producing one-tenth of a paisa of profit. The combination of a rich multiple AND a near-zero return on capital means the stock fails BOTH screens simultaneously, which is the worst quadrant in my framework.\n\nStructurally, co-working is a tough business model: long-duration lease liabilities funded by short-duration member contracts, heavy fit-out capex, and limited pricing power versus landlords. Even with a tailwind in flexible workspace demand and a committed 69.91% promoter, the unit economics need to inflect dramatically before ROIC could reach the 20%+ I require. Until EBIT/EV moves above 12% and ROIC sustainably crosses 20%, this is a clear avoid.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 22060,
+    "model_used": "opus",
+    "total_cost_usd": 0.0909445,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8890,
+      "cache_read_input_tokens": 13454,
+      "output_tokens": 1145,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8890,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10584,
+          "cache_creation_input_tokens": 1176,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1176
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

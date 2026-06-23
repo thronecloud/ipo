@@ -1,0 +1,68 @@
+{
+  "symbol": "BANCOINDIA",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T16:43:26.417379Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Banco Products is a genuinely good business — ROIC of ~28% and profit CAGR of 17.8% satisfy the Magic Formula's quality screen convincingly. But at an Earnings Yield of only ~6.4% (EBIT ₹611 Cr / EV ~₹9,506 Cr), it fails the cheapness test; the Magic Formula demands 12%+ to act.",
+    "key_strengths": [
+      "ROIC ~28% (EBIT ₹611 Cr / tangible capital ~₹2,186 Cr) — confirmed by reported ROCE of 32.4%, well above the 25% excellence threshold",
+      "Compounding financials: revenue 12.1% CAGR, net profit 17.8% CAGR over 9 years — operating leverage is clearly working",
+      "High promoter ownership at 67.9% — skin in the game, incentives aligned with minority shareholders"
+    ],
+    "key_risks": [
+      "Earnings Yield of ~6.4% (EBIT/EV) is less than half the 12% minimum Magic Formula threshold — the stock is priced for perfection",
+      "Debt surged from ₹14 Cr (2021) to ₹729 Cr (2025) in four years; finance costs compounding at 27% CAGR — leverage trajectory needs watching",
+      "FCF highly erratic: negative in 2022 (₹-15 Cr) and 2023 (₹-135 Cr), only ₹86 Cr in 2025 vs net profit of ₹392 Cr — large gap implies working capital drag or capex absorption, questioning earnings quality"
+    ],
+    "red_flags": [
+      "Total assets jumped 55% in a single year (₹1,982 Cr → ₹3,078 Cr in FY25) alongside a ₹306 Cr debt increase — likely a large acquisition or capacity build whose economics are unproven",
+      "FY25 FCF of ₹86 Cr vs net profit of ₹392 Cr is a 78% shortfall — this recurring cash conversion gap is a yellow flag for the reported profitability"
+    ],
+    "detailed_analysis": "Running the Magic Formula on Banco Products: EBIT = ₹611 Cr (Operating Income 2025); EV = Market Cap ₹8,955 Cr + Net Debt ₹551 Cr = ~₹9,506 Cr. Earnings Yield = 611/9,506 = **6.4%** — below even the minimum 6% threshold I use to consider a stock. On the other side, tangible capital employed (Equity ₹1,635 Cr + Debt ₹573 Cr − Cash ₹22 Cr) = ₹2,186 Cr, giving ROIC = 611/2,186 = **28%**, confirmed by the reported ROCE of 32.4%. This is a tale of two halves: the business earns exceptional returns on capital — but the market already knows it and has priced it accordingly at EV/EBITDA of 15.6x and P/E of 18.7x.\n\nThe sudden balance-sheet expansion in FY25 (assets up ₹1,096 Cr, borrowings up ₹306 Cr, equity up ₹583 Cr) suggests a large acquisition or capacity program whose return profile is uncertain. The FCF-to-profit disconnect (₹86 Cr FCF vs ₹392 Cr net profit in FY25) compounds this concern. For a Magic Formula investor, the right move is to monitor — this business deserves a place on the watchlist and becomes interesting if the stock corrects ~30–35% to push Earnings Yield above 9–10%.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 79100,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09808935,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 12113,
+      "cache_read_input_tokens": 9122,
+      "output_tokens": 3328,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 12113
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 412,
+          "cache_read_input_tokens": 9122,
+          "cache_creation_input_tokens": 2991,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2991,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

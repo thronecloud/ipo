@@ -1,0 +1,70 @@
+{
+  "symbol": "544412",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-20T19:57:44.395368Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "3B Films fails both Magic Formula tests decisively: an earnings yield of ~2.5% (inverse of P/E 39.5) is far below my 6% floor, and a 0.17% ROE signals near-zero return on capital. This is neither cheap nor a good business — the exact opposite of what the Magic Formula seeks.",
+    "key_strengths": [
+      "High promoter skin-in-the-game at 69.97% aligns incentives",
+      "Operates in a growing packaging/CPP-CPE films niche",
+      "Small market cap (INR 43 Cr) leaves room for operating leverage if scale comes"
+    ],
+    "key_risks": [
+      "ROE of 0.17% implies ROIC is near zero — capital-destructive economics",
+      "P/E 39.5 = earnings yield ~2.5%, expensive relative to tiny earnings base",
+      "Commodity CPP/CPE films is capital-intensive with weak pricing power"
+    ],
+    "red_flags": [
+      "Earnings yield ~2.5% is below my 6% avoid threshold",
+      "ROE 0.17% — effectively no return on shareholder capital",
+      "Zero DII ownership suggests no institutional conviction",
+      "Small, recently-listed BSE SME-style float with thin data history"
+    ],
+    "detailed_analysis": "The Magic Formula ranks companies by earnings yield (EBIT/EV) and return on capital. 3B Films flunks both. With P/E at 39.5, earnings yield is roughly 2.5% — you could earn more in a risk-free government bond. ROE of 0.17% is essentially a rounding error; even if EBIT margins are modestly better than net margins, the return on capital for a CPP/CPE film manufacturer cannot plausibly clear my 20% threshold when ROE is this anemic. This is the textbook opposite of \"cheap and good\" — it is expensive and mediocre.\n\nPackaging films is a commodity business with heavy capex, which punishes ROIC; scale leaders earn mid-teens returns, and sub-scale players like 3B (INR 43 Cr market cap) typically earn far less. I have no interest in paying 40x earnings for a business that generates negligible returns on the capital invested. The systematic, unemotional answer from my framework: avoid. A score of 1 reflects that both Magic Formula inputs are near the bottom of the distribution.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 21393,
+    "model_used": "opus",
+    "total_cost_usd": 0.093777,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 9020,
+      "cache_read_input_tokens": 13494,
+      "output_tokens": 1225,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9020,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10624,
+          "cache_creation_input_tokens": 1266,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1266
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

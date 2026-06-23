@@ -1,0 +1,68 @@
+{
+  "symbol": "LTFOODS",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-22T16:25:47.731468Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "LT Foods is a decent branded basmati rice business with steady 12.7% revenue and 26.8% PAT CAGR, trading at a fair 22.5x P/E — but operating margins of ~11% and commodity-like product dynamics prevent it from qualifying as a truly wonderful business. At current prices, I'd admire it from a distance rather than own it.",
+    "key_strengths": [
+      "Branded moat: DAAWAT/Royal brands with ~80-country distribution create real consumer pull and pricing power above generic rice",
+      "Disciplined deleveraging: Debt fell from INR 1,764 Cr (2020) to 917 Cr (2024), and ROE/ROCE of 17%/19% exceed my 15% threshold",
+      "Consistent earnings compounding: Net profit grew from INR 72 Cr (2016) to 612 Cr (2025) — a 26.8% CAGR — with margins visibly expanding each year"
+    ],
+    "key_risks": [
+      "Commodity exposure: Basmati is ultimately a crop-dependent product; paddy price spikes compress margins unpredictably",
+      "2025 debt spike: Borrowings nearly doubled from INR 917 Cr to 1,804 Cr in a single year — reason unexplained, warrants scrutiny",
+      "Thin operating margins (~11%) with rising capex (INR 239 Cr in 2025 vs 158 Cr in 2022) risk FCF deterioration; 2025 FCF fell 60% to INR 224 Cr"
+    ],
+    "red_flags": [
+      "Borrowings surged INR 887 Cr in FY25 — nearly back to 2020 peak levels — contradicting the multi-year deleveraging narrative",
+      "FCF highly volatile: INR 556 Cr (2024) → 224 Cr (2025) on higher capex and lower OCF, suggesting capital intensity is rising"
+    ],
+    "detailed_analysis": "LT Foods owns a genuine brand in the premium basmati segment — DAAWAT is a recognizable name in India, the Middle East, and North America. The nine-year track record of revenue and profit growth is real and consistent, and the near-halving of finance costs (INR 148 Cr in 2016 to INR 88 Cr in 2025) shows management that understands capital allocation. ROE of 16.7% and ROCE of 19.2% are respectable, and the D/E of 0.28 is conservative by most standards. At 17.5x forward earnings, the valuation is not demanding relative to the growth profile.\n\nHowever, basmati rice sits in an uncomfortable middle ground for me — it has brand loyalty but faces fierce competition from KRBL (India Gate) and private labels, and paddy prices mean management doesn't fully control their input costs. The 11% operating margin is too thin for me to conclude the moat is truly durable. More concerning is the sudden jump in borrowings from INR 917 Cr to INR 1,804 Cr in FY25, alongside a sharp drop in free cash flow to INR 224 Cr. A company I'd want to own should be generating ever-more cash with stable or declining debt — LT Foods' FY25 shows the opposite. This is a fair business at a fair price, not a wonderful business at a fair price.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "fair",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 54059,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09045555,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11765,
+      "cache_read_input_tokens": 9126,
+      "output_tokens": 2906,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11765,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 305,
+          "cache_read_input_tokens": 9126,
+          "cache_creation_input_tokens": 2639,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2639
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

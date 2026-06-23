@@ -1,0 +1,70 @@
+{
+  "symbol": "DYNAMATECH",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T17:14:06.811874Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Dynamatic Technologies is a capital-intensive, zero-growth business (revenue CAGR of -0.7% over 9 years) with ROIC and ROE well below the cost of capital, yet priced at an absurd 150x trailing P/E and 58x EV/EBITDA. The market appears to be extrapolating a one-time other income windfall (₹105 Cr in FY24) into a permanent earnings re-rating — a classic value trap.",
+    "key_strengths": [
+      "Aerospace segment provides structural tailwind (Airbus supply chain, UAVs) and some pricing power",
+      "Consistent positive operating cash flows all 5 years reviewed; debt and finance costs both declining",
+      "International diversification (US, UK, Europe, Canada) reduces single-market dependence"
+    ],
+    "key_risks": [
+      "Egregious valuation: 150x P/E on earnings inflated by ₹105 Cr one-time other income in FY24; normalized PAT ~₹43 Cr implies real P/E >160x",
+      "ROIC ~9% (NOPAT ≈₹120 Cr / Invested Capital ≈₹1,303 Cr) — destroys shareholder value against any reasonable hurdle rate",
+      "Revenue stagnation for a decade (₹1,490 Cr in 2016 → ₹1,404 Cr in 2025) signals no durable competitive advantage or pricing power"
+    ],
+    "red_flags": [
+      "FY24 net profit of ₹122 Cr included ₹105 Cr 'Other Income' — strip that out and core earnings are ~₹17 Cr; the market has re-rated on a non-recurring item",
+      "FCF collapsed from ₹168 Cr (FY20) to ₹22 Cr (FY24), revealing heavy capex drag and poor earnings quality in core operations",
+      "ROE of 6.21% and ROCE of 8.96% both below a conservative 12% cost of capital — this business has not earned its cost of capital in a decade",
+      "Conglomerate sprawl: gear pumps, aerospace structures, UAVs, medical test kits, casting — no focus, no flywheel"
+    ],
+    "detailed_analysis": "Invert, always invert. Ask first: what would make this a catastrophic investment? Answer: a stagnant business earning sub-par returns (ROE 6.2%, ROIC ~9%) trading at an extreme multiple built on a one-time earnings spike. That is precisely what we have here. Revenue has gone nowhere in nine years — ₹1,490 Cr in FY16 to ₹1,404 Cr in FY25, a -0.7% CAGR. EBITDA similarly contracted at -1% CAGR. The FY24 \"earnings explosion\" to ₹122 Cr net profit is entirely explained by ₹105 Cr of other income — likely an asset sale or extraordinary item — which has already normalized back to ₹23 Cr in FY25, collapsing PAT to ₹43 Cr. The market is paying ₹7,016 Cr for a business generating ₹43 Cr in normalized profit. That is not an investment; that is speculation on narrative.\n\nThe aerospace segment (Airbus supply chain, structural components) is genuinely interesting and represents a long-cycle moat-in-formation. But it is buried inside a conglomerate that also makes medical test kits and rock shaft assemblies, with no evidence of capital discipline. Free cash flow has deteriorated sharply from ₹168 Cr in FY20 to ₹22 Cr in FY24, even as capex ramped. Debt at ₹594 Cr (D/E 0.78x) is manageable but finance costs alone consumed ₹59 Cr — more than the company's FY25 net profit excluding other income. Until management demonstrates sustained ROIC above 15%, revenue re-acceleration, and separation of aerospace quality from the rest of the portfolio, this stock at 58x EV/EBITDA is uninvestable at any price near current levels.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 58656,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08781525000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11539,
+      "cache_read_input_tokens": 9100,
+      "output_tokens": 2787,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11539
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 408,
+          "cache_read_input_tokens": 9100,
+          "cache_creation_input_tokens": 2439,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2439,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

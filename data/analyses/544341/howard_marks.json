@@ -1,0 +1,69 @@
+{
+  "symbol": "544341",
+  "persona": "howard_marks",
+  "persona_display_name": "Howard Marks",
+  "analyzed_at": "2026-04-20T09:51:34.326928Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "A INR 52 Cr micro-cap immigration consultancy with 0.21% ROE trading at 5.25x P/E — the optically cheap multiple is a value trap because earnings are negligible. Second-level thinking: when ROE is essentially zero, P/E is a meaningless number, and the price reflects speculative micro-cap froth, not value.",
+    "key_strengths": [
+      "Promoter holding of 72.44% signals skin in the game",
+      "Headline P/E of 5.25 looks superficially low",
+      "Asset-light consultancy model needs little capex"
+    ],
+    "key_risks": [
+      "ROE of 0.21% is effectively zero — business earns less than a savings account",
+      "Micro-cap (INR 52 Cr) with near-zero institutional ownership (FII 0%, DII 3.37%) means no price discovery",
+      "Immigration consulting is a discretionary, regulation-sensitive, low-moat cyclical service"
+    ],
+    "red_flags": [
+      "P/E of 5.25 with ROE of 0.21% is mathematically suspicious — likely a one-off earnings spike or tiny equity base distortion",
+      "Recently listed micro-cap in a frothy SME/IPO cycle — classic late-cycle promoter monetization",
+      "No FII presence and minimal DII — suggests no institutional diligence has validated the story"
+    ],
+    "detailed_analysis": "The relationship between price and value is what matters, and here the value side is alarming. A 0.21% ROE means this business is essentially destroying capital relative to risk-free alternatives — Indian G-Secs yield ~7%. The P/E of 5.25 is a mirage; with such a low return on equity, either earnings are about to mean-revert downward, or the equity base is so small that minor accounting items dominate. Either way, there is no margin of safety in the underlying economics, regardless of what the price tag suggests.\n\nFrom a cycle perspective, this fits the pattern I warn about: a recently listed Indian micro-cap in a euphoric SME/small-cap market, promoter-controlled at 72%, with zero institutional sponsorship. Immigration consultancy has no durable moat — it competes with thousands of unregulated agents and is highly exposed to host-country visa policy shifts (Canada, UK, US tightening already). Downside scenario: a regulatory squeeze or recession collapses discretionary migration spend, and a 0.21% ROE business with no liquidity becomes essentially un-exitable. The asymmetry is wrong-way: limited upside, large permanent-loss risk. Pass.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 26779,
+    "model_used": "opus",
+    "total_cost_usd": 0.0919005,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8944,
+      "cache_read_input_tokens": 13491,
+      "output_tokens": 1169,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8944,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10609,
+          "cache_creation_input_tokens": 1217,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1217
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "544399",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-20T19:57:39.467452Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Srigee DLM fails the Magic Formula test decisively — while the P/E of 9.46 looks superficially cheap, a ROE of just 0.30% signals a business generating essentially zero return on capital. Cheap + bad = value trap, not a Magic Formula candidate.",
+    "key_strengths": [
+      "Low headline P/E of 9.46x suggests modest earnings yield",
+      "Promoter holding at 45.23% provides some alignment",
+      "Plastic OEM/ODM niche with design-led positioning"
+    ],
+    "key_risks": [
+      "ROE of 0.30% implies near-zero return on capital — disqualifying",
+      "Tiny INR 38 Cr market cap = illiquid microcap with BSE-only listing",
+      "Capital-intensive plastic manufacturing with no evidence of ROIC moat"
+    ],
+    "red_flags": [
+      "ROE 0.30% is catastrophically low — fails ROC half of Magic Formula",
+      "Sub-50% promoter holding in a microcap raises control/skin-in-game concerns",
+      "No EBIT/EV data disclosed to verify true earnings yield"
+    ],
+    "detailed_analysis": "The Magic Formula ranks companies on two axes: earnings yield (cheapness) and return on capital (quality). Srigee DLM fails catastrophically on the second axis — a 0.30% ROE means the business is generating virtually no return on shareholder capital, which almost certainly implies ROIC well below any reasonable cost of capital. The 9.46x P/E is meaningless in this context because low-quality earnings compounding at ~0% destroy value regardless of entry multiple. This is the textbook value trap my formula is designed to avoid.\n\nEven if I gave full benefit of the doubt on earnings yield (say 10-11%), pairing it with near-zero ROC puts this stock in the bottom decile of the combined ranking. Plastic OEM/ODM is a commodity contract-manufacturing business with pricing pressure from customers and input-cost volatility from crude derivatives — structural reasons why ROIC stays compressed. At INR 38 Cr market cap with thin institutional coverage (FII 2.25%, DII 0%), there's no catalyst visibility either. Pass — the Magic Formula says buy good businesses at fair prices, not mediocre businesses at cheap ones.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 23793,
+    "model_used": "opus",
+    "total_cost_usd": 0.09172274999999999,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8929,
+      "cache_read_input_tokens": 13473,
+      "output_tokens": 1166,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8929,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10603,
+          "cache_creation_input_tokens": 1196,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1196
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

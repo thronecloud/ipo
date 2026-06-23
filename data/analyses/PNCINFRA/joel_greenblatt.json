@@ -1,0 +1,69 @@
+{
+  "symbol": "PNCINFRA",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T22:02:09.791754Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "PNC Infratech appears optically cheap — Earnings Yield ~15.4% (EBIT ₹2,066 Cr / EV ~₹13,434 Cr) — but ROIC of only 13.9% falls below my 20% threshold for a \"good\" business. Worse, the company has generated negative free cash flow for four consecutive years, meaning reported EBIT is not translating into real cash, which breaks the foundation of the Magic Formula.",
+    "key_strengths": [
+      "Earnings Yield ~15.4% (EBIT ₹2,066 Cr vs EV ~₹13,434 Cr) — passes the 'cheap' screen",
+      "Operating margins steady at 17.4% and EBITDA CAGR of 11% over 9 years shows some operating durability",
+      "Strong promoter holding at 56% with DII ownership of 24.5% provides governance comfort"
+    ],
+    "key_risks": [
+      "ROIC of 13.9% is below my 20% threshold — capital allocation is mediocre, not exceptional",
+      "Chronic negative OCF: -₹499 Cr (FY22), -₹1,454 Cr (FY23), -₹231 Cr (FY24), -₹56 Cr (FY25) — only 1/5 years positive; EBIT is accounting fiction, not cash",
+      "Finance costs surged to ₹852 Cr in FY25 (consuming 41% of EBIT), up from ₹257 Cr in FY16 — debt servicing is devouring shareholder value"
+    ],
+    "red_flags": [
+      "Revenue fell 22% from ₹8,650 Cr (FY24) to ₹6,769 Cr (FY25) — execution / order-flow concerns",
+      "Total debt nearly doubled: ₹4,793 Cr (FY22) → ₹9,364 Cr (FY25) while OCF remains negative — debt is funding operations, not growth",
+      "Free cash flow cumulatively destroyed ~₹2,433 Cr over four years; the company is burning cash while booking profits"
+    ],
+    "detailed_analysis": "On the surface, PNC Infratech looks like a Magic Formula candidate: Earnings Yield of ~15.4% (EBIT ₹2,066 Cr / EV ₹13,434 Cr) clears my 12% hurdle, and the stock trades at just 12.7x earnings with P/B below 1x. But the Magic Formula only works when EBIT reflects real economic earnings. Here, four straight years of negative operating cash flow (-₹499 Cr to -₹1,454 Cr) tell a very different story — this is a project-based EPC and HAM contractor where revenue is recognized on accrual while actual government payments lag significantly. The ROIC of 13.9% (EBIT ₹2,066 Cr / Invested Capital ~₹14,846 Cr) is below my 20% floor and has been flat for years, confirming this is a mediocre-quality business, not a compounder.\n\nThe balance sheet deterioration is the killer blow. Total debt has gone from ₹4,793 Cr (FY22) to ₹9,364 Cr (FY25) while the company has generated essentially no free cash flow. Finance costs of ₹852 Cr in FY25 — up 3.3x from FY16's ₹257 Cr — now consume 41% of EBIT, compressing true economic earnings far below reported net profit. The revenue decline of 22% in FY25 adds execution risk on top of balance sheet risk. I want businesses that earn high returns on tangible capital and convert earnings to cash — PNC Infratech does neither reliably. Pass.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 65008,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.10276110000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 12360,
+      "cache_read_input_tokens": 9157,
+      "output_tokens": 3577,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 12360,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 439,
+          "cache_read_input_tokens": 9157,
+          "cache_creation_input_tokens": 3203,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 3203
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

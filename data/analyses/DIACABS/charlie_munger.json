@@ -1,0 +1,70 @@
+{
+  "symbol": "DIACABS",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T17:13:04.331530Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "DIACABS is a near-bankrupt resurrection story riding India's power infrastructure wave, but the market has priced in perfection at 75x P/E and 68x EV/EBITDA for a company generating only INR 34 Cr net profit with deeply negative equity of -714 Cr. Inversion is devastating here: negative book value, no demonstrated moat in a commodity business, and a prior decade-long collapse make this speculation, not investment.",
+    "key_strengths": [
+      "Revenue explosive recovery: INR 14 Cr (FY23) → INR 1,115 Cr (FY25), riding India's genuine power capex supercycle",
+      "Debt dramatically restructured: total debt collapsed from INR 2,355 Cr (FY24) to INR 463 Cr (FY25), suggesting successful NCLT/IBC resolution",
+      "Operating margins positive at 12.92% for two consecutive years after years of losses — operational turnaround is real"
+    ],
+    "key_risks": [
+      "Negative equity of -714 Cr (reserves at -767 Cr) — the balance sheet is deeply impaired with no margin of safety",
+      "Commodity cable/conductor business with zero moat competing against POLYCAB, KEI Industries, and Sterlite — no pricing power",
+      "Valuation is pure speculation: 788x trailing FCF (INR 10 Cr FCF vs INR 7,884 Cr market cap) leaves no room for error"
+    ],
+    "red_flags": [
+      "Negative book value (-10.95x P/B) — company destroyed enormous shareholder wealth from 2014-2022, nearly vanishing entirely",
+      "Institutional desert: FII at 0.36%, DII at 0.07% — the people paid to do due diligence have overwhelmingly passed",
+      "Promoter lock at 84.02% with negligible float — thin market, prone to manipulation and extreme illiquidity risk on exit",
+      "Finance costs already rising (INR 0 → INR 13 Cr in 3 years) as new borrowings grow; CWIP of INR 129 Cr signals more capex debt ahead"
+    ],
+    "detailed_analysis": "Diamond Power Infrastructure is a classic siren song for the undisciplined investor: a genuine sectoral tailwind (India's power infrastructure build-out is real) wrapped around a financially devastated business with no demonstrated competitive advantage. Revenue went from INR 3,153 Cr in FY14 to virtually zero by FY22 — this is not a blip, this is a company that collapsed under its own debt load (borrowings hit INR 2,207 Cr in FY16) and spent years in insolvency. The resurrection is being funded by the power sector boom, not by any reinvention of the business model. ROIC cannot even be meaningfully calculated given negative equity, but the implied returns on the INR 2,048 Cr asset base generating INR 34 Cr net profit are a paltry ~1.7% — catastrophically below my 15% hurdle.\n\nThe valuation requires a leap of faith I am constitutionally incapable of making. At INR 7,884 Cr market cap, the market is paying 74.9x trailing earnings and 68x EV/EBITDA for a commodity wire-and-cable manufacturer with no proprietary technology, no brand premium, and a history of near-extinction. POLYCAB trades at 30x earnings with pristine balance sheet and genuine scale advantages — why own the inferior version at a higher multiple? Munger's first law of inversion applies perfectly: ask what destroys this investment. The answer comes quickly — any slowdown in government infrastructure spending, any tightening of credit, or any margin compression from raw material costs (aluminium, copper) would expose the razor-thin economics. I will not participate at any price near current levels.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 53018,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08600954999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11213,
+      "cache_read_input_tokens": 8806,
+      "output_tokens": 2754,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11213
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 395,
+          "cache_read_input_tokens": 8806,
+          "cache_creation_input_tokens": 2407,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2407,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

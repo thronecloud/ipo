@@ -1,0 +1,70 @@
+{
+  "symbol": "ENTERO",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T17:14:31.565797Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Entero fails both Magic Formula screens decisively — Earnings Yield of ~3% (EBIT ₹172 Cr / EV ~₹5,717 Cr) and ROIC of ~8.7% are far below the 12% and 20% thresholds respectively. A thin-margin distributor trading at 47x trailing P/E with zero years of positive operating cash flow is the antithesis of a Magic Formula buy.",
+    "key_strengths": [
+      "Revenue growing at 30% CAGR (₹1,350 Cr → ₹5,096 Cr), showing genuine distribution scale",
+      "Operating profit inflecting sharply — EBIT grew 49.5% CAGR to ₹172 Cr in FY25",
+      "Debt dramatically reduced post-IPO equity raise; D/E now 0.25 vs heavily negative equity pre-2022"
+    ],
+    "key_risks": [
+      "Operating cash flow negative every single year for 5 years — the business consumes cash despite growing profits",
+      "Operating margin only 3.4% — distribution economics leave zero room for error or competitive pressure",
+      "Earnings Yield of ~3% means you're paying 33x EBIT; Magic Formula requires >12% yield for consideration"
+    ],
+    "red_flags": [
+      "OCF negative all 5 years (0/5 positive) — profits are not converting to cash; working capital trap",
+      "Other Income of ₹39 Cr in FY25 is 23% of operating income — inflating reported profitability",
+      "Negative equity as recently as 2022 (₹-32 Cr reserves); business was insolvent pre-IPO",
+      "Free Cash Flow: -₹87 Cr in FY25, worse than -₹41 Cr in FY24 despite higher profits — divergence is alarming"
+    ],
+    "detailed_analysis": "Magic Formula math kills this immediately: EBIT of ₹172 Cr against an Enterprise Value of ~₹5,717 Cr (market cap ₹5,561 Cr + net debt ₹156 Cr) yields a paltry 3.0% earnings yield. ROIC (confirmed by the reported ROCE of 8.71%) is less than half the 20% minimum I look for. Distribution businesses structurally earn thin returns on capital — this is not a Costco or a Fastenal; it's a commodity middleman in pharma. No moat, no pricing power, no Magic Formula ranking.\n\nThe cash flow story is disqualifying. Five consecutive years of negative operating cash flow means the income statement profit is an illusion — working capital is swallowing everything as the company chases growth. FY25 shows ₹107 Cr net profit alongside -₹77 Cr operating CF and -₹87 Cr FCF. That gap will widen further if revenue growth continues. At 47x trailing P/E and EV/EBITDA of 29x for a business earning sub-9% returns on capital with negative FCF, this stock is materially overvalued on every metric I use. Hard pass.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 47034,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07887735,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10947,
+      "cache_read_input_tokens": 8907,
+      "output_tokens": 2343,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10947
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 356,
+          "cache_read_input_tokens": 8907,
+          "cache_creation_input_tokens": 2040,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2040,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "IXIGO",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-18T17:55:26.969075Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "IXIGO is a classic India consumer story — trains, flights, buses, hotels — all things you can see from daily life, in a massively underpenetrated travel market. But at P/E 133 with net profits actually declining (INR 73 Cr → 60 Cr in FY25 despite 39% revenue growth), the story is great but the price is asking me to pay for perfection that hasn't arrived yet.",
+    "key_strengths": [
+      "Revenue compounding at 39% YoY (FY25: INR 914 Cr) with a massive, underpenetrated India travel TAM across train/flight/bus verticals",
+      "Near-zero debt (D/E: 0.04) with FCF turning sharply positive — INR 118 Cr FCF in FY25 vs. negative just three years prior",
+      "Asset-light OTA model with 81.74% gross margins and multi-brand platform (ixigo + Confirmtkt + AbhiBus) providing defensible market segmentation"
+    ],
+    "key_risks": [
+      "Net profit DECLINED from INR 73 Cr (FY24) to INR 60 Cr (FY25) despite 39% revenue growth — FY24 was inflated by INR 39 Cr 'other income' (likely IPO proceeds yield), masking thin operating earnings",
+      "Operating margin is a paper-thin 7.08% — any competitive pricing pressure or marketing spend increase could wipe out profitability",
+      "PEG ratio is severely stretched: even using forward P/E of 57 divided by a generous 30% growth assumption yields PEG ~1.9, well above my 1.0 comfort zone"
+    ],
+    "red_flags": [
+      "Earnings quality concern: FY24 net profit of INR 73 Cr included INR 39 Cr other income; strip that out and true operating earnings were ~INR 34 Cr — making the profit 'growth' in FY24 largely illusory",
+      "ROE of 9.74% is below my 12% minimum threshold — the business is not yet earning adequate returns on equity at this scale",
+      "High FII ownership at 64.19% leaves the stock exposed to global risk-off flows and foreign fund rebalancing"
+    ],
+    "detailed_analysis": "IXIGO is exactly the kind of consumer-facing business I love to find. Every Indian who books a train ticket on their phone is a potential customer, and the multi-vertical platform (trains via ixigo, buses via AbhiBus, tickets via Confirmtkt) shows smart market segmentation rather than a one-trick pony. Revenue has grown from INR 501 Cr in FY23 to INR 914 Cr in FY25 — nearly doubling in two years — and free cash flow has finally turned meaningfully positive at INR 118 Cr. The balance sheet is clean with virtually no debt. This is a genuine fast-grower in an industry with decades of runway as India's middle class travels more.\n\nThe problem is the price. At P/E 133 and EV/EBITDA 119x, the market is pricing in a flawless execution story for years. But the numbers show cracks: net profit actually fell from INR 73 Cr to INR 60 Cr in FY25 even as revenues grew 39%, and FY24's profit was artificially boosted by INR 39 Cr in other income (likely float on IPO proceeds). The true operating earnings power is much closer to INR 50–60 Cr, giving a real operating PEG well above 2.0. Operating margins at 7% are thin and haven't shown the leverage I'd expect at this revenue scale. I'd watch this closely — at 40–50% lower price on a market correction, or if forward earnings hit INR 150+ Cr, the story becomes very compelling. For now: too good a business, too rich a price.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 55643,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08418135000000002,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11033,
+      "cache_read_input_tokens": 8812,
+      "output_tokens": 2677,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11033
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 491,
+          "cache_read_input_tokens": 8812,
+          "cache_creation_input_tokens": 2221,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2221,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

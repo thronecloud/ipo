@@ -1,0 +1,68 @@
+{
+  "symbol": "544369",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-20T19:43:07.325647Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Beezaasan scores decently on ROC (~22.8%) but weakly on earnings yield (EBIT 23 Cr / EV ~310 Cr ≈ 7.4%), so it fails the Magic Formula \"cheap AND good\" test. Persistently negative free cash flow (-12 Cr in 2025) despite recent IPO-funded equity boost makes this a wait-and-see, not a buy.",
+    "key_strengths": [
+      "ROCE 22.8% and ROE 20.2% — respectable returns on capital for an explosives maker",
+      "EBIT CAGR of 56.5% and net profit CAGR 67% (FY22→FY25), operating leverage kicking in",
+      "Post-IPO balance sheet de-levered: reserves jumped 14→92 Cr, borrowings cut 37→25 Cr"
+    ],
+    "key_risks": [
+      "Earnings yield ~7.4% (EBIT 23 / EV ~310 Cr) — too expensive on Magic Formula basis",
+      "FCF negative every year 2022-2025; investing CF -35 Cr in 2025 signals capex-heavy cycle",
+      "Small-cap explosives player (Mcap 288 Cr) with low FII/DII float and short listed history"
+    ],
+    "red_flags": [
+      "FCF has been negative for 4 consecutive years despite rising EBIT",
+      "P/E 22.4x on a cyclical, capex-heavy commodity business is not a bargain"
+    ],
+    "detailed_analysis": "Running the Magic Formula: ROC proxy using EBIT 23 Cr over (equity 105 + debt 25 - cash-ish) ~130 Cr operating capital gives ~17-22%, consistent with the reported 22.8% ROCE — that clears the \"good business\" bar but is not top-decile. Earnings yield, however, is the problem: EBIT 23 / EV ≈ 310 Cr = ~7.4%, well below my 12% attractive threshold. The stock is priced like a quality compounder (P/E 22.4) without yet having proven consistent cash conversion.\n\nThe capex cycle is the swing factor. CWIP rose from 2 to 13 Cr and investing CF was -35 Cr in 2025, funded by a 48 Cr financing inflow (likely the IPO). If this capacity expansion translates EBIT from 23 Cr to, say, 40+ Cr while holding ROCE, the earnings yield re-rates and this becomes interesting. Until then, ranked against the broader universe, Beezaasan is mediocre-cheap with decent-but-not-excellent returns — a hold, not the systematic buy the Magic Formula demands.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 29103,
+    "model_used": "opus",
+    "total_cost_usd": 0.109023,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 10066,
+      "cache_read_input_tokens": 14311,
+      "output_tokens": 1557,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10066,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 107,
+          "cache_read_input_tokens": 11441,
+          "cache_creation_input_tokens": 1495,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1495
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

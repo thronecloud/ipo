@@ -1,0 +1,69 @@
+{
+  "symbol": "544627",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-20T11:01:09.530665Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Purple Wave fails the Magic Formula's quality test decisively — ROE of 0.72% implies ROIC in low single digits, which is disqualifying regardless of the optically cheap 8.34x P/E. A \"cheap\" business that earns sub-par returns on capital is a value trap, not a bargain.",
+    "key_strengths": [
+      "Headline P/E of 8.34 implies a ~12% earnings yield, which screens cheaply",
+      "Promoter holding of 71.92% indicates insider skin-in-the-game",
+      "DII participation of 6.76% suggests some institutional validation"
+    ],
+    "key_risks": [
+      "ROE of 0.72% — capital is earning almost nothing, fails the 'good business' leg of Magic Formula",
+      "PRO AV integration is a low-moat, working-capital-heavy distribution business with thin margins",
+      "Micro-cap (95 Cr) with likely distorted post-IPO equity base inflating denominators and compressing returns"
+    ],
+    "red_flags": [
+      "ROE <1% is a near-automatic Magic Formula disqualifier",
+      "Apparent mismatch between P/E (8.34) and ROE (0.72%) suggests IPO cash dilution or one-time earnings distortion",
+      "Integrator/reseller model typically has low ROIC due to inventory and receivables intensity"
+    ],
+    "detailed_analysis": "The Magic Formula ranks stocks on two axes: earnings yield (cheapness) and return on capital (quality). Purple Wave arguably passes the first test — an 8.34x P/E translates to roughly a 12% earnings yield, which is in attractive territory. But it comprehensively fails the second. A 0.72% ROE is roughly one-twentieth of what I'd consider a \"good\" business, and since ROIC typically tracks ROE in the same direction for a lightly-levered company, return on capital here is almost certainly in the low single digits. Buying a mediocre business cheaply is exactly what the Magic Formula tries to avoid — I'd rather pay a fair price for a great business than a cheap price for one earning sub-cost-of-capital returns.\n\nThe business itself — reselling and integrating pro audio-video equipment — is a classic low-moat distribution model: working-capital heavy, competitive, and dependent on OEM relationships. The apparent inconsistency between a single-digit P/E and a near-zero ROE suggests the equity base has been inflated by recent IPO proceeds that haven't yet been deployed productively, which is itself a risk (management needs to prove it can redeploy capital at attractive rates). Until ROIC demonstrably crosses 15–20% for multiple years, this doesn't clear the Magic Formula screen. Avoid.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 29865,
+    "model_used": "opus",
+    "total_cost_usd": 0.1129925,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 10204,
+      "cache_read_input_tokens": 12725,
+      "output_tokens": 1713,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10204,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10592,
+          "cache_creation_input_tokens": 1745,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1745
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

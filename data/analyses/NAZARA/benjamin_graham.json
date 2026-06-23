@@ -1,0 +1,71 @@
+{
+  "symbol": "NAZARA",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T18:27:40.358011Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "Nazara trades at 133x earnings and 2.98x book — more than 5x the Graham Number of ~₹53 — with a 9-year net profit CAGR of negative 2.7%, offering no margin of safety whatsoever. This is pure speculation dressed as growth investing, and the disciplined value investor should not touch it at any price near current levels.",
+    "key_strengths": [
+      "Low financial leverage (D/E 0.06) — balance sheet is not burdened by debt",
+      "Revenue CAGR of 25.5% over 9 years demonstrates real commercial scale in gaming",
+      "OCF positive all 5 recent years — the business does generate some real cash"
+    ],
+    "key_risks": [
+      "Earnings are illusory: net profit fell from ₹75 Cr (2024) to ₹51 Cr (2025) despite revenue growing; operating margin is a paltry 1.98%",
+      "Serial equity dilution — ₹946 Cr financing inflows in 2024, ₹805 Cr in 2025 — existing shareholders are constantly bearing dilution to fund acquisitions",
+      "Massive negative free cash flow in 2025 (-₹82 Cr) driven by ₹1,139 Cr of investing outflows, suggesting growth is entirely acquisition-driven, not organic"
+    ],
+    "red_flags": [
+      "P/E of 133.6 — nearly 9x my maximum threshold of 15; P/B of 2.98 — double my ceiling of 1.5",
+      "Graham Number ≈ ₹53 (sqrt(22.5 × EPS ₹1.37 × BVPS ₹91.5)); stock trades at ₹273 — a 5x premium to intrinsic asset value",
+      "Net profit 9-year CAGR is negative (-2.7%) — the company earns less today in real terms than it did in 2016",
+      "'Other Income' of ₹80 Cr in 2025 (treasury/investment returns) exceeds operating income expansion — operating business barely profitable",
+      "No dividend history — management retains all capital yet delivers ROE of only 2.90%, destroying shareholder wealth"
+    ],
+    "detailed_analysis": "Mr. Market has been extraordinarily generous to Nazara shareholders, assigning a ₹10,126 Cr market cap to a business earning ₹51 Cr in net profit — a P/E of 133.6. My Graham Number, calculated from EPS of approximately ₹1.37 and book value per share of approximately ₹91.5, yields roughly ₹53. The stock would need to fall 80% merely to reach fair value by my standards. The ROE of 2.90% is a damning indictment: this management has received hundreds of crores in equity capital from shareholders across multiple fundraises and has compounded it at a rate below a fixed deposit. That is not a business; it is a charitable transfer of wealth from public shareholders to founders and investment bankers.\n\nThe acquisition binge is particularly alarming — investing cash outflows of ₹612 Cr in 2024 and ₹1,139 Cr in 2025 are funded entirely by new equity issuances, not retained earnings. A company that cannot grow without continuously diluting its owners is not compounding wealth — it is redistributing it. The net profit actually declined from ₹75 Cr to ₹51 Cr in 2025, and a meaningful portion of reported profits comes from \"Other Income\" (₹80 Cr in 2025), which likely represents returns on the cash raised from equity offerings, not from the gaming business itself. No dividends, negative long-run earnings growth, excessive valuation, and serial dilution — this stock fails every quantitative screen I apply.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 50216,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07439325,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9173,
+      "cache_read_input_tokens": 11135,
+      "output_tokens": 2443,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9173
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 381,
+          "cache_read_input_tokens": 9085,
+          "cache_creation_input_tokens": 2138,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2138,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

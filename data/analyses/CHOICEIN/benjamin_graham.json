@@ -1,0 +1,69 @@
+{
+  "symbol": "CHOICEIN",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-19T12:58:43.006873Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "Choice International is a speculative growth story dressed as an investment: P/E of 77x and P/B of 12x are multiples I would never pay under any circumstances, and operating cash flow has been negative in four of the last five years — meaning reported profits are not translating into actual cash for shareholders. Mr. Market has priced in decades of perfect execution; I demand a margin of safety, not a margin of hope.",
+    "key_strengths": [
+      "Nine consecutive years of positive net profits (INR 4 Cr to INR 163 Cr), albeit from a low base",
+      "Revenue CAGR of 19.4% and net profit CAGR of 51% demonstrate genuine business momentum",
+      "D/E of 0.36 is within acceptable limits on a standalone leverage basis"
+    ],
+    "key_risks": [
+      "P/E of 77x and P/B of 12x price in extraordinary growth that may never materialise — any deceleration destroys the valuation",
+      "Operating cash flow negative in 4/5 years (FY2025: -294 Cr despite INR 163 Cr net profit) — earnings quality is deeply suspect",
+      "Financing CF of +449 Cr in FY2025 means the company is living off fresh capital raises, not organic cash generation"
+    ],
+    "red_flags": [
+      "Free cash flow: -451 Cr in FY2025, -186 Cr in FY2024 — the business consumes more cash than it generates",
+      "Market cap of INR 16,163 Cr on net profit of INR 163 Cr — the market is paying 99x earnings for a small financial services intermediary",
+      "P/S of 16.1x: investors are paying INR 16 for every rupee of revenue — a ratio that belongs to a monopoly software franchise, not an Indian brokerage"
+    ],
+    "detailed_analysis": "I have spent a career warning investors about speculative overpricing, and Choice International is a textbook example. The company earns INR 163 Cr; the market values it at INR 16,163 Cr — a ratio that requires sustained, uninterrupted compounding for two or three decades simply to justify today's price. More damaging still is the cash flow evidence: reported profits are an accounting construct here, not a reflection of economic reality. Operating cash flow has been negative four of the last five years, meaning the business is not generating cash; it is generating entries in an income statement.\n\nThe financing section confirms the picture: INR 449 Cr of net financing inflows in FY2025 fund a company whose operations consumed INR 294 Cr. This is not a business compounding capital for shareholders — it is a capital-consuming enterprise that depends on continuous funding from the equity and debt markets. When that funding window closes, as it inevitably does, the valuation will collapse to something rational. At P/B of 12x and P/E of 77x, there is no margin of safety — only the margin between optimism and eventual reality.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 134607,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.20728095000000002,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 23027,
+      "cache_read_input_tokens": 15919,
+      "output_tokens": 7743,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 23027,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 473,
+          "cache_read_input_tokens": 15919,
+          "cache_creation_input_tokens": 7108,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 7108
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

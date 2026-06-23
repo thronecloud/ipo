@@ -1,0 +1,69 @@
+{
+  "symbol": "AARTIDRUGS",
+  "persona": "howard_marks",
+  "persona_display_name": "Howard Marks",
+  "analyzed_at": "2026-04-18T16:11:08.081796Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Aarti Drugs trades at a surface-level reasonable P/E of 16.8x, but that multiple is applied to structurally compressed earnings — EBITDA has collapsed 37% from its 2021 peak (INR 490 Cr → INR 307 Cr) and revenue has declined two consecutive years. With FCF yield of only ~2% (INR 67 Cr FCF on INR 3,408 Cr market cap) and ROCE of just 13.1% on a capital-intensive, capex-heavy business, there is insufficient margin of safety to justify owning this at current prices.",
+    "key_strengths": [
+      "Conservative balance sheet: Debt/Equity of 0.39 and Debt/EBITDA ~2.0x — manageable even in a downturn",
+      "Promoter ownership at 55% suggests skin in the game, and DII ownership of 10% provides institutional validation",
+      "Diversified API portfolio (NSAIDs, fluoroquinolones, antidiabetics, antifungals) reduces single-product concentration risk"
+    ],
+    "key_risks": [
+      "Severe margin compression: EBITDA margins fell from 22.7% (2021) to ~12.9% (2025) and operating income margins show only 6.16% — Chinese API competition and post-COVID pricing normalization are structural, not cyclical",
+      "Chronically poor FCF: Free cash flow has been negative or minimal for four of the last five years (-82, -31, +133, +67 INR Cr) while capex consumes 58–72% of OCF annually; capital allocation is not rewarding shareholders",
+      "Revenue in decline: Top-line fell from INR 2,716 Cr (FY23) to INR 2,387 Cr (FY25), a -12% contraction — the business is not just margin-pressured but shrinking"
+    ],
+    "red_flags": [
+      "The 2021 earnings spike (Net Profit INR 280 Cr) was a COVID-era API demand anomaly — current valuation likely still anchored to that peak, not the new normalized reality",
+      "CWIP of INR 179 Cr signals ongoing capex commitments while FCF is barely positive — further cash burn likely before returns materialize",
+      "Cash on balance sheet has effectively evaporated: INR 22 Cr (2022) → INR 5 Cr (2025), while debt has grown to INR 615 Cr"
+    ],
+    "detailed_analysis": "The second-level question to ask here is not \"is Aarti Drugs cheap at 16.8x P/E?\" but rather \"what earnings power does this P/E actually represent?\" The answer is troubling. Peak earnings of INR 280 Cr (FY21) were driven by a once-in-a-generation API pricing boom that has fully reversed. Normalized net profit is now ~INR 168–172 Cr — barely above pre-COVID levels of INR 90 Cr (FY19). The market is pricing this at ~20x pre-COVID normalized earnings, which is not a bargain for a business earning 12.7% ROE and 13.1% ROCE in a commoditizing, China-competitive API market. EBITDA margins have compressed from 22.7% to 12.9%, and the operating income margin of just 6.16% suggests interest, depreciation, and other charges are eating deeply into EBITDA.\n\nThe FCF story is the most damning from my framework. A FCF yield of ~2% (INR 67 Cr / INR 3,408 Cr) is well below the 6–8% minimum I require before capital is at meaningful risk. Heavy capex averaging INR 180 Cr/year (FY22–25) has failed to drive revenue or margin recovery — revenue is actually falling while the asset base has grown 65% since FY20. This is capital destruction at the margin. The balance sheet remains manageable (D/E 0.39, Debt/EBITDA ~2x), so this is not an imminent distress situation, but it is a mediocre-returning, cash-consuming business priced at fair value — exactly the scenario where risk and reward are poorly asymmetric. I would want to see margin recovery to 15%+ EBITDA and FCF yield above 6% before building a position.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 73481,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0986223,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10524,
+      "cache_read_input_tokens": 11511,
+      "output_tokens": 3713,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10524,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 629,
+          "cache_read_input_tokens": 9457,
+          "cache_creation_input_tokens": 3121,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 3121
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

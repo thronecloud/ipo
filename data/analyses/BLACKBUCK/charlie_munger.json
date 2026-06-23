@@ -1,0 +1,70 @@
+{
+  "symbol": "BLACKBUCK",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T16:50:21.962298Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "BlackBuck is a speculative bet on India's trucking digitization story — a real opportunity — but the company has only just scraped into EBITDA profitability (₹128 Cr in FY25) after years of catastrophic losses, with a still-negative net profit, an inexplicable -₹308 Cr \"Other Income\" line, and a ludicrous 74x EV/EBITDA multiple. The price demands perfection from a business that has yet to prove its compounding power.",
+    "key_strengths": [
+      "Network effect embryo: load marketplace + fuel cards + telematics creates multi-sided stickiness in India's 10M+ truck operator ecosystem.",
+      "Operating leverage finally visible: EBITDA swung from -₹212 Cr (FY23) to +₹128 Cr (FY25) as costs were restructured and revenue grew 44% YoY.",
+      "Near-zero leverage: Debt/Equity of 0.04 and ₹104 Cr cash post-IPO means no near-term solvency risk."
+    ],
+    "key_risks": [
+      "Valuation is pure speculation: EV/EBITDA of 74x and P/S of 19x price in a decade of perfect execution — any stumble will be devastating.",
+      "Revenue trajectory is alarming: 4-year CAGR of -16.2% (₹867 Cr in FY21 → ₹427 Cr in FY25); even accounting for gross-to-net revenue recognition shifts, this demands a clear explanation.",
+      "ROCE of 10.5% is below acceptable: Does not meet my 12% minimum threshold; capital is not being deployed productively enough to justify premium pricing."
+    ],
+    "red_flags": [
+      "Mysterious -₹308 Cr 'Other Income' in FY25 turns what should be a profitable year (EBITDA +₹128 Cr) into a net loss of -₹9 Cr — this is deeply opaque and violates my demand for clear accounting.",
+      "Revenue collapsed 86% from FY21 (₹867 Cr) to FY22 (₹119 Cr) with no clear explanation in the data — a business that can lose 86% of reported revenue in one year is not one I can model with confidence.",
+      "Promoter holding of only 25.05% is low for an early-stage Indian tech company — founders either sold down heavily or were diluted significantly; incentive alignment is questionable.",
+      "P/E ratio of 29.5x is reported despite a net loss in FY25 — this metric is either based on adjusted earnings or a recent quarter extrapolation, suggesting data presentation is being optimized for appearance."
+    ],
+    "detailed_analysis": "Invert first, always. What kills this investment? The numbers don't add up cleanly. Revenue fell 86% in one year — likely a gross-to-net revenue recognition change as the company pivoted its marketplace model — but this is not explained in the data. A business where I cannot reconstruct the revenue history is a business I cannot value. The -₹308 Cr Other Income in FY25 is equally troubling: EBITDA was +₹128 Cr, yet net profit was -₹9 Cr. ESOP charges post-IPO are the probable culprit, but when accounting is opaque, I walk away. ROCE of 10.5% tells me every rupee deployed is generating inadequate returns — far below my 15% floor. At EV/EBITDA of 74x on a company with one year of positive EBITDA and still negative free cash flow growth (₹15 Cr FCF vs. market cap of ₹11,333 Cr), the market is pricing in secular dominance of India's trucking stack. That may happen, but I'm being asked to pay for it before it's proven.\n\nThe underlying opportunity is real — India moves 70%+ of freight by road, the industry is massively fragmented, and a tech layer providing load matching, fuel management, and telematics could generate durable economics. But BlackBuck has not yet demonstrated the compounding machine I require. Free cash flow has been positive in only 3 of 5 years and never meaningfully so. The FII ownership of 32.45% suggests the sophisticated institutional money is already in — and may be looking for an exit. Low promoter holding (25%) at this early stage compounds my concern about founder conviction. Mr. Market is offering me a startup-stage business with startup-stage uncertainties at a mature compounder's price. I'll pass and watch from a distance.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 78041,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09535305000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11433,
+      "cache_read_input_tokens": 8501,
+      "output_tokens": 3328,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11433
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 461,
+          "cache_read_input_tokens": 8501,
+          "cache_creation_input_tokens": 2932,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2932,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

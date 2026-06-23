@@ -1,0 +1,69 @@
+{
+  "symbol": "CEATLTD",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-19T12:55:30.065306Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "CEAT is a cyclical tire manufacturer where revenue has grown at a respectable 10.3% CAGR over nine years, but net profit has delivered a near-zero 0.9% CAGR — the classic sign of a commoditized business eating itself in raw material costs. With earnings barely budging over a decade and debt nearly doubling to ₹3,114 Cr in FY25 from ₹1,792 Cr in FY24, there is no compelling growth story here.",
+    "key_strengths": [
+      "Consistent operating cash flow — positive all 5 of last 5 years, peaking at ₹1,719 Cr in FY24",
+      "Revenue scaled from ₹6,779 Cr (FY20) to ₹13,218 Cr (FY25), doubling in 5 years driven by OEM and retail channel expansion",
+      "ROCE of 15.4% respectable for a capital-intensive industrial, implying decent asset utilization"
+    ],
+    "key_risks": [
+      "Net profit CAGR of just 0.9% over 9 years — rubber, carbon black, and crude-linked raw material costs destroy earnings power whenever commodity cycles turn",
+      "Borrowings surged from ₹1,792 Cr to ₹3,114 Cr in a single year (FY24→FY25), pushing D/E to 0.68 and finance costs to ₹278 Cr — a trend that compounds at 11.9% CAGR",
+      "Operating margin only 9%, gross-to-operating margin compression signals pricing power is weak; FCF collapsed to ₹149 Cr in FY25 from ₹852 Cr in FY24"
+    ],
+    "red_flags": [
+      "PEG ratio is effectively incalculable at a reasonable level — P/E 24.1 against a 9-year earnings CAGR of 0.9% implies PEG north of 25",
+      "Net profit in FY25 (₹471 Cr) is actually below FY24 (₹635 Cr) — earnings are going the wrong way while management is borrowing more",
+      "ROE of 11.8% sits below Lynch's 12% minimum threshold, and rising debt suggests ROE improvement from leverage is artificial"
+    ],
+    "detailed_analysis": "CEAT is what Lynch would call a 'slow cyclical' dressed up in auto-sector clothing. The business grows revenue fine — India's vehicle parc expansion is real — but the tire industry's commodity cost structure prevents that revenue growth from dropping to the bottom line. Nine years of effort has left earnings essentially flat at ~₹470 Cr, while the balance sheet has piled on debt to fund capex and working capital. That is the opposite of what you want.\n\nThe sudden debt spike in FY25 (borrowings up ₹1,322 Cr year-on-year) alongside a decline in net profit and free cash flow to just ₹149 Cr is a serious warning. At P/E 24x for a business growing earnings at sub-1% CAGR, I'm paying a growth premium for a business with no reliable growth. I'd rather wait for the next commodity down-cycle to compress the stock further before touching it.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 189269,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.24253995,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 24833,
+      "cache_read_input_tokens": 15924,
+      "output_tokens": 9642,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 24833,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 670,
+          "cache_read_input_tokens": 15924,
+          "cache_creation_input_tokens": 8909,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8909
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

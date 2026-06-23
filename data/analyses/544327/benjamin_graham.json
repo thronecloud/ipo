@@ -1,0 +1,69 @@
+{
+  "symbol": "544327",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-20T09:44:40.998764Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Technichem Organics fails nearly every quantitative filter I demand: a P/E of 31.1 is more than double my ceiling of 15, and an ROE of 0.12% indicates essentially no earning power. There is no margin of safety here — this is speculation on a tiny INR 96.7 Cr specialty chemicals outfit, not investment.",
+    "key_strengths": [
+      "Promoter holding of 71.77% signals owner commitment and aligned incentives",
+      "Established business (incorporated 1996), so not a newly floated shell",
+      "Niche specialty chemicals/pigment intermediates offer some product diversification"
+    ],
+    "key_risks": [
+      "ROE of 0.12% — capital is earning effectively nothing, an unacceptable return",
+      "P/E of 31.1 prices the stock for growth that earnings do not support",
+      "Micro-cap (INR 96.7 Cr) with near-zero institutional holding (FII 1.09%, DII 1.24%) implies thin liquidity and weak scrutiny"
+    ],
+    "red_flags": [
+      "P/E 31 with ROE ~0% — a mathematical mismatch between price and earning power",
+      "No dividend yield, P/B, current ratio, or debt data disclosed — I cannot verify balance-sheet safety",
+      "Recently listed (BSE code 544327) — lacks the multi-year public earnings record I require"
+    ],
+    "detailed_analysis": "From a Graham perspective, this security is uninvestable at current prices. An ROE of 0.12% means the business is generating virtually no profit on its equity base — effectively a zero-earning enterprise being priced at 31 times those minuscule earnings. My Graham Number test requires Price² ≤ 22.5 × EPS × BVPS; with EPS near zero (implied by the ROE), the permissible price collapses toward zero as well. There is no conceivable margin of safety at INR 55.80.\n\nThe qualitative picture does not rescue the numbers. Specialty chemicals is a capital-intensive, cyclical industry where micro-caps without scale get squeezed on input costs and working capital. Critical data — current ratio, debt-to-equity, interest coverage, dividend history — is not disclosed, and absent those, I must assume the worst. Let Mr. Market keep this one; a disciplined investor waits for proven earning power at a discount, not a 31 P/E on 0.12% ROE.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "insufficient_data",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 21909,
+    "model_used": "opus",
+    "total_cost_usd": 0.0909685,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8936,
+      "cache_read_input_tokens": 13527,
+      "output_tokens": 1133,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8936,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10641,
+          "cache_creation_input_tokens": 1181,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1181
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

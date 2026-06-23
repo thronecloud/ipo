@@ -1,0 +1,69 @@
+{
+  "symbol": "DHARARAIL",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-21T07:45:23.066781Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Dhara Rail operates in India's booming railway services sector with a 27% revenue CAGR, but its 36x P/E rests on profits that were 57–100% \"other income\" — not railway operations — and free cash flow has been negative every single year. The growth story sounds good until you look at where the money actually comes from.",
+    "key_strengths": [
+      "Revenue growing at 27% CAGR (27→44 Cr FY23–25) in a government-backed railway capex upcycle",
+      "High promoter holding at 74.56% — skin in the game, low float risk",
+      "Operating income jumped 5x in FY25 (1→5 Cr), hinting at possible underlying business improvement"
+    ],
+    "key_risks": [
+      "Other income drove 100% of net profit in FY23–24 and 57% in FY25 — core railway business barely earns anything",
+      "Free cash flow negative all 3 years (OCF: -2, -2, -5 Cr) — reported profits produce zero real cash",
+      "D/E ~1.05x (21 Cr debt / 20 Cr equity) exceeds my 0.6 threshold for a micro-cap services company"
+    ],
+    "red_flags": [
+      "Earnings entirely non-operating: FY24 net profit = 3 Cr, other income = 3 Cr — the business itself earned nothing",
+      "Consistently negative OCF for 3 straight years despite reported profitability — a textbook cash-earnings disconnect",
+      "Equity ballooned from 6→20 Cr in FY25, suggesting a dilutive capital raise to plug operational cash burn"
+    ],
+    "detailed_analysis": "At first glance, Dhara Rail's 27% revenue CAGR and 50% ROE look like a compelling fast-grower in the hot Indian railway theme. But when I look at what's actually driving profits, the story collapses. In FY23 and FY24, every single rupee of reported net profit came from \"other income\" — the railway maintenance business itself generated nothing. Even in FY25, with operating income finally jumping to 5 Cr, non-operating income still contributed 4 Cr out of 7 Cr total profit. Paying 36x P/E for that quality of earnings isn't growth at a reasonable price — it's paying a growth multiple for an income statement held together with accounting staples.\n\nThe cash flow statement is the kill shot. OCF was -2, -2, and -5 Cr across three years. I've never liked stocks where profits don't convert to cash, and here they never have. With 21 Cr in borrowings still on the books and equity that nearly tripled in FY25 (likely a fresh raise), the company appears to be funding its operations through capital markets rather than its own business engine. The railway sector tailwind in India is absolutely real — but Dhara Rail at 148 Cr market cap hasn't demonstrated it can capture that opportunity profitably. I'd pass and wait for two years of genuine positive operating cash flow before revisiting.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 77824,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0906951,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10722,
+      "cache_read_input_tokens": 8012,
+      "output_tokens": 3205,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10722,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 541,
+          "cache_read_input_tokens": 8012,
+          "cache_creation_input_tokens": 2710,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2710
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "symbol": "544365",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-20T09:49:40.708366Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Shanmuga Hospital fails nearly every Graham quantitative filter — a 2020-incorporated micro-cap with a trivial 0.15% ROE and no multi-year earnings record to anchor intrinsic value. At a P/E of 12.2 on barely-positive earnings, there is no margin of safety, only speculation.",
+    "key_strengths": [
+      "P/E of 12.2 is technically below my <15 threshold",
+      "High 72.06% promoter skin-in-the-game",
+      "Simple, understandable business (single multispecialty hospital)"
+    ],
+    "key_risks": [
+      "ROE of 0.15% indicates earnings are effectively non-existent in real terms",
+      "Incorporated 2020 — no 5-year earnings record required by my framework",
+      "Micro-cap (INR 46.8 Cr) with zero FII validation and low liquidity"
+    ],
+    "red_flags": [
+      "No multi-year positive earnings history",
+      "ROE near zero — P/E is mathematically misleading on trivial earnings",
+      "Recent listing carries IPO-premium speculation risk",
+      "Single-location hospital concentration risk"
+    ],
+    "detailed_analysis": "A 0.15% return on equity is, for all practical purposes, no return at all — a savings bank passbook yields 20x more. A P/E of 12.2 computed on such a sliver of earnings is numerically meaningless; the denominator is too small to trust. Without book value per share, I cannot compute my Graham Number, but with ROE this low, earnings power value is certainly far below any reasonable asset value — meaning the P/B is likely punitive. The company was incorporated only in 2020, so the 5-consecutive-years-of-positive-earnings test cannot even be attempted. This is the textbook definition of a speculation, not an investment.\n\nThe one redeeming quantitative datum is promoter holding of 72.06%, which signals alignment, but alignment without earning power is merely shared exposure to a poor outcome. A single-location Salem hospital is operationally fragile — one regulatory action, one competing facility, or one key-doctor departure can erase the margin. Mr. Market is not offering me a bargain here; he is offering me a lottery ticket on a nascent healthcare venture. I would require a price well below tangible book value and a documented three-to-five-year earnings record before reconsidering. AVOID.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "insufficient_data",
+      "valuation": "overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 21604,
+    "model_used": "opus",
+    "total_cost_usd": 0.08993175,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8869,
+      "cache_read_input_tokens": 13491,
+      "output_tokens": 1109,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8869,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10605,
+          "cache_creation_input_tokens": 1150,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1150
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "symbol": "PURVA",
+  "persona": "philip_fisher",
+  "persona_display_name": "Philip Fisher",
+  "analyzed_at": "2026-04-18T22:12:53.489937Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Puravankara is a heavily indebted real estate developer with essentially zero revenue growth (2.7% CAGR over 9 years), a net loss of ₹183 Cr in FY25, and interest costs (₹555 Cr) that now exceed EBITDA (₹377 Cr) — the antithesis of a Fisher-quality growth compounder. There is no innovation moat, no earnings trajectory, and no margin of safety to justify holding capital here.",
+    "key_strengths": [
+      "High gross margin (44%) suggests decent project pricing power when revenues flow through",
+      "Promoter holding at 75% signals some skin-in-the-game alignment",
+      "FII interest at 16.7% suggests the market sees some optionality in the brand and land bank"
+    ],
+    "key_risks": [
+      "Interest coverage below 1x: Finance costs of ₹555 Cr dwarf EBITDA of ₹377 Cr — the business cannot service its debt from operations",
+      "Debt explosion: Borrowings surged from ₹3,325 Cr to ₹4,497 Cr (+35%) in a single year while equity eroded from ₹1,883 Cr to ₹1,619 Cr",
+      "Free cash flow turned deeply negative (–₹572 Cr in FY25) after being strongly positive (₹842 Cr in FY24) — execution and collections are unreliable"
+    ],
+    "red_flags": [
+      "Net loss of ₹183 Cr in FY25 vs. profit of ₹42 Cr in FY24 — accelerating deterioration",
+      "Equity base has shrunk every year since 2022; retained earnings are being consumed, not built",
+      "Revenue in FY25 (₹2,014 Cr) is barely above FY2016 (₹1,584 Cr) — a decade of lost growth",
+      "No R&D or product innovation pipeline — pure commodity developer in a cyclical, capital-intensive sector",
+      "D/E of 2.75 with rising finance costs on a loss-making base signals potential balance sheet stress ahead"
+    ],
+    "detailed_analysis": "From my growth investing framework, the first question I ask is: does this company have products with the market potential to drive sustained sales growth for years to come? Puravankara answers with a resounding no — revenue CAGR of just 2.7% over nine years, ending FY25 lower than FY24, with violent swings (₹2,128 Cr in FY20, crashing to ₹955 Cr in FY22) that reflect cyclicality rather than compounding power. The operating margin at 19.5% superficially looks decent, but operating income is actually negative-CAGR (-1.7%) over the same period, and the critical alarm is that finance costs at ₹555 Cr now exceed EBITDA of ₹377 Cr — meaning the company earns less from operations than it pays its lenders. This is not a growth business; it is a levered real estate vehicle consuming its own equity.\n\nManagement quality, my paramount criterion, fails the test here. A disciplined management team does not allow borrowings to jump 35% in a single year (₹3,325 Cr → ₹4,497 Cr) while the business posts a ₹183 Cr net loss and generates -₹531 Cr of operating cash flow. The equity base has shrunk in four of the last five years — from ₹2,042 Cr in FY22 to ₹1,619 Cr in FY25 — meaning management is destroying, not creating, owner wealth. Real estate developers inherently lack the R&D-driven innovation moat I require; their \"product\" is a commodity shaped by land costs, regulatory cycles, and interest rates. I would need to see consistent 20%+ revenue growth, expanding margins, and a clear innovation pipeline before even considering this sector, none of which are present here.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 41751,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.06541050000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8574,
+      "cache_read_input_tokens": 11030,
+      "output_tokens": 1996,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8574,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 405,
+          "cache_read_input_tokens": 8976,
+          "cache_creation_input_tokens": 1652,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1652
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

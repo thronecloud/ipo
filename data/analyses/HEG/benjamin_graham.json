@@ -1,0 +1,71 @@
+{
+  "symbol": "HEG",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-22T16:45:40.660886Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "HEG is a highly cyclical graphite electrode manufacturer trading at 3.5× its Graham Number (~INR 180), with a P/E of 32 on severely depressed earnings of only INR 115 Cr. The business has recorded losses in 2017 and 2021, and current ROE of 2.59% is an insult to any patient capital.",
+    "key_strengths": [
+      "Low leverage: Debt/Equity of 0.14, well within Graham's 0.5 limit",
+      "Interest coverage of ~6.5× (Operating Income 255 Cr ÷ Finance Cost 39 Cr) — adequate safety",
+      "Large asset base: Total Equity of INR 4,666 Cr provides some liquidation cushion"
+    ],
+    "key_risks": [
+      "Extreme cyclicality: Net profit swung from INR 3,026 Cr (2019) to -18 Cr (2021) to 115 Cr (2025) — no stable earning power",
+      "Price far above Graham Number: sqrt(22.5 × EPS ~5.96 × BVPS ~242) ≈ INR 180 vs. market price of INR 633",
+      "Structural earnings deterioration: operating income collapsed from INR 4,662 Cr (2019) to INR 255 Cr (2025), with no visible recovery catalyst"
+    ],
+    "red_flags": [
+      "P/E of 32 — more than double Graham's maximum of 15, on already depressed earnings",
+      "P/B of 2.62 — nearly double Graham's ceiling of 1.5; no margin of safety in asset value",
+      "Losses in two of last nine years (2017, 2021) — violates the 3–5 consecutive years of positive earnings requirement",
+      "ROE of only 2.59% — management is earning less than a fixed deposit on shareholders' capital",
+      "Other income (INR 145 Cr) constitutes over half of operating income (INR 255 Cr), masking operating weakness"
+    ],
+    "detailed_analysis": "HEG Limited fails every primary quantitative test I impose. At INR 633, the Graham Number — the geometric mean anchored to current EPS (~INR 5.96) and book value per share (~INR 242) — yields roughly INR 180, meaning the stock must fall 72% before I would even begin to consider it. The P/E of 32 is built on earnings that themselves look artificially depressed after the 2018–2019 graphite electrode supercycle ended. Mr. Market is pricing in a recovery that may never arrive at the same magnitude, and he is asking me to pay for that hope — a fool's bargain.\n\nThe business is a commodity cyclical at its core: graphite electrode pricing is dictated by global EAF steel output and Chinese production, not by any durable competitive advantage HEG possesses. The profit history — INR 1,099 Cr profit in 2018, then losses in 2021, then recovery, then renewed decline to INR 115 Cr in 2025 — is precisely the kind of volatile, unpredictable earnings stream I refuse to capitalize at any premium. The intelligent investor seeks a business whose value can be estimated with confidence; HEG offers no such assurance. I will wait patiently for Mr. Market to offer this at or below book value with sustained positive earnings — conditions that do not exist today.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 50719,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0766596,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9274,
+      "cache_read_input_tokens": 11177,
+      "output_tokens": 2568,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9274,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 432,
+          "cache_read_input_tokens": 9127,
+          "cache_creation_input_tokens": 2197,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2197
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

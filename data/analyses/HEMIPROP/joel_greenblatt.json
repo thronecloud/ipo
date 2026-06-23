@@ -1,0 +1,70 @@
+{
+  "symbol": "HEMIPROP",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T17:35:13.092750Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "Hemisphere Properties is uninvestable under the Magic Formula — negative EBIT for all four years means both Earnings Yield and ROIC cannot be computed meaningfully. With INR 1 Cr in annual revenue against a INR 3,773 Cr market cap, this is a speculative land-bank bet, not a business.",
+    "key_strengths": [
+      "Asset backing: INR 1,102 Cr in total assets (primarily land) vs INR 60 Cr debt — balance sheet is not leveraged",
+      "Manageable debt: D/E of 0.20 with finance costs stable at ~INR 6 Cr/year, no near-term solvency risk",
+      "Promoter skin in game: 51.12% promoter holding indicates alignment, though this hasn't produced earnings"
+    ],
+    "key_risks": [
+      "Magic Formula is inapplicable: EBIT is negative every single year (-3 to -15 Cr), making both Earnings Yield and ROIC meaningless or negative",
+      "Obscene valuation relative to earnings: P/S of 3,866x and EV/EBITDA of -385.9x — entirely speculative pricing with zero operational justification",
+      "Structural cash burn: OCF negative all 4 years (0/4 positive), Free Cash Flow never positive, suggesting the land bank cannot self-fund and may require ongoing dilution or debt"
+    ],
+    "red_flags": [
+      "EBIT negative all 4 years: 2022: -13 Cr, 2023: -1 Cr, 2024: -6 Cr, 2025: -3 Cr — no earnings yield computable",
+      "Revenue of INR 1 Cr against market cap of INR 3,773 Cr — P/S of 3,866x is not a typo, it's a warning",
+      "Operating Margin of -938.1% — costs dwarf revenue by nearly 10x",
+      "OCF negative every year: 2022: -14, 2023: -23, 2024: -7, 2025: -17 Cr — this company consumes cash, it does not generate it"
+    ],
+    "detailed_analysis": "From a Magic Formula standpoint, Hemisphere Properties is a non-starter. The formula requires positive EBIT to rank on Earnings Yield (EBIT/EV) and Return on Capital (EBIT / Net Working Capital + Fixed Assets). EBIT has been negative every year from 2022–2025, ranging from -1 Cr to -13 Cr. There is simply no \"E\" to calculate. The stock is priced at 3,866x sales — which itself is just INR 1 Cr annually — implying the market is paying for land optionality, not business performance. That is the antithesis of the Magic Formula approach.\n\nThe balance sheet tells the only semi-coherent story: INR 1,102 Cr in assets (largely land) against only INR 60 Cr in debt. But market cap of INR 3,773 Cr already prices this land at a 3.4x premium to book, with no evidence the company can develop or monetize it profitably. ROCE is -0.80%, ROE is -1.89%, and operating cash flow has been negative every year. A company that cannot earn returns on its capital, generates almost no revenue, and burns cash structurally deserves the lowest possible score under any value-investing framework — but especially under the Magic Formula which demands both cheapness AND quality of returns.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 43579,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07101885,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9953,
+      "cache_read_input_tokens": 8237,
+      "output_tokens": 2081,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9953
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 404,
+          "cache_read_input_tokens": 8237,
+          "cache_creation_input_tokens": 1716,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1716,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

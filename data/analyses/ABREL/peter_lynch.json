@@ -1,0 +1,70 @@
+{
+  "symbol": "ABREL",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-19T06:20:46.709610Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "Formerly Century Textiles, now rebranded as a real estate company, ABREL shows every metric I run away from: revenue has collapsed 80% over 8 years (from INR 7,645 Cr to INR 1,219 Cr), operating margin is -131.6%, the company lost INR 157 Cr in FY25, and borrowings have exploded 5x in two years to INR 5,490 Cr while free cash flow hit -INR 1,413 Cr. This is not a turnaround — it's a burning building.",
+    "key_strengths": [
+      "Promoter holding at 50.21% — some skin in the game",
+      "Gross margin of 44.43% on remaining revenue suggests some underlying asset value",
+      "Forward P/E of 11.36 implies market expects a recovery if real estate projects materialize"
+    ],
+    "key_risks": [
+      "Borrowings surged from INR 1,059 Cr (2023) to INR 5,490 Cr (2025) — debt is exploding while operations burn cash",
+      "Operating cash flow -INR 1,293 Cr in FY25 — the business is consuming capital at an alarming rate",
+      "Revenue CAGR of -20.5% over 8 years — this is structural deterioration, not a cyclical dip"
+    ],
+    "red_flags": [
+      "Operating margin of -131.6% — the company is destroying value at the operating level",
+      "OCF positive in only 2 of last 5 years; FY25 OCF was -INR 1,293 Cr",
+      "P/S of 21.19x on sharply declining revenue is among the most absurd valuations I've seen for a loss-maker",
+      "The 2019 net profit spike (INR 6,063 Cr) was driven by INR 5,673 Cr 'Other Income' — almost certainly a one-time asset sale masking ongoing deterioration"
+    ],
+    "detailed_analysis": "ABREL represents exactly the kind of corporate transformation story that looks compelling on the surface — legacy industrial company pivots to fast-growing real estate — but the financial reality is devastating. Revenue has shrunk from INR 7,645 Cr in 2017 to INR 1,219 Cr in 2025, debt has quintupled in two years, and the company posted a INR 157 Cr loss in FY25 while burning INR 1,413 Cr of free cash flow. CWIP has collapsed from INR 2,828 Cr to INR 1,366 Cr, suggesting capital is being deployed but revenues are not following.\n\nThere is no PEG ratio to calculate, no earnings trajectory to project from, and no margin of safety at a P/S of 21x on declining revenue. My rule: never try to catch a falling knife when the blade is made of debt.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 193451,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.23683995,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 23289,
+      "cache_read_input_tokens": 14424,
+      "output_tokens": 9678,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 23289,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 660,
+          "cache_read_input_tokens": 14424,
+          "cache_creation_input_tokens": 8865,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8865
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

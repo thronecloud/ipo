@@ -1,0 +1,70 @@
+{
+  "symbol": "NETWORK18",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-18T22:02:56.772906Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Network18 is a structurally challenged media conglomerate with a 153x P/E, near-zero ROE (0.76%), and operating cash flow negative in 4 of the last 5 years — the exact opposite of a GARP opportunity. Revenue has collapsed from INR 9,297 Cr (FY24) to INR 2,121 Cr (FY26) post-restructuring, leaving a rump linear-TV and digital news business with no credible ten-bagger thesis.",
+    "key_strengths": [
+      "Reliance Industries parentage (56.89% promoter holding) provides financial backstop and distribution muscle",
+      "MoneyControl and CNBC-TV18 are dominant brands in Indian financial media with sticky professional audiences",
+      "P/B of 1.11 implies modest premium to book — some asset-value floor exists"
+    ],
+    "key_risks": [
+      "Revenue in structural freefall — 9Y CAGR of only 4% and contracting sharply post-JioCinema demerger (INR 9,297 Cr → INR 2,121 Cr)",
+      "Chronic cash destruction — free cash flow negative INR 8,869 Cr in FY24, INR 2,809 Cr in FY25; OCF positive only 1 of last 5 years",
+      "Linear TV faces existential disruption from streaming (JioCinema, YouTube); advertising pricing power deteriorating"
+    ],
+    "red_flags": [
+      "P/E of 153x on a business with 0.76% ROE and -4.36% operating margins — indefensible valuation",
+      "Net loss of INR 1,777 Cr in FY25 followed by only INR 155 Cr profit in FY26 driven by INR 449 Cr 'other income', not operations",
+      "Finance costs rose at 11% CAGR (9Y) to INR 205 Cr even as the business shrinks — debt burden worsening relative to earnings power",
+      "EV/EBITDA of -98.59 signals the core business is not generating real EBITDA on a sustainable basis"
+    ],
+    "detailed_analysis": "From a Lynch perspective, every stock needs a clear, simple story — Network18's story is a mess. The balance sheet swelled to INR 39,881 Cr in FY24 (massive CWIP of INR 11,627 Cr) and then collapsed to INR 8,996 Cr in FY26 as the JioCinema streaming business was carved out into the Disney-Reliance JV. What remains is legacy linear TV (news channels), digital portals, and magazines — a business facing secular decline in advertising revenue as audiences migrate to YouTube, connected TV, and social media. Revenue CAGR over 9 years is just 4%, well below inflation, and the last-5-year trend is explicitly contracting. There is no plausible path to 15-25% revenue growth that Lynch demands.\n\nThe financials are alarming on every dimension he cares about. The PEG ratio is essentially infinite — you're paying 153x earnings for a business with negative operating cash flow and deteriorating margins (-4.36% operating margin). ROE of 0.76% means management is creating almost no value on shareholder capital. The only saving grace is Reliance's parentage, which prevents bankruptcy, but Reliance's priorities clearly lie with JioCinema/Star, not legacy Network18. At INR 36.40 with a market cap of INR 5,616 Cr, the market is pricing in a recovery that the operating fundamentals do not support. This is not a turnaround I'd bet on.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 52749,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08278769999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11186,
+      "cache_read_input_tokens": 9054,
+      "output_tokens": 2541,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11186,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 446,
+          "cache_read_input_tokens": 9054,
+          "cache_creation_input_tokens": 2132,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2132
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

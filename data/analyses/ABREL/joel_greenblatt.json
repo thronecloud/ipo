@@ -1,0 +1,69 @@
+{
+  "symbol": "ABREL",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-19T06:20:28.245159Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "Aditya Birla Real Estate fails on every Magic Formula criterion: it is a real estate company (explicitly excluded from the Magic Formula due to capital structure distortion), is currently loss-making (Net loss INR 157 Cr in FY25, operating income collapsed to INR 16 Cr), and has seen revenue decline at a -20.5% CAGR over 8 years. There is no EBIT to work with, and the debt load has tripled in two years.",
+    "key_strengths": [
+      "Aditya Birla group brand affiliation provides some credibility and access to capital markets",
+      "Forward P/E of 11.36 suggests the market anticipates a recovery in earnings — though the path is unclear",
+      "Promoter holding at 50.21% indicates skin in the game"
+    ],
+    "key_risks": [
+      "EBIT essentially zero (INR 16 Cr operating income, FY25) on INR 1,219 Cr revenue — ROIC is negative",
+      "Borrowings surged from INR 1,059 Cr (FY23) to INR 5,490 Cr (FY25) — a 5x spike in two years, raising solvency risk",
+      "Operating cash flow deeply negative at -INR 1,293 Cr in FY25; FCF of -INR 1,413 Cr — company is burning cash at an accelerating pace"
+    ],
+    "red_flags": [
+      "Real estate sector: Magic Formula explicitly excludes this industry — capital employed metrics are structurally distorted",
+      "Revenue CAGR of -20.5% over 8 years — this business is shrinking dramatically, not growing",
+      "Negative EBIT: Magic Formula cannot be computed; earnings yield is essentially 0.08% (INR 16 Cr EBIT / ~INR 19,958 Cr EV)"
+    ],
+    "detailed_analysis": "ABREL is disqualified on first principles: real estate companies are excluded from Magic Formula analysis because project-based revenue recognition, land inventory, and development accounting make EBIT/EV and ROIC metrics meaningless comparators. Even setting that aside, FY25 operating income of just INR 16 Cr on nearly INR 1,220 Cr revenue implies an operating margin near zero — a dramatic collapse from INR 924 Cr in FY17. The company is not merely cheap; it is fundamentally impaired.\n\nThe balance sheet tells an alarming story: total assets have nearly doubled to INR 17,184 Cr (FY25) while total equity fell to INR 3,780 Cr, with borrowings surging to INR 5,490 Cr. Operating cash flow ran -INR 1,293 Cr in FY25 funded entirely by fresh borrowings (financing CF +INR 2,218 Cr). ROCE is -0.16%, ROE is -2.45%. There is no scenario where this passes a Magic Formula screen.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "insufficient_data",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 155078,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.21028739999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 22032,
+      "cache_read_input_tokens": 14428,
+      "output_tokens": 8222,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 22032,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 468,
+          "cache_read_input_tokens": 14428,
+          "cache_creation_input_tokens": 7604,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 7604
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

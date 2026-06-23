@@ -1,0 +1,69 @@
+{
+  "symbol": "SOCL",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-21T07:48:55.536234Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Sundrex Oil is a micro-cap lubricant maker trading at a dirt-cheap P/E of 7.28 with a stunning 55.6% ROE — suggesting an unusually capital-efficient business hiding in plain sight. But without revenue or earnings growth data, I can't compute the PEG ratio, so I can't confirm whether this is a fast grower or just a cheap slow grower.",
+    "key_strengths": [
+      "Exceptional capital efficiency: ROE 55.6% and ROCE 34.8% are rare in a commodity-adjacent industry like lubricants — points to pricing power or niche dominance",
+      "Dirt-cheap valuation: P/E of 7.28 on a high-return business; even modest earnings growth of 10-15% would imply a PEG well below 1.0",
+      "Strong promoter alignment: 72% promoter holding signals management conviction and minimal dilution risk"
+    ],
+    "key_risks": [
+      "No growth data: Revenue/earnings growth rates are absent — I can't build a PEG-based thesis, the single most important metric I use",
+      "Micro-cap illiquidity trap: INR 35 Cr market cap (~$4.2M USD) means razor-thin liquidity; entering or exiting a meaningful position moves the stock",
+      "Sector is a slow grower: Lubricants is a mature, competitive market — without proof of market share gains, that 55.6% ROE may not compound for long"
+    ],
+    "red_flags": [
+      "Market cap of INR 35 Cr — nearly uninvestable for any institutional capital; likely screener noise",
+      "DII ownership of only 0.56% — zero institutional interest is usually a signal, not an opportunity, at this size",
+      "No earnings growth rate provided — can't validate the story, and the story is everything"
+    ],
+    "detailed_analysis": "As Peter Lynch, this stock has the kind of numbers that make me stop and squint — a 55.6% ROE in lubricants manufacturing is almost suspicious. That's not a stalwart number; that's a fast-grower number. Combined with a 34.8% ROCE, this tells me the business earns excellent returns on every rupee deployed, which is the fundamental precondition for a ten-bagger. At P/E 7.28, if earnings are growing even at 15%, we're looking at a PEG of roughly 0.5 — screaming cheap. I'd want to walk into a truck depot or auto workshop in a tier-2 city and ask if they've heard of Sundrex. That's how you validate the story on the ground.\n\nThe problem is everything else. INR 35 Cr market cap is a rounding error — this is smaller than the cash registers at most listed companies. Without revenue growth, earnings growth, or debt figures, I'm flying blind on the PEG calculation. The 72% promoter stake is encouraging, but the near-zero DII ownership (0.56%) tells me even domestic funds haven't touched this. That can mean undiscovered gem — but more often at this size it means too illiquid and too risky to own meaningfully. I'd put this in the \"interesting but unproven\" bucket: do the diligence on growth rates and debt, and revisit if the story checks out.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "insufficient_data",
+      "valuation": "insufficient_data",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 46443,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07340175,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9503,
+      "cache_read_input_tokens": 7555,
+      "output_tokens": 2366,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9503,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 459,
+          "cache_read_input_tokens": 7555,
+          "cache_creation_input_tokens": 1948,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1948
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

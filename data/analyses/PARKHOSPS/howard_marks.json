@@ -1,0 +1,69 @@
+{
+  "symbol": "PARKHOSPS",
+  "persona": "howard_marks",
+  "persona_display_name": "Howard Marks",
+  "analyzed_at": "2026-04-21T07:56:56.753614Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "At 44x P/E and 22x EV/EBITDA, Park Medi World's price demands exceptional earnings growth that a four-year track record of merely 3.3% net profit CAGR and 5.2% EBITDA CAGR cannot remotely justify. With FCF yield of just 0.7% (INR 66 Cr FCF on a INR 9,350 Cr market cap), the margin of safety is essentially nonexistent — this is a decent regional hospital business priced for perfection.",
+    "key_strengths": [
+      "NABH-accredited multi-specialty platform with 60.85% gross margins and 5/5 years of positive operating cash flow — operationally sound",
+      "Revenue growing at 16.1% CAGR in a structurally underpenetrated Indian healthcare market — secular tailwind is real",
+      "ROE/ROCE both above 20% and Debt/Equity at 0.58 — not a leveraged disaster, capital efficiency is reasonable"
+    ],
+    "key_risks": [
+      "Massive valuation/growth disconnect: P/E of 44x on only 3.3% net profit CAGR and 5.2% EBITDA CAGR — the price assumes an acceleration that history contradicts",
+      "Finance costs grew at 26.3% CAGR (INR 24→61 Cr), nearly 5x the EBITDA growth rate — debt servicing is eroding earnings power at an accelerating pace",
+      "FCF is volatile and thin: swung from INR 294 Cr (FY24) to just INR 66 Cr (FY25) on INR 159 Cr capex — capex intensity makes free cash generation unreliable"
+    ],
+    "red_flags": [
+      "FY2024 net profit collapsed 33% (INR 228→152 Cr) revealing operational fragility — a one bad year wipes out years of gains at this valuation",
+      "Promoter at 82.89% leaves an extremely thin free float — illiquidity amplifies downside in any correction",
+      "Revenue grew 82% over 4 years but net profit grew only 14% — severe margin erosion and cost leakage that the headline ROE obscures"
+    ],
+    "detailed_analysis": "The core problem here is one of second-level thinking: yes, Park Medi World is in a good sector with decent returns on capital. But the question is what is priced in? At INR 9,350 Cr market cap on INR 213 Cr of net profit, the market is paying 44x earnings for a business that has compounded those earnings at 3.3% annually over four years. The implied EV (roughly INR 9,930 Cr) against EBITDA of INR 407 Cr gives 24x+ EV/EBITDA — a valuation appropriate for a high-growth, asset-light compounder, not a capital-intensive hospital network in Gurugram with rising debt costs. The FCF yield of 0.7% is the single most damning number: at Oaktree, we want 6-8% FCF yield as a base case. Here you are getting essentially nothing for the risk you are taking.\n\nThe balance sheet tells a worrying tale of a company funding growth with debt while earnings fail to keep pace. Borrowings nearly tripled from INR 292 Cr to INR 734 Cr; finance costs grew at 26.3% CAGR versus EBITDA growth of only 5.2%. The FY2024 profit implosion (down 33% year-on-year) is a live stress test that the business failed. CWIP is rising again (INR 54 Cr), signaling more capex ahead. In a rate-sensitive or demand-softening environment, this leverage dynamic gets worse fast. The promoter's 82.89% stake leaves too little float for institutional price discovery and too much stock concentration risk. Where we are in the Indian mid-cap healthcare cycle — with multiples stretched across the board — this is precisely the kind of name where consensus optimism peaks and disappointment follows.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 71869,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0956694,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9876,
+      "cache_read_input_tokens": 10718,
+      "output_tokens": 3694,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9876,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 484,
+          "cache_read_input_tokens": 8664,
+          "cache_creation_input_tokens": 3266,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 3266
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "symbol": "EPL",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T17:21:16.653102Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "EPL is a niche global laminated tube manufacturer with moderate switching costs serving FMCG giants, but a decade of stagnant net profits (INR 173 Cr in 2016 to INR 210 Cr in 2024) reveals a capital-intensive treadmill, not a compounding machine. The 2025 profit surge to INR 364 Cr is encouraging but unproven; at 18x trailing P/E and 9x EV/EBITDA, the stock is fairly priced with limited margin of safety.",
+    "key_strengths": [
+      "Sticky customer relationships with FMCG majors (Colgate, HUL) — specialized laminated tubes have real switching costs in formulation and tooling",
+      "Improving cash conversion in FY25: OCF INR 795 Cr vs Net Profit INR 364 Cr (218% ratio), FCF jumped to INR 439 Cr after years of capex-heavy compression",
+      "Conservative balance sheet: Debt/Equity 0.32, Net Debt/EBITDA ~0.7x — manageable leverage despite doubling of finance costs since 2021"
+    ],
+    "key_risks": [
+      "Decade of profit stagnation (INR 173 Cr→210 Cr, 2016–2024, ~1.2% CAGR) exposes this as a low-return capital treadmill despite 7.9% revenue CAGR",
+      "Finance costs nearly tripled (INR 43 Cr→114 Cr, 2021–2025) as capex-led expansion consumed FCF — capex at INR 363-387 Cr/year is structurally high",
+      "Low promoter holding (26.38%) with likely PE (Blackstone) overhang creates supply pressure and signals misaligned long-term stewardship"
+    ],
+    "red_flags": [
+      "FY25 net profit INR 364 Cr is a 73% YoY jump from INR 210 Cr — sustainability of this margin recovery is unverified and warrants deep scrutiny",
+      "PE ownership structure with sub-27% promoter holding — not the owner-operator capital allocation discipline Munger prizes"
+    ],
+    "detailed_analysis": "Applying inversion first: what makes EPL a poor investment? Nine years of revenue growing 7.9% while net profits barely grew at 1.2% CAGR (2016–2024) is the core crime. That gap screams a business on a capital treadmill — consuming INR 363–387 Cr in annual capex to sustain growth, with EBITDA margin compressing from ~25% in 2020 to ~18% in 2022 before recovering. Finance costs tripling from INR 43 Cr (2021) to INR 114 Cr (2025) is the residue of that debt-funded expansion. ROCE at 17.5% is barely above my 15% threshold and likely declines if the FY25 profit bump proves transient.\n\nOn the positive side, EPL is not without redeeming qualities. The business has genuine niche defensibility — laminated tubes for oral care, pharma, and beauty require specialized equipment and close co-development with customers, creating real switching friction. The FY25 numbers show genuine operating leverage finally kicking in: revenue +7.6%, operating income +17%, OCF +36%, FCF +104%. Debt is being reduced (borrowings INR 912→850 Cr), and net debt/EBITDA at ~0.7x is comfortable. But I need 3-5 years of evidence that this margin recovery is structural, not cyclical. At 15.3x forward earnings with a PE-owned capital structure and unproven profit acceleration, this is a HOLD — a fair business at a fair price, which Benjamin Franklin might like but which offers inadequate reward for the capital intensity and governance opaqueness involved.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 60064,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08870910000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11476,
+      "cache_read_input_tokens": 9017,
+      "output_tokens": 2864,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11476
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 451,
+          "cache_read_input_tokens": 9017,
+          "cache_creation_input_tokens": 2459,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2459,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

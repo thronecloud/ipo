@@ -1,0 +1,68 @@
+{
+  "symbol": "DCBBANK",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-18T17:11:02.553767Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "DCB Bank is a dirt-cheap regional lender with a stunning PEG of ~0.30 (P/E 8.59 / 28.9% profit CAGR) and P/B at 1.0x, making it a classic Lynch \"fast grower priced as a slow grower.\" However, NIM compression risk (finance costs growing at 26.5% CAGR vs. revenue at 16.3%) and a dangerously low promoter stake of 16.23% cap the conviction level.",
+    "key_strengths": [
+      "PEG ratio of ~0.30 — net profit CAGR of 28.9% with P/E of only 8.59; deeply undervalued on earnings growth",
+      "P/B at 1.0x provides book-value floor; forward P/E of 6.54 implies market pricing in zero future growth",
+      "Asset book compounding at ~19.8% CAGR (₹44,793 Cr → ₹76,810 Cr in 3 years), showing strong loan-book expansion"
+    ],
+    "key_risks": [
+      "Finance costs growing 26.5% CAGR vs revenue at 16.3% — NIM squeeze is the core structural threat to this story",
+      "ROE of only 10.81% — below my 12% threshold; a bank that can't earn adequately on equity is a mediocre franchise",
+      "Promoter stake of just 16.23% is a serious governance red flag — skin in the game is dangerously low for a lending institution"
+    ],
+    "red_flags": [
+      "Operating CF negative 2 of 4 years (₹-441 Cr in 2025) — even adjusting for loan book growth, this volatility is unsettling",
+      "Finance cost CAGR (26.5%) materially outpacing revenue CAGR (16.3%) signals cost of funds rising faster than yields"
+    ],
+    "detailed_analysis": "On pure Lynch math, DCB Bank looks like a screaming bargain: a PEG of 0.30 would make me sit up in my chair. Net profits went from ₹288 Cr to ₹615 Cr in three years — a near-doubling — while the stock trades at just 8.59x trailing earnings and exactly 1.0x book. That's the kind of mismatch between price and reality I built Magellan on. DII holding of 32.8% tells me the smart Indian institutional money has noticed, and the asset base growth to ₹76,810 Cr shows real business momentum, not accounting tricks.\n\nBut here's where I pump the brakes: this is a small regional bank competing against HDFC, Kotak, and 12 public sector giants, and the NIM story is deteriorating. Finance costs are compounding at 26.5% while revenue grows at only 16.3% — that gap will eat into profits unless lending yields catch up fast. ROE at 10.81% is uninspiring for a bank; great lenders earn 15-18% on equity. And 16.23% promoter holding is a red flag I can't ignore — when insiders don't own much of the business, I get nervous. I'd watch the next two quarterly NIM prints before buying aggressively.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "undervalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 55362,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08508314999999998,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10777,
+      "cache_read_input_tokens": 8468,
+      "output_tokens": 2808,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10777
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 545,
+          "cache_read_input_tokens": 8468,
+          "cache_creation_input_tokens": 2309,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2309,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

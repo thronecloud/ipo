@@ -1,0 +1,69 @@
+{
+  "symbol": "BIKAJI",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-19T06:34:36.115268Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Bikaji trades at 66x earnings and 11x book value — my Graham Number is approximately ₹102 against a market price of ₹660, a 6.5x premium to intrinsic value — making this among the most speculative valuations I have encountered. The snack business has real growth (revenue CAGR 19.5%), but I categorically refuse to pay 11x book for a packaged foods company regardless of its growth narrative.",
+    "key_strengths": [
+      "Consistent profitability across all 5 years with net profit CAGR of 28.2% — earnings continuity is present",
+      "5/5 years of positive operating cash flow with Debt/Equity of 0.19 — balance sheet is sound",
+      "Interest coverage ratio of ~22x (EBITDA ₹356 Cr / finance cost ₹16 Cr) — minimal leverage risk"
+    ],
+    "key_risks": [
+      "P/E of 66.3 and P/B of 11.05 leave no margin of safety whatsoever under any conservative valuation",
+      "Net profit in FY2025 (₹194 Cr) fell from FY2024 (₹263 Cr) despite revenue growth — margin compression is real",
+      "Operating margin of only 9.4% in a commodity-input business makes earnings vulnerable to input cost inflation"
+    ],
+    "red_flags": [
+      "P/B of 11.05 — I regard anything above 2.0 as paying an excessive premium over assets; 11x is egregious",
+      "Net profit declined year-over-year in FY2025 while P/E expanded — investors are paying more for less",
+      "Borrowings tripled from ₹87 Cr (FY2021) to ₹310 Cr (FY2025) while capex is accelerating — capex cycle risk"
+    ],
+    "detailed_analysis": "Graham Number: with EPS ~₹7.73 and BVPS ~₹59.8, the upper bound of fair value is ₹102. At ₹660, the market is pricing in years of flawless high-growth execution with no room for disappointment. This is precisely the kind of 'story stock' I warned against in The Intelligent Investor — the brand may be excellent, but the price demands perfection.\n\nThe FY2025 results are actually concerning upon inspection: while revenue grew 13% to ₹2,622 Cr, net profit contracted from ₹263 Cr to ₹194 Cr, implying margin deterioration. Operating income also fell from ₹392 Cr to ₹330 Cr year-over-year. A growth stock that shows margin compression at this valuation is doubly dangerous — the market will eventually reprice it harshly. No dividend yield of consequence further underscores the speculative character of this investment.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 140288,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.21278924999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 22613,
+      "cache_read_input_tokens": 15255,
+      "output_tokens": 8227,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 22613,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 950,
+          "cache_read_input_tokens": 15255,
+          "cache_creation_input_tokens": 7358,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 7358
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

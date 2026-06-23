@@ -1,0 +1,70 @@
+{
+  "symbol": "544643",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-20T11:06:16.331361Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "A tiny, recently-incorporated (2019) non-voice BPO with a microscopic 0.41% ROE trading at 25.5x earnings — that's paying a premium multiple for a commodity service business with no demonstrable moat. This is precisely the kind of speculative small-cap IPO I would walk past without a second glance.",
+    "key_strengths": [
+      "Promoter holding of 51.99% aligns ownership with minority shareholders",
+      "Asset-light ITES model in principle requires little capital",
+      "Debt profile implied small given INR 130 Cr market cap micro-structure"
+    ],
+    "key_risks": [
+      "ROE of 0.41% is effectively zero — capital is earning nothing",
+      "P/E of 25.5x is absurd for a sub-1% ROE business — no margin of safety",
+      "Non-voice BPO is a crowded, low-moat, price-taking industry with client concentration risk"
+    ],
+    "red_flags": [
+      "ROE of 0.41% vs my 15% threshold — a 37x shortfall",
+      "25.5x P/E on near-zero profitability implies earnings are a rounding error",
+      "Company only 7 years old with no proven through-cycle track record",
+      "Tiny INR 130 Cr market cap — liquidity and governance risk typical of recent SME listings"
+    ],
+    "detailed_analysis": "The numbers tell the whole story. A 0.41% ROE means shareholders' equity is earning less than a savings account — this is not a business compounding capital, it is a business destroying it in real terms after inflation. Paying 25.5x earnings for that is like buying a broken watch at jeweler's prices. In the BPO/ITES non-voice segment, moats come from scale, specialized vertical expertise, or deep client integration, none of which a 2019-incorporated INR 130 Cr microcap can credibly claim versus TCS, Infosys BPM, WNS, or Genpact.\n\nMy rule is simple: wonderful businesses at fair prices. This is a fair-at-best business at a wonderful price — for the seller. I have no circle of competence edge on a newly listed Indian microcap BPO, I see no durable competitive advantage, the returns on equity are essentially nonexistent, and the valuation offers zero margin of safety. Pass, and don't look back.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 20103,
+    "model_used": "opus",
+    "total_cost_usd": 0.08932024999999999,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8877,
+      "cache_read_input_tokens": 13418,
+      "output_tokens": 1084,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8877,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10581,
+          "cache_creation_input_tokens": 1133,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1133
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

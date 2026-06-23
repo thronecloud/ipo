@@ -1,0 +1,70 @@
+{
+  "symbol": "HGINFRA",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T17:33:52.587006Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "H.G. Infra is a capital-hungry EPC contractor with no discernible moat, consistently negative free cash flow for all five years examined, and a debt load that nearly quadrupled in a single year (borrowings: INR 1,513 Cr → INR 5,669 Cr in FY25). While optically cheap at 10.6x P/E, the business destroys cash at an accelerating rate and competes purely on bid pricing — the antithesis of a wonderful company.",
+    "key_strengths": [
+      "Strong historical earnings CAGR of 36.8% over 9 years (2016–2025), demonstrating execution capability",
+      "Decent operating margins of 18.6% for an EPC contractor, above sector peers",
+      "High promoter holding at 71.78% signals founder-level commitment to the business"
+    ],
+    "key_risks": [
+      "Catastrophic free cash flow: FCF was -INR 2,415 Cr in FY25 alone; negative in all 5 of 5 years — this business consumes cash relentlessly",
+      "Debt explosion: borrowings surged 274% in one year (1,513 → 5,669 Cr); finance costs growing at 36.6% CAGR, faster than revenue",
+      "No economic moat: EPC contracts are won on price bids, not brand or switching costs — competitors can replicate every capability"
+    ],
+    "red_flags": [
+      "Operating cash flow negative in 4 of last 5 years — reported profits are largely accounting profits, not cash",
+      "CWIP surged from INR 14 Cr to INR 1,322 Cr in FY25, suggesting massive speculative capital deployment",
+      "Revenue and net profit both declined in FY25 (revenue -6%, net profit -6%) despite massive new debt",
+      "Finance costs of INR 265 Cr now consuming ~52% of net profit, up from INR 16 Cr in 2016"
+    ],
+    "detailed_analysis": "H.G. Infra is precisely the type of business I have spent a career avoiding: capital-intensive, competitively undifferentiated, and dependent on government contract flows. EPC contractors win work by underbidding rivals — there is no brand loyalty, no switching cost, no network effect. The moment NHAI slows project awards or a competitor prices lower, the order book evaporates. The 9-year revenue CAGR of 23.8% is impressive on the surface, but it has been fueled entirely by external capital. The company has generated positive operating cash flow in just 1 of the last 5 years, and FCF has worsened every single year, reaching -INR 2,415 Cr in FY25. Reported earnings of INR 505 Cr are essentially fictional from a cash perspective.\n\nThe balance sheet deterioration in FY25 is alarming enough to be disqualifying on its own. Borrowings nearly quadrupled in 12 months — from INR 1,513 Cr to INR 5,669 Cr — while CWIP ballooned from INR 14 Cr to INR 1,322 Cr. Something large and capital-intensive is being financed with cheap debt at a moment when interest rates remain elevated; finance costs of INR 265 Cr are growing faster than revenue. The D/E ratio of 1.83 far exceeds my ceiling of 0.5. Even at a forward P/E of 7.4x, I would not buy this business — price is what you pay, value is what you get, and what you get here is a treadmill that requires ever-larger capital injections to stand still.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 43532,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07480605,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10753,
+      "cache_read_input_tokens": 9011,
+      "output_tokens": 2118,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10753
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 406,
+          "cache_read_input_tokens": 9011,
+          "cache_creation_input_tokens": 1742,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1742,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

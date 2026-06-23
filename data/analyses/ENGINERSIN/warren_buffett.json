@@ -1,0 +1,68 @@
+{
+  "symbol": "ENGINERSIN",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-19T06:23:06.693154Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Engineers India is a virtually debt-free PSU consultancy (D/E 0.01) with solid ROE of 23% and a niche expertise in hydrocarbon engineering that acts as a soft regulatory moat, but government ownership caps capital allocation quality, revenue has been flat-to-declining since FY20, and the alarming forward P/E of 20.5x versus trailing of 17.5x implies the market expects earnings to soften. I do not buy businesses expecting deterioration.",
+    "key_strengths": [
+      "Zero leverage (total debt INR 22 Cr on INR 2,705 Cr equity) and a large cash/investment balance generating meaningful other income — the balance sheet is pristine",
+      "Operating margin of 28.3% is remarkable for an engineering services firm, reflecting the high intellectual capital content of consultancy versus construction",
+      "Strong EBITDA momentum in FY25 (INR 665 Cr, nearly 2x FY22 levels) suggests a possible order-book upturn tied to India's refinery and energy transition capex"
+    ],
+    "key_risks": [
+      "Revenue has been range-bound or declining: INR 3,237 Cr (FY20) → INR 3,088 Cr (FY25), indicating order-flow lumpiess and dependence on a narrow set of large government/PSU clients",
+      "Government promoter (51.32%) means dividends and capital allocation decisions are driven by fiscal policy, not shareholder value maximization — large special dividends in the past have periodically stripped retained earnings",
+      "FCF is highly volatile: negative in FY23 (INR -147 Cr), and OCF was only INR 109 Cr in FY25 despite strong reported profits — working capital dynamics in project businesses can destroy cash unpredictably"
+    ],
+    "red_flags": [
+      "Forward P/E (20.55x) higher than trailing P/E (17.5x) signals consensus expects FY26 earnings to decline — buying into a deteriorating earnings trajectory is not my style",
+      "Other income (INR 160–255 Cr annually) represents a substantial share of net profit; strip it out and the core consulting economics look weaker than reported"
+    ],
+    "detailed_analysis": "Engineers India has the hallmarks of a quality consulting franchise — no debt, fat margins, domain expertise that is hard to replicate — but the PSU ownership structure is the critical defect. When the government controls 51%, excess capital gets paid as special dividends at politically convenient times rather than being deployed into high-ROIC opportunities. The equity base was INR 2,406 Cr in FY20, shrank to INR 1,751 Cr by FY21 (capital returned), and has climbed back to INR 2,705 Cr — this is not Berkshire-style compounding, it is a government cash register. The business is adequate at this price but not one I would own enthusiastically.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 154531,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.2115984,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 23366,
+      "cache_read_input_tokens": 16273,
+      "output_tokens": 7939,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 23366,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 679,
+          "cache_read_input_tokens": 16273,
+          "cache_creation_input_tokens": 7093,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 7093
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

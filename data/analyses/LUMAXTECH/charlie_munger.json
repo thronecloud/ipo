@@ -1,0 +1,69 @@
+{
+  "symbol": "LUMAXTECH",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T18:24:53.693947Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "AVOID",
+    "investment_thesis": "Lumax Auto Technologies is a growing auto ancillary with respectable revenue CAGR of 16.7% and diversification into EVs and CNG/H2, but at 47.6x P/E with rapidly ballooning debt and FCF-to-net-income of only 51%, the market is pricing perfection into a cyclical, OEM-dependent parts supplier with no durable pricing moat. At this valuation, I am not being paid to bear the risk.",
+    "key_strengths": [
+      "Revenue and EBITDA compounding strongly — 16.7% and 20.9% CAGRs over 9 years shows consistent execution",
+      "Diversified product mix across plastics, mechatronics, structures, aftermarket, and CNG/H2 reduces single-segment risk",
+      "Promoter holding at 55.98% with 19% ROCE suggests reasonable capital allocation history"
+    ],
+    "key_risks": [
+      "Debt explosion: borrowings surged from INR 165 Cr (2022) to INR 1,111 Cr (2025) — finance costs growing at 36.1% CAGR, faster than revenue",
+      "FCF quality is poor — 2025 FCF of INR 118 Cr vs net profit of INR 229 Cr is only 51%, well below Munger's 80% threshold",
+      "OEM concentration and cyclicality — auto ancillaries lose pricing power in downturns; no evidence of durable switching costs"
+    ],
+    "red_flags": [
+      "Acquisition-driven debt spike in FY2023 (investing outflow of -476 Cr, borrowings +499 Cr in one year) — integration risk unquantified",
+      "Capex accelerating sharply: 51→83→104→180 Cr over 4 years, consuming operating cash flow and depressing FCF",
+      "ROIC (NOPAT/Invested Capital) computes to ~12% in FY2025 — below Munger's 15% minimum threshold, and declining as debt-funded asset base expands"
+    ],
+    "detailed_analysis": "Lumax Auto Technologies has delivered impressive headline growth — revenue at 3,637 Cr in FY2025 versus 903 Cr in FY2016 is real compounding. However, the big leap in scale came via debt-funded acquisitions starting FY2023, when total assets nearly doubled from 1,139 Cr to 2,179 Cr in a single year and borrowings quadrupled. This is precisely the kind of acquisition-fueled balance sheet expansion that Munger viewed with suspicion. The resulting finance cost burden — INR 80 Cr in FY2025 versus INR 17 Cr just two years prior — is now a structural drag on returns. Estimated ROIC lands around 12%, below the 15% floor I require, and it is declining, not improving, as the capital base inflates.\n\nThe valuation compounds the problem. At 47.6x trailing P/E and 23.5x EV/EBITDA for an auto parts company with 10% operating margins, the market is pricing in sustained hyper-growth with no mean-reversion risk. Auto ancillaries are cyclical, OEM-dependent businesses — when Maruti or Bajaj cut production, Lumax feels it immediately, as evidenced by revenue declines in FY2020-21. The strategic pivot toward EVs and hydrogen is interesting but unproven as a moat. I see a decent business run by capable people, but \"decent\" at 47x earnings in a cyclical sector is not a bargain — it is a trap.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 54175,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0848175,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11244,
+      "cache_read_input_tokens": 9095,
+      "output_tokens": 2661,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11244
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 558,
+          "cache_read_input_tokens": 9095,
+          "cache_creation_input_tokens": 2149,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2149,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

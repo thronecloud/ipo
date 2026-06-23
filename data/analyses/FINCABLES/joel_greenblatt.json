@@ -1,0 +1,68 @@
+{
+  "symbol": "FINCABLES",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-22T16:33:30.493271Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Finolex Cables is a fundamentally sound, debt-free industrial compounder, but at a 3.8% earnings yield (EBIT ₹543 Cr / EV ₹14,315 Cr) it fails the Magic Formula's basic cheapness test. ROCE of 17.7% is respectable but not exceptional enough to justify paying 21x earnings.",
+    "key_strengths": [
+      "Pristine balance sheet: virtually zero debt (₹20 Cr total debt vs ₹5,703 Cr equity), giving massive financial flexibility",
+      "Infrastructure-linked revenue: 9.4% revenue CAGR (₹2,360→₹5,319 Cr) supported by India's electrification and housing buildout",
+      "Large investment portfolio generating ₹428 Cr other income (FY25), acting as a hidden earnings buffer"
+    ],
+    "key_risks": [
+      "Earnings yield of ~3.8% (EBIT/EV) is well below the 6% Magic Formula floor — the stock simply isn't cheap",
+      "Operating margin of 8.9% is thin and the operating income CAGR (4.7% over 9Y) trails revenue (9.4%) — margin compression is a structural concern",
+      "Heavy non-operating income dependency: other income (₹428 Cr) is 79% of operating income (₹543 Cr), making reported earnings unreliable as a quality signal"
+    ],
+    "red_flags": [
+      "FY25 Free Cash Flow collapsed to ₹207 Cr from ₹577 Cr in FY24, driven by capex surge to ₹236 Cr (CWIP jumped to ₹303 Cr) — FCF quality is deteriorating",
+      "Other income (₹428 Cr) is nearly equal to operating income (₹543 Cr); strip it out and this looks like a low-margin, slow-growth industrial at a premium valuation"
+    ],
+    "detailed_analysis": "Running the Magic Formula on Finolex yields disappointing results on the 'cheap' leg. Enterprise Value is approximately ₹14,315 Cr (market cap ₹14,385 Cr + debt ₹20 Cr − cash ₹90 Cr). FY25 EBIT (operating income) is ₹543 Cr, giving an earnings yield of just 3.8% — far below the 12% I look for and even below the minimum 6% threshold. If I generously include normalized other income (e.g., ₹300 Cr), the blended yield reaches ~6% but that involves crediting volatile investment returns, which the Magic Formula explicitly avoids. On the quality leg, reported ROCE of 17.7% is decent but not in the top-decile 25%+ zone. Operating margins at 8.9% are thin for a branded electrical goods company, and the 9-year operating income CAGR of 4.7% trails revenue at 9.4% — not a hallmark of a high-return compounder.\n\nThe structural story is sound: zero-debt, India's infrastructure capex cycle, a diversified product portfolio from cables to fans and switchgear. But the balance sheet is inflated by a massive equity investment portfolio that distorts both the ROE (13.4% understates true operating returns) and the earnings quality (FY25 other income of ₹428 Cr nearly matches operating income). The capex ramp (₹219 Cr in FY24, ₹236 Cr in FY25, CWIP surging to ₹303 Cr) could seed future growth but is crushing near-term FCF (down 64% YoY to ₹207 Cr). At P/E 21x and EV/EBITDA 19x, the market is pricing in a lot of good news. Magic Formula discipline says wait for the price to come to you.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "excellent",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 57639,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09420645,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11981,
+      "cache_read_input_tokens": 9279,
+      "output_tokens": 3099,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11981,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 452,
+          "cache_read_input_tokens": 9279,
+          "cache_creation_input_tokens": 2702,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2702
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "ABSLAMC",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-19T06:20:28.251230Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "ABSLAMC is a high-quality asset management franchise with ROCE of 35.5%, ROE of 27%, 64% operating margins, and net profit growing at 19.6% CAGR over 8 years — a truly excellent business by any measure. However, the Magic Formula explicitly excludes financial companies because capital structure metrics are incomparable, and at P/E of 30x the earnings yield is only ~4.2% (EBIT ~INR 1,287 Cr / EV ~INR 30,876 Cr) — not bargain territory.",
+    "key_strengths": [
+      "EBITDA margins of 64% and near-zero capex (INR 31 Cr on INR 1,287 Cr EBIT) deliver exceptional FCF conversion — INR 678 Cr FCF in FY25",
+      "Consistent profitability: OCF positive 5/5 years, net profit CAGR of 19.6% over 8 years with no leverage (D/E 0.02)",
+      "Asset-light model with sticky AUM revenue — management fees are recurring and scale without proportional cost increases"
+    ],
+    "key_risks": [
+      "Financial sector exclusion: Magic Formula ROIC/Earnings Yield framework is not designed for asset managers — cannot apply formula directly",
+      "Earnings yield of ~4.2% is too low for Magic Formula criteria (threshold: >12%); market is pricing the quality premium fully",
+      "AUM growth subject to market cycles and competitive fee compression — Indian MF market growing but consolidating toward larger players"
+    ],
+    "red_flags": [
+      "Financial company — explicitly outside Magic Formula universe; comparisons to industrial ROIC benchmarks are apples-to-oranges",
+      "P/B of 8.65x leaves zero margin of safety if AUM growth slows or fee yields compress",
+      "Revenue growth (8.8% CAGR) is modest relative to the premium valuation being paid"
+    ],
+    "detailed_analysis": "As a business, ABSLAMC is close to ideal: minimal capital requirements, high margins, recurring fee income, and a steadily growing profit pool. The ROCE of 35.5% reflects the fact that asset management earns excellent returns on the tiny tangible capital base required. Net profit grew from INR 223 Cr (FY17) to INR 931 Cr (FY25) with near-perfect FCF conversion. If this were an industrial company, it would be a Magic Formula favorite.\n\nBut it is a financial services firm — and Greenblatt's formula excludes financials for good reason. The earnings yield of ~4.2% puts it firmly outside bargain territory. At 30x trailing P/E, the market has already priced in the quality. I would watch this for a better entry price — a 15-20x P/E (earnings yield 5-7%) would make this far more interesting even accounting for the sector exclusion. For now, it is a quality business at a fair price: a Hold.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "excellent",
+      "financial_health": "excellent",
+      "valuation": "fair",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 155078,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.21028739999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 22032,
+      "cache_read_input_tokens": 14428,
+      "output_tokens": 8222,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 22032,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 468,
+          "cache_read_input_tokens": 14428,
+          "cache_creation_input_tokens": 7604,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 7604
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

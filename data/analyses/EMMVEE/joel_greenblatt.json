@@ -1,0 +1,69 @@
+{
+  "symbol": "EMMVEE",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-21T08:07:58.940496Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Emmvee has legitimate business quality — 28% ROCE and explosive revenue growth — but the Magic Formula breaks down here because the stock is priced for perfection with a trailing earnings yield of only 3.6% (EBIT 722 Cr / EV ~20,231 Cr), well below the 6% minimum threshold. You're paying a rich price for a capital-hungry solar manufacturer drowning in capex, which is precisely the profile the Magic Formula is designed to avoid.",
+    "key_strengths": [
+      "ROCE of 28% (given) clears the Magic Formula's 25% excellence threshold, indicating genuine business quality",
+      "Revenue CAGR of 33.3% and operating income explosion from 120 Cr (2024) to 722 Cr (2025) show real operating leverage",
+      "OCF positive all 5 years with 614 Cr in 2025, confirming earnings are not purely accounting fiction"
+    ],
+    "key_risks": [
+      "Earnings yield only 3.6% (EBIT 722 Cr / EV 20,231 Cr) — far below the 6% floor; the stock is NOT cheap",
+      "FCF deeply negative three years running (-173, -440, -375 Cr) due to capex of 988 Cr in 2025 — high capital intensity destroys FCF conversion",
+      "Debt tripled in two years (524 Cr → 2,065 Cr); D/E of 2.15 on a capital-intensive solar business is leverage risk in a rising-rate or policy-reversal scenario"
+    ],
+    "red_flags": [
+      "Trailing earnings yield 3.6% — Magic Formula demands >12% for a buy; this fails the cheapness test decisively",
+      "ROE of 105% is misleading — driven by an artificially low equity base (140 Cr equity in 2023), not sustainable capital efficiency",
+      "Solar manufacturing is heavily policy-dependent (PLI, import tariffs); ROIC spike in 2025 may not be durable"
+    ],
+    "detailed_analysis": "Running the Magic Formula: EV = Market Cap 18,385 + Total Debt 2,065 – Cash 219 = ~20,231 Cr. EBIT (Operating Income 2025) = 722 Cr. Earnings Yield = 722/20,231 = **3.6%** — this is less than one-third of the 12% target and below even the 6% minimum. On ROIC, the company reports ROCE of 28%, which is excellent by Magic Formula standards. But the Magic Formula requires BOTH metrics to score well. When earnings yield is this low, no amount of ROIC quality justifies a buy — you're simply overpaying for the quality.\n\nThe deeper concern is capital intensity. Capex ran 988 Cr in 2025 against OCF of 614 Cr, producing FCF of -375 Cr. Solar cell and module manufacturing requires relentless reinvestment, which is why Magic Formula typically produces poor results in this sector — high apparent ROIC gets eaten by capex in subsequent periods. Debt has ballooned from 524 Cr to 2,065 Cr in two years to fund this expansion. The forward P/E of 15.78 implies the market is pricing in a near-tripling of earnings — if that materialises, the story improves, but Greenblatt's formula is ruthlessly trailing-based for good reason: forward estimates are where investors get burned.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 52271,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08610045,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11233,
+      "cache_read_input_tokens": 8809,
+      "output_tokens": 2755,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11233,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 366,
+          "cache_read_input_tokens": 8809,
+          "cache_creation_input_tokens": 2424,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2424
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

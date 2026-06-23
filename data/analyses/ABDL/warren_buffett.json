@@ -1,0 +1,69 @@
+{
+  "symbol": "ABDL",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-19T05:38:58.844596Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Allied Blenders & Distillers owns Officer's Choice — India's highest-volume whisky — but has generated essentially zero cumulative profit from 2021-2024 (INR 8 Cr total over four years) and is now priced at 59.8x earnings on a single year of profitability that appears inflated by the 2024 IPO. Revenue growth of 3.3% CAGR over five years tells me the brand is not compounding.",
+    "key_strengths": [
+      "Officer's Choice is a genuine mass-market brand leader — volume scale in Indian spirits creates distribution and shelf-space advantages",
+      "ROCE of 21.1% and ROE of 20% are strong if the 2025 profit base is sustainable",
+      "Finance costs are actually declining (-6.9% CAGR), suggesting some deleveraging discipline in the base business"
+    ],
+    "key_risks": [
+      "Revenue CAGR of only 3.3% over five years — a brand that cannot grow volume faster than inflation has a weak moat",
+      "Net profit was essentially zero for four consecutive years (2021–2024: INR 3, 1, 2, 2 Cr), making the 2025 figure of INR 195 Cr appear anomalous",
+      "OCF swung from +INR 186 Cr in 2024 to -INR 678 Cr in 2025 despite reported profit — a disconnect that raises questions about earnings quality"
+    ],
+    "red_flags": [
+      "Equity surged from INR 407 Cr to INR 1,558 Cr in FY25 (IPO proceeds) while OCF turned sharply negative — classic IPO cash-burn pattern",
+      "P/E of 59.8x and P/B of 10.62x for a company with a five-year near-zero profit history represents extreme speculative pricing",
+      "India's spirits industry faces state excise price controls, which structurally cap pricing power — the very thing a Buffett-style moat requires"
+    ],
+    "detailed_analysis": "Officer's Choice is a high-volume brand, but volume without pricing power is not a moat in my book. The Indian state excise system means ABDL must negotiate prices with government bureaucracies rather than charge what the market will bear — Coca-Cola this is not. Five years of near-zero profits despite INR 2,300–3,500 Cr in annual revenue confirm the structural margin problem.\n\nThe 2025 profit spike to INR 195 Cr coincides precisely with the IPO and a massive equity infusion, while OCF went to -INR 678 Cr — I am deeply sceptical this represents recurring earnings power. At 59.8x P/E and EV/EBITDA of 33x, the market is paying luxury-goods multiples for a commodity spirits business. I would need to see two or three years of sustained 15%+ ROE and positive FCF before revisiting. Today the answer is firmly no.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 176621,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.23116305,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 23929,
+      "cache_read_input_tokens": 15601,
+      "output_tokens": 9116,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 23929,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 628,
+          "cache_read_input_tokens": 15601,
+          "cache_creation_input_tokens": 8328,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8328
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

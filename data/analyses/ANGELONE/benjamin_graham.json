@@ -1,0 +1,69 @@
+{
+  "symbol": "ANGELONE",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-19T06:25:02.557520Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Angel One is a well-operated discount broker that rode India's retail investing wave — but net profit has already begun declining (INR 915 Cr in FY26 vs. INR 1,172 Cr in FY25), borrowings have surged to INR 7,951 Cr in FY26, and operating cash flow has been negative for three of the past five years. The business is weakening precisely as the market still prices it as a compounder.",
+    "key_strengths": [
+      "Revenues grew at a 31.4% CAGR over 9 years — real scale has been built in the discount broking space",
+      "Operating margin of 30.7% is respectable for a financial services platform business",
+      "Technology-first approach (Super App) provides some switching cost advantage with retail clients"
+    ],
+    "key_risks": [
+      "Net profit fell from INR 1,172 Cr (FY25) to INR 915 Cr (FY26) — the earnings trajectory has reversed, yet the market still prices growth",
+      "Borrowings exploded from INR 788 Cr (FY23) to INR 7,951 Cr (FY26) — a 10x increase in three years raises serious questions about leverage and funding risk",
+      "Operating cash flow was -INR 4,142 Cr in FY26 — the company is consuming enormous cash to grow its margin funding book, an inherently risky business"
+    ],
+    "red_flags": [
+      "D/E of 0.76 fails my <0.5 threshold, and borrowings are accelerating rapidly — the balance sheet is becoming increasingly fragile",
+      "OCF negative in 3 of 5 years including -INR 4,142 Cr in FY26 — a business that consumes cash cannot be considered financially sound by my standards",
+      "Finance costs rose to INR 437 Cr in FY26 from INR 91 Cr in FY23 — the margin funding business is eating profit margins alive"
+    ],
+    "detailed_analysis": "Discount broking is an inherently low-moat, cyclical business tied directly to market volumes and retail sentiment. When volumes contract — and they always do — revenues, margins, and profits all fall simultaneously. The FY26 earnings decline to INR 915 Cr confirms this cycle has already begun. More troubling is the explosion in borrowings to fund margin lending: INR 7,951 Cr in FY26 vs. INR 788 Cr in FY23 represents a qualitative shift in risk profile that the P/B of 5x does not adequately compensate for.\n\nAt P/E 32x on declining earnings, with D/E approaching 1.3x (total debt / equity), massively negative free cash flow, and a business model exposed to both market cycles and SEBI regulatory risk, Angel One fails virtually every quantitative and qualitative test I apply. Promoter holding at only 28.87% adds to my unease. I want no part of this at current prices.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 134625,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.1983921,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 21852,
+      "cache_read_input_tokens": 15277,
+      "output_tokens": 7457,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 21852,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 784,
+          "cache_read_input_tokens": 15277,
+          "cache_creation_input_tokens": 6575,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 6575
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

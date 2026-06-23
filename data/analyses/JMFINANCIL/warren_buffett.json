@@ -1,0 +1,69 @@
+{
+  "symbol": "JMFINANCIL",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-19T13:02:27.096569Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "AVOID",
+    "investment_thesis": "JM Financial is a diversified financial services conglomerate spanning investment banking, mortgage lending, distressed credit, and wealth management — precisely the kind of complex, opaque business I find difficult to value and risky to own, particularly given its ROE of just 9% and the alarming collapse of net profit to INR 31 Cr in FY2024 from INR 992 Cr in FY2022. The 10.4x P/E appears cheap but reflects genuine earnings uncertainty rather than a hidden bargain.",
+    "key_strengths": [
+      "Long operating history since 1973 with diversified revenue streams across capital markets, lending, and wealth management — the franchise has survived multiple market cycles",
+      "Significant deleveraging in FY2025 with borrowings falling from INR 16,228 Cr to INR 11,360 Cr, improving the balance sheet substantially",
+      "Strong operating margin (46.8%) and high gross margin (89.6%) reflect the financial services model where revenue drops directly to operating income"
+    ],
+    "key_risks": [
+      "ROE of 9% is far below my 15% threshold and unacceptably low for a financial services firm — management is not earning adequate returns on shareholder capital",
+      "Net profit collapsed to just INR 31 Cr in FY2024 (versus INR 992 Cr in FY2022), likely driven by INR -801 Cr 'Other Income' — this requires explanation and suggests hidden risks in the loan book or investments",
+      "OCF was sharply negative in FY2022 (-INR 3,203 Cr) and FY2023 (-INR 2,307 Cr), reflecting the complexity and cash consumption of the distressed credit and lending businesses"
+    ],
+    "red_flags": [
+      "The near-zero profit in FY2024 (INR 31 Cr) is a serious red flag — I never invest in a business I cannot explain, and this earnings gap demands scrutiny",
+      "Nine-year earnings CAGR of only 4.4% despite operating in booming Indian capital markets — management has not converted growth into shareholder returns",
+      "Complex multi-segment structure (investment bank + NBFC lending + distressed credit + wealth) makes it nearly impossible to assess true economic earnings"
+    ],
+    "detailed_analysis": "Financial companies are among the most difficult to analyze — their assets are promises rather than physical things, and leverage magnifies both gains and losses. JM Financial's D/E of 1.04 is structurally normal for an NBFC but it means shareholders are exposed to credit losses amplified by borrowings of INR 11,360 Cr. The business mixes fee-based advisory (which I find attractive) with balance-sheet-intensive mortgage lending and distressed credit (which I find worrying).\n\nThe FY2024 profit of just INR 31 Cr on revenues of INR 4,786 Cr — a margin under 1% — is what genuinely concerns me. The -INR 801 Cr other income line suggests either mark-to-market losses, write-offs, or restructuring charges. Until I understand precisely what happened, I would not put a single rupee into this company. Charlie Munger taught me that the most dangerous words in investing are 'trust me on this one.'",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 188679,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.24100680000000002,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 24830,
+      "cache_read_input_tokens": 16251,
+      "output_tokens": 9534,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 24830,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 840,
+          "cache_read_input_tokens": 16251,
+          "cache_creation_input_tokens": 8579,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8579
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

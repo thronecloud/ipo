@@ -1,0 +1,69 @@
+{
+  "symbol": "BRIGADE",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-19T12:52:05.376679Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Brigade scores poorly on both Magic Formula legs — an earnings yield of ~6.1% (EBIT INR 1,421 Cr / EV ~INR 23,295 Cr) barely clears the 6% floor, while ROCE of 13.3% sits well below my 20% threshold. Real estate developers consume enormous capital and produce lumpy, debt-laden returns that the Magic Formula was not designed to reward.",
+    "key_strengths": [
+      "Revenue CAGR of 10.7% over 9 years with clear acceleration in FY24-25 (INR 4,897→5,074 Cr)",
+      "OCF positive all 5 years; FY25 operating CF of INR 995 Cr shows improving cash conversion",
+      "Equity nearly doubled to INR 6,481 Cr in FY25 (likely QIP), strengthening the balance sheet"
+    ],
+    "key_risks": [
+      "Gross debt of INR 5,950 Cr (D/E 0.76) constrains financial flexibility in a rate-sensitive sector",
+      "ROCE of 13.3% and ROE of 14.9% are both below cost-of-capital thresholds for high-quality compounders",
+      "Finance costs of INR 495 Cr (FY25) consume ~35% of EBITDA, limiting true free cash flow"
+    ],
+    "red_flags": [
+      "Net profit was negative in FY21 and FY22, revealing the cyclicality and fragility of earnings",
+      "Capex surged to INR 639 Cr in FY25 versus INR 269 Cr in FY24, inflating capital base and suppressing ROIC",
+      "Real estate is explicitly a sector the Magic Formula ranks poorly — capital intensity destroys the EBIT/capital ratio"
+    ],
+    "detailed_analysis": "Brigade's EV of roughly INR 23,295 Cr (mkt cap INR 18,644 Cr + debt INR 5,950 Cr – cash INR 1,299 Cr) against EBIT of INR 1,421 Cr yields an earnings yield of only ~6.1% — barely above the reject threshold. More critically, ROCE of 13.3% signals that every rupee invested in this business earns mediocre returns; the Magic Formula demands 20%+ to enter the 'good business' column. The EV/EBITDA of 15.3x further confirms the valuation is stretched for the quality on offer.\n\nThe operational trajectory is improving — net profit grew from negative territory in FY21-22 to INR 680 Cr in FY25, and the leasing/hospitality mix adds recurring revenue. But the structural problem remains: real estate requires continuous capital recycling, finance costs are permanently elevated, and the business will never score well on ROIC. I need businesses that earn high returns on incremental capital; Brigade consumes capital to generate below-par returns.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 150072,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.2245002,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 23510,
+      "cache_read_input_tokens": 15329,
+      "output_tokens": 8782,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 23510,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 495,
+          "cache_read_input_tokens": 15329,
+          "cache_creation_input_tokens": 8181,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8181
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

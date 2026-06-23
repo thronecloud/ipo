@@ -1,0 +1,70 @@
+{
+  "symbol": "ELECTCAST",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T17:11:56.476147Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Electrosteel Castings fails both legs of the Magic Formula: earnings yield is only ~6–7% (EV/EBITDA of 15.09x implies EBIT/EV well below my 12% threshold) and ROCE of 13.4% is meaningfully below the 20% minimum for a \"good business.\" With operating margin at -0.71% and forward P/E (35.11x) nearly 2.5× the trailing P/E (14.20x), the market is pricing in a severe earnings collapse — not the durable, high-ROIC compounder the Magic Formula demands.",
+    "key_strengths": [
+      "Long-term revenue CAGR of 14.3% (2016–2025) with dominant DI pipe position tied to India's Jal Jeevan Mission infrastructure spending",
+      "Debt actively deleveraging — total debt down from INR 2,967 Cr (FY22) to INR 2,125 Cr (FY25), D/E now only 0.38x",
+      "Trading below book value (P/B 0.84x) with 50.14% promoter holding, limiting downside risk"
+    ],
+    "key_risks": [
+      "Forward P/E of 35.11x vs trailing 14.20x implies standalone earnings falling ~60% — a catastrophic signal Greenblatt's formula cannot tolerate",
+      "Operating margin of -0.71% means the standalone operating business is losing money; net profits are propped by other income/consolidated subsidiaries",
+      "Poor FCF conversion: FY25 FCF only INR 206 Cr vs net profit of INR 710 Cr (29% conversion), with capex rising to INR 278 Cr and CWIP still elevated at INR 1,186 Cr"
+    ],
+    "red_flags": [
+      "Forward P/E (35.11x) vastly exceeds trailing P/E (14.20x) — signals expected earnings collapse, not growth",
+      "Negative operating margin (-0.71%) on a standalone basis; Magic Formula requires positive, durable EBIT",
+      "Earnings history is deeply erratic: net losses in FY16, FY21; OCF went negative in FY22 (-279 Cr); not the stable, high-ROIC business the formula targets",
+      "Revenue has stalled: INR 7,276 Cr → 7,478 Cr → 7,320 Cr over last 3 years — the growth engine is sputtering"
+    ],
+    "detailed_analysis": "Through the Magic Formula lens, Electrosteel Castings scores poorly on both required dimensions. Back-solving from EV/EBITDA of 15.09x and market cap of INR 4,997 Cr (EV ~INR 7,070 Cr), implied standalone EBITDA is ~INR 468 Cr. Stripping depreciation, EBIT/EV (earnings yield) comes in at roughly 6–7% — well below my 12% attractiveness threshold and nowhere near the 15%+ I need to get excited. ROCE of 13.4% similarly fails the 20% hurdle for a \"good business.\" A company can be cheap OR good; this one is neither.\n\nThe consolidated income statement flatters the picture: consolidated EBITDA was INR 1,149 Cr in FY25, but the listed entity's standalone economics are far weaker, as evidenced by the -0.71% operating margin and the forward P/E implying earnings near INR 142 Cr versus ~INR 352 Cr trailing. FCF conversion of just 29% (INR 206 Cr FCF on INR 710 Cr net profit) and rising capex (INR 278 Cr in FY25) confirm this is a capital-intensive, cyclical business with lumpy earnings — precisely the type the Magic Formula is designed to avoid. The infrastructure tailwind is real, but a good macro story does not compensate for poor unit economics at the business level.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 91499,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.13220610000000002,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 14006,
+      "cache_read_input_tokens": 9232,
+      "output_tokens": 5127,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 14006
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 389,
+          "cache_read_input_tokens": 9232,
+          "cache_creation_input_tokens": 4774,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 4774,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

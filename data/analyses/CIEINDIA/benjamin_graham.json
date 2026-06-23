@@ -1,0 +1,69 @@
+{
+  "symbol": "CIEINDIA",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T16:54:50.380825Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "CIE Automotive India trades at INR 490 — a 58% premium to its Graham Number of ~INR 311 (√22.5 × EPS₂₅ ₹21.8 × BVPS ₹196.5), offering no margin of safety whatsoever. With P/E at 22.5x and P/B at 2.49x, Mr. Market is pricing in growth this auto-parts supplier has yet to demonstrate consistently.",
+    "key_strengths": [
+      "Near-zero leverage: D/E of 0.06 with borrowings collapsed from ₹1,648 Cr (2020) to ₹426 Cr (2025) — exactly the balance sheet fortitude Graham demands",
+      "Strong and consistent free cash flow: FCF positive every year 2020–2025, reaching ₹885 Cr in FY25, well in excess of financing obligations",
+      "Interest coverage of ~50x (EBIT ₹1,362 Cr / Finance Cost ₹27 Cr) — de facto zero financial stress"
+    ],
+    "key_risks": [
+      "P/E of 22.5x far exceeds Graham's ceiling of 15x; P/B of 2.49x is 66% above his 1.5x limit — the investor is paying for future hopes, not proven asset value",
+      "Revenue growth of only 6.5% CAGR over 9 years is barely ahead of inflation; operating margin of 8.19% is thin and cyclically exposed to OEM pricing pressure",
+      "Net loss in FY2022 (₹-136 Cr) breaks the consecutive positive-earnings requirement; 'Other Income' of ₹-749 Cr that year signals opacity in the income statement"
+    ],
+    "red_flags": [
+      "Reported at a 58% premium to the Graham Number — no margin of safety",
+      "FY2022 net loss breaks the 5-year consecutive earnings test; the ₹749 Cr 'Other Income' write-down in that year was never clearly explained in public disclosures",
+      "Subsidiary of a Spanish parent (Participaciones Internacionales Autometal) — related-party transfer pricing risk and dividends may be repatriated ahead of minority shareholders"
+    ],
+    "detailed_analysis": "CIE Automotive India is a fundamentally sound auto-parts manufacturer with genuinely excellent debt discipline, but it fails every one of my quantitative valuation filters. At INR 490, the P/E is 22.5x against my hard ceiling of 15x, and P/B is 2.49x against my 1.5x limit. The Graham Number, computed as √(22.5 × ₹21.8 EPS × ₹196.5 BVPS), yields roughly ₹311 — implying the stock must fall 37% simply to reach fair value by my method, let alone offer the margin of safety I require. Revenue has grown only 6.5% CAGR over nine years and operating margins remain a slim 8.19%, both telling me this is an ordinary cyclical supplier, not a franchise business.\n\nThe business does earn points for financial stewardship: debt has been systematically retired (₹1,648 Cr → ₹426 Cr in five years), FCF is robust and consistent, and interest coverage is a staggering 50x. ROE of 11.8% and ROCE of 14.7% are adequate but unexceptional. The FY2022 net loss and the unexplained ₹749 Cr negative \"Other Income\" entry remind me that earnings quality here requires scrutiny. I would watch this stock patiently for a price closer to INR 300–310 before considering a position — at that level the margin of safety would become meaningful. At today's price, the intelligent investor simply waits.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 59289,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0765777,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9482,
+      "cache_read_input_tokens": 11354,
+      "output_tokens": 2507,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9482
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 329,
+          "cache_read_input_tokens": 9304,
+          "cache_creation_input_tokens": 2228,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2228,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

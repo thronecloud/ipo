@@ -1,0 +1,69 @@
+{
+  "symbol": "544426",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-20T20:03:57.426962Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "A tiny ₹41 Cr facilities management company earning a pitiful 0.48% ROE — that's worse than a savings account and signals zero economic moat. Inverting: the quickest way to lose money is to buy commoditized labor-arbitrage businesses at 11x earnings when those earnings barely exist.",
+    "key_strengths": [
+      "High promoter holding of 70.75% suggests skin in the game",
+      "Debt/leverage not flagged as an acute problem at this scale",
+      "Operating in a growing Indian outsourced services market"
+    ],
+    "key_risks": [
+      "ROE of 0.48% is catastrophic — capital is being destroyed in real terms",
+      "Facilities management is a low-margin, commoditized, labor-intensive business with no moat",
+      "Micro-cap (₹41 Cr) with negligible DII interest (0.27%) — illiquid and under-scrutinized"
+    ],
+    "red_flags": [
+      "ROE <1% indicates either broken economics or aggressive capital dilution post-IPO",
+      "P/E of 11 on near-zero earnings is statistically meaningless — denominator is tiny",
+      "Recently listed SME-tier name with no track record of compounding"
+    ],
+    "detailed_analysis": "Applying the inversion model: what would make this a guaranteed loss? A business with no pricing power, competing on labor cost in a fragmented industry, earning 0.48% on equity while inflation runs ~5%. That's exactly Icon Facilitators. Facilities management firms win contracts on price, pay minimum wages, and have razor-thin margins that evaporate with one bad contract or wage regulation change. There is no sustainable competitive advantage — clients can switch vendors at renewal with zero friction. A 0.48% ROE tells you the entire story; this business does not clear its cost of capital, let alone compound it.\n\nThe 11x P/E looks optically cheap but is a mathematical artifact of a microscopic earnings base — any tiny earnings swing sends the multiple to 50x or negative. At ₹41 Cr market cap with 70.75% promoter holding, this is effectively an illiquid promoter-controlled vehicle where minority shareholders have little recourse. Munger's rule: stay within the circle of competence and only buy wonderful businesses. This is the opposite — a mediocre business at a deceptively \"cheap\" price. Pass without a second thought.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 27580,
+    "model_used": "opus",
+    "total_cost_usd": 0.09194425,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8937,
+      "cache_read_input_tokens": 13166,
+      "output_tokens": 1179,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8937,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10439,
+          "cache_creation_input_tokens": 1225,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1225
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

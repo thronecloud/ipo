@@ -1,0 +1,69 @@
+{
+  "symbol": "CUB",
+  "persona": "howard_marks",
+  "persona_display_name": "Howard Marks",
+  "analyzed_at": "2026-04-19T13:10:07.231920Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "City Union Bank is a conservatively run South Indian regional franchise with 13.9% net profit CAGR over three years, but ROE of only 11.9% at a P/B of 1.92x means you are paying above intrinsic book value for returns that barely cover the cost of equity. The forward PE of 12.5x provides some cushion, but rising funding costs (finance cost CAGR 17.2%) are compressing net interest margins.",
+    "key_strengths": [
+      "Steady net profit growth from INR 760 Cr (FY22) to INR 1,124 Cr (FY25), demonstrating disciplined underwriting through a rising rate cycle",
+      "Significant deleveraging — borrowings fell from INR 5,312 Cr to INR 1,790 Cr over three years, reducing wholesale funding dependency",
+      "Positive OCF in all 4 available years with solid capital adequacy as evidenced by equity growing from INR 6,586 Cr to INR 9,467 Cr"
+    ],
+    "key_risks": [
+      "ROE of 11.87% is mediocre for a bank — at P/B of 1.92x, you need ROE expansion to ~15%+ to justify the multiple, which requires either NIM expansion or significant loan book growth",
+      "Finance costs rising at 17.2% CAGR, outpacing revenue growth of 6.3% — deposit cost pressure is the central threat to profitability",
+      "Concentrated geographic exposure in Tamil Nadu and adjacent states; any regional economic stress (drought, MSME distress) disproportionately impacts asset quality"
+    ],
+    "red_flags": [
+      "Revenue growth of only 6.3% (3Y CAGR) in a high-nominal-growth Indian economy suggests limited pricing power or franchise reach",
+      "No NPA or PCR data available for deep credit quality assessment — opaque on the most critical bank metric",
+      "Forward PE of 12.5x vs trailing 15.3x implies analyst consensus expects earnings acceleration — but the underlying revenue trend does not support this optimism"
+    ],
+    "detailed_analysis": "The Dupont math on CUB is unflattering: 11.87% ROE against a P/B of 1.92x implies an implicit price-to-ROE of ~16x — i.e., you are paying a 60% premium to what the equity is earning. For a bank to justify that premium, it needs a credible path to 15-16% ROE, which would require net profit growing to ~INR 1,450 Cr on current equity. Possible, but the revenue growth trend (6.3% CAGR) and rising funding costs make that a stretch. The bank is not cheap on fundamentals.\n\nThat said, CUB is not a disaster. Balance sheet quality appears reasonable, the franchise is century-old (founded 1904), and the deleveraging trend is positive. At 15x trailing PE it is not egregiously overvalued — it is simply fairly priced for what it delivers. I would want to see ROE improve to 14%+ before considering a meaningful position. Currently a hold for existing investors; no margin of safety for new buyers.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 152832,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.21232305,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 22847,
+      "cache_read_input_tokens": 15376,
+      "output_tokens": 8135,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 22847,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 508,
+          "cache_read_input_tokens": 15376,
+          "cache_creation_input_tokens": 7471,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 7471
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

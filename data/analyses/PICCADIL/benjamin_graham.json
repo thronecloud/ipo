@@ -1,0 +1,71 @@
+{
+  "symbol": "PICCADIL",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T22:01:44.129154Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Piccadily Agro trades at 4.2x its Graham Number (~INR 138 vs market price INR 585), with a P/E of 43 and P/B of 8 — multiples that embed speculative growth assumptions utterly incompatible with a margin of safety. The business has genuine operating quality but Mr. Market is charging a ruinous price for it.",
+    "key_strengths": [
+      "Long operating history (founded 1953) with 9 consecutive years of positive earnings — meets basic track record requirement",
+      "Interest coverage ~6.5x (Operating Income INR 183 Cr / Finance Cost INR 28 Cr) — comfortably above Graham's 3.5x floor",
+      "Debt-to-equity 0.38 (Total Debt INR 308 Cr / Equity INR 804 Cr) — the one balance-sheet metric that passes Graham's filter"
+    ],
+    "key_risks": [
+      "Valuation: Graham Number ≈ INR 138 (sqrt(22.5 × EPS ~10.4 × BVPS ~81.6)); current price INR 585 represents a 4.2x premium — no margin of safety whatsoever",
+      "Cash flow deterioration: OCF turned sharply negative (-INR 27 Cr in FY25) after a large capex cycle (INR 243 Cr), with FCF at -INR 270 Cr — the business is consuming, not generating, cash",
+      "Earnings volatility and low base: Net Profit oscillated (INR 2 Cr → 8 → 5 → 2 → 19 → 18 → 29 → 22 → 110 → 102 Cr); FY25 profit actually declined from FY24, raising questions about earnings durability at current scale"
+    ],
+    "red_flags": [
+      "P/E 43.4 — nearly 3× Graham's hard ceiling of 15",
+      "P/B 8.08 — over 5× Graham's ceiling of 1.5; paying INR 8 for every INR 1 of net assets is rank speculation",
+      "CWIP surged from INR 42 Cr to INR 242 Cr in one year — massive unproven capital commitment; returns are uncertain",
+      "No meaningful dividend history evident — shareholders receive no validated cash return while management gambles on expansion",
+      "FY25 equity jumped from INR 340 Cr to INR 804 Cr (Financing CF +INR 292 Cr) — dilutive capital raise to fund capex, yet OCF still went negative"
+    ],
+    "detailed_analysis": "Viewed through strict Grahamite quantitative filters, Piccadily Agro fails on virtually every valuation metric I consider non-negotiable. The Graham Number — the geometric mean of what one should pay relative to earnings power and book value — works out to roughly INR 138 per share. The stock trades at INR 585, meaning the market demands I pay a 325% premium over intrinsic value. A P/E of 43 and P/B of 8 are not merely elevated; they are the province of the speculator, not the intelligent investor. The operating margins (26%) and ROCE (22.7%) are admirable, but admirable businesses at ruinous prices produce poor returns. The market is telling a story about Indri whisky and India's premiumisation — I do not pay for stories.\n\nThe cash flow picture in FY25 is deeply troubling for a conservative investor. Despite INR 102 Cr of reported net profit, the company generated negative operating cash flow of INR 27 Cr and burned INR 270 Cr of free cash flow on a massive capex programme (INR 243 Cr spent, CWIP ballooning to INR 242 Cr). Management funded this by raising INR 292 Cr in external capital. I have no quarrel with expansion per se, but I insist on seeing the returns first, not paying in advance for hoped-for capacity utilisation. The sole comfort is the debt-to-equity of 0.38 and interest coverage of ~6.5x, but these are cold comfort when you have overpaid by a factor of four to own the business in the first place.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 55091,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0792744,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9440,
+      "cache_read_input_tokens": 11018,
+      "output_tokens": 2704,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9440,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 286,
+          "cache_read_input_tokens": 8968,
+          "cache_creation_input_tokens": 2522,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2522
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

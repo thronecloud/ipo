@@ -1,0 +1,69 @@
+{
+  "symbol": "AMBER",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-19T06:23:59.563251Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "AVOID",
+    "investment_thesis": "Amber has a genuinely exciting story — India's dominant room AC OEM with ~27.9% revenue CAGR as AC penetration rises from below 10% — but a current P/E of 120x and operating margins of only 5.26% mean the market has priced in decades of growth while leaving zero margin of safety. Lynch's rule: a great story at a terrible price is still a terrible investment.",
+    "key_strengths": [
+      "Revenue CAGR of 27.9% over 9 years with INR 9,973 Cr in FY25 — genuine fast grower in a structurally underpenetrated Indian AC market",
+      "FY25 showed accelerating momentum: revenue +48% and net profit +81% YoY, suggesting the capacity investments of prior years are now bearing fruit",
+      "Dominant OEM scale across window ACs, split ACs, heat exchangers, and railways/defense mobile ACs — diversification reduces single-customer risk"
+    ],
+    "key_risks": [
+      "Operating margin of 5.26% is dangerously thin for a manufacturer — any raw material shock (copper, aluminum) or demand slowdown directly hits a fragile bottom line",
+      "D/E of 0.74 exceeds Lynch's 0.6 threshold with borrowings surging to INR 2,793 Cr (2025) vs INR 1,455 Cr (2023); finance costs of INR 209 Cr eat 28% of operating income",
+      "P/E of 120x creates a massive valuation trap — even the forward P/E of 53.6x requires earnings to roughly double; any execution stumble triggers a severe de-rating"
+    ],
+    "red_flags": [
+      "P/E of 120 is extreme — PEG exceeds 4x on any reasonable near-term earnings growth rate; even on forward P/E the PEG is ~1.3-1.5 assuming 40%+ growth",
+      "Net profit was INR 139 Cr in 2024 vs INR 164 Cr in 2023 — the business already showed it can go backwards in earnings despite top-line growth",
+      "ROE of 11.3% is below Lynch's 12% minimum, meaning the company earns mediocre returns on shareholder capital despite the exciting revenue story"
+    ],
+    "detailed_analysis": "I love the India AC story — I can observe it myself: rising incomes, urbanization, climate change, and AC penetration still in single digits are a textbook setup for a decade-long consumer boom. Amber's position as the outsourced manufacturer for all the major AC brands (Daikin, Voltas, LG) gives it scale and product breadth. The FY25 revenue jump to INR 9,973 Cr (+48%) and profit rebound to INR 251 Cr (+81%) are genuinely exciting data points. The problem is the price — paying 120x trailing earnings for a 5% operating margin business that earned only INR 251 Cr on INR 9,973 Cr of revenue is asking for trouble.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 187278,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.24071235000000002,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 24571,
+      "cache_read_input_tokens": 15757,
+      "output_tokens": 9589,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 24571,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 634,
+          "cache_read_input_tokens": 15757,
+          "cache_creation_input_tokens": 8814,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8814
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "544626",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-20T11:01:08.501487Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "A tiny ₹338 Cr IT-enabled services outfit with decent headline ROE/ROCE (28%/26%) but rapidly deteriorating capital discipline — borrowings jumped from ₹6 Cr to ₹28 Cr in two years while FCF collapsed from ₹10 Cr to zero. At 35x P/E for a sub-scale, undifferentiated services business with no visible moat, the price embeds growth that the cash flows do not support.",
+    "key_strengths": [
+      "Reported ROE 28.2% and ROCE 26.5% — optically attractive on a small base",
+      "Revenue grew 70% over two years (₹73 Cr → ₹124 Cr) with margins expanding (operating margin ~11%)",
+      "Promoter holding 54.73% provides skin in the game"
+    ],
+    "key_risks": [
+      "FCF deteriorated from ₹10 Cr (2023) to ₹0 Cr (2025); cumulative 3Y FCF negative — earnings quality is poor",
+      "Borrowings 4.6x in two years (₹6 Cr → ₹28 Cr); equity raise + debt funding growth, not internal accruals",
+      "Generic 'customer transformation' IT services — no discernible moat, competing against thousands of similar shops"
+    ],
+    "red_flags": [
+      "Net profit ₹10 Cr vs Operating CF ₹13 Cr looks fine in 2025, but 3Y aggregate FCF is roughly zero against ₹20 Cr cumulative profits — earnings not converting to cash",
+      "Total assets nearly tripled (₹35 → ₹99 Cr) in 2 years funded by debt + equity issuance, not retained earnings",
+      "Recently listed micro-cap (BSE SME-style) — limited audit history, low float, vulnerable to promoter actions"
+    ],
+    "detailed_analysis": "Invert first: what kills this investment? A small IT services firm growing by piling on debt and external equity, where the high ROE is a function of recent capital infusions not yet fully deployed, and where free cash flow has gone from ₹10 Cr to negative ₹20 Cr to zero in three years. The ROCE of 26% is arithmetic; the economic reality is that the business consumed roughly all the cash it generated. That is the opposite of a compounding machine — that is a treadmill. At 35x earnings on ₹10 Cr of profit, you are paying ₹338 Cr for a business whose owner-earnings are functionally zero.\n\nThe \"customer transformation partner\" descriptor is the kind of vague positioning that screams commodity services. There is no proprietary IP, no switching costs evident, no network effect — just bodies billed against client projects in a brutally competitive space dominated by TCS, Infosys, and a thousand mid-tier shops. Promoter holding at 54.73% is acceptable but unremarkable for a recent listing. I want to see five years of clean cash conversion, ROIC sustained above 20% through a downturn, and a clearly articulated competitive advantage before paying anywhere near 35x. None of those tests are met. Pass.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 25487,
+    "model_used": "opus",
+    "total_cost_usd": 0.10128699999999999,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 9692,
+      "cache_read_input_tokens": 13714,
+      "output_tokens": 1353,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9692,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10987,
+          "cache_creation_input_tokens": 1432,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1432
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

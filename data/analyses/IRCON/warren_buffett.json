@@ -1,0 +1,69 @@
+{
+  "symbol": "IRCON",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-19T12:59:12.715341Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "AVOID",
+    "investment_thesis": "Ircon is a government-backed EPC contractor with a solid order book and 17.6% revenue CAGR, but construction businesses inherently lack durable moats and the financials are deteriorating — debt has exploded from zero in FY20 to ₹5,138 Cr borrowings in FY25, while free cash flow clocked -₹2,161 Cr last year. At 23.7x P/E for a business earning 5.48% operating margins with no pricing power, I am not being paid to take on this risk.",
+    "key_strengths": [
+      "Strong government backing (65.2% promoter) with captive Railway Ministry order flow",
+      "Revenue CAGR of 17.6% over 9 years demonstrates consistent order execution",
+      "International project diversification across 25+ countries reduces single-market dependence"
+    ],
+    "key_risks": [
+      "Free cash flow deeply negative: -₹887 Cr (FY24) and -₹2,161 Cr (FY25) as working capital devours earnings",
+      "Debt surging: borrowings jumped from ₹0 in FY20 to ₹5,138 Cr in FY25, with finance costs CAGR at 19.9%",
+      "Revenue and profit both contracted YoY in FY25 (revenue -14%, net profit -22%), signaling execution or order slowdown"
+    ],
+    "red_flags": [
+      "OCF positive only 2 of last 5 years — earnings are not converting to cash",
+      "ROE of 11.3% and ROCE of 11.6% are well below my 15% threshold, despite government privilege",
+      "Operating margins of 5.48% offer zero cushion against cost overruns or project delays"
+    ],
+    "detailed_analysis": "Ircon is a classic example of a company I admire as a citizen but won't touch as an investor. Construction is a commodity business — you win contracts by bidding low, execute at thin margins, and pray for no cost overruns. The 'moat' here is government ownership, not a sustainable competitive advantage. Revenue is lumpy, cash flows are chronically negative, and the balance sheet is quietly being leveraged up at an alarming pace. The 9-year net profit CAGR of only 7.1% versus revenue CAGR of 17.6% tells you margins are being squeezed even as the business scales.\n\nAt 23.7x P/E, the market is pricing this as a quality compounder. It is not. It is a capital-intensive, thin-margin, government-dependent contractor where every rupee of reported profit requires significant working capital consumption. The EV/EBITDA of 19.37x is pricing in perfection for a business that generates negative free cash flow. I'd need the price to fall by 40-50% and free cash flow to turn consistently positive before I'd even reconsider.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 135829,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.19701945,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 22521,
+      "cache_read_input_tokens": 16239,
+      "output_tokens": 7179,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 22521,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 779,
+          "cache_read_input_tokens": 16239,
+          "cache_creation_input_tokens": 6282,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 6282
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

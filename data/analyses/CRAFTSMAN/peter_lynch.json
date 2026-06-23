@@ -1,0 +1,69 @@
+{
+  "symbol": "CRAFTSMAN",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-19T13:01:22.425219Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Craftsman Automation is a well-run engineering company with impressive long-term revenue growth, but it ticks too many of my red flag boxes simultaneously: P/E of 52x on a cyclical auto parts manufacturer with D/E of 1.09, net profit collapsing from INR 337 Cr to 201 Cr in FY25, and free cash flow of -706 Cr — that is a dangerous combination at this price. Cyclicals should be bought at high P/E when earnings are depressed and sold when P/E looks low, but right now earnings are falling AND the P/E is near all-time highs.",
+    "key_strengths": [
+      "Revenue CAGR of 22.8% over 8 years is genuinely impressive and demonstrates a diversified, winning business across powertrain, aluminium, and industrial segments",
+      "Operating cash flow has been consistently positive (5/5 years), showing the core business generates real cash before heavy capex",
+      "Large institutional holding (FII 15.2% + DII 28.3% = 43.5%) suggests sophisticated investors see long-term value"
+    ],
+    "key_risks": [
+      "D/E of 1.09 far exceeds my 0.6 threshold and is accelerating: borrowings jumped from 1,755 to 3,311 Cr in FY25, while finance costs rose to INR 217 Cr — interest burden is eating into profits",
+      "Net profit declined 40% in FY25 (337→201 Cr) while revenue grew 28% — this margin squeeze in an allegedly growing business is a serious red flag",
+      "P/E of 52x on a cyclical company with declining profits gives a PEG of ~4.3x (52/12.2%) — I simply cannot justify this price"
+    ],
+    "red_flags": [
+      "Free cash flow of -706 Cr in FY25 after capex of 992 Cr — the company is investing heavily (likely a large acquisition given INR 1,643 Cr investing outflow) but generating almost no residual cash",
+      "ROE of only 9.41% is below my 12% minimum threshold — for a capital-intensive cyclical, this suggests the returns on the huge asset base are inadequate",
+      "Operating margin of 9.59% is thin and contracting (EBITDA fell from 892 to 855 Cr despite 28% revenue growth) — costs are growing faster than revenues"
+    ],
+    "detailed_analysis": "Craftsman is a classic cyclical trap at the wrong point in the cycle — I'm being asked to pay 52x earnings for an auto parts company right when its earnings are falling sharply and its debt is ballooning. The INR 992 Cr capex in FY25 and INR 1,643 Cr investing outflow suggests a major acquisition or greenfield expansion, but I can't get excited about leverage-fueled growth when ROE is sub-10% and margins are compressing.\n\nThis is exactly the type of company where the story sounds compelling at the annual report level — diversified across CVs, PVs, two-wheelers, aluminium casting, warehousing — but the numbers tell a messier story. I would revisit Craftsman when the debt-fueled expansion begins generating returns, net profit recovers above INR 350 Cr, and D/E comes back below 0.7. Today's price reflects optimism I haven't yet seen justified in the financials.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 172377,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.22282485000000002,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 23875,
+      "cache_read_input_tokens": 15932,
+      "output_tokens": 8567,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 23875,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 527,
+          "cache_read_input_tokens": 15932,
+          "cache_creation_input_tokens": 7943,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 7943
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

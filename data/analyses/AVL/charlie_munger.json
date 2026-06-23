@@ -1,0 +1,70 @@
+{
+  "symbol": "AVL",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T16:38:14.255841Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Aditya Vision is a fast-growing regional consumer electronics retailer in Bihar/Eastern India with impressive 36% revenue CAGR, but the reported profits are a mirage — FCF has collapsed to -₹78 Cr in FY25 while the business relies on rising debt to fund operations. At P/E 61x with negative free cash flow, the market is pricing perfection into a thin-margin, no-moat retailer.",
+    "key_strengths": [
+      "Strong revenue CAGR of 36% (FY22-25), with net profit CAGR of 44.1% — execution in an underpenetrated Bihar/Eastern India market is real",
+      "ROCE of 29.95% is superficially attractive, suggesting efficient use of reported capital employed",
+      "FII+DII combined holding of 35.75% signals institutional interest in the regional retail growth story"
+    ],
+    "key_risks": [
+      "Free cash flow has deteriorated catastrophically: +₹13 Cr → -₹78 Cr over 4 years; OCF positive in only 2 of 4 years — earnings are not cash",
+      "Debt rose from ₹282 Cr to ₹480 Cr while financing CF is the only positive line item — the business is literally borrowing to survive its own growth",
+      "Pure retail with no pricing power, no proprietary product, and fierce competition from Reliance Digital, Croma, and e-commerce — moat is a geographic accident, not a durable advantage"
+    ],
+    "red_flags": [
+      "FCF/Net Income = -78/106 = -74% in FY25 — accounting profits massively overstate economic earnings",
+      "Total debt grew 70% in one year (₹319 Cr → ₹480 Cr) while OCF turned deeply negative (-₹41 Cr)",
+      "P/E of 61x and EV/EBITDA of 36.6x for a 6.57% operating margin retailer with negative FCF — valuation requires flawless execution forever",
+      "Working capital trap: as the store network expands, inventory and payable cycles are consuming cash faster than profits are created"
+    ],
+    "detailed_analysis": "Invert first: what does a terrible investment look like? A thin-margin retailer with no pricing power, burning cash, taking on debt to grow, and priced as if it's a software business. That is precisely Aditya Vision. The 6.57% operating margin leaves almost no buffer — a modest inventory markdown cycle, a competitive price war, or a consumer slowdown in Bihar erases the entire profit. The business model is structurally working-capital-intensive: as each new store opens, inventory must be stocked before a single sale occurs, and consumer electronics suppliers don't extend credit indefinitely. The result is visible in the data — OCF went from +₹32 Cr to -₹41 Cr as revenue nearly tripled.\n\nThe valuation is the second fatal flaw. At P/E 61x with negative FCF, the market is discounting a long runway of flawless compounding for a specialty retailer with a 6.57% operating margin. Munger's rule applies: in retail, unless you have an extraordinary structural advantage (Costco's membership model, D-Mart's cost discipline), the terminal value is far lower than the headline growth implies. ROCE of 29.95% is likely inflated by favorable payable terms masking the true capital intensity. The promoter holding at 47% is adequate but not exceptional, and the FII interest at 16% likely reflects momentum buying, not deep quality conviction. At this price, the margin of safety is deeply negative.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 62801,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08071665,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10571,
+      "cache_read_input_tokens": 8338,
+      "output_tokens": 2571,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10571
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 401,
+          "cache_read_input_tokens": 8338,
+          "cache_creation_input_tokens": 2233,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2233,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

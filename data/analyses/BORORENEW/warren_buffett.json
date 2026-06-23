@@ -1,0 +1,70 @@
+{
+  "symbol": "BORORENEW",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T16:46:28.847058Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Borosil Renewables is India's sole domestic solar glass manufacturer but operates in a capital-intensive commodity business with zero pricing power against Chinese imports, evidenced by EBITDA collapsing from ₹256 Cr (2022) to ₹73 Cr (2025) even as revenue grew 130%. At 73x P/E on an actively loss-making business (net loss ₹87 Cr in FY25), the valuation is detached from any rational anchor.",
+    "key_strengths": [
+      "Sole domestic manufacturer of solar glass — structural import-substitution thesis with policy tailwinds",
+      "Moderate debt post-deleveraging: D/E 0.23, borrowings reduced from ₹576 Cr (2024) to ₹203 Cr (2025)",
+      "Strong promoter commitment at 58.77% holding"
+    ],
+    "key_risks": [
+      "Pricing power destroyed by Chinese solar glass imports — margins collapsed from 40%+ EBITDA margins (2022) to ~5% (2025) despite revenue doubling",
+      "Accelerating losses: net profit swung from +₹166 Cr (2022) to -₹87 Cr (2025), with ROE at -8.9% and ROCE at -4.4%",
+      "Chronically negative free cash flow — FCF negative in 4 of last 5 years, with ₹348-373 Cr annual capex in 2022-23 yielding no earnings return"
+    ],
+    "red_flags": [
+      "73x P/E assigned to a loss-making company is speculative fantasy pricing",
+      "EBITDA crashed 71% (₹256 Cr → ₹73 Cr) while revenue grew 130% — a textbook sign of commodity price war with no floor in sight",
+      "Finance costs jumped 10x from ₹3 Cr (2022) to ₹32 Cr (2025) — the debt-funded expansion has not generated returns",
+      "Other income (dividends, investments) historically inflated net profits, masking weak core operating earnings"
+    ],
+    "detailed_analysis": "Borosil Renewables holds a structurally interesting position as India's only solar glass maker, but interesting positioning is not the same as a durable economic moat. The numbers tell a brutal story: revenues grew from ₹642 Cr to ₹1,476 Cr between 2022 and 2025, yet EBITDA collapsed from ₹256 Cr to ₹73 Cr and net profit swung from +₹166 Cr to -₹87 Cr. This is the signature of a commodity business with no pricing power — one where a competitor (in this case, Chinese manufacturers with government-subsidized overcapacity) sets the price and you accept it or lose volume. I've always said that a moat must be measured by how much pricing power you have, not by how unique your product sounds.\n\nThe capital allocation record is poor. The company spent ₹373 Cr, ₹348 Cr, and ₹217 Cr in capex over 2022-2024, funded partly by debt that ballooned to ₹576 Cr in 2024. That expansion generated no incremental earnings — returns are now deeply negative. At 73x P/E on a business losing ₹87 Cr annually, the market is pricing in a dramatic recovery that depends entirely on anti-dumping duties or Chinese supply curtailment — neither of which is within management's control. I want businesses where the CEO's skill drives outcomes, not trade policy in Beijing. This is a speculator's bet, not an investor's business.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 49049,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07834035,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10851,
+      "cache_read_input_tokens": 8817,
+      "output_tokens": 2333,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10851
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 355,
+          "cache_read_input_tokens": 8817,
+          "cache_creation_input_tokens": 2034,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2034,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

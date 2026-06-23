@@ -1,0 +1,71 @@
+{
+  "symbol": "OPTIEMUS",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T22:05:39.911722Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Optiemus is a low-margin electronics distributor trading at 55x earnings with just 11.6% ROE and negative free cash flow for 2 of the last 3 years — the market is pricing it as a technology compounder when it's a fragile middleman. The business already collapsed 90% in revenue from 2016-2021, proving it has no durable competitive advantage worth paying for.",
+    "key_strengths": [
+      "Revenue recovery underway — from 182 Cr trough (2021) to 1,890 Cr (2025), approaching prior peak",
+      "Low leverage for now — Debt/Equity of 0.32; cash on hand jumped to 144 Cr in 2025 (likely from fundraise)",
+      "High promoter skin-in-the-game at 72.17%, reducing agency risk"
+    ],
+    "key_risks": [
+      "Catastrophic moat failure risk — revenue already imploded 90% once (1,922 Cr → 182 Cr) when a brand relationship ended; could happen again",
+      "Negative FCF despite reported profits — OCF was -13 Cr in FY25 against 63 Cr net profit; FCF was -96 Cr, signaling poor earnings quality and capital-hungry growth",
+      "Valuation is indefensible — 55x P/E and 33x EV/EBITDA for a 5.28% operating margin distributor with 14.4% ROCE is speculation, not investment"
+    ],
+    "red_flags": [
+      "Revenue CAGR of -0.2% over 9 years — zero real growth after a full decade",
+      "Finance costs surged 5x from 5 Cr (FY22) to 30 Cr (FY25) as debt climbs back toward 2020 peak levels",
+      "Other income spikes (206 Cr in FY21, 63 Cr in FY19, 54 Cr in FY23) have repeatedly masked operating losses — earnings are not clean",
+      "CWIP jumped from 3 Cr to 99 Cr in FY25, signaling a large capex bet whose returns are unproven",
+      "Net profit trend labeled 'contracting' even as revenue expands — operating leverage is moving the wrong way"
+    ],
+    "detailed_analysis": "Invert first: what would make this a terrible investment? A business with no pricing power, dependent on brand distribution contracts that can vanish overnight, operating margins under 6%, and a market cap pricing in compounding growth that has never materialized over nine years. That description fits Optiemus exactly. The revenue chart — 1,922 Cr → 182 Cr → 1,890 Cr — is not a growth story; it's a survival story. ROCE of 14.4% is barely above my 12% floor and is likely inflated by the recent equity raise (reserves jumped from 341 to 627 Cr in FY25), which will dilute ROCE further as capital is deployed. The FCF/Net Income ratio is deeply negative in FY25 (-96 Cr FCF vs. +63 Cr net profit), a classic red flag for working-capital-intensive distribution businesses booking profits before cash is collected.\n\nAt 55x P/E and 33x EV/EBITDA, the market is paying a premium SaaS multiple for what is structurally a trading/distribution house with aspirations in drone and wearable manufacturing. The manufacturing pivot might be strategically sensible — India's PLI scheme creates incentives — but Optiemus has no demonstrated execution edge, and the capex cycle (83 Cr in FY25, 100 Cr in FY23) is already destroying free cash. Munger's principle is clear: a moat must be identifiable and durable. Here, I cannot identify one. The only scenario justifying this price is flawless execution of a manufacturing transformation — a single-point-of-success bet I will not make at this valuation.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 62638,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08488815,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11087,
+      "cache_read_input_tokens": 8843,
+      "output_tokens": 2710,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11087,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 517,
+          "cache_read_input_tokens": 8843,
+          "cache_creation_input_tokens": 2244,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2244
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

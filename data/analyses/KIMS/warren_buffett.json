@@ -1,0 +1,69 @@
+{
+  "symbol": "KIMS",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-19T13:07:28.637888Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "KIMS operates a genuine hospital brand in South India with strong OCF generation (INR 582 Cr, 5/5 years positive) and 21.9% revenue CAGR — but borrowings have exploded from INR 257 Cr to INR 3,187 Cr in three years, FCF is -INR 380 Cr and deteriorating, and the stock trades at 93x trailing P/E. Paying that price for a capital-intensive hospital business drowning in expansion debt is precisely the mistake I've spent 60 years learning not to make.",
+    "key_strengths": [
+      "Established multi-specialty brand in South India (Telangana/AP) with strong clinical reputation; OCF positive all 5 years reaching INR 582 Cr in FY25",
+      "Revenue has compounded at 21.9% over 9 years from INR 512 Cr to INR 3,035 Cr — secular healthcare demand is real",
+      "ROE of 18.5% remains above 15% threshold despite the heavy debt-funded expansion phase"
+    ],
+    "key_risks": [
+      "Debt explosion: borrowings grew from INR 257 Cr (FY22) to INR 3,187 Cr (FY25) — a 12x surge in three years — with finance costs tripling to INR 100 Cr; debt/equity now 1.24",
+      "Free cash flow: -INR 140 Cr (FY23), -INR 125 Cr (FY24), -INR 380 Cr (FY25) — the cash burn is accelerating, entirely debt-and-equity funded",
+      "Net profit stalled: INR 366 Cr (FY23) → INR 336 Cr (FY24) → INR 415 Cr (FY25) — while capex surges to INR 1,009 Cr, returns are slow to materialise"
+    ],
+    "red_flags": [
+      "93x trailing P/E for a capital-intensive hospital chain with 12% operating margins and D/E of 1.24 — this is speculative valuation territory, not value investing",
+      "CWIP of INR 573 Cr alongside borrowings of INR 3,187 Cr signals the hospital is being built largely on borrowed money; if new hospitals ramp slower than projected, the debt service becomes a serious problem",
+      "Net losses in FY18 and FY19 (-INR 46 Cr, -INR 49 Cr) remind me that hospitals have painful gestation periods — the new debt-funded beds will go through the same cycle"
+    ],
+    "detailed_analysis": "KIMS has a legitimate healthcare franchise and the India hospital story is undeniably compelling over a decade. The OCF trajectory from INR 202 Cr to INR 582 Cr demonstrates that existing hospitals earn well. The clinical breadth across transplants, oncology, and cardiac surgery creates some differentiation from commodity hospitals.\n\nBut I will not pay 93 times earnings for a business burning INR 380 Cr of free cash flow per year while quadrupling its debt load. Hospitals are capital-intensive, geographically concentrated, and highly regulated — not the royalty-like businesses I seek. The promoter holds only 34.1%, and the expansion plan depends on borrowed capital delivering projected returns. At 30-35x P/E with a more manageable balance sheet, this becomes an interesting conversation. At current prices, the market is assuming perfection in execution of a debt-funded rollout — that is not a bet I make.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 164798,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.23207850000000002,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 23966,
+      "cache_read_input_tokens": 15440,
+      "output_tokens": 9171,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 23966,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 521,
+          "cache_read_input_tokens": 15440,
+          "cache_creation_input_tokens": 8526,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8526
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

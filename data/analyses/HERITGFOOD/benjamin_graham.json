@@ -1,0 +1,71 @@
+{
+  "symbol": "HERITGFOOD",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T17:35:56.706192Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Heritage Foods trades at INR 360 against a computed Graham Number of ~INR 227 — a 59% premium to intrinsic value by my formula — with a P/B of 3.20x far exceeding my 1.5x ceiling, offering no margin of safety whatsoever. The business has proven it can lose money (net loss of INR 169 Cr in FY2020, negative operating income in both FY2018 and FY2020), which disqualifies it under my requirement for uninterrupted earnings over five years.",
+    "key_strengths": [
+      "Low leverage: D/E of 0.21 and interest coverage ~19x (EBIT 326 / Finance cost 17) — the balance sheet can survive stress",
+      "ROCE of 25.3% is exceptional for a thin-margin dairy business, suggesting capital is deployed with discipline",
+      "Revenue has grown consistently from INR 2,381 Cr (2016) to INR 4,135 Cr (2025) at a 6.3% CAGR with no revenue collapse"
+    ],
+    "key_risks": [
+      "Razor-thin operating margin of 3.81% leaves virtually no buffer — any input cost spike (milk procurement) can turn profitable years into losses, as happened in FY2020",
+      "Earnings are structurally volatile and unreliable: net profit swung from +INR 278 Cr (2017, inflated by INR 251 Cr other income) to -INR 169 Cr (2020) — these are not the steady, predictable earnings I require",
+      "Price offers zero margin of safety: P/E 20.4x vs my 15x ceiling, P/B 3.20x vs my 1.5x ceiling, and Graham Number ~INR 227 implies 37% downside from current price"
+    ],
+    "red_flags": [
+      "Graham Number ~INR 227 vs current price INR 360 — stock is 59% above intrinsic value by my calculation (sqrt(22.5 × EPS ~20.3 × BVPS ~112.5))",
+      "Net loss of INR 169 Cr in FY2020 and negative EBITDA/operating income in both FY2018 and FY2020 — fails my 5-year consecutive positive earnings test",
+      "FY2017 net profit of INR 278 Cr was largely fictitious from an operating standpoint — INR 251 Cr came from 'Other Income' (asset disposals), not the dairy business",
+      "Heavy and accelerating capex (INR 176 Cr in FY2025 vs INR 46 Cr in FY2022) with CWIP jumping to INR 159 Cr — capital is being committed to growth promises, not current earning power",
+      "FII holding of only 2.21% and DII of 6.21% suggest institutional investors share my scepticism about valuation"
+    ],
+    "detailed_analysis": "Heritage Foods fails my quantitative filters on the two most important dimensions: price relative to book value and price relative to earnings. At P/B of 3.20x, an investor is paying INR 3.20 for every rupee of net assets — I prefer to pay less than INR 1.50 and ideally less than INR 1.00. At P/E of 20.4x, the market is pricing in optimism I have no interest in paying for. My Graham Number — the geometric mean of earnings and asset value — works out to roughly INR 227, meaning the intelligent investor would need the price to fall nearly 37% before even beginning to consider a position. The operating margins of 3.81% are dangerously thin for a commodity-linked processor; a 4% rise in milk procurement costs can entirely eliminate operating profit, as FY2018 and FY2020 demonstrated in practice.\n\nWhat troubles me most is the character of reported profits. The celebrated FY2017 net profit of INR 278 Cr was not earned in the dairy business — INR 251 Cr came from other income, almost certainly the sale of the retail (Heritage Fresh) segment. Similarly FY2018 showed INR 402 Cr of other income against a sharply negative operating result. When a company's \"profits\" depend on asset sales rather than repeatable operations, I am not comforted. The last five years show consistent positive net income (FY2021–2025), which is an improvement, and the balance sheet is in reasonable shape with D/E of 0.21 — but I do not buy turnarounds at premium multiples. Mr. Market is pricing Heritage Foods as a growth story; I would require it at a fraction of its current price to compensate for the earnings volatility, thin margins, and the complete absence of a margin of safety.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 63412,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08461739999999998,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9680,
+      "cache_read_input_tokens": 11078,
+      "output_tokens": 2999,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9680
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 347,
+          "cache_read_input_tokens": 9028,
+          "cache_creation_input_tokens": 2702,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2702,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

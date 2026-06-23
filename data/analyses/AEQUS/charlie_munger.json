@@ -1,0 +1,70 @@
+{
+  "symbol": "AEQUS",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T16:14:37.578515Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Aequs is a capital-destroying contract manufacturer with negative ROCE (1.11%), accelerating free cash flow burn (-239 Cr in FY25), and zero demonstrated ability to earn returns on its massive capex program. Trading at 288x EV/EBITDA with no earnings in sight, the valuation is pure speculation on an unproven turnaround.",
+    "key_strengths": [
+      "High gross margin (56%) suggests pricing power at the contract level, though obliterated by overhead and finance costs",
+      "Promoter holding of 59% provides some alignment; significant equity raise in FY24 reduced leverage temporarily",
+      "CWIP of INR 395 Cr represents optionality if aerospace/PLI-linked capacity eventually ramps — but 'eventually' is doing all the work here"
+    ],
+    "key_risks": [
+      "FCF destruction accelerating: -76 → -175 → -239 Cr; capex of 265 Cr in FY25 with no earnings payback visible",
+      "Conglomerate dilution — aerospace, toys, cookware, logistics in one entity signals lack of focus and makes moat assessment impossible",
+      "Debt/Equity of 1.08 with 64 Cr annual finance cost on near-zero operating income; any revenue softness triggers covenant risk"
+    ],
+    "red_flags": [
+      "Net losses in all 3 years (-110, -14, -102 Cr); FY25 loss widened sharply after apparent FY24 improvement — not a trend, just noise",
+      "Reserves were NEGATIVE (-146 Cr) as recently as FY23 — this business has consumed its own equity base",
+      "Revenue declined FY24→FY25 (965→925 Cr) while capex surged to 265 Cr — spending more, earning less",
+      "Forward P/E of 1,140x implies the market is pricing a profit that the business has never demonstrated it can generate"
+    ],
+    "detailed_analysis": "Invert first, as I always do: what would make this investment catastrophic? A capital-intensive contract manufacturer with no demonstrated ROIC, burning cash at an accelerating rate, diversified across unrelated industries, carrying meaningful debt, and priced as if it were a compounder. That description IS Aequs today. ROCE of 1.11% means the business earns less than its cost of capital by a wide margin — every rupee of the INR 1,903 Cr asset base is working against shareholders. The 56% gross margin is a mirage; it evaporates into SG&A, depreciation, and 64 Cr of annual interest, leaving an operating loss.\n\nThe capital allocation story is alarming. Management has deployed 265 Cr of capex in FY25 (CWIP now 395 Cr) while operating cash flow is barely positive at 26 Cr. Free cash flow of -239 Cr means the company consumed nearly a quarter of its equity in a single year. The equity raise of ~500 Cr in FY24 bought temporary balance sheet relief, but the underlying business has not earned its cost of capital in any year of this data set. At 288x EV/EBITDA and 10x sales for a loss-making, sub-scale contract manufacturer, the market is pricing perfection on a business that has delivered consistent imperfection. This violates every principle I hold dear — I require businesses that already demonstrate high returns on capital, not ones that promise them.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 47384,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.044933549999999996,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 1849,
+      "cache_read_input_tokens": 16486,
+      "output_tokens": 2203,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1849,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 405,
+          "cache_read_input_tokens": 8243,
+          "cache_creation_input_tokens": 1849,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1849
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "symbol": "CUB",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-19T06:12:57.589220Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "City Union Bank is a 120-year-old conservatively run South Indian franchise with a consistent profit track record — net profit grew at 13.9% CAGR over three years — trading at a reasonable 12.5x forward PE. The bank falls just short of my quality threshold with ROE of 11.87% and finance costs growing faster than revenues, flagging NIM compression ahead.",
+    "key_strengths": [
+      "Net profit growing at 13.9% CAGR (FY22–FY25) with OCF positive all four years — demonstrating consistent earnings conversion",
+      "Conservative 120-year franchise with deep SME lending relationships in Tamil Nadu; a genuine regional moat",
+      "Forward P/E of 12.5x and P/B of 1.92x are reasonable for the quality and growth on offer"
+    ],
+    "key_risks": [
+      "ROE of 11.87% is below my 15% threshold — the bank is not earning an exceptional return on shareholder capital",
+      "Finance costs rising at 17.2% CAGR vs revenue at 6.3% CAGR — deposit cost pressure is actively squeezing net interest margins",
+      "Limited data on GNPA, NNPA, and CASA ratio makes it impossible to assess asset quality, which is the lifeblood of any bank"
+    ],
+    "red_flags": [
+      "OCF was volatile — fell to INR 436 Cr in FY24 before recovering to INR 1,128 Cr in FY25, suggesting lumpy credit/recovery cycles",
+      "No granular asset quality disclosures in the data provided; lending to SMEs in a regional market can mask concentration risk"
+    ],
+    "detailed_analysis": "City Union Bank has earned its conservative reputation over more than a century of South Indian banking. The loan book has grown steadily from INR 61,531 Cr to INR 77,623 Cr in total assets, while equity has compounded from INR 6,586 Cr to INR 9,467 Cr — book value creation is real. The forward P/E of 12.5x prices in continued growth without demanding a premium, which is how I like to buy banks.\n\nHowever, a bank is only as good as its asset quality and return profile. ROE of 11.87% is adequate but not the 15%+ I look for in an exceptional financial institution. More importantly, finance costs are growing at nearly three times the rate of revenues — this is classic NIM compression as the bank pays up for deposits in a competitive rate environment. Without GNPA and CASA data, I cannot be confident the earnings growth is sustainable. A watchlist candidate, not an urgent buy.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 197561,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.27151575000000006,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 25851,
+      "cache_read_input_tokens": 15335,
+      "output_tokens": 11331,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 25851,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 656,
+          "cache_read_input_tokens": 15335,
+          "cache_creation_input_tokens": 10516,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 10516
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

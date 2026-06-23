@@ -1,0 +1,69 @@
+{
+  "symbol": "CSBBANK",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T17:00:38.331809Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "CSB Bank trades marginally below its Graham Number (₹399.9 vs. calculated ₹457) with a P/E of 11.16 and P/B of 1.48, meeting several quantitative thresholds — yet finance costs are compounding at 33.8% CAGR against revenue growth of only 20.5%, squeezing the spread and decelerating net profit growth to a mere 4.8% in the latest year. The margin of safety is too thin and the earnings trajectory too weak to justify a confident purchase.",
+    "key_strengths": [
+      "Trades below Graham Number (₹399.9 vs. ₹457 calculated), the most fundamental valuation test I apply",
+      "P/E of 11.16 (well under my 15x ceiling) and forward P/E of 7.86 suggest the market prices in limited optimism",
+      "Four consecutive years of positive net profit (₹458 → ₹547 → ₹567 → ₹594 Cr) satisfies my minimum earnings continuity requirement"
+    ],
+    "key_risks": [
+      "Finance costs compounding at 33.8% CAGR (₹885 → ₹2,121 Cr) — rising far faster than revenue (20.5%) — signals severe NIM compression and deteriorating lending economics",
+      "Net profit growth has nearly stalled: only 4.8% YoY in FY2025 (₹567→₹594 Cr) despite 18.8% revenue growth, implying the spread squeeze is worsening",
+      "Operating cash flow was deeply negative in FY2025 (−₹5,256 Cr), reflecting aggressive loan book expansion funded largely by a tripling of debt (₹1,757→₹5,246 Cr) — leverage rising at an uncomfortable pace"
+    ],
+    "red_flags": [
+      "Finance cost CAGR (33.8%) more than 1.6× revenue CAGR (20.5%) — a bank's core economics are deteriorating, not improving",
+      "OCF positive in only 2 of 4 years; FY2025 FCF of −₹5,556 Cr is not merely loan-book growth noise at this scale",
+      "P/B of 1.48 sits precisely at my upper boundary — there is virtually no book-value cushion if asset quality deteriorates"
+    ],
+    "detailed_analysis": "CSB Bank passes several of my arithmetic filters that most stocks fail: the price of ₹399.9 falls below the Graham Number of approximately ₹457 (derived from EPS ≈ ₹35 and BVPS ≈ ₹266), the P/E of 11.16 is comfortably under 15, and the P/B of 1.48 is just inside my 1.5 ceiling. The bank has an unbroken four-year profit record and 40% promoter ownership by Fairfax India (a disciplined capital allocator), which provides some governance comfort. Revenue has grown at a healthy 20.5% CAGR, and total equity has risen from ₹2,651 Cr to ₹4,498 Cr, strengthening the book.\n\nHowever, the numbers that trouble me most are the ones inside the income statement. Finance costs have grown at 33.8% CAGR — outpacing revenue growth by more than 13 percentage points — which means the bank is paying depositors and lenders progressively more while earning proportionally less on loans. The consequence is plain: net profit growth has slowed from 19.5% in FY2023 to a mere 4.8% in FY2025. For a bank, earning power *is* intrinsic value, and earning power here is eroding. I also note that operating cash flow swung to −₹5,256 Cr in FY2025 and borrowings nearly tripled in a single year. Rapid loan-book expansion can mask credit problems that only surface in the next credit cycle. At a P/B of 1.48 with no meaningful safety buffer against book erosion, I cannot call this a bargain — only a modestly priced bank with deteriorating spread dynamics.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 64735,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08426985000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9281,
+      "cache_read_input_tokens": 10607,
+      "output_tokens": 3085,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9281
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 413,
+          "cache_read_input_tokens": 8557,
+          "cache_creation_input_tokens": 2774,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2774,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

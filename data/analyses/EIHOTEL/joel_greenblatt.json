@@ -1,0 +1,69 @@
+{
+  "symbol": "EIHOTEL",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-22T16:26:09.618402Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "EIH (Oberoi Hotels) is a high-quality hospitality business with ~23% ROCE and virtually no debt, but at a market cap of INR 20,130 Cr against FY2025 EBIT of INR 1,028 Cr, the Magic Formula earnings yield is only ~5.1% — well below my 6% minimum threshold. Good business, wrong price.",
+    "key_strengths": [
+      "Near debt-free balance sheet (D/E 0.05) with INR 378 Cr cash, giving financial flexibility for the ongoing expansion (CWIP up to INR 403 Cr)",
+      "Exceptional operating margins at 38.9% — the Oberoi brand commands genuine pricing power and operating leverage is evident as EBITDA grew from INR 48 Cr (FY2022) to INR 1,298 Cr (FY2025)",
+      "ROCE of 23.4% clears the Magic Formula 20%+ threshold, confirming a genuinely good business with above-cost-of-capital returns"
+    ],
+    "key_risks": [
+      "Overvaluation kills the trade: EV ~INR 20,017 Cr on EBIT of INR 1,028 Cr yields only 5.1% earnings yield — the Magic Formula demands >12% for a strong buy",
+      "Capex surge (INR 485 Cr in FY2025 vs. INR 138 Cr in FY2023) is crushing FCF — FCF fell to INR 346 Cr despite OCF of INR 825 Cr, and CWIP at INR 403 Cr signals more spend ahead",
+      "Revenue 9Y CAGR of only 5.7% exposes thin organic growth; the profitability recovery is largely post-COVID normalization, not structural acceleration"
+    ],
+    "red_flags": [
+      "Earnings yield of ~5.1% fails Magic Formula minimum of 6% — EV/EBIT multiple of ~19.5x is expensive for a hospitality operator",
+      "OCF positive only 3 of last 5 years; COVID destroyed two years of earnings entirely — cyclicality is a structural feature of this business",
+      "Promoter stake of 32.85% is low for a family-controlled luxury hotel group; FII interest at just 6.16% suggests limited global institutional conviction"
+    ],
+    "detailed_analysis": "Running the Magic Formula on EIH: Enterprise Value = INR 20,130 Cr (market cap) + INR 265 Cr (debt) − INR 378 Cr (cash) ≈ INR 20,017 Cr. FY2025 EBIT = INR 1,028 Cr. Earnings Yield = 5.1% — this fails my threshold outright. On the quality side, ROCE of 23.4% and operating margins of 38.9% confirm this is a genuinely good business; the Oberoi brand earns real returns on capital. But the Magic Formula demands BOTH legs of the trade, and EIH only delivers one.\n\nThe FY2025 numbers look optically strong — net profit up 14% to INR 770 Cr, OCF at INR 825 Cr — but the capex acceleration (INR 485 Cr in FY2025, up 3.5x from FY2023) is compressing FCF to INR 346 Cr and will likely keep pressure on near-term earnings yield. The stock is priced for continued perfection at 26.5x P/E and 17.9x EV/EBITDA. I'd want to see this at half the current EV — around INR 8,000–9,000 Cr — for the earnings yield to reach 12%+ and make it a Magic Formula candidate. Until then, it's a HOLD for existing holders who believe in the long-cycle hospitality recovery story.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 51106,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08500319999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11344,
+      "cache_read_input_tokens": 9114,
+      "output_tokens": 2648,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11344,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 453,
+          "cache_read_input_tokens": 9114,
+          "cache_creation_input_tokens": 2230,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2230
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "symbol": "JUSTDIAL",
+  "persona": "howard_marks",
+  "persona_display_name": "Howard Marks",
+  "analyzed_at": "2026-04-18T18:16:20.042765Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Just Dial is a classic \"asset play\" — trading at 0.92x book with a negative EV (net cash/investments exceed market cap), meaning the operating business is essentially free. However, the core local-search business faces secular decline from Google/Maps, and a 6.1% revenue CAGR over 9 years for an internet company signals structural stagnation, not a turnaround.",
+    "key_strengths": [
+      "Hard asset floor: P/B of 0.92 and negative EV/EBITDA (-3.06x) imply balance sheet worth more than market cap — ~INR 4,606 Cr equity vs INR 4,675 Cr market cap",
+      "Reliance ownership (74.15%) provides strategic backing, potential JD Mart B2B synergies, and eliminates financing risk given near-zero debt (D/E: 0.02)",
+      "Improving FCF trajectory: OCF expanded from INR 39 Cr (2022) to INR 311 Cr (2025), 5/5 positive years — real cash generation, not accounting fiction"
+    ],
+    "key_risks": [
+      "Earnings quality is poor: ~INR 300+ Cr of 'Other Income' from financial assets inflates net profit (INR 584 Cr); core business EBITDA of only INR 369 Cr on INR 1,142 Cr revenue — strip out treasury income and the operating P/E is far higher than 33.5x",
+      "Secular business model decline: 6.1% revenue CAGR over 9 years for an internet directory is inflation-level — Google Search and Maps continue to erode Just Dial's utility in India",
+      "Minority shareholder risk: Reliance (74.15%) controls capital allocation; the 2022 preferential allotment balloned equity from INR 1,264 Cr to INR 3,486 Cr — returns on that deployed capital (ROE 3.63%, ROCE 4.81%) are well below any reasonable cost of equity"
+    ],
+    "red_flags": [
+      "ROE of 3.63% and ROCE of 4.81% — capital is being destroyed in real terms; a company sitting on a INR 4,600+ Cr equity base and earning sub-5% returns is a value trap in disguise",
+      "Operating Income (INR 675 Cr) materially exceeds EBITDA (INR 369 Cr) in 2025 — a mathematical red flag suggesting 'Other Income' is being blended into operating results in the data, masking the weakness of the core business"
+    ],
+    "detailed_analysis": "The second-level question here is not \"is Just Dial cheap?\" — it clearly looks cheap on P/B and EV metrics — but rather \"why is it cheap, and is that cheapness deserved?\" The answer is largely yes. The investment portfolio (financial assets embedded in the INR 5,521 Cr balance sheet) generates more income than the operating search business does. A directory company earning a 3.63% ROE in an era of 7%+ risk-free rates in India is systematically destroying shareholder value. The Forward P/E of 7.69x sounds attractive, but a majority of that earnings power resides in treasury returns, not in a growing operating franchise. Revenue at INR 1,142 Cr in 2025 has grown at just 6.1% CAGR from INR 668 Cr in 2016 — slower than nominal Indian GDP growth. This is not a misunderstood grower; it is a business in managed decline.\n\nThe saving grace — and what keeps this from being a pure AVOID — is the hard floor provided by the balance sheet and Reliance's strategic interest. P/B below 1.0x with predominantly financial assets means the downside is genuinely cushioned; you are unlikely to suffer permanent capital loss from current levels. JD Mart's B2B marketplace ambitions represent a real, if unproven, option on Reliance's commerce ecosystem. FCF of INR 305 Cr on a INR 4,675 Cr market cap implies a ~6.5% FCF yield — right at the threshold of acceptable. But for a business with this trajectory and this level of strategic uncertainty under a dominant promoter, risk and reward are roughly balanced. This is a cigar butt, not a compounder. Park it at fair value; wait for a material discount before adding conviction.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 78945,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.10531979999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10730,
+      "cache_read_input_tokens": 11211,
+      "output_tokens": 4114,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10730
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 527,
+          "cache_read_input_tokens": 9157,
+          "cache_creation_input_tokens": 3627,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 3627,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "symbol": "544366",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-20T19:39:59.961936Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "A 17.5 Cr micro-cap trader of plastic ropes, granules, and gold trades at 26.9x earnings with a derisory 0.08% ROE — the antithesis of a Graham bargain. There is no margin of safety here; the price embeds speculative hopes rather than proven earning power.",
+    "key_strengths": [
+      "Promoter skin-in-the-game at 72.92% aligns insiders with outcome",
+      "Long corporate history since 1995 — not a fresh IPO",
+      "Small balance sheet means limited systemic debt exposure (unverified)"
+    ],
+    "key_risks": [
+      "P/E of 26.9 is nearly 2x Graham's 15 ceiling — no margin of safety",
+      "ROE of 0.08% indicates earnings power is essentially nil",
+      "Trading business in ropes/granules/gold has no moat and volatile margins"
+    ],
+    "red_flags": [
+      "Near-zero ROE (0.08%) is a quantitative disqualifier",
+      "High P/E against negligible profitability implies speculative pricing",
+      "Micro-cap (17.5 Cr) liquidity and governance risks",
+      "No visible dividend yield data to confirm cash returns"
+    ],
+    "detailed_analysis": "From my framework, this security fails the most basic quantitative tests. A 0.08% ROE means the business is barely generating any return on shareholder capital — effectively the company earns roughly 65 lakh on what appears to be 17.5 Cr of market value, and likely far less on book. Paying 26.9 times those negligible earnings is the opposite of demanding a margin of safety; it is paying a premium for the right to own a mediocre trading operation. Without disclosed book value, current ratio, debt-to-equity, or earnings history, I cannot even compute the Graham Number — but the available numbers alone condemn the purchase.\n\nThe business itself — trading plastic ropes, granules, and gold — is a low-moat intermediation activity subject to working-capital strain and commodity price swings. Promoter holding of 72.92% is a mild positive for alignment but also signals a tightly-held micro-cap where Mr. Market's pricing may be manipulable and exits illiquid. The prudent investor, as I have written, refuses to confuse a low absolute price (INR 45.60) with cheapness. At these fundamentals, this is a speculation, not an investment. Avoid.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "insufficient_data",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 23613,
+    "model_used": "opus",
+    "total_cost_usd": 0.09466175,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 9645,
+      "cache_read_input_tokens": 12751,
+      "output_tokens": 1119,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9645,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10618,
+          "cache_creation_input_tokens": 1160,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1160
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

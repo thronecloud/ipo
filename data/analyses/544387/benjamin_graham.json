@@ -1,0 +1,70 @@
+{
+  "symbol": "544387",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-20T19:46:11.551762Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Desco Infratech is a recently-listed micro-cap infrastructure contractor with a derisory 0.26% ROE and no verifiable multi-year earnings record — it fails virtually every quantitative test I require. The 10.4x P/E is illusory given earnings power this thin, and there is no margin of safety for a disciplined investor.",
+    "key_strengths": [
+      "P/E of 10.4x is below my 15x ceiling on reported figures",
+      "Promoter holding of 58.31% indicates skin in the game",
+      "Exposure to diversified infra verticals (CGD, renewables, water)"
+    ],
+    "key_risks": [
+      "ROE of 0.26% signals negligible earning power on deployed capital",
+      "Recently listed micro-cap (INR 124 Cr) — no long earnings track record to verify",
+      "Civil construction is working-capital heavy, cyclical, and prone to receivable losses"
+    ],
+    "red_flags": [
+      "ROE effectively zero — reported EPS likely a rounding artifact",
+      "Negligible institutional ownership (DII 2.2%, FII 0%) — no independent validation",
+      "Recent BSE SME-style listing; IPO pricing favors the seller, not the buyer",
+      "No disclosed dividend record, current ratio, or debt metrics"
+    ],
+    "detailed_analysis": "An ROE of 0.26% is the most damning number in this dossier. It means that on whatever book equity supports this business, management is generating almost nothing for owners — a P/E of 10.4 on near-zero earnings is mathematically trivial and economically meaningless. Combined with a market capitalization of only INR 124 Cr and a recent BSE listing code (544387), this has every hallmark of the speculative small-issue offerings I warned against in Chapter 6 of The Intelligent Investor: the underwriter and promoter sell at the top of favorable market conditions while the public absorbs the risk.\n\nI cannot verify the Graham Number, current ratio above 2.0, debt-to-equity under 0.5, or five consecutive years of adequate earnings from the data provided — and civil construction companies routinely fail the last three. Until Desco demonstrates at least five years of audited, stable earnings, a robust balance sheet, and a dividend record, it belongs in the speculative bucket, not the investment bucket. Mr. Market is offering a story here, not a bargain. Pass.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "insufficient_data",
+      "valuation": "overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 46394,
+    "model_used": "opus",
+    "total_cost_usd": 0.09684875000000001,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 9117,
+      "cache_read_input_tokens": 13525,
+      "output_tokens": 1323,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9117,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10639,
+          "cache_creation_input_tokens": 1364,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1364
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

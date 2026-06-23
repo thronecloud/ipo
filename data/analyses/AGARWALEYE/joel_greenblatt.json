@@ -1,0 +1,69 @@
+{
+  "symbol": "AGARWALEYE",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T16:16:55.227814Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Dr. Agarwal's fails both Magic Formula tests: Earnings Yield of ~3.1% (EBIT ₹463 Cr / EV ~₹14,932 Cr) is far below my 6% minimum, and ROCE of 9.99% signals the business doesn't yet earn high returns on the capital it is aggressively deploying. Paying 110x earnings for a company with 4.76% ROE is the opposite of what the Magic Formula demands.",
+    "key_strengths": [
+      "Strong revenue growth: 26.4% CAGR over 5 years (₹531→₹1,711 Cr), showing real demand for eye-care services",
+      "Operating CF consistently positive all 5 years; operating income CAGR of 30.1% shows improving unit economics",
+      "Niche healthcare moat in eye-care with defensible brand and repeat-procedure volumes (cataract, refractive)"
+    ],
+    "key_risks": [
+      "Earnings Yield of 3.1% — massively overvalued by Magic Formula standards; EV/EBITDA 31x, P/E 110x leave zero margin of safety",
+      "FCF collapsing: capex surged to ₹321 Cr in FY25 leaving only ₹40 Cr FCF vs ₹118 Cr prior year — capital voracious expansion destroys near-term returns",
+      "Thin profitability: net margin ~6.4%, ROE only 4.76%, ROCE 9.99% — business is not yet earning above its cost of capital despite years of growth"
+    ],
+    "red_flags": [
+      "Earnings Yield of 3.1% — well below my 6% floor; Magic Formula rank would be in bottom decile on valuation",
+      "Net profit was negative in FY20 (−₹21 Cr) and FY21 (−₹59 Cr); profitability is nascent and fragile",
+      "Investing CF of −₹750 Cr in FY25 on only ₹360 Cr operating CF — company is consuming more than it generates, relying on equity/debt raises"
+    ],
+    "detailed_analysis": "Magic Formula math is unambiguous here. EBIT of ₹463 Cr against an Enterprise Value of ~₹14,932 Cr (Market Cap ₹14,075 Cr + Net Debt ~₹857 Cr) gives an Earnings Yield of just 3.1% — I want to see 12%+ for a compelling buy. On the quality side, ROCE of 9.99% and ROE of 4.76% tell me the business is not yet a high-return compounder; it is in heavy-investment mode where capital is being consumed faster than returns are being generated. Capex has ballooned to ₹321 Cr in FY25, absorbing nearly 90% of operating cash flow and leaving only ₹40 Cr in free cash flow — a sharp deterioration from ₹118 Cr the prior year.\n\nThe underlying business has real secular tailwinds (India's massive under-served eye-care population, aging demographics) and the revenue trajectory is genuinely impressive. But the Magic Formula is agnostic to stories — it asks: are you cheap AND good today? The answer is no on both counts. At 110x trailing earnings and 31x EV/EBITDA, the market has already priced in a decade of flawless execution. I require a margin of safety the current price simply does not offer. Until capex investment matures into meaningfully higher ROCE (>20%) and the earnings yield compresses below 8-9% EV multiples, this remains firmly in \"avoid\" territory.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 54396,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0831195,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11136,
+      "cache_read_input_tokens": 8885,
+      "output_tokens": 2579,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11136,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 390,
+          "cache_read_input_tokens": 8885,
+          "cache_creation_input_tokens": 2251,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2251
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

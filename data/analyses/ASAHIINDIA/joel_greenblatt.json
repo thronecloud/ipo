@@ -1,0 +1,69 @@
+{
+  "symbol": "ASAHIINDIA",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-19T06:31:07.849424Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Asahi India Glass is a structurally average-return business (ROCE 12.4%, EBIT/EV ~3.1%) trading at an enormous premium (P/E 69, EV/EBITDA 32) — the exact opposite of what the Magic Formula seeks. Heavy debt accumulation and deeply negative FCF make this a capital-intensive value destroyer at current prices.",
+    "key_strengths": [
+      "Dominant position in automotive glass with captive OEM relationships provides some pricing stability",
+      "Operating margin expanded to 14.15% by FY25, up from sub-10% historically, showing some operating leverage",
+      "Five consecutive years of positive OCF (INR 720 Cr in FY25) confirm the business does generate cash at the operating level"
+    ],
+    "key_risks": [
+      "Earnings yield (EBIT INR 766 Cr / EV ~INR 24,360 Cr) of only ~3.1% — well below my 6% minimum; you are massively overpaying for mediocre returns",
+      "Borrowings nearly tripled in 3 years (INR 1,238 Cr → INR 2,856 Cr), and FCF turned sharply negative: -INR 536 Cr in FY25 on capex of INR 1,268 Cr",
+      "ROCE of 12.4% barely covers cost of capital — no economic moat generating excess returns"
+    ],
+    "red_flags": [
+      "P/E of 69 and EV/EBITDA of 32 for a 12% ROCE business with sub-9% revenue CAGR — no margin of safety whatsoever",
+      "FCF negative for two consecutive years (-INR 244 Cr FY24, -INR 536 Cr FY25) while debt is rising sharply",
+      "Net profit CAGR of 17.6% looks impressive but largely reflects a low base (INR 85 Cr in 2016 vs. INR 367 Cr in 2025) and FY25 Other Income jump to INR 67 Cr"
+    ],
+    "detailed_analysis": "The Magic Formula is ruthless: a business must be both cheap AND good. Asahi India Glass fails on both counts. EBIT/EV of ~3.1% means you are earning roughly 3 rupees of operating profit for every 100 rupees of enterprise value — far below the 12%+ I want to see. ROCE of 12.4% is barely above the cost of capital for a debt-laden industrial business.\n\nThe ongoing capex buildout (INR 1,268 Cr in FY25, CWIP of INR 848 Cr) may support longer-term growth in architectural float glass, but it is being funded by debt, not earnings. Borrowings have grown from INR 1,238 Cr to INR 2,856 Cr in three years while free cash flow turned deeply negative. At 31.9x EV/EBITDA, the market is pricing in a business transformation that the historical financials have not demonstrated.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 164749,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.2370786,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 25152,
+      "cache_read_input_tokens": 16682,
+      "output_tokens": 9183,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 25152,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 583,
+          "cache_read_input_tokens": 16682,
+          "cache_creation_input_tokens": 8470,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8470
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

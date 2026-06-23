@@ -1,0 +1,70 @@
+{
+  "symbol": "DCBBANK",
+  "persona": "radhakishan_damani",
+  "persona_display_name": "Radhakishan Damani",
+  "analyzed_at": "2026-04-18T17:04:59.775572Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "DCB Bank is a small regional private bank trading at optically cheap valuations (P/B 1.0x, P/E 8.6x), but the 16.23% promoter holding alone disqualifies it from my portfolio — I need promoters with real skin in the game. ROE of 10.81% and volatile operating cash flows confirm this is not the kind of steady, well-aligned compounder I wait decades to own.",
+    "key_strengths": [
+      "Cheap valuation — P/B at 1.0x and P/E at 8.6x offer a margin of safety on a book-value basis",
+      "Net profit growing at 28.9% CAGR (2022–2025) shows the lending franchise is generating earnings",
+      "Balance sheet expanded from ₹44,793 Cr to ₹76,810 Cr in 3 years — meaningful scale being built"
+    ],
+    "key_risks": [
+      "Promoter holding at 16.23% is catastrophically low — management has little personal stake; no alignment of interest",
+      "Finance costs growing at 26.5% CAGR vs revenue at 16.3% — cost of funds rising faster than income, NIM under structural pressure",
+      "Operating cash flow negative in 2 of 4 years (2023: -₹1,566 Cr, 2025: -₹441 Cr) — not the consistent free cash generator I require"
+    ],
+    "red_flags": [
+      "Promoter stake 16.23% — far below my hard floor of 55%; Aga Khan Fund is a distant, passive promoter",
+      "Finance cost CAGR (26.5%) materially exceeds revenue CAGR (16.3%) — structural profitability headwind",
+      "ROE of 10.81% well below my 15% minimum — destroying the value-compounding engine",
+      "Free cash flow swings wildly: +₹1,449 Cr → -₹1,732 Cr → +₹350 Cr → -₹577 Cr — no predictability"
+    ],
+    "detailed_analysis": "DCB Bank is a mid-small private sector bank that is doing many things right operationally — loan book is growing, profits are rising, and the stock is attractively priced at book value. But cheap is not the same as good. The foundational issue for me is the promoter stake: 16.23% means nobody with a meaningful personal fortune is watching over this bank. When I built DMart, I owned the majority because I believed in it with everything I had. A bank where the promoter holds less than one-sixth of equity is a bank where I cannot sleep comfortably as a long-term investor. Governance quality and management integrity are not metrics I can calculate — they are felt through ownership patterns and this pattern is deeply uncomfortable.\n\nThe financial quality further erodes the case. ROE of 10.81% fails my minimum threshold of 15%, meaning the bank is not earning its cost of equity — it is slowly consuming capital rather than compounding it. More worrying, finance costs grew at 26.5% CAGR while revenues grew only 16.3%, suggesting the bank is being squeezed on net interest margins as it chases growth with expensive liabilities. Operating cash flow has been negative twice in four years, which tells me the growth is being funded by external capital raises rather than internal cash generation. For a bank, this is acceptable in a growth phase, but combined with low promoter skin-in-the-game and sub-par returns, it signals a business that needs capital more than it creates it — the opposite of what I want to own for decades.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "adequate",
+      "valuation": "undervalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 49583,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07358040000000002,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8714,
+      "cache_read_input_tokens": 10613,
+      "output_tokens": 2514,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 8714
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 314,
+          "cache_read_input_tokens": 8523,
+          "cache_creation_input_tokens": 2281,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2281,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "AARTIPHARM",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T16:11:33.246906Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Aarti Pharmalabs shows impressive profit growth (30.6% net profit CAGR) and decent margins, but it is a capital-intensive API/intermediate manufacturer with erratic free cash flow and no discernible durable moat — not the kind of business I like to own. At 29x earnings with a capex-heavy expansion cycle underway, the margin of safety is thin.",
+    "key_strengths": [
+      "Strong earnings growth momentum — Net profit grew from INR 122 Cr (FY22) to INR 272 Cr (FY25), a 30.6% CAGR",
+      "Diversified product mix spanning APIs, CDMO services, and niche xanthine derivatives reduces single-product risk",
+      "Manageable leverage at D/E 0.33 with decent ROCE of 17.4%"
+    ],
+    "key_risks": [
+      "Capital intensity is a structural problem — FY25 capex surged to INR 444 Cr, driving FCF to -INR 112 Cr; FCF has been positive only once cleanly (FY23: INR 130 Cr)",
+      "Borrowings nearly doubled in FY25 (INR 285 Cr → INR 659 Cr) while cash collapsed to just INR 7 Cr — a leveraged capex bet",
+      "API manufacturing is a competitive, commoditised business with limited pricing power; no evidence of a durable economic moat"
+    ],
+    "red_flags": [
+      "Free cash flow was negative in 2 of 4 years (-INR 185 Cr FY22, -INR 112 Cr FY25) — a business that consumes cash is not one I can love",
+      "Borrowings exploded from INR 285 Cr to INR 659 Cr in a single year — aggressive debt-funded expansion with uncertain payoff timeline",
+      "ROE of 14.5% sits just below my 15% threshold, and with heavy capex diluting returns, improvement is not guaranteed"
+    ],
+    "detailed_analysis": "Aarti Pharmalabs is a reasonable operator in a difficult industry. Revenue grew at 20.8% CAGR to INR 2,115 Cr (FY25) and EBITDA margins held at ~17%, which is respectable for a generic API/intermediate maker. The CDMO segment adds a services dimension that could carry better economics over time. However, this is fundamentally a capital-hungry manufacturing business — exactly the type I have historically avoided. The FY25 capex of INR 444 Cr against operating cash flow of INR 332 Cr means the company is spending more than it earns from operations, funded by a near-doubling of borrowings. Cash on hand has withered to just INR 7 Cr.\n\nThe core issue is the absence of a moat. Generic APIs and pharma intermediates are priced globally, leaving producers as price-takers. Xanthine derivatives (caffeine, theophylline) are a niche, but not a franchise. At 29x P/E and EV/EBITDA of 17.3x, the market is already pricing in successful execution of this capex cycle. If the expansion delivers, returns could improve; if utilisation disappoints or debt servicing rises (finance costs already up 31% CAGR to INR 27 Cr), the thesis unravels. This is a story stock requiring precise execution — not the kind of certainty I demand before committing capital.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 48292,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.04620255,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 1965,
+      "cache_read_input_tokens": 17466,
+      "output_tokens": 2239,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1965,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 313,
+          "cache_read_input_tokens": 8733,
+          "cache_creation_input_tokens": 1965,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1965
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

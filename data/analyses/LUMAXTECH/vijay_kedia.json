@@ -1,0 +1,70 @@
+{
+  "symbol": "LUMAXTECH",
+  "persona": "vijay_kedia",
+  "persona_display_name": "Vijay Kedia",
+  "analyzed_at": "2026-04-18T18:16:13.494272Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Lumax Auto Technologies is a well-run auto components company with solid profit CAGR of 23.6% over 9 years, but at ₹12,234 Cr market cap and 47.6x P/E, it catastrophically fails the SMILE framework's \"Small in size\" and valuation discipline. The opportunity for a 10-50x return is mathematically near-impossible at this entry price and size.",
+    "key_strengths": [
+      "Consistent profit acceleration — net profit CAGR 23.6% (9Y), with operating income growing 23.8% CAGR, showing real operational leverage",
+      "Promoter holding at 55.98% — adequate skin in the game, above the 50% threshold",
+      "Revenue inflecting sharply — from ₹1,847 Cr (FY23) to ₹3,637 Cr (FY25), near-doubling in 2 years signals acquisition-led scale-up"
+    ],
+    "key_risks": [
+      "Debt explosion — borrowings surged 6.7x from ₹165 Cr (FY22) to ₹1,111 Cr (FY25); D/E at 0.87 well above my 0.4 limit; finance costs growing at 36.1% CAGR",
+      "Valuation leaves zero margin of safety — P/E 47.6x, P/B 11.6x on a cyclical auto component business; any OEM slowdown will compress multiples violently",
+      "FCF deteriorating — free cash flow fell from ₹167 Cr (FY24) to ₹118 Cr (FY25) despite profit growth, as ₹180 Cr capex + debt servicing of ₹80 Cr drain cash"
+    ],
+    "red_flags": [
+      "Market cap ₹12,234 Cr — 12x outside my sweet spot of <1,000 Cr; no room for multibagger math",
+      "P/E 47.6x on a cyclical auto ancillary — even forward P/E at 35.6x is nearly double my 20x ceiling",
+      "D/E 0.87 breaches my 0.6 hard limit; debt grew 570% in just 3 years (FY22–FY25)",
+      "Finance costs 16x'd from ₹5 Cr (FY16) to ₹80 Cr (FY25) — eating into real earnings quality"
+    ],
+    "detailed_analysis": "From a SMILE lens, Lumax Auto Technologies fails on three of five criteria immediately. **S (Small)** — a ₹12,234 Cr company is entirely outside my hunting ground where information asymmetry creates opportunity. Institutional ownership (DII 16.52% + FII 8%) means the stock is well-discovered and priced accordingly. **E (Extra-large TAM at low penetration)** — auto components is a large market, but Lumax already books ₹3,637 Cr of revenue; the \"early innings\" thesis is gone. The operating margin at 10.1% is mediocre for a supposed niche player, and P/B of 11.6x implies the market has already priced in the next 5 years of growth.\n\nThe debt story is genuinely alarming. Between FY22 and FY25, borrowings jumped from ₹165 Cr to ₹1,111 Cr — a 570% increase — likely financing acquisitions that inflated the investing CF outflow to -₹476 Cr in FY23. While revenue did nearly double (FY23→FY25), the quality of that growth is debt-funded. Finance costs at ₹80 Cr now consume ~35% of operating profit, and with D/E at 0.87, any interest rate shock or auto demand cycle downturn creates real stress. This is not the clean, capital-light, founder-driven small-cap I look for. A good company — but wrong size, wrong price, wrong balance sheet for my framework.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 57284,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0835059,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9658,
+      "cache_read_input_tokens": 11498,
+      "output_tokens": 2922,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9658
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 500,
+          "cache_read_input_tokens": 9333,
+          "cache_creation_input_tokens": 2490,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2490,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

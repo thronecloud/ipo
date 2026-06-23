@@ -1,0 +1,65 @@
+{
+  "symbol": "NEWGEN",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-22T16:38:58.260349Z",
+  "analysis": {
+    "score": 7,
+    "recommendation": "BUY",
+    "investment_thesis": "Newgen is a capital-light, debt-free enterprise software business with genuine switching-cost moats in regulated industries (banking, insurance, government) — exactly the kind of sticky franchise I admire. At 17.6x forward earnings for a company compounding net profit at 31% over nine years with 28% ROCE, the price is fair enough to act.",
+    "key_strengths": [
+      "Powerful switching costs: enterprise workflows embedded inside banks, insurers, and government agencies are not replaced lightly — customers stay for decades",
+      "Capital-light compounding machine: capex INR 23 Cr on INR 1,487 Cr revenue; virtually debt-free (D/E 0.03); 30.9% net profit CAGR over 9 years",
+      "Expanding margins with operating leverage: operating income grew 28.6% CAGR vs revenue 17.5% CAGR — management extracts more profit per rupee of revenue each year"
+    ],
+    "key_risks": [
+      "Scale disadvantage: INR 6,807 Cr market cap makes it small against global giants (SAP, IBM, Microsoft) who could bundle competing features into existing enterprise contracts",
+      "FCF variability: OCF fell from INR 281 Cr (FY24) to INR 215 Cr (FY25) while revenue grew — rising receivables or deferred revenue timing warrants watching",
+      "Single-platform concentration: NewgenONE success is tied to one product family; any architectural disruption (agentic AI commoditizing BPM/ECM) could erode the moat faster than in consumer brands"
+    ],
+    "red_flags": [],
+    "detailed_analysis": "Newgen is the kind of business I wish I had found 20 years ago. It sells workflow automation and document management software to the most change-averse customers imaginable — banks, insurers, and governments. Once a bank's loan origination or insurance claim process is wired into Newgen's platform, ripping it out is extraordinarily painful and risky. That is a real moat, not a hypothetical one. The financials confirm it: revenue has compounded at 17.5% annually since 2016, but profits compounded at 31% — a hallmark of operating leverage that only emerges when customers renew, expand, and refer rather than churn. ROCE of 28% on a nearly debt-free balance sheet (borrowings INR 52 Cr vs equity INR 1,593 Cr) tells me management has not needed to dilute or leverage to grow.\n\nThe valuation is reasonable, not a gift. At 21x trailing and 17.6x forward earnings, I am paying a fair price for a wonderful business — which is precisely my preference over a wonderful price for a fair business. The gross margin at 51% is below what I see in pure SaaS businesses (which often run 70–80%), suggesting meaningful services/implementation revenue that compresses margins but also deepens customer stickiness. The FY25 FCF dip to INR 192 Cr from INR 268 Cr in FY24 deserves monitoring — if it reflects elongating collection cycles in government contracts rather than structural deterioration, it is manageable. Promoter holding at 53.5% signals owner mentality. I would buy at current prices and add on any meaningful weakness.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "excellent",
+      "valuation": "fair",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 50322,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08272635,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11231,
+      "cache_read_input_tokens": 9137,
+      "output_tokens": 2524,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11231,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 454,
+          "cache_read_input_tokens": 9137,
+          "cache_creation_input_tokens": 2094,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2094
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

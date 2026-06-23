@@ -1,0 +1,69 @@
+{
+  "symbol": "BALAMINES",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T16:39:46.166671Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Balaji Amines trades at INR 1,139 against a computed Graham Number of ~INR 801 — a 42% premium that offers no margin of safety. With earnings collapsing 62% from peak (INR 418 Cr in FY22 to INR 159 Cr in FY25) and P/E at 25.6x, Mr. Market is pricing in a recovery I cannot pay for in advance.",
+    "key_strengths": [
+      "Near-zero debt (D/E 0.02; total debt just INR 11 Cr vs equity of INR 1,881 Cr) — a fortress balance sheet",
+      "Interest coverage of ~58x (finance cost INR 4 Cr vs operating income INR 232 Cr) with 9+ consecutive years of positive earnings",
+      "Operating cash flow positive all 5 years (INR 255 Cr in FY25) and cash growing to INR 149 Cr"
+    ],
+    "key_risks": [
+      "Severe earnings contraction: net profit down 62% from peak (INR 418 Cr FY22 → INR 159 Cr FY25) with no floor yet visible",
+      "P/E of 25.6x and P/B of 1.96x both fail Graham's quantitative screens (<15x and <1.5x respectively)",
+      "Rising CWIP (INR 339 Cr in FY25, up from INR 113 Cr) signals heavy capital commitment during a demand trough — capital misallocation risk"
+    ],
+    "red_flags": [
+      "Stock trades 42% above Graham Number (~INR 801 vs current INR 1,139) — no margin of safety",
+      "ROE of only 8.83% on near-zero-debt balance sheet implies genuinely weak underlying business economics, not a leverage issue",
+      "Revenue CAGR of 9% over 9 years is ordinary; the FY21-FY22 supercycle has fully reversed and FY25 revenue (INR 1,389 Cr) is near FY20 levels"
+    ],
+    "detailed_analysis": "Balaji Amines fails my core quantitative tests at every valuation measure. The P/E of 25.6x demands growth certainty I will not assume; the Graham Number (√[22.5 × ~INR 49 EPS × ~INR 581 BVPS] ≈ INR 801) confirms the stock requires a 42% discount from current levels before I would even begin to consider it. The P/B of 1.96x tells the same story — I am being asked to pay nearly twice net assets for a business whose ROE is only 8.83%, meaning the premium is wholly unjustified on asset-productivity grounds.\n\nThe earnings trajectory is deeply troubling. The FY21–FY22 boom in specialty chemicals (amine supercycle) masked the underlying modest earning power of this business. Operating income has crashed from INR 623 Cr in FY22 to INR 232 Cr in FY25, a 63% decline in three years. Free cash flow has shrunk to just INR 70 Cr against a market cap of INR 3,691 Cr. The one genuine virtue here is the pristine balance sheet — debt of INR 11 Cr against equity of INR 1,881 Cr is exceptional — but a strong balance sheet does not justify an excessive price. I would require this stock to fall to approximately INR 750–800 before the arithmetic of safety is satisfied.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 51751,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07904295,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9561,
+      "cache_read_input_tokens": 11384,
+      "output_tokens": 2651,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9561
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 407,
+          "cache_read_input_tokens": 9334,
+          "cache_creation_input_tokens": 2277,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2277,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

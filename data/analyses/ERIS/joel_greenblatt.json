@@ -1,0 +1,69 @@
+{
+  "symbol": "ERIS",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-22T16:31:30.191748Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Eris has a genuinely good operating business (26% operating margins, 20%+ EBITDA CAGR) but fails the Magic Formula on both key metrics — earnings yield of ~4.6% is well below my 6% floor, and debt-funded acquisitions have dragged ROIC down to ~19% while leaving net profits flat for three years. Wait for either the price to correct or the acquisition synergies to fully materialise before buying.",
+    "key_strengths": [
+      "Strong operating franchise: 26.4% operating margins and 73.9% gross margins in branded pharma — classic high-ROIC business when unleveraged",
+      "Robust OCF generation: FY25 operating cash flow of INR 1,065 Cr and FCF of INR 910 Cr confirms earnings quality is real",
+      "Chronic therapy focus (diabetes, cardio, CNS) provides predictable, recurring revenue with 19.2% revenue CAGR over 9 years"
+    ],
+    "key_risks": [
+      "Acquisition debt torpedo: Borrowings exploded from INR 84 Cr (FY22) to INR 2,478 Cr (FY25), driving finance costs from INR 4 Cr to INR 231 Cr — net profit is flat at INR 375 Cr despite EBITDA of INR 1,033 Cr",
+      "Earnings yield too low: EBIT/EV ≈ 4.6% (EBIT ~INR 1,018 Cr / EV ~INR 22,304 Cr) — meaningfully below my 6% minimum; the market is pricing in a recovery that hasn't yet shown up in net profits",
+      "ROIC compression: Invested capital has ballooned to ~INR 5,370 Cr post-acquisitions; ROIC of ~19% and ROCE of 12.2% are below my 20%+ threshold for a quality business"
+    ],
+    "red_flags": [
+      "Net profit stagnant/declining for 3 years (FY23: 374, FY24: 397, FY25: 375 Cr) while EBITDA grew 90% — interest burden is the culprit",
+      "Finance costs surged 9x in two years (INR 26 Cr in FY23 → INR 231 Cr in FY25), signalling aggressive debt-funded M&A with uncertain synergy timing",
+      "P/E of 45x on stagnant net earnings is hard to justify under the Magic Formula — only the forward P/E of 28.6x (requiring ~58% earnings growth) saves the valuation story"
+    ],
+    "detailed_analysis": "Running the Magic Formula: Earnings Yield = EBIT (INR 1,018 Cr) / EV (Market Cap INR 20,026 Cr + Debt INR 2,478 Cr – Cash INR 200 Cr = INR 22,304 Cr) = **4.6%** — well below my 6% buy threshold. Return on Invested Capital = EBIT / (Equity INR 3,092 Cr + Debt INR 2,478 Cr – Cash INR 200 Cr) = 1,018 / 5,370 = **~19%** — decent but just below my 20% good threshold, and this is after the business was a cleaner, higher-returning asset pre-FY23. On both Magic Formula legs, Eris sits in the mediocre zone.\n\nThe underlying business quality is real — chronic therapy branded generics with 73.9% gross margins and consistent OCF — but management made a big acquisition bet (INR 1,828 Cr investing outflow in FY24 alone), doubling the asset base and tripling debt. The resulting interest drag (INR 231 Cr in FY25) is why net profit at INR 375 Cr is actually *lower* than FY23 despite EBITDA surging from INR 543 Cr to INR 1,033 Cr. If debt is paid down and earnings normalise to the forward P/E of 28.6x, the stock becomes more interesting — but that requires the market's optimistic assumptions to be correct. A Magic Formula investor waits for cheap-and-good, not expensive-and-possibly-good.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 60094,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09217305,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11737,
+      "cache_read_input_tokens": 9151,
+      "output_tokens": 3027,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11737,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 477,
+          "cache_read_input_tokens": 9151,
+          "cache_creation_input_tokens": 2586,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2586
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

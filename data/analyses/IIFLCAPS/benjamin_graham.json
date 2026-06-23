@@ -1,0 +1,69 @@
+{
+  "symbol": "IIFLCAPS",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T17:39:46.231127Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "IIFL Capital Services trades at INR 313, a 45% premium to its Graham Number of ~INR 215 (sqrt(22.5 × EPS ₹22.8 × BVPS ₹90)), with a P/B of 3.46 against my strict ceiling of 1.5 — no margin of safety exists. A capital markets brokerage is precisely the cyclical, leverage-dependent business I counsel the intelligent investor to avoid at any price above asset value.",
+    "key_strengths": [
+      "7-year unbroken earnings record with Net Profit CAGR of 21.6% (₹181 Cr → ₹713 Cr), satisfying my continuity requirement",
+      "Strong returns on capital — ROE 31.6% and ROCE 33.3% — demonstrating an efficient, asset-light fee model",
+      "Finance costs grew at only 3.4% CAGR vs. 21.6% profit CAGR, showing improving earnings leverage over borrowing costs"
+    ],
+    "key_risks": [
+      "P/B of 3.46 is more than double my maximum of 1.5 — paying ₹3.46 for every ₹1 of net assets leaves no asset-based floor of protection",
+      "Borrowings surged from ₹292 Cr (2021) to ₹1,742 Cr (2025); D/E of 0.62 breaches my 0.5 ceiling for a financial firm whose leverage is already opaque",
+      "Operating cash flow was negative in 2 of the last 5 years (FY23: -₹793 Cr; FY24: -₹118 Cr) — reported profits are not reliably converting to cash, which is the only honest test of earning power"
+    ],
+    "red_flags": [
+      "Price 45% above Graham Number — no margin of safety by the most objective valuation test I know",
+      "Capital markets brokerages are structurally cyclical; the revenue decline from ₹933 Cr (2018) to ₹758 Cr (2020) in just two years proves the point",
+      "Promoter holding only 30.93% — the founders themselves are not heavily committed to their own enterprise"
+    ],
+    "detailed_analysis": "By every quantitative standard I established in Security Analysis, IIFL Capital Services is priced for optimism, not safety. The P/E of 17 marginally exceeds my ceiling of 15; the P/B of 3.46 is more than twice my maximum — and for a financial intermediary, book value is the primary anchor of intrinsic worth. The Graham Number of approximately ₹215 implies the stock must fall 31% before it reaches even a fair price, let alone the discount I demand. A business selling at 3.46× book is pricing in considerable future growth, which is speculation, not investment.\n\nThe operating cash flow record is the most troubling exhibit: negative ₹793 Cr in FY23 and negative ₹118 Cr in FY24. Accounting profits at a brokerage can reflect mark-to-market gains or working capital movements that never produce real cash. Mr. Market has bid this stock up on the strength of a good FY25 (₹871 Cr OCF, ₹713 Cr net profit), but one good year does not erase the pattern. Borrowings have nearly tripled in three years to ₹1,742 Cr, and capital markets businesses — dependent on transaction volumes, market sentiment, and regulatory whim — are precisely the enterprises I have warned investors to approach only at a substantial discount to net asset value. At ₹313, no such discount exists.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 45708,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0725247,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9034,
+      "cache_read_input_tokens": 11144,
+      "output_tokens": 2353,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9034
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 405,
+          "cache_read_input_tokens": 9094,
+          "cache_creation_input_tokens": 1990,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1990,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "CREDITACC",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-19T13:04:36.711063Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "AVOID",
+    "investment_thesis": "CreditAccess Grameen is the largest microfinance NBFC in India with a strong franchise in southern Karnataka, but FY25 reveals the sector's core fragility: net profit collapsed 63% (INR 1,446 Cr → INR 531 Cr) as the MFI sector faced mass borrower over-indebtedness, and the business structurally depends on 2.81x leverage to poor borrowers — a model permanently exposed to political loan waivers, NPA cycles, and regulatory cap changes.",
+    "key_strengths": [
+      "28.4% revenue CAGR over 6 years demonstrates genuine franchise value in underserved rural credit markets with deep branch and field officer networks",
+      "Promoter holding of 66.3% (CreditAccess India BV) provides strong governance anchor and access to capital as demonstrated by the FY25 equity base holding at INR 7,164 Cr",
+      "Forward P/E of 13.7x vs trailing 41.8x suggests the market is pricing in meaningful earnings recovery — if credit costs normalize, book value of INR 7,164 Cr at P/B of 2.8x is defensible"
+    ],
+    "key_risks": [
+      "Operating cash flow has been negative in 4 of the last 5 years — normal for MFIs but means the company requires continuous external funding; a credit market disruption is an existential event",
+      "NPA cycles in microfinance are swift and severe: FY21 (COVID) net profit fell to INR 131 Cr; FY25 saw a repeat collapse to INR 531 Cr — two major earnings wipeouts in 5 years",
+      "Debt-to-equity of 2.81x with total debt of INR 20,446 Cr against INR 7,164 Cr equity — a modest deterioration in asset quality or funding cost can destroy equity returns rapidly"
+    ],
+    "red_flags": [
+      "Net profit declined 63% in a single year (FY24 to FY25): INR 1,446 Cr → INR 531 Cr — this magnitude of earnings collapse in a business rated as 'financial services' warrants extreme caution",
+      "OCF negative in 4 of 5 years (up to -INR 4,734 Cr in FY24) — this business is a perpetual capital consumer, structurally dependent on funding markets remaining open",
+      "Total assets actually shrank in FY25 (INR 28,871 → INR 27,679 Cr) for the first time — portfolio contraction signals management pulling back due to asset quality stress, not a sign of strength"
+    ],
+    "detailed_analysis": "Microfinance is a business I approach with extreme caution. The model — lending at 20-24% interest rates to poor women in rural India using borrowed capital — creates the appearance of high spreads but masks systemic fragility. The borrower base, by definition, has no collateral, limited ability to absorb income shocks, and is politically highly visible. Every few years, a state government announces loan waivers, a natural disaster hits, or borrowers simply become over-leveraged across multiple MFIs — and the entire sector seizes up. We saw it in Andhra Pradesh in 2010, in COVID in 2021, and again in FY25. The earnings pattern (INR 322 Cr → INR 826 Cr → INR 1,446 Cr → INR 531 Cr) is not a compounding machine; it is a cyclical business with violent mean reversion. The forward P/E of 13.7x may prove attractive if FY26 earnings recover toward INR 1,200-1,400 Cr range — and the franchise value of 7+ million borrowers is real. But I cannot buy a leveraged lender to the poor at any price without high confidence in the regulatory and political environment, which is precisely what India's MFI sector lacks. This is a speculative recovery trade, not a Munger-quality investment.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 172277,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.2225337,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 23538,
+      "cache_read_input_tokens": 15824,
+      "output_tokens": 8634,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 23538,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 811,
+          "cache_read_input_tokens": 15824,
+          "cache_creation_input_tokens": 7714,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 7714
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

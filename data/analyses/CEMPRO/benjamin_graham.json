@@ -1,0 +1,69 @@
+{
+  "symbol": "CEMPRO",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-19T12:56:22.740181Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Cemindia Projects trades at a P/B of 5.44 — nearly four times my upper tolerance — and its computed Graham Number of approximately INR 241 implies the current price of INR 648 carries a 169% premium to intrinsic value. A construction and civil engineering contractor with a history of losses and thin margins should never command such a multiple.",
+    "key_strengths": [
+      "Strong revenue acceleration: INR 3,809 Cr in FY22 to INR 9,097 Cr in FY25 — India's infrastructure boom is a genuine tailwind",
+      "Debt/Equity of 0.48 is marginally within my 0.5 ceiling — the balance sheet is not dangerously leveraged",
+      "ROCE of 27.6% and ROE of 21.8% show improving capital efficiency in recent years"
+    ],
+    "key_risks": [
+      "Net profit was negative (loss of INR 59 Cr) in FY15 and nearly negligible at INR 16 Cr in FY21 — the earnings record does not meet my requirement of 5+ consecutive years of positive profits",
+      "Operating margin of only 7.74% in construction offers almost no cushion against project cost overruns, material inflation, or payment delays from government clients",
+      "Recent ownership change (subsidiary of Renew Exim DMCC as of August 2025) and company name change introduce governance uncertainty I cannot adequately price"
+    ],
+    "red_flags": [
+      "P/B of 5.44 is more than 3.6x my maximum threshold of 1.5 — paying INR 5.44 for every rupee of book value in a cyclical, capital-intensive industry is speculation, not investment",
+      "Earnings history is discontinuous (data gap in 2018) and included losses and near-zero profits as recently as FY21",
+      "Free cash flow collapsed to INR 30 Cr in FY25 from INR 369 Cr in FY24 despite surging revenue — working capital absorption in construction is a perennial trap"
+    ],
+    "detailed_analysis": "The construction and civil engineering sector is inherently project-based, meaning revenues and profits lurch from year to year depending on contract awards, execution pace, and client payment behavior. I require a business with a long, unbroken record of profitability precisely because I wish to base valuation on demonstrated, not hoped-for, earning power. Cemindia's history of a net loss in FY15, trivial profits in FY20–21, and significant data gaps is the antithesis of the stability I demand.\n\nThe valuation of INR 648 per share — a 169% premium to the Graham Number — reflects the market's enthusiasm for India's infrastructure capex cycle, not the company's proven intrinsic worth. Market enthusiasm is exactly when I become most skeptical. I require a margin of safety; Mr. Market is offering a margin of danger. I would require the price to fall to near book value before considering this company further.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 220503,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.29222444999999997,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 27345,
+      "cache_read_input_tokens": 15939,
+      "output_tokens": 12326,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 27345,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 774,
+          "cache_read_input_tokens": 15939,
+          "cache_creation_input_tokens": 11406,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 11406
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

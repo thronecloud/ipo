@@ -1,0 +1,69 @@
+{
+  "symbol": "BIRLACORPN",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T16:44:25.324643Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Birla Corporation trades near book value (P/B 1.05) with a sub-15 P/E and a decade of positive earnings, satisfying several of my quantitative screens — but at INR 976 the price slightly exceeds my estimated Graham Number of ~INR 893, leaving no margin of safety. Until Mr. Market offers a meaningful discount to intrinsic value, the disciplined investor must stand aside.",
+    "key_strengths": [
+      "Near-book valuation (P/B 1.05) and P/E 13.2 both satisfy Graham thresholds, rare in Indian industrials",
+      "Ten consecutive years of positive net profit (2016–2025) with consistently positive operating cash flow (5/5 years, FCF surging to INR 1,226 Cr in 2025)",
+      "Debt actively being retired — borrowings fell from INR 4,462 Cr (2023) to INR 3,196 Cr (2025), D/E now 0.45, just under my 0.5 limit"
+    ],
+    "key_risks": [
+      "Earnings deeply volatile — net profit collapsed 94% to just INR 40 Cr in FY2023 on INR 8,682 Cr revenue; such instability violates my requirement for stable earning power",
+      "Return on equity a feeble 4.79% and ROCE 7.08% — the business is barely earning above its cost of capital; retained earnings are not compounding for shareholders",
+      "Finance costs growing at 16.6% CAGR (9-year), interest coverage ~3.9x is only marginally above my 3.5x floor — a cyclical downturn could breach this threshold"
+    ],
+    "red_flags": [
+      "Graham Number (~INR 893) is below current price of INR 976 — no margin of safety exists at today's quote",
+      "Net profit CAGR of only 6.5% over 9 years despite 12.2% revenue growth signals structural margin erosion and heavy debt-servicing drag",
+      "Operating margins thin at 7.41% in a capital-intensive cyclical industry — leaves little buffer against input cost or demand shocks"
+    ],
+    "detailed_analysis": "Birla Corporation is, by the standards of most modern analysis, a cheap stock. A P/E of 13.2 and a P/B of 1.05 on a company founded in 1919 with 10 years of unbroken profits would attract many analysts. The capex cycle that drove CWIP to INR 2,551 Cr in 2022 now appears complete, and free cash flow has recovered sharply to INR 1,226 Cr in FY2025 — the strongest in the dataset. Debt repayment is accelerating. These are not the hallmarks of a troubled enterprise. However, my Graham Number — derived from EPS of approximately INR 38 and book value per share of approximately INR 927 — yields a ceiling price of roughly INR 893. The market is asking INR 976, a ~9% premium. I do not pay premiums; I demand discounts.\n\nWhat concerns me more is the quality of earnings underlying the numbers. An ROE of 4.79% tells me that for every rupee shareholders have entrusted to management, they earn fewer than 5 paise of return — a figure that does not remotely justify enthusiasm. The collapse of net profit to INR 40 Cr in FY2023, on revenues of INR 8,682 Cr, exposes the fragility of this business when cement prices soften or input costs rise. Finance costs of INR 327 Cr per year remain an anchor on profitability. A true value investor waits for the price to fall to a level where the balance sheet alone — not optimistic projections — provides full protection. At roughly INR 800–850, the margin of safety would become adequate. At INR 976, patience is the only appropriate action.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 64698,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08884019999999998,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9904,
+      "cache_read_input_tokens": 11354,
+      "output_tokens": 3219,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9904
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 609,
+          "cache_read_input_tokens": 9304,
+          "cache_creation_input_tokens": 2650,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2650,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

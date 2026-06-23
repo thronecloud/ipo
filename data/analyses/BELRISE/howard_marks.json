@@ -1,0 +1,69 @@
+{
+  "symbol": "BELRISE",
+  "persona": "howard_marks",
+  "persona_display_name": "Howard Marks",
+  "analyzed_at": "2026-04-22T16:22:23.839902Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Belrise is a thin-margin auto parts supplier priced at 39.6x trailing P/E — a multiple more appropriate for a compounding business than a cyclical OEM vendor with 8.3% operating margins. The price already reflects a near-doubling of earnings (forward P/E implies ~₹690 Cr profit vs. current ₹355 Cr), leaving zero margin of safety if the auto cycle softens.",
+    "key_strengths": [
+      "Steady revenue growth: 15.4% revenue CAGR with consistent OCF positivity across all 4 years",
+      "Post-IPO balance sheet improvement: borrowings cut from ₹2,504 Cr to ₹1,418 Cr, Debt/EBITDA now ~2.7x",
+      "Diversified product portfolio across 2W/3W/4W with some EV exposure (hub motors, battery containers)"
+    ],
+    "key_risks": [
+      "Aggressive earnings expectations: forward P/E of 27.59x implies ~₹690 Cr net profit vs. ₹355 Cr today — nearly 2x current earnings baked into the price",
+      "FCF is unreliable and currently negative: FY25 FCF -₹163 Cr on capex of ₹868 Cr vs. OCF of ₹704 Cr",
+      "Finance costs compounding at 12.4% CAGR — growing faster than net profit (10.7%) even before the capex cycle peaks"
+    ],
+    "red_flags": [
+      "Recent IPO with equity nearly doubling (₹2,340 Cr → ₹4,971 Cr in FY25) — classic sell-at-cycle-peak dynamic; promoters received peak-cycle liquidity",
+      "Other income surging at 64% CAGR (₹14 Cr → ₹62 Cr) — growing faster than operations, masking true earnings quality",
+      "Heavy ongoing capex cycle (CWIP ₹239 Cr, FY25 capex ₹868 Cr) with no FCF to show for it — capital intensity without returns yet visible"
+    ],
+    "detailed_analysis": "The first question I always ask is: what does the price already reflect? At 39.6x trailing P/E and 17.5x EV/EBITDA, the market is embedding near-perfection into a business that earns 8.3% operating margins supplying OEMs — one of the most competitive, commoditized positions in the automotive value chain. The forward P/E of 27.59x mathematically implies net profit approaching ₹690 Cr, roughly double the ₹355 Cr earned in FY25. That requires not just sustained revenue growth, but significant margin expansion AND the benefit of lower interest costs post-IPO debt repayment — all simultaneously, in a cyclical industry. This is second-level thinking at its most important: the business is decent, but the consensus has priced in a scenario with no room for error.\n\nThe IPO dynamic here demands particular caution. Equity nearly doubled in FY25 (reserves from ₹2,015 Cr to ₹4,526 Cr) — the promoters, holding 66.46%, executed a near-perfect liquidity event at cycle highs. Free cash flow has been negative two of the last four years, with FY25 FCF at -₹163 Cr on ₹868 Cr of capex. This is a business still consuming capital, not generating it. The FCF yield at current market cap is effectively zero or negative — compared to my 6-8% threshold for acceptable risk/reward. In a stress scenario — an auto slowdown, OEM pricing pressure, or a rate cycle that raises the cost of the remaining ₹2,964 Cr total debt — this stock could lose 40-50% before reaching fair value. That asymmetry runs the wrong way.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 51974,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0791667,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9352,
+      "cache_read_input_tokens": 11059,
+      "output_tokens": 2718,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9352,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 382,
+          "cache_read_input_tokens": 9005,
+          "cache_creation_input_tokens": 2401,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2401
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

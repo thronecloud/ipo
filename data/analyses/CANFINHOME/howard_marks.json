@@ -1,0 +1,69 @@
+{
+  "symbol": "CANFINHOME",
+  "persona": "howard_marks",
+  "persona_display_name": "Howard Marks",
+  "analyzed_at": "2026-04-19T12:53:21.972371Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Can Fin Homes offers a genuinely attractive forward P/E of 10.49x with 22% net profit CAGR over three years and a growing affordable housing loan book (INR 40,967 Cr assets), but the rapidly widening gap between funding cost growth (29.3% CAGR) and revenue growth (18.8% CAGR) signals NIM compression that threatens the current 17% ROE — at P/B 2.12x, any meaningful asset quality deterioration would quickly erode the margin of safety. Risk and reward are roughly balanced.",
+    "key_strengths": [
+      "Consistent net profit growth from INR 471 Cr (FY22) to INR 857 Cr (FY25), a 22.1% CAGR — genuine earnings power in affordable housing finance",
+      "Forward P/E of 10.49x is modest for an HFC with double-digit growth, limiting valuation downside relative to many peers",
+      "Loan book growth of ~13.6% CAGR (total assets INR 27,944 Cr to INR 40,967 Cr) in a segment with structural demand from India's housing shortage"
+    ],
+    "key_risks": [
+      "Finance costs grew at 29.3% CAGR (INR 1,150 Cr to INR 2,485 Cr) versus revenue CAGR of 18.8% — this structural NIM squeeze will compress ROE unless rates ease significantly",
+      "PSU parent dynamics (Canara Bank holds ~30%) limit strategic agility, management incentive alignment with minority shareholders, and capital deployment decisions",
+      "The fundamental risk of all HFCs: NPAs are invisible until the credit cycle turns, and at 6.59x D/E, even a modest loan quality deterioration rapidly consumes equity"
+    ],
+    "red_flags": [
+      "Finance cost base (INR 2,485 Cr in FY25) is nearly 1.8x the revenue/net interest income figure (INR 1,364 Cr) — the spread being earned on this leverage is thin",
+      "Promoter holding of only 29.99% is low; the PSU parent could impose non-commercial decisions",
+      "OCF was deeply negative in FY22 (-INR 3,916 Cr) and FY23 (-INR 4,044 Cr) — typical for growing lenders, but illustrates how dependent the business model is on continuous access to cheap wholesale funding"
+    ],
+    "detailed_analysis": "Can Fin Homes is a serviceable HFC in India's most attractive segment — affordable housing for first-time buyers. The 3-year financial trajectory is solid, and the forward valuation at ~10.5x earnings is not expensive on its face. The ROE/P/B relationship (~17% ROE / 2.12x P/B) offers an implied yield of about 8%, which is in the zone of reasonable but not exciting value.\n\nThe core tension here is the funding cost trajectory. Finance costs compounding at 29.3% CAGR while revenue grows at 18.8% is a structural squeeze — the company is borrowing at an increasingly expensive rate relative to what it earns. This is the direct result of India's rate hike cycle. If rates moderate, this spread widens again and ROE improves. If rates stay elevated or credit markets tighten, NIM compression accelerates. This is fundamentally a bet on the Indian rate cycle, and at P/B 2.12x, there isn't enough discount to compensate for being wrong. I'd want to see P/B closer to 1.5x before becoming enthusiastic — HOLD at current levels.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 244541,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.30665595,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 27865,
+      "cache_read_input_tokens": 15344,
+      "output_tokens": 13170,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 27865,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 477,
+          "cache_read_input_tokens": 15344,
+          "cache_creation_input_tokens": 12521,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 12521
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

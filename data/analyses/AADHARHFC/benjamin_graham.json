@@ -1,0 +1,69 @@
+{
+  "symbol": "AADHARHFC",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-19T06:17:36.785561Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Aadhar Housing Finance shows genuine earnings consistency — net profit compounding at 33.4% CAGR over six years — but Mr. Market has priced this growth story at P/E 20.8x and P/B 3.11x, both far beyond my safety thresholds. The Graham Number (sqrt of 22.5 × ~INR 20.9 EPS × ~INR 158 book per share) approximates INR 272, yet the stock trades at INR 496 — an 82% premium to intrinsic value by my calculation.",
+    "key_strengths": [
+      "Seven consecutive years of growing net profit (INR 162 Cr → INR 912 Cr), satisfying my earnings continuity requirement",
+      "Promoter holding of 64.9% aligns management interests with long-term shareholders",
+      "Revenue CAGR of 16.1% and profit CAGR of 33.4% over six years demonstrates durable lending franchise"
+    ],
+    "key_risks": [
+      "P/B of 3.11x is more than double my absolute ceiling of 1.5x — investor pays INR 3.11 for every INR 1 of net assets",
+      "Debt/Equity of 2.55x, while structurally typical for HFCs, leaves zero margin of safety if credit quality deteriorates",
+      "No dividend history evident — retained earnings are not being returned to shareholders in any tangible form"
+    ],
+    "red_flags": [
+      "Price of INR 496 is 82% above estimated Graham Number of ~INR 272 — I demand a discount, not a premium",
+      "Operating cash flow negative all 5 of the last 5 years (-INR 3,027 Cr in FY2025) — the business consumes cash relentlessly",
+      "P/S ratio of 10.09x implies the market is paying a decade of revenues for this company"
+    ],
+    "detailed_analysis": "By the strict quantitative standards I outlined in Security Analysis, AADHARHFC fails on every primary valuation metric. The P/E of 20.8x exceeds my 15x ceiling; P/B of 3.11x is more than twice my preferred maximum; and the current price sits at nearly double my estimated Graham Number. For a housing finance company, the negative operating cash flows are mechanically explained by loan disbursements (lending is the business), but this structural reality does not change the fact that the investor receives no free cash and depends entirely on continued access to wholesale funding.\n\nThe earnings track record is genuinely encouraging — six years of unbroken profit growth is exactly the kind of stability I admire — but earnings quality must be paired with price discipline. At current valuations, the market has already fully discounted and then some the company's growth prospects. An intelligent investor does not pay for optimism; he pays for proven value. I require a margin of safety that simply does not exist at INR 496.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 170749,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.23166540000000002,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 24076,
+      "cache_read_input_tokens": 15638,
+      "output_tokens": 9112,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 24076,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 576,
+          "cache_read_input_tokens": 15638,
+          "cache_creation_input_tokens": 8438,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8438
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

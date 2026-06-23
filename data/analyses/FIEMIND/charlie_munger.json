@@ -1,0 +1,68 @@
+{
+  "symbol": "FIEMIND",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T17:26:04.639846Z",
+  "analysis": {
+    "score": 6,
+    "recommendation": "HOLD",
+    "investment_thesis": "Fiem Industries is a capital-disciplined, nearly debt-free auto lighting OEM supplier with ROCE of 27.8% — exceptional for auto parts — riding the structural shift to LED across India's two-wheeler market. At P/E 24.7x with 15.3% net profit CAGR, the price is fair but not compelling enough given moderate moat depth and OEM pricing power over suppliers.",
+    "key_strengths": [
+      "Exceptional capital efficiency: ROCE 27.8%, ROE 21%, and borrowings slashed from INR 127 Cr (2020) to near-zero (finance costs just INR 2 Cr in 2025)",
+      "Net cash fortress: INR 298 Cr cash vs INR 22 Cr total debt, with OCF positive 5/5 years — management has consistently deleveraged while growing",
+      "Operating leverage is real: revenue CAGR 10.5% but net profit CAGR 15.3% over 9 years; operating income expanded from INR 134 Cr (2021) to INR 322 Cr (2025)"
+    ],
+    "key_risks": [
+      "OEM pricing power: Fiem supplies Honda, Hero, TVS — these customers can and do squeeze margins; operating margin at 11.6% leaves limited buffer",
+      "Capex surge (INR 19 Cr in 2022 → INR 130 Cr in 2025) has compressed FCF/Net Income to ~64%, below the 80% quality threshold — must verify returns on this capital",
+      "Two-wheeler cycle exposure: revenue fell from INR 1,449 Cr (2019) to INR 1,221 Cr (2021) — any industry downturn hits Fiem directly with no diversification cushion"
+    ],
+    "red_flags": [
+      "FCF/Net Income ratio of 64% (INR 132 Cr FCF vs INR 205 Cr net profit) — capex cycle must be watched closely for ROIC dilution",
+      "Revenue concentration in 2-wheelers creates single-sector dependency with limited pricing power versus large OEM customers"
+    ],
+    "detailed_analysis": "Fiem Industries displays the hallmarks of a well-run Indian mid-cap: ROCE of 27.8% in a notoriously thin-margin sector, near-zero debt (D/E 0.06), and a management that reduced finance costs by 87% over nine years while compounding net profit at 15.3%. The LED structural shift is a genuine tailwind — Fiem invested early and its revenue acceleration post-2021 (INR 1,221 Cr → INR 2,423 Cr) reflects market share gains in value-added lighting. The balance sheet is conservatively run, with INR 298 Cr of cash providing optionality and downside protection.\n\nThe limiting factor is moat durability. Auto parts OEM suppliers operate at the mercy of their customers — Hero, Honda, TVS can dual-source, reverse-engineer, or price-squeeze at renewal. The rising capex (INR 130 Cr in FY25) signals necessary capacity investment but also compresses near-term FCF and creates execution risk if 2-wheeler volumes soften. At P/E 24.7x and EV/EBITDA 15.8x, the market is already pricing in continued strong returns; there is limited margin of safety for the inevitable cyclical dip. Munger's inversion test: the key failure mode is OEM customer concentration + a two-wheeler volume decline coinciding with peak capex — that scenario could compress earnings sharply. A quality business, but buy only on a meaningful correction.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "excellent",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 52190,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08848230000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11424,
+      "cache_read_input_tokens": 8961,
+      "output_tokens": 2863,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11424
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 438,
+          "cache_read_input_tokens": 8961,
+          "cache_creation_input_tokens": 2463,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2463,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "ASTRAMICRO",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T16:32:42.156009Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "AVOID",
+    "investment_thesis": "Astra Microwave is a genuine niche defense electronics franchise riding India's indigenization wave, with improving margins (operating margin expanded from ~13% to 27% in 3 years). However, the stock is priced at 64.7x earnings and 36x EV/EBITDA for a business that has generated positive free cash flow in only 1 of the last 5 years — the price demands perfection that the financials do not yet deliver.",
+    "key_strengths": [
+      "Defense electronics moat: Government-qualified RF/microwave subsystems for DRDO/ISRO/Navy with high switching costs and years-long certification barriers.",
+      "Margin inflection is real: Operating income surged from 77 Cr (FY21) to 269 Cr (FY25), margin expanding from ~12% to 27% — genuine operating leverage as scale hits.",
+      "Sector tailwind: India's Atmanirbhar Bharat defense indigenization creates a multi-year structural demand pipeline for domestic subsystem manufacturers."
+    ],
+    "key_risks": [
+      "Catastrophic cash conversion: Net profit of 154 Cr in FY25 yet OCF was -90 Cr and FCF was -169 Cr — earnings are not converting to cash, financed by debt (total debt 6x'd from 70 Cr to 424 Cr in 3 years).",
+      "Valuation leaves no margin of safety: At 64.7x P/E and 36.4x EV/EBITDA for an 11% revenue CAGR business, any contract delay or margin compression destroys the thesis.",
+      "Promoter stake at 6.54% is dangerously low — management has minimal skin in the game, misaligning incentives for long-term capital allocation decisions."
+    ],
+    "red_flags": [
+      "FCF/Net Income deeply negative: -169 Cr FCF vs +154 Cr net profit in FY25 — classic working capital trap in government defense contracting.",
+      "Finance costs growing at 16.9% CAGR, faster than revenue (11.1%), signaling the business is borrowing to fund operating gaps — a structural not cyclical problem.",
+      "Only 1 of 5 years with positive OCF; equity was diluted (reserves jumped 625→947 Cr in FY24 alone), meaning shareholders funded the working capital hole via QIP/rights."
+    ],
+    "detailed_analysis": "Astra Microwave occupies a real niche — RF and microwave subsystems for Indian defense (radars, electronic warfare, telemetry, AESA seekers) — where technical barriers are high and government qualification is years-long. The margin story is genuinely impressive: EBITDA expanded from 86 Cr (FY22) to 279 Cr (FY25) on revenue growing 40%, implying operating leverage is finally kicking in. ROCE at 18.7% passes my 15% threshold. So far, so good. But Munger's first rule is to invert: what kills this investment? The answer is staring at us in the cash flow statement.\n\nThe business has printed negative free cash flow in 4 of the last 5 years, including -169 Cr in FY25 despite 154 Cr of net profit. Government defense contracts in India notoriously lock up cash in advances, milestones, and receivables — meaning reported profits are accounting constructs until the MOD pays. Total debt has jumped 6x in 3 years to 424 Cr to fund this working capital hole, and finance costs grew at 16.9% CAGR. This is not a capital-light compounder; it is a working-capital-intensive contract manufacturer priced as if it were one. At 64.7x PE and 36.4x EV/EBITDA, the market is extrapolating the margin expansion infinitely forward — a dangerous assumption given contract concentration, government payment cycles, and a promoter who owns only 6.54% of the company. I would wait for either a meaningful price correction (below 35x forward earnings) or sustained positive FCF before committing capital.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 65607,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09398084999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11829,
+      "cache_read_input_tokens": 9177,
+      "output_tokens": 3124,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11829,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 512,
+          "cache_read_input_tokens": 9177,
+          "cache_creation_input_tokens": 2652,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2652
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "symbol": "SPEB",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-21T08:02:04.403214Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "SPEB Adhesives trades at a P/E of 20x — well above my ceiling of 15x — while delivering a near-zero ROE of 0.27%, suggesting the business generates virtually no return on its equity base. Without a margin of safety, a proven earnings record, or any dividend history, this speculative micro-cap offers the intelligent investor nothing to buy.",
+    "key_strengths": [
+      "High promoter holding at 73.18% signals skin in the game and reduces float risk.",
+      "DII ownership at 10.15% suggests some institutional validation of the business.",
+      "Implied P/B ratio may be extremely low (~0.05x) given the ROE/P/E data — if assets are real, liquidation value could far exceed market price."
+    ],
+    "key_risks": [
+      "ROE of 0.27% is catastrophically low — the business earns virtually nothing on its equity; this is the hallmark of a value trap, not a value opportunity.",
+      "P/E of 20x violates my strict threshold of ≤15x; I am paying a growth premium for a company with near-zero profitability.",
+      "No data provided on current ratio, debt-to-equity, interest coverage, or dividend history — the margin of safety cannot be established."
+    ],
+    "red_flags": [
+      "ROE of 0.27% is functionally zero — earning power is absent, which is the very foundation of my intrinsic value calculation.",
+      "Micro-cap at INR 120 Cr market cap — thin liquidity, wide bid-ask spreads, and susceptibility to operator manipulation in Indian markets.",
+      "Solvent-based synthetic rubber adhesives is a commoditised, low-barrier business; no evidence of pricing power or economic moat.",
+      "No dividend history mentioned — the company returns nothing to shareholders while generating almost no earnings."
+    ],
+    "detailed_analysis": "At a P/E of 20x, the market is assigning a growth multiple to a business earning a ROE of just 0.27% — a near-mathematical contradiction. With a market cap of INR 120 Cr and implied net earnings of roughly INR 6 Cr, the equity base implied by this ROE is approximately INR 2,200 Cr, suggesting the stock may trade at a tiny fraction of book value (~0.05x P/B). Were this confirmed, it might attract my attention as a net-asset play — but an asset base that earns 0.27% is not an asset, it is a liability dressed up in accounting clothing. I require proven earning power, not dormant balance-sheet figures.\n\nCritical data is entirely absent: current ratio (my floor is 2.0x), debt-to-equity (my ceiling is 0.5x), interest coverage, and any dividend record. Without these, I cannot compute a Graham Number or assess the margin of safety. Specialty chemicals — particularly solvent-based adhesives — is a commodity business subject to raw material price swings and intense competition, offering little prospect of durable excess returns. Mr. Market may one day offer this at a price worth examining, but at INR 53.50 with a P/E of 20 and ROE of 0.27%, the disciplined investor must firmly decline.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 53880,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07349325,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 7999,
+      "cache_read_input_tokens": 9610,
+      "output_tokens": 2707,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 7999,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 260,
+          "cache_read_input_tokens": 7560,
+          "cache_creation_input_tokens": 2489,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2489
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

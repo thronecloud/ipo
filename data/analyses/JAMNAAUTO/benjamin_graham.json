@@ -1,0 +1,69 @@
+{
+  "symbol": "JAMNAAUTO",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T17:48:49.300567Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Jamna Auto is a financially sound, 70-year-old CV leaf spring manufacturer with consistent earnings and near-zero debt — qualities I admire. However, at P/E 25.4x and P/B 4.93x, the stock trades at roughly 2.5x my computed Graham Number of ~INR 51, offering no margin of safety whatsoever.",
+    "key_strengths": [
+      "10 consecutive years of positive net profit (including COVID trough of INR 48 Cr in 2020), satisfying my earnings consistency requirement",
+      "Minimal debt burden — D/E of 0.15, finance costs only INR 5 Cr vs EBITDA of INR 311 Cr, yielding ~62x interest coverage",
+      "Steady equity book-building from INR 517 Cr (2020) to INR 1,036 Cr (2025) with reserves compounding at a healthy rate"
+    ],
+    "key_risks": [
+      "Valuation is the primary danger — P/E 25.4x and P/B 4.93x far exceed my thresholds of 15x and 1.5x; the stock must fall 60% merely to reach fair value by my standards",
+      "Severe CV-cycle dependence — revenue crashed 47% in FY20 (INR 2,135 Cr → 1,129 Cr) and FY25 revenue of INR 2,270 Cr actually contracted from FY24's INR 2,427 Cr",
+      "Erratic free cash flow (−INR 73 Cr in FY24, +103 Cr in FY25, −36 Cr in FY22) makes normalized earning power difficult to establish with confidence"
+    ],
+    "red_flags": [
+      "Graham Number ≈ INR 51 (√22.5 × EPS ~4.52 × BVPS ~26.0) versus current price of INR 129 — a 152% premium to intrinsic value",
+      "Revenue in FY25 (INR 2,270 Cr) sits below FY24 and barely above FY19 (INR 2,135 Cr) — a decade of real revenue stagnation after inflation",
+      "Capital-work-in-progress surged to INR 270 Cr in FY25 from INR 56 Cr in FY23, signalling heavy capex commitments that may pressure future free cash flow"
+    ],
+    "detailed_analysis": "By my quantitative discipline, a stock must first pass the valuation filter before any qualitative merits matter. Jamna Auto fails emphatically: P/E of 25.4x is 70% above my outer limit of 15x, and P/B of 4.93x is more than three times my ceiling of 1.5x. The Graham Number calculation — using trailing EPS of ~INR 4.52 and book value per share of ~INR 26 — yields ~INR 51, against a market price of INR 129. The intelligent investor demands a discount to intrinsic value, not a 152% premium. At this price, the buyer assumes perfect execution and a benign CV cycle for years to come; Mr. Market is being dangerously optimistic.\n\nThe underlying business, I will grant, is respectable. Founded in 1954, Jamna Auto has survived multiple downturns and kept its balance sheet lean (D/E 0.15, interest coverage ~62x). Promoter holding at 49.93% aligns management with shareholders. Yet the cyclicality is real and painful — a near-50% revenue collapse in FY20 is not a minor inconvenience. Operating cash flow swung from near-zero (FY22: INR 1 Cr) to INR 374 Cr (FY23) and back to INR 90 Cr (FY24), confirming this is a commodity-adjacent, volume-driven business susceptible to commercial-vehicle demand cycles. At a price offering no margin of safety, the disciplined investor must wait patiently for Mr. Market's pessimism to bring the price near intrinsic value.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 57304,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08358209999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9678,
+      "cache_read_input_tokens": 11152,
+      "output_tokens": 2929,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9678
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 358,
+          "cache_read_input_tokens": 9102,
+          "cache_creation_input_tokens": 2626,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2626,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

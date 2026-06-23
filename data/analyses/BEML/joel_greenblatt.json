@@ -1,0 +1,69 @@
+{
+  "symbol": "BEML",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-19T12:49:29.656879Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "BEML fails the Magic Formula on both dimensions: earnings yield is a paltry ~3.4% (Operating Income INR 506 Cr ÷ EV ~INR 15,075 Cr) and ROCE of 15.6% is mediocre for a capital-heavy industrial. The stated operating margin of -1.63% suggests true EBIT (post-D&A) is likely negative, making the formula mathematically incoherent.",
+    "key_strengths": [
+      "Government-backed order book across defense, metro, and mining — provides revenue visibility",
+      "Operating Income CAGR of 14.6% over 9 years shows improving operational leverage",
+      "Low D/E of 0.24 and largely PSU-linked customer base limits credit risk"
+    ],
+    "key_risks": [
+      "Reported operating margin of -1.63% implies EBIT is likely negative after D&A — Magic Formula breaks down entirely",
+      "Revenue CAGR of only 3.4% over 9 years shows near-stagnant top-line growth despite capital deployed",
+      "FCF highly volatile (INR -8 Cr in FY2025, INR -351 Cr in FY2021) and capex surging to INR 193 Cr signals capital trap"
+    ],
+    "red_flags": [
+      "Negative operating margin (-1.63%) despite headline 'Operating Income' appearing positive — definitional mismatch signals poor EBIT quality",
+      "Earnings yield of ~3.4% is less than half the 6% minimum threshold for the Magic Formula",
+      "Borrowings swung from INR 71 Cr to INR 666 Cr in a single year while cash sits at only INR 4 Cr"
+    ],
+    "detailed_analysis": "BEML is a PSU conglomerate serving defense, metro rail, and mining — sectors with long gestation cycles and government procurement risk. The Magic Formula requires both a high earnings yield AND high return on capital; BEML delivers neither. At EV ~INR 15,075 Cr against EBIT of, at best, INR 506 Cr, the earnings yield is ~3.4%, and the true post-D&A EBIT appears negative given the -1.63% operating margin. ROCE of 15.6% is passable but not the 25%+ Greenblatt looks for.\n\nFree cash flow converted to strongly negative in FY2025 (INR -8 Cr) as capex spiked to INR 193 Cr (vs. INR 101 Cr prior year) — CWIP jumped from INR 37 Cr to INR 171 Cr — absorbing cash without earnings to show for it. Net profit of INR 293 Cr against a P/E of 59.3x means you are paying a steep premium for a low-ROIC industrial. Until the company demonstrates sustained positive EBIT margins and earnings yields north of 8%, this is a pass.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 176713,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.2594847,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 25278,
+      "cache_read_input_tokens": 15244,
+      "output_tokens": 10674,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 25278,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 549,
+          "cache_read_input_tokens": 15244,
+          "cache_creation_input_tokens": 10034,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 10034
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

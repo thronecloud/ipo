@@ -1,0 +1,70 @@
+{
+  "symbol": "DIACABS",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T17:07:42.665742Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "DIACABS scores near-zero on both Magic Formula legs: Earnings Yield is ~0.8% (EBIT ₹67 Cr / EV ~₹8,340 Cr) vs. the 12% minimum, and ROIC is roughly 3–4% (₹67 Cr EBIT on ₹2,048 Cr assets) vs. the 20% threshold. A company with negative book equity priced at 74.9× earnings is pure speculation, not value.",
+    "key_strengths": [
+      "Revenue turnaround is real — grew from ₹0 in 2022 to ₹1,115 Cr in 2025, suggesting the restructured business is operating again",
+      "Debt dramatically reduced from ₹2,355 Cr (2024) to ₹463 Cr (2025), implying successful resolution/restructuring",
+      "Operating in a capex-heavy power infra sector with strong Indian government tailwinds (grid expansion, renewables)"
+    ],
+    "key_risks": [
+      "Negative equity of -₹714 Cr means liabilities still exceed assets — technically insolvent on book value basis",
+      "Earnings yield of ~0.8% is catastrophically below Magic Formula threshold; market is pricing in years of future growth that hasn't materialized",
+      "Accumulated losses from 2015–2023 (-₹805 Cr in FY17 alone) destroyed the balance sheet; reserves stand at -₹767 Cr"
+    ],
+    "red_flags": [
+      "Negative book value (-₹714 Cr equity) — P/B of -10.95 is not a value metric, it's a warning sign",
+      "Debt drop from ₹2,355 Cr to ₹463 Cr in one year likely reflects a haircut/write-off, not repayment — creditors absorbed losses",
+      "₹34 Cr net profit in FY25 justifying ₹7,884 Cr market cap (P/E 74.9×) is speculative excess",
+      "EBITDA margin 6% in FY25 (₹67 Cr on ₹1,115 Cr) — margins have not recovered to pre-distress levels (2012–2014 were 10–12%)"
+    ],
+    "detailed_analysis": "Running the Magic Formula on DIACABS produces two near-zero scores. Earnings Yield: EBIT of ₹67 Cr divided by an Enterprise Value of ~₹8,340 Cr (₹7,884 Cr market cap + ₹463 Cr debt − ₹7 Cr cash) yields 0.8% — I need 12%+ for a stock to even enter my screen. Return on Capital: ₹67 Cr EBIT on ₹2,048 Cr total assets (negative equity makes traditional NWC + NFA calculation unreliable, but any reasonable cut gives ROIC of 3–5%) — I need 20%+. Both legs fail badly, and the Magic Formula explicitly requires BOTH to be high.\n\nThe story here is a company that imploded spectacularly (₹805 Cr net loss in FY17, negative equity since FY22, near-zero revenue until FY23) and has partially restructured. The debt collapse from ₹2,355 Cr to ₹463 Cr in a single year screams haircut, not operational cash generation — creditors took losses so equity holders could survive. A ₹7,884 Cr market cap on ₹34 Cr of net profit in the first profitable year post-restructuring is the market paying for a dream. My formula doesn't buy dreams; it buys high-ROIC businesses at cheap earnings yields. DIACABS offers neither.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 49732,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0838944,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11216,
+      "cache_read_input_tokens": 8918,
+      "output_tokens": 2610,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11216
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 382,
+          "cache_read_input_tokens": 8918,
+          "cache_creation_input_tokens": 2298,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2298,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "NEOGEN",
+  "persona": "howard_marks",
+  "persona_display_name": "Howard Marks",
+  "analyzed_at": "2026-04-18T22:12:28.024450Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Neogen trades at 150x trailing P/E and 39x EV/EBITDA while net profits are actually declining (INR 50 Cr → INR 35 Cr over FY23-25) and free cash flow has been negative every single year since FY2020. The price reflects a perfect execution of a debt-funded capacity expansion that hasn't yet delivered — leaving zero margin for error.",
+    "key_strengths": [
+      "25.6% revenue CAGR over 9 years with real operational scale — revenues grew from INR 100 Cr to INR 778 Cr",
+      "Niche chemistry capabilities (organo-lithium, Grignard reagents, specialty bromo-fluoro) with exports to 33 countries — genuine technical moat",
+      "Battery materials (lithium salts) and pharma intermediates are structurally growing end markets with multi-year tailwinds"
+    ],
+    "key_risks": [
+      "Debt tripled in a single year: borrowings jumped from INR 409 Cr (FY24) to INR 1,132 Cr (FY25) against equity of just INR 799 Cr — at ~10% cost of debt, FY26 interest burden could approach INR 110-120 Cr vs. only INR 35 Cr net profit today",
+      "FCF has been negative every year 2020–2025 (cumulative FCF ≈ negative INR 766 Cr) — the business cannot self-fund and is entirely dependent on capital markets remaining open",
+      "ROE of 5.59% and ROCE of 8.82% at current capital base mean new invested capital is barely earning its cost — profitability has deteriorated even as revenue grew 13% in FY25"
+    ],
+    "red_flags": [
+      "Borrowings nearly tripled YoY (INR 409 Cr → INR 1,132 Cr) while cash is nearly exhausted (INR 5 Cr remaining) — severe liquidity concentration risk if capex program stalls",
+      "Other income swung to negative INR 10 Cr in FY25 (vs. +INR 8 Cr in FY24) — unexplained deterioration masking true earnings power",
+      "150x P/E on declining earnings: market is pricing in a 4–5x earnings recovery that requires flawless execution of an INR 650+ Cr CWIP/capex program amid high leverage"
+    ],
+    "detailed_analysis": "The consensus narrative on Neogen is compelling: specialty chemicals, battery materials, pharma intermediates, 25% revenue CAGR. But second-level thinking demands we ask what that story already costs us. At INR 1,512, you are paying 150x earnings that are themselves declining, 5x book on a business earning 5.6% ROE, and 39x EV/EBITDA. The Forward P/E of 65.8x implies the market expects net profit to roughly double to ~INR 60 Cr next year — but that forecast almost certainly does not fully account for the interest bomb embedded in the FY25 balance sheet. Borrowings of INR 1,132 Cr at market rates will likely generate INR 110-120 Cr of annual interest expense in FY26, versus only INR 48 Cr in FY25. If EBITDA stays at INR 131 Cr, interest alone consumes nearly all of it. This is not a business at a cyclical trough — this is a business mid-capex-cycle with leverage that is structurally incompatible with the valuation placed on it.\n\nThe CWIP of INR 335 Cr and cumulative capex of INR 621 Cr over FY24-25 suggest management is making a large bet on future demand — possibly justified by battery material contracts or long-term pharma supply agreements. But the investor is being asked to fund this at zero margin of safety. Free cash flow has been negative in 5 of the last 5 years, total negative FCF over that period exceeds INR 766 Cr, and cash on the balance sheet has shrunk to just INR 5 Cr. The upside scenario (capex delivers 25%+ earnings CAGR, lithium demand accelerates) is fully priced in. The downside scenario (capacity ramp delays, demand softness, rate pressures) could see earnings remain flat or fall further while interest costs surge — a scenario that could see the stock cut in half and still not be \"cheap.\" Howard Marks' rule applies: the price you pay determines your return, and here, the price leaves no room for reality to disappoint even slightly.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 59839,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08451495,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9681,
+      "cache_read_input_tokens": 11224,
+      "output_tokens": 2989,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9681,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 475,
+          "cache_read_input_tokens": 9170,
+          "cache_creation_input_tokens": 2565,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2565
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "DHARARAIL",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-21T07:45:01.775263Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Dhara Rail Pro fails the Magic Formula on both critical axes: earnings yield is a paltry ~3% (EBIT of INR 5 Cr against EV of ~INR 169 Cr), signaling a richly priced small-cap with no margin of safety. Worse, operating cash flow has been negative all three years, meaning reported earnings are not converting to real cash — the cardinal sin for a Magic Formula investor.",
+    "key_strengths": [
+      "Revenue growing at ~27% CAGR (27→44 Cr), showing genuine demand for rail maintenance services.",
+      "Zero debt servicing cost (Finance Cost INR 0 Cr), keeping the income statement clean.",
+      "High promoter skin-in-the-game at 74.56%, aligning management incentives with the business."
+    ],
+    "key_risks": [
+      "Earnings quality is hollow: Other Income (INR 4 Cr) nearly equals Operating Income (INR 5 Cr) — strip it and the core business barely earns anything.",
+      "OCF negative for 3 consecutive years (-2, -2, -5 Cr) — reported profits are not translating into cash; this destroys the Magic Formula premise.",
+      "Micro-cap at INR 148 Cr with extremely thin earnings base; any revenue miss or working-capital stretch could wipe out profitability entirely."
+    ],
+    "red_flags": [
+      "Earnings Yield ≈ 3% (EBIT INR 5 Cr / EV ~INR 169 Cr) — far below the 12% Magic Formula minimum.",
+      "Free Cash Flow negative all three years; Net Profit of INR 7 Cr in 2025 vs OCF of -INR 5 Cr is a 12 Cr gap — classic earnings-quality red flag.",
+      "Other Income of INR 4 Cr in FY25 is 57% of net profit; core operating ROIC is well below the reported ROCE of 19%."
+    ],
+    "detailed_analysis": "Running the Magic Formula: EBIT is INR 5 Cr (operating income; I exclude Other Income of INR 4 Cr as non-recurring/non-operational). Enterprise Value = Market Cap INR 148 Cr + Debt INR 21 Cr ≈ INR 169 Cr. Earnings Yield = 5/169 = 3.0% — deeply below the 12% threshold where Greenblatt gets interested. Invested capital (Equity INR 20 Cr + Debt INR 21 Cr = INR 41 Cr) gives ROIC of roughly 12%, barely at the minimum floor. Both legs of the Magic Formula are weak-to-failing.\n\nThe cash flow picture makes it worse. A company reporting INR 7 Cr net profit while burning INR 5 Cr in operating cash flow — three years running — has a structural working-capital problem or is recognising revenue it hasn't collected. The INR +17 Cr investing inflow in FY25 looks like asset liquidation, not business compounding. The headline ROE of 50% is an artifact of the company's tiny prior equity base (INR 3 Cr in FY23), not evidence of durable capital efficiency. At a P/E of 36x on earnings that are largely non-operational and not cash-backed, there is no margin of safety here whatsoever.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 56038,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08690130000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10638,
+      "cache_read_input_tokens": 8016,
+      "output_tokens": 2973,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10638,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 383,
+          "cache_read_input_tokens": 8016,
+          "cache_creation_input_tokens": 2622,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2622
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

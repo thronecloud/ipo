@@ -1,0 +1,69 @@
+{
+  "symbol": "AVL",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-18T16:38:49.473142Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Aditya Vision is a classic Lynch fast-grower — a dominant consumer electronics retailer in underpenetrated Bihar/Eastern India expanding its store footprint at 36%+ CAGR — but persistently negative and worsening free cash flow (-₹78 Cr in FY25 vs +₹13 Cr in FY22) means the growth engine is burning investor capital, not generating it. At a trailing PEG of ~1.4 (P/E 61.37 / 44% EPS CAGR), the story is good but the price is not cheap enough to absorb execution risk.",
+    "key_strengths": [
+      "Exceptional 36% revenue CAGR (FY22→FY25) with net profit growing even faster at 44% CAGR — the story is working",
+      "ROCE of ~30% signals genuine capital efficiency in existing stores; the unit economics are sound",
+      "First-mover dominance in Bihar/Eastern India — underpenetrated Tier 2/3 market with long consumer durables adoption runway"
+    ],
+    "key_risks": [
+      "Operating cash flow has collapsed from +₹32 Cr (FY22) to -₹41 Cr (FY25) — growth is being funded by debt and equity raises, not operations",
+      "Total debt nearly doubled from ₹282 Cr to ₹480 Cr in 3 years; D/E at 0.65 and climbing — thin 6.57% margins leave no cushion if credit tightens",
+      "Specialty retail is a low-margin, inventory-heavy model: any economic slowdown, consumer sentiment softening, or competition from Croma/Reliance Digital could compress margins further"
+    ],
+    "red_flags": [
+      "FCF deteriorating every year: +13 → -13 → -41 → -78 Cr — the growth machine has never self-funded",
+      "OCF positive only 2 of last 4 years; the company is not cash-generative at current scale despite ₹2,260 Cr revenue",
+      "Financing CF consistently positive (raised ₹94 Cr in FY25) — growth is dependent on continuous external capital"
+    ],
+    "detailed_analysis": "Aditya Vision ticks many Lynch fast-grower boxes: a simple retail concept (consumer electronics) expanding store-by-store into a huge, underserved geography (Bihar has 120M+ people with low appliance penetration). Revenue has compounded at 36% for three straight years, profits at 44%, and ROCE at 30% tells you the existing stores are genuinely profitable. The forward PEG of ~0.95 (forward P/E 41.69 / ~44% growth) is borderline attractive for a quality fast-grower. I can walk into Patna and see these stores — that's exactly the kind of ground-level insight Lynch prizes.\n\nBut the cash flow statement kills the excitement. A retailer at ₹2,260 Cr in revenue should be generating operating cash, not burning ₹41 Cr of it. The culprit is working capital — rapid store expansion means inventory pileup and supplier credit strain. Debt has ballooned from ₹282 Cr to ₹480 Cr while FCF hit -₹78 Cr in FY25. Lynch loved growth, but he hated debt-fueled, cash-burning expansion in thin-margin businesses. Until AVL demonstrates the ability to fund its own growth — ideally OCF turning sustainably positive — this story is incomplete. Watch for FY26 OCF inflection before adding aggressively.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 50284,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08257905,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10763,
+      "cache_read_input_tokens": 8446,
+      "output_tokens": 2645,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10763
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 393,
+          "cache_read_input_tokens": 8446,
+          "cache_creation_input_tokens": 2317,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2317,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

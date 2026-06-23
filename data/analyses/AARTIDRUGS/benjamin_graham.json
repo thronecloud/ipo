@@ -1,0 +1,69 @@
+{
+  "symbol": "AARTIDRUGS",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T16:10:52.113648Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Aarti Drugs carries a decade of unbroken profitability and manageable debt, but the stock trades at INR 373 against an estimated Graham Number of ~INR 258 — a 45% premium that offers no margin of safety. Compounding the valuation problem, revenues and profits have been contracting since 2021, making this an expensive stock in a deteriorating business cycle.",
+    "key_strengths": [
+      "Unbroken 10-year earnings record (2016–2025) — the bedrock Graham requires before any investment is considered",
+      "Debt/Equity of 0.39 passes my <0.5 threshold, and interest coverage of ~7.4x (Operating Income INR 290 Cr ÷ Finance Cost INR 39 Cr) is well above my 3.5x floor",
+      "Promoter stake of 55% indicates ownership alignment, and OCF was positive in all 5 of the last 5 years"
+    ],
+    "key_risks": [
+      "Fundamental deterioration: Revenue fell from INR 2,716 Cr (2023) to INR 2,387 Cr (2025); Net Profit collapsed from peak INR 280 Cr (2021) to INR 168 Cr (2025) — a 40% decline from the earning power embedded in today's price",
+      "Thin operating margin of 6.16% leaves almost no buffer against input cost shocks, pricing pressure, or a demand slowdown in bulk API markets",
+      "Heavy capex cycle (INR 177 Cr in FY25, INR 226 Cr in FY24) with near-zero cash (INR 5 Cr) is destroying free cash flow — FCF of only INR 67 Cr in 2025 on a INR 3,408 Cr market cap implies a 0.2% free cash yield"
+    ],
+    "red_flags": [
+      "Graham Number breach: sqrt(22.5 × ~18.4 EPS × ~161 BVPS) ≈ INR 258 vs. market price of INR 373 — no margin of safety, quite the opposite",
+      "P/B of 2.51 is materially above my hard ceiling of 1.5; the market is paying INR 2.51 for every INR 1 of net assets in a commodity-like API business with a 12.7% ROE — that arithmetic does not work",
+      "EBITDA has contracted from INR 490 Cr (2021) to INR 307 Cr (2025) even as total debt grew to INR 615 Cr and capex surged — capital is being deployed into a shrinking return profile"
+    ],
+    "detailed_analysis": "Aarti Drugs clears only two of my quantitative hurdles with any comfort: the debt-to-equity ratio (0.39) and the interest coverage ratio (~7.4x). Everything else fails. The Graham Number of approximately INR 258 — calculated from FY25 EPS of ~INR 18.4 and book value per share of ~INR 161 — tells me the stock demands a 45% haircut before I would even open the ledger seriously. A P/B of 2.51 is simply paying too much for an API manufacturer whose competitive moat is narrow; bulk generics are subject to Chinese competition, pricing pressure from buyers, and regulatory risk. The ROE of 12.7% on a 2.51x book multiple implies a price-to-earnings-on-equity that no disciplined buyer should accept.\n\nMore troubling than the valuation is the trajectory of the business itself. The 2021 windfall — Net Profit of INR 280 Cr, EBITDA of INR 490 Cr — was a COVID-era anomaly, not a new baseline. By 2025, Net Profit has settled at INR 168 Cr and EBITDA at INR 307 Cr, while the company has simultaneously piled on debt and spent heavily on capex. Free cash flow over the last four years sums to barely INR 87 Cr while capex consumed over INR 720 Cr. The market appears to be pricing this business on its 2021 peak, not its current reality. Mr. Market is being generous to the seller today; I am content to wait for him to grow despondent.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 57665,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08515365,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9929,
+      "cache_read_input_tokens": 11503,
+      "output_tokens": 2964,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9929,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 492,
+          "cache_read_input_tokens": 9453,
+          "cache_creation_input_tokens": 2526,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2526
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

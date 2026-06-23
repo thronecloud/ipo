@@ -1,0 +1,69 @@
+{
+  "symbol": "BLUESTONE",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-18T16:51:34.679286Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "BlueStone is a compelling fast-grower in India's massive organised jewellery shift, with revenue CAGR of 56.5% (₹461 Cr → ₹1,770 Cr), but it is burning cash at an alarming ₹828 Cr FCF deficit in FY25 with no visible near-term profitability. Until the company demonstrates positive earnings and sustainable cash generation, Lynch's PEG discipline cannot be applied, and the EV/EBITDA of 60.6x on nascent EBITDA offers no margin of safety.",
+    "key_strengths": [
+      "Exceptional top-line momentum: 56.5% revenue CAGR over 3 years in a massive, largely unorganised Indian jewellery market",
+      "EBITDA trajectory is dramatically improving (−₹1,222 Cr → +₹121 Cr over 4 years), and operating income turned positive in FY25 at ₹76 Cr",
+      "Strong institutional conviction — FII + DII combined own 68%, suggesting informed money sees the long-term brand story"
+    ],
+    "key_risks": [
+      "FCF is deeply negative and accelerating: −₹828 Cr in FY25 vs −₹63 Cr in FY23; the business consumes more cash the faster it grows",
+      "Debt has exploded 6.4x in 3 years (₹299 Cr → ₹1,915 Cr); finance costs grew at a 124% CAGR, turning net profit worse (−₹222 Cr in FY25 vs −₹142 Cr in FY24) even as EBITDA improved",
+      "Promoter stake of only 16.27% is unusually low — Lynch always wants management with significant skin in the game"
+    ],
+    "red_flags": [
+      "No calculable PEG ratio — forward P/E is −401x; Lynch's core metric is completely inapplicable",
+      "Operating cash flow cratered to −₹666 Cr in FY25 from +₹27 Cr in FY23 — inventory-heavy jewellery expansion is a cash trap at this pace",
+      "Debt growing faster than revenue (debt CAGR ~86% vs revenue CAGR 57%); balance sheet only turned positive due to IPO equity infusion, not organic earnings"
+    ],
+    "detailed_analysis": "BlueStone is a classic Lynch fast-grower story on the surface — a consumer brand I can observe, operating in India's shift from unorganised to organised jewellery, with eye-popping 56.5% revenue CAGR. The EBITDA turnaround (−₹1,222 Cr to +₹121 Cr) and first positive operating income (₹76 Cr in FY25) suggest the unit economics are beginning to work. At P/S of 3.58x on a 57% revenue grower, the revenue multiple alone isn't insane. But Lynch's first rule is earnings: without a P/E, there is no PEG, and without a PEG, I have no anchor for valuation discipline.\n\nWhat truly worries me is the cash flow statement. A company with ₹1,770 Cr in revenue burning ₹828 Cr in free cash flow and ₹666 Cr in operating cash flow is funding growth entirely through debt and equity issuance — not through its own business engine. Finance costs at ₹208 Cr (up 124% CAGR) are overwhelming the EBITDA improvement and widening net losses. This is a turnaround story masquerading as a growth story. I'd love to revisit when FCF approaches break-even and net margins show a credible path to positive territory — but at EV/EBITDA of 60.6x, the market is already pricing in perfection for a company that hasn't earned it yet.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 70666,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08164245,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10647,
+      "cache_read_input_tokens": 8374,
+      "output_tokens": 2613,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10647
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 428,
+          "cache_read_input_tokens": 8374,
+          "cache_creation_input_tokens": 2273,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2273,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

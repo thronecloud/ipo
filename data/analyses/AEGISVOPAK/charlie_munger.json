@@ -1,0 +1,69 @@
+{
+  "symbol": "AEGISVOPAK",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-20T11:11:22.620740Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Aegis Vopak owns genuinely scarce infrastructure (LPG/chemical terminals) with strong JV parentage, but ROCE of 7.01% and ROE of 8.73% fail every basic quality test Munger demands. At 109x earnings and 55x EV/EBITDA for a capital-intensive tollbooth earning sub-cost-of-capital returns, the price is divorced from the economics.",
+    "key_strengths": [
+      "Scarce port-terminal infrastructure with regulatory barriers and 48% operating margins",
+      "Strong parentage via Aegis Logistics + Royal Vopak JV brings operating know-how",
+      "OCF turned solidly positive (INR 478 Cr in 2025) with FCF of INR 350 Cr post-IPO"
+    ],
+    "key_risks": [
+      "ROCE 7.01% sits below cost of capital — value-destroying at current invested-capital base",
+      "Valuation absurd: 109x P/E, 55x EV/EBITDA for a slow-compounding infra asset",
+      "Finance cost INR 193 Cr exceeds net profit INR 127 Cr — leverage masks weak unit economics"
+    ],
+    "red_flags": [
+      "Only 2 years of meaningful operating history; 3Y finance-cost CAGR of 478%",
+      "Cumulative investing outflow ~INR 3,100 Cr over 4 years vs modest PAT — extreme capital intensity",
+      "Equity ballooned from 997 to 4,742 Cr in 2025 (IPO dilution) yet ROE still single digit"
+    ],
+    "detailed_analysis": "Inverting first: what kills this investment? Paying 55x EBITDA for an asset earning 7% on capital guarantees a poor outcome unless returns structurally double or the market keeps paying a fantasy multiple. Both are hopes, not theses. Munger's rule — a great business at fair price — is violated twice: returns aren't great (ROCE 7%, ROE 8.7%, both below a risk-free G-Sec equivalent benchmark), and price isn't fair. The 99% gross margin is a red herring typical of asset-leasing models; real economics sit in depreciation + interest, which consume the bulk of EBITDA (EBITDA 584 Cr vs PAT 127 Cr).\n\nThis is not a bad business — Indian terminal infrastructure is genuinely moated and Royal Vopak brings world-class discipline. Post-IPO deleveraging plus capacity ramp could push ROCE toward low-teens over 3-5 years. But at INR 22,244 Cr market cap on INR 127 Cr profit, the market is already pricing that optimistic scenario and more. I'd want ROCE sustained above 15%, FCF normalized, and the multiple cut in half before this is interesting. Into the too-hard/too-expensive pile; revisit after the next capex cycle completes.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 45137,
+    "model_used": "opus",
+    "total_cost_usd": 0.16391774999999997,
+    "usage": {
+      "input_tokens": 7,
+      "cache_creation_input_tokens": 11621,
+      "cache_read_input_tokens": 27353,
+      "output_tokens": 3103,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11621,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 77,
+          "cache_read_input_tokens": 13099,
+          "cache_creation_input_tokens": 1249,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1249
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

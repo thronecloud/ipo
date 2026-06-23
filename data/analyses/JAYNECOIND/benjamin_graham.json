@@ -1,0 +1,70 @@
+{
+  "symbol": "JAYNECOIND",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T17:49:48.898697Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Jayaswal Neco trades at 3.8x its Graham Number (est. ~INR 25, vs. price INR 96.20), with a P/B of 3.63 and P/E of 25 — both far exceeding my strict valuation thresholds. Deteriorating earnings (INR 2,247 Cr in 2022 was clearly exceptional; profits have collapsed to INR 113 Cr in 2025), negative ROE, and dangerously thin interest coverage offer no margin of safety.",
+    "key_strengths": [
+      "Operating cash flow positive all 5 of the last 5 years; FCF surged to INR 1,144 Cr in FY2025",
+      "Total debt declining steadily from INR 3,845 Cr (2022) to INR 2,753 Cr (2025) — management is servicing debt",
+      "54-year operating history (est. 1972) with diversified end-markets across auto, railways, infrastructure"
+    ],
+    "key_risks": [
+      "Interest coverage ~1.19x (FY2025 EBIT INR 657 Cr ÷ finance cost INR 554 Cr) — catastrophically below my 3.5x minimum; one bad year tips insolvency",
+      "Earnings collapsed from INR 2,247 Cr (2022, exceptional/one-time) to INR 113 Cr (2025) — true earning power is weak and deteriorating",
+      "Debt/Equity at 0.91 exceeds my 0.5 ceiling; net debt of ~INR 2,597 Cr against equity of INR 2,376 Cr means creditors have more skin in the game than owners"
+    ],
+    "red_flags": [
+      "Graham Number ~INR 25 (EPS ~1.16 × BVPS ~24.46) implies current price is 3.8x fair value",
+      "ROE is negative (-0.87%) — the business is destroying shareholder equity",
+      "The FY2022 net profit of INR 2,247 Cr (vs. INR 113 Cr in FY2025) appears to be a one-time debt restructuring gain, not operating earning power — a classic mirage",
+      "No dividend history referenced — shareholders receive nothing tangible while bearing substantial financial risk"
+    ],
+    "detailed_analysis": "By every quantitative standard I hold dear, Jayaswal Neco fails. The Graham Number — the most fundamental test of whether price is anchored to assets and earnings — computes to roughly INR 25 (√[22.5 × EPS 1.16 × BVPS 24.46]). The stock trades at INR 96.20, nearly four times that figure. P/B of 3.63 is more than double my ceiling of 1.5, and P/E of 25 is nearly twice my limit of 15. These are not minor infractions; they represent the market pricing in a story of recovery and growth that I, as a prudent investor, refuse to pay for in advance.\n\nThe financial health beneath the headline numbers is alarming. The interest coverage ratio of approximately 1.19x (EBIT INR 657 Cr against finance costs of INR 554 Cr) is the most frightening figure here — it means the company barely generates enough operating income to pay its lenders, with almost nothing left for equity holders. The FY2022 profit of INR 2,247 Cr is almost certainly a non-recurring item (likely a write-back from debt restructuring), and the market appears to have awarded it a permanent multiple — a mistake the intelligent investor must not repeat. With ROE negative, earnings declining three years running (INR 227 → 210 → 113 Cr), and debt still nearly equal to equity, the margin of safety here is not thin — it is nonexistent. The cash flow is the sole bright spot, but FCF cannot redeem a stock priced for prosperity when the business is mired in debt service.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 55816,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08133855,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9533,
+      "cache_read_input_tokens": 11286,
+      "output_tokens": 2813,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9533
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 508,
+          "cache_read_input_tokens": 9236,
+          "cache_creation_input_tokens": 2347,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2347,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "symbol": "SHYAMDHANI",
+  "persona": "howard_marks",
+  "persona_display_name": "Howard Marks",
+  "analyzed_at": "2026-04-21T07:46:21.444818Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Shyam Dhani is a micro-cap commodity spices company earning a near-zero 0.41% ROE — a disqualifying figure in a sector where peers like MDH and Everest routinely earn 20-30% ROE. At INR 108 Cr market cap with no discernible moat, the optically cheap P/E of 13.4x is a value trap, not an opportunity.",
+    "key_strengths": [
+      "Promoter skin-in-the-game at 72% holding signals alignment (in theory)",
+      "P/E of 13.4x is below broader FMCG multiples, implying low consensus expectations",
+      "Spices is a structurally growing category in India with export tailwinds"
+    ],
+    "key_risks": [
+      "ROE of 0.41% is catastrophic — the business is not earning its cost of capital by any measure",
+      "No moat: premium spices is a hyper-competitive, commoditized space dominated by MDH, Everest, ITC, and HUL",
+      "Micro-cap illiquidity (108 Cr MCap) — any selling pressure creates permanent capital loss risk with no exit"
+    ],
+    "red_flags": [
+      "ROE of 0.41% implies implied book value of ~INR 1,950 Cr vs market cap of 108 Cr — either the book is massively impaired or earnings are structurally unsustainable; either is a red flag",
+      "No debt, FCF, or revenue data provided — critical gaps for a capital-intensive manufacturer",
+      "72% promoter holding + 108 Cr MCap = tiny 28% float (~30 Cr), creating extreme manipulation and illiquidity risk in micro-cap India",
+      "Zero institutional sponsorship likely (no analyst coverage) — no price discovery mechanism"
+    ],
+    "detailed_analysis": "Second-level thinking demands we ask not just \"is 13.4x P/E cheap?\" but \"why is it cheap, and is the cheapness deserved?\" With ROE of 0.41%, the implied equity base is roughly INR 1,950 Cr while the market only values the enterprise at INR 108 Cr — a P/B of ~0.055x. This screams value trap, not hidden gem. A business that earns 0.41% on equity in an FMCG category where capital should earn 20%+ is either holding dead assets, running at near-breakeven, or benefiting from a one-time earnings anomaly. None of these explain away the structural deficiency.\n\nFrom a risk-first perspective, the margin of safety is illusory. The spices category has no barriers to entry, no pricing power for a sub-scale player, and brutal shelf-space competition. In a stress scenario — commodity input inflation, a larger competitor discounting aggressively, or an export ban — this company has no earnings buffer (0.41% ROE is already the floor). The 72% promoter stake with a float of only ~30 Cr creates a liquidity trap: any institutional or retail exit could collapse the price. Without FCF data, debt figures, or revenue trends, there is insufficient information to size any upside, and the downside is the permanent loss of capital in an illiquid micro-cap with zero returns on equity.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "insufficient_data",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 72015,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09042929999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8748,
+      "cache_read_input_tokens": 9651,
+      "output_tokens": 3648,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8748,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 481,
+          "cache_read_input_tokens": 7597,
+          "cache_creation_input_tokens": 3205,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 3205
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

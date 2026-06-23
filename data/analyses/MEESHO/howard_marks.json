@@ -1,0 +1,70 @@
+{
+  "symbol": "MEESHO",
+  "persona": "howard_marks",
+  "persona_display_name": "Howard Marks",
+  "analyzed_at": "2026-04-21T08:00:37.770032Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Meesho is a freshly-minted IPO priced at 6.5x revenue with deeply negative accounting profits and a FCF yield of less than 1% (INR 516 Cr FCF vs. INR 74,700 Cr market cap) — the classic case of a good story sold at a price that already prices in perfection. At INR 164, the market is paying for a future that hasn't arrived, with zero margin of safety if execution stumbles.",
+    "key_strengths": [
+      "Revenue growing at 23-33% annually (INR 5,735 Cr → 9,390 Cr), proving market adoption in Tier 2/3 India",
+      "Operating cash flow turned positive and is improving (INR -2,303 Cr → +220 → +539 Cr), showing real business-level traction",
+      "Minimal debt (D/E 0.09, borrowings just INR 58 Cr) — the balance sheet isn't a bomb"
+    ],
+    "key_risks": [
+      "Net loss exploded from INR 328 Cr (2024) to INR 3,942 Cr (2025) — massive deterioration even as OCF improved; Other Income swung -1,066 Cr (231 to -835), suggesting large ESOP/fair value write-downs that will recur",
+      "At P/S 6.5x with -15.6% operating margins, the stock needs years of flawless execution; any growth deceleration or margin miss triggers violent de-rating",
+      "Promoter holding of only 16.57% signals extreme founder dilution — insiders are not aligned with public shareholders at scale"
+    ],
+    "red_flags": [
+      "IPO pricing at cycle highs — classic late-cycle capital raise at maximum optimism",
+      "P/B of 50.4x on eroding book equity (INR 2,472 Cr → 1,446 Cr in 3 years) is indefensible on fundamentals",
+      "Investing CF of -2,638 Cr in 2025 vs. Financing CF of +2,105 Cr — IPO proceeds are immediately being redeployed at scale; capital efficiency is unproven",
+      "EBITDA deteriorated sharply from -281 Cr (2024) to -1,002 Cr (2025), reversing the apparent improvement that likely drove the IPO narrative"
+    ],
+    "detailed_analysis": "The first question I always ask is: what does the price already reflect? At INR 74,700 Cr market cap on INR 9,390 Cr revenue, the market is pricing Meesho at 6.5x sales — a premium reserved for businesses with proven, expanding margins. Meesho has neither. Operating margin is -15.6%, EBITDA is -1,002 Cr in 2025, and the accounting net loss of -3,942 Cr in the IPO year is a jarring number to present to new public shareholders. Yes, the gap between GAAP loss and OCF is large (likely ESOP charges and fair value adjustments), and yes, operating cash flows at +539 Cr are encouraging — but the FCF yield is a trivial 0.69%. There is no margin of safety here.\n\nSecond-level thinking forces me to look past the India social-commerce narrative. Everyone knows Meesho targets Tier 2/3 India, has a 92% gross margin marketplace structure, and is growing 20%+ per year. The question is whether that consensus is already priced in — and at 50x book with negative returns on capital, it clearly is, and then some. The promoter holding of 16.57% tells me the founders have already harvested enormous value through pre-IPO rounds. The EBITDA in 2024 was -281 Cr, prompting the IPO narrative of \"approaching profitability\" — but 2025 showed -1,002 Cr EBITDA, reversing that story entirely. This is precisely the pattern I've warned about: IPOs issued when the story is most compelling, with the harshest operating reality still ahead. At current prices, the downside scenario — if growth slows to 15% and margins take another two years to turn positive — implies 40-60% downside. The upside in a bull case is already in the price.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 54677,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0804279,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8982,
+      "cache_read_input_tokens": 10438,
+      "output_tokens": 2907,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8982,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 303,
+          "cache_read_input_tokens": 8384,
+          "cache_creation_input_tokens": 2652,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2652
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "CENTRALBK",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-19T12:58:34.446855Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Central Bank of India is a government-owned PSB — explicitly excluded from the Magic Formula because bank capital structures make EBIT/EV and ROIC meaningless. Even setting the exclusion aside, the bank logged losses for six consecutive years (2016–2021) and its ROCE of only 5.48% is well below any threshold that would interest me.",
+    "key_strengths": [
+      "Recent profitability turnaround: net profit rose from ₹1,083 Cr (2022) to ₹3,943 Cr (2025), showing the NPA cleanup is bearing fruit",
+      "P/B of 0.82x — below book — offers a statistical margin of safety for those who invest in banks on book value",
+      "Other income growing at 12.9% CAGR (₹5,996 Cr in 2025) indicates improving fee income diversification"
+    ],
+    "key_risks": [
+      "Six consecutive years of losses (2016–2021) destroyed enormous shareholder value; accumulated losses are a structural legacy the bank must work through",
+      "Revenue CAGR of only 3% over 9 years — barely keeping pace with inflation — in a sector that should be growing with India's economy",
+      "OCF positive in only 1 of 5 years; operating cash flows are highly volatile and reflect inherent unpredictability of loan book quality"
+    ],
+    "red_flags": [
+      "Government owns 89.27% — PSBs are subject to political lending mandates that can override commercial discipline at any time",
+      "ROCE of 5.48% is far below cost of capital; the bank is not generating economic profit",
+      "Magic Formula explicitly excludes banks and financial companies — I cannot rank this stock and will not try"
+    ],
+    "detailed_analysis": "My Magic Formula was built to find good businesses cheaply, and I defined 'good' by eliminating businesses where capital structure makes the metrics uninterpretable — banks are the prime example. CENTRALBK's balance sheet has ₹504,923 Cr of assets funded predominantly by deposits; 'earnings yield' and 'return on capital' in the traditional sense don't apply. The underlying credit quality story is cautiously improving, but this is a turnaround trade in a government-controlled institution, not the kind of high-ROIC compounder my formula seeks.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "insufficient_data",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 165486,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.22400864999999998,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 23875,
+      "cache_read_input_tokens": 15928,
+      "output_tokens": 8646,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 23875,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 666,
+          "cache_read_input_tokens": 15928,
+          "cache_creation_input_tokens": 7947,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 7947
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

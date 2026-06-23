@@ -1,0 +1,71 @@
+{
+  "symbol": "AGARWALEYE",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T16:15:55.817763Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "At a P/E of 110 and P/B of 7.26, AGARWALEYE trades at roughly 6.4x its Graham Number (~INR 69 vs. price of INR 444), offering no margin of safety whatsoever. The company's spotty earnings history — losses in 2020 and 2021 — disqualifies it from even the most generous interpretation of Graham's 3-5 year consecutive earnings requirement.",
+    "key_strengths": [
+      "Revenue growing at 26.4% CAGR (2020-2025), reaching INR 1,711 Cr — demonstrating real business expansion",
+      "Operating cash flow consistently positive all 5 years, reaching INR 360 Cr in 2025 — the business does generate cash",
+      "Interest coverage of ~4x (Operating Income INR 463 Cr / Finance Cost INR 115 Cr) — barely clears my 3.5x threshold"
+    ],
+    "key_risks": [
+      "Valuation is grotesque by any quantitative measure — P/E 110, P/B 7.26, EV/EBITDA 31x — all multiples reserved for pure speculation",
+      "Free cash flow collapsed to INR 40 Cr in 2025 despite INR 110 Cr net profit, as capex surged to INR 321 Cr — the business is consuming capital voraciously",
+      "ROE of only 4.76% means shareholders earn less than a savings deposit rate on book value, yet the market prices in perfection"
+    ],
+    "red_flags": [
+      "Trading at 6.4x Graham Number (price INR 444 vs. calculated Graham Number ~INR 69)",
+      "Net losses in 2020 (-INR 21 Cr) and 2021 (-INR 59 Cr) — fails the consecutive earnings test",
+      "Equity nearly tripled from INR 212 Cr (2022) to INR 630 Cr (2023), indicating recent IPO capital raise — seller-side pricing at work",
+      "FII ownership at 57.94% suggests foreign institutional momentum, not value — these buyers flee at the first disappointment",
+      "Capex accelerating sharply (INR 321 Cr in 2025 vs. INR 71 Cr in 2022) with borrowings at INR 983 Cr — capital intensity is rising, not falling"
+    ],
+    "detailed_analysis": "Dr. Agarwal's Health Care fails virtually every quantitative test I have spent a lifetime refining. The Graham Number — the geometric mean of 22.5 times earnings and book value — yields approximately INR 69 per share. The market demands INR 444. That is not a premium; it is a fantasy. A P/E of 110 means the market is paying for more than a century of current earnings power, all predicated on growth projections that Mr. Market, in his euphoric moods, is notorious for overpricing. P/B of 7.26 means you are paying INR 7.26 for every INR 1 of net assets — assets that in a distress scenario would likely be worth far less than book.\n\nThe business itself is not without merit as an enterprise, but enterprise quality and investment merit are entirely different things. Revenue has grown impressively at 26% CAGR, and operating cash flow is positive — these are facts. But net profit has been thin and erratic: losses in 2020-2021, recovery to INR 103 Cr in 2023, then INR 95 Cr in 2024, INR 110 Cr in 2025 — no steady upward progression. Meanwhile, free cash flow shrank to a mere INR 40 Cr as capex consumed INR 321 Cr. The company is in aggressive expansion mode, funded partly by IPO proceeds (equity surged INR 630+ Cr in 2023) and borrowings of INR 983 Cr. ROE of 4.76% on that expanding equity base is an indictment. The intelligent investor does not pay 110 times earnings for 4.76% returns on equity. I would demand a price below INR 70 before I would even begin serious analysis.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 45391,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07106654999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8937,
+      "cache_read_input_tokens": 10946,
+      "output_tokens": 2284,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8937,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 245,
+          "cache_read_input_tokens": 8896,
+          "cache_creation_input_tokens": 2091,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2091
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "INDIAGLYCO",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-18T17:49:15.786031Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "India Glycols is a slow-growth cyclical chemical company with a margin-expansion story, but 9-year revenue CAGR of only 5.5%, rising debt (D/E 0.86 and borrowings spiking from ₹1,348 Cr to ₹2,055 Cr in one year), and deeply negative FCF of -₹391 Cr make this far from a Lynch ten-bagger. The massive capex cycle (₹760 Cr capex vs. ₹362 Cr OCF in FY25) needs to prove out before this becomes compelling.",
+    "key_strengths": [
+      "Operating income CAGR of 12.9% over 9Y — margins expanding faster than revenue, from ~7.5% OPM (2016) to ~13.8% (2025)",
+      "Green/bio-based chemicals positioning taps into ESG tailwinds; diversified end-markets (pharma, textiles, auto, food)",
+      "Strong promoter conviction at 59.63% holding with consistent OCF positive (5/5 years)"
+    ],
+    "key_risks": [
+      "Debt surge is a red flag — borrowings jumped 52% YoY to ₹2,055 Cr; D/E of 0.86 exceeds Lynch's 0.6 ceiling and finance costs rose to ₹164 Cr",
+      "FCF deeply negative for 4 straight years (-₹264, -₹109, -₹103, -₹391 Cr) — capex-heavy cycle with no visible payoff timeline",
+      "Net profit is volatile and unreliable — 2022's ₹340 Cr included ₹260 Cr other income (one-time); normalized earnings trend is modest at ₹130–230 Cr"
+    ],
+    "red_flags": [
+      "PEG ~1.6 using sustainable 15% growth estimate — overvalued for the actual growth rate",
+      "2022 earnings spike was almost entirely other income (₹260 Cr), masking true earning power",
+      "Conglomerate sprawl — glycols + spirits + pharma + industrial gases has no clear focusable story Lynch could pitch simply"
+    ],
+    "detailed_analysis": "India Glycols is a classic cyclical/slow-grower masquerading as a growth story. Revenue at 5.5% CAGR over 9 years is firmly slow-grower territory — Lynch would find no ten-bagger here. The more interesting angle is operating income growing at 12.9% CAGR, suggesting real margin improvement, and the green bio-chemicals angle is a legitimate tailwind. But at P/E 24x, the market is already pricing in a growth premium. Using a normalized earnings growth rate of ~15% (operating income trend), the PEG lands around 1.6 — well above Lynch's 1.0 comfort zone and past his 1.5 red flag threshold.\n\nThe balance sheet is the bigger concern. Borrowings exploded from ₹1,348 Cr to ₹2,055 Cr in FY25 alone, pushing D/E to 0.86. Capex of ₹760 Cr dwarfs operating cash flow of ₹362 Cr, creating -₹391 Cr FCF — the company is in an aggressive investment cycle. ROE of 11.1% is below Lynch's 12% hurdle even before accounting for the new debt. If this capex generates the expected returns in biopolymers or biopharma, the story could re-rate; but Lynch needs to see \"what's the story\" in clear, simple terms, and here the business is too fragmented (chemicals + spirits + pharma) to tell it cleanly. Low FII interest (2.42%) signals institutional skepticism, not undiscovered value.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 57855,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09060345,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11737,
+      "cache_read_input_tokens": 9219,
+      "output_tokens": 2921,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11737
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 469,
+          "cache_read_input_tokens": 9219,
+          "cache_creation_input_tokens": 2518,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2518,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "symbol": "CENTURYPLY",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T16:52:51.109911Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Century Plyboards trades at INR 762 versus a Graham Number of approximately INR 145 — a 5.3x premium that offers zero margin of safety. With a P/E of 69.8, P/B of 6.87, and a 9-year net profit CAGR of a mere 1.0%, the market price reflects speculation, not proven earning power.",
+    "key_strengths": [
+      "Ten consecutive years of positive earnings (2016–2025), satisfying the earnings continuity test",
+      "Established brand portfolio (CENTURYPLY, SAINIK) with ~12% revenue CAGR suggests genuine commercial franchise",
+      "Interest coverage ratio of ~7.2x (EBITDA 496 Cr / Finance cost 69 Cr) remains above the 3.5x floor — for now"
+    ],
+    "key_risks": [
+      "Debt exploded 10x in four years: INR 165 Cr (2021) → INR 1,643 Cr (2025), destroying the balance sheet margin of safety",
+      "Free cash flow deeply negative: -INR 666 Cr in 2025 and -INR 593 Cr in 2024; operating CF turned negative (-3 Cr) in 2025 for the first time",
+      "Net profit collapsed from peak INR 377 Cr (2023) to INR 186 Cr (2025) — 51% decline — while price remains elevated"
+    ],
+    "red_flags": [
+      "P/E of 69.8 is 4.7x my maximum threshold of 15 — pure speculation priced in",
+      "P/B of 6.87 is 4.6x my ceiling of 1.5 — paying INR 687 for INR 100 of net assets",
+      "Graham Number ≈ INR 145 (√[22.5 × EPS 8.37 × BVPS 111]); current price of INR 762 is 426% above fair value",
+      "Debt/Equity of 0.66 breaches my 0.5 limit, and the trajectory (0.13 in 2021 → 0.66 in 2025) is alarming",
+      "9-year net profit CAGR of only 1.0% — the business earns no more in real terms than it did a decade ago"
+    ],
+    "detailed_analysis": "Every quantitative filter I apply to Century Plyboards fails. The P/E of 69.8 is nearly five times my ceiling. The P/B of 6.87 means one pays INR 687 for every INR 100 of book value. My Graham Number formula — the square root of (22.5 × EPS of INR 8.37 × book value per share of INR 111) — yields roughly INR 145, implying the stock must fall 81% merely to reach fair value. This is not a margin of safety; it is a margin of danger. The company's nine-year earnings record is the sole redeeming fact, but a 1.0% net profit CAGR over nine years, ending with a 51% profit decline from 2023 to 2025, hardly constitutes the \"stable and satisfactory\" earning power I demand.\n\nThe balance sheet deterioration is, frankly, alarming. Total borrowings have surged from INR 165 Cr in 2021 to INR 1,643 Cr in 2025 — a tenfold increase in four years — while cash on hand stands at a trivial INR 20 Cr. The capex cycle (INR 850 Cr in FY24, INR 665 Cr in FY25) may eventually bear fruit in new MDF and particle board capacity, but that is a speculative bet on future earnings, not a fact of current earning power. Mr. Market is pricing this as a growth story; I price it on what it has actually earned. The disciplined investor must wait for either a dramatic price correction or proof that these investments translate into sustained profits before even considering a position.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 81044,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07769699999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9402,
+      "cache_read_input_tokens": 11235,
+      "output_tokens": 2604,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9402
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 396,
+          "cache_read_input_tokens": 9185,
+          "cache_creation_input_tokens": 2267,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2267,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

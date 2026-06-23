@@ -1,0 +1,69 @@
+{
+  "symbol": "543920",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-20T09:44:16.555186Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "A fast-growing small-cap defense supplier (45.8% revenue CAGR) whose reported profits are not showing up as cash — OCF was positive only 1 of the last 4 years and cumulative FCF over 2022-25 is roughly -65 Cr. At a P/E of 73 and P/B of 10.9 you are paying a compounder's price for a working-capital-hungry contract manufacturer; invert, and the downside is severe.",
+    "key_strengths": [
+      "Topline compounding 45.8% CAGR (47→146 Cr) with expanding EBITDA margin (~28% in 2025)",
+      "ROCE of 23.6% is genuinely attractive if sustainable at scale",
+      "Tailwind from India's defense indigenization; promoter holding solid at 68%"
+    ],
+    "key_risks": [
+      "Profits ≠ cash: FCF of -29/-43/-8 Cr in FY23-25 despite rising PAT — classic receivables/WIP bloat",
+      "Valuation (P/E 73, P/B 10.9) leaves zero margin of safety; any growth stumble = sharp de-rating",
+      "Tiny 1,516 Cr market cap with defense-contract lumpiness and single-customer (MoD) dependency risk"
+    ],
+    "red_flags": [
+      "Operating cash flow negative in 3 of last 4 years while accounting profit grew 3x",
+      "FY24 equity jumped 25→126 Cr (IPO/QIP) — growth funded by dilution, not internal accruals",
+      "FCF/Net Income ratio deeply negative — earnings quality fails the Munger sniff test"
+    ],
+    "detailed_analysis": "Invert, always invert. The income statement tells a glowing story — revenue quadrupled, EBITDA margins widened to 28%, ROCE of 23.6%. But the cash flow statement tells the truth: cumulative operating cash flow over FY22-25 is roughly -24 Cr against cumulative net profit of ~59 Cr. That gap is sitting in receivables and inventory, which is the signature of a defense/industrial contractor stretching its balance sheet to book revenue. The FY24 equity infusion (25→126 Cr) bailed out the cash burn, and by FY25 cash is already back down to 3 Cr. This is not a compounding machine; it is a capital-consuming job-shop dressed up with accrual accounting.\n\nAt 73x earnings for a 1,500 Cr micro-cap with no moat I can identify — aerospace/defense tier-2 suppliers compete on approvals and price, not brand or switching costs — the price embeds perfection. A great business at a fair price beats this setup every time. I'd want to see three consecutive years of OCF ≥ 80% of net profit, debt under control (currently manageable at 21 Cr), and the multiple halved before this deserves a second look. Pass.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "insufficient_data",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 31023,
+    "model_used": "opus",
+    "total_cost_usd": 0.10932299999999998,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 10078,
+      "cache_read_input_tokens": 13911,
+      "output_tokens": 1574,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10078,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 11184,
+          "cache_creation_input_tokens": 1621,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1621
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

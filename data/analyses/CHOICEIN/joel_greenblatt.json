@@ -1,0 +1,69 @@
+{
+  "symbol": "CHOICEIN",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-19T13:00:54.345450Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "Choice International is a financial services company — explicitly excluded from the Magic Formula because leverage and capital structure distort earnings yield and return on capital calculations. Even setting aside the exclusion rule, a P/E of 77x and deeply negative FCF (INR -451 Cr in FY25) make this an uninvestable proposition by any value metric.",
+    "key_strengths": [
+      "Revenue and EBIT growing fast: Revenue CAGR 19.4% and Operating Income CAGR 29.9% over 9 years — genuine business momentum",
+      "ROE and ROCE both near 20%, suggesting the underlying business earns decent returns on its equity base",
+      "FII holding of 12.2% suggests institutional validation of the growth narrative"
+    ],
+    "key_risks": [
+      "OCF has been positive only 1 of the last 5 years — the business is consuming cash despite reported profits, a classic financial-services red flag",
+      "P/E of 77x prices in several years of perfect execution; any slowdown in capital markets activity would destroy the valuation",
+      "NBFC/broking is a competitive, regulated industry where margins compress as scale grows; rising finance costs (INR 66 Cr in FY25 vs INR 15 Cr in FY22) signal leverage creep"
+    ],
+    "red_flags": [
+      "Financial company — Magic Formula explicitly excludes this sector; earnings yield and ROIC are not meaningful metrics here",
+      "Free cash flow was -INR 451 Cr in FY25 and -INR 186 Cr in FY24 — the company is funding growth through capital raises, not organic cash generation",
+      "P/E of 77x with forward P/E of 48x is extreme overvaluation even by growth standards; implied earnings yield is less than 2%"
+    ],
+    "detailed_analysis": "I don't run the Magic Formula on financial companies, and this is exactly why: Choice International's capital structure — with borrowings to fund an NBFC loan book — makes EBIT/EV and ROIC meaningless. The reported 'EBIT' of INR 295 Cr includes income from lending operations where the matching liability cost is INR 66 Cr of finance charges, but the loan book itself is an asset consuming capital. Stripping this apart properly requires a bank-like analysis, not a Magic Formula analysis. What I can say clearly is that the valuation is extreme at 77x earnings, the business burns cash, and the growth is largely being funded by equity raises (financing CF +INR 449 Cr in FY25). This is not my kind of stock.",
+    "metrics_evaluated": {
+      "moat_strength": "insufficient_data",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 134339,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.20717639999999998,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 22732,
+      "cache_read_input_tokens": 15908,
+      "output_tokens": 7810,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 22732,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 800,
+          "cache_read_input_tokens": 15908,
+          "cache_creation_input_tokens": 6824,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 6824
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

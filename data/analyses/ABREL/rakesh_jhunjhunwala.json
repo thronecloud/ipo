@@ -1,0 +1,69 @@
+{
+  "symbol": "ABREL",
+  "persona": "rakesh_jhunjhunwala",
+  "persona_display_name": "Rakesh Jhunjhunwala",
+  "analyzed_at": "2026-04-19T06:20:33.148860Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "Aditya Birla Real Estate (formerly Century Textiles) is a value-destruction machine — revenue has collapsed at -20.5% CAGR over 8 years from INR 7,645 Cr to INR 1,219 Cr, the company is loss-making, and borrowings have exploded from INR 1,059 Cr to INR 5,490 Cr in just two years. There is no India growth story here, only a legacy conglomerate restructuring with severe balance-sheet pain.",
+    "key_strengths": [
+      "Promoter holding of 50.21% provides minimal governance comfort",
+      "Gross margin of 44.43% suggests underlying real estate projects can be profitable at the project level",
+      "Cash position improved to INR 743 Cr in 2025, providing some near-term liquidity buffer"
+    ],
+    "key_risks": [
+      "Revenue in terminal decline (-20.5% CAGR over 8 years) with no evidence of an inflection point",
+      "Borrowings surged 5.2x in two years (INR 1,059 Cr → INR 5,490 Cr), creating massive refinancing risk",
+      "Operating cash flow was -INR 1,293 Cr in 2025 — the business is burning cash at an accelerating rate"
+    ],
+    "red_flags": [
+      "Operating margin of -131.6% — this is not cyclical weakness, it is structural collapse",
+      "Free cash flow of -INR 1,413 Cr in 2025, consistently negative in 3 of last 5 years",
+      "Net loss of INR 157 Cr in 2025 and near-zero ROCE (-0.16%) — capital is being destroyed, not grown"
+    ],
+    "detailed_analysis": "The name change from Century Textiles to ABREL signals a strategic pivot to real estate, but the financial record shows a business that has been shrinking relentlessly since 2017. Operating income fell from INR 924 Cr to just INR 16 Cr — a 98% collapse in 8 years. The 2025 debt explosion (financing CF of +INR 2,218 Cr) suggests the company is borrowing to fund ongoing losses and capex, a dangerous spiral. The one bright spot — real estate demand in India is structural — is completely offset by this company's inability to convert it into earnings.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 133259,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.19875675000000004,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 19639,
+      "cache_read_input_tokens": 16555,
+      "output_tokens": 8009,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 19639,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 598,
+          "cache_read_input_tokens": 14492,
+          "cache_creation_input_tokens": 7210,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 7210
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

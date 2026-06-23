@@ -1,0 +1,69 @@
+{
+  "symbol": "MARC",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-21T07:49:46.203175Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Marc Technocrats is a micro-cap fast grower posting 35–41% CAGR across revenue, EBITDA, and net profit with virtually zero debt and superb capital returns (ROCE 36%), fitting Lynch's classic \"small company, big growth\" profile. However, with no P/E or market cap data available, I cannot calculate a PEG ratio — and without valuation discipline, even the best growth story risks being a value trap at the wrong price.",
+    "key_strengths": [
+      "35–41% 3-year CAGR across all P&L lines — revenue nearly tripled from ₹19 Cr to ₹48 Cr in 3 years",
+      "Virtually debt-free (₹1 Cr total debt) with ROCE of 36.27% — this is a capital-light compounder",
+      "OCF positive all 4 years; 73.5% promoter holding signals strong owner-operator alignment"
+    ],
+    "key_risks": [
+      "No P/E or market cap data — PEG ratio is uncalculable, making GARP discipline impossible to apply",
+      "Operating CF (₹5 Cr) meaningfully lags net profit (₹7 Cr) in FY25 — earnings quality concern and possible receivables build-up",
+      "Extremely small revenue base (₹48 Cr) in consulting services makes the business fragile to client concentration and key-person risk"
+    ],
+    "red_flags": [
+      "Listed exchange shows 'YHD-ERR' — unclear or erroneous exchange listing raises liquidity and governance concerns",
+      "FII + DII ownership below 2% — near-zero institutional validation on this name",
+      "Investing CF (-₹4 Cr) exceeds disclosed capex (-₹3 Cr) — the unaccounted ₹1 Cr outflow needs explanation"
+    ],
+    "detailed_analysis": "Marc Technocrats ticks every box on Lynch's fast-grower checklist in isolation: revenue compounding at 35%, net profit at 41%, ROCE of 36%, and a near-pristine balance sheet with ₹1 Cr debt against ₹28 Cr equity. For a consulting services outfit at this scale, margin expansion — EBITDA margins moving from ~21% in FY22 to ~23% in FY25 — suggests real operating leverage, not financial engineering. This is exactly the kind of unknown, under-followed micro-cap Lynch hunted in the early Magellan days.\n\nThat said, three things keep me from pounding the table. First and foremost, the absence of any valuation metric makes the PEG ratio — my single most important tool — impossible to apply. A stock growing 40% at a PEG of 0.5 is a ten-bagger; the same stock at a PEG of 3.0 is a disaster. Second, the OCF-to-net-profit gap (₹5 Cr vs ₹7 Cr) in FY25 hints at rising receivables, which in a consulting business could mean lumpy or deferred billing. Third, the 'YHD-ERR' exchange tag and near-zero institutional ownership are classic warning signs of illiquidity. I'll watch this name — the story is interesting — but I need a price before I can act.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "insufficient_data",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 44174,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0779157,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10258,
+      "cache_read_input_tokens": 8164,
+      "output_tokens": 2466,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10258,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 433,
+          "cache_read_input_tokens": 8164,
+          "cache_creation_input_tokens": 2094,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2094
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "CRAFTSMAN",
+  "persona": "howard_marks",
+  "persona_display_name": "Howard Marks",
+  "analyzed_at": "2026-04-19T13:07:28.880722Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Craftsman Automation is a capital-intensive auto parts manufacturer with a D/E of 1.09, ROCE of only 11.7%, and net profits that crashed 40% in FY2025 (INR 337 Cr → INR 201 Cr) — yet the stock trades at 52.2x trailing P/E, making this one of the most egregious valuation mismatches in the auto ancillary space. With negative FCF of INR -706 Cr in FY2025 and finance costs consuming INR 217 Cr annually on growing debt, there is no margin of safety whatsoever.",
+    "key_strengths": [
+      "Genuine revenue scale and diversification — 22.8% revenue CAGR over 8 years across commercial vehicles, passenger vehicles, two-wheelers, and industrial engineering (ASRS warehousing) reduces single-segment dependency",
+      "FII and DII combined own 43.5% — strong institutional presence suggests the long-term business quality narrative has merit even if current execution is poor",
+      "Expanding into automated storage and retrieval systems (ASRS) adds non-auto revenue that could reduce cyclicality over time"
+    ],
+    "key_risks": [
+      "ROCE of 11.7% and ROE of 9.41% — the business barely earns above its cost of capital; at these returns, growth actually destroys value if funded by expensive debt",
+      "Leverage is rising dangerously: borrowings at INR 3,311 Cr (FY2025) with annual finance costs of INR 217 Cr; a cyclical auto downturn would make this debt load extremely burdensome",
+      "Net profit fell 40% in FY2025 despite revenue growing to INR 5,690 Cr — operating leverage is working in reverse, and the profit trend is deteriorating, not recovering"
+    ],
+    "red_flags": [
+      "FCF deeply negative: INR -706 Cr in FY2025, INR -115 Cr in FY2024 — the business is consuming capital faster than it generates it; paying 52x earnings on a cash-burning operation is unjustifiable",
+      "Balance sheet nearly doubled in one year (INR 4,706 Cr → INR 8,266 Cr total assets) suggesting a transformative acquisition whose economics are unproven, layered on top of an already leveraged balance sheet",
+      "Finance cost of INR 217 Cr in FY2025 (growing from INR 90 Cr in FY2017) — debt service alone is extracting more than the entire net profit from certain prior years"
+    ],
+    "detailed_analysis": "Craftsman's 22.8% revenue CAGR headline masks a fundamental deterioration in profitability quality. In FY2025, despite revenue reaching INR 5,690 Cr, net profit collapsed to INR 201 Cr — well below FY2024's INR 337 Cr and roughly flat with FY2021 levels despite the business being 3.6x larger. Finance costs of INR 217 Cr on borrowings of INR 3,311 Cr are eating directly into a thin 9.59% operating margin business. With ROCE at 11.7%, management is deploying capital at returns that barely justify the cost — and growing debt makes this worse, not better.\n\nThe capital allocation picture from a Marks perspective is alarming: INR 992 Cr in capex in FY2025 generated INR -706 Cr of free cash flow, while the P/E multiple sits at 52.2x on declining profits. The balance sheet expansion from INR 4,706 Cr to INR 8,266 Cr in a single year, funded significantly by equity issuance (financing CF of +INR 1,393 Cr), suggests a large acquisition whose integration and returns are entirely unproven. At 52.2x earnings, the market is pricing this as a high-quality compounder. The ROCE of 11.7%, negative FCF, and 40% profit decline say otherwise.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 269866,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.3363168,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 29986,
+      "cache_read_input_tokens": 15951,
+      "output_tokens": 14605,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 29986,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 498,
+          "cache_read_input_tokens": 15951,
+          "cache_creation_input_tokens": 14035,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 14035
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

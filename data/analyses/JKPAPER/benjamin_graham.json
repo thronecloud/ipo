@@ -1,0 +1,68 @@
+{
+  "symbol": "JKPAPER",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T17:51:49.558392Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "JK Paper passes a few Graham screens — D/E of 0.37, P/B of 1.16, and a near-Graham-Number price (~INR 392 vs. current INR 375) — but its trailing P/E of 25.4x far exceeds my 15x ceiling, and earnings have collapsed 66% from INR 1,208 Cr (2023) to INR 412 Cr (2025), destroying any confidence in normalised earning power. A commodity-paper business with paper-thin 4.55% operating margins offers no margin of safety for the disciplined investor.",
+    "key_strengths": [
+      "Conservative balance sheet: D/E of 0.37 and total debt declining from INR 3,137 Cr (2022) to INR 1,885 Cr (2025)",
+      "Long earnings history: profitable every year in the 9-year dataset with 24.8% net profit CAGR, demonstrating a going-concern track record Graham respects",
+      "P/B of 1.16 and Graham Number ~INR 392 means price is near — though not yet firmly below — intrinsic book-based value"
+    ],
+    "key_risks": [
+      "Savage earnings cyclicality: net profit swung from INR 1,208 Cr (2023) to INR 412 Cr (2025) — a 66% collapse in two years; Graham demands stable earning power, not a roller-coaster",
+      "Commodity business with no moat: paper is undifferentiated, margins are structurally thin (4.55% operating margin in 2025), and pricing power is zero against global pulp costs",
+      "Trailing P/E of 25.4x exceeds my hard 15x ceiling; forward P/E of 7.64 relies on analyst projections I refuse to capitalise — Mr. Market's optimism is not a fact"
+    ],
+    "red_flags": [
+      "Operating income crashed from INR 2,012 Cr (2023) to INR 928 Cr (2025) — more than halved — with no structural explanation, signalling commodity-cycle exposure",
+      "Free cash flow plunged from INR 1,552 Cr (2023) to INR 365 Cr (2025), eroding the one year that looked genuinely attractive"
+    ],
+    "detailed_analysis": "Applying my quantitative filters, JK Paper is a mixed picture. The balance sheet is respectable: D/E of 0.37 is well inside my 0.5 ceiling, borrowings have fallen four consecutive years, and operating cash flow has been positive for all five years shown. P/B of 1.16 is in acceptable — if not ideal — territory, and my Graham Number calculation (√(22.5 × ~22.7 EPS × ~301 BVPS) ≈ INR 392) puts the current price of INR 375 marginally below that threshold. These are the facts that keep me from recommending outright avoidance.\n\nHowever, the earning-power requirement — the cornerstone of my method — is decisively undermined by cyclicality. Net profit has swung between INR 237 Cr and INR 1,208 Cr over five years; I cannot construct a reliable \"normalised\" EPS. On trailing earnings the P/E is 25.4x, more than 70% above my ceiling. Paper is a commodity with no pricing power, low barriers to entry, and operating margins that compressed to a mere 4.55% in 2025. I do not pay 25x for thin, volatile earnings regardless of what analysts project for next year — Mr. Market's forward estimates have a poor track record in cyclical industries. Existing holders may sit tight as the Forward P/E of 7.64 could reward patience if the cycle turns, but there is insufficient margin of safety for fresh capital.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 59365,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08345984999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9587,
+      "cache_read_input_tokens": 11182,
+      "output_tokens": 2943,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9587
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 475,
+          "cache_read_input_tokens": 9132,
+          "cache_creation_input_tokens": 2505,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2505,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

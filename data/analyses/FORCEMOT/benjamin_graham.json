@@ -1,0 +1,70 @@
+{
+  "symbol": "FORCEMOT",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-22T16:31:02.575578Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Force Motors trades at 8.41x book and 30.7x earnings — more than double my maximum acceptable thresholds — offering no margin of safety whatsoever. The Graham Number computes to roughly ₹6,031 against a market price of ₹22,378, meaning the stock trades at 3.7x intrinsic value by my method.",
+    "key_strengths": [
+      "Essentially debt-free by 2025 (borrowings ₹0 Cr vs ₹1,069 Cr peak in 2022) — a genuine balance sheet improvement",
+      "Strong recent operating cash flow: ₹1,014 Cr (2024) and ₹971 Cr (2025) confirms earnings are not fictitious",
+      "ROCE of 30% and rising revenue CAGR of 11.5% over 9 years show a real, competitive business"
+    ],
+    "key_risks": [
+      "Earnings record disqualifies the stock by my standards — losses of ₹124 Cr (2021) and ₹91 Cr (2022) mean the company does NOT have the 5-year consecutive profit history I require",
+      "P/B of 8.41x is catastrophically above my limit of 1.5x; even at P/B 1.5, price would need to fall 82% to ₹3,990",
+      "'Other income' of ₹446 Cr in 2025 (vs ₹37 Cr in 2024) constitutes a large and volatile portion of the ₹801 Cr net profit — core earning power is overstated and unreliable"
+    ],
+    "red_flags": [
+      "Graham Number breach: price ₹22,378 vs computed Graham Number ~₹6,031 — a 271% premium to intrinsic value",
+      "Losses in 2021–2022 permanently bar this from my 'proven earning power' criterion",
+      "'Other income' surge (₹446 Cr in 2025 vs ₹37 Cr in 2024) inflates net profit materially — not repeatable operating income",
+      "No dividend yield data provided; a company trading at 8x book should offer substantial yield to compensate — silence is damning"
+    ],
+    "detailed_analysis": "Force Motors is a classic example of what Mr. Market does with a turnaround story — he prices it as if the recovery is permanent and accelerating, offering the buyer no protection whatsoever. At ₹22,378, the stock is priced for perfection: P/E of 30.7 (my limit is 15), P/B of 8.41 (my limit is 1.5), and EV/EBITDA of 20.25x. My Graham Number — the geometric mean of 22.5 times earnings times book value — yields approximately ₹6,031 per share. The speculator is paying 3.7 times what the arithmetic of assets and earnings justifies.\n\nThe recent financial improvement is real but insufficient for my purposes. The company posted losses in 2021 (₹-124 Cr) and 2022 (₹-91 Cr), violating my requirement for 5 consecutive years of positive earnings. More troubling, ₹446 Cr of the ₹801 Cr net profit in 2025 derives from \"other income\" — nearly 56% — compared to only ₹37 Cr of other income in 2024. This volatility in non-operating income makes reported EPS unreliable as a measure of earning power. The debt elimination is admirable, but at this price one is paying for the story, not the substance.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 51590,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0791109,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9496,
+      "cache_read_input_tokens": 11273,
+      "output_tokens": 2674,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9496,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 414,
+          "cache_read_input_tokens": 9223,
+          "cache_creation_input_tokens": 2323,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2323
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

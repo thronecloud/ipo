@@ -1,0 +1,70 @@
+{
+  "symbol": "SPEB",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-21T08:03:06.101696Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "SPEB Adhesives is a micro-cap commodity adhesives maker with a near-zero ROE of 0.27%, meaning it generates almost no return on shareholder equity despite trading at a P/E of 20x. There is no visible growth story, no margin evidence, and no reason to expect a ten-bagger here.",
+    "key_strengths": [
+      "High promoter holding (73.18%) suggests skin-in-the-game alignment",
+      "Micro-cap size (₹120 Cr) leaves room for re-rating IF fundamentals improve",
+      "Specialty chemicals sector has structural tailwinds in India"
+    ],
+    "key_risks": [
+      "ROE of 0.27% is essentially zero — the business generates no meaningful return on equity",
+      "No revenue or earnings growth data — impossible to calculate PEG, so the story is invisible",
+      "Commodity solvent-based adhesives is a low-moat, price-sensitive business with no pricing power"
+    ],
+    "red_flags": [
+      "ROE 0.27% — catastrophically below my 12% minimum threshold; the business is barely alive",
+      "P/E of 20x on near-zero earnings is effectively a meaningless or misleading multiple",
+      "No earnings growth data — cannot construct any credible Lynch growth narrative",
+      "Solvent-based rubber adhesives is a commoditized niche with no evident differentiation"
+    ],
+    "detailed_analysis": "Peter Lynch's first question is always: \"What's the story?\" For SPEB Adhesives, there isn't one. A ROE of 0.27% tells me this company is generating roughly zero profit on the capital shareholders have entrusted to it. That's not a slow grower — that's a company treading water. A P/E of 20x sounds optically reasonable, but when earnings are negligible, the multiple is either a distortion or built on a one-time event, neither of which excites me.\n\nThe adhesives business can be great — think Pidilite, which built Fevicol into a monopoly brand. But SPEB is in solvent-based synthetic rubber adhesives, a commodity sub-segment with no brand moat. With a ₹120 Cr market cap, it could theoretically be a turnaround play, but I need to see margins, revenue trajectory, and a reason management can fix the ROE. None of that data is present. I don't buy stories I can't tell to my 12-year-old, and I definitely don't buy a company earning 0.27% on equity at 20x earnings.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 42331,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.06291,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9010,
+      "cache_read_input_tokens": 7545,
+      "output_tokens": 1790,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9010,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 361,
+          "cache_read_input_tokens": 7545,
+          "cache_creation_input_tokens": 1465,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1465
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

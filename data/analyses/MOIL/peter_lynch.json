@@ -1,0 +1,69 @@
+{
+  "symbol": "MOIL",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-18T21:56:44.908054Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "MOIL is a government-owned cyclical manganese ore miner with a trailing P/E of 64x on what appear to be severely depressed earnings — the classic cyclical trap Lynch warned about. With ROE at only 8.3%, no pricing power, and volatile earnings swinging from ₹478 Cr (FY19) to ₹251 Cr (FY23) and back, this is not the compounding growth story I look for.",
+    "key_strengths": [
+      "Zero debt balance sheet with solid equity base of ₹2,638 Cr — one of the few genuinely clean PSU balance sheets",
+      "Near-monopoly on domestic manganese ore mining gives some structural protection; 64.7% government promoter backstop reduces existential risk",
+      "Operating CF positive all 5 years; FY25 OCF of ₹434 Cr shows underlying cash generation when commodity prices cooperate"
+    ],
+    "key_risks": [
+      "Classic cyclical trap: trailing P/E of 64x with forward P/E of 12.6x signals current earnings are severely depressed — we don't know where we are in the manganese cycle",
+      "ROE of only 8.3% is well below my 12% minimum threshold; a business with near-monopoly assets should earn far more on equity",
+      "Other income (interest on cash) was ₹317 Cr in FY15 vs shrinking rapidly since — the 'real' operating business has always been thinner than headline profits suggest"
+    ],
+    "red_flags": [
+      "Revenue over 10 years: ₹822 Cr (FY15) → ₹1,579 Cr (FY25) — that's barely 6.7% CAGR for a supposed growth story",
+      "Net profit is wildly erratic: 428→173→307→417→478→248→377→251→293→382 — no earnings predictability, which is death for PEG analysis",
+      "Implied TTM earnings (~₹104 Cr, derived from 64x P/E on ₹6,673 Cr market cap) vs FY25 reported ₹382 Cr suggests recent quarters have cratered — earnings quality unknown"
+    ],
+    "detailed_analysis": "MOIL is a textbook cyclical commodity stock — the kind Lynch explicitly warned investors to handle differently from growth stocks. The P/E of 64x isn't cheap just because forward P/E is 12.6x; it means the market is banking on a massive earnings recovery in manganese prices tied to Indian steel demand. The PEG ratio framework breaks down entirely here: if trailing earnings are ~₹104 Cr (implied by 64x P/E on ₹6,673 Cr market cap) versus ₹382 Cr reported in FY25, something has gone badly wrong in recent quarters that the annual data doesn't capture. That disconnect — 84% implied earnings drop — is a flashing warning sign I can't ignore.\n\nThe financials confirm this is a business without a growth story. Revenue grew from ₹822 Cr to ₹1,579 Cr over a decade — roughly 6.7% CAGR — while profits are entirely hostage to manganese ore commodity prices. ROE of 8.3% on a company with ₹2,638 Cr in equity and near-monopoly mining rights is frankly embarrassing; a private operator would earn double that on the same assets. Capex is accelerating (₹216 Cr → ₹297 Cr over 3 years) but free cash flow remains thin and volatile. Government ownership at 64.7% means capital allocation discipline is suspect and management incentives aren't aligned with minority shareholders. I'd rather own a mid-cap specialty chemical company growing 20%+ with a PEG under 1 than a PSU miner riding commodity cycles at 64x earnings.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 70177,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09906735,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11985,
+      "cache_read_input_tokens": 8932,
+      "output_tokens": 3429,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11985,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 460,
+          "cache_read_input_tokens": 8932,
+          "cache_creation_input_tokens": 3053,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 3053
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

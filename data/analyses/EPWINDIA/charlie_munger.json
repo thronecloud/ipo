@@ -1,0 +1,70 @@
+{
+  "symbol": "EPWINDIA",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-21T07:47:16.389155Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "EPW India is a micro-cap IT refurbishing business with explosive but potentially hollow revenue growth (7→53 Cr in 2 years), a commoditized model with no discernible moat, and deeply negative free cash flow (-12 Cr) despite reporting a 4 Cr net profit. At 31x P/E with no cash earnings, the stock demands perfection it has not earned.",
+    "key_strengths": [
+      "Revenue tripled YoY (19→53 Cr), demonstrating rapid scaling in a growing refurbished electronics market.",
+      "High promoter holding (71.4%) provides some alignment of interests.",
+      "Zero finance costs in prior years suggests historically conservative capital management."
+    ],
+    "key_risks": [
+      "Catastrophic cash conversion: Net Profit +4 Cr but Operating CF -11 Cr — a 15 Cr gap screaming working capital trap or aggressive revenue recognition.",
+      "No competitive moat: IT hardware refurbishing is low-barrier, commoditized, and structurally margin-compressed.",
+      "Debt surged from 0 to 12 Cr in FY25 to fund negative FCF — a tiny 5 Cr equity base now carries 2.4x debt/equity leverage."
+    ],
+    "red_flags": [
+      "FCF/Net Income = -300% — the single most disqualifying metric; Munger demands earnings quality.",
+      "ROE of 139% is a statistical illusion from a near-zero equity base (INR 5 Cr), not evidence of a compounding machine.",
+      "Revenue growing 7x in 2 years for a hardware reseller demands explanation — channel stuffing or deferred payables are plausible explanations.",
+      "Market cap (129 Cr) is 2.4x revenue (53 Cr) with no free cash generation — the market is pricing in perfection."
+    ],
+    "detailed_analysis": "Applying inversion first: what would make this a terrible investment? A commoditized trading business, negative cash flow masked by paper profits, debt-funded growth, and a rich valuation. EPW India checks every single box. The 15 Cr divergence between net profit (4 Cr) and operating cash flow (-11 Cr) is the loudest alarm. Working capital has ballooned alongside revenue — classic sign of a business where growth is funded by unpaid suppliers or inflated receivables rather than genuine value creation. Borrowings going from zero to 12 Cr in one year to sustain this gap is not financial health; it is distress deferred.\n\nThe ROE of 139% and ROCE of 65.7% look extraordinary but are artifacts of a 5 Cr equity base. A refurbishing reseller with no proprietary technology, no brand, and no switching costs cannot sustain these returns as capital scales. Munger's mental model of sustainable competitive advantage finds nothing to anchor to here. At INR 129 Cr market cap on 4 Cr in reported (non-cash) profits, investors are paying 32x for earnings that haven't materialized as cash in a business where any well-funded competitor can replicate operations in weeks. This is not a business worth owning at any reasonable price.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 48332,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07632705000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9947,
+      "cache_read_input_tokens": 7906,
+      "output_tokens": 2443,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9947,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 440,
+          "cache_read_input_tokens": 7906,
+          "cache_creation_input_tokens": 2041,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2041
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

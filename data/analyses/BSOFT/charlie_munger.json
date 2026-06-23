@@ -1,0 +1,69 @@
+{
+  "symbol": "BSOFT",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-19T12:52:19.098984Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Birlasoft is a mid-tier IT services company with decent balance sheet health (Debt/Equity 0.04) and ROCE of 21%, but 9-year revenue CAGR of only 5.8% and a gross margin of 38.6% reveal a business without pricing power or a differentiated niche — a commodity IT services provider competing in a crowded market against far larger and smaller adversaries simultaneously. The valuation at 22x P/E is too full for this level of growth and moat quality.",
+    "key_strengths": [
+      "Near-zero debt (Debt/Equity 0.04) and consistent OCF — 5/5 years positive — mean the business is financially resilient and self-funding",
+      "ROCE of 21% is genuinely above my 20% threshold, suggesting capital discipline despite the competitive environment",
+      "Exposure to manufacturing, BFSI, and life sciences verticals provides some diversification vs. pure-play IT shops"
+    ],
+    "key_risks": [
+      "Revenue CAGR of only 5.8% over 9 years — effectively stagnant in real terms — with a collapse from 3,224 Cr (FY16) to 2,250 Cr (FY18) indicating historical structural issues",
+      "Gross margin of 38.6% is low for IT services, suggesting limited pricing power and high pass-through costs relative to peers like TCS (>55%) or even niche specialists",
+      "Net profit is inconsistent — dropped from 464 Cr in FY22 to 332 Cr in FY23, and EBITDA fell from 701 to 569 Cr — signalling execution and margin volatility"
+    ],
+    "red_flags": [
+      "Revenue shrank meaningfully from FY16 to FY18 (3,224 to 2,250 Cr) — mid-tier IT companies often shrink when large clients leave, and this history cannot be forgotten",
+      "Birla group promoters (40.5%) have historically been empire-builders, not capital returners — incentive alignment with minority shareholders is suspect",
+      "No identifiable durable competitive advantage: Birlasoft competes on price and relationships in verticals that TCS, Infosys, and offshore-centric specialists also target aggressively"
+    ],
+    "detailed_analysis": "Invert first: what kind of IT company grows revenue at only 5.8% CAGR over nearly a decade? One without pricing power, without a proprietary platform, without geographic or vertical lock-in. Birlasoft is a body-shop with ambitions — it has added AI, cloud, and digital transformation labels, but so has every competitor. The 2022-2023 margin compression (EBITDA fell 19%) proves earnings here are not durable. The near-zero debt is genuinely positive and the balance sheet is clean, but a clean balance sheet on a low-growth commodity business is not a virtue — it's table stakes.\n\nAt 22x P/E for ~7% earnings CAGR, investors are paying a quality multiple for a mediocre quality business. I would want to see sustained ROCE above 20%, revenue growth above 12%, and a clear proprietary offering before getting interested. For now, the business earns a mediocre score — not broken, but not a compounder.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 170652,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.2154291,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 22904,
+      "cache_read_input_tokens": 15217,
+      "output_tokens": 8331,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 22904,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 532,
+          "cache_read_input_tokens": 15217,
+          "cache_creation_input_tokens": 7687,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 7687
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "ICICIAMC",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-21T07:51:26.297426Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "ICICI Prudential AMC is a genuinely exceptional business — 75%+ operating margins, 103% ROCE, and 32% earnings CAGR — but the Magic Formula explicitly excludes financial companies, and even setting that aside, the earnings yield of ~2.6% (EBIT ₹3,635 Cr / EV ~₹142,185 Cr) is catastrophically below the 12% threshold. Paying 56x earnings for a great business is not the Magic Formula way.",
+    "key_strengths": [
+      "Exceptional ROCE of 103.4% — capital-light fee business with near-zero tangible assets required",
+      "Operating margins of 75%+ sustained across all three years with strong revenue CAGR (~36% over 2Y)",
+      "FCF conversion is strong: ₹2,162 Cr FCF vs ₹2,651 Cr net profit (81%), minimal debt (D/E 0.04)"
+    ],
+    "key_risks": [
+      "Earnings yield of ~2.6% (EBIT/EV) is 5x below the Magic Formula's minimum threshold of 12% — the stock is priced for perfection",
+      "Financial company: Greenblatt explicitly excludes AMCs/financials because capital structure distorts the two core Magic Formula metrics",
+      "AUM-linked revenue makes earnings cyclically exposed to equity market corrections — a 30% market drawdown could compress revenues sharply at a 56x multiple"
+    ],
+    "red_flags": [
+      "Earnings yield ~2.6% — far below the 6% floor where the Magic Formula even begins to consider a stock",
+      "P/E of 56x and EV/EBITDA of 32x leave zero margin of safety for any earnings miss or market derating",
+      "2025 capex spike to ₹412 Cr vs ₹55 Cr in 2024 — needs explanation; could signal one-time item or growing capital intensity"
+    ],
+    "detailed_analysis": "ICICI Prudential AMC sits in an odd position under the Magic Formula framework: it is precisely the kind of business Greenblatt would admire (durable competitive moat, minimal capital requirements, stellar returns on the capital deployed) but it fails both mandatory tests. First, it is a financial services company and Greenblatt explicitly excludes these from ranking — EBIT/EV and EBIT/(NWC+NFA) lose meaning when the business model is managing other people's money rather than deploying its own. Second, even applying the formula mechanically, the earnings yield is approximately 2.6% (FY2025 EBIT of ₹3,635 Cr against an EV of ~₹142,185 Cr), roughly one-fifth of the 12% threshold that characterizes a cheap stock. The Magic Formula only rewards cheapness AND quality simultaneously; this stock offers quality without cheapness.\n\nThe business fundamentals are genuinely impressive — revenue compounded at ~36% over two years, operating margins expanded from 75% to 75.3%, and FCF grew from ₹1,359 Cr to ₹2,162 Cr. The 87.6% promoter holding (ICICI Bank + Prudential) provides stability but also limits float. However, at 56x trailing earnings, the market has already fully priced in multiple years of future growth. A value investor paying this multiple is left with no margin of safety if AUM growth slows, markets correct, or the regulatory environment for mutual fund expense ratios tightens further — all real risks in the Indian AMC space. This is a stock to admire, not to buy today.",
+    "metrics_evaluated": {
+      "moat_strength": "strong",
+      "management_quality": "excellent",
+      "financial_health": "excellent",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 52900,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0832698,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10530,
+      "cache_read_input_tokens": 8211,
+      "output_tokens": 2754,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10530,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 478,
+          "cache_read_input_tokens": 8211,
+          "cache_creation_input_tokens": 2319,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2319
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

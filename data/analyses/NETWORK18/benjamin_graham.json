@@ -1,0 +1,71 @@
+{
+  "symbol": "NETWORK18",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T21:52:30.623340Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Network18 fails virtually every quantitative filter I require — a P/E of 153x, seven loss-making years in the last decade, and negative free cash flow in 4 of the last 5 years leave no margin of safety whatsoever. The business is propped up by Reliance's balance sheet, not its own earning power, which is precisely the kind of speculative situation the intelligent investor must shun.",
+    "key_strengths": [
+      "P/B of 1.11 is the sole metric near Graham's threshold — assets are not wildly overpriced on paper",
+      "Promoter holding of 56.89% (Reliance Industries) provides implicit financial backstop against insolvency",
+      "Diversified media assets (CNBC-TV18, News18, Moneycontrol, Forbes India) offer some franchise value"
+    ],
+    "key_risks": [
+      "Chronically loss-making: net losses in 2017, 2018, 2019, 2023, 2024, 2025 — only 3 profitable years in 10, and 2025 was a catastrophic -1,777 Cr loss",
+      "Operating cash flow positive in only 1 of the last 5 years; FCF was -8,869 Cr in FY24 and -2,809 Cr in FY25 — the business destroys cash relentlessly",
+      "Finance costs have grown at 11% CAGR to 477 Cr in FY25 while operating margins are negative (-4.36%); interest is not covered by operations"
+    ],
+    "red_flags": [
+      "P/E of 153x is 10x my maximum threshold of 15 — the current small profit of 155 Cr (likely driven by 449 Cr 'Other Income') masks operating losses",
+      "Operating margin is negative (-4.36%); the core broadcasting/digital business cannot cover its own costs",
+      "Revenue collapsed from 9,297 Cr (FY24) to 2,121 Cr (FY26) — even allowing for restructuring, this is alarming top-line volatility",
+      "Balance sheet underwent violent swings (equity: 675 Cr → 15,227 Cr → 4,918 Cr in three years) — hallmark of opaque corporate restructuring, not honest enterprise",
+      "No dividend — consistent with a company that has never demonstrated sustained ability to earn and distribute cash to owners"
+    ],
+    "detailed_analysis": "From my standpoint, a business must demonstrate proven earning power over a full cycle before it deserves a single rupee of investment. Network18 has earned a net profit in only 3 of the last 10 years (FY20–22), and even those profits have been followed by a catastrophic -1,777 Cr loss in FY25. A P/E of 153x on what appears to be 155 Cr of net income — itself propped up by 449 Cr of \"Other Income\" rather than operations — is not a valuation; it is speculation. The operating margin of -4.36% tells me the business, stripped of financial maneuvers, is still burning money. Finance costs have compounded at 11% annually and reached 477 Cr in FY25, while operating income remains negative; interest coverage is well below my required 3.5x floor.\n\nThe balance sheet gyrations — total assets swinging from 13,980 Cr to 39,881 Cr and back to 8,996 Cr in three years — are deeply unsettling to an analyst who demands transparency. Free cash flow has been negative every year since FY22, cumulatively destroying over 12,000 Cr in shareholder value. Mr. Market today asks INR 36.40 per share for a business with no consistent earning power, a debt burden of 3,288 Cr, and a parent (Reliance) whose continued support is discretionary, not contractual. The only sensible action is to decline entirely and wait for a price that reflects the business's actual, proven earning power — if that day ever arrives.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 45499,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08065845,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11205,
+      "cache_read_input_tokens": 9069,
+      "output_tokens": 2394,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11205,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 307,
+          "cache_read_input_tokens": 9069,
+          "cache_creation_input_tokens": 2136,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2136
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

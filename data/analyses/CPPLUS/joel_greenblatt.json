@@ -1,0 +1,70 @@
+{
+  "symbol": "CPPLUS",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-22T16:23:02.935729Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "CPPLUS fails both legs of the Magic Formula: an earnings yield of ~0.9% (EBIT ₹248 Cr / EV ~₹26,994 Cr) signals extreme overvaluation, while ROCE of 19.5% is merely adequate — not the 25%+ required to justify any premium. The reported P/E of 105x is itself inflated by ₹259 Cr of \"Other Income\" in FY25, masking an operating business generating almost no free cash flow.",
+    "key_strengths": [
+      "Revenue CAGR of 20% over 5 years shows real business momentum in India's fast-growing surveillance/security market.",
+      "Low leverage: Debt/Equity of 0.08 and borrowings down to ₹128 Cr in FY25 from ₹436 Cr in FY24.",
+      "Strong promoter holding (76.9%) and dominant brand (CP PLUS) with government, retail, and infrastructure clientele."
+    ],
+    "key_risks": [
+      "Earnings are fictitious at the operating level: FY25 net profit of ₹351 Cr was driven by ₹259 Cr of Other Income vs. only ₹248 Cr operating income — stripping it out yields a normalized P/E closer to 200x.",
+      "Free cash flow destruction: FCF was ₹1 Cr in FY25 and -₹187 Cr in FY24 despite reported profits, signalling heavy working capital consumption or capitalization games.",
+      "Earnings yield of ~0.9% is 13x below the Magic Formula's 12% threshold — the stock is priced for perfection with zero margin of safety."
+    ],
+    "red_flags": [
+      "FY25 'Other Income' of ₹259 Cr dwarfs operating income of ₹248 Cr — almost all reported net profit is non-operating/one-time.",
+      "FCF = ₹1 Cr in FY25 vs. net profit ₹351 Cr: <1% FCF conversion is a critical quality failure.",
+      "EV/EBITDA of 68.8x and P/S of 7x for an 11% operating-margin business is unjustifiable on any value framework.",
+      "Operating CF has swung wildly: +₹262 Cr → -₹180 Cr → +₹27 Cr — no reliable cash generation pattern."
+    ],
+    "detailed_analysis": "Magic Formula verdict: CPPLUS fails comprehensively. Earnings Yield (EBIT/EV) = ₹248 Cr / ₹26,994 Cr ≈ 0.9% — roughly 13x below the 12% minimum threshold that makes a stock worth ranking. Return on Capital (ROCE reported: 19.5%) is decent but not in the 25%+ zone that would make a premium defensible, and it likely overstates true capital returns given that working capital has ballooned (total assets jumped from ₹1,644 Cr to ₹3,373 Cr in one year with FCF of ₹1 Cr). The Magic Formula requires BOTH legs to be strong; here, one leg is broken and the other is merely average.\n\nThe FY25 earnings story is largely fictional from an operating standpoint. Net profit of ₹351 Cr was turbocharged by ₹259 Cr of \"Other Income\" — nearly doubling reported earnings versus actual business operations. Strip that out and you have a company earning ~₹90–100 Cr normally (consistent with FY23–24), implying a true operating P/E north of 260x. Free cash flow of ₹1 Cr in FY25 and -₹187 Cr in FY24 confirms the P&L is not converting to cash. At ₹26,673 Cr market cap for a business generating ₹248 Cr in operating income, the market is pricing in a decade of flawless execution — precisely the scenario Greenblatt's systematic approach is designed to avoid paying for.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 46029,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08449664999999998,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11403,
+      "cache_read_input_tokens": 9188,
+      "output_tokens": 2598,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11403,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 452,
+          "cache_read_input_tokens": 9188,
+          "cache_creation_input_tokens": 2215,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2215
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

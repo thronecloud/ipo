@@ -1,0 +1,70 @@
+{
+  "symbol": "GRAPHITE",
+  "persona": "radhakishan_damani",
+  "persona_display_name": "Radhakishan Damani",
+  "analyzed_at": "2026-04-22T16:36:58.722606Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Graphite India is a deeply cyclical industrial commodities business with wildly volatile margins and earnings — the structural opposite of the steady compounders I seek. At 38x trailing P/E with only 2.8% operating margins and 8% ROE, the market is pricing in a recovery cycle that may never match the 2018-19 supercycle again.",
+    "key_strengths": [
+      "Ultra-clean balance sheet: D/E of just 0.05, total debt only ₹173 Cr against equity of ₹5,884 Cr",
+      "Strong promoter holding at 65.34% — no evidence of stake reduction",
+      "Large reserve base (₹5,845 Cr) provides a cushion during cyclical troughs"
+    ],
+    "key_risks": [
+      "Extreme earnings volatility: EBITDA swung from +₹5,082 Cr (2019) to -₹163 Cr (2021) to -₹46 Cr (2024) — I cannot value this business with any confidence",
+      "Current operating margin of just 2.8% — the 2019 supercycle was a one-time China supply shock that will not repeat at that scale",
+      "2024 net profit of ₹805 Cr was massively distorted by ₹1,258 Cr of 'Other Income' (vs ₹80 Cr the prior year) — true operating business was loss-making in FY24"
+    ],
+    "red_flags": [
+      "Other Income of ₹1,258 Cr in FY24 inflated net profit to ₹805 Cr; strip this out and the core business generated negative EBITDA (-₹46 Cr) — earnings quality is extremely poor",
+      "OCF positive only 3 of last 5 years; FCF swung from +₹1,396 Cr to -₹576 Cr — no predictability",
+      "ROE of 8% is far below my 15% minimum threshold — capital destruction in cyclical troughs erodes long-term compounding",
+      "Entire sector is commodity-cyclical: graphite electrode demand and pricing are hostage to global steel output and Chinese EAF policy — zero pricing power"
+    ],
+    "detailed_analysis": "Graphite India is a textbook example of what I spend my career avoiding. The revenue history says everything: ₹1,468 Cr in 2017, exploding to ₹7,858 Cr in 2019 on a Chinese supply shock that shut down their graphite capacity, then collapsing back to ₹1,958 Cr in 2021 and further to ₹2,560 Cr in 2025. This is not a business — it is a commodity price bet. The operating income track record is even worse: five of the last nine years saw EBITDA below ₹200 Cr, with outright losses in 2020, 2021, and 2024. No consumer franchise, no pricing power, no earnings visibility. This fails my most basic filter: I need to predict earnings five to ten years out with reasonable confidence. Here, I cannot even explain the last five years.\n\nThe valuation adds insult to injury. The trailing P/E of 38.2x is based on FY25 profits of ₹458 Cr, which themselves rely partly on ₹438 Cr of other income (investment returns, not operations). The actual operating business earned ₹253 Cr EBIT on ₹2,560 Cr revenue — a 2.8% margin. At a ₹13,278 Cr market cap, you are paying 5x sales for a business that loses money in bad years and earns thin margins in average ones. The EV/EBITDA of 63x is simply not discussable. The only things I respect here are the balance sheet (D/E 0.05 is exceptional discipline) and the promoter holding — but a clean balance sheet on a broken business model just means you lose money slowly rather than quickly. AVOID.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 56401,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0801882,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9768,
+      "cache_read_input_tokens": 11564,
+      "output_tokens": 2672,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9768,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 363,
+          "cache_read_input_tokens": 9474,
+          "cache_creation_input_tokens": 2384,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2384
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

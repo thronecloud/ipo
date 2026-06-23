@@ -1,0 +1,71 @@
+{
+  "symbol": "BBOX",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T16:47:07.895187Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Black Box is a low-margin systems integrator masquerading as a software company — 7.3% operating margins and negative FY25 free cash flow (-₹129 Cr) against reported net profit of ₹205 Cr reveal deeply poor earnings quality. At 35x P/E with decelerating revenue and rising debt, there is no margin of safety for a commoditized integration business.",
+    "key_strengths": [
+      "ROCE of 29.8% and ROE of 44.2% appear strong, supported by high promoter alignment at 70%",
+      "Diversified customer base across government, defense, healthcare, and utilities provides some revenue stickiness",
+      "Operating income CAGR of 64.8% over 9 years reflects genuine scale gains post-Black Box Corp acquisition"
+    ],
+    "key_risks": [
+      "FCF/Net Income = -129/205 = -63% in FY25 — earnings are not converting to cash, a Munger dealbreaker",
+      "Borrowings surged 46% YoY to ₹1,038 Cr in FY25 while revenue declined from ₹6,288 Cr to ₹5,967 Cr — deteriorating capital efficiency",
+      "7.3% operating margin in a commoditized systems integration business signals no durable pricing power or moat"
+    ],
+    "red_flags": [
+      "Negative free cash flow (-₹129 Cr) in FY25 despite ₹205 Cr net profit — gap suggests aggressive working capital or revenue recognition issues",
+      "Other income has been persistently negative (₹-68 Cr in FY25) — unusual, likely forex losses or financial instrument write-downs",
+      "Debt growing rapidly (₹328 Cr → ₹1,038 Cr over 4 years) while revenue is declining — a dangerous combination",
+      "Company was in negative equity as recently as FY20 (-₹176 Cr) — fragile financial history",
+      "Finance costs of ₹145 Cr consume 27% of EBITDA, leaving thin coverage"
+    ],
+    "detailed_analysis": "Invert first: what makes this a bad investment? Everything about Black Box screams commoditized middleman — a systems integrator buying hardware (KVM, fiber, cabling, networking gear) and reselling it with thin integration services layered on top. A 15.5% gross margin and 7.3% operating margin are not software economics; they are distribution economics. The ROE of 44% is a leveraged illusion — strip out the ₹1,038 Cr in borrowings and the business earns far less on actual equity invested. The FY25 free cash flow of -₹129 Cr against net profit of ₹205 Cr (FCF/NI of -63%) is the clearest signal: profits are not real until cash arrives in the bank. Munger's first rule on earnings quality — FCF should exceed 80% of net income — is catastrophically violated here.\n\nThe business model itself lacks a durable moat. Systems integration is a bid-and-win game; customers routinely switch vendors on contract renewal. The branded KVM/AV product line (Emerald, Boxilla, etc.) is niche and unlikely to sustain premium pricing at scale. Revenue has actually shrunk over the last two years (₹6,288 Cr → ₹5,967 Cr) even as debt balloons and finance costs rise. The market is pricing this at 35x trailing earnings and 21.7x EV/EBITDA — valuation better suited to a high-moat compounding machine, not a leveraged integrator with negative free cash flow. I would not own this at any price near current levels.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 56495,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.085506,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11368,
+      "cache_read_input_tokens": 9090,
+      "output_tokens": 2676,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11368
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 460,
+          "cache_read_input_tokens": 9090,
+          "cache_creation_input_tokens": 2278,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2278,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

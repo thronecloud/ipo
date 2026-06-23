@@ -1,0 +1,69 @@
+{
+  "symbol": "KSB",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-18T18:18:17.890077Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "KSB is a quality industrial compounder with zero debt and a German-parent pedigree, but at 58x earnings for a 14–16% grower the PEG ratio is ~3.6x — far beyond my discipline of paying less than 1x. Growth visibly decelerated in FY25 (revenue +6.4%, profit +9.3%) just as the stock commands a premium valuation, which is exactly the wrong combination.",
+    "key_strengths": [
+      "Pristine balance sheet — net debt is essentially zero (borrowings ₹5 Cr, cash ₹167 Cr), a true fortress.",
+      "ROCE of 24.5% and consistent operating margin expansion (~14.5%) show a disciplined, capital-efficient business.",
+      "Diversified end-markets (water, wastewater, energy, chemicals, oil & gas) with India's infrastructure capex cycle as a structural tailwind."
+    ],
+    "key_risks": [
+      "Valuation is the biggest risk — P/E 58x on a ~14% earner gives PEG ~3.6x; I never pay more than 1x the growth rate.",
+      "Growth is decelerating sharply: FY25 revenue grew only 6.4% and net profit only 9.3%, the weakest prints in the dataset.",
+      "Free cash flow collapsed to near zero in FY25 (OCF ₹93 Cr vs. net profit ₹270 Cr) — profits aren't converting to cash."
+    ],
+    "red_flags": [
+      "PEG ratio ~3.6x — more than triple my maximum threshold of 1.0x.",
+      "FY25 OCF/Net profit conversion of only 34% is a serious earnings quality warning.",
+      "Revenue growth slowed to 6.4% in FY25 — if this is the new run-rate, the stalwart label is generous and the current multiple is indefensible."
+    ],
+    "detailed_analysis": "KSB Limited is a textbook stalwart — a 65-year-old industrial company with steady compounding, zero debt, and a world-class German parent (KSB SE) owning ~70%. The 9-year revenue CAGR of 14% and net profit CAGR of 16.4% are respectable, and ROCE of 24.5% confirms genuine capital efficiency. The product mix — pumps and valves for water, power, chemicals, and decarbonization — is exactly the kind of boring, essential infrastructure business I like. I'd happily own this at the right price.\n\nThe right price, however, is not 58x earnings. My PEG calculation — P/E of 58.3 divided by a growth rate I'm most generously pegging at 16% — lands at 3.6x, which is egregiously expensive. Worse, FY25 is flashing real deterioration: top-line growth fell to 6.4%, earnings growth to 9.3%, and free cash flow went to zero as capex (₹94 Cr) consumed all operating cash generation. At EV/EBITDA of 44x, the market is pricing this as a fast grower when the data says it's slowing. The story has weakened at exactly the moment the stock demands a perfect story. Wait for a 40–50% correction to bring the PEG below 1.5x before getting interested.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "excellent",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 62303,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08792415,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11499,
+      "cache_read_input_tokens": 9213,
+      "output_tokens": 2802,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11499
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 556,
+          "cache_read_input_tokens": 9213,
+          "cache_creation_input_tokens": 2286,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2286,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

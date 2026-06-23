@@ -1,0 +1,70 @@
+{
+  "symbol": "KPIGREEN",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T18:07:22.569663Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "KPI Green Energy is a utility/IPP — a sector explicitly excluded from the Magic Formula because capital intensity and regulatory structures distort earnings yield and ROIC. Even if we override that exclusion, earnings yield of ~6.9% (EBIT INR 564 Cr / implied EV ~INR 8,234 Cr) barely clears the floor, and ROIC of ~14% (EBIT / invested capital of ~INR 4,006 Cr) is well below the 20%+ threshold required for a quality business designation.",
+    "key_strengths": [
+      "Exceptional revenue growth — 92.6% CAGR over 6 years, reaching INR 1,735 Cr in FY25",
+      "Operating margins expanding and holding at 30.6% despite aggressive capacity additions",
+      "Equity base nearly tripled FY24→FY25 (INR 836→2,650 Cr), reducing leverage risk temporarily"
+    ],
+    "key_risks": [
+      "Chronically negative FCF — burned INR 1,297 Cr in FY25 alone; every single year since 2020 is FCF-negative",
+      "Borrowings surged to INR 2,533 Cr in FY25 — capital-perpetually-hungry model requires continuous external funding",
+      "Utility sector exclusion: power producers have asset-heavy, regulated economics that systematically produce low ROIC"
+    ],
+    "red_flags": [
+      "Sector disqualifier: Magic Formula explicitly excludes utilities — capital structure is not comparable to industrial businesses",
+      "ROIC ~14% using EBIT/Invested Capital — persistently below the 20% quality threshold",
+      "Capex of INR 1,505 Cr in FY25 vs. Operating CF of only INR 208 Cr — earnings are illusory from a cash perspective",
+      "OCF was negative in 2 of the last 5 years — inconsistent cash generation for an 'established' operator"
+    ],
+    "detailed_analysis": "Running the Magic Formula on KPI Green: Earnings Yield = EBIT INR 564 Cr / EV implied by EV/EBITDA 14.32x × EBITDA 575 Cr ≈ INR 8,234 Cr = ~6.9%. That barely clears the 6% minimum but is far from the 12–15%+ range I look for. ROIC = EBIT 564 Cr / (Equity 2,650 + Total Debt 1,475 – Cash 119) = 564/4,006 = 14.1% — below the 20% threshold for a business worth owning at any price. More critically, utilities are disqualified from the Magic Formula altogether; regulated power producers earn returns dictated by tariff contracts and asset depreciation schedules, not competitive advantages.\n\nThe growth story is undeniably impressive — 92.6% revenue CAGR — but this is a capital treadmill, not a compounding machine. The company burned INR 1,297 Cr of FCF in FY25 and has never generated positive FCF in any year on record. It funds growth entirely through debt (borrowings now INR 2,533 Cr) and equity raises (equity tripled in one year). Net profit of INR 325 Cr looks decent until you realize the business consumed INR 1,505 Cr of capex to generate it. This is not the kind of business the Magic Formula rewards — there is no excess return on capital above cost, no durable moat, and no FCF to speak of. Hard pass.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 53493,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08850060000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11430,
+      "cache_read_input_tokens": 8897,
+      "output_tokens": 2864,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11430
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 379,
+          "cache_read_input_tokens": 8897,
+          "cache_creation_input_tokens": 2533,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2533,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

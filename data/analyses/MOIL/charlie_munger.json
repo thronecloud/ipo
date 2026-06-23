@@ -1,0 +1,70 @@
+{
+  "symbol": "MOIL",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T21:57:52.125185Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "MOIL is a government-owned commodity miner with no pricing power, ROCE of 11.4% (below my 12% floor), and a preposterous trailing P/E of 64x for a cyclical business. The only path to acceptable returns is a manganese price supercycle — pure commodity speculation, not investing.",
+    "key_strengths": [
+      "Zero debt across the entire recorded history — pristine balance sheet with no financial leverage risk",
+      "~50% share of India's domestic manganese ore production provides a quasi-monopoly in a captive market",
+      "Government promoter (64.68%) effectively backstops the balance sheet and prevents reckless capital allocation"
+    ],
+    "key_risks": [
+      "Commodity cyclicality is brutal — operating income swung from ₹600 Cr (FY2019) to ₹256 Cr (FY2020) to ₹264 Cr (FY2023) with no controllable buffer",
+      "FCF quality is poor: FY2023 FCF was -₹33 Cr, FY2024 -₹52 Cr on rising capex (₹306 Cr); only FY2025 recovered to ₹137 Cr vs net profit ₹382 Cr — FCF/NI ratio of 36%",
+      "Trailing P/E of 64x implies ~₹104 Cr in TTM earnings — a severe deterioration from FY2025's ₹382 Cr — suggesting the current business has fallen off a cliff in recent quarters"
+    ],
+    "red_flags": [
+      "Massive trailing vs. forward P/E gap (64x vs. 12.6x) signals dramatic TTM earnings collapse not yet visible in annual data — a serious near-term concern",
+      "Other income (treasury float) has been contracting at -10.6% CAGR (2015–2020), masking weak core mining economics historically",
+      "Government PSU structure guarantees misaligned management incentives — bureaucratic pricing decisions, not market-driven capital allocation",
+      "Total equity has shrunk from ₹3,083 Cr (FY2019) to ₹2,638 Cr (FY2025) despite positive net profits — large capital returns that leave little for reinvestment compounding"
+    ],
+    "detailed_analysis": "Inversion first: what makes MOIL a bad investment? It is a commodity producer with zero pricing power, selling into the steel industry which itself is cyclical. ROCE of 11.4% and ROE of 8.31% both sit below my 12% minimum threshold — a business that earns less than its cost of capital destroys wealth in the long run. The operating margin of 14.73% on a 78.52% gross margin reveals the brutal cost structure of Indian PSU mining operations. The historical record is damning: revenue has essentially flatlined between ₹822 Cr (FY2015) and ₹1,579 Cr (FY2025) — a decade of nominal growth barely keeping pace with inflation. Free cash flow over the last four years: ₹144 Cr, -₹33 Cr, -₹52 Cr, ₹137 Cr — deeply inconsistent as capex ramps to ₹297–306 Cr annually with no clear return on that investment visible yet.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 62256,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0934287,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11642,
+      "cache_read_input_tokens": 8824,
+      "output_tokens": 3141,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11642,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 390,
+          "cache_read_input_tokens": 8824,
+          "cache_creation_input_tokens": 2818,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2818
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

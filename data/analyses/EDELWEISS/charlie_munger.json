@@ -1,0 +1,70 @@
+{
+  "symbol": "EDELWEISS",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T17:15:00.662571Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Edelweiss is a complex financial conglomerate with ROE of 8.68% — well below the cost of equity — that has failed to surpass its 2019 revenue and operating income peak six years later. Operating income CAGR of only 0.4% over nine years with a shrinking equity base (INR 6,744 Cr → INR 4,419 Cr in just two years) signals a business consuming rather than creating value.",
+    "key_strengths": [
+      "Aggressive deleveraging: borrowings down ~47% from INR 36,657 Cr (2020) to INR 19,459 Cr (2025)",
+      "Cash building strongly: INR 2,024 Cr (2022) → INR 4,938 Cr (2025), with 5/5 years of positive OCF",
+      "Finance costs declining (-0.4% CAGR), reducing the debt servicing drag on thin earnings"
+    ],
+    "key_risks": [
+      "Equity base collapsing: INR 6,744 Cr (2023) → INR 4,419 Cr (2025) despite positive net profit — suggests hidden capital destruction in subsidiaries",
+      "ROE of 8.68% is sub-cost-of-equity; business has generated zero real shareholder value since 2019 peak",
+      "Extreme D/E of 3.51x — finance costs of INR 2,537 Cr consumed 4.7x the INR 536 Cr net profit in FY2025"
+    ],
+    "red_flags": [
+      "Net profit was -INR 2,044 Cr in FY2020 — catastrophic loss that revealed structural fragility of the leveraged conglomerate model",
+      "Operating income CAGR of only 0.4% over 9 years; revenue still below 2019 peak of INR 11,078 Cr",
+      "Equity erosion of ~INR 2,300 Cr in FY2024 alone while reporting INR 528 Cr profit — unexplained capital drain, likely subsidiary losses or write-downs",
+      "Complex multi-subsidiary structure (lending, ARC, insurance, AMC, investment banking) — violates Munger's core 'thoroughly understand it' requirement"
+    ],
+    "detailed_analysis": "Inversion first: what would make this a terrible investment? A leveraged financial conglomerate, run by a promoter with only 32.69% skin in the game, that earned less in operating income in 2025 (INR 3,382 Cr) than it did in 2016 (INR 3,269 Cr) in nominal terms, while carrying debt of INR 18,004 Cr. Finance costs alone (INR 2,537 Cr) dwarf net profit (INR 536 Cr) — the entire equity story is hostage to the cost of borrowed money. The 2020 disaster (-INR 2,044 Cr net loss) was not an aberration; it was a stress test that the business barely survived, and the conglomerate structure made recovery slow and opaque. The Forward P/E of 7.56x implies a dramatic earnings re-rating, but earnings have disappointed consistently since 2019, and I see no durable catalyst.\n\nThe only credible positive is the deleveraging narrative — borrowings have fallen from INR 36,657 Cr to INR 19,459 Cr, and cash has swelled to INR 4,938 Cr. But this de-risking comes at the price of balance sheet shrinkage and equity erosion; the company's total equity fell by ~INR 2,300 Cr in FY2024 while reporting positive profits — a clear sign that subsidiary restructuring or write-downs are destroying capital somewhere in the conglomerate maze. A Munger-quality business should compound equity, not consume it. At ROIC meaningfully below 15% and with the complexity penalty of a multi-line financial firm, this is not a business I can thoroughly understand, and therefore one I will not own at any price.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 49923,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0900924,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11534,
+      "cache_read_input_tokens": 9053,
+      "output_tokens": 2941,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11534
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 499,
+          "cache_read_input_tokens": 9053,
+          "cache_creation_input_tokens": 2481,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2481,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

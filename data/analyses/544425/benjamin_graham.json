@@ -1,0 +1,70 @@
+{
+  "symbol": "544425",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-20T20:03:49.351791Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "AJC Jewel is a recently-incorporated (2018) micro-cap SME jeweler with a P/E of 18 and a near-zero ROE of 0.22%, offering no margin of safety and no multi-year earnings record. By my standards this is pure speculation, not investment.",
+    "key_strengths": [
+      "Promoter holding of 56.33% indicates insider alignment",
+      "Operates in a tangible business (jewelry) with physical inventory assets",
+      "Tiny 52 Cr market cap means scope for growth if execution improves"
+    ],
+    "key_risks": [
+      "ROE of 0.22% is effectively no return on shareholder capital",
+      "P/E of 18 exceeds my <15 threshold with no earning power to justify it",
+      "Incorporated 2018 — lacks the 3-5 year proven earnings record I require"
+    ],
+    "red_flags": [
+      "ROE of 0.22% suggests earnings are effectively negligible — P/E of 18 on near-zero E is meaningless",
+      "Recent IPO with no long-term track record — classic speculative profile",
+      "No disclosed dividend history, debt ratios, current ratio, or book value — insufficient data for any Graham test",
+      "Jewelry manufacturing is working-capital intensive and margin-thin; SME-tier scale compounds the risk"
+    ],
+    "detailed_analysis": "From a Graham perspective, AJC Jewel fails nearly every quantitative filter I apply. ROE of 0.22% means the company is earning almost nothing on shareholders' capital — a P/E of 18 on such trivial earnings is a statistical illusion, not a valuation. Incorporated only in 2018 and freshly listed, it offers none of the 3-5 year consecutive earnings history I demand, and the data provided gives no visibility into book value, current ratio, debt-to-equity, or dividend record — the very metrics that would allow a margin-of-safety assessment. The absence of these numbers is itself telling.\n\nJewelry manufacturing at SME scale is a notoriously working-capital-heavy, low-margin business dominated by larger organized players (Titan, Kalyan, Senco). With only 52 Cr in market cap and a 56% promoter holding, this is a speculative micro-cap where Mr. Market's recent IPO enthusiasm has set the price, not proven earning power. I would set this aside entirely and wait for either (a) a collapse in price to well below tangible book value or (b) five years of demonstrated, growing earnings — neither of which exists today.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "insufficient_data",
+      "valuation": "overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 50313,
+    "model_used": "opus",
+    "total_cost_usd": 0.098511,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 9186,
+      "cache_read_input_tokens": 13537,
+      "output_tokens": 1372,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9186,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10651,
+          "cache_creation_input_tokens": 1421,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1421
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

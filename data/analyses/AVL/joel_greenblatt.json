@@ -1,0 +1,69 @@
+{
+  "symbol": "AVL",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T16:36:24.676488Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Aditya Vision scores well on ROCE (~30%) but fails catastrophically on earnings yield — at an EBIT of INR 175 Cr against an EV of ~INR 7,214 Cr, earnings yield is only ~2.4%, far below the 12%+ threshold the Magic Formula demands. The market has priced in years of perfect execution, leaving no margin of safety.",
+    "key_strengths": [
+      "Strong ROCE of ~30% signals genuine business quality — good inventory turns and asset efficiency for a retailer",
+      "Impressive 36% revenue CAGR (2022→2025) demonstrates rapid store expansion and demand capture in underserved Bihar/East India market",
+      "Promoter holding of 47% with FII + DII interest of 35%+ reflects institutional conviction in the growth story"
+    ],
+    "key_risks": [
+      "Earnings yield of ~2.4% (EBIT INR 175 Cr / EV INR 7,214 Cr) — Magic Formula rejects anything below 12%",
+      "Free cash flow deeply negative and worsening: INR -13 Cr (2023) → -41 Cr (2024) → -78 Cr (2025); operating CF also turned negative",
+      "Thin operating margins (~6.6%) typical of consumer electronics retail leave no cushion — any revenue slowdown or pricing pressure destroys profitability"
+    ],
+    "red_flags": [
+      "Negative OCF for 2 consecutive years (-6 Cr in FY24, -41 Cr in FY25) despite strong reported profits — earnings are not converting to cash",
+      "Debt jumped from INR 319 Cr to INR 480 Cr in a single year; financing CF positive only because of external borrowings, not business generation",
+      "P/E of 61x and EV/EBITDA of 36x for a 6.6% operating margin retailer — valuation assumes flawless execution for a decade"
+    ],
+    "detailed_analysis": "Running Aditya Vision through the Magic Formula: EBIT = INR 175 Cr, Enterprise Value = Market Cap (6,759.7) + Debt (480) – Cash (26) = INR 7,213.7 Cr. Earnings Yield = 2.43% — this is nearly the worst possible score on the cheapness axis. The formula demands >12%; anything below 6% is a hard pass. On the return-on-capital side, the reported ROCE of ~30% is genuinely impressive, implying capital employed of roughly INR 584 Cr — a testament to good inventory management in a regional electronics retail franchise. But one excellent metric does not make a Magic Formula stock; BOTH must rank highly, and on price this fails completely.\n\nThe deeper concern is cash flow. Net profit grew from INR 35 Cr to INR 106 Cr (44% CAGR), yet operating cash flow went from +INR 32 Cr (2022) to –INR 41 Cr (2025) and FCF is –INR 78 Cr last year. This divergence signals aggressive working capital build-up as stores expand — not inherently disqualifying, but it means the business is consuming, not generating, cash. The entire expansion is being funded by debt (up 50% in one year). At P/E 61x and EV/EBITDA 36x, the market is pricing in sustained 30%+ growth with margin expansion. There is zero margin of safety; Greenblatt's approach would rank this near the bottom of any screened universe.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 42349,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07465649999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10382,
+      "cache_read_input_tokens": 8450,
+      "output_tokens": 2212,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10382
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 323,
+          "cache_read_input_tokens": 8450,
+          "cache_creation_input_tokens": 1932,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1932,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

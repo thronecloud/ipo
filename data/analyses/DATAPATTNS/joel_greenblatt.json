@@ -1,0 +1,68 @@
+{
+  "symbol": "DATAPATTNS",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-19T13:06:47.740282Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Data Patterns is an excellent defense electronics franchise — but the Magic Formula is ruthless about price, and the earnings yield of only 1.52% (EBIT 296 Cr / EV 19,530 Cr) is catastrophically below any threshold of attractiveness. Paying EV/EBITDA of 60x for a 708 Cr revenue company means you need flawless execution for a decade just to break even on a value basis.",
+    "key_strengths": [
+      "Revenue CAGR of 31.6% (FY22-FY25) and operating margin of 43% reflect a genuinely scarce, high-moat defense electronics capability",
+      "Debt-free balance sheet (6 Cr debt, zero leverage) is excellent capital discipline for a capital-intensive defense R&D business",
+      "ROIC on tangible capital is ~20% (EBIT 296 Cr / invested capital ~1,476 Cr) — the business quality is real"
+    ],
+    "key_risks": [
+      "Earnings yield of only 1.52% means you're paying 66x EBIT — Magic Formula requires >12% yield; this is 8x too expensive",
+      "FCF is negative in FY25 (-196 Cr free cash flow) and irregular (only 2/4 years positive) — defense contracts create lumpy working capital cycles",
+      "Revenue of only 708 Cr at a 19,562 Cr market cap gives P/S of 20x — any execution stumble or order delay would be devastating"
+    ],
+    "red_flags": [
+      "Negative OCF in FY25 (-90 Cr) on 222 Cr net profit — cash is not converting; receivables from government orders are likely bloating working capital",
+      "CWIP is not a major issue here, but capex nearly tripled from 38 Cr (FY22) to 106 Cr (FY25) — the company is investing ahead of revenues, which is fine but creates execution risk"
+    ],
+    "detailed_analysis": "EV = Market Cap 19,562 + Debt 6 - Cash 38 = 19,530 Cr. EBIT (Operating Income FY25) = 296 Cr → Earnings Yield = 1.52%. This single number says everything. The Magic Formula requires both a cheap price AND a good business — Data Patterns has the good business but the price makes it uninvestable by my framework. For context, at a more reasonable earnings yield of 10%, the stock would need to be priced around 520-540 Cr market cap, implying a ~97% decline from today. The growth story may well play out, but that's a speculation on future earnings, not a value investment. The negative FCF in FY25 on strong reported earnings is a classic defense-sector working capital trap that concerns me.",
+    "metrics_evaluated": {
+      "moat_strength": "strong",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 158171,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.23871105,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 24181,
+      "cache_read_input_tokens": 15361,
+      "output_tokens": 9561,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 24181,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 612,
+          "cache_read_input_tokens": 15361,
+          "cache_creation_input_tokens": 8820,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8820
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

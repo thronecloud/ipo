@@ -1,0 +1,70 @@
+{
+  "symbol": "ALOKINDS",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T16:21:02.857644Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "Alok Industries is a technically insolvent commodity textile manufacturer with negative equity of -₹21,527 Cr, borrowings of ₹26,106 Cr dwarfing total assets of ₹6,475 Cr, and nine consecutive years of net losses outside of one-time debt-write-off gains. At an EV/EBITDA of 320x on deeply erratic EBITDA, the stock offers no margin of safety whatsoever.",
+    "key_strengths": [
+      "Reliance Industries is the 75% promoter, providing operational credibility and potential lifeline capital",
+      "Positive FCF in 4 of last 5 years (best: ₹798 Cr in FY23), suggesting minimal asset-level cash generation",
+      "Gross margin of 31.5% shows some product-level viability if debt burden were resolved"
+    ],
+    "key_risks": [
+      "Balance sheet is catastrophically insolvent: negative equity of -₹21,527 Cr growing worse every year by ~₹900 Cr",
+      "Finance costs (₹615 Cr) consume virtually all EBITDA (₹291 Cr in FY26), making organic deleveraging mathematically impossible",
+      "Revenue has contracted -9% CAGR over 9 years with no clear reversal — from ₹8,723 Cr in FY17 to ₹3,715 Cr in FY26"
+    ],
+    "red_flags": [
+      "Negative book equity makes P/B meaningless (-0.33x); the company is technically bankrupt on a standalone basis",
+      "EV/EBITDA of 320x on ₹291 Cr EBITDA is a speculative bubble premium — not a value",
+      "Debt has barely moved post-IBC restructuring: ₹24,186 Cr in FY21 vs ₹26,106 Cr in FY26 — the restructuring failed to fix the core problem",
+      "Operating margin negative at -4.51% in FY26 despite post-NCLT ownership by a blue-chip promoter — operational turnaround is absent"
+    ],
+    "detailed_analysis": "Alok Industries is precisely the kind of business I have spent my career avoiding: a commodity textile manufacturer with no pricing power, no brand, no switching costs, and no discernible moat of any kind. The numbers tell a story of compounding destruction — revenue has been cut by more than half since FY17, equity has gone from deeply negative to catastrophically negative (-₹21,527 Cr), and the company has posted net losses in 7 of the last 10 years. The two profitable years (FY19–20) were entirely driven by one-time debt write-off income (₹7,063 Cr and ₹2,082 Cr in \"Other Income\"), not operational recovery. The business itself has never reliably earned a rupee.\n\nThe debt situation is the final nail. With borrowings of ₹26,106 Cr and finance costs of ₹615 Cr annually against an EBITDA that can't reliably exceed ₹300–400 Cr, the company is in a permanent debt trap. There is no plausible path to solvency without a massive equity injection or second haircut from lenders. Reliance Industries' 75% stake creates some speculative hope, but hope is not an investment thesis. I would not touch this stock at any price — the business does not earn its cost of capital, has no moat, and trades at a valuation (320x EV/EBITDA) that is pure speculation, not value investing.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 50082,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07282140000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10768,
+      "cache_read_input_tokens": 9008,
+      "output_tokens": 1982,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10768,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 274,
+          "cache_read_input_tokens": 9008,
+          "cache_creation_input_tokens": 1760,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1760
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

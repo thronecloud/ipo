@@ -1,0 +1,69 @@
+{
+  "symbol": "544327",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-20T09:44:13.291535Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Technichem Organics is a tiny INR 97 Cr specialty chemicals manufacturer earning a trivial 0.12% ROE while trading at 31x earnings — the economics are awful and the price is absurd. Inverting: a commoditized intermediate chemicals business with no visible moat, negligible returns on capital, and a premium multiple is precisely what one should avoid.",
+    "key_strengths": [
+      "High promoter holding of 71.77% indicates skin in the game",
+      "Nearly 30-year operating history (incorporated 1996) in dye/pigment intermediates",
+      "Niche exposure to Air Oxidation Chemistry — potentially differentiated process"
+    ],
+    "key_risks": [
+      "ROE of 0.12% means capital is earning essentially nothing — value destruction vs cost of capital",
+      "P/E of 31x on near-zero profits implies EPS of ~INR 1.8; any mean reversion in sentiment crushes the stock",
+      "Commodity/intermediate chemicals are cyclical, price-taker businesses with no pricing power"
+    ],
+    "red_flags": [
+      "0.12% ROE is a fundamental failure of the business model at current capital base",
+      "Microcap BSE-only listing with minimal institutional ownership (FII 1.09% + DII 1.24%) — low scrutiny, low liquidity",
+      "Premium valuation wholly disconnected from underlying earnings power"
+    ],
+    "detailed_analysis": "Applying inversion first: what would make this a bad investment? A micro-cap commodity-chemical maker earning 0.12% on equity while priced at 31x earnings checks every box. A 0.12% ROE is not a business — it is a charity for customers and a tax on shareholders. At Berkshire we look for 20%+ ROIC compounding for decades; this is roughly two orders of magnitude short. Specialty chemicals *can* be a fine business (think Balaji Amines or Atul at their best), but pigment and dye intermediates are largely commoditized, cyclical, and exposed to Chinese dumping — there is no evident moat, no pricing power, and the numbers confirm it.\n\nThe valuation makes the setup worse, not better. Paying 31x for earnings generated off a near-zero return base means you are paying a growth multiple for a business that currently isn't earning its cost of capital. The 71.77% promoter stake is a modest positive, but concentrated promoter control in a thinly-traded BSE microcap is as often a governance risk as a vote of confidence. I would pass without a second look and spend the time elsewhere — \"it's remarkable how much long-term advantage we have gotten by trying to be consistently not stupid.\"",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 28819,
+    "model_used": "opus",
+    "total_cost_usd": 0.1158735,
+    "usage": {
+      "input_tokens": 7,
+      "cache_creation_input_tokens": 10070,
+      "cache_read_input_tokens": 23652,
+      "output_tokens": 1643,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10070,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 60,
+          "cache_read_input_tokens": 11037,
+          "cache_creation_input_tokens": 1166,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1166
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

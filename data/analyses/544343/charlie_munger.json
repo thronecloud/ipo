@@ -1,0 +1,69 @@
+{
+  "symbol": "544343",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-20T09:49:26.817375Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "CapitalNumbers is a debt-free, high-ROCE (26.5%) small IT services shop at a modest 8.91x P/E, but it lacks a durable moat and growth has abruptly decelerated from ~28% CAGR to just 2% in FY25 with operating income actually contracting. At best a fair business at a fair price — not the kind of compounding machine worth concentrated capital.",
+    "key_strengths": [
+      "ROCE 26.5% / ROE 20% with zero borrowings — clean capital structure.",
+      "FCF positive 5/5 years; FY25 FCF ~18 Cr on 26 Cr PAT.",
+      "Promoter holding 74.67% — strong skin in the game."
+    ],
+    "key_risks": [
+      "Revenue growth collapsed from 28% CAGR to ~2% YoY (98→100 Cr); EBIT fell 34→30.",
+      "Commoditized offshore IT services — no switching-cost moat, directly exposed to GenAI disruption of billable hours.",
+      "Post-IPO cash bloat (equity 67→171 Cr) risks ROIC dilution if not deployed well."
+    ],
+    "red_flags": [
+      "FY25 operating margin regression despite revenue still ticking up — pricing or utilization pressure.",
+      "'Other income' spiked to 6 Cr in FY25 (from IPO treasury) flattering reported PAT quality.",
+      "Investing CF -77 Cr in FY25 mostly parking IPO proceeds, not productive capex."
+    ],
+    "detailed_analysis": "Inverting first: what kills this business? A ~100 Cr revenue offshore digital-consulting shop competes against both Tier-1 Indian IT and thousands of boutiques globally with no structural moat — switching costs are low and generative AI is directly cannibalizing the billable-hours model. The FY25 numbers already whisper this story: revenue growth crashed from a 28% CAGR to ~2% YoY, and operating income actually shrank 34→30 Cr. That is exactly the inflection a Munger watchlist treats as a yellow flag, not a buying opportunity.\\n\\nOn the positive side, the business earns genuine returns (ROCE 26.5%, ROE 20%), has no debt, converts profits to cash (FCF 18 Cr in FY25), and the promoter owns 74.67%. At 8.91x P/E and 203 Cr market cap the optical valuation is cheap — but arguably cheap for a reason. Post-IPO equity swelled to 171 Cr; until management redeploys that cash at incremental ROIC >15%, reported ROE drifts down. I'd want two quarters of reaccelerating organic revenue and stable operating margins before reconsidering; otherwise pass.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "excellent",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 43446,
+    "model_used": "opus",
+    "total_cost_usd": 0.16293225,
+    "usage": {
+      "input_tokens": 7,
+      "cache_creation_input_tokens": 11619,
+      "cache_read_input_tokens": 27357,
+      "output_tokens": 3064,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11619,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 125,
+          "cache_read_input_tokens": 13136,
+          "cache_creation_input_tokens": 1210,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1210
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

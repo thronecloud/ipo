@@ -1,0 +1,69 @@
+{
+  "symbol": "OSWALPUMPS",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T22:07:56.109579Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Oswal Pumps is riding an extraordinary wave — revenue 4x and net profit 16x in three years on the back of India's PM-KUSUM solar pump scheme — with genuinely expanding margins (EBITDA ~30%) and near-zero debt (D/E 0.08). However, Operating CF of -151 Cr against Net Profit of 281 Cr in FY25 signals a profound earnings quality failure that Munger's first inversion principle flags as potentially fatal: profits that don't convert to cash are largely fictional.",
+    "key_strengths": [
+      "Explosive, margin-accretive growth: Revenue CAGR 58%, EBITDA CAGR 118% (2022–25); EBITDA margin expanded from 12% to 30%, demonstrating real operating leverage.",
+      "Pristine balance sheet: D/E of just 0.08 (borrowings INR 124 Cr vs equity INR 1,497 Cr) gives financial flexibility and downside protection.",
+      "Secular tailwind with pricing power: India's rural solar pump penetration is sub-10%; PM-KUSUM targets 35 lakh pumps — Oswal owns brand + distribution in Haryana/Punjab heartland."
+    ],
+    "key_risks": [
+      "Government-scheme concentration: The entire growth story runs on PM-KUSUM subsidies; any policy slowdown, budget cut, or payment delay collapses both revenue and receivables simultaneously.",
+      "Catastrophic cash conversion breakdown: FY25 FCF is -198 Cr vs net profit of +281 Cr — a -170% FCF/NI ratio — implying massive working capital absorption (government receivables) that makes reported profits largely non-cash.",
+      "Finance cost rising 74% CAGR (8 → 42 Cr): As receivables balloon from delayed government payments, the company funds operations with expensive debt, eroding the asset-light optics."
+    ],
+    "red_flags": [
+      "FY25 Operating CF -151 Cr vs Net Profit +281 Cr: earnings quality fails the most basic Munger test — a business that earns but cannot collect is not truly profitable.",
+      "Total assets surged from INR 511 Cr (FY24) to INR 1,862 Cr (FY25) — a 3.6x jump in one year — while equity rose INR 1,318 Cr, consistent with a large equity raise whose deployment into receivables/inventory is already eroding cash flows.",
+      "High promoter holding (75.67%) post-IPO raises post-lock-up overhang risk; no track record as a public company under market scrutiny."
+    ],
+    "detailed_analysis": "Oswal Pumps is a textbook case of a business that looks brilliant on the income statement and alarming on the cash flow statement — and Munger always reads both. The ROE of 87.5% and ROCE of 77.9% are genuinely exceptional, and the operating margin expansion from 11% (FY22) to 29% (FY25) reflects real pricing power and scale leverage in the solar pump market. At 14x trailing P/E with a 58% revenue CAGR, the headline valuation appears cheap. But inversion immediately reveals the core problem: INR 281 Cr of net profit produced INR -151 Cr of operating cash flow. That gap — INR 432 Cr — represents cash absorbed into receivables and inventory, almost certainly from government scheme customers who are slow to pay. A business whose customers are state governments in India is not truly a customer; it's a counterparty in a subsidy queue.\n\nThe deeper structural risk is monoculture: Oswal Pumps is essentially a derivative on PM-KUSUM scheme execution velocity. If disbursements slow, the company faces a double hit — revenues stall and the existing receivable mountain stops shrinking. The balance sheet equity jump from INR 179 Cr to INR 1,497 Cr in a single year (likely IPO proceeds) provides a liquidity cushion, but that capital is now funding working capital rather than compounding at high ROIC. Until FCF turns consistently positive and the OCF/Net Profit ratio recovers above 80%, I would not commit capital here, regardless of how attractive the growth narrative sounds. Watch two things: (1) FY26 operating cash flow conversion — if it remains negative, the profits are a mirage; (2) receivables days trend, which is the canary in this particular coal mine.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "exceptional"
+    }
+  },
+  "metadata": {
+    "duration_ms": 80760,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.1087083,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 12054,
+      "cache_read_input_tokens": 8456,
+      "output_tokens": 4064,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 12054,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 508,
+          "cache_read_input_tokens": 8456,
+          "cache_creation_input_tokens": 3598,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 3598
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

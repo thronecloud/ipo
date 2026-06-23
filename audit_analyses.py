@@ -11,7 +11,7 @@ from collections import Counter, defaultdict
 from pathlib import Path
 import statistics
 
-ANALYSES_DIR = Path("/workspace/india/data/analyses")
+ANALYSES_DIR = Path(__file__).resolve().parent / "data" / "analyses"
 
 EXPECTED_PERSONAS = [
     "benjamin_graham",

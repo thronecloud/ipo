@@ -1,0 +1,69 @@
+{
+  "symbol": "ALIVUS",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T16:19:05.953259Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Alivus Life Sciences is a well-run API manufacturer with a clean balance sheet and seven consecutive years of positive earnings, but at P/E 37.3x and P/B 4.35x the stock offers no margin of safety by any measure I apply. The current price of INR 1,070 is approximately 2.4x my computed Graham Number of ~INR 452, meaning Mr. Market is demanding I pay a rich speculative premium for a business whose earnings growth has slowed to ~5% CAGR over the last three years.",
+    "key_strengths": [
+      "Near-zero debt (D/E 0.02) with INR 2,817 Cr equity vs only INR 57 Cr total debt — the balance sheet is fortress-like",
+      "Seven consecutive years of positive net profit (INR 196 Cr → INR 486 Cr), satisfying my minimum earnings continuity requirement",
+      "Operating margin of 31.5% and ROCE of 23.3% demonstrate genuine competitive efficiency in API manufacturing"
+    ],
+    "key_risks": [
+      "Earnings growth has sharply decelerated: net profit grew only ~5% CAGR from 2022–2025 (INR 419 Cr → INR 486 Cr), yet the price embeds a 37x multiple",
+      "Large INR 616 Cr investing outflow in FY2025 — nearly triple prior years — and cash collapsed from INR 301 Cr to INR 71 Cr; purpose and returns on this deployment are unclear",
+      "API manufacturers face price erosion and customer concentration risk; with ~75% of revenue tied to a limited set of molecules (olmesartan, telmisartan, etc.), any pricing pressure hits earnings hard"
+    ],
+    "red_flags": [
+      "P/E of 37.3x is 2.5x my maximum acceptable threshold of 15x — the price compensates the seller, not the buyer",
+      "Graham Number calculates to approximately INR 452 (√[22.5 × EPS ~39.6 × BVPS ~229.6]); current price at INR 1,070 represents a 137% premium to intrinsic value",
+      "Free cash flow declining — INR 465 Cr (2022) → INR 225 Cr (2025) — while the stock price has likely risen; the gap between cash reality and market price is widening"
+    ],
+    "detailed_analysis": "Applying my strict quantitative filters, Alivus fails on every valuation metric that matters. P/E at 37.3x is more than double my ceiling of 15x; P/B at 4.35x is nearly three times my upper limit of 1.5x. My Graham Number — derived from actual proven earnings of ~INR 39.6 per share and book value of ~INR 229.6 per share — arrives at roughly INR 452, against a market price of INR 1,070. An investor paying today's price is extending credit to Mr. Market's optimism, not buying a business at a discount to its demonstrable worth. There is no margin of safety here — none.\n\nThe underlying business is creditable and I do not dispute its quality. Debt is negligible, ROCE exceeds 23%, and earnings have compounded at 16% over six years. However, recent momentum has stalled: net profit advanced only INR 19 Cr in FY2025 on revenue of INR 2,340 Cr, a margin of less than 1% incremental. The INR 616 Cr investing outflow in FY2025 — against typical annual capex of INR 130–165 Cr — and the corresponding collapse of cash from INR 301 Cr to INR 71 Cr warrant serious scrutiny. Until the price retreats to a level offering genuine margin of safety — I would require something near INR 400–500 to begin to be interested — this is a stock to admire from afar, not to own.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "excellent",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 55600,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07996365,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9139,
+      "cache_read_input_tokens": 10778,
+      "output_tokens": 2830,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9139,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 435,
+          "cache_read_input_tokens": 8728,
+          "cache_creation_input_tokens": 2461,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2461
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

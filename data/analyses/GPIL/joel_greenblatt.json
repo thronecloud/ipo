@@ -1,0 +1,68 @@
+{
+  "symbol": "GPIL",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-22T16:44:49.430078Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "GPIL scores adequately on ROIC (~23% ROCE) but falls short on earnings yield (~6% EBIT/EV), meaning the Magic Formula only half-fires. At 27.6x trailing P/E in a cyclical steel business with earnings already off peak by 40%, the price does not offer a sufficient margin of safety.",
+    "key_strengths": [
+      "Near-zero leverage (D/E: 0.04, borrowings dropped from INR 1,697 Cr in FY20 to INR 192 Cr in FY25) — rare for Indian steel",
+      "Vertical integration (iron ore mining → pellets → sponge iron → wire rods) compresses input costs and underpins 23.2% ROCE",
+      "Consistent OCF generation (5/5 positive years; OCF averaged ~INR 1,040 Cr FY21-FY24) with strong FCF conversion in non-capex years"
+    ],
+    "key_risks": [
+      "Steel is a commodity cycle — EBITDA swung from INR 761 Cr (FY20) to INR 1,952 Cr (FY22) and back to INR 1,265 Cr (FY25); ROIC is not durable",
+      "Rising capex cycle (INR 538 Cr FY25, CWIP at INR 652 Cr) compressed FCF to just INR 361 Cr — lowest in 5 years, capex/EBITDA now ~43%",
+      "Earnings yield barely ~6% (EBIT INR 1,194 Cr / EV ~INR 19,806 Cr) — Magic Formula requires >12% for a genuine bargain; this stock is priced for a recovery"
+    ],
+    "red_flags": [
+      "Peak earnings distortion: FY22 net profit was INR 1,467 Cr (steel supercycle); trailing P/E of 27.6x is based on normalized, post-peak earnings — makes valuation look deceptively expensive",
+      "FCF declining structurally: INR 929 Cr (FY21) → INR 361 Cr (FY25) as capex absorbs cash; capex intensity undermines Magic Formula's preference for asset-light compounders"
+    ],
+    "detailed_analysis": "Running the Magic Formula on GPIL: EBIT (FY25) = INR 1,194 Cr; EV = Market Cap (INR 19,826 Cr) + Net Debt (INR 309 Cr - INR 329 Cr cash) ≈ INR 19,806 Cr. Earnings Yield = 6.03% — right at my lower acceptable boundary, nowhere near the 12-15%+ I want. ROCE of 23.2% clears the 20% hurdle, but for a cyclical commodity producer this figure oscillates wildly (implied ROCE in FY22 supercycle was dramatically higher; FY20 was sub-15%). A Magic Formula pick needs BOTH metrics firing simultaneously, and here only one does — and marginally at that.\n\nThe business itself has genuinely improved: debt nearly eliminated, vertical integration intact, promoter holding steady at 63.5%. But the stock reflects much of this optimism already. Forward P/E of 14.2x implies a significant earnings recovery, which requires steel prices and volumes to cooperate — a bet on commodity timing, not business quality. With FCF shrinking to INR 361 Cr and a new capex cycle underway (CWIP INR 652 Cr), capital allocation is moving toward reinvestment rather than shareholder returns. A steel company with adequate (not exceptional) earnings yield is a HOLD at best until the price falls to push earnings yield above 10%.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 59137,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0912105,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11636,
+      "cache_read_input_tokens": 9105,
+      "output_tokens": 2989,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11636,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 506,
+          "cache_read_input_tokens": 9105,
+          "cache_creation_input_tokens": 2531,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2531
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

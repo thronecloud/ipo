@@ -1,0 +1,69 @@
+{
+  "symbol": "544425",
+  "persona": "howard_marks",
+  "persona_display_name": "Howard Marks",
+  "analyzed_at": "2026-04-20T20:06:14.021311Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "A 2024-era SME jewellery IPO trading at 18x earnings on a 0.22% ROE is priced for a fantasy that the fundamentals do not support. The risk of permanent capital loss far outweighs the upside at INR 85.70.",
+    "key_strengths": [
+      "Promoter skin in the game at 56.33% ownership",
+      "Asset-light jewellery manufacturing in a growing Indian consumption category",
+      "Small base (INR 52 Cr m-cap) leaves theoretical room to scale"
+    ],
+    "key_risks": [
+      "ROE of 0.22% indicates the business earns essentially nothing on equity — P/E of 18 is illusory",
+      "Recent SME IPO at cycle peak; jewellery working-capital cycles crush undercapitalized players in downturns",
+      "Negligible institutional ownership (FII 2%, DII 2.47%) = no price discovery, poor liquidity, manipulation risk"
+    ],
+    "red_flags": [
+      "0.22% ROE is a statistical rounding error — either earnings are near-zero or equity was just inflated by IPO proceeds",
+      "Classic late-cycle SME IPO: small jewellery maker listing into euphoric retail demand",
+      "P/E of 18 on near-zero ROE implies a P/B that makes no economic sense"
+    ],
+    "detailed_analysis": "Second-level thinking here is brutal: the market looks at \"18x P/E, jewellery, India consumption story\" and buys. But an 18x multiple on a 0.22% ROE means the business is destroying economic value — you are paying a growth multiple for a company that barely earns its cost of capital, let alone exceeds it. With INR 52 Cr market cap and ~INR 2.9 Cr implied net profit, this is a micro-cap whose reported earnings are immaterial and almost certainly volatile. Jewellery manufacturing is a brutally competitive, working-capital-heavy, margin-thin business dominated by Titan, Kalyan, Senco and thousands of unorganized players — a 2018-vintage entrant has no discernible moat.\n\nWhere are we in the cycle? SME IPOs in India are in full euphoric mode — exactly the regime where Marks would counsel maximum skepticism. The asymmetry is wrong: downside is 50-80% (typical SME IPO mean-reversion) while upside requires a heroic 10x+ improvement in ROE that has no evidence behind it. With only 4.47% institutional float, there is no sophisticated capital setting price — just retail sentiment. No margin of safety exists. Pass, and wait for the cycle to turn and the price to reflect reality.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 32338,
+    "model_used": "opus",
+    "total_cost_usd": 0.09555075,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 9013,
+      "cache_read_input_tokens": 13529,
+      "output_tokens": 1297,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9013,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 92,
+          "cache_read_input_tokens": 10647,
+          "cache_creation_input_tokens": 1248,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1248
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

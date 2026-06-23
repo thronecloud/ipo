@@ -1,0 +1,69 @@
+{
+  "symbol": "ICIL",
+  "persona": "philip_fisher",
+  "persona_display_name": "Philip Fisher",
+  "analyzed_at": "2026-04-18T17:39:05.658142Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Indo Count is a low-margin, commodity home textile exporter with an 8.1% revenue CAGR and near-zero profit growth over nine years — far short of the exceptional growth I demand. Rising debt (total debt surged from INR 956 Cr to 1,449 Cr in a single year) and a P/E of 48x on declining net profits makes this deeply uninvestable.",
+    "key_strengths": [
+      "Revenue trend expanding over last 5 years, with FY25 revenues reaching INR 4,151 Cr (17% YoY growth)",
+      "Reasonable gross margins of 52%, indicating some pricing power at the product level",
+      "High promoter holding of 58.74% signals owner-operator alignment"
+    ],
+    "key_risks": [
+      "Finance costs nearly doubled in one year (INR 70 Cr → 123 Cr) while net profit collapsed from 338 to 246 Cr — debt is devouring earnings",
+      "No meaningful R&D or innovation pipeline; home textiles is a commodity business with no defensible moat against Bangladesh, Vietnam, or Chinese competition",
+      "OCF only positive in 3 of 5 years; free cash flow has been deeply negative through heavy capex cycles with questionable returns"
+    ],
+    "red_flags": [
+      "Net profit CAGR of -0.2% over 9 years despite 8.1% revenue growth — margin erosion is structural",
+      "Total debt surged 51% in FY25 to INR 1,449 Cr vs cash of only INR 106 Cr",
+      "P/E of 48x on a business with declining profits and a 4.86% operating margin is speculative pricing, not growth pricing"
+    ],
+    "detailed_analysis": "From my Scuttlebutt perspective, Indo Count occupies the unattractive middle of the textile value chain — a volume exporter of bed linen with no proprietary technology, no meaningful R&D spend, and thin operating margins of just 4.86%. The gross margin of 52% looks encouraging until you realize that operating expenses consume nearly all of it, leaving very little for shareholders. Net profit has compounded at essentially zero (-0.2%) over nine years while revenues grew at 8.1% — the classic sign of a business that scales revenues but cannot translate scale into earnings power. That is the antithesis of what I look for.\n\nThe balance sheet is deteriorating rapidly. Total debt jumped from INR 956 Cr to INR 1,449 Cr in FY25 alone, and finance costs surged 76% to INR 123 Cr. This is happening even as net profit fell 27% YoY. Management is deploying capital aggressively (capex of INR 252 Cr in FY25 with CWIP re-building to 108 Cr) but the returns are not visible in margins or earnings. The current P/E of 48x may reflect forward-P/E optimism of 19.7x, but I would need to see a compelling innovation story or structural margin expansion thesis to justify even half that multiple in a commodity textile business. This company lacks the three things I need most: exceptional growth, expanding margins, and an innovation-driven moat.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 46035,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0710658,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8956,
+      "cache_read_input_tokens": 11156,
+      "output_tokens": 2275,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 8956
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 393,
+          "cache_read_input_tokens": 9102,
+          "cache_creation_input_tokens": 1908,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1908,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

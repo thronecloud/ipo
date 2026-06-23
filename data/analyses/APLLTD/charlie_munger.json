@@ -1,0 +1,70 @@
+{
+  "symbol": "APLLTD",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T16:24:54.759704Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Alembic is a 118-year-old generic pharma manufacturer whose revenue grew 8.6% CAGR over nine years yet net profit declined 2.3% CAGR — a textbook case of capital being consumed without commensurate return. With ROIC/ROE below 15%, FCF turning sharply negative (−₹466 Cr in FY25), and borrowings nearly tripling in one year, the business does not meet the quality threshold for investment at any reasonable price.",
+    "key_strengths": [
+      "High gross margin (71.5%) reflects branded generic mix and API integration, not commodity manufacturing",
+      "Minimal leverage historically (D/E 0.28) and high promoter skin-in-the-game at 69.74%",
+      "Diversified therapeutic portfolio (cardiology, oncology, ophthalmic) reduces single-segment concentration risk"
+    ],
+    "key_risks": [
+      "Profitability destruction: Net profit peaked at ₹1,146 Cr (FY21) and sits at ₹582 Cr (FY25) despite ₹1,279 Cr more in revenue — operating leverage running in reverse",
+      "FY25 cash flow collapse: OCF fell from ₹803 Cr to ₹88 Cr in one year while capex hit ₹564 Cr, producing FCF of −₹466 Cr, funded by borrowings jumping from ₹513 Cr to ₹1,489 Cr",
+      "US generics price erosion: the FY21→FY23 EBITDA halving (₹1,663 Cr → ₹689 Cr) was US-driven and the structural pricing headwind has not resolved"
+    ],
+    "red_flags": [
+      "Finance costs CAGR 35.9% over 9 years — debt is growing far faster than earnings",
+      "EBITDA CAGR −0.3% over 9 years: nine years of capex and R&D spending with zero incremental EBITDA creation",
+      "CWIP re-accelerating (₹524 Cr → ₹903 Cr) signals another heavy capex wave even as returns on the last cycle are below cost of capital",
+      "FCF/Net Income ratio in FY25: −466/582 = −80% — earnings are essentially fictitious from a cash perspective this year"
+    ],
+    "detailed_analysis": "Invert first: what kind of business destroys the most value? One that grows revenue steadily, spends heavily on factories and R&D, and yet earns less profit nine years later than it did at the start. That is Alembic's exact record — ₹720 Cr net profit in FY16, ₹582 Cr in FY25, on nearly double the revenue. ROE of 11.4% and ROCE of 13% both sit below my minimum threshold of 15%, and crucially, they are not trending toward improvement — the FY21 peak (ROE implied ~22% at the time) was an anomaly, not a new normal. The capex cycle of FY18–FY22 (CWIP touched ₹2,304 Cr in FY22) was supposed to unlock US generics capacity; instead it coincided with brutal US price erosion that cut EBITDA nearly in half. Now a new capex wave is beginning before the prior one has earned its keep.\n\nThe FY25 cash flow data is the single most alarming data point: operating cash flow fell from ₹803 Cr to ₹88 Cr in one year while management guided toward earnings recovery — something in working capital or revenue recognition deserves deep scrutiny. Borrowings nearly tripled (₹513 Cr → ₹1,489 Cr) in 12 months to fund both capex and the OCF shortfall. At 23x trailing P/E on declining earnings quality and with forward estimates dependent on a US generics rebound that has disappointed repeatedly, the market is pricing in a recovery that the business has failed to deliver for four consecutive years. A great business at a fair price beats this scenario every time.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 63042,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0928524,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11604,
+      "cache_read_input_tokens": 8978,
+      "output_tokens": 3109,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11604,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 553,
+          "cache_read_input_tokens": 8978,
+          "cache_creation_input_tokens": 2626,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2626
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

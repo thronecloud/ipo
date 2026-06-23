@@ -1,0 +1,69 @@
+{
+  "symbol": "IGIL",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-19T12:52:15.402239Z",
+  "analysis": {
+    "score": 6,
+    "recommendation": "HOLD",
+    "investment_thesis": "IGI operates a gemological certification business with genuine moat characteristics — trusted brand, network effects between jewellers and consumers, high switching costs, and near-zero marginal cost per additional certificate — producing ROE of 43% and ROCE of 54% with minimal capital needs. However, the recent PE-backed IPO, only three years of public data, and PE sponsor exit risk temper my enthusiasm despite excellent business fundamentals.",
+    "key_strengths": [
+      "Business model resembles a ratings agency or standards bureau: certification trust compounds over decades, margins are exceptional (56% operating, 77% gross), and capex is negligible (INR 63 Cr on INR 1,229 Cr revenue)",
+      "Consistent and growing free cash flow — INR 439 Cr FCF in FY25, 100% OCF positivity across all four years of data, with revenue CAGR of 35.8%",
+      "Dual tailwind: natural diamond certification growing with Indian jewellery market, and lab-grown diamonds represent an entirely new and fast-growing certification revenue stream"
+    ],
+    "key_risks": [
+      "GIA (Gemological Institute of America) dominates global prestige diamond certification; IGI competes on price and accessibility but lacks GIA's top-tier brand in the high-value segment",
+      "Three-year data track record is insufficient to assess full-cycle durability — I cannot see how this business performed in a jewellery demand recession",
+      "Lab-grown diamond boom could be a double-edged sword: volume grows but per-certificate fees may compress as LGD becomes commoditised"
+    ],
+    "red_flags": [
+      "PE-backed IPO: parent is BCP Asia II TopCo Pte. Ltd. (Blackstone). Promoters hold 76.55% — PE sponsors at IPO typically price deals to capture maximum value for themselves, not incoming shareholders",
+      "Negative equity in FY23 (-INR 604 Cr) signals a pre-IPO leveraged dividend recapitalisation by PE sponsors — they extracted cash before listing investors, a practice I find deeply unflattering",
+      "P/B of 11.44x and P/S of 13.11x leave thin margin of safety; any slowdown in India's jewellery demand or diamond market would expose this valuation quickly"
+    ],
+    "detailed_analysis": "The IGI business model genuinely excites me in principle. Certification and accreditation businesses are among the most durable franchises in capitalism — think of the value embedded in a trusted hallmark. With 83% of revenue converted to EBITDA and virtually no capex burden (INR 63 Cr capex vs INR 502 Cr operating CF in FY25), this is an extraordinarily capital-light compounder. The FY22-FY25 revenue CAGR of 35.8% is impressive, though it partly reflects India's post-COVID jewellery boom and the explosion of lab-grown diamond volumes.\n\nMy caution is primarily about provenance and price. The negative equity in FY23 — driven by a PE dividend recap before the IPO — tells me Blackstone extracted significant value before public investors arrived. The IPO in late 2024 raised INR 1,188 Cr in financing inflows, coinciding with the equity restoration. I have seen this pattern before: PE sponsors sell businesses at peak multiples, leaving public shareholders with less upside and more risk. P/B of 11.44x and P/E of 30x are not unconscionable for this quality, but they leave me with an inadequate margin of safety given the limited track record. I would want to observe 2-3 more years of results — especially through a diamond market correction — before buying at scale.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 178497,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.23121345000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 23741,
+      "cache_read_input_tokens": 15219,
+      "output_tokens": 9174,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 23741,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 501,
+          "cache_read_input_tokens": 15219,
+          "cache_creation_input_tokens": 8522,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8522
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

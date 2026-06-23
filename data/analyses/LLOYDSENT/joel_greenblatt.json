@@ -1,0 +1,71 @@
+{
+  "symbol": "LLOYDSENT",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T18:13:21.234053Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "Lloyds Enterprises fails both Magic Formula screens catastrophically: Earnings Yield of ~1.1% (EBIT ₹118 Cr / EV ~₹10,262 Cr) and ROCE of just 5.97% — both far below my minimum thresholds of 12% and 20% respectively. This is a high-priced, low-quality conglomerate with no durable earning power from operations.",
+    "key_strengths": [
+      "Revenue growth is real: ₹1 Cr (2021) → ₹1,488 Cr (2025), 30.9% CAGR shows the business is being assembled",
+      "Low leverage: Debt/Equity 0.16, though debt surged from ₹70 Cr to ₹671 Cr in one year",
+      "Promoter holding at 62.72% provides alignment, at least on paper"
+    ],
+    "key_risks": [
+      "Other Income dominates profits: 2022 Net Profit ₹154 Cr on Operating Income of ₹4 Cr; 2024 Net Profit ₹175 Cr with ₹135 Cr Other Income — real operating earnings are a fraction of reported profits",
+      "Conglomerate incoherence: steel trading + real estate + engineering + pizza outlets (1441 Pizzeria) = no moat, no focus, no pricing power",
+      "Debt exploded from ₹125 Cr to ₹671 Cr in a single year (2024→2025) while OCF remains erratic; capital deployment is opaque"
+    ],
+    "red_flags": [
+      "Name changed from 'Shree Global Tradefin Limited' in Sept 2023 — classic shell/promoter restructuring vehicle",
+      "Revenue was ₹1 Cr in 2020 and 2021; this is not an operating business revival but a new entity assembled around a shell",
+      "EV/EBITDA of 78.44x and EV/EBIT of ~87x for a steel trader with 6% operating margins is indefensible",
+      "Net profit in 2022 (₹154 Cr) came almost entirely from ₹159 Cr Other Income — likely asset sales or financial gains, not operations",
+      "Total assets ballooned from ₹314 Cr to ₹5,582 Cr in 5 years — funded heavily by equity issuances (reserves ₹198 Cr → ₹3,170 Cr), diluting shareholders"
+    ],
+    "detailed_analysis": "Magic Formula analysis is decisive here: Earnings Yield of ~1.1% (EBIT ₹118 Cr against EV of ~₹10,262 Cr) ranks this stock near the bottom of any screener. ROCE of 5.97% means the business destroys value relative to its cost of capital. The EV/EBITDA of 78.44x is pricing in a transformation that hasn't materialized operationally. For reference, my formula demands >12% earnings yield AND >20% ROIC simultaneously — Lloyds misses both by an order of magnitude.\n\nThe deeper issue is earnings quality. Strip out \"Other Income\" (₹83 Cr in FY25, ₹135 Cr in FY24, ₹159 Cr in FY22) and the operating business barely earns anything. This is a promoter-assembled conglomerate — formerly a dormant shell — now trading at ₹9,684 Cr market cap on ₹118 Cr of EBIT from steel trading, real estate, and pizza. Free cash flow has been near zero or negative for most of the last 5 years. Borrowings jumping 5x in one year while CWIP rose to ₹132 Cr signals capital is being deployed aggressively with no demonstrated return history. Magic Formula investors should avoid completely.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 44336,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08232795,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11095,
+      "cache_read_input_tokens": 8909,
+      "output_tokens": 2536,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11095
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 420,
+          "cache_read_input_tokens": 8909,
+          "cache_creation_input_tokens": 2186,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2186,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

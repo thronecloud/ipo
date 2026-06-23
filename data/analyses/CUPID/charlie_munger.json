@@ -1,0 +1,70 @@
+{
+  "symbol": "CUPID",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T17:08:12.763109Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Cupid Limited is a modest-scale condom and diagnostics manufacturer (INR 183 Cr revenue, 5.3% CAGR) trading at a laughably absurd 166x P/E and 150x EV/EBITDA — a valuation that presupposes decades of explosive growth that the business has never demonstrated. With free cash flow negative at -31 Cr in FY25 despite reported net profit of 41 Cr, the earnings quality itself is suspect.",
+    "key_strengths": [
+      "High gross margins (62%) and operating margins (35%) suggest genuine pricing power in tender-driven export markets",
+      "Pristine balance sheet — D/E of 0.07, nearly zero debt, and INR 59 Cr cash with equity-funded expansion",
+      "Diversified export presence across Africa, Europe, and Asia provides some demand stability via government/NGO procurement"
+    ],
+    "key_risks": [
+      "Valuation is catastrophically stretched: Market Cap INR 13,872 Cr on INR 183 Cr revenue (P/S = 47x) — a 90% correction would still leave it expensive on fundamentals",
+      "Free cash flow turned deeply negative (-31 Cr in FY25) while net profit shows 41 Cr — a 72 Cr divergence signals severe working capital deterioration or aggressive revenue recognition",
+      "INR 19 Cr 'Other Income' in FY25 inflates reported profits; stripping it out, core operating profit barely covers 50% of stated earnings, implying true P/E exceeds 300x"
+    ],
+    "red_flags": [
+      "OCF collapsed from +42 Cr (FY21) to -11 Cr (FY25) while revenue grew modestly — classic sign of earnings-cash flow divergence",
+      "Other income of INR 19 Cr (FY25) now represents ~46% of EBIT, masking stagnant core operations (operating income CAGR: 0.6% over 4 years)",
+      "Equity base more than doubled (167→381 Cr) via a likely QIP/rights issue in FY24, yet revenue barely moved — capital deployed is not generating returns",
+      "Tender-driven government procurement model (condoms for public health programs) creates lumpy, non-recurring revenue — not a compounding machine"
+    ],
+    "detailed_analysis": "Applying the first principle of inversion: what must be true for this stock to justify INR 13,872 Cr market cap? The company would need to sustain 30%+ earnings growth for 15+ years. Reality: revenue has grown at 5.3% CAGR over four years, and operating income CAGR is a rounding error at 0.6%. ROE of 12.9% is below my minimum 15% threshold, and the business is fundamentally a government-tender condom supplier — the very definition of a commodity product in a price-sensitive procurement ecosystem. There is no pricing power moat, no network effect, no switching cost. The gross margin (62%) looks attractive but is characteristic of a niche manufacturer with some proprietary designs, not a durable franchise.\n\nThe cash flow situation is the most damning signal. Munger's rule: never trust earnings without cash flow validation. Net profit of INR 41 Cr in FY25 accompanied by operating cash flow of -11 Cr and free cash flow of -31 Cr is a five-alarm fire. The balance sheet ballooned from INR 189 Cr (FY23) to INR 442 Cr (FY25), driven by a capital raise of ~INR 99 Cr in FY24 — yet incremental returns on that capital are invisible in the income statement. Other income of 19 Cr (likely interest on idle cash) is artificially propping up reported profitability. This is precisely the kind of financial optics Munger despises: headline earnings that flatter, cash flows that tell the truth. At any rational multiple, this stock is a wealth destroyer.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 58041,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08675925000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10975,
+      "cache_read_input_tokens": 8580,
+      "output_tokens": 2868,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10975
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 515,
+          "cache_read_input_tokens": 8580,
+          "cache_creation_input_tokens": 2395,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2395,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "JUSTDIAL",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T17:56:17.515084Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Just Dial trades at a meaningful discount to its Graham Number (~INR 915 vs. INR 550 price) with a P/B of 0.92 and near-zero debt — rare balance sheet virtues — but the trailing P/E of 33.5x badly fails my 15x ceiling and the business generates a paltry 3.63% ROE, suggesting that the large equity base is not being deployed productively. I would not initiate a new position until Mr. Market offers a lower price or earnings quality improves.",
+    "key_strengths": [
+      "P/B of 0.92 — stock trades below book value, a prerequisite for deep value; Graham Number ≈ INR 915 implies a ~40% margin of safety at current price",
+      "Balance sheet fortress: Debt/Equity 0.02, negligible finance cost (INR 11 Cr), and interest coverage exceeding 60x — financial failure risk is negligible",
+      "9+ consecutive years of positive net profits (2016–2025), with OCF positive every year in the last five — earnings durability passes my minimum test"
+    ],
+    "key_risks": [
+      "Earnings quality is suspect: a substantial portion of net profit comes from 'Other Income' (INR 305 Cr in FY24 vs. operating income of INR 217 Cr), meaning the operating business alone cannot justify the valuation",
+      "Low ROE of 3.63% — the company sits on INR 4,606 Cr of equity and earns negligible returns on it; retained capital is being warehoused in financial instruments rather than compounding in the business",
+      "Competitive vulnerability: local search is increasingly commoditised by Google, Zomato, and other vertical platforms; revenue CAGR of only 6.1% over nine years reflects this secular pressure"
+    ],
+    "red_flags": [
+      "No dividends referenced — a company with INR 4,606 Cr equity and a large investment corpus should be returning cash to shareholders; the absence raises questions about capital allocation discipline",
+      "EV/EBITDA of -3.06 implies the investment portfolio dwarfs the operating business in value — this is not a going-concern industrial enterprise in the classic sense; it is closer to an investment holding company with an attached search platform",
+      "Operating income swung from -INR 2 Cr (FY22) to INR 675 Cr (FY25) — this extreme volatility in operating results is inconsistent with the stable, predictable earnings I require"
+    ],
+    "detailed_analysis": "From a strict quantitative standpoint, Just Dial presents a mixed picture. On the asset side, it earns high marks: P/B of 0.92 clears my preferred threshold of under 1.0, Debt/Equity of 0.02 is essentially debt-free, and the Graham Number of approximately INR 915 (computed as √(22.5 × EPS ~INR 68.7 × BVPS ~INR 542)) sits 40% above the current price of INR 550. Total Assets of INR 5,521 Cr against Total Debt of only INR 100 Cr means the enterprise value may actually be negative — the investment corpus exceeds the market capitalisation — which ordinarily would be a net-net bargain hunter's dream. Free cash flow has been consistently positive (INR 305 Cr in FY25), and nine unbroken years of positive net profit satisfy my minimum earnings durability test.\n\nHowever, I must look beyond the balance sheet to the quality and origin of those earnings. ROE of a mere 3.63% on INR 4,606 Cr of equity tells me that management has warehoused shareholder capital in financial instruments rather than reinvesting it at high rates of return in the business. Other income of INR 305 Cr in FY24 — exceeding operating profit of INR 217 Cr that year — means the 'business' earnings are largely treasury earnings. I am buying a local search platform that competes against Google and vertical apps, not a productive enterprise compounding at high rates. The trailing P/E of 33.5x dramatically fails my 15x ceiling. I would need the price to fall closer to INR 350–400 before the margin of safety and earnings yield become truly compelling by my standards.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 103826,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.12667740000000002,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11930,
+      "cache_read_input_tokens": 11203,
+      "output_tokens": 5238,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11930
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 453,
+          "cache_read_input_tokens": 9153,
+          "cache_creation_input_tokens": 4827,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 4827,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

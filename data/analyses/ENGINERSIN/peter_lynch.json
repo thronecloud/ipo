@@ -1,0 +1,69 @@
+{
+  "symbol": "ENGINERSIN",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-22T16:32:29.739587Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Engineers India is a capital-light, near-debt-free PSU consultancy with strong returns (ROE 23%, ROCE 25%), but revenue has been essentially flat for 5 years (INR 3,237 Cr in 2020 → INR 3,088 Cr in 2025) — this is a stalwart, not a fast grower. At P/E 17.5x on 8.5% long-term earnings CAGR, the PEG of ~2.1 is too expensive for Lynch's taste.",
+    "key_strengths": [
+      "Near-zero debt (D/E 0.01) with ROE 23.2% and ROCE 25% — exceptional capital efficiency for an engineering PSU",
+      "Government-backed monopoly position in hydrocarbon consultancy with 60 years of domain expertise creates durable competitive moat",
+      "EBITDA expanding to INR 665 Cr in FY25 (up from INR 376 Cr in FY21) shows strong margin recovery"
+    ],
+    "key_risks": [
+      "Revenue completely flat over 5 years — INR 3,088 Cr in FY25 is below FY20's INR 3,237 Cr; there is no revenue growth story here",
+      "Earnings quality is poor: FY25 OCF (INR 109 Cr) is only 19% of net profit (INR 580 Cr), implying massive working capital drag or government receivables buildup",
+      "Forward P/E (20.55) > current P/E (17.50) signals the market expects FY26 earnings to fall — the profit spike may already be peak"
+    ],
+    "red_flags": [
+      "5-year revenue CAGR is negative in real terms — a consultancy that can't grow revenues is not a growth stock",
+      "OCF-to-net profit ratio of 19% in FY25 is alarming; PAT includes ~INR 160 Cr other income (investments/interest) that does not convert to operating cash",
+      "Forward P/E premium implies earnings deceleration ahead — classic sign the story is weakening"
+    ],
+    "detailed_analysis": "From my desk, the first question is always: \"What's the story?\" For Engineers India, I'd call this a stalwart PSU — a solid, government-backed consulting franchise in oil, gas, and petrochemicals. The business is beautifully capital-light with D/E of 0.01, and those returns (23% ROE, 25% ROCE) are genuinely impressive. The margin recovery to 28%+ operating margins in FY25 looks great on a headline basis. But when I dig deeper, I see a company that earned INR 3,088 Cr in revenue in FY25 — less than it earned in FY20. That's not a growth company; that's a stalwart at best, slow grower at worst. My PEG rule doesn't work in its favor: at 17.5x P/E against a 9-year earnings CAGR of 8.5%, the PEG is over 2.0 — that's overvalued for the growth rate being delivered long-term.\n\nThe earnings quality issue is the biggest red flag. Net profit jumped to INR 580 Cr in FY25, but operating cash flow was only INR 109 Cr and free cash flow just INR 68 Cr. That gap typically means government client receivables are piling up — a chronic problem for PSU contractors. The \"other income\" line (INR 160 Cr) also flatters PAT; strip that out and core operating profitability looks less impressive. The clincher: the market's own forward P/E of 20.55 tells you analysts expect earnings to fall in FY26 — you're buying yesterday's good news at a slightly elevated multiple. I'd park this in the \"too hard\" pile unless I see revenue re-accelerating to 15%+. For now, it's a Hold for existing holders, not a buy for new ones.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 65351,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0998043,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 12184,
+      "cache_read_input_tokens": 9301,
+      "output_tokens": 3421,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 12184,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 574,
+          "cache_read_input_tokens": 9301,
+          "cache_creation_input_tokens": 2883,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2883
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

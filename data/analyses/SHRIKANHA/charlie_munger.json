@@ -1,0 +1,70 @@
+{
+  "symbol": "SHRIKANHA",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-21T07:59:21.599921Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Shri Kanha Stainless is a micro-cap commodity steel processor earning a derisory 0.62% ROE — this is capital destruction, not capital compounding. A P/E of 4.48 is not cheap when the underlying business earns essentially nothing on equity.",
+    "key_strengths": [
+      "High promoter skin-in-the-game at 68.59% — owner-operated structure",
+      "Focused niche in precision stainless steel cold-rolled strips (not generic flat steel)",
+      "Low P/E of 4.48 provides some downside buffer if earnings normalize"
+    ],
+    "key_risks": [
+      "ROE of 0.62% signals the business barely earns its cost of equity — return on capital is effectively zero",
+      "Pure commodity business — stainless cold-rolled strips have no pricing power, no moat, no differentiation",
+      "Micro-cap at INR 25.90 Cr market cap — severe illiquidity, no institutional oversight, no analyst coverage"
+    ],
+    "red_flags": [
+      "ROE 0.62% — below any reasonable hurdle rate; far below my 15% ROIC threshold",
+      "Critical data missing: ROIC, FCF conversion, debt-to-EBITDA — cannot assess financial health with confidence",
+      "Near-zero institutional interest (FII 0.03%) and no meaningful public scrutiny of a 2015-incorporated company",
+      "Commodity steel is among the worst businesses to own — price-taker, energy-intensive, cyclical, subject to Chinese dumping"
+    ],
+    "detailed_analysis": "Invert first: what would make this a terrible investment? Everything checks the box. A 0.62% ROE means for every ₹100 of shareholder equity, the business earns ₹0.62. That is not a business — that is a savings account that charges fees. Stainless cold-rolled strips are a commodity where the customer buys on price alone, giving this company zero pricing power against larger, better-capitalized peers. At INR 25.90 Cr market cap, this is a micro-cap with all the associated risks: illiquidity, governance opacity, and no institutional checks on management behavior.\n\nThe P/E of 4.48 is a classic value trap. Ben Graham would say \"cheap for a reason,\" and Munger would add \"a terrible business at a low price is still a terrible business.\" With no disclosed ROIC, no FCF data, and no debt metrics provided, I cannot even quantify how bad the balance sheet is — which itself is a red flag. A high promoter stake (68.59%) in a business this small can mean entrenchment as easily as alignment. There is no evidence of a durable competitive advantage, no network effect, no switching costs, no brand. This fails my basic quality test at every level.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "poor",
+      "financial_health": "insufficient_data",
+      "valuation": "insufficient_data",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 39193,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0632157,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8924,
+      "cache_read_input_tokens": 7439,
+      "output_tokens": 1834,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8924,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 391,
+          "cache_read_input_tokens": 7439,
+          "cache_creation_input_tokens": 1485,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1485
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "CHALET",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-19T12:58:24.298895Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Chalet Hotels is a premium asset-play on India's hospitality boom, with OCF surging to INR 950 Cr in FY25 — but a massive capex cycle (INR 969 Cr) has crushed near-term earnings. Net profit plunged from INR 278 Cr to INR 142 Cr in FY25, making the P/E of 28x look expensive until the new capacity earns its keep.",
+    "key_strengths": [
+      "Operating cash flow compounding strongly — 5/5 years positive, reaching INR 950 Cr in FY25",
+      "High-quality asset base: 35.5% operating margins and 64% gross margins typical of premium urban hotels",
+      "EBITDA CAGR of 14% over 9 years demonstrates durable pricing power through cycles"
+    ],
+    "key_risks": [
+      "Net profit collapsed 49% YoY (FY24: INR 278 Cr → FY25: INR 142 Cr) — story is weakening near-term",
+      "ROE of only 5.77% is well below Lynch's 12% minimum, and D/E of 0.73 exceeds the 0.6 comfort level",
+      "Free cash flow turned negative in FY25 (-INR 14 Cr) as capex hit INR 969 Cr — heavy dilution risk from INR 1,565 Cr equity raise in FY25"
+    ],
+    "red_flags": [
+      "Earnings declining despite revenue growth — margins being eaten by depreciation and interest on new assets",
+      "Capital-intensive model requires perpetual reinvestment; FCF will likely stay negative for 2-3 more years",
+      "P/E of 28x on depressed and declining earnings creates poor margin of safety"
+    ],
+    "detailed_analysis": "Chalet is a classic asset play on Indian premium hospitality — the kind of story Lynch appreciates in theory. Revenue grew 21% in FY25 to INR 1,718 Cr and OCF is genuinely impressive at INR 950 Cr, showing the existing hotels generate real cash. However, the company is deep in a capex super-cycle (INR 969 Cr in FY25, up from INR 436 Cr in FY24), funded partly by an equity raise that swelled reserves from INR 1,646 Cr to INR 3,196 Cr — diluting per-share earnings and pushing net profit down to INR 142 Cr.\n\nThe PEG ratio is effectively undefined because earnings are shrinking, which is the cardinal red flag in Lynch's framework. The 'story' is India's travel and hospitality revival, which is real, but investors are paying 28x current earnings for future capacity not yet earning. I'd wait for capex to normalize, FCF to turn positive, and ROE to climb above 12% before getting excited. This is a HOLD — revisit in 18 months when new assets are operating.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 168742,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.2336052,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 24244,
+      "cache_read_input_tokens": 15904,
+      "output_tokens": 9194,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 24244,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 734,
+          "cache_read_input_tokens": 15904,
+          "cache_creation_input_tokens": 8340,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8340
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

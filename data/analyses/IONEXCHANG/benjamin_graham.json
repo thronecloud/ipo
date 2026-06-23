@@ -1,0 +1,70 @@
+{
+  "symbol": "IONEXCHANG",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T17:45:57.034006Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Ion Exchange possesses a commendable 10-year earnings track record — a genuine rarity — but the current price of INR 401 offers absolutely no margin of safety, trading at roughly double my calculated Graham Number of ~INR 200. At P/E 30x and P/B 3.68x, the market is paying handsomely for growth assumptions that a prudent investor should never pre-capitalize.",
+    "key_strengths": [
+      "Unbroken 10-year net profit growth (INR 17 Cr → 208 Cr, 32.1% CAGR) — the kind of earnings continuity I require",
+      "Interest coverage ~17.5x (Operating Income 297 Cr / Finance Cost 17 Cr) — debt service is safe",
+      "D/E of 0.32 is historically conservative, though the trend is now alarming"
+    ],
+    "key_risks": [
+      "P/E 30.3x and P/B 3.68x obliterate any margin of safety — Graham Number ~INR 200 vs. market price INR 401",
+      "FCF collapsed to -INR 287 Cr in FY2025; OCF shrank to just INR 32 Cr on net profit of INR 208 Cr — a dangerous divergence",
+      "Borrowings nearly tripled in one year (INR 152 Cr → INR 421 Cr in FY2025) alongside INR 320 Cr capex — balance sheet risk is rising fast"
+    ],
+    "red_flags": [
+      "Graham Number ~INR 200 implies stock is priced at a 100% premium to intrinsic asset-earning value",
+      "Operating margin only 5.54% — thin cushion against any revenue or cost shock",
+      "CWIP surged from INR 61 Cr to INR 203 Cr — large unproven capital commitments not yet generating returns",
+      "OCF/Net Profit ratio collapsed to 15% in FY2025 (32/208) — profits are not converting to cash"
+    ],
+    "detailed_analysis": "Ion Exchange earns genuine respect on one critical Graham dimension: ten consecutive years of growing profits is the kind of demonstrated earning power I insist upon. The business also passes my interest coverage test comfortably. However, every valuation metric fails my standards decisively. P/E of 30.3x is double my ceiling of 15x; P/B of 3.68x is nearly 2.5x my upper limit of 1.5x. My Graham Number — the square root of (22.5 × EPS ~INR 16.9 × BVPS ~INR 105) — yields roughly INR 200, against a market price of INR 401. The intelligent investor demands a discount to intrinsic value, not a 100% premium.\n\nThe FY2025 financial flows disturb me further. Free cash flow turned sharply negative at -INR 287 Cr; operating cash flow of only INR 32 Cr against net profit of INR 208 Cr signals aggressive working capital consumption or revenue recognition ahead of cash collection. Simultaneously, borrowings nearly tripled to INR 421 Cr to fund INR 320 Cr of capex and INR 203 Cr of capital work-in-progress. This is precisely the speculative capital allocation phase — betting on future returns from unproven assets — that Mr. Market loves to overpay for and that I studiously avoid. The water treatment sector's long-term need is real, but need does not justify price.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 45911,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07671525,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9369,
+      "cache_read_input_tokens": 11325,
+      "output_tokens": 2545,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9369
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 452,
+          "cache_read_input_tokens": 9275,
+          "cache_creation_input_tokens": 2144,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2144,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

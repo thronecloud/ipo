@@ -1,0 +1,69 @@
+{
+  "symbol": "ARVINDFASN",
+  "persona": "howard_marks",
+  "persona_display_name": "Howard Marks",
+  "analyzed_at": "2026-04-18T16:28:11.359538Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Arvind Fashions owns a genuine branded portfolio (US Polo, Arrow, Tommy Hilfiger, Calvin Klein) with improving operating cash flows (FCF INR 438 Cr, ~6.9% yield), but the stock at 191.8x trailing P/E with negative ROE (-3.63%) prices in flawless execution with zero margin of safety. The FY2025 net profit collapse to INR 33 Cr from INR 137 Cr — despite EBITDA growing to INR 601 Cr — is precisely the kind of hidden fragility the market is ignoring at its peril.",
+    "key_strengths": [
+      "Strong brand portfolio — US Polo, Arrow, Tommy Hilfiger, Calvin Klein — with durable consumer recognition across price segments",
+      "FCF generation improving sharply: OCF INR 530 Cr and FCF INR 438 Cr in FY2025, a near-asset-light capex profile (INR 96 Cr)",
+      "Operating income CAGR of 30.3% (2017–2025) demonstrates meaningful operating leverage on 17.3% revenue CAGR"
+    ],
+    "key_risks": [
+      "P/E of 191.8x with negative ROE (-3.63%) — forward P/E of 31.6x requires earnings to nearly 6x; consensus is priced for perfection",
+      "Finance costs of INR 170 Cr are ~5x FY2025 net profit of INR 33 Cr; Debt/Equity of 1.02x leaves little buffer if consumer spending softens",
+      "Key premium brands (Tommy Hilfiger, Calvin Klein) are PVH Corp licenses — renewal risk is an existential event risk not reflected in valuation"
+    ],
+    "red_flags": [
+      "FY2025 net profit collapsed to INR 33 Cr from INR 137 Cr while EBITDA grew to INR 601 Cr — INR 568 Cr consumed below EBITDA line by D&A, lease finance charges, and taxes",
+      "Financing CF of -INR 456 Cr in FY2025 implies heavy lease principal repayments, materially understating true cash cost to equity holders vs. reported FCF",
+      "P/B of 6.34x on a company with shrinking reserves (INR 950 Cr in FY2024 → INR 940 Cr in FY2025) and negative ROE — paying a growth premium for equity that is shrinking"
+    ],
+    "detailed_analysis": "The second-level question isn't whether Arvind Fashions has good brands — it does. The question is what the price already reflects. At INR 473 and a market cap of INR 6,330 Cr, investors are paying 191.8x trailing earnings on INR 33 Cr of net profit and 17.4x EV/EBITDA. The forward P/E of 31.6x implies earnings must recover to roughly INR 200 Cr — a near 6x improvement — just to bring valuation to a still-expensive fair value. The gaping disconnect between EBITDA (INR 601 Cr) and net profit (INR 33 Cr) is not a rounding error; it reflects INR 170 Cr in finance costs, heavy Ind AS 116 lease amortization, and D&A that devour virtually all operating economics before reaching equity holders. When finance costs are 5x net profit, the equity is structurally subordinated to debt and lease creditors.\n\nThe FCF yield of ~6.9% (INR 438 Cr / INR 6,330 Cr) is the lone valuation anchor, but it is illusory. Ind AS 116 reclassifies store rent as lease liability repayments — visible in the financing CF of -INR 456 Cr — meaning \"free\" cash flow to equity is far thinner once lease principal obligations are counted. Debt of INR 1,157 Cr at Debt/EBITDA ~1.9x is manageable today, but an economic downturn that compresses EBITDA by even 20% would stress the balance sheet quickly. With promoter holding at only 35.11% and two of the marquee brands dependent on PVH Corp license renewals, there is structural vulnerability baked into the business model that the 191x P/E simply does not compensate for. Howard Marks' central tenet applies precisely here: the price must offer a margin of safety commensurate with the risk — and at current levels, it emphatically does not.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 89565,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.10573425,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10593,
+      "cache_read_input_tokens": 11055,
+      "output_tokens": 4179,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10593,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 575,
+          "cache_read_input_tokens": 9001,
+          "cache_creation_input_tokens": 3646,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 3646
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

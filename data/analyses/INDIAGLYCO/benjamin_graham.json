@@ -1,0 +1,69 @@
+{
+  "symbol": "INDIAGLYCO",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T17:41:38.083203Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "India Glycols trades at INR 974 against a Graham Number of ~INR 525 (P/B 2.52, P/E 24.1), offering no margin of safety whatsoever. Rapidly surging debt (borrowings nearly doubled to INR 2,055 Cr in 2025) and four consecutive years of negative free cash flow render this unsuitable for the defensive investor.",
+    "key_strengths": [
+      "Eight consecutive years of positive net earnings (2017–2025) meets minimum track record requirement",
+      "Operating income growing at 12.9% CAGR over 9 years — underlying business is improving",
+      "High promoter ownership at 59.6% aligns management with long-term business health"
+    ],
+    "key_risks": [
+      "Debt explosion: borrowings surged from INR 1,348 Cr (2024) to INR 2,055 Cr (2025), D/E now 0.86 — well above my 0.5 limit",
+      "Free cash flow negative all four recent years (2022: -264, 2023: -109, 2024: -103, 2025: -391 Cr) — company is not self-funding",
+      "Interest coverage of only ~3.2x (Operating Income 521 Cr / Finance Cost 164 Cr) falls below my 3.5x minimum threshold"
+    ],
+    "red_flags": [
+      "P/B of 2.52 exceeds my hard red-flag threshold of 2.0 — paying excessive premium over tangible assets",
+      "Capex of INR 760 Cr in 2025 funded almost entirely by new debt with cash reserves of a mere INR 7 Cr — precarious liquidity",
+      "2022 net profit of INR 340 Cr was inflated by INR 260 Cr of other income — normalized earnings are far lower, making the P/E look even worse"
+    ],
+    "detailed_analysis": "By my quantitative filters, India Glycols fails on virtually every count. The Graham Number — sqrt(22.5 × ~34.4 EPS × ~356 BVPS) — works out to roughly INR 525, meaning the market is demanding a near-100% premium over intrinsic asset-earning value. The P/E of 24.1 is 60% above my maximum of 15, and the P/B of 2.52 breaches my red-flag threshold. These are not minor deviations; they are the market pricing in a rosy future that I, as a disciplined investor, refuse to pay for.\n\nMore troubling to me than valuation is the balance sheet deterioration. The company has been consuming capital voraciously — INR 760 Cr of capex in 2025 alone — while generating only INR 362 Cr in operating cash flow, resulting in INR 391 Cr of free cash burn. This gap has been plugged entirely by fresh borrowings, which nearly doubled in a single year. Mr. Market may applaud the growth ambition, but I see a company that cannot fund itself and is pledging its future to creditors. Until the debt is brought below 0.5× equity, free cash flow turns consistently positive, and the price retreats to at least the Graham Number, the prudent course is to stand aside entirely.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 54665,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08192669999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9546,
+      "cache_read_input_tokens": 11284,
+      "output_tokens": 2849,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9546
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 524,
+          "cache_read_input_tokens": 9234,
+          "cache_creation_input_tokens": 2362,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2362,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "symbol": "HCG",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T17:34:25.667649Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "HCG trades at a deep premium (EV/EBIT ~26x, earnings yield ~3.8%) that the Magic Formula cannot justify — neither metric clears the threshold for a good-and-cheap business. Despite a 16% revenue CAGR, the company only earns INR 49 Cr net profit on an INR 8,441 Cr market cap, meaning you are paying an enormous price for a still-thin earnings stream.",
+    "key_strengths": [
+      "Revenue growing at 16% CAGR (2016–2025) in a structurally large oncology market with pricing power",
+      "Operating cash flow positive all 5 years (INR 317 Cr OCF in 2025), validating real cash generation",
+      "Dominant brand in Indian cancer care — specialised moat harder to replicate than general hospitals"
+    ],
+    "key_risks": [
+      "Earnings yield only ~3.8% (EBIT INR 384 Cr / EV ~INR 10,042 Cr) — well below Magic Formula's 6% floor",
+      "Debt surged from INR 901 Cr (2023) to INR 1,837 Cr (2025); finance cost of INR 155 Cr consumes 40% of EBIT",
+      "Persistent thin net profitability (INR 49 Cr net income on INR 2,218 Cr revenue = 2.2% margin) leaves no margin of safety"
+    ],
+    "red_flags": [
+      "P/E of 310x is not investable under any earnings-based framework",
+      "History of deep losses (INR -221 Cr in 2021, -125 Cr in 2020) — earnings base is fragile",
+      "Investing CF of INR -488 Cr in 2025 vs. FCF of only INR 110 Cr signals heavy capital consumption eroding returns",
+      "ROCE of 8.56% is materially below the 12% Magic Formula minimum threshold"
+    ],
+    "detailed_analysis": "Running the Magic Formula on HCG produces two failing grades. Earnings Yield (EBIT/EV) = INR 384 Cr / ~INR 10,042 Cr ≈ 3.8% — less than a third of the 12% threshold I consider attractive, and below even a risk-free rate. Return on Invested Capital (EBIT / Equity + Debt – Cash = 384 / 2,522) ≈ 15%, which is passable but not compelling, and the reported ROCE of 8.56% suggests the true capital base is even larger once lease liabilities and CWIP are included. When both metrics are below par, the Magic Formula says walk away.\n\nThe business itself is improving operationally — EBITDA expanded from INR 281 Cr (2021) to INR 422 Cr (2025) and OCF is consistently positive — but the capital structure is working hard against shareholders. Borrowings have nearly doubled in two years (INR 901 Cr → INR 1,837 Cr) to fund aggressive capex (INR 209 Cr in 2025), and interest charges of INR 155 Cr leave very little EBIT converting to actual earnings. At INR 565 and 310x trailing P/E, the market is pricing in a dramatic multi-year re-rating that requires flawless execution. That is not the kind of bet the Magic Formula is designed to make.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 40838,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.080577,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11336,
+      "cache_read_input_tokens": 9260,
+      "output_tokens": 2352,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11336
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 304,
+          "cache_read_input_tokens": 9260,
+          "cache_creation_input_tokens": 2076,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2076,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

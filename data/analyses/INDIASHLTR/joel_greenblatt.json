@@ -1,0 +1,69 @@
+{
+  "symbol": "INDIASHLTR",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T17:42:36.123175Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "India Shelter Finance is a financial company — explicitly excluded from the Magic Formula because borrowed capital IS the product, making EBIT/EV and ROIC meaningless as screens. On available proxies, earnings yield of ~5.4% (P/E 18.4×) and ROCE of 12.6% both fall well short of my dual-threshold requirements.",
+    "key_strengths": [
+      "Revenue CAGR of 38.5% (2021–2025) with net profit CAGR of 44.4% — genuine operational momentum",
+      "Operating margins expanding to 42.3% (EBITDA 424 Cr on revenue 1,166 Cr in FY25)",
+      "Solid DII + FII institutional ownership (28.2% combined) signals credibility in capital markets"
+    ],
+    "key_risks": [
+      "Earnings yield of only ~5.4% (P/E 18.4×, forward 14.3×) — well below Magic Formula's 12% floor",
+      "ROCE of 12.6% and ROE of 15.1% are both below the 20%+ threshold I require for a 'good business'",
+      "Debt/Equity at 1.88× and negative FCF every single year (-1,443 Cr in FY25) — capital is continuously consumed, not generated"
+    ],
+    "red_flags": [
+      "Financial company: Magic Formula explicitly excludes HFCs/NBFCs — debt is raw material, not a risk metric",
+      "0 of 5 years with positive operating cash flow — structurally cash-consumptive model",
+      "Finance costs growing at 35.4% CAGR, nearly matching revenue growth — spread compression risk"
+    ],
+    "detailed_analysis": "The Magic Formula begins with a hard rule: exclude financial companies and utilities. India Shelter Finance is a housing finance company where borrowings fund loans — that's the business model. Applying EBIT/EV here is like measuring a bank's 'return on capital' excluding deposits. It doesn't work. The magic formula gives no signal here, and forcing it produces misleading results. Earnings yield using net profit/market cap comes to ~4.3% (378 Cr / 8,738 Cr), and if I use operating income as a proxy for EBIT and add debt to get EV (~13,525 Cr), the yield falls to ~3.6% — far below the 12% minimum I care about.\n\nSetting aside the exclusion issue, the underlying business metrics are mediocre by Magic Formula standards. ROCE of 12.6% and ROE of 15.1% are below my 20% threshold for a 'good' business. The 38.5% revenue CAGR is impressive, but it's driven by growing a loan book funded by external debt — there's no capital-light engine here. The P/B of 2.98× and P/S of 8.9× suggest the market is pricing in continued strong growth, leaving little margin of safety. Even if I admired this business, I'd need to see earnings yield above 12% and ROIC above 20% to act — neither condition is met.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "good",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 46582,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0778809,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10678,
+      "cache_read_input_tokens": 8648,
+      "output_tokens": 2349,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10678
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 373,
+          "cache_read_input_tokens": 8648,
+          "cache_creation_input_tokens": 2030,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2030,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

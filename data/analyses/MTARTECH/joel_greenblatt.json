@@ -1,0 +1,70 @@
+{
+  "symbol": "MTARTECH",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T18:26:28.609444Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "MTAR Technologies fails both legs of the Magic Formula spectacularly: earnings yield of ~0.8% (EBIT ₹121 Cr / EV ₹15,127 Cr) signals extreme overvaluation, while ROIC of ~13% sits well below my 20% threshold. With net profit declining from ₹103 Cr (FY23) to ₹53 Cr (FY25) even as revenue grew, the business is becoming less profitable as it scales — the opposite of a quality compounder.",
+    "key_strengths": [
+      "Niche defense/space/nuclear precision engineering with genuine barriers to entry and captive government clients",
+      "Revenue CAGR of 25.9% (FY20–25) shows real top-line demand from ISRO, DRDO, and clean energy programs",
+      "Gross margin of 48.8% indicates pricing power on specialized components"
+    ],
+    "key_risks": [
+      "Earnings yield ~0.8% — Magic Formula requires >12%; paying 226x P/E for a company with declining profits is speculative",
+      "Net profit dropped 49% from FY23 peak (₹103 Cr → ₹53 Cr in FY25) while revenue grew — severe margin compression and cost absorption",
+      "Free cash flow deeply negative for 4 of last 5 years; annual capex ~₹100 Cr consumes essentially all operating earnings, leaving zero true FCF"
+    ],
+    "red_flags": [
+      "Earnings yield 0.8% vs. Magic Formula minimum of 12% — 15x overvalued on this metric alone",
+      "EBITDA peaked at ₹168 Cr in FY23 and has since regressed to ₹120 Cr in FY25 — earnings power is deteriorating, not growing",
+      "Finance cost CAGR of 34.5% vs. net profit CAGR of 11.3% — debt servicing is eating shareholder returns",
+      "ROE of only 7.39% on a stock trading at 20x book — capital is being destroyed in value terms"
+    ],
+    "detailed_analysis": "Running the Magic Formula: EBIT (FY25) = ₹121 Cr. EV = Market Cap ₹14,952 Cr + Net Debt ₹175 Cr = ₹15,127 Cr. Earnings Yield = 0.80%. That's not a rounding error — you are earning less than a savings account yield on the enterprise's operating earnings. On Return on Capital, using capital employed (Equity ₹744 Cr + Debt ₹177 Cr = ₹921 Cr): ROIC ≈ 13%, confirmed by management's own ROCE of 10.4%. Both numbers fail my thresholds of >12% earnings yield and >20% ROIC. The business is not cheap, and it is not exceptional enough at the current capital base to justify the premium.\n\nThe deeper problem is deteriorating profitability. MTAR's FY23 EBITDA of ₹168 Cr has shrunk to ₹120 Cr in FY25 despite revenue rising from ₹574 Cr to ₹676 Cr — operating leverage is running in reverse. High capex (₹91–108 Cr annually) for capacity expansion has not yet translated into earnings uplift, and finance costs are compounding at 34.5% annually. The stock may have a compelling long-term story in India's defense and space ecosystem, but at 226x trailing P/E and an earnings yield of sub-1%, the Magic Formula says walk away — the market has priced in decades of perfection into a business that is currently shrinking its earnings.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 44646,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0777318,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10882,
+      "cache_read_input_tokens": 8901,
+      "output_tokens": 2283,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10882
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 360,
+          "cache_read_input_tokens": 8901,
+          "cache_creation_input_tokens": 1981,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1981,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "544428",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-20T20:00:58.797933Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "A 2022-incorporated micro-cap EV assembler with 0.47% ROE is not a business — it's a lottery ticket dressed up with a listing. Munger's rule: when a business earns near-zero on equity, the P/E of 8 is meaningless because there are effectively no earnings to capitalize.",
+    "key_strengths": [
+      "Promoter skin-in-the-game at 69.31% aligns downside with minority holders",
+      "Small ₹54 Cr cap leaves theoretical room to scale if execution ever arrives",
+      "Operating in a structurally growing 2W-EV / e-rickshaw category"
+    ],
+    "key_risks": [
+      "ROE of 0.47% signals zero real profitability — capital is effectively idle",
+      "Sub-scale 3-year-old entrant competing with Ola, TVS, Bajaj, Ather — no moat",
+      "Low-margin e-rickshaw assembly is commoditized; Chinese cell cost pass-through crushes small players"
+    ],
+    "red_flags": [
+      "ROE <1% — fails the most basic quality test",
+      "High promoter holding in a micro-cap EV story — classic pump vulnerability",
+      "No operating history, no DII validation (0%), P/E likely reflects one-off/tiny base earnings"
+    ],
+    "detailed_analysis": "Invert first: what would make this a terrible investment? A newly-incorporated (2022) micro-cap in a brutally competitive, capital-intensive EV segment, earning 0.47% on equity — below a savings account. That's already the answer. The 8.21 P/E is a statistical artifact of a tiny earnings base; on any normalized basis this is a promoter-controlled shell with aspirations. The 2W-EV space requires battery supply relationships, FAME-II/III certification scale, dealer networks, and crash-tested R&D — none of which a ₹54 Cr company plausibly possesses versus Ola Electric, TVS, Bajaj Chetak, Ather, and Hero Vida.\n\nThe e-rickshaw side is worse — it's a race-to-the-bottom assembly business dominated by unorganized players in UP/Bihar with razor margins. With 69.31% promoter holding and zero institutional ownership, price discovery is absent and the float is a playground for operators. Munger would file this under \"too hard\" in about three seconds and move on. There is no identifiable durable competitive advantage, no compounding track record, and the financial data (ROE <1%) fails the first screen. Avoid.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 27791,
+    "model_used": "opus",
+    "total_cost_usd": 0.09419925,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8937,
+      "cache_read_input_tokens": 13176,
+      "output_tokens": 1269,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8937,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 106,
+          "cache_read_input_tokens": 10449,
+          "cache_creation_input_tokens": 1215,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1215
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

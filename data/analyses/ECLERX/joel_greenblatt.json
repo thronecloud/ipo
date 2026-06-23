@@ -1,0 +1,68 @@
+{
+  "symbol": "ECLERX",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-22T16:24:02.587833Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "eClerx is a high-ROIC (~33%) IT services business with consistent FCF generation, but at an earnings yield of only ~5.4% (EBIT 809 Cr / EV ~15,016 Cr), it falls below the Magic Formula's minimum 6% threshold — a good business at a full price. The 9-year EBIT CAGR of only 5.9% despite 11% revenue growth reveals structural margin compression that limits the Magic Formula score despite strong capital efficiency.",
+    "key_strengths": [
+      "High ROIC ~33% (EBIT 809 Cr / Invested Capital ~2,440 Cr) — well above the 25% 'excellent' threshold, confirmed by ROCE of 28%",
+      "Consistent FCF generation: 5/5 years positive, growing from 299 Cr (FY20) to 539 Cr (FY25), with FCF conversion >95% of net profit",
+      "Low leverage (D/E 0.15) and high promoter holding (54.5%) — disciplined capital allocation with minimal dilution risk"
+    ],
+    "key_risks": [
+      "Earnings yield of ~5.4% (EBIT/EV) is below the 6% Magic Formula buy threshold — not cheap enough to rank well on the formula's value leg",
+      "Long-term margin compression: EBIT margin fell from ~36.7% (FY16) to ~24% (FY25) despite recent recovery — operating leverage is structurally limited in labor-intensive BPM",
+      "Revenue concentration in US/UK financial services and telecom — cyclical client base exposed to offshoring budget cuts"
+    ],
+    "red_flags": [
+      "Finance costs rising at 48.9% CAGR (INR 1 Cr → 36 Cr) — small in absolute terms but signals growing lease/debt obligations",
+      "9Y EBIT CAGR of 5.9% vs. revenue CAGR of 11% — long-run margin compression disqualifies this as a compounding machine at current price"
+    ],
+    "detailed_analysis": "Running the Magic Formula on eClerx: Earnings Yield = EBIT 809 Cr / EV (Market Cap 15,200 + Debt 358 – Cash 542 = 15,016 Cr) = **5.4%** — below the 6% floor for attractiveness. ROIC = EBIT 809 Cr / Invested Capital (Equity 2,624 + Debt 358 – Cash 542 = 2,440 Cr) = **33.2%** — firmly in the excellent tier. The formula demands both legs to rank high; eClerx passes only one. At P/E 22.9x and EV/EBITDA 16.1x, the market is pricing in the quality but offering no margin of safety.\n\nThe business itself is solid: asset-light BPM with deep financial services and telecom domain expertise, growing FCF from 299 Cr to 539 Cr over five years, and negligible capex intensity (capex ~3.6% of revenue in FY25). However, the long-run story is one of margin fade — EBIT margins collapsed from ~36.7% in FY16 to a trough of ~21.6% in FY19 before recovering to ~24% now. Revenue growth at 11% CAGR is decent, but EBIT growing at only 5.9% means eClerx is working harder for each rupee of profit. Until price corrects to push earnings yield above 8-10%, the Magic Formula says wait.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 53374,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08996055,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11855,
+      "cache_read_input_tokens": 9351,
+      "output_tokens": 2846,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11855,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 385,
+          "cache_read_input_tokens": 9351,
+          "cache_creation_input_tokens": 2504,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2504
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "symbol": "UTLSOLAR",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-21T08:06:17.952953Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Fujiyama Power Systems trades at a ludicrous 402x P/E with chronically negative free cash flow (-₹101 Cr in FY25 despite ₹156 Cr net profit), signaling deeply poor earnings quality in a commodity solar market with no durable moat. The valuation demands perfection forever; the cash flow statement reveals a business that consumes capital rather than generates it.",
+    "key_strengths": [
+      "Revenue growth is undeniably strong — 38.8% CAGR over 5 years with FY25 revenue reaching ₹1,539 Cr",
+      "Operating margins expanded sharply in FY25 (17.2%), suggesting some operating leverage kicking in",
+      "Recognized brand (UTL Solar) with dual-brand strategy (Fujiyama + UTL) across rooftop solar segment in India"
+    ],
+    "key_risks": [
+      "Catastrophic earnings quality: FY25 OCF was only ₹18 Cr vs ₹156 Cr net profit — a 11.5% FCF/NI ratio against my 80% threshold; FCF negative 4 of 5 years",
+      "Valuation is delusional at 402x P/E — requires flawless compounding for decades just to break even; any growth disappointment destroys the thesis",
+      "Debt doubled in one year (₹205→₹395 Cr) while cash sits at ₹8 Cr; finance costs growing at 61.6% CAGR will erode margins as rates normalize"
+    ],
+    "red_flags": [
+      "OCF/Net Income = 11.5% in FY25 — enormous gap between reported profits and actual cash generation; classic working-capital trap in a project-heavy business",
+      "Promoter holding at 86.76% severely limits float, raises governance concentration risk, and creates liquidity risk for minority shareholders",
+      "Solar manufacturing is a commoditized, capital-intensive industry — subject to brutal Chinese import competition with no pricing power or switching costs",
+      "Negative FCF in 4 of 5 years means growth is funded entirely by debt and equity issuance, not internal cash generation"
+    ],
+    "detailed_analysis": "Inversion first, as always: what would make this a terrible investment? A P/E of 402x in a commodity hardware business with no moat, negative free cash flow, and doubling debt checks nearly every box. The FY25 numbers tell two contradictory stories — the income statement shows ₹156 Cr net profit, while the cash flow statement shows only ₹18 Cr operating cash flow. That ₹138 Cr gap is almost certainly locked up in receivables and project working capital, the signature of a business where customers pay slowly and growth requires constant cash feeding. ROCE of 16.6% is not terrible, but it barely clears my 15% threshold and is leveraged — strip out the 1.38x Debt/Equity and the underlying return on equity capital is far less impressive.\n\nThe solar sector in India is a genuine growth story, but growth stories attract capital, and attracted capital destroys moats. UTL Solar competes against Chinese panels, Adani Solar, Waaree, and a dozen other manufacturers — there is no proprietary technology, no switching cost, no network effect, no cost advantage that I can identify. The 86.76% promoter holding is a governance yellow flag: it limits institutional accountability and signals a company that has not yet had to answer to demanding outside capital. At ₹7,934 Cr market cap on ₹156 Cr of questionable net income, the market is pricing in heroic growth and margin expansion simultaneously. I will not pay 402x earnings for a capital-hungry solar hardware assembler. Pass.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 50932,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0772815,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10432,
+      "cache_read_input_tokens": 8475,
+      "output_tokens": 2374,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10432,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 466,
+          "cache_read_input_tokens": 8475,
+          "cache_creation_input_tokens": 1957,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1957
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

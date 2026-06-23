@@ -1,0 +1,68 @@
+{
+  "symbol": "TENNIND",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-21T08:07:21.685314Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Tenneco India operates an exceptionally capital-efficient business (ROCE 57%, near-zero debt, 90% FCF conversion) but its core products — exhaust systems, catalytic converters, spark plugs — are intrinsically tied to ICE vehicles facing a secular EV headwind. At P/E 42x and P/B 26x, the market is pricing in perpetual excellence that a structurally disrupting industry cannot sustain.",
+    "key_strengths": [
+      "Exceptional capital returns: ROCE 57.3%, ROE 42.6% with virtually zero leverage (D/E 0.02, borrowings only INR 23 Cr).",
+      "Strong FCF quality: FCF/Net Income of ~90% (INR 500 Cr FCF vs INR 553 Cr net profit in FY25), positive OCF all 3 years.",
+      "Margin expansion despite revenue drop: operating income surged from INR 613 Cr (FY24) to INR 815 Cr (FY25) even as revenue fell ~10.6%, showing real pricing power or cost discipline."
+    ],
+    "key_risks": [
+      "EV disruption is existential: catalytic converters, mufflers, exhaust pipes, and spark plugs have no role in electric drivetrains — India's 2W/3W EV push directly targets Tenneco's largest segments.",
+      "Revenue already declining: FY25 revenue of INR 4,890 Cr fell 10.6% from FY24's INR 5,468 Cr — this may be the beginning of secular volume decline, not a cyclical blip.",
+      "Parent instability: Tenneco Inc. (US parent) filed Chapter 11 in 2022 and is now owned by Apollo Global Management — a PE-owned parent optimizing for exit creates misaligned long-term incentives for the Indian subsidiary."
+    ],
+    "red_flags": [
+      "Reserves collapsed from INR 895 Cr (FY23) to INR 514 Cr (FY25) — massive capital extraction via dividends (INR -433 to -686 Cr financing outflows annually) by PE-owned parent, draining the subsidiary.",
+      "Revenue contraction in FY25 at a time of strong Indian auto production growth raises questions about market share loss or product mix shift away from ICE vehicles."
+    ],
+    "detailed_analysis": "Tenneco India is a genuinely high-quality business by the numbers — ROCE of 57% and near-zero debt would make any investor take notice. FCF conversion at 90% confirms earnings quality, and the FY25 margin expansion (operating income up 33% on revenue down 11%) shows real operating leverage and pricing discipline. These are not the characteristics of a mediocre business.\n\nHowever, I always invert first. The central question is: will catalytic converters, exhaust systems, and spark plugs matter in 10 years? India's policy direction on EVs — particularly for 2-wheelers and 3-wheelers, which are core Tenneco India segments — points toward increasing headwinds. Meanwhile, the PE-owned US parent (post-bankruptcy Apollo acquisition) is aggressively extracting cash, having drained INR 1,513 Cr in financing outflows over three years while equity shrinks from INR 1,208 Cr to INR 918 Cr. At P/E 42x and P/B 26x, you're paying a premium price for a business with a structurally uncertain future — that is not the Munger way. Hold for those who own it at lower prices, but initiating at current valuations requires far more confidence in the ICE longevity than I possess.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 57059,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0839139,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10592,
+      "cache_read_input_tokens": 8233,
+      "output_tokens": 2781,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10592,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 443,
+          "cache_read_input_tokens": 8233,
+          "cache_creation_input_tokens": 2359,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2359
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

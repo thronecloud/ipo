@@ -1,0 +1,69 @@
+{
+  "symbol": "BSOFT",
+  "persona": "radhakishan_damani",
+  "persona_display_name": "Radhakishan Damani",
+  "analyzed_at": "2026-04-19T12:49:02.247872Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Birlasoft has an admirably clean balance sheet with near-zero debt (D/E 0.04) and consistent free cash flow, but the 9-year revenue CAGR of only 5.8% and volatile annual profits signal a commoditised, undifferentiated IT services business that lacks the steady compounding I require. The clean financials save it from an AVOID, but there is no compelling reason to buy.",
+    "key_strengths": [
+      "Essentially debt-free with D/E of 0.04 and total borrowings of just 151 Cr against equity of 3,701 Cr",
+      "Free cash flow positive every year in the visible window (FCF 541 Cr in FY25), demonstrating real earnings quality",
+      "ROCE at 21% is healthy and operating margins at 18.6% are decent for mid-tier IT"
+    ],
+    "key_risks": [
+      "Revenue CAGR of only 5.8% over 9 years — well below my 10-15% steady growth threshold; revenue actually shrank from 3,224 Cr in FY16 to 2,250 Cr in FY18",
+      "Net profits are volatile: 464 Cr (FY22) → 332 Cr (FY23) → 624 Cr (FY24) → 517 Cr (FY25) — this yo-yo pattern is a red flag for business quality",
+      "Promoter holding at 40.51% is materially below my 55% floor, and Birla group promoters run a conglomerate empire — Birlasoft may not be a strategic priority"
+    ],
+    "red_flags": [
+      "Promoter holding below 55% — at 40.51%, there is limited promoter alignment",
+      "Revenue declined in FY17-FY18 and FY23 profit declined sharply — not the steady compounder I want",
+      "Commodity IT services face structural pricing pressure and AI-driven headcount reduction risk"
+    ],
+    "detailed_analysis": "Birlasoft's greatest virtue is its balance sheet — 151 Cr in borrowings against a 3,701 Cr equity base is textbook conservative. The company converts profits to cash reliably, with OCF of 588 Cr in FY25 versus net profit of 517 Cr, indicating no accounting games. For a mid-tier IT company, this kind of financial discipline is commendable.\n\nHowever, IT services is not a business I feel I can evaluate deeply, and the financial profile does not compensate for that: 5.8% revenue CAGR over nine years is anemic, and the swings in net profit (FY24: 624 Cr, FY25: 517 Cr, a 17% drop) suggest client concentration, project-based revenue lumpiness, or margin leakage from deal transitions. At P/E of 22.4x, investors are paying a premium for a business growing at sub-6% revenue CAGR. I would watch but not buy.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 147707,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.19989675,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 22069,
+      "cache_read_input_tokens": 15380,
+      "output_tokens": 7501,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 22069,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 690,
+          "cache_read_input_tokens": 15380,
+          "cache_creation_input_tokens": 6689,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 6689
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "COHANCE",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-19T13:01:22.416158Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Cohance (formerly Suven Pharma) tells a story of a CDMO that rode a massive COVID-era earnings wave and is now struggling to find its post-wave identity — revenues are 10% below their FY22 peak, profits have been cut nearly in half, and the company trades at an EV/EBITDA of 94.7x on contracting EBITDA. That is not a price I would pay for any business, let alone one with shrinking earnings.",
+    "key_strengths": [
+      "High gross margins of 71.5% reflect genuine IP-based chemistry capabilities in NCE intermediates and oligonucleotide building blocks",
+      "Clean debt structure historically (D/E 0.11) and consistent positive operating cash flows demonstrate operational discipline",
+      "Strong promoter holding at 57.5% and FY25 forward P/E of 35.9x suggests the market still expects a recovery, implying potential upside if CDMO pipeline converts"
+    ],
+    "key_risks": [
+      "Earnings are in freefall: net profit peaked at INR 454 Cr in FY22 and has declined every year to just INR 265 Cr in FY25 — a 42% decline from peak with no floor visible",
+      "EV/EBITDA of 94.7x on shrinking EBITDA (419 Cr FY25 vs 639 Cr FY22) is indefensible; this is a 'hot sector' multiple applied to a deteriorating business",
+      "Operating margin has collapsed to 8.89% despite 71.5% gross margins, implying enormous SG&A, R&D, and fixed cost drag from the FY25 balance sheet restructuring (total assets doubled to INR 5,568 Cr)"
+    ],
+    "red_flags": [
+      "Total assets nearly tripled in one year (2,254 Cr FY24 → 5,568 Cr FY25) while borrowings jumped from 65 to 451 Cr — a major acquisition in a period of declining profitability is a danger sign",
+      "Revenue has been declining since FY22 peak of INR 1,320 Cr; FY25 at 1,198 Cr is still 9% below that peak despite a sector that should be benefiting from China+1",
+      "EBITDA and operating income trends are explicitly flagged as 'contracting' — PEG ratio is meaningless because the 'G' is negative"
+    ],
+    "detailed_analysis": "When I see an EV/EBITDA near 95x on a company with declining revenues, declining profits, and contracting margins, I put the prospectus down. Cohance has a great theoretical story — CDMO for NCEs, oligonucleotides, ADCs — all the buzzwords of modern pharma. But a great story at a terrible price is just an expensive story. Net profit has fallen from INR 454 Cr to 265 Cr over three years while the stock still commands a P/E of 49.7x.\n\nThe mysterious balance sheet explosion — total assets jumping from INR 2,254 Cr to INR 5,568 Cr in a single year while earnings fell — needs a full explanation before any investor touches this. That kind of asset inflation usually means a large acquisition or revaluation, and both demand scrutiny. Until earnings stabilize and the valuation compresses to something sensible (EV/EBITDA <20x), this is firmly in the AVOID pile.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 172377,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.22282485000000002,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 23875,
+      "cache_read_input_tokens": 15932,
+      "output_tokens": 8567,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 23875,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 527,
+          "cache_read_input_tokens": 15932,
+          "cache_creation_input_tokens": 7943,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 7943
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

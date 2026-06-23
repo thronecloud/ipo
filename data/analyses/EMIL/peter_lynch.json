@@ -1,0 +1,70 @@
+{
+  "symbol": "EMIL",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-18T17:18:22.808579Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "AVOID",
+    "investment_thesis": "EMIL is a compelling regional-to-national retail expansion story (like a South Indian Best Buy) with 17% revenue CAGR, but the story is cracking: FY2025 profits actually declined (INR 184→160 Cr) despite revenue growing 11%, and the PEG ratio of ~3.1x (P/E 44 / 14.3% earnings CAGR) is far too stretched for the growth quality on offer. Until earnings reaccelerate and FCF turns positive, this is a show-me stock.",
+    "key_strengths": [
+      "Regional brand dominance — Bajaj Electronics is a household name in Telangana/AP, giving it a fortress starting base to expand from",
+      "Revenue engine is real — 17% 5-year revenue CAGR shows genuine consumer demand and store-level execution",
+      "Operating leverage potential — forward P/E of 23.46 implies market sees an earnings doubling; if new stores mature and capex normalizes, margins could snap back"
+    ],
+    "key_risks": [
+      "Profit deterioration is the biggest flag — FY2025 net profit fell 13% (184→160 Cr) even as revenue grew; margins are being squeezed by rising finance costs (INR 118 Cr) and opex from new stores",
+      "Debt is dangerously high for a thin-margin retailer — D/E at 1.26, borrowings nearly tripled from INR 872 Cr (2020) to INR 1,963 Cr (2025); finance cost CAGR of 13.4% is eating earnings growth",
+      "Free cash flow is deeply negative and worsening — FCF was -INR 159 Cr in FY2025, capex surged to INR 335 Cr; this is an equity-dilution/debt trap if new stores don't hit ROI quickly"
+    ],
+    "red_flags": [
+      "PEG ratio ~3.1x — P/E 44 on 14.3% earnings CAGR; Lynch demands <1.0, absolute ceiling is 1.5",
+      "FY2025 earnings declined YoY despite 11% revenue growth — the story is weakening exactly as valuation demands it strengthen",
+      "ROE of 11.1% is below Lynch's 12% minimum and declining — heavy debt is suppressing returns on equity",
+      "Consistently negative FCF for 3 of last 4 years — real businesses should generate cash, not consume it"
+    ],
+    "detailed_analysis": "Electronics Mart is the kind of stock Lynch would notice at the mall — a regional retailer with a loyal customer base (Bajaj Electronics in Hyderabad) now rolling out stores nationally. The revenue story is legitimate: INR 3,172 Cr (2020) to INR 6,965 Cr (2025) at 17% CAGR, and the consumer electronics market in India has genuine tailwinds — premiumization, AC penetration, appliance replacement cycles. But Lynch's first rule after \"invest in what you know\" is to check whether the story still holds. Here it doesn't: in FY2025, revenues grew but profits fell, and free cash flow hit -INR 159 Cr. When expansion costs outrun earnings, that's a flashing yellow light.\n\nThe financials tell a problematic structural story. Operating margins at 4.05% are razor-thin for a specialty retailer carrying INR 1,963 Cr in borrowings — finance costs alone consumed INR 118 Cr in FY2025, up from INR 63 Cr in 2020. At P/E 44, the market is paying a growth premium that the earnings don't justify (PEG 3.1x). The forward P/E of 23.46 implies analysts expect a near-doubling of earnings, which requires new stores to mature and capex to normalize — possible, but priced in before it happens. Lynch would say: come back when the PEG is below 1.0 and FCF is positive; until then, this is a story that costs too much to believe.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 62517,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08875605,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11451,
+      "cache_read_input_tokens": 8886,
+      "output_tokens": 2876,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11451
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 371,
+          "cache_read_input_tokens": 8886,
+          "cache_creation_input_tokens": 2565,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2565,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

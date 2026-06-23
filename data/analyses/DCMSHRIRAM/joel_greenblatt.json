@@ -1,0 +1,69 @@
+{
+  "symbol": "DCMSHRIRAM",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-19T13:06:47.779406Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "DCM Shriram's earnings yield of ~6.4% (EBIT 1,330 Cr / EV ~20,920 Cr) is marginally above the floor, but ROIC of ~12% (confirmed by company-reported ROCE of 11.4%) is well below the 20% threshold — the Magic Formula needs BOTH metrics to be strong, and ROIC here signals a mediocre, capital-intensive conglomerate. With net profit in structural decline (from 1,067 Cr in FY22 to 604 Cr in FY25) and massive capex cycles, there is no margin of safety.",
+    "key_strengths": [
+      "Revenue CAGR of 8.5% over 9 years and expanding operating income CAGR of 11.4% show moderate compounding capability",
+      "OCF positive in all 5 of 5 years, and 620 Cr of cash on balance sheet provides liquidity buffer",
+      "Diversified business (chemicals, sugar, Fenesta windows, agri) provides some cyclical hedge"
+    ],
+    "key_risks": [
+      "ROIC/ROCE of 11.4% is deeply below the 20% threshold — this is a capital-intensive business that earns mediocre returns",
+      "Net profit has nearly halved from peak 1,067 Cr (FY22) to 604 Cr (FY25) — a structural earnings decline, not a one-time blip",
+      "Massive capex cycle: 758 Cr (FY22) → 1,804 Cr (FY23) → 1,319 Cr (FY24) → 859 Cr (FY25), with CWIP hitting 2,615 Cr — this destroyed FCF for 2 consecutive years"
+    ],
+    "red_flags": [
+      "Forward P/E of 28.61x is HIGHER than trailing P/E of 27.40x — the market expects earnings to decline further, not recover; this makes the earnings yield even less attractive going forward",
+      "Free cash flow was negative in both FY23 (-493 Cr) and FY24 (-514 Cr) — the heavy capex cycle is consuming all operating cash generation",
+      "ROE of only 8.66% on a book value of 7,225 Cr means capital is being destructively deployed relative to cost of equity"
+    ],
+    "detailed_analysis": "EV = Market Cap 19,011 + Total Debt 2,529 - Cash 620 = 20,920 Cr. EBIT (Operating Income FY25) = 1,330 Cr → Earnings Yield = 6.36%, just barely above the 6% threshold. Capital Employed (equity 7,225 + debt 2,529 - cash 620) = 9,134 Cr → ROIC = 14.6%, but the company-reported ROCE of 11.4% is likely more accurate accounting for all capital. Neither metric clears my thresholds convincingly. Chemicals/PVC and sugar are commodity cyclicals — the FY22 profit peak of 1,067 Cr was a commodity supercycle windfall, not sustainable earnings power. The massive CWIP investment (peaked 2,615 Cr) suggests management is betting on a capacity expansion cycle just as profitability is declining — that's exactly the kind of value-destroying behavior I avoid.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 158171,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.23871105,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 24181,
+      "cache_read_input_tokens": 15361,
+      "output_tokens": 9561,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 24181,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 612,
+          "cache_read_input_tokens": 15361,
+          "cache_creation_input_tokens": 8820,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8820
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

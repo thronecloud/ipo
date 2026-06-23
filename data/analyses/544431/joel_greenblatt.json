@@ -1,0 +1,69 @@
+{
+  "symbol": "544431",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-20T20:09:59.845841Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "ACE Alpha Tech fails the Magic Formula on its most critical leg: with ROE of just 0.41%, return on capital is essentially zero, meaning this is a poor business regardless of price. A 12.4x P/E on near-zero earnings is not \"cheap\" — it's a statistical artifact of a tiny INR 156 Cr microcap with negligible profitability.",
+    "key_strengths": [
+      "Modest headline P/E of 12.4 (but misleading given near-zero ROE)",
+      "Asset-light consulting model requires little fixed capital",
+      "Promoter holding of 43.9% provides some skin in the game"
+    ],
+    "key_risks": [
+      "ROE of 0.41% implies ROIC near zero — the business earns almost nothing on capital",
+      "INR 156 Cr microcap with negligible institutional interest (FII 0.19%, DII 0.01%)",
+      "Generic consulting/bookkeeping offering with no discernible competitive moat"
+    ],
+    "red_flags": [
+      "ROE of 0.41% — Magic Formula ROIC criterion catastrophically failed",
+      "Promoter holding below 50% in a small, obscure company",
+      "Earnings quality suspect — P/E of 12.4 on trivial earnings base"
+    ],
+    "detailed_analysis": "The Magic Formula demands two things simultaneously: a cheap price (high earnings yield) and a good business (high return on capital). ACE Alpha Tech fails decisively on the second. A 0.41% ROE translates to essentially zero return on capital — for every rupee of equity deployed, the company generates under half a paisa of profit. No earnings yield, however attractive, can compensate for a business that doesn't compound capital. This is precisely the kind of \"value trap\" the Magic Formula is designed to filter out.\n\nFurthermore, the apparent cheapness is illusory. A P/E of 12.4 on a tiny earnings base in a commoditized consulting/bookkeeping niche offers no margin of safety. There's no evidence of pricing power, scale advantage, or differentiated IP. With a sub-INR 200 Cr market cap, near-zero institutional ownership, and a generic service portfolio, this stock ranks in the bottom decile on ROIC and provides no compelling entry on earnings yield. Pass.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 32741,
+    "model_used": "opus",
+    "total_cost_usd": 0.09228900000000001,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8966,
+      "cache_read_input_tokens": 13493,
+      "output_tokens": 1179,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8966,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10623,
+          "cache_creation_input_tokens": 1213,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1213
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

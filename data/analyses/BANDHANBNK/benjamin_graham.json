@@ -1,0 +1,69 @@
+{
+  "symbol": "BANDHANBNK",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-19T06:32:10.461282Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Bandhan Bank's current P/E of 27.92 is nearly double my maximum threshold of 15, and its earnings history is too brief and volatile — net profit of a mere INR 126 Cr in FY22 followed by a sudden jump to 2,745 Cr in FY25 — for me to trust any normalized earnings figure. Banking is an inherently opaque business with hidden leverage; I have always been skeptical of financial companies where the asset quality can deteriorate far faster than the stated book value.",
+    "key_strengths": [
+      "Price-to-book of 1.14 is the one metric that passes my test and provides some asset-backing comfort",
+      "Forward P/E of 10.92 implies the market anticipates significant near-term earnings improvement, which if realized would improve the valuation picture",
+      "Total assets grew from INR 1.39 lakh Cr to 1.91 lakh Cr — the franchise is expanding"
+    ],
+    "key_risks": [
+      "Finance costs surged at a 26.6% CAGR (FY22-25), from 5,157 Cr to 10,458 Cr — rising funding costs are compressing the net interest spread",
+      "Operating cash flow was deeply negative at -4,245 Cr in FY23, revealing extreme earnings volatility that precludes reliable valuation",
+      "Promoter holding of only 39.74% is low for an Indian bank and creates governance uncertainty"
+    ],
+    "red_flags": [
+      "P/E of 27.92 — 86% above my maximum of 15",
+      "FY22 net profit of just INR 126 Cr signals a period of significant stress with insufficient earnings history for normalization",
+      "OCF negative in one of four available years; near-zero net profit year in FY22 interrupts any earnings-consistency test"
+    ],
+    "detailed_analysis": "I do not invest in businesses I cannot understand, and banking — with its complex off-balance-sheet exposures, regulatory capital requirements, and NPA cycles — demands the highest epistemic humility. Bandhan Bank's roots in microfinance lending make its portfolio especially sensitive to rural economic stress cycles. The FY22 near-wipeout (INR 126 Cr profit on INR 1.39 lakh Cr of assets) demonstrates exactly the vulnerability I fear: a thin margin for error and no reliable floor on earnings.\n\nThe forward P/E of 10.92 is tempting but rests on projected earnings that I cannot verify through historical consistency. The rapid rise in finance costs — up 103% from FY22 to FY25 — suggests the bank is paying more to fund itself, which is a structural headwind. Until there are five to seven years of consistently growing, predictable earnings, a demonstrated through-cycle ROE above 15%, and a price at or below book, I will stay out.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 257334,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.31753529999999996,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 27706,
+      "cache_read_input_tokens": 15096,
+      "output_tokens": 13940,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 27706,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 1203,
+          "cache_read_input_tokens": 15096,
+          "cache_creation_input_tokens": 12610,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 12610
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

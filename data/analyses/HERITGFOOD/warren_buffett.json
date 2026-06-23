@@ -1,0 +1,69 @@
+{
+  "symbol": "HERITGFOOD",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T17:33:05.207299Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "AVOID",
+    "investment_thesis": "Heritage Foods is a regional dairy brand with decent ROCE (25.3%) but operates in a capital-intensive commodity business with razor-thin margins (3.81% operating) and no durable pricing power. At 20x trailing P/E the price is fair, but the business quality falls well short of the wonderful companies I seek.",
+    "key_strengths": [
+      "ROCE of 25.3% and ROE of 20.2% exceed my 15% threshold, suggesting some capital efficiency",
+      "Conservative balance sheet with D/E of 0.21 and manageable borrowings of INR 220 Cr",
+      "Revenue growing steadily to INR 4,135 Cr in 2025 with best-ever net profit of INR 188 Cr"
+    ],
+    "key_risks": [
+      "Catastrophically thin operating margins (3.81%) — any milk procurement cost spike wipes out profitability, as seen with negative EBITDA in 2018 (-217 Cr) and 2020 (-332 Cr)",
+      "Commodity dairy business with no pricing power or switching costs — a terrible moat profile",
+      "Surging capex (INR 176 Cr in 2025, CWIP jumping to INR 159 Cr) in a low-margin business risks destroying returns on invested capital"
+    ],
+    "red_flags": [
+      "Massive Other Income distortions — INR 251 Cr (2017), 402 Cr (2018), 302 Cr (2020) from asset disposals masked chronic operating weakness",
+      "Earnings wildly erratic: net profit swung from +278 Cr to -169 Cr across 9 years — the opposite of predictable, compounding earnings I demand",
+      "Promoter holding only 41.3% — modest skin in the game for a founder-led regional brand"
+    ],
+    "detailed_analysis": "Heritage Foods is structurally a toll-road for cows with no tollbooth. Dairy processing is a volume game — Heritage buys milk from farmers, processes and sells it, earning a 3.81% operating margin that disappears the moment procurement costs rise. The 2018 and 2020 EBITDA figures of -217 Cr and -332 Cr respectively are not anomalies — they are the business revealing its true vulnerability. The net profit CAGR of 14.6% over 9 years is flattering but entirely misleading: strip out the exceptional Other Income (INR 955 Cr cumulative in 2017–2020 from asset sales), and the underlying operating franchise has barely covered its cost of capital in bad years.\n\nThe 2025 numbers are genuinely the best in the company's history (Revenue 4,135 Cr, Net Profit 188 Cr, EBITDA 333 Cr), and the forward P/E of 15.5x reflects some of that optimism. But I've learned to be suspicious of dairy businesses trading on peak earnings — they tend to mean-revert painfully. Capex is accelerating (INR 176 Cr in 2025 vs. INR 46 Cr in 2022) and CWIP ballooned to INR 159 Cr, signaling a major expansion in a business where returns are lumpy at best. Free cash flow collapsed to just INR 42 Cr in 2025 despite record profits. I want businesses that generate cash abundantly and require little capital to grow. Heritage is the opposite.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 48233,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08083005,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11073,
+      "cache_read_input_tokens": 8991,
+      "output_tokens": 2440,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11073
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 394,
+          "cache_read_input_tokens": 8991,
+          "cache_creation_input_tokens": 2082,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2082,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

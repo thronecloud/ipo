@@ -1,0 +1,68 @@
+{
+  "symbol": "LLOYDSENGG",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T18:12:33.054417Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Lloyds Engineering has impressive revenue hypergrowth but scores near-zero on both Magic Formula metrics: earnings yield of ~1.6% (EBIT ₹135 Cr / EV ₹8,222 Cr) versus the 12%+ I require, and ROCE of only 9.8% versus my 20%+ threshold. The market is pricing in a decade of flawless execution, leaving zero margin of safety.",
+    "key_strengths": [
+      "Explosive revenue growth — 157% CAGR over 3 years (₹50 Cr → ₹846 Cr), driven by India's capital goods supercycle",
+      "Turning FCF positive in FY2025 (₹92 Cr) after years of cash burn — business model maturing",
+      "Low leverage (D/E 0.16) despite heavy investment phase, balance sheet not stretched"
+    ],
+    "key_risks": [
+      "Earnings yield of ~1.6% is catastrophically below Magic Formula threshold — EV/EBITDA of 47.6x prices in perfection",
+      "ROCE of 9.8% reflects a capital-intensive EPC/fabrication business that struggles to earn above cost of capital, especially after FY2025 equity raise bloated the balance sheet from ₹571 Cr to ₹1,845 Cr in assets",
+      "OCF positive only 1 of 4 years — working capital volatility is intrinsic to lump-sum EPC contracts; one order slippage reverses FCF"
+    ],
+    "red_flags": [
+      "Equity base tripled in FY2025 (₹411 Cr → ₹1,188 Cr) — large capital raise massively diluted ROIC and suggests growth is equity-funded, not organic",
+      "EV/EBITDA of 47.6x and P/E of 48.4x leave zero room for execution risk in a project-based business"
+    ],
+    "detailed_analysis": "Running the Magic Formula on Lloyds Engineering produces two red lights. Earnings Yield = EBIT ₹135 Cr / EV ₹8,222 Cr = **1.6%** — I want 12%+. Return on Capital (ROCE as reported) = **9.8%** — I want 20%+. When both inputs to the formula fail, no amount of growth narrative changes my answer. The stock is priced like a compounding machine; the capital returns data say it is an asset-heavy fabrication/EPC contractor.\n\nThe growth story is real — revenue 17x in three years is striking, and the nuclear/hydrocarbon/steel capex cycle in India is genuine tailwind. But growth without high returns on incremental capital does not create lasting value in the Greenblatt framework. The FY2025 equity raise (equity nearly tripled) diluted whatever return profile existed, and working-capital-intensive EPC businesses historically oscillate between burning and generating cash. At 48x earnings for a cyclical industrial, the Magic Formula has no entry point here.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 42442,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07693320000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10464,
+      "cache_read_input_tokens": 8514,
+      "output_tokens": 2342,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10464
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 447,
+          "cache_read_input_tokens": 8514,
+          "cache_creation_input_tokens": 1950,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1950,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

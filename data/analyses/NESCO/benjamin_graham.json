@@ -1,0 +1,69 @@
+{
+  "symbol": "NESCO",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T18:29:33.489597Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Nesco is a genuinely fine business — near-monopoly Mumbai exhibition space, virtually no debt, and nine consecutive years of profits — but Mr. Market has priced it at nearly double my Graham Number of ~INR 689 (vs. the current INR 1,208), offering no margin of safety whatsoever. The intelligent investor does not pay a 75% premium over calculated intrinsic value simply because the underlying business is pleasant.",
+    "key_strengths": [
+      "Near-zero debt (D/E 0.04) with interest coverage of ~45x — the balance sheet is a fortress",
+      "Nine consecutive years of positive net profits, growing at 11.2% CAGR from INR 144 Cr to INR 375 Cr",
+      "Exceptional economics: 85.6% gross margin and 50.9% operating margin signal real pricing power over a captive, near-monopoly asset (BEC)"
+    ],
+    "key_risks": [
+      "Price grossly exceeds Graham Number: sqrt(22.5 × ~53 EPS × ~397 BVPS) ≈ INR 689 — stock trades at 75% premium",
+      "P/B of 3.04 and P/E of 20.8x both violate my strict thresholds; combined P/E × P/B = ~63, far above my 22.5 ceiling",
+      "CWIP exploded from INR 162 Cr to INR 761 Cr in one year, turning FCF deeply negative (-INR 435 Cr in 2025) — heavy speculative capital commitment with uncertain returns"
+    ],
+    "red_flags": [
+      "P/B of 3.04 — paying three times book value for assets I can only value at book",
+      "Free cash flow of -INR 435 Cr in 2025 driven by INR 784 Cr capex — earnings no longer covered by cash generation",
+      "Other Income of INR 114 Cr (2025) constitutes ~30% of net profit — quality of earnings partially dependent on financial investments, not core operations"
+    ],
+    "detailed_analysis": "From my perspective, Nesco passes the qualitative test handsomely — a real, tangible asset (exhibition centre land in Mumbai), consistent profitability for nearly a decade, and a balance sheet so clean it is almost embarrassing. The operating margin of 51% tells me this business has genuine pricing power; no commodity business earns that. Finance costs of only INR 12 Cr against EBITDA of INR 537 Cr gives interest coverage of 45x — exactly the kind of protective cushion I demand. And promoter ownership at 68.5% aligns management with shareholders.\n\nYet the price destroys the argument. My Graham Number — the geometric mean of 22.5 times earnings and book value — comes to roughly INR 689. The market demands INR 1,208, a 75% premium. P/E of 20.8 and P/B of 3.04 both breach my hard limits, and their product of ~63 is nearly three times my 22.5 combined ceiling. Worse, the INR 761 Cr in work-in-progress capital (up from INR 162 Cr just one year prior) and a sharply negative 2025 free cash flow signal that management is making a large bet on future expansion — precisely the kind of speculative forward-looking assumption I refuse to pay for today. I do not quarrel with the business; I quarrel with the price.",
+    "metrics_evaluated": {
+      "moat_strength": "strong",
+      "management_quality": "good",
+      "financial_health": "excellent",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 50820,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07586205,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9221,
+      "cache_read_input_tokens": 11131,
+      "output_tokens": 2529,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9221
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 392,
+          "cache_read_input_tokens": 9081,
+          "cache_creation_input_tokens": 2190,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2190,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "PTC",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T22:10:24.123506Z",
+  "analysis": {
+    "score": 6,
+    "recommendation": "BUY",
+    "investment_thesis": "PTC India trades at 0.94× book and 8.79× earnings — well below my preferred thresholds — while the Graham Number (~₹383, calculated from normalised EPS of ₹18 and BVPS of ₹198) implies a ~52% discount to intrinsic value at ₹185. Debt has been slashed from ₹11,408 Cr to ₹2,264 Cr in five years, materially strengthening the balance sheet, though deteriorating operating trends and a suspicious FY25 earnings spike demand caution.",
+    "key_strengths": [
+      "Deep statistical cheapness: P/B 0.94 (below book), P/E 8.79, EV/EBITDA 3.44 — all firmly inside Graham's buy range.",
+      "Dramatic balance-sheet repair: borrowings fell 80% (₹11,408→₹2,264 Cr in 5 years), D/E now a conservative 0.33.",
+      "10 consecutive years of positive earnings and 5/5 years of positive free cash flow (₹2,127 Cr in FY25) — the earnings record Graham demands."
+    ],
+    "key_risks": [
+      "FY25 net profit nearly doubled to ₹976 Cr largely on ₹467 Cr 'Other Income' vs. ₹75 Cr prior year — earnings quality is suspect and normalised P/E is likely closer to 12–13×.",
+      "Operating income has contracted every year since 2019 (₹1,954→₹1,137 Cr); EBITDA CAGR of 0.7% over 9 years signals a structurally stagnant trading intermediary.",
+      "Interest coverage of ~3.2× (₹1,137 Cr EBIT / ₹356 Cr finance cost) sits just below my 3.5× threshold; thin 5% operating margins leave no buffer for revenue shocks."
+    ],
+    "red_flags": [
+      "Promoter stake is only 16.22% — management has limited skin in the game, a serious governance concern.",
+      "The ₹467 Cr 'Other Income' in FY25 (up from ₹75 Cr) artificially flatters net profit; stripping it yields normalised earnings closer to ₹550–600 Cr, implying a true P/E of ~9.5–10×.",
+      "Revenue CAGR of 2.1% over 9 years and contracting operating income suggest this trading intermediary faces structural margin pressure, not temporary headwinds."
+    ],
+    "detailed_analysis": "PTC India passes most of my hard quantitative filters: it trades below book value (P/B 0.94), carries a P/E of 8.79, has maintained positive earnings for a full decade, and has generated meaningful free cash flow every year for the past five (₹2,127–₹3,574 Cr). More importantly, the company has executed a remarkable deleveraging — total borrowings fell from ₹11,408 Cr in FY20 to ₹2,264 Cr in FY25 — which reduces financial risk substantially. The Graham Number of approximately ₹383, computed on BVPS of ₹198, offers a genuine margin of safety against the ₹185 price. Finance costs have dropped from ₹633 Cr (FY16) to ₹356 Cr (FY25), steadily improving the income statement quality.\n\nMy reservations are real, however. The FY25 earnings surge to ₹976 Cr is flattered by ₹467 Cr of 'Other Income' — likely a non-recurring item such as a subsidiary stake sale — and the underlying operating income of ₹1,137 Cr is actually lower than FY16's ₹1,114 Cr. Nine years of near-zero EBITDA growth in a trading intermediary with 5% margins leaves no cushion. The promoter stake of 16.22% is uncomfortably low, and FII ownership at 27.46% means the register is dominated by institutional sellers. I will accept a statistical bargain when the numbers are clear, but I insist on treating the FY25 reported earnings with scepticism — the intrinsic value case rests on the balance sheet and normalised cash flows, not the headline profit.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "undervalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 71212,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09169050000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10038,
+      "cache_read_input_tokens": 11230,
+      "output_tokens": 3378,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10038,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 555,
+          "cache_read_input_tokens": 9180,
+          "cache_creation_input_tokens": 2908,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2908
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

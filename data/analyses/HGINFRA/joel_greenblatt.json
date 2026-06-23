@@ -1,0 +1,70 @@
+{
+  "symbol": "HGINFRA",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T17:36:59.681657Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "HGINFRA screens superficially cheap with a ~13% earnings yield (EBIT INR 1,058 Cr / EV ~INR 8,134 Cr), but the Magic Formula breaks down completely when operating cash flow has been negative four of the last five years — accounting profits are not real earnings. The debt explosion from INR 1,513 Cr to INR 5,669 Cr in a single year signals a capital trap, not a compounding machine.",
+    "key_strengths": [
+      "Earnings Yield ~13% (EBIT 1,058 Cr / EV ~8,134 Cr) clears the 12% attractiveness threshold on paper",
+      "9-year revenue CAGR of 23.8% and net profit CAGR of 36.8% show a genuinely growing franchise",
+      "Strong order book execution in roads/highways with government-backed HAM projects provides revenue visibility"
+    ],
+    "key_risks": [
+      "Free cash flow deeply negative every year (-2,415 Cr in 2025) — accounting EBIT is not translating to cash, destroying the Magic Formula premise",
+      "Debt exploded from INR 1,513 Cr (2024) to INR 5,669 Cr (2025) — Debt/Equity at 1.83x and rising, with finance costs up 22% YoY to INR 265 Cr",
+      "Revenue and net profit both declined in 2025 (revenue -6%, net profit -6%) — growth story stalling precisely when leverage peaked"
+    ],
+    "red_flags": [
+      "Operating CF negative 4/5 years — OCF was -878 Cr in 2025; profits are bookkeeping, not cash",
+      "CWIP surged from INR 14 Cr to INR 1,322 Cr in one year — massive capital locked in unproductive assets",
+      "Finance cost CAGR (36.6%) exactly matches net profit CAGR (36.8%) — every rupee of profit growth has been consumed by interest costs",
+      "ROIC ~15% using EBIT / (Equity + Debt) — below the 20% threshold for a 'good business' in the Magic Formula"
+    ],
+    "detailed_analysis": "Magic Formula requires two things: a cheap price (Earnings Yield >12%) AND a good business (ROIC >20%). HGINFRA clears the first hurdle nominally — EBIT of INR 1,058 Cr against an EV of ~INR 8,134 Cr (MCap 4,051 + Net Debt 4,083) gives a ~13% earnings yield. But the second hurdle fails badly. ROIC computed as EBIT / (Equity + Debt) = 1,058 / 7,257 Cr is only ~14.6%, consistent with the reported ROCE of 16.8%. More damning, EPC construction is an accounting-earnings business: revenue is recognized on % completion, but cash sits trapped in working capital, machinery, and HAM annuity receivables. Five consecutive years of negative FCF (cumulative burn of ~INR 3,800 Cr) prove the point — these \"earnings\" cannot be compounded.\n\nThe 2025 balance sheet is the real alarm. Borrowings nearly quadrupled in one year (INR 1,513 Cr → INR 5,669 Cr) and CWIP jumped INR 1,308 Cr — suggesting the company took on HAM projects that require massive upfront capital before annuity payments begin. Finance costs of INR 265 Cr already consume ~52% of reported net profit of INR 505 Cr. If interest rates stay elevated or project execution slips, this leverage becomes existential. Greenblatt's formula is designed for businesses that earn high returns on modest capital — HGINFRA is the opposite: it requires ever-increasing capital to sustain growth, and that growth just reversed in 2025. A P/E of 10.6x looks cheap, but cheap on poor-quality, cash-consuming earnings is a value trap.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 55393,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08814509999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11456,
+      "cache_read_input_tokens": 9037,
+      "output_tokens": 2831,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11456
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 456,
+          "cache_read_input_tokens": 9037,
+          "cache_creation_input_tokens": 2419,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2419,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "BLUEJET",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-19T12:49:29.808376Z",
+  "analysis": {
+    "score": 6,
+    "recommendation": "HOLD",
+    "investment_thesis": "Blue Jet Healthcare sports the best ROCE in this batch at 57.3% — exceptional for any business globally — and is virtually debt-free, but current earnings yield of ~5.5% (Operating Income INR 406 Cr ÷ EV ~INR 7,319 Cr) sits just below the 6% threshold, and the OCF collapse to INR 46 Cr against net profit of INR 305 Cr in FY2025 demands explanation before committing capital.",
+    "key_strengths": [
+      "ROCE of 57.3% is exceptional — high-value contrast media intermediates and niche API chemistry creates a near-irreplaceable position with global pharma customers",
+      "Virtually debt-free (D/E 0.02, finance cost effectively zero) — the entire earnings base belongs to equity holders with no interest tax",
+      "Revenue jumped 44% in FY2025 (INR 710 → 1,026 Cr) with operating income up 85% — suggests strong order-flow acceleration, not one-off"
+    ],
+    "key_risks": [
+      "OCF collapsed to INR 46 Cr in FY2025 despite net profit of INR 305 Cr — working capital absorbed ~INR 260 Cr in cash, likely large trade receivables from the revenue surge",
+      "FCF turned negative (-INR 34 Cr) in FY2025 as capex ran INR 80 Cr — the high ROCE is computed on current assets but capital is actively being deployed into capacity",
+      "Revenue was essentially flat (INR 538 → 710 Cr) for four years (FY2020–FY2024) before the FY2025 surge — concentration in contrast media creates lumpy, customer-dependent demand"
+    ],
+    "red_flags": [
+      "OCF/Net Profit ratio of ~15% in FY2025 (INR 46 Cr OCF vs INR 305 Cr net profit) — severe working capital deterioration that must normalize for the earnings quality argument to hold",
+      "FII ownership is only 0.89% — thin institutional coverage may mean pricing inefficiency exists in either direction",
+      "Capex has accelerated sharply (INR 23 Cr → 59 → 174 → 80 Cr) — if capacity build does not convert to revenue, ROCE will compress"
+    ],
+    "detailed_analysis": "Blue Jet Healthcare is a niche specialty chemistry company manufacturing contrast media intermediates and pharmaceutical APIs — a segment with high technical barriers, long customer qualification cycles, and multi-year supply contracts with global innovators. These economics produce genuinely exceptional returns: 57.3% ROCE, 52.1% ROE, and 52.96% gross margins. For Greenblatt, the ROCE alone puts this firmly in top-decile territory. The company is virtually debt-free, so the entire EBIT flows to equity holders without leverage distortion.\n\nThe earnings yield of ~5.55% is the sole reason this is a HOLD rather than a BUY — it just misses the 6% threshold, and the current P/E of 52x makes it optically expensive. However, the forward P/E of 23.78x signals consensus expects a further earnings step-up, which would push forward earnings yield to ~8–9%, well into attractive territory. The critical near-term watch is the OCF collapse — if FY2025's INR 46 Cr OCF is a working capital timing issue (large quarter-end receivables from the 44% revenue surge), it will normalize. If it reflects structural cash conversion deterioration, the ROCE advantage is illusory. Watch FY2026 Q1–Q2 OCF closely before increasing position.",
+    "metrics_evaluated": {
+      "moat_strength": "strong",
+      "management_quality": "excellent",
+      "financial_health": "excellent",
+      "valuation": "fair",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 176713,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.2594847,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 25278,
+      "cache_read_input_tokens": 15244,
+      "output_tokens": 10674,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 25278,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 549,
+          "cache_read_input_tokens": 15244,
+          "cache_creation_input_tokens": 10034,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 10034
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

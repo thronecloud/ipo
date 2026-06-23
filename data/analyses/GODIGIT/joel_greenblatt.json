@@ -1,0 +1,70 @@
+{
+  "symbol": "GODIGIT",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-22T16:43:46.791191Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Go Digit is an insurance company — a category I explicitly exclude from the Magic Formula because insurance balance sheets distort every metric I rely on. Even forcing the calculation, an earnings yield of ~1.7% (EBIT ₹494 Cr / EV ~₹29,894 Cr) and ROCE of 10.8% fail both Magic Formula screens badly.",
+    "key_strengths": [
+      "Revenue CAGR of 44% over 4 years (₹2,252 Cr → ₹9,716 Cr) shows powerful premium growth in a large underpenetrated market",
+      "Near-zero debt (D/E 0.07) and strong promoter holding (73%) reduce capital risk",
+      "OCF has been positive all 5 years, reflecting consistent premium collection ahead of claims"
+    ],
+    "key_risks": [
+      "Magic Formula explicitly excludes financial/insurance companies — metrics are structurally incomparable to industrial businesses",
+      "EBIT has been negative in 3 of the last 5 years (-114, -283, -269) — profitability is shallow and untested across a full cycle",
+      "Valuation is punishing: P/E 58x, EV/EBITDA 44.7x, P/B 6.3x — you are paying a very steep price for early-stage profitability"
+    ],
+    "red_flags": [
+      "Financial company: excluded from Magic Formula by design — EBIT/EV and ROIC are not meaningful here",
+      "Earnings yield of ~1.7% (EBIT ₹494 Cr / EV ₹29,894 Cr) is far below the 6% floor I require",
+      "ROIC/ROCE of 10.8% is below the 20% minimum threshold — no moat evidence in the numbers yet",
+      "Operating income swings wildly: -₹283 Cr → +₹50 Cr → -₹269 Cr → +₹494 Cr — no earnings predictability"
+    ],
+    "detailed_analysis": "Go Digit is an insurance company, full stop. My Magic Formula was built for businesses where EBIT/Enterprise Value and EBIT/(Net Working Capital + Net Fixed Assets) are economically meaningful. For an insurer, premiums, float, combined ratios, and loss development reserves govern economics — not capital turns on fixed and working assets. Applying my formula here would be like measuring a bank's inventory turns. Even if I force the math: EV ≈ ₹29,894 Cr against 2025 EBIT of ₹494 Cr gives an earnings yield of just 1.7%. ROCE is 10.8%. Both are disqualifying — I want >12% earnings yield and >20% ROIC simultaneously.\n\nThe business story is genuinely interesting: 44% revenue CAGR, digital-first distribution, near-zero leverage, and the company finally crossed into sustained profitability in FY2025 (₹425 Cr net profit). But profitability was negative in 3 of the last 5 years, the combined ratio environment has been volatile, and the market is pricing this at 58x trailing earnings and 6.3x book. There is no margin of safety. A growth-focused investor with expertise in insurance economics might find this worth watching at a much lower price, but it is firmly outside my circle of competence and my formula.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 44494,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07380345,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10605,
+      "cache_read_input_tokens": 8769,
+      "output_tokens": 2093,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10605,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 331,
+          "cache_read_input_tokens": 8769,
+          "cache_creation_input_tokens": 1836,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1836
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "symbol": "INDIASHLTR",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T17:50:41.233921Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "India Shelter Finance is a fast-growing affordable housing lender serving India's underserved semi-urban/rural self-employed borrowers — a long-runway secular niche — but at P/B 3x on 15% ROE with no visible credit quality data, the margin of safety is insufficient to deploy capital aggressively. A fair business at a fair price, not a great business at a great price.",
+    "key_strengths": [
+      "Exceptional growth: Revenue CAGR 38.5% and Net Profit CAGR 44.4% over 4 years — rare consistency in regulated finance",
+      "Conservative leverage for an HFC: Debt/Equity 1.88x vs. industry norm of 3-6x, with equity capital strengthened post-IPO (from INR 1,241 Cr to INR 2,299 Cr in FY24)",
+      "Differentiated niche: informal-income, self-employed borrowers in Tier 2-4 cities face minimal bank competition — structural moat from underwriting expertise"
+    ],
+    "key_risks": [
+      "Credit quality completely opaque: No GNPA/NPA data provided — for any lending business this is the single most critical metric; rapid AUM growth often masks deteriorating asset quality",
+      "ROCE at 12.6% is below the 15% threshold I require; ROE of 15.1% is acceptable but not exceptional for a levered financial",
+      "Finance costs compounding at 35.4% CAGR — nearly matching revenue growth — leaving net interest margin expansion dependent on rate environment staying benign"
+    ],
+    "red_flags": [
+      "Negative operating cash flow every single year (2021-2025) is structurally normal for HFCs, but the acceleration to -INR 1,435 Cr in FY25 reflects rapid AUM growth that requires continuous external capital — any funding market disruption is existential",
+      "Other income collapsed from INR 32 Cr (FY24) to INR 10 Cr (FY25) — a sharp 69% drop worth investigating for one-off reversals or fee income decline"
+    ],
+    "detailed_analysis": "India Shelter Finance operates in one of India's most compelling long-duration secular themes — affordable housing for the bottom-of-pyramid self-employed borrower — and has executed well on growth. Revenue compounded at 38.5% and net profit at 44.4% over four years, while maintaining leverage well below peers. The equity raise via its 2023 IPO (equity nearly doubled from INR 1,241 Cr to INR 2,299 Cr in FY24) provides a clean balance sheet to fund the next leg of growth. Forward P/E of 14.3x on 40%+ earnings growth appears optically inexpensive.\n\nHowever, Munger's first rule is inversion — what kills a lending business? Bad loans. The dataset contains zero credit quality metrics (GNPA, NNPA, Stage 2/3 assets, credit costs). Rapid loan book growth in informal-income segments without visibility into delinquencies is the classic setup for a nasty surprise 2-3 years down the cycle. ROCE of 12.6% is also structurally mediocre for the risk being taken. Competitors like Aavas Financiers and Home First Finance have longer operating histories with demonstrably superior asset quality track records. Until credit quality is transparent and ROIC clears 15%, this is a monitor-and-wait, not a deploy-capital situation.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "exceptional"
+    }
+  },
+  "metadata": {
+    "duration_ms": 57130,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08152979999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10708,
+      "cache_read_input_tokens": 8536,
+      "output_tokens": 2587,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10708
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 457,
+          "cache_read_input_tokens": 8536,
+          "cache_creation_input_tokens": 2172,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2172,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

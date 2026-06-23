@@ -1,0 +1,69 @@
+{
+  "symbol": "ASTERDM",
+  "persona": "howard_marks",
+  "persona_display_name": "Howard Marks",
+  "analyzed_at": "2026-04-19T06:30:26.250275Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Aster DM's reported FY25 net profit of ₹5,408 Cr is almost entirely a one-time divestiture gain (Other Income ₹5,169 Cr from the GCC sale) — the underlying India-only hospital business earns ~₹200-240 Cr and generates OCF of only ₹425 Cr against a market cap of ₹35,581 Cr, implying an OCF yield of 1.2% and an underlying EV/EBITDA above 45x. The market is paying a world-class price for what is now a mid-sized, sub-scale India hospital network with ROE of 8.26% and decelerating EBITDA.",
+    "key_strengths": [
+      "Post-GCC divestiture balance sheet is significantly cleaner — borrowings reduced from ₹6,075 Cr (FY23) to ₹2,089 Cr (FY25)",
+      "India hospital sector carries genuine long-term tailwinds: underpenetrated market, rising insurance penetration, aging demographics",
+      "The divestiture proceeds provide optionality for India network expansion without immediate equity dilution"
+    ],
+    "key_risks": [
+      "Underlying India business EBITDA of ~₹875 Cr on a market cap of ₹35,581 Cr = ~40x EV/EBITDA with no near-term earnings catalyst to justify the multiple",
+      "ROE of 8.26% is below cost of equity — the business is not currently earning its keep for shareholders at these asset values",
+      "Intense competition in South India hospital markets from Manipal, Apollo, and Narayana limits pricing power and occupancy upside"
+    ],
+    "red_flags": [
+      "FY25 net profit is 99% non-recurring (divestiture gain) — the headline P/E of 99x on 'real' earnings is likely understated",
+      "Revenue has contracted from ₹10,253 Cr (FY22) to ₹4,138 Cr (FY25) — the India-only rump is a fraction of the old business, yet market cap implies massive premium",
+      "OCF has collapsed from ₹1,834 Cr (FY23) to ₹425 Cr (FY25) — post-divestiture cash generation is thin relative to the enterprise value being assigned"
+    ],
+    "detailed_analysis": "The story everyone tells about Aster DM is 'pure-play India healthcare post-GCC exit, beneficiary of rising medical tourism and insurance penetration.' That narrative is not wrong. The question is price. Strip out the ₹5,169 Cr one-time GCC sale gain from FY25 net profit, and the underlying India business earned roughly ₹200-240 Cr. The market cap of ₹35,581 Cr implies the investor is paying approximately 150x underlying earnings for a hospital chain with 8.26% ROE and EBITDA that has actually contracted in absolute terms since its prior peak.\n\nFrom a margin-of-safety perspective, the downside scenarios are numerous: execution risk on India capacity additions, competition from well-capitalised hospital chains, potential reinvestment of GCC proceeds at sub-optimal returns, and a multiple contraction in the broader healthcare sector. The upside requires everything to go right for years. That is not a favourable asymmetry. When the consensus view is uniformly bullish on 'India healthcare' and the price reflects perfection, that is precisely when a patient investor should stand aside.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 165665,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.23964059999999998,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 25390,
+      "cache_read_input_tokens": 16697,
+      "output_tokens": 9294,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 25390,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 572,
+          "cache_read_input_tokens": 16697,
+          "cache_creation_input_tokens": 8693,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8693
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

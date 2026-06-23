@@ -1,0 +1,71 @@
+{
+  "symbol": "ALOKINDS",
+  "persona": "howard_marks",
+  "persona_display_name": "Howard Marks",
+  "analyzed_at": "2026-04-18T16:22:29.412239Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "Alok Industries is a post-IBC insolvency case with negative equity of ₹21,527 Cr, debt of ₹26,106 Cr, and an EV/EBITDA of 320.8x — the market is pricing in a near-miraculous turnaround with zero margin of safety. At ₹14.30, minority shareholders are buying a subordinated claim on a balance sheet that is technically insolvent, where annual finance costs (₹615 Cr) alone eclipse EBITDA in most years.",
+    "key_strengths": [
+      "Reliance Industries as 75% promoter provides operational credibility and potential backstop resources",
+      "EBITDA turned positive at ₹291 Cr in FY2026 — faint sign of operational stabilization",
+      "OCF positive in 4 of last 5 years, showing some underlying cash generation ability"
+    ],
+    "key_risks": [
+      "Debt/EBITDA of ~90x (₹26,106 Cr borrowings vs ₹291 Cr EBITDA) — any margin compression resets to zero",
+      "Revenue in terminal decline: -9% CAGR over 9 years; FY2026 revenue of ₹3,715 Cr is less than half 2017's ₹8,723 Cr",
+      "Negative equity of -₹21,527 Cr means equity holders have zero claim on assets after debt — minority shareholders are economically last in line"
+    ],
+    "red_flags": [
+      "Equity is -₹21,527 Cr: company is balance-sheet insolvent — P/B of -0.33 is not a bargain signal, it is a distress signal",
+      "EV/EBITDA of 320.8x prices in perfection for a company that has posted operating losses in 6 of the last 10 years",
+      "Finance costs of ₹615 Cr annually will consume essentially all realistic EBITDA for years, leaving nothing for equity",
+      "Net losses of ₹744-880 Cr per year continue to deepen negative reserves (now -₹22,024 Cr)",
+      "FCF swung to -₹1,190 Cr in FY2024 — cash generation is erratic, not structural"
+    ],
+    "detailed_analysis": "Alok Industries is one of the most instructive examples of what I call the confusion between a good company and a good investment. The market cap of ₹7,095 Cr sounds modest, but it sits atop ₹26,106 Cr of borrowings and ₹21,527 Cr of negative equity. The enterprise value is therefore staggering relative to any reasonable earnings scenario — an EV/EBITDA of 320.8x means you are paying ₹321 for every rupee of EBITDA, for a business that has achieved positive EBITDA consistently in only one out of the last six years. Finance costs alone (₹615 Cr) exceeded FY2026 EBITDA (₹291 Cr) by more than 2x — meaning the business cannot service its debt from operations even in a decent year. The second-level question is not \"is Reliance's backing valuable?\" — it is \"what does ₹14.30 per share already assume?\" The answer is: a sustained multi-year turnaround to revenue levels 3-4x current and margin expansion from -4.5% to mid-teens. That is not a margin of safety; it is a margin of delusion. \n\nThe cycle context compounds the danger. Textile manufacturing is deeply cyclical, and Alok's revenue has contracted from ₹8,723 Cr to ₹3,715 Cr over nine years — a -9% CAGR — even as global textile demand grew. This is market share loss and structural overcapacity, not just cyclicality. For minority shareholders, there is no scenario where the debt (senior claim) is not fully settled before equity sees a rupee. With reserves at -₹22,024 Cr and deepening by ~₹800-900 Cr per year, the hole grows faster than any conceivable operating improvement can fill it. The risk/reward is catastrophically asymmetric — and not in the investor's favor. Avoid unequivocally.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 58130,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07694115000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9255,
+      "cache_read_input_tokens": 11103,
+      "output_tokens": 2593,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9255,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 390,
+          "cache_read_input_tokens": 9049,
+          "cache_creation_input_tokens": 2260,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2260
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

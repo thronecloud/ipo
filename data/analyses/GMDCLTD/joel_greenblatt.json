@@ -1,0 +1,69 @@
+{
+  "symbol": "GMDCLTD",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-22T16:42:58.726335Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "GMDC fails both legs of the Magic Formula decisively: earnings yield of ~2.7% (EBIT 637 Cr / EV ~23,440 Cr) is far below the 12% minimum threshold, and ROCE of 14.1% is well under the 20% good-business hurdle. You are paying a premium multiple for a cyclical, government-controlled miner with structurally weak returns.",
+    "key_strengths": [
+      "Near-zero debt (D/E 0.04) with INR 6,659 Cr reserves, providing balance sheet safety",
+      "Revenue CAGR of 10.3% (2016–2025) with OCF positive all 5 recent years",
+      "74% promoter (Gujarat state govt) backing provides operational stability and mine lease continuity"
+    ],
+    "key_risks": [
+      "Extreme earnings cyclicality — operating income collapsed from 1,337 Cr (FY23) to 637 Cr (FY25), and went negative in FY21; Magic Formula hates unpredictable earnings",
+      "Capex surging from 25 Cr (FY23) to 644 Cr (FY25), with CWIP ballooning to 619 Cr — FCF turned -366 Cr in FY24; capital intensity is rising sharply",
+      "Thermal coal/lignite is a secular sunset industry; ESG headwinds and energy transition structurally cap the multiple and long-run volumes"
+    ],
+    "red_flags": [
+      "Earnings yield of ~2.7% — barely one-fifth of the 12% Magic Formula minimum; this alone disqualifies the stock",
+      "Other Income of 355 Cr (FY25) is 55% of operating income (637 Cr) — real operating earnings power is inflated by investment income, not core mining returns",
+      "P/E of 36.6x on a cyclical miner is pricing in perfection; in FY21 the company lost money — peak-cycle multiples on trough-to-peak earnings is a classic value trap setup"
+    ],
+    "detailed_analysis": "Running the Magic Formula on GMDC produces a near-disqualifying result on both axes. Earnings Yield = EBIT (637 Cr) / EV (~23,440 Cr) ≈ 2.7%, vs. my 12% minimum — you are paying 37x EBIT for this business. Return on Capital using ROCE of 14.1% also falls short of the 20% threshold; capital employed has ballooned to ~8,150 Cr (total assets minus cash) while EBIT has actually compressed from the FY23 peak of 1,337 Cr. The company simply does not earn high enough returns on its asset base to justify the current valuation under any systematic framework.\n\nStructurally, this is a government-owned, capital-intensive, commodity miner with lumpy, cycle-driven earnings. The FY23 bonanza (net profit 1,204 Cr) was a post-COVID energy price windfall; FY21 printed a loss (-39 Cr net). Investors buying at 36.6x P/E are essentially paying for the FY23 peak as if it were recurring — it is not. Accelerating capex (644 Cr in FY25, CWIP 619 Cr) signals a heavy investment cycle that will suppress FCF for years. Combined with a thermal coal/lignite mix facing long-term demand headwinds, this stock offers poor odds for Magic Formula investors. There is no circle of competence benefit here; the numbers simply do not clear the bar.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 49421,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.086937,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11422,
+      "cache_read_input_tokens": 9185,
+      "output_tokens": 2756,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11422,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 557,
+          "cache_read_input_tokens": 9185,
+          "cache_creation_input_tokens": 2237,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2237
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

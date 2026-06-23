@@ -1,0 +1,69 @@
+{
+  "symbol": "EXCELSOFT",
+  "persona": "rakesh_jhunjhunwala",
+  "persona_display_name": "Rakesh Jhunjhunwala",
+  "analyzed_at": "2026-04-21T08:05:02.433462Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Excelsoft is a reasonably priced EdTech SaaS micro-cap riding India's education digitisation wave, with 17.7% revenue CAGR and near-zero debt — but volatile profitability, a sub-par ROE of 10.4%, and suspicious quality of FY25 earnings keep conviction low. At EV/EBITDA of 6x and forward P/E of 13x, the valuation is not demanding, but better entry discipline is warranted.",
+    "key_strengths": [
+      "Rapid debt deleveraging: borrowings collapsed from INR 168 Cr (2020) to INR 45 Cr (2025), D/E now a clean 0.12",
+      "Steady revenue growth at 17.7% 5Y CAGR (103→233 Cr) with 5/5 years of positive OCF (~53–63 Cr range)",
+      "Cheap on forward multiples — Forward P/E 13x and EV/EBITDA 5.98x for a global SaaS business in the high-growth EdTech segment"
+    ],
+    "key_risks": [
+      "Profitability is volatile and low-quality: net profit swung 22→13→35 Cr in three years; FY25 surge partly inflated by other income jumping to INR 15 Cr from INR 2 Cr in FY24",
+      "ROE of 10.4% is well below my 20%+ threshold — capital is not being deployed efficiently despite the asset-light SaaS model",
+      "EBITDA trend is contracting (8.1% 5Y CAGR, labelled contracting) even as revenue grows — margin dilution is a structural concern"
+    ],
+    "red_flags": [
+      "FY25 'Other Income' surged 650% YoY (INR 2→15 Cr) — this propped up net profit to 35 Cr; strip it out and underlying earnings growth looks far weaker",
+      "FCF reported as INR 290 Cr in FY25 while OCF was only 53 Cr — likely a data anomaly or one-off asset monetisation that is not repeatable",
+      "Micro-cap (INR 812 Cr) with very low FII interest (1.37%) and limited institutional coverage — liquidity and discovery risk are real"
+    ],
+    "detailed_analysis": "Excelsoft is a 25-year-old Mysore-based EdTech SaaS player offering assessment, proctoring, and LMS products to universities, schools and enterprises globally — a genuinely interesting niche riding India's digital education push and the global online examination boom post-COVID. Revenue has grown consistently at 17.7% CAGR from INR 103 Cr to 233 Cr, capex is minimal (~17 Cr/year), and the promoter has aggressively paid down debt, cutting borrowings by ~73% over five years to just INR 45 Cr. At EV/EBITDA of 6x and a forward P/E of 13x, the street is not pricing in much optimism, which creates a floor on downside. The 59% promoter holding is stable and comfortable.\n\nHowever, the quality of the business is not what I need for a high-conviction bet. ROE at 10.4% is mediocre — a true SaaS compounder should be generating 25–35% ROE, not 10%. EBITDA has actually contracted in trend terms despite top-line growth, signalling either pricing pressure or rising costs. Most worryingly, the FY25 net profit of INR 35 Cr rests partly on INR 15 Cr of \"other income\" — up from just INR 2 Cr the year before — whose nature is opaque. I will not pay even a modest multiple for earnings built on non-recurring items. For existing shareholders, hold while the deleveraging story plays out and wait for clarity on sustainable operating margins; fresh capital should demand a cleaner earnings print before entering.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 66432,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08978595,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9653,
+      "cache_read_input_tokens": 11094,
+      "output_tokens": 3350,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9653,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 631,
+          "cache_read_input_tokens": 8991,
+          "cache_creation_input_tokens": 2765,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2765
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

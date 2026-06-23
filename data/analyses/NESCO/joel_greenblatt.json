@@ -1,0 +1,68 @@
+{
+  "symbol": "NESCO",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T18:29:08.232304Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Nesco is a quality asset — a near-monopoly Mumbai exhibition + IT-park business with 50%+ operating margins and historically zero debt — but at ~5.1% earnings yield (EBIT ₹438 Cr / EV ~₹8,610 Cr) it falls short of Greenblatt's 6%+ attractive threshold. The ROIC of ~21% (per ROCE) clears the 20% bar, but with only one of two Magic Formula legs firmly planted, it ranks middle-of-the-pack, not top-decile.",
+    "key_strengths": [
+      "Near-monopoly exhibition venue in Mumbai with 50.9% operating margins — rare, durable asset that prints cash",
+      "Historically debt-free (D/E 0.04) with 9-year revenue CAGR of 12% and consistently positive OCF (5/5 years)",
+      "ROCE of 21% meets Magic Formula threshold; high-margin IT park segment diversifies recurring income"
+    ],
+    "key_risks": [
+      "Massive capex surge: CWIP exploded from ₹162 Cr (2024) to ₹761 Cr (2025), turning FCF sharply negative at -₹435 Cr — capital destruction risk until assets monetise",
+      "Earnings yield of ~5.1% is below Greenblatt's 6% floor, meaning the market is pricing in quality but leaving no margin of safety",
+      "Conglomerate structure (exhibitions + IT park + food + engineering) dilutes ROIC vs. a pure-play; the industrial/engineering segment earns far lower returns"
+    ],
+    "red_flags": [
+      "FY2025 FCF turned deeply negative (-₹435 Cr) due to ₹784 Cr capex — largest single-year spend in company history with return timeline uncertain",
+      "First meaningful borrowing (₹110 Cr) appeared in FY2025 after years of zero debt — signals the capex is straining the balance sheet"
+    ],
+    "detailed_analysis": "Running the Magic Formula on Nesco: EBIT (operating income) FY2025 = ₹438 Cr; EV ≈ ₹8,514 Cr market cap + ₹110 Cr borrowings – ₹14 Cr cash = ~₹8,610 Cr. That yields an earnings yield of just 5.1% — below my 6% minimum and well below the 12-15% zone where I get excited. Using ROCE as a ROIC proxy (the data doesn't break out net working capital cleanly), the company clears 21% — barely above my 20% threshold. So one leg of the formula works; the other doesn't. At EV/EBITDA of 15x and P/E of 20.8x, the market is already paying a fair-to-full price for Nesco's quality, leaving little room for the kind of \"aha, the market is wrong\" opportunity the Magic Formula is designed to exploit.\n\nThe business itself is genuinely good: a hard-to-replicate convention centre in one of India's most land-constrained cities, 85%+ gross margins, near-zero historical debt, and expanding revenue. But the enormous CWIP build-up (₹761 Cr, up 5x in one year) is the critical wildcard. When and how those assets generate returns will determine whether this capex cycle is value-creating or value-dilutive. Until those assets come online and the earnings yield moves above 7-8%, Nesco is a business I'd admire but not aggressively buy. Hold for existing owners; wait for a 20-25% price correction before initiating fresh positions.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 56088,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08775,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11496,
+      "cache_read_input_tokens": 9070,
+      "output_tokens": 2794,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11496
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 417,
+          "cache_read_input_tokens": 9070,
+          "cache_creation_input_tokens": 2426,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2426,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

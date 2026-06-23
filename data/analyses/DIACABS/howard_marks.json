@@ -1,0 +1,71 @@
+{
+  "symbol": "DIACABS",
+  "persona": "howard_marks",
+  "persona_display_name": "Howard Marks",
+  "analyzed_at": "2026-04-18T17:14:53.525961Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "DIACABS is a NCLT-restructured turnaround trading at grotesque valuations — 74x P/E, 68x EV/EBITDA, and a negative book value of -₹714 Cr — with the market pricing in flawless execution of a recovery that has barely begun (₹1,115 Cr revenue vs. ₹3,153 Cr peak in 2014). At ₹7,884 Cr market cap on ₹34 Cr net profit, there is zero margin of safety and virtually no institutional validation (FII + DII combined: 0.43%).",
+    "key_strengths": [
+      "Genuine sector tailwind: India's power transmission capex boom benefits cable/conductor manufacturers directly",
+      "Revenue ramp is real and steep: ₹0 (2022) → ₹14 Cr (2023) → ₹343 Cr (2024) → ₹1,115 Cr (2025)",
+      "Debt dramatically reduced via NCLT haircuts: total debt fell from ₹2,355 Cr (2024) to ₹463 Cr (2025), improving balance sheet trajectory"
+    ],
+    "key_risks": [
+      "Negative equity (-₹714 Cr) and negative reserves (-₹767 Cr): any operational stress could be existential — there is no cushion",
+      "Valuation assumes perfection: even at ₹3,000 Cr revenue with 10% PAT margin (₹300 Cr profit), current market cap implies 26x P/E — generous for a company with a catastrophic track record",
+      "FCF yield is essentially zero: ₹10 Cr FCF on ₹7,884 Cr market cap = 0.13%; financing costs are rising (₹7 Cr → ₹13 Cr), and borrowings grew from ₹456 Cr to ₹610 Cr in one year"
+    ],
+    "red_flags": [
+      "Technically insolvent: negative book value makes P/B meaningless at -10.95x — lenders already took massive haircuts, minority shareholders have no asset backing",
+      "Virtually zero institutional ownership (FII 0.36%, DII 0.07%): price is driven by retail euphoria and high promoter concentration (84%), not informed capital",
+      "This company was revenue-less from 2018–2022 and destroyed ₹1,400+ Cr in equity — the business model proved catastrophically fragile in a prior cycle; there is no evidence the structural issues are resolved",
+      "Borrowings rising again (₹456 Cr → ₹610 Cr in one year) with only ₹7 Cr cash on hand — leverage creep has begun",
+      "P/S of 5.09x for a specialty manufacturer at early-stage recovery is pricing in a sustained, high-margin business that has never been demonstrated at scale in this restructured entity"
+    ],
+    "detailed_analysis": "Diamond Power Infrastructure is a textbook example of what I call \"story risk\" — a compelling narrative (infra boom, turnaround, cables are hot) that has completely decoupled from cold financial reality. Second-level thinking demands we ask: what does ₹7,884 Cr market cap already price in? At a normalized 20x P/E, the market expects ₹394 Cr in sustainable net profits. The company earned ₹34 Cr in FY2025 on ₹1,115 Cr revenue — implying revenue must more than triple to 2014 peak levels AND margins must compress away none of that growth, with zero execution stumbles in a capital-intensive, cyclical industrial business that previously imploded spectacularly. That is not a margin of safety; that is a margin of error.\n\nThe balance sheet tells the real story: negative equity of -₹714 Cr means this company exists because lenders absorbed catastrophic losses through NCLT — not because management preserved value. Promoters sitting at 84% with near-zero institutional presence is a red flag, not a comfort: it signals that sophisticated capital has looked at this and walked away. Borrowings are already rising again (up ₹154 Cr in one year), cash is ₹7 Cr, and capex is accelerating (₹68 Cr in FY2025 vs. ₹16 Cr prior year). In a stress scenario — order delays, working capital crunch, interest rate spike — this company has no equity buffer and minimal liquidity. The risk of permanent capital loss at this price is high. I will not pay 68x EV/EBITDA for a business that was functionally dead four years ago.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 63774,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08448510000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9480,
+      "cache_read_input_tokens": 10987,
+      "output_tokens": 3042,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9480
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 532,
+          "cache_read_input_tokens": 8933,
+          "cache_creation_input_tokens": 2601,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2601,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

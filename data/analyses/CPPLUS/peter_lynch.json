@@ -1,0 +1,69 @@
+{
+  "symbol": "CPPLUS",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-22T16:23:35.967288Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "CP PLUS is India's leading CCTV/surveillance brand riding a genuine infrastructure tailwind, with 20% revenue CAGR — a classic Lynch \"invest in what you know\" story. But at P/E 105 with a PEG of ~4-5x and deeply suspicious earnings quality, the price kills the thesis entirely.",
+    "key_strengths": [
+      "India's #1 surveillance brand — CP PLUS cameras visible in malls, banks, highways; consumer-observable market leadership",
+      "Revenue CAGR 20.2% and Operating Income CAGR 34.2% over 5 years — genuine margin expansion story",
+      "Ultra-low Debt/Equity of 0.08 and massive equity jump (INR 424 Cr → 1,587 Cr in 2025) — clean, well-capitalized balance sheet"
+    ],
+    "key_risks": [
+      "PEG ratio ~4-5x (P/E 105 ÷ ~20% sustainable growth) — Lynch's red line is 1.5; this is 3x above it",
+      "Catastrophic cash flow disconnect: INR 351 Cr net profit in FY25 vs only INR 27 Cr operating cash flow — earnings are not converting to cash",
+      "FY25 Other Income of INR 259 Cr (vs -12 Cr prior year) explains most of the profit jump — normalized earnings are ~180-200 Cr, implying true P/E closer to 130-150x"
+    ],
+    "red_flags": [
+      "Other Income of INR 259 Cr in FY25 is larger than the company's entire operating income (INR 248 Cr) — non-recurring and non-operational",
+      "Free Cash Flow was essentially zero (INR 1 Cr) in FY25 despite record reported profits — a hallmark of low earnings quality",
+      "Operating CF was -INR 180 Cr in FY24, only INR 27 Cr in FY25 — chronic working capital drag in a trading/distribution-heavy business model"
+    ],
+    "detailed_analysis": "The business story is real — walk into any Indian shop, hospital, or highway toll booth and you'll see a CP PLUS camera. India's surveillance market is expanding rapidly driven by government smart-city projects, GST formalization of retail, and rising crime awareness. Revenue has compounded at 20% and operating margins have expanded from 4.6% to 11.2% over five years, which is exactly the kind of improving unit economics Lynch loves. The promoter holding of 76.91% signals conviction, and debt is negligible at 0.08x D/E.\n\nBut the valuation is indefensible for a Lynch-style GARP investor. The FY25 net profit of INR 351 Cr is a fiction — strip out the INR 259 Cr \"Other Income\" (likely a one-time asset sale or investment gain) and normalized earnings fall to roughly INR 150-180 Cr, implying a true P/E of 130-150x. Operating cash flow of just INR 27 Cr against INR 351 Cr reported profit is the loudest alarm bell possible. A PEG of 4-5x means you are paying four to five years of growth upfront. Lynch's rule: never pay more than 2x the growth rate in P/E. At P/E 105 vs 20% growth, this stock needs to triple its earnings just to reach a fair PEG of 1.0. The story is good; the price is a disaster.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 64515,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09100545,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11707,
+      "cache_read_input_tokens": 9184,
+      "output_tokens": 2956,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11707,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 491,
+          "cache_read_input_tokens": 9184,
+          "cache_creation_input_tokens": 2523,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2523
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

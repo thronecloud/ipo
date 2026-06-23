@@ -1,0 +1,69 @@
+{
+  "symbol": "JLHL",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T18:04:47.715283Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Jupiter Life Line is a quality regional hospital chain with a genuine local moat in Mumbai/Thane and impressive 22% revenue CAGR, but the stock is priced for perfection at 43x PE while simultaneously burning cash through a heavy capex cycle. Wait for the expansion to prove out and the price to offer a margin of safety.",
+    "key_strengths": [
+      "Revenue CAGR of 22.2% and EBITDA CAGR of 23.3% over 5 years demonstrate durable, compounding growth in a medically under-penetrated market",
+      "Finance costs collapsed from INR 44 Cr (2022) to INR 11 Cr (2025), reflecting disciplined deleveraging post-IPO and improving earnings quality",
+      "ROCE of 18% and operating margin of ~17% in a capital-intensive hospital business are respectable, with operating leverage evident as margins expanded through the cycle"
+    ],
+    "key_risks": [
+      "Heavy reinvestment cycle: capex surged to INR 321 Cr in 2025 (vs INR 85 Cr in 2024) with CWIP at INR 296 Cr, turning FCF negative (-67 Cr) — new beds must earn returns before this investment thesis is validated",
+      "Debt re-emerged at INR 403 Cr in 2025 despite INR 800+ Cr raised in the IPO; the rapid return to leverage during an expansion is a flag worth monitoring closely",
+      "Valuation at 43x PE and 26.6x EV/EBITDA leaves almost no margin for execution missteps — any delay in new hospital ramp-up or margin pressure could trigger a sharp re-rating"
+    ],
+    "red_flags": [
+      "FCF swung to -INR 67 Cr in 2025 despite INR 253 Cr of operating cash flow — the capex machine is consuming more than operations generate",
+      "Other income of INR 29 Cr represents ~15% of net profit (INR 194 Cr), inflating headline earnings quality",
+      "ROE of 15% is dragged down by IPO-bloated equity base; true capital returns on operating assets need to be watched as new capacity ramps"
+    ],
+    "detailed_analysis": "Jupiter Life Line is a legitimate, understandable business with a genuine local brand moat concentrated in Mumbai and Thane — a wealthy, medically complex demographic that rewards multi-specialty tertiary care providers. Revenue has compounded at 22% for five years, operating income grew faster at 28.7%, and finance costs declined 15.8% annually — all pointing to a business gaining operating leverage while cleaning up its balance sheet. Promoter holding of 40.9% with growing FII/DII interest (combined 25.5%) suggests institutional validation. This is not a bad business.\n\nHowever, as Munger would say — invert first. The company raised capital via IPO in 2024 (equity jumped from INR 366 Cr to INR 1,169 Cr), ran borrowings to zero, then promptly re-borrowed INR 403 Cr and plowed INR 321 Cr into capex in 2025 alone. CWIP at INR 296 Cr signals more beds coming, but new hospitals typically take 3-5 years to mature. At 43x PE and 26.6x EV/EBITDA, the market is already pricing in successful execution of that expansion. The business earns 18% ROCE today — respectable, but below my threshold for a truly exceptional compounder. I would not pay this price for a hospital still proving out its next leg of growth. A fair price would be 28-32x earnings, offering a meaningful discount to today's levels.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 49519,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0791583,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10884,
+      "cache_read_input_tokens": 8781,
+      "output_tokens": 2380,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10884
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 305,
+          "cache_read_input_tokens": 8781,
+          "cache_creation_input_tokens": 2103,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2103,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

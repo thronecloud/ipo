@@ -1,0 +1,70 @@
+{
+  "symbol": "GODIGIT",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-22T16:38:08.788977Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Go Digit trades at 58x earnings and 6.3x book value — more than 4x my Graham Number of ~₹72 — offering no margin of safety whatsoever. With only two full years of meaningful profitability and erratic operating income, this is pure speculation, not investment.",
+    "key_strengths": [
+      "Minimal debt (D/E 0.07) — balance sheet leverage is not the problem here",
+      "Revenue compounding at 44% CAGR (₹2,252 Cr → ₹9,716 Cr in 4 years) demonstrates scale",
+      "Operating cash flow positive all 5 years (₹1,604 Cr in 2025), unlike net profits"
+    ],
+    "key_risks": [
+      "Earnings history fails my 5-year test: losses in 2021 (₹-123 Cr) and 2022 (₹-296 Cr), barely breakeven in 2023 (₹36 Cr)",
+      "2024 operating income was ₹-269 Cr — net profit of ₹182 Cr was entirely rescued by ₹468 Cr 'other income,' not underwriting",
+      "P/E of 58.3 and P/B of 6.28 price in a decade of flawless execution — Mr. Market is intoxicated with optimism"
+    ],
+    "red_flags": [
+      "Graham Number ≈ ₹72 vs. market price ₹322 — stock trades at 4.5x intrinsic value by my formula",
+      "Operating income wildly erratic: -114, -283, +50, -269, +494 — no evidence of durable underwriting profitability",
+      "Zero dividend history — shareholders receive no cash return while paying a 6x book premium",
+      "Company incorporated only in 2016 — insufficient track record for the intelligent investor"
+    ],
+    "detailed_analysis": "By every quantitative standard I have established, Go Digit fails comprehensively. My Graham Number — derived from 2025 EPS of ~₹4.59 and book value per share of ~₹50 — yields approximately ₹72 per share. The market asks ₹322, a 348% premium to intrinsic value. A P/E of 58.3 against my threshold of 15, and a P/B of 6.28 against my threshold of 1.5, confirm there is no margin of safety. I require at least 3–5 consecutive years of positive earnings; this company posted losses in 2021 and 2022 and earned a trivial ₹36 Cr in 2023. True profitability is barely two years old.\n\nWhat troubles me most is the quality of those profits. In 2024, core operations lost ₹269 Cr (operating income), yet the company reported ₹182 Cr net profit — only because ₹468 Cr of \"other income\" (investment gains on the float) papered over the underwriting deficit. Insurance companies must profit from underwriting first; investment income is secondary. The 2025 figures look better (₹494 Cr operating income), but one good year after chronic losses does not constitute proven earning power. The intelligent investor does not speculate on whether a young insurer has finally turned the corner — he demands proof, and then demands a discount to that proven value. Here he gets neither.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 57996,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0932265,
+    "usage": {
+      "input_tokens": 4,
+      "cache_creation_input_tokens": 9828,
+      "cache_read_input_tokens": 21665,
+      "output_tokens": 3324,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9828,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 398,
+          "cache_read_input_tokens": 10835,
+          "cache_creation_input_tokens": 1043,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1043
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

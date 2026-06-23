@@ -1,0 +1,69 @@
+{
+  "symbol": "544330",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-20T09:46:08.368576Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Parmeshwar Metal fails the Magic Formula on the most critical leg — return on capital — with ROE of just 0.20%, signaling the business earns essentially nothing on its capital base. A 12x P/E (earnings yield ~8.3%) is unremarkable and cannot compensate for a non-existent ROIC.",
+    "key_strengths": [
+      "High promoter holding of 72.03% indicates skin in the game",
+      "P/E of 12 is not egregiously expensive in absolute terms",
+      "Operates in copper recycling — structurally relevant niche"
+    ],
+    "key_risks": [
+      "ROE of 0.20% implies near-zero return on capital — fails Magic Formula",
+      "Copper scrap recycling is a low-margin, capital-intensive commodity business",
+      "Tiny ₹189 Cr micro-cap with zero institutional ownership (FII 0%, DII 0.03%)"
+    ],
+    "red_flags": [
+      "ROE of 0.20% is essentially capital destruction relative to cost of capital",
+      "No institutional sponsorship suggests poor disclosure or quality concerns",
+      "Reported P/E of 12 with ROE of 0.20% mathematically implies an extremely low earnings base — metrics may be inconsistent or one-off"
+    ],
+    "detailed_analysis": "The Magic Formula requires BOTH a high earnings yield AND a high return on capital. Parmeshwar Metal flunks the second test catastrophically: a 0.20% ROE means the business is generating virtually no return on shareholder capital — far below the >20% ROIC threshold I require. The ~8.3% earnings yield (from P/E 12) isn't even attractive on its own (I want >12%), and pairing a mediocre yield with a near-zero return profile is the textbook definition of a \"cheap bad business\" — exactly what the Magic Formula screens out.\n\nBeyond the metrics, copper scrap recycling is a working-capital-heavy, commodity-spread business where ROIC is structurally constrained by scrap-to-rod price differentials. There is no evidence of moat, scale, or pricing power at ₹189 Cr market cap, and the inconsistency between a 12x P/E and 0.20% ROE suggests either inflated trailing earnings, a small post-IPO denominator distortion, or accounting noise — none of which I'd underwrite without years of clean data. Pass.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 21278,
+    "model_used": "opus",
+    "total_cost_usd": 0.08986075,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8883,
+      "cache_read_input_tokens": 13474,
+      "output_tokens": 1103,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8883,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10604,
+          "cache_creation_input_tokens": 1149,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1149
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "544343",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-20T09:48:37.567488Z",
+  "analysis": {
+    "score": 6,
+    "recommendation": "HOLD",
+    "investment_thesis": "CapitalNumbers is a debt-free, founder-led IT services firm with strong ROE (20%) and ROCE (26.5%) trading at a modest 8.91x P/E. However, revenue growth has decelerated sharply (only 2% in FY25 vs 28% 5Y CAGR), and small-cap IT consulting lacks the durable moat I typically require.",
+    "key_strengths": [
+      "Debt-free balance sheet: borrowings down from INR 6 Cr (2020) to zero (2025)",
+      "High-quality returns — ROE 20%, ROCE 26.5%, FCF positive all 5 years",
+      "Cheap optically at 8.91x P/E with strong 74.67% promoter alignment"
+    ],
+    "key_risks": [
+      "Growth stalling: revenue grew just 2% in FY25 (100 vs 98 Cr); EBITDA contracted from 35 to 32",
+      "No durable moat — commoditized IT services competing globally against larger players",
+      "Equity jumped 67→171 Cr in FY25 (IPO dilution); INR 77 Cr investing outflow yet to prove ROI"
+    ],
+    "red_flags": [
+      "Operating income fell from INR 34 Cr (2024) to INR 30 Cr (2025) — first contraction in 5 years",
+      "Other income of INR 6 Cr in FY25 inflating reported profits post-IPO cash raise",
+      "Tiny market cap (INR 203 Cr) with minimal institutional ownership (FII 0.73%, DII 4.60%) suggests low liquidity/scrutiny"
+    ],
+    "detailed_analysis": "On the positive side, this is exactly the kind of clean small business I appreciate: zero debt, 5/5 years of positive operating cash flow, ROCE of 26.5%, and a founder holding nearly 75%. The 5-year revenue CAGR of 28% and net profit CAGR of 39% show a real business was built, and 8.91x P/E is not demanding. FCF of INR 18 Cr on a market cap of INR 203 Cr is an ~9% FCF yield — respectable.\n\nHowever, the FY25 numbers are concerning: revenue growth collapsed to 2%, operating income declined, and the INR 26 Cr net profit is flattered by INR 6 Cr of other income on the post-IPO cash pile. IT consulting is a business I understand, but small Indian offshore shops have no switching costs, no brand premium, and compete against Infosys/TCS/Accenture downward and freelancers upward. Without a widening moat or reacceleration of growth, the cheap P/E is likely a value trap. I would watch from the sidelines until two more quarters confirm growth has resumed.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "excellent",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 28416,
+    "model_used": "opus",
+    "total_cost_usd": 0.12271925,
+    "usage": {
+      "input_tokens": 7,
+      "cache_creation_input_tokens": 10513,
+      "cache_read_input_tokens": 26606,
+      "output_tokens": 1747,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10513,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 142,
+          "cache_read_input_tokens": 12165,
+          "cache_creation_input_tokens": 1185,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1185
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

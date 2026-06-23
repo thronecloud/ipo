@@ -1,0 +1,69 @@
+{
+  "symbol": "BBTC",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-19T06:32:44.745706Z",
+  "analysis": {
+    "score": 7,
+    "recommendation": "BUY",
+    "investment_thesis": "Bombay Burmah is a classic Lynch asset play — a holding company trading at INR 10,650 Cr market cap with EV/EBITDA of just 3.66x, P/E of 9.83x, and an underlying stake in Britannia Industries worth multiples of BBTC's own market cap, all while generating consistently growing free cash flow and posting 21.9% ROE. This is the kind of hidden value that shows up when you look at what you can actually observe.",
+    "key_strengths": [
+      "Extraordinary valuation: P/E 9.83, EV/EBITDA 3.66, P/S 0.55 — the market is pricing in near-zero value for the non-Britannia businesses",
+      "ROE of 21.9% and ROCE of 35.5% are exceptional — better than the vast majority of listed Indian companies at any price, let alone this cheap",
+      "FCF has been consistently positive and growing: 886 Cr → 1,884 Cr → 1,678 Cr → 2,017 Cr over FY22-FY25, a compounding cash machine"
+    ],
+    "key_risks": [
+      "Conglomerate structure (tea, dental, auto components, real estate, investments) creates complexity and a persistent holding company discount",
+      "Debt spiked to 6,542 Cr in FY23 before being aggressively paid down to 1,574 Cr in FY25 — the FY23 net loss (-534 Cr) was alarming even if reversed",
+      "Revenue CAGR of 8.5% is unexciting for a Lynch growth-seeker; the real story is valuation, not top-line acceleration"
+    ],
+    "red_flags": [
+      "FY2023 posted a net loss of -534 Cr — likely one-time but flagged as a governance/accounting concern requiring explanation",
+      "Other income has been highly volatile (-781 Cr in FY23 to +406 Cr in FY25), suggesting lumpy investment gains distort reported earnings",
+      "Promoter at 74% with thin institutional float (DII only 1.42%) limits price discovery and liquidity"
+    ],
+    "detailed_analysis": "Lynch would love this one. BBTC is the kind of stock that shows up when you walk through the supermarket and notice Britannia biscuits on every shelf — then discover the holding company behind the promoter group trades at a 60-70% discount to its underlying asset value. At P/E 9.83 and EV/EBITDA 3.66, you are paying almost nothing for a business generating 2,017 Cr in FCF last year while carrying only 1,574 Cr of net debt. That's a FCF yield above 18% — extraordinary by any measure.\n\nThe business isn't a fast grower, but it doesn't need to be at this price. Net profit surged from 1,689 Cr in FY24 to 2,199 Cr in FY25, EBITDA has nearly doubled over five years, and the company's deliberate debt reduction (from 6,542 Cr to 1,574 Cr in two years) shows management is serious about capital allocation. The conglomerate discount is real and may persist, but at these multiples, even a partial re-rating as the Britannia connection becomes more widely understood could deliver substantial returns. PEG of roughly 0.82 on a 12% earnings CAGR at P/E 9.83 is the kind of number that gets me excited.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "undervalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 147089,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.2132958,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 22682,
+      "cache_read_input_tokens": 15081,
+      "output_tokens": 8247,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 22682,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 510,
+          "cache_read_input_tokens": 15081,
+          "cache_creation_input_tokens": 7601,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 7601
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

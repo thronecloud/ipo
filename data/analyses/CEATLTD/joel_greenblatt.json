@@ -1,0 +1,69 @@
+{
+  "symbol": "CEATLTD",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-19T12:58:34.435712Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "CEAT passes the ROIC screen (~22% on invested capital) but fails the earnings yield screen at only 8.6% (EBIT ₹1,475 Cr / EV ₹17,079 Cr), making it half a Magic Formula stock at best. It is a capital-intensive commodity business in a competitive industry — exactly the kind that rarely shows up in my top rankings.",
+    "key_strengths": [
+      "ROIC of ~22% (EBIT ₹1,475 Cr / invested capital ₹6,660 Cr) clears the 20% threshold; ROCE of 15.4% confirms disciplined capital use",
+      "Revenue growing at 10.3% 9-year CAGR with EBITDA expanding from ₹756 Cr (2022) to ₹1,513 Cr (2025), showing recovery from a cyclical trough",
+      "OCF positive all 5 of 5 years with operating CF ₹1,092 Cr in 2025; D/E of 0.68 is manageable"
+    ],
+    "key_risks": [
+      "Earnings yield of only 8.6% means you're paying full price for a cyclical business — far below my 12% minimum threshold for attractiveness",
+      "Capex of ₹943 Cr in 2025 devoured nearly 86% of OCF; FCF was a thin ₹149 Cr on ₹13,218 Cr revenue — this is not a capital-light compounder",
+      "Finance costs growing at 11.9% CAGR (₹278 Cr in 2025), outpacing EBIT growth and eroding equity returns"
+    ],
+    "red_flags": [
+      "Borrowings surged from ₹1,792 Cr (2024) to ₹3,114 Cr (2025) — a 74% jump in one year with no clear explanation in the data",
+      "Net profit CAGR of only 0.9% over 9 years despite 10.3% revenue growth — the operating leverage is not flowing to shareholders",
+      "Operating margin of 9% is thin for the risk; peer-to-peer competition in tyres prevents meaningful pricing power"
+    ],
+    "detailed_analysis": "Applying the Magic Formula: EV = ₹14,991 Cr market cap + ₹2,136 Cr net debt − ₹48 Cr cash = ~₹17,079 Cr. EBIT (operating income) of ₹1,475 Cr gives an earnings yield of 8.6% — disappointing, well below the 12% I need to get excited. ROIC of ~22% is decent and passes the quality screen, but you need both legs to work for a strong ranking. CEAT is a subsidiary of RPG Enterprises selling tyres in a commodity market where rubber prices drive margins more than management skill.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 165486,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.22400864999999998,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 23875,
+      "cache_read_input_tokens": 15928,
+      "output_tokens": 8646,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 23875,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 666,
+          "cache_read_input_tokens": 15928,
+          "cache_creation_input_tokens": 7947,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 7947
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

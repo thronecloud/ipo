@@ -1,0 +1,69 @@
+{
+  "symbol": "CASTROLIND",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-19T12:55:43.466325Z",
+  "analysis": {
+    "score": 6,
+    "recommendation": "HOLD",
+    "investment_thesis": "Castrol India is the closest thing to a Magic Formula stock in this batch: earnings yield of 7.3% (EBIT ₹1,292 Cr / EV ₹17,665 Cr) clears my 6% floor, and ROCE of 68% is exceptional for any business. The friction is structural — lubricant volumes face a multi-year headwind from EV adoption, capping revenue growth at just 6.2% CAGR, which limits how aggressively I want to size a position.",
+    "key_strengths": [
+      "ROCE of ~68% and FCF margin of ~17% (₹993 Cr FCF on ₹5,700 Cr revenue) — extraordinarily capital-efficient business with near-zero capex intensity (capex only ₹97 Cr, 1.7% of revenue)",
+      "EV/EBITDA of 12.6× is the most reasonable valuation in this cohort, and earnings yield of 7.3% passes the Magic Formula threshold",
+      "Durable brand moat (Castrol EDGE, MAGNATEC, Activ) with a pan-India distribution network protecting pricing power and operating margin of 24.9%"
+    ],
+    "key_risks": [
+      "Revenue CAGR of only 6.2% (FY22–FY25) — Electric Vehicles structurally reduce engine oil consumption; growth ceiling is compressing",
+      "As a 51%-held subsidiary of Castrol Ltd UK, strategic decisions (pricing, capex, dividends) serve parent interests — minority investors face governance risk",
+      "Finance cost growing at 32% CAGR even on minimal debt — rising lease obligations could erode the asset-light thesis over time"
+    ],
+    "red_flags": [
+      "ROE of 0.45% appears anomalous given ₹950 Cr net profit and ₹1,900 Cr equity — likely a data artefact from mid-year dividend reductions; investors should verify equity base used in the calculation",
+      "Financing CF of -₹1,315 Cr in FY25 suggests near-total profit distribution — limited reinvestment signals management does not see high-ROIC growth opportunities domestically",
+      "EV transition risk is real but unquantified — no visibility into how quickly oil volume erosion offsets premium product premiumisation"
+    ],
+    "detailed_analysis": "Magic Formula scores: Earnings yield = ₹1,292 Cr / ₹17,665 Cr EV = 7.31% — above my 6% threshold. ROCE = 68% — exceptional, well above my 20% minimum. This is a genuine two-for-one Magic Formula candidate, and by that framework it deserves a positive lean. The capex intensity (₹97 Cr on ₹5,700 Cr revenue) is among the lowest I have seen, and OCF conversion (₹1,090 Cr OCF vs ₹950 Cr net profit) confirms the earnings are real cash.\n\nHowever, I assign a HOLD rather than BUY because the low-growth profile (6.2% revenue CAGR) and structural EV headwind mean the earnings yield will improve slowly, if at all. The company is essentially a mature cash cow being steadily milked by its UK parent (₹1,315 Cr financing outflows in FY25). I would upgrade to BUY if the stock re-rated below 10× EV/EBITDA (implying EV ~₹14,040 Cr, ~20% lower), which would push earnings yield above 9%.",
+    "metrics_evaluated": {
+      "moat_strength": "strong",
+      "management_quality": "good",
+      "financial_health": "excellent",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 212545,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.2804235,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 26770,
+      "cache_read_input_tokens": 15490,
+      "output_tokens": 11692,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 26770,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 543,
+          "cache_read_input_tokens": 15490,
+          "cache_creation_input_tokens": 11280,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 11280
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

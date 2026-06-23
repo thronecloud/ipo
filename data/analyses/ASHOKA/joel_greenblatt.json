@@ -1,0 +1,69 @@
+{
+  "symbol": "ASHOKA",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T16:29:22.486616Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Ashoka Buildcon screens optically cheap (EV/EBITDA 1.94x, trailing P/E 3.73x) with strong headline ROCE of 39.7%, but the Magic Formula demands *sustainable* EBIT — and 2025 net profit of INR 1,734 Cr (vs INR 521 Cr in 2024) is almost certainly driven by BOT asset monetization, not operating earnings power. Forward P/E of 11.95x exposes the normalized valuation, making the earnings yield far less attractive than trailing numbers suggest.",
+    "key_strengths": [
+      "Strong revenue CAGR of 15.1% over 9 years with operating margins expanding to 21.5% — execution is improving",
+      "Dramatic debt reduction: borrowings fell from INR 5,450 Cr (2024) to INR 1,989 Cr (2025), strengthening the balance sheet",
+      "OCF positive all 5 years; 2025 FCF of INR 1,573 Cr is genuine operational improvement"
+    ],
+    "key_risks": [
+      "2025 EBIT of INR 2,920 Cr is heavily inflated by BOT asset sales — Magic Formula requires normalized, recurring EBIT; forward P/E of 11.95x implies true earnings power closer to INR 326 Cr",
+      "Finance costs remain massive at INR 1,245 Cr (2025) — absorbs ~43% of EBIT, severely impairing true return on capital for equity holders",
+      "Construction sector has no durable moat — ROIC is project-cycle-driven, not structural; Greenblatt's formula works best on businesses with persistent competitive advantages"
+    ],
+    "red_flags": [
+      "P/E of 3.73x vs Forward P/E of 11.95x — 3.2x gap signals massive one-time earnings inflation in 2025",
+      "Net profit swung from INR -224 Cr (2016) to losses through 2019 — historical earnings quality is poor",
+      "Other Income highly erratic (INR 485 Cr in 2022, INR 64 Cr in 2023) — recurring income base is unreliable for Magic Formula scoring"
+    ],
+    "detailed_analysis": "**Magic Formula Metrics:** On trailing data, Earnings Yield (EBIT/EV) = INR 2,920 Cr / ~INR 5,956 Cr EV (~49%) looks extraordinary, and reported ROCE of 39.7% clears the 25% excellence threshold. However, the Magic Formula collapses the moment earnings are normalized. The 2025 debt drop from INR 5,450 Cr to INR 1,989 Cr (INR 3,461 Cr in repayment) mirrors the cash infusion from BOT stake monetization — this inflates both net profit and apparent EBIT. Stripping that out, operating EBIT has been growing but more modestly; the forward P/E of 11.95x implies forward EPS ~INR 11.6, implying normalized EBIT of perhaps INR 1,200–1,500 Cr — still giving an earnings yield of ~20–25%, which is genuinely attractive, but far below the headline 49%.\n\n**Greenblatt Fit:** Construction & infrastructure is exactly the capital-intensive, government-contract-dependent sector that produces lumpy, unreliable ROIC — the antithesis of the high-quality, asset-light compounders Greenblatt's formula targets. Finance costs of INR 1,245 Cr consume nearly half of EBIT annually, meaning equity holders see far less return than ROCE implies. The business is getting better — debt is down, margins are up, FCF is real — but it doesn't have the pricing power or repeat-purchase economics that sustain Magic Formula rankings year after year. At best this is a value play, not a quality compounder.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 68610,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.1003701,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 12090,
+      "cache_read_input_tokens": 9062,
+      "output_tokens": 3487,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 12090,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 499,
+          "cache_read_input_tokens": 9062,
+          "cache_creation_input_tokens": 3028,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 3028
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

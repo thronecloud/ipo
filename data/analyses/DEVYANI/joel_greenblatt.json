@@ -1,0 +1,69 @@
+{
+  "symbol": "DEVYANI",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-19T13:09:51.106214Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Devyani is loss-making (net profit –INR 7 Cr in FY25 despite INR 4,951 Cr revenue), carries D/E of 1.71x, and generates ROCE of only 6.42% — all three of which are automatic disqualifiers under the Magic Formula. A Forward P/E of 127x for a restaurant operator with a history of recurring losses is simply not a price I will pay.",
+    "key_strengths": [
+      "Revenue CAGR of 19.3% over 9 years demonstrates strong unit economics growth in the Indian QSR market under KFC and Pizza Hut franchises",
+      "OCF has been consistently positive (5/5 years, INR 900 Cr in FY25), showing the restaurant-level cash generation is real even if bottom-line profits are elusive",
+      "Promoter holding of 61.37% provides alignment, and DII ownership of 19.44% reflects domestic institutional confidence"
+    ],
+    "key_risks": [
+      "Net profit has been negative in 7 of the last 10 years — the Magic Formula cannot operate on companies without sustained positive EBIT reaching the bottom line; finance costs of INR 267 Cr erode all operating profit",
+      "Debt/Equity of 1.71x is dangerously high for a restaurant operator; total borrowings hit INR 3,343 Cr in FY25, nearly double the FY24 figure — rapid debt accumulation for store expansion is concerning",
+      "ROCE of 6.42% means the company is earning well below its cost of capital — every rupee invested generates only 6 paise of operating return, making economic value destruction the base case"
+    ],
+    "red_flags": [
+      "Negative net profit in FY24 (–INR 10 Cr) and FY25 (–INR 7 Cr) despite revenue growing to INR 4,951 Cr — operating leverage is not materializing as expansion costs accelerate",
+      "Finance costs of INR 267 Cr in FY25 (vs. INR 149 Cr in FY23) are growing faster than revenues — the debt-funded expansion model is self-defeating if ROIC stays below the cost of debt",
+      "EV/EBITDA of 28x for a company with negative net income implies pure hope valuation; any normalization of growth expectations would be devastating to the share price"
+    ],
+    "detailed_analysis": "Magic Formula calculation: EV = INR 13,279 + 3,188 – 181 = INR 16,286 Cr. Operating Income FY25 = INR 839 Cr (but note: under Ind AS 116, restaurant lease costs are capitalized, making EBITDA look better than true cash economics). Earnings Yield = 5.15% at the operating level, but net profit is negative — the true earnings yield is essentially zero. ROCE = 6.42%. Both metrics fail the Magic Formula test comprehensively.\n\nQSR businesses can be wonderful — high turnover, relatively asset-light, strong brands. But Devyani is a franchise operator, not a franchise owner, and it's funding aggressive store expansion with debt while posting recurring losses. The P&L tells me the unit economics aren't strong enough to overcome overhead and interest burden at scale. Until the company demonstrates 3+ years of sustained positive net income and ROCE above 15%, this doesn't belong in my portfolio at any price, let alone at Forward P/E of 127x.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 177688,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.2350374,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 24622,
+      "cache_read_input_tokens": 16003,
+      "output_tokens": 9193,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 24622,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 477,
+          "cache_read_input_tokens": 16003,
+          "cache_creation_input_tokens": 8619,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8619
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

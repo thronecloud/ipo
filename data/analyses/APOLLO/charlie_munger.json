@@ -1,0 +1,71 @@
+{
+  "symbol": "APOLLO",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T16:25:48.317929Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Apollo Micro Systems is a capital-hungry defense electronics assembler growing at 18% revenue CAGR but destroying cash at an accelerating rate (-₹82 Cr FCF in FY25 vs ₹56 Cr net profit), while trading at a preposterous 113x PE and 58x EV/EBITDA for a business earning only 10% ROE. You are paying a compounding-machine price for a working-capital trap.",
+    "key_strengths": [
+      "India defense indigenization tailwind (Atmanirbhar Bharat) creates multi-year order visibility for domestic electronics suppliers",
+      "Revenue CAGR 18% and net profit CAGR 32% over 5 years — accelerating in FY25 (₹562 Cr revenue, ₹56 Cr PAT)",
+      "Moderate leverage at Debt/Equity 0.33 with healthy promoter holding of 52% providing governance anchor"
+    ],
+    "key_risks": [
+      "Free cash flow is catastrophically negative (-₹82 Cr in FY25, -₹131 Cr in FY24) against ₹56 Cr reported profit — FCF/Net Income is deeply negative, signaling a working capital or earnings quality crisis",
+      "ROIC and ROE (10%) are well below the 15% minimum Munger demands; ROCE of 14% barely clears the bar yet the stock commands a 113x PE",
+      "Finance costs grew at 17.8% CAGR to ₹34 Cr — nearly 61% of net profit — and borrowings tripled from ₹117 Cr to ₹361 Cr, meaning growth is debt-funded, not self-financing"
+    ],
+    "red_flags": [
+      "FCF negative in 4 of last 5 years (-₹16, -₹50, -₹131, -₹82 Cr) — a compounding machine should generate cash, not consume it",
+      "Earnings quality test fails badly: reported ₹56 Cr PAT in FY25 but only ₹10 Cr OCF — profits exist only on paper while cash bleeds out",
+      "Balance sheet nearly doubled in one year (₹956 → ₹1,782 Cr total assets) suggesting a large equity raise masking operating weakness",
+      "113x PE for a 10% ROE assembler of defense electronics — paying a luxury price for a commodity-adjacent business",
+      "CWIP tripled to ₹107 Cr in FY25 with ongoing heavy capex (-₹92 Cr) — capital intensity is structurally rising, not declining"
+    ],
+    "detailed_analysis": "Inversion first: what would make this a terrible investment? A capital-intensive assembler (not designer) of defense electronics with sub-threshold returns, serial cash destruction, and a triple-digit PE multiple. Apollo checks every box. The company earned ₹56 Cr in reported profit in FY25 but generated only ₹10 Cr of operating cash flow, implying a massive working capital build — entirely typical of Indian defense subcontractors who must pre-finance long government payment cycles. The trend is worsening: OCF was -₹76 Cr in FY24 and -₹16 Cr in FY23. This is not a momentary blip; it is structural. A business that cannot convert profits to cash is not compounding wealth — it is manufacturing accounting earnings while consuming real capital through debt and equity issuance.\n\nThe valuation is the final insult. At 113x trailing PE, the market is pricing Apollo as if it were a high-ROIC compounder with durable pricing power. The actual ROCE of 14% and ROE of 10% are below what I require even for a mediocre business. Operating margins of 17.6% are decent but not exceptional, and the gross margin of 31% tells you this is an assembler with limited IP leverage. The defense sector tailwind is real — India's ₹6 lakh crore defense budget is a genuine opportunity — but the prize will likely accrue to companies with proprietary technology and strong cash generation, not working-capital-intensive assemblers trading at 58x EV/EBITDA. I would need to see ROIC above 18%, sustained positive FCF, and a PE below 30x before I would even begin a deeper look.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 49740,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07890164999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11107,
+      "cache_read_input_tokens": 8988,
+      "output_tokens": 2303,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11107,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 270,
+          "cache_read_input_tokens": 8988,
+          "cache_creation_input_tokens": 2119,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2119
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "symbol": "DYNAMATECH",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-18T17:12:59.533518Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "Dynamatic Technologies is a no-growth industrial conglomerate trading at a ludicrous P/E of 150x — revenue has gone nowhere in 9 years (-0.7% CAGR) while EBITDA has actually contracted. There is no \"story\" here that justifies anywhere near current prices.",
+    "key_strengths": [
+      "Aerospace/defense exposure (airframe structures, UAVs) could benefit from India's PLI tailwinds",
+      "Consistently positive operating cash flow (5/5 years positive, INR 144 Cr in FY25)",
+      "Debt reduction underway — borrowings fell from INR 744 Cr (FY21) to INR 594 Cr (FY25)"
+    ],
+    "key_risks": [
+      "Zero revenue growth: INR 1,490 Cr in 2016 → INR 1,404 Cr in 2025 (-0.7% CAGR) — this is a stagnant business",
+      "Valuation is absurd: P/E 150x with PEG effectively infinite; even on forward P/E of 72.6x, growth simply doesn't exist to justify it",
+      "FY24 profit of INR 122 Cr was a mirage — INR 105 Cr came from 'Other Income', not operations; normalized PAT is ~INR 40-45 Cr"
+    ],
+    "red_flags": [
+      "FY24 net profit inflated by INR 105 Cr non-operating 'Other Income'; FY25 profit collapsed back to INR 43 Cr — the P/E of 150x is built on a one-off",
+      "ROE of 6.21% is dismal — well below my 12% minimum threshold; capital is being employed very poorly",
+      "EBITDA CAGR of -1.0% over 9 years — this is a shrinking earnings power business masquerading as a growth stock",
+      "Operating margin of only 7.17% on a heavily capital-intensive business with D/E of 0.78 leaves almost no room for error"
+    ],
+    "detailed_analysis": "Dynamatic Technologies fails every single Lynch growth screen. The first question I ask any stock is: \"What's the story?\" Here, the story is a 50-year-old industrial manufacturer in hydraulics, auto parts, and aerospace that has produced essentially zero revenue growth over the past decade. Revenue was INR 1,490 Cr in FY16 and INR 1,404 Cr in FY25 — that's not a fast grower, that's not a stalwart, it's barely even a slow grower. EBITDA has actually contracted at -1.0% CAGR over nine years. The apparent net profit CAGR of 15.2% is a statistical distortion: FY24's INR 122 Cr profit included INR 105 Cr of \"Other Income\" (likely an asset sale or one-time gain); strip that out and normalized earnings are ~INR 40-45 Cr annually, implying a true P/E closer to 170x. The PEG ratio is effectively meaningless because there is no sustained earnings growth to divide into.\n\nThe valuation is the single most damning fact. At P/E 150x and EV/EBITDA 58x, the market is pricing this as if it were a high-growth compounding machine. It is not. ROE of 6.21% means management earns less than a fixed deposit on shareholder capital. The aerospace segment (airframe structures, flap track beams, UAVs) is genuinely interesting given India's defense modernization, but with operating margins of just 7.17% and no volume growth to show for it, the business has not monetized this opportunity. Free cash flow has declined from INR 168 Cr (FY20) to INR 78 Cr (FY25) — the business is generating less cash even as the stock has been bid up dramatically. I would need to see sustained 20%+ revenue growth, ROE above 15%, and a PEG below 1.0 before touching this. At current prices, AVOID completely.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 52332,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0829464,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11212,
+      "cache_read_input_tokens": 9208,
+      "output_tokens": 2542,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11212
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 576,
+          "cache_read_input_tokens": 9208,
+          "cache_creation_input_tokens": 2004,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2004,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

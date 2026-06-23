@@ -1,0 +1,69 @@
+{
+  "symbol": "544640",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-20T11:00:54.545918Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "A sub-scale (INR 23 Cr market cap) houseware manufacturer earning a pitiful 0.61% ROE is the antithesis of a compounder — no moat, no returns on capital, and a low P/E of 4.56 on microscopic earnings is a value trap, not a bargain. Invert: what could go wrong? Almost everything, starting with the economics of the business itself.",
+    "key_strengths": [
+      "High promoter holding (71.43%) signals skin in the game",
+      "No apparent debt stress evident from disclosed metrics",
+      "Niche in display/refrigeration equipment with some operating history since 2006"
+    ],
+    "key_risks": [
+      "ROE of 0.61% is catastrophically below cost of capital — business destroys value",
+      "Microcap (INR 23 Cr) with negligible institutional validation (FII 0.32%, DII 1.43%)",
+      "Commoditized houseware/kitchen equipment with no pricing power or moat"
+    ],
+    "red_flags": [
+      "ROE of 0.61% is essentially zero returns on shareholder capital",
+      "P/E 4.56 on near-zero earnings is mathematically misleading — tiny denominator",
+      "Micro-float SME-style listing invites illiquidity and price manipulation risk"
+    ],
+    "detailed_analysis": "Apply the first filter: does this business earn a decent return on capital? A 0.61% ROE tells you everything — this company is destroying shareholder value every year it operates versus any reasonable opportunity cost (a risk-free FD returns ~7%). Munger's rule: over the long run, your return approximates the ROIC of the underlying business. At 0.61%, you are guaranteed a terrible outcome regardless of entry price. The optically cheap 4.56 P/E is a classic value trap — dividing by a near-zero \"E\" produces meaningless ratios.\n\nInvert the question: what would make Riddhi Display a great investment? It would need a durable moat in display/kitchen/refrigeration equipment, pricing power, and scale — none of which a INR 23 Cr manufacturer in a commoditized segment plausibly possesses. Institutional investors have voted with their wallets (0.32% FII, 1.43% DII). This sits squarely in the \"too hard / too poor quality\" pile. Pass, and keep looking for the rare business earning 20%+ ROIC with a genuine moat.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 24031,
+    "model_used": "opus",
+    "total_cost_usd": 0.09156399999999999,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8952,
+      "cache_read_input_tokens": 13218,
+      "output_tokens": 1159,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8952,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10491,
+          "cache_creation_input_tokens": 1188,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1188
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

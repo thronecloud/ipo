@@ -1,0 +1,69 @@
+{
+  "symbol": "GODREJAGRO",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T17:23:35.979205Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "AVOID",
+    "investment_thesis": "Godrej Agrovet is a decent agri-business riding a reputable brand, but thin operating margins (6.84%), excessive debt (D/E 1.11), and a paltry 9-year net profit CAGR of just 4.9% mean this is a fair business — not a wonderful one. At 25.7x P/E with these characteristics, I'm not getting the margin of safety I require.",
+    "key_strengths": [
+      "Godrej group brand provides modest competitive credibility across dairy, poultry, and crop protection segments",
+      "Revenue CAGR of 10.7% and EBITDA CAGR of 17.2% over 9 years shows operational improvement, with 2025 FCF of INR 758 Cr a meaningful uptick",
+      "67.65% promoter holding signals high owner-operator alignment within the Godrej conglomerate"
+    ],
+    "key_risks": [
+      "Debt/Equity of 1.11 is a firm red flag — borrowings surged from INR 1,416 Cr (2024) to INR 2,159 Cr (2025) while equity collapsed from INR 2,517 Cr to INR 1,810 Cr, suggesting a large capital event that needs explaining",
+      "Operating margins of only 6.84% leave almost no room for error in commodity-linked segments (animal feed, palm oil) that face input cost volatility",
+      "Net profit CAGR of just 4.9% over 9 years is unacceptably weak — earnings were INR 261 Cr in 2016 and only INR 403 Cr in 2025, with no durable compounding visible"
+    ],
+    "red_flags": [
+      "D/E of 1.11 far exceeds my hard limit of 0.5; interest burden rising to INR 133 Cr in 2025 from INR 108 Cr the year prior",
+      "OCF was positive only 3 of last 5 years; FCF was deeply negative 2020–2022, signalling capital-intensive, cash-hungry operations",
+      "Equity reserves dropped sharply from INR 2,324 Cr (2024) to INR 1,618 Cr (2025) — likely a large dividend or buyback funded by fresh debt, which I find troubling"
+    ],
+    "detailed_analysis": "Godrej Agrovet operates across six segments — animal feed, vegetable oil, crop protection, dairy, poultry/processed food, and others — giving it diversification but not dominance. The Godrej name is valuable in India, but most of these businesses operate in commoditized, low-margin markets with limited pricing power. A 6.84% operating margin is barely defensible; any spike in soybean meal, palm fruit costs, or milk procurement prices will compress earnings quickly. The ROE of 17.7% looks acceptable on the surface, but it is largely leveraged — strip out the debt and the underlying return on capital tells a more modest story.\n\nThe balance sheet deterioration in 2025 is the most concerning signal in this dataset. Borrowings jumped by INR 743 Cr in a single year while reserves fell by INR 706 Cr — this is not the balance sheet behaviour of a capital-light compounder. Finance costs at INR 133 Cr are growing faster than net profit. The 4.9% net profit CAGR over nine years means shareholders have not been meaningfully rewarded despite top-line growth. At 25.7x P/E and 6.55x P/B, the market is pricing in a quality moat that I simply do not see. I'd rather own a great business at a fair price; this is a fair business at an above-fair price.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 42217,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08063265,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11277,
+      "cache_read_input_tokens": 9183,
+      "output_tokens": 2372,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11277
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 305,
+          "cache_read_input_tokens": 9183,
+          "cache_creation_input_tokens": 2094,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2094,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

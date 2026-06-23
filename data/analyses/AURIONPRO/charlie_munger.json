@@ -1,0 +1,69 @@
+{
+  "symbol": "AURIONPRO",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T16:35:06.685375Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Aurionpro is a genuine BFSI technology turnaround — revenue tripled from ₹374 Cr (FY21) to ₹1,173 Cr (FY25) with ROCE expanding to 18% and debt nearly eliminated. However, acquisition-fueled growth (investing outflows of ₹421 Cr in FY25 alone), a complex multi-product sprawl, and dangerously low promoter conviction at 26.9% make this a story to watch rather than own at conviction size.",
+    "key_strengths": [
+      "Rapid recent acceleration: revenue CAGR ~33% over FY21-25, operating profit ₹84 Cr → ₹242 Cr with expanding margins",
+      "Near debt-free balance sheet (D/E: 0.02, borrowings collapsed from ₹154 Cr to ₹30 Cr) with ₹269 Cr cash",
+      "ROCE at 18.1% clears Munger's 15% threshold; finance costs fell 12.4% CAGR over 9 years showing capital discipline improving"
+    ],
+    "key_risks": [
+      "Acquisition binge: investing CF was -₹203 Cr (FY24) then -₹421 Cr (FY25) — serial acquirers rarely compound well without a strong integration playbook",
+      "Low promoter stake of 26.88% signals limited skin-in-the-game; management's alignment with long-term shareholders is unclear",
+      "FCF of only ₹62 Cr vs net profit ₹188 Cr in FY25 (FCF conversion ~33%) — heavy capex and working capital absorption raises earnings quality concerns"
+    ],
+    "red_flags": [
+      "FY21 net loss of -₹192 Cr (vs EBITDA of ₹223 Cr) implies massive write-offs — likely from prior bad acquisitions, a pattern that may recur given current M&A pace",
+      "9-year revenue CAGR of only 5.7% reveals that the business destroyed value for nearly a decade before the recent revival",
+      "Fragmented product portfolio spanning transaction banking, trade finance, smart cities, data centers, and AI labs — complexity is the enemy of durable returns"
+    ],
+    "detailed_analysis": "Applying inversion first: Aurionpro nearly destroyed itself between FY16-FY21, with revenue collapsing from ₹710 Cr to ₹374 Cr and booking a ₹192 Cr net loss in FY21. The culprit appears to be prior acquisitions and write-downs (other income swung -₹118 Cr in FY21). Now the company is repeating the acquisition playbook at pace — ₹624 Cr in investing outflows over just two years. The critical question Munger would ask: does management have a proven integration capability, or is it simply buying revenue growth? The evidence is ambiguous at best. The 26.88% promoter stake is a structural concern — insiders own barely a quarter of the business they run.\n\nOn the positive side, the recent operational quality is genuine. Operating margins expanded to 17.4%, EBITDA nearly doubled in three years, and the balance sheet is clean. Forward P/E of ~17x is not outrageous if 25-30% earnings growth sustains. But ROIC is not yet the 20%+ that signals a true compounding machine, FCF conversion is weak (₹62 Cr FCF vs ₹188 Cr net profit), and the business complexity across 8+ product lines makes it hard to identify a durable, defensible moat. This is a business recovering from past sins and currently riding BFSI digitization tailwinds — worth monitoring, but not a Munger-grade fortress at this stage.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "fair",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 67333,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08903174999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11493,
+      "cache_read_input_tokens": 9030,
+      "output_tokens": 2881,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11493,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 482,
+          "cache_read_input_tokens": 9030,
+          "cache_creation_input_tokens": 2463,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2463
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

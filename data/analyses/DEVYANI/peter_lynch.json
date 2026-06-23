@@ -1,0 +1,68 @@
+{
+  "symbol": "DEVYANI",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-19T13:07:57.366253Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Devyani operates high-quality franchise brands (KFC, Pizza Hut) in India's fast-growing QSR market, but the financial structure is broken: the company is loss-making (net -INR 7 Cr in FY25), carries a debt-to-equity ratio of 1.71x, and trades at a forward P/E of 127x — an absurd multiple for a restaurant chain that can't cover its interest costs with operating income. High debt plus thin margins plus extreme valuation equals avoid.",
+    "key_strengths": [
+      "Revenue CAGR of 19.3% over 9 years and EBITDA CAGR of 29.4% show genuine consumer demand for KFC/Pizza Hut brands in India — the top-line story is real",
+      "Operating cash flow is consistently strong and growing (INR 900 Cr in FY25 vs INR 301 Cr in FY20) — the stores themselves generate cash before interest and D&A",
+      "Promoter holding of 61.37% (RJ Corp) means the controlling family has direct financial interest in the outcome"
+    ],
+    "key_risks": [
+      "Debt/equity of 1.71x is far above my 0.60 threshold; borrowings of INR 3,343 Cr drove finance costs to INR 267 Cr in FY25, swamping the thin operating margins",
+      "Net profit has been negative in 7 of 10 years including FY25 (-INR 7 Cr) — the company cannot convert restaurant-level EBITDA into shareholder earnings",
+      "Forward P/E of 127.2x means the stock is pricing in a massive earnings normalization that requires debt reduction AND margin expansion AND continued unit growth simultaneously"
+    ],
+    "red_flags": [
+      "The company's EBITDA includes lease accounting (Ind AS 116) benefits — strip those out and the true restaurant economics look even weaker than the 4.17% operating margin suggests",
+      "Borrowings have nearly tripled from INR 1,254 Cr (FY22) to INR 3,343 Cr (FY25) as aggressive store expansion is debt-funded — the unit economics must be excellent for this to work, yet profits remain elusive"
+    ],
+    "detailed_analysis": "Devyani is a textbook Lynch trap: a consumer-facing brand you recognize (KFC, Pizza Hut), growing in an exciting market (India QSR), surrounded by optimistic narratives — but with the kind of financial structure that Lynch's rule #1 forbids. Debt/equity of 1.71x in a restaurant business means every interest rate hike and every inflation spike directly attacks the P&L. The company's OCF of INR 900 Cr is encouraging at face value, but INR 267 Cr goes straight to interest and heavy D&A swallows the rest, leaving net losses.\n\nThe Indian QSR space is genuinely attractive long-term, but there are better-capitalized ways to play it. At a forward P/E of 127x for a loss-making, highly leveraged restaurant chain, the market is asking you to front-run 10 years of successful execution. Lynch's advice: wait until the company is cleanly profitable for at least 2-3 years, D/E is below 0.5, and the forward P/E is below 30x. Until then, this is a story without the numbers.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 216978,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.2954337,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 27568,
+      "cache_read_input_tokens": 15999,
+      "output_tokens": 12483,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 27568,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 796,
+          "cache_read_input_tokens": 15999,
+          "cache_creation_input_tokens": 11569,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 11569
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

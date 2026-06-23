@@ -1,0 +1,70 @@
+{
+  "symbol": "GLAND",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-22T16:36:13.253786Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Gland Pharma possesses an admirably clean balance sheet but trades at more than double my required P/E and P/B thresholds, with no margin of safety whatsoever. Net profits have nearly halved from their 2022 peak, yet Mr. Market asks you to pay 34x earnings — a price that demands perpetual optimism, not prudent analysis.",
+    "key_strengths": [
+      "Near-debt-free balance sheet (D/E 0.03) with INR 2,556 Cr cash vs only INR 314 Cr debt — fortress liquidity",
+      "Operating cash flow positive all 5 years with consistent FCF generation (~INR 521 Cr in 2025)",
+      "Dominant injectable formulations franchise with high gross margins (58.86%) and U.S./Europe export exposure"
+    ],
+    "key_risks": [
+      "Earnings in steep decline: net profit collapsed from INR 1,212 Cr (2022) to INR 699 Cr (2025), a -2% 5-year CAGR — the business is earning less despite growing revenues",
+      "ROE of only 7.81% on an INR 9,562 Cr equity base is capital destruction territory; retained earnings compound at a rate below any reasonable hurdle",
+      "Chinese parent Fosun Pharma holds 51.83% — a governance overhang that prudent investors cannot ignore, particularly given geopolitical tensions affecting U.S. FDA approvals"
+    ],
+    "red_flags": [
+      "Graham Number calculated at ~INR 743 (√(22.5 × EPS ~42 × BVPS ~580)) vs current price INR 1,797 — stock trades at a 142% PREMIUM to intrinsic value",
+      "P/E of 34.3 is more than double my hard ceiling of 15; P/B of 3.1 is more than double my ceiling of 1.5 — both tests fail simultaneously",
+      "Net profit nearly halved from peak (INR 1,212 Cr → INR 699 Cr) while revenue grew 28% — severe, unexplained margin erosion demands caution",
+      "Finance costs exploded from INR 5 Cr (2022) to INR 42 Cr (2025), an 8x rise, in a company that was previously nearly interest-free"
+    ],
+    "detailed_analysis": "Applying my quantitative filters with no sentiment, Gland Pharma fails every valuation test I require. The Graham Number — the geometric mean of 22.5× earnings and book value — yields approximately INR 743, meaning the market currently charges a 142% premium over what the numbers justify. A P/E of 34.3 and P/B of 3.10 are not merely elevated; they embed a decade of optimistic growth assumptions into today's price. My cardinal rule is that I never pay for the future — only for the demonstrable present — and the present is deteriorating: net profit has contracted at -2% CAGR over five years while revenues grew at 16.4%, a divergence that signals serious cost or pricing pressure within the business, not temporary noise.\n\nThe balance sheet is genuinely praiseworthy — minimal debt, strong cash reserves, and consistent free cash flow — but a pristine balance sheet does not justify paying an extravagant price. The ROE of 7.81% on nearly INR 9,600 Cr of shareholders' equity is particularly troubling: management is retaining capital and compounding it at rates that would embarrass a savings account. The Fosun Pharma parent concentration (51.83%) introduces an additional governance discount that any disciplined analyst must apply. I would require a price closer to INR 700–750 before this stock offers an adequate margin of safety — roughly a 60% decline from today's level. Until then, I place it firmly in the \"too dear\" column.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 47144,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0737193,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9082,
+      "cache_read_input_tokens": 11176,
+      "output_tokens": 2420,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9082,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 470,
+          "cache_read_input_tokens": 9126,
+          "cache_creation_input_tokens": 2006,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2006
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

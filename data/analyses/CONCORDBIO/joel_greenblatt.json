@@ -1,0 +1,68 @@
+{
+  "symbol": "CONCORDBIO",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-19T13:04:04.006266Z",
+  "analysis": {
+    "score": 6,
+    "recommendation": "HOLD",
+    "investment_thesis": "Concord Biotech is one of the cleanest high-ROIC businesses in Indian pharma — ROCE of 28.2%, near-zero debt, consistent 18.6% revenue CAGR, and deep expertise in fermentation-based APIs for immunosuppressants and oncology that create genuine barriers to entry. The Magic Formula concern is valuation alone: earnings yield of ~4.5% (EBIT INR 506 Cr / EV ~INR 11,318 Cr) is below the 6% floor, meaning the quality is real but the price is full.",
+    "key_strengths": [
+      "ROCE of 28.2% sustained consistently over 5 years (EBIT growing from INR 205 Cr to INR 506 Cr), demonstrating durable capital efficiency in fermentation technology that incumbents have spent decades developing",
+      "Debt has been nearly eliminated: borrowings fell from INR 52 Cr (FY2020) to INR 2 Cr (FY2025), while equity grew to INR 1,827 Cr — entirely self-funded growth is the hallmark of a great business",
+      "Revenues growing at 18.6% CAGR with operating margins of 28.9% — a rare combination in capital-intensive API manufacturing, reflecting pricing power in niche therapeutic categories"
+    ],
+    "key_risks": [
+      "Earnings yield of ~4.47% means you are paying about 22x EBIT — the Magic Formula only works well when you combine high ROIC with a cheap entry price, and this entry price is not cheap",
+      "FCF is below net profit: INR 134 Cr FCF vs INR 372 Cr net profit in FY2025, with CWIP still elevated at INR 74 Cr — ongoing capex cycles could keep FCF suppressed",
+      "Customer concentration risk in regulated pharma (top customers likely large generic/innovator companies); any single-customer derisking or API market pricing compression could dent margins"
+    ],
+    "red_flags": [
+      "FY2022 showed an earnings dip (net profit INR 175 Cr vs INR 235 Cr prior year) suggesting some cyclicality or one-time headwind — not a pure linear compounder",
+      "Investing outflows have exceeded INR 150 Cr every year since FY2020 — the business continues to require significant fixed asset investment to sustain growth"
+    ],
+    "detailed_analysis": "Concord Biotech passes the ROIC test with flying colors: ROCE 28.2%, operating margin 28.9%, and a debt-to-zero journey over 5 years tell me this business earns well above its cost of capital and management allocates capital intelligently. The fermentation technology moat (immunosuppressants like tacrolimus, cyclosporine; oncology APIs like everolimus) takes decades to replicate and commands premium pricing from regulated market customers.\n\nThe valuation is the constraint. At EV ~INR 11,318 Cr vs EBIT of INR 506 Cr, the earnings yield is 4.47% — you are paying for the next 5 years of growth upfront. A Magic Formula purist would pass and wait. However, if the forward P/E of 26.96x is achievable (implying ~INR 420 Cr net profit in FY2026), then earnings yield improves toward 6%, which would enter actionable territory. I would watch for an entry point closer to 30–32x trailing P/E, or on any broader market correction that doesn't impair the fundamental earnings power.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "excellent",
+      "financial_health": "excellent",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 186158,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.26926605000000003,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 26063,
+      "cache_read_input_tokens": 15936,
+      "output_tokens": 11116,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 26063,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 824,
+          "cache_read_input_tokens": 15936,
+          "cache_creation_input_tokens": 10127,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 10127
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

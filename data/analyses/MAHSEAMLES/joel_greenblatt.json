@@ -1,0 +1,68 @@
+{
+  "symbol": "MAHSEAMLES",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T18:17:28.754793Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Maharashtra Seamless screens as a decent-but-not-exceptional Magic Formula candidate: earnings yield of ~10.6% (EBIT 908 Cr / EV ~8,583 Cr) and ROCE of 16.6% both fall just below my preferred thresholds of 12% and 20% respectively. The zero-debt balance sheet and FCF generation are attractive, but cyclical steel earnings make sustained high ROIC unlikely.",
+    "key_strengths": [
+      "Zero debt (D/E=0.00): balance sheet is pristine, finance costs collapsed from 64 Cr (2020) to 3 Cr (2025), freeing capital",
+      "Strong 9-year operating income CAGR of 42.3% and FCF of 586 Cr in 2025 show real earnings power",
+      "Cheap valuation: P/E 10.2x, EV/EBITDA 7.59 — meaningful margin of safety for a capital-light industrial"
+    ],
+    "key_risks": [
+      "Cyclical steel/OCTG sector — earnings spikes (FY22-24) likely reflect commodity cycle, not durable moat; FY25 profits already down 18% YoY to 777 Cr",
+      "ROCE of 16.6% and earnings yield of ~10.6% both fail Magic Formula hurdles (>20% and >12%), suggesting mediocre capital efficiency for the risk",
+      "Revenue stagnating/declining: 5,716 Cr (FY23) → 5,404 (FY24) → 5,269 (FY25) — top-line momentum has reversed"
+    ],
+    "red_flags": [
+      "FY25 net profit fell 18% and revenue fell 5% — early signs of cyclical earnings mean-reversion",
+      "Other Income swings wildly (−197 Cr in FY20 to +196 Cr in FY25), suggesting non-core earnings are propping up reported profits"
+    ],
+    "detailed_analysis": "Running the Magic Formula on MAHSEAMLES: EBIT of INR 908 Cr against an enterprise value of ~INR 8,583 Cr (market cap 8,614.8 + debt 10 − cash 42) yields an earnings yield of roughly 10.6% — respectable but shy of my 12% entry threshold. ROCE of 16.6% (provided) is similarly below the 20%+ I want to see before calling a business \"good\" by Magic Formula standards. The EV/EBITDA of 7.59x is cheap, and the stock is undeniably inexpensive on earnings multiples, but cheap alone doesn't qualify — I need BOTH metrics firing simultaneously.\n\nThe structural concern is cyclicality. Seamless pipes are tied to oil & gas capex and infrastructure spending; the spectacular profit run from FY22–FY24 (net profit 692→768→952 Cr) now looks like cycle peak earnings. FY25 already shows deceleration (777 Cr net profit, 908 Cr EBIT), and both revenue and margins are compressing. The zero-debt balance sheet is genuinely excellent and the business has earned its keep over a decade (20% revenue CAGR), but Magic Formula investing requires sustainable high-ROIC businesses — steel cyclicals rarely qualify. This is a fair business at a fair price, not a great business at a bargain.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "good",
+      "financial_health": "excellent",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 45736,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0813282,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11176,
+      "cache_read_input_tokens": 9114,
+      "output_tokens": 2445,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11176
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 423,
+          "cache_read_input_tokens": 9114,
+          "cache_creation_input_tokens": 2062,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2062,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

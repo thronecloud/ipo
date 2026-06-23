@@ -1,0 +1,68 @@
+{
+  "symbol": "GESHIP",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-22T16:34:37.245937Z",
+  "analysis": {
+    "score": 6,
+    "recommendation": "HOLD",
+    "investment_thesis": "GESHIP trades below its Graham Number (~INR 1,983 vs. price of INR 1,424), carries virtually no debt (D/E 0.08), and holds net cash of ~INR 1,949 Cr — a genuinely sound balance sheet by my standards. However, shipping earnings are deeply cyclical: the 10-year normalized net profit (~INR 1,091 Cr/year) implies a normalized P/E of ~18.6x, well above my threshold of 15, suggesting current earnings are near a cyclical peak rather than a sustainable base.",
+    "key_strengths": [
+      "Near-pristine balance sheet: D/E 0.08, net cash of ~INR 1,949 Cr (cash 4,112 Cr minus total debt 2,163 Cr) — rare for any industrial company",
+      "Price below Graham Number: INR 1,424 vs. computed Graham Number of ~INR 1,983 (sqrt of 22.5 × ~164 EPS × ~1,066 BVPS)",
+      "Interest coverage ~11.3x (operating income 2,677 Cr / finance cost 236 Cr) and 5/5 years positive OCF — strong debt-service capacity"
+    ],
+    "key_risks": [
+      "Cyclical earnings: losses in FY2018 (–210 Cr) and FY2019 (–21 Cr) break my required 5-year consecutive positive earnings record; normalized 10-year average profit of ~1,091 Cr implies normalized P/E ~18.6x",
+      "Shipping rates are mean-reverting: FY2023–2025 profits (2,575 / 2,614 / 2,344 Cr) are likely cyclical peaks inflated by post-COVID freight rate spikes, not a durable earning power base",
+      "Revenue CAGR of only 3.8% over 9 years offers no buffer against a freight rate correction; investing CF turned negative in FY2024–2025, signaling capex cycle that may pressure free cash flow"
+    ],
+    "red_flags": [
+      "Normalized P/E of ~18.6x (10-year average earnings) exceeds my 15x ceiling — optically cheap P/E of 9x reflects a cyclical peak, not proven earning power",
+      "Two years of net losses (2018–2019) within the last decade disqualify this from my 'no loss in 5 consecutive years' standard"
+    ],
+    "detailed_analysis": "GESHIP is one of the more interesting industrials I have encountered from a balance sheet standpoint. With D/E of 0.08 and cash exceeding total debt by nearly INR 1,949 Cr, the company has done the hard work of de-leveraging during good times — borrowings fell from INR 5,295 Cr in FY2020 to just INR 1,254 Cr in FY2025. Equity compounded from 6,796 Cr to 15,225 Cr over five years. The P/B of 1.34 and a current price below the Graham Number (~1,983) suggest the market is not fully pricing in net asset value, which is precisely the kind of situation I seek.\n\nMy principal reservation is the same one I apply to any shipping, steel, or commodity enterprise: the earning power is cyclical, not stable. When I smooth the net profit over the full decade (FY2016–FY2025), the average is approximately INR 1,091 Cr — less than half the recent run-rate. At that normalized figure, the stock trades at roughly 18.6x earnings, above my threshold of 15x and materially above my preferred 10x. The two loss years of FY2018–FY2019 are instructive: global freight markets corrected and this company posted red ink. I require at least five consecutive years of uninterrupted profits before I regard earnings as durable, and that standard is not met on the full record. At the current price, I see adequate but not compelling margin of safety — suitable to hold if already owned, but not a new purchase at a sufficient discount to my conservatively estimated intrinsic value.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "good",
+      "financial_health": "excellent",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 62621,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09577005,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10301,
+      "cache_read_input_tokens": 11341,
+      "output_tokens": 3582,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10301,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 569,
+          "cache_read_input_tokens": 9291,
+          "cache_creation_input_tokens": 3060,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 3060
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

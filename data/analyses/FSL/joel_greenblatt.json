@@ -1,0 +1,69 @@
+{
+  "symbol": "FSL",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-22T16:37:19.629188Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Firstsource is a decent BPO/IT services business with consistent but unspectacular growth (~10.6% revenue CAGR), yet it fails both Magic Formula screens — Earnings Yield of only ~6.5% (EV ≈ INR 19,095 Cr vs. EBIT of INR 1,238 Cr) and ROCE of 15.4% fall well short of the >12% and >25% thresholds I require. At EV/EBITDA of 15.5x and P/E of 24x, the market is pricing in a business quality that the returns on capital simply don't justify.",
+    "key_strengths": [
+      "Consistent OCF generation — 5/5 years positive, with INR 701 Cr OCF in FY25 and operating income CAGR of 13.4% over 9 years",
+      "Diversified revenue across Healthcare, BFS, and CMT verticals reduces client concentration risk",
+      "Strong promoter holding at 53.66% with meaningful DII ownership (25.49%) signals institutional confidence"
+    ],
+    "key_risks": [
+      "Debt surged to INR 2,569 Cr in FY25 (from INR 1,526 Cr in FY24), likely acquisition-driven, while cash collapsed to just INR 13 Cr — a dangerously thin liquidity cushion",
+      "Finance costs nearly tripled from INR 61 Cr (FY16) to INR 184 Cr (FY25), compressing the earnings available to equity holders and eating into ROIC",
+      "FCF declining sharply — from INR 806 Cr (FY21) to INR 477 Cr (FY25) — while capex jumped to INR 241 Cr in FY25 vs. ~INR 85 Cr historically, suggesting a capital-intensity inflection"
+    ],
+    "red_flags": [
+      "FY25 Investing CF of -744 Cr suggests a large unannounced or recent acquisition, funded by doubling debt — integration risk is real and unquantifiable from available data",
+      "Cash balance of only INR 13 Cr against INR 2,569 Cr of total debt is a structural concern if revenue growth decelerates",
+      "Net profit CAGR (9.6%) lagging revenue CAGR (10.6%) and operating income CAGR (13.4%) means margin expansion is not flowing to the bottom line — financing costs are the culprit"
+    ],
+    "detailed_analysis": "Running the Magic Formula on Firstsource: EBIT of INR 1,238 Cr against an Enterprise Value of ~INR 19,095 Cr (market cap INR 16,539 Cr + debt INR 2,569 Cr – cash INR 13 Cr) yields an Earnings Yield of just 6.5% — barely above my 6% floor and well below the 12%+ I find attractive. ROCE of 15.4% is adequate for a labor-intensive BPO but nowhere near the 25%+ that characterizes a genuinely high-quality business deserving a premium multiple. Both Magic Formula metrics are in the mediocre range simultaneously, which is the worst outcome — neither cheap nor exceptional.\n\nThe FY25 data introduces new concerns. Debt nearly doubled YoY and capex tripled to INR 241 Cr, yet FCF dropped to INR 477 Cr — the lowest since FY20. A business that grows revenue at 10.6% CAGR while letting debt balloon and FCF shrink is consuming, not creating, shareholder value per rupee deployed. At P/E 24x and EV/EBITDA 15.5x, the market is paying a growth premium for what is, by ROIC metrics, an average-quality BPO franchise. I'd need to see the stock at closer to 12-14x EBITDA with ROCE sustainably above 20% before the Magic Formula lights turn green.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 48069,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08202015000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11427,
+      "cache_read_input_tokens": 9383,
+      "output_tokens": 2423,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11427,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 419,
+          "cache_read_input_tokens": 9383,
+          "cache_creation_input_tokens": 2044,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2044
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

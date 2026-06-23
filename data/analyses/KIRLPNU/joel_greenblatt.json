@@ -1,0 +1,68 @@
+{
+  "symbol": "KIRLPNU",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T18:04:11.913219Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "AVOID",
+    "investment_thesis": "Kirloskar Pneumatic is a genuinely good business with ~25% ROIC, but the Magic Formula demands BOTH quality AND cheapness — at an earnings yield of just ~3.6% (EBIT/EV), it fails the value test decisively. You're paying 42x earnings for a decent industrial compounder, which is not how you beat the market.",
+    "key_strengths": [
+      "ROIC ~25% (EBIT INR 294 Cr / Capital Employed ~INR 1,150 Cr) — clears the Magic Formula quality bar",
+      "Essentially debt-free (D/E 0.01) with INR 63 Cr cash; OCF positive all 5 years",
+      "Operating leverage kicking in: EBIT margin expanded from ~11% in FY22 to ~18% in FY25 on 17% revenue CAGR"
+    ],
+    "key_risks": [
+      "Earnings yield ~3.6% (EBIT 294 / EV ~8,155 Cr) — Magic Formula minimum is 12%; this stock is deeply overpriced on this metric",
+      "P/E of 42x leaves no margin of safety if industrial capex cycle turns or order inflows slow",
+      "Capex running at INR 72–78 Cr/year; any demand softness compresses FCF quickly given asset-intensity of the business"
+    ],
+    "red_flags": [
+      "Earnings yield of ~3.6% is less than a third of the 12% Magic Formula threshold — valuation alone is a disqualifier",
+      "P/B of 7.15x on a cyclical industrial manufacturer implies the market has already priced in years of perfect execution"
+    ],
+    "detailed_analysis": "Running the Magic Formula: EBIT for FY25 is INR 294 Cr. Enterprise Value = Market Cap (8,207) + Debt (11) − Cash (63) ≈ INR 8,155 Cr. Earnings Yield = 294/8,155 = **3.6%** — catastrophically low by Magic Formula standards (I want ≥12%). Return on Capital = EBIT/Capital Employed ≈ 294/1,150 = **25.6%**, which aligns with the reported ROCE of 24.5% and clears my 20% quality threshold. One metric passes, one fails badly. The Magic Formula only works when BOTH rank well simultaneously.\n\nThe business is genuinely improving — revenue grew from INR 1,015 Cr (FY22) to INR 1,640 Cr (FY25), operating profit nearly tripled, and free cash flow turned strongly positive at INR 137 Cr in FY25. But the market has already priced all of this in at 42x trailing earnings. Even on the forward P/E of 28.5x (implying ~INR 288 Cr net profit next year), the forward earnings yield is still only ~3.5%. India's industrial capex boom has made this a crowded, expensive trade. I'll wait for a significant de-rating before the Magic Formula would endorse ownership.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 42401,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0795141,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10960,
+      "cache_read_input_tokens": 8917,
+      "output_tokens": 2382,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10960
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 367,
+          "cache_read_input_tokens": 8917,
+          "cache_creation_input_tokens": 2043,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2043,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

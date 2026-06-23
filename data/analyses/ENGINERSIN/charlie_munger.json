@@ -1,0 +1,70 @@
+{
+  "symbol": "ENGINERSIN",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-22T16:31:35.811728Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "EIL is a debt-free government-backed engineering consultancy with genuine competitive moat in refinery/petrochemical design, earning ROCE >25% — but flat revenues over 5 years (INR 3,237 Cr in 2020 vs INR 3,088 Cr in 2025) and catastrophically poor cash conversion (OCF INR 109 Cr vs Net Profit INR 580 Cr in FY25) disqualify it as a compounder. A PSU culture caps upside while working capital dysfunction signals real earnings quality risk.",
+    "key_strengths": [
+      "Debt-free fortress balance sheet (D/E 0.01, borrowings mere INR 20 Cr) with zero leverage risk",
+      "ROCE of 25% and 28% operating margins reflect a genuinely asset-light, high-value consultancy franchise in a specialized domain",
+      "51% GOI ownership gives captive access to HPCL/BPCL/ONGC capex cycles — India's refinery expansion provides a structural demand floor"
+    ],
+    "key_risks": [
+      "Earnings quality is deeply suspect: FY25 OCF (INR 109 Cr) is only ~19% of Net Profit (INR 580 Cr) — far below my 80% threshold; working capital has consumed cash in 3 of the last 5 years",
+      "Revenue stagnation: INR 3,088 Cr in FY25 is below INR 3,237 Cr in FY20 despite India's infrastructure supercycle — a serious indictment of growth optionality",
+      "PSU governance ceiling: government ownership limits management quality, pricing power, and strategic agility; compensation structures reward bureaucracy, not capital allocation"
+    ],
+    "red_flags": [
+      "FCF/Net Income of ~12% in FY25 (INR 68 Cr FCF vs INR 580 Cr net profit) — massive red flag on earnings quality",
+      "Negative free cash flow in FY23 (INR -147 Cr) alongside reported net profit of INR 346 Cr — accrual earnings materially disconnected from cash reality",
+      "Other Income (INR 160 Cr in FY25) constitutes ~28% of net profit — treasury income inflating headline earnings",
+      "FY21 collapse: Net Profit dropped to INR 249 Cr while Other Income fell to INR 34 Cr — illustrates core earnings vulnerability"
+    ],
+    "detailed_analysis": "Engineers India is a curiosity — an asset-light government consultancy with genuine intellectual property in refinery and petrochemical engineering, yet it fails the most basic test I apply: can the reported profits actually be collected in cash? FY25 net profit of INR 580 Cr versus operating cash flow of INR 109 Cr is not an anomaly — over the past 5 years, FCF totals roughly INR 332 Cr against cumulative net profits exceeding INR 1,760 Cr. That ratio is approximately 19%. I require 80%+. This pattern suggests either aggressive revenue recognition on long-duration government contracts, chronic receivables buildup from slow-paying PSU clients, or both. Either way, the accounting does not flatter the business.\n\nThe valuation at 17.5x P/E and 5x P/B is not egregious given the clean balance sheet and ROCE above 25%, but it prices in a growth story that the revenue line emphatically does not support. Over nine years, revenue grew at 8% CAGR, yet the last five years show absolute stagnation. With India spending heavily on refinery capacity expansion and fertilizer plants, EIL should be a natural beneficiary — yet it is not growing. This is precisely the kind of business I described as a \"cigar butt with one puff left\": decent returns on existing capital but no evidence of reinvestment opportunity at attractive rates. At current prices with a P/B of 5x, you are paying for a franchise that the management (structurally constrained by its PSU nature) may never fully exploit.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 59320,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09607815,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11903,
+      "cache_read_input_tokens": 9193,
+      "output_tokens": 3245,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11903,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 579,
+          "cache_read_input_tokens": 9193,
+          "cache_creation_input_tokens": 2710,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2710
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

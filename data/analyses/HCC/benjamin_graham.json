@@ -1,0 +1,71 @@
+{
+  "symbol": "HCC",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T17:33:14.564422Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "HCC is a financially distressed construction company trading at roughly 3× its Graham Number (~INR 6.35), with a decade of accumulated losses that only recently lifted book value above zero, no dividend history, and interest coverage of barely 1.2×. There is no margin of safety whatsoever at INR 19.10.",
+    "key_strengths": [
+      "Debt reduction is tangible: borrowings fell from INR 4,777 Cr (2021) to INR 1,610 Cr (2025), preserving solvency",
+      "Operating cash flow positive all 5 of the last 5 years, suggesting the core project business generates real cash",
+      "Finance costs declining (-7.6% CAGR), slowly reducing the interest burden that crushed prior earnings"
+    ],
+    "key_risks": [
+      "Earnings record is dismal — net losses in 6 of the last 10 years; no Graham-required 3–5 consecutive profitable years",
+      "Interest coverage dangerously thin: EBITDA INR 703 Cr ÷ Finance Cost INR 600 Cr ≈ 1.17×, far below my 3.5× minimum",
+      "Revenue shrinking at -4.6% CAGR over 9 years (INR 8,540 Cr → INR 5,603 Cr) — the business is contracting, not expanding"
+    ],
+    "red_flags": [
+      "Book value was NEGATIVE every single year from 2020 through 2024 — the company was technically insolvent on an asset basis for half a decade",
+      "Graham Number ≈ INR 6.35 (sqrt(22.5 × EPS 0.43 × BVPS 4.17)); current price of INR 19.10 is 3× that figure — no margin of safety",
+      "Debt/Equity of 1.47 is nearly 3× my maximum threshold of 0.5",
+      "Promoter stake of only 16.72% signals low insider conviction and governance risk",
+      "Zero dividend history — shareholders have received no cash return while bearing years of losses"
+    ],
+    "detailed_analysis": "HCC fails virtually every quantitative test I have ever devised. The P/E of 30× versus my ceiling of 15, a P/B of 3.21× versus my ceiling of 1.5, and a Debt/Equity of 1.47 versus my maximum of 0.5 are disqualifying on their own. But the deeper problem is the balance sheet itself: total equity was negative from 2020 through 2024, meaning accumulated losses had wiped out shareholders' entire stake. Book value turned barely positive in 2025 at INR 1,092 Cr only after what appears to be debt restructuring and asset disposals — not from genuine earned profits. A business that destroys book value for four consecutive years is not one I would trust to preserve capital.\n\nThe earnings record is equally troubling. Net profit has oscillated wildly: -537, -983, -1,090, -50, +197, -610, +563, -28, +478, +113 over the last decade. That is six loss years in ten. I require steady, demonstrated earning power before I will even consider a price. The 2025 net profit of INR 113 Cr on revenue of INR 5,603 Cr represents a net margin of barely 2%, and a significant portion of reported income comes from volatile \"other income\" (INR 653 Cr), which is larger than operating income itself (INR 634 Cr) — a deeply unreliable earnings quality signal. The interest coverage of 1.17× means one bad project cycle could tip the company back into insolvency. At INR 19.10, Mr. Market is pricing in a recovery that the financial statements have not yet earned.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 46667,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07443899999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9254,
+      "cache_read_input_tokens": 11125,
+      "output_tokens": 2426,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9254
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 267,
+          "cache_read_input_tokens": 9075,
+          "cache_creation_input_tokens": 2229,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2229,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

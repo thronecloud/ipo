@@ -1,0 +1,70 @@
+{
+  "symbol": "544422",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-20T20:03:39.137816Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Abram Food's 0.52% ROE indicates virtually no earning power despite a superficially reasonable 10.6x P/E — the low multiple merely reflects near-zero profits on the equity base. Without a multi-year earnings record, balance sheet data, dividend history, or margin of safety evidence, this is a speculative micro-cap that fails nearly every Graham quantitative filter.",
+    "key_strengths": [
+      "Promoter holding of 67.33% indicates insider alignment",
+      "Headline P/E of 10.6 sits below my <15 threshold",
+      "Small scale (INR 32.5 Cr mcap) leaves room for operational improvement"
+    ],
+    "key_risks": [
+      "ROE of 0.52% signals essentially no earning power — a cardinal Graham failure",
+      "No disclosed book value, current ratio, debt-to-equity, or interest coverage",
+      "Recent BSE listing (micro-cap) lacks the 5-10 year earnings record I demand"
+    ],
+    "red_flags": [
+      "ROE of 0.52% is negligible — earnings are effectively nil relative to capital employed",
+      "No dividend yield disclosed",
+      "No multi-year earnings stability evidence for an 'Other Food Products' trader",
+      "P/E of 10.6 on minuscule earnings is not cheap — it's a small number divided by a smaller number"
+    ],
+    "detailed_analysis": "From a strict Graham lens, ROE of 0.52% is disqualifying on its own. A business that earns barely half a percent on shareholder equity has no demonstrable earning power, and the apparently modest 10.6x P/E is an illusion of cheapness — when earnings are trivially small, even a low multiple represents a steep price relative to the productivity of capital. I need proven earning power of at least 3-5 years with consistent profits and an interest coverage above 3.5x; none of that is shown here, and the FMCG \"agro-based products\" trading description suggests a thin-margin commodity reseller rather than a durable franchise.\n\nCritical data is missing: book value (hence no P/B or Graham Number calculation), current ratio, debt-to-equity, and dividend history. Without these, I cannot even compute a margin of safety, and Graham's first rule is not to lose money. Promoter ownership at 67.33% is acceptable but meaningless absent financial strength. This is a speculative micro-cap on the BSE — precisely the kind of situation where Mr. Market's price tells you nothing because the underlying value is unknown and the earning record is inadequate. AVOID until a multi-year audited track record of stable, growing earnings and a clean balance sheet emerge at a discount to tangible book.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "insufficient_data",
+      "valuation": "overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 40152,
+    "model_used": "opus",
+    "total_cost_usd": 0.09643075000000001,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 9059,
+      "cache_read_input_tokens": 13464,
+      "output_tokens": 1322,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9059,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10578,
+          "cache_creation_input_tokens": 1367,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1367
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

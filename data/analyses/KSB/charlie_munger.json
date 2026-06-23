@@ -1,0 +1,68 @@
+{
+  "symbol": "KSB",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T18:18:34.372807Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "KSB Limited is a genuinely excellent industrial business — debt-free, ROCE of 24.5%, and a 9-year profit CAGR of 16.4% backed by German parent technology — but at 58x trailing P/E and EV/EBITDA of 44x, the market has already awarded it a premium that leaves no margin of safety. A wonderful company at a foolish price is still a foolish purchase.",
+    "key_strengths": [
+      "Essentially debt-free balance sheet (borrowings INR 5 Cr vs equity INR 1,679 Cr) with ROCE of 24.5% — rare combination in Indian industrials",
+      "Consistent compounding: Revenue 14% CAGR, Net Profit 16.4% CAGR over 9 years with expanding operating and EBITDA margins across the full cycle",
+      "Strong German parent (KSB SE) provides proprietary pump/valve technology and global customer relationships — a durable moat in specialized industrial machinery"
+    ],
+    "key_risks": [
+      "Valuation is pricing perfection: P/E 58x, EV/EBITDA 44x for a ~14% revenue grower leaves no room for error — any cyclical slowdown or margin compression causes severe de-rating",
+      "Free cash flow conversion collapsed in 2025: FCF = INR 0 Cr vs Net Profit of INR 270 Cr (OCF only INR 93 Cr), signaling heavy working capital absorption and capex that questions earnings quality",
+      "Cyclical end-market exposure: water infrastructure, oil & gas, chemicals, and energy capex are all government/PSU-driven in India — subject to budget delays and policy risk"
+    ],
+    "red_flags": [
+      "FCF/Net Income ratio in FY2025 is ~0% (INR 0 Cr FCF vs INR 270 Cr profit) — fails my >80% earnings quality threshold decisively",
+      "P/E of 58x is not justified by 14% revenue growth; requires heroic assumptions about margin expansion and volume for the next decade to generate adequate returns from today's price"
+    ],
+    "detailed_analysis": "KSB Limited is a business I can understand — specialized pumps and valves for water, energy, and industrial applications, backed by a century-old German engineering parent with genuine technology differentiation. The financial architecture is nearly ideal: zero effective debt, ROCE of 24.5% comfortably above my 20% hurdle, gross margins of 46%, and a decade of uninterrupted revenue and profit growth through multiple cycles including COVID. Promoter holding of 69.8% (the German parent) means the owner-operator alignment I prize. The CWIP rising from INR 25 Cr to INR 89 Cr signals deliberate capacity expansion — not desperation.\n\nHowever, inversion forces the ugly truth: at INR 16,850 Cr market cap on INR 270 Cr of net profit and INR 0 of free cash flow in FY2025, you are paying 58x earnings for a business generating no free cash this year. The capex cycle (INR 94-107 Cr annually) consuming all operating cash flow means the company's reported profits are not yet landing in shareholders' pockets. I have watched many investors overpay for quality and earn mediocre returns for a decade simply because valuation did the work in reverse. This is a business to watch and buy aggressively if the price ever falls 40-50% — perhaps during an industrial capex downturn. Today, it is a hold for those who own it, and an abstention for those who don't.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "excellent",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 63877,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.088863,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11486,
+      "cache_read_input_tokens": 9105,
+      "output_tokens": 2870,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11486
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 526,
+          "cache_read_input_tokens": 9105,
+          "cache_creation_input_tokens": 2381,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2381,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

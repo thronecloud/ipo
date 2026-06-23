@@ -1,0 +1,71 @@
+{
+  "symbol": "CSSL",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-21T08:01:03.669360Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Clear Secured Services trades at INR 111 — a 39% premium to my Graham Number of ~INR 80 — with no margin of safety whatsoever. The business generates consistently negative free cash flow while tripling its debt in two years, the precise opposite of what a defensive investor requires.",
+    "key_strengths": [
+      "Revenue growing solidly: 309 → 476 Cr (+54% in two years)",
+      "ROCE of 20.4% suggests decent capital deployment efficiency",
+      "High promoter holding (73%) aligns management with business continuity"
+    ],
+    "key_risks": [
+      "Free cash flow deeply negative all three years: -3, -7, -26 Cr — worsening trajectory",
+      "Debt nearly tripled: 44 → 128 Cr; Debt/Equity at 0.94x vs my 0.5x ceiling",
+      "Net profit fell to 10 Cr in 2025 despite 37% revenue growth — margin deterioration"
+    ],
+    "red_flags": [
+      "Graham Number ~INR 80; current price INR 111 — no margin of safety, stock is overvalued",
+      "Interest coverage only 3.1x (31 Cr EBIT / 10 Cr finance cost) — below my 3.5x minimum",
+      "Finance costs jumped 2.5x in one year (4 → 10 Cr); company is funding operations with debt",
+      "No dividend history — zero cash returned to shareholders",
+      "CWIP surged from 1 → 22 Cr; capital-intensive expansion funded entirely by borrowings"
+    ],
+    "detailed_analysis": "Clear Secured Services fails virtually every quantitative filter I apply. The P/E of 18.8x exceeds my ceiling of 15x; the Price-to-Book of 1.79x (243 Cr market cap / 136 Cr equity) exceeds my 1.5x limit; and the Graham Number of approximately INR 80 — derived from EPS of ~4.57 and book value per share of ~62 — places the stock at a 39% premium to what the arithmetic says it's worth. The debt-to-equity ratio of 0.94x is nearly double my 0.5x maximum, and interest coverage at 3.1x sits below my 3.5x floor.\n\nWhat troubles me most is the cash flow picture. A business that reported operating cash flow of -2, +1, and -22 Cr over three consecutive years is not generating real earnings — it is consuming capital. Free cash flow of -26 Cr in 2025, financed by 37 Cr of new borrowings, tells me this company is essentially paying its bills with debt. Facility management is an inherently thin-margin, labor-intensive business (net margin of 2.1%), and there is no durable competitive advantage evident in the numbers. Mr. Market is pricing this as a growth story; I see a leveraged services firm with deteriorating profitability and no tangible margin of safety.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 47772,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07178114999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8153,
+      "cache_read_input_tokens": 10078,
+      "output_tokens": 2545,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8153,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 415,
+          "cache_read_input_tokens": 8028,
+          "cache_creation_input_tokens": 2175,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2175
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

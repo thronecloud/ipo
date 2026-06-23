@@ -1,0 +1,69 @@
+{
+  "symbol": "EIDPARRY",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-22T16:25:14.996541Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "EID Parry screens attractively on earnings yield (~14.9% EBIT/EV) but its ROIC of ~16.6% falls meaningfully below the Magic Formula's preferred 25%+ threshold, reflecting its commodity sugar business. Cheap valuation compensates partially, but thin 6.1% operating margins and cyclicality disqualify this from top-decile status.",
+    "key_strengths": [
+      "Earnings yield ~14.9% (EBIT INR 2,633 Cr / EV ~INR 17,699 Cr) — well above the 12% attraction threshold",
+      "Low leverage (D/E 0.18, borrowings only INR 2,666 Cr) with OCF positive all 5 years; strong Murugappa Group parentage",
+      "Net profit CAGR 29.3% over 9 years and EBITDA CAGR 11.2%; nutraceuticals/ethanol segments add higher-margin diversification"
+    ],
+    "key_risks": [
+      "ROIC ~16.6% falls short of Greenblatt's 25%+ benchmark — sugar is a regulated, cyclical commodity with structurally thin margins (operating margin only 6.1%)",
+      "Other Income surged to INR 706 Cr in FY25 (vs INR 83–304 Cr prior years), likely subsidiary dividends — inflates reported earnings and distorts Magic Formula metrics",
+      "Capex accelerating rapidly (INR 449→860→975→1,046 Cr over 4 years) with investing CF -INR 2,783 Cr in FY25; net cash collapsed from INR 1,440 Cr (FY23) to INR 404 Cr (FY25) while borrowings rose to INR 2,704 Cr"
+    ],
+    "red_flags": [
+      "Other Income of INR 706 Cr in FY25 is 2.3x prior year and 27% of EBIT — inflates earnings yield, masks weak core operating profitability",
+      "Holding company structure (owns ~58% Coromandel International) distorts consolidated ROIC and makes segment-level Magic Formula analysis unreliable",
+      "FCF conversion inconsistent: FY23 FCF was -INR 370 Cr despite positive EBITDA of INR 3,157 Cr"
+    ],
+    "detailed_analysis": "Running the Magic Formula: Enterprise Value = Market Cap (INR 15,399 Cr) + Total Debt (INR 2,704 Cr) − Cash (INR 404 Cr) = ~INR 17,699 Cr. EBIT (Operating Income FY25) = INR 2,633 Cr → Earnings Yield = 14.9%, solidly above the 12% threshold and approaching the 15% \"very attractive\" line. However, Return on Capital using the reported ROCE of 16.6% falls short of the Magic Formula's quality filter of 25%+. A commodity sugar business with 6.1% operating margins structurally cannot compound capital at the rates Greenblatt demands — high asset base (INR 29,958 Cr total assets) relative to earnings is the core problem.\n\nThe cheap valuation (EV/EBITDA 5.92x, P/S 0.41x) is the main draw, reflecting the market's skepticism about earnings quality and cyclicality. The FY25 Other Income spike (INR 706 Cr, up from INR 83 Cr in FY23) is a meaningful red flag — it appears to be pass-through subsidiary dividends rather than operational earnings, making the earnings yield look better than the underlying business deserves. Capex is in an aggressive expansion phase (INR 1,046 Cr in FY25), CWIP near doubled to INR 967 Cr, and net cash has depleted sharply. On Magic Formula ranking, EID Parry would score in the middle of the universe: cheap enough to attract attention, but insufficient business quality to earn a conviction buy.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "undervalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 68655,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.10613565,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 12645,
+      "cache_read_input_tokens": 9293,
+      "output_tokens": 3728,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 12645,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 420,
+          "cache_read_input_tokens": 9293,
+          "cache_creation_input_tokens": 3352,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 3352
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

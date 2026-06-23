@@ -1,0 +1,69 @@
+{
+  "symbol": "AKUMS",
+  "persona": "radhakishan_damani",
+  "persona_display_name": "Radhakishan Damani",
+  "analyzed_at": "2026-04-18T16:18:12.206706Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Akums is India's largest pharma CDMO — a decent niche — but erratic earnings (loss of ₹251 Cr in 2022, near-zero profit of ₹1 Cr in 2024, then ₹344 Cr in 2025) disqualify it from my core portfolio on quality grounds. The IPO-driven balance sheet cleanup is encouraging, but the business must prove two or three years of consistent earnings before I consider it seriously.",
+    "key_strengths": [
+      "Balance sheet transformed: D/E collapsed from 0.8x to 0.03x using IPO proceeds, borrowings down from ₹565 Cr to ₹90 Cr in one year",
+      "High promoter holding at 75.26% — skin in the game, aligned with minority shareholders",
+      "OCF positive all 5 years (cumulative ₹1,299 Cr since 2020), and FCF turned positive in 2024-25 at ₹200+ Cr"
+    ],
+    "key_risks": [
+      "Earnings wildly volatile — ₹-251 Cr (2022), ₹1 Cr (2024), ₹344 Cr (2025) — this is not a steady compounder I can trust",
+      "CDMO is B2B contract manufacturing with limited pricing power; margins (9.2% operating) are thin and vulnerable to raw material or client concentration shocks",
+      "P/E of 26.5x is above my 12–20x comfort zone; revenue actually declined YoY (₹4,178 Cr → ₹4,118 Cr) yet valuation remains elevated"
+    ],
+    "red_flags": [
+      "2022 net loss of ₹251 Cr and 2024 net profit of just ₹1 Cr — two loss/near-loss years in recent history is a serious quality failure",
+      "Cumulative capex of ₹1,170 Cr over 2022–25 with FCF negative for two of those years — capital intensity is high for the returns delivered",
+      "Other income spiked to ₹69 Cr in 2025 vs. ₹8 Cr in 2024 — need to understand if 2025 profit is inflated by non-recurring items"
+    ],
+    "detailed_analysis": "Akums operates as a CDMO — making drugs for third-party pharma brands — which means it sells capability, not a consumer brand. That matters to me: there is no durable pricing power or consumer loyalty. The financial history reflects this vulnerability starkly: revenue grew from ₹1,464 Cr (2015) to ₹4,118 Cr (2025), a reasonable ~11% CAGR, but the bottom line swung from ₹-251 Cr loss to ₹344 Cr profit within three years. A business with genuine moat does not produce swings like that. The 2022 implosion (equity fell from ₹885 Cr to ₹622 Cr) and 2024 near-zero profit suggest the business model is more fragile than the 2025 numbers imply.\n\nThe one undeniable positive is the IPO-driven balance sheet reset: debt fell from ₹619 Cr (2023 peak) to ₹88 Cr, and the D/E is now 0.03 — that passes my strict standard. ROE of 17.2% and ROCE of 16.2% are acceptable, but these are 2025 numbers on an inflated equity base from fresh IPO capital; they will compress as deployment happens. At 26.5x P/E with revenue flat YoY and heavy ongoing capex (₹272 Cr in 2025, CWIP still ₹158 Cr), I am not being paid to take the earnings-quality risk. I would need to see two more years of stable 15%+ earnings growth before reconsidering.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 51824,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0766275,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9168,
+      "cache_read_input_tokens": 10945,
+      "output_tokens": 2597,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9168,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 261,
+          "cache_read_input_tokens": 8855,
+          "cache_creation_input_tokens": 2403,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2403
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "SOCL",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-21T07:48:22.571336Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "On surface Magic Formula metrics, Sundrex Oil screens attractively — an implied earnings yield of ~13.7% (1/P.E. of 7.28) and ROCE of 34.8% both clear my minimum thresholds. However, the micro-cap size (INR 35 Cr), commodity business nature, and thin data make this uninvestable for most systematic investors.",
+    "key_strengths": [
+      "Implied earnings yield ~13.7% (1/7.28 P/E) clears my 12% attractiveness threshold",
+      "ROCE of 34.8% exceeds my 25% 'excellent business' benchmark",
+      "Promoter holding of 72% signals high owner-operator alignment"
+    ],
+    "key_risks": [
+      "Micro-cap at INR 35 Cr — extreme illiquidity makes position sizing and exit nearly impossible",
+      "Lubricants/greases is a commoditized, low-moat business; ROCE sustainability is questionable",
+      "ROE of 55.6% vs ROCE of 34.8% gap suggests leverage is inflating equity returns — actual capital efficiency may be lower than it appears"
+    ],
+    "red_flags": [
+      "No EBIT or Enterprise Value data — cannot compute true Magic Formula earnings yield or confirm P/E quality",
+      "DII holding at just 0.56% signals near-zero institutional validation or interest",
+      "Market cap of INR 35 Cr puts this below any practical investability threshold for the Magic Formula screen"
+    ],
+    "detailed_analysis": "Applying the Magic Formula, I need two numbers: EBIT/EV (earnings yield) and EBIT/(NWC + Net Fixed Assets) (return on capital). Neither can be precisely calculated here — only P/E and ROCE are provided. Using P/E of 7.28 as a rough proxy, the implied earnings yield is ~13.7%, above my 12% floor. ROCE of 34.8% is solid and comfortably above the 25% threshold I use for \"excellent\" businesses. On those two inputs alone, Sundrex would rank reasonably well in a Magic Formula screen.\n\nThe problem is everything else. This is a INR 35 Cr micro-cap in a commodity lubricants market — the kind of business that can show high ROCE in good years but lacks the pricing power or brand moat to sustain it. The 21-point gap between ROE (55.6%) and ROCE (34.8%) implies meaningful financial leverage, which makes the ROE number misleading. With essentially no institutional ownership (DII at 0.56%) and no hard EBIT/EV data to validate the screen, I cannot make a high-conviction call — and the Magic Formula is explicitly a systematic approach that requires complete, reliable data to work properly.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "insufficient_data",
+      "valuation": "undervalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 43582,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07231169999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9576,
+      "cache_read_input_tokens": 7559,
+      "output_tokens": 2275,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9576,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 286,
+          "cache_read_input_tokens": 7559,
+          "cache_creation_input_tokens": 2017,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2017
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

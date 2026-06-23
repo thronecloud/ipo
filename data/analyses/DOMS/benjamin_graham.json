@@ -1,0 +1,69 @@
+{
+  "symbol": "DOMS",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-19T13:08:01.975095Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "DOMS Industries is a genuinely good business — strong ROE of 22%, ROCE of 26%, low debt, and impressive growth — but it is priced at 65x earnings and 13.2x book value, which is not investing but speculation at an extraordinary premium. Graham's margin of safety demands a purchase price below intrinsic value; at current prices DOMS offers the polar opposite.",
+    "key_strengths": [
+      "ROE of 22.3% and ROCE of 26.2% demonstrate a business that earns well above its cost of capital — genuine quality in the stationery/art materials niche",
+      "Debt/equity of only 0.14 — nearly debt-free, finance costs of INR 15 Cr are trivial; the balance sheet is clean",
+      "OCF positive all five years; revenue CAGR of 23.9% and net profit CAGR of 41.3% since FY20 show consistent operational momentum"
+    ],
+    "key_risks": [
+      "P/E of 65.4x and P/B of 13.2x are four-to-nine times Graham's maximum thresholds; even assigning generous normalized earnings, the implied Graham Number (√22.5 × ~₹35 EPS × ~₹181 BVPS) ≈ ₹378 versus a price of ₹2,392 — a 534% premium",
+      "FCF was negative in FY25 (−INR 26 Cr) despite reported net profit of INR 214 Cr; CWIP jumped to INR 101 Cr, signalling a capex cycle that will pressure near-term cash generation",
+      "Net loss of −INR 6 Cr in FY21 breaks the consecutive-earnings requirement; with only three years of strong profitability post-FY22, the earnings record is too short to underwrite a premium of this magnitude"
+    ],
+    "red_flags": [
+      "Recent IPO (listed late 2023) — by definition, the offering price was set to maximize proceeds for selling shareholders, not to offer the public a bargain; the market has since bid it even higher",
+      "EV/EBITDA of 39.3x on a business with INR 370 Cr EBITDA and INR 14,517 Cr market cap — the enterprise value is 39 years of current EBITDA, requiring flawless execution for decades to justify purchase",
+      "P/S of 6.5x for a manufacturing/distribution business with 13.7% operating margins — revenue growth must remain at 20%+ indefinitely to justify this multiple, a condition almost no company sustains"
+    ],
+    "detailed_analysis": "DOMS is the most operationally compelling company in this set — the DOMS brand has genuine distribution strength in the Indian stationery market, margins are expanding, and the balance sheet is conservatively managed. I would not quarrel with the quality of the business. My quarrel is entirely with the price. At INR 2,392 per share, the market capitalisation of INR 14,517 Cr implies the business will compound earnings at 20%+ annually for the next decade without interruption, recession, or competitive disruption. This is the kind of assumption that has ruined many an 'intelligent investor.'\n\nGraham's test is simple: what are you paying relative to proven, reproducible earning power and asset value? On earnings of INR 214 Cr for FY25 and book equity of INR 1,099 Cr, the stock trades at 65x earnings and 13.2x book. There is no configuration of these numbers that produces a margin of safety. A stock like DOMS should be purchased at INR 300–500 to meet Graham's standards; at INR 2,392, one is paying for a story, not a security.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 170201,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.22683945,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 24187,
+      "cache_read_input_tokens": 16014,
+      "output_tokens": 8755,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 24187,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 504,
+          "cache_read_input_tokens": 16014,
+          "cache_creation_input_tokens": 8173,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8173
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

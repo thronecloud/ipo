@@ -1,0 +1,69 @@
+{
+  "symbol": "544331",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-20T09:46:03.413444Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Davin Sons Retail fails the Magic Formula on the quality axis — ROE of 0.15% implies near-zero return on capital, which disqualifies it regardless of valuation. A P/E of 12 on a ₹17.8 Cr micro-cap incorporated only in 2022 is not \"cheap enough\" to offset a non-existent economic engine.",
+    "key_strengths": [
+      "P/E of 12 is not egregiously expensive in absolute terms",
+      "Promoter holding of 49.68% shows reasonable skin-in-the-game",
+      "Operates in two large TAMs (FMCG wholesale + apparel)"
+    ],
+    "key_risks": [
+      "ROE of 0.15% indicates effectively no return on capital — fails Magic Formula quality gate",
+      "Incorporated 2022 — no 3-year ROIC track record to validate the business",
+      "₹17.8 Cr micro-cap in commoditized wholesale/garments — no pricing power or moat"
+    ],
+    "red_flags": [
+      "ROE 0.15% is a near-zero profitability signal — EBIT likely razor-thin",
+      "Brand-new entity (2022) with unproven earnings power; P/E could be driven by a one-time blip",
+      "Wholesale FMCG + garments is a low-margin, capital-cycling business — poor ROIC structurally"
+    ],
+    "detailed_analysis": "The Magic Formula ranks companies on two axes: earnings yield (cheap?) and return on capital (good?). Davin Sons fails catastrophically on the second. A reported ROE of 0.15% means shareholder capital is earning essentially nothing — even if we charitably assume ROIC is modestly higher than ROE, this is nowhere near the >20% threshold I require. The P/E of 12 translates to an earnings yield of ~8%, which is acceptable but not a bargain, and certainly not enough to compensate for a business that doesn't compound capital.\n\nStructurally, a two-year-old micro-cap (₹17.8 Cr) straddling FMCG wholesale and ready-made garments is exactly the kind of low-barrier, low-margin operation where high ROIC is nearly impossible to sustain. Without an EBIT track record spanning 3+ years, any quality signal is noise. This is a hard pass on the systematic framework — cheap is not enough; it must also be good, and this one isn't.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "insufficient_data",
+      "valuation": "fair",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 23091,
+    "model_used": "opus",
+    "total_cost_usd": 0.09951399999999999,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 9708,
+      "cache_read_input_tokens": 12718,
+      "output_tokens": 1298,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9708,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 99,
+          "cache_read_input_tokens": 10585,
+          "cache_creation_input_tokens": 1256,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1256
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

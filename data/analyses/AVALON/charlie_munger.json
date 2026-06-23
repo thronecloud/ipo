@@ -1,0 +1,70 @@
+{
+  "symbol": "AVALON",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T16:35:59.732760Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Avalon is a low-margin EMS (Electronic Manufacturing Services) business trading at 77x earnings despite generating only 10.4% ROE and consistently negative free cash flow — a textbook case of paying a growth premium for a commodity-like business with no durable competitive advantage. The market is pricing in a moat that simply does not exist in contract electronics manufacturing.",
+    "key_strengths": [
+      "Debt reduction trajectory is encouraging — borrowings fell from INR 342 Cr (FY23) to INR 163 Cr (FY25), with D/EBITDA ~1.3x",
+      "Revenue recovering strongly in FY25 (INR 1,098 Cr, +27% YoY) after a weak FY24, with operating income bouncing back to INR 115 Cr",
+      "Diversified end-markets (clean energy, aerospace, railways) reduce single-customer concentration risk"
+    ],
+    "key_risks": [
+      "Chronically negative free cash flow — FCF has been negative every year from FY22-FY25 (-2, -41, -18, -21 Cr) despite reported net profits; earnings quality is deeply suspect",
+      "No pricing power or moat — 9.58% operating margins in EMS is structurally thin and reflects a toll-road business where customers, not Avalon, hold the leverage",
+      "Valuation is irrational — 77x P/E and 52x EV/EBITDA for a business with 10.4% ROE and 12.8% ROCE; you are paying for perfection in a cyclical, capital-hungry business"
+    ],
+    "red_flags": [
+      "FCF/Net Income ratio is deeply negative (FCF -21 Cr vs. NI +63 Cr in FY25) — a hallmark of poor earnings quality",
+      "Net profit is wildly lumpy: INR 12 → 23 → 67 → 52 → 28 → 63 Cr over 6 years — not the consistent compounder the valuation implies",
+      "Other income (INR 17 Cr) represents ~27% of FY25 net profit — core earnings power is weaker than the headline number suggests",
+      "ROIC well below 15% threshold; paying 11.5x book for a business earning 10% ROE destroys capital over time"
+    ],
+    "detailed_analysis": "Invert first, as always: what would make this a terrible investment? A commodity-like manufacturing business with sub-10% ROE, no free cash flow generation, and a 77x P/E multiple. That is precisely what Avalon is. EMS businesses are structurally unfavorable — they compete on cost, are hostage to customer program decisions, require continuous capex (rising from INR 16 Cr in FY22 to INR 46 Cr in FY25), and carry working capital that consumes operating profits before they reach shareholders. The FCF record tells the real story: four consecutive years of negative free cash flow despite reported profits means the business is consuming capital faster than it generates it. This is the opposite of a compounding machine.\n\nThe valuation compounds the sin. At 77x trailing P/E and 52x EV/EBITDA, the market is pricing Avalon as though it were a software business with recurring revenue and 30%+ ROIC. The reality is a 11.3% revenue CAGR, 9.6% operating margins, and returns on capital consistently below Munger's minimum 15% threshold. DII ownership at 25.4% and the India defense/clean energy narrative have inflated enthusiasm well beyond what the underlying economics justify. A great business at a fair price is worth owning; this is a fair-to-mediocre business at an absurd price. I would not own it at any price near current levels.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 49226,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07886385,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10885,
+      "cache_read_input_tokens": 8787,
+      "output_tokens": 2360,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10885
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 315,
+          "cache_read_input_tokens": 8787,
+          "cache_creation_input_tokens": 2098,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2098,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

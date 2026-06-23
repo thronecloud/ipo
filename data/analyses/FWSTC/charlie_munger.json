@@ -1,0 +1,69 @@
+{
+  "symbol": "FWSTC",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-21T07:56:26.948311Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Flywings operates in a genuinely moaty niche — DGCA-regulated aviation simulator training with high capital barriers — and its 28% ROE/25% ROCE at 17x P/E is interesting. However, the micro-cap size (INR 192 Cr), single-location concentration, and severe data gaps prevent the conviction needed to commit capital.",
+    "key_strengths": [
+      "Regulatory moat: DGCA certifications for simulator training are hard to obtain and create meaningful entry barriers",
+      "Strong capital returns: 28% ROE and 25% ROCE well above the 15-20% threshold, suggesting pricing power or efficient capital deployment",
+      "Secular tailwind: India's aviation expansion (IndiGo, Air India, Akasa adding 500+ aircraft) structurally drives pilot training demand"
+    ],
+    "key_risks": [
+      "Cyclicality: Aviation collapses in downturns (COVID wiped out simulator utilization industry-wide); earnings are highly correlated to airline hiring cycles",
+      "Single-location concentration: One Gurgaon facility means any operational disruption or simulator obsolescence hits the entire business",
+      "Insufficient data: No revenue, debt, FCF, or multi-year growth figures provided — cannot verify if 28% ROE is real or an artifact of thin equity base"
+    ],
+    "red_flags": [
+      "Market cap INR 192 Cr implies ~INR 11 Cr in net earnings — negligibly small absolute business with liquidity and information risk",
+      "No debt-to-EBITDA disclosed; simulator capex is enormous (Level D simulators cost USD 10–20M each) — hidden leverage is a real possibility",
+      "Zero FCF/Net Income conversion data — capital-heavy simulators could be consuming most of the reported earnings in maintenance capex"
+    ],
+    "detailed_analysis": "As Munger would demand: invert first. What kills this business? A single COVID-scale aviation shock halts all pilot hiring and renders expensive simulators idle. The entire revenue stream is a downstream function of airline expansion budgets — that's a fragile dependency. Furthermore, at INR 192 Cr market cap with only ~INR 11 Cr implied earnings, we are dealing with a company so small that one bad contract renewal or one simulator grounding can devastate results. I cannot build a 10-year mental model with the data provided.\n\nThat said, the profitability metrics are genuinely respectable — 25% ROCE in a capital-intensive business is not trivial and suggests real pricing power, likely from DGCA certification scarcity. At 17x P/E, the market is not wildly overvaluing it. But I refuse to call this a quality compounder without seeing multi-year revenue growth, debt levels, and FCF conversion. This warrants a watchlist position pending full financials, not capital commitment today.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "insufficient_data",
+      "financial_health": "insufficient_data",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 44922,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07205085000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9439,
+      "cache_read_input_tokens": 7452,
+      "output_tokens": 2294,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9439,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 339,
+          "cache_read_input_tokens": 7452,
+          "cache_creation_input_tokens": 1987,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1987
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

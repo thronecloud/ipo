@@ -1,0 +1,69 @@
+{
+  "symbol": "CMSINFO",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T16:57:44.228562Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "CMS Info Systems possesses a genuine earnings record — seven consecutive years of profit growth at a 24.6% CAGR — and carries negligible debt (D/E 0.10), qualities I admire. However, at INR 318, the stock trades above my calculated Graham Number of ~INR 268 and at a P/B of 2.24, well above my 1.5 threshold, offering no meaningful margin of safety.",
+    "key_strengths": [
+      "Seven unbroken years of earnings growth (net profit CAGR 24.6%), satisfying my core requirement of proven earning power",
+      "Near-debt-free balance sheet (D/E 0.10) with cash of INR 231 Cr largely offsetting the new INR 223 Cr borrowings in 2025",
+      "Consistently positive operating cash flow (5/5 years) with FY2025 FCF of INR 331 Cr — real cash, not accounting fiction"
+    ],
+    "key_risks": [
+      "P/B of 2.24 exceeds my 1.5 ceiling; the investor is paying INR 2.24 for every INR 1.00 of net assets — insufficient asset protection",
+      "Zero promoter ownership is deeply troubling; management has no personal capital at risk alongside shareholders",
+      "Sudden appearance of INR 223 Cr in borrowings in FY2025 (from zero prior years) warrants scrutiny — capital allocation discipline unproven under leverage"
+    ],
+    "red_flags": [
+      "Graham Number ~INR 268 vs. current price INR 318 — stock is trading ~19% above fair value by my formula (sqrt(22.5 × EPS ~22.6 × BVPS ~141.5))",
+      "0% promoter holding — sellers know their business better than buyers; who is left holding the bag?",
+      "No dividend data provided; a company generating INR 331 Cr FCF that does not return meaningful cash to shareholders raises questions about capital stewardship"
+    ],
+    "detailed_analysis": "CMS Info Systems is a competent, cash-generative business in an essential niche — cash logistics and ATM management for Indian banks. The financial record is the strongest argument in its favor: revenue has grown from INR 978 Cr to INR 2,425 Cr over seven years (13.9% CAGR) while net profit nearly quintupled from INR 80 Cr to INR 372 Cr (24.6% CAGR). Operating cash flow has been positive in every year on record. The balance sheet is conservatively financed — until FY2025, borrowings were effectively zero. By the temperament test I apply to businesses, this one passes. The trouble, as always, is price.\n\nMy Graham Number — derived from audited earnings and book value — comes to approximately INR 268. The market is asking INR 318, a 19% premium to intrinsic value by my measure. The P/B of 2.24 also exceeds my firm ceiling of 1.5. Mr. Market is pricing in future growth, not present assets and earning power — and that is precisely where the speculative element enters. The zero promoter holding compounds my unease: when insiders own none of the equity, I must ask why. Institutional investors (FII 28.2%, DII 32.6%) are not long-term partners in the Graham sense. I would revisit this business should the price retreat toward INR 250–265, where a genuine margin of safety would exist.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 59077,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07508535,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9233,
+      "cache_read_input_tokens": 11092,
+      "output_tokens": 2475,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9233
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 280,
+          "cache_read_input_tokens": 9042,
+          "cache_creation_input_tokens": 2241,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2241,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

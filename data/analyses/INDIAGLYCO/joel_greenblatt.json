@@ -1,0 +1,69 @@
+{
+  "symbol": "INDIAGLYCO",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T17:41:45.795176Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "India Glycols scores poorly on both Magic Formula metrics — Earnings Yield of ~6.2% (barely at threshold) and ROIC of ~12-13% (well below the 20% hurdle) — indicating a mediocre business trading at a full price. The company's aggressive capex cycle (INR 760 Cr capex vs. INR 545 Cr EBITDA in FY25) has produced five consecutive years of negative free cash flow, destroying the fundamental value-creation story.",
+    "key_strengths": [
+      "Operating income growing at 12.9% CAGR (2016–2025) with clear expanding trend",
+      "Strong promoter holding at 59.63% and OCF positive in all 5 of the last 5 years",
+      "Diversified green-chemistry platform with bio-based chemicals, spirits, and pharma segments reducing single-product risk"
+    ],
+    "key_risks": [
+      "Capex (INR 760 Cr, FY25) exceeds EBITDA (INR 545 Cr) — the business is consuming more capital than it earns, an immediate Magic Formula disqualifier",
+      "Debt has nearly doubled in 3 years (INR 1,042 Cr in FY22 → INR 1,892 Cr in FY25), with finance costs rising to INR 164 Cr, squeezing net profit",
+      "ROIC of ~12-13% (implied by ROCE 12.4%) is below the 20% threshold needed for a 'good business' under the Magic Formula — capital is not being efficiently deployed"
+    ],
+    "red_flags": [
+      "Free cash flow negative for 5 consecutive years (FY21–FY25: -11, -264, -109, -103, -391 Cr)",
+      "FY22 net profit of INR 340 Cr massively inflated by INR 260 Cr Other Income — a one-time item; true underlying earnings power is much lower",
+      "Borrowings surged 52% in one year (INR 1,348 Cr in FY24 → INR 2,055 Cr in FY25), raising financial leverage risk"
+    ],
+    "detailed_analysis": "Running the Magic Formula on India Glycols: EBIT = INR 521 Cr (FY25 operating income), Enterprise Value = Market Cap INR 6,548 Cr + Net Debt INR 1,885 Cr = ~INR 8,433 Cr. Earnings Yield = 521/8,433 = **6.2%** — barely above the 6% floor, nowhere near the 12–15% needed to be \"cheap.\" ROIC, approximated by the disclosed ROCE of **12.4%**, falls well short of the 20% minimum for a genuinely good business. A Magic Formula stock must be BOTH cheap AND high-quality; India Glycols fails on both counts.\n\nThe capital allocation picture is worse still. Capex of INR 760 Cr in FY25 dwarfs EBITDA of INR 545 Cr, producing FCF of -INR 391 Cr — funded entirely by new debt. Debt has risen from INR 1,042 Cr (FY22) to INR 1,892 Cr (FY25), and finance costs are eating an increasing share of EBIT. While management is clearly investing for growth (CWIP spike, expanding revenues), the returns on that invested capital remain too low to justify the valuation or the leverage. Until ROIC sustainably exceeds 20% and FCF turns positive, this stock has no place in a Magic Formula portfolio.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 46055,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08501339999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11402,
+      "cache_read_input_tokens": 9223,
+      "output_tokens": 2632,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11402
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 492,
+          "cache_read_input_tokens": 9223,
+          "cache_creation_input_tokens": 2179,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2179,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

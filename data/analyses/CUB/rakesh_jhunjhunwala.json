@@ -1,0 +1,69 @@
+{
+  "symbol": "CUB",
+  "persona": "rakesh_jhunjhunwala",
+  "persona_display_name": "Rakesh Jhunjhunwala",
+  "analyzed_at": "2026-04-19T13:04:12.948182Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "City Union Bank is a conservatively managed 120-year-old South Indian lender with a clean-ish balance sheet and net profit growing at a respectable 13.9% CAGR; at forward P/E of 12.5x it is modestly priced. But revenue CAGR of only 6.3% over 3 years and ROE of just 11.87% — well below my 15% threshold — make this a steady compounder rather than a wealth multiplier.",
+    "key_strengths": [
+      "Net profit CAGR of 13.9% (FY22–FY25) with consistent positive OCF across all 4 years reviewed — genuine earnings growth",
+      "Balance sheet clean-up visible: borrowings cut from 5,312 Cr (FY22) to 1,790 Cr (FY25) even as total assets grew from 61,531 Cr to 77,623 Cr",
+      "Forward P/E of 12.5x and P/B of 1.92x offer reasonable entry for a profitable, long-established private sector bank"
+    ],
+    "key_risks": [
+      "Revenue growing at only 6.3% CAGR while finance costs are growing at 17.2% CAGR — NIM compression is real and structural, threatening future profitability",
+      "ROE of 11.87% is materially below my 15% hurdle; a bank that cannot earn above its cost of equity over a full cycle is not building shareholder value",
+      "Regionally concentrated in Tamil Nadu/South India — any localised economic slowdown or crop failure disproportionately impacts loan book quality"
+    ],
+    "red_flags": [
+      "No asset quality data (GNPA/NNPA) provided — for a bank, this is the most critical metric and its absence is a gap in this analysis",
+      "Finance costs (3,518 Cr in FY25) now dwarf net revenue (3,214 Cr) implying cost-of-funds pressure that could squeeze NIMs further in a high-rate environment",
+      "OCF was highly volatile: 1,166 Cr (FY22), 724 Cr (FY23), 436 Cr (FY24), 1,128 Cr (FY25) — lumpy and unpredictable cash generation"
+    ],
+    "detailed_analysis": "City Union Bank runs a disciplined, predominantly SME-focused lending book out of Tamil Nadu and has survived multiple cycles including demonetisation, COVID and rising rates without catastrophic asset quality deterioration. The consistent net profit growth from 760 Cr (FY22) to 1,124 Cr (FY25) is encouraging, and the paydown of borrowings while growing assets shows prudent funding management. At 12.5x forward earnings, downside seems limited.\n\nHowever, the core structural challenge is clear: funding costs are rising faster than lending yields, compressing the NIM that is the lifeblood of a bank. Revenue at 3,214 Cr in FY25 has barely grown from 2,674 Cr in FY22 despite a 26% growth in total assets — this gap between asset growth and income growth is concerning. An ROE stuck at 12% in a period of double-digit nominal GDP growth means the bank is not extracting the full benefit of India's credit boom. I would hold a small position but would not build conviction until I see NIM stabilisation and loan book growth exceeding 15%.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 186143,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.2448354,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 22736,
+      "cache_read_input_tokens": 17488,
+      "output_tokens": 10288,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 22736,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 789,
+          "cache_read_input_tokens": 15425,
+          "cache_creation_input_tokens": 9374,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 9374
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

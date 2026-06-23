@@ -1,0 +1,71 @@
+{
+  "symbol": "KSHINTL",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-21T07:49:59.596609Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "KSH International trades at INR 446 versus a Graham Number of ~INR 100 — a 4.5x premium to intrinsic value — with a P/B of 7.24 and D/E of 1.40, both catastrophically exceeding my safety thresholds. Despite respectable earnings growth, the company has produced free cash flow in only 1 of 4 years and is funding expansion almost entirely through debt, offering no margin of safety whatsoever.",
+    "key_strengths": [
+      "Revenue and net profit growing at 31–35% CAGR (2022–2025), with operating income tripling from INR 49 Cr to INR 118 Cr",
+      "ROCE of 39.39% indicates genuinely efficient capital deployment in the business",
+      "Promoter holding at 74.58% signals meaningful insider alignment with long-term outcomes"
+    ],
+    "key_risks": [
+      "Debt surged from INR 129 Cr to INR 366 Cr in two years (D/E now 1.40), with finance costs compounding at 46% CAGR — far outpacing revenue growth",
+      "Free cash flow deeply negative in 3 of 4 years (–INR 130 Cr in FY25); profits exist on paper but cash is consumed by working capital and INR 120 Cr capex",
+      "Operating margin of just 5.18% in a commodity wire business offers virtually no buffer against raw material cost swings or economic downturns"
+    ],
+    "red_flags": [
+      "P/B of 7.24 — nearly 5x my maximum threshold of 1.5; paying INR 7.24 for every INR 1 of net assets",
+      "Graham Number ≈ INR 100 (sqrt(22.5 × ~10 EPS × ~44 BVPS)); stock trades at 4.5x intrinsic value",
+      "D/E of 1.40 versus my maximum of 0.50 — balance sheet could not withstand a serious business downturn",
+      "OCF positive in only 1 of 4 years; reported earnings are systematically not converting to actual cash",
+      "No dividend yield mentioned — shareholders receive no tangible cash return while bearing balance sheet risk"
+    ],
+    "detailed_analysis": "By every quantitative measure I have used for fifty years, KSH International fails the test of a safe investment. The P/E of 32x is more than double my ceiling of 15; the P/B of 7.24 is nearly five times my maximum of 1.5. My Graham Number — computed as the square root of (22.5 × EPS × book value per share) — yields roughly INR 100 against a market price of INR 446. The market is pricing this company as though it were a dominant franchise, yet it manufactures commodity magnet wire with a 5.18% operating margin. Mr. Market is in an exuberant mood here, and the disciplined investor should not follow.\n\nThe balance sheet and cash flow picture is equally troubling. Total debt has expanded from INR 129 Cr to INR 366 Cr in just two years, while free cash flow was negative INR 130 Cr in FY2025. The company is funding its growth almost entirely through borrowed money — finance costs have compounded at 46% annually, a rate that will ultimately compress the very earnings investors are paying a premium for. A business that reports INR 68 Cr of net profit while consuming INR 130 Cr of free cash flow is not creating wealth for shareholders — it is destroying it. I would require the price to fall to at least INR 100, and the debt to be substantially reduced, before this stock merits any serious consideration.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 59061,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0717495,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8458,
+      "cache_read_input_tokens": 10510,
+      "output_tokens": 2458,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8458,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 458,
+          "cache_read_input_tokens": 8460,
+          "cache_creation_input_tokens": 2048,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2048
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

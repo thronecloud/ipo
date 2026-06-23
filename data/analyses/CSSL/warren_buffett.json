@@ -1,0 +1,70 @@
+{
+  "symbol": "CSSL",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-21T07:59:57.849480Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Clear Secured is a commoditized, labor-intensive facility management business with no discernible economic moat, consistently negative free cash flow (-₹26 Cr in FY25), and borrowings that nearly tripled in a single year to ₹128 Cr. Despite a seemingly reasonable P/E of 18.8x, the underlying cash economics are deteriorating and do not support the accounting profits.",
+    "key_strengths": [
+      "Revenue growing at ~24% CAGR (FY23–25), reaching ₹476 Cr",
+      "ROCE of 20.4% and ROCE above cost of capital — marginally acceptable",
+      "High promoter holding at 73% signals some owner-manager alignment"
+    ],
+    "key_risks": [
+      "FCF deeply negative and worsening: -₹3 Cr → -₹7 Cr → -₹26 Cr — profits are not converting to cash",
+      "Borrowings nearly tripled in one year (₹53 Cr → ₹128 Cr); debt-to-equity now ~0.94, well above my 0.5 ceiling",
+      "Net profit actually fell in FY25 (₹10 Cr vs ₹12 Cr) as finance costs surged 150% — leverage is eating earnings"
+    ],
+    "red_flags": [
+      "Negative operating cash flow in 2 of 3 years; FY25 OCF of -₹22 Cr is alarming",
+      "Business funded entirely by financing activities every single year — not self-sustaining",
+      "CWIP jumped from ₹1 Cr to ₹22 Cr while generating no free cash — capital intensity rising with no moat to justify it",
+      "Other income turned negative (-₹2 Cr) in FY25, suggesting prior profits were partly non-recurring"
+    ],
+    "detailed_analysis": "Facility management and security staffing is one of the least attractive business models I can imagine — low barriers to entry, no pricing power, margin compression at every contract renewal, and customers who treat the service as a commodity. CSSL's operating margins of ~6.5% confirm this reality. There is no brand, no switching cost, no network effect. A business like this needs to be priced like a distressed asset to interest me, not at 18x earnings.\n\nThe cash flow picture is what truly disqualifies this investment. A company reporting ₹10 Cr in net profit while burning ₹26 Cr in free cash flow and tripling its debt in a single year is not creating shareholder value — it is destroying it. The consistent reliance on financing cash flows (positive all three years: +₹19, +₹5, +₹37 Cr) to fund operations and investment is a pattern I associate with businesses that cannot stand on their own. At ₹243 Cr market cap with no moat, worsening cash generation, and a leveraged balance sheet, I see no margin of safety whatsoever.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 37913,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0682113,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9708,
+      "cache_read_input_tokens": 7991,
+      "output_tokens": 1960,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9708,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 314,
+          "cache_read_input_tokens": 7991,
+          "cache_creation_input_tokens": 1717,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1717
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

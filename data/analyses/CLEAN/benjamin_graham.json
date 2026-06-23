@@ -1,0 +1,69 @@
+{
+  "symbol": "CLEAN",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-19T13:01:24.567918Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Clean Science is an admirable business — zero debt, 27% net profit CAGR over seven years, and exceptional returns on capital — but Mr. Market is pricing it at INR 757 against a Graham Number of roughly INR 271, a 2.8x premium that leaves no margin of safety whatsoever. At P/E 32.8x and P/B 5.36x I am paying for a story of future growth, not for proven earning power at a discount.",
+    "key_strengths": [
+      "Virtually zero debt (borrowings INR 2 Cr against equity of INR 1,500 Cr) — fortress balance sheet by any standard",
+      "Consistent and growing profitability: net profit expanded from INR 49 Cr (2018) to INR 264 Cr (2025), positive every single year",
+      "Outstanding ROCE of 27.3% and operating margin of 24% — genuinely rare for a commodity-adjacent chemicals business"
+    ],
+    "key_risks": [
+      "P/E of 32.8x demands continued high growth; any revenue deceleration (2024 showed a dip to INR 791 Cr from INR 936 Cr) will collapse the valuation",
+      "Free cash flow has been erratic (negative in FY22, only INR 10 Cr in FY24) due to heavy capex; CWIP doubled to INR 98 Cr, returns on new capacity unproven",
+      "Single-product concentration in specialty antioxidants (MEHQ, BHA, TBHQ) makes earnings vulnerable to pricing or regulatory shocks in any key application segment"
+    ],
+    "red_flags": [
+      "Price of INR 757 is 2.8x the Graham Number of ~INR 271 (using EPS ~INR 23, BVPS ~INR 141)",
+      "P/B of 5.36 — paying INR 5.36 for every rupee of book value, a speculative premium by my standards",
+      "Revenue fell 15% in FY24 before recovering in FY25 — growth is not as steady as the CAGR implies"
+    ],
+    "detailed_analysis": "Clean Science passes every balance-sheet test I require: no debt, strong reserves, positive operating cash flow in all five recent years, and growing retained earnings. Its operating margin of 24% and ROCE of 27% are the hallmarks of a genuine moat built on catalytic process chemistry. However, the intelligent investor must separate business quality from price paid, and here the price fails completely — the stock trades at 32.8x earnings and 5.4x book, embedding years of optimistic growth into the current quotation.\n\nApplying my Graham Number formula (√(22.5 × EPS × BVPS) = √(22.5 × 23 × 141) ≈ INR 271), the current price of INR 757 represents a 179% premium to intrinsic value as I calculate it. The inconsistent free cash flow despite strong reported profits — capex consumed INR 232 Cr in FY24 against operating CF of INR 236 Cr — suggests that maintaining the business requires substantial reinvestment. An excellent enterprise at a ruinous price is still a ruinous purchase.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "excellent",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 156176,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.21759810000000002,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 23420,
+      "cache_read_input_tokens": 15947,
+      "output_tokens": 8332,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 23420,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 726,
+          "cache_read_input_tokens": 15947,
+          "cache_creation_input_tokens": 7473,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 7473
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

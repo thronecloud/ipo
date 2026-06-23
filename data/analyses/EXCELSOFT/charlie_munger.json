@@ -1,0 +1,69 @@
+{
+  "symbol": "EXCELSOFT",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-21T08:05:20.153606Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Excelsoft is a subscale Indian EdTech SaaS with mediocre returns on capital (ROE 10.4%, estimated ROIC ~13%) and EBITDA that has never recovered to its 2021 peak of INR 99 Cr despite revenue nearly doubling. FY2025's apparent earnings improvement is largely illusory — non-operating \"Other Income\" jumped from INR 2 Cr to INR 15 Cr, contributing ~43% of net profit, masking weak core operating leverage.",
+    "key_strengths": [
+      "Rapid debt reduction — borrowings fell from INR 168 Cr (2020) to INR 45 Cr (2025), finance cost down 62%, now D/E of 0.12",
+      "Consistent OCF generation — 5/5 years positive, averaging ~INR 51 Cr, indicating real cash business not an accounting mirage",
+      "Revenue CAGR of 17.7% over 5 years with diversified global customer base across North America, APAC, and Europe"
+    ],
+    "key_risks": [
+      "Earnings quality is poor — FY2025 net profit of INR 35 Cr includes INR 15 Cr of Other Income (vs historical INR 1–3 Cr); core operating earnings are far weaker",
+      "EBITDA contraction despite revenue growth — EBITDA CAGR only 8.1% vs revenue CAGR 17.7%, implying significant margin deterioration and no operating leverage",
+      "EdTech SaaS moat is narrow — proctoring and LMS are commodity-like services; competition from global players (Mettl, Mercer, Blackboard, Canvas) makes pricing power limited for a INR 233 Cr revenue company"
+    ],
+    "red_flags": [
+      "FCF reported at INR 290 Cr in FY2025 vs OCF of INR 53 Cr and capex of INR 17 Cr — these figures do not reconcile; raises data integrity or accounting classification concerns",
+      "Reserves declined from INR 296 Cr (FY2024) to INR 288 Cr (FY2025) despite INR 35 Cr net profit — inconsistent with reported earnings",
+      "FII ownership at only 1.37% and DII at 4.06% — professional investors have systematically avoided this stock, signaling lack of conviction in the business quality"
+    ],
+    "detailed_analysis": "Applying inversion first: what makes this a bad investment? ROIC of ~13% (NOPAT ~INR 55 Cr / Invested Capital ~INR 415 Cr) sits below my 15% minimum threshold and has shown no consistent improvement despite 5 years of revenue growth. EBITDA peaked at INR 99 Cr in FY2021 and is still at INR 87 Cr in FY2025 — meaning the business consumed more in costs as it scaled. That is the opposite of what a quality SaaS moat looks like. The FY2025 P&L looks flattering at first glance (INR 35 Cr net profit, P/E 27.6x, Forward P/E 13x), but stripping out the INR 15 Cr Other Income spike leaves core earnings closer to INR 20 Cr — making the forward multiple far less compelling and requiring heroic growth assumptions.\n\nThe balance sheet cleanup is genuinely commendable — management has paid down INR 123 Cr in borrowings over 5 years and halved finance costs, demonstrating capital discipline. But that debt reduction was largely funded by operating cash flows, not value-creating reinvestment, and the business has produced no meaningful asset-light compounding: Total Assets grew from INR 416 Cr (2020) to INR 490 Cr (2025) while EBITDA barely moved. At INR 811 Cr market cap on INR 233 Cr revenue, the EV/EBITDA of ~6x seems superficially cheap, but for a business with a weak moat, inconsistent margins, and accounting irregularities, cheapness is not a virtue — it may simply reflect fair value for mediocrity. I need a business that is *wonderful*, not merely inexpensive.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 62062,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.10027725000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11957,
+      "cache_read_input_tokens": 8815,
+      "output_tokens": 3519,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11957,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 424,
+          "cache_read_input_tokens": 8815,
+          "cache_creation_input_tokens": 3142,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 3142
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

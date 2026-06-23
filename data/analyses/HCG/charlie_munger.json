@@ -1,0 +1,69 @@
+{
+  "symbol": "HCG",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T17:42:05.892756Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "HCG operates in the right secular trend — Indian oncology demand is real and growing — but the business earns a 5% ROE on 8.6x book, has near-doubled its debt in two years to ₹1,768 Cr, and trades at 310x trailing earnings. You are paying a compounding-machine price for a capital-destroying machine.",
+    "key_strengths": [
+      "Specialized oncology brand with 36-year operating history — genuine niche moat in a underpenetrated Indian market",
+      "Revenue CAGR of 16% over 9 years with operating cash flow positive all 5 recent years (₹317 Cr OCF in FY25)",
+      "Promoter holding of 64.2% provides reasonable management alignment"
+    ],
+    "key_risks": [
+      "ROCE of 8.56% is well below cost of capital — every rupee deployed is destroying value at current returns",
+      "Debt nearly doubled from ₹901 Cr (FY23) to ₹1,768 Cr (FY25); Debt/EBITDA ~3.9x vs my 2.5x ceiling — financing cost (₹155 Cr) already 3x net profit (₹49 Cr)",
+      "Valuation is delusional: P/B 8.61x on 5% ROE implies 172-year payback on book; P/E 310x on ₹49 Cr profit leaves zero margin of safety"
+    ],
+    "red_flags": [
+      "Net profit was negative for three consecutive years (FY19: -₹31 Cr, FY20: -₹125 Cr, FY21: -₹221 Cr) — this is not a track record of durable profitability",
+      "Aggressive capex cycle (₹209 Cr FY25, accelerating) funded by debt while earning sub-10% ROCE — textbook value destruction",
+      "FCF has declined from ₹150 Cr (FY22) to ₹110 Cr (FY25) even as revenue grew 59% over the same period — the business gets more capital-hungry, not less"
+    ],
+    "detailed_analysis": "Applying inversion first: what makes this a terrible investment? A 310x P/E ratio on a business that earned ₹49 Cr in FY25 — on ₹2,218 Cr of revenue — is the loudest alarm bell. The gross margin of 51% looks healthy until you realize operating expenses, depreciation, and finance costs consume everything, leaving a 2.2% net margin. The business has been functionally unprofitable for most of its listed life. ROIC is almost certainly below 10%, meaning management is reinvesting at a rate that destroys shareholder wealth. Debt/EBITDA at ~3.9x and finance costs of ₹155 Cr against net profit of ₹49 Cr means lenders are the primary economic beneficiaries of HCG's growth, not equity holders.\n\nThe bull case — specialized oncology, India's rising cancer incidence, 16% revenue CAGR — is real but priced in at a level that requires flawless execution for the next decade. Forward P/E of 60x still demands dramatic margin expansion that nine years of history do not support. At 8.61x book on 5.14% ROE, the market is pricing HCG as if it will suddenly transform into a high-ROIC compounder. I see no evidence of that structural shift. A quality healthcare operator in India might earn a premium; this business has not yet demonstrated it deserves one. Ben Graham would call this speculation dressed as investment, and I agree.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 51958,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08188215,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11357,
+      "cache_read_input_tokens": 9148,
+      "output_tokens": 2436,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11357
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 292,
+          "cache_read_input_tokens": 9148,
+          "cache_creation_input_tokens": 2209,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2209,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "symbol": "GREAVESCOT",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T17:27:03.653173Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Greaves Cotton is a century-old industrial company in painful, cash-burning transition from diesel engines to electric mobility, generating a pitiful 4.1% ROE with negative free cash flow in 4 of the last 5 years. At 34.6x trailing P/E for a company that earned just -₹6 Cr net profit in FY2025, the market is paying a steep price for a turnaround story with no demonstrated moat.",
+    "key_strengths": [
+      "Low leverage: D/E of only 0.12 provides some balance sheet cushion during the transition",
+      "Revenue recovering and growing: ₹2,918 Cr in FY2025, up 6.8% CAGR over 9 years with recent momentum",
+      "Promoter confidence: 55.8% promoter holding signals skin in the game"
+    ],
+    "key_risks": [
+      "Terrible capital returns: ROE 4.1% and ROCE 5.1% — far below Buffett's 15% threshold — with no improvement trajectory",
+      "Chronic cash destruction: Free cash flow negative in 4 of 5 years (-₹98 Cr in FY2025); operating CF positive just 1/5 years",
+      "EV transition with no moat: Competing against Ola, Bajaj, TVS in electric 2W/3W requires massive capex while margins are only 3.94%"
+    ],
+    "red_flags": [
+      "₹-367 Cr net loss in FY2024 driven by ₹-270 Cr 'Other Income' — likely impairment on Ampere/EV subsidiaries, signaling capital misallocation",
+      "Finance costs compounding at 36.1% CAGR (₹1 Cr → ₹16 Cr) as the business needs more borrowed capital to fund losses",
+      "Equity base eroding: Reserves declined from ₹1,540 Cr (FY2023) to ₹1,329 Cr (FY2025) — shareholders are being diluted by losses",
+      "Paying 34.6x P/E for a business that earned near-zero net profit in FY2025 — speculative premium with no earnings foundation"
+    ],
+    "detailed_analysis": "Greaves Cotton fails almost every criterion I care about. The numbers tell a brutal story: operating income collapsed from ₹272 Cr in FY2019 to ₹25 Cr in FY2022, and despite some recovery to ₹137 Cr in FY2025, it is still barely a third of its former self. A 3.94% operating margin on ₹2,918 Cr of revenue is not a business — it is a cost-recovery operation. Net profit has been negative in three of the last five years, and the mysterious ₹-270 Cr \"Other Income\" in FY2024 (almost certainly write-downs on the Ampere EV subsidiary) reveals that prior capital allocation into EV was not working as planned.\n\nThe electric mobility pivot is the core of the bull thesis, but I see a trap. Greaves is a late, subscale entrant fighting Bajaj, TVS, and well-funded EV startups on their home turf — and it is doing so while burning cash. There is no pricing power, no switching cost, no network effect. The business scores nearly zero on my moat checklist. The valuation of 34.6x trailing earnings (with those earnings being virtually nothing) and 2.67x book on a declining equity base is a price one pays for a high-quality compounder, not a struggling industrial company in mid-transformation. I would not pay even half this price for this business.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 42471,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07832415,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11175,
+      "cache_read_input_tokens": 9163,
+      "output_tokens": 2244,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11175
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 279,
+          "cache_read_input_tokens": 9163,
+          "cache_creation_input_tokens": 2012,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2012,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

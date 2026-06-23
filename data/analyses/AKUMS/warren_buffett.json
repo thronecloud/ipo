@@ -1,0 +1,69 @@
+{
+  "symbol": "AKUMS",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T16:17:56.421892Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "AVOID",
+    "investment_thesis": "Akums is a capital-intensive CDMO/generic pharma manufacturer with erratic earnings (net loss of ₹251 Cr in FY22, near-zero profit of ₹1 Cr in FY24), thin 9.2% operating margins, and no discernible pricing power — the antithesis of a wonderful business. At 26.5x P/E on a recently recovered earnings base, the market is pricing in optimism I'm not yet willing to pay for.",
+    "key_strengths": [
+      "Near-debt-free post-IPO: borrowings collapsed from ₹565 Cr (FY24) to ₹90 Cr (FY25), giving balance sheet resilience",
+      "Promoter skin in the game at 75.26% holding — they eat their own cooking",
+      "OCF positive all 5 years with FY24-25 FCF finally turning positive at ₹212–201 Cr after years of destruction"
+    ],
+    "key_risks": [
+      "Violently inconsistent earnings: net profit swung from -₹251 Cr (FY22) → ₹1 Cr (FY24) → ₹344 Cr (FY25) — I can't project this business 10 years out with any confidence",
+      "Low operating margins of 9.2% signal minimal pricing power and a commoditized contract manufacturing position — Divi's Labs earns 30%+",
+      "Structurally capital-intensive: ₹258–329 Cr annual capex has kept FCF negative for most of the company's listed history, earning poor returns on invested capital"
+    ],
+    "red_flags": [
+      "FY24 net profit of just ₹1 Cr on ₹4,178 Cr revenue — essentially a zero-margin year with no explanation in the data",
+      "FY22 operating loss of -₹89 Cr and net loss of -₹251 Cr reveal a fragile cost structure with no shock-absorption",
+      "Equity more than quadrupled from ₹710 Cr to ₹3,149 Cr in one year — FY25 earnings recovery is partly funded by IPO proceeds, not organic compounding"
+    ],
+    "detailed_analysis": "Akums is a contract drug manufacturer — a business that sells its capacity to pharma brands rather than owning them. I've long said the worst sort of business is one that grows rapidly, requires significant capital to engender growth, and then earns little or no money. Akums deployed ₹258–329 Cr of capex annually for years and generated negative FCF in FY20, FY22, and FY23. The FY25 FCF recovery to ₹201 Cr is encouraging, but one good year does not a wonderful business make. Operating margins at 9.2% tell me this company has little ability to raise prices — when a customer can switch to another CDMO, you're a vendor, not a partner.\n\nThe earnings history is disqualifying for my style of investing. I need businesses whose earnings I can project with high confidence over a decade. A company that posts -₹251 Cr in FY22 and ₹1 Cr in FY24 fails that test completely. The FY25 jump to ₹344 Cr coincides with IPO proceeds inflating cash, wiping out ₹475 Cr of debt, and boosting other income to ₹69 Cr (vs. ₹8 Cr in FY24) — making the earnings quality questionable. At 26.5x trailing P/E, I'm paying a full price for a business with a spotty track record. The China+1 CDMO tailwind is real, but tailwinds don't compensate for a weak moat and unpredictable margins. I'd want to see 3+ years of consistently 12%+ operating margins and stable FCF before reconsidering.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 59803,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09281864999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11623,
+      "cache_read_input_tokens": 8778,
+      "output_tokens": 3106,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11623,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 333,
+          "cache_read_input_tokens": 8778,
+          "cache_creation_input_tokens": 2845,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2845
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

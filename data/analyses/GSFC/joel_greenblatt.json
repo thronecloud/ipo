@@ -1,0 +1,69 @@
+{
+  "symbol": "GSFC",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T17:31:51.191308Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "GSFC fails the Magic Formula on the critical metric that matters most — Return on Capital is a dismal 6.18%, far below my 20% minimum threshold for a \"good business.\" The earnings yield of ~9.6% (EBIT INR 636 Cr / EV ~INR 6,653 Cr) is borderline attractive but meaningless without capital efficiency to support it.",
+    "key_strengths": [
+      "Fortress balance sheet: near-zero debt (INR 2 Cr borrowings) on INR 12,465 Cr equity — zero financial risk",
+      "Trades below book value (P/B 0.56), providing a margin of safety floor for asset value",
+      "Growing other income (INR 323 Cr in FY25, 19.5% CAGR) from investment portfolio adds earnings stability"
+    ],
+    "key_risks": [
+      "Catastrophically low ROIC/ROCE (6.18%) — the business destroys value relative to its enormous asset base of INR 13,134 Cr",
+      "Highly cyclical earnings: operating income swung from INR 321 Cr (FY20) to INR 1,588 Cr (FY23) back to INR 636 Cr (FY25) — not a durable compounder",
+      "Negative FCF in two of last three years (FY24: -508 Cr, FY25: -296 Cr) despite rising profits, with capex accelerating to INR 380 Cr"
+    ],
+    "red_flags": [
+      "ROIC of 6.18% is roughly one-third my minimum threshold — this is a capital-intensive, low-return commodity business",
+      "EBIT CAGR is negative (-0.4%) over 9 years — earnings per rupee of revenue are actually shrinking long-term",
+      "CWIP surging from INR 107 Cr to INR 423 Cr signals heavy capital deployment into a business with demonstrably poor returns on existing capital"
+    ],
+    "detailed_analysis": "The Magic Formula requires both a cheap price AND a good business. GSFC passes neither test convincingly. Earnings yield of ~9.6% (EBIT INR 636 Cr / EV INR 6,653 Cr after stripping INR 285 Cr cash from near-zero-debt capital structure) sits below my 12% attractiveness threshold. More critically, ROCE of 6.18% is abysmal — the company deploys INR 13,134 Cr in assets to generate INR 636 Cr in operating income. For context, a genuinely good business earns 25%+ on capital; GSFC earns less than what a fixed deposit would yield. The thin 4.33% operating margins confirm this is a commodity-price-dependent, government-subsidy-linked business with no pricing power.\n\nThe balance sheet is GSFC's one legitimate bright spot — essentially zero debt and reserves of INR 12,385 Cr provide real downside protection, explaining the P/B of 0.56. But cheap-on-book is exactly where value traps hide: when a business consistently earns 4-6% returns on equity, book value is not being compounded — it is being slowly eroded in real terms. The company's FCF is deeply unreliable (swings from +INR 1,736 Cr in FY21 to -INR 508 Cr in FY24), and accelerating capex into a low-ROIC business is the wrong direction. Government of Gujarat's promoter stake (37.84%) means capital allocation decisions may serve policy goals over shareholder returns. Not a Magic Formula candidate.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 44470,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07778175,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11251,
+      "cache_read_input_tokens": 9205,
+      "output_tokens": 2188,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11251
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 170,
+          "cache_read_input_tokens": 9205,
+          "cache_creation_input_tokens": 2046,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2046,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

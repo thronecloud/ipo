@@ -1,0 +1,69 @@
+{
+  "symbol": "JAIBALAJI",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T17:48:40.497910Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Jai Balaji appears cheap on ROCE (36.1%) and earnings yield (~12%), but these metrics are distorted by a debt-restructuring windfall and a steel cycle peak in FY2024 — not durable business quality. Magic Formula demands sustained high ROIC from structural competitive advantage, which a commodity steel manufacturer cannot credibly claim.",
+    "key_strengths": [
+      "Debt dramatically restructured — borrowings collapsed from INR 3,464 Cr (2020) to INR 459 Cr (2025), D/E now just 0.21x",
+      "Revenue 9Y CAGR of 20.1% with last-5-yr EBITDA and operating income turning strongly positive after years of losses",
+      "Finance cost CAGR of -19% over 9 years signals genuine balance sheet repair, improving earnings quality"
+    ],
+    "key_risks": [
+      "FY2024 EBITDA of INR 1,415 Cr collapsed to INR 922 Cr in FY2025 (-35%) — the peak earnings used to justify valuation are already eroding",
+      "Free cash flow turned negative in FY2025 (-INR 43 Cr) as capex surged to INR 358 Cr; capital intensity is rising, not falling",
+      "Steel is a commodity business with no pricing power — Greenblatt's formula explicitly rewards businesses with durable competitive advantages (moats), which JAIBALAJI does not possess"
+    ],
+    "red_flags": [
+      "Company ran negative equity (INR -1,658 Cr in 2020) through at least 2022 — massive debt haircut inflated 2023 equity and FY2024 profits via accounting gains (Other Income INR 193 Cr in FY2024 vs INR 68 Cr in FY2025)",
+      "Operating margin reported at 1.72% is irreconcilable with stated Operating Income of INR 867 Cr on INR 6,351 Cr revenue (implied 13.7%) — data inconsistency signals potential one-time or non-recurring items in the income statement",
+      "Net profit dropped 37% YoY (INR 880 Cr → INR 558 Cr) as the restructuring tailwind fades — forward earnings power is likely far below the P/E-implied base"
+    ],
+    "detailed_analysis": "Running the Magic Formula: EBIT (Operating Income FY2025) = INR 867 Cr; EV = Market Cap INR 6,612 Cr + Net Debt INR 464 Cr = ~INR 7,076 Cr → Earnings Yield ≈ 12.2%, just at the 12% attractive threshold. ROCE is reported at 36.1%, seemingly excellent. On raw numbers alone, this looks like a Magic Formula candidate. But the methodology demands sustained ROIC — not a single-cycle spike. EBITDA already declined 35% from FY2024's INR 1,415 Cr to INR 922 Cr in FY2025, with FCF swinging to -INR 43 Cr as capex hit INR 358 Cr. The FY2024 earnings base that anchors current valuations (P/E 22.6x, EV/EBITDA 18.67x) is clearly peak-cycle.\n\nThe deeper structural problem: Jai Balaji spent most of 2016–2022 with deeply negative equity and chronic net losses, surviving only via a dramatic INR ~2,600 Cr debt haircut that mechanically created \"equity\" and drove FY2024 profitability partly through accounting gains (Other Income of INR 193 Cr). This is not a high-ROIC compounder — it is a distressed turnaround in a commodity industry with no pricing power, now re-investing heavily into capex with uncertain returns. Greenblatt's formula works on businesses with durable earnings power; steel cycle peaks masquerading as high ROIC are precisely the trap the Magic Formula is designed to avoid.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 92526,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.11990714999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 13049,
+      "cache_read_input_tokens": 8948,
+      "output_tokens": 4552,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 13049
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 489,
+          "cache_read_input_tokens": 8948,
+          "cache_creation_input_tokens": 4101,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 4101,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

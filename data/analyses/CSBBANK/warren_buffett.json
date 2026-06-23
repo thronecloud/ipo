@@ -1,0 +1,69 @@
+{
+  "symbol": "CSBBANK",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T16:59:48.792988Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "CSB Bank is a century-old regional lender with respectable revenue growth (20.5% CAGR) and cheap valuation (P/E 11x), but its finance costs are exploding at 33.8% CAGR — far outpacing revenue — squeezing earnings and signaling deteriorating net interest margins. Without a durable moat, ROE above 15%, or predictable free cash flow, this is a fair business at a fair price, not the wonderful business I seek.",
+    "key_strengths": [
+      "Century-old franchise (est. 1920) with Fairfax India as 40% promoter — provides institutional discipline and capital backing",
+      "Cheap valuation at 11x trailing P/E and 1.48x P/B for a growing bank; forward P/E of 7.86x prices in earnings recovery",
+      "Strong 20.5% revenue CAGR with expanding balance sheet (assets grew from ₹25,356 Cr to ₹47,836 Cr in 3 years)"
+    ],
+    "key_risks": [
+      "Finance costs growing at 33.8% CAGR vs. 9% profit CAGR — cost of funds rising faster than earning assets, severely compressing NIM",
+      "Free cash flow swung to -₹5,556 Cr in FY25; OCF positive only 2 of 4 years — cash generation is unreliable",
+      "ROE of 13.2% is below my 15% threshold and declining in effectiveness as the balance sheet scales without proportional profit growth"
+    ],
+    "red_flags": [
+      "Total debt nearly tripled in one year (₹1,757 Cr → ₹5,246 Cr in FY25) — aggressive liability-side expansion warrants scrutiny",
+      "Net profit growth (9% CAGR) dramatically lags revenue growth (20.5%) — operating leverage is absent, suggesting structural margin pressure",
+      "Operating CF deeply negative in FY25 (-₹5,256 Cr) even accounting for bank loan-book expansion norms — scale of swing is concerning"
+    ],
+    "detailed_analysis": "CSB Bank is a respectable Kerala-based regional lender with over 100 years of history, a credible institutional promoter in Fairfax India, and genuine franchise growth. Revenue has compounded at 20.5% over three years, and the bank has clearly expanded its footprint across gold loans, SME, and retail banking. At 11x earnings and 1.48x book, the market is not pricing in much optimism — and therein lies the only argument for the stock.\n\nHowever, the economics are deteriorating in ways I find troubling. Finance costs have surged 33.8% annually — far faster than revenue (20.5%) or profits (9%) — meaning the bank is paying increasingly more for its deposits and borrowings without capturing that cost in earnings. ROE sits at 13.2%, below my minimum threshold, and with the balance sheet expanding aggressively (assets up 88% in 3 years), returns on incremental capital appear to be declining. Regional Indian banks face brutal competition, offer no meaningful switching costs, and lack pricing power. This is a mediocre business at a fair price — not something I would buy, though I would not short it either.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 35580,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07208625,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10135,
+      "cache_read_input_tokens": 8520,
+      "output_tokens": 2101,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10135
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 537,
+          "cache_read_input_tokens": 8520,
+          "cache_creation_input_tokens": 1615,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1615,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

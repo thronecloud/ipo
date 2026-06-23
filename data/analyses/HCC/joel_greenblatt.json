@@ -1,0 +1,70 @@
+{
+  "symbol": "HCC",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T17:33:41.012805Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "HCC's Magic Formula metrics are illusory — the ROCE of 25.2% is an artifact of a shrinking, asset-sale-driven balance sheet, not genuine operational capital efficiency. Finance costs of ₹600 Cr nearly match EBIT of ₹634 Cr, meaning the core construction business generates essentially zero after interest, failing the fundamental \"good and cheap\" test.",
+    "key_strengths": [
+      "ROCE of 25.2% superficially clears the Magic Formula threshold (>20%)",
+      "Debt has been cut sharply: borrowings from ₹5,512 Cr (2023) to ₹1,610 Cr (2025), improving solvency",
+      "EV/EBITDA of 5.46x looks optically cheap for an industrials company"
+    ],
+    "key_risks": [
+      "Revenue collapsed 47% in 3 years (₹10,668 Cr FY22 → ₹5,603 Cr FY25) — the business is structurally contracting",
+      "Finance cost (₹600 Cr) consumes ~95% of EBIT (₹634 Cr), leaving near-zero true earnings for shareholders",
+      "Other Income (₹653 Cr FY25) virtually equals Operating Income (₹634 Cr) — reported profits are non-recurring asset/liability gains, not operating cash generation"
+    ],
+    "red_flags": [
+      "Equity was negative six consecutive years (FY20–FY24); FY25 positive equity (₹1,092 Cr) driven by non-operating items, not earned profits",
+      "Net Profit erratic and unreliable: losses in 7 of 10 years (FY16–FY25); FY25 PAT only ₹113 Cr on ₹5,000 Cr market cap implies P/E ~44x (not the stated 30x)",
+      "Promoter stake alarmingly low at 16.72% — minimal skin in the game for a highly leveraged, capital-intensive business",
+      "OCF of only ₹134 Cr FY25 vs market cap of ₹5,001 Cr = FCF yield of 2.7% — nothing close to Magic Formula attractiveness"
+    ],
+    "detailed_analysis": "Running the Magic Formula on HCC produces a failing grade on both pillars. Earnings Yield (EBIT/EV) = ₹634 Cr / ₹6,111 Cr (₹5,001 Cr market cap + ₹1,679 Cr net debt − ₹569 Cr cash) = ~10.4%, below the 12% minimum threshold. The stated ROCE of 25.2% looks impressive, but is entirely a denominator trick: the capital base shrank from ₹14,194 Cr in assets (FY22) to ₹8,537 Cr (FY25) as management sold assets to service debt. Capital employed is now ~₹2,771 Cr (equity + debt), an artificially small base. Strip out other income (₹653 Cr, largely one-time), and core operating profit barely covers interest — this is not a high-ROIC compounder.\n\nThe Magic Formula demands sustained, high-quality returns on genuine invested capital over 3+ years, not a restructuring-driven statistical anomaly. HCC has lost money in 7 of the last 10 fiscal years. Revenue has declined at -4.6% CAGR over nine years and has nearly halved since FY22. With a 16.72% promoter stake, no earnings moat in commoditized infrastructure construction, and finance costs consuming virtually all EBIT, this stock ranks in the bottom decile on every Greenblatt criterion. The optically low EV/EBITDA (5.46x) is a value trap, not a value opportunity.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 55132,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0925332,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11772,
+      "cache_read_input_tokens": 9064,
+      "output_tokens": 3044,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11772
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 404,
+          "cache_read_input_tokens": 9064,
+          "cache_creation_input_tokens": 2708,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2708,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

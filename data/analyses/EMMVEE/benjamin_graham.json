@@ -1,0 +1,70 @@
+{
+  "symbol": "EMMVEE",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-21T08:06:36.627252Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Emmvee fails virtually every Graham quantitative filter — P/B of 16.46 vs my 1.5 ceiling, D/E of 2.15 vs my 0.5 ceiling, and a Graham Number of ~INR 41 implies the market price of INR 266 embeds a 550% speculative premium. The 2025 earnings explosion (29 Cr → 369 Cr in a single year) is a story, not a proven record, and I do not pay for stories.",
+    "key_strengths": [
+      "Revenue and EBITDA compounding strongly: revenue 33% CAGR, EBITDA 39% CAGR over 5 years",
+      "Operating cash flow positive all 5 years — real cash is being generated from operations (614 Cr in 2025)",
+      "Interest coverage of ~7x (EBITDA 759 / Finance Cost 108) clears my 3.5x minimum"
+    ],
+    "key_risks": [
+      "Debt explosion: borrowings rose from 524 Cr (2023) to 2,056 Cr (2025) — D/E of 2.15 far exceeds my 0.5 limit",
+      "Free cash flow deeply negative: -375 Cr (2025), -440 Cr (2024) — capex of 988 Cr in 2025 means the business consumes more than it generates",
+      "Net profit quadrupled in one year (29 → 369 Cr); earnings normalized over a full cycle would collapse the current P/E well above 34x"
+    ],
+    "red_flags": [
+      "P/B of 16.46 — I am being asked to pay 16x net assets for a capital-intensive manufacturer",
+      "Graham Number ~INR 41 (sqrt(22.5 × ~5.34 EPS × ~13.85 BVPS)) against a market price of 266 — a 6.5x premium to intrinsic value",
+      "No dividend — management retains all capital while debt quadruples",
+      "2025 net profit is a 12x spike over 2024; single-year earnings surges are precisely what Mr. Market prices in permanently but the business rarely sustains"
+    ],
+    "detailed_analysis": "By every quantitative measure I have published, Emmvee is a speculation, not an investment. The P/E of 34.5 is more than double my 15x ceiling; the P/B of 16.46 is eleven times my preferred maximum of 1.5. My Graham Number — computed as the square root of 22.5 times earnings per share (~5.34) times book value per share (~13.85) — yields roughly INR 41. The stock trades at INR 266, a 550% premium. No margin of safety exists; the entire price rests on faith in a trajectory that has existed for exactly one fiscal year.\n\nThe balance sheet has deteriorated sharply. Borrowings grew nearly fourfold in two years (524 Cr → 2,056 Cr), and free cash flow has been negative for three consecutive years as the company pours capital into expansion (capex 988 Cr in 2025). The operating cash flow of 614 Cr is encouraging, but it is entirely consumed and then some by investing outflows of 986 Cr. The 105% ROE is a mathematical artifact of a thin equity base levered with debt, not evidence of a fortress business. Mr. Market is offering this stock at a price that assumes the solar boom continues indefinitely, execution is flawless, and margins hold. I require the opposite posture: assume adversity, demand a discount to proven assets, and let the margin of safety protect me. Here, there is none.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 45713,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.06998625,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8831,
+      "cache_read_input_tokens": 10870,
+      "output_tokens": 2240,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8831,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 230,
+          "cache_read_input_tokens": 8820,
+          "cache_creation_input_tokens": 2061,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2061
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

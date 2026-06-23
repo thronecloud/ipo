@@ -1,0 +1,70 @@
+{
+  "symbol": "EDELWEISS",
+  "persona": "howard_marks",
+  "persona_display_name": "Howard Marks",
+  "analyzed_at": "2026-04-18T17:17:09.127172Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Edelweiss is a complex financial conglomerate in prolonged restructuring — revenue and EBITDA have never recovered to 2019 peaks despite six years, while equity has eroded 35% since 2023, destroying the very book value the P/B multiple rests on. The Forward P/E of 7.56x implies a nearly 3x earnings jump from current levels that is not supported by operational trajectory, offering no margin of safety for what is demonstrably a business in decline.",
+    "key_strengths": [
+      "Consistent deleveraging: borrowings nearly halved from INR 36,657 Cr (2020) to INR 19,459 Cr (2025), reducing balance sheet risk meaningfully.",
+      "Cash position strengthening: cash grew from INR 2,024 Cr (2022) to INR 4,938 Cr (2025), improving liquidity runway.",
+      "Finance costs declining: from INR 4,793 Cr (2020) to INR 2,537 Cr (2025), structurally improving interest coverage."
+    ],
+    "key_risks": [
+      "Equity destruction: total equity collapsed from INR 6,744 Cr (2023) to INR 4,419 Cr (2025) — a 35% erosion in two years — likely from demergers of profit-generating subsidiaries, leaving a hollowed-out parent.",
+      "Revenue and earnings stuck well below peak: 2025 revenue of INR 9,415 Cr and net profit of INR 536 Cr vs 2019 peaks of INR 11,078 Cr and INR 1,044 Cr — no recovery after six years.",
+      "ROE of 8.68% is structurally below cost of equity; a financial company trading at 1.86x book while destroying returns is value-destructive for shareholders."
+    ],
+    "red_flags": [
+      "Forward P/E of 7.56x implies ~INR 1,492 Cr net profit vs trailing INR 536 Cr — a 3x earnings jump embedded in the price with no credible operational basis.",
+      "Promoter holding of only 32.69% is low for an Indian financial conglomerate; limited skin in the game raises governance concerns.",
+      "EBITDA 9-year CAGR of just 0.6% and near-zero operating income CAGR of 0.4% — a decade of value erosion dressed up as restructuring.",
+      "Complexity of the conglomerate structure (credit, ARC, insurance, AMC, investment banking) makes normalized earnings nearly impossible to verify — opacity is a risk premium not yet in the price."
+    ],
+    "detailed_analysis": "Edelweiss sits in the uncomfortable middle zone that second-level thinking warns about: it appears superficially cheap on forward multiples, but the consensus optimism embedded in that Forward P/E of 7.56x is precisely the trap. The market is pricing in a near-tripling of net profit from INR 536 Cr to roughly INR 1,490 Cr — yet the operational record shows EBITDA has been range-bound between INR 2,700-3,500 Cr for five years and revenue has contracted. When I see a 19x trailing P/E collapsing to 7.56x forward, I don't think \"cheap\" — I think \"what is the market being sold?\" At P/B of 1.86x on a book that itself shrank 35% in two years, the asset base supporting this valuation is eroding faster than earnings can grow.\n\nThe deleveraging narrative is real and credit-worthy — cutting borrowings by INR 17,000 Cr over five years is genuine risk reduction. But deleveraging via asset sales and subsidiary demergers means the income streams that justified those liabilities have also departed. What remains is a financial conglomerate earning sub-9% ROE on a shrinking equity base, with complexity that obscures true normalized earnings. The 2020 loss of INR 2,044 Cr demonstrated how viciously the credit and ARC businesses can impair capital in a downturn. With Debt/Equity still at 3.51x, a credit cycle turn or rising rates could reprise that scenario. There is no margin of safety at current prices — the stock requires everything to go right on earnings recovery, and in my experience, businesses that spend six years below their peak rarely reward that faith.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 68171,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0921042,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9844,
+      "cache_read_input_tokens": 11234,
+      "output_tokens": 3454,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9844
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 777,
+          "cache_read_input_tokens": 9180,
+          "cache_creation_input_tokens": 2718,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2718,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

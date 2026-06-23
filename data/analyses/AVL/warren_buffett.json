@@ -1,0 +1,69 @@
+{
+  "symbol": "AVL",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T16:34:44.363685Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Aditya Vision is a fast-growing regional consumer electronics retailer with impressive 36% revenue CAGR, but it operates in a commodity retail segment with no durable moat, razor-thin 6.6% operating margins, and a worsening cash-burn profile that disqualifies it at 61x earnings. I don't pay growth-stock multiples for a business that can't convert earnings into free cash.",
+    "key_strengths": [
+      "Strong revenue and profit CAGR of 36-44% over 3 years, showing real execution in underpenetrated Eastern India markets",
+      "ROCE of 29.95% is surprisingly healthy for a retailer, suggesting reasonable asset turns at store level",
+      "Institutional confidence with FII+DII holding ~36% and promoters at 47% with stable skin in the game"
+    ],
+    "key_risks": [
+      "Free cash flow collapsing: -13 → -41 → -78 Cr over 3 years; OCF turned negative in 2024-25 as working capital devours growth profits",
+      "Zero competitive moat — sells identical SKUs as Reliance Digital, Croma, and Amazon; price and convenience determine customer choice, not brand loyalty",
+      "Valuation is punishing at P/E 61x and EV/EBITDA 36x for a business with 6.6% operating margins and negative FCF — leaves no margin of safety"
+    ],
+    "red_flags": [
+      "Operating cash flow turned negative in both FY24 (-6 Cr) and FY25 (-41 Cr) — the business is not self-funding its growth",
+      "Total debt surged from 282 Cr (2022) to 480 Cr (2025) even after a large equity infusion; the balance sheet is leveraging up, not down",
+      "Debt/Equity of 0.65 in a consumer cyclical, capital-intensive business with negative FCF is a dangerous combination in any rate environment"
+    ],
+    "detailed_analysis": "Aditya Vision is essentially a store-rollout story in Bihar and Eastern India — a region with genuine organized-retail runway. The 36% revenue CAGR and 44% net profit CAGR are real and reflect solid store economics in underserved markets. The ROCE of ~30% suggests individual stores likely earn their keep. But this is a distribution business, not a branded one. Every product on the shelf can be bought cheaper on Flipkart or at the next Reliance Digital, which means pricing power is nonexistent and margins structurally cap out in the mid-single digits. That 6.57% operating margin is the ceiling, not the floor — and any competitive incursion or demand slowdown compresses it fast. This is precisely the kind of business I've spent 60 years avoiding.\n\nThe cash flow picture is what makes this uninvestable for me at any reasonable price, let alone 61x earnings. A business that earned INR 106 Cr in net profit in FY25 but generated -41 Cr in operating cash flow is telling you something important: working capital is eating the profits alive as the company races to stock more inventory for more stores. Free cash flow at -78 Cr means shareholders are funding the growth, not benefiting from it. Add debt of 480 Cr (D/E 0.65) onto a thin-margin, no-moat retailer and I see a business that is one economic slowdown or competitor entry away from real stress. The market is pricing this at a premium it has not earned.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 50169,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07565745,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10407,
+      "cache_read_input_tokens": 8424,
+      "output_tokens": 2273,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10407,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 325,
+          "cache_read_input_tokens": 8424,
+          "cache_creation_input_tokens": 1983,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1983
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

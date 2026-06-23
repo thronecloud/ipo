@@ -1,0 +1,69 @@
+{
+  "symbol": "CERA",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T16:56:18.842453Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Cera Sanitaryware is a decent business with ROCE of ~22%, but at an EV of ~INR 6,923 Cr against EBIT of only INR 302 Cr, the earnings yield is a meager ~4.4% — far below the Magic Formula's 12% threshold. The stock is simply too expensive to buy with a margin of safety.",
+    "key_strengths": [
+      "Virtually debt-free balance sheet (D/E 0.04) with strong reserves of INR 1,347 Cr",
+      "Sustained ROCE of 22.4% and gross margins of ~51% indicate a branded product moat in sanitaryware",
+      "Net profit CAGR of 13% over 9 years — earnings compounding faster than revenue"
+    ],
+    "key_risks": [
+      "Revenue nearly flat — FY2024: INR 1,879 Cr → FY2025: INR 1,926 Cr (+2.5%) — growth stalling badly",
+      "EBITDA actually declined in FY2025 (INR 305 Cr vs INR 325 Cr), yet the stock trades at EV/EBITDA of 22x",
+      "Operating margin of only 8.27% despite 51% gross margins reveals heavy distribution/trade spend — structurally thin"
+    ],
+    "red_flags": [
+      "Other income of INR 57 Cr (2025) = ~23% of operating profit — earnings quality inflated by non-operating items",
+      "OCF of INR 122 Cr in FY2025 vs net profit of INR 249 Cr — major divergence, only 49% FCF conversion this year",
+      "Earnings yield of ~4.4% (EBIT INR 302 Cr / EV INR 6,923 Cr) fails Magic Formula minimum threshold of 12%"
+    ],
+    "detailed_analysis": "Running the Magic Formula: EBIT = INR 302 Cr (FY2025 operating income), EV = Market Cap INR 6,866 Cr + Debt INR 67 Cr − Cash INR 10 Cr = INR 6,923 Cr. Earnings Yield = 302/6,923 = **4.4%** — catastrophically low, less than a third of Greenblatt's 12% minimum. ROCE of 22.4% clears the hurdle on the quality side, but a good business at a bad price is still a bad investment. The Magic Formula demands BOTH metrics to be high; Cera only passes one.\n\nThe business fundamentals are softening, not strengthening. Revenue grew a mere 2.5% in FY2025, EBITDA contracted by INR 20 Cr YoY, and free cash flow collapsed to INR 94 Cr (vs INR 174 Cr in FY2024) — yet the market continues to price this at 27.8x P/E and 22x EV/EBITDA. The heavy reliance on other income (INR 57 Cr) to prop up reported earnings, combined with poor OCF-to-profit conversion, makes the quality of earnings suspect. At current valuations, the risk/reward is deeply unfavorable on a Magic Formula basis.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 68822,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07886355,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10971,
+      "cache_read_input_tokens": 9011,
+      "output_tokens": 2334,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10971
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 418,
+          "cache_read_input_tokens": 9011,
+          "cache_creation_input_tokens": 1960,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1960,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

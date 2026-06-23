@@ -1,0 +1,70 @@
+{
+  "symbol": "ASHAPURMIN",
+  "persona": "rakesh_jhunjhunwala",
+  "persona_display_name": "Rakesh Jhunjhunwala",
+  "analyzed_at": "2026-04-18T16:28:05.585172Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Ashapura is a cyclical mining business with a troubled history — revenue barely grew 4.9% CAGR over 9 years and free cash flow has been negative every single year for the past 5 years, even as debt tripled to ₹1,228 Cr. The recent earnings recovery is real but fragile, with earnings quality undermined by volatile \"other income\" swings (₹487 Cr in FY20 vs ₹-265 Cr in FY19) masking true operating performance.",
+    "key_strengths": [
+      "ROE of 27.1% and ROCE of 18.6% show decent returns on the asset base during the recovery cycle",
+      "Diversified mineral portfolio (bauxite, bentonite, kaolin, proppants, bleaching clay) with global export reach — benefits from India's infrastructure push",
+      "EBITDA nearly tripled from ₹167 Cr (FY21) to ₹469 Cr (FY25) with P/E of 15.5x — not expensive in absolute terms"
+    ],
+    "key_risks": [
+      "Free cash flow deeply negative every year (-₹208 Cr in FY25, -₹125 Cr in FY24) with capex of ₹401 Cr in FY25 — the business consumes more cash than it generates operationally",
+      "Debt/Equity of 0.86 (above my 0.6 threshold) with borrowings tripling from ₹441 Cr to ₹1,228 Cr in 5 years and finance costs growing at 17.8% CAGR — leverage risk is rising fast",
+      "Historical track record deeply scarred: revenue collapsed from ₹1,775 Cr (FY16) to ₹334 Cr (FY20), losses hit ₹327 Cr in FY19 — this is a cyclical, not a compounder"
+    ],
+    "red_flags": [
+      "Net profit of ₹383 Cr in FY20 despite negative EBITDA of -₹17 Cr — entirely driven by exceptional other income items; earnings quality is poor",
+      "Promoter holding at 47.88% — below 50% threshold, and promoters have not been buying despite the recovery",
+      "'Other income' swings wildly (₹-265 Cr in FY19, ₹487 Cr in FY20, ₹211 Cr in FY24) — reported profits are unreliable indicators of true business performance",
+      "9-year revenue CAGR of just 4.9% — well below inflation; this is not a growth business by any measure"
+    ],
+    "detailed_analysis": "Ashapura Minechem sits in a sector I instinctively avoid — commodity mining — and the numbers confirm my instincts. A 4.9% revenue CAGR over nine years barely covers inflation, and the journey from ₹1,775 Cr in FY16 to ₹334 Cr in FY20 and back tells me this is a deeply cyclical business, not a structural compounder. The recent 5-year recovery (FY21-FY25) is admirable — EBITDA went from ₹167 Cr to ₹469 Cr — but it masks the fact that FCF has been negative every single year, meaning the company is funding growth entirely through debt. Borrowings have ballooned from ₹441 Cr to ₹1,228 Cr in five years, and finance costs are compounding at 17.8% annually. That is a dangerous trajectory if the commodity cycle turns.\n\nThe ROE of 27.1% looks impressive but is partly a function of high leverage and volatile other income. The ₹383 Cr \"net profit\" in FY20 — the year EBITDA was negative ₹17 Cr — is the clearest signal that reported profits cannot be trusted at face value. The P/E of 15.5x appears cheap, but I need earnings to be real before I apply a multiple to them. The CWIP collapse from ₹504 Cr to ₹72 Cr suggests the heavy capex cycle may be completing, which could improve FCF in FY26-27. But with promoters below 50%, rising debt, and a sector with no structural tailwind specific to India's consumption story, I see no reason to take a position. Let the FCF turn positive for two consecutive years and the debt start declining — then the story becomes interesting.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 63554,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08613494999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9775,
+      "cache_read_input_tokens": 11349,
+      "output_tokens": 3071,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9775,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 521,
+          "cache_read_input_tokens": 9246,
+          "cache_creation_input_tokens": 2632,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2632
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

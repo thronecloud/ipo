@@ -1,0 +1,71 @@
+{
+  "symbol": "EMIL",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T17:19:17.630295Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Electronics Mart is a commodity electronics retailer with 4% operating margins, no pricing power, and ROCE of 10.4% — well below the 15% minimum I require for a business worth owning. At 44x trailing P/E with deeply negative free cash flow and a debt load that has more than doubled in five years, the market is pricing in perfection for a business that structurally cannot deliver it.",
+    "key_strengths": [
+      "17% revenue CAGR (2020–2025) demonstrates solid footprint expansion in underpenetrated South Indian markets",
+      "65% promoter holding signals founder-led conviction and aligned ownership",
+      "Strong brand recognition in Hyderabad/Andhra-Telangana market with 40+ years operating history"
+    ],
+    "key_risks": [
+      "Negative FCF three of last four years (2023: -247 Cr, 2025: -159 Cr) while reporting accounting profits — earnings quality is illusory",
+      "Borrowings doubled from 872 Cr (2020) to 1,963 Cr (2025); finance costs rose 13.4% CAGR and will continue compressing already razor-thin 4% operating margins",
+      "No moat whatsoever — competing against Croma (Tata), Reliance Digital, Amazon, Flipkart on identical SKUs with zero pricing power"
+    ],
+    "red_flags": [
+      "ROCE of 10.4% fails the 12% minimum red-flag threshold — this business destroys value at its cost of capital",
+      "Net profit DECLINED from 184 Cr (FY24) to 160 Cr (FY25) even as revenue grew — operating leverage is running in reverse",
+      "FCF/Net Income ratio is deeply negative (-159 Cr FCF vs. +160 Cr net profit in FY25) — the reported profits are not cash",
+      "Capex exploded to 335 Cr in FY25 (vs. 68 Cr in FY22) with no visible improvement in returns — capital allocation discipline is absent",
+      "P/E of 44x is grotesquely expensive for a low-margin retailer with declining profits and negative free cash flow"
+    ],
+    "detailed_analysis": "Invert, always invert. Ask what makes a terrible investment: thin margins, leverage, commodity product, formidable competition, negative free cash flow dressed up as profits. EMIL checks every box. The 4.05% operating margin leaves no room for error — a single bad season, a supply chain hiccup, or an aggressive price war from Reliance or Amazon erases the entire profit. Finance costs of 118 Cr in FY25 represent 74% of net profit, meaning creditors are the primary beneficiary of this business's operations. The borrowing binge to fund capex (335 Cr in FY25 alone) is particularly alarming because ROIC is already below the cost of capital — each new rupee invested destroys value.\n\nThe valuation compounds the problem. At 44x trailing P/E, the market prices EMIL like a quality compounder. It is not. The forward P/E of 23.5x implies analysts expect profits to nearly double — but with net profit already contracting YoY and rising interest costs, that optimism looks delusional. Good businesses at fair prices are what I seek; this is a poor business at a steep price. The promoter's 65% stake and decent revenue growth are the only bright spots, but they cannot compensate for structural return deficiencies and a balance sheet being stretched thin to fund questionable expansion. Pass.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 44325,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07691864999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10759,
+      "cache_read_input_tokens": 8778,
+      "output_tokens": 2262,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10759
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 324,
+          "cache_read_input_tokens": 8778,
+          "cache_creation_input_tokens": 1981,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1981,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

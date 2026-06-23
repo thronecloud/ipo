@@ -1,0 +1,69 @@
+{
+  "symbol": "AAVAS",
+  "persona": "radhakishan_damani",
+  "persona_display_name": "Radhakishan Damani",
+  "analyzed_at": "2026-04-19T06:17:29.820675Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Aavas Financiers is a high-quality affordable housing lender with impressive growth credentials — 22% revenue CAGR and 29.7% PAT CAGR over seven years — but ROE of 13.9% falls short of my 15% floor and promoter holding at 48.95% is below my 55% comfort level. The business is good but not good enough at the current price to warrant conviction buying.",
+    "key_strengths": [
+      "Exceptional growth: PAT grew from INR 93 Cr (FY18) to INR 574 Cr (FY25) at 29.7% CAGR — rare consistency for an NBFC",
+      "Rural and semi-urban focus creates natural moat through local presence and underserved customer relationships",
+      "Forward P/E of 13.56x suggests the market is pricing in a recovery, and if growth sustains, this could be reasonably valued"
+    ],
+    "key_risks": [
+      "ROE of 13.9% is below my 15% threshold — acceptable for a growth-stage lender but must improve as book matures",
+      "Promoter stake at 48.95% is below my 55% floor — limited promoter control raises governance watch points",
+      "Total debt at INR 13,918 Cr against equity of INR 4,361 Cr (D/E 3.08x) — the business is entirely reliant on wholesale funding, making it vulnerable to liquidity events"
+    ],
+    "red_flags": [
+      "Finance cost data for FY25 shows only INR 5 Cr versus INR 828 Cr in FY24 — this is a data anomaly that raises questions about classification changes or reporting consistency",
+      "OCF negative all 5 years (0/5) — structurally expected for an HFC but requires uninterrupted capital market access",
+      "Cash balance of only INR 11 Cr against INR 13,918 Cr of debt — minimal liquidity buffer if funding markets tighten"
+    ],
+    "detailed_analysis": "Aavas has built a genuinely differentiated franchise in affordable housing finance for rural India — a segment where physical presence, local language capabilities, and ground-level underwriting create real barriers to entry. The growth record is impressive and consistent, which I respect. However, the ROE of 13.9% tells me the business is still borrowing to grow, not yet generating the returns on capital I expect from a core holding.\n\nThe anomalous finance cost figure of INR 5 Cr in FY25 (versus INR 828 Cr in FY24) is concerning from a data integrity standpoint and requires clarification — it may reflect Ind AS reclassification, but I cannot underwrite a lending business without clear interest cost visibility. At 21.8x P/E, I would not buy aggressively; I would observe for two more quarters to confirm earnings quality and watch whether the promoter moves toward — or further below — the 50% threshold.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 161909,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.21861990000000003,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 23386,
+      "cache_read_input_tokens": 15678,
+      "output_tokens": 8414,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 23386,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 644,
+          "cache_read_input_tokens": 15678,
+          "cache_creation_input_tokens": 7708,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 7708
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

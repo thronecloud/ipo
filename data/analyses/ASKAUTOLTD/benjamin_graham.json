@@ -1,0 +1,69 @@
+{
+  "symbol": "ASKAUTOLTD",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T16:29:12.425601Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "ASK Automotive trades at INR 437 against a Graham Number of approximately INR 129 (sqrt(22.5 × EPS ~12.6 × BVPS ~58.8)), meaning the market demands a 240% premium over my calculated intrinsic value — an unacceptable speculation for the enterprising investor. With P/B at 7.43 and P/E at 30.4, both more than double my maximum thresholds, no margin of safety exists whatsoever.",
+    "key_strengths": [
+      "Unbroken earnings record across 7 years (2019–2025), including the COVID year, with net profit CAGR of 13.8%",
+      "Operating cash flow positive all 5 years (INR 136–360 Cr), confirming earnings are real cash earnings",
+      "High promoter holding at 74.95% aligns management with long-term ownership"
+    ],
+    "key_risks": [
+      "Extreme overvaluation: P/B of 7.43 vs my ceiling of 1.5 — price embeds years of optimistic future growth with zero safety cushion",
+      "Free cash flow is nearly illusory: despite INR 360 Cr operating CF, capex of INR 346 Cr left only INR 30 Cr FCF in 2025 — the business consumes nearly all it earns",
+      "Debt surged from INR 346 Cr to INR 612 Cr in a single year (FY25), with borrowings up 77% — capital intensity is accelerating, not abating"
+    ],
+    "red_flags": [
+      "P/B 7.43 — paying INR 7.43 for every rupee of net assets; book value provides zero protection at this price",
+      "Debt/Equity of 0.53 breaches my 0.5 limit and worsening rapidly — borrowings nearly doubled in FY25",
+      "Free cash flow yield is negligible: INR 30 Cr FCF on INR 8,611 Cr market cap = 0.35% — no real return of capital to shareholders"
+    ],
+    "detailed_analysis": "By every quantitative measure I have employed across decades of security analysis, ASK Automotive fails the test of an intelligent investment. The Graham Number — derived from FY25 EPS of ~INR 12.6 and book value per share of ~INR 58.8 — yields approximately INR 129. The stock trades at INR 437, a 240% premium to what I would consider the upper bound of intrinsic value. The P/E of 30.4 is twice my maximum acceptable ratio of 15, and P/B of 7.43 is nearly five times my preferred ceiling of 1.5. The market is pricing in perfection, and Mr. Market in his euphoria is asking me to pay dearly for a future that may never arrive. Debt/equity of 0.53 narrowly exceeds my threshold and is deteriorating — borrowings jumped from INR 346 Cr to INR 612 Cr in FY25 alone, funding heavy capex.\n\nI will grant that the company possesses genuine operating merit: seven consecutive years of positive earnings, solid ROCE of 27.6%, and consistently positive operating cash flows demonstrate a real, functioning business. But the intelligent investor does not simply buy good businesses — he buys them at the right price. The capex burden (INR 346 Cr in FY25) consumes nearly all operating cash flow, leaving free cash flow of a mere INR 30 Cr on a market cap of INR 8,611 Cr. An investor purchasing today at 30× earnings with a 0.35% free cash flow yield is speculating on continued growth, not investing in demonstrated earning power. I require a margin of safety; this stock offers none.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 45835,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.072792,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8924,
+      "cache_read_input_tokens": 10960,
+      "output_tokens": 2402,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8924,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 382,
+          "cache_read_input_tokens": 8910,
+          "cache_creation_input_tokens": 2064,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2064
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

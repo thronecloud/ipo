@@ -1,0 +1,69 @@
+{
+  "symbol": "CERA",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T16:53:57.934311Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Cera is a decent branded sanitaryware business with a near-debt-free balance sheet, but thin 8.3% operating margins betray limited pricing power for a supposed brand moat. At 27.8x P/E with revenue growth decelerating to ~2.5% in FY2025, the price is fair — not compelling.",
+    "key_strengths": [
+      "Nearly debt-free balance sheet (D/E 0.04) with INR 1,354 Cr equity — conservative, owner-run capital allocation",
+      "ROE 18.2% / ROCE 22.4% sustained across cycles — capital efficiency is respectable",
+      "Net profit CAGR of 13% over 9 years with 5/5 years of positive FCF — business earns real cash"
+    ],
+    "key_risks": [
+      "Operating margins of only 8.3% are dangerously thin for a branded consumer business — true pricing power would show 15-20%+",
+      "Revenue growth slowing sharply: FY2024 INR 1,879 Cr → FY2025 INR 1,926 Cr (2.5% growth) with EBITDA actually contracting 325→305 Cr",
+      "Other income doubled to INR 57 Cr in FY2025 (from ~23 Cr prior), masking core earnings weakness — EPS quality is deteriorating"
+    ],
+    "red_flags": [
+      "FY2025 FCF collapsed to INR 94 Cr from INR 174 Cr in FY2024 — operating cash flow dropped to 122 Cr despite higher reported profits",
+      "Other income now constitutes ~23% of net profit — treasury/non-operating income propping up headline earnings",
+      "Gross margins 50.6% but operating margins only 8.3% — massive cost leakage suggesting no real pricing moat"
+    ],
+    "detailed_analysis": "Cera has run a clean ship for 45 years — virtually no debt, consistent promoter ownership at 54%, and a recognizable brand in Indian sanitaryware. The 9-year net profit CAGR of 13% and steady equity growth from INR 770 Cr to INR 1,354 Cr tell a story of a business that compounds modestly but reliably. I appreciate what management has built. But when I see gross margins of 50% collapsing to an 8% operating margin, I have to ask: where is the brand premium going? A business like Fevicol (Pidilite) or Asian Paints extracts 20%+ operating margins because customers are genuinely loyal and distributors have no substitute. Cera's margin profile looks more like a trading business than a branded one.\n\nWhat worries me most is the FY2025 picture: revenue barely grew (+2.5%), EBITDA fell from INR 325 Cr to INR 305 Cr, FCF was cut nearly in half, yet net profit of INR 249 Cr looks respectable only because other income (INR 57 Cr) — likely treasury gains — is doing heavy lifting. I'd want to see the core business earn its keep. At 27.8x P/E and 22x EV/EBITDA, the market is pricing in a quality compounder; I see a decent but competitively pressured building products company facing real estate cycle headwinds. Not a business I'd pay up for.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 49465,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08094825,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10989,
+      "cache_read_input_tokens": 8985,
+      "output_tokens": 2469,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10989
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 519,
+          "cache_read_input_tokens": 8985,
+          "cache_creation_input_tokens": 2004,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2004,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

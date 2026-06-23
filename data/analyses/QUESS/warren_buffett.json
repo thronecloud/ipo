@@ -1,0 +1,69 @@
+{
+  "symbol": "QUESS",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T22:06:11.701189Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Quess Corp is a low-moat staffing business with razor-thin margins (1.76% operating, 5.18% gross) where net profit collapsed 84% to just ₹46 Cr in FY2025 amid a major demerger, making sustainable returns on capital elusive. At sub-10% ROE/ROCE and with no durable competitive advantage, this is precisely the kind of commodity-like business I avoid regardless of headline valuation.",
+    "key_strengths": [
+      "Consistently positive free cash flow (5/5 years, ₹379 Cr in FY2025) — the one genuine bright spot",
+      "Very low debt/equity of 0.11 post-demerger, a clean balance sheet",
+      "Revenue CAGR of 17.8% over 9 years shows scale-building ability in a large addressable market"
+    ],
+    "key_risks": [
+      "No economic moat — staffing is a commodity service with near-zero switching costs and cutthroat price competition",
+      "Profitability in structural decline: EBITDA fell from ₹899 Cr (2020) to ₹324 Cr (2025), net profit CAGR is -6.1% over 9 years",
+      "Post-demerger balance sheet opacity — total equity collapsed 60% (₹2,799→₹1,115 Cr) and 'Other Income' was -₹141 Cr in FY2025, signaling hidden losses"
+    ],
+    "red_flags": [
+      "Net profit essentially evaporated to ₹46 Cr in FY2025 while revenue was ₹14,967 Cr — 0.3% net margin on ₹15,000 Cr of revenue is deeply troubling",
+      "Revenue dropped 22% YoY (₹19,100→₹14,967 Cr) in FY2025 — the demerger restructuring creates significant uncertainty about the surviving entity's earnings power",
+      "ROE of 9.16% and ROCE of 9.82% are both well below my 15% threshold — capital is not being deployed productively"
+    ],
+    "detailed_analysis": "Quess Corp exemplifies the kind of business I've spent a career avoiding: a people-intensive staffing operation with no pricing power, no switching costs, and no identifiable moat. When your gross margin is 5.18% and operating margin is 1.76%, you are essentially a pass-through business where any disruption — economic slowdown, client churn, gig-economy competition — directly wipes out profits. The FY2025 results confirm this fragility: ₹14,967 Cr of revenue generated a mere ₹46 Cr in net profit and ₹263 Cr in operating income, down from ₹700 Cr just a year prior. A business where 99.7% of revenue flows away as costs is not a business I want to own at any price.\n\nThe major demerger in FY2025 adds a layer of complexity I find deeply uncomfortable. Total assets halved (₹6,255→₹3,053 Cr), equity fell 60%, and \"Other Income\" was -₹141 Cr — suggesting impairments or losses buried in subsidiaries. The stated P/E of 13x appears deceptively cheap but is almost certainly based on normalized or forward earnings, not the ₹46 Cr actually earned. Free cash flow of ₹379 Cr is real and deserves credit, but staffing businesses require constant working capital reinvestment. The P/S of 0.20x might attract a value screen, but I remind myself: a bad business at a cheap price is still a bad business.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 55267,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0882117,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11696,
+      "cache_read_input_tokens": 9259,
+      "output_tokens": 2771,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11696,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 400,
+          "cache_read_input_tokens": 9259,
+          "cache_creation_input_tokens": 2437,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2437
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

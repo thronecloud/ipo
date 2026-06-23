@@ -1,0 +1,70 @@
+{
+  "symbol": "KNRCON",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T18:14:38.732427Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "AVOID",
+    "investment_thesis": "KNR's accounting metrics look deceptively attractive (ROCE 28.6%, EBITDA CAGR 25.8%), but the business is a cash incinerator — FCF was negative in 4 of the last 5 years, with a staggering -592 Cr FCF against 1,002 Cr reported profit in FY2025. At a forward P/E of 15.85 versus trailing 6.41, the market is already pricing in a sharp earnings normalization, making the apparent cheapness illusory.",
+    "key_strengths": [
+      "Impressive accounting returns: ROCE 28.6% and ROE 27.2% sustained over multiple years, well above the 15% threshold",
+      "Consistent revenue and EBITDA compounding: 16.6% revenue CAGR and 25.8% EBITDA CAGR over 9 years demonstrates strong order execution",
+      "Promoter confidence: 48.81% promoter holding with DII at 19.32% signals institutional and insider conviction"
+    ],
+    "key_risks": [
+      "Catastrophic FCF quality: FCF/Net Income = -592/1,002 = -59% in FY2025 — the exact opposite of Munger's 80%+ threshold; profits are an accounting fiction, not cash reality",
+      "Debt explosion: Borrowings tripled from 652 Cr (FY2023) to 2,321 Cr (FY2025) in just two years — a warning sign of HAM project equity traps consuming capital faster than operations generate it",
+      "Earnings sustainability: Forward P/E of 15.85 vs trailing 6.41 implies the market expects FY2025 profits to roughly halve — the trailing P/E is a mirage"
+    ],
+    "red_flags": [
+      "FCF positive in only 1 of last 5 years — a structural pattern, not a one-off",
+      "FY2025: ₹1,002 Cr net profit alongside -₹567 Cr operating cash flow — the gap between accounting and economic reality is disqualifying",
+      "Borrowings grew 3.56x (652→2,321 Cr) while cash fell to 103 Cr — liquidity deteriorating sharply",
+      "Forward P/E (15.85) nearly 2.5x trailing P/E (6.41) — consensus already baking in a major earnings collapse"
+    ],
+    "detailed_analysis": "KNR Constructions is a textbook example of what Munger calls \"a business that looks wonderful until you look at the cash.\" The income statement tells a story of a compounding machine — 27.6% net profit CAGR, 20.4% operating margins, and ROCE touching 28.6%. But invert the lens: in FY2025, the company reported ₹1,002 Cr in net profit while burning ₹567 Cr in operations. This is the HAM (Hybrid Annuity Model) capital trap — contractors must co-invest 40% equity in road projects upfront, recognizing accounting revenue while cash bleeds out. The balance sheet confirms it: total borrowings surged from ₹652 Cr in FY2023 to ₹2,321 Cr in FY2025, a 256% increase in 24 months, while cash on hand collapsed to just ₹103 Cr.\n\nThe valuation optics are seductive but deceptive. A P/E of 6.41 and P/B of 0.73 scream \"value,\" yet the forward P/E of 15.85 tells you the market has already priced in ~60% earnings compression — likely correct given the unsustainability of FY2025 profits. Construction is a weak-moat business: no pricing power, highly dependent on government ordering cycles, intense competition, and zero switching costs for clients. Munger's rule — \"a great business at a fair price\" — simply does not apply here. This is a capital-intensive business without durable competitive advantage, dressed up with temporarily strong accounting returns while destroying economic value through persistent negative free cash flow.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 79300,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.11268689999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 12572,
+      "cache_read_input_tokens": 8893,
+      "output_tokens": 4191,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 12572
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 559,
+          "cache_read_input_tokens": 8893,
+          "cache_creation_input_tokens": 3679,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 3679,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

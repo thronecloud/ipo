@@ -1,0 +1,69 @@
+{
+  "symbol": "AARTIDRUGS",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T16:10:41.310434Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Aarti Drugs is a commodity API manufacturer with no discernible pricing power — operating margins of 6.16% and ROCE of 13.1% are below my 15% minimum hurdle, and the business has been shrinking in real terms since its 2021 COVID windfall. At 16.8x P/E on declining earnings with heavy ongoing capex consuming nearly all operating cash flow, this is a fair price for a fair-to-poor business.",
+    "key_strengths": [
+      "Low leverage (D/E 0.39, finance costs stable ~INR 39 Cr) limits downside risk in a tough cycle",
+      "Promoter at 55% ownership signals alignment; DII at 10% provides institutional floor",
+      "Diversified API portfolio across NSAIDs, fluoroquinolones, antidiabetics — not dependent on a single molecule"
+    ],
+    "key_risks": [
+      "Margins structurally under pressure: EBITDA contracted from INR 490 Cr (2021) to INR 307 Cr (2025) despite 11% higher revenue vs 2020 — the pricing power simply doesn't exist",
+      "FCF is nearly absent: cumulative FCF 2022–2025 is only INR 87 Cr while capex consumed INR 720 Cr — capital is being deployed with poor incremental returns",
+      "Revenue is declining (INR 2,716 Cr in 2023 → INR 2,387 Cr in 2025), suggesting the 2021 peak was a COVID-era anomaly, not durable earnings power"
+    ],
+    "red_flags": [
+      "EBITDA CAGR of only 3.9% over 9 years vs revenue CAGR of 8.6% — a classic margin destruction story in a commoditized business",
+      "Net profit in FY25 (INR 168 Cr) is barely above FY20 (INR 141 Cr) despite 32% higher revenues — zero operating leverage over five years",
+      "Cash balance at INR 5 Cr against total debt of INR 615 Cr — the balance sheet offers no cushion if the API cycle worsens further"
+    ],
+    "detailed_analysis": "Invert first: what would make this a bad investment? A commodity manufacturer with thin 6% operating margins, no pricing power, ROIC below 15%, and a business that peaked in 2021 on COVID tailwinds — that is precisely what Aarti Drugs is today. The 2021 results (INR 280 Cr net profit, INR 490 Cr EBITDA) were a one-time anomaly driven by API demand spikes, not a reflection of the business's normalized earning power. Since then, every key profit metric has contracted: EBITDA is down 37%, net profit down 40%, and operating margins have compressed to 6.16%. This is not a business that earns its cost of capital over a cycle.\n\nThe capital allocation record reinforces the concern. Management has spent INR 720 Cr in capex over four years (FY22–25) while generating only INR 87 Cr in cumulative free cash flow — a deeply negative spread. CWIP ballooned to INR 261 Cr in FY24, indicating ambitious expansion, yet ROIC remains stuck at ~13%. At 16.8x P/E and 13.2x EV/EBITDA on contracting earnings, the market is not pricing in the cyclical risk adequately. There are far better API businesses in India — companies with ROIC above 20% and genuine product differentiation — that deserve capital before this one does.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 46683,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07913175,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11437,
+      "cache_read_input_tokens": 9330,
+      "output_tokens": 2229,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11437,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 166,
+          "cache_read_input_tokens": 9330,
+          "cache_creation_input_tokens": 2107,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2107
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

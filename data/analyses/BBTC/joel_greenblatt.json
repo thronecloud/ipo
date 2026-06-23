@@ -1,0 +1,69 @@
+{
+  "symbol": "BBTC",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-19T06:34:42.124226Z",
+  "analysis": {
+    "score": 7,
+    "recommendation": "BUY",
+    "investment_thesis": "BBTC is the standout magic formula candidate of this set: EBIT/EV earnings yield of ~26% (EBIT INR 3,136 Cr ÷ EV ~INR 11,883 Cr) and ROCE of 35.5% — both in the top decile globally — driven primarily by its ~50% consolidated stake in Britannia Industries, which trades at the Wadia holding-company level at a massive structural discount (EV/EBITDA of 3.66× vs Britannia's own ~45× P/E). The conglomerate discount is the opportunity.",
+    "key_strengths": [
+      "Top-decile on BOTH magic formula metrics simultaneously: earnings yield ~26% and ROCE 35.5% — an extremely rare combination",
+      "Underlying Britannia Industries asset is a durable FMCG compounder with strong brand moat, being valued at the holding-company level at a fraction of subsidiary market value",
+      "Consistent and growing FCF: INR 2,017 Cr in FY25; OCF positive 5/5 years; operating income CAGR of 11.2% over 9 years"
+    ],
+    "key_risks": [
+      "Holding company discount may never fully close — Wadia Group complexity and 74% promoter concentration structurally limit re-rating",
+      "Conglomerate structure (tea plantations, auto components, healthcare, real estate) obscures true earning power and makes segment analysis difficult",
+      "Tea/coffee plantation business is exposed to weather cycles, labour costs, and commodity pricing — low-ROIC drag on the consolidated entity"
+    ],
+    "red_flags": [
+      "FY23 net loss of −INR 534 Cr driven by −INR 781 Cr 'other income' (investment write-downs) — recurring risk given large investment portfolio",
+      "Borrowings spiked from INR 1,211 Cr (FY22) to INR 6,542 Cr (FY23) then normalised to INR 1,574 Cr (FY25) — evidence of leveraged investing activity that could repeat",
+      "Low liquidity: promoter at 74.04%, DII at only 1.42% — thin free float means price discovery is impaired and exit could be difficult at scale"
+    ],
+    "detailed_analysis": "BBTC scores strongly on both magic formula dimensions. With EV/EBITDA of 3.66× on a consolidated entity generating INR 3,468 Cr EBITDA and INR 3,136 Cr EBIT, the earnings yield of ~26% is extraordinary — you are paying roughly 4 years of operating earnings for the entire enterprise. ROCE of 35.5% reflects Britannia's exceptional capital efficiency flowing through the consolidation. Revenue (INR 18,298 Cr) and operating income (INR 3,136 Cr) CAGRs of 8.5% and 11.2% over 9 years demonstrate that these are not distorted one-off numbers.\n\nThe structural reason for the discount is transparent: BBTC's ~50% stake in Britannia (market cap ~INR 1,10,000+ Cr) implies the Britannia stake alone is worth ~INR 55,000 Cr, yet BBTC trades at a market cap of INR 10,650 Cr. Holding company discounts of this magnitude (80%+) are unusual even in India. The FY23 loss and the FY22–23 debt spike from leveraged investing are genuine risks, but the operating cash flow engine (5/5 positive OCF years; FCF growing to INR 2,017 Cr) demonstrates the underlying business health. This is precisely the kind of mispriced, misunderstood business the magic formula is designed to surface.",
+    "metrics_evaluated": {
+      "moat_strength": "strong",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "undervalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 208855,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.2941695,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 26828,
+      "cache_read_input_tokens": 15085,
+      "output_tokens": 12602,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 26828,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 783,
+          "cache_read_input_tokens": 15085,
+          "cache_creation_input_tokens": 11743,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 11743
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

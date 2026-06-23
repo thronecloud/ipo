@@ -1,0 +1,69 @@
+{
+  "symbol": "BSOFT",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-19T05:58:51.965726Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Birlasoft is a financially clean mid-tier IT services company with near-zero debt and decent margins, but a 9-year revenue CAGR of just 5.8% reveals the core problem — it lacks the differentiation to win disproportionate share against larger peers like TCS, Infosys, or global IT consultancies. A fair business at a fair price.",
+    "key_strengths": [
+      "Fortress balance sheet: D/E of 0.04, debt of INR 151 Cr against equity of INR 3,701 Cr, with consistently positive FCF averaging INR 499 Cr over FY21-25",
+      "ROCE of 21% and ROE of 15.6% are acceptable, and the asset-light model (capex only INR 49 Cr in FY25) means high cash conversion",
+      "Diversified vertical exposure across manufacturing, BFSI, energy, and life sciences — reduces concentration risk"
+    ],
+    "key_risks": [
+      "Revenue growth of 5.8% over 9 years is below the Indian IT industry average — structural share loss risk vs. larger and more specialized peers",
+      "Net profit is volatile: INR 464 Cr (FY22) → INR 332 Cr (FY23) → INR 624 Cr (FY24) → INR 517 Cr (FY25) — earnings predictability is poor",
+      "Operating margin of 18.6% is below the 20%+ maintained by Tier-1 Indian IT firms, limiting re-rating potential"
+    ],
+    "red_flags": [
+      "Revenue actually declined from INR 3,320 Cr (FY17) to INR 2,250 Cr (FY18) — a significant disruption suggesting past strategic missteps or restructuring",
+      "Conglomerate parent (Birla Group) can mean capital allocation decisions that don't always serve minority shareholders",
+      "No identifiable proprietary platform or unique market position to protect margins from commoditization"
+    ],
+    "detailed_analysis": "I have always said I want businesses with a moat — a durable competitive advantage that lets them earn above-average returns for decades. Birlasoft provides competent IT services to mid-sized enterprises, but 'competent' is not a moat. The company competes in a market where larger players offer more scale and smaller boutiques offer deeper specialization. The 5.8% revenue CAGR over nine years — below nominal GDP growth in their key market, the US — tells me customers are not compelled to choose Birlasoft over alternatives.\n\nThe financial quality is genuinely good: debt-free effectively, 21% ROCE, positive FCF every year. At EV/EBITDA of 12x and forward P/E of 17.6x, it is not expensive. But I have learned the hard way that a mediocre business at a cheap price does not become a great investment. The stagnant growth trajectory means compounding here will be slow and unreliable.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 150234,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.20929365,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 22613,
+      "cache_read_input_tokens": 15303,
+      "output_tokens": 7993,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 22613,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 550,
+          "cache_read_input_tokens": 15303,
+          "cache_creation_input_tokens": 7310,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 7310
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

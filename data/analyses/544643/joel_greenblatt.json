@@ -1,0 +1,69 @@
+{
+  "symbol": "544643",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-20T11:08:40.076434Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Prodocs fails the Magic Formula on both axes — an earnings yield of roughly 3.9% (P/E 25.5) is expensive, and an ROE of 0.41% signals near-zero return on capital. You cannot buy a cheap-and-good business here; it is neither cheap nor good.",
+    "key_strengths": [
+      "Promoter skin-in-the-game at 51.99% stake",
+      "Asset-light non-voice BPO model typically needs low capex",
+      "Small FII presence (3.70%) suggests some institutional screening"
+    ],
+    "key_risks": [
+      "ROE of 0.41% implies effectively no return on invested capital",
+      "P/E 25.5 = earnings yield ~3.9%, well below the >12% Magic Formula threshold",
+      "Tiny Rs 130 Cr micro-cap in commoditized ITES with no visible moat"
+    ],
+    "red_flags": [
+      "Return on capital far below 12% minimum",
+      "Earnings yield under 6% — overvalued on Magic Formula basis",
+      "Incorporated 2019 — no 3-year sustained ROIC track record"
+    ],
+    "detailed_analysis": "The Magic Formula ranks companies on two factors: earnings yield (EBIT/EV) and return on capital. Prodocs scores poorly on both. A P/E of 25.5 translates to an earnings yield of roughly 3.9% — you need >12% for this to be interesting. More damning, an ROE of 0.41% means the business is barely earning anything on its equity base; this is the opposite of the high-ROIC compounder the formula is designed to surface. Non-voice BPO is a commodity service with low switching costs, so a structural re-rating of returns is unlikely.\n\nAt Rs 130 Cr market cap with these metrics, you are paying a growth-stock multiple for a no-growth-in-returns business. The systematic approach — which exists precisely to remove emotional bias — would never surface this name. I would pass and redeploy capital to companies that rank in the top decile on both cheapness and quality. No bet here.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 18915,
+    "model_used": "opus",
+    "total_cost_usd": 0.08804699999999999,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8828,
+      "cache_read_input_tokens": 13484,
+      "output_tokens": 1044,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8828,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10614,
+          "cache_creation_input_tokens": 1084,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1084
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "CIEINDIA",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T16:55:01.074191Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "AVOID",
+    "investment_thesis": "CIE Automotive is a financially disciplined auto components manufacturer with a clean balance sheet and consistent free cash flow, but its sub-15% ROE (11.8%), thin operating margins (8.19%), and inherently cyclical capital-intensive business model place it firmly outside my circle of preference. At 22.5x trailing P/E and EV/EBITDA of 19.85x, the market is paying a full price for a business that earns mediocre returns on equity.",
+    "key_strengths": [
+      "Near debt-free balance sheet: D/E of 0.06, borrowings slashed from ₹1,648 Cr (2020) to ₹426 Cr (2025)",
+      "Consistently positive free cash flow across all 5 measured years, with FCF of ₹885 Cr in FY25",
+      "High promoter confidence at 65.7% holding and strong DII institutional backing at 21.3%"
+    ],
+    "key_risks": [
+      "Cyclicality is brutal: revenue collapsed from ₹7,908 Cr (2019) to ₹6,050 Cr (2020), and net profit swung from +₹393 Cr to -₹136 Cr in back-to-back years (2021–2022)",
+      "ROE of only 11.8% — well below my 15% hurdle — on a capital-intensive business requiring ₹377–530 Cr annual capex",
+      "Foreign parent (Spanish CIE Automotive) controls 65.7%, creating risk of capital allocation decisions favoring the parent over minority shareholders"
+    ],
+    "red_flags": [
+      "Other Income line is wildly volatile (-₹749 Cr in 2022, +₹409 Cr in 2023), making the headline net profit CAGR of 19.3% deeply misleading",
+      "Revenue growth of only 6.5% CAGR over 9 years barely keeps pace with inflation, suggesting limited pricing power",
+      "Subsidiary structure with foreign parent — profit repatriation risk and potential related-party dynamics"
+    ],
+    "detailed_analysis": "CIE Automotive India makes nearly every auto component imaginable — forgings, castings, stampings, gears, composites — which tells me it lacks a focused competitive identity. Wide diversification in manufacturing typically signals a contract supplier without pricing power rather than a moat-owning franchise. The 8.19% operating margin confirms this: a truly advantaged auto parts business should earn 15%+. Revenue has been essentially flat for six years (₹7,908 Cr in 2019 vs. ₹9,406 Cr in 2025), and the headline net profit CAGR of 19.3% is a statistical artifact driven by the disastrous FY20-22 period and a large one-time other income item of ₹409 Cr in FY23. Normalized earnings are around ₹828 Cr — essentially unchanged for two consecutive years.\n\nThe one genuinely praiseworthy trend is the aggressive debt paydown: borrowings cut by 74% over five years to just ₹426 Cr, yielding a pristine 0.06 D/E. Free cash flow is real and consistent, averaging ~₹700 Cr annually. But a \"good capital structure\" is table stakes, not a moat. At 22.5x trailing earnings and 19.85x EV/EBITDA, investors are paying for a business with sub-15% ROE, sub-7% revenue growth, and zero pricing power in a sector where auto OEMs brutally squeeze suppliers on cost. This is a fair business at a full price — precisely the combination I have spent my career avoiding.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 59210,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09117285,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11721,
+      "cache_read_input_tokens": 9267,
+      "output_tokens": 2962,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11721
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 557,
+          "cache_read_input_tokens": 9267,
+          "cache_creation_input_tokens": 2454,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2454,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

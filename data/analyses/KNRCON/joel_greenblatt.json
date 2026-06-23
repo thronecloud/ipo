@@ -1,0 +1,68 @@
+{
+  "symbol": "KNRCON",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T18:06:25.282571Z",
+  "analysis": {
+    "score": 7,
+    "recommendation": "BUY",
+    "investment_thesis": "KNR Constructions ranks in the top decile on both Magic Formula metrics — Earnings Yield of ~31% (EBIT ₹1,610 Cr / EV ~₹5,231 Cr) and ROIC/ROCE of ~25–29% — the exact combination the formula targets. At P/E 6.4x and EV/EBITDA 4.6x, the market is pricing in zero growth for a company compounding revenue at 16.6% CAGR and net profit at 27.6% CAGR over 9 years.",
+    "key_strengths": [
+      "Exceptional earnings yield ~31% (EBIT ₹1,610 Cr / EV ₹5,231 Cr) — well above the 15% Magic Formula threshold",
+      "ROCE 28.6% sustained over multiple years, indicating a genuinely high-quality capital allocator in a capital-intensive sector",
+      "Trading at 0.73x book value with a 27.6% 9-year net profit CAGR — rare combination of cheapness and quality"
+    ],
+    "key_risks": [
+      "Operating cash flow has been positive in only 1 of the last 5 years; FCF was -₹592 Cr in 2025 — earnings are not converting to cash, which is the central Magic Formula vulnerability here",
+      "Borrowings more than tripled in 2 years: ₹652 Cr (2023) → ₹2,321 Cr (2025), raising financial risk and interest burden (finance cost up to ₹208 Cr)",
+      "Forward P/E of 15.85 vs trailing 6.4x implies the market expects a sharp earnings normalization — construction profits can be lumpy and project-dependent"
+    ],
+    "red_flags": [
+      "OCF negative in 4 of last 5 years — suggests aggressive revenue recognition or working capital trapped in receivables/WIP typical of government infrastructure contracts",
+      "Debt surge (D/E 0.49, borrowings ₹2,321 Cr in 2025) coincides with negative free cash flow — the business is funding operations with debt, not retained earnings"
+    ],
+    "detailed_analysis": "On pure Magic Formula arithmetic, KNR Constructions is a standout. Earnings Yield of ~31% (EBIT ₹1,610 Cr against EV of ~₹5,231 Cr) and reported ROCE of 28.6% both clear the top-decile thresholds. A P/E of 6.4x for a company with 9-year revenue CAGR of 16.6% and EBITDA CAGR of 25.8% is genuinely cheap. Operating margins of 20.4% are strong for EPC construction, and promoter ownership at 48.8% aligns incentives well.\n\nThe critical caveat is cash flow conversion. Construction companies — especially those executing government road and irrigation projects — routinely show high accrual earnings alongside negative operating cash flow due to mobilization advances, retention money, and slow government payments. KNR's OCF was positive only once in five years, and FCF hit -₹592 Cr in 2025. Simultaneously, borrowings jumped to ₹2,321 Cr. The Magic Formula works best when earnings quality is high (cash-backed); here, the EBIT is real but timing-mismatched. I'd buy at this price with a 2–3 year horizon, expecting mean-reversion in cash flows as projects complete, but position sizing should reflect the debt build-up risk.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "adequate",
+      "valuation": "undervalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 61282,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09361049999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11708,
+      "cache_read_input_tokens": 9005,
+      "output_tokens": 3133,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11708
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 480,
+          "cache_read_input_tokens": 9005,
+          "cache_creation_input_tokens": 2703,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2703,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

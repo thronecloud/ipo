@@ -1,0 +1,69 @@
+{
+  "symbol": "AHLUCONT",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T16:17:55.036780Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Ahluwalia Contracts ranks poorly on the Magic Formula — Earnings Yield of ~6.4% (EBIT INR 342 Cr / EV ~INR 5,345 Cr) is barely above my avoidance threshold, while ROIC/ROCE of ~18% falls short of the 20%+ \"good business\" bar. The combination of thin construction margins, rising capex, and an FY2024 profit that was artificially inflated by INR 232 Cr of one-time income makes this unattractive at current prices.",
+    "key_strengths": [
+      "Near-zero leverage (D/E 0.04; net cash of ~INR 242 Cr) — rare for an EPC contractor",
+      "Revenue CAGR of 14.1% over 9 years with 5/5 positive OCF years showing execution consistency",
+      "Strong institutional backing (FII 13.74% + DII 22.32%) and high promoter holding (55.32%) signal confidence"
+    ],
+    "key_risks": [
+      "FY2024 net profit of INR 375 Cr was heavily distorted by INR 232 Cr other income; normalized earnings (INR ~170–200 Cr range) puts true P/E closer to 28–33x — expensive for a 6–7% margin EPC business",
+      "Capex surging from INR 28 Cr (2022) to INR 189 Cr (2025), compressing FCF yield to ~3% of market cap — capital intensity is worsening",
+      "Operating margins are thin at 6.59% with no pricing power; government/PSU dependence makes order-book lumpy and margin recovery uncertain"
+    ],
+    "red_flags": [
+      "FY2024 'other income' of INR 232 Cr inflated ROE and net profit — one-time items mask true earnings power",
+      "Earnings Yield (EBIT/EV) of ~6.4% is borderline, well below Magic Formula's 12% attractiveness threshold",
+      "Investing CF of -INR 323 Cr in FY2025 vs OCF of INR 359 Cr leaves barely any residual FCF — capital allocation becoming stretched"
+    ],
+    "detailed_analysis": "Running the Magic Formula on AHLUCONT: EBIT (Operating Income) FY2025 = INR 342 Cr; Enterprise Value = Market Cap (5,587) + Debt (76) − Cash (318) = ~INR 5,345 Cr, giving an Earnings Yield of 6.4%. That barely clears my 6% red-flag floor and is less than half the 15% \"very attractive\" threshold. On Return on Capital, Capital Employed ≈ Equity (1,924) + Debt (76) = INR 2,000 Cr, yielding EBIT/CE of ~17%, consistent with the disclosed ROCE of 18.5%. Neither metric is compelling — this is a business that earns mediocre returns at a mediocre price.\n\nThe headline FY2024 net profit of INR 375 Cr created an optical illusion of valuation cheapness (P/E of 20.9x). Strip out the INR 232 Cr one-time other income and normalized net profit is closer to INR 180–200 Cr, implying a true P/E of 28–31x — rich for a 6.6% operating margin contractor. Capex is accelerating sharply (INR 189 Cr in FY2025 vs INR 28 Cr in FY2022), reducing free cash flow conversion precisely when the stock needs earnings growth to justify its multiple. The business is operationally solid, but the Magic Formula ranks it in the bottom half — not cheap enough, not capital-light enough.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 55866,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.084483,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11314,
+      "cache_read_input_tokens": 9055,
+      "output_tokens": 2622,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11314,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 406,
+          "cache_read_input_tokens": 9055,
+          "cache_creation_input_tokens": 2259,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2259
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

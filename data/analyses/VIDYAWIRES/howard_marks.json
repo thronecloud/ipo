@@ -1,0 +1,70 @@
+{
+  "symbol": "VIDYAWIRES",
+  "persona": "howard_marks",
+  "persona_display_name": "Howard Marks",
+  "analyzed_at": "2026-04-21T08:01:46.778169Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "At 32.6x P/E and 16x EV/EBITDA, the market is pricing this 5% operating-margin commodity wire manufacturer as a quality compounder — a dangerous mismatch with virtually zero margin of safety. Chronic negative free cash flow (-24 Cr in FY2025 against 41 Cr stated profit) exposes severe earnings quality problems that the income statement conceals.",
+    "key_strengths": [
+      "Revenue and profit CAGR of 17.5% and 27% respectively over 3 years, driven by genuine tailwinds in clean energy, EVs, and Indian infrastructure",
+      "ROE of 27.8% and ROCE of 24.2% are impressive for a commodity-adjacent industrial, suggesting some operational efficiency",
+      "Exports to ~20 countries provide geographic diversification and a partial hedge against domestic demand cyclicality"
+    ],
+    "key_risks": [
+      "Razor-thin 5% operating margins offer no shock-absorber — copper/aluminium price spikes or pricing pressure could obliterate earnings in a single quarter",
+      "Borrowings surged 70% YoY (INR 110 Cr → 187 Cr) while FCF was -24 Cr; the business is funding working capital with debt, creating a fragile balance sheet with zero cash buffer",
+      "At 32.6x P/E, any growth deceleration or margin compression triggers severe de-rating — fair value on 15-20x P/E implies INR 38-50, representing 28-45% downside from INR 69.60"
+    ],
+    "red_flags": [
+      "FCF deeply negative in 3 of 4 years (-22, -2, -24 Cr); FY2025 'profit' of 41 Cr masked by -17 Cr OCF — a 58 Cr working capital hole",
+      "Zero cash balance across all four reported years — no liquidity cushion whatsoever",
+      "Debt-to-EBITDA at ~2.75x (using borrowings of 187 Cr / EBITDA 68 Cr) is elevated for a low-margin, negative-FCF business",
+      "CWIP of 24 Cr signals capex is accelerating precisely when FCF is most negative — further borrowings likely ahead"
+    ],
+    "detailed_analysis": "The headline numbers on Vidya Wires look appealing — 27% profit CAGR, expanding EBITDA margins, strong ROE. But second-level thinking demands we ask: *what does the price already reflect?* At INR 1,113 Cr market cap, the stock is priced for perfection in a business where gross margins are 6.21% and operating margins are 5.06%. These are commodity-grade economics. The P/E of 32.6x is what you pay for a consumer staples compounder or a software business — not a winding wire manufacturer whose fortunes track copper prices and industrial capex cycles. EV/EBITDA of 16x implies the market is extrapolating the recent EBITDA CAGR of 25% indefinitely, a heroic assumption for a business with no pricing power and no moat.\n\nThe cash flow statement is where this story unravels. In FY2025, the company reported INR 41 Cr net profit while generating *negative* INR 17 Cr from operations — a divergence of INR 58 Cr consumed by working capital as revenue surged 25%. Simultaneously, borrowings jumped INR 77 Cr (to 187 Cr) to plug the gap, with not a rupee of cash on the balance sheet. This is not a compounding machine; it is a capital-hungry working-capital treadmill. The risk of permanent capital loss is real: if the infrastructure cycle cools, receivables stretch, or credit conditions tighten, the absence of FCF and cash means the company has no margin for error. The investor buying at 69.60 is absorbing all this risk while paying a premium valuation. That is precisely the asymmetry I avoid.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 62519,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09057225,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9561,
+      "cache_read_input_tokens": 10815,
+      "output_tokens": 3431,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9561,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 615,
+          "cache_read_input_tokens": 8761,
+          "cache_creation_input_tokens": 2854,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2854
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

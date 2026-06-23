@@ -1,0 +1,70 @@
+{
+  "symbol": "BLUESTONE",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T16:45:35.817884Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "BlueStone is a cash-incinerating jewelry retailer with accelerating losses (net loss widened to ₹222 Cr in FY25 despite 56% revenue CAGR) and deeply negative free cash flow (-₹828 Cr in FY25). At EV/EBITDA of 60x for a loss-making, capital-hungry business with no discernible moat, the market is pricing in perfection that the financials flatly contradict.",
+    "key_strengths": [
+      "Revenue scaling rapidly — 56.5% 3Y CAGR from ₹461 Cr to ₹1,770 Cr shows genuine consumer demand",
+      "EBITDA turned positive in FY24 (₹90 Cr) and improved to ₹121 Cr in FY25, suggesting unit economics can work at scale",
+      "41% gross margins indicate decent pricing power in the jewelry category"
+    ],
+    "key_risks": [
+      "Free cash flow hemorrhage: -₹828 Cr in FY25 alone, financed almost entirely by debt (financing CF +₹740 Cr)",
+      "Finance costs compounding at 124% CAGR (₹18 Cr → ₹208 Cr) while net losses are worsening, not improving",
+      "Promoter owns only 16.27% — dangerously low skin in the game for a pre-profit growth story"
+    ],
+    "red_flags": [
+      "Net loss of ₹222 Cr in FY25 is worse than ₹142 Cr in FY24 — losses accelerating, not narrowing, despite scale",
+      "ROCE of 2.33% means every rupee of capital deployed earns almost nothing — the opposite of a wonderful business",
+      "Operating CF collapsed to -₹666 Cr in FY25 from +₹27 Cr in FY23; the business consumes cash faster as it grows",
+      "Debt nearly tripled in 3 years (₹299 Cr → ₹1,915 Cr) with D/E now at 1.14 — leverage in a cyclical, fashion-driven sector"
+    ],
+    "detailed_analysis": "BlueStone is precisely the kind of business I have spent 60 years learning to avoid. Revenue growth of 56% sounds seductive, but I learned long ago that revenue is vanity and cash flow is sanity. In FY25, the company burned ₹828 Cr in free cash flow — more than half its annual revenue — while its net losses widened to ₹222 Cr. Finance costs alone hit ₹208 Cr, growing at 124% CAGR, suggesting the business is funding its expansion largely with expensive debt rather than retained earnings. A ROCE of 2.33% tells me this is a capital-destroying enterprise at its current state.\n\nI see no durable economic moat here. Jewelry retail in India is brutally competitive — Tanishq, Malabar, Kalyan, and thousands of regional players compete fiercely on trust, price, and craftsmanship. BlueStone's omnichannel model (website + stores) is interesting but easily replicable, and brand loyalty in fine jewelry accrues over decades, not years. With promoters holding a mere 16.27%, I question their conviction. The stock trades at 60x EV/EBITDA on positive EBITDA that is immediately overwhelmed by depreciation and interest — paying ₹7,939 Cr for a business burning ₹828 Cr annually in free cash is speculation, not investment.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 36770,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.06944085,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9839,
+      "cache_read_input_tokens": 8352,
+      "output_tokens": 2002,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9839
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 590,
+          "cache_read_input_tokens": 8352,
+          "cache_creation_input_tokens": 1487,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1487,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

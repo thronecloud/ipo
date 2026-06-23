@@ -1,0 +1,69 @@
+{
+  "symbol": "ASHAPURMIN",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T16:26:40.473137Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Ashapura Minechem is a capital-intensive commodity minerals business with chronically negative free cash flow (-₹208 Cr in FY25 despite ₹289 Cr reported profit) and no durable competitive moat. The business requires perpetual reinvestment funded by rising debt, making it a capital trap rather than a cash-generating franchise.",
+    "key_strengths": [
+      "Recent profitability recovery is real: EBITDA expanded from -₹17 Cr (2020) to ₹469 Cr (2025), CAGR 5.7%",
+      "Diversified mineral portfolio (bentonite, bauxite, kaolin, proppants) across multiple end markets reduces single-commodity risk",
+      "ROE of 27.1% and ROCE of 18.6% look attractive on the surface at 15.5x P/E"
+    ],
+    "key_risks": [
+      "Free cash flow has been negative every single year: -₹3, -₹196, -₹2, -₹40, -₹125, -₹208 Cr (2020–2025) — getting dramatically worse",
+      "Finance costs compounding at 17.8% CAGR (₹22 Cr→₹96 Cr); D/E at 0.86 and borrowings nearly tripled since 2020 (₹441→₹1,228 Cr)",
+      "Catastrophic historical volatility: revenue halved 2016–2020, operating income went deeply negative, net loss of ₹327 Cr in 2019 — no predictability whatsoever"
+    ],
+    "red_flags": [
+      "Capex of ₹401 Cr in FY25 against operating CF of only ₹188 Cr — debt-funded growth with no FCF payback in sight",
+      "FY20 'profit' of ₹383 Cr was entirely manufactured by ₹487 Cr other income vs. -₹45 Cr operating loss — earnings quality is suspect",
+      "FY19 other income of -₹265 Cr caused ₹327 Cr net loss — large opaque items swing results unpredictably"
+    ],
+    "detailed_analysis": "Ashapura Minechem fails nearly every test I apply to a business. First, it is a commodity mining company — there is no pricing power, no brand moat, no switching cost. A customer buying bentonite or bauxite will switch suppliers for a few rupees per tonne. Second, and most damning, the business has never generated positive free cash flow in any year shown. In FY25, the company reported ₹289 Cr in net profit but burned ₹208 Cr in free cash flow. That gap — and its widening trajectory — tells me the reported earnings are not real owners' earnings. The ₹401 Cr capex machine must be continuously fed with debt, which has grown from ₹441 Cr to ₹1,228 Cr in five years while finance costs compound at nearly 18% annually.\n\nThe historical record is disqualifying. Revenue fell 81% from FY16 to FY20; the company posted operating losses for two consecutive years and a ₹327 Cr net loss in FY19 driven by mysterious \"other income\" swings. The FY20 \"profit\" of ₹383 Cr was almost entirely a ₹487 Cr other income item against deeply negative operating performance. I cannot value a business whose earnings jump ₹700 Cr on accounting lines I cannot trace. The current P/E of 15.5x appears superficially cheap, but when FCF is -₹208 Cr on market cap of ₹5,897 Cr, the true FCF yield is deeply negative. This is precisely the kind of capital-intensive, cyclical, moat-free business I have spent my career avoiding.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 59738,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08512829999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11462,
+      "cache_read_input_tokens": 9156,
+      "output_tokens": 2626,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11462,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 411,
+          "cache_read_input_tokens": 9156,
+          "cache_creation_input_tokens": 2306,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2306
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

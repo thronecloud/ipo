@@ -1,0 +1,69 @@
+{
+  "symbol": "CEATLTD",
+  "persona": "radhakishan_damani",
+  "persona_display_name": "Radhakishan Damani",
+  "analyzed_at": "2026-04-19T12:54:27.084881Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "CEAT is a cyclical auto-parts business saddled with rising debt and nine-year net profit CAGR of less than 1%, which disqualifies it as a compounder by my standards. The D/E of 0.68 and promoter holding below 55% are immediate disqualifiers from my framework.",
+    "key_strengths": [
+      "Revenue has grown at a steady 10.3% CAGR over nine years, showing the underlying demand is real",
+      "Operating cash flow has been positive all five years, meaning the business does generate cash at the operating level",
+      "Strong brand in India's tyre market with OEM and retail channels providing some pricing stability"
+    ],
+    "key_risks": [
+      "Net profit CAGR of just 0.9% over nine years — revenue is growing but earnings are not; finance costs are compounding at 11.9% and eroding profits",
+      "Borrowings nearly doubled from INR 1,792 Cr in FY24 to INR 3,114 Cr in FY25 — aggressive debt-funded capex with uncertain returns",
+      "Volatile free cash flow: FCF swings from -337 Cr to +852 Cr year to year, signalling weak earnings quality and heavy working-capital demands typical of commodity-input businesses"
+    ],
+    "red_flags": [
+      "Debt/Equity of 0.68 — well above my hard ceiling of 0.3; tyre businesses are commodity-input sensitive and should not carry this leverage",
+      "Promoter holding at 47.21% — below my minimum threshold of 55%; RPG group has multiple listed entities and capital allocation discipline is uncertain",
+      "Finance costs compounding at 11.9% CAGR against revenue growth of 10.3% — debt is growing faster than the business, a structural deterioration"
+    ],
+    "detailed_analysis": "CEAT has a decent franchise in a duopoly-adjacent tyre market, but the economics do not reward patient shareholders. Over nine years, revenues grew 10x faster than net profits, and the reason is clear: finance costs have eaten the incremental operating gains. The sudden jump in borrowings to INR 3,114 Cr in FY25 (from INR 1,792 Cr) suggests a new capex cycle is beginning precisely when FCF dropped to INR 149 Cr — that combination makes me very uncomfortable.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 140495,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.19987395000000002,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 21051,
+      "cache_read_input_tokens": 18029,
+      "output_tokens": 7701,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 21051,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 422,
+          "cache_read_input_tokens": 15979,
+          "cache_creation_input_tokens": 7122,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 7122
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

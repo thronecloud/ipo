@@ -1,0 +1,70 @@
+{
+  "symbol": "BLUESTONE",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T16:51:27.215341Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "BlueStone is a cash-incinerating jewelry retailer growing revenue at 56.5% CAGR but burning ₹828 Cr in free cash flow in FY25 alone, with debt compounding at 124% CAGR — a classic case of growth without economics. At 60x EV/EBITDA for a loss-making business facing Titan/Tanishq, the market is pricing perfection into a company that hasn't found profitability after 14 years.",
+    "key_strengths": [
+      "Revenue scaling rapidly — ₹461 Cr to ₹1,770 Cr in 3 years (56.5% CAGR), showing genuine consumer demand",
+      "EBITDA turned positive in FY24 (₹90 Cr) and improved to ₹121 Cr in FY25 — directional improvement",
+      "Omnichannel model (online + stores) gives optionality in a market underpenetrated by organized jewelry retail"
+    ],
+    "key_risks": [
+      "Free cash flow collapsed to -₹828 Cr in FY25 despite EBITDA positivity — working capital is devouring cash at an alarming rate",
+      "Finance costs grew 124% CAGR (₹18 Cr → ₹208 Cr); debt at ₹1,915 Cr means interest burden will widen losses before scale helps",
+      "Promoter holding at 16.27% is dangerously low — limited skin in the game, signaling reliance on external capital for indefinite periods"
+    ],
+    "red_flags": [
+      "Net losses widened to -₹222 Cr in FY25 vs -₹142 Cr in FY24 — losses accelerating despite revenue growth",
+      "Operating CF swung to -₹666 Cr in FY25 from -₹181 Cr in FY24 — working capital destruction, not just capex",
+      "ROCE of 2.33% and ROE of -24.7% — capital destruction at scale, classic warning signal Munger despises",
+      "Forward P/E of -401 and EV/EBITDA of 60.6x — priced for extraordinary perfection it has never delivered"
+    ],
+    "detailed_analysis": "Inversion first: what does a terrible jewelry investment look like? A company that burns ₹828 Cr of free cash annually while earning 2.33% ROCE, whose promoters own barely 16% of the business, and trades at 60x EBITDA of a firm that lost ₹222 Cr last year. That is BlueStone exactly. The jewelry retail business is fundamentally working-capital-intensive — gold and diamond inventory must be funded, often on debt. BlueStone's finance costs have compounded at 124% annually over three years; at ₹208 Cr in FY25, interest expense alone exceeds operating income (₹76 Cr). This is not a temporarily unprofitable high-growth business — this is a structural cash-consumption machine.\n\nThe competitive moat question is also damning. Tanishq (Titan) has 50+ years of brand trust, a national store network, and profitable operations. Malabar Gold and Senco operate profitably in organized jewelry. BlueStone's differentiation — omnichannel and design — is real but easily replicable. FII and DII together own 68% vs. 16.27% promoter — this IPO was primarily a liquidity event. I apply the most basic test Charlie Munger would ask: would I rather own this business or a fixed deposit? At 2.33% ROCE, the FD wins. Until BlueStone demonstrates sustained positive free cash flow and ROIC above 12%, this is speculation, not investing.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 61446,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0759513,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10234,
+      "cache_read_input_tokens": 8266,
+      "output_tokens": 2339,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10234
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 453,
+          "cache_read_input_tokens": 8266,
+          "cache_creation_input_tokens": 1968,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1968,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

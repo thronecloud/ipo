@@ -1,0 +1,69 @@
+{
+  "symbol": "ETHOSLTD",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T17:17:00.709174Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Ethos fails both legs of the Magic Formula decisively: Earnings Yield of ~3% (EBIT ₹197 Cr / EV ~₹6,676 Cr) is one-fifth the 15% threshold I want, and ROCE of 13.8% sits well below the 20%+ needed to qualify as a \"good business.\" At 66x trailing P/E with persistently negative free cash flow, you are paying a premium price for a capital-hungry retailer, not a capital-light compounder.",
+    "key_strengths": [
+      "Revenue compounding at 18.9% CAGR (FY19–25) with operating profit growing faster at 32.7% — operational leverage is real",
+      "Low financial leverage (D/E 0.19) and strong promoter holding (50.6%) provide stability",
+      "India's premiumisation tailwind gives Ethos a structural demand runway in luxury watches"
+    ],
+    "key_risks": [
+      "Chronic FCF destruction: FCF was -₹58 Cr, -₹1 Cr, -₹94 Cr in FY23–25 — reported profits are not converting to cash at all",
+      "Valuation is extreme: EV/EBITDA of 42x and P/E of 66x leave zero margin of safety; Earnings Yield of ~3% is four times below my minimum threshold",
+      "Inventory-heavy luxury watch retail demands constant capital injections — equity base ballooned from ₹232 Cr (FY22) to ₹1,434 Cr (FY25), severely diluting per-share returns"
+    ],
+    "red_flags": [
+      "Operating CF turned negative in FY2025 (-₹20 Cr) despite ₹96 Cr net profit — massive working capital consumption",
+      "Other income of ₹24 Cr represents ~25% of net profit, inflating headline earnings quality",
+      "Equity raises tripled the equity base in 3 years — growth is being funded by shareholders, not by the business itself"
+    ],
+    "detailed_analysis": "On the Magic Formula scorecard, Ethos fails on both axes. Earnings Yield (EBIT/EV) = ₹197 Cr / ₹6,676 Cr ≈ 2.95% — roughly one-fifth of the 15% I look for, and well below the 6% floor where I'd even consider a name. Return on Capital comes in at ~11–14% (confirmed by the reported ROCE of 13.8%), below the 20% minimum for a \"good business.\" When a company ranks poorly on both cheapness and quality, the Magic Formula verdict is unambiguous: pass.\n\nThe cash flow picture makes the valuation gap even harder to justify. Despite growing net profit from ₹60 Cr to ₹96 Cr between FY23–25, Ethos generated negative FCF of -₹58 Cr, -₹1 Cr, and -₹94 Cr in those same years. Luxury watch retailing requires enormous inventory build-up for consignment-style stock, and the company has been plugging that gap with repeated equity raises (reserves up 6.6x in three years). The business is growing, but every rupee of growth is consuming more than a rupee of capital — the opposite of what the Magic Formula seeks.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 49459,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08132295,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10983,
+      "cache_read_input_tokens": 8859,
+      "output_tokens": 2498,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10983
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 427,
+          "cache_read_input_tokens": 8859,
+          "cache_creation_input_tokens": 2124,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2124,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

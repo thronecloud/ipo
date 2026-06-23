@@ -1,0 +1,70 @@
+{
+  "symbol": "544641",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-20T11:00:27.446930Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "K.V. Toys fails nearly every quantitative Graham filter — a P/E of 27.2 against a feeble 1.01% ROE offers no margin of safety whatsoever. This is a recently-listed micro-cap with no demonstrated earning power, priced as if it were a growth stock.",
+    "key_strengths": [
+      "Promoter holding of 58.34% suggests owner skin-in-the-game",
+      "Small INR 124 Cr market cap leaves theoretical room to grow",
+      "Tangible business (plastic/metal toy contract manufacturing) — not a speculative concept"
+    ],
+    "key_risks": [
+      "ROE of 1.01% implies near-zero earning power — capital is idle",
+      "P/E of 27.2 with such weak returns means ~100x normalized earnings — extreme overvaluation",
+      "Recent BSE listing (544641) — lacks the 5-10 year earnings record I require"
+    ],
+    "red_flags": [
+      "IPO/recent listing — sellers set the price, not value investors",
+      "ROE ~1% is below a savings account — capital is being destroyed in real terms",
+      "No visible dividend history; no evidence of sustained profitability",
+      "Contract manufacturing toys is a low-moat, commoditized, cyclical business"
+    ],
+    "detailed_analysis": "From a strict Graham lens, this security is uninvestable. A P/E of 27.2 demands high and reliable earning power; instead we see ROE of 1.01%, meaning the company earns roughly INR 1 on every INR 100 of equity. Implied earnings yield is under 4%, well below risk-free Indian G-Sec yields — there is zero compensation for equity risk, let alone micro-cap illiquidity risk. The Graham Number test cannot even be meaningfully applied because EPS is so thin; at a 1% ROE, book value per share times 22.5 × EPS will collapse to a price far below INR 198.\n\nFurthermore, this is exactly the type of issue I warned against in \"The Intelligent Investor\" — a small, recently-listed manufacturer in a cyclical consumer-discretionary niche (toys), priced by the market on narrative rather than demonstrated facts. Contract toy manufacturing has no durable moat, thin margins, and working-capital intensity. Without a 5-year record of stable earnings, a current ratio >2, debt-to-equity <0.5, and a price below tangible book, there is no basis for purchase. Mr. Market is offering enthusiasm; I would wait for him to offer a price closer to liquidation value, which this is assuredly not.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "insufficient_data",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 24404,
+    "model_used": "opus",
+    "total_cost_usd": 0.11222375,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 11865,
+      "cache_read_input_tokens": 10625,
+      "output_tokens": 1309,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11865,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 129,
+          "cache_read_input_tokens": 10625,
+          "cache_creation_input_tokens": 1240,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1240
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

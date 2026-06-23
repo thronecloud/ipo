@@ -1,0 +1,68 @@
+{
+  "symbol": "GOKULAGRO",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T17:28:20.900466Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "AVOID",
+    "investment_thesis": "Gokul Agro has impressive ROCE (34.2%) driven by high asset turnover, but at an earnings yield of only ~8.2% (EBIT ₹528 Cr / EV ~₹6,473 Cr), it fails the Magic Formula's \"cheap\" test — you're not getting a bargain price for the business quality. The razor-thin 2.33% operating margin signals a commodity processor with no durable moat, making the high ROCE fragile and cycle-dependent.",
+    "key_strengths": [
+      "ROCE of 34.2% and ROE of 27% are genuinely strong for an edible oil processor — high capital efficiency via asset turnover",
+      "Revenue CAGR of 20.6% and operating income CAGR of 29.1% over 9 years shows consistent scale-up execution",
+      "FCF turned strongly positive in 2024-2025 (₹230 Cr), with 5/5 years of positive OCF showing cash generation discipline"
+    ],
+    "key_risks": [
+      "Earnings yield ~8.2% (EBIT/EV) is well below the 12%+ threshold — the stock is not cheap enough relative to its earnings power",
+      "2.33% operating margin and 4.7% gross margin mean a small commodity price swing or input cost spike destroys profitability entirely",
+      "Finance costs exploded to ₹183 Cr in 2025 (up from ₹118 Cr) — interest coverage is thin at ~2.9x EBITDA, leaving little buffer"
+    ],
+    "red_flags": [
+      "Total assets nearly doubled in one year (₹3,207 Cr → ₹5,327 Cr) with no clear capex driver — suggests working capital bloat or aggressive inventory/receivables build",
+      "No moat whatsoever: edible oils are price-takers in a fully commoditized market with branded premiums minimal under Vitalife/Mahek/Pride brands"
+    ],
+    "detailed_analysis": "Running the Magic Formula: EBIT (Operating Income) = ₹528 Cr; Enterprise Value = Market Cap ₹6,074 Cr + Net Debt ₹399 Cr ≈ ₹6,473 Cr → Earnings Yield = 8.2%. That's mediocre — Greenblatt wants 12%+ and ideally 15%+ to call something a bargain. ROCE of 34.2% is the one bright spot, comfortably above the 25% \"excellent\" threshold. But in this case the high ROCE is an artifact of high revenue-per-rupee-of-capital (turnover model), not pricing power. Revenue of ₹19,551 Cr on equity of ₹1,215 Cr is a 16x revenue-to-equity ratio — any margin compression immediately craters returns.\n\nThe business is structurally uninvestable from a Magic Formula standpoint: thin margins (2.33% operating) mean EBIT is extremely sensitive to commodity cycles, and the \"high ROIC\" is not durable in the way Greenblatt requires — he looks for moat-backed returns, not turnover-driven ones. The asset surge from ₹3,207 Cr to ₹5,327 Cr in a single year is a yellow flag, likely reflecting working capital expansion to fund revenue growth. With earnings yield below threshold and no moat to sustain ROIC, this fails both legs of the formula when stress-tested. Pass.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 60756,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09294135,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11783,
+      "cache_read_input_tokens": 9037,
+      "output_tokens": 3069,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11783
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 368,
+          "cache_read_input_tokens": 9037,
+          "cache_creation_input_tokens": 2746,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2746,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

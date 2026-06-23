@@ -1,0 +1,69 @@
+{
+  "symbol": "INDIGOPNTS",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T17:43:20.464300Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Indigo Paints is a legitimate, debt-free business with four consecutive years of profits, but at INR 838 it trades at 2.16× the Graham Number (~INR 387), P/E of 26.9×, and P/B of 3.74× — all far outside my required margin of safety. The price embeds speculative growth expectations, not proven earning power.",
+    "key_strengths": [
+      "Near-zero debt (D/E 0.02) with INR 1,067 Cr equity — fortress balance sheet by my standards",
+      "Four consecutive years of positive earnings and operating cash flows, meeting my minimum track-record requirement",
+      "Interest coverage of ~58× (Operating Income INR 233 Cr vs Finance Cost INR 4 Cr) — no solvency risk"
+    ],
+    "key_risks": [
+      "P/E of 26.9× is nearly double my maximum of 15×; any earnings disappointment destroys capital rapidly at this multiple",
+      "P/B of 3.74× means you are paying INR 2.74 in air for every INR 1.00 of tangible assets — the classic hallmark of speculation",
+      "Net profit declined from INR 149 Cr (2024) to INR 142 Cr (2025) despite revenue growing; margin compression in a competitive paint market signals pricing power limits"
+    ],
+    "red_flags": [
+      "Graham Number ≈ INR 387 (√(22.5 × EPS ~29.8 × BVPS ~223.7)); current price INR 838 is a 116% premium — no margin of safety whatsoever",
+      "No dividend history provided; a company earning INR 142 Cr that returns nothing to shareholders forces the investor to rely entirely on market sentiment for returns",
+      "CWIP surged from INR 17 Cr (2024) to INR 221 Cr (2025), signalling a large unproven capex cycle; returns on this capital are speculative, not proven"
+    ],
+    "detailed_analysis": "From my quantitative framework, Indigo Paints fails every primary valuation filter. The Graham Number, derived from proven EPS of ~INR 29.8 and book value per share of ~INR 223.7, yields a fair value of approximately INR 387 — the stock trades at INR 838, a 116% premium. A P/E of 26.9× and P/B of 3.74× are not the prices of a bargain; they are the prices of a popular story. Mr. Market is in one of his euphoric moods, and the disciplined investor must refuse to follow him there.\n\nThe business itself is not without merit — the balance sheet is nearly debt-free, operating cash flows have been positive for four straight years, and ROCE of 19.5% demonstrates decent capital efficiency. However, net profit actually contracted year-over-year (INR 149 Cr to INR 142 Cr) even as revenue grew 2.7%, hinting that competition from Asian Paints, Berger, and Akzo Nobel is squeezing margins. The surging CWIP of INR 221 Cr adds further capital deployment risk without any proven return. I require a significant discount to intrinsic value before committing a single rupee — this stock offers the opposite.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 41852,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.06928965000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8431,
+      "cache_read_input_tokens": 10598,
+      "output_tokens": 2299,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 8431
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 430,
+          "cache_read_input_tokens": 8548,
+          "cache_creation_input_tokens": 1933,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1933,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

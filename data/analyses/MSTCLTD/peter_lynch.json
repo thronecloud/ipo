@@ -1,0 +1,70 @@
+{
+  "symbol": "MSTCLTD",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-18T21:57:44.550141Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "MSTC's core revenues have collapsed 90% over 9 years (INR 3,225 Cr → INR 311 Cr), with FY25 \"profits\" of INR 407 Cr almost entirely powered by Other Income of INR 340 Cr rather than operating earnings of INR 178 Cr. At P/S of 9.78x on a structurally shrinking revenue base, this fails every Lynch growth-at-a-reasonable-price test.",
+    "key_strengths": [
+      "Near-zero debt (D/E 0.17) with INR 378 Cr cash — extremely clean balance sheet for a PSU",
+      "Government backing as India's primary e-auction/e-procurement platform creates operational moat",
+      "High stated ROE/ROCE (28-29%) reflects asset-light platform model with minimal capex (INR 25 Cr in FY25)"
+    ],
+    "key_risks": [
+      "Revenue in freefall: -22.9% CAGR over 9 years, from INR 3,225 Cr to INR 311 Cr — no growth story exists",
+      "Earnings quality is hollow: FY25 net profit INR 407 Cr but operating income only INR 178 Cr; INR 340 Cr other income (treasury/investments) is doing the heavy lifting",
+      "P/S of 9.78x is egregiously expensive for a company whose top-line has declined every year for most of the last decade"
+    ],
+    "red_flags": [
+      "Revenue CAGR of -22.9% over 9 years is a structural death spiral, not a cyclical dip",
+      "FY25 net profit of INR 407 Cr masks operating weakness — strip out other income and core earnings are modest",
+      "Operating cash flow turned sharply negative in FY24 (-INR 283 Cr), revealing volatile and unreliable cash generation",
+      "EBITDA has also been erratic and declining (INR 477 Cr in FY22 → INR 254 Cr in FY25) despite 'strong' margins on a tiny revenue base"
+    ],
+    "detailed_analysis": "MSTC is the classic Lynch anti-pattern: a once-large government trading house (INR 3,225 Cr revenue in FY16) that has been hollowed out over a decade, leaving behind a tiny e-auction platform business generating only INR 311 Cr in FY25 revenues. The headline metrics look deceptively attractive — ROE of 28%, D/E of 0.17, P/E of just 14.6x — but they are a mirage. The FY25 net profit of INR 407 Cr is almost entirely driven by \"Other Income\" of INR 340 Cr (likely interest on treasury assets and investment gains), while the actual operating business earned only INR 178 Cr in operating income. There is no compounding growth engine here; this is a quasi-investment holding company wearing an e-commerce label.\n\nFrom a Lynch GARP perspective, the story is simply missing. \"What's the story?\" — there isn't one. PEG ratio is meaningless when the growth rate is negative. P/S of 9.78x on a shrinking revenue stream that hit INR 311 Cr in FY25 is expensive by any measure. The government promoter (64.75%) limits management's ability to pivot aggressively, and the PSU culture makes a ten-bagger scenario implausible. Cash flows are erratic (OCF swung from +INR 844 Cr in FY23 to -INR 283 Cr in FY24 to +INR 260 Cr in FY25). I'd rather own a growing regional chain than a PSU whose revenues have shrunk 90% in nine years. Hard pass.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 55840,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0911004,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11508,
+      "cache_read_input_tokens": 8888,
+      "output_tokens": 3018,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11508,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 429,
+          "cache_read_input_tokens": 8888,
+          "cache_creation_input_tokens": 2620,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2620
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

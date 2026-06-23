@@ -1,0 +1,69 @@
+{
+  "symbol": "IONEXCHANG",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T17:54:37.612167Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Ion Exchange operates in a structurally attractive water treatment sector with 60 years of franchise and decent ROCE of 22.3%, but reported profits are a mirage — FY2025 net profit of ₹208 Cr produced only ₹32 Cr of operating cash flow and -₹287 Cr of free cash flow, a quality-of-earnings failure that disqualifies it at 30x P/E. Wait for the capex cycle to mature and FCF to normalize before considering entry.",
+    "key_strengths": [
+      "Secular tailwinds: India's water scarcity + ZLD mandates + industrial effluent regulation create durable demand with no easy substitutes",
+      "Consistent ROCE of 22%+ with revenue CAGR of 13.6% and operating profit CAGR of 19.9% over 9 years — demonstrating real operating leverage",
+      "Diversified model (Engineering + Chemicals + Consumer) across 14 industries reduces customer concentration risk"
+    ],
+    "key_risks": [
+      "Earnings quality collapse: FY2025 OCF/Net Income = 32/208 = 15% — well below Munger's 80% threshold, signaling aggressive working capital build or revenue recognition issues",
+      "Debt surge from ₹59 Cr (2023) to ₹421 Cr (2025) — a 7x increase in two years — funded partly by FCF-negative capex of ₹320 Cr; financial stress risk if order execution slips",
+      "Dangerously thin operating margin of 5.54% — leaves almost no margin of safety for cost inflation, project overruns, or competitive pricing pressure"
+    ],
+    "red_flags": [
+      "FCF turned -₹287 Cr in FY2025 despite ₹208 Cr net profit — the divergence is alarming and must be explained",
+      "Promoter holding of only 25.58% is exceptionally low for an Indian mid-cap — limited skin in the game is a governance red flag Munger takes seriously",
+      "CWIP jumped from ₹42 Cr to ₹203 Cr in two years — large unproven capital deployed; returns uncertain until projects commission"
+    ],
+    "detailed_analysis": "Ion Exchange has built a legitimate franchise over six decades in India's water and environmental management space — a sector with genuine regulatory tailwinds (ZLD mandates, Jal Jeevan Mission, industrial effluent norms). The 9-year CAGR of 19.9% in operating income and a ROCE of 22.3% are respectable numbers, and the business model across Engineering projects, proprietary resins/chemicals, and consumer water purifiers has real diversification. The low debt/equity of 0.32 historically suggested disciplined capital allocation, and finance costs have barely moved over a decade while revenues tripled.\n\nHowever, applying Munger's inversion rigorously, the FY2025 numbers fail the most basic test: a business earning ₹208 Cr in net profit that generates only ₹32 Cr in operating cash flow and burns -₹287 Cr in free cash flow is not actually earning what it reports. This OCF/PAT ratio of 15% is a serious red flag — it suggests either aggressive receivables build (common in project-heavy Engineering segments), unsatisfactory contract terms, or working capital deterioration. Simultaneously, debt has exploded 7x to ₹421 Cr and capex hit ₹320 Cr in one year, with CWIP at ₹203 Cr. At 30x P/E and 18x EV/EBITDA, you're paying a quality multiple for earnings that aren't converting to cash. The promoter's 25.58% stake — unusually low — adds a further governance discount. This is a business to watch, not to buy today.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 54091,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08789834999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11493,
+      "cache_read_input_tokens": 9152,
+      "output_tokens": 2803,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11493
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 520,
+          "cache_read_input_tokens": 9152,
+          "cache_creation_input_tokens": 2341,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2341,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

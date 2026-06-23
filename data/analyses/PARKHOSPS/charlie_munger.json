@@ -1,0 +1,71 @@
+{
+  "symbol": "PARKHOSPS",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T22:10:07.884275Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "AVOID",
+    "investment_thesis": "Park Medi World is a capital-intensive regional hospital chain that has grown revenue at 16% CAGR but converted almost none of that growth into shareholder value — net profit CAGR of just 3.3% while finance costs compounded at 26.3%. Paying 44x P/E for this quality of earnings growth is a guaranteed path to mediocre returns.",
+    "key_strengths": [
+      "NABH-accredited multi-super-specialty platform with ROCE of 20.4% — barely clears my 15% hurdle",
+      "Consistent operating cash flow across all 5 years; growing reserve base (256→1,124 Cr) shows equity is being retained",
+      "Healthcare sector long-term tailwind in India with rising medical tourism and insurance penetration"
+    ],
+    "key_risks": [
+      "Revenue-profit disconnect: revenue +16.1% CAGR but net profit only +3.3% CAGR — operating leverage is absent or deteriorating",
+      "Finance cost metastasis: borrowing costs grew 26.3% CAGR (24→61 Cr), debt nearly tripled (292→734 Cr) — the balance sheet is being stretched",
+      "Grossly overvalued: 44x P/E + EV/EBITDA of 22x for a business with single-digit profit growth; other income (30 Cr, up 77.8% CAGR) is inflating reported profits"
+    ],
+    "red_flags": [
+      "FCF/Net Income in FY25: only 66/213 = 31% — far below my 80% quality threshold; earnings quality is poor",
+      "Other income growing at 77.8% CAGR (3→30 Cr) now constitutes ~14% of net profit — core operating earnings are lower than headline numbers suggest",
+      "FII ownership at mere 0.86% despite sector being institutional-favorite — sophisticated capital is staying away",
+      "Promoter lock-in at 82.89% creates near-zero public float liquidity; also limits governance scrutiny",
+      "EBITDA actually fell from 428 Cr (FY23) to 348 Cr (FY24) despite rising revenue — operational inconsistency in a supposedly scaling network"
+    ],
+    "detailed_analysis": "Inverting first: what kills this investment? You're paying 44x earnings for a business whose net profits grew at 3.3% annually over four years. Revenue grew at 16% but EBITDA only at 5.2% — the classic sign of a hospital chain consuming its own growth through rising staff costs, debt service, and capex. Finance costs alone went from 24 Cr to 61 Cr (26.3% CAGR), and borrowings nearly tripled. The \"quality\" of earnings is further undermined by other income inflating from 3 Cr to 30 Cr — strip that out and core net profit is closer to 183 Cr, pushing the true P/E even higher. FCF of just 66 Cr against net profit of 213 Cr in FY25 signals either aggressive revenue recognition or insatiable reinvestment need — neither is comforting.\n\nThe business itself is not terrible — NABH accreditation, ROCE above 20%, and consistent OCF are genuinely positive. But this is a Gurugram-centric regional hospital chain, not Apollo or Narayana — it lacks the brand moat, bed network scale, and payor diversification that would justify premium multiples. At EV/EBITDA of 22x, the market is pricing in a compounding machine; the financials reveal a capital-hungry, margin-pressured operator. As I've said before: a great business at a fair price beats a fair business at a great price — this is a fair business at an expensive price. I see no margin of safety here.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 58486,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0876951,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11048,
+      "cache_read_input_tokens": 8537,
+      "output_tokens": 2913,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11048,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 455,
+          "cache_read_input_tokens": 8537,
+          "cache_creation_input_tokens": 2511,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2511
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

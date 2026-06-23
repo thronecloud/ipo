@@ -1,0 +1,70 @@
+{
+  "symbol": "EMIL",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T17:12:28.772575Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Electronics Mart India fails virtually every quantitative screen I require — P/E of 44x (nearly 3× my ceiling of 15), P/B of 2.6x (above my 1.5x limit), and Debt/Equity of 1.26 (over twice my 0.5 maximum). The Graham Number of approximately INR 62 (√(22.5 × ₹4.16 EPS × ₹40.4 BVPS)) reveals the stock trades at a ~70% premium to the only price I consider safe.",
+    "key_strengths": [
+      "Consistent revenue growth — 17% CAGR over 5 years reaching ₹6,965 Cr, demonstrating the business can grow",
+      "Unbroken positive earnings history across 6 years (2020–2025), satisfying my minimum earnings continuity test",
+      "Interest coverage ratio of ~3.8x (EBIT ₹451 Cr / Finance Cost ₹118 Cr) — barely clears my 3.5x floor"
+    ],
+    "key_risks": [
+      "Dangerous leverage — borrowings exploded from ₹872 Cr (2020) to ₹1,963 Cr (2025), D/E of 1.26 leaves no margin in a downturn",
+      "Free cash flow deeply negative: –₹159 Cr (2025), –₹247 Cr (2023); capex of ₹335 Cr in 2025 consumes all operating cash and more",
+      "Razor-thin 4% operating margins in a commoditised retail business — any revenue softness or rate rise collapses profits"
+    ],
+    "red_flags": [
+      "P/E of 44x — priced for perfection in a low-margin, capital-intensive retailer",
+      "Net profit declined from ₹184 Cr (2024) to ₹160 Cr (2025) even as revenue grew — margin compression is accelerating",
+      "Finance costs compounding at 13.4% CAGR; if rates rise or expansion stalls, interest burden becomes existential",
+      "No dividend income — shareholders receive no current return while bearing substantial debt risk"
+    ],
+    "detailed_analysis": "From my perspective, Electronics Mart is a business I can understand but cannot buy at any price resembling today's. The Graham Number of roughly INR 62 — computed from trailing EPS of ₹4.16 and book value of ₹40.4 per share — places intrinsic value 41% below the current price of ₹105. Every valuation ratio offends my discipline: P/E of 44x, P/B of 2.6x. Mr. Market is asking me to pay for a rosy future in a business with 4% operating margins and a debt load that has more than doubled in five years. That is speculation, not investment.\n\nThe balance sheet concerns me most. Borrowings of ₹1,963 Cr against equity of ₹1,557 Cr means creditors have a larger claim on this business than shareholders do. The company burned ₹159 Cr of free cash in FY25 on store expansion — an aggressive bet that requires sustained consumer spending, low interest rates, and flawless execution. History shows that retailers who over-lever during expansion cycles suffer acutely in contractions. With declining net profit (₹184 Cr → ₹160 Cr in one year) and rising finance costs (₹118 Cr, up 13.4% annually), the earnings cushion is shrinking precisely when the debt pile is growing. I require a margin of safety; this stock offers none.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 49236,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07406055,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8915,
+      "cache_read_input_tokens": 10951,
+      "output_tokens": 2489,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 8915
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 496,
+          "cache_read_input_tokens": 8901,
+          "cache_creation_input_tokens": 2064,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2064,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

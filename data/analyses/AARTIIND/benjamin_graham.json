@@ -1,0 +1,69 @@
+{
+  "symbol": "AARTIIND",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-19T06:17:36.812212Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Aarti Industries presents the most dangerous combination in value investing: a stock priced for growth (P/E 43.1x) whose actual earnings are sharply contracting — net profit collapsed from INR 1,186 Cr in FY2022 to INR 331 Cr in FY2025, a 72% decline. At this price, the investor is paying a premium for yesterday's peak and receiving today's trough.",
+    "key_strengths": [
+      "Operating cash flow positive in all 5 of the last 5 years, indicating the business does generate real cash before capex",
+      "Nine-year revenue track record (INR 3,006 Cr → INR 7,271 Cr) demonstrates a real, growing enterprise",
+      "Established specialty chemicals platform with diversified end-markets (pharma, agro, dyes)"
+    ],
+    "key_risks": [
+      "Net profit CAGR over 9 years is a meager 2.4% — barely keeping pace with inflation — while the stock is priced at 43x earnings",
+      "ROE of 6.03% and ROCE of 6.32% are deeply sub-par; capital is being destroyed in real terms given the cost of debt",
+      "Finance costs surging from INR 86 Cr (FY2021) to INR 275 Cr (FY2025), compressing margins as debt increases"
+    ],
+    "red_flags": [
+      "Earnings collapsed 72% over three years (INR 1,186 Cr → INR 331 Cr) yet P/E stands at 43.1x — a grotesque mismatch",
+      "Graham Number estimated at ~INR 179 (sqrt of 22.5 × INR 9.1 EPS × INR 157 book) versus market price of INR 441 — a 146% premium",
+      "CWIP of INR 1,596 Cr with consistently negative free cash flow signals capital allocation yielding poor returns"
+    ],
+    "detailed_analysis": "The defining characteristic of Aarti Industries today is the inversion of what one should pay and what one receives. The market assigns a P/E of 43.1x — appropriate perhaps for a business with expanding, high-quality earnings — to a company whose ROE is 6%, margins are contracting, and profits have fallen for three consecutive years. A business earning 6% on equity while debt costs likely exceed that rate is, by definition, destroying shareholder value. I have no interest in such enterprises at any price, let alone at a 146% premium to my Graham Number.\n\nThe nine-year revenue record provides some comfort on survivability, and consistent operating cash flows suggest the core chemical business is real. However, the surge in capital expenditure (INR 1,386 Cr capex in FY2025) is not translating into improved returns — EBITDA is actually contracting. Until earnings recover substantially and the price corrects to below my Graham Number of ~INR 179, this stock represents pure speculation dressed up as an investment.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 170749,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.23166540000000002,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 24076,
+      "cache_read_input_tokens": 15638,
+      "output_tokens": 9112,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 24076,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 576,
+          "cache_read_input_tokens": 15638,
+          "cache_creation_input_tokens": 8438,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8438
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

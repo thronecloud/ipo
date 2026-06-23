@@ -1,0 +1,69 @@
+{
+  "symbol": "544393",
+  "persona": "howard_marks",
+  "persona_display_name": "Howard Marks",
+  "analyzed_at": "2026-04-20T19:55:08.614555Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "A ₹30 Cr micro-cap e-learning shop with a 0.45% ROE trading at 7.96x earnings is not \"cheap\" — it is priced like a business earning nearly nothing, because it is. There is zero margin of safety in a sub-scale IT services firm whose unit economics have not been tested through a downcycle.",
+    "key_strengths": [
+      "High promoter skin-in-the-game at 69.28%",
+      "Optically low P/E of 7.96x vs IT-services peers",
+      "Asset-light custom learning niche with secular tailwind"
+    ],
+    "key_risks": [
+      "ROE of 0.45% is effectively capital destruction vs ~7% risk-free rate",
+      "₹30 Cr market cap = illiquid SME, no institutional sponsorship (FII 0.04%, DII 0%)",
+      "Single-product custom L&D exposure — first casualty in client IT budget cuts"
+    ],
+    "red_flags": [
+      "0.45% ROE with 7.96x P/E implies earnings base is tiny and unstable",
+      "Recently listed (2014 incorp, fresh BSE SME-style listing) at cycle-peak IPO euphoria",
+      "Negligible institutional ownership — no independent scrutiny of numbers"
+    ],
+    "detailed_analysis": "Second-level thinking: the 7.96x P/E looks like a bargain until you realize ROE is 0.45% — the company is earning well below its cost of equity, which means the \"E\" in P/E is nearly a rounding error. At ₹30 Cr market cap, implied net profit is on the order of ₹3-4 Cr, which one lost client can wipe out. This is a classic SME-IPO-era listing where the float is small, promoters own 69%, and price discovery is dominated by retail momentum rather than fundamentals — exactly the \"greed pendulum\" backdrop where risk is highest precisely when it feels lowest.\n\nWhere's the margin of safety? There isn't one. A mediocre business at a mediocre price is not a Marks setup; I want either a great business mispriced by fear, or a distressed asset at liquidation value. This is neither — it is a fragile, undifferentiated custom learning vendor competing against scaled players (Simplilearn, upGrad, NIIT) with no visible moat, no track record through a recession, and no institutional holders to enforce governance. Downside scenario (budget freeze + SME liquidity squeeze): 50-70% drawdown is easily conceivable. Pass.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 31546,
+    "model_used": "opus",
+    "total_cost_usd": 0.110413,
+    "usage": {
+      "input_tokens": 7,
+      "cache_creation_input_tokens": 9348,
+      "cache_read_input_tokens": 24606,
+      "output_tokens": 1586,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9348,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 81,
+          "cache_read_input_tokens": 11129,
+          "cache_creation_input_tokens": 1101,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1101
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

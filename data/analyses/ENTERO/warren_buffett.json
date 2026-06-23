@@ -1,0 +1,70 @@
+{
+  "symbol": "ENTERO",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T17:12:13.583558Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Entero is a fast-growing pharma distributor with zero durable moat, 3.4% operating margins, and a stunning record of negative operating cash flow every single year since inception — not the kind of business I'd own at any price, let alone 47x earnings. The economics of distribution without pricing power produce meager returns on capital that compound the owner's misery, not their wealth.",
+    "key_strengths": [
+      "Revenue CAGR of 30.4% (FY20→FY25) shows genuine scale-building in a large, underpenetrated healthcare distribution market.",
+      "Debt/Equity of 0.25 and INR 229 Cr cash provide reasonable near-term balance sheet stability after IPO proceeds.",
+      "EBITDA inflecting sharply (INR 35 Cr → INR 207 Cr in 5 years) suggests operating leverage is beginning to kick in."
+    ],
+    "key_risks": [
+      "Chronically negative operating cash flow (0/5 years positive, -INR 77 Cr in FY25) means profit is accounting fiction; cash is being consumed, not created.",
+      "No economic moat — pharmaceutical distribution is a commodity middleman business with minimal switching costs, intense competition, and zero pricing power.",
+      "ROE of 5.63% and ROCE of 8.71% are far below the cost of capital; the business destroys value on every rupee deployed despite rapid revenue growth."
+    ],
+    "red_flags": [
+      "Operating cash flow negative every single year 2020–2025 despite INR 5,096 Cr revenue — working capital is a structural trap.",
+      "Net profit only emerged in FY24 after IPO cash infusion masked underlying losses for 4+ years.",
+      "P/E of 47.8x on a 3.4% operating margin distributor with no moat is speculative pricing, not value pricing.",
+      "Other income surged to INR 39 Cr in FY25 (vs INR 14 Cr prior year), inflating reported profitability — quality of earnings is suspect."
+    ],
+    "detailed_analysis": "Entero is a pharmaceutical and medical products distributor incorporated in 2018 — a young company in a structurally low-margin business. The financials tell a simple story: revenues have compounded at 30% annually, yet the company has never once converted operations into positive cash. Operating cash flow is -INR 77 Cr in FY25 even as reported net profit reached INR 107 Cr. This disconnect reveals the classic working capital trap of distribution — inventory and receivables consume cash faster than earnings can replenish it. With gross margins of just 9.95% and operating margins of 3.40%, there is no buffer, no pricing power, and no moat. The business earns less than its cost of capital (ROCE 8.71%) and delivers a paltry 5.63% ROE despite using the IPO proceeds as an equity cushion.\n\nAt 47.8x trailing earnings and 29x EV/EBITDA, the market is paying a premium-quality multiple for a commodity-distribution business with decade-old unit economics that would embarrass a grocery wholesaler. I look for businesses that generate owner earnings — cash that falls to the proprietor without needing to be immediately recycled back into working capital. Entero does the opposite. The revenue growth is real and the Indian healthcare distribution opportunity is large, but growth without returns on capital is not an investment; it is an exercise in capital destruction at scale. I'll watch from a great distance.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 45066,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07738455,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10839,
+      "cache_read_input_tokens": 8881,
+      "output_tokens": 2271,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10839
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 350,
+          "cache_read_input_tokens": 8881,
+          "cache_creation_input_tokens": 1958,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1958,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

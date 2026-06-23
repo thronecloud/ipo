@@ -1,0 +1,70 @@
+{
+  "symbol": "544366",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-20T19:41:44.944361Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "L.K. Mehta Polymers fails both Magic Formula screens catastrophically: a P/E of 26.9 implies an earnings yield near 3.7% (vs. my 12%+ threshold), while ROE of 0.08% signals near-zero return on capital. This is neither cheap nor good — the opposite of what the Magic Formula seeks.",
+    "key_strengths": [
+      "High promoter holding at 72.92% signals skin in the game",
+      "Debt-light micro-cap trader, balance sheet likely simple",
+      "Dual exposure to plastics and gold trading offers some diversification"
+    ],
+    "key_risks": [
+      "ROE of 0.08% indicates capital is earning essentially nothing",
+      "Earnings yield ~3.7% is deeply overvalued vs. risk-free rate",
+      "Pure trading business (plastics + gold) has no moat and razor-thin margins"
+    ],
+    "red_flags": [
+      "ROE 0.08% — effectively zero return on capital",
+      "P/E 26.9 on a negligible-profit trading micro-cap is irrational",
+      "17.5 Cr market cap with negligible FII interest (0.21%) — liquidity and governance risk",
+      "Mixing plastic ropes/granules and gold trading suggests unfocused capital allocation"
+    ],
+    "detailed_analysis": "From a Magic Formula lens, this is a textbook reject. Earnings yield (EBIT/EV) cannot exceed the inverse of P/E (1/26.9 ≈ 3.7%), and after adjusting for cash/debt it's unlikely to clear even 5% — far below the 12% minimum I demand. ROE of 0.08% is a proxy for ROIC here since this is a trading outfit with little fixed-asset leverage, and it tells me invested capital earns roughly nothing. You cannot have a \"good business at a bargain price\" when the business isn't good and the price isn't a bargain.\n\nTrading businesses in commodity plastics and gold inherently lack the pricing power that drives high returns on capital — they're pass-through spreads on working capital. At 17.5 Cr market cap with 72.9% promoter holding, this is a thinly-traded shell-like micro-cap where reported earnings can be whipsawed by a single inventory mark. The systematic answer is unambiguous: skip this and let the screener surface something that ranks well on both factors.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 29272,
+    "model_used": "opus",
+    "total_cost_usd": 0.09353475,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8995,
+      "cache_read_input_tokens": 13472,
+      "output_tokens": 1222,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8995,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10602,
+          "cache_creation_input_tokens": 1263,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1263
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

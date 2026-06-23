@@ -1,0 +1,69 @@
+{
+  "symbol": "AFCONS",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-19T06:23:34.882235Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Afcons is a large EPC contractor — an industry I have always found unappealing because it has no pricing power, competes on bids, and is perpetually at the mercy of government payment cycles and raw material costs. Revenue grew only 4.8% CAGR over 5 years, FCF turned sharply negative in FY2025 (-470 Cr), and 'Other Income' of INR 469 Cr represents 34% of operating income — a figure that demands explanation and likely masks the true weakness of the core construction business.",
+    "key_strengths": [
+      "Established brand with 65+ years of execution across complex infrastructure categories (marine, tunnels, metro, oil and gas) — project references that smaller competitors lack",
+      "ROCE of 19.6% appears healthy and is above my 15% threshold, though the high other income may be distorting this figure",
+      "Post-IPO equity infusion lifted total equity from INR 3,596 Cr to INR 5,389 Cr, strengthening the balance sheet for near-term project bidding"
+    ],
+    "key_risks": [
+      "Finance costs reached INR 629 Cr in FY2025 — nearly as large as reported net profit of INR 487 Cr; interest burden is structurally dangerous in a thin-margin business",
+      "Revenue declined from INR 13,268 Cr (FY2024) to INR 12,548 Cr (FY2025); a company with 10.65% operating margins that can't grow revenue is destroying equity value in real terms",
+      "OCF turned negative in FY2025 (-132 Cr) after 4 positive years — working capital deterioration in construction is a classic warning sign of project execution stress"
+    ],
+    "red_flags": [
+      "Other Income of INR 469 Cr (FY2025) is 96% of net profit of INR 487 Cr — the 'true' operating business barely covers its financing costs without this line item",
+      "Borrowings grew from INR 2,523 Cr (FY2024) to INR 3,565 Cr (FY2025), a 41% increase in a single year, while FCF was -470 Cr — debt-funded survival is a red flag",
+      "Construction is the prototypical business Munger avoids: no repeat business advantage, no IP, customer concentration in government, and margins that can evaporate on a single project cost overrun"
+    ],
+    "detailed_analysis": "Afcons looks statistically acceptable at 24x P/E and 10.7x EV/EBITDA, but price-to-earnings multiples are meaningless when 'earnings' rest on a mountain of other income and the core business is generating negative free cash flow. The correct mental model here is inversion: what does this business look like in a bad year? A government order slowdown, rising steel prices, or a dispute on a large project could quickly turn INR 487 Cr of reported profit negative when INR 629 Cr of annual interest must still be paid. The quality of earnings here is poor — the construction business itself earned approximately INR 18 Cr after stripping other income and finance costs from the FY2025 P&L. I have no interest in a business where the real economics are that thin, regardless of the price.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 175950,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.23654370000000002,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 24380,
+      "cache_read_input_tokens": 15649,
+      "output_tokens": 9361,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 24380,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 502,
+          "cache_read_input_tokens": 15649,
+          "cache_creation_input_tokens": 8731,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8731
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

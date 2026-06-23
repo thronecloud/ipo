@@ -1,0 +1,69 @@
+{
+  "symbol": "ALKYLAMINE",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T16:21:23.449316Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Alkyl Amines is a genuinely high-quality specialty chemicals business with strong ROIC (~18–41%) and a near-debt-free balance sheet, but the Magic Formula rejects it on valuation — an earnings yield of ~3.4% (EBIT INR 249 Cr / EV ~INR 7,309 Cr) is less than half my 6% minimum threshold. Good business, wrong price.",
+    "key_strengths": [
+      "Near-zero debt (INR 6 Cr) with strong FCF recovery — INR 215 Cr FCF in FY25 after heavy capex cycle ends",
+      "Reported ROCE of 41.3% sustained over multiple years confirms genuine competitive advantage in aliphatic amines",
+      "Revenue CAGR ~12.5% from FY15–FY25 (INR 476 Cr → INR 1,548 Cr) with consistently positive OCF (5/5 years)"
+    ],
+    "key_risks": [
+      "Earnings yield of ~3.4% is severely below Magic Formula's 6% floor — paying a full quality premium leaves no margin of safety",
+      "Margin compression is real: EBIT margin peaked at ~25.9% in FY20, fell to 14.5% in FY24, only partially recovering to 16.1% in FY25",
+      "Revenue contracted 14% in FY24 (INR 1,657 Cr → INR 1,419 Cr), exposing cyclicality risk in pharma/agrochem end-markets"
+    ],
+    "red_flags": [
+      "Earnings yield ~3.4% — fails Magic Formula cheapness test decisively (threshold: >6%)",
+      "Net profit down 35% from FY23 peak (INR 229 Cr) to FY24 (INR 149 Cr), still below peak at INR 186 Cr in FY25",
+      "P/E of 38.8x prices in sustained margin recovery that has not yet materialized"
+    ],
+    "detailed_analysis": "Running the Magic Formula: EBIT FY25 = INR 249 Cr; Enterprise Value = Market Cap INR 7,352 Cr + Debt INR 6 Cr − Cash INR 49 Cr = INR 7,309 Cr. Earnings Yield = 249/7,309 = 3.4%. That immediately disqualifies this for a Magic Formula buy — I want 12%+, and I'd settle for 6%. On the ROIC side, using invested capital (equity + debt − cash = INR 1,359 Cr), ROIC = 249/1,359 = 18.3%; the company reports ROCE of 41.3%, which likely reflects narrower capital employed. Either way, the quality score is respectable. But Magic Formula requires BOTH metrics to rank well — one strong, one failing is not a buy.\n\nThe underlying business is solid: it dominates a niche (aliphatic amines for pharma/agrochemicals), has compounded revenue at ~12.5% annually since FY15, and just completed a heavy capex cycle (INR 247 Cr and INR 303 Cr in FY22–23) that is now tapering sharply (INR 48 Cr in FY25), unlocking free cash flow of INR 215 Cr. However, EBIT margins have structurally compressed from ~25.9% (FY20) to ~16.1% (FY25) and the stock is priced at 38.8x trailing earnings — the market is already paying for the recovery. At current prices, this is a HOLD for existing owners, not a new purchase under the Magic Formula framework.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 75553,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08816625,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11505,
+      "cache_read_input_tokens": 9045,
+      "output_tokens": 2820,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11505,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 401,
+          "cache_read_input_tokens": 9045,
+          "cache_creation_input_tokens": 2460,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2460
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

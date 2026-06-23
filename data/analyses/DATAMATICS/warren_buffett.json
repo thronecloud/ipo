@@ -1,0 +1,69 @@
+{
+  "symbol": "DATAMATICS",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T17:01:35.757620Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "AVOID",
+    "investment_thesis": "Datamatics is a serviceable mid-tier IT/BPM company with consistent free cash flow and low debt, but its 12.5% ROE falls short of my 15% threshold and its proprietary products (TruBot, TruCap+) lack the dominance needed to call this a wide-moat business. At 20x earnings with modest 8.7% revenue growth, the price is fair for what you get — and I don't buy fair businesses at fair prices.",
+    "key_strengths": [
+      "Pristine balance sheet: D/E of 0.13 and net cash positive; borrowings only INR 17 Cr before 2025 spike",
+      "Consistent FCF generation across all 5 measured years, with FCF growing from INR 63 Cr (2020) to INR 201 Cr (2025)",
+      "High promoter ownership (66.33%) signals owner-operator mentality and alignment with minority shareholders"
+    ],
+    "key_risks": [
+      "ROE of 12.5% is structurally below my 15% hurdle — reflects a business without pricing power or durable capital efficiency advantages",
+      "Earnings quality is diluted: other income surged to INR 78 Cr in FY25 (38% of net profit of INR 206 Cr), masking flat core operating performance",
+      "Borrowings jumped from INR 17 Cr to INR 186 Cr in FY25 while EBITDA and operating income actually declined — capital allocation red flag"
+    ],
+    "red_flags": [
+      "Operating income fell from INR 246 Cr (FY24) to INR 232 Cr (FY25) despite higher revenue — margin compression beginning",
+      "FY25 investing outflows (INR -224 Cr) consumed 100% of operating cash flow, leaving zero net capital generation",
+      "Other income of INR 78 Cr in FY25 (up from INR 45 Cr) is suspiciously large — overstates true earnings power"
+    ],
+    "detailed_analysis": "Datamatics is a 50-year-old Mumbai-based IT services and BPM company with a respectable operating track record. Net profit CAGR of 18.4% over 9 years looks impressive, but the FY25 data cracks that narrative: operating income and EBITDA both declined year-over-year (INR 244→232 Cr and INR 271→256 Cr respectively), while a large jump in other income (INR 45→78 Cr) papered over the weakness. The company's proprietary product suite (TruBot, TruCap+, TruBI) offers some differentiation, but in a commoditized IT services market dominated by giants, I see no evidence of a durable moat that would allow sustained pricing power or exceptional returns on capital.\n\nThe balance sheet tells a mixed story: years of admirable debt discipline were followed by a FY25 borrowing surge to INR 186 Cr — likely funding acquisitions or expansion — precisely when operating profitability softened. ROE of 12.5% and ROCE of 15% are mediocre for a pure-play technology business; I expect 20%+ from companies with genuine competitive advantages. At 20x trailing earnings with mid-single-digit revenue growth in recent years and declining core margins, there is no margin of safety. This is a decent business run by engaged promoters, but \"decent\" doesn't earn a place in my portfolio.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 52337,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07577025,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10943,
+      "cache_read_input_tokens": 9100,
+      "output_tokens": 2133,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10943
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 323,
+          "cache_read_input_tokens": 9100,
+          "cache_creation_input_tokens": 1843,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1843,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "symbol": "SHRIKANHA",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-21T07:59:02.758372Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "SHRIKANHA fails the Magic Formula on the quality side: ROE of 0.62% signals near-zero returns on capital, making the apparently cheap P/E of 4.48 a likely value trap rather than a bargain. A cheap price on a bad business is not what we're looking for.",
+    "key_strengths": [
+      "P/E of 4.48 implies surface-level earnings yield ~22% — looks cheap on that single metric",
+      "Promoter holding of 68.59% shows skin in the game",
+      "Stainless steel cold-rolled strips is a defined niche with some specialization"
+    ],
+    "key_risks": [
+      "ROE of 0.62% is catastrophically low — ROIC is almost certainly well below the 20% Magic Formula threshold",
+      "No debt data provided; EV could be much higher than market cap of INR 25.90 Cr, making true earnings yield far lower than P/E implies",
+      "Commoditized, capital-intensive steel products manufacturing — structural barrier to high ROIC"
+    ],
+    "red_flags": [
+      "Critical data inconsistency: P/E of 4.48 implies net income of ~INR 5.78 Cr, but ROE of 0.62% implies equity of ~INR 932 Cr — these numbers cannot coexist, signaling unreliable data",
+      "Micro-cap at INR 25.90 Cr market cap — extreme illiquidity, wide bid-ask spreads, no institutional coverage",
+      "Incorporated July 2015 — less than a decade of operating history, no proven cycle resilience",
+      "FII holding of 0.03% — no institutional validation whatsoever"
+    ],
+    "detailed_analysis": "The Magic Formula demands two things simultaneously: a cheap price (high earnings yield) AND a high-quality business (high ROIC). SHRIKANHA fails decisively on quality. A ROE of 0.62% tells us this business is generating almost no return on shareholder capital — in a capital-intensive, commodity-priced steel products business, that's expected. There is no pricing power, no switching costs, and no durable competitive advantage in cold-rolled stainless steel strips. The P/E of 4.48 superficially looks attractive, but without debt figures, the true EBIT/EV earnings yield is unknown — and a commodity steel business almost certainly carries working capital debt, compressing the real yield.\n\nThe internal data inconsistency is the most alarming flag: P/E of 4.48 on a INR 25.90 Cr market cap implies net income of ~INR 5.78 Cr, yet a ROE of 0.62% would require equity of ~INR 932 Cr to produce that income — an obvious impossibility. This suggests either stale data, restated financials, or a P/E computed off a historical earnings spike, none of which inspire confidence. At this scale (INR 25.90 Cr market cap), liquidity is essentially nonexistent. This stock does not belong in a Magic Formula screen.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "insufficient_data",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 51220,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08661180000000002,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10250,
+      "cache_read_input_tokens": 7551,
+      "output_tokens": 3060,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10250,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 404,
+          "cache_read_input_tokens": 7551,
+          "cache_creation_input_tokens": 2699,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2699
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

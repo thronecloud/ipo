@@ -1,0 +1,69 @@
+{
+  "symbol": "BELRISE",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-22T16:22:25.684594Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Belrise is a capital-intensive auto ancillary growing revenues at 15% but earnings at only 10.7%, yielding a disqualifying PEG of ~3.7x — you're paying a fast-grower price for stalwart-grade earnings growth. With negative free cash flow in 2025 (-₹163 Cr) and operating margins of just 8.3%, this is a classic \"hot IPO\" trap I'd walk right past.",
+    "key_strengths": [
+      "Revenue growing 15.4% CAGR, riding India's structural 2-wheeler boom with large OEM customers",
+      "Conservative balance sheet with D/E of just 0.29 and strong promoter backing at 66.46%",
+      "Diversifying into EV components (hub motors, battery containers) — optionality on India's EV transition"
+    ],
+    "key_risks": [
+      "PEG ratio of ~3.7x (P/E 39.6 ÷ EPS growth 10.7%) — wildly overpriced for the actual earnings growth delivered",
+      "Profit growth stalled in FY24 (₹314 Cr flat vs FY23's ₹314 Cr) despite 14% revenue growth — margins are being squeezed",
+      "Capex surge to ₹868 Cr in FY25 turned FCF deeply negative (-₹163 Cr); finance costs compound at 12.4% CAGR, eroding bottom line"
+    ],
+    "red_flags": [
+      "Recent IPO with equity nearly doubling (₹2,340→₹4,971 Cr) via capital raise — Lynch's rule: 'IPO = It's Probably Overpriced'",
+      "Operating margin only 8.3% in a commoditized, OEM-dependent business with limited pricing power",
+      "Net profit CAGR of 10.7% is half the revenue CAGR of 15.4% — operating leverage is running in reverse"
+    ],
+    "detailed_analysis": "Belrise is an auto ancillary supplying 2W/3W/4W OEMs — a business I'd classify as a stalwart at best, and a cyclical at worst. The story isn't bad: India's 2-wheeler market is enormous, the company has real scale at ₹8,291 Cr revenue, and the EV component optionality is interesting. But the numbers don't support the price. A P/E of 39.6x on a business compounding earnings at only 10.7% gives a PEG of 3.7x — I want PEG under 1.0 and get nervous above 1.5. At nearly 4x, I'm paying a premium the growth simply doesn't justify.\n\nWhat really bothers me is the disconnect between revenue and profit growth — revenue grew 53% over three years while net profit grew 35%, meaning margins are being consumed by rising finance costs (12.4% CAGR) and capex. FY25's ₹868 Cr capex against ₹704 Cr operating cash flow means the business burned ₹163 Cr of free cash. That's fine if you're building for a 10-bagger, but at 8.3% operating margins in a price-sensitive OEM supply chain, I don't see the path to dramatic margin expansion. The forward P/E of 27.6x implies the market is baking in ~43% earnings growth next year — heroic expectations for a company that just went public and historically grows earnings at 10%. Pass.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 55958,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08476605,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11263,
+      "cache_read_input_tokens": 8986,
+      "output_tokens": 2655,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11263,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 430,
+          "cache_read_input_tokens": 8986,
+          "cache_creation_input_tokens": 2277,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2277
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "MANORAMA",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T18:28:50.948904Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "AVOID",
+    "investment_thesis": "Manorama is a genuinely interesting specialty fats niche (shea/sal/CBE) with impressive P&L growth, but its earnings are almost entirely fictitious from a cash perspective — FCF was negative in 3 of 4 years including -INR 89 Cr against net profit of INR 110 Cr in FY25. At 39.5x P/E and 26.5x EV/EBITDA for a business that bleeds cash and doubles its finance costs every year, there is no margin of safety.",
+    "key_strengths": [
+      "Genuine niche: specialty fats (shea, sal) for cocoa butter equivalents is a global, technically-demanding market with real supplier network moats",
+      "Strong operating leverage: EBITDA CAGR 64% vs Revenue CAGR 41% shows pricing power and scale benefits",
+      "Revenue diversified across chocolate/confectionery, bakery, cosmetics, and animal nutrition — reduces single-customer concentration risk"
+    ],
+    "key_risks": [
+      "Earnings quality is near-zero: FCF/Net Income = -81% in FY25; a business that earns INR 110 Cr but consumes INR 57 Cr of operating cash is not a cash compounder",
+      "Finance costs doubling every year (100% CAGR; INR 5 Cr → INR 39 Cr in 3 years) — debt of INR 482 Cr is 4.5x its FY22 level, making the balance sheet fragile if growth stalls",
+      "Commodity trading sub-segment (rice, wheat, sugar, cotton) adds low-quality, low-margin revenue complexity that obscures true specialty-fats economics"
+    ],
+    "red_flags": [
+      "FCF negative in 3 of 4 years — a profitable business that cannot generate cash is an accounting story, not an economic one",
+      "Cash position collapsed from INR 49 Cr (FY22) to INR 3 Cr (FY25) despite raising INR 214 Cr in financing in FY24 alone — capital is being consumed, not created",
+      "Finance cost 100% CAGR signals a growth model built on borrowed money, not retained earnings — dangerous at current interest rates"
+    ],
+    "detailed_analysis": "Manorama's specialty fats business is conceptually attractive — shea and sal-based cocoa butter equivalents serve global food/chocolate manufacturers, require technical sourcing expertise, and benefit from India's natural resource base. The P&L numbers are genuinely impressive: revenue up 40.5% CAGR, EBITDA margins expanding to ~27%, and ROCE at ~20%. But Munger's first principle is to always invert, and when I invert this story the picture turns ugly: three of the last four years have produced deeply negative free cash flow (-INR 93, -193, -89 Cr). Net profit of INR 110 Cr in FY25 against operating cash outflow of -INR 57 Cr means the income statement is capturing accruals, not cash. Working capital is ballooning — almost certainly receivables and inventory from the commodity trading segment — and the company is plugging the gap with debt that has grown 4.5x in three years.\n\nThe valuation compounds the problem. At 39.5x trailing P/E and 26.5x EV/EBITDA, the market is paying a premium compounder price for a business that has yet to demonstrate it can convert growth into free cash. Finance costs at INR 39 Cr and growing at 100% CAGR will begin to eat meaningfully into net profit if debt accumulation continues. A business I would consider worthy of deep study at 15x earnings with proof of cash conversion becomes deeply unattractive at 39.5x with negative FCF. Until Manorama demonstrates sustained positive operating cash flow for at least two consecutive years, this is a speculative momentum trade dressed as a quality growth story — and I don't do those.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 53699,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08565555,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11021,
+      "cache_read_input_tokens": 8476,
+      "output_tokens": 2785,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11021
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 277,
+          "cache_read_input_tokens": 8476,
+          "cache_creation_input_tokens": 2545,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2545,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

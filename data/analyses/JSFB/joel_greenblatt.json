@@ -1,0 +1,69 @@
+{
+  "symbol": "JSFB",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T17:54:13.960735Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Jana Small Finance Bank is explicitly excluded from the Magic Formula — financial companies distort both Earnings Yield and ROIC calculations because deposits are \"raw material,\" not debt. Even setting that aside, ROE of 12.18% and declining FY25 net profit (₹501 Cr vs ₹670 Cr in FY24) fail to clear my 20%+ return-on-capital hurdle.",
+    "key_strengths": [
+      "Revenue growing at 22.3% CAGR (FY22–25), showing strong loan book expansion in underserved segments.",
+      "P/B at 0.95x — trading below book gives a margin of safety on asset value.",
+      "Strong FY25 operating cash flow (₹4,073 Cr) and cash build to ₹4,449 Cr suggest improving liquidity."
+    ],
+    "key_risks": [
+      "Net profit declined 25% YoY (₹670 Cr → ₹501 Cr in FY25) — the earnings trajectory is moving the wrong direction.",
+      "Low promoter ownership (21.85%) signals weak insider conviction in a high-credit-risk microfinance-heavy bank.",
+      "Finance costs (₹2,317 Cr) are consuming 76% of revenue — razor-thin operating margin of 1.51% leaves no buffer for credit losses."
+    ],
+    "red_flags": [
+      "FINANCIAL COMPANY: Magic Formula explicitly excludes banks — EBIT/EV and ROIC are not meaningful metrics here.",
+      "Net profit regression in FY25 despite 16% revenue growth — suggests rising credit costs or NPA stress.",
+      "OCF was deeply negative in FY23 (−₹1,137 Cr), revealing volatile and unreliable earnings quality for a bank this size."
+    ],
+    "detailed_analysis": "Jana Small Finance Bank is a non-starter for the Magic Formula on methodological grounds alone — I don't invest in banks or financial companies because their balance sheets make it impossible to distinguish operating capital from financial liabilities. Deposits are funding, not debt in the traditional sense, and EBIT is meaningless when interest income is the core business. The closest proxy I can use is ROE (12.18%), which falls well below my 20% minimum threshold for a good business. The Forward P/E of 6.17x looks superficially cheap, implying an earnings yield of ~16%, but that requires a near-doubling of profits — which contradicts the FY25 earnings decline from ₹670 Cr to ₹501 Cr.\n\nThe business fundamentals tell a mixed story: 22.3% revenue CAGR is genuinely impressive for a small finance bank, and the pivot from 17 Cr profit in FY22 to 500+ Cr today represents real operational improvement. But the FY25 profit compression despite growing assets (₹38,464 Cr total assets) is a yellow flag — likely reflecting MFI sector stress and rising provisions. With promoters holding only 21.85% and FIIs at a modest 4.31%, there's limited institutional conviction. Even if this were eligible for the Magic Formula, the combination of sub-threshold ROIC and deteriorating earnings momentum would yield a low ranking. Pass.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 47130,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07448849999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10248,
+      "cache_read_input_tokens": 8365,
+      "output_tokens": 2236,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10248
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 412,
+          "cache_read_input_tokens": 8365,
+          "cache_creation_input_tokens": 1883,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1883,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "symbol": "AVL",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T16:35:22.492574Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Aditya Vision trades at INR 523.5 against a calculated Graham Number of approximately INR 91 — a 474% premium to intrinsic value that no margin of safety exists to justify. With operating cash flow deeply negative (-41 Cr in FY25), FCF deteriorating to -78 Cr, and P/B at 10.53x, this is a growth story priced for perfection, not a value investment.",
+    "key_strengths": [
+      "Revenue CAGR of 36% and Net Profit CAGR of 44.1% over 3 years demonstrate real business momentum",
+      "ROCE of 29.95% indicates the underlying retail operations are capital-efficient on a reported basis",
+      "Interest coverage of ~5.5x (Operating Income 175 Cr / Finance Cost 32 Cr) clears my 3.5x minimum threshold"
+    ],
+    "key_risks": [
+      "P/E of 61.37 and P/B of 10.53 are 4x and 7x above my maximum acceptable thresholds — extreme speculative premium",
+      "Free cash flow has deteriorated sharply: +13 Cr (FY22) → -78 Cr (FY25); reported profits are not translating into cash",
+      "Total Debt surged from 282 Cr (FY22) to 480 Cr (FY25) while the business burns cash — growth is externally financed"
+    ],
+    "red_flags": [
+      "Graham Number ~INR 91 vs. market price INR 523.5 — investor is paying 5.7x intrinsic value",
+      "Operating cash flow negative in 2 of last 4 years and worsening (-6 Cr in FY24, -41 Cr in FY25) — profits are an accounting entry, not cash in hand",
+      "Financing cash flow consistently positive (FY23: +69, FY24: +68, FY25: +94 Cr) — company is a capital-consuming machine dependent on external funding",
+      "No evidence of dividend payments — shareholders receive no cash return while management expands aggressively"
+    ],
+    "detailed_analysis": "By every quantitative measure I have established over a lifetime of security analysis, Aditya Vision fails comprehensively. The P/E of 61.37 stands at four times my ceiling of 15; the P/B of 10.53 is seven times my preferred ceiling of 1.5. The calculated Graham Number — the geometric mean of earnings power and asset value — is approximately INR 91 per share (√(22.5 × EPS ~8.2 × BVPS ~45.2)). At INR 523.5, the market is demanding that you pay a 474% premium over this intrinsic anchor, leaving no margin of safety whatsoever. Mr. Market is in a state of euphoria about Bihar's consumer electronics boom, and he is asking you to share his excitement at your own expense.\n\nMore troubling than the valuation is the cash flow picture. A retailer reporting growing net profits (INR 35 Cr → 106 Cr) while simultaneously posting operating cash outflows of -41 Cr and free cash outflows of -78 Cr in FY25 is expanding its working capital and inventory at a pace that consumes real cash. The financing arm is filling the gap — total debt has jumped 70% to 480 Cr. Debt-to-equity of 0.65 breaches my 0.5 threshold, and this ratio will worsen if OCF does not turn positive. This is a company growing its way into a liquidity problem, not a conservatively financed enterprise with a durable competitive position. The intelligent investor requires both a low price and a strong balance sheet — here, neither condition is remotely satisfied.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 57184,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0770373,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8680,
+      "cache_read_input_tokens": 10511,
+      "output_tokens": 2755,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 6411,
+        "ephemeral_5m_input_tokens": 2269
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 532,
+          "cache_read_input_tokens": 8461,
+          "cache_creation_input_tokens": 2269,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2269,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

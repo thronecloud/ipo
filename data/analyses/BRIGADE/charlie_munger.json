@@ -1,0 +1,69 @@
+{
+  "symbol": "BRIGADE",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-19T12:52:19.092768Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Brigade is a Bengaluru-centric developer with improving operating momentum — revenue CAGR of 10.7% and EBITDA nearly tripling since 2016 — but real estate is an inherently capital-intensive, cyclical commodity business with no durable moat. At ROCE of 13.3% and Debt/EBITDA of ~3.3x, the returns on capital barely justify the capital risk, and the valuation at 24x trailing earnings is not cheap for this quality.",
+    "key_strengths": [
+      "Multi-segment diversification (residential, commercial leasing, hospitality) smooths some cyclicality and adds recurring income from leasing",
+      "Consistent OCF generation — positive all 5 of the last 5 years — and a sharp equity infusion in FY25 meaningfully improved balance sheet headroom",
+      "Accelerating profitability: net profit grew from a loss of -96 Cr in FY21 to 680 Cr in FY25, demonstrating operational leverage"
+    ],
+    "key_risks": [
+      "Finance costs of 495 Cr in FY25 consume ~35% of EBITDA, creating significant earnings sensitivity to rate cycles and project execution delays",
+      "Debt/EBITDA of ~3.3x (net debt ~4,076 Cr vs EBITDA 1,630 Cr) exceeds my 2.5x comfort threshold for a cyclical business",
+      "Real estate development is a project-by-project business with no compounding moat — ROCE of 13.3% barely clears the cost of capital"
+    ],
+    "red_flags": [
+      "Net losses in FY21 and FY22 reveal severe earnings volatility — not the hallmark of a high-quality compounder",
+      "Free cash flow was only 66 Cr in FY24 vs net profit of 401 Cr — FCF/NI ratio of just 16%, suggesting earnings quality issues in that year",
+      "High promoter stake (41%) alongside large institutional ownership creates exit-event risk if sentiment turns"
+    ],
+    "detailed_analysis": "Brigade has the look of a recovering developer riding the Bengaluru real estate boom, but inversion demands we ask: what happens when the cycle turns? The company lost money in FY21-22, its finance costs compound at the same pace as revenue (10.7% CAGR each), and FCF is volatile — swinging from 824 Cr in FY22 to just 66 Cr in FY24 before recovering to 358 Cr in FY25. ROCE of 13.3% means every rupee of capital earns just barely above a risk-free return once you adjust for cycle risk. The large equity raise in FY25 (equity jumped from 3,516 to 6,481 Cr) diluted shareholders and is a signal that capital needs are ongoing, not self-funding.\n\nThe leasing and hospitality segments offer some recurring revenue quality, but they are still a minority of earnings. At 24x P/E for a business with ROCE below 15%, cyclical earnings, and 3.3x Debt/EBITDA, I'm not getting compensated for the risks. A great business at a fair price is preferable to this — a fair-at-best business at a fair price.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 170652,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.2154291,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 22904,
+      "cache_read_input_tokens": 15217,
+      "output_tokens": 8331,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 22904,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 532,
+          "cache_read_input_tokens": 15217,
+          "cache_creation_input_tokens": 7687,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 7687
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

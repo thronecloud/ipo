@@ -1,0 +1,69 @@
+{
+  "symbol": "ASTERDM",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-19T06:30:06.358731Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Aster DM completed the divestiture of its Gulf (GCC) business in FY25, generating a one-time gain of INR 5,169 Cr in other income that inflates reported net profit to INR 5,408 Cr — the stripped-down India business earns roughly INR 240–470 Cr in operating profit against a INR 35,581 Cr market cap, implying a normalized P/E of 75–150x. Paying this price for a 10.7% ROCE hospital network with INR 70 Cr FCF and an operating margin of 12.1% is the kind of mistake that takes a decade to recover from.",
+    "key_strengths": [
+      "Post-divestiture balance sheet is meaningfully cleaner — debt fell from INR 6,075 Cr (FY23) to INR 2,018 Cr (FY25) using GCC sale proceeds",
+      "India hospital network (South India focus) benefits from secular healthcare demand and is growing revenue at ~11% annually post-divestiture (FY24: INR 3,699 Cr, FY25: INR 4,138 Cr)",
+      "Substantial DII ownership (26.12%) and FII interest (18.46%) signal institutional confidence in the India growth story"
+    ],
+    "key_risks": [
+      "Normalized earnings (excluding GCC proceeds) suggest a P/E of 75x or higher — even on forward estimates at 59x, this demands flawless execution in a capital-heavy, ROCE-constrained business",
+      "OCF collapsed from INR 1,834 Cr (FY23, included GCC) to INR 425 Cr (FY25, India only) while FCF is barely positive at INR 70 Cr — the India business is not a strong cash generator yet",
+      "Hospital expansion is capex-intensive: INR 357 Cr in FY25 capex with CWIP of INR 401 Cr; ROCE of 10.7% does not support high-multiple growth narratives"
+    ],
+    "red_flags": [
+      "FY25 net profit of INR 5,408 Cr is 95% non-recurring other income (INR 5,169 Cr from GCC sale) — the headline P/E of 99x is misleading but even normalized earnings make this extremely overvalued",
+      "EBITDA deteriorated significantly: INR 1,355 Cr (FY24) to INR 875 Cr (FY25) — the India-only EBITDA base is thin relative to the INR 35,581 Cr market cap",
+      "Revenue declined at -2.6% CAGR over 9 years — the GCC divestiture has structurally shrunk the reported business, and the remaining India entity has not yet demonstrated the scale to justify the current valuation"
+    ],
+    "detailed_analysis": "Aster DM's transformation into a pure-play India hospital company is strategically sensible — the GCC business was capital-intensive and geographically complex, and the divestiture cleaned up a leveraged balance sheet. The India hospital network in Kerala, Karnataka, and Andhra Pradesh has genuine brand equity and benefits from India's chronic underinvestment in quality healthcare. However, the market has gotten well ahead of itself: paying INR 35,581 Cr (P/S of 8x) for a business generating INR 4,138 Cr in revenue and INR 425 Cr in operating cash flow requires not just good outcomes but near-perfect ones. At ROCE of 10.7% and ROE of 8.26%, the business is not earning above its cost of capital today.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 206648,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.28044375,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 27321,
+      "cache_read_input_tokens": 16570,
+      "output_tokens": 11534,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 27321,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 638,
+          "cache_read_input_tokens": 16570,
+          "cache_creation_input_tokens": 10751,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 10751
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

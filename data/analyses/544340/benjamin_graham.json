@@ -1,0 +1,69 @@
+{
+  "symbol": "544340",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-20T09:50:17.291339Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Rikhav Securities screens cheaply on surface metrics (P/E 6.63, P/B ~0.65, low debt), but it is a recently listed small brokerage whose FY25 net profit collapsed 43% (42→24 Cr) and whose operating cash flow has been negative in 3 of the last 4 years. The statistical cheapness is real but the earnings quality and cyclicality do not meet my standard for a defensive margin-of-safety purchase.",
+    "key_strengths": [
+      "P/B of roughly 0.65 (159 Cr mcap vs 244 Cr equity) — below book value",
+      "Low leverage: borrowings just 5 Cr against 244 Cr equity; D/E ~0.02",
+      "P/E of 6.63 and 4 consecutive years of positive reported earnings"
+    ],
+    "key_risks": [
+      "Net profit fell from 42 Cr (FY24) to 24 Cr (FY25) despite revenue tripling — margin collapse",
+      "Operating cash flow negative in 3 of 4 years (-37, -9, +109, -188 Cr) — reported earnings not converting to cash",
+      "Brokerage earnings are highly cyclical to equity market conditions; no through-cycle record visible"
+    ],
+    "red_flags": [
+      "Recent IPO/listing (BSE code 544340) — short public track record; equity jumped 139→244 Cr largely from issuance, not retained earnings",
+      "FY25 OCF of -188 Cr versus reported PAT of +24 Cr — severe divergence",
+      "Other income collapsed to zero in FY24-25 after contributing materially earlier"
+    ],
+    "detailed_analysis": "On my quantitative filters the stock passes several tests: P/E under 10, P/B well under 1.0, debt negligible, and promoter holding a comfortable 64%. At 159 Cr market cap against 244 Cr of book equity, Mr. Market is in effect offering the business at a discount to stated net worth. For a Graham-style net-net hunter this is the headline attraction, and it is not trivial.\n\nHowever, the deeper numbers give pause. FY25 revenue of 328 Cr produced only 24 Cr of net profit — operating income actually fell from 55 Cr to 34 Cr year-on-year, and free cash flow swung to -189 Cr. A stockbroker whose cash flows oscillate this violently is a leveraged play on market activity, not a stable earning-power franchise. The 3-year earnings CAGR of 10% masks the fact that the most recent year is down sharply. I require several years of stable, proven earning power before paying even a low multiple; this company has perhaps one genuinely strong year (FY24) surrounded by weaker ones. I would wait for either a deeper discount (say, P/B under 0.5) or two to three more years of demonstrated profit stability before committing capital.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "insufficient_data",
+      "financial_health": "good",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 29312,
+    "model_used": "opus",
+    "total_cost_usd": 0.11250199999999999,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 10268,
+      "cache_read_input_tokens": 14344,
+      "output_tokens": 1645,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10268,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 11458,
+          "cache_creation_input_tokens": 1696,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1696
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

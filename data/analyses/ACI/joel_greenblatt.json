@@ -1,0 +1,70 @@
+{
+  "symbol": "ACI",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T16:12:50.491924Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Archean Chemical fails both legs of the Magic Formula: earnings yield of ~4.1% (EBIT ₹315 Cr / EV ~₹7,684 Cr) is far below my 12% threshold, and ROIC of ~13% (consistent with the reported 12.8% ROCE) falls well short of the 20%+ I require for a good business. With revenue and profits in sharp multi-year decline, the market is pricing in a recovery that the fundamentals have not yet earned.",
+    "key_strengths": [
+      "Dramatic deleveraging: debt fell from ₹900 Cr (2022) to ₹235 Cr (2025), cleaning up the balance sheet post-IPO",
+      "Niche marine chemicals franchise (bromine, industrial salt, SOP) with limited domestic competition",
+      "Gross margin of 95%+ reflects pricing power on end-products, even if operating leverage is poor"
+    ],
+    "key_risks": [
+      "Revenue in steep decline: ₹1,441 Cr (2023) → ₹1,041 Cr (2025), a 28% drop in two years with no sign of floor",
+      "FCF turned deeply negative in FY25 (-₹81 Cr) while capex surged to ₹264 Cr — capital is being consumed, not generated",
+      "P/E of 51x and EV/EBITDA of 28x price in a full recovery; if margins stay compressed, the stock is extremely overvalued"
+    ],
+    "red_flags": [
+      "Earnings yield of only ~4.1% — roughly one-third of my minimum Magic Formula threshold",
+      "Operating income nearly halved in two years (₹634 Cr → ₹315 Cr); margin compression is structural, not just cyclical",
+      "Net profit fell 58% from peak (₹383 Cr → ₹162 Cr) while the stock still trades at 51x those depressed earnings",
+      "Capex accelerating (₹264 Cr in FY25) as the core business deteriorates — capital allocation risk"
+    ],
+    "detailed_analysis": "The Magic Formula gives Archean Chemical a failing grade on both dimensions. Earnings yield (EBIT/EV) comes in at ~4.1% — the stock would need to trade at roughly one-third its current price to reach my 12% floor. Return on capital at ~13% is pedestrian for a specialty chemical company; I want to see 20%+ sustained over multiple years before I call a business \"good.\" Neither condition is remotely met. The forward P/E of 23x assumes a dramatic earnings rebound, but the operating income trend (₹634 → ₹463 → ₹315 Cr over three years) offers no credible inflection catalyst in the near term.\n\nWhat makes this particularly unattractive is the combination of a declining business with rising capital intensity. Management is plowing ₹264 Cr into capex (FY25) even as the core marine chemicals segment loses pricing and volume, resulting in negative free cash flow for the first time. Historically, this kind of capex-into-downcycle behavior destroys returns. The balance sheet cleanup from 2022-2024 was commendable, but borrowings are already creeping back (₹69 Cr → ₹281 Cr in borrowings). Until earnings stabilise, ROIC exceeds 20%, and the valuation corrects to reflect a meaningful earnings yield, this stock has no place in a Magic Formula portfolio.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 68030,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0603954,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 2612,
+      "cache_read_input_tokens": 16938,
+      "output_tokens": 3034,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 2612,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 482,
+          "cache_read_input_tokens": 8469,
+          "cache_creation_input_tokens": 2612,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2612
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

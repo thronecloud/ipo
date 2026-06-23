@@ -1,0 +1,70 @@
+{
+  "symbol": "EMBDL",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-18T17:17:16.485420Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Embassy Developments is a real estate turnaround with a catastrophically weak 9-year track record — revenue CAGR of -3.3% and net profit destruction from INR 321 Cr (2016) to losses through 2022-2024, now barely recovering. At P/E 35.99 with an operating margin of -81.17% and no credible growth story, you're paying a fast-grower price for a deeply troubled business.",
+    "key_strengths": [
+      "P/B of 0.67 suggests assets trading below book — potential asset play if land bank is real",
+      "2025 shows meaningful recovery: revenue doubled to INR 2,180 Cr, OCF turned sharply positive at INR 1,461 Cr, net profit INR 194 Cr after 3 consecutive loss years",
+      "Debt/Equity of 0.46 is manageable post-restructuring, down from INR 7,749 Cr borrowings in 2024 to INR 4,714 Cr"
+    ],
+    "key_risks": [
+      "Revenue has shrunk -3.3% CAGR over 9 years — the opposite of what Lynch wants; no ten-bagger story here",
+      "Equity was NEGATIVE (INR -1,446 Cr) in 2024, recovering to INR 10,258 Cr in 2025 via what appears to be a capital raise/IPO — balance sheet optics are masking structural fragility",
+      "P/E of 35.99 implies strong earnings growth that simply doesn't exist; PEG ratio is effectively infinite on a declining/volatile earnings base"
+    ],
+    "red_flags": [
+      "Operating margin of -81.17% is deeply alarming — this is not a real estate margin profile, this is a distressed business",
+      "OCF positive in only 2 of last 5 years; free cash flow was negative 2020-2024",
+      "Total assets nearly doubled from INR 9,939 Cr (2024) to INR 20,857 Cr (2025) with no CWIP — opaque expansion, unclear what was acquired or injected",
+      "EV/EBITDA of -100.6 (negative) means the enterprise value calculation is meaningless — sign of structural EBITDA instability"
+    ],
+    "detailed_analysis": "Peter Lynch's first rule: understand what the company does and whether the story is simple and compelling. Embassy Developments' story is anything but. Revenue collapsed from INR 4,944 Cr (2019) to INR 587 Cr (2023), the company bled equity into negative territory in 2024, and accumulated losses from FY2022-FY2024 wiped out reserves. FY2025 shows a bounce — revenue INR 2,180 Cr, net profit INR 194 Cr, OCF INR 1,461 Cr — but this is recovery from a near-death experience, not compounding growth. Lynch loved turnarounds, but only when the cause of decline was identifiable, the fix was credible, and the price was cheap enough to reward the risk. Here, the P/E of 35.99 gives zero margin of safety.\n\nThe balance sheet is the most alarming element. Equity swinging from INR -1,446 Cr to INR +10,258 Cr in a single year signals a massive capital event (likely the NSE listing/restructuring tied to the Embassy Group rebrand from Equinox India). But this masks rather than solves the underlying issue: a real estate developer with zero CWIP, thin gross margins (12.24%), and finance costs that consumed INR 461 Cr in FY2025 on revenues of INR 2,180 Cr. The 25.3% FII holding is interesting but could reflect passive index inclusion or pre-IPO institutional allocation rather than conviction. I would not touch this at current prices — the growth story doesn't exist, the operating track record is poor, and you're paying a premium multiple for what is, at best, an early-stage recovery in a capital-intensive, cyclical sector.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 53928,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08641499999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11374,
+      "cache_read_input_tokens": 8995,
+      "output_tokens": 2737,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11374
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 399,
+          "cache_read_input_tokens": 8995,
+          "cache_creation_input_tokens": 2379,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2379,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

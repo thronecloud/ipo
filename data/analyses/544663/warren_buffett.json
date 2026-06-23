@@ -1,0 +1,68 @@
+{
+  "symbol": "544663",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-20T11:05:53.596873Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "A tiny INR 66 Cr logistics microcap with a 0.51% ROE — that's not a business, that's a charity. The optically low P/E of 9.24x masks near-zero profitability and no visible moat in a fragmented, commoditized industry.",
+    "key_strengths": [
+      "High promoter holding at 72.99% signals skin in the game",
+      "Low headline P/E of 9.24x",
+      "Reportedly profitable (unlike many microcap peers)"
+    ],
+    "key_risks": [
+      "ROE of 0.51% — capital is earning essentially nothing",
+      "Microcap (INR 66 Cr) logistics = commoditized, capital-intensive, no moat",
+      "Thin BSE liquidity and limited disclosure history"
+    ],
+    "red_flags": [
+      "ROE <1% is disqualifying for a Buffett-style investor",
+      "Indian logistics is fragmented with dominant players (Delhivery, BlueDart, TCI) — no pricing power for a sub-scale operator"
+    ],
+    "detailed_analysis": "I insist on ROE consistently above 15%; this business delivers 0.51%. You could put the money in a savings account and beat it without the operating risk. A low P/E on near-zero earnings is a value trap — the multiple is low because earnings are trivial relative to the equity base, not because the market is mispricing a wonderful business. Logistics is a tough industry: capital-intensive, low margins, heavy competition from scaled players and unorganized truckers alike. Nothing in the data suggests Neptune has a durable competitive advantage — no network effect, no switching costs, no cost leadership.\n\nThe 72.99% promoter holding is the only genuine positive, but owner alignment without owner competence is worthless. At INR 66 Cr market cap, this is a speculation, not an investment. I'll pass and wait for a wonderful business at a fair price rather than chase a fair-looking price on a very ordinary business.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 19981,
+    "model_used": "opus",
+    "total_cost_usd": 0.08491475,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8673,
+      "cache_read_input_tokens": 13357,
+      "output_tokens": 960,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8673,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10520,
+          "cache_creation_input_tokens": 990,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 990
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

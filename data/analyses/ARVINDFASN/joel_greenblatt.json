@@ -1,0 +1,69 @@
+{
+  "symbol": "ARVINDFASN",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T16:26:55.759705Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Arvind Fashions fails both legs of the Magic Formula: earnings yield of ~5.5% (EBIT/EV using operating margin-derived EBIT of ~403 Cr on EV of ~7,336 Cr) is below my 6% floor, and ROCE of 16.9% falls short of the 20%+ threshold for a \"good\" business. The gap between EBITDA (601 Cr) and net profit (33 Cr) reveals massive lease liabilities that make this far less attractive than surface-level metrics suggest.",
+    "key_strengths": [
+      "Premium brand portfolio (US Polo, Tommy Hilfiger, Calvin Klein) driving 53.5% gross margins — a genuine pricing moat",
+      "FCF inflecting sharply: 438 Cr in FY25 vs. negative in FY21, showing operational recovery is real",
+      "Revenue CAGR of 17.3% over 8 years with operating profit CAGR of 30.3% indicates operating leverage kicking in"
+    ],
+    "key_risks": [
+      "Ind AS 116 lease accounting masks true economic returns — D&A + lease interest consumes ~570+ Cr annually, collapsing net profit to just 33 Cr despite 616 Cr operating income",
+      "Net profit crashed from 137 Cr (FY24) to 33 Cr (FY25) despite higher revenue — a serious deterioration that the Magic Formula penalizes heavily",
+      "Debt/Equity of 1.02 with finance costs of 170 Cr vs. net profit of 33 Cr leaves razor-thin coverage; any revenue softness is dangerous"
+    ],
+    "red_flags": [
+      "ROE is negative (-3.63%) — the business is currently destroying equity value on a net basis",
+      "Trailing P/E of 191.8x is essentially uninvestable under Magic Formula; even forward P/E of 31.6x implies near-perfection",
+      "EBIT/EV earnings yield of ~5.5% is below my 6% minimum floor — I am not being paid to take this risk"
+    ],
+    "detailed_analysis": "Running the Magic Formula: EV = Market Cap (6,330 Cr) + Net Debt (1,006 Cr) = ~7,336 Cr. Using operating margin (8.72%) on revenue (4,620 Cr), EBIT ≈ 403 Cr, giving earnings yield of 5.5% — below my 6% floor. Even being generous with the 616 Cr \"operating income\" figure yields only 8.4%, still short of my 12% attractiveness threshold. On the return side, stated ROCE is 16.9%, below the 20% minimum I want. Both legs of the Magic Formula are failing simultaneously, which is the clearest possible AVOID signal in my system.\n\nWhat's structurally problematic here is Ind AS 116 lease accounting. Arvind operates hundreds of branded stores, meaning right-of-use assets inflate the balance sheet and lease depreciation + lease interest consume the majority of EBITDA. FY25 EBITDA of 601 Cr shrinks to net profit of just 33 Cr — a 94% evaporation. The FCF story (438 Cr) looks better because FCF adds back D&A, but that cash is largely spoken for in lease obligations. The brand portfolio is legitimately good and the recovery from FY20-21 losses is real, but at 191x trailing P/E and sub-threshold Magic Formula metrics, I'm not buying this story at today's price.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 67825,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.11283104999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 12731,
+      "cache_read_input_tokens": 8986,
+      "output_tokens": 4159,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 12731,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 445,
+          "cache_read_input_tokens": 8986,
+          "cache_creation_input_tokens": 3745,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 3745
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

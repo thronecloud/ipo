@@ -1,0 +1,70 @@
+{
+  "symbol": "NCC",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-22T16:36:22.867366Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "AVOID",
+    "investment_thesis": "NCC is a cheaply priced EPC contractor (P/E 13.6x, EV/EBITDA 6.81x) with improving revenue, but it is precisely the kind of commodity, capital-intensive, margin-thin business I have spent my career avoiding. A fair price does not transform a mediocre business into a good investment.",
+    "key_strengths": [
+      "Attractive headline valuation: P/E 13.6x, P/S 0.49x, EV/EBITDA 6.81x with a decade of revenue growth at ~10% CAGR",
+      "ROCE of 21.7% is respectable for the sector, suggesting decent asset utilisation on operating capital",
+      "Debt/Equity of 0.38 is manageable and the company successfully deleveraged from INR 2,181 Cr borrowings (2020) to INR 980 Cr (2024) before the recent spike"
+    ],
+    "key_risks": [
+      "No economic moat — construction EPC is a commodity business with no pricing power, low switching costs, and dozens of interchangeable competitors bidding on government tenders",
+      "Razor-thin operating margins of 7.76% leave no buffer; any cost overrun or working capital squeeze directly destroys profitability",
+      "Highly cyclical and volatile revenue — collapsed from INR 12,896 Cr (2019) to INR 7,949 Cr (2021), proving the business cannot sustain earnings through downturns"
+    ],
+    "red_flags": [
+      "Promoter stake alarmingly low at 22.81% — owners do not act like owners when they own so little of what they built",
+      "Borrowings nearly tripled in a single year: INR 980 Cr (FY2024) → INR 2,923 Cr (FY2025), signalling sudden and serious working capital stress",
+      "Free cash flow collapsed 57% to INR 477 Cr in FY2025 despite revenue growing to INR 22,199 Cr — the business is consuming cash even at peak revenue",
+      "ROE of only 11.4% fails my threshold of 15%; after a decade of operation, a durable business should earn far more on equity"
+    ],
+    "detailed_analysis": "NCC operates in one of the most structurally unattractive industries I know — government-dependent EPC construction, where the customer holds all the power, contracts are won on price, and execution risk is borne entirely by the contractor. With operating margins of 7.76% and finance costs consuming INR 680 Cr annually on INR 22,199 Cr of revenue, there is almost no margin of safety. The 30% net profit CAGR over 9 years looks impressive until you notice net profit began at a nearly worthless INR 8 Cr in 2017 and that the absolute earnings base (INR 868 Cr) is dwarfed by the revenue required to generate it. This is not a business compounding owner wealth; it is a business moving enormous sums of money for thin slivers of it.\n\nThe FY2025 data is the most troubling signal. Revenue grew to INR 22,199 Cr yet free cash flow cratered to INR 477 Cr (from INR 1,109 Cr), operating CF halved to INR 742 Cr, and borrowings exploded from INR 980 Cr to INR 2,923 Cr — all classic signs of a construction company stretching its balance sheet to fund working capital as project cycles elongate. The low promoter holding of 22.81% means those who know the business best have limited financial skin in the game. The stock is unquestionably cheap, but as Charlie Munger would remind me: a great company at a fair price beats a fair company at a great price every time, and NCC is not a great company.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "undervalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 52634,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0829695,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11460,
+      "cache_read_input_tokens": 9285,
+      "output_tokens": 2480,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11460,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 340,
+          "cache_read_input_tokens": 9285,
+          "cache_creation_input_tokens": 2175,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2175
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

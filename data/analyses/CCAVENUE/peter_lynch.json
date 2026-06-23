@@ -1,0 +1,69 @@
+{
+  "symbol": "CCAVENUE",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-18T16:56:42.400853Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "AvenuesAI (CCAvenue) is a GARP candidate — a fast-grower in India's digital payments boom trading at a jaw-dropping P/S of 0.78 and Forward P/E of 14.77, implying a PEG below 0.7 if 25%+ earnings growth holds. However, razor-thin operating margins (3.23%), a collapse in operating cash flow (₹720 Cr in FY24 → ₹72 Cr in FY25), and a ROE of just 6.47% raise serious execution and quality concerns that prevent a confident BUY.",
+    "key_strengths": [
+      "India digital payments tailwind is visible in 9Y revenue CAGR of 31.6% (₹337 Cr → ₹3,993 Cr) — this is the kind of sector growth story Lynch loves.",
+      "Valuation is genuinely cheap for a fintech: P/B 1.06x, P/S 0.78x, Forward P/E 14.77x — with PEG ~0.6x if 25% earnings growth continues.",
+      "Near-zero leverage (D/E 0.02, net cash ₹331 Cr) keeps downside protected; multiple product lines (CCAvenue, BillAvenue, TrustAvenue lending) diversify revenue."
+    ],
+    "key_risks": [
+      "OCF cratered from ₹720 Cr (FY24) to ₹72 Cr (FY25) while capex surged to ₹376 Cr, producing FCF of -₹304 Cr — the cash engine stalled exactly when investment peaked.",
+      "Operating margin of 3.23% and ROE of 6.47% are far below Lynch's 12%+ ROE threshold, signaling weak pricing power against Razorpay, PayU, and UPI-native competitors.",
+      "Promoter stake at only 27.29% is low for a mid-cap operator in a trust-sensitive fintech business; lumpy 'other income' (₹71 Cr in FY25) inflates net profit quality."
+    ],
+    "red_flags": [
+      "FY25 operating cash flow collapsed 90% YoY (₹720 Cr → ₹72 Cr) despite net profit growing 51% — a serious divergence that demands explanation.",
+      "Net profit 2025 (₹236 Cr) includes ₹71 Cr of 'other income' — strip that out and core operating profit quality is significantly weaker.",
+      "Heavy capex cycle (₹376 Cr in FY25, ₹292 Cr in FY24) with CWIP swinging between ₹311 Cr and ₹140 Cr suggests lumpy investment and unclear return timeline."
+    ],
+    "detailed_analysis": "AvenuesAI is a classic Lynch \"fast grower in an obvious sector\" — India's digital payments explosion is something you see at every kirana shop and hospital. Revenue has compounded at 31.6% over nine years, and the most recent year printed 27% YoY growth (₹3,150 Cr → ₹3,993 Cr). Net profit grew 51% in FY25 (₹156 Cr → ₹236 Cr), and the stock sits at a forward P/E of 14.77x — superficially a PEG well below 1.0. On pure price multiples, this is one of the cheapest fintech names available: P/B at 1.06x and P/S at 0.78x are asset-play territory, not growth-stock territory.\n\nThe problem is the operating quality. A 3.23% operating margin and 6.47% ROE tell you this business passes most of the economics of payment processing to banks and the UPI stack — CCAvenue earns thin take-rates in a commoditized market. Worse, the FY25 cash flow statement is alarming: despite ₹236 Cr of reported net profit, operating cash flow was just ₹72 Cr and free cash flow was deeply negative (-₹304 Cr). This one-year OCF collapse coinciding with a ₹376 Cr capex surge and ₹672 Cr investing outflow suggests the company is in a heavy build phase, but until the investments translate into higher-margin recurring revenue (the TrustAvenue lending unit and AI capabilities implied by the rebranding), this remains a \"show me\" story. Lynch's verdict: watch it, don't own it heavy — revisit if OCF recovers above ₹300 Cr and ROE crosses 10%.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "undervalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 87526,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.11646075,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 13139,
+      "cache_read_input_tokens": 9235,
+      "output_tokens": 4294,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 13139
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 462,
+          "cache_read_input_tokens": 9235,
+          "cache_creation_input_tokens": 3904,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 3904,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

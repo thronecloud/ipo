@@ -1,0 +1,69 @@
+{
+  "symbol": "EPL",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T17:14:14.789552Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "EPL Limited trades at INR 234 — well above my computed Graham Number of ~INR 145 (a 61% premium), with P/B of 2.85 and P/E of 18.1, both materially violating my strict value filters. The business has a decade of positive earnings and manageable debt, but the current price offers no margin of safety whatsoever.",
+    "key_strengths": [
+      "Unbroken 10-year earnings record (INR 173 Cr → 364 Cr), satisfying my multi-year profitability requirement",
+      "Conservative D/E of 0.32 and interest coverage of ~7.3x (EBIT INR 837 Cr / finance cost INR 114 Cr) — balance sheet is sound",
+      "OCF positive all 5 years with FCF of INR 439 Cr in FY25, confirming earnings are real cash"
+    ],
+    "key_risks": [
+      "Price trades 61% above Graham Number (~INR 145) — paying for optimism, not proven assets",
+      "Finance costs nearly tripled from INR 40 Cr (FY22) to INR 114 Cr (FY25) as borrowings climbed from INR 642 Cr to INR 912 Cr — the debt burden is expanding",
+      "Net profit was stagnant for 8 years (INR 173–244 Cr, FY16–FY24); the FY25 jump to INR 364 Cr is unproven and may inflate the apparent P/E attractiveness"
+    ],
+    "red_flags": [
+      "P/B of 2.85 is nearly double my absolute ceiling of 1.5 — I am paying far too much per rupee of book value",
+      "Promoter holding of only 26.38% signals limited insider conviction",
+      "FY25 net profit nearly doubled vs FY24 (INR 210 → 364 Cr) without a commensurate revenue surge — quality and durability of this earnings spike requires scrutiny"
+    ],
+    "detailed_analysis": "Applying my quantitative filters mechanically, EPL fails on the two most critical tests. The Graham Number — sqrt(22.5 × EPS of ~INR 11.4 × BVPS of ~INR 82) — yields approximately INR 145, against a market price of INR 234. That is a 61% premium before I have even considered the qualitative risks. My rule is simple: I do not pay more than the Graham Number unless I am speculating, and I do not speculate. The P/E of 18.1 exceeds my ceiling of 15, and the P/B of 2.85 is nearly double the 1.5 I will tolerate. Mr. Market is pricing in a rosy future; I require a discount to the present.\n\nThe business itself is not objectionable — packaging for oral care and personal care is a durable, low-disruption industry, and the 10-year earnings record satisfies my minimum history requirement. But the debt trajectory deserves scrutiny: finance costs have risen from INR 40 Cr in FY22 to INR 114 Cr in FY25 as capex spending averaged ~INR 350 Cr per year. The company is investing heavily, and the FY25 profit surge to INR 364 Cr (vs. a prior-decade range of INR 173–244 Cr) is suspicious in its abruptness. Until three or four years of sustained earnings at this new level are demonstrated, I will treat the jump as unproven. At a price offering zero margin of safety, there is nothing here for the defensive investor.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 49699,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07626975,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9281,
+      "cache_read_input_tokens": 11190,
+      "output_tokens": 2540,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9281
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 394,
+          "cache_read_input_tokens": 9140,
+          "cache_creation_input_tokens": 2191,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2191,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

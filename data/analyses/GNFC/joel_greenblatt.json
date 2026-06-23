@@ -1,0 +1,69 @@
+{
+  "symbol": "GNFC",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T17:25:39.145123Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "GNFC fails both legs of the Magic Formula — ROIC of ~7% is far below the 20%+ threshold for quality businesses, and Earnings Yield of ~8.4% (EBIT₂₀₂₅ ₹615 Cr / EV ~₹7,283 Cr) is below the 12% minimum for cheapness. A commodity fertilizer/chemical business with 5.4% operating margins and wildly cyclical earnings is exactly the type of capital-intensive, low-ROIC business the formula is designed to screen out.",
+    "key_strengths": [
+      "Fortress balance sheet: effectively zero debt (D/E 0.00), with borrowings of only ₹13 Cr vs equity of ₹8,648 Cr",
+      "Diversified specialty chemical portfolio (TDI, methanol, acetic acid) provides some earnings diversification beyond subsidized fertilizers",
+      "Growing treasury/other income (₹501 Cr in FY25) partially buffers weak operating performance"
+    ],
+    "key_risks": [
+      "Catastrophically cyclical EBIT: swung from ₹2,384 Cr (FY22) to ₹502 Cr (FY24) — a 79% collapse in two years, making any valuation anchor unreliable",
+      "Structural low ROIC (~7–10%) reflects commodity pricing power; GNFC earns barely above its cost of capital across the cycle",
+      "CWIP surged from ₹289 Cr to ₹754 Cr in one year — large capex cycle underway in a low-ROIC business is capital destruction risk"
+    ],
+    "red_flags": [
+      "Operating margin collapsed to 5.4% in FY25 from 27.6% in FY22 — not a durable earnings base",
+      "Free cash flow was -₹218 Cr in FY24 and only ₹154 Cr in FY25 vs peak ₹1,829 Cr — FCF conversion is broken at trough",
+      "Net Profit CAGR of 14.3% over 9 years is entirely driven by the FY22 commodity supercycle spike, not compounding quality"
+    ],
+    "detailed_analysis": "Running the Magic Formula on GNFC yields disappointing results on both dimensions. Earnings Yield (EBIT/EV) = ₹615 Cr / ₹7,283 Cr ≈ 8.4% — below the 12% threshold for attractiveness and nowhere near the 15%+ that would signal a compelling bargain. Return on Capital using invested capital (Equity + Debt - Cash ≈ ₹8,735 Cr) gives ROIC ≈ 7%, confirmed by the reported ROCE of 9.57%. This is a business that barely covers its cost of capital across the cycle. The Magic Formula is designed to own businesses compounding at 20–25%+ ROIC — GNFC is the opposite archetype.\n\nThe commodity nature of both fertilizers (urea pricing regulated/subsidized by the Indian government) and bulk chemicals (methanol, acetic acid subject to global price cycles) ensures that no durable competitive advantage can be sustained. The FY22 supercycle briefly made GNFC look like a wonderful business (EBIT ₹2,384 Cr, ROE-implied ~21%), but FY24–25 reality (EBIT ₹500–615 Cr, ROE 7%) is the true normalized picture. The one genuine positive — a zero-debt balance sheet built from retained supercycle profits — cannot compensate for the absence of pricing power and the mounting capex burden (CWIP ₹754 Cr rising fast) being deployed into the same low-ROIC business.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 58574,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08958705,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11689,
+      "cache_read_input_tokens": 9131,
+      "output_tokens": 2867,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11689
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 358,
+          "cache_read_input_tokens": 9131,
+          "cache_creation_input_tokens": 2558,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2558,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

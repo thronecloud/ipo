@@ -1,0 +1,70 @@
+{
+  "symbol": "MANAPPURAM",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-22T16:26:40.272426Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Manappuram is a leveraged gold-loan NBFC with a 45% earnings collapse in FY2025 (INR 2,197 Cr → INR 1,204 Cr), ROE of only 10.1%, and debt/equity of 3.02x — qualities I find unattractive even at a forward P/E of 10.3x. The business lacks the durable pricing power and financial fortress I require before committing capital.",
+    "key_strengths": [
+      "Asset-backed lending (gold collateral) provides downside protection vs. unsecured lenders",
+      "Revenue CAGR of 17.4% over nine years shows a consistently growing franchise",
+      "Established 75-year brand in South Indian gold lending with pan-India expansion underway"
+    ],
+    "key_risks": [
+      "Crushing debt load: D/E of 3.02x means earnings are highly sensitive to funding costs, which rose from INR 2,866 Cr to INR 3,541 Cr in FY2025 alone",
+      "Regulatory risk: RBI's periodic tightening of gold loan LTV norms and NBFC oversight directly compress Manappuram's margins and growth",
+      "Earnings quality: net profit plunged 45% YoY in FY2025 despite 13% revenue growth — a structural margin squeeze, not a one-off"
+    ],
+    "red_flags": [
+      "Operating cash flow negative all 5 of the last 5 years; FCF never positive — business consumes cash relentlessly",
+      "ROE of 10.1% is well below my 15% minimum threshold for any financial institution",
+      "Trailing P/E of 55.8x on depressed earnings — market is pricing in a full earnings recovery that is far from certain",
+      "Finance costs growing faster than net profit over the 9-year period (15.8% vs. 14.5% CAGR), signaling margin compression trend"
+    ],
+    "detailed_analysis": "Manappuram is essentially a leveraged borrowing-and-lending machine — it borrows at wholesale rates and lends against gold collateral at retail rates. The spread is the business. When that spread compresses, as it did dramatically in FY2025 (revenue +13%, net profit -45%), the highly levered capital structure amplifies the pain. A D/E ratio of 3.02x means that for every rupee of equity, the company owes three rupees to creditors. This is exactly the kind of institution Charlie Munger and I have avoided for decades: when things go wrong — and in lending, they eventually do — leverage turns a manageable setback into a crisis. The forward P/E of 10.3x may look tempting, but it prices in an earnings snapback to roughly INR 2,200 Cr that is speculative given rising funding costs.\n\nThe moat here is narrow. Gold lending is fundamentally commoditized — Muthoot Finance competes head-on, and banks are increasingly active in this segment. There is some brand loyalty in Kerala and some operational scale, but no true pricing power. Promoter holding of only 31.77% does not signal the owner-operator mentality I prize. I prefer businesses where management behaves like owners with skin in the game. The gold loan NBFC sector is also perpetually subject to RBI policy swings — an external risk that no management team can moat around. This is not within my circle of competence, and I see no margin of safety at current prices.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 48993,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08180355,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10973,
+      "cache_read_input_tokens": 8936,
+      "output_tokens": 2531,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10973,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 520,
+          "cache_read_input_tokens": 8936,
+          "cache_creation_input_tokens": 2037,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2037
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

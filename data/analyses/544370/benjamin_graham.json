@@ -1,0 +1,70 @@
+{
+  "symbol": "544370",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-20T19:42:16.397166Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "A 2019-incorporated micro-cap co-working operator trading at 37x earnings with a 0.10% ROE fails every quantitative filter I apply. There is no margin of safety — the price reflects speculation, not proven earning power.",
+    "key_strengths": [
+      "Promoter holding of 69.91% shows insider commitment",
+      "Technically profitable (P/E is positive, unlike many SME listings)",
+      "Small DII presence (2.38%) provides minor institutional validation"
+    ],
+    "key_risks": [
+      "P/E of 37 vs. my <15 ceiling — grossly overvalued on earnings",
+      "ROE of 0.10% is effectively zero — no real earning power",
+      "Incorporated Dec 2019 — no multi-year track record through a full cycle"
+    ],
+    "red_flags": [
+      "0.10% ROE implies earnings are negligible; the 37 P/E is arithmetically trivial",
+      "Co-working is capital-intensive with long lease liabilities — WeWork-style fragility",
+      "Recent SME-style listing at INR 85 Cr cap — classic IPO pricing where sellers extract maximum value",
+      "No demonstrated dividend history"
+    ],
+    "detailed_analysis": "From my perspective, this security fails the most basic quantitative tests of The Intelligent Investor. I require at least 5–10 years of uninterrupted positive earnings; Nukleus was only incorporated in December 2019 and is a recent listing. A P/E of 37 against a ROE of 0.10% is a mathematical curiosity — it means the company earns almost nothing on its equity, yet the market prices it as though future earnings are assured. The Graham Number test cannot plausibly be met at INR 211 when EPS is approximately INR 5.7 and book value would need to be astronomical to justify this price.\n\nThe business itself — co-working and managed office spaces — is precisely the sort of operationally leveraged, lease-burdened model I distrust. Operators sign long-term leases and sell short-term memberships; in any downturn the liability side of the balance sheet remains while revenue evaporates. With no dividend, no earnings stability, and a market cap of just INR 85 Cr, this is a speculation, not an investment. Mr. Market is offering no bargain here; he is asking a premium for a story. I decline.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "insufficient_data",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 21096,
+    "model_used": "opus",
+    "total_cost_usd": 0.08990425,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8865,
+      "cache_read_input_tokens": 13486,
+      "output_tokens": 1109,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8865,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10600,
+          "cache_creation_input_tokens": 1151,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1151
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

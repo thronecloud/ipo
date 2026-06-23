@@ -1,0 +1,68 @@
+{
+  "symbol": "MASTEK",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T18:21:05.180568Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Mastek scores moderate on both Magic Formula metrics — Earnings Yield ~9% (EBIT 586 Cr / EV ~6,458 Cr) and ROIC ~19% (EBIT / invested capital) — neither clears my thresholds of 12%+ and 25%+ respectively. The business is decent quality but not cheap enough nor capital-efficient enough to earn a strong Magic Formula ranking.",
+    "key_strengths": [
+      "Exceptional 9-year revenue CAGR of 23.3% and net profit CAGR of 32.5% — compounding at scale",
+      "Asset-light IT services model with strong FCF conversion: INR 515 Cr FCF vs 404 Cr net profit in FY26",
+      "Low D/E of 0.20 and 5/5 years of positive OCF — financially disciplined balance sheet"
+    ],
+    "key_risks": [
+      "Earnings Yield of ~9.1% (EBIT 586 Cr / EV ~6,458 Cr) is below my 12% buy threshold — not cheap enough",
+      "Finance costs surged 5x from INR 8 Cr (FY22) to 44 Cr (FY24) — acquisition debt is compressing returns",
+      "EBITDA dropped from 535 Cr (FY24) to 455 Cr (FY25) before recovering — margin volatility signals integration risk"
+    ],
+    "red_flags": [
+      "FY23 investing outflow of -719 Cr signals a large acquisition; OCF collapsed to 108 Cr that year — acquisition digestion risk remains",
+      "Finance cost trajectory (4→6→25→44→42→32 Cr) indicates sustained M&A leverage that dilutes true ROIC"
+    ],
+    "detailed_analysis": "Running the Magic Formula on Mastek: EBIT for FY26 is INR 586 Cr. Using EV implied by EV/EBITDA of 9.80× on EBITDA of 659 Cr gives EV ≈ 6,458 Cr, yielding an Earnings Yield of ~9.1% — below my 12% threshold for attractiveness and well below the 15%+ I'd call compelling. ROIC (EBIT / invested capital of ~2,970 Cr) comes to ~19.7%, consistent with the reported ROCE of 18%. Both metrics are middling: decent but not top-decile. Magic Formula works best when BOTH are exceptional, and Mastek clears neither bar.\n\nThe business quality is real — 23% revenue CAGR, 32% profit CAGR over 9 years, and a capital-light model that converts earnings to FCF at >100%. However, the FY23 acquisition (INR 719 Cr investing outflow) loaded the balance sheet with debt (borrowings rose from 203 to 583 Cr), spiked finance costs, and caused a one-year OCF collapse. Operating margin at 14.1% is respectable for a mid-cap IT services firm but not exceptional. At P/E 12.8x it looks cheap on the surface, but the earnings yield doesn't yet scream \"buy\" on a risk-adjusted basis given integration uncertainty and moderating operating income growth in recent years.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "fair",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 50481,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09074099999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11680,
+      "cache_read_input_tokens": 9190,
+      "output_tokens": 2945,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11680
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 502,
+          "cache_read_input_tokens": 9190,
+          "cache_creation_input_tokens": 2490,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2490,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

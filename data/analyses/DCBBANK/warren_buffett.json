@@ -1,0 +1,69 @@
+{
+  "symbol": "DCBBANK",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T17:04:55.306538Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "AVOID",
+    "investment_thesis": "DCB Bank is a mediocre small private bank trading cheaply (P/B 1.0x, P/E 8.6x), but cheapness alone does not make a good investment — it lacks a durable moat, ROE languishes at 10.81%, and finance costs are growing at 26.5% CAGR vs. revenue at 16.3%, squeezing the core banking spread. I'd rather buy a wonderful bank at a fair price than a fair bank at a wonderful price.",
+    "key_strengths": [
+      "Cheap valuation — P/B of 1.0x and P/E of 8.6x provide some margin of safety against permanent capital loss",
+      "Net profit growing at 28.9% CAGR (INR 288→615 Cr), showing operational improvement over the cycle",
+      "Diversified product mix (retail, LAP, corporate banking, co-lending) reduces single-segment concentration risk"
+    ],
+    "key_risks": [
+      "Finance costs growing at 26.5% CAGR — faster than revenue (16.3%) — signals structural NIM compression and funding cost pressure",
+      "ROE of only 10.81% is far below the 15% I demand; a bank earning poor returns on equity will compound wealth poorly for shareholders",
+      "Promoter stake of only 16.23% is alarmingly low — management has limited skin in the game compared to best-in-class Indian private banks"
+    ],
+    "red_flags": [
+      "Operating cash flow negative in 2 of 4 years (2023: -1,566 Cr; 2025: -441 Cr) — erratic even by banking standards",
+      "Finance costs (INR 4,364 Cr in 2025) now eclipse reported revenue (INR 2,848 Cr), confirming this is a leveraged spread business with thin buffers",
+      "No identifiable economic moat vs. HDFC Bank, Kotak, or even larger regional banks — DCB competes on price, not franchise"
+    ],
+    "detailed_analysis": "DCB Bank is a small Mumbai-headquartered private sector bank with total assets of INR 76,810 Cr — subscale relative to India's top private lenders. The headline growth numbers look appealing: revenue up 16.3% CAGR and net profit up 28.9% CAGR over three years. But the underlying economics are mediocre. ROE of 10.81% means the bank earns barely above its cost of equity, destroying no capital but creating little either. More troubling, finance costs compounded at 26.5% CAGR versus revenue at 16.3%, meaning every rupee of asset growth is being funded at increasing cost — a structural headwind in any rate normalization cycle. The balance sheet has grown 71% in three years (assets INR 44,793→76,810 Cr) but equity has grown only 41% (INR 4,049→5,691 Cr), implying leverage is rising to fund this expansion.\n\nFrom my perspective, a bank's moat is its deposit franchise — low-cost CASA, brand trust, and customer stickiness. DCB lacks all three in meaningful scale. It is competing in crowded lending segments (LAP, commercial vehicles, microfinance) where pricing pressure is intense and credit cycles can be brutal. The low promoter holding of 16.23% suggests limited founder conviction. Institutional ownership (DII 32.8%) is the main support. At P/B of 1.0x the stock is not outrageously priced, but I have never found cheap prices a sufficient reason to own a business without franchise value. There are far better-run Indian banks with superior ROE trajectories available at only modest premiums. I would pass.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 57421,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07431404999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10295,
+      "cache_read_input_tokens": 8446,
+      "output_tokens": 2211,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10295
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 403,
+          "cache_read_input_tokens": 8446,
+          "cache_creation_input_tokens": 1849,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1849,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

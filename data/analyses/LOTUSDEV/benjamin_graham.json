@@ -1,0 +1,71 @@
+{
+  "symbol": "LOTUSDEV",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T18:13:52.515461Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "At INR 140, the stock trades at a P/E of 30x and P/B of 3.77x — roughly 2.25x my computed Graham Number of ~INR 62 (√[22.5 × EPS₄.₆₅ × BVPS₃₇.₁]) — offering no margin of safety whatsoever. A Mumbai real estate and film production company with inconsistent cash flows and a mysterious equity explosion commands a speculator's premium, not an investor's price.",
+    "key_strengths": [
+      "Low Debt/Equity of 0.08 with net debt nearly eliminated (cash INR 334 Cr vs total debt INR 122 Cr in FY25)",
+      "Strong reported profitability metrics — ROE 41.3%, ROCE 37.1%, operating margin 35.3% — if earnings quality holds",
+      "Revenue growing from INR 88 Cr (2022) to INR 548 Cr (2025) at 84% CAGR provides a short earnings track record"
+    ],
+    "key_risks": [
+      "Operating cash flow is negative in 2 of 4 years (-INR 88 Cr in 2022, -INR 20 Cr in 2025) — reported profits are not converting to cash, a cardinal sin in real estate",
+      "Equity reserves jumped from INR 150 Cr to INR 1,699 Cr in a single year (FY25) — almost certainly a large equity issuance or revaluation that inflates book value and masks true economics",
+      "Dual speculative businesses (luxury real estate + film production) are precisely the kind of venture-like enterprises I have always warned the defensive investor to shun"
+    ],
+    "red_flags": [
+      "Graham Number ~INR 62 vs current price INR 140 — trading at 2.25x intrinsic value by my formula",
+      "Negative free cash flow (INR -21 Cr) in FY25 despite INR 228 Cr reported net profit — earnings appear largely accrual-based, typical of project-recognition real estate",
+      "Name changed to Sri Lotus Developers only in December 2024 and incorporated in 2015 — insufficient long-term earnings history and likely a recent listing or restructuring",
+      "Promoter concentration at 81.87% with FII/DII barely 4.6% combined — limited institutional scrutiny and governance risk",
+      "No dividend history mentioned — shareholders receive no tangible cash return"
+    ],
+    "detailed_analysis": "Every quantitative filter I apply condemns this stock. The P/E of 30x exceeds my ceiling of 15x by double; the P/B of 3.77x is more than twice my maximum of 1.5x; and P/S of 10.5x is absurd for a construction and real estate firm. My Graham Number of approximately INR 62 indicates the stock must fall 56% from its current price of INR 140 before I would even begin to consider it. The EV/EBITDA of 22.25x prices in years of flawless execution — Mr. Market is being wildly optimistic, and the intelligent investor must not play along.\n\nThe balance sheet transformation in FY25 — equity vaulting from INR 170 Cr to INR 1,748 Cr while reserves swelled from INR 150 Cr to INR 1,699 Cr — demands explanation that this data does not provide. Whether it is an equity raise, revaluation of land parcels, or merger consideration, it fundamentally distorts the apparent financial strength. Compounding this, operating cash flow was negative in FY25 (INR -20 Cr) despite INR 228 Cr in reported net profit; real estate developers routinely book revenue before cash arrives, and I have never trusted profits that do not appear as cash in the bank. Combining a luxury real estate cycle business with film production creates precisely the speculative cocktail I spent my career warning against.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 48411,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07401135,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8765,
+      "cache_read_input_tokens": 10612,
+      "output_tokens": 2530,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 8765
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 327,
+          "cache_read_input_tokens": 8562,
+          "cache_creation_input_tokens": 2253,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2253,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

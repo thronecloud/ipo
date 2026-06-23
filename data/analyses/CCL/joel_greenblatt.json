@@ -1,0 +1,69 @@
+{
+  "symbol": "CCL",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-19T12:55:43.470425Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "CCL Products is a legitimate growth story — India's largest instant coffee exporter with a 14.3% nine-year revenue CAGR — but the Magic Formula metrics disappoint: earnings yield is ~3.4% (EBIT ₹555 Cr / EV ₹16,227 Cr) and ROCE of 13.1% sits well below my thresholds. The debt-funded capacity expansion is destroying free cash flow, and the business is not earning high enough returns on the capital it is deploying.",
+    "key_strengths": [
+      "World's largest private-label instant coffee exporter with a nine-year revenue CAGR of 14.3%, scaling from ₹932 Cr to ₹3,106 Cr with operating income growing in lockstep",
+      "Strong promoter ownership (46.1%) and institutional backing (DII 21.4%) signal high conviction from informed capital",
+      "Continental brand (domestic) provides consumer-facing pricing power alongside B2B scale advantages in export markets"
+    ],
+    "key_risks": [
+      "Earnings yield of ~3.4% is far below the 6% floor — the market is pricing in a pristine growth trajectory with zero margin of safety",
+      "Debt has ballooned from ₹655 Cr (FY22) to ₹1,813 Cr (FY25), driving finance costs from ₹16 Cr to ₹113 Cr (29.5% CAGR) — rapidly eroding interest cover",
+      "Free cash flow has been negative for three consecutive years (FY23: -₹159 Cr, FY24: -₹458 Cr, FY25: -₹128 Cr) — the business is consuming capital, not generating it"
+    ],
+    "red_flags": [
+      "ROCE of 13.1% is below my minimum — the company is expanding aggressively into capacity that earns sub-threshold returns on incremental investment",
+      "Capex of ₹418 Cr in FY25 on ₹290 Cr OCF means the company burned ₹128 Cr more than it generated — not the hallmark of a Magic Formula business",
+      "Finance cost trajectory (29.5% CAGR vs 10.9% net profit CAGR) is a structural squeeze: if coffee prices soften, debt servicing will bite hard"
+    ],
+    "detailed_analysis": "Magic Formula calculation: EV = ₹14,511 Cr market cap + ₹1,813 Cr debt − ₹97 Cr cash = ₹16,227 Cr. EBIT (Operating Income FY25) = ₹555 Cr. Earnings yield = 3.42% — fails badly. ROCE = 13.1% — also below my 20% threshold. Both legs of the formula are red; I cannot recommend the stock on value grounds regardless of the narrative quality.\n\nThe underlying business — spray-dried, agglomerated, and freeze-dried instant coffee for global private labels — is genuinely interesting and has scale. The problem is that management is reinvesting at a 13% ROIC using debt at high cost, creating a situation where growth destroys rather than creates value. Until the capacity investment cycle concludes, ROIC normalises above 20%, and earnings yield clears 6% (which would require the stock to trade at roughly half its current price), CCL fails my screen.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 212545,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.2804235,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 26770,
+      "cache_read_input_tokens": 15490,
+      "output_tokens": 11692,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 26770,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 543,
+          "cache_read_input_tokens": 15490,
+          "cache_creation_input_tokens": 11280,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 11280
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

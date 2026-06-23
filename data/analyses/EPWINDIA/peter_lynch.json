@@ -1,0 +1,69 @@
+{
+  "symbol": "EPWINDIA",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-21T07:48:02.433911Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "EPW India is a genuine fast-grower — revenue exploded from ₹7 Cr to ₹53 Cr in two years (~175% CAGR) in the underpenetrated refurbished electronics space, and at P/E 31x the PEG is optically compelling. However, the business burned ₹11 Cr in operating cash flow in FY25 despite reporting ₹4 Cr profit, which is a serious earnings quality red flag that must resolve before this becomes a conviction buy.",
+    "key_strengths": [
+      "Explosive revenue growth: 7→19→53 Cr (FY23-25), a genuine fast-grower story Lynch could understand from a consumer angle — affordable refurbished laptops/Chromebooks in India.",
+      "ROCE of 65.7% and improving margins (EBITDA ₹6 Cr on ₹53 Cr revenue = ~11%) show the underlying unit economics are real.",
+      "P/E 31x on a company growing earnings 4x in one year gives a PEG well below 1.0 if growth even partially sustains."
+    ],
+    "key_risks": [
+      "Severe cash flow divergence: ₹4 Cr net profit but -₹11 Cr operating cash flow in FY25 — the working capital model is broken or earnings are low quality.",
+      "Debt jumped from ₹0 to ₹12 Cr in a single year (D/E 2.4x) purely to fund working capital; this growth is being borrowed, not earned.",
+      "Micro-cap (₹129 Cr mkt cap, ₹53 Cr revenue) with zero analyst coverage — subject to operator activity and low liquidity risk."
+    ],
+    "red_flags": [
+      "Operating CF deeply negative (-₹11 Cr) despite ₹4 Cr reported profit — classic sign of aggressive revenue recognition or working capital deterioration in a distribution business.",
+      "D/E ratio of 2.4x far exceeds my 0.6 comfort threshold; this is a leverage-funded growth story, not organic cash generation.",
+      "Total equity only ₹5 Cr — the high ROE (139%) is a mathematical artifact of near-zero equity base, not genuine capital efficiency."
+    ],
+    "detailed_analysis": "EPW India fits Lynch's 'fast grower' archetype on the surface — a simple, understandable business (refurbished electronics for price-sensitive Indian consumers) growing revenues 7.5x in two years in a large TAM. The P/E of 31x against this growth rate gives a sub-0.2 PEG, which would normally be screaming buy territory. ROCE of 65.7% and an improving EBITDA margin suggest the core model has pricing power. Promoter holding at 71% signals alignment, and FII/DII combined at 13.5% shows institutional validation at this micro-cap level.\n\nThe cash flow statement kills the story for now. A company with ₹4 Cr net profit posting -₹11 Cr operating cash flow means either receivables/inventory are exploding (dangerous in refurbished electronics where obsolescence is rapid) or the revenue is being stuffed into the channel. The ₹12 Cr borrowing in one year to fund this gap is exactly what Lynch warns about — when a company has to borrow to fund working capital as it grows, the growth machine has a leak. I would need two quarters of positive OCF conversion and debt reduction before upgrading to BUY. Watch the FY26 numbers closely — if cash flow turns, this re-rates sharply.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 48431,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07686195,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10137,
+      "cache_read_input_tokens": 8014,
+      "output_tokens": 2429,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10137,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 358,
+          "cache_read_input_tokens": 8014,
+          "cache_creation_input_tokens": 2123,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2123
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "CAPILLARY",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-18T16:55:10.950615Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Capillary is a legitimate AI-SaaS loyalty platform with impressive 36.7% revenue CAGR, but a P/E of 420x on razor-thin first-year profits (INR 13 Cr) makes the valuation completely unjustifiable — no PEG ratio I can construct here passes my smell test. The story is interesting but the price is a disaster; I'd rather wait until earnings grow 5–10x before touching this.",
+    "key_strengths": [
+      "Revenue compounding at 36.7% CAGR (INR 171 Cr → 598 Cr in 4 years) — real top-line momentum",
+      "Net cash positive balance sheet (INR 201 Cr cash vs INR 106 Cr debt) with D/E of only 0.17",
+      "EBITDA inflection is real — swung from -56 Cr (FY23) to +72 Cr (FY25), showing operating leverage kicking in"
+    ],
+    "key_risks": [
+      "P/E of 420x on just INR 13 Cr net profit — any earnings miss or margin slip destroys the thesis",
+      "Operating CF turned deeply negative (-46 Cr) in FY25 despite first reported profit — cash flows are NOT validating the P&L, classic red flag",
+      "FCF of -94 Cr in FY25 (capex accelerating to 47 Cr) means the company is burning cash while barely earning it; ROE of just 2.56% is embarrassing for a 'SaaS' business"
+    ],
+    "red_flags": [
+      "OCF swung from +97 Cr (FY24) to -46 Cr (FY25) while net profit turned positive — working capital deterioration or aggressive revenue recognition",
+      "P/E 420x: even if earnings grow 100% next year (INR 13 Cr → 26 Cr), PEG would still be ~4.2x — nowhere near my <1.0 threshold",
+      "Gross margin of only 35.5% is low for a pure SaaS business — suggests significant services/implementation revenue pulling down unit economics"
+    ],
+    "detailed_analysis": "Capillary Technologies is a classic \"fast grower that's been found out too early.\" The revenue trajectory is genuinely exciting — from INR 171 Cr in FY21 to INR 598 Cr in FY25 at 36.7% CAGR — and the EBITDA swing from -56 Cr to +72 Cr in just two years tells me the operating model can work. But this company only generated INR 13 Cr in net profit in its first profitable year, and the market has slapped a P/E of 420x on it. That's a company being priced as if it's already a proven compounder, when in reality it still can't generate free cash flow — FCF was -94 Cr in FY25. I want ten-baggers, but I need the price to give me a chance; this doesn't.\n\nThe cash flow disconnect is what really worries me as a Lynch investor. I believe in following the cash, not the accounting. Reported profit: +13 Cr. Operating cash flow: -46 Cr. Free cash flow: -94 Cr. Something in working capital or deferred revenues is masking the real picture. The gross margin of 35.5% also suggests this isn't a pure software business — there's likely significant implementation and services revenue dragging margins down. Until I see two or three consecutive years of FCF turning positive, operating margins scaling toward 15–20%, and a P/E that reflects an actual earnings power (not one exceptional year), this is a stock to admire from a distance, not own.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 56287,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08230845,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11019,
+      "cache_read_input_tokens": 8794,
+      "output_tokens": 2556,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11019
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 382,
+          "cache_read_input_tokens": 8794,
+          "cache_creation_input_tokens": 2225,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2225,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

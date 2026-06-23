@@ -1,0 +1,69 @@
+{
+  "symbol": "544671",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-20T11:10:34.246541Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "A tiny (~Rs 99 Cr revenue) recently-listed maker of drilling rigs with a single breakout year (FY25 PAT jumped from Rs 3 Cr to Rs 14 Cr) and debt-heavy balance sheet (D/E 1.16). The optically cheap 11x P/E and 73.8% ROE mask a cyclical, capital-goods business with no durable moat and no through-cycle track record.",
+    "key_strengths": [
+      "Revenue 4Y CAGR of 20.5% and FY25 operating profit tripling to Rs 18 Cr show real demand pull from Indian infra capex.",
+      "Promoter holding a solid 73.05% — skin in the game.",
+      "Borrowings trimmed from Rs 43 Cr (FY24) to Rs 33 Cr (FY25) and OCF turned positive (Rs 14-15 Cr)."
+    ],
+    "key_risks": [
+      "Cyclical capital-goods business tied to construction/infra spending — one downturn wipes out earnings.",
+      "D/E of 1.16 on Rs 29 Cr equity is dangerous; finance cost of Rs 3 Cr is ~20% of operating profit.",
+      "FY25 profit surge is a single data point; FY21-FY23 net profit averaged under Rs 1 Cr."
+    ],
+    "red_flags": [
+      "73.8% ROE is inflated by a tiny equity base, not genuine pricing power.",
+      "Operating cash flow negative in FY21 and FY22; OCF positive only 3/5 years.",
+      "No moat — drilling rigs are a global commodity product with established OEM competitors."
+    ],
+    "detailed_analysis": "This is precisely the kind of stock I avoid. Apollo Techno is a nine-year-old capital-goods manufacturer with just Rs 99 Cr of revenue, Rs 29 Cr of equity, and Rs 32 Cr of debt, selling rigs into the notoriously cyclical Indian construction sector. The headline ROE of 73.8% is an arithmetic accident of a thin equity base, not evidence of a wonderful business — operating margins of 7.43% tell the real story of a price-taker in a fragmented niche. Net profit leapt from Rs 3 Cr in FY24 to Rs 14 Cr in FY25; extrapolating one year into a permanent earnings level is how investors lose money in capital goods.\n\nAt 11x trailing P/E the stock may look statistically cheap, but cheap cyclicals at peak earnings are value traps. There is no identifiable moat — trenchless drilling rigs compete globally against established OEMs — and the promoter has no listed-company track record of capital allocation. With D/E above 1, negative OCF in two of the last five years, and earnings that could easily revert to Rs 2-3 Cr in a construction downturn, I see no margin of safety. I pass.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 43313,
+    "model_used": "opus",
+    "total_cost_usd": 0.169024,
+    "usage": {
+      "input_tokens": 7,
+      "cache_creation_input_tokens": 11980,
+      "cache_read_input_tokens": 28328,
+      "output_tokens": 3198,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11980,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 100,
+          "cache_read_input_tokens": 13572,
+          "cache_creation_input_tokens": 1245,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1245
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

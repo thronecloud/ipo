@@ -1,0 +1,70 @@
+{
+  "symbol": "APLLTD",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T16:22:47.229929Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Alembic Pharma is a capital-intensive generics manufacturer with no earnings growth over nine years, compressed margins, and deteriorating cash generation — precisely the kind of mediocre-returns business I avoid regardless of price. At 23x trailing earnings with ROE of only 11.4%, the market is not pricing in the margin recovery fast enough to compensate for the structural risks.",
+    "key_strengths": [
+      "117-year operating history with promoter skin-in-the-game at 69.74% — alignment is good",
+      "Manageable D/E of 0.28 (until the 2025 borrowing surge) with a high gross margin of 71.5% suggesting formulation mix is decent",
+      "Revenue has grown at 8.6% CAGR over 9 years with last-5-year expansion — topline is not broken"
+    ],
+    "key_risks": [
+      "Earnings in secular decline: net profit CAGR of -2.3% over 9 years; collapsed from INR 1,146 Cr (FY21) to INR 582 Cr (FY25)",
+      "Operating cash flow crashed to just INR 88 Cr in FY25 (vs. INR 803 Cr in FY24), producing FCF of -466 Cr — capital consumption is accelerating",
+      "Borrowings nearly tripled in one year (INR 513 Cr → INR 1,489 Cr in FY25); finance costs growing at 35.9% CAGR — leverage risk rising sharply"
+    ],
+    "red_flags": [
+      "ROE of 11.4% and ROCE of 13% both below my 15% minimum threshold — capital is not being deployed productively",
+      "EBITDA in FY25 (INR 1,052 Cr) is still below FY16 levels (INR 1,079 Cr) in absolute terms — zero real earnings growth in a decade",
+      "Massive, multi-year capex cycle (CWIP peaked at INR 2,304 Cr) has yielded no visible improvement in returns on capital",
+      "OCF collapsed 89% year-on-year in FY25 — a red flag for working capital stress or one-time charges masking ongoing weakness"
+    ],
+    "detailed_analysis": "Generics pharmaceuticals is inherently a tough business — it lacks the durable pricing power I demand. Alembic competes on volume and regulatory approvals, not brand loyalty. The gross margin of 71.5% looks attractive on the surface, but it evaporates quickly: operating margins have compressed from ~31% in FY21 to just 11.4% today. That compression, sustained over five years, signals either structural pricing pressure in the US generics market, rising raw-material costs, or the drag of an underutilized capex base — likely all three. A business that earns less per rupee of sales today than it did a decade ago does not have a widening moat.\n\nThe balance sheet tells an even more troubling story. Alembic invested aggressively — CWIP touched INR 2,304 Cr in FY22 — but returns on that capital are disappointing. Net profit in FY25 (INR 582 Cr) is actually lower than FY16 (INR 720 Cr), despite revenues doubling. Borrowings ballooned from INR 513 Cr to INR 1,489 Cr in a single year, and OCF cratered to INR 88 Cr in FY25, making FCF deeply negative at -INR 466 Cr. I need stable, predictable, growing earnings — Alembic offers none of these. At 23x trailing P/E with no earnings momentum and deteriorating cash conversion, there is no margin of safety here.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 47359,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07892070000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11082,
+      "cache_read_input_tokens": 9064,
+      "output_tokens": 2309,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11082,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 340,
+          "cache_read_input_tokens": 9064,
+          "cache_creation_input_tokens": 2018,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2018
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

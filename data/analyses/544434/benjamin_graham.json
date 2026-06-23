@@ -1,0 +1,69 @@
+{
+  "symbol": "544434",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-20T20:10:07.028449Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Neetu Yoshi is a freshly-listed 2020-incorporated micro-cap castings firm with barely two years of meaningful earnings and negative free cash flow every year — it fails nearly every quantitative filter I require. At a P/E of 20.4 and P/B of ~2.5 (302 Cr / 123 Cr equity), there is no margin of safety; this is a speculation on continued hyper-growth, not an investment.",
+    "key_strengths": [
+      "ROE 51% and ROCE 46% indicate genuine operating earning power in 2024–25",
+      "Debt modest: borrowings 14 Cr vs equity 123 Cr (D/E ~0.11), balance sheet not stressed",
+      "Promoter holding 70% — skin in the game"
+    ],
+    "key_risks": [
+      "Only 2 years of meaningful profits (13 Cr, 16 Cr) — fails my 3–5 year earnings track record test",
+      "Free cash flow negative all 4 years (-1, -9, -7, -3 Cr); growth is being funded by IPO proceeds, not internal cash",
+      "P/E 20.4 and P/B ~2.5 breach Graham limits (P/E<15, P/B<1.5); no dividend history"
+    ],
+    "red_flags": [
+      "Recent IPO — seller (insiders/bankers) knows more than the buyer, pricing optimized for them",
+      "Equity jumped from 20 Cr to 123 Cr in 2025 (IPO infusion) — reported ROE will mechanically compress as capital is deployed",
+      "Tiny 5-year-old company in a commoditized castings/forgings industry with no demonstrated moat"
+    ],
+    "detailed_analysis": "The quantitative record is simply too short. Revenue of 5 Cr in 2022 growing to 71 Cr in 2025 is impressive arithmetic, but I demand proven earning power across a full business cycle — castings and forgings are deeply cyclical, tied to steel prices, auto and railway capex, and working capital swings. Two years of profitability (2024: 13 Cr, 2025: 16 Cr) tells us nothing about how this business performs in a downturn. Worse, operating cash flow covered only 12 Cr in 2025 against 17 Cr of investing outflows, and cumulative free cash flow over four years is roughly -20 Cr. Growth has been financed by 8→14 Cr of borrowings and, decisively, a large equity raise that ballooned reserves from 16 Cr to 104 Cr.\n\nOn valuation, 302 Cr market cap against 123 Cr book is P/B ~2.5 — well above my 1.5 ceiling — and P/E 20.4 sits above my 15 threshold despite earnings that are essentially two data points. The Graham Number test fails decisively. The high ROE/ROCE are flattering in part because the denominator was tiny before the IPO; post-issue, returns on the enlarged capital base are unproven. Combined with no dividend history, an IPO premium, and a micro-cap commodity-industrial profile, this is textbook speculation. Mr. Market may be enthusiastic; I am not. Avoid.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 34379,
+    "model_used": "opus",
+    "total_cost_usd": 0.1070855,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 9840,
+      "cache_read_input_tokens": 14161,
+      "output_tokens": 1539,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9840,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 143,
+          "cache_read_input_tokens": 11275,
+          "cache_creation_input_tokens": 1451,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1451
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

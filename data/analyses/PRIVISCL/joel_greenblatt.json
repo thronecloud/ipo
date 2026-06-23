@@ -1,0 +1,69 @@
+{
+  "symbol": "PRIVISCL",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T22:07:13.584817Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Privi is a decent specialty aroma-chemicals franchise with 17% revenue CAGR, but the Magic Formula screams overvaluation — earnings yield of only ~3.4% (EBIT 458 Cr / EV ~13,332 Cr) is less than half my 6% minimum, and ROCE of 16.4% falls short of the 20%+ threshold required to justify the price. You're paying a premium for a capital-hungry business that generated -17 Cr free cash flow in FY25.",
+    "key_strengths": [
+      "Consistent revenue growth: 17% revenue CAGR and 26% operating income CAGR over 8 years — the business is genuinely growing",
+      "Niche global aroma-chemicals franchise with 60.6% promoter skin-in-the-game and exports to NA, Europe, ME",
+      "Operating margin of 19% and OCF positive all 5 years — core operations are profitable"
+    ],
+    "key_risks": [
+      "Earnings yield only ~3.4% — deeply overvalued by Magic Formula; EV/EBITDA at 22.6x and P/E at 40.8x price in perfection",
+      "Capex-intensive expansion destroying FCF: FY25 FCF = -17 Cr despite 281 Cr OCF; debt grew from 569 Cr (FY20) to 1,143 Cr (FY25)",
+      "Finance costs surged from 24 Cr (FY18) to 92 Cr (FY25), now consuming ~20% of EBITDA and compressing true owner earnings"
+    ],
+    "red_flags": [
+      "Earnings yield ~3.4% — less than half the 6% Magic Formula minimum; this is a crowded specialty-chem growth story priced expensively",
+      "Net profit collapsed to 21 Cr in FY23 (from 176 Cr in FY20) — demonstrates high earnings volatility tied to raw material cycles",
+      "Free cash flow negative in FY21, FY22, FY23, and FY25 — only FY24 was positive; the business chronically consumes cash it earns"
+    ],
+    "detailed_analysis": "Running the Magic Formula on Privi: EBIT = INR 458 Cr (FY25); Enterprise Value = Market Cap 12,239 + Debt 1,143 − Cash 50 = ~13,332 Cr. That gives an Earnings Yield of just 3.4% — well below my 6% floor and nowhere near the 12–15% range where I get excited. ROCE of 16.4% also misses the 20%+ threshold for a \"good\" business. Both legs of the Magic Formula fail simultaneously, which is a clear AVOID signal. The 40.8x P/E bakes in many years of flawless execution in a cyclical, commodity-adjacent industry.\n\nThe underlying business has real merit — 17% revenue CAGR, global aroma-chemical franchise, expanding operating income — but it is deeply capital hungry. Debt has nearly doubled since FY20, finance costs have quadrupled, and FCF was negative in four of the last five years due to ongoing capex (FY25 capex was 299 Cr on OCF of 281 Cr). The FY23 net profit crash to 21 Cr (vs. 176 Cr in FY20) illustrates how exposed earnings are to raw-material and utilisation cycles. At current prices, the market is pricing this as a premium compounder; I'd need it trading closer to 12–15x EV/EBITDA before the earnings yield crosses my threshold. Pass.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 43963,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0818271,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11332,
+      "cache_read_input_tokens": 9277,
+      "output_tokens": 2436,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11332,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 421,
+          "cache_read_input_tokens": 9277,
+          "cache_creation_input_tokens": 2055,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2055
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

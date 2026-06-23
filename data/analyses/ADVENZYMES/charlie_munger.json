@@ -1,0 +1,69 @@
+{
+  "symbol": "ADVENZYMES",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T16:13:46.271275Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "AVOID",
+    "investment_thesis": "Advanced Enzyme Technologies is a niche specialty business with attractive gross margins (72%) but suffers from a critical flaw — revenue grew 9% CAGR over 9 years while operating income grew only 4%, meaning the business is consuming capital without generating proportionate returns. With ROE at 9.54% and ROCE at 13.1%, both well below my 15% minimum threshold, this is a mediocre compounder masquerading as a quality business.",
+    "key_strengths": [
+      "Virtually debt-free balance sheet (D/E 0.02) with consistent OCF positive 5/5 years",
+      "72.44% gross margins signal genuine product differentiation in enzyme formulations",
+      "FCF/Net Income ratio ~81% (108 Cr FCF vs 134 Cr net profit) indicates reasonable earnings quality"
+    ],
+    "key_risks": [
+      "ROIC destruction: operating income CAGR only 4% vs 9% revenue CAGR — negative operating leverage is a cardinal sin",
+      "Net profit in FY25 (134 Cr) is lower than FY21 (151 Cr) — five years of zero earnings growth with no recovery in sight",
+      "Growing dependence on other income (6 Cr in 2022 → 33 Cr in 2025) masks deteriorating core operating performance"
+    ],
+    "red_flags": [
+      "Large -286 Cr investing outflow in FY23 suggests a significant acquisition — frequent acquisitions without clear integration success is a Munger warning sign",
+      "Cash depleted from 267 Cr (FY22) to 94 Cr (FY25) while operating earnings stagnate — capital allocation quality is questionable",
+      "EBITDA and net profit 5-year trends are explicitly contracting while revenue expands — the moat is eroding, not widening"
+    ],
+    "detailed_analysis": "Applying the most important mental model — inversion — the question is not 'why should I buy this?' but 'why would I avoid it?' The answer is clear: a business that grows revenue at 9% per year but only grows operating profit at 4% is destroying value per unit of revenue. The gross margin of 72% is seductive, but something is eating the spread — rising R&D costs, increased competition, or an acquired business dragging margins. ROE of 9.54% means for every 100 rupees of shareholder equity, the company earns less than 10 rupees. My hurdle rate is 15%. This fails it by 40%. At P/E of 23.9x, the market is pricing this as a quality compounder, which it demonstrably is not.\n\nThe balance sheet is admirable — near-zero debt, reserves growing from 817 Cr (FY20) to 1,462 Cr (FY25), and consistent free cash flow averaging ~107 Cr over 5 years. These are not the traits of a bad business, merely a mediocre one. The FII holding of 25.5% suggests smart money sees option value in the enzyme/probiotic secular story (food processing, human nutrition, biofuels). But the trend data is unambiguous: the business peaked in FY21 with 151 Cr net profit and hasn't recovered in four years. At 24x earnings with contracting profitability, you're paying a premium price for a deteriorating business. That is precisely the trade I refuse to make.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 49813,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.05019735,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 2097,
+      "cache_read_input_tokens": 17832,
+      "output_tokens": 2465,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 2097,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 400,
+          "cache_read_input_tokens": 8916,
+          "cache_creation_input_tokens": 2097,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2097
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

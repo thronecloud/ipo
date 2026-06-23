@@ -1,0 +1,68 @@
+{
+  "symbol": "KIRLPNU",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T17:56:01.957449Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Kirloskar Pneumatic is a well-run, nearly debt-free industrial compounder riding India's capex supercycle, with ROCE of 24.5% and 58% net profit growth in FY25. However, at 42x trailing P/E on a demonstrably cyclical business, the price demands perfection — and Buffett doesn't pay perfection prices.",
+    "key_strengths": [
+      "Near-zero debt (D/E of 0.01) with INR 63 Cr cash and OCF positive all 5 years — fortress balance sheet for an industrial company",
+      "Exceptional ROCE of 24.49% and improving ROE (12.9% in FY22 → 18.5% in FY25) signals genuine capital efficiency",
+      "Diversified across oil & gas, railways, power, defense — reduces single-sector cyclicality risk"
+    ],
+    "key_risks": [
+      "Hard cyclicality proven: revenue fell from INR 666 Cr (FY12) to 441 Cr (FY15) and net profit cratered 71% (INR 62 Cr → 18 Cr) — at 42x P/E, any cycle turn is brutal",
+      "Forward P/E of 28.5x assumes FY26 earnings ~INR 288 Cr (36% growth) — pricing in India's capex boom continuing without interruption",
+      "Moderate moat only: competes against global giants (Atlas Copco, Ingersoll Rand) with deeper R&D and manufacturing scale"
+    ],
+    "red_flags": [
+      "Earnings FY25 INR 211 Cr represents 58% YoY surge — likely cyclical peak, not sustainable structural run-rate",
+      "Investing CF accelerating to -155 Cr in FY25 with capex of 78 Cr — capacity expansion at cycle peak is a classic industrial trap"
+    ],
+    "detailed_analysis": "Kirloskar Pneumatic is a genuine quality business — founded 1958, Kirloskar-group backed, making specialized compressors and refrigeration systems for mission-critical industries. The financial transformation from FY22 to FY25 is impressive: revenue grew from INR 1,015 Cr to 1,640 Cr (+61%), net profit tripled from 85 Cr to 211 Cr, FCF turned solidly positive at 137 Cr, and ROCE expanded to 24.5%. The balance sheet is essentially pristine — total debt of just INR 11 Cr against equity of INR 1,139 Cr. The gross margin of 46.9% is unusually high for heavy industrial machinery, suggesting real pricing power within its niches (CNG compression, marine gearboxes, vapor absorption chillers).\n\nThe problem is the price. At 42x trailing P/E, the market is paying for continued excellence through India's capex cycle — a bet I've been burned on before. History shows Kirloskar Pneumatic is cyclical: it spent 2012–2016 in the wilderness with near-zero FCF and collapsing margins before recovering. Buying a cyclical industrial at peak earnings and peak multiples is a formula for wealth destruction. The forward P/E of 28.5x implies ~INR 288 Cr in FY26 earnings, which requires another 36% profit surge. If India's infrastructure investment cycle moderates — as it eventually will — the earnings and the multiple compress simultaneously, a double-barreled loss. I'd want this business at 20–22x forward earnings to get my required margin of safety.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "excellent",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 55162,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08971380000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11462,
+      "cache_read_input_tokens": 8891,
+      "output_tokens": 2937,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11462
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 411,
+          "cache_read_input_tokens": 8891,
+          "cache_creation_input_tokens": 2571,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2571,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

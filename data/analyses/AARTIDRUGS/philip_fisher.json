@@ -1,0 +1,69 @@
+{
+  "symbol": "AARTIDRUGS",
+  "persona": "philip_fisher",
+  "persona_display_name": "Philip Fisher",
+  "analyzed_at": "2026-04-18T16:10:40.973839Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Aarti Drugs is a commodity API manufacturer with revenue actually shrinking (₹2,716 Cr in FY23 to ₹2,387 Cr in FY25) and net profits down ~40% from their FY21 peak of ₹280 Cr to ₹168 Cr — the antithesis of the compounding growth story I seek. At an ROE of 12.7% and operating margins of just 6.2%, this business lacks the superior economics that justify long-term ownership.",
+    "key_strengths": [
+      "Manageable leverage (D/E 0.39) with consistent OCF generation (5/5 positive years)",
+      "Promoter skin in the game at 55% — aligned long-term ownership",
+      "Diversified API/intermediate portfolio across anti-infectives, NSAIDs, antidiabetics reducing single-product risk"
+    ],
+    "key_risks": [
+      "Revenue is contracting, not growing — FY25 at ₹2,387 Cr is below FY23 levels, a fatal flaw for growth investors",
+      "Margin collapse from peak: EBITDA fell from ₹490 Cr (FY21) to ₹307 Cr (FY25), a 37% decline over 4 years",
+      "Commodity API business with no visible innovation moat — Chinese competition and price erosion structurally cap margins"
+    ],
+    "red_flags": [
+      "Net profit down 40% from FY21 peak (₹280 Cr → ₹168 Cr) — earnings power is deteriorating, not compounding",
+      "9Y revenue CAGR of just 8.6% and EBITDA CAGR of only 3.9% — nowhere near my 20%+ growth threshold",
+      "Near-zero cash (₹5 Cr) against ₹615 Cr total debt and heavy ongoing capex (₹177 Cr in FY25) — capital allocation is strained"
+    ],
+    "detailed_analysis": "From my scuttlebutt perspective, Aarti Drugs exemplifies what I call the \"commodity trap\" in pharma — a manufacturer of generic APIs competing largely on price in a market where Chinese producers continually undercut. The numbers tell the story plainly: revenue peaked in FY23 and has retreated 12% in two years, operating income has contracted sharply from ₹440 Cr in FY21 to ₹290 Cr in FY25, and the 6.2% operating margin offers virtually no cushion for competitive or regulatory headwinds. An ROE of 12.7% on a P/B of 2.51 means the market is pricing in improvement that the fundamentals do not support.\n\nWhat troubles me most as a growth investor is the absence of any innovation narrative. Great pharmaceutical companies reinvest aggressively in R&D to develop proprietary molecules or hard-to-replicate complex generics — no such pipeline or spending data is visible here. The capex cycle (₹226 Cr in FY24, ₹177 Cr in FY25) appears to be capacity expansion for commodity APIs, which in a price-competitive market rarely generates superior returns. FCF has been negative or anemic (₹67 Cr in FY25 on ₹168 Cr net profit), confirming the business consumes more capital than it earns at a growth stage. At P/E 16.8x the valuation is not extreme, but I will not buy a declining business at any price.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 46540,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07084605,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9261,
+      "cache_read_input_tokens": 11511,
+      "output_tokens": 2177,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9261,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 380,
+          "cache_read_input_tokens": 9457,
+          "cache_creation_input_tokens": 1858,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1858
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "symbol": "DBL",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T17:05:15.229002Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Dilip Buildcon scores reasonably on earnings yield (~13%) but fails the Magic Formula's second test with ROIC of only ~14%, well below the 20% threshold for a \"good business.\" Persistently negative free cash flow and a ballooning debt load disqualify this as a Magic Formula candidate.",
+    "key_strengths": [
+      "Earnings yield of ~13% (EBIT INR 2,159 Cr / EV ~INR 16,600 Cr) clears the >12% attractiveness threshold",
+      "Revenue CAGR of 11.6% over 9 years shows execution scale in India's infrastructure build-out",
+      "P/B of 0.98 and EV/EBITDA of 8.76 suggest the market is not pricing in a recovery — downside may be limited"
+    ],
+    "key_risks": [
+      "ROIC ~14% (using reported ROCE 14.8%) is below the Magic Formula's 20% floor — this is not a high-quality business by my criteria",
+      "Free cash flow has been deeply negative every single year: -INR 4,134 Cr (2025), -INR 4,473 Cr (2024), -INR 1,071 Cr (2023) — the business destroys cash relentlessly",
+      "Debt surged from INR 6,658 Cr (2023) to INR 10,375 Cr (2025); finance costs of INR 1,249 Cr consume 58% of EBIT, leaving almost nothing for equity holders after debt service"
+    ],
+    "red_flags": [
+      "FCF negative in all 5 observable years — capex (INR 4,265 Cr in 2025) dwarfs operating cash flow (INR 131 Cr in 2025)",
+      "FY2025 net profit of INR 840 Cr is propped up by INR 417 Cr of Other Income — strip that out and operating earnings are far weaker",
+      "Net profit turned negative in FY2022 (-INR 550 Cr) and nearly zero in FY2023 (-INR 1 Cr), revealing extreme earnings fragility and cyclicality",
+      "Debt spiked INR 3,717 Cr in a single year (FY2025), reversing years of deleveraging — signals renewed capital stress or aggressive bid book"
+    ],
+    "detailed_analysis": "Running the Magic Formula on Dilip Buildcon, I get Earnings Yield of ~13% (EBIT INR 2,159 Cr ÷ EV of ~INR 16,600 Cr, computed as market cap INR 7,424 Cr + debt INR 9,528 Cr − cash INR 353 Cr). That clears the 12% attractiveness threshold. But the second test — Return on Capital — fails. ROCE is 14.8% against an invested capital base of ~INR 15,300 Cr (equity + debt). My formula demands 20%+; 14.8% earns no stars. An EPC infrastructure company with massive equipment, HAM project receivables, and CWIP of INR 3,164 Cr is structurally capital-hungry and can never escape the trap of low ROIC.\n\nThe cash flow picture seals the AVOID verdict. Operating cash flow in FY2025 was a paltry INR 131 Cr — down from INR 2,845 Cr in FY2023 — while capex consumed INR 4,265 Cr, resulting in FCF of negative INR 4,134 Cr. This is not a temporary dip; FCF has been negative in every year of the dataset. Finance costs of INR 1,249 Cr in FY2025 eat 58% of EBIT before a single rupee reaches equity holders. Greenblatt's formula is designed for businesses that compound capital at high rates — DBL compounds debt instead. The promoter's high 63% stake offers governance comfort, but skin-in-the-game doesn't fix a structurally low-return, cash-consuming business model.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 58087,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0932691,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11824,
+      "cache_read_input_tokens": 9167,
+      "output_tokens": 3078,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11824
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 462,
+          "cache_read_input_tokens": 9167,
+          "cache_creation_input_tokens": 2657,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2657,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

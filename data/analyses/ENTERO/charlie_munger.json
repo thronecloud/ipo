@@ -1,0 +1,70 @@
+{
+  "symbol": "ENTERO",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T17:20:12.811851Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Entero is a fast-growing pharma distributor (30% revenue CAGR) that has never generated a single year of positive operating cash flow in its five-year history, while trading at 47x earnings with a 3.4% operating margin — a deeply unfavorable combination of poor economics and rich valuation. A distribution business with no demonstrated ability to convert accounting profits into cash is not a business I want to own at any price, let alone this one.",
+    "key_strengths": [
+      "Strong topline momentum: revenue nearly 4x'd from INR 1,350 Cr (2020) to INR 5,096 Cr (2025), proving real market demand",
+      "EBITDA scaling from 35 Cr to 207 Cr (43% CAGR) signals operating leverage as distribution density increases",
+      "Post-IPO balance sheet cleanup: Debt/Equity now 0.25, cash at 229 Cr, reducing existential risk"
+    ],
+    "key_risks": [
+      "Structurally negative free cash flow: FCF negative every single year (-81, -78, -45, -51, -41, -87 Cr) — the business perpetually consumes, never produces cash",
+      "Near-zero returns on capital: ROCE of 8.71% and ROE of 5.63% are far below any rational cost of capital; growth is destroying value, not creating it",
+      "Valuation absurdity: 47x P/E and 29x EV/EBITDA for a 3.4% operating margin distribution business with no demonstrated moat"
+    ],
+    "red_flags": [
+      "Operating cash flow negative for 0/5 years — a fundamental disqualifier; accounting profits are not real profits",
+      "Negative equity through 2023 (-16 Cr to -73 Cr reserves) reveals the company survived only via repeated external capital infusions",
+      "Gross margin of only 9.95% in commodity pharma distribution leaves no buffer for pricing pressure, competition, or working capital stress",
+      "Other income surged to 39 Cr in FY25 (36% of net profit) — income quality is suspect when non-operating items prop up reported earnings"
+    ],
+    "detailed_analysis": "Applying the first principle of inversion: what does a terrible investment look like? It looks exactly like Entero. A distribution business — by structural definition a low-moat, low-margin toll road — that has never generated positive operating cash flow in any of its five years of existence. The OCF line reads: -37, -69, -35, -45, -37, -77 Cr. This is not a temporary investment phase; it is a working-capital treadmill. As revenue grows, receivables and inventory grow faster, and the business requires perpetual outside capital to fund operations. The IPO in 2024 brought equity from 595 Cr to 1,638 Cr — essentially a lifeline that reset the clock, not evidence of an enduring franchise.\n\nThe economics are structurally hostile to compounding. With a 9.95% gross margin and 3.4% operating margin, there is almost no room left after paying for working capital, people, and infrastructure. ROIC of approximately 8-9% (below cost of capital) means every rupee reinvested destroys value at the margin. Management is paying 42 Cr/year in finance costs on a distribution business still burning cash — this is fragile. At 47x trailing P/E and 29x EV/EBITDA, Mr. Market is pricing in flawless execution and a moat that does not yet exist. I can think of no mental model that justifies owning a cash-burning, low-margin distributor at growth-tech multiples. Pass.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 51312,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0813075,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10920,
+      "cache_read_input_tokens": 8795,
+      "output_tokens": 2514,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10920
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 418,
+          "cache_read_input_tokens": 8795,
+          "cache_creation_input_tokens": 2125,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2125,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

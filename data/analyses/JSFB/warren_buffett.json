@@ -1,0 +1,70 @@
+{
+  "symbol": "JSFB",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T17:49:38.038057Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Jana Small Finance Bank operates in a structurally challenged segment — lending to underbanked borrowers with thin spreads and high credit risk — without the durable competitive moat I require. Earnings already reversed in FY25 (INR 501 Cr vs. INR 670 Cr in FY24) just as finance costs surged to INR 2,317 Cr, revealing the fragility of this business model.",
+    "key_strengths": [
+      "Revenue growing at 22.3% CAGR with P/B below 1.0x (0.95x) offers some statistical cheapness",
+      "Debt declining from INR 5,477 Cr (FY23) to INR 3,377 Cr (FY25) with cash surging to INR 4,449 Cr",
+      "Forward P/E of 6.17x prices in significant earnings recovery, providing a margin of safety if asset quality stabilises"
+    ],
+    "key_risks": [
+      "Earnings already retreating — FY25 net profit fell 25% to INR 501 Cr from FY24 peak of INR 670 Cr, signalling asset quality stress",
+      "Finance costs (INR 2,317 Cr) now consume 76% of revenue, leaving virtually no room for error; operating margin of just 1.51%",
+      "ROE of 12.18% is below my 15% threshold, and with only 21.85% promoter holding, management's skin-in-the-game is thin"
+    ],
+    "red_flags": [
+      "Net profit declined FY24→FY25 despite 16% revenue growth — classic NIM compression/credit cost spike",
+      "Promoter stake of only 21.85% is low for a financial institution where trust and capital allocation are everything",
+      "Operating CF swung from -INR 1,137 Cr (FY23) to +INR 4,073 Cr (FY25) — high volatility is incompatible with the predictable earnings I demand",
+      "Small Finance Banks have no meaningful moat — competitors include Equitas, AU, Ujjivan, plus full-service banks all targeting the same segment"
+    ],
+    "detailed_analysis": "Jana Small Finance Bank is a business I would place firmly outside my circle of competence and comfort. Lending to underbanked microfinance borrowers is inherently cyclical and credit-sensitive, and the numbers confirm it — net profit peaked at INR 670 Cr in FY24 then fell back to INR 501 Cr in FY25, even as revenues grew 16%. Finance costs have compounded at 20.1% and now stand at INR 2,317 Cr against INR 3,050 Cr of revenue, leaving a razor-thin operating margin of 1.51%. When your cost of funds grows almost as fast as your revenue, the economics work only in benign credit environments — precisely the kind of fragility I avoid.\n\nThe balance sheet offers a few bright spots: debt has actually declined, cash has surged, and the stock trades below book. But cheap is not the same as good. ROE of 12.18% — and likely headed lower given the FY25 profit drop — does not clear my 15% hurdle. The low promoter stake (21.85%) tells me the founders have limited personal exposure to downside outcomes. I've watched too many microfinance-turned-bank stories end badly in India when credit cycles turn. This is a fair business at a fair price, not a wonderful business at any price. I'll pass.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 45930,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07770194999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10267,
+      "cache_read_input_tokens": 8339,
+      "output_tokens": 2446,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10267
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 554,
+          "cache_read_input_tokens": 8339,
+          "cache_creation_input_tokens": 1928,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1928,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

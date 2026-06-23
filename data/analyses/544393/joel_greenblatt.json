@@ -1,0 +1,69 @@
+{
+  "symbol": "544393",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-20T19:54:31.262548Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Infonative Solutions fails the Magic Formula's critical \"good business\" test — a 0.45% ROE indicates the company earns essentially nothing on its capital, which no earnings yield can compensate for. A cheap-looking P/E of 7.96 on a 30 Cr micro-cap with negligible profitability is a value trap, not a bargain.",
+    "key_strengths": [
+      "Low headline P/E of 7.96 suggests surface-level cheapness",
+      "High promoter skin-in-the-game at 69.28%",
+      "Operates in asset-light custom learning/IT services (potentially low capital needs)"
+    ],
+    "key_risks": [
+      "ROE of 0.45% implies ROIC is catastrophically below the >20% Magic Formula threshold",
+      "Tiny 30 Cr market cap with 0.04% FII / 0% DII = illiquid, no institutional validation",
+      "Recent 2024 listing + 2014 incorporation = limited track record of sustained returns"
+    ],
+    "red_flags": [
+      "ROE <1% — the business generates virtually no economic return on capital",
+      "P/E may be distorted by one-off IPO-period earnings given SME-listed status",
+      "Zero DII ownership suggests no quality institution has validated this name"
+    ],
+    "detailed_analysis": "The Magic Formula ranks companies on two axes: earnings yield (cheapness) and return on capital (business quality). Infonative fails decisively on the second axis. A 0.45% ROE — even after assuming modest leverage — implies ROIC in low single digits, orders of magnitude below the >20% bar that makes a business worth owning. The whole point of the Magic Formula is to buy good businesses cheaply; a mediocre business at any price is still mediocre, and compounding at near-zero destroys value over time relative to a risk-free alternative.\n\nThe apparent 7.96 P/E and resulting ~12.5% earnings yield look attractive in isolation, but SME/micro-cap IPOs frequently show inflated trailing earnings from the listing period that don't persist. With a 30 Cr market cap, 0% DII ownership, and a custom e-learning niche with low barriers to entry, there is no identifiable moat to sustain returns even if profitability improved. This is a clear avoid — it's cheap-looking but not good, which is exactly the combination the Magic Formula is designed to filter out.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "insufficient_data",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 22688,
+    "model_used": "opus",
+    "total_cost_usd": 0.09469399999999999,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 9010,
+      "cache_read_input_tokens": 13453,
+      "output_tokens": 1265,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9010,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10583,
+          "cache_creation_input_tokens": 1297,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1297
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

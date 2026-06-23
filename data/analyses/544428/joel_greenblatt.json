@@ -1,0 +1,69 @@
+{
+  "symbol": "544428",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-20T20:03:36.465023Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Supertech EV fails the Magic Formula decisively: ROE of 0.47% implies near-zero return on capital, so even a superficially cheap P/E of 8.21 is meaningless. A \"cheap bad business\" is still a bad business — this is the opposite of what the formula seeks.",
+    "key_strengths": [
+      "Optically low P/E of 8.21 suggests headline cheapness",
+      "High promoter skin-in-the-game at 69.31%",
+      "Exposure to a structurally growing EV 2W/3W segment in India"
+    ],
+    "key_risks": [
+      "ROE of 0.47% signals capital is earning virtually nothing — ROIC almost certainly <5%",
+      "Tiny Rs 54 Cr micro-cap incorporated only in 2022 — no operating track record",
+      "Brutal competition from Ola, TVS, Bajaj, Ather in 2W EV with thin/negative margins"
+    ],
+    "red_flags": [
+      "ROE 0.47% — fails Greenblatt's ROIC threshold by an order of magnitude",
+      "Zero DII ownership — no institutional validation",
+      "Sub-3-year-old company — Magic Formula requires sustained ROIC, impossible to verify here"
+    ],
+    "detailed_analysis": "From a Magic Formula lens, the two inputs that matter are earnings yield (EBIT/EV) and return on capital. The P/E of 8.21 hints at an earnings yield around 10–12%, which is borderline-attractive on its own. But ROE of 0.47% is catastrophic — a business earning less than half a percent on equity is destroying economic value once you account for any cost of capital. ROIC is almost certainly in low single digits, well below my 20%+ screen. The formula only works when cheap meets good; this is cheap meets terrible.\n\nAdditionally, a 2022-incorporated Rs 54 Cr micro-cap in the hyper-competitive Indian EV 2W/3W space has no durable evidence of the high, sustained ROIC the strategy demands. Without positive operating economics to compound, the low P/E is a value trap, not a bargain. I'd skip this and let the screen surface businesses that actually earn high returns on the capital they deploy.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 36277,
+    "model_used": "opus",
+    "total_cost_usd": 0.09505475,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8963,
+      "cache_read_input_tokens": 13462,
+      "output_tokens": 1291,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8963,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 95,
+          "cache_read_input_tokens": 10592,
+          "cache_creation_input_tokens": 1241,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1241
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

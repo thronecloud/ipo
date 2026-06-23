@@ -1,0 +1,70 @@
+{
+  "symbol": "ACMESOLAR",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-19T06:20:20.703758Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "ACME Solar is a highly leveraged IPO-stage utility with Debt/Equity of 2.72, borrowings of INR 12,998 Cr against equity of only INR 4,784 Cr, and an interest coverage ratio of approximately 1.6x — well below my minimum of 3.5x. Revenue has been declining for five years (-4.6% CAGR) and free cash flow has been deeply negative in three of the last four years, funded entirely by ever-rising debt.",
+    "key_strengths": [
+      "Operating cash flow has been positive in all 5 years (INR 1,543 Cr in FY25), reflecting the utility-like cash generation of long-term PPA contracts",
+      "Operating margin of 65% and gross margin of 99% illustrate the inherent economics of solar once assets are built — near-zero marginal cost of generation",
+      "Recent equity infusion (equity grew from INR 2,591 Cr to INR 4,784 Cr in FY25) partially reduces the debt overhang"
+    ],
+    "key_risks": [
+      "Finance costs of INR 759 Cr consume 61% of operating income (INR 1,237 Cr) — interest coverage of ~1.6x is far below my 3.5x minimum and leaves no buffer for revenue shortfalls",
+      "Borrowings have surged to INR 12,998 Cr in FY25 from INR 7,915 Cr in FY22 — the company is in a debt-financed growth trap that requires continuous capital market access",
+      "Revenue has declined from INR 1,777 Cr (FY20) to INR 1,405 Cr (FY25) on the existing portfolio — new growth depends entirely on unbuilt capacity financed with fresh debt"
+    ],
+    "red_flags": [
+      "Interest coverage of approximately 1.6x (operating income INR 1,237 Cr / finance cost INR 759 Cr) — catastrophically below my 3.5x minimum; a 40% revenue drop would make this company insolvent",
+      "Net profit is unreliable: FY24 profit of INR 698 Cr included INR 891 Cr of 'other income'; stripping this out reveals the core business earns almost nothing",
+      "Free cash flow was -INR 1,719 Cr in FY25 and -INR 1,368 Cr in FY24 — the company is a cash incinerator, not a cash generator",
+      "Recently listed (IPO) with a promoter holding of 83.3% — concentrated ownership and a fresh listing means I lack the multi-year public company track record I require"
+    ],
+    "detailed_analysis": "The solar power business model is structurally sound in isolation — long-term power purchase agreements, minimal operating costs, and predictable cash flows. But ACME Solar has buried these decent underlying economics under a mountain of debt. With INR 10,976 Cr of total debt versus INR 4,784 Cr of equity, the company is effectively a leveraged bet on solar power prices and government payments. Finance costs alone consume INR 759 Cr per year — more than three times the reported net profit of INR 251 Cr — and my computed interest coverage of 1.6x is the kind of ratio I associate with companies on the verge of financial distress, not sound investments.\n\nThe reported earnings are also highly suspect. FY24's net profit of INR 698 Cr was inflated by INR 891 Cr of 'other income' — without that non-recurring item, the company would have posted a loss. FY23 was indeed a loss year. This is not the 'stable earnings over five or more years' that my framework demands before I will even consider a stock. At 36.8x earnings and 3.86x book, investors are paying a significant premium for a business with unreliable profits, a dangerous debt load, and a track record of negative free cash flow. Mr Market is pricing the rosy future; I demand compensation for the present risks.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 158149,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.22667820000000002,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 22850,
+      "cache_read_input_tokens": 14439,
+      "output_tokens": 9110,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 22850,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 576,
+          "cache_read_input_tokens": 14439,
+          "cache_creation_input_tokens": 8411,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8411
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

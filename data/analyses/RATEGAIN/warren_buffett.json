@@ -1,0 +1,68 @@
+{
+  "symbol": "RATEGAIN",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T22:09:03.854614Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "RateGain is a niche vertical SaaS for travel/hospitality with impressive revenue CAGR of 26.6% and a near debt-free balance sheet, but thin 11% operating margins and sub-15% ROE make it an average business at a fair — not compelling — price. At 34.8x trailing P/E, there is insufficient margin of safety for a business still proving its moat durability.",
+    "key_strengths": [
+      "Nearly debt-free (D/E: 0.01) with INR 347 Cr cash — a fortress balance sheet that lets management invest without distress",
+      "Asset-light model: capex just INR 6 Cr in FY25, generating INR 114 Cr FCF with 61% gross margins indicating real software economics",
+      "Strong revenue momentum (26.6% CAGR) with net profit scaling faster at 63.4% CAGR — operating leverage is beginning to emerge"
+    ],
+    "key_risks": [
+      "Operating margin of only 11% is poor for SaaS at scale — global peers like OTA Insight or Duetto suggest pricing power or cost discipline is lacking",
+      "FY25 OCF fell from INR 152 Cr to 120 Cr despite net profit rising from 145 to 209 Cr — gap may signal working capital strain or inflated non-cash earnings (other income INR 76 Cr is ~36% of net profit)",
+      "Concentrated exposure to travel/hospitality cyclicality — FY2020-21 losses proved this sector punishes vendors hard in downturns"
+    ],
+    "red_flags": [
+      "Other income of INR 76 Cr (FY25) equals 36% of net profit — inflates earnings quality; strip this and core operating ROE is materially lower than 13.3%",
+      "FY24 saw -INR 566 Cr investing CF offset by +INR 581 Cr financing CF — acquisition-heavy growth funded by capital raises risks dilution and integration risk"
+    ],
+    "detailed_analysis": "RateGain occupies a defensible niche — rate intelligence and distribution software for hotels, airlines, and OTAs — that carries genuine switching costs once embedded in a property management stack. Revenue has compounded at 26.6% over six years, and EBITDA at 38.8%, showing real operating leverage. The balance sheet is pristine: barely INR 15 Cr of debt against INR 347 Cr cash. These are not trivial positives. However, for a software company that has been operating since 2004, an 11% operating margin and 13.3% ROE fall well short of what I expect from a truly wonderful business. A wide-moat SaaS company should be earning 25–35% operating margins at this revenue scale, not 11%.\n\nThe earnings quality concern is real. FY25 net profit of INR 209 Cr includes INR 76 Cr of other income — likely interest on cash and short-term investments. Strip that out and operating profits are closer to INR 133 Cr, placing the true operating P/E closer to 52x. Simultaneously, OCF declined year-over-year to INR 120 Cr despite reported profit growth, which warrants scrutiny. At 34.8x P/E (or higher on an operating basis), I need to see exceptional moat economics to justify the price. RateGain is a decent, growing business in a cyclical sector — not the kind of inevitable, wide-moat franchise that compels me to act boldly.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "fair",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 58987,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08674515,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11269,
+      "cache_read_input_tokens": 8908,
+      "output_tokens": 2787,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11269,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 466,
+          "cache_read_input_tokens": 8908,
+          "cache_creation_input_tokens": 2361,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2361
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

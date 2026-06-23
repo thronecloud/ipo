@@ -1,0 +1,69 @@
+{
+  "symbol": "COHANCE",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-19T06:09:34.518679Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Cohance (formerly Suven Pharmaceuticals) is a business in structural decline — revenue, EBITDA, net profit, and margins have all contracted sharply from their 2022 peaks, and a massive acquisition in FY25 has nearly tripled total assets while borrowings jumped 7x, adding complexity and leverage to an already weakening operation. At EV/EBITDA of 94.69x on contracting earnings, the valuation is detached from business reality.",
+    "key_strengths": [
+      "Reasonable promoter holding at 57.5% with strong DII backing (21.6%) signals some institutional confidence in the transformation story",
+      "Revenue CAGR of 21.2% over 6 years is superficially impressive, and CDMO/CRO model can have long-term secular tailwinds",
+      "Debt/Equity remains at 0.11 at the subsidiary level, though group-level debt jumped significantly in FY25"
+    ],
+    "key_risks": [
+      "Operating margins collapsed from ~43% (FY22) to 8.89% today — this is not a temporary dip but a fundamental change in business mix as the high-margin Suven NCE license income evaporated",
+      "Total assets ballooned from Rs 2,254 Cr to Rs 5,568 Cr in FY25 (a Rs 3,314 Cr jump) while borrowings jumped from Rs 65 Cr to Rs 451 Cr — a massive acquisition at peak cycle creates integration risk and capital allocation uncertainty",
+      "Net profit fell from Rs 454 Cr (FY22 peak) to Rs 265 Cr (FY25), a 42% decline — paying 50x earnings for a contracting earnings base is speculative"
+    ],
+    "red_flags": [
+      "EV/EBITDA of 94.69x — one of the highest multiples I have seen for a business with contracting earnings; this screams hope-based pricing",
+      "The business was renamed from Suven Pharmaceuticals to Cohance Lifesciences in May 2025 — name changes often signal a business model discontinuity and an attempt to reframe a declining narrative",
+      "Operating income dropped from Rs 574 Cr (FY23) to Rs 375 Cr (FY25) while the market cap is Rs 14,955 Cr — Mr. Market is paying enormous amounts for earnings that are shrinking, not growing"
+    ],
+    "detailed_analysis": "Cohance is the classic case of mistaking a former high-quality business for a current one. Suven Pharmaceuticals was a remarkable compounder when it earned royalties and milestone payments from NCE drug discovery partnerships — margins were extraordinary, capital requirements were low, and profits were growing. That era ended when the NCE pipeline ran its course. The renamed entity is now pivoting toward CDMO services (APIs, intermediates, ADCs, oligonucleotides), which is a respectable but intensely competitive business where margins of 8-10% are typical, not exceptional. The FY25 acquisition — evidenced by the Rs 3,314 Cr jump in total assets and massive increase in equity/borrowings — represents a significant bet on scale, but acquisitions in CDMO are notoriously difficult to integrate.\n\nI apply a simple test: would I buy the entire business at its current price? At Rs 14,955 Cr market cap, I would be paying roughly 56x trailing net profit for a business whose profits have fallen 42% from peak, whose margins have compressed from 43% to 9%, and whose business model has fundamentally changed. The forward P/E of 35.86x offers little comfort — even if earnings recover, this is not a wonderful business at a fair price. This is a speculative restructuring story dressed up in pharma-sector clothing.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 169262,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.23907825000000002,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 24727,
+      "cache_read_input_tokens": 15910,
+      "output_tokens": 9438,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 24727,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 542,
+          "cache_read_input_tokens": 15910,
+          "cache_creation_input_tokens": 8817,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8817
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

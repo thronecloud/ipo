@@ -1,0 +1,69 @@
+{
+  "symbol": "PRUDENT",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T22:09:09.063516Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Prudent Corporate is a well-run mutual fund distributor with seven consecutive years of profit and negligible debt, but at P/E 53x and P/B 14.9x it trades at roughly 6x its Graham Number (≈INR 443), offering zero margin of safety. The entire price rests on speculative growth assumptions, not proven earning power — precisely the kind of speculation I have spent my career warning against.",
+    "key_strengths": [
+      "Negligible debt — D/E of 0.04, interest coverage ~146x (INR 292 Cr EBIT vs INR 2 Cr finance cost)",
+      "Seven consecutive years of positive and accelerating net profit (INR 21 Cr → INR 196 Cr, 45% CAGR)",
+      "Asset-light model generating consistent free cash flow (INR 143 Cr in FY25) with virtually no capex"
+    ],
+    "key_risks": [
+      "Valuation is ruinous by any conservative measure — P/E 53x, P/B 14.9x, price is 6.2x the Graham Number of ~INR 443",
+      "Mutual fund distribution revenue is entirely market-linked; any equity bear market compresses AUM, trails, and profits simultaneously",
+      "No dividend data provided — shareholder returns are pure price speculation, not real cash in hand"
+    ],
+    "red_flags": [
+      "P/B of 14.94 — paying INR 14.94 for every INR 1 of net assets; my ceiling is INR 1.50",
+      "P/E of 53x embeds a decade of optimistic growth; earnings would need to grow ~3.5x with no price change to reach my 15x threshold",
+      "Heavy investing cash outflows (-INR 142 Cr in FY25) against OCF of INR 161 Cr leave almost nothing for genuine shareholder returns"
+    ],
+    "detailed_analysis": "By my quantitative filters, Prudent Corporate fails on every valuation metric. The Graham Number — sqrt(22.5 × EPS ~INR 47 × BVPS ~INR 184) — yields roughly INR 443. The stock trades at INR 2,752, a 520% premium to that figure. P/E at 53x is more than three times my maximum of 15x; P/B at 14.9x is nearly ten times my upper limit of 1.5x. Mr. Market is offering this business at a price that assumes perpetual high-growth conditions — the very thing the intelligent investor must never pay for.\n\nI grant the business has genuine merit: seven years of unbroken profitability, ROCE of 44%, and debt so small it is irrelevant. These qualities keep it from scoring zero. But quality and price are different things. A fine house at ten times its value remains a bad purchase. The mutual fund distribution business is also structurally cyclical — AUM, and therefore trail commissions, collapse in bear markets, yet the stock is priced as though a bear market is impossible. I see no margin of safety, no floor of asset value, and no dividend to compensate me for waiting. I would not buy this stock at any price near current levels.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 48777,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07061925,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8773,
+      "cache_read_input_tokens": 10905,
+      "output_tokens": 2296,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8773,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 362,
+          "cache_read_input_tokens": 8855,
+          "cache_creation_input_tokens": 1968,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1968
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

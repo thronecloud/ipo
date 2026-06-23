@@ -1,0 +1,68 @@
+{
+  "symbol": "FIEMIND",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T17:17:20.274941Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Fiem Industries is a financially disciplined, nearly debt-free auto ancillary with improving ROCE of 27.8% and net profit CAGR of 15.3% — respectable numbers for the sector. However, as an OEM-dependent lighting supplier to 2-wheeler manufacturers, it lacks the durable pricing power and brand moat I require before committing capital at 5.5x book.",
+    "key_strengths": [
+      "Nearly debt-free balance sheet (D/E 0.06) with INR 298 Cr cash vs. INR 22 Cr debt — management has clearly been excellent capital stewards, retiring debt from INR 127 Cr (2020) to near zero",
+      "ROCE of 27.8% and ROE of 21% are genuinely impressive for an auto parts manufacturer, with operating income growing from INR 134 Cr (2021) to INR 322 Cr (2025) on expanding margins",
+      "OCF positive all 5 years with strong 2025 bounce to INR 233 Cr; revenue CAGR of 10.5% is consistent and reflects real underlying auto sector demand"
+    ],
+    "key_risks": [
+      "OEM customer concentration — Fiem sells to Hero, Honda, TVS, Bajaj; these buyers extract pricing concessions ruthlessly, capping margin expansion and eliminating pricing power",
+      "Surging capex (INR 19 Cr in 2022 → INR 130 Cr in 2025) signals capital intensity rising sharply; FCF of only INR 132 Cr against a INR 5,946 Cr market cap yields a thin 2.2% free cash flow yield",
+      "Cyclical exposure — revenue contracted from INR 1,449 Cr (2019) to INR 1,221 Cr (2021) during the 2-wheeler downcycle, confirming this is not a business with steady, recession-resistant earnings"
+    ],
+    "red_flags": [
+      "Rising capex trajectory (130 Cr in FY25) risks eroding the historically strong FCF generation if the 2-wheeler cycle turns down",
+      "P/B of 5.5x is elevated for a commoditized OEM supplier with no identifiable consumer brand"
+    ],
+    "detailed_analysis": "Fiem Industries is the kind of business I can understand — it makes lights, mirrors, and plastic parts for motorcycles and scooters. The financial stewardship has been genuinely admirable: management took debt from INR 127 Cr in 2020 to virtually zero today while building a INR 298 Cr cash pile, and ROCE of 27.8% is well above what most auto ancillaries deliver. Revenue has grown at 10.5% CAGR over nine years with expanding margins, and net profit has compounded at 15.3%. These are respectable numbers.\n\nThe fundamental problem, seen through my lens, is that OEM auto parts suppliers rarely possess durable economic moats. Hero MotoCorp or Honda can, and do, multi-source lighting components; switching costs are low and price pressure is constant. The 2019-2021 cycle — where revenue fell 16% and net profit nearly halved — illustrates the earnings fragility that concerns me deeply. The valuation at 24.7x P/E and 5.5x book is not cheap enough to compensate for these characteristics. At ~20x forward earnings for a cyclical, OEM-dependent manufacturer with rising capex, this is a fair price for a decent business — not a wonderful business at a fair price. I would neither aggressively buy nor sell; existing holders can hold comfortably given the clean balance sheet, but I would wait for a cyclical dip to the 15-18x P/E range before adding meaningfully.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "good",
+      "financial_health": "excellent",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 47268,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08549309999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11240,
+      "cache_read_input_tokens": 9047,
+      "output_tokens": 2708,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11240
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 542,
+          "cache_read_input_tokens": 9047,
+          "cache_creation_input_tokens": 2193,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2193,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

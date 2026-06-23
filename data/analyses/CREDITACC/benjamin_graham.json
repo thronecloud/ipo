@@ -1,0 +1,69 @@
+{
+  "symbol": "CREDITACC",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-19T13:01:24.614480Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "CreditAccess Grameen's net profit collapsed 63% in a single year — from INR 1,446 Cr (FY24) to INR 531 Cr (FY25) — a catastrophic earnings deterioration reflecting the microfinance sector NPA crisis, yet the stock still trades at 41.8x these depressed trailing earnings and 2.82x book value. For a leveraged lending institution with structurally negative operating cash flows and a distressed loan book, this is not a bargain — it is speculation on recovery.",
+    "key_strengths": [
+      "Strong promoter holding of 66.3% and growing loan book (assets expanded to INR 27,679 Cr) demonstrates scale and market position in underpenetrated rural credit",
+      "Forward P/E of 13.65x suggests analysts expect substantial earnings normalisation, which if achieved would bring valuation toward acceptable territory for a NBFC",
+      "Revenue has grown at 28.4% CAGR over six years, indicating genuine franchise value in the microfinance ecosystem"
+    ],
+    "key_risks": [
+      "Operating cash flow has been negative for four of the past five years (accumulated OCF outflow of ~INR 11,200 Cr from FY20–FY24), entirely funded by debt issuance — this is structurally dependent on capital market access",
+      "ROE of only 7.86% is unacceptable for a financial institution with debt/equity of 2.81x; after cost of debt, the equity spread is negligible or negative",
+      "The microfinance sector is experiencing a systemic overleveraging crisis in India; multiple-borrower stress has driven NPAs across all MFIs, and CreditAccess is not immune"
+    ],
+    "red_flags": [
+      "Net profit crashed 63% YoY (INR 1,446 Cr → INR 531 Cr) — I require stable, consistent earnings; this is the opposite",
+      "For financial companies I pay particular attention to P/B; at 2.82x book, I am paying a substantial premium to net assets for a business whose asset quality is under acute stress",
+      "Graham Number ≈ INR 553 (EPS ~INR 30, BVPS ~INR 449); stock at INR 1,265 is 2.3x that figure even using the conservatively-calculated intrinsic value"
+    ],
+    "detailed_analysis": "Microfinance companies present unusual analytical challenges because disbursing loans appears as operating cash outflow, making conventional OCF analysis misleading. Nevertheless, CreditAccess fails on every metric I consider foundational: the trailing P/E of 41.8x is computed on earnings that have just collapsed 63%; the ROE of 7.86% barely covers the nominal cost of equity; and the debt/equity of 2.81x means the business is highly sensitive to funding markets and borrower repayment behaviour simultaneously.\n\nThe intelligent investor does not attempt to catch a falling knife on the basis of analyst forecasts. The forward P/E of 13.65x is seductive, but it requires a tripling of earnings from the FY25 level — a recovery that depends on the entire Indian microfinance sector stabilising, NPA provisioning being adequate (not excessive), and collection efficiency returning to pre-crisis norms. All of these are unknowable today. I would need to see two or three years of restored earnings, a P/B closer to 1.0–1.2x, and evidence that the current loan book's quality is sound before I would consider this seriously.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 156176,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.21759810000000002,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 23420,
+      "cache_read_input_tokens": 15947,
+      "output_tokens": 8332,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 23420,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 726,
+          "cache_read_input_tokens": 15947,
+          "cache_creation_input_tokens": 7473,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 7473
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

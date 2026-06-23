@@ -1,0 +1,69 @@
+{
+  "symbol": "HERITGFOOD",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-18T17:43:13.387154Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Heritage Foods is a South Indian dairy stalwart with decent ROCE but razor-thin operating margins (3.81%) and sluggish 6.3% revenue CAGR — not the fast-grower story I need. The PEG of ~1.4x (P/E 20.4 / 9Y earnings CAGR 14.6%) is stretched for a commodity dairy business, though the improving forward P/E of 15.5 hints at near-term earnings acceleration worth monitoring.",
+    "key_strengths": [
+      "Excellent capital efficiency: ROCE 25.3% and ROE 20.2% are impressive for a thin-margin dairy business",
+      "Very low leverage (D/E 0.21) with declining finance costs, giving balance sheet room to fund expansion",
+      "Net profit on genuine recovery trajectory: INR 58 Cr (2023) → 107 Cr (2024) → 188 Cr (2025)"
+    ],
+    "key_risks": [
+      "Commodity dairy margins are structurally thin at 3.81% operating margin — any milk procurement cost spike destroys profitability",
+      "Revenue CAGR of only 6.3% over 9 years is far below Lynch's 15-25% threshold for a compelling growth story",
+      "Massive capex surge (INR 176 Cr in FY25, CWIP at 159 Cr) risks FCF destruction if capacity expansion doesn't deliver volume growth"
+    ],
+    "red_flags": [
+      "Historical earnings wildly distorted by large 'Other Income' from asset disposals (INR 251–402 Cr in 2017–2020), masking true operating weakness",
+      "Operating income swung negative in FY2018 and FY2020 — this business has very low margin of safety in downturns",
+      "FCF turned deeply negative in FY2023 (–INR 140 Cr) and barely positive in FY2025 (INR 42 Cr) despite INR 188 Cr net profit — earnings quality concern"
+    ],
+    "detailed_analysis": "Heritage Foods is a textbook stalwart/slow-grower — exactly the type I hold but don't get excited about. With 9-year revenue CAGR of just 6.3%, this isn't going to be a ten-bagger. The PEG ratio of ~1.4x (P/E 20.4x on 14.6% earnings CAGR) is uninspiring; I want PEG below 1.0 before I get enthusiastic. The one bright spot is the ROCE of 25.3%, which tells me management squeezes real returns from thin-margin dairy — that's operationally respectable. The low D/E of 0.21 and improving profit trajectory (INR 58→107→188 Cr over three years) at least tell a recovery story.\n\nWhat keeps me cautious is the structural fragility of the business model. Operating margins at 3.81% leave almost no buffer — a bad monsoon or milk procurement cost spike sends profits to zero, as we saw in FY2020 (net loss of INR 169 Cr). The historical \"Other Income\" windfalls from asset divestitures inflated reported earnings for years, making the real operating story murkier than it looks. The current capex cycle (INR 176 Cr in FY25) is building future capacity, but FCF is getting squeezed hard. At INR 360/share and market cap of INR 3,338 Cr, the forward P/E of 15.5x is reasonable if earnings growth sustains, but dairy commoditization means I'd need to see the story improve materially before upgrading.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 55923,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08583915,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11331,
+      "cache_read_input_tokens": 9013,
+      "output_tokens": 2709,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11331
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 434,
+          "cache_read_input_tokens": 9013,
+          "cache_creation_input_tokens": 2318,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2318,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

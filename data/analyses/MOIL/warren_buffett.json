@@ -1,0 +1,69 @@
+{
+  "symbol": "MOIL",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T18:19:43.280744Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "MOIL is a government-owned manganese ore miner — a cyclical commodity price-taker with no pricing power, volatile earnings, and ROE of just 8.31% far below my 15% threshold. At 64x trailing P/E with a forward P/E implying a near-5x earnings surge, the valuation is speculative rather than value-based.",
+    "key_strengths": [
+      "Zero debt across the entire history — clean balance sheet with equity of ₹2,638 Cr funding the business",
+      "India's dominant manganese ore producer with government-backed mining leases providing some regulatory protection",
+      "Operating cash flow positive all 5 of 5 years, with OCF recovering to ₹434 Cr in FY25"
+    ],
+    "key_risks": [
+      "Classic commodity cyclicality: net profit swung from ₹478 Cr (FY19) → ₹248 Cr (FY20) → ₹251 Cr (FY23) — unpredictability I deeply dislike",
+      "Other income (interest on cash reserves) has contracted at -10.6% CAGR, stripping away the financial cushion that inflated historical EPS",
+      "Capex running ₹297–306 Cr/yr while FCF was negative in FY23 (–₹33 Cr) and FY24 (–₹52 Cr) — capital intensity is rising without proportionate return improvement"
+    ],
+    "red_flags": [
+      "ROE of 8.31% and ROCE of 11.40% are well below my 15% threshold — capital is not earning its keep",
+      "Trailing P/E of 64.2x on a mining company with volatile earnings is an absurd entry price regardless of the cycle",
+      "PSU management (64.68% government promoter) historically sub-optimally allocates capital — large cash hoards earned low returns for years"
+    ],
+    "detailed_analysis": "MOIL is precisely the type of business I avoid: a commodity producer with no control over its selling price. Manganese ore prices are set globally, making MOIL a pure price-taker. The 10-year earnings history tells the whole story — profits gyrated between ₹173 Cr and ₹478 Cr purely on commodity cycles, not on management brilliance or competitive advantage. A wonderful business earns high returns through cycles; MOIL earns 8.31% ROE at the peak. The gross margin of 78.52% sounds impressive but collapses to a 14.73% operating margin once mining costs and overheads are applied, revealing the operational fragility.\n\nThe valuation is particularly troubling. A trailing P/E of 64.2x on a cyclical miner implies the market is paying peak-cycle multiples on trough earnings — the most dangerous entry point possible. The forward P/E of 12.61 implies the market expects earnings to leap from ~₹104 Cr (implied by 64.2x on ₹6,673 Cr cap) to ~₹529 Cr — a near-5x jump — which looks like someone is pricing in a commodity super-cycle that may or may not materialize. The zero-debt balance sheet is genuinely commendable, but a clean balance sheet on a mediocre business at an expensive price is still a bad investment.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 51226,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08136825,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11155,
+      "cache_read_input_tokens": 8910,
+      "output_tokens": 2457,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11155
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 282,
+          "cache_read_input_tokens": 8910,
+          "cache_creation_input_tokens": 2245,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2245,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

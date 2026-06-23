@@ -1,0 +1,69 @@
+{
+  "symbol": "544381",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-20T19:46:32.590281Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Super Iron Foundry is a capital-intensive commodity casting business earning sub-par returns (ROE 6.2%, ROCE 7.41%) with no discernible moat, trading at a demanding 25.4x P/E. The economics simply don't justify the price — I want wonderful businesses at fair prices, and this is the opposite.",
+    "key_strengths": [
+      "High promoter holding at 70.88% signals owner commitment",
+      "Long operating history since 1988 with export exposure",
+      "Small-cap scale leaves theoretical room to grow"
+    ],
+    "key_risks": [
+      "ROE of 6.2% is far below cost of capital — value destruction",
+      "Castings/forgings is cyclical, commodity-priced, with no pricing power",
+      "P/E of 25.4 is absurd for a business earning single-digit returns"
+    ],
+    "red_flags": [
+      "Returns (ROCE 7.41%) likely below borrowing cost",
+      "No evidence of competitive moat in a commoditized industry",
+      "Tiny market cap (₹66 Cr) with limited liquidity and disclosure depth"
+    ],
+    "detailed_analysis": "Foundry work is precisely the kind of business I've spent a career avoiding: capital-intensive, cyclical, commoditized, and dependent on scrap/pig-iron input prices you cannot control. A 6.2% ROE and 7.41% ROCE tell me management is essentially running a machine that converts shareholder capital into slightly less shareholder capital after the cost of equity. Charlie would call this a \"fair business at a terrible price\" — and paying 25.4x earnings for a company earning well below its cost of capital violates every margin-of-safety principle I hold.\n\nThe 70.88% promoter stake is the only genuine positive, but owner commitment cannot manufacture a moat where none exists. Export-oriented castings compete on price against Chinese, Turkish, and domestic peers with similar economics. Without evidence of durable pricing power, consistent double-digit ROE, or rational capital allocation, this sits squarely outside my circle of interest. I'd want to see sustained ROE above 15% and a P/E below 12 before even picking up the annual report — neither is remotely close.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 25829,
+    "model_used": "opus",
+    "total_cost_usd": 0.09220025,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8929,
+      "cache_read_input_tokens": 13378,
+      "output_tokens": 1187,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8929,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10541,
+          "cache_creation_input_tokens": 1225,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1225
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

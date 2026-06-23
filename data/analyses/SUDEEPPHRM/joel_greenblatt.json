@@ -1,0 +1,69 @@
+{
+  "symbol": "SUDEEPPHRM",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-21T08:03:32.462465Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Sudeep Pharma is a genuinely good specialty pharma excipients business with ~35% ROCE and 32.5% revenue CAGR, but the Magic Formula rejects it decisively: Earnings Yield of only ~2.6% (EBIT INR 191 Cr / EV ~INR 7,391 Cr) is less than one-fifth of my 12% minimum threshold. You are paying a luxury price for a good but not exceptional business.",
+    "key_strengths": [
+      "High ROCE of ~35% and ROE of 32.8% confirm a genuinely capital-efficient business",
+      "Exceptional profitability: 32.6% operating margins and 63.4% gross margins in a commodity-adjacent sector",
+      "Strong revenue and EBITDA growth (32.5% and 47.9% five-year CAGRs respectively) with clean balance sheet (D/E 0.19)"
+    ],
+    "key_risks": [
+      "Valuation is prohibitive: EV/EBITDA 33x, P/E 46x — earnings yield of ~2.6% versus Magic Formula threshold of 12%+",
+      "Free cash flow is weak and erratic (FY2025: -INR 15 Cr; FY2022: -INR 77 Cr) despite strong reported PAT of INR 139 Cr",
+      "Capex intensity is rising sharply (INR 64 Cr capex, CWIP surging from 45 to 126 Cr) — OCF/PAT conversion only ~35%, signalling capital-hungry expansion phase"
+    ],
+    "red_flags": [
+      "Earnings Yield ~2.6% — catastrophically below Magic Formula threshold; market is pricing in years of perfect execution",
+      "OCF of INR 49 Cr versus PAT of INR 139 Cr (35% cash conversion) raises quality-of-earnings concerns",
+      "Finance costs growing at 47.6% CAGR — debt burden accelerating alongside capex, adding execution risk"
+    ],
+    "detailed_analysis": "Running the Magic Formula on Sudeep Pharma produces a clear verdict. Earnings Yield = EBIT (INR 191 Cr) / EV (Market Cap INR 7,290 Cr + Debt INR 138 Cr - Cash INR 37 Cr ≈ INR 7,391 Cr) = 2.58%. My minimum for attractiveness is 12%; very attractive is 15%+. Return on Capital using capital employed (Equity 725 + Debt 138 - Cash 37 = INR 826 Cr) gives EBIT/Capital ~23%, which is decent but not exceptional by my 25%+ \"excellent\" standard. The business scores well on quality but catastrophically on price — exactly the wrong combination for Magic Formula investing.\n\nThe cash flow picture amplifies the concern. Free cash flow has been negative in two of the last four years (FY2022 and FY2025), and FY2025 OCF of INR 49 Cr converts only 35% of the INR 139 Cr net profit — a warning sign that aggressive working capital build and heavy capex are consuming earnings. CWIP nearly tripled to INR 126 Cr, suggesting the company is mid-expansion. The business may be great in three years, but at 33x EV/EBITDA, that growth is already priced in and then some. Magic Formula discipline says: find good businesses at bargain prices. This is a good business at a full price. Pass.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 52161,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0831393,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11042,
+      "cache_read_input_tokens": 8876,
+      "output_tokens": 2604,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11042,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 468,
+          "cache_read_input_tokens": 8876,
+          "cache_creation_input_tokens": 2166,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2166
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

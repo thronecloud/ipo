@@ -1,0 +1,70 @@
+{
+  "symbol": "FSL",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-22T16:31:58.286105Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Firstsource trades at INR 239 vs. a Graham Number of ~INR 110 (computed from EPS ~₹8.6 and BVPS ~₹63), meaning the market demands a 117% premium over my intrinsic value estimate with no margin of safety whatsoever. With P/E at 24.1x and P/B at 3.78x — both more than double my maximum thresholds — Mr. Market is pricing in optimism I am unwilling to pay for.",
+    "key_strengths": [
+      "9+ consecutive years of positive net profit (2016–2025) — the minimum earnings continuity I demand",
+      "Revenue and operating income both growing steadily (10.6% and 13.4% CAGR over 9 years) with no loss years",
+      "Promoter holding of 53.66% and strong DII interest (25.49%) indicate institutional confidence in the business"
+    ],
+    "key_risks": [
+      "Valuation is the dominant risk: P/E 24.1x and P/B 3.78x leave zero margin of safety by any Graham standard",
+      "Debt surged sharply in FY2025 (borrowings +55% YoY to ₹2,369 Cr) while cash nearly evaporated (₹69 Cr → ₹13 Cr) — a dangerous combination",
+      "Finance costs compounding at 13.1% CAGR, outpacing net profit growth of 9.6% — earnings quality is being eroded by leverage"
+    ],
+    "red_flags": [
+      "Graham Number ~₹110 vs. price ₹239 — stock trades at 2.17x intrinsic value estimate",
+      "Debt/Equity of 0.54 breaches my 0.5 ceiling; FY2025 debt jump of ₹1,043 Cr with no disclosed acquisition rationale is unexplained",
+      "Free cash flow declining from ₹806 Cr (FY21) to ₹477 Cr (FY25) even as revenue grew 57% over the same period — FCF conversion is deteriorating",
+      "Near-zero cash of ₹13 Cr against ₹2,569 Cr total debt provides minimal liquidity buffer"
+    ],
+    "detailed_analysis": "Applying my quantitative filters, Firstsource fails on every valuation metric I use. A P/E of 24.1x is 60% above my absolute ceiling of 15x; P/B of 3.78x is more than twice my 1.5x limit. The Graham Number — the square root of (22.5 × ₹8.59 EPS × ₹63.1 BVPS) — yields approximately ₹110, against a market price of ₹239. The intelligent investor does not pay a 117% premium over the arithmetic of the balance sheet. The business itself is respectable: nine years of unbroken profits, modest but consistent revenue compounding, and a 15% ROE. But respectability and cheapness are different things entirely.\n\nWhat troubles me further is the balance sheet deterioration in FY2025. Borrowings jumped from ₹1,526 Cr to ₹2,369 Cr — a ₹843 Cr increase — while cash fell from ₹69 Cr to ₹13 Cr, and investing outflows reached ₹744 Cr. Finance costs are now ₹184 Cr annually and growing at 13.1% compounded, faster than net profit. Free cash flow has declined from ₹806 Cr in FY21 to ₹477 Cr in FY25 even as revenues expanded significantly — meaning the business is absorbing capital faster than it is generating it. I would require the price to fall near the Graham Number (roughly ₹110–₹120) before this stock entered my circle of consideration.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 52043,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07452344999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9383,
+      "cache_read_input_tokens": 11444,
+      "output_tokens": 2393,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9383,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 410,
+          "cache_read_input_tokens": 9394,
+          "cache_creation_input_tokens": 2039,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2039
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

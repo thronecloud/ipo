@@ -1,0 +1,69 @@
+{
+  "symbol": "CESC",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-19T12:56:22.745831Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "CESC possesses the one attribute I prize above all others: ten consecutive years of positive and growing net profits (INR 729 Cr in FY16 to INR 1,428 Cr in FY25). Unfortunately, its debt/equity of 1.41 — nearly three times my ceiling — and a P/B of 1.79 mean the margin of safety is inadequate at today's price.",
+    "key_strengths": [
+      "Ten unbroken years of net profit growth — this is the kind of earnings stability upon which I am willing to base an intrinsic value calculation",
+      "Operating cash flow positive in all 5 of the last 5 years, confirming that reported profits translate into real cash",
+      "Regulated electricity distribution utility in Kolkata — a legal monopoly franchise with predictable, if regulated, returns"
+    ],
+    "key_risks": [
+      "Debt/Equity of 1.41 is nearly three times my maximum of 0.5 — total borrowings of INR 18,811 Cr in FY25 represent a heavy burden that could become dangerous in a rising interest rate environment",
+      "Net profit growth has essentially flatlined: INR 1,397 Cr in FY23, INR 1,447 Cr in FY24, INR 1,428 Cr in FY25 — the business has stagnated despite revenue growth",
+      "Operating income CAGR of -1.6% over 9 years signals that core electricity generation is not a growth engine; profits increasingly depend on 'other income' from subsidiary and investment activity"
+    ],
+    "red_flags": [
+      "Capex surged to INR 1,863 Cr in FY25 from ~INR 770 Cr average in prior years — the large FY25 investing outflow of INR 3,013 Cr bears scrutiny",
+      "Free cash flow declined sharply to INR 729 Cr in FY25 from INR 1,586 Cr in FY24 as capex accelerated",
+      "Graham Number of approximately INR 152 versus current price of INR 171 — the stock offers no margin of safety and is modestly above intrinsic value by my formula"
+    ],
+    "detailed_analysis": "CESC is the closest of these five companies to what I would consider a 'defensive' investment in Graham's terminology. The ten-year earnings record is admirable and the utility franchise provides a genuine degree of competitive protection through regulatory licensing. However, I am not able to ignore a debt/equity of 1.41 — this is a utility that has consistently borrowed heavily to fund both its regulated infrastructure and its expansion into renewables, and that leverage is a source of financial risk in adverse conditions.\n\nThe Graham Number of approximately INR 152 sits below the current price of INR 171, meaning even my relatively permissive mathematical formula does not declare this a bargain. At INR 130–145 I would begin to take a serious interest. At current levels I hold and wait for Mr. Market to offer the margin of safety I require.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 220503,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.29222444999999997,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 27345,
+      "cache_read_input_tokens": 15939,
+      "output_tokens": 12326,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 27345,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 774,
+          "cache_read_input_tokens": 15939,
+          "cache_creation_input_tokens": 11406,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 11406
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

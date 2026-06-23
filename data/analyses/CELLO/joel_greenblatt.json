@@ -1,0 +1,68 @@
+{
+  "symbol": "CELLO",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T16:54:08.129020Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Cello World is a decent-quality business with ROCE of 23.7%, but at current prices the earnings yield (~5.4% EBIT/EV) falls below my 6% Magic Formula threshold, meaning you're paying full price for a good-but-not-great compounder. Wait for a meaningful price correction before initiating a position.",
+    "key_strengths": [
+      "High ROCE of 23.7% sustained over multiple years — passes the 'good business' half of the Magic Formula",
+      "Near-zero debt (borrowings collapsed from INR 334 Cr to INR 6 Cr) with 75% promoter skin-in-the-game",
+      "Consistent revenue (19.5% CAGR) and net profit (21.8% CAGR) growth over 4 years"
+    ],
+    "key_risks": [
+      "Earnings yield of ~5.4% (EBIT INR 510 Cr / EV ~INR 9,485 Cr) is below the Magic Formula's 6% floor — stock is not cheap",
+      "Poor FCF conversion: OCF of INR 262 Cr vs net profit of INR 365 Cr (72%), with FCF only INR 98 Cr — heavy capex cycle (INR 167–264 Cr/yr) is consuming earnings",
+      "Highly fragmented, commoditized categories (plasticware, glassware, appliances) with no clear pricing power moat — margins could compress from competition"
+    ],
+    "red_flags": [
+      "Other income surged to INR 45 Cr (2025) from INR 10 Cr (2021) — inflating reported net profit; strip this out and core earnings quality is weaker",
+      "Investing outflows of INR 553 Cr in FY25 vs OCF of only INR 262 Cr — company is spending nearly 2x its operating cash, funded by equity raise (financing CF +INR 311 Cr), diluting the return-on-capital story"
+    ],
+    "detailed_analysis": "Running the Magic Formula on Cello World: EBIT (FY25 Operating Income) = INR 510 Cr; Enterprise Value ≈ INR 9,532 Cr market cap + INR 5 Cr debt – INR 52 Cr cash = ~INR 9,485 Cr. Earnings Yield = 5.4% — below my 6% minimum. ROCE of 23.7% (provided) is solid and crosses the 20% hurdle for \"good business,\" but one good metric alone doesn't make a Magic Formula buy. The EV/EBITDA of 17.2x confirms the market is not offering a bargain here — you need both halves of the formula to work simultaneously.\n\nThe FCF story is concerning for a supposed asset-light consumer brand. Free cash flow of only INR 98 Cr against net profit of INR 365 Cr (27% conversion) signals heavy capital reinvestment — capex averaged INR 167–264 Cr over the last two years. The CWIP spike to INR 180 Cr in FY24 (now drawn down to INR 51 Cr) suggests a new capacity cycle. If this capex doesn't generate incremental ROIC above cost of capital, the Magic Formula rank deteriorates further. At a P/E of 30x current and 24x forward, the stock needs flawless execution with no margin compression — a bar too high for me to underwrite at today's price.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 52424,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08432685,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11335,
+      "cache_read_input_tokens": 9072,
+      "output_tokens": 2606,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11335
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 386,
+          "cache_read_input_tokens": 9072,
+          "cache_creation_input_tokens": 2263,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2263,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

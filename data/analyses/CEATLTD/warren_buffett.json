@@ -1,0 +1,69 @@
+{
+  "symbol": "CEATLTD",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-19T06:04:13.575218Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "CEAT operates in a fiercely competitive, commodity-like tyre industry where pricing power is limited and raw-material volatility (rubber, carbon black) crushes margins. With a net profit CAGR of just 0.9% over nine years, capital intensity running at ~INR 900 Cr/year in capex, and ROE well below my 15% minimum, this is not the kind of business I'd want to own forever.",
+    "key_strengths": [
+      "Revenue CAGR of 10.3% over nine years shows reasonable top-line expansion and brand presence in India's tyre market",
+      "Operating cash flow positive in all five of the last five years, demonstrating basic cash generation ability",
+      "Diversified product mix (two-wheelers, passenger cars, OHV, trucks) reduces single-segment concentration risk"
+    ],
+    "key_risks": [
+      "Net profit CAGR of 0.9% over nine years is essentially zero in real terms — earnings are hostage to rubber and crude oil prices",
+      "Borrowings surged from INR 1,792 Cr (FY24) to INR 3,114 Cr (FY25), pushing D/E to 0.68 and finance costs to INR 278 Cr growing at 11.9% CAGR",
+      "Free cash flow is deeply unreliable — negative in FY20 and FY22, only INR 149 Cr in FY25 — making this essentially a capex treadmill"
+    ],
+    "red_flags": [
+      "ROE of 11.8% and ROCE of 15.4% are below my 15% ROE floor for a good business",
+      "Operating margin of just 9% with no structural pricing power — MRF, Apollo, Bridgestone, and Chinese imports compete on price",
+      "Profit collapsed to INR 71 Cr in FY22 and INR 182 Cr in FY23 before recovering — this kind of volatility signals no durable moat"
+    ],
+    "detailed_analysis": "CEAT is a capital-intensive manufacturer in a commodity-like industry with no durable competitive advantage. The nine-year net profit growth of barely 0.9% CAGR, against revenue growing at 10.3%, tells the story: the business cannot retain earnings from growth. Annual capex of ~INR 900 Cr nearly consumes operating cash flows, leaving free cash flow thin and erratic. The recent spike in borrowings to INR 3,114 Cr in FY25 is worrying and must be watched closely.\n\nFrom a valuation standpoint, P/E of 24x and P/B of 3.3x are not bargain prices for a business with sub-12% ROE and near-zero long-run earnings growth. The tyre industry is fundamentally unattractive — raw materials are volatile, OEM customers have bargaining power, and consumers switch brands readily. This is precisely the type of capital-intensive, low-moat industrial business I have consistently avoided over six decades.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 146063,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.21417960000000003,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 23332,
+      "cache_read_input_tokens": 15902,
+      "output_tokens": 8127,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 23332,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 524,
+          "cache_read_input_tokens": 15902,
+          "cache_creation_input_tokens": 7430,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 7430
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

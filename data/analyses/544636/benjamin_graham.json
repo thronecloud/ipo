@@ -1,0 +1,70 @@
+{
+  "symbol": "544636",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-20T11:02:11.930691Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Western Overseas is a newly-listed micro-cap (INR 9.97 Cr) with a negligible 0.40% ROE, meaning the low 4.53x P/E reflects almost zero earning power rather than genuine value. Without a multi-year earnings record, dividend history, or meaningful scale, this fails every quantitative Graham filter and offers no margin of safety.",
+    "key_strengths": [
+      "Headline P/E of 4.53 is optically low, below Graham's 15x ceiling",
+      "Promoter holding of 70.09% signals skin in the game",
+      "Asset-light advisory model requires little capital to operate"
+    ],
+    "key_risks": [
+      "ROE of 0.40% indicates essentially no productive earning power",
+      "Recent BSE listing — no 3-5 year audited earnings track record required by Graham",
+      "Market cap of INR 9.97 Cr implies severe illiquidity and manipulation risk"
+    ],
+    "red_flags": [
+      "Recent IPO/listing — sellers know more than buyers",
+      "ROE near zero makes the low P/E meaningless",
+      "Micro-cap with no demonstrated competitive moat in a commoditized advisory niche",
+      "No disclosed dividend history"
+    ],
+    "detailed_analysis": "The arithmetic here is deceptive. A P/E of 4.53 looks like a bargain until one examines the denominator: ROE of 0.40% means the company earns roughly 40 paise on every INR 100 of shareholder equity — barely distinguishable from zero, and certainly below any reasonable cost of capital or even a savings account. In my framework, the Graham Number, interest coverage, and current ratio all require meaningful earnings to compute; here earnings are a rounding error. I see no margin of safety because there is no stable earning power to discount.\n\nFurthermore, this is a freshly listed micro-cap in visa and study-abroad advisory — a commoditized service with no durable competitive advantage, no pricing power, and no evidence of the 3-5 year consecutive profitability I demand. At INR 9.97 Cr market cap, the security is too small, too illiquid, and too speculative for a defensive or even enterprising investor. The promoter's 70% stake provides alignment but also concentration risk and minimal float. Mr. Market may offer this at any price, but the disciplined investor must decline. Avoid.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "insufficient_data",
+      "valuation": "overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 25419,
+    "model_used": "opus",
+    "total_cost_usd": 0.09545524999999999,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 9033,
+      "cache_read_input_tokens": 13488,
+      "output_tokens": 1289,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9033,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 11,
+          "cache_read_input_tokens": 10602,
+          "cache_creation_input_tokens": 1317,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1317
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

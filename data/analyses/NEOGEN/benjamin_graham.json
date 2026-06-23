@@ -1,0 +1,71 @@
+{
+  "symbol": "NEOGEN",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T18:28:38.831366Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Neogen Chemicals trades at INR 1,512 — roughly 5x my calculated Graham Number of ~INR 301 (sqrt(22.5 × EPS₁₃.₃ × BVPS₃₀₃)) — offering zero margin of safety. The business is being strangled by its own debt load, with finance costs consuming an ever-larger share of earnings while free cash flow has been negative every single year for five years.",
+    "key_strengths": [
+      "Nine consecutive years of positive net profit (2016–2025) — passes my earnings continuity test",
+      "Revenue CAGR of 25.6% over nine years demonstrates genuine end-market demand across pharma, agro, and battery sectors",
+      "Gross margin of 45.85% signals a real specialty franchise, not a commodity processor"
+    ],
+    "key_risks": [
+      "Borrowings exploded from INR 409 Cr to INR 1,132 Cr in a single year (FY25) — D/E now 1.41 vs my ceiling of 0.5; the company is dangerously leveraged",
+      "Interest coverage of only 2.8x (EBIT INR 136 Cr ÷ finance cost INR 48 Cr) falls below my 3.5x minimum — one bad year destroys debt-service capacity",
+      "Net profit has declined from INR 50 Cr (FY23) to INR 35 Cr (FY25) even as revenue grew 13% — finance costs are eating the business alive"
+    ],
+    "red_flags": [
+      "P/E of 150 is 10× my maximum threshold of 15 — the price contains a decade of speculative hope, not proven earning power",
+      "P/B of 4.98 is 3.3× my ceiling of 1.5 — you are paying INR 5 for every INR 1 of net assets",
+      "Free cash flow negative in every year from 2020–2025 (FY25 FCF: –INR 121 Cr) — this company has never converted profits to cash",
+      "Cash on hand collapsed to INR 5 Cr in FY25 against total debt of INR 597+ Cr — near-zero liquidity cushion",
+      "Other income swung from +INR 8 Cr (FY24) to –INR 10 Cr (FY25) — unexplained reversal warrants scrutiny"
+    ],
+    "detailed_analysis": "Neogen fails every quantitative filter I apply. The Graham Number — my bedrock of intrinsic value based on proven earning power and net assets — stands at approximately INR 301, implying the stock must fall 80% just to reach fair value. A P/E of 150 and P/B of 5.0 tell me that Mr. Market has priced in a brilliant future that the financial statements do not yet justify. The company earned only INR 35 Cr on a market capitalisation of nearly INR 4,000 Cr — an earnings yield of less than 1%. I require at minimum a 6–7% earnings yield before I even begin to negotiate.\n\nThe balance sheet has deteriorated sharply. Borrowings tripled in a single year to INR 1,132 Cr, and the cash pile has been reduced to an alarming INR 5 Cr. Capital expenditure is running at INR 317–318 Cr per year — entirely funded by debt — with INR 335 Cr still sitting in capital work-in-progress. Until these projects come onstream and begin generating cash, the company is essentially a leveraged bet on future capacity. That is speculation, not investment. The intelligent investor demands that he be paid to wait; here, the price demands that you pay dearly for the privilege of waiting.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 54605,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08524754999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9645,
+      "cache_read_input_tokens": 11216,
+      "output_tokens": 3047,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9645
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 566,
+          "cache_read_input_tokens": 9166,
+          "cache_creation_input_tokens": 2529,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2529,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

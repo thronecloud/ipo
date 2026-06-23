@@ -1,0 +1,69 @@
+{
+  "symbol": "ORIENTCEM",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T21:54:09.008408Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Orient Cement fails the Magic Formula on both axes — Earnings Yield of ~5.6% (EBIT ₹168 Cr / EV ~₹2,999 Cr) sits below the 6% minimum threshold, and ROCE of 9.3% is less than half the 20% floor I require to call a business \"good.\" A cheap stock getting cheaper earnings is a value trap, not a bargain.",
+    "key_strengths": [
+      "Nearly debt-free balance sheet (D/E 0.04, debt collapsed from ₹316 Cr to ₹70 Cr in 3 years) — capital is not being destroyed by interest.",
+      "Operating cash flow positive all 4 years despite margin compression; FCF of ₹146 Cr in FY25 still positive.",
+      "Strong promoter backing at 72.66% under Ambuja/Adani umbrella — unlikely to face governance or solvency crisis."
+    ],
+    "key_risks": [
+      "EBIT CAGR of -28% over 3 years — this is not cyclical noise; pricing power is structurally absent in a commodity cement market.",
+      "Operating margin of 6.56% leaves almost no buffer: any cost spike (energy, freight) eliminates profit entirely.",
+      "Revenue flat at -0.2% CAGR while EBITDA fell -18.7% — operating leverage is working in reverse, not the direction I want."
+    ],
+    "red_flags": [
+      "EBIT collapsed from ₹451 Cr (FY22) to ₹168 Cr (FY25) — a 63% earnings decline while revenue barely moved, signalling severe margin erosion.",
+      "ROE of only 5.05% on an equity base of ₹1,808 Cr — capital is being retained in the business but earning almost nothing.",
+      "Forward P/E (13.6x) is higher than trailing P/E (9.18x) — the market is pricing in further earnings decline, not recovery."
+    ],
+    "detailed_analysis": "Magic Formula math kills this one quickly. Earnings Yield = EBIT ₹168 Cr / EV ~₹2,999 Cr = 5.6% — below my 6% floor and nowhere near the 12-15% I find exciting. Return on Capital proxied by ROCE sits at 9.3%, less than half the 20% I consider \"good.\" For the Magic Formula to work, I need BOTH metrics to be attractive simultaneously. Orient Cement delivers neither. The superficially low P/E of 9.2x is deceiving — it reflects FY25 earnings that are already 65% below FY22 levels, and the forward P/E expanding to 13.6x tells you consensus expects further deterioration.\n\nThe business is a commodity cement manufacturer competing in one of India's most fragmented, cost-driven industries. High gross margins (46%) are typical for cement (limestone is cheap), but they evaporate at the EBITDA line (11.8%) and collapse to the net line (3.4% net margin). This is a capital-intensive, low-ROIC, low-pricing-power business — exactly the profile the Magic Formula is designed to avoid. The clean balance sheet (D/E 0.04) and consistent OCF are genuine positives, but they're insufficient to overcome structurally poor returns on the capital base. I'd need to see EBIT/EV above 10% and ROIC sustainably above 20% before revisiting.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 45074,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0788478,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10560,
+      "cache_read_input_tokens": 8446,
+      "output_tokens": 2447,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10560,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 388,
+          "cache_read_input_tokens": 8446,
+          "cache_creation_input_tokens": 2114,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2114
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

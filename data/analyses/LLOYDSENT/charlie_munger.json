@@ -1,0 +1,71 @@
+{
+  "symbol": "LLOYDSENT",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T18:22:48.384630Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Lloyds Enterprises is a sprawling conglomerate (steel trading, real estate, mining, engineering, and pizza outlets) built atop a near-dormant shell with revenue of just ₹1 Cr in 2020–21, now priced at 78x EV/EBITDA with ROCE of only 5.97% — far below any reasonable cost of capital. Reported profits are largely manufactured by \"Other Income\" (₹83–159 Cr annually), not by the operating business, making the earnings quality deeply suspect.",
+    "key_strengths": [
+      "Revenue trajectory is real: ₹1 Cr (2021) → ₹1,488 Cr (2025), demonstrating some operational build-out",
+      "Low financial leverage at Debt/Equity 0.16 (though borrowings jumped 5x to ₹671 Cr in FY25)",
+      "Promoter holding of 62.72% aligns management with long-term outcomes"
+    ],
+    "key_risks": [
+      "Earnings quality is fraudulent-adjacent: Other Income (₹159 Cr in FY22, ₹135 Cr in FY24, ₹83 Cr in FY25) routinely exceeds or matches operating profit — reported net profits are not from the business",
+      "Egregious valuation: EV/EBITDA of 78x and P/E of 37x for a steel trader with 6% operating margins and ROCE of 5.97%",
+      "Conglomerate sprawl (steel, real estate, mining, gold, pizza) with no identifiable moat — classic value-destroying diversification into unrelated businesses"
+    ],
+    "red_flags": [
+      "Shell company transformation: revenue was ₹1 Cr in FY20-21, name changed from 'Shree Global Tradefin' in Sept 2023 — classic reverse-merger/shell game pattern",
+      "Reserves exploded from ₹198 Cr (2020) to ₹3,170 Cr (2025) — 16x growth implies massive equity dilution via QIPs; shareholders have been repeatedly diluted",
+      "FCF/Net Income = 62% (FY25) — below 80% quality threshold; OCF positive only 3 of 5 years",
+      "Near-zero institutional ownership: FII 0.69%, DII 0.07% — sophisticated capital wants nothing to do with this",
+      "Operating CF was negative in FY22 and FY24 despite reported profits — cash is not following earnings"
+    ],
+    "detailed_analysis": "Lloyds Enterprises fails every quality test I apply. ROCE at 5.97% and ROE at 2.48% mean this business destroys value relative to its cost of capital — paying 78x EV/EBITDA for that privilege is financial masochism. The operating margin of 6% on steel trading provides no cushion, and the EBITDA of ₹184 Cr in FY25 is dwarfed by a market cap of ₹9,684 Cr. Worse, reported net profits of ₹123–175 Cr in recent years are largely illusory: stripping out \"Other Income\" (financial investment gains, asset sales), the business earns a fraction of that. In FY22, Other Income of ₹159 Cr exceeded total revenue of ₹48 Cr — this is not an operating company, it is a financial holding vehicle dressed up as one.\n\nThe provenance of this company should disqualify it immediately. Revenue of ₹1 Cr for two consecutive years (2020–21), a name change in 2023, and reserves that grew 16x in five years via equity issuances signal a shell company that has been repeatedly used to raise capital from the public. Running pizza outlets alongside iron mining and steel trading is not diversification — it is chaos, and history shows conglomerates of this type reliably destroy capital. With institutional investors holding a combined 0.76%, the smart money has already passed judgment. This is a trading vehicle for retail speculation, not an investment.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 51688,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08500184999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11121,
+      "cache_read_input_tokens": 8797,
+      "output_tokens": 2710,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11121
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 446,
+          "cache_read_input_tokens": 8797,
+          "cache_creation_input_tokens": 2324,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2324,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

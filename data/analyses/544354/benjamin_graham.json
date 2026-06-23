@@ -1,0 +1,69 @@
+{
+  "symbol": "544354",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-20T09:50:46.823553Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Solarium Green is a 2018-incorporated solar EPC company freshly listed on BSE at a P/E of 21.5 — well above my 15x ceiling and lacking the multi-year audited earnings track record I require. The profitability metrics are attractive, but without visibility into book value, current ratio, debt, or dividend history, there is no demonstrable margin of safety.",
+    "key_strengths": [
+      "ROE of 23% and ROCE of 20.1% indicate genuine earning power on deployed capital",
+      "Promoter holding of 58.34% signals skin in the game and aligned incentives",
+      "Operates in a structurally growing sector (solar EPC/turnkey) with policy tailwinds"
+    ],
+    "key_risks": [
+      "P/E of 21.5 exceeds my 15x threshold — no margin of safety at INR 209",
+      "Incorporated 2018; lacks the 5+ year earnings record I demand — speculative by definition",
+      "EPC/civil construction is project-based, working-capital heavy, and cyclical — earnings quality unproven"
+    ],
+    "red_flags": [
+      "Recently listed SME-scale (INR 301 Cr mcap) — IPO premium priced by sellers, not buyers",
+      "No disclosed P/B, current ratio, debt-to-equity, or interest coverage — cannot verify balance sheet strength",
+      "No dividend history disclosed — unproven cash return to shareholders"
+    ],
+    "detailed_analysis": "From a strict Graham lens, this security fails the threshold tests before we even get to qualitative assessment. A P/E of 21.5 implies an earnings yield of ~4.65%, barely competitive with risk-free Indian government paper, and offers no cushion against the earnings volatility inherent to civil-construction/EPC contracting. A company incorporated in 2018 cannot possibly supply the 5–10 years of stable, growing earnings I require in \"The Intelligent Investor.\" The absence of published P/B, current ratio, and debt figures is itself disqualifying — I cannot compute the Graham Number nor verify that the enterprise can survive a downturn, and in construction/EPC, working-capital crunches and receivable blow-ups are the historical killers.\n\nThe ROE of 23% and ROCE of 20.1% are genuinely attractive and I do not dismiss them, but these are recent, post-listing figures from a company riding a solar-policy tailwind — exactly the kind of \"story\" metric Mr. Market pays up for and that a prudent investor discounts heavily. Promoter holding at 58.34% is reassuring for alignment, but FII/DII interest is negligible (0.22% / 3.15%), confirming institutional skepticism. The rational course is to wait: let three to five years of audited results accumulate, observe how earnings behave through a solar capex cycle, and revisit only if Mr. Market offers the stock at a meaningful discount to tangible book with a P/E under 15. Until then, AVOID.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "insufficient_data",
+      "financial_health": "insufficient_data",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 29307,
+    "model_used": "opus",
+    "total_cost_usd": 0.10420275000000001,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 9211,
+      "cache_read_input_tokens": 13508,
+      "output_tokens": 1594,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9211,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 174,
+          "cache_read_input_tokens": 10622,
+          "cache_creation_input_tokens": 1475,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1475
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

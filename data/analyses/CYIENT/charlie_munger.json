@@ -1,0 +1,68 @@
+{
+  "symbol": "CYIENT",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-19T13:08:20.321985Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Cyient provides complex engineering services to aerospace, defense, and rail — sticky work with long customer relationships — and FCF conversion is excellent at 119% in FY25 (INR 790 Cr / INR 648 Cr). But an ROE of 12.8% and operating margins of only 9% reflect the people-dependency of this model; there is no durable moat when your assets walk out the door each evening.",
+    "key_strengths": [
+      "Strong FCF quality: FCF/Net Income of 119% in FY25; OCF positive all 5 years with FCF growing from INR 369 Cr to INR 688 Cr",
+      "ROCE of 16.6% clears my 15% threshold; near-zero debt (D/E 0.07) with INR 1,067 Cr cash on balance sheet",
+      "Forward P/E of 14.62 and EV/EBITDA of 13.6x offer reasonable value relative to engineering services peers if aerospace/defense growth sustains"
+    ],
+    "key_risks": [
+      "Engineering services have no structural moat — customers can switch vendors or in-source; pricing power is limited by talent market wages",
+      "Promoter stake of only 23.28% signals limited long-term alignment; management may prioritize near-term optionality over compounding",
+      "Finance costs grew 21.6% CAGR over 9 years (INR 16 Cr → INR 93 Cr), and 'other income' collapsed from INR 140 Cr to -INR 2 Cr in FY24 — underlying earnings less clean than headline suggests"
+    ],
+    "red_flags": [
+      "ROE of 12.8% is below my 15% threshold — in a capital-light people business, this is especially disappointing",
+      "DLM (Design Led Manufacturing) segment introduces capital intensity (capex rising from INR 65 Cr to INR 104 Cr) that contradicts the asset-light engineering services thesis"
+    ],
+    "detailed_analysis": "Cyient has built a respectable position in high-complexity engineering — aerospace wiring, defense electronics design, rail signaling — work that embeds Cyient engineers deep into customer product lifecycles. Revenue has grown from INR 4,132 Cr to INR 7,360 Cr since FY21, and FCF has been consistently positive with strong conversion, which I respect. ROCE of 16.6% clearing my threshold is encouraging. The valuation (Forward P/E 14.6x) is not demanding.\n\nBut the moat question nags. Engineering services firms compete on talent density, domain expertise, and relationships — none of which create durable competitive advantages the way brands, switching costs, or network effects do. A competitor with deeper pockets can hire the same engineers and undercut on price. The 9% operating margin confirms limited pricing power. The promoter's 23% stake worries me — long-term compounding requires a founder-owner who thinks in decades, not quarters. The DLM push adds capital requirements that don't fit the model. Reasonable business, reasonable price, but not the compounding machine I want.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 218166,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.2727762,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 25826,
+      "cache_read_input_tokens": 15249,
+      "output_tokens": 11423,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 25826,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 726,
+          "cache_read_input_tokens": 15249,
+          "cache_creation_input_tokens": 10577,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 10577
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "KTKBANK",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-18T18:20:14.057918Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Karnataka Bank is a classic asset-play/stalwart trading at 0.74x book and a PEG of ~0.33 (P/E 8.06 ÷ 5Y earnings CAGR 24.1%), making it statistically cheap. However, the growth story is weakening — FY25 profits slipped to ₹1,273 Cr from ₹1,307 Cr, and FCF collapsed to just ₹48 Cr, signaling the easy gains from post-COVID credit normalization are behind us.",
+    "key_strengths": [
+      "Exceptional PEG of 0.33 using 5Y earnings CAGR of 24.1% — classic Lynch bargain on paper",
+      "Deep value: P/B 0.74 and forward P/E 6.06 suggest significant margin of safety on book assets",
+      "Equity base nearly doubled (₹5,971→₹12,589 Cr in 5 years), providing capital buffer for future loan growth"
+    ],
+    "key_risks": [
+      "Profit growth stalled in FY25 (₹1,307→₹1,273 Cr) — the 24% earnings CAGR was driven by one big step-change in FY23; organic growth is closer to 6-8%",
+      "Finance costs surging (₹5,000→₹5,703 Cr in one year) while revenue grew only 8.6% — NIM compression is a real threat",
+      "FCF crashed to ₹48 Cr in FY25 vs ₹570 Cr in FY24 — operating leverage is deteriorating fast"
+    ],
+    "red_flags": [
+      "Earnings CAGR optical distortion: FY23 profit nearly doubled (₹508→₹1,180 Cr) from credit cost release, not structural improvement",
+      "ROE of 11.1% is below my 12% minimum threshold for a bank to earn its cost of equity",
+      "Operating CF collapsed to ₹210 Cr in FY25 from ₹681 Cr in FY24 — volatile and trending down"
+    ],
+    "detailed_analysis": "Karnataka Bank is a 100-year-old regional lender with a South Indian franchise that I'd classify as a stalwart-meets-asset-play. The headline numbers look seductive: P/E of 8, forward P/E of 6, and P/B of 0.74. The 5-year earnings CAGR of 24.1% produces a PEG ratio of 0.33 — the kind of number that makes a Lynch disciple reach for his checkbook. But I always dig into \"what's the story,\" and here the story has a catch: that 24% earnings growth is heavily distorted by FY23's near-doubling of profits from ₹508 Cr to ₹1,180 Cr, which looks like credit cost normalization post-COVID, not a durable structural improvement. Revenue has only grown at 6.8% CAGR — that's the real underlying engine speed.\n\nWhat worries me most is the deceleration signal in FY25: profits fell, FCF cratered to ₹48 Cr, and finance costs jumped ₹703 Cr while revenue grew ₹715 Cr — almost a 1:1 cost pass-through. ROE of 11.1% barely covers equity cost and hasn't crossed my 12% hurdle. The bank has no obvious moat — it competes with larger PSU banks and aggressive private lenders in Karnataka and coastal Karnataka markets. At this price, the downside is protected by the book value discount, but I don't see a compelling catalyst to re-rate this significantly higher without ROE expansion and a return to consistent profit growth. I'd hold if already owned, but there are better growth stories elsewhere at this price.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "undervalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 48449,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08324115000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11085,
+      "cache_read_input_tokens": 8878,
+      "output_tokens": 2600,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11085
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 465,
+          "cache_read_input_tokens": 8878,
+          "cache_creation_input_tokens": 2207,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2207,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "AURIONPRO",
+  "persona": "howard_marks",
+  "persona_display_name": "Howard Marks",
+  "analyzed_at": "2026-04-18T16:35:39.333632Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Aurionpro is a genuine turnaround — revenue tripled since FY21 and margins are expanding — but at 25x trailing P/E and a FCF yield of just 1.2% (FCF INR 62 Cr on MCap INR 5,094 Cr), the price already reflects continued strong growth, leaving virtually no margin of safety. The M&A-driven growth strategy (investing outflows of INR 421 Cr in FY25, funded by equity dilution) embeds integration risk that consensus appears to be discounting entirely.",
+    "key_strengths": [
+      "Near-zero leverage (D/E 0.02, net cash INR 239 Cr) means no distress risk even if growth disappoints",
+      "Consistent EBITDA expansion: INR 128 Cr (FY20) → INR 262 Cr (FY25), a ~15% 5-year CAGR with operating margin holding at 17%+",
+      "Diversified, sticky revenue mix across banking tech, govt/smart city, and data-center — multiple growth engines reduce concentration risk"
+    ],
+    "key_risks": [
+      "M&A execution risk: INR 421 Cr invested in FY25 alone funded by equity raises (financing CF +INR 283 Cr); acquisition integration is unproven at this scale",
+      "FCF conversion is poor — FY25 FCF of INR 62 Cr is only 33% of net profit of INR 188 Cr; rising capex (INR 95 Cr in FY25 vs INR 32 Cr prior year) signals heavy investment phase",
+      "Low promoter stake of 26.88% reduces alignment with minority shareholders; FII ownership at 16% creates exit-flow vulnerability in a risk-off environment"
+    ],
+    "red_flags": [
+      "Massive equity dilution: total equity surged from INR 337 Cr (FY21) to INR 1,606 Cr (FY25), far exceeding cumulative retained earnings of ~INR 509 Cr — significant shareholder base expansion",
+      "FY21 impairment crisis: net loss of INR 192 Cr on 'Other Income' of -INR 118 Cr reveals historical goodwill/asset write-downs, raising questions about past M&A quality",
+      "FY25 investing outflow of INR 421 Cr against OCF of only INR 157 Cr — the company is consuming far more cash than it generates organically, bridged entirely by capital markets"
+    ],
+    "detailed_analysis": "The second-level question here is not \"is Aurionpro a better business than in 2021?\" — it clearly is. The question is what the price already reflects. At EV/EBITDA of 18.4x on INR 262 Cr EBITDA, the market is embedding ~47% forward earnings growth (implied by P/E 25x vs. forward P/E 16.9x). That growth must come largely from recently acquired assets, since organic OCF of INR 157 Cr against a INR 5,094 Cr market cap yields just 3.1% — inadequate for a risk-bearing investor. For context, the 9-year revenue CAGR is only 5.7%, and the recent acceleration is largely acquisition-fueled, not organic outperformance.\n\nThe stress scenario is the critical lens. If EBITDA growth decelerates to 10-12% (still respectable) and the market re-rates to 12x EV/EBITDA — a reasonable trough for Indian mid-cap IT — implied EV would be ~INR 3,144 Cr, against the current ~INR 4,855 Cr EV (MCap less net cash). That is ~35% downside. With FCF yield at 1.2% providing no income buffer, holders are entirely dependent on multiple expansion or sustained 20%+ earnings growth. That is not asymmetric risk/reward in my framework — it is symmetric at best, and unfavorable when the cycle turns. Hold if already owned with low cost basis; new capital finds better risk-adjusted entries elsewhere.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 90101,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.1143123,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11220,
+      "cache_read_input_tokens": 11211,
+      "output_tokens": 4591,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 7103,
+        "ephemeral_5m_input_tokens": 4117
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 507,
+          "cache_read_input_tokens": 9157,
+          "cache_creation_input_tokens": 4117,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 4117,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

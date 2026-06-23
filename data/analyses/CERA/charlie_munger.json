@@ -1,0 +1,69 @@
+{
+  "symbol": "CERA",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T17:00:27.422677Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Cera is a decent branded sanitaryware franchise with a clean balance sheet and ROCE above 20%, but revenue growth of 8.6% CAGR over nine years is uninspiring for India, and thin operating margins (8.27%) leave little room for error at 27.8x earnings. Fair business at a full price — not a compelling Munger-style entry.",
+    "key_strengths": [
+      "ROCE of 22.4% clears my 20% hurdle, with net profit compounding at 13% CAGR vs 8.6% revenue — evidence of steady margin improvement over the decade.",
+      "Virtually debt-free (D/E 0.04, borrowings only INR 67 Cr vs equity of INR 1,354 Cr), eliminating financial distress risk and preserving optionality.",
+      "Gross margin of 50.6% signals genuine brand pricing power; promoter holding at 54.4% aligns management skin-in-the-game."
+    ],
+    "key_risks": [
+      "Revenue growth of 8.6% nine-year CAGR barely tracks India's nominal GDP — suggesting limited market share gains and a mature, competitive product category.",
+      "FCF/Net Income conversion averaged ~58% over 2022-2025 (94/249 in FY25 = 38%), well below my 80% quality threshold — raising questions about earnings quality.",
+      "Other income of INR 57 Cr represents ~23% of FY25 net profit (21.3% CAGR), inflating reported earnings and masking the underlying business's real earning power."
+    ],
+    "red_flags": [
+      "FY25 FCF of only INR 94 Cr vs. net profit of INR 249 Cr — a 38% conversion ratio is a serious yellow flag for a supposedly asset-light branded business.",
+      "Other income (INR 57 Cr in FY25) is nearly as large as finance costs are tiny — strip it out and the earnings picture is meaningfully weaker.",
+      "Operating margin of 8.27% with a gross margin of 50.6% implies enormous SG&A/distribution costs, leaving the P&L highly sensitive to any volume softness."
+    ],
+    "detailed_analysis": "Cera passes my basic quality filters — no leverage, promoter-led, consistent OCF (5/5 years positive), and ROCE just above 20%. The brand has genuine value in India's tier-2/3 city sanitaryware market, and net profit growing at 13% CAGR while revenue grew at 8.6% demonstrates real operating leverage working in the company's favour. However, I am disturbed by the gap between gross margin (50.6%) and operating margin (8.27%), implying the company is spending roughly 42 percentage points of revenue on sales, distribution, and administration. A business that hands back this much margin to the channel is not truly in control of its economics.\n\nThe FCF quality issue is the bigger concern for me. Charlie Munger's first principle: reported earnings that do not convert to cash are suspect. In FY25, INR 249 Cr in net income produced only INR 122 Cr of OCF and INR 94 Cr of FCF — 38% conversion. Even averaging FY22-FY25, FCF conversion sits around 58%. At 27.8x P/E, the market is pricing a business that compounds reliably; the cash flow statement tells a less flattering story. The 57 Cr in other income (likely treasury and investment returns on the large cash/reserves) further flatters the P&L. Strip that out and true operating earnings are closer to INR 192 Cr, implying an adjusted P/E of ~36x. This is a fair-to-good business priced as if it were excellent.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 80418,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.1049187,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 12196,
+      "cache_read_input_tokens": 8899,
+      "output_tokens": 3767,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 12196
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 503,
+          "cache_read_input_tokens": 8899,
+          "cache_creation_input_tokens": 3297,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 3297,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "544636",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-20T11:03:36.377938Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Western Overseas screens optically cheap at P/E 4.53 but a 0.40% ROE fails the Magic Formula's \"good business\" test catastrophically — this is a classic value trap, not a quality-at-a-discount setup. Without meaningful returns on capital, a low earnings multiple is simply the market correctly pricing a poor business.",
+    "key_strengths": [
+      "Low P/E of 4.53 suggests some earnings yield optically",
+      "High promoter skin-in-the-game at 70.09%",
+      "Asset-light advisory model should, in theory, require little capital"
+    ],
+    "key_risks": [
+      "ROE of 0.40% implies ROIC is near-zero — antithesis of Magic Formula",
+      "Tiny 9.97 Cr market cap → illiquidity and price manipulation risk",
+      "Commoditized visa/immigration advisory with no discernible moat"
+    ],
+    "red_flags": [
+      "ROE 0.40% — effectively destroying value vs. cost of capital",
+      "Micro-cap BSE listing with thin disclosure",
+      "P/E may reflect trailing one-off earnings, not sustainable EBIT"
+    ],
+    "detailed_analysis": "The Magic Formula demands a company be both cheap AND good. Western Overseas passes the first screen (P/E 4.53 implies an earnings yield around 22% if we crudely proxy EBIT/EV, which looks stellar) but fails the second screen decisively. A 0.40% ROE is not a \"low-return\" business — it is a business earning essentially nothing on shareholder capital. Given the asset-light nature of advisory services, ROIC should be high if the business worked; the fact that ROE is near zero suggests either collapsing margins, bloated working capital, or that reported earnings are not translating into real shareholder returns. The low P/E is almost certainly the market pricing in either earnings volatility or outright deterioration.\n\nAt a 9.97 Cr market cap, this is also well below any serious quantitative investor's liquidity threshold. Magic Formula portfolios work because of diversification across 20–30 statistically cheap, high-ROC names — Western Overseas would be excluded on ROC grounds before liquidity even entered the conversation. I would skip this and look for advisory/services businesses where ROIC clears 20%+ and the earnings yield is still above 10%.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "insufficient_data",
+      "valuation": "fair",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 24381,
+    "model_used": "opus",
+    "total_cost_usd": 0.097883,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 9068,
+      "cache_read_input_tokens": 13456,
+      "output_tokens": 1378,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9068,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 73,
+          "cache_read_input_tokens": 10586,
+          "cache_creation_input_tokens": 1352,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1352
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

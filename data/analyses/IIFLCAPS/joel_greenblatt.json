@@ -1,0 +1,69 @@
+{
+  "symbol": "IIFLCAPS",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T17:39:54.797721Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "IIFL Capital Services is a financial company — the Magic Formula explicitly excludes such firms because capital structure distorts EBIT/EV and ROIC metrics. On a best-effort basis, Earnings Yield of ~10.9% (EBIT INR 1,115 Cr / EV ~INR 10,200 Cr) falls below my 12% attractiveness threshold, despite genuinely impressive ROCE of 33.3%.",
+    "key_strengths": [
+      "High ROCE/ROE of 33.3%/31.6% — exceptional capital efficiency for a brokerage",
+      "Net profit CAGR of 21.6% over 7 years, accelerating sharply to INR 713 Cr in FY25",
+      "Revenue diversification across broking, investment banking, wealth distribution, and MTF"
+    ],
+    "key_risks": [
+      "Deeply cyclical: net profit crashed from INR 306 Cr (FY22) to INR 250 Cr (FY23) — highly market-dependent",
+      "Volatile and negative FCF in 2 of last 5 years (FY23: -798 Cr, FY24: -138 Cr) — poor FCF reliability",
+      "Borrowings doubled YoY to INR 1,742 Cr in FY25, funding margin trade book — leverage rising fast"
+    ],
+    "red_flags": [
+      "Financial company — explicitly excluded from Magic Formula; EBIT/EV and ROIC are not meaningful metrics here",
+      "OCF positive only 3/5 years — capital markets firms have structurally lumpy cash flows",
+      "Low promoter stake of 30.93% — below comfort level for alignment"
+    ],
+    "detailed_analysis": "My Magic Formula requires me to exclude financial companies outright — brokerage and capital markets firms have balance sheets dominated by client assets, margin funding books, and regulatory capital requirements that make Enterprise Value and Net Working Capital meaningless constructs. Forcing the numbers: EV ≈ INR 10,200 Cr (market cap INR 9,771 Cr + net debt ~INR 427 Cr), EBIT = INR 1,115 Cr → Earnings Yield of ~10.9%, marginally below my 12% floor. ROCE of 33.3% is genuinely excellent and would normally excite me — but it's buoyed by an asset-light broking model in a bull market year.\n\nThe underlying business has real quality: 15.3% revenue CAGR and 21.6% net profit CAGR since FY18, operating margins expanding to 44%. However, FY23 was a sobering reminder — revenue dipped, profit fell 18%, and OCF went deeply negative (-INR 793 Cr) as working capital swung. The surge in FY24-25 profits coincides with India's equity market boom; a sustained correction would hit revenues, margins, and MTF book quality simultaneously. At P/E 17x and P/B 3.46x, the market is pricing in continued bull-market conditions — not a margin-of-safety valuation.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 46574,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07934640000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11094,
+      "cache_read_input_tokens": 9083,
+      "output_tokens": 2334,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11094
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 370,
+          "cache_read_input_tokens": 9083,
+          "cache_creation_input_tokens": 2011,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2011,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

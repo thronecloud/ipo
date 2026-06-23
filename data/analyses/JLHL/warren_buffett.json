@@ -1,0 +1,69 @@
+{
+  "symbol": "JLHL",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T17:48:48.282527Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "AVOID",
+    "investment_thesis": "Jupiter Life Line is a genuinely growing regional hospital chain with improving margins and declining debt, but at 43.5x P/E and EV/EBITDA of 26.6x, the market is pricing perfection into a capital-intensive, geographically concentrated business. I don't pay wonderful prices for good — not wonderful — businesses.",
+    "key_strengths": [
+      "Revenue growing at 22% CAGR (2020-25) with EBITDA expanding even faster at 23.3%, showing operating leverage",
+      "Finance costs collapsed from INR 44 Cr (2022) to just INR 11 Cr (2025) — balance sheet discipline post-IPO is commendable with D/E of 0.28",
+      "OCF positive all 5 years; operating cash flow jumped to INR 253 Cr in FY25, demonstrating real earnings quality"
+    ],
+    "key_risks": [
+      "Capital intensity is severe — INR 321 Cr capex in FY25 alone flipped FCF to -67 Cr; hospital beds require constant reinvestment with no asset-light model",
+      "Geographic concentration in Mumbai/Thane makes this a regional operator, not a durable national franchise — one competitive entrant or doctor exodus can hurt materially",
+      "Valuation at 43.5x P/E leaves zero margin of safety; any slowdown in bed additions or ARPOB growth could compress multiples sharply"
+    ],
+    "red_flags": [
+      "CWIP surged from INR 74 Cr to INR 296 Cr in one year — large expansion in flight with execution risk and future debt load uncertainty",
+      "Borrowings returned to INR 403 Cr in FY25 after being zero in FY24 — the clean balance sheet post-IPO is already being re-leveraged for expansion",
+      "Non-core hotel operation (Fortune Park Lake City) is a distraction unbecoming of a focused healthcare compounder"
+    ],
+    "detailed_analysis": "Jupiter Life Line has posted genuinely impressive numbers — 22% revenue CAGR, 45% net profit CAGR, and consistently positive OCF. Management has used IPO proceeds wisely, eliminating borrowings entirely in FY24 and cutting finance costs by 75% in two years. ROE at 15% and ROCE at 18% are respectable for a hospital chain, and operating margins of 16.9% suggest good clinical and operational discipline. This is not a bad business.\n\nBut hospitals are not See's Candies. They require relentless capital — beds, equipment, real estate — to grow. The INR 321 Cr capex in FY25 (vs. INR 85 Cr the prior year) signals an aggressive expansion cycle that will consume cash and re-introduce debt for years. At 43.5x P/E and EV/EBITDA of 26.6x, I am being asked to pay a premium price for a regional, capital-hungry business with moderate competitive moats. The moat here is a recognized brand in Thane/Mumbai and some clinical depth — real, but not wide enough to justify the current price. I need a margin of safety, and there is none here.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 44956,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0752316,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10710,
+      "cache_read_input_tokens": 8867,
+      "output_tokens": 2160,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10710
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 348,
+          "cache_read_input_tokens": 8867,
+          "cache_creation_input_tokens": 1843,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1843,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

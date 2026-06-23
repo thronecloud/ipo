@@ -1,0 +1,68 @@
+{
+  "symbol": "CUB",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-19T13:08:20.319969Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "City Union Bank is a conservatively managed 120-year-old Tamil Nadu SME lender with consistent profitability and improving liability structure, but an ROE of 11.87% is structurally below my 15% threshold for any leveraged institution. At P/B 1.92x, you are paying a premium for below-average returns on equity.",
+    "key_strengths": [
+      "Consistent net profit growth: INR 760 Cr → INR 1,124 Cr over 3 years (13.9% CAGR), OCF positive all 4 tracked years",
+      "Disciplined liability management — institutional borrowings halved from INR 5,312 Cr (FY22) to INR 1,790 Cr (FY25), reducing funding risk",
+      "Conservative credit culture focused on South Indian SME/trade finance; forward P/E of 12.54 offers a reasonable entry if growth sustains"
+    ],
+    "key_risks": [
+      "ROE of 11.87% — the cardinal sin for a bank; compounding equity below 12% means capital is being destroyed relative to cost",
+      "Revenue grew only 6.3% CAGR over 3 years — modest for a bank operating in a high-growth Indian economy with structural credit demand",
+      "Finance costs grew 17.2% CAGR (INR 2,188 Cr → INR 3,518 Cr), outpacing revenue growth, compressing net interest margins"
+    ],
+    "red_flags": [
+      "ROE of 11.87% fails my 15% minimum — a bank trading at 1.92x book should be earning well above this",
+      "Operating CF was volatile (INR 1,166 Cr → INR 436 Cr → INR 1,128 Cr), reflecting lumpy working capital cycles typical of concentrated SME portfolios"
+    ],
+    "detailed_analysis": "City Union Bank has a genuine franchise — 120 years of operating history, deep roots in Tamil Nadu trade and SME finance, and a conservative culture that has kept it out of the headline NPA scandals that have plagued Indian banking. Net profit has grown reliably, and the reduction in higher-cost borrowings from INR 5,312 Cr to INR 1,790 Cr is a positive structural shift. The forward P/E of 12.54 is not demanding by Indian banking standards.\n\nBut Munger's inversion is clear: why is ROE only 11.87% for a bank with this vintage and franchise? Banks are inherently leveraged — if the core business doesn't earn 15%+ ROE, the margin of safety against a credit cycle or rate shock evaporates quickly. P/B of 1.92x is not cheap for sub-12% equity returns. Revenue growing at 6.3% CAGR while finance costs grow at 17.2% suggests NIM compression is a structural headwind, not a temporary one. A decent bank at a full price — monitor but do not add.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 218166,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.2727762,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 25826,
+      "cache_read_input_tokens": 15249,
+      "output_tokens": 11423,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 25826,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 726,
+          "cache_read_input_tokens": 15249,
+          "cache_creation_input_tokens": 10577,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 10577
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

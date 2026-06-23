@@ -1,0 +1,69 @@
+{
+  "symbol": "HERITGFOOD",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T17:36:00.476500Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Heritage Foods has a genuinely high ROIC (~28%) but trades at an earnings yield of only ~9.5% (EBIT INR 326 Cr / EV INR 3,448 Cr), falling short of the Magic Formula's 12% attractiveness threshold. The dairy business is structurally thin-margin and historically volatile — two Magic Formula disqualifiers that prevent a Buy despite the capital efficiency.",
+    "key_strengths": [
+      "ROIC ~28% (EBIT 326 Cr / Invested Capital ~1,153 Cr) — comfortably above the 25% excellence threshold",
+      "Conservative balance sheet: D/E of 0.21, borrowings only INR 220 Cr vs equity of INR 1,043 Cr",
+      "Revenue trend clearly improving last 3 years (3,241 → 3,794 → 4,135 Cr) and operating income recovering (132 → 203 → 326 Cr)"
+    ],
+    "key_risks": [
+      "Razor-thin operating margins (3.81%) leave almost no buffer — dairy is a commodity business with limited pricing power",
+      "Highly volatile EBIT history: two deeply negative years (2018: -255 Cr, 2020: -382 Cr) means the current 28% ROIC is not a durable track record",
+      "Capex surge (INR 176 Cr in FY25, CWIP 159 Cr) is consuming FCF — FY25 FCF collapsed to just 42 Cr despite INR 188 Cr net profit"
+    ],
+    "red_flags": [
+      "EBIT was severely negative in FY18 and FY20 — Magic Formula requires sustained positive EBIT; this business failed that test twice in nine years",
+      "Large 'Other Income' items (INR 251–402 Cr in FY17–20) likely from asset sales, masking true operational weakness in those years",
+      "FCF conversion is poor: FY25 net profit INR 188 Cr but FCF only INR 42 Cr — rising capex is eating cash generation"
+    ],
+    "detailed_analysis": "Running the Magic Formula numbers: EBIT of INR 326 Cr against an EV of ~INR 3,448 Cr (market cap INR 3,338 Cr + debt INR 174 Cr - cash INR 64 Cr) gives an earnings yield of ~9.5%. This misses my 12% attractiveness hurdle. On the return side, EBIT / invested capital (~INR 1,153 Cr) yields ~28% ROIC, which is genuinely excellent and confirmed by the reported ROCE of 25.3%. So we have one strong leg and one weak leg — not the combination I need for a high-conviction buy.\n\nThe deeper problem is earnings quality and durability. Operating margins of 3.81% in a commodity dairy business mean that any input cost spike (milk procurement, fuel, packaging) wipes out profits — as happened catastrophically in FY18 and FY20. The FY25 EBIT of INR 326 Cr looks like the best year in the dataset, making it hard to know if this is peak or sustainable. Meanwhile, capex has tripled in three years (46 → 176 Cr), CWIP has jumped to 159 Cr, and FCF dropped from INR 267 Cr (FY24) to only INR 42 Cr (FY25). A dairy processor spending heavily on capacity while earning sub-4% operating margins is not the kind of high-quality compounder the Magic Formula targets. The stock is fairly valued at best — not a bargain.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 43540,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0827391,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11220,
+      "cache_read_input_tokens": 9017,
+      "output_tokens": 2530,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11220
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 381,
+          "cache_read_input_tokens": 9017,
+          "cache_creation_input_tokens": 2203,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2203,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "544372",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-20T19:41:08.862075Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Shreenath Paper is a tiny INR 19.8 Cr microcap paper trader earning a near-zero 0.09% ROE — there's no growth story, no moat, and no consumer signal I can pull on. The P/E of 7.41 looks cheap only because earnings are almost nothing; this is a classic value trap, not a ten-bagger.",
+    "key_strengths": [
+      "High promoter holding (72.98%) signals skin in the game",
+      "Low absolute market cap (INR 19.8 Cr) leaves theoretical room to grow",
+      "Low P/E of 7.41 on an optical basis"
+    ],
+    "key_risks": [
+      "ROE of 0.09% is essentially zero — capital is not earning anything",
+      "Commoditized paper trading/distribution offers no niche or pricing power",
+      "Microcap liquidity + no visible growth catalyst = value trap risk"
+    ],
+    "red_flags": [
+      "ROE ~0% despite reported profit suggests thin/volatile earnings quality",
+      "PEG meaningless without growth rate — no earnings growth story disclosed",
+      "Sub-INR 20 Cr float typical of illiquid, easily manipulated microcaps"
+    ],
+    "detailed_analysis": "From my GARP lens, the numbers here don't add up to a story. A 7.41 P/E sounds cheap, but when ROE is 0.09%, the \"E\" is basically a rounding error — on a 19.8 Cr market cap that implies roughly INR 2.7 Cr of net profit on a business that likely turns many multiples of that in revenue, meaning razor-thin margins typical of paper trading. I can't compute a meaningful PEG because there's no disclosed growth rate, and nothing in \"manufactures and trades variety of papers\" tells me this is a category winner gaining share. This is a slow-grower at best, a no-grower at worst.\n\nI invest in what I can see and understand, and the consumer/market angle here is invisible — paper distribution is a commoditized, low-margin, working-capital-heavy business with no niche dominance or tailwind. High promoter holding of 72.98% is a plus, but it doesn't compensate for the absence of a growth engine, a moat, or execution evidence. I'd pass and keep hunting for a small-cap where revenue is compounding 20%+ with margins expanding — this isn't it.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 21717,
+    "model_used": "opus",
+    "total_cost_usd": 0.09038025,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8869,
+      "cache_read_input_tokens": 13388,
+      "output_tokens": 1129,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8869,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10544,
+          "cache_creation_input_tokens": 1169,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1169
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

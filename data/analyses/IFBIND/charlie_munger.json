@@ -1,0 +1,69 @@
+{
+  "symbol": "IFBIND",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T17:46:39.045122Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "IFB has built a recognizable brand in front-load washing machines with 14.2% revenue CAGR, but the business earns only 3.19% operating margins in a brutally competitive consumer appliances market — that is not a moat, that is a treadmill. At 34.9x trailing P/E on historically volatile, paper-thin earnings, Mr. Market is pricing in a quality business that the financials do not yet confirm.",
+    "key_strengths": [
+      "Brand leadership in front-load washing machines — a niche within Indian appliances with genuine customer loyalty",
+      "Revenue growth of 14.2% CAGR over 8 years shows durable demand and distribution expansion",
+      "Debt meaningfully reduced from INR 363 Cr (FY2022) to INR 168 Cr (FY2024) — management showing balance sheet discipline"
+    ],
+    "key_risks": [
+      "Operating margin of 3.19% in a business with 38.89% gross margin signals enormous SGA/distribution drag and very limited pricing power against LG, Samsung, Whirlpool",
+      "Net profit violently volatile: INR 79 Cr (FY2018) → -48 Cr (FY2022) → 15 Cr (FY2023) → 119 Cr (FY2025) — not the steady compounder Munger demands",
+      "FCF of only INR 12 Cr in FY2025 against net profit of 119 Cr (FCF/NI ~10%) — earnings quality is deeply suspect and capital intensity rising (capex jumped to 107 Cr)"
+    ],
+    "red_flags": [
+      "Gross-to-operating margin collapse (38.89% → 3.19%) implies the business is a distribution/marketing cost-sink, not a value creator",
+      "Multi-segment complexity across Engineering, Home Appliances, Motors, and Steel strips — classic conglomerate dilution with no clear capital allocation logic",
+      "FY2022 net loss of INR 48 Cr reveals fragility: one bad commodity/demand cycle wipes out years of profit"
+    ],
+    "detailed_analysis": "Invert first: what makes this a bad investment? A consumer appliance company competing against global giants (LG, Samsung) with a 3.19% operating margin has almost no buffer for error — a commodity cost spike, a price war, or a demand slowdown turns profit into loss, as FY2022 proved. The chasm between gross margin (38.89%) and operating margin (3.19%) — a gap of 35+ percentage points — is being swallowed by distribution, advertising, and overhead. That is not operating leverage; that is a structurally expensive business model. ROCE of 17.4% is acceptable but ROE of 13.7% falls below my 15% hurdle, and with FCF/Net Income at ~10% in FY2025, reported earnings are largely non-cash — a classic earnings quality warning sign.\n\nOn the positive side, IFB's revenue trajectory is real (INR 1,758 Cr → 5,092 Cr over 8 years), promoter skin-in-the-game is high at 74.96%, and debt reduction from 363 to 168 Cr over two years shows improving discipline. The forward P/E of 23.7x implies the market expects significant margin normalization — and FY2025's INR 119 Cr net profit does show early signs of recovery. But I would want to see 3+ consecutive years of double-digit operating margins before paying 34.9x earnings for an appliance manufacturer. At INR 1,116 per share on INR 4,532 Cr market cap, this is priced for a quality business it has not yet proven itself to be. Existing holders can hold awaiting margin expansion; fresh capital should wait for either a better price or proof of structural margin improvement.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 53477,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08254935,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11149,
+      "cache_read_input_tokens": 8922,
+      "output_tokens": 2537,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11149
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 359,
+          "cache_read_input_tokens": 8922,
+          "cache_creation_input_tokens": 2227,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2227,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

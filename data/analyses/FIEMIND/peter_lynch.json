@@ -1,0 +1,68 @@
+{
+  "symbol": "FIEMIND",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-18T17:25:45.943410Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Fiem Industries is a well-run auto-lighting stalwart riding India's 2-wheeler boom and LED transition, with a near-pristine balance sheet (D/E 0.06) and accelerating profits. However, the 9-year revenue CAGR of only 10.5% and PEG of ~1.2x on trailing earnings cap the excitement — this is a quality stalwart, not a ten-bagger.",
+    "key_strengths": [
+      "Fortress balance sheet: net cash of ~INR 276 Cr (cash 298 Cr vs debt 22 Cr), finance costs collapsed from INR 16 Cr to INR 2 Cr over 9 years — earnings tailwind is baked in.",
+      "Exceptional capital efficiency: ROCE 27.8% and ROE 21% in a capital-intensive auto parts business signals a genuine moat as the preferred LED lighting supplier to India's top 2-wheeler OEMs.",
+      "Earnings momentum accelerating: net profit grew 23.5% in FY25 (INR 166 Cr → 205 Cr), operating leverage kicking in as revenue hit INR 2,423 Cr (+19.4% YoY)."
+    ],
+    "key_risks": [
+      "Cyclical revenue DNA: 9-year revenue CAGR is only 10.5%, with a visible dip in 2020-21 — this is a cyclical OEM supplier, not a structural compounder, and a slowdown in 2-wheeler volumes will compress earnings fast.",
+      "Customer concentration: revenue is almost entirely dependent on a handful of OEMs (Honda, Hero, TVS); losing a major account would be devastating with no consumer brand to fall back on.",
+      "Valuation leaves little margin of safety: at P/E 24.7x and P/B 5.5x, PEG using long-term revenue growth (~10%) is ~2.5x — only justified if the recent 19-20% growth is sustainable, which history doesn't guarantee."
+    ],
+    "red_flags": [
+      "Long-term revenue CAGR (10.5%) far below earnings CAGR (15.3%) — gap driven by debt paydown, not business acceleration; unsustainable as a permanent earnings driver.",
+      "Capex surging to INR 130 Cr in FY25 (up from INR 19 Cr in FY22), compressing FCF to INR 132 Cr vs OCF of INR 233 Cr — watch for FCF deterioration if growth capex doesn't translate to revenue."
+    ],
+    "detailed_analysis": "From my perch, Fiem Industries tells a recognizable story — you can see LED lights everywhere on Indian roads, and Fiem is a key supplier to the 2-wheelers that dominate Indian streets. The balance sheet transformation is genuinely impressive: borrowings slashed from INR 127 Cr (FY20) to INR 22 Cr (FY25), finance costs nearly zero, and cash swelling to INR 298 Cr. That's management execution you can trust. ROCE at 27.8% tells me this isn't just a commodity parts maker — there's real pricing power or process efficiency at work. The FY25 numbers are the best the company has ever posted, and forward P/E of 20.18x implies the market expects another strong year.\n\nThe problem is the long-term story doesn't quite sing like a fast-grower should. A 10.5% revenue CAGR over 9 years puts this firmly in stalwart territory, not ten-bagger land. The PEG using recent 20%+ growth hits ~1.2x — acceptable but not the sub-1.0 bargain I love. If I normalize to the 9-year trend, PEG stretches above 2x, which is expensive. I also worry about the B2B-only model with OEM concentration: one design-out decision by Honda or Hero and revenues crater. At current prices, fair value is essentially baked in. I'd watch from the sideline and buy aggressively if it corrects 20-25% or if a genuine earnings acceleration story emerges from the LED luminaires segment.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "excellent",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 76097,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09931470000000002,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11988,
+      "cache_read_input_tokens": 9069,
+      "output_tokens": 3442,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11988
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 559,
+          "cache_read_input_tokens": 9069,
+          "cache_creation_input_tokens": 2919,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2919,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

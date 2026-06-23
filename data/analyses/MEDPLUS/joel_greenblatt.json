@@ -1,0 +1,69 @@
+{
+  "symbol": "MEDPLUS",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T18:22:02.032304Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "MedPlus fails both Magic Formula tests: Earnings Yield of ~4.2% (EBIT INR 488 Cr / EV ~INR 11,578 Cr) is well below my 6% minimum, and ROCE of 10.3% is far short of the 20%+ threshold I demand for a quality business. At 51x P/E and 28x EV/EBITDA for a thin-margin pharmacy retailer, I'm being asked to pay a premium price for a mediocre business.",
+    "key_strengths": [
+      "Revenue CAGR of 15.1% over 9 years with operating income growing faster (33.2% CAGR) — clear operating leverage emerging.",
+      "FCF surged to INR 482 Cr in FY2025 after years of near-zero or negative free cash, suggesting the store rollout phase is maturing.",
+      "Institutional confidence: DII + FII combined ownership of ~43% signals professional validation of the long-run pharmacy consolidation story."
+    ],
+    "key_risks": [
+      "Earnings Yield of ~4.2% is deeply unattractive — I need at least 6%, ideally 12%+; the stock is priced for perfection it hasn't yet demonstrated.",
+      "Operating margins of 4.75% leave almost no buffer — finance costs of INR 103 Cr consumed 69% of FY2025 net profit of INR 150 Cr.",
+      "Earnings volatility is alarming: net profit went INR 2 Cr → 63 → 95 → 50 → 66 → 150 Cr over six years; this is not the consistent earnings power I need."
+    ],
+    "red_flags": [
+      "ROCE of 10.3% and ROE of 8.8% — both well below cost of capital for a levered retailer; the business is not earning adequate returns on deployed capital.",
+      "Total debt grew from INR 815 Cr (FY2022) to INR 1,193 Cr (FY2025) while equity base grew partly via IPO proceeds — organic capital generation is weak.",
+      "EV/EBITDA of 28x for a sub-5% operating margin retailer is difficult to justify under any conservative earnings growth scenario."
+    ],
+    "detailed_analysis": "Running MedPlus through the Magic Formula is straightforward and swift. Earnings Yield: EBIT of INR 488 Cr divided by Enterprise Value of ~INR 11,578 Cr (market cap INR 10,544 Cr + debt INR 1,120 Cr − cash INR 86 Cr) = 4.2%. That's well below my 6% floor, let alone the 12–15% zone where I get excited. Return on Capital: ROCE as reported is 10.3%, and even using invested capital (equity + debt − cash ≈ INR 2,879 Cr), EBIT/IC is roughly 17% — better, but largely inflated by IND-AS 116 lease capitalization that simultaneously pumps EBITDA and debt. The true cash-on-cash economics of running a pharmacy store network are much thinner than headline numbers suggest.\n\nThe business story is understandable — India's pharmacy retail is fragmented and MedPlus is one of the few scaled organized players — but being in a good industry doesn't make a stock a good investment. At 51x trailing earnings, the market is pricing in sustained double-digit profit growth that the company's own history doesn't support (net profit has been volatile and sub-scale relative to revenue for a decade). Free cash flow turned meaningfully positive in FY2025 (INR 482 Cr), which is encouraging, but one year of strong FCF after years of near-zero conversion is not the sustained, compounding capital efficiency that the Magic Formula demands. I'll pass and look elsewhere.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 53031,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0848433,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11390,
+      "cache_read_input_tokens": 9056,
+      "output_tokens": 2627,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11390
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 343,
+          "cache_read_input_tokens": 9056,
+          "cache_creation_input_tokens": 2334,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2334,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

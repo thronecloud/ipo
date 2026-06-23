@@ -1,0 +1,69 @@
+{
+  "symbol": "ETHOSLTD",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T17:23:12.930601Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Ethos is a retail distributor dressed in luxury clothing — at 66x P/E with persistently negative free cash flow (-₹94 Cr FCF vs. +₹96 Cr net profit in FY25), I am paying a prince's ransom for a business that cannot convert earnings into cash. The actual competitive advantages reside with the watch brands (Rolex, Omega), not the shop that sells them.",
+    "key_strengths": [
+      "India's fastest-growing HNI/UHNI segment provides a genuine secular demand tailwind, with revenue compounding at 18.9% CAGR over 6 years.",
+      "Authorized dealership relationships with top-tier luxury watch brands create a meaningful (if fragile) barrier — licenses are not freely granted.",
+      "Low reported leverage at Debt/Equity of 0.19, with net profit CAGR of 39.5% showing operating leverage as the store network matures."
+    ],
+    "key_risks": [
+      "Free cash flow is deeply and structurally negative — FCF was -₹7 Cr, -₹58 Cr, -₹1 Cr, -₹94 Cr over 2022–2025 — this business is a cash incinerator despite headline profits.",
+      "Operating margin of 7.81% is pedestrian retail, not luxury economics; Ethos has zero pricing power since the brands dictate MSRPs and allocations.",
+      "Valuation of 66x P/E and 42x EV/EBITDA prices in flawless execution for years — any luxury spending slowdown, FX shock, or brand de-authorization is catastrophic."
+    ],
+    "red_flags": [
+      "FCF/Net Income ratio is deeply negative: -₹94 Cr FCF against +₹96 Cr net profit in FY25 — a near-perfect divergence signaling massive working capital consumption (inventory) or aggressive lease capitalization.",
+      "Total assets nearly doubled in one year (₹1,171 Cr → ₹2,140 Cr in FY25) while cash fell to ₹28 Cr — rapid balance sheet inflation with no cash generation.",
+      "Operating CF turned negative in FY25 (-₹20 Cr) — the core business is not self-funding even before capex; positive OCF only 3/5 years."
+    ],
+    "detailed_analysis": "Invert first: what makes this a terrible business? Ethos is fundamentally a high-end retailer — it does not own a single brand, set a single price, or control allocations. When Rolex restricts supply (as it routinely does), Ethos has no recourse. The 7.81% operating margin exposes the truth: this is a shop, not a luxury conglomerate. ROCE of 13.8% barely clears my 12% floor and ROE of 10.4% falls below it — for a business growing aggressively via capital raises (equity surged from ₹232 Cr to ₹1,434 Cr over 3 years), that is deeply disappointing capital productivity. The 39.5% net profit CAGR sounds seductive until you notice that every rupee of reported profit is consumed by working capital (luxury watch inventory sits for months) and store build-out capex of ₹79 Cr in FY25 alone.\n\nThe valuation compounds the problem. At 66x trailing P/E and 42x EV/EBITDA, the market is pricing Ethos as though it were LVMH — a brand owner with pricing power and 30%+ margins. It is not. It is a retailer in an inherently cyclical, aspiration-driven category with no franchise value independent of the brands it carries. A single brand terminating its authorized dealer agreement — or luxury demand softening among India's HNIs — would crater both earnings and the multiple simultaneously. I find no margin of safety here. Munger's law applies: a retailer at 66x earnings is almost never a good idea.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 59833,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08947185,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11281,
+      "cache_read_input_tokens": 8747,
+      "output_tokens": 2969,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11281
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 501,
+          "cache_read_input_tokens": 8747,
+          "cache_creation_input_tokens": 2534,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2534,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

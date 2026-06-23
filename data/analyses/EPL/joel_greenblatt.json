@@ -1,0 +1,69 @@
+{
+  "symbol": "EPL",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T17:15:28.678884Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "EPL passes the minimum Magic Formula bar with a ROCE of ~17.5% and an earnings yield of ~10.3% (EBIT ₹837 Cr / EV ~₹8,090 Cr), but neither metric clears my attractiveness thresholds of 12% earnings yield and 25%+ ROIC. At current pricing, this is a decent business trading at a fair — not bargain — valuation.",
+    "key_strengths": [
+      "Improving EBIT trajectory: Operating Income surged from ₹569 Cr (2022) to ₹837 Cr (2025), signaling recovering operational leverage",
+      "Strong OCF generation: ₹795 Cr OCF in FY25 with FCF of ₹439 Cr — 5/5 years of positive operating cash flow",
+      "Manageable leverage: D/E of 0.32 with Total Debt ₹802 Cr vs Total Equity ₹2,624 Cr keeps balance sheet stable"
+    ],
+    "key_risks": [
+      "Finance costs nearly tripled: from ₹43 Cr (2021) to ₹114 Cr (2025), compressing net earnings despite EBIT growth",
+      "Capital-intensive model: Capex of ₹363 Cr in FY25 (~43% of OCF) limits FCF conversion — Greenblatt prefers asset-light businesses with high FCF yield",
+      "Low promoter holding of 26.38% signals limited insider conviction; revenue CAGR of only 7.9% over 9 years limits Magic Formula ranking upside"
+    ],
+    "red_flags": [
+      "Earnings Yield of ~10.3% falls below the 12% Magic Formula attractiveness threshold — not cheap enough to qualify as a bargain",
+      "EBITDA CAGR of 5.8% (9Y) is below revenue growth of 7.9% — margin erosion at the EBITDA level over the long arc",
+      "Finance cost explosion (43→114 Cr in 4 years) suggests debt-funded capex cycle that has yet to fully earn back its cost of capital"
+    ],
+    "detailed_analysis": "Running the Magic Formula: Enterprise Value = Market Cap ₹7,479 Cr + Net Debt (₹802 Cr - ₹191 Cr cash) = ~₹8,090 Cr. EBIT (Operating Income FY25) = ₹837 Cr. Earnings Yield = 837/8,090 = **10.3%** — below my 12% threshold for \"attractive.\" On the return side, stated ROCE of 17.5% is respectable but falls short of the 25%+ I look for in truly excellent businesses. A packaging company competing globally on laminated tubes is inherently capital-heavy, which structurally limits how high ROIC can climb. The Magic Formula rewards capital-light compounders; EPL is not that.\n\nThe business trajectory is actually improving — FY25 net profit of ₹364 Cr is the best in the series, OCF hit ₹795 Cr, and operating margins expanded from a 2022 trough. But these improvements are partly offset by surging finance costs (₹114 Cr vs ₹40 Cr in 2022) from an aggressive capex cycle, and revenue growth of ~8% CAGR over 9 years is uninspiring. EPL screens as a \"pass\" on quality and a \"marginal miss\" on value — exactly the middle-of-the-road outcome the Magic Formula systematically avoids in favor of companies that rank in the top decile on both dimensions simultaneously.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 53318,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0896577,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11632,
+      "cache_read_input_tokens": 9129,
+      "output_tokens": 2886,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11632
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 433,
+          "cache_read_input_tokens": 9129,
+          "cache_creation_input_tokens": 2503,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2503,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

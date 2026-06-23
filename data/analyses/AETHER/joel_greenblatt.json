@@ -1,0 +1,70 @@
+{
+  "symbol": "AETHER",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T16:15:57.000751Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Aether Industries' Magic Formula scores are disqualifying: Earnings Yield of ~1.5% (EBIT INR 241 Cr / EV ~INR 15,850 Cr) is roughly 10x below my 15% threshold, and ROIC of ~9.6% (EBIT / invested capital of ~INR 2,512 Cr) falls well short of the 20% hurdle. The market is paying a decade's worth of growth upfront — that removes the margin of safety the formula requires.",
+    "key_strengths": [
+      "High operating margins (29%) suggest real pricing power in specialty chemicals niche",
+      "Near-debt-free balance sheet (D/E 0.09) with strong promoter backing (74.9%)",
+      "Revenue and EBITDA recovering sharply in FY2025 (EBITDA INR 279 Cr, +63% YoY) after FY2024 dip"
+    ],
+    "key_risks": [
+      "Earnings Yield of ~1.5% is catastrophically low — Magic Formula demands >12%; current valuation bakes in perfection",
+      "Free cash flow has been deeply negative all 4 years (-INR 157 to -452 Cr) as capex exceeds all earnings; CWIP of INR 556 Cr signals more capex ahead",
+      "ROE of only 7.8% reveals massive equity dilution (reserves jumped from INR 274 Cr to INR 2,196 Cr in 3 years) suppressing returns on the swollen capital base"
+    ],
+    "red_flags": [
+      "Earnings Yield ~1.5% — worst possible score on Magic Formula metric #1",
+      "ROIC ~9.6% — below my 12% minimum threshold; ROE 7.8% confirms poor capital returns",
+      "OCF positive in only 1 of last 4 years; cumulative FCF burn ~INR 1,316 Cr while the business generated ~INR 479 Cr net profit over same period",
+      "P/E 70x, EV/EBITDA 46x — market is pricing future perfection, not current fundamentals"
+    ],
+    "detailed_analysis": "Running Aether through the Magic Formula: EV ≈ INR 15,850 Cr (market cap INR 15,667 Cr + debt INR 200 Cr − cash INR 17 Cr). EBIT (operating income) FY2025 = INR 241 Cr. Earnings Yield = 241/15,850 = 1.52% — one of the worst scores possible; my formula demands >15%. Invested capital ≈ equity INR 2,329 Cr + debt INR 200 Cr − cash INR 17 Cr = INR 2,512 Cr, giving ROIC = 241/2,512 = 9.6%, confirmed by the reported ROCE of 10.2%. Both pillars of the Magic Formula fail badly. This is a business the market loves at a price I cannot justify systematically.\n\nThe underlying business has genuine qualities — 29% operating margins, a defensible specialty chemicals niche, and an FY2025 EBITDA rebound to INR 279 Cr after the FY2024 dip to INR 171 Cr. But the company is in a multi-year capital-intensive buildout phase: INR 452 Cr of capex in FY2025 alone against INR 100 Cr of operating cash flow leaves FCF at −INR 352 Cr. CWIP of INR 556 Cr signals this cash burn continues. The equity base has ballooned 6x in 3 years (IPO proceeds), compressing ROE to 7.8% — good businesses earning 7.8% ROE on a 70x P/E multiple are not Magic Formula candidates. If ROIC normalizes to 20%+ and capacity comes online, the story may change. At current prices, pass.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 56898,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08382300000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10774,
+      "cache_read_input_tokens": 8605,
+      "output_tokens": 2722,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10774,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 584,
+          "cache_read_input_tokens": 8605,
+          "cache_creation_input_tokens": 2169,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2169
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

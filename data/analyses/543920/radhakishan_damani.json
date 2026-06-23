@@ -1,0 +1,69 @@
+{
+  "symbol": "543920",
+  "persona": "radhakishan_damani",
+  "persona_display_name": "Radhakishan Damani",
+  "analyzed_at": "2026-04-20T09:47:59.872843Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "A fast-growing small-cap defense company (45% revenue CAGR) with decent ROCE of 23.65% and healthy promoter holding of 68%, but trading at an outrageous P/E of 73x and P/B of 10.9x with consistently negative operating cash flows. The growth is real but the price and cash-flow quality fail my basic quality tests.",
+    "key_strengths": [
+      "Promoter holding stable at 68.06% — skin in the game",
+      "Revenue/EBITDA/PAT compounding ~45% CAGR over 3 years",
+      "ROCE 23.65% indicates capital-efficient operations on paper"
+    ],
+    "key_risks": [
+      "Operating cash flow negative 3 of last 4 years (-3, -27, -9 Cr) — earnings not converting to cash",
+      "P/E 73x and P/B 10.9x leave zero margin of safety for a ₹1,516 Cr micro-cap",
+      "FCF negative every year since 2022 (cumulative ~-₹65 Cr); growth funded by equity dilution (FY24 financing CF +₹59 Cr)"
+    ],
+    "red_flags": [
+      "Growing profits with negative OCF — classic working-capital bloat / receivable-heavy defense contracts",
+      "Equity issuance in FY24 to fund expansion rather than internal accruals",
+      "Outside my circle of competence — defense/aerospace lacks consumer predictability"
+    ],
+    "detailed_analysis": "This is a typical story stock riding the Indian defense narrative — revenue has tripled from ₹47 Cr to ₹146 Cr in three years and the market has awarded it a 73x P/E. I have no interest in paying that multiple for a ₹1,515 Cr micro-cap in a sector I don't understand. More importantly, the cash flow statement tells a very different story from the P&L: while reported PAT grew from ₹8 Cr to ₹24 Cr, operating cash flow was ₹15 Cr → -₹9 Cr → -₹27 Cr → -₹3 Cr. That tells me working capital is ballooning — most likely receivables stuck with government/PSU customers — and the \"profits\" are accounting entries, not cash in the bank.\\n\\nThe balance sheet improvement (equity jumping from ₹25 Cr to ₹126 Cr in FY24) is an equity raise, not organic compounding. Debt is manageable at ₹21 Cr and promoter at 68% is respectable, but those two positives don't rescue a business where every rupee of growth requires external funding. I prefer boring compounders like consumer retail or FMCG where ₹1 of PAT becomes ₹1 of cash. At 73x earnings with negative FCF and outside my circle of competence, this is an easy pass. I would revisit only if the price halved AND OCF turned sustainably positive.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 26491,
+    "model_used": "opus",
+    "total_cost_usd": 0.10592124999999998,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 9967,
+      "cache_read_input_tokens": 14345,
+      "output_tokens": 1457,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9967,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 11401,
+          "cache_creation_input_tokens": 1510,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1510
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

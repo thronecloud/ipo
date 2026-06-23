@@ -1,0 +1,70 @@
+{
+  "symbol": "LXCHEM",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T18:15:52.870581Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "LXCHEM fails the Magic Formula on both dimensions: Earnings Yield of ~6.9% (EBIT ₹286 Cr / EV ~₹4,155 Cr) is below my 12% minimum, and ROCE of 8.56% is less than half the 20% threshold I require. With net profit declining from ₹256 Cr (FY22) to ₹114 Cr (FY25) while the stock trades at 49.5x trailing earnings, this is a deteriorating business dressed up in an expensive valuation.",
+    "key_strengths": [
+      "Revenue CAGR of 12.3% over 9 years shows the acetyl/specialty chemical franchise has durable demand",
+      "Low D/E of 0.17 keeps financial risk manageable despite rising borrowings in FY25",
+      "High promoter holding of 69.4% aligns management with long-term outcomes"
+    ],
+    "key_risks": [
+      "Profitability in freefall: net profit down 55% from ₹256 Cr (FY22) peak to ₹114 Cr (FY25), operating margin only 4.1%",
+      "FCF deeply negative at -₹286 Cr in FY25 due to ₹394 Cr capex; CWIP of ₹462 Cr signals capex cycle still not complete",
+      "Valuation at 49.5x trailing P/E with declining earnings is speculative — Magic Formula never buys earnings hope at this yield"
+    ],
+    "red_flags": [
+      "Earnings yield of ~6.9% fails Magic Formula minimum of 12% — not cheap enough to compensate for poor ROIC",
+      "ROCE 8.56% and ROE 5.93% are both well below cost of capital — capital allocation is value-destructive at these return levels",
+      "Borrowings nearly tripled from ₹143 Cr (FY24) to ₹334 Cr (FY25) despite ongoing equity on balance sheet — concerning capital discipline",
+      "Net profit declining 4 consecutive years post-FY22 super-cycle peak; not a temporary dip"
+    ],
+    "detailed_analysis": "Running the Magic Formula on LXCHEM: EV = Market Cap (₹3,939 Cr) + Net Debt (₹258 - ₹42 Cr = ₹216 Cr) = ~₹4,155 Cr. Earnings Yield = EBIT ₹286 Cr / EV ₹4,155 Cr = 6.9% — barely above my hard floor of 6%, nowhere near the 12%+ that makes a stock attractive. ROCE of 8.56% tells the same story on the quality side — this business earns well below its cost of capital. When both legs of the Magic Formula are broken, I walk away.\n\nThe deeper issue is what happened post-FY22: the commodity cycle inflated EBIT to ₹371 Cr and net profit to ₹256 Cr, and the market re-rated the stock as a high-quality compounder. But FY23-25 has revealed mean reversion — margins compressed back to 4.1% operating, net profit has halved, and the company is now spending aggressively on capex (₹394 Cr in FY25 alone, CWIP of ₹462 Cr) funded partly by debt. The forward P/E of 28x implies analysts expect a sharp earnings recovery from capex payoff, but I don't pay for hope — I pay for proven, high ROIC businesses at cheap prices. LXCHEM offers neither right now.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 46005,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08075895,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11161,
+      "cache_read_input_tokens": 9104,
+      "output_tokens": 2411,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11161
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 401,
+          "cache_read_input_tokens": 9104,
+          "cache_creation_input_tokens": 2057,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2057,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

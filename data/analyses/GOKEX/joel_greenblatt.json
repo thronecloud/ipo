@@ -1,0 +1,70 @@
+{
+  "symbol": "GOKEX",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T17:27:16.335575Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Gokaldas Exports fails both Magic Formula tests — Earnings Yield of ~6.2% (EBIT ₹371 Cr / EV ~₹6,002 Cr) is well below the 12% threshold, and ROCE of 10.6% falls far short of the 20% minimum for a \"good business.\" At 45.5x trailing P/E with a 2.92% operating margin, the market is pricing in perfection for a capital-intensive, low-margin apparel exporter.",
+    "key_strengths": [
+      "Revenue scaled impressively — 14.5% CAGR over 9 years, hitting ₹3,864 Cr in FY2025 with strong export diversification across 50+ countries.",
+      "Operating income growth outpaced revenues (29.2% CAGR), signaling some operating leverage as scale builds.",
+      "Strong institutional conviction — FII (23.7%) + DII (39.0%) = 62.7% combined holding provides price support."
+    ],
+    "key_risks": [
+      "ROIC/ROCE of 10.6% signals a capital-destroying business at the margin — Greenblatt requires 20%+ for a quality franchise.",
+      "FCF deeply negative for two consecutive years: -₹865 Cr (FY24), -₹131 Cr (FY25) as capex surged to ₹689 Cr and ₹191 Cr respectively.",
+      "Promoter holding collapsed to just 9.15% — founders have effectively exited; aligns with the mediocre historical returns on capital."
+    ],
+    "red_flags": [
+      "Earnings Yield of ~6.2% (EBIT/EV) is barely above the Magic Formula rejection threshold of 6%, nowhere near the 12–15% required for attractiveness.",
+      "Debt exploded from ₹154 Cr (FY23) to ₹845 Cr (FY25) to fund an aggressive capex cycle — total assets nearly tripled in two years with returns yet to materialize.",
+      "Operating margin of 2.92% leaves almost no cushion; any revenue softness or currency headwind wipes out profitability entirely.",
+      "Net profit in FY2025 (₹159 Cr) is barely above FY2023 (₹173 Cr) despite revenue growing 74% — earnings are not scaling with the business."
+    ],
+    "detailed_analysis": "Running the Magic Formula on Gokaldas: EV ≈ ₹5,322 Cr (market cap) + ₹845 Cr (debt) − ₹165 Cr (cash) = ₹6,002 Cr. With FY2025 operating income (EBIT proxy) of ₹371 Cr, Earnings Yield = 371/6,002 = 6.2% — well below the 12% minimum I look for. ROCE of 10.6% similarly misses the 20%+ threshold for a good business. Apparel manufacturing is structurally low-return, and Gokaldas confirms this — a 2.92% operating margin means the business earns almost nothing after paying workers, fabric, and rent. The stock at 45.5x trailing earnings prices in a multi-year recovery that may never deliver the returns on capital the formula demands.\n\nThe acquisition-fueled capex surge (₹689 Cr in FY24 alone) has loaded the balance sheet with debt (0.46x D/E, up from near-zero in FY23) while destroying free cash flow for two straight years. The bull case rests on Forward P/E of 24x implying earnings doubling — plausible if the new capacity ramps, but the business has never demonstrated the sustained high-ROIC economics that warrant a premium. With promoters holding only 9.15%, I see little skin in the game. I require cheap AND good; Gokaldas is neither.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 49108,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0878043,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11462,
+      "cache_read_input_tokens": 8976,
+      "output_tokens": 2808,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11462
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 380,
+          "cache_read_input_tokens": 8976,
+          "cache_creation_input_tokens": 2486,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2486,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

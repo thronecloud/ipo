@@ -1,0 +1,70 @@
+{
+  "symbol": "AARTIDRUGS",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-18T16:10:51.061175Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Aarti Drugs is a commodity API manufacturer whose earnings peaked in the 2021 pharma boom and have since declined ~40% (net profit 280→168 Cr), with revenues now contracting and operating margins collapsing to just 6.16%. At a P/E of 16.8x on shrinking earnings, you're paying growth-stock prices for a declining cyclical — that's exactly the trap Lynch warns against.",
+    "key_strengths": [
+      "Manageable leverage at D/E 0.39 with 5/5 years of positive operating cash flow providing financial stability",
+      "Diversified API portfolio (30+ molecules: NSAIDs, fluoroquinolones, antifungals, antidiabetics) reduces single-product risk",
+      "Promoter holding stable at 55% signals skin-in-the-game ownership"
+    ],
+    "key_risks": [
+      "Revenue contracting two consecutive years (2,716 Cr in FY23 → 2,387 Cr in FY25) with no recovery catalyst visible",
+      "Operating margins razor-thin at 6.16% in a commodity API market — any pricing pressure destroys profitability",
+      "Capex-heavy cycle (177–226 Cr/yr) generating minimal free cash flow (67 Cr FY25), yet new capacity hasn't reversed earnings decline"
+    ],
+    "red_flags": [
+      "Net profit down 40% from FY21 peak (280→168 Cr) with last-5-year trend firmly contracting",
+      "EBITDA margin collapsed from 22.7% (FY21) to 12.9% (FY25) — the COVID API supercycle is over",
+      "PEG ratio ~1.6x on the generous 9Y CAGR of 10.4%; on trailing reality (earnings declining), the PEG is effectively undefined",
+      "Cash balance near zero (5 Cr) while debt stands at 615 Cr — no financial cushion"
+    ],
+    "detailed_analysis": "From a Lynch standpoint, Aarti Drugs is a textbook \"cyclical mistaken for a growth stock.\" The FY21 earnings spike (net profit 280 Cr) was driven by the global API demand surge during COVID — a one-time event, not a durable competitive advantage. Since then, the story has steadily unraveled: revenue peaked at 2,716 Cr in FY23 and has slid to 2,387 Cr in FY25, EBITDA has been cut nearly in half from its peak, and operating margins have compressed from ~22% to just 6.16%. The 9-year revenue CAGR of 8.6% and EBITDA CAGR of only 3.9% confirm this is a slow grower at best — never a fast grower. For Lynch, the first question is always \"what's the story?\" — here the story is deterioration, not expansion.\n\nThe valuation offers no margin of safety to compensate. A P/E of 16.8x is reasonable only if earnings are growing; on a declining earnings base, it is expensive. The PEG on a charitable 10% long-run growth assumption is already ~1.6x, above Lynch's 1.5x red-flag threshold — and the recent trend argues the real forward growth rate is negative. CWIP ballooned to 261 Cr in FY24 and capex has been running 150–226 Cr/yr without translating into earnings recovery, which raises capital-allocation concerns. ROE of 12.7% barely clears the 12% floor and is not improving. There is no ten-bagger story here, no expanding niche, and no evidence the margin compression has bottomed. Lynch's advice: \"When the story changes, sell.\" The story changed in FY22 and has not recovered.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 56656,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08876790000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11638,
+      "cache_read_input_tokens": 9438,
+      "output_tokens": 2819,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11638,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 654,
+          "cache_read_input_tokens": 9438,
+          "cache_creation_input_tokens": 2200,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2200
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

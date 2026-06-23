@@ -1,0 +1,70 @@
+{
+  "symbol": "AXISCADES",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T16:36:30.072153Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "AXISCADES is a niche engineering services firm with genuine defense/aerospace exposure, but its erratic profitability history, sub-15% ROE, and a valuation of 73x earnings with an FCF yield below 1% leave zero margin of safety. I would not pay 73 times earnings for a business that posted net losses in four of the last nine years.",
+    "key_strengths": [
+      "Defense & aerospace specialization with India's defense indigenization tailwind (DRDO, HAL relationships)",
+      "Revenue growing at ~12% CAGR over 9 years with operating cash flow positive all 5 recent years (OCF INR 88 Cr in FY25)",
+      "Manageable D/E of 0.37 and recent debt paydown (borrowings down from INR 346 Cr in FY23 to INR 259 Cr in FY25)"
+    ],
+    "key_risks": [
+      "Chronically unstable earnings — net losses in FY18, FY19, FY21, FY23; no evidence of a durable earnings machine",
+      "Finance costs compounded at 37% CAGR over 9 years; a debt-fueled acquisition binge that hasn't yet produced commensurate profits",
+      "At 73x P/E and ~130x FCF (INR 61 Cr FCF vs INR 8,037 Cr market cap), the stock prices in perfection for a business that has delivered anything but"
+    ],
+    "red_flags": [
+      "Net profit negative in 4 of 9 years — this is not a predictable earnings compounder",
+      "Borrowings spiked from INR 72 Cr (FY22) to INR 346 Cr (FY23) — acquisition-driven leverage with limited visible payoff",
+      "ROE of only 12.7% at a P/B of 11.56x implies the market is paying a luxury-brand premium for a commoditized-services business",
+      "Other income line wildly volatile (INR -62 Cr in FY23, +16 Cr in FY25) — signals messy financials beneath the surface"
+    ],
+    "detailed_analysis": "AXISCADES operates in interesting end-markets — defense electronics, aerospace engineering, ADAS — and benefits from India's push toward defense self-reliance. Revenue has grown from INR 375 Cr to INR 1,031 Cr over nine years, a respectable 11.9% CAGR. But the income statement tells a more troubling story: the company swung between profits and losses repeatedly, including negative net profits in FY18, FY19, FY21, and FY23. A truly wonderful business does not behave this way. Consistent earnings are the hallmark of a durable competitive advantage; volatile earnings signal a business at the mercy of cycles, competition, and management execution risk. With EBITDA of INR 143 Cr but finance costs of INR 34 Cr and a history of write-downs distorting \"other income,\" the underlying earnings quality is poor.\n\nThe valuation is the final and decisive disqualifier. At INR 8,037 Cr market cap on INR 61 Cr of free cash flow, an investor is paying roughly 132x FCF — a price that would be hard to justify even for a Coca-Cola or Apple, let alone a mid-cap engineering services firm with a 12.7% ROE and lumpy profits. I need a margin of safety, not a prayer. The stock would need to fall 70–80% to approach a price where the numbers even begin to make sense. Engineering services is also a low-moat, people-intensive business with high attrition risk and client concentration exposure — exactly the type of business Charlie and I would pass on at any reasonable price, let alone at 73x earnings.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 45992,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.075516,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10950,
+      "cache_read_input_tokens": 9165,
+      "output_tokens": 2113,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10950
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 359,
+          "cache_read_input_tokens": 9165,
+          "cache_creation_input_tokens": 1785,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1785,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

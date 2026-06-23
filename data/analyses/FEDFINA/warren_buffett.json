@@ -1,0 +1,69 @@
+{
+  "symbol": "FEDFINA",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T17:16:29.161983Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Fedbank Financial Services is a mid-sized NBFC with decent revenue growth (32% CAGR) but a deteriorating profit trajectory in FY2025, sub-par ROE of 8.84%, and no discernible economic moat beyond its Federal Bank parentage. At 17.5x trailing earnings with declining earnings, the price is not cheap enough to compensate for the mediocrity.",
+    "key_strengths": [
+      "Strong revenue growth: 32.2% CAGR 2022-2025, driven by loan book expansion to INR 13,250 Cr in total assets",
+      "Federal Bank parentage (60.79% promoter holding) provides funding access, brand credibility, and distribution leverage",
+      "Reasonable forward P/E of 11.35x suggests market is pricing in a recovery — limited downside if earnings rebound"
+    ],
+    "key_risks": [
+      "ROE of only 8.84% — well below my 15% threshold; high leverage (D/E 3.83) amplifies risk without delivering adequate returns on equity",
+      "Profits declined FY2024→FY2025 (INR 245 Cr to 225 Cr) and EBITDA fell from 415 to 385 Cr — the growth story is stalling",
+      "Negative operating cash flow all 4 years (-578 to -978 Cr); entirely dependent on external debt financing (INR 10,437 Cr debt) to fund growth"
+    ],
+    "red_flags": [
+      "Profit and EBITDA both declined in FY2025 despite revenue still growing — margin compression and/or asset quality stress likely",
+      "FII ownership at just 0.66% signals very low institutional conviction in this name",
+      "Perpetually negative free cash flow (-INR 996 Cr in FY2025); this business consumes capital relentlessly without building a cash-generative flywheel"
+    ],
+    "detailed_analysis": "Fedbank Financial Services is a classic capital-hungry NBFC — it borrows cheap (theoretically) and lends at a spread, growing its book rapidly. The 32% revenue CAGR looks impressive on the surface, but I must ask: what is the quality of that growth? Net profit fell from INR 245 Cr to INR 225 Cr in FY2025, a year when revenues still rose from INR 1,522 Cr to INR 1,973 Cr. That means the incremental rupee of revenue is yielding less profit — a troubling sign for a lending business. ROE of 8.84% is deeply inadequate; when a company borrows at a D/E of 3.83x and still only earns 8.84% on equity, the margin of safety in its lending franchise is dangerously thin. I want businesses that earn 20%+ ROE, not ones that barely beat a fixed deposit.\n\nOn moat: I see none worth paying for. The competitive advantage claimed is proximity to Federal Bank's customer base and co-lending arrangements — that's a distribution edge, not an economic moat. Any large bank or well-capitalized NBFC (Bajaj Finance, HDFC, Muthoot) can replicate this product mix: gold loans, LAP, housing, SME — these are commoditized lending categories fought on price and reach. At 2.02x book value, I'm being asked to pay a premium for a mediocre franchise with declining near-term earnings, high leverage, and no free cash generation. This is precisely the \"fair business at an average price\" I've spent 60 years trying to avoid.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 47795,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07671285,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10379,
+      "cache_read_input_tokens": 8442,
+      "output_tokens": 2350,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10379
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 448,
+          "cache_read_input_tokens": 8442,
+          "cache_creation_input_tokens": 1937,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1937,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

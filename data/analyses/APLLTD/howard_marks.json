@@ -1,0 +1,69 @@
+{
+  "symbol": "APLLTD",
+  "persona": "howard_marks",
+  "persona_display_name": "Howard Marks",
+  "analyzed_at": "2026-04-18T16:24:35.335384Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Alembic trades at 23x earnings and 14.9x EV/EBITDA despite a 9-year net profit CAGR of -2.3% and a catastrophic FCF collapse to -₹466 Cr in FY25 — the price reflects a recovery story that the cash flows flatly contradict. At these multiples, the margin of safety is essentially zero; you are paying optimism prices for a business still searching for its FY21 peak.",
+    "key_strengths": [
+      "High gross margin (71.5%) reflects real pricing power in branded generics and APIs — the underlying business quality is genuine.",
+      "Low financial leverage historically (D/E 0.28), promoter holding at 69.7% aligns management with long-term outcomes.",
+      "Revenue CAGR of 8.6% over 9 years shows durable top-line, with last-5-year trend still expanding toward ₹6,672 Cr in FY25."
+    ],
+    "key_risks": [
+      "FCF collapsed to -₹466 Cr in FY25 — operating CF was just ₹88 Cr despite ₹582 Cr net profit, signalling severe working capital deterioration or aggressive capex mismanagement.",
+      "Debt tripled in one year: borrowings jumped from ₹513 Cr (FY24) to ₹1,489 Cr (FY25); finance costs are growing at 35.9% CAGR and now consume 13.6% of EBITDA.",
+      "Profits are still 49% below FY21 peak (₹1,146 Cr → ₹582 Cr) and operating margins contracted from 27.5% to 11.4% — the recovery thesis has been 'just around the corner' for four years."
+    ],
+    "red_flags": [
+      "FY25 operating CF of ₹88 Cr vs. net profit of ₹582 Cr — ₹494 Cr earnings-to-cash gap demands explanation; classic sign of working capital buildup or aggressive revenue recognition.",
+      "Borrowings nearly tripled in a single year (₹513 Cr → ₹1,489 Cr) while simultaneously posting negative FCF — the balance sheet is being stretched during the weakest cash-generative period.",
+      "9-year EBITDA CAGR of -0.3% and net profit CAGR of -2.3%: the market is paying growth multiples for a business that has generated zero earnings growth in a decade."
+    ],
+    "detailed_analysis": "Second-level thinking demands we ask not \"is Alembic a good company?\" but \"what does ₹785 already assume?\" At 23.2x trailing P/E and 14.9x EV/EBITDA, the price discounts a clean recovery to FY21-level profitability. But FY25 data brutally undermines that narrative: operating cash flow cratered to ₹88 Cr (from ₹803 Cr in FY24), FCF turned deeply negative at -₹466 Cr, and the company simultaneously borrowed ₹976 Cr net to fund a ₹564 Cr capex year. Gross margin of 71.5% confirms the product franchise is real, but with operating margin at only 11.4%, the cost structure — R&D, regulatory spend, US market complexity — is consuming the gross profit advantage. ROE of 11.4% and ROCE of 13% are below what I would expect for a business carrying this much operational and cyclical risk.\n\nThe cycle context matters enormously here. Alembic rode the US generics boom and COVID tailwinds to a peak in FY21 (₹1,663 Cr EBITDA, ₹1,146 Cr net profit). Four years later, EBITDA sits 37% below that peak and the market still prices the stock as if the return journey is inevitable and imminent. In a stress scenario — US pricing pressure intensifying, capex projects delayed, working capital cycle worsening — you can construct a path to ₹400 Cr in net profit, which at 20x P/E gives ₹400 stock price, a 49% downside from here. The upside in a bull case (full recovery to FY21 earnings) gets you to perhaps ₹950-1,000, a 21-27% gain. Asymmetry is entirely unfavorable. Pass.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 65280,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08425545,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9617,
+      "cache_read_input_tokens": 11159,
+      "output_tokens": 2989,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9617,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 489,
+          "cache_read_input_tokens": 9105,
+          "cache_creation_input_tokens": 2566,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2566
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

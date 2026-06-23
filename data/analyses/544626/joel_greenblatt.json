@@ -1,0 +1,69 @@
+{
+  "symbol": "544626",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-20T11:03:20.600090Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Exato scores well on return on capital (ROCE 26.5%) but fails the Magic Formula's earnings yield test with EBIT/EV of only ~3.8% (EBIT 14 Cr / EV ~366 Cr) at a P/E of 35. A good business at a bad price is not a Magic Formula buy.",
+    "key_strengths": [
+      "ROCE 26.5% and ROE 28.2% indicate efficient capital deployment",
+      "Revenue grew from 73→124 Cr (30% CAGR) with EBIT nearly 2.5x in 2 years",
+      "Promoter holding stable at 54.73%, aligning incentives"
+    ],
+    "key_risks": [
+      "Earnings yield ~3.8% — far below the 12%+ Magic Formula threshold",
+      "Borrowings jumped 6→28 Cr while FCF collapsed to 0 in 2025",
+      "Tiny 338 Cr micro-cap with FY24 OCF of -14 Cr — lumpy cash generation"
+    ],
+    "red_flags": [
+      "Earnings yield <6% (overvalued by Magic Formula)",
+      "FY24 operating cash flow was -14 Cr despite reported profit of 5 Cr — working capital/quality concern",
+      "Rising leverage (borrowings 4.6x in 2 years) funding growth instead of internal accruals"
+    ],
+    "detailed_analysis": "The Magic Formula requires BOTH a cheap price (high EBIT/EV) AND a good business (high ROIC). Exato delivers on the second leg — ROCE of 26.5% and ROE of 28.2%, with EBIT expanding from 6 Cr (2023) to 14 Cr (2025), is a genuinely capital-efficient IT services operation. But the first leg fails decisively: at a market cap of 338 Cr plus 28 Cr borrowings (EV ~366 Cr), EBIT of 14 Cr yields only ~3.8% — roughly a quarter of what I'd want. P/E of 35 confirms the market has already priced in the growth.\n\nBeyond the valuation, quality of earnings is suspect. Reported net profit was 5 Cr in FY24 but operating cash flow was NEGATIVE 14 Cr; FY25 FCF rounded to zero despite 10 Cr of accounting profit. Growth is being financed by a 22 Cr jump in borrowings and equity issuance, not internal cash generation. For a systematic Magic Formula investor, this is a pass — the ROIC may be real, but you're paying a premium price for an unproven cash-conversion story in a small, illiquid name. Wait for the price to come to the business.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 25373,
+    "model_used": "opus",
+    "total_cost_usd": 0.102555,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 9704,
+      "cache_read_input_tokens": 14000,
+      "output_tokens": 1395,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9704,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 11130,
+          "cache_creation_input_tokens": 1444,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1444
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

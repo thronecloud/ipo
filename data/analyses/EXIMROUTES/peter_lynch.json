@@ -1,0 +1,69 @@
+{
+  "symbol": "EXIMROUTES",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-21T07:53:20.789172Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Exim Routes is a hypergrowth paper-recycling intermediary (revenue 4→121 Cr in 4 years, 134% CAGR) with optically attractive PEG of ~0.4 using recent profit growth. However, net profit has never once converted to positive operating cash flow—a disqualifying flaw for a Lynch buy.",
+    "key_strengths": [
+      "Explosive revenue growth: 4→121 Cr in 4 years with profit inflecting from zero to INR 8 Cr in FY25",
+      "Outstanding ROE/ROCE of 54%/55% on existing capital base — capital-light intermediary model at its best",
+      "Low D/E of ~0.36 (borrowings INR 9 Cr vs equity INR 25 Cr); FII entry at 7.55% signals institutional awareness"
+    ],
+    "key_risks": [
+      "OCF negative all 5 years (0/5 positive); FY25 shows INR 8 Cr profit yet OCF = -5 Cr — classic working capital trap for fast-growing traders, but 5 consecutive years is alarming",
+      "Zero moat: paper-recycling facilitation is a pure commodity intermediary — any competitor can undercut; pricing power is near-zero",
+      "ROE will compress sharply: equity surged 4→25 Cr in FY25 (likely IPO proceeds), meaning the 54% ROE is backward-looking and unsustainable at this capital base"
+    ],
+    "red_flags": [
+      "Profits never convert to cash: INR 8 Cr net profit vs. -5 Cr OCF in FY25 suggests receivables/working capital are absorbing all earnings — a serious quality-of-earnings concern",
+      "Market cap (INR 248 Cr) is 2x TTM revenue (INR 121 Cr) for a trading/intermediary business with 8.3% EBITDA margins — that's a rich premium for a business with no proprietary IP or lock-in",
+      "Incorporated only April 2019 with zero profit track record before FY24 — the company has exactly one year of meaningful earnings history"
+    ],
+    "detailed_analysis": "The growth numbers here look like a ten-bagger in the making — revenue up 30x in four years, profits finally appearing, ROE above 50%. As a Lynch fast-grower classifier, I'm always excited when a small company in an unglamorous niche (recycled paper!) posts triple-digit CAGRs. The story is simple: India's paper mills need a reliable aggregator of recyclable feedstock, and Exim Routes is building that platform. PEG ratio using recent ~100% earnings growth clocks in at roughly 0.38 — on paper, extraordinarily cheap.\n\nBut here's what kills the story for me: in five consecutive years of operation, this company has never generated a single rupee of positive operating cash flow. FY25 net profit was INR 8 Cr; operating cash flow was -5 Cr. That's a INR 13 Cr gap explained almost entirely by working capital ballooning alongside revenue. For a trading intermediary, this isn't a growth-stage luxury — it means the business may never be self-funding. The equity base tripled to INR 25 Cr in FY25 (likely IPO proceeds), which funds operations for now, but the cash burn means the 54% ROE is a mirage on the new capital. Until OCF turns consistently positive, this is a speculative story, not a Lynch-grade compounder.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 56366,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08494650000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10734,
+      "cache_read_input_tokens": 8250,
+      "output_tokens": 2814,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10734,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 374,
+          "cache_read_input_tokens": 8250,
+          "cache_creation_input_tokens": 2484,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2484
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

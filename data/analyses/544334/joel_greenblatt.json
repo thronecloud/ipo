@@ -1,0 +1,69 @@
+{
+  "symbol": "544334",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-20T09:46:07.722215Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Indobell fails the Magic Formula on both counts: ROE of 0.21% implies near-zero return on capital, while a P/E of 20 on such anemic profitability signals a poor earnings yield. Cheap-and-good is the mandate; this is expensive-and-bad.",
+    "key_strengths": [
+      "High promoter holding at 65% signals skin in the game",
+      "50+ year operating history (since 1972) in insulation niche",
+      "Tiny INR 45 Cr cap offers re-rating optionality if ROIC ever inflects"
+    ],
+    "key_risks": [
+      "ROE of 0.21% indicates capital is essentially idle — fails ROIC test",
+      "P/E of 20 on negligible earnings = earnings yield ~5%, below 6% threshold",
+      "Microcap in commoditized industrial insulation — no pricing power"
+    ],
+    "red_flags": [
+      "ROE <1% is effectively no return on capital",
+      "Valuation (20x) disconnected from profitability fundamentals",
+      "Negligible DII participation (1.79%) — institutions avoid for a reason"
+    ],
+    "detailed_analysis": "The Magic Formula requires ranking high on BOTH earnings yield (EBIT/EV) and return on capital (EBIT/invested capital). Indobell flunks both. A 0.21% ROE means essentially no earnings are generated on the equity base — a business earning nothing on capital cannot be a quality compounder regardless of price. Paying 20x earnings for such negligible profitability yields roughly 5%, well below my 12%+ attractive threshold.\n\nSystematic investing means no exceptions. There is no scenario where Indobell ranks well on the two-factor screen: it sits in the bottom quartile on ROIC and the bottom half on earnings yield. The 65% promoter stake and long operating history don't overcome the arithmetic. Pass and redeploy capital to names that are both cheap AND good.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 30330,
+    "model_used": "opus",
+    "total_cost_usd": 0.12712525000000002,
+    "usage": {
+      "input_tokens": 7,
+      "cache_creation_input_tokens": 10453,
+      "cache_read_input_tokens": 24368,
+      "output_tokens": 1983,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10453,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 60,
+          "cache_read_input_tokens": 11665,
+          "cache_creation_input_tokens": 921,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 921
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

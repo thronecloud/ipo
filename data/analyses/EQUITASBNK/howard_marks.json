@@ -1,0 +1,70 @@
+{
+  "symbol": "EQUITASBNK",
+  "persona": "howard_marks",
+  "persona_display_name": "Howard Marks",
+  "analyzed_at": "2026-04-18T17:25:33.733528Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Equitas SFB is a classic \"recovery story\" priced off an aggressive forward earnings assumption — net profit collapsed 82% in FY2025 (INR 799 Cr → INR 147 Cr), yet the stock demands 1.28x book from a bank earning a 2.42% ROE. Second-level thinking says the forward P/E of 11.28x is a trap: it embeds a ~350% earnings recovery that the deteriorating NIM trajectory does not yet support.",
+    "key_strengths": [
+      "Asset growth is real: balance sheet scaled from INR 26,948 Cr to INR 52,836 Cr in 3 years, demonstrating franchise reach.",
+      "Liquidity buffer is adequate: cash jumped to INR 5,536 Cr in FY2025 and FCF turned positive at INR 1,692 Cr.",
+      "Low leverage (D/E 0.59) and strong DII ownership (50.87%) provides some institutional floor to the stock."
+    ],
+    "key_risks": [
+      "NIM is being crushed structurally: finance costs grew at 29.1% CAGR vs. revenue CAGR of 17.4% — the spread is widening in the wrong direction.",
+      "Microfinance/MSME credit quality risk: SFBs serving overleveraged borrowers face non-linear deterioration in a slowdown; FY2025 profit collapse may not be the bottom.",
+      "Valuation offers no margin of safety: at 1.28x P/B with 2.42% ROE, fair value P/B is closer to 0.7–0.8x — implying ~40% downside to book-justified price."
+    ],
+    "red_flags": [
+      "82% profit collapse in a single year (FY2024: INR 799 Cr → FY2025: INR 147 Cr) is a severe, not temporary, stress signal.",
+      "Forward P/E of 11.28x requires profit to recover to ~INR 660 Cr — a 4.5x jump from FY2025 — with no evidence the NIM drag has reversed.",
+      "Finance costs more than doubled in 3 years (INR 1,421 Cr → INR 3,060 Cr); the deposit cost structure of an SFB vs. large banks is a structural disadvantage that consensus underweights.",
+      "ROE of 2.42% is below any reasonable cost of equity estimate — the bank is destroying shareholder value at current profitability."
+    ],
+    "detailed_analysis": "The fundamental problem at Equitas SFB is the NIM scissors: revenue grew at 17.4% CAGR over three years while finance costs compounded at 29.1%. The result is an operating model that, at scale, is earning less per rupee deployed. Net profit of INR 147 Cr on a INR 52,836 Cr balance sheet is a 0.28% ROA — structurally impaired, not temporarily depressed. A bank that cannot earn above its cost of equity is worth less than book, yet the market prices it at 1.28x P/B. The implied \"recovery\" in the forward P/E of 11.28x would demand a 4–5x earnings normalization in 12 months, which requires both credit quality to stabilize and funding costs to fall — a dual conjecture with no present evidence.\n\nFrom a cycle standpoint, Indian small finance banks and microfinance lenders entered FY2025 with well-documented borrower overleveraging in the MSME and microfinance segments. Equitas's FY2025 profit implosion is consistent with that sector-wide stress. The risk of permanent capital loss here is not trivial: if the recovery is 18–24 months out instead of 12, and if book value erodes through provisioning, a mark-to-market to 0.75x P/B on a shrinking equity base is not a tail scenario — it is a plausible base case. Until ROE sustainably crosses 10% and the NIM trajectory reverses, there is no margin of safety, and the consensus \"cheap on forward earnings\" view is exactly the kind of optimistic crowd thinking that Marks warns to fade.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 56865,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07596584999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8735,
+      "cache_read_input_tokens": 10552,
+      "output_tokens": 2669,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 8735
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 425,
+          "cache_read_input_tokens": 8498,
+          "cache_creation_input_tokens": 2291,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2291,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

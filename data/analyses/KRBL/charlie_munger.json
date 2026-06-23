@@ -1,0 +1,69 @@
+{
+  "symbol": "KRBL",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T18:16:32.912266Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "KRBL owns India's #1 basmati brand (India Gate) with near-zero debt and a 135-year operating history, but ROCE of 11.8% and sharply contracting EBITDA (INR 1,021 Cr in FY23 → INR 754 Cr in FY25) confirm this is a commodity-adjacent business earning sub-par returns on capital. It's cheap at 6.7x EV/EBITDA, but cheapness alone never saved a mediocre business — Munger's first question is always \"why is it cheap?\"",
+    "key_strengths": [
+      "India Gate is the dominant branded basmati franchise — category leader in India and a recognized export brand across 90+ countries, providing modest pricing power above commodity rice.",
+      "Virtually debt-free balance sheet (D/E 0.01, borrowings collapsed from INR 572 Cr in FY20 to INR 71 Cr in FY25), enabling capital returns and weathering volatile paddy procurement cycles.",
+      "Optically cheap valuation — Forward P/E of 9.4x and EV/EBITDA of 6.7x price in substantial pessimism, limiting downside for a business that has survived 135 years."
+    ],
+    "key_risks": [
+      "ROIC/ROCE at 11.8% is below my 15% threshold — rice is ultimately a commodity, and even the India Gate brand cannot fully escape input cost volatility and government export policy interference.",
+      "Profit trajectory is alarming: net profit fell from INR 701 Cr (FY23) to INR 476 Cr (FY25), a 32% collapse in two years — this is not a one-off blip but a sustained margin squeeze with EBITDA declining simultaneously.",
+      "Extreme working capital volatility: OCF swung from +INR 1,212 Cr (FY20) to -INR 360 Cr (FY23) to +INR 961 Cr (FY25) — paddy procurement cycles create unpredictable cash generation, making true earnings quality suspect."
+    ],
+    "red_flags": [
+      "EBITDA contracting for 5 years even as revenue grew 5.8% CAGR — operating leverage is working in reverse, signaling structural margin erosion rather than cyclical softness.",
+      "Other income ballooned from INR 15 Cr (FY19) to INR 92–97 Cr (FY23–24) before falling back — elevated non-operating income was masking core business deterioration in FY23's headline profit peak.",
+      "Promoter holding at 60.17% with DII at only 0.71% — institutional disinterest is a signal worth respecting; smart domestic money is largely absent."
+    ],
+    "detailed_analysis": "KRBL is a well-known Indian consumer staples name, but I must invert: what does a business with 5.8% revenue CAGR, 11.8% ROCE, and a contracting profit trend actually deserve? Inversion tells me the apparent cheapness (P/E 12.4x, EV/EBITDA 6.7x) is largely warranted. A great business compounds capital at 20%+ — KRBL cannot clear even 12%. The India Gate brand provides real but limited moat: basmati is a differentiated agricultural commodity, not a Coca-Cola formula. Government export bans, paddy procurement costs, and competitive private labels cap the ceiling on returns. The balance sheet is genuinely clean (D/E 0.01), which is a real positive, but a debt-free mediocre business is still mediocre.\n\nThe operating cash flow volatility is the other puzzle piece that worries me — a swing from -INR 360 Cr to +INR 961 Cr in two years reflects working capital whipsaws from paddy inventory, not business quality. The FY23 profit peak of INR 701 Cr was inflated by INR 92 Cr of other income; normalized earnings are closer to INR 476–500 Cr, which is precisely where FY25 landed. At current price, you're paying ~17x normalized earnings for a business growing at 5–6% with shrinking margins. I would not add to a position here, but I would not short it either — the brand has durable value and the balance sheet provides a floor. It is a HOLD for existing holders, not a new allocation.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 45987,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08537399999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11200,
+      "cache_read_input_tokens": 9000,
+      "output_tokens": 2711,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11200
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 564,
+          "cache_read_input_tokens": 9000,
+          "cache_creation_input_tokens": 2200,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2200,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

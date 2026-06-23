@@ -1,0 +1,69 @@
+{
+  "symbol": "BALRAMCHIN",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-19T06:34:42.109972Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Balrampur Chini earns a ~7% EBIT/EV earnings yield (EBIT INR 711 Cr ÷ EV ~INR 9,855 Cr implied by reported EV/EBITDA of 12.85) — well short of the 12% magic formula threshold. ROCE of 10.2% is similarly below the 20% floor, leaving both magic formula legs weak for a commodity sugar cycle play.",
+    "key_strengths": [
+      "Ethanol/distillery segment adds government-mandated revenue visibility (ethanol blending policy)",
+      "Conservative borrowings-to-equity of 0.20; OCF positive in all 5 of last 5 years",
+      "Dominant UP-belt sugar player with integrated co-generation selling surplus power"
+    ],
+    "key_risks": [
+      "Sugar is a government-controlled commodity — FRP/SAP mechanism caps earnings upside and creates cyclical swings (EBIT ranged INR 522–786 Cr over 5 years)",
+      "Free cash flow turned deeply negative: −INR 391 Cr (FY23), −INR 43 Cr (FY24), −INR 455 Cr (FY25) due to heavy distillery capex",
+      "Total debt nearly doubled from INR 1,211 Cr (FY22) to INR 2,627 Cr (FY25), pressuring the balance sheet"
+    ],
+    "red_flags": [
+      "FCF negative for 3 consecutive years (FY23–FY25); capex INR 892 Cr in FY25 alone vs OCF of INR 425 Cr",
+      "Earnings yield ~7.2% (EBIT/EV) — 40% below minimum magic formula threshold of 12%",
+      "Net profit highly volatile (INR 100 Cr → INR 593 Cr → INR 232 Cr in early years) making normalised EBIT unreliable"
+    ],
+    "detailed_analysis": "By the magic formula, BALRAMCHIN fails both tests: earnings yield of ~7% and ROCE of 10.2% are both below the accept thresholds of 12% and 20%, respectively. The business is a commodity sugar manufacturer where government interference (minimum support prices, export bans) prevents the kind of durable high-ROIC compounding the formula seeks — no matter how efficient the mills are, pricing power is absent.\n\nThe ethanol pivot is strategically sensible but capital-hungry, as evidenced by INR 892 Cr capex in FY25 against INR 425 Cr OCF. Total debt has ballooned from INR 1,211 Cr to INR 2,627 Cr in three years. Until the distillery assets generate sustained free cash flow and ROCE crosses 15–20%, this is a value trap dressed as a diversification story.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 208855,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.2941695,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 26828,
+      "cache_read_input_tokens": 15085,
+      "output_tokens": 12602,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 26828,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 783,
+          "cache_read_input_tokens": 15085,
+          "cache_creation_input_tokens": 11743,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 11743
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

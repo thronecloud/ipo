@@ -1,0 +1,69 @@
+{
+  "symbol": "AHCL",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-20T11:10:14.751729Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "A tiny, recently-listed API intermediate manufacturer reporting 21 Cr of \"accounting profit\" while bleeding 23 Cr of operating cash — the optically attractive 38% ROCE is a mirage unsupported by a single rupee of real cash in four years. Invert: this is precisely the kind of capital-consuming, commodity-chemistry micro-cap Munger would toss in the \"too-hard / too-dangerous\" pile.",
+    "key_strengths": [
+      "Headline ROCE 38% and operating margin 33.7% optically strong",
+      "Revenue 3Y CAGR 28% with FY25 revenue at a fresh high of 120 Cr",
+      "Debt/Equity down to 0.27 post-IPO equity infusion"
+    ],
+    "key_risks": [
+      "OCF negative in 0/4 years; FY25 OCF of -23 Cr vs +21 Cr net profit — earnings quality is abysmal",
+      "Revenue highly volatile (57→113→67→120) — no pricing power, commoditized API intermediates",
+      "Micro-cap (616 Cr) recent IPO with 1 Cr cash, no track record as a public company"
+    ],
+    "red_flags": [
+      "FCF persistently negative — profits likely trapped in receivables/inventory",
+      "Cash collapsed to 1 Cr despite 21 Cr reported PAT and 19 Cr of financing inflows",
+      "Equity jumped from 21→80 Cr in a single year (IPO dilution) — promoter diluting at tiny scale"
+    ],
+    "detailed_analysis": "The arithmetic tells the story. Over four years this company has produced cumulatively negative operating cash flow (-31 Cr) while reporting cumulative net profit of roughly +37 Cr. The gap is the whole game — reported earnings are being consumed by working capital, meaning either aggressive revenue recognition, extended receivables to win orders, or inventory build-up in a volatile commodity market. The FY24 dip (revenue 67 Cr vs 113 Cr prior year) confirms this is not a durable compounder; it's a price-taker in pharma intermediates whose fortunes swing with customer order cycles and China API pricing. At P/E 17.75 and EV/EBITDA ~11, you're paying a quality multiple for a sub-scale player with no discernible moat.\n\nInvert and ask what would have to be true for this to work: management would need to convert accounting profits into cash, scale without dilution, and build technical differentiation against much larger Indian API houses (Divi's, Laurus, Aarti). None of that is evidenced here. Promoter holding at 52.7% is acceptable but FII at 0.32% tells you sophisticated capital has taken a pass. At 616 Cr market cap this is firmly in the \"too small to research, too risky to own\" bucket. Pass without hesitation.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 49775,
+    "model_used": "opus",
+    "total_cost_usd": 0.15866375,
+    "usage": {
+      "input_tokens": 7,
+      "cache_creation_input_tokens": 11093,
+      "cache_read_input_tokens": 26795,
+      "output_tokens": 3036,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11093,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 103,
+          "cache_read_input_tokens": 12573,
+          "cache_creation_input_tokens": 1247,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1247
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "symbol": "MGL",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-22T16:28:36.131452Z",
+  "analysis": {
+    "score": 6,
+    "recommendation": "HOLD",
+    "investment_thesis": "MGL is a near-monopoly piped gas distributor in Mumbai with a virtually debt-free balance sheet and solid 17.7% ROE trading at an undemanding 11.6x earnings — the kind of regulated utility franchise I find appealing. However, FY2025 saw profits drop to ₹1,040 Cr from ₹1,285 Cr the prior year despite 15% revenue growth, and surging capex (₹1,184 Cr in FY2025) has crushed free cash flow to just ₹229 Cr, making now a \"watch not buy\" moment.",
+    "key_strengths": [
+      "Natural monopoly pipeline infrastructure in Mumbai — a licensed territory with 6,887 km of poly-ethylene network competitors cannot replicate",
+      "Fortress balance sheet: D/E of just 0.04 with ₹152 Cr cash and growing equity base (₹6,209 Cr in FY2025)",
+      "Attractive valuation at P/E 11.6x and EV/EBITDA 6.45x for a regulated franchise with 22.7% ROCE"
+    ],
+    "key_risks": [
+      "FY2025 net profit fell 19% YoY (₹1,285 Cr → ₹1,040 Cr) despite 15% revenue growth — margin compression from gas sourcing costs is a real concern",
+      "Capex has nearly doubled in two years (₹783 Cr FY2024 → ₹1,184 Cr FY2025), collapsing FCF to just ₹229 Cr — capital intensity is rising faster than I like",
+      "Long-term structural threat: EV adoption directly erodes the CNG transport segment which drives footfall and utilization for the 385-station network"
+    ],
+    "red_flags": [
+      "Profit and EBITDA both declined year-over-year in FY2025 while revenues grew — a margin squeeze in a supposedly regulated business needs explanation",
+      "CWIP jumped 42% to ₹1,172 Cr — heavy investment cycle underway with uncertain near-term return profile"
+    ],
+    "detailed_analysis": "MGL is exactly the type of business I find intellectually satisfying — a licensed monopoly distributing an essential commodity through infrastructure that took decades to build and cannot be economically replicated by a competitor. The Mumbai geography is a durable moat. With D/E of 0.04, the balance sheet is as clean as they come, and a 22.7% ROCE tells me management has historically deployed capital well. At 11.6x earnings and 6.45x EV/EBITDA, the market is not pricing in much optimism, which creates a margin of safety.\n\nThe trouble is FY2025. Profits fell from ₹1,285 Cr to ₹1,040 Cr even as revenue rose to ₹7,264 Cr — that's a business whose operating margins compressed from roughly 29% to 22% at the EBITDA level. Simultaneously, capex nearly doubled to ₹1,184 Cr, shrinking free cash flow to a thin ₹229 Cr. I want to understand whether this is a temporary gas-cost squeeze or a permanent shift before committing capital. The rising EV threat to CNG volumes is not imminent but is directionally real. I'd put MGL on my watchlist at this price, and would consider buying more aggressively if margin recovery in FY2026 confirms this was cyclical, not structural.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 48315,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0812508,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10844,
+      "cache_read_input_tokens": 8756,
+      "output_tokens": 2530,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10844,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 499,
+          "cache_read_input_tokens": 8756,
+          "cache_creation_input_tokens": 2088,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2088
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

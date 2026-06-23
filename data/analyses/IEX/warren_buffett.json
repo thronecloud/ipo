@@ -1,0 +1,68 @@
+{
+  "symbol": "IEX",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-19T12:52:15.344151Z",
+  "analysis": {
+    "score": 7,
+    "recommendation": "BUY",
+    "investment_thesis": "Indian Energy Exchange is the rare exchange-model business in India's power sector — a near-monopoly marketplace with network effects, near-zero capital requirements, zero debt, 84% operating margins, and ROCE of 53%. At 25x earnings with a 17% net profit CAGR, this is a good business at a fair price, not a fair business at a good price.",
+    "key_strengths": [
+      "Exchange/marketplace moat with ~85% market share in India's electricity spot trading — network effects make the liquid pool self-reinforcing and near-impossible to displace",
+      "Extraordinary capital efficiency: Debt/Equity of 0.00, capex of just INR 8 Cr in FY25 on revenues of INR 537 Cr, ROE 40.7% and ROCE 53.4%",
+      "Consistent free cash flow generation (INR 420 Cr FCF in FY25) with 4/5 years positive OCF and growing shareholder returns via dividends"
+    ],
+    "key_risks": [
+      "Regulatory risk is the single largest threat: CERC can alter transaction fees, mandate interoperability, or cap market share, as has happened in multiple jurisdictions globally",
+      "Structural slowdown risk: India's power market remains partly outside the exchange (long-term bilateral contracts dominate), capping the addressable market unless deregulation accelerates",
+      "Emerging competition from HPX and expanded PXIL, though their combined share remains sub-15%; any meaningful share erosion compresses both volumes and fee yields"
+    ],
+    "red_flags": [
+      "No promoter listed — the ownership structure is diffuse institutional; this is acceptable for exchanges but warrants monitoring for hostile regulatory capture",
+      "Revenue dipped in FY23 (INR 401 Cr vs INR 431 Cr in FY22) showing the business is not entirely immune to volume cycles tied to monsoon and coal availability"
+    ],
+    "detailed_analysis": "IEX is built on the same blueprint as the great exchange businesses I have admired — NYSE, CME — just scaled to India's emerging electricity market. The model is simple: participants pay a transaction fee to trade on the exchange; the exchange incurs almost no incremental cost per additional trade. Gross margins of 99.83% and operating margins of 83.73% validate this structure. Revenue has compounded at 13.3% since FY19, net profit at 17.3%, with the balance sheet holding zero meaningful debt and reserves growing from INR 358 Cr (FY20) to INR 1,159 Cr (FY25).\n\nMy principal concern is regulatory. India's electricity sector is government-supervised, and CERC has previously issued advisories on market concentration. A fee reduction of even 10-15% would meaningfully impact earnings. However, unlike a utility that owns physical infrastructure, IEX's intangible moat — liquidity, trust, settlement infrastructure, and market participants' operational integration — is durable and hard to replicate. At 25x trailing earnings for a near-monopoly with structural tailwinds from India's power sector liberalisation, the price is reasonable for the quality on offer.",
+    "metrics_evaluated": {
+      "moat_strength": "strong",
+      "management_quality": "good",
+      "financial_health": "excellent",
+      "valuation": "fair",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 178497,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.23121345000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 23741,
+      "cache_read_input_tokens": 15219,
+      "output_tokens": 9174,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 23741,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 501,
+          "cache_read_input_tokens": 15219,
+          "cache_creation_input_tokens": 8522,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8522
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

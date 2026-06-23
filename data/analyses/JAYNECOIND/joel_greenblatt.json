@@ -1,0 +1,69 @@
+{
+  "symbol": "JAYNECOIND",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T17:50:40.825068Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Jayaswal Neco fails the Magic Formula on both dimensions: earnings yield of ~5.5% (EBIT ₹657 Cr / EV ~₹11,942 Cr) is below the 6% threshold, and ROCE of 2.93% is far below the 20% minimum for a quality business. At a P/E of 25x on rapidly collapsing earnings (₹2,247 Cr → ₹113 Cr over three years), the market is pricing in a recovery that the numbers do not support.",
+    "key_strengths": [
+      "OCF consistently positive (5/5 years), with FCF surging to ₹1,144 Cr in FY25 — debt repayment is real",
+      "Debt declining steadily: ₹3,845 Cr (FY22) → ₹2,753 Cr (FY25), trajectory is correct",
+      "Diversified product mix (steel, castings, pipes) serving auto, railways, infrastructure reduces single-customer risk"
+    ],
+    "key_risks": [
+      "Finance cost (₹554 Cr) consumes 84% of EBIT (₹657 Cr) — almost no earnings reach equity holders",
+      "Net profit in freefall: ₹2,247 Cr (FY22, one-time) → ₹227 → ₹210 → ₹113 Cr; underlying business earns very little",
+      "Commodity steel has no pricing power or moat; revenue flat at ~₹6,000 Cr for four years with margins compressing"
+    ],
+    "red_flags": [
+      "FY22 net profit of ₹2,247 Cr was almost certainly a one-time debt-restructuring gain, not operating performance — current P/E of 25x is based on ₹113 Cr normalized earnings, implying true P/E is far higher",
+      "ROCE of 2.93% and ROE of -0.87% — capital is being destroyed, not compounded",
+      "EBITDA shrinking: ₹1,333 Cr (FY22) → ₹947 Cr (FY25), yet interest expense is rising to ₹554 Cr — interest coverage is razor-thin at ~1.7x"
+    ],
+    "detailed_analysis": "Jayaswal Neco is a textbook Magic Formula reject. Earnings yield (EBIT/EV) is roughly 5.5% — below the 6% floor that signals cheapness — and ROCE of 2.93% is catastrophically below the 20% threshold that separates good businesses from capital destroyers. The business earned ₹657 Cr in EBIT in FY25 against ₹554 Cr in finance costs, meaning debt servicing alone absorbs over 84% of operating earnings. What reaches net income (₹113 Cr on a ₹9,345 Cr market cap) is a rounding error. The much-touted FY22 profit of ₹2,247 Cr was a non-recurring event — likely a debt haircut or asset revaluation — and should never be used to justify the current P/E of 25x.\n\nThe one genuine bright spot is cash flow: OCF hit ₹1,388 Cr in FY25, generating FCF of ₹1,144 Cr despite rising capex (₹244 Cr). Management is using this to repay debt (₹3,845 Cr → ₹2,753 Cr in three years), which is the right priority. But with ₹2,753 Cr still outstanding at escalating interest rates and revenue essentially flat since FY22, this is a turnaround story with a long runway and no moat. Greenblatt's formula demands high returns on capital AND a cheap price — Jayaswal Neco offers neither. It is a highly leveraged commodity steel producer trading at a premium multiple on depressed, trend-deteriorating earnings.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 62210,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09715275000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 12043,
+      "cache_read_input_tokens": 9225,
+      "output_tokens": 3281,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 12043
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 545,
+          "cache_read_input_tokens": 9225,
+          "cache_creation_input_tokens": 2818,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2818,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

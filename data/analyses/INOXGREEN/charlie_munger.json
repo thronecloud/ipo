@@ -1,0 +1,70 @@
+{
+  "symbol": "INOXGREEN",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T17:52:34.389827Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Inox Green is a wind O&M services company with ROCE of 2.6% — a business structurally destroying capital while trading at 129x EV/EBITDA. Six consecutive years of net losses followed by microscopic profits (₹22-28 Cr) don't justify a ₹6,549 Cr market cap.",
+    "key_strengths": [
+      "Debt dramatically reduced from ₹1,085 Cr (FY20) to ₹95 Cr (FY25) — near debt-free balance sheet",
+      "Renewable energy sector tailwind; O&M is sticky, recurring-revenue model with captive Inox Wind parent fleet",
+      "Promoter holding at 56% provides alignment and long-term commitment to the business"
+    ],
+    "key_risks": [
+      "ROCE at 2.6% is catastrophically below any hurdle rate — this business does not earn its cost of capital",
+      "Revenue in FY2025 (₹236 Cr) is still BELOW FY2018 (₹368 Cr) — 7-year CAGR of -6.1%; no real growth story",
+      "FY2025 net profit of ₹22 Cr is entirely dependent on ₹57 Cr 'Other Income' — strip that out and core operations are loss-making"
+    ],
+    "red_flags": [
+      "EV/EBITDA of 129x for a business with contracting EBITDA (₹100 Cr → ₹94 Cr) is speculative-grade valuation",
+      "FY2025 investing CF of -₹637 Cr against OCF of only ₹60 Cr — funded entirely by ₹572 Cr equity raise; massive dilution risk",
+      "Operating income declining (₹82 Cr → ₹52 Cr last 5Y) even as revenue grows — margins structurally compressing",
+      "Only 3/5 years of positive OCF; free cash flow has been negative in 4 of the last 5 years (FY21-FY24)"
+    ],
+    "detailed_analysis": "Inversion first: what makes this uninvestable? Start with ROCE of 2.6% — if a business cannot earn above its cost of capital over a multi-year period, all the sector tailwinds in the world are irrelevant. Revenue peaked at ₹368 Cr in FY2018 and has not recovered (₹236 Cr in FY2025). The company ran losses for six straight years (FY18-FY23) and the \"profitability\" achieved in FY24-FY25 is illusory — FY2025 net profit of ₹22 Cr is smaller than the ₹57 Cr in \"Other Income,\" meaning core wind O&M operations generated a loss on an economic basis. EBITDA is contracting (₹104 Cr → ₹94 Cr) despite marginal revenue growth, signaling cost inflation outpacing pricing power.\n\nThe balance sheet transformation is real and positive — borrowings collapsed from ₹1,411 Cr to ₹95 Cr — but this was achieved through serial equity issuances that have ballooned equity from ₹96 Cr to ₹2,020 Cr in five years, heavily diluting shareholders. The FY2025 investing outflow of ₹637 Cr (funded by ₹572 Cr in new financing) signals another expansion round, but with ROCE at 2.6%, deploying more capital will likely destroy more value. At 81x P/E and 129x EV/EBITDA, the market is pricing in a transformation that the last seven years of operating history give no basis to believe in.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 47694,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08249925,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11145,
+      "cache_read_input_tokens": 8755,
+      "output_tokens": 2538,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11145
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 218,
+          "cache_read_input_tokens": 8755,
+          "cache_creation_input_tokens": 2390,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2390,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

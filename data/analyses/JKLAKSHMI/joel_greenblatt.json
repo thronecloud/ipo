@@ -1,0 +1,69 @@
+{
+  "symbol": "JKLAKSHMI",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T17:51:35.159397Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "JK Lakshmi Cement fails both Magic Formula tests — Earnings Yield of ~7.9% (EBIT ₹864 Cr / EV ~₹10,902 Cr) is well below the 12% threshold, and ROCE of 10.5% falls far short of the 20%+ required to qualify as a \"good business.\" At a mediocre price for a mediocre business, the formula has no interest.",
+    "key_strengths": [
+      "Consistent OCF: 5/5 positive years with ₹783 Cr OCF in 2025, demonstrating the business generates real cash",
+      "Capacity expansion underway: CWIP peaked at ₹890 Cr in 2023, now at ₹230 Cr — growth capex largely deployed, volume uplift could follow",
+      "Debt reduction track record: Finance costs fell from ₹253 Cr (2019) to ₹133 Cr (2023), showing historical discipline before the new expansion cycle"
+    ],
+    "key_risks": [
+      "Deteriorating 2025: Revenue fell to ₹6,193 Cr (from ₹6,788 Cr), net profit collapsed 43% to ₹276 Cr — cycle is turning negative",
+      "Rising leverage: Borrowings jumped from ₹1,880 Cr (2023) to ₹2,673 Cr (2025), pushing D/E to 0.72 and finance costs back up to ₹181 Cr",
+      "Structural low returns: Cement is a commoditized, energy-intensive industry — operating margins at 7.56% and ROCE at 10.5% reflect durable, not cyclical, weakness"
+    ],
+    "red_flags": [
+      "FCF was negative in 2023 (−₹98 Cr) and 2024 (−₹107 Cr); barely positive in 2025 at ₹130 Cr despite ₹1,011 Cr capex in FY24",
+      "EBITDA trend is contracting (₹1,109 Cr in 2024 → ₹897 Cr in 2025) while debt load is expanding — interest coverage is tightening",
+      "Other Income collapsed to just ₹11 Cr in 2025 vs ₹77 Cr in 2024 — no buffer to rescue reported profits"
+    ],
+    "detailed_analysis": "Running the Magic Formula: EBIT (Operating Income) = ₹864 Cr in FY2025. Enterprise Value = Market Cap ₹8,364 Cr + Net Debt ₹2,538 Cr (Debt ₹2,614 Cr − Cash ₹76 Cr) = ~₹10,902 Cr. Earnings Yield = 864/10,902 = 7.9% — below the 12% minimum Greenblatt requires to flag a stock as \"cheap.\" Capital employed (Equity + Debt − Cash) = ₹6,245 Cr, giving ROIC of ~13.8% — but the company's own reported ROCE is 10.5%, confirming this is a low-return business. Neither metric clears the bar.\n\nThe broader picture is worse than the ratios suggest. Revenue actually declined in FY2025, net profit was nearly halved versus FY2024, EBITDA is contracting, and the company spent ₹2.4 Cr of capex over the last three years while generating barely any free cash flow. The balance sheet is more leveraged than it was two years ago, with borrowings up 42% since FY2023. Cement is a commodity cyclical with structural overcapacity in India — these are not the durable competitive advantages that justify top-decile Magic Formula placement. This stock would rank in the bottom half of any Greenblatt screen.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 50567,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08596619999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11554,
+      "cache_read_input_tokens": 9199,
+      "output_tokens": 2658,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11554
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 376,
+          "cache_read_input_tokens": 9199,
+          "cache_creation_input_tokens": 2355,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2355,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

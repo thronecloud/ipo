@@ -1,0 +1,70 @@
+{
+  "symbol": "POWERMECH",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T22:04:26.192740Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Power Mech trades at INR 2,376 — a 78% premium to my calculated Graham Number of ~INR 1,338 (sqrt(22.5 × EPS₁₀₉ × BVPS₇₂₃)), offering zero margin of safety. With P/E of 22.2x and P/B of 3.29x, both failing my strict quantitative thresholds, Mr. Market is pricing in optimism I refuse to pay for.",
+    "key_strengths": [
+      "Revenue CAGR of 16% over 9 years demonstrates durable execution in a capital-intensive sector",
+      "Debt/Equity of 0.41 passes my <0.5 threshold; ROCE of 22.9% shows productive capital deployment",
+      "Interest coverage ~6x (Operating Income 602 Cr / Finance Cost 99 Cr) is above my 3.5x minimum"
+    ],
+    "key_risks": [
+      "OCF collapsed to just INR 1 Cr in FY2025 against reported net profit of INR 348 Cr — a severe earnings-quality warning that Graham cannot ignore",
+      "Borrowings nearly tripled from INR 396 Cr (FY2024) to INR 960 Cr (FY2025) in a single year — alarming debt accumulation",
+      "Net loss of INR 49 Cr in FY2021 breaks the consecutive positive earnings record I require; free cash flow also turned negative in FY2025 at -159 Cr"
+    ],
+    "red_flags": [
+      "Price is 78% above Graham Number — no margin of safety whatsoever",
+      "P/B of 3.29x is more than double my maximum threshold of 1.5x",
+      "OCF of INR 1 Cr vs net profit of INR 348 Cr in FY2025 implies massive working capital absorption or aggressive earnings recognition",
+      "Borrowings surged +143% YoY in FY2025 while free cash flow turned sharply negative — a pattern that precedes balance sheet distress"
+    ],
+    "detailed_analysis": "From my quantitative screens, Power Mech fails on virtually every filter I apply. P/E of 22.2x exceeds my maximum of 15x; P/B of 3.29x is more than double my ceiling of 1.5x; and the stock trades at INR 2,376 versus a Graham Number of approximately INR 1,338 — implying the market is paying an 78% premium over what the combined earnings power and asset base can justify. The one bright spot is Debt/Equity of 0.41, which marginally passes, but this comfort evaporates when I observe that borrowings leapt from INR 396 Cr to INR 960 Cr in a single year.\n\nWhat concerns me most is the FY2025 cash flow statement: the company reported INR 348 Cr in net profit yet generated only INR 1 Cr in operating cash flow, producing negative free cash flow of -159 Cr. In my decades of studying balance sheets, a yawning chasm between reported earnings and cash generated is the most reliable sign that reported profits are illusory — consumed by working capital, aggressive contract revenue recognition, or both. Combined with the FY2021 net loss that breaks any streak of uninterrupted earnings, this stock provides no margin of safety, no dividend cushion, and no asset backing at current prices. The intelligent investor waits.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 41306,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0703872,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9154,
+      "cache_read_input_tokens": 11319,
+      "output_tokens": 2177,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9154,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 269,
+          "cache_read_input_tokens": 9269,
+          "cache_creation_input_tokens": 1935,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1935
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

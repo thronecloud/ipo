@@ -1,0 +1,69 @@
+{
+  "symbol": "IRB",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-19T12:56:51.306794Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "IRB Infrastructure is a heavily indebted toll-road company earning 5.9% ROE and 7.8% ROCE on a massive asset base — returns that barely cover the cost of equity and are far below any threshold I consider acceptable. The FY25 reported net profit of INR 6,481 Cr is almost entirely a mirage, with INR 6,222 Cr coming from 'other income' rather than toll operations.",
+    "key_strengths": [
+      "Operating cash flow positive all five years, ranging INR 364 Cr to INR 4,054 Cr, confirming the underlying toll collection business generates real cash",
+      "Roads are quasi-monopolistic assets — once you win a concession, there is no competing highway on the same route, providing volume visibility",
+      "Revenue has grown from INR 5,128 Cr (2016) to INR 7,613 Cr (2025) with expanding operating income"
+    ],
+    "key_risks": [
+      "Debt/Equity of 1.02 with borrowings of INR 20,852 Cr and finance costs of INR 1,795 Cr annually — interest expense alone consumes roughly half of operating income every year",
+      "ROE of 5.9% and ROCE of 7.8% are structurally poor; this business earns less than the government bond yield on its entire asset base, meaning it is destroying economic value",
+      "Concession risk: all toll revenues are time-limited contracts; as concessions expire, revenue must be replaced by winning new contracts in a competitive bidding process"
+    ],
+    "red_flags": [
+      "FY25 net profit of INR 6,481 Cr vs FY24 of INR 606 Cr — a 10x jump driven entirely by INR 6,222 Cr of 'other income' (likely InvIT monetisation gains), not recurring toll operations; normalised earnings make the true P/E extremely high",
+      "Debt has risen relentlessly: INR 9,205 Cr (2020) → INR 20,852 Cr (2025), doubling in five years even as EBITDA remained flat — the company is piling leverage onto a stagnant operating base",
+      "Revenue CAGR of only 4.5% over nine years for a business with a P/E of 33.7x (on inflated one-time profits) offers zero margin of safety"
+    ],
+    "detailed_analysis": "Toll roads can be decent businesses but only if acquired cheaply and operated with modest debt. IRB has neither advantage. The company has doubled its debt to INR 20,852 Cr while EBITDA has flatlined near INR 3,400 Cr over a decade — that is a leverage ratio of ~6x EBITDA and an interest coverage ratio that leaves almost no cushion. Any traffic shortfall, interest rate increase, or project delay could create severe financial stress.\n\nThe FY25 earnings figure of INR 6,481 Cr is one of the most misleading numbers I encountered in this set. Strip out the INR 6,222 Cr of non-recurring other income — almost certainly proceeds from InvIT asset monetisation — and you get approximately INR 260 Cr of operational profit on a INR 26,886 Cr market cap. That is a true operating P/E well above 100x. This is exactly the kind of complex, capital-intensive, financially engineered structure I have spent a lifetime avoiding.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 123404,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.18002430000000003,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 20972,
+      "cache_read_input_tokens": 15301,
+      "output_tokens": 6452,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 20972,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 626,
+          "cache_read_input_tokens": 15301,
+          "cache_creation_input_tokens": 5671,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 5671
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

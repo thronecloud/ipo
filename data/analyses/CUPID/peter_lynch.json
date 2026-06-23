@@ -1,0 +1,70 @@
+{
+  "symbol": "CUPID",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-18T17:06:53.929310Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "Cupid is a niche condom/diagnostics manufacturer with decent margins but glacial 5% revenue growth and a P/E of 166x — producing a PEG ratio of ~18, roughly 18x what I'd find acceptable. No growth story at any price justifies this valuation.",
+    "key_strengths": [
+      "Niche market position in government-tender condom supply with 35% operating margins",
+      "Nearly debt-free balance sheet (D/E 0.07) with INR 59 Cr cash",
+      "Diversifying into diagnostics and personal care — optionality for a new growth leg"
+    ],
+    "key_risks": [
+      "PEG ratio of ~18x (P/E 166 ÷ 9% earnings growth) — catastrophically overvalued by GARP standards",
+      "Operating cash flow turned negative in FY25 (-11 Cr) despite INR 41 Cr reported net profit — dangerous divergence",
+      "INR 19 Cr 'Other Income' in FY25 (vs. 0 in prior years) flatters earnings — strip it out and the operating story is weakening"
+    ],
+    "red_flags": [
+      "Free cash flow negative two consecutive years (-17 Cr in FY24, -31 Cr in FY25) — reported profits are not converting to cash",
+      "Revenue CAGR of only 5.3% over 4 years while the stock is priced like a hypergrowth company",
+      "Large balance sheet expansion (assets 152→442 Cr) funded by a likely equity raise (financing CF +99 Cr in FY24), yet growth hasn't accelerated",
+      "FII + DII ownership combined is only 1.18% — institutional investors are steering clear"
+    ],
+    "detailed_analysis": "Cupid is a slow grower masquerading as a growth stock. Revenue has crept from INR 149 Cr to 183 Cr over four years — a 5.3% CAGR — and net profit grew at 9% to reach INR 41 Cr. At my core GARP metric, the PEG ratio is approximately 18x (P/E 166 ÷ 9%). I look for PEG below 1.0; even 1.5 gives me heartburn. A PEG of 18 is not an investment thesis, it's a speculation on narrative. The P/S of 47x and EV/EBITDA of 150x confirm the market has priced in decades of compounding that the actual business has not earned.\n\nThe cash flow picture makes this worse. While the income statement shows INR 41 Cr net profit in FY25, operating cash flow was -11 Cr — the widest gap in the five-year history. Free cash flow is -31 Cr. Additionally, INR 19 Cr in \"Other Income\" (up from zero) is doing heavy lifting in the P&L; strip that out and core operating income is essentially flat versus FY21. The company did raise substantial equity capital in FY24 (+99 Cr financing CF) and assets have nearly tripled, but growth has not followed. Until revenue accelerates meaningfully above 15%, cash flow catches up to reported earnings, and the valuation resets closer to reality, this is a hard pass.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 49127,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08103165,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10807,
+      "cache_read_input_tokens": 8688,
+      "output_tokens": 2526,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10807
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 452,
+          "cache_read_input_tokens": 8688,
+          "cache_creation_input_tokens": 2119,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2119,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

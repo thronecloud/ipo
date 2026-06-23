@@ -1,0 +1,69 @@
+{
+  "symbol": "JUSTDIAL",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T18:08:11.956348Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Just Dial trades at P/B of 0.92 with a negative EV (-3.06x EBITDA), meaning the market is essentially handing you the operating business for free alongside a massive Reliance-funded cash fortress — that's the only reason this isn't an outright avoid. However, core business ROIC of ~5% is well below cost of capital, and the \"earnings\" are largely treasury income masquerading as operational excellence.",
+    "key_strengths": [
+      "Negative enterprise value: cash/investments exceed market cap, providing deep downside protection at P/B 0.92",
+      "Reliance Retail parentage (74.15%) offers ecosystem integration into JioMart and India's largest retail distribution network",
+      "Asset-light FCF machine: only INR 6 Cr capex in FY25 against 305 Cr FCF — minimal reinvestment burden"
+    ],
+    "key_risks": [
+      "ROCE of 4.81% and ROE of 3.63% are catastrophically below cost of capital — the business destroys value on deployed capital",
+      "Revenue CAGR of just 6.1% over 9 years in a sector where Google Maps, Urban Company, and IndiaMart are growing multiples faster — moat is eroding",
+      "FY25 net profit of INR 584 Cr on revenue of 1,142 Cr is structurally distorted by ~INR 300+ Cr investment/other income from treasury corpus — strip that out and core earnings power is thin"
+    ],
+    "red_flags": [
+      "EV/EBITDA of -3.06 is a value trap signal — cheap on paper but sustained only by Reliance's acquisition capital injection, not organic cash generation",
+      "Minority shareholder governance risk: with Reliance at 74.15%, capital allocation decisions (share buybacks, dividends, inter-company transactions) serve the parent's interests first",
+      "Operating income jumped from 217 Cr (FY24) to 675 Cr (FY25) while revenue grew only 9.5% — this discontinuity suggests one-time or non-recurring items buried in the financials"
+    ],
+    "detailed_analysis": "Invert first, as I always do: what would make this a terrible investment? A local search business with 6.1% revenue CAGR competing against Google Maps (free, ubiquitous), JioMart (same parent!), and vertical disruptors like Urban Company is fighting a losing battle for relevance. The operating margin of 25% looks impressive until you realize ROCE is 4.81% — the balance sheet is bloated with ~INR 3,900+ Cr of financial assets (Reliance's acquisition capital), making the return metrics look terrible. If you strip out other income (~INR 305 Cr in FY24 trending higher), the core operating business barely earns its cost of capital. This is a local directory business dressed up in fintech and B2B marketplace clothes (JD Pay, JD Mart) that has yet to prove competitive differentiation against IndiaMart or BharatPe.\n\nThe one saving grace is the balance sheet arithmetic: at INR 4,675 Cr market cap with total equity of INR 4,606 Cr and a negative EV, you're paying roughly book value for a business that throws off INR 305 Cr of genuine FCF annually (capex was just INR 6 Cr in FY25). The debt/equity of 0.02 is pristine. The Reliance ecosystem option is real — if JD Mart gets integrated into Reliance's SME supply chain infrastructure, there's a non-zero probability of rerating. But Munger's wisdom holds: a mediocre business at a fair price rarely compounds wealth. I'd need to see ROIC consistently above 15% before getting enthusiastic, and right now this business is nowhere near that threshold.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "undervalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 75865,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.10866674999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 12577,
+      "cache_read_input_tokens": 9030,
+      "output_tokens": 3919,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 12577
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 412,
+          "cache_read_input_tokens": 9030,
+          "cache_creation_input_tokens": 3547,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 3547,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

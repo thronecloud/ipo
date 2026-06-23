@@ -1,0 +1,70 @@
+{
+  "symbol": "CURIS",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-21T08:09:38.136811Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Curis Lifesciences fails both legs of the Magic Formula: earnings yield of ~5.9% (1/P.E of 16.90) is well below the 12%+ threshold, and an ROE of 0.55% signals near-zero return on capital — the hallmark of a mediocre business, not a great one. There is no Magic Formula case here.",
+    "key_strengths": [
+      "High promoter holding (68%) signals skin in the game",
+      "Pharma sector can generate high ROIC if competitive moat exists",
+      "Small market cap (₹74 Cr) means institutional neglect — mispricing possible in theory"
+    ],
+    "key_risks": [
+      "ROE of 0.55% is essentially zero — the business destroys value on equity deployed",
+      "Earnings yield ~5.9% (1/16.9 P/E) is below Greenblatt's 12% attractiveness floor",
+      "Micro-cap pharma with no demonstrated earnings power — extremely high business quality risk"
+    ],
+    "red_flags": [
+      "ROE of 0.55% — catastrophically low, likely means razor-thin or near-break-even earnings",
+      "EBIT/EV (true earnings yield) likely even worse than the 5.9% implied by P/E once debt is factored in",
+      "Insufficient disclosure of EBIT, working capital, and fixed assets — Magic Formula cannot be fully computed",
+      "No evidence of sustained ROIC above cost of capital over any time period"
+    ],
+    "detailed_analysis": "From a Magic Formula standpoint, Curis Lifesciences fails on both criteria simultaneously — the rarest and worst outcome. Implied earnings yield from P/E of 16.90 is approximately 5.9%, already below my minimum threshold of 12% EBIT/EV. The true EBIT/EV is likely lower once debt is added to enterprise value, making the valuation even less attractive. Greenblatt's framework demands you pay a bargain price — Curis offers no such margin of safety.\n\nThe return-on-capital picture is worse. ROE of 0.55% means the business earns less than 1 rupee for every 200 rupees of equity — effectively destroying shareholder value in real terms after inflation. A great business (25%+ ROIC) bought at any reasonable price is preferable to this. With no data demonstrating sustained EBIT growth, high FCF conversion, or competitive moat, Curis simply doesn't belong in a Magic Formula portfolio at any price near current levels.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 39584,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.06621015,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9177,
+      "cache_read_input_tokens": 7558,
+      "output_tokens": 1968,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9177,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 387,
+          "cache_read_input_tokens": 7558,
+          "cache_creation_input_tokens": 1619,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1619
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

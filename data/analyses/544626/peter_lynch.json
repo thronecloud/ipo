@@ -1,0 +1,69 @@
+{
+  "symbol": "544626",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-20T11:02:20.927899Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Exato is a tiny newly-listed IT services outfit with good ROE (28%) but a decelerating top line — revenue growth collapsed from 56% (FY24) to just 9% (FY25) — while P/E of 35 bakes in fast-grower expectations. PEG on sustainable growth is materially >1.5, borrowings tripled, and the \"story\" isn't yet clear enough to warrant the premium.",
+    "key_strengths": [
+      "Strong returns profile: ROE 28.2%, ROCE 26.5% — capital-efficient operator",
+      "Net profit doubled FY25 (5→10 Cr) as operating margin expanded to ~11%",
+      "Promoter holding healthy at 54.73%, skin-in-the-game intact"
+    ],
+    "key_risks": [
+      "Revenue growth decelerated sharply 56%→9%; PEG ~4x on top-line — red flag",
+      "Borrowings ballooned 6→17→28 Cr; FCF went 10→-20→0 over 3 years",
+      "Tiny 338 Cr IT-ITeS micro-cap with no disclosed moat, customer concentration likely"
+    ],
+    "red_flags": [
+      "Growth deceleration — the classic Lynch 'story weakening' signal",
+      "Debt up ~4.7x in two years while operating cash flow is erratic",
+      "Recent BSE listing with limited operating history at public-company scale"
+    ],
+    "detailed_analysis": "What's the story here? A 2016-incorporated customer-transformation IT shop that rode one strong year (FY24 revenue +56%) and is now flat-lining at 9% growth in FY25. At 35x earnings, the market is pricing this as a fast grower, but the actual top-line trajectory says stalwart-at-best. My PEG discipline — P/E no more than the growth rate — is violently breached here; even generously annualizing the doubling of net profit, the revenue deceleration tells me FY25 earnings jump is margin-driven and not repeatable. That's exactly the kind of optical \"earnings growth\" that traps multiples expansion investors.\\n\\nThe balance sheet compounds my concern: borrowings jumped from 6 Cr to 28 Cr while cumulative 3-year FCF is roughly -10 Cr. They're funding growth with debt, not cash, which in a services business with 28% ROE is a puzzling capital-allocation choice. I like the returns metrics and the promoter holding, but I need to see two more years of 20%+ revenue growth with improving FCF before this becomes a Lynch-style GARP candidate. Pass at 414; revisit if it corrects to a PEG below 1 or revenue re-accelerates meaningfully.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 30747,
+    "model_used": "opus",
+    "total_cost_usd": 0.1076165,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 9870,
+      "cache_read_input_tokens": 13948,
+      "output_tokens": 1557,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9870,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 11104,
+          "cache_creation_input_tokens": 1610,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1610
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

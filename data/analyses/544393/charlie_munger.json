@@ -1,0 +1,69 @@
+{
+  "symbol": "544393",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-20T19:52:28.595718Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Infonative Solutions is a sub-30 Cr micro-cap custom e-learning vendor with a pitiful 0.45% ROE — a commodity services business with no discernible moat. The 7.96 P/E is optically cheap but meaningless when the underlying return on capital is essentially zero.",
+    "key_strengths": [
+      "Promoter skin in the game at 69.28% holding",
+      "Reported profitability (P/E 7.96 implies positive EPS)",
+      "Asset-light services model with low capex needs"
+    ],
+    "key_risks": [
+      "0.45% ROE is catastrophic — destroying value vs. cost of capital",
+      "30 Cr market cap is sub-scale with negligible institutional coverage (FII 0.04%, DII 0%)",
+      "Custom e-learning is commoditized and directly disrupted by generative AI"
+    ],
+    "red_flags": [
+      "ROE of 0.45% is an order of magnitude below any acceptable threshold",
+      "Near-zero institutional ownership suggests liquidity trap and/or quality concerns",
+      "BSE micro-cap with limited disclosure history (incorporated 2014)"
+    ],
+    "detailed_analysis": "Inverting first: what kills this investment? A 0.45% ROE tells me capital deployed here is earning less than a savings account — the business is effectively destroying economic value once you account for cost of equity (~12-14% in India). A P/E of 7.96 on near-zero earnings is a classic value trap; the \"E\" is so small that any multiple looks cheap. Custom learning development is a body-shop services industry with low switching costs, heavy client concentration risk at this scale, and constant pricing pressure from larger players (NIIT, Tata Interactive) and now generative AI, which directly disrupts content authoring.\n\nAt 30.4 Cr market cap with negligible FII/DII interest, this is a retail-liquidity micro-cap where governance, audit quality, and related-party transactions warrant extreme skepticism — the very scenarios where investors lose permanent capital. There is no durable competitive advantage, no evidence of compounding economics, and no margin of safety in a multiple applied to trivial earnings. Pass decisively and move to the \"too hard\" pile.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 29731,
+    "model_used": "opus",
+    "total_cost_usd": 0.12729375,
+    "usage": {
+      "input_tokens": 7,
+      "cache_creation_input_tokens": 9843,
+      "cache_read_input_tokens": 24730,
+      "output_tokens": 2135,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9843,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 82,
+          "cache_read_input_tokens": 11563,
+          "cache_creation_input_tokens": 1007,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1007
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

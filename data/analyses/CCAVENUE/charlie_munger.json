@@ -1,0 +1,71 @@
+{
+  "symbol": "CCAVENUE",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T16:56:57.268792Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "AvenuesAI is a low-margin payment processor dressed in software clothing — thin 3.2% operating margins and ~6% ROIC reveal a commoditized utility, not a compounding machine. The 2025 FCF of -304 Cr against net profit of 236 Cr signals severe earnings quality deterioration that any serious investor must reject.",
+    "key_strengths": [
+      "Revenue CAGR of 31.6% over 9 years with 2025 revenue reaching INR 3,993 Cr shows genuine commercial scale",
+      "Near-zero leverage (D/E 0.02) and INR 331 Cr cash provide balance sheet safety",
+      "Valuation is cheap on paper — P/B at 1.06 and P/S at 0.78 offer limited downside"
+    ],
+    "key_risks": [
+      "ROIC is approximately 6% (EBIT ~316 Cr on ~4,011 Cr invested capital) — well below cost of capital, destroying value in real terms",
+      "FCF collapsed to -304 Cr in 2025 (vs net profit +236 Cr) with capex of 376 Cr exceeding earnings — capital allocation is alarming",
+      "Indian payments is brutally competitive (Razorpay, PhonePe, PayU) — 6.6% gross margin proves zero pricing power"
+    ],
+    "red_flags": [
+      "'AvenuesAI' rebrand in Jan 2026 — classic narrative-over-substance move; no AI moat is evident in any financial metric",
+      "OCF/Net Income ratio in 2025 is only 30% (72 Cr OCF vs 236 Cr net profit) — far below the 80% quality threshold; earnings are not cash",
+      "Other income is lumpy (INR 71 Cr in 2025, 25 Cr in 2024, 71 Cr in 2023) — distorts reported profits",
+      "Promoter holding at 27.29% is low for a founder-led payments company — skin-in-the-game concern",
+      "Borrowings jumped from INR 8 Cr (2023) to INR 172 Cr (2025) while CWIP remains elevated at 140 Cr — unclear capital deployment"
+    ],
+    "detailed_analysis": "Invert first, as I always do: what would make this a terrible investment? A payment processor with 3.2% operating margins competing against well-funded giants like PhonePe and Razorpay, with ROIC of ~6%, where every rupee of growth requires spending more in capex than the business earns in net profit. That is precisely what AvenuesAI is. The 2025 numbers are damning — net profit of INR 236 Cr yet operating cash flow of only INR 72 Cr and free cash flow of negative INR 304 Cr. The business is consuming capital faster than it generates it, while management rebrands to \"AI\" to attract the market's excitement. This is not a software business; the 6.6% gross margin is utility-grade, not SaaS-grade.\n\nThe one-decade revenue CAGR of 31.6% is real and the balance sheet is clean — these are genuine positives. But revenue growth without margin expansion or capital efficiency is a treadmill, not a compounding engine. ROE of 6.47% and ROCE of 8.65% confirm the company is earning below its cost of equity. At P/B of 1.06, the market is essentially saying this business deserves no premium to book value — and the economics justify that verdict. I would need to see operating margins expand toward 10%+ and sustained FCF conversion above 80% of net income before reconsidering. Until then, this fails basic quality tests.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 53409,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08389335,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11291,
+      "cache_read_input_tokens": 9127,
+      "output_tokens": 2587,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11291
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 475,
+          "cache_read_input_tokens": 9127,
+          "cache_creation_input_tokens": 2164,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2164,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "symbol": "NEOGEN",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T22:01:40.542241Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Neogen is a capital-intensive specialty chemicals compounder with a genuine revenue growth story (25.6% CAGR), but at P/E 150x and EV/EBITDA 39x it is grotesquely overvalued for a business that has generated negative free cash flow every single year for six years. With ROCE at 8.82%, the company is currently destroying economic value, not creating it.",
+    "key_strengths": [
+      "Revenue compounded at 25.6% over 9 years with EBITDA growing even faster (27.2% CAGR) — genuine operating leverage over the long arc",
+      "Niche organo-bromine and organo-lithium chemistry with pharma, agrochem, and battery-material exposure gives the business some moat optionality",
+      "51.2% promoter holding and DII ownership at 22% suggests institutional validation, and export presence in 33 countries provides demand diversification"
+    ],
+    "key_risks": [
+      "ROCE of 8.82% and ROE of 5.59% are well below any reasonable cost of capital — the business is value-destructive at current capital structure",
+      "Borrowings exploded from ₹409 Cr (FY24) to ₹1,132 Cr (FY25), implying Debt/EBITDA ~8.6x — a dangerously levered balance sheet for a ₹35 Cr net-profit business",
+      "P/E of 150x and EV/EBITDA of 39x price in flawless execution of an unproven capacity build-out; any delay or demand miss collapses the thesis"
+    ],
+    "red_flags": [
+      "Net profit is declining — ₹50 Cr (FY23) → ₹36 Cr (FY24) → ₹35 Cr (FY25) — while finance costs surged from ₹29 Cr to ₹48 Cr; the debt machine is eating profits alive",
+      "Free cash flow negative every year for six consecutive years (-₹63, -₹51, -₹65, -₹134, -₹332, -₹121 Cr) — reported earnings have zero cash backing",
+      "Other income flipped to -₹10 Cr in FY25 (likely forex losses or MTM writedowns) — a warning sign about hidden balance-sheet risks from foreign-currency borrowings",
+      "CWIP surged to ₹335 Cr and borrowings jumped ₹723 Cr in a single year — massive, concentrated execution bet with no margin of safety"
+    ],
+    "detailed_analysis": "Inverting first, as any disciplined investor must: what would make Neogen a disaster? The answer is already visible in the financials. Finance costs are growing at 28.6% CAGR — the same pace as EBITDA — which means every rupee of operational improvement is being handed straight to lenders. Net profit has not grown since FY22. OCF was positive in only 3 of the last 5 years, and cumulative FCF over six years is deeply negative (~-₹766 Cr). The company has essentially been living off the capital markets — equity raises in FY22 and FY25 and now a massive debt binge — to fund a capex cycle whose returns remain entirely speculative. A business paying ₹48 Cr in interest on ₹35 Cr of net profit has no financial resilience whatsoever.\n\nThe bull case rests on the new capacity (CWIP ₹335 Cr) enabling a step-change in organo-lithium and battery-material revenues, which is why the forward P/E compresses to 65x. But 65x forward P/E is still extreme for a specialty chemicals manufacturer in a competitive Indian market, and it demands that the capex translates into dramatically higher margins and returns — something the company has never demonstrated at scale. Gross margins at 45.85% are respectable, but operating margins at 11.39% reflect the heavy fixed-cost burden of the build-out. Until ROIC sustainably clears 15% and FCF turns durably positive, this is a story stock, not a business. At this valuation, the margin of safety is essentially zero.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 67458,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0943569,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11820,
+      "cache_read_input_tokens": 9043,
+      "output_tokens": 3154,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11820,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 463,
+          "cache_read_input_tokens": 9043,
+          "cache_creation_input_tokens": 2777,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2777
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

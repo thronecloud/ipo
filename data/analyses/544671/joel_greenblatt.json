@@ -1,0 +1,69 @@
+{
+  "symbol": "544671",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-20T11:13:59.061001Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Apollo Techno screens decently on return on capital (ROCE 31%) but the earnings yield is mediocre (~9% EBIT/EV at EV/EBITDA 11.2x), so it fails the \"cheap AND good\" Magic Formula test. The FY25 EBIT jump from INR 8 Cr to INR 18 Cr looks like a one-time inflection that needs durability proof before it earns a buy.",
+    "key_strengths": [
+      "ROCE 31.2% — clears the >20% Magic Formula bar on capital efficiency.",
+      "Operating leverage kicking in: EBIT CAGR 56% (FY21-25) on revenue CAGR 20%.",
+      "FCF turned positive last two years (INR 13 Cr, INR 15 Cr) with negligible capex."
+    ],
+    "key_risks": [
+      "Earnings yield only ~9% (EBIT 18 / EV ~201 Cr) — not cheap enough for the formula.",
+      "D/E of 1.16 inflates the headline 73.8% ROE; one bad year compresses both metrics.",
+      "FY25 margin step-up (Op margin 3% → 18%) is unproven; could mean-revert."
+    ],
+    "red_flags": [
+      "Net profit base is tiny and erratic (INR 0 Cr in FY21–22 to INR 14 Cr in FY25).",
+      "Cash balance reported as ~0 despite INR 32 Cr debt — liquidity is thin.",
+      "Newly listed micro-cap (incorporated 2016) with no FII participation and only ~12% DII."
+    ],
+    "detailed_analysis": "Applying the Magic Formula: Earnings Yield = EBIT INR 18 Cr / EV ~INR 201 Cr (implied by EV/EBITDA 11.19) ≈ 9%, which is below my 12% attractiveness threshold. Return on Capital using EBIT / (Equity INR 29 Cr + Debt INR 32 Cr) ≈ 30%, which is genuinely good and consistent with the reported ROCE of 31.2%. So this is a \"good but not cheap\" stock — exactly the kind that ranks in the middle of the formula and shouldn't be a top pick.\n\nThe bigger issue is sustainability. EBIT was INR 2-3 Cr from FY21-23, then INR 8 Cr in FY24, then INR 18 Cr in FY25 — a 6x jump in two years on revenue that only grew ~40%. That looks like a cyclical infra/order-book tailwind (HDD rigs, metro/airport diaphragm wall demand) rather than a structural moat. Combined with 1.16x D/E, near-zero cash, and a tiny INR ~155 Cr market cap, this is a speculative micro-cap, not a systematic Magic Formula buy. I'd want to see two more years of INR 15+ Cr EBIT before paying ~11x earnings for it.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "insufficient_data",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 45418,
+    "model_used": "opus",
+    "total_cost_usd": 0.14250025,
+    "usage": {
+      "input_tokens": 7,
+      "cache_creation_input_tokens": 11415,
+      "cache_read_input_tokens": 27843,
+      "output_tokens": 2288,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11415,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 92,
+          "cache_read_input_tokens": 13021,
+          "cache_creation_input_tokens": 1264,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1264
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "symbol": "CROMPTON",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-19T13:08:20.284529Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Crompton is India's #1 ceiling fan brand with a real consumer moat and ROCE of 19%, but thin 8% operating margins and a 4-year net profit stagnation (INR 617 Cr in FY21 vs INR 564 Cr in FY25) undermine the premium multiple. At P/E 34.4x and Forward P/E 27x, you are paying for growth that hasn't yet materialized consistently.",
+    "key_strengths": [
+      "Market leader in ceiling fans (~26% share), genuine brand recognition with distribution depth across India",
+      "Rapid post-acquisition deleveraging — borrowings fell from INR 1,686 Cr (FY22) to INR 186 Cr (FY25); virtually debt-free now",
+      "Strong FCF quality: FY25 FCF/Net Income = 113% (INR 635 Cr / INR 564 Cr); OCF positive all 5 years"
+    ],
+    "key_risks": [
+      "Operating margins of only 7.99% — thin for a branded consumer company; input cost spikes or competition can erase profitability quickly",
+      "Butterfly Gandhimathi integration into kitchen appliances adds complexity and competitive exposure in a category lacking Crompton's fan-market dominance",
+      "Revenue CAGR of 9.8% over 7 years is modest; at 27x forward earnings, price already embeds optimistic assumptions"
+    ],
+    "red_flags": [
+      "Net profit peaked at INR 617 Cr in FY21 and has only recovered to INR 564 Cr in FY25 — 4 years of effective earnings stagnation despite revenue growth",
+      "Finance costs spiked 3x (INR 35 Cr → INR 109 Cr in FY23) from the Butterfly acquisition — a warning about acquisition discipline"
+    ],
+    "detailed_analysis": "Crompton passes my basic quality filter: ROCE of 19%, near-zero debt (D/E 0.05), and consistently positive operating cash flows signal a genuine business. The brand moat in fans is real — switching costs are low but consumer trust is hard-won, and 26%+ market share doesn't happen by accident. The aggressive post-acquisition deleveraging from INR 1,686 Cr to INR 186 Cr in three years demonstrates financial discipline. FCF conversion above 100% confirms earnings quality.\n\nHowever, the operating margin of 7.99% is uncomfortable for a business trading at 34x earnings — any input cost shock, energy price move, or competitive pricing war eats directly into already-thin margins. Net profit in FY25 at INR 564 Cr is still below FY21's INR 617 Cr, meaning shareholders have waited four years to go nowhere on earnings. The Butterfly diversification into kitchen appliances introduces category risk in a fiercely contested market. Fair business at an unfair price — I hold but will not add at these levels.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 218166,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.2727762,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 25826,
+      "cache_read_input_tokens": 15249,
+      "output_tokens": 11423,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 25826,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 726,
+          "cache_read_input_tokens": 15249,
+          "cache_creation_input_tokens": 10577,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 10577
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "AHCL",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-20T11:12:36.753552Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Anlon screens as a high-ROCE (38%) specialty API maker, but the Magic Formula earnings yield is only ~4.5% (EBIT 31 / EV ~682 Cr) — it's a good business at a demanding price. More damning, operating cash flow has been negative for four straight years while reported EBIT surges, so the ROIC is an accounting figure, not a cash figure.",
+    "key_strengths": [
+      "Reported ROCE 38.12% and ROE 25.52% — top-quartile if real",
+      "Operating margin expanded from 7% (2022) to 26% (2025); EBIT CAGR ~97%",
+      "Low leverage post-IPO: D/E 0.27, equity jumped from 21 → 80 Cr"
+    ],
+    "key_risks": [
+      "Earnings yield only ~4.5% (EV/EBITDA 10.9) — fails the 'cheap' leg of Magic Formula",
+      "OCF negative 0/4 years; FCF -23 Cr in 2025 despite 21 Cr net profit — working capital/receivables bleed",
+      "Tiny 616 Cr micro-cap with lumpy revenue (57→113→67→120) suggesting customer concentration"
+    ],
+    "red_flags": [
+      "Four-year streak of negative operating cash flow while reporting record profits",
+      "Net profit 21 Cr vs OCF -23 Cr in 2025 — 44 Cr gap is a classic earnings-quality warning",
+      "Financing CF +19 Cr funding operations — business not self-sustaining"
+    ],
+    "detailed_analysis": "On the Magic Formula two-factor test: Return on Capital looks excellent (ROCE 38%, EBIT/EV ~31/682 = 4.5%), but earnings yield is well below my 12% threshold. So it fails one leg outright. More importantly, the high ROCE is suspect — EBIT grew from 4 to 31 Cr over three years while operating cash flow went the opposite direction (−2 to −23 Cr). That's not a return on capital I can trust; it's revenue being booked into receivables/inventory rather than collected.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 22400,
+    "model_used": "opus",
+    "total_cost_usd": 0.10287775,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 10123,
+      "cache_read_input_tokens": 14508,
+      "output_tokens": 1293,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10123,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 11638,
+          "cache_creation_input_tokens": 1355,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1355
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

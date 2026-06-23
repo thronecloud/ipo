@@ -1,0 +1,68 @@
+{
+  "symbol": "AADHARHFC",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-19T06:17:29.498656Z",
+  "analysis": {
+    "score": 6,
+    "recommendation": "HOLD",
+    "investment_thesis": "Aadhar Housing Finance is a focused affordable-housing lender with a 16.1% revenue CAGR and a remarkable 33.4% net profit CAGR over six years, operating in a government-tailwind segment serving LMI borrowers in Tier 2/3 cities. At P/E 20.8x and forward P/E 16.2x, the price is fair but not compelling enough for me to deploy serious capital given a ROCE of only 11.4%.",
+    "key_strengths": [
+      "Net profit compounding at 33.4% CAGR (2019–2025), demonstrating improving spreads and operating leverage",
+      "Blackstone-backed promoter (64.9% holding) brings institutional governance and balance-sheet discipline",
+      "Niche LMI affordable-housing focus benefits from PMAY subsidies, reducing competitive intensity from large banks"
+    ],
+    "key_risks": [
+      "ROCE of 11.4% is below my 15% minimum threshold — lending economics constrain the compounding power",
+      "LMI borrower credit quality is procyclical; a job-loss or income-shock cycle would spike NPAs",
+      "Loan book funded by debt (D/E 2.55x); rising interest rates squeeze NIMs meaningfully"
+    ],
+    "red_flags": [
+      "ROCE at 11.4% fails my 15% hurdle — not a high-return business intrinsically",
+      "Negative operating cash flow every single year (nature of a growing HFC, but requires constant equity raises to sustain growth)"
+    ],
+    "detailed_analysis": "Aadhar is a competent, narrowly focused affordable housing lender growing its loan book briskly. Net profit grew from ₹162 Cr to ₹912 Cr in six years; that is genuine compounding. The equity base nearly doubled in FY25 (₹4,450 → ₹6,894 Cr), reflecting a capital raise that will dilute per-share returns near-term but supports loan-book growth into the ₹25,000 Cr asset base.\n\nThe business does not possess a strong moat — HFCs compete on cost of funds and distribution reach, both replicable. ROCE of 11.4% tells me capital is not deployed with unusual efficiency. I would wait for a lower price (P/B closer to 2x) before adding this to a portfolio, but it is not a business I would sell if already held.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 163784,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.23170725,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 24017,
+      "cache_read_input_tokens": 15515,
+      "output_tokens": 9132,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 24017,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 515,
+          "cache_read_input_tokens": 15515,
+          "cache_creation_input_tokens": 8502,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8502
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

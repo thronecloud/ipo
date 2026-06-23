@@ -1,0 +1,69 @@
+{
+  "symbol": "FEDFINA",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-18T17:24:26.020992Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Fedfina has delivered strong 3-year revenue CAGR of 32.2%, but the story is cracking — net profit actually fell from ₹245 Cr to ₹225 Cr in FY25 despite 30% revenue growth, signaling margin compression or rising credit costs. At a forward P/E of 11.35 there's a cheap-looking price, but I don't buy into a NBFC story where earnings are moving backwards while the loan book balloons.",
+    "key_strengths": [
+      "Revenue growing at 32% CAGR (2022-25), reaching ₹1,973 Cr — the top-line growth narrative is intact",
+      "Forward P/E of 11.35 with a parent-bank backstop (Federal Bank, 60.79% promoter holding) limits downside",
+      "Diversified loan book across gold, SME, mortgage, and home equity reduces single-product concentration risk"
+    ],
+    "key_risks": [
+      "Profit DECLINED FY25: ₹245 Cr → ₹225 Cr despite 30% revenue growth — margin compression or rising NPAs are destroying the growth story",
+      "ROE of only 8.84% is well below my 12% threshold; a lending business failing to earn its cost of equity is a structural concern",
+      "Debt/Equity of 3.83 with negative OCF every year (0/4 positive) means this business depends entirely on capital markets — any credit tightening is existential"
+    ],
+    "red_flags": [
+      "EBITDA fell FY25 (₹415 Cr → ₹385 Cr) AND operating income fell (₹337 Cr → ₹316 Cr) — revenue growing 30% but profits shrinking is a major red flag",
+      "Negligible FII ownership at 0.66% — institutional money is voting with its feet",
+      "Operating CF negative all four years, Free CF deeply negative all four years — the business is a cash furnace"
+    ],
+    "detailed_analysis": "Fedfina is an NBFC subsidiary of Federal Bank trying to grow its retail and SME loan book aggressively. On the surface the 3-year numbers look exciting — 32% revenue CAGR, 30% net profit CAGR — but FY25 completely breaks the story. Revenue jumped from ₹1,522 Cr to ₹1,973 Cr (+30%) yet net profit fell from ₹245 Cr to ₹225 Cr. That's the kind of divergence that tells me credit costs are rising fast or the company is pricing loans too aggressively to win share. When I see a financial company growing the loan book at 25%+ (assets went ₹11,138 Cr → ₹13,250 Cr) but earning only 8.84% ROE, I get nervous — they're putting a lot of capital to work for underwhelming returns.\n\nThe PEG picture is murky: using the forward P/E of 11.35 against even a modest 20% forward earnings growth gives a PEG of ~0.57, which looks cheap. But I don't trust that growth rate when FY25 showed actual earnings decline — Lynch's cardinal rule is to check whether the story is still intact before getting excited about low multiples. With negative free cash flow every year (inherent to lending, yes, but still ₹996 Cr negative in FY25), a D/E of 3.83, and virtually no FII interest, this is a \"show me\" stock. I'd want two consecutive quarters of improving NIM and ROE trending back above 12% before getting interested.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 57927,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08234069999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10726,
+      "cache_read_input_tokens": 8464,
+      "output_tokens": 2638,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10726
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 440,
+          "cache_read_input_tokens": 8464,
+          "cache_creation_input_tokens": 2262,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2262,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

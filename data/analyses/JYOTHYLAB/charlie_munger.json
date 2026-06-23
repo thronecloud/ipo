@@ -1,0 +1,68 @@
+{
+  "symbol": "JYOTHYLAB",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T18:09:05.816922Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Jyothy Labs is a decent mid-sized Indian FMCG business anchored by the near-monopoly Ujala fabric whitener brand, with excellent balance sheet repair (debt down from INR 285 Cr to 61 Cr) and improving margins. However, 6.7% revenue CAGR over nine years against giants like HUL and Godrej Consumer signals limited pricing power and growth runway at a P/E of 24x.",
+    "key_strengths": [
+      "Ujala fabric whitener has genuine category dominance — a sticky, low-cost daily consumable with repeat-purchase habit moat",
+      "Exceptional deleveraging: finance costs collapsed from INR 62 Cr (2016) to INR 6 Cr (2025), and ROCE of 24.6% clears the quality bar",
+      "Virtually debt-free balance sheet (D/E 0.04) with 5-for-5 years of positive OCF — financial discipline is evident"
+    ],
+    "key_risks": [
+      "Revenue CAGR of only 6.7% over 9 years — barely above India's nominal GDP growth, suggesting weak pricing power outside Ujala",
+      "Multi-front competition: HUL in dishwashing (Vim vs. Pril/Exo), Godrej in insecticides (Good Knight vs. Maxo), Marico/HUL in personal care — no second moat visible",
+      "FCF dropped sharply to INR 254 Cr in FY25 from INR 443 Cr in FY24 despite flat profits — capex and working capital trends need watching"
+    ],
+    "red_flags": [
+      "Large investing outflow of INR 344 Cr in FY24 needs explanation — acquisition or capacity build without clear ROIC disclosure is a yellow flag",
+      "Personal care (Margo, FA) and insecticides (Maxo) segments are perpetual also-rans with no evidence of share gain against better-resourced rivals"
+    ],
+    "detailed_analysis": "Invert first: what kills this business? Ujala's relevance eroding as consumers upgrade to liquid detergents (which whiten without a separate step), or private-label encroachment in dish wash bars. That's the existential risk and it's real. The gross margin of 47.9% looks respectable for FMCG but operating margin at 12.87% is thin — HUL runs north of 20% operating margin — which tells you this is a business fighting uphill in most of its segments. Net profit CAGR of 19.6% over nine years sounds exciting until you realize it was massively aided by the collapse in finance costs (down 23% CAGR) and base effects from weak FY16/FY22 earnings; underlying earnings power has not compounded at anything like that rate operationally.\n\nOn valuation, P/E of 24x with EV/EBITDA of 17.6x for a company growing revenue at sub-7% is \"fair\" at best — you're paying a quality premium for what is partially a story stock. ROCE of 24.6% is genuinely good and the promoter at 62.9% signals alignment, but I want to see whether management can push the top line above 10% before getting excited. The high gross margin (48%) with low operating margin (13%) tells me there is operating leverage available if revenue accelerates — that's the bull case. But counting on that while paying 24x earnings in a competitive consumer market is speculation, not investment. Net-net: a decent business, not a compounding machine — hold if you own it, but there are better-quality FMCG franchises at similar or cheaper multiples in India.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 50015,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0811608,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11110,
+      "cache_read_input_tokens": 9131,
+      "output_tokens": 2450,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11110
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 506,
+          "cache_read_input_tokens": 9131,
+          "cache_creation_input_tokens": 1979,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1979,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

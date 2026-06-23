@@ -1,0 +1,69 @@
+{
+  "symbol": "VIDYAWIRES",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-21T07:58:05.013227Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "AVOID",
+    "investment_thesis": "Vidya Wires earns a decent ROCE of 24.2% but trades at an earnings yield of only ~5.1% (EBIT INR 64 Cr / EV ~INR 1,259 Cr), well below my 6% minimum threshold. A commodity wire manufacturer with 5% operating margins and chronically negative free cash flow fails the Magic Formula's dual test of cheapness and quality.",
+    "key_strengths": [
+      "Strong ROCE of 24.2% and 27% operating income CAGR (2022–2025) signal genuine operating leverage",
+      "Revenue growing at 17.5% CAGR, benefiting from India's electrification and clean energy tailwinds",
+      "High promoter holding (72.8%) and DII presence (10.5%) suggest insider conviction and institutional interest"
+    ],
+    "key_risks": [
+      "Free cash flow deeply negative 3 of 4 years (FY22: -22, FY24: -2, FY25: -24 Cr) — accounting profits are not translating to cash, classic working-capital trap in commodity manufacturing",
+      "Borrowings surged from INR 110 Cr to INR 187 Cr in FY25 with zero cash buffer, raising refinancing and interest cost risk as debt/equity hits 0.99x",
+      "5% operating margin offers near-zero buffer — any raw material (copper/aluminium) price spike or pricing pressure could eliminate profitability"
+    ],
+    "red_flags": [
+      "Earnings Yield ~5.1% (EBIT/EV) — below my 6% minimum; stock is overpriced for what it earns",
+      "FCF negative in 3 of 4 years despite growing net profit — strong sign of working capital drag and potential earnings quality concerns",
+      "Zero cash on balance sheet across all four years while debt is rising — structural liquidity fragility"
+    ],
+    "detailed_analysis": "Applying the Magic Formula, Vidya Wires scores poorly on cheapness: with EBIT of INR 64 Cr and an enterprise value of roughly INR 1,259 Cr (market cap INR 1,113 Cr + net debt INR 146 Cr), the earnings yield is only ~5.1%, below my 6% floor. On quality, ROCE of 24.2% is respectable and operating income has compounded at 27% over three years — evidence of some operating leverage in the business. But that leverage is fragile: a 5% operating margin means a modest 1-2% revenue shortfall or input cost spike wipes out a significant chunk of profits. The P/E of 32.6x is pricing in continued flawless execution in what is fundamentally a commodity wire business.\n\nThe cash flow story is the real disqualifier. Despite reporting INR 41 Cr net profit in FY25, operating cash flow was negative INR 17 Cr, yielding free cash flow of -INR 24 Cr. This pattern (positive earnings, negative FCF) repeats three of four years — the business is consuming cash to fund working capital as revenue scales. To finance this gap, borrowings jumped 70% in one year to INR 187 Cr, yet the company holds zero cash. The Magic Formula works best with businesses converting ROIC into actual cash returns; Vidya Wires does not yet clear that bar.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 53926,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08409029999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11082,
+      "cache_read_input_tokens": 8746,
+      "output_tokens": 2660,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11082,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 358,
+          "cache_read_input_tokens": 8746,
+          "cache_creation_input_tokens": 2336,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2336
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

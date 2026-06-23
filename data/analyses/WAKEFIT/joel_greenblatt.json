@@ -1,0 +1,70 @@
+{
+  "symbol": "WAKEFIT",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-21T07:54:44.622677Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "Wakefit fails the Magic Formula on both legs — EBIT is negative (−₹5 Cr in FY25), making earnings yield uncalculable, while ROCE of −1.05% confirms zero return on capital. At EV/EBITDA of 54.9x for a company that has never turned a net profit, the market is pricing perfection into a fundamentally broken business.",
+    "key_strengths": [
+      "Revenue compounding at ~26% CAGR (₹797 Cr → ₹1,256 Cr in 2 years) shows genuine demand",
+      "EBITDA improved significantly from −₹87 Cr (FY23) to +₹83 Cr (FY25), showing path toward profitability",
+      "Gross margin of 54% is healthy for a consumer goods brand, suggesting pricing power"
+    ],
+    "key_risks": [
+      "EBIT is negative (−₹5 Cr FY25) — Magic Formula cannot even be applied; no earnings yield to speak of",
+      "Net losses deepened in FY25 (−₹35 Cr) versus FY24 (−₹15 Cr) despite higher revenue — cost structure is worsening",
+      "Debt nearly doubled to ₹273 Cr while cash collapsed to ₹7 Cr; leverage rising as profitability stays elusive"
+    ],
+    "red_flags": [
+      "Negative EBIT in 2 of 3 years — Magic Formula disqualifies this company outright",
+      "P/E of 118x is internally inconsistent with reported net losses of −₹35 Cr — data quality or accounting adjustment concern",
+      "Free cash flow collapsed from ₹52 Cr (FY24) to ₹26 Cr (FY25) despite capex only at ₹51 Cr — operating quality deteriorating",
+      "Promoter holding of only 37% in a founder-led consumer brand is relatively low; no insider conviction signal"
+    ],
+    "detailed_analysis": "Through the Magic Formula lens, Wakefit is uninvestable at this stage. The formula requires positive EBIT to compute earnings yield (EBIT/EV), and Wakefit's FY25 EBIT of −₹5 Cr (operating income) fails this basic screen. Even using EBITDA of ₹83 Cr, the EV/EBITDA of 54.9x implies an EBITDA yield of ~1.8% — far below the 12–15% earnings yield threshold that makes a stock attractive. ROCE of −1.05% confirms capital is being destroyed, not compounded, and the ROE of −6.72% tells the same story. This is a business spending heavily to grow revenues without generating returns above the cost of capital.\n\nThe trajectory has some optionality — EBITDA went from −₹87 Cr to +₹83 Cr in two years, and revenue is scaling well. But the net loss worsened in FY25 (−₹35 Cr vs. −₹15 Cr in FY24), debt has ballooned to ₹273 Cr against ₹7 Cr cash, and FCF halved year-over-year. Greenblatt's framework rewards businesses with durable high returns on tangible capital bought at cheap prices — Wakefit offers neither. At a market cap of ₹4,905 Cr on ₹1,256 Cr revenue with no net profit history, investors are paying a steep price for an uncertain promise of future earnings. Pass.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 39837,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07240455000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9977,
+      "cache_read_input_tokens": 8156,
+      "output_tokens": 2169,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9977,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 425,
+          "cache_read_input_tokens": 8156,
+          "cache_creation_input_tokens": 1821,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1821
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

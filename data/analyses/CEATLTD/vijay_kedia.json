@@ -1,0 +1,70 @@
+{
+  "symbol": "CEATLTD",
+  "persona": "vijay_kedia",
+  "persona_display_name": "Vijay Kedia",
+  "analyzed_at": "2026-04-19T12:54:28.654362Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "CEAT is a well-known tyre brand but at INR 14,991 Cr market cap and P/E of 24x it is miles outside the SMILE sweet spot with almost zero net profit growth (0.9% CAGR over 9 years). The business is capital-intensive with inconsistent free cash flow and rising debt — no transformation story here.",
+    "key_strengths": [
+      "Revenue expanding steadily to INR 13,218 Cr in FY25 with 10.3% 9-year CAGR — franchise is durable",
+      "EBITDA trending up in recent years (FY24: 1,690 Cr), showing some operating leverage recovery",
+      "Established OEM + retail distribution moat across two/three-wheelers and passenger cars"
+    ],
+    "key_risks": [
+      "Net profit CAGR of just 0.9% over 9 years — earnings quality is very poor for a manufacturing business",
+      "Debt/Equity at 0.68 (above my 0.4 threshold) and borrowings surged to INR 3,114 Cr in FY25 from INR 1,792 Cr in FY24 — leverage moving the wrong way",
+      "Raw material (rubber, carbon black) volatility makes margins very unpredictable; FY22 profit crashed to just INR 71 Cr"
+    ],
+    "red_flags": [
+      "Market cap INR 14,991 Cr — 15x outside my sweet spot; no information asymmetry possible",
+      "Promoter holding 47.21% — below my 50% minimum; skin in the game is weak",
+      "FCF swings wildly: -337 Cr (FY22) to +852 Cr (FY24) to just +149 Cr (FY25) — not a compounder",
+      "Finance costs compounding at 11.9% CAGR while net profit is essentially flat — value destruction"
+    ],
+    "detailed_analysis": "CEAT is a mature, cyclical tyre manufacturer fighting in a commodity market against MRF, Apollo, and Bridgestone. Revenue has grown 10% CAGR but net profit over nine years is essentially unchanged at INR 471 Cr in FY25 vs INR 436 Cr in FY16 — this tells me the business cannot translate revenue growth into earnings growth because input costs, capex requirements, and interest costs eat everything. The company spends nearly INR 900–950 Cr in capex every year yet generates only INR 149 Cr of FCF in FY25; that is a treadmill, not a compounding machine.\n\nFrom a SMILE lens: Size is 'L' (large-cap), market is saturated, management is RPG group (competent but not hungry entrepreneurs), and the TAM penetration story does not apply meaningfully in tyres where replacement demand is already well-served. At P/E 24x with 0.9% profit CAGR and D/E of 0.68, this is neither value nor growth — it is a value trap dressed as a consumption story. I pass completely.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 148417,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.1929327,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 20608,
+      "cache_read_input_tokens": 18179,
+      "output_tokens": 7346,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 20608,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 560,
+          "cache_read_input_tokens": 16054,
+          "cache_creation_input_tokens": 6679,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 6679
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

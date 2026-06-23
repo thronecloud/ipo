@@ -1,0 +1,69 @@
+{
+  "symbol": "ASAHIINDIA",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-19T06:30:12.049722Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Asahi India is a niche auto-glass franchise with a credible capacity expansion story, but at a P/E of 69x on revenue growing only 8.5% annually, the PEG ratio is an alarming ~3.9x — the market is paying fast-grower prices for a slow-grower business. The heavy capex cycle (INR 1,268 Cr in FY25) has flipped FCF deeply negative (-INR 536 Cr) while debt has more than doubled, and those investments must deliver significant revenue acceleration to justify the current valuation.",
+    "key_strengths": [
+      "Niche duopoly position in Indian automotive glass (OEM + aftermarket) provides some pricing power and barriers to entry",
+      "Operating margins improved significantly post-FY21 (14.2% now vs ~22% peak) and are stabilizing — architectural glass diversification adds resilience",
+      "Majority promoter (Asahi Glass Japan + Indian partners at 51.6%) provides strategic stability and technology access"
+    ],
+    "key_risks": [
+      "P/E of 69x vs 9-year revenue CAGR of 8.5% produces a PEG of ~3.9x — among the worst valuations in this set by Lynch's key metric",
+      "Net debt surged to INR 2,696 Cr in FY25 (D/E 0.77 and rising) while FCF turned negative INR 536 Cr — leverage risk is real if capex returns disappoint",
+      "Revenue is closely tied to auto OEM volumes; any slowdown in passenger vehicle production directly compresses utilization and margins"
+    ],
+    "red_flags": [
+      "Borrowings nearly doubled in two years (INR 1,238 Cr FY22 → INR 2,856 Cr FY25) — a red flag Lynch always highlighted",
+      "FCF turned from +INR 509 Cr (FY22) to -INR 536 Cr (FY25) — the capex cycle is destroying near-term shareholder value",
+      "EV/EBITDA of 31.9x with EBITDA growth of only 5% CAGR over 9 years is not defensible on any growth-based valuation framework"
+    ],
+    "detailed_analysis": "Lynch's first test is the PEG ratio, and Asahi India fails it decisively. Paying 69x earnings for a company growing revenue at 8.5% per year is the kind of valuation that works only if you believe the new float-glass capacity currently under construction delivers a step-change in earnings. That may happen — but at current prices, the market has already priced in perfection before the factories even open.\n\nThe financial quality is also deteriorating: debt doubled, FCF turned sharply negative, and the balance sheet went from clean to levered in just two years. Lynch would point out that a company needing to borrow aggressively to fund growth is a very different animal from one funding expansion organically. Until capex translates into revenue growth >20% with margin expansion, this stock is for speculators, not investors.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 172484,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.2461524,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 25720,
+      "cache_read_input_tokens": 16678,
+      "output_tokens": 9646,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 25720,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 491,
+          "cache_read_input_tokens": 16678,
+          "cache_creation_input_tokens": 9042,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 9042
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

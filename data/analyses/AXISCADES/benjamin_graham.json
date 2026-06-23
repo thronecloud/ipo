@@ -1,0 +1,70 @@
+{
+  "symbol": "AXISCADES",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T16:37:04.745400Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "AXISCADES trades at 73x earnings and 11.6x book value — approximately 6 times its Graham Number of ~₹308 — offering zero margin of safety by any quantitative measure I employ. The earnings record shows four loss years in the past decade (2018, 2019, 2021, 2023), disqualifying it entirely from my requirement of five consecutive years of positive profits.",
+    "key_strengths": [
+      "Debt/Equity of 0.37 is the one ratio that passes my threshold (<0.5), with borrowings declining from ₹346 Cr (FY23) to ₹259 Cr (FY25)",
+      "Interest coverage improved to ~4.2x (EBIT ₹144 Cr / Finance Cost ₹34 Cr in FY25), clearing my 3.5x minimum for the first time in years",
+      "Operating cash flow positive all 5 years (₹31–122 Cr range), suggesting the underlying business does generate real cash"
+    ],
+    "key_risks": [
+      "Valuation is grotesquely high: P/E 73x vs my ceiling of 15x; P/B 11.56x vs my ceiling of 1.5x; Graham Number ~₹308 implies 83% downside from ₹1,886",
+      "Earnings are serially unreliable — four loss years (FY18, FY19, FY21, FY23) in a decade; net profit swings wildly from -₹21 Cr to +₹75 Cr with no durable pattern",
+      "Finance costs compounded at 37% CAGR over 9 years, from ₹2 Cr to ₹34 Cr, signaling chronic reliance on debt to fund growth"
+    ],
+    "red_flags": [
+      "P/B of 11.56x — paying 11.56 rupees for every 1 rupee of net assets; book value provides no cushion whatsoever",
+      "No dividend history mentioned — shareholders receive no tangible cash return to anchor valuation",
+      "Borrowings spiked from ₹72 Cr (FY22) to ₹346 Cr (FY23) — a 4.8x jump in a single year tied to acquisitions, introducing substantial integration risk",
+      "Other Income line is erratic and includes large negative entries (-₹26 Cr FY21, -₹62 Cr FY23), suggesting asset write-downs or goodwill impairments obscured in reported profits"
+    ],
+    "detailed_analysis": "AXISCADES fails virtually every quantitative screen I have used for decades. The Graham Number — derived from FY25 EPS of ~₹25.8 and book value per share of ~₹163 — works out to approximately ₹308. The market is asking ₹1,886, a 6x premium to this intrinsic ceiling. My rule is simple: I will not pay more than the Graham Number for any ordinary security. At 73x earnings, the entire market capitalisation of ₹8,037 Cr rests on the assumption that FY25's ₹75 Cr net profit — the best in the company's history — is not only sustainable but will grow substantially. History offers no comfort: the company reported losses in four of the past ten years, and operating income collapsed from ₹93 Cr (FY20) to ₹13 Cr (FY19) in just one year. Mr. Market is in a state of wild optimism here.\n\nThe balance sheet is not strong enough to justify any premium. Borrowings ballooned from ₹72 Cr to ₹346 Cr between FY22 and FY23 — presumably acquisition-driven — and free cash flow of ₹61 Cr in FY25 would take over four years just to retire current net debt (~₹206 Cr). Free cash flow yields under 1% at current market cap. There is no dividend, no asset backing, and no multi-year earnings stability. This is precisely the kind of speculative growth story — engineering services, defence technology, AI/ADAS buzzwords — that commands a fashionable premium while offering the intelligent investor no margin of safety. I would require the price to fall below ₹300 before I would give this company serious consideration.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 48690,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0709896,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9124,
+      "cache_read_input_tokens": 11252,
+      "output_tokens": 2226,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9124
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 316,
+          "cache_read_input_tokens": 9202,
+          "cache_creation_input_tokens": 1972,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1972,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

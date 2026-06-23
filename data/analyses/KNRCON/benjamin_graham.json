@@ -1,0 +1,69 @@
+{
+  "symbol": "KNRCON",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T18:05:36.414618Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "At P/B 0.73 and P/E 6.41, KNRCON trades substantially below its Graham Number (~INR 369 vs. INR 124), offering a rare statistical discount to net asset value with nine consecutive years of reported profits. However, operating cash flow is negative in 4 of the last 5 years (–INR 567 Cr in FY2025), which gravely undermines the quality of those earnings and prevents a confident buy recommendation by my strict standards.",
+    "key_strengths": [
+      "Valuation below book value (P/B 0.73) and Graham Number (INR 369 vs. price INR 124) — a genuine asset discount",
+      "Nine consecutive years of positive net profit with 27.6% CAGR (INR 112 Cr → INR 1,002 Cr), demonstrating durable earning power",
+      "Exceptional capital returns — ROE 27.2% and ROCE 28.6% — with operating margin expanding to 20.4% in FY2025"
+    ],
+    "key_risks": [
+      "Cash flow quality is deeply troubling: OCF positive in only 1 of 5 years; FY2025 FCF was –INR 592 Cr despite INR 1,002 Cr reported profit — earnings are not being converted to cash",
+      "Debt nearly doubled in one year (borrowings INR 1,262 Cr in FY2024 → INR 2,321 Cr in FY2025), pushing D/E to 0.49 — right at my tolerable limit and trending worse",
+      "Construction/infrastructure is inherently dependent on government contract flow, payment timelines, and policy cycles — not the stable, predictable earnings stream I require"
+    ],
+    "red_flags": [
+      "Persistently negative operating cash flow (–INR 76, –336, +1,194, –297, –567 Cr over last 5 years) — reported profits not backed by cash is a first-order warning in my framework",
+      "Borrowings surged 84% YoY (INR 1,262 → 2,321 Cr) even as cash fell to INR 103 Cr — the company is funding operations with debt while reporting record profits",
+      "No dividend history evident — a company with 27% ROE and nine profitable years paying no dividends raises questions about cash returns to shareholders"
+    ],
+    "detailed_analysis": "From a pure quantitative standpoint, KNRCON is one of the cheaper industrial companies I have examined in some time. At INR 124, it trades at 73% of book value (INR 169/share) and at a P/E of 6.4x on FY2025 earnings of roughly INR 35.7 per share — well within my preferred range of under 15x. The Graham Number of approximately INR 369 implies the stock is priced at one-third of what I would consider fair for an established earnings producer. Nine straight years of net profit, growing from INR 112 Cr to INR 1,002 Cr, satisfy my baseline requirement of a demonstrated earnings record. Interest coverage at 7.7x (EBIT INR 1,610 Cr / finance cost INR 208 Cr) is adequate, and D/E of 0.49 just clears my 0.5 threshold — though FY2025's borrowing surge makes me uneasy.\n\nWhat prevents me from issuing a firm buy recommendation is the cash flow record. In four of the past five years, this company consumed — not generated — operating cash. FY2025 produced –INR 567 Cr of operating cash flow against INR 1,002 Cr of reported net profit. The company bridges this gap by raising debt (borrowings up 84% in one year). This pattern — rising accrual profits, negative cash conversion, rising debt — is precisely the combination that has historically preceded unpleasant accounting discoveries or balance sheet crises in infrastructure companies. Mr. Market is offering KNRCON at a distressed price; but before buying what Mr. Market is selling cheaply, I must be satisfied that the earnings are real and durable. The cash flow record does not give me that satisfaction. I would watch, not buy, until at least two consecutive years of positive, substantial operating cash flow are demonstrated.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "undervalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 64801,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09250005,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10059,
+      "cache_read_input_tokens": 11066,
+      "output_tokens": 3430,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10059
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 413,
+          "cache_read_input_tokens": 9016,
+          "cache_creation_input_tokens": 3093,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 3093,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

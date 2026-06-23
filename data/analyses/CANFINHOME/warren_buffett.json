@@ -1,0 +1,69 @@
+{
+  "symbol": "CANFINHOME",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-19T05:58:52.093446Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Can Fin Homes offers a cheap headline valuation — P/E of 11.9x with 22% net profit CAGR — but for any financial company, I need to look through the income statement to the quality of the loan book, and the data provided does not reassure me about credit quality or NIM sustainability as finance costs grow faster than revenue. I prefer obvious quality.",
+    "key_strengths": [
+      "Strong net profit growth of 22.1% CAGR over FY22-25 and ROE of 16.92% — better than most public sector HFCs",
+      "Canara Bank parentage provides low-cost funding access and brand credibility in affordable housing segments",
+      "Attractive valuation at P/E 11.9x / forward P/E 10.5x / P/B 2.12x — market is pricing in minimal growth"
+    ],
+    "key_risks": [
+      "Finance costs growing at 29.3% CAGR (FY22-25) outpacing revenue CAGR of 18.8% — net interest margin is compressing, which is the core value driver for any HFC",
+      "Total debt reached INR 34,898 Cr against equity of INR 5,067 Cr (D/E: 6.59) — appropriate for HFCs, but leaves no room for asset quality deterioration",
+      "Only 4 years of meaningful data available; credit cycle behavior of this book in a downturn remains unproven"
+    ],
+    "red_flags": [
+      "No NPA, GNPA, or loan-to-value data available — for a financial company, this is the most critical data and its absence is itself a red flag in my analysis",
+      "OCF was deeply negative in FY22 (-INR 3,916 Cr) and FY23 (-INR 4,044 Cr) due to aggressive loan disbursement — the book was growing much faster than cash could support",
+      "Government-owned parent (Canara Bank) may create pressure to lend in politically directed segments at uneconomic rates"
+    ],
+    "detailed_analysis": "When evaluating any financial company, I often say the balance sheet is the product. Can Fin Homes lends money, earns a spread, and the risk lies in whether borrowers repay. The income statement showing 22% profit growth is appealing, but I cannot evaluate this business without knowing NPAs, provision coverage ratios, and loan book composition. The data gap here is not a minor inconvenience — it is the entire question.\n\nWhat I can see is concerning enough to restrain enthusiasm: finance costs of INR 2,485 Cr in FY25 are growing faster than revenues of INR 1,364 Cr, which signals NIM compression at the very moment rates might stay elevated. The P/E of 11.9x may reflect the market correctly pricing regulatory and credit risks that are not visible in reported profits today. I would need a thorough review of loan book quality, NPA trends, and funding cost trajectory before committing capital.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "undervalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 150234,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.20929365,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 22613,
+      "cache_read_input_tokens": 15303,
+      "output_tokens": 7993,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 22613,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 550,
+          "cache_read_input_tokens": 15303,
+          "cache_creation_input_tokens": 7310,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 7310
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

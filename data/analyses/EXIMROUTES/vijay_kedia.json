@@ -1,0 +1,70 @@
+{
+  "symbol": "EXIMROUTES",
+  "persona": "vijay_kedia",
+  "persona_display_name": "Vijay Kedia",
+  "analyzed_at": "2026-04-21T07:53:46.014596Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Exim Routes shows eye-catching 134% revenue CAGR and stellar ROE/ROCE numbers, but it is a commodity paper-recycling intermediary with zero free cash flow, a P/E of 37.5x, and only 6 years of operating history — failing three of my core SMILE criteria. The growth is real, but the business model has no moat and the market is pricing it as if it does.",
+    "key_strengths": [
+      "Explosive revenue growth — ₹4 Cr to ₹121 Cr in 4 years (134% CAGR) with margins expanding (EBITDA margin ~8.3% in FY25)",
+      "High capital efficiency on a thin equity base — ROE 54%, ROCE 55% — shows strong asset-light trading economics",
+      "Debt-to-equity ~0.36 (₹9 Cr borrowings / ₹25 Cr equity) — not over-leveraged yet"
+    ],
+    "key_risks": [
+      "Negative OCF all 5 years with FCF at -₹9 Cr in FY25 — profit exists on paper but cash is being consumed, classic working capital trap in commodity trading",
+      "P/E of 37.5x on ₹8 Cr net profit is 2-4x my preferred small-cap entry range (8-15x) for a commoditised, low-moat business",
+      "Company incorporated April 2019 — only 6 years old with no experience through a credit or commodity cycle, far below my 'medium experience' threshold"
+    ],
+    "red_flags": [
+      "OCF negative in 0/5 years — business has never generated positive operating cash flow",
+      "Financing CF positive every year — company is consistently raising external capital just to fund operations",
+      "Commodity trading intermediary has no durable moat; replicable by any well-funded competitor",
+      "Total assets tripled in one year (₹21 Cr → ₹54 Cr) while cash burn accelerated — receivables/payables mismatch growing dangerously"
+    ],
+    "detailed_analysis": "Exim Routes is a recyclable paper trading platform connecting global suppliers to Indian paper mills. The revenue hockey stick (₹4 Cr → ₹121 Cr) is impressive, but the business is a commodity intermediary — it buys and sells paper waste with thin ~8% EBITDA margins and no pricing power. The spectacular ROE/ROCE figures (54%/55%) are an artefact of a very small equity base, not evidence of a genuine economic moat. The P/E of 37.5x is being applied to a business that any trader with working capital can replicate, which is a recipe for multiple compression.\n\nThe free cash flow story is damning for a Kedia-style investment. Despite booking ₹8 Cr of net profit in FY25, operating cash flow was -₹5 Cr and FCF was -₹9 Cr — meaning the company has never actually generated cash from operations in its entire 5-year life. Total assets tripled from ₹21 Cr to ₹54 Cr in one year while financing cash flows turned strongly positive (₹11 Cr raised) — the business is funded by external capital, not its own earnings. This is a working capital trap dressed in high growth numbers. Until the company demonstrates sustained positive FCF, a management track record through a downturn, and a valuation that reflects its commodity nature (ideally sub-15x P/E), I would stay away entirely.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 52453,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0740625,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8516,
+      "cache_read_input_tokens": 10545,
+      "output_tokens": 2597,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8516,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 361,
+          "cache_read_input_tokens": 8380,
+          "cache_creation_input_tokens": 2301,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2301
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

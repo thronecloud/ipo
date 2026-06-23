@@ -1,0 +1,70 @@
+{
+  "symbol": "DHARARAIL",
+  "persona": "vijay_kedia",
+  "persona_display_name": "Vijay Kedia",
+  "analyzed_at": "2026-04-21T07:44:56.419972Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Dhara Rail Pro operates in the right sector — Indian Railways maintenance is a large, structurally growing TAM — but at 36x P/E with 3 consecutive years of negative operating cash flow and earnings propped up by non-operating income, the business cannot justify its current price. The transformation story is absent; this is a micro-cap with micro-profits but a large-cap valuation multiple.",
+    "key_strengths": [
+      "Strong promoter holding at 74.56% — high skin in the game",
+      "Meaningful revenue acceleration: INR 27 Cr → 44 Cr (+42% YoY in FY25) in a captive Indian Railways ecosystem",
+      "Zero finance costs despite INR 21 Cr borrowings — suggests low-cost or deferred debt structure"
+    ],
+    "key_risks": [
+      "Earnings quality is poor: FY25 net profit is INR 7 Cr but 'Other Income' alone contributed INR 4 Cr — core EBIT is barely INR 1-2 Cr",
+      "Negative operating cash flow all 3 years (-2, -2, -5 Cr) — the business is structurally cash-consumptive, not generative",
+      "P/E of 36x on a INR 44 Cr revenue base is speculative pricing with no margin of safety for a micro-cap services company"
+    ],
+    "red_flags": [
+      "D/E ratio ~1.05x (21 Cr borrowings vs 20 Cr equity) — far above my 0.4x threshold",
+      "OCF positive in 0 out of 3 years — no free cash flow generation whatsoever",
+      "Net profit of INR 7 Cr with INR 4 Cr other income = core operating business is barely breakeven; ROE of 50% is a mirage on thin equity base",
+      "Market cap INR 148 Cr on INR 44 Cr revenue and INR 3 Cr core operating profit implies ~50x core P/E — unjustifiable"
+    ],
+    "detailed_analysis": "Dhara Rail Pro ticks one SMILE box convincingly — Extra-large market potential. Indian Railways' massive maintenance and AMC spend is a secular opportunity. Promoter at 74.56% is also a positive. But every other SMILE element fails scrutiny. The revenue base of INR 44 Cr is real but tiny; more importantly, INR 4 Cr of the INR 7 Cr FY25 net profit comes from 'Other Income' — not from winning railway contracts or expanding margins. Strip that out and the core business earned ~INR 3 Cr operationally on INR 44 Cr revenue, implying a 7% operating margin on a very lumpy, contract-driven business.\n\nThe cash flow picture is disqualifying for me. Operating CF has been negative every single year: -2, -2, -5 Cr. This means the company is not converting profits to cash — likely working capital is being strained as the business grows. D/E of ~1x (INR 21 Cr borrowings vs INR 20 Cr equity) exceeds my hard limit of 0.4x, and at 36x P/E, the market is pricing in perfection for a business that has yet to demonstrate it can earn a single rupee of free cash flow. At INR 100 Cr+ lower market cap and 12-15x P/E, this might be worth revisiting — but today, I walk away.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 51211,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0824616,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10432,
+      "cache_read_input_tokens": 8142,
+      "output_tokens": 2726,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10432,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 485,
+          "cache_read_input_tokens": 8142,
+          "cache_creation_input_tokens": 2290,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2290
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

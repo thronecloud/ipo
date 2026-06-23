@@ -1,0 +1,68 @@
+{
+  "symbol": "CUB",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-19T13:05:06.148572Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "City Union Bank, founded in 1904 and operating for over 120 years, exhibits the consistency of earnings I respect: net profit has grown from INR 760 Cr to INR 1,124 Cr over four years at a 13.9% CAGR with OCF positive all four years. However, at P/E 15.3 (barely above my 15× ceiling) and P/B 1.92 (above my 1.5× ceiling), the price exceeds my required margin of safety — I would need a more attractive entry point.",
+    "key_strengths": [
+      "120-year operating history with unbroken profitability: net profit grew every single year in the four-year data series — INR 760, 937, 1,016, 1,124 Cr — the kind of steady, boring consistency I admire",
+      "Improving book value: total equity compounded from INR 6,586 Cr (2022) to INR 9,467 Cr (2025) while borrowings (non-deposit debt) fell sharply from INR 5,312 Cr to INR 1,790 Cr",
+      "Forward P/E of 12.5× suggests the market expects continued earnings growth, which if realised would bring valuation into a more acceptable range"
+    ],
+    "key_risks": [
+      "P/B of 1.92 exceeds my maximum of 1.5 — for a regional bank with limited pricing power and geographic concentration in South India, this premium is hard to justify",
+      "Finance costs rising at 17.2% CAGR (INR 2,188 Cr to INR 3,518 Cr) reflect rising deposit costs that could squeeze net interest margins in a sustained high-rate environment",
+      "OCF was weak in FY24 (INR 436 Cr) versus INR 1,166 Cr in FY22 — banking OCF is volatile and the recent INR 1,128 Cr recovery in FY25 may not be sustained"
+    ],
+    "red_flags": [
+      "P/B of 1.92 breaches my 1.5× ceiling — I am reluctant to pay nearly twice book for any bank, however well-managed",
+      "Revenue growth of only 6.3% CAGR over three years is tepid for a bank that needs to grow its loan book to justify the current valuation"
+    ],
+    "detailed_analysis": "City Union Bank is precisely the type of institution I appreciate: old, conservative, and consistently profitable. A 120-year track record eliminates the single greatest concern I have with most modern businesses — that management has not been tested by adversity. Net profits have grown every year in the available data, equity has compounded solidly, and non-deposit borrowings have been cut by two-thirds. These are marks of prudent stewardship.\n\nNevertheless, at INR 257.8, the stock does not offer the margin of safety I demand. P/E of 15.3 sits exactly at my ceiling; P/B of 1.92 exceeds it by nearly 30%. For a bank with a geographically concentrated franchise and modest loan growth, I require a discount to book — not a premium. I would study this bank closely for an entry nearer 1.2–1.3× book, which would represent the kind of bargain Mr. Market occasionally offers to the patient investor.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 216169,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.27410685,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 26067,
+      "cache_read_input_tokens": 15372,
+      "output_tokens": 11449,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 26067,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 805,
+          "cache_read_input_tokens": 15372,
+          "cache_creation_input_tokens": 10695,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 10695
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

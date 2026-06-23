@@ -1,0 +1,70 @@
+{
+  "symbol": "CPPLUS",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-22T16:23:30.116900Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "CP PLUS holds a dominant brand position in India's surveillance market with 20% revenue CAGR, but the stock is priced at 105x earnings that are massively inflated by a one-time INR 259 Cr \"Other Income\" in FY25 — strip that out and the core business earns ~90-100 Cr. At EV/EBITDA of 69x on genuine operating earnings, you're paying a spectacular price for a hardware distribution business with near-zero free cash flow.",
+    "key_strengths": [
+      "India's leading CCTV/surveillance brand with 20.2% revenue CAGR (FY20-25) and expanding operating margins from 4.6% → 11.2%",
+      "Nearly debt-free with D/E of 0.08 and borrowings slashed from INR 436 Cr (FY24) to INR 128 Cr (FY25)",
+      "Government/infra surveillance tailwind with AI-IoT overlay (OnVigil) adding potential recurring revenue stickiness"
+    ],
+    "key_risks": [
+      "Catastrophic FCF conversion — reported INR 351 Cr net profit in FY25 yielded only INR 1 Cr FCF; FY24 showed INR 115 Cr profit with INR -187 Cr FCF — the working capital trap is structural",
+      "INR 259 Cr Other Income in FY25 (vs -12 Cr FY24) accounts for ~74% of reported net profit; forward estimates built on this base are fiction",
+      "Hardware distribution model facing relentless Chinese commoditization — they even distribute Dahua (competitor) products, signaling weak proprietary moat"
+    ],
+    "red_flags": [
+      "FY25 FCF/Net Income = 0.3% (INR 1 Cr FCF on INR 351 Cr profit) — textbook earnings quality failure",
+      "Other Income of INR 259 Cr in FY25 is almost certainly non-recurring; the 83% net profit CAGR headline is deeply misleading",
+      "OCF negative in FY24 (-180 Cr) and barely positive in FY25 (+27 Cr) — this is a cash-consuming, not cash-generating, business despite reported profits",
+      "Total assets doubled in one year (INR 1,644 → 3,373 Cr) alongside equity surge (INR 424 → 1,587 Cr) suggesting a large capital raise that dilutes future returns"
+    ],
+    "detailed_analysis": "Invert first, as I always do: what could go catastrophically wrong? Almost everything here. The FY25 net profit of INR 351 Cr is a mirage — INR 259 Cr came from \"Other Income,\" likely a one-time asset sale or investment gain. Strip that away, apply a reasonable tax rate, and core earnings are approximately INR 70-100 Cr. The market cap of INR 26,673 Cr then implies 260-380x real earnings. The cash flow statement confirms this: a business generating INR 3,112 Cr in revenue and INR 248 Cr in operating income should throw off real cash — instead it produced INR 27 Cr OCF and INR 1 Cr FCF in FY25. The working capital cycle is consuming every rupee of operating profit, which is what you'd expect from a hardware distributor with inventory and receivable bloat.\n\nThe underlying business has genuine merits — CP PLUS is the dominant domestic brand in an INR 10,000+ Cr surveillance market growing at 15%+ annually, with government mandates (Smart Cities, CCTNS) providing structural demand. ROE of 20.9% and ROCE of 19.5% look acceptable on the surface. But these returns are on an equity base just inflated by the one-time income event, and ROIC on the core operating business — given the working capital intensity — is likely in the 12-15% range at best. For a hardware-heavy, Chinese-competition-exposed, zero-FCF business, an EV/EBITDA of 68.76x is not a price I will pay. The promoter's 76.91% holding is good for alignment, but the opaque \"Other Income\" spike demands explanation before any capital commitment.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 63998,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09378929999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11794,
+      "cache_read_input_tokens": 9076,
+      "output_tokens": 3122,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11794,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 446,
+          "cache_read_input_tokens": 9076,
+          "cache_creation_input_tokens": 2718,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2718
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

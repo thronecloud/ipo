@@ -1,0 +1,70 @@
+{
+  "symbol": "ICICIAMC",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-21T07:50:52.849190Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "ICICI Prudential AMC is a fine business sold at an unconscionable price — P/E of 56x and P/B of 36x leave zero margin of safety by any quantitative standard I respect. The Graham Number (≈INR 340) implies the market is pricing this at nearly 10× intrinsic value, the very definition of speculation masquerading as investment.",
+    "key_strengths": [
+      "Near-zero debt (D/E: 0.04) with finance costs of only INR 19 Cr vs. EBITDA of INR 3,411 Cr — effectively unlevered.",
+      "Consistent and growing earnings for 3 consecutive years: INR 1,516 → 2,050 → 2,651 Cr — passes my earnings continuity test.",
+      "Free cash flow conversion is excellent (INR 2,162 Cr FCF vs. INR 2,651 Cr net profit in FY25) — real cash, not accounting fiction."
+    ],
+    "key_risks": [
+      "P/E of 56x is nearly 4× my maximum threshold of 15x — any earnings disappointment or market downturn will savage this price.",
+      "P/B of 36.23x means you are paying INR 36 for every INR 1 of book value; if AUM shrinks, book value offers no floor whatsoever.",
+      "AMC earnings are entirely leveraged to equity market levels — a prolonged bear market in Indian equities would compress both AUM and margins simultaneously."
+    ],
+    "red_flags": [
+      "Graham Number ≈ INR 340 vs. market price of INR 3,339 — trading at ~10× calculated intrinsic value.",
+      "P/B of 36.23 is 24× my preferred ceiling of 1.5× — the balance sheet provides no asset protection for shareholders.",
+      "Cash on balance sheet: a mere INR 15 Cr on INR 142,060 Cr market cap — the company returns cash but holds almost none, making it vulnerable to a funding shock.",
+      "Promoter lock-up at 87.59% severely limits float and price discovery; low FII interest (2.65%) despite institutional-grade business quality suggests even sophisticated buyers balk at this price."
+    ],
+    "detailed_analysis": "Through my quantitative lens, this stock fails virtually every filter I have spent a lifetime refining. The Graham Number — calculated as √(22.5 × EPS × Book Value per Share) — works out to approximately INR 340, using FY25 net profit of INR 2,651 Cr, ~42.5 Cr shares outstanding (implied from market cap/price), and book value per share of ~INR 82. The current price of INR 3,339 is roughly 10× this figure. A P/E of 56x and P/B of 36x are not the hallmarks of a bargain — they are the hallmarks of a market in love with a story, willing to pay any price for quality. Mr. Market is in an exuberant mood about this name, and my experience is that such moods end badly for latecomers.\n\nI will grant the business its virtues: near-zero debt, operating margins of 75%, ROE of 75%, and three years of uninterrupted profit growth. These are the traits of a well-run franchise. But I have always maintained that even the finest business is a poor investment at the wrong price. The entire edifice of this valuation rests on continued AUM growth in Indian equities — a purely speculative assumption about future market conditions. There is no asset base to fall back on, no dividend history provided, and no margin of safety. The intelligent investor waits for Mr. Market to offer a reasonable price. At INR 3,339, he is not offering one.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 46699,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.06826560000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8244,
+      "cache_read_input_tokens": 10272,
+      "output_tokens": 2284,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8244,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 287,
+          "cache_read_input_tokens": 8222,
+          "cache_creation_input_tokens": 2072,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2072
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

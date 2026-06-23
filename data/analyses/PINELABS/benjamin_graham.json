@@ -1,0 +1,70 @@
+{
+  "symbol": "PINELABS",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-21T08:09:00.647138Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "Pine Labs has produced net losses in every single year from 2020–2025 (cumulative losses of ~INR 878 Cr), failing the most fundamental Graham requirement of demonstrated earning power. At P/B of 5.19 and a trailing P/E of 921x on negligible earnings, the market is pricing in a speculative future that history has not validated.",
+    "key_strengths": [
+      "Revenue growing at 21.8% CAGR (2020–2025), reaching INR 2,274 Cr — shows genuine business traction",
+      "Debt/Equity of 0.23 is below Graham's 0.5 threshold; net debt is minimal with INR 951 Cr cash vs INR 858 Cr borrowings",
+      "Operating income turned positive in FY2025 (INR 218 Cr) after two years of losses — nascent improvement in unit economics"
+    ],
+    "key_risks": [
+      "Zero earnings history across 5+ years — net losses every year, totalling ~INR 878 Cr; fails Graham's most basic filter",
+      "Free cash flow negative in every single year from 2020–2025 (worst: -INR 517 Cr in FY2023); real cash is being destroyed, not created",
+      "P/B of 5.19 and P/E of 921x represent a grotesque premium over asset value — Graham Number is incalculable given negative earnings"
+    ],
+    "red_flags": [
+      "No positive net earnings in any of the 5 years reviewed — disqualifies the business under any Graham framework",
+      "Finance costs growing at 34.4% CAGR while the business bleeds cash — a dangerous combination",
+      "OCF positive only 2 of 5 years; cumulative free cash flow burn exceeds INR 1,700 Cr since 2020",
+      "Total assets nearly tripled (INR 3,448 Cr → INR 11,306 Cr) funded by equity dilution, not organic cash generation — the balance sheet is built on investor capital, not earned profits"
+    ],
+    "detailed_analysis": "Mr. Market is asking INR 22,223 Cr for a business that has never earned a rupee of net profit in its recorded history. Benjamin Graham's cardinal rule is simple: I require proven, repeatable earning power before I will pay a single rupee above liquidation value. Pine Labs cannot satisfy that requirement — it has posted net losses of INR 47 Cr, 56 Cr, 23 Cr, 265 Cr, 342 Cr, and 145 Cr in successive years. The cumulative destruction of shareholder capital is staggering, and the \"improvement\" in FY2025 is a thin operating income line, not bottom-line solvency. The Graham Number — sqrt(22.5 × EPS × Book Value) — is mathematically undefined here because EPS is negative.\n\nThe valuation metrics are equally alarming from a safety-of-principal standpoint. At P/B of 5.19, an investor is paying INR 5.19 for every INR 1 of net assets in a company that consistently earns a negative return on those assets (ROE: -3.31%). The balance sheet expansion from INR 3,448 Cr to INR 11,306 Cr in assets has been funded almost entirely by equity issuance — a transfer of capital from investors to the enterprise with nothing to show for it in profits. Revenue growth and segment diversification are narrative virtues; Graham demanded numbers, not stories. Until Pine Labs demonstrates at least three consecutive years of positive net earnings, this stock belongs in the speculator's casino, not the intelligent investor's portfolio.",
+    "metrics_evaluated": {
+      "moat_strength": "insufficient_data",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 37568,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0626568,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8446,
+      "cache_read_input_tokens": 11001,
+      "output_tokens": 1845,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8446,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 353,
+          "cache_read_input_tokens": 8951,
+          "cache_creation_input_tokens": 1545,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1545
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

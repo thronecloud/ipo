@@ -1,0 +1,70 @@
+{
+  "symbol": "INOXGREEN",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T17:40:42.569275Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Inox Green is a subscale wind O&M services business with 1% ROE, flat-to-declining revenue over seven years, and profits already shrinking after just turning positive — yet it trades at 81x P/E and 129x EV/EBITDA. I would not pay this price for a wonderful business; this is neither wonderful nor cheap.",
+    "key_strengths": [
+      "Debt dramatically reduced from INR 1,411 Cr (2021) to INR 95 Cr (2025), nearly debt-free now",
+      "Captive O&M pipeline tied to Inox Wind's installed base provides revenue visibility",
+      "Operating margin of ~15% is reasonable for a services business"
+    ],
+    "key_risks": [
+      "Valuation is absurd: market pays INR 6,549 Cr for a business earning INR 22 Cr — P/E of 81x is pricing in decades of flawless execution",
+      "Revenue has gone nowhere in 7 years (INR 368 Cr in 2018 → INR 236 Cr in 2025, CAGR -6.1%); net profit is already declining after just two profitable years",
+      "1% ROE and 2.6% ROCE mean the business destroys economic value at current asset base; massive equity dilution (equity grew 47x since 2021) has not translated to proportionate earnings"
+    ],
+    "red_flags": [
+      "Profits declining immediately after turning positive: INR 28 Cr (2024) → INR 22 Cr (2025)",
+      "INR 637 Cr investing outflow in 2025 funded by INR 572 Cr new financing — major capital raise being deployed into a business with sub-3% ROCE",
+      "Other Income swung from -INR 112 Cr (2021) to +INR 57 Cr (2025), masking weak operating performance; earnings quality is suspect",
+      "Subsidiary of Inox Wind — related-party captive model limits true market validation and pricing power"
+    ],
+    "detailed_analysis": "Inox Green is essentially a captive wind farm O&M operator for its parent, Inox Wind. The core business has generated roughly INR 160–250 Cr in revenue for the past seven years with no real growth — the 7-year revenue CAGR is negative at -6.1%. EBITDA is contracting (INR 128 Cr in 2020 vs. INR 94 Cr in 2025). The company only turned profitable in FY24, and profits are already falling. ROE of 1% and ROCE of 2.6% tell me this business earns far less than its cost of capital — a value-destruction machine dressed up in a green-energy narrative.\n\nThe valuation is indefensible by any framework I use. At INR 6,549 Cr market cap on INR 22 Cr of net profit (P/E 81x) and INR 236 Cr revenue (P/S 22x), the market is pricing in a transformation that the historical numbers give no reason to believe in. The 2025 balance sheet shows a massive fresh capital raise (equity jumped from INR 1,345 Cr to INR 2,020 Cr) being deployed into INR 637 Cr of investments — but into a business that has never demonstrated the ability to earn adequate returns. This is speculative capital allocation, not a business I'd trust with Berkshire's shareholders' money.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 43460,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07386630000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10696,
+      "cache_read_input_tokens": 8841,
+      "output_tokens": 2073,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10696
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 255,
+          "cache_read_input_tokens": 8841,
+          "cache_creation_input_tokens": 1855,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1855,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

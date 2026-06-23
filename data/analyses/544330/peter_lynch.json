@@ -1,0 +1,69 @@
+{
+  "symbol": "544330",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-20T09:45:09.573187Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Parmeshwar Metal is a tiny copper recycler with a P/E of 12 that looks cheap until you see ROE of just 0.20% — that's a broken story, not a bargain. Without visible earnings growth, I can't compute a meaningful PEG, and a commodity-recycler microcap with sub-1% returns on equity is not a Lynch ten-bagger candidate.",
+    "key_strengths": [
+      "High promoter holding of 72.03% indicates skin in the game",
+      "Operating in copper recycling — a sector with structural tailwinds from EV/grid demand",
+      "Small market cap of INR 189 Cr leaves theoretical room to grow if execution improves"
+    ],
+    "key_risks": [
+      "ROE of 0.20% is essentially capital destruction — the business isn't earning its cost of capital",
+      "Pure commodity scrap recycler with no pricing power or differentiation",
+      "Zero institutional interest (FII 0%, DII 0.03%) — no smart money validation"
+    ],
+    "red_flags": [
+      "ROE of 0.20% is grossly inconsistent with a P/E of 12 — earnings quality is suspect",
+      "Negligible institutional ownership in a recently listed (2016 incorp) SME-style microcap",
+      "No visible growth narrative or moat — this is a price-taker in copper scrap"
+    ],
+    "detailed_analysis": "From a Lynch lens, every stock needs a story, and Parmeshwar's story is weak. Copper recycling rides a real macro tailwind (EVs, grid build-out, electrification), but this company's 0.20% ROE tells me management is converting that tailwind into almost no shareholder value. A P/E of 12 on near-zero earnings is mathematically a high P/E in disguise — small absolute earnings make the multiple meaningless. With no growth rate disclosed, I can't compute a PEG, but ROE that low rarely supports the 15-25% earnings growth I look for in a fast grower.\n\nThis is a microcap commodity processor with promoter concentration of 72%, no FII/DII sponsorship, and a business model (buy scrap, melt, sell wire/rod) that has minimal differentiation. It could become an asset play or turnaround if margins normalize, but Lynch's rule is \"wait for the turnaround to actually turn.\" Right now there's no evidence of that. Pass — keep it on the watchlist only if ROE crosses 12% and revenue growth shows up in two consecutive years.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 25954,
+    "model_used": "opus",
+    "total_cost_usd": 0.09106600000000001,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8924,
+      "cache_read_input_tokens": 13422,
+      "output_tokens": 1142,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8924,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10578,
+          "cache_creation_input_tokens": 1190,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1190
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "symbol": "EMBDL",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T17:18:29.426799Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Embassy Developments is a deeply distressed real estate developer that posted losses in three consecutive years (2022–2024) and had negative equity of -1,446 Cr as recently as FY2024, only recovering via what appears to be an equity raise that ballooned assets from 9,939 Cr to 20,857 Cr in one year. At 35.99x P/E on a single year of fragile profitability, the market is pricing in a turnaround that the 9-year -3.3% revenue CAGR and -11.5% EBITDA CAGR give no right to assume.",
+    "key_strengths": [
+      "Embassy brand association provides some marketing credibility in commercial/SEZ real estate",
+      "FY2025 OCF of 1,461 Cr is the first meaningful positive operating cash flow in recent history",
+      "Debt reduced from 7,749 Cr (FY2024) to 4,599 Cr (FY2025), improving balance sheet optics post-raise"
+    ],
+    "key_risks": [
+      "ROE of 2.53% and ROCE of 3.19% — catastrophically below cost of capital, destroying value for a decade",
+      "Revenue eroded from 4,944 Cr (FY2019) to 587 Cr (FY2023); the FY2025 'recovery' to 2,180 Cr is barely 44% of peak, unproven",
+      "Operating margin of -81.17% reveals the trailing earnings quality is poor; one good year (FY2025 Net Profit: 194 Cr) does not make a business"
+    ],
+    "red_flags": [
+      "Negative equity of -1,446 Cr in FY2024 — a company technically insolvent just 12 months ago",
+      "Corporate restructuring + name change (Equinox → Embassy, Feb 2025) concurrent with an IPO/equity raise that inflated assets by 10,918 Cr in one year — classic complexity red flag",
+      "EV/EBITDA of -100.6 is nonsensical, signaling that current earnings cannot justify the enterprise value",
+      "OCF positive only 2 of last 5 years — real estate developer that cannot generate cash from operations is a cash incinerator",
+      "Finance costs of 461–556 Cr annually against thin revenues signals leverage risk remains elevated despite debt reduction"
+    ],
+    "detailed_analysis": "Invert first: what would make this a terrible investment? Every answer points directly at EMBDL. ROIC is approximately 3%, meaning the business destroys value on every rupee deployed. Revenue has compounded at -3.3% over nine years. The company was technically insolvent in FY2024 with negative equity (-1,446 Cr) and negative reserves (-1,555 Cr). The sudden 2025 balance sheet resurrection — total assets doubling to 20,857 Cr, equity swinging from -1,446 Cr to +10,258 Cr — is almost certainly driven by an IPO equity infusion, not operational improvement. Paying 35.99x earnings for one year of profitability (194 Cr) after three consecutive loss years is the definition of speculating, not investing.\n\nReal estate development is among the worst business models by Munger's framework: capital-intensive, cyclical, commoditized, dependent on land bank timing and interest rate cycles, with no durable moat. Embassy Developments compounds these structural negatives with a decade of operational deterioration, chronic negative free cash flow (positive in only 2 of 5 years), and 461 Cr in annual finance costs against FY2025 EBITDA of just 322 Cr — meaning EBITDA still does not cover interest expense. There is no margin of safety, no compounding mechanism, and no evidence of the management quality or capital allocation discipline that would warrant confidence in the 2025 uptick being anything more than a project-cycle coincidence. This is a pass at any price near current levels.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 51943,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08314635000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11103,
+      "cache_read_input_tokens": 8887,
+      "output_tokens": 2589,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11103
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 409,
+          "cache_read_input_tokens": 8887,
+          "cache_creation_input_tokens": 2216,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2216,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

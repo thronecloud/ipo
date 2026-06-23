@@ -1,0 +1,68 @@
+{
+  "symbol": "544646",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-20T11:06:40.908396Z",
+  "analysis": {
+    "score": 6,
+    "recommendation": "HOLD",
+    "investment_thesis": "On Magic Formula metrics, Shipwaves screens well — earnings yield ~18% (P/E 5.42) paired with ROCE of 35.4% is the rare \"cheap and good\" combination I look for. However, the INR 49 Cr micro-cap size, short operating history, and likely non-normalized EBIT sharply limit conviction — this is a screener candidate, not a high-confidence buy.",
+    "key_strengths": [
+      "Earnings yield ~18.5% (P/E 5.42) — well above the 12% attractive threshold",
+      "ROCE 35.4% and ROE 56.1% — excellent capital efficiency in an asset-light digital freight/SaaS model",
+      "Promoter holding 67.36% — aligned ownership"
+    ],
+    "key_risks": [
+      "Micro-cap (INR 49 Cr) — illiquidity, limited disclosure, audit reliability concerns",
+      "Only a 1-year earnings snapshot; ROCE/ROE may not be sustainable for the Magic Formula's 3-year durability test",
+      "Freight forwarding is a commoditized, working-capital-heavy business — high ROCE may compress with scale"
+    ],
+    "red_flags": [
+      "Short listed history — risk of one-time items or IPO-proceeds-inflated return metrics",
+      "Logistics margins are cyclical; current earnings may reflect peak freight-rate environment"
+    ],
+    "detailed_analysis": "Pure Magic Formula arithmetic puts Shipwaves in attractive territory. Using P/E 5.42 as a proxy for earnings yield gives ~18.5%, comfortably past my 15% \"very attractive\" threshold, while ROCE of 35.4% is above the 25% \"excellent\" bar. Both legs of the formula are firing — cheap AND good — which is the setup the quantitative strategy is designed to find. In a diversified basket of 20-30 such names, I would include it without hesitation.\n\nThe caveat is that the Magic Formula works on portfolios, not single stocks, and it assumes the EBIT and capital base are representative. At INR 49 Cr market cap with a 2015 incorporation and very recent BSE listing, I cannot verify that ROCE is sustained across 3+ years, that EBIT is free of one-time items (IPO-proceeds cash inflating returns is common), or that working-capital dynamics in freight forwarding won't normalize margins downward. HOLD — screener-worthy, but do not size up without multi-year EBIT, FCF conversion, and receivables/payables trend verification.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "insufficient_data",
+      "financial_health": "insufficient_data",
+      "valuation": "undervalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 31677,
+    "model_used": "opus",
+    "total_cost_usd": 0.12026425,
+    "usage": {
+      "input_tokens": 7,
+      "cache_creation_input_tokens": 9739,
+      "cache_read_input_tokens": 24921,
+      "output_tokens": 1876,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9739,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 11460,
+          "cache_creation_input_tokens": 1149,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1149
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

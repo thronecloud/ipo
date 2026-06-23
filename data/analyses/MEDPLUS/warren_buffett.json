@@ -1,0 +1,69 @@
+{
+  "symbol": "MEDPLUS",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T18:17:19.818073Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "MedPlus is a thin-margin pharmacy retailer trading at 50.9x earnings with an 8.8% ROE — a mediocre business priced for perfection. I have no interest in paying a wonderful price for a fair business in a fiercely competitive, capital-hungry sector.",
+    "key_strengths": [
+      "Revenue growing at 15.1% CAGR (9Y) with EBITDA CAGR of 30.9%, showing real operating leverage finally emerging",
+      "FY2025 FCF surged to INR 482 Cr and capex has been declining (INR 118→59 Cr), suggesting the store-build phase is maturing",
+      "Scale of INR 6,136 Cr revenue gives procurement leverage vs. smaller independent pharmacies"
+    ],
+    "key_risks": [
+      "ROE of 8.8% and ROCE of 10.3% are well below my 15% threshold — this business does not earn adequate returns on capital",
+      "Weak competitive moat: pharmacy retail has near-zero switching costs and faces well-capitalised rivals (Apollo Pharmacy, Reliance Retail, online disruptors)",
+      "Borrowings nearly tripled from INR 477 Cr (2020) to INR 1,193 Cr (2025) while finance costs grew 22% CAGR, squeezing already thin 4.75% operating margins"
+    ],
+    "red_flags": [
+      "P/E of 50.9x on a business earning only 8.8% ROE — paying a premium growth multiple for a mediocre return profile",
+      "Net profit has been wildly erratic: INR 2 Cr (2020), INR 95 Cr (2022), INR 50 Cr (2023) — no earnings predictability",
+      "P/B of 5.7x is unjustifiable when ROE barely covers the cost of equity"
+    ],
+    "detailed_analysis": "MedPlus operates in a business I understand but do not admire — pharmacy retail is structurally thin-margin, working-capital-intensive, and lacks durable pricing power. The gross margin of 25.86% sounds reasonable until you see the operating margin collapse to 4.75% after store costs, rent (likely large given EBITDA includes lease liabilities post-Ind AS 116), and rising finance charges of INR 103 Cr. ROE of 8.8% tells me the business destroys economic value at the current cost of capital; Berkshire's hurdle is a consistent 15%+. The erratic net profit history — swinging from INR 2 Cr to INR 95 Cr and back to INR 50 Cr — is a further disqualifier; I want businesses where earnings are as predictable as a sunrise.\n\nThe valuation is simply indefensible for a value investor. At 50.9x trailing P/E and 28.4x EV/EBITDA, the market is pricing in flawless execution for years ahead in an industry where Reliance, Tata 1mg, PharmEasy, and Apollo are all fighting for the same counter. The FY2025 FCF of INR 482 Cr is genuinely encouraging and suggests the store network is now self-funding, but one good year of cash generation does not a moat make. I would need to see sustained ROE above 15%, net margins above 7–8%, and a price closer to 20–25x earnings before I'd consider this seriously. At INR 878, it is priced for a wonderful business; it is merely an adequate one.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 42978,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07714425,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10923,
+      "cache_read_input_tokens": 9030,
+      "output_tokens": 2231,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10923
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 366,
+          "cache_read_input_tokens": 9030,
+          "cache_creation_input_tokens": 1893,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1893,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

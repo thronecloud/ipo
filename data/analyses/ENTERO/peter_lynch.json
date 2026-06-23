@@ -1,0 +1,69 @@
+{
+  "symbol": "ENTERO",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-18T17:19:22.307255Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Entero is a fast-growing pharma distributor riding India's healthcare consolidation wave with 30% revenue CAGR, but it has never generated positive operating cash flow in 5 years — a fatal flaw for a distribution business. At 47.8x P/E with 3.4% operating margins and persistent cash burn, the story doesn't justify the price.",
+    "key_strengths": [
+      "Revenue CAGR of 30.4% (₹1,350 Cr → ₹5,096 Cr) in 5 years shows real scale-up in fragmented Indian pharma distribution",
+      "EBITDA inflecting sharply — ₹26 Cr in 2022 to ₹207 Cr in 2025 (42.6% CAGR), and net profit finally turned positive at ₹107 Cr",
+      "Low D/E of 0.25 and ₹229 Cr cash post-IPO provide near-term financial cushion"
+    ],
+    "key_risks": [
+      "Operating cash flow negative in ALL 5 years (0/5 positive; OCF was -₹77 Cr in 2025 despite ₹107 Cr reported net profit) — working capital is a structural trap",
+      "Razor-thin margins (3.4% operating, ~2.1% net) leave zero buffer; any pricing pressure or debtor stress could wipe out profitability instantly",
+      "Valuation is stretched at P/E 47.8x and EV/EBITDA 29x for a low-margin distributor — ROE of only 5.63% does not justify the multiple"
+    ],
+    "red_flags": [
+      "OCF negative every single year for 5 consecutive years — a distributor that can't convert revenue into cash is a red flag Lynch would not overlook",
+      "Net profit of ₹107 Cr vs. OCF of -₹77 Cr in FY2025 — massive working capital absorption (receivables/inventory) suggests earnings quality is poor",
+      "Equity was negative until FY2022; reserves were negative until FY2024 — profitability is brand new and unproven across a cycle"
+    ],
+    "detailed_analysis": "Entero is trying to become the FedEx of Indian pharma distribution — aggregating thousands of SKUs and delivering to hospitals, retail pharmacies, and clinics across India. The revenue story is genuinely impressive at 30% CAGR, and the operating leverage is finally showing (EBITDA up 6x in 3 years). The forward P/E of 28.72 implies the market expects another ~65% earnings jump, giving a PEG of roughly 0.9-1.0 — borderline acceptable. But the business narrative breaks down badly at the cash flow level. A distribution company's job is to convert thin margins into reliable cash. Entero has failed at this for five straight years, burning cash even in its best revenue year (OCF -₹77 Cr in FY2025 on ₹5,096 Cr revenue).\n\nPeter Lynch's rule: if the earnings are there but the cash isn't, the earnings are suspect. The gap between ₹107 Cr net profit and -₹77 Cr OCF points to receivables expansion eating the business alive — classic working-capital trap in low-margin distribution. At 47.8x P/E and 29x EV/EBITDA with 3.4% operating margins and ROE of just 5.63%, there is no margin of safety. This is a business I'd put on my watch list and revisit only when OCF turns consistently positive for at least 2 years. Until then, the story is incomplete.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 55579,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08631239999999998,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11274,
+      "cache_read_input_tokens": 8903,
+      "output_tokens": 2757,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11274
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 444,
+          "cache_read_input_tokens": 8903,
+          "cache_creation_input_tokens": 2371,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2371,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

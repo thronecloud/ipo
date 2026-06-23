@@ -1,0 +1,68 @@
+{
+  "symbol": "AVANTIFEED",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T16:35:38.466849Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Avanti Feeds is a decent business with 24% ROCE, but at an earnings yield of just ~3.2% (EBIT 634 Cr / EV ~20,062 Cr), the stock fails the Magic Formula's \"cheap\" test decisively. The Magic Formula only rewards businesses that are both good AND cheap — Avanti is only half the equation.",
+    "key_strengths": [
+      "Zero-debt balance sheet (D/E 0.00) with reserves growing from INR 1,390 Cr to INR 2,997 Cr",
+      "ROCE of 24% and net profit CAGR of 15% over 9 years shows a durable, compounding business",
+      "OCF turned strongly positive in 2025 (INR 584 Cr vs. net profit INR 557 Cr) — near-full cash conversion"
+    ],
+    "key_risks": [
+      "Commodity cyclicality: operating income swung from INR 684 Cr (2018) to INR 314 Cr (2022), a 54% collapse — ROIC is not stable",
+      "Earnings yield of ~3.2% (EBIT/EV) is far below the 6% Magic Formula minimum — market is pricing in perfection",
+      "Other Income (INR 166 Cr, 26% CAGR) now represents 26% of EBIT — inflates headline earnings; true operating returns are lower than reported"
+    ],
+    "red_flags": [
+      "Operating margins deeply cyclical (6.2% in 2022 vs 20% in 2018) — shrimp feed is exposed to raw material volatility",
+      "Investing CF has surged to -485 Cr in 2025 — capital deployment into what needs monitoring"
+    ],
+    "detailed_analysis": "Running the Magic Formula on Avanti Feeds: EBIT of INR 634 Cr (2025) against an Enterprise Value of ~INR 20,062 Cr (Market Cap 20,073 + Debt 15 - Cash 26) yields an earnings yield of just 3.2%. That is far below even the 6% hurdle, let alone the 12-15% range where the Magic Formula gets interested. On the quality side, ROCE of 24% passes the 20% threshold, and the balance sheet is pristine with near-zero debt — so this is a genuinely good business. But the Magic Formula demands BOTH legs, and the valuation leg is broken at a P/E of 31.7x and EV/EBITDA of 21x.\n\nThe deeper concern is earnings stability. Operating income has swung wildly — from INR 231 Cr (2016) to INR 684 Cr (2018) back down to INR 314 Cr (2022), then recovering to INR 634 Cr (2025). That 2022 trough represents a ~54% peak-to-trough collapse in EBIT, which is not the hallmark of a wide moat. Additionally, \"Other Income\" has grown at 26.5% CAGR and now contributes INR 166 Cr — inflating reported earnings with investment returns rather than operating leverage. For a Magic Formula investor, this stock is appropriately priced for its quality, meaning there is no margin of safety and no opportunity to exploit an inefficient market price.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 82175,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07801035,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10975,
+      "cache_read_input_tokens": 9017,
+      "output_tokens": 2276,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9017,
+        "ephemeral_5m_input_tokens": 1958
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 359,
+          "cache_read_input_tokens": 9017,
+          "cache_creation_input_tokens": 1958,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1958,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

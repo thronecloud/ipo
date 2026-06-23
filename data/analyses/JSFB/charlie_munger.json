@@ -1,0 +1,69 @@
+{
+  "symbol": "JSFB",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T18:05:48.191175Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "AVOID",
+    "investment_thesis": "Jana Small Finance Bank trades at a superficially cheap P/B of 0.95, but cheap prices in financial institutions often signal deteriorating asset quality, not opportunity — and FY2025's profit decline from ₹670 Cr to ₹501 Cr despite 16% revenue growth confirms stress is already here. The MFI/microfinance-heavy model carries cyclical credit risk that can rapidly erode book value, making this a cigar-butt at best.",
+    "key_strengths": [
+      "Strong 3-year revenue CAGR of 22.3% and asset book nearly doubling (₹20,189 Cr → ₹38,464 Cr) shows franchise growth capacity.",
+      "Equity position strengthened substantially (₹1,201 Cr → ₹4,118 Cr), largely via IPO proceeds, improving capital adequacy buffer.",
+      "Cash position surged to ₹4,449 Cr in FY2025 with FCF of ₹4,000 Cr, providing short-term liquidity comfort."
+    ],
+    "key_risks": [
+      "Net profit declined 25% YoY in FY2025 (₹670 Cr → ₹501 Cr) despite revenue growth — classic symptom of rising credit costs in the MFI/microfinance segment, where industry-wide over-leverage stress is well-documented.",
+      "Low promoter stake of 21.85% signals limited skin in the game; for a bank where management discipline determines survival, this is a structural concern.",
+      "Finance costs growing at 20.1% CAGR with highly volatile OCF (swung from -₹1,137 Cr in FY2023 to +₹4,073 Cr in FY2025) makes earnings quality and funding stability unreliable."
+    ],
+    "red_flags": [
+      "Profit decline in FY2025 post-IPO is the cardinal red flag — capital raised, yet earnings fell. This suggests loan book quality is deteriorating faster than new business can offset.",
+      "ROE of only 12.18% for a small finance bank taking on significantly higher credit risk than a large-cap NBFC or private bank is inadequate risk-adjusted compensation.",
+      "Forward P/E of 6.17 vs trailing P/E of 13.28 implies analysts forecast a near-doubling of earnings — an optimistic assumption given sector stress and recent profit trajectory."
+    ],
+    "detailed_analysis": "Applying inversion first: what destroys a small finance bank? Answer — asset quality collapse in the microfinance segment, which is precisely what the Indian MFI industry experienced in FY2025 with rising PAR (Portfolio at Risk) levels from borrower over-leverage. JSFB's FY2025 profit decline from ₹670 Cr to ₹501 Cr despite 16% revenue growth is consistent with elevated provisioning eating into earnings. A bank trading below book value (P/B 0.95) is the market pricing in potential book erosion — not generosity. Munger's lesson: never mistake a low price for a margin of safety in a financial institution with opaque asset quality.\n\nThe business model lacks a durable moat. Small finance banks occupy a competitive no-man's-land — too small to enjoy the liability franchise of private sector giants, yet constrained by RBI regulations limiting full banking freedoms. The 21.85% promoter holding is thin for a trust-dependent institution, and OCF volatility (ranging from -₹1,137 Cr to +₹4,073 Cr across four years) makes this fundamentally difficult to underwrite. ROE of 12% is adequate in isolation but is inadequate compensation for the idiosyncratic risk of microfinance-heavy lending. Until asset quality transparency improves and the profit trajectory reverses convincingly, this sits outside the circle of competence for a long-term compounder portfolio.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 56723,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08549115,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10767,
+      "cache_read_input_tokens": 8253,
+      "output_tokens": 2842,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10767
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 387,
+          "cache_read_input_tokens": 8253,
+          "cache_creation_input_tokens": 2514,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2514,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "544400",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-20T19:59:18.390642Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Manoj Jewellers fails the Magic Formula's \"good business\" test decisively — a 0.39% ROE signals capital is earning almost nothing, regardless of the optically cheap 4.96x P/E. A cheap bad business is still a bad business; the Magic Formula requires BOTH cheap AND high-quality, and this is a micro-cap jeweller with neither moat nor returns on capital.",
+    "key_strengths": [
+      "P/E of 4.96 suggests a high headline earnings yield (~20%)",
+      "Promoter holding of 65.28% indicates aligned skin-in-the-game",
+      "Small Rs 40.4 Cr market cap leaves theoretical room for re-rating if operations scale"
+    ],
+    "key_risks": [
+      "ROE of 0.39% implies ROIC is near zero — fails the Magic Formula quality filter",
+      "Jewellery retail is capital-intensive (gold inventory) with razor-thin margins and no moat",
+      "Micro-cap with minimal institutional oversight (DII 0%) and likely illiquid"
+    ],
+    "red_flags": [
+      "ROE of 0.39% is effectively sub-treasury-bill returns on equity",
+      "Low P/E may reflect one-time income or distressed earnings, not durable cash flow",
+      "No disclosed EBIT or capital employed data to verify Magic Formula metrics cleanly"
+    ],
+    "detailed_analysis": "The Magic Formula ranks companies on two dimensions: earnings yield (cheapness) and return on capital (quality). Manoj Jewellers may score acceptably on the first — a 4.96 P/E implies an earnings yield near 20% before EV adjustments — but it catastrophically fails the second. An ROE of 0.39% is a near-zero return on shareholder capital, which mathematically forces ROIC to also be trivial. In my framework, ROIC below 12% is a red flag; below 1% is disqualifying. You're paying a \"cheap\" multiple for a business that produces almost no economic profit.\n\nJewellery retail in India is structurally difficult: high working capital locked in gold inventory, price-taker dynamics, and zero brand pricing power at this scale. Without evidence of durable EBIT growth or improving capital efficiency, the cheapness is a value trap. The Magic Formula's entire premise — buy good businesses at bargain prices — is violated here because Manoj is simply not a good business. Pass, and redirect screening capital toward the 30-50 Indian mid-caps where ROIC >20% coincides with EBIT/EV >12%.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 47310,
+    "model_used": "opus",
+    "total_cost_usd": 0.09599749999999999,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 9080,
+      "cache_read_input_tokens": 13485,
+      "output_tokens": 1299,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9080,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10615,
+          "cache_creation_input_tokens": 1335,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1335
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "symbol": "CIEINDIA",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T16:57:06.304749Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "CIE Automotive India earns a sub-threshold ROIC (~15%) and an earnings yield of ~7.3% (EBIT ₹1,362 Cr / EV ~₹18,794 Cr), placing it below the Magic Formula's dual-screen cutoffs of 20% ROIC and 12%+ earnings yield. The business is decent but not cheap enough to generate outsized returns.",
+    "key_strengths": [
+      "Near-zero leverage (D/E 0.06, borrowings down from ₹1,648 Cr in 2020 to ₹426 Cr in 2025), freeing capital for reinvestment.",
+      "Strong FCF conversion — OCF ₹1,258 Cr vs net profit ₹828 Cr in 2025; 5/5 years positive operating cash flow.",
+      "Promoter (CIE Automotive Spain) holds 65.7%, aligning management with long-term value creation."
+    ],
+    "key_risks": [
+      "Auto parts is a low-moat, cyclical, capital-intensive industry — ROIC of ~15% reflects no durable pricing power.",
+      "Revenue growth of only 6.5% CAGR over 9 years barely keeps pace with inflation; top-line stagnation (₹8,964–9,406 Cr range since 2023).",
+      "Thin operating margin of 8.19% leaves little buffer against raw material or forex headwinds, given significant European parent exposure."
+    ],
+    "red_flags": [
+      "2022 net loss of -₹136 Cr driven by ₹749 Cr 'Other Income' write-down — signals goodwill/impairment risk from the Mahindra CIE merger legacy.",
+      "2023 net profit of ₹1,125 Cr included ₹409 Cr Other Income (one-time) — normalized earnings are closer to ₹700–830 Cr, making the 19.3% net profit CAGR misleading."
+    ],
+    "detailed_analysis": "Running the Magic Formula screens: Earnings Yield = EBIT ₹1,362 Cr / EV (MCap ₹18,596 + Debt ₹426 – Cash ₹228 = ₹18,794 Cr) = **7.3%** — below the 12% threshold for attractiveness. ROIC approximated as EBIT / (Equity + Debt – Cash) = 1,362 / 7,657 = **17.8%**, consistent with the reported ROCE of 14.7%. Both metrics fail the Magic Formula's dual-screen; in Greenblatt's framework, you need *both* to rank in the top decile. At 22.5x trailing P/E for a business growing revenue at 6.5% CAGR, the market is pricing in stability, not value.\n\nThe business itself is operationally sound — debt has been nearly eliminated, FCF is robust (₹885 Cr in FY25), and the European parent brings technical depth in forgings and stampings. But the structural reality of auto-component manufacturing limits ROIC expansion: high capex (₹377–530 Cr/yr), OEM pricing pressure, and cyclicality (see the 2020 EBITDA crash to ₹808 Cr). For Magic Formula investors, this is a \"hold what you have\" situation — not a stock to buy fresh at current prices when better-ranked opportunities exist elsewhere.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 43509,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08123939999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11378,
+      "cache_read_input_tokens": 9293,
+      "output_tokens": 2385,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11378
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 355,
+          "cache_read_input_tokens": 9293,
+          "cache_creation_input_tokens": 2085,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2085,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

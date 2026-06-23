@@ -1,0 +1,69 @@
+{
+  "symbol": "544422",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-20T20:02:18.206772Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Abram Food is a sub-scale ₹32.5 Cr microcap agro-products trader with a miserable 0.52% ROE — the business is earning essentially nothing on shareholder capital. A 10.6x P/E looks optically cheap, but for a commoditized food trader with no visible moat and trivial profits, this is a value trap, not a wonderful business.",
+    "key_strengths": [
+      "Promoter skin-in-the-game at 67.33% aligns interests with shareholders",
+      "P/E of 10.6x is undemanding in absolute terms versus the broader Indian market",
+      "Operates in FMCG/agro — a simple, understandable business within circle of competence"
+    ],
+    "key_risks": [
+      "ROE of 0.52% signals the business creates almost no economic value",
+      "₹32.5 Cr microcap in commoditized agro trading — no moat, no pricing power",
+      "Low-margin trading business vulnerable to input cost swings and working capital stress"
+    ],
+    "red_flags": [
+      "ROE <1% — capital is effectively idle; 10.6x earnings on near-zero earnings is meaningless",
+      "Tiny float + microcap BSE listing raises liquidity and governance concerns",
+      "No evidence of brand, scale, or differentiation in 'other food products'"
+    ],
+    "detailed_analysis": "The central fact here is a 0.52% ROE. I'd rather put money in a savings account — at least that compounds. A wonderful business earns 15-20%+ on equity year after year; Abram earns barely more than zero. The 10.6x P/E is an illusion of cheapness: when earnings are this thin, a small cost shock or a bad monsoon can flip the company to losses, and the multiple expands overnight. At ₹32.5 Cr market cap, this is a sub-scale agro trader with no discernible brand, switching costs, or cost advantage — the textbook definition of a commodity business without a moat.\n\nPromoter holding of 67.33% is the one positive — owners have skin in the game. But alignment without a good business is just sharing in mediocrity. I have no visibility into management's capital allocation record, debt profile, or cash conversion, and at this size the reporting quality and liquidity are typically poor. This falls well outside my standard: I want to own businesses I'd happily hold if the market closed for ten years, and a 0.52%-ROE food trader is not that. Pass.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 35659,
+    "model_used": "opus",
+    "total_cost_usd": 0.09148175,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8903,
+      "cache_read_input_tokens": 13366,
+      "output_tokens": 1165,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8903,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10529,
+          "cache_creation_input_tokens": 1211,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1211
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "ANUP",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T16:23:03.141126Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Anup Engineering is a genuinely good business with ROIC of ~22-25%, but at ~4.1% earnings yield (EBIT/EV), it fails the Magic Formula's cheapness test decisively. The market has already priced in the quality, leaving little margin of safety for new buyers.",
+    "key_strengths": [
+      "ROIC ~22-25% (EBIT 168 Cr / Capital Employed ~665 Cr) — clears the 20% quality threshold",
+      "Revenue and profit compounding at 24.5% and 22.4% CAGR respectively over 5 years — rare in industrials",
+      "Low leverage (D/E 0.25) with operating margins expanding from 28% to 31% of operating income on revenue base"
+    ],
+    "key_risks": [
+      "Earnings yield ~4.1% (EBIT 168 Cr / EV ~4,105 Cr) — well below the 6% floor; P/E of 34.8x leaves no margin of safety",
+      "Operating CF turned sharply negative in FY2025 (-7 Cr) despite INR 118 Cr net profit — severe working capital deterioration",
+      "FCF negative two of last three years (-45 Cr in FY2023, -51 Cr in FY2025); capital-intensive growth cycle compressing free cash returns"
+    ],
+    "red_flags": [
+      "Operating CF of -7 Cr in FY2025 against net profit of 118 Cr implies massive working capital build or earnings quality concern",
+      "Gross margin reported at 3.79% is anomalously low vs 17.9% operating margin — data inconsistency warrants scrutiny",
+      "Borrowings jumped to 158 Cr yet Total Debt shows 32 Cr — unexplained discrepancy in balance sheet classification"
+    ],
+    "detailed_analysis": "Running the Magic Formula: EBIT for FY2025 is INR 168 Cr (operating income). Enterprise Value = Market Cap (4,076 Cr) + Net Debt (32 - 3 = 29 Cr) ≈ 4,105 Cr. Earnings Yield = 168/4,105 = 4.1% — significantly below the 6% minimum and nowhere near the 12%+ that would make Greenblatt excited. ROIC = EBIT / (Equity 636 + Debt 32 - Cash 3) ≈ 168/665 = 25.3%, which clears the 20% quality bar. So Anup passes one test (quality) but fails the other (price). The Magic Formula demands both; the market has fully priced this quality premium in.\n\nThe FY2025 cash flow is a serious concern: a company reporting INR 118 Cr net profit generating -7 Cr operating cash and -51 Cr FCF is absorbing cash somewhere — likely long order-book cycles creating receivable/inventory bloat typical in capital goods. While the 24.5% revenue CAGR and 22.4% profit CAGR are impressive, and the order pipeline from oil & gas, chemicals, and hydrogen capex is structurally supportive, the current valuation (EV/EBITDA 22.4x, P/E 34.8x) demands perfect execution. At roughly 4% earnings yield, the Magic Formula screener would rank this in the bottom quartile on value — a Hold at best until earnings yield approaches 8-10%.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 52741,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08401755000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11077,
+      "cache_read_input_tokens": 8816,
+      "output_tokens": 2655,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11077,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 437,
+          "cache_read_input_tokens": 8816,
+          "cache_creation_input_tokens": 2261,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2261
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

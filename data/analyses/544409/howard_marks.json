@@ -1,0 +1,69 @@
+{
+  "symbol": "544409",
+  "persona": "howard_marks",
+  "persona_display_name": "Howard Marks",
+  "analyzed_at": "2026-04-20T20:00:53.231722Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "A tiny ₹165 Cr SME contract manufacturer earning effectively nothing (ROE 0.35%) trading at 35.6x earnings offers no margin of safety and prices in flawless execution. This is exactly the kind of late-cycle, small-cap IPO froth where the probability of permanent capital loss is high.",
+    "key_strengths": [
+      "High promoter skin-in-the-game at 72.3%",
+      "Asset-light CDMO model in a structurally growing Indian pharma space",
+      "Young company (2017) with room to scale if execution improves"
+    ],
+    "key_risks": [
+      "ROE of 0.35% means capital is earning essentially nothing — value destruction vs. cost of equity",
+      "35.6x P/E on near-zero earnings = valuation depends entirely on hope, not cash flow",
+      "Zero FII and negligible DII ownership (0.07%) signals no institutional diligence/support"
+    ],
+    "red_flags": [
+      "P/E of 35.6x vs ROE of 0.35% is a mathematical red flag — a classic SME-IPO price-to-perfection setup",
+      "Micro-cap contract manufacturer untested through a pharma pricing or client-loss downturn",
+      "Listed in current SME/small-cap euphoria — textbook late-cycle IPO pattern Marks warns against"
+    ],
+    "detailed_analysis": "Second-level thinking here is simple: the market is paying 35.6x earnings for a business generating 0.35% return on equity. That means earnings per share are a rounding error, and any P/E calculated on them is noise — the real implicit assumption is that earnings will multiply 20-50x. For a 2017-vintage contract manufacturer with no demonstrated moat, no institutional sponsorship, and listing into a frothy SME market, that is a heroic assumption with zero margin of safety.\\n\\nOn downside: contract manufacturers are price-takers with concentrated client risk; one lost contract or regulatory hiccup can vaporize already-minimal earnings. At ₹165 Cr with negligible profitability, the floor in a stress scenario could easily be 40-60% lower. Upside requires a multi-year earnings ramp that is already priced in; downside is a re-rating toward book value. No asymmetry — pass until either price halves or earnings materially inflect.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 60816,
+    "model_used": "opus",
+    "total_cost_usd": 0.13167625,
+    "usage": {
+      "input_tokens": 7,
+      "cache_creation_input_tokens": 9845,
+      "cache_read_input_tokens": 25170,
+      "output_tokens": 2301,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9845,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 71,
+          "cache_read_input_tokens": 11674,
+          "cache_creation_input_tokens": 1053,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1053
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

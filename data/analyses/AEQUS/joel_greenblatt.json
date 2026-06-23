@@ -1,0 +1,71 @@
+{
+  "symbol": "AEQUS",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T16:14:56.318463Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "AEQUS has negative EBIT (~-17 Cr on -1.84% operating margin vs. 925 Cr revenue), making the Magic Formula entirely inapplicable — you cannot buy earnings you don't have. The stock trades at 288x EV/EBITDA and 12.85x P/B with no path to near-term profitability, making it one of the most overvalued names I've seen.",
+    "key_strengths": [
+      "High gross margin of 56% suggests underlying product economics could work if overhead is controlled",
+      "59% promoter holding indicates founder-led conviction and skin in the game",
+      "Large CWIP (INR 395 Cr) signals capacity build-out that could drive future revenue scale"
+    ],
+    "key_risks": [
+      "Negative EBIT (-1.84% operating margin) means Magic Formula earnings yield is negative — uninvestable by my framework",
+      "Free cash flow deeply negative (-239 Cr in FY25) while capex accelerates to 265 Cr with no earnings to fund it",
+      "EV/EBITDA of 288x and Forward P/E of 1,140x represent extreme valuation with zero margin of safety"
+    ],
+    "red_flags": [
+      "EBIT is negative — Magic Formula cannot function; earnings yield < 0%",
+      "ROCE of 1.11% is catastrophically below my 12% minimum threshold",
+      "Net profit worsened dramatically from -14 Cr (FY24) to -102 Cr (FY25) despite similar revenues",
+      "Revenue actually declined from 965 Cr to 925 Cr year-over-year — growth thesis is not executing",
+      "Debt/Equity of 1.08 with negative retained earnings history (reserves only just turned positive at 135 Cr)"
+    ],
+    "detailed_analysis": "The Magic Formula requires two things: high earnings yield (EBIT/EV) and high return on capital. AEQUS fails both catastrophically. With an operating margin of -1.84% on INR 925 Cr revenue, EBIT is approximately -17 Cr. Against an enterprise value of ~11,926 Cr (market cap 11,202 + debt 785 - cash 61), the earnings yield is deeply negative. ROCE of 1.11% is essentially zero — the business is destroying capital, not compounding it. My formula demands a minimum 12% earnings yield AND 20%+ ROIC; AEQUS delivers neither.\n\nThe business narrative is an industrial cluster/contract manufacturing story still in heavy investment mode, which explains the 395 Cr CWIP and accelerating capex of 265 Cr in FY25. But the numbers show a deteriorating trajectory: net losses widened from -14 Cr to -102 Cr, free cash flow hit -239 Cr, and revenue actually shrank. The 56% gross margin is intriguing and suggests unit economics might work eventually — but \"eventually\" is not a price I can pay at 288x EV/EBITDA. There is no margin of safety here whatsoever.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 67032,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0733983,
+    "usage": {
+      "input_tokens": 4,
+      "cache_creation_input_tokens": 3210,
+      "cache_read_input_tokens": 27346,
+      "output_tokens": 3543,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 3210,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 419,
+          "cache_read_input_tokens": 10636,
+          "cache_creation_input_tokens": 929,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 929
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

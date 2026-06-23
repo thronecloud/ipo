@@ -1,0 +1,69 @@
+{
+  "symbol": "AARTIIND",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-19T06:17:29.512557Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Aarti Industries is a capital-hungry specialty chemicals business whose ROIC (~6%) is far below my 15% floor, while net profit has collapsed from ₹1,186 Cr in FY22 to ₹331 Cr in FY25 — yet the stock trades at 43x those depressed earnings. This is precisely the kind of mediocre business that looks cheap on a normalised-earnings basis but consistently destroys the hopes of value investors waiting for a recovery.",
+    "key_strengths": [
+      "Operating cash flow positive for 5/5 years, providing a baseline of real earnings",
+      "Diversified chemical portfolio (agrochemicals, pharma, dyes) limits single-end-market concentration",
+      "Revenue CAGR of 10.3% over nine years shows the business is not shrinking"
+    ],
+    "key_risks": [
+      "ROE 6.0% and ROCE 6.3% — both far below my 12% red-flag threshold; capital is being destroyed in real terms",
+      "Net profit fell 72% from FY22 peak (₹1,186 Cr) to FY25 (₹331 Cr) even as revenues grew — margin erosion is structural, not cyclical",
+      "Finance cost surged from ₹102 Cr to ₹275 Cr (2022–2025) while EBITDA was flat; debt service is eating equity"
+    ],
+    "red_flags": [
+      "ROIC ~6% — capital is not being compounded, it is being consumed",
+      "₹1,300–1,600 Cr CWIP year after year signals chronic capex inflation with no payoff yet in returns",
+      "P/E of 43x on structurally depressed earnings embeds a heroic recovery that may never arrive"
+    ],
+    "detailed_analysis": "Aarti had a one-year boom in FY22 (China+1 tailwind, ₹1,186 Cr net profit) that flatters the long-term record. Strip that out and the nine-year net profit CAGR is a pedestrian 2.4%. The business has been investing ₹1,300+ Cr in capex annually for the past three years and getting virtually nothing for it in return on capital — this is the hallmark of a low-moat commodity-ish chemical business, not the quality compounder the market is pricing it as.\n\nI always ask: what would have to be true for this to be a good investment? Margins would need to nearly double from 8.8% back toward 18–20%, ROIC would need to triple, and all of this would have to happen before the 43x P/E re-rates downward. That is too many things going right simultaneously. Invert: what are the odds margins stay depressed? Given global chemical overcapacity and China re-entry, quite high. I pass.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 163784,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.23170725,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 24017,
+      "cache_read_input_tokens": 15515,
+      "output_tokens": 9132,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 24017,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 515,
+          "cache_read_input_tokens": 15515,
+          "cache_creation_input_tokens": 8502,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8502
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

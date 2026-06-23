@@ -1,0 +1,69 @@
+{
+  "symbol": "BLUEDART",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-19T06:34:36.121596Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Blue Dart trades at 44x earnings and 7.8x book, while its net profit CAGR over 9 years is a mere 2.8% — investors are paying a growth premium for a business that has not grown earnings materially. My Graham Number of approximately ₹1,284 against a market price of ₹5,391 represents a 4.2x premium with no margin of safety.",
+    "key_strengths": [
+      "Dominant premium logistics brand with DHL Group backing and a fleet of 8 Boeing freighters — genuine operational moat in Indian express delivery",
+      "5/5 years positive OCF with free cash flow consistently above ₹400 Cr in recent years — cash conversion is real",
+      "Revenue has grown from ₹2,563 Cr (FY2016) to ₹5,720 Cr (FY2025) at a 9.3% CAGR — steady topline expansion"
+    ],
+    "key_risks": [
+      "Net profit peaked at ₹382 Cr in FY2022 and has declined every year since to ₹252 Cr in FY2025 — a 34% earnings decline while valuation remains elevated",
+      "Debt of ₹1,008 Cr versus equity of ₹1,632 Cr gives a D/E of ~0.62, above my 0.5 limit, and finance costs have structurally risen since FY2020",
+      "Net loss in FY2020 (–₹42 Cr) demonstrates earnings fragility — a single disruption year wiped out all profit"
+    ],
+    "red_flags": [
+      "9-year net profit CAGR of 2.8% is barely ahead of inflation — this is not a growth business at 44x earnings",
+      "EBITDA has been contracting (trend: contracting per 5-year data) while the stock commands a premium multiple — deteriorating fundamentals with rising price",
+      "Subsidiary of DHL Singapore — minority shareholders may not fully benefit from strategic decisions made in favour of the parent"
+    ],
+    "detailed_analysis": "Graham Number: EPS ~₹106 and BVPS ~₹689 yields approximately ₹1,284. At ₹5,391, the market is pricing in a logistics franchise transformation that the income statement simply does not support. Net profit has fallen three years running: ₹382 Cr (FY2022), ₹371 Cr (FY2023), ₹301 Cr (FY2024), ₹252 Cr (FY2025). A stock with declining earnings should be selling at a discount, not a 44x multiple.\n\nThe business itself — premium courier with proven brand — has genuine moat characteristics, but I distinguish between a good business and a good investment. The DHL parent ownership creates structural agency risk for minority shareholders, as pricing, capital allocation, and strategic decisions may favour the group over listed shareholders. At ₹1,200–1,400 (near Graham Number range), this becomes interesting; at ₹5,391, the disciplined investor must look elsewhere.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 140288,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.21278924999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 22613,
+      "cache_read_input_tokens": 15255,
+      "output_tokens": 8227,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 22613,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 950,
+          "cache_read_input_tokens": 15255,
+          "cache_creation_input_tokens": 7358,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 7358
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

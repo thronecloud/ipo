@@ -1,0 +1,70 @@
+{
+  "symbol": "APLLTD",
+  "persona": "radhakishan_damani",
+  "persona_display_name": "Radhakishan Damani",
+  "analyzed_at": "2026-04-18T16:23:04.061367Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Alembic is a 117-year-old pharma house with a loyal promoter and decent gross margins, but nine years of capital deployment have yielded zero earnings growth — net profit in 2025 (₹582 Cr) is actually lower than 2016 (₹720 Cr). Until the heavy capex cycle translates into consistent ROE above 15% and positive free cash flow, this fails my most basic quality screen.",
+    "key_strengths": [
+      "Strong promoter commitment — 69.74% holding, stable and aligned with minority shareholders",
+      "Wide gross margin of 71.5% signals real pricing power and formulation mix quality",
+      "Debt-to-Equity of 0.28 is within acceptable range and the company has operated with a conservative balance sheet historically"
+    ],
+    "key_risks": [
+      "Earnings destruction: 9-year net profit CAGR is -2.3%; EBITDA CAGR essentially 0% — capital has been deployed but returns have not materialised",
+      "Debt spike in FY25: borrowings surged from ₹513 Cr to ₹1,489 Cr in one year, while OCF collapsed from ₹803 Cr to just ₹88 Cr and FCF turned deeply negative at -₹466 Cr",
+      "Finance cost compounding at 35.9% CAGR (₹5 Cr → ₹79 Cr) on a shrinking earnings base — this is the wrong direction entirely"
+    ],
+    "red_flags": [
+      "ROE of 11.4% and ROCE of 13% — well below my 15% minimum; capital is being destroyed, not compounded",
+      "Free cash flow -₹466 Cr in FY25 on ₹564 Cr capex — the capex machine is running but the returns engine is stalled",
+      "Net profit peak was ₹1,146 Cr in FY21; four years later it sits at ₹582 Cr — over 49% earnings decline from peak with no clear recovery inflection",
+      "Revenue CAGR of only 8.6% over 9 years is below my minimum threshold of 10% for a growth investment"
+    ],
+    "detailed_analysis": "Alembic Pharmaceuticals is a business I understand — old Indian pharma family, strong promoter, healthcare sector, which I respect. But good industries do not automatically make good investments. The data here tells a sobering story: over nine years, the company grew revenue from ₹3,166 Cr to ₹6,672 Cr (8.6% CAGR), yet net profit actually shrank from ₹720 Cr to ₹582 Cr. Massive capex was deployed — ₹2,000+ Cr over the last 4 years alone, visible in CWIP ballooning to ₹2,304 Cr at peak — building US FDA-compliant plants and injectable capacity. The market rewarded this vision in 2021 when profits hit ₹1,146 Cr. But FY22 onwards has been a painful reversal, with USFDA compliance costs, pricing pressure in US generics, and rising debt eroding what was once a capital-light model.\n\nFY25 is particularly alarming for a conservative investor like me: borrowings nearly tripled in one year to ₹1,489 Cr, OCF collapsed from ₹803 Cr to ₹88 Cr, and FCF turned to -₹466 Cr. The forward P/E of 18.55x implies the market expects a sharp earnings recovery — and that may well happen if US formulation approvals accelerate. But I do not invest in hopes and turnaround stories. I need demonstrated, consistent compounding. At P/E 23x on shrinking profits, ROE of 11.4%, and negative FCF, there is no margin of safety here. I would rather wait on the sidelines and pay a higher price after the business proves its recovery is real and durable.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 60079,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08386455000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9519,
+      "cache_read_input_tokens": 11231,
+      "output_tokens": 2986,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9519,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 578,
+          "cache_read_input_tokens": 9141,
+          "cache_creation_input_tokens": 2468,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2468
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

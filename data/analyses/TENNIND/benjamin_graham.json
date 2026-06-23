@@ -1,0 +1,69 @@
+{
+  "symbol": "TENNIND",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-21T08:05:44.371829Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "TENNIND possesses genuine business merit — three years of consistent profits, near-zero debt, and strong free cash flow — but at P/E 42.3 and P/B 26.0, the market is demanding an enormous speculative premium that offers no margin of safety whatsoever. My calculated Graham Number of ~₹86 against the current price of ₹592 means investors are paying nearly 7× intrinsic value, which I find wholly unacceptable.",
+    "key_strengths": [
+      "Virtually debt-free balance sheet (D/E 0.02, borrowings only ₹23 Cr) — surviving any downturn is not in question",
+      "Consistent earnings and OCF: Net profit ₹381→417→553 Cr; free cash flow positive all 3 years averaging ₹455 Cr",
+      "Excellent interest coverage (~40×) and ROCE of 57.3% demonstrate genuine operational efficiency"
+    ],
+    "key_risks": [
+      "P/B of 26.02 is 17× my maximum threshold of 1.5 — the asset base simply does not support the price",
+      "Revenue declined in FY2025 (₹5,468→₹4,890 Cr, -10.6%), signaling potential volume or pricing pressure in auto parts",
+      "Promoter (Tenneco Mauritius Holdings) extracted massive capital: financing CF totaled -₹1,513 Cr over 3 years, shrinking reserves from ₹895 Cr to ₹514 Cr — minority shareholders bear the residual risk"
+    ],
+    "red_flags": [
+      "Graham Number ≈ ₹86 (sqrt(22.5 × EPS₁₄ × BVPS₂₃)) vs. market price ₹592 — paying 6.9× intrinsic value",
+      "Equity base eroding: Total Equity fell ₹1,208→₹918 Cr while price soared — book value shrinks as parent extracts dividends",
+      "Subsidiary structure under Tenneco Mauritius Holdings introduces related-party and capital-extraction risk that minority investors cannot control"
+    ],
+    "detailed_analysis": "From my perspective, no amount of operational excellence justifies a P/E of 42.3 or P/B of 26.0. My strict filters demand P/E below 15 and P/B below 1.5 — TENNIND fails both by a factor of nearly 3× and 17× respectively. The Graham Number computed from FY2025 EPS of approximately ₹14 and book value per share of approximately ₹23 yields a fair value near ₹86 per share. At ₹592, Mr. Market is in a state of wild euphoria, and the disciplined investor must refuse to participate. The business itself — founded in 1979, auto-parts manufacturing — is the kind of established, unglamorous enterprise I ordinarily appreciate, but price is what you pay and value is what you get.\n\nWhat further concerns me is the systematic erosion of the balance sheet through large capital repatriations to the Mauritian parent: reserves collapsed from ₹895 Cr to ₹514 Cr in just two years, and financing outflows consumed ₹1,513 Cr against operating inflows of ₹1,588 Cr. The minority shareholder is left holding a shrinking equity base at an ever-rising price-to-book multiple. The revenue decline of 10.6% in FY2025 adds cyclical uncertainty to an already untenable valuation. I would require the price to fall to approximately ₹80–90 before the numbers even begin to interest me.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 54984,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07597455,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8717,
+      "cache_read_input_tokens": 10406,
+      "output_tokens": 2677,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8717,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 363,
+          "cache_read_input_tokens": 8356,
+          "cache_creation_input_tokens": 2411,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2411
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

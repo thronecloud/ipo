@@ -1,0 +1,69 @@
+{
+  "symbol": "544435",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-20T20:09:21.284202Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Adcounty Media is a tiny, recently-listed adtech microcap (Mcap INR 231 Cr) with a negligible ROE of 0.47% — you cannot pay 19x earnings for a business earning essentially nothing on its equity. The adtech industry is fiercely competitive, commoditized, and well outside any recognizable economic moat.",
+    "key_strengths": [
+      "Promoter skin-in-the-game at 65.52% ownership",
+      "Asset-light business model (typical for digital media)",
+      "Operating in a growing Indian digital advertising market"
+    ],
+    "key_risks": [
+      "ROE of 0.47% indicates the business destroys, not creates, economic value",
+      "P/E of 19 is absurd for a sub-1% ROE microcap — no margin of safety",
+      "Adtech has no durable moat; clients and platforms switch suppliers easily"
+    ],
+    "red_flags": [
+      "ROE under 1% — cash in a savings account earns more",
+      "Recently listed BSE SME-style microcap with minimal institutional ownership (FII 0.3%, DII 1.9%)",
+      "Unproven track record as a public company; IPO hype premium likely embedded in price"
+    ],
+    "detailed_analysis": "The single most damning number here is the 0.47% ROE. I want businesses that consistently earn 15%+ on equity — this one earns less than a fixed deposit. Paying 19 times earnings for a business that cannot compound capital is mathematically indefensible; the earnings yield on equity is under half a percent. The adtech/digital media services industry is a brutal, low-switching-cost business populated by thousands of small agencies competing on price and client relationships — there is no brand moat, no network effect, and no cost advantage I can identify for a INR 231 Cr player.\n\nThe 65% promoter holding is the only positive, but concentrated ownership in a tiny, newly-listed company with negligible institutional validation (FII 0.3%, DII 1.9%) is as much a governance risk as a comfort. I have no multi-year record of capital allocation, no evidence of pricing power, and no circle-of-competence grip on how this particular adtech firm wins against larger, better-capitalized competitors. This is exactly the kind of speculative post-IPO microcap Mr. Market periodically offers — and exactly the kind I walk past without regret.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 31990,
+    "model_used": "opus",
+    "total_cost_usd": 0.09348125,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8981,
+      "cache_read_input_tokens": 13390,
+      "output_tokens": 1225,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8981,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10553,
+          "cache_creation_input_tokens": 1265,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1265
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

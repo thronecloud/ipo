@@ -1,0 +1,70 @@
+{
+  "symbol": "AMCL",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-20T11:15:20.413984Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "ANB Metal Cast fails nearly every Graham quantitative filter: P/E of 37.9 is 2.5x my ceiling, ROE of 0.46% is negligible, and the company was incorporated only in 2019, lacking the 5-year earnings record I demand. This is speculation on a small-cap industrial, not investment.",
+    "key_strengths": [
+      "High promoter skin-in-the-game at 71.65% aligns insider incentives",
+      "Operates in a tangible, asset-backed industry (aluminium extrusions)",
+      "Small institutional presence (FII+DII 3.3%) means less crowded ownership"
+    ],
+    "key_risks": [
+      "P/E of 37.9 prices in aggressive growth with zero margin of safety",
+      "ROE of 0.46% indicates near-complete failure to earn on capital",
+      "Incorporated in 2019 — no multi-year earnings track record to verify earning power"
+    ],
+    "red_flags": [
+      "Earnings yield (~2.6%) far below any reasonable bond yield",
+      "ROE of 0.46% suggests earnings are essentially non-existent relative to equity",
+      "No visible dividend history or long-term profitability record",
+      "Commodity-linked input costs (aluminium) with no disclosed hedging"
+    ],
+    "detailed_analysis": "From my quantitative framework, this security is disqualified on first inspection. A P/E of 37.9 implies an earnings yield of ~2.6%, which is inferior to safe fixed income — the very definition of speculation. An ROE of 0.46% means the business is generating almost nothing on shareholders' capital; the entire market cap of INR 486 Cr rests on the hope of future earnings rather than demonstrated earning power. Incorporation in 2019 means we do not even have the minimum 5-year continuous profitability record I require, and without book value and current ratio disclosed, I cannot compute a Graham Number or assess liquidity — itself a red flag.\n\nMr. Market is clearly excited about the small-cap industrial story, but the intelligent investor must remember: margin of safety is the central concept, and here there is none. A 37.9 P/E paired with sub-1% ROE is precisely the configuration that destroys capital when the growth narrative falters. I would pass without hesitation and wait for either a dramatic price decline (perhaps a 70%+ drawdown) or several years of proven, stable earnings before reconsidering.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "insufficient_data",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 19208,
+    "model_used": "opus",
+    "total_cost_usd": 0.09018825000000001,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8881,
+      "cache_read_input_tokens": 13504,
+      "output_tokens": 1116,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8881,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10618,
+          "cache_creation_input_tokens": 1149,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1149
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

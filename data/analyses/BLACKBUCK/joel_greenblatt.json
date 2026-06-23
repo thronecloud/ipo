@@ -1,0 +1,69 @@
+{
+  "symbol": "BLACKBUCK",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T16:47:10.492251Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "BlackBuck fails both Magic Formula screens decisively — Earnings Yield is a paltry ~0.8% (EBIT ₹93 Cr / EV ~₹11,267 Cr) and ROCE of 10.5% falls well below the 20% minimum threshold for a \"good\" business. The company has only just turned EBIT-positive in FY2025 after four consecutive years of operating losses, with no demonstrated track record of sustained high-return-on-capital economics.",
+    "key_strengths": [
+      "High gross margins (74%) confirm a capital-light software platform model with pricing power potential",
+      "Finally EBITDA-positive (₹128 Cr in FY2025) with near-zero debt (D/E: 0.04) after aggressive deleveraging from ₹394 Cr borrowings in FY2021",
+      "Strong FII ownership (32.45%) signals institutional validation of the long-term B2B trucking platform thesis"
+    ],
+    "key_risks": [
+      "Revenue has contracted at -16.2% CAGR over 4 years (₹867 Cr in FY2021 → ₹427 Cr in FY2025) — even adjusting for business model shifts, absolute scale is deeply concerning",
+      "Earnings Yield of ~0.8% means the market is pricing in perfection; EV/EBITDA of 74x gives almost no margin of safety",
+      "Net profit still negative (-₹9 Cr in FY2025) and FCF generation is minimal (₹15 Cr) despite the EBITDA turn — not yet self-funding at scale"
+    ],
+    "red_flags": [
+      "4-year revenue CAGR of -16.2% — a shrinking top line is a disqualifier for any growth premium",
+      "Operating CF erratic (3 of 5 years positive) and FY2025 investing CF of -₹467 Cr signals heavy capital deployment just as profitability is nascent",
+      "P/E of 29.5x shown despite ₹-9 Cr net profit — data inconsistency suggests the valuation is built on non-GAAP or very thin adjusted earnings, masking true economic loss"
+    ],
+    "detailed_analysis": "Running the Magic Formula on BlackBuck produces two failing grades. Earnings Yield (EBIT/EV): EBIT of ₹93 Cr divided by Enterprise Value of ~₹11,267 Cr (₹11,333 Cr market cap + ₹38 Cr debt − ₹104 Cr cash) yields just 0.83% — I want to see at least 12–15% before I get interested. Return on Capital (ROCE per reported data): 10.5%, well short of the 20%+ floor for a \"good\" business. The business is structurally light on fixed assets (CWIP = zero, low capex), so the low ROIC reflects that not enough earnings have yet emerged relative to capital deployed — a profitability infancy problem, not a capital efficiency one.\n\nThe underlying platform story is directionally interesting — high gross margins (74%), near-zero debt, and finally positive EBIT in FY2025 suggest the unit economics can work. But the Magic Formula is not a story-investing framework. It demands proof, not promise. Four years of operating losses, a net loss still on the books in FY2025, and a P/S of 19x mean the market has already priced in a decade of successful execution. Greenblatt's system would not touch this until it demonstrates sustained ROIC above 20% for at least 2–3 consecutive years — and trades at a meaningful earnings yield. At current prices, all upside is in the price and all risk is in the execution.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 55973,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08348415000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10879,
+      "cache_read_input_tokens": 8613,
+      "output_tokens": 2673,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10879
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 463,
+          "cache_read_input_tokens": 8613,
+          "cache_creation_input_tokens": 2266,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2266,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

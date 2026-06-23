@@ -1,0 +1,71 @@
+{
+  "symbol": "MMTC",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-22T16:30:09.035302Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "MMTC is a zombie government trading company whose operating revenue has collapsed from INR 30,000 Cr to INR 1 Cr in four years, yet trades at an absurd INR 10,257 Cr market cap — a P/S ratio of 3,385x on revenue that has essentially ceased to exist. There is no business here to value; this is pure speculation on a PSU shell.",
+    "key_strengths": [
+      "Near-zero debt (D/E: 0.02) after massive deleveraging from INR 3,850 Cr borrowings in 2020 to INR 2 Cr in 2025",
+      "89.93% government ownership provides implicit backstop against outright liquidation",
+      "Some residual balance sheet assets (~INR 3,779 Cr) relative to liabilities"
+    ],
+    "key_risks": [
+      "Revenue has collapsed 99.99% — from INR 29,439 Cr (2019) to INR 1 Cr (2025) — the core trading business no longer exists",
+      "Reported profits are entirely non-operational: FY2023's INR 1,562 Cr profit was driven by INR 2,000 Cr 'Other Income' (asset sales); underlying operations bleed losses",
+      "P/E of 90x and P/S of 3,385x are disconnected from any business reality — valuation is purely speculative on government-ownership optionality"
+    ],
+    "red_flags": [
+      "Operating margin of -7,047%: the company earns virtually nothing from operations but still incurs costs",
+      "Equity went negative (INR -148 Cr in 2022) and only recovered via asset liquidation — not earnings",
+      "Free cash flow negative in both FY2024 (-353 Cr) and FY2025 (-362 Cr) despite near-zero revenue",
+      "OCF positive only 2 of last 5 years — cash is being consumed, not generated",
+      "FII ownership at 0.13% signals institutional investors have thoroughly rejected this business"
+    ],
+    "detailed_analysis": "MMTC has undergone a near-total business collapse. Revenue of INR 1 Cr in FY2025 against a market cap of INR 10,257 Cr is not a valuation anomaly — it is a warning that the stock price reflects nothing about earnings power. The apparent FY2023 net profit of INR 1,562 Cr was entirely artificial, funded by INR 2,000 Cr in \"Other Income\" (asset disposals and recoveries), not trading operations. The operating losses have been consistent and persistent: operating income was negative in 7 of the last 10 years. There is no business here in any sense I recognize.\n\nFrom a Buffett framework, every criterion fails catastrophically. ROE of 5.87% is barely a third of my 15% minimum, and it is itself inflated by one-time items. There is no economic moat — MMTC was a state-trading monopoly that lost its relevance as India liberalized commodity imports. Management is government-appointed with no incentive alignment. At 90x trailing earnings — earnings that are entirely non-recurring — this stock demands perfection from a business that no longer operates. I would not own this at any price above its liquidation value of tangible assets, which the market cap already dramatically exceeds.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 45421,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0767346,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10950,
+      "cache_read_input_tokens": 9027,
+      "output_tokens": 2197,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10950,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 308,
+          "cache_read_input_tokens": 9027,
+          "cache_creation_input_tokens": 1923,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1923
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

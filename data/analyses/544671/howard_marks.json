@@ -1,0 +1,70 @@
+{
+  "symbol": "544671",
+  "persona": "howard_marks",
+  "persona_display_name": "Howard Marks",
+  "analyzed_at": "2026-04-20T11:14:30.468028Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "A tiny (~INR 99 Cr revenue) recently-listed capital-goods microcap riding India's infra capex cycle, with leverage of 1.16x D/E and a single blow-out FY25 (PAT 3→14 Cr) that's likely the peak being sold into IPO enthusiasm. At 11x EV/EBITDA on cyclical peak margins with no margin of safety and an untested business through a downturn, the price-to-value relationship is unfavorable.",
+    "key_strengths": [
+      "FY25 inflection: EBITDA 8→18 Cr, OCF 14→15 Cr, borrowings trimmed 43→33 Cr",
+      "Exposure to durable India infra theme (metro, HDD, foundation rigs)",
+      "High promoter skin in the game at 73.05%"
+    ],
+    "key_risks": [
+      "FY25 looks like a cyclical peak — margins jumped from 4-5% to 18% in one year",
+      "D/E 1.16x with negligible cash; finance cost 3 Cr eats ~17% of EBITDA if cycle turns",
+      "Microcap capital-goods, founded 2016, never tested through an infra slowdown"
+    ],
+    "red_flags": [
+      "ROE 73.8% is optically inflated by a tiny equity base (29 Cr) — not sustainable",
+      "Net profit leapt 3→14 Cr in one year; earnings quality unproven",
+      "Recently listed in a hot SME/microcap IPO cycle — classic late-cycle tell",
+      "Zero FII participation, thin institutional validation"
+    ],
+    "detailed_analysis": "Second-level thinking: the market is extrapolating FY25's sudden margin expansion (operating margin 7.4% on revenue, but EBITDA vaulted from 8 to 18 Cr) as the new normal. In reality, Indian infra-equipment makers are deeply cyclical, and a 4-year revenue CAGR of 20% masks the fact that 2024 was actually down y/y before the FY25 spike. Pay 11x EV/EBITDA on what is likely peak-of-cycle EBITDA and you are underwriting zero mean reversion — there is no margin of safety here. The balance sheet is also thinner than headline ROE suggests: 33 Cr of debt on 29 Cr equity, essentially zero cash, and FY22 OCF of -5 Cr reminds us what a working-capital squeeze looks like for this business.\n\nWhere are we in the cycle? India infra capex is at a multi-year high, SME/microcap IPO euphoria is pronounced, and this name fits the pattern of cycle-peak listings priced for perfection. The downside scenario — orders slow, margins revert to a 5-6% historical average, EBITDA halves to ~9 Cr — leaves the stock looking like 20x+ on normalized earnings with leverage. I don't see the asymmetric payoff; I see optimism already in the price with a long tail of things that can go wrong. Pass, and revisit only if the cycle cracks and price falls 40-50%.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "insufficient_data",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 25579,
+    "model_used": "opus",
+    "total_cost_usd": 0.10652174999999998,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 10475,
+      "cache_read_input_tokens": 14846,
+      "output_tokens": 1344,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10475,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 11964,
+          "cache_creation_input_tokens": 1393,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1393
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

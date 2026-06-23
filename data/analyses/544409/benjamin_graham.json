@@ -1,0 +1,70 @@
+{
+  "symbol": "544409",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-20T19:58:14.651270Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Astonea Labs fails virtually every quantitative Graham filter: a P/E of 35.6 against a negligible ROE of 0.35% means the market is pricing in pure speculation, not earning power. With no meaningful profit base, no dividend record, and a recent 2017 incorporation, this is a speculation, not an investment.",
+    "key_strengths": [
+      "Promoter holding of 72.30% signals owner commitment and skin in the game",
+      "Operates in a defensive pharma/cosmetic contract-manufacturing niche",
+      "Small market cap of INR 165 Cr leaves room for operational scaling"
+    ],
+    "key_risks": [
+      "P/E of 35.6 offers zero margin of safety by Graham standards (<15 required)",
+      "ROE of 0.35% indicates earnings are effectively non-existent",
+      "Incorporated only in 2017 — lacks the 5-10 year earnings record I demand"
+    ],
+    "red_flags": [
+      "Earnings yield (~2.8%) well below AAA bond yields — fails Graham's bond-substitute test",
+      "Negligible institutional ownership (FII 0%, DII 0.07%) suggests no qualified scrutiny",
+      "P/E × ROE math implies the stock is priced on hope, not proven earning power",
+      "No dividend information provided — likely none, violating Graham's cash-return principle"
+    ],
+    "detailed_analysis": "From a strict Graham lens, Astonea Labs is a textbook speculation. A 35.6x P/E combined with a 0.35% ROE is a mathematical contradiction of value investing — the market is capitalizing essentially zero earning power at a premium multiple. Book value and current-ratio data aren't given, but the Graham Number test requires meaningful EPS, which a 0.35% ROE simply cannot generate. Incorporated in 2017, the company fails my minimum requirement of 5 consecutive years of stable, material earnings, and there is no evidence of a dividend record — the single most reliable signal that shareholders share in real cash profits.\n\nContract manufacturing for pharma/cosmetics is a legitimate business, but it is a thin-margin, capital-intensive activity where scale and long customer relationships matter — neither of which a sub-decade-old microcap has demonstrated. The 72.3% promoter stake is the sole arguable positive, yet concentrated control without earnings discipline is as often a warning as a virtue. Mr. Market is offering this at 35x trivial earnings; the intelligent investor walks away and waits for a price that reflects assets and proven profits, not a pharma-sector narrative.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "insufficient_data",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 22765,
+    "model_used": "opus",
+    "total_cost_usd": 0.09330075,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8991,
+      "cache_read_input_tokens": 13504,
+      "output_tokens": 1213,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8991,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10618,
+          "cache_creation_input_tokens": 1259,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1259
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

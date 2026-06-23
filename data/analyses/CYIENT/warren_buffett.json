@@ -1,0 +1,69 @@
+{
+  "symbol": "CYIENT",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-19T06:12:57.591106Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "AVOID",
+    "investment_thesis": "Cyient is a capable engineering services business serving aerospace, defense, and utilities clients, but services businesses without proprietary IP rarely sustain pricing power — the 9% operating margin and 12.8% ROE confirm this reality. With earnings declining in FY25 (net profit INR 703 Cr → 648 Cr) and promoter holding at a low 23.28%, I see no durable competitive advantage worth paying for.",
+    "key_strengths": [
+      "Near debt-free balance sheet (D/E 0.07) with FCF positive every year, including INR 688 Cr in FY25",
+      "Exposure to long-cycle aerospace, defense, and rail programs creates multi-year contract visibility and some switching costs",
+      "Forward P/E of 14.6x is optically inexpensive for an engineering services company"
+    ],
+    "key_risks": [
+      "Operating margins of 9.04% — thin for a people-intensive business — are already compressing (operating income fell from INR 1,303 Cr in FY24 to INR 1,138 Cr in FY25, a 13% decline)",
+      "ROE of 12.8% is below my minimum threshold and has not improved meaningfully despite a decade of operations",
+      "Promoter holding of only 23.28% is uncomfortably low — limited insider alignment with long-term shareholders"
+    ],
+    "red_flags": [
+      "Net profit declined year-over-year in FY25 (INR 703 Cr to INR 648 Cr) — earnings are moving in the wrong direction",
+      "Other income declined from INR 140+ Cr historically to negative INR 2 Cr in FY24 — the earnings stream was partially propped up by non-operating items that have now normalised",
+      "Finance costs grew at 21.6% CAGR over 9 years, far outpacing the 10% revenue CAGR"
+    ],
+    "detailed_analysis": "Cyient serves technically demanding clients in aerospace, defense, rail, and utilities — sectors where switching vendors is costly and relationships are sticky. Revenue has grown at 10.1% CAGR over nine years and the balance sheet is essentially debt-free. On the surface, this looks like a steady compounder. The problem is that engineering services without proprietary products are fundamentally people businesses where the main competitive tool is price.\n\nThe numbers confirm the structural limitation: 9% operating margins, 12.8% ROE, and now declining profits in FY25. The promoter's 23% stake means management does not suffer proportionally when returns are mediocre. At 19x current PE, I am not getting compensated for these shortcomings. A fair business at a fair price is not what I am looking for — I want a wonderful business at a fair price.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 197561,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.27151575000000006,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 25851,
+      "cache_read_input_tokens": 15335,
+      "output_tokens": 11331,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 25851,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 656,
+          "cache_read_input_tokens": 15335,
+          "cache_creation_input_tokens": 10516,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 10516
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

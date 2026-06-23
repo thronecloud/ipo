@@ -1,0 +1,70 @@
+{
+  "symbol": "AXISCADES",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T16:41:13.993922Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "AXISCADES operates in an interesting defense-aerospace engineering niche with genuine tailwinds, but the business has posted net losses in 4 of the last 9 years, ROCE sits below my 15% threshold at 13.8%, and the market is pricing it at 73x earnings and 50x EV/EBITDA as if it were a proven compounder. At this valuation, even a successful execution scenario leaves no margin of safety.",
+    "key_strengths": [
+      "Defense & aerospace engineering niche with structural tailwind from India's indigenization push (Atmanirbhar Bharat)",
+      "Consistent positive OCF in all 5 of last 5 years (OCF INR 88 Cr vs NI INR 75 Cr in FY25 = 117% conversion ratio)",
+      "Debt deleveraging in progress: borrowings down from INR 346 Cr (FY23) to INR 259 Cr (FY25), Debt/EBITDA now ~1.8x"
+    ],
+    "key_risks": [
+      "Historically unreliable earnings: net losses in FY18, FY19, FY21, FY23 — this is not a compounder, it's a cyclical with lumpy profitability",
+      "Valuation is punishing: P/E 73x, EV/EBITDA 51x on ROCE of just 13.8% — the market has priced in perfection for a company that has never demonstrated sustained excellence",
+      "Finance costs grew at a 37% 9-year CAGR vs revenue CAGR of 11.9% — debt-funded acquisitions (INR 199 Cr investing outflow in FY23, INR 162 Cr in FY24) without demonstrated integration returns"
+    ],
+    "red_flags": [
+      "Other income line swung to -INR 62 Cr in FY23, suggesting acquisition-related goodwill impairments or writedowns — classic sign of acquisitions gone wrong",
+      "FII ownership at just 1.16% and DII at 1.63% — institutional investors with analytical resources are staying away despite the defense sector enthusiasm",
+      "Business complexity is alarming: drones, anti-drones, ADAS, radar, semiconductor, EW systems, PLM — this is a sprawling portfolio, not a focused moat",
+      "Net profit of INR 75 Cr on market cap of INR 8,037 Cr implies ~107x actual P/E (stated 73x likely uses adjusted/different basis) — the valuation is even more stretched than it appears"
+    ],
+    "detailed_analysis": "Applying inversion first: what makes this a bad investment? The answer comes easily — AXISCADES has delivered net losses in 4 of the last 9 fiscal years, finance costs have compounded at 37% annually (triple the revenue growth rate), and the company has burned through large investing cash flows (INR 361 Cr combined in FY23-24) on acquisitions whose synergies remain unproven. The \"other income\" line of -INR 62 Cr in FY23 is a classic red flag of acquisition-era write-offs. ROCE at 13.8% fails my 15% minimum threshold, and the history makes it impossible to assign any confidence to its sustainability. A business that cannot consistently earn its cost of capital does not deserve a premium multiple.\n\nThe valuation compounds the problem. At EV/EBITDA of 50.6x and P/E of 73x (or closer to 107x on actual FY25 net profit vs market cap), the stock prices in years of perfect execution that this management team has never demonstrated. The defense and aerospace engineering tailwind is real — India's defence indigenization is a genuine multi-decade theme — but this is not the vehicle. Promoter holding at 58% is respectable, but the institutional absence (FII + DII combined at just 2.8%) tells its own story. I'd rather own a high-quality compounder at a fair price than this kind of business at any price, let alone this price.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 66155,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09007395,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11623,
+      "cache_read_input_tokens": 9079,
+      "output_tokens": 2917,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11623
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 412,
+          "cache_read_input_tokens": 9079,
+          "cache_creation_input_tokens": 2544,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2544,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

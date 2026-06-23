@@ -1,0 +1,69 @@
+{
+  "symbol": "INOXINDIA",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T17:45:07.331989Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "INOX India is a legitimate industrial business with consistent earnings and low debt, but at a P/E of 53.5x and P/B of 13.82x it trades at roughly 6x my calculated Graham Number of ~INR 246 (derived from EPS ~INR 24.9 and BVPS ~INR 108). No margin of safety exists — only speculative premium.",
+    "key_strengths": [
+      "Debt/Equity of 0.10 — nearly debt-free balance sheet, finance cost collapsed from INR 27 Cr to INR 9 Cr over six years",
+      "Consistent positive earnings: seven consecutive years of profitability with operating CF positive all five trackable years",
+      "High capital efficiency — ROCE 38%, operating margin ~20% — demonstrating a real competitive position in cryogenic equipment"
+    ],
+    "key_risks": [
+      "Catastrophic overvaluation: P/B of 13.82x against my ceiling of 1.5x; the stock must fall ~85% merely to reach book value",
+      "Net profit 6Y CAGR only 2.7% despite revenue growing at 12.3% — unit economics are not expanding proportionally, and 2019 net profit (INR 193 Cr) suspiciously exceeded EBITDA (INR 153 Cr), suggesting a non-recurring gain that flatters the base",
+      "Free cash flow turned negative in FY2025 (-INR 3 Cr) as capex surged to INR 125 Cr — the business is consuming cash, not generating it for shareholders"
+    ],
+    "red_flags": [
+      "P/E 53.5x is 3.5x my absolute ceiling of 15x — price embeds at minimum a decade of optimistic growth that may never materialise",
+      "Graham Number ~INR 246 vs. market price INR 1,492 — the stock trades at roughly 6x intrinsic value by my formula",
+      "Hydrogen, aerospace, ITER fusion narratives are precisely the speculative stories Mr. Market uses to justify irrational prices — I require proven earning power, not future potential"
+    ],
+    "detailed_analysis": "By every quantitative filter I apply, INOX India fails comprehensively on valuation. The Graham Number — derived from EPS of roughly INR 24.9 and book value per share of roughly INR 108 — yields approximately INR 246. The market charges INR 1,492, a premium of more than 500%. A P/B of 13.82x means investors are paying nearly INR 14 for every INR 1 of net assets; my upper tolerance is 1.5x. Even granting the company its excellent ROCE of 38% and clean balance sheet, no intelligent investor should pay six times intrinsic value — that is speculation, not investment.\n\nThe underlying business is sound but not extraordinary by earnings metrics. Revenue has compounded at 12.3% over six years, yet net profit has grown at a paltry 2.7% CAGR — INR 193 Cr in 2019 to INR 226 Cr in 2025. Operating cash flow, while consistently positive, has stagnated (INR 122 Cr in both 2024 and 2025) while capex has surged from INR 44 Cr to INR 125 Cr, producing negative free cash flow in FY2025. The company pays modest dividends and is reinvesting heavily — fine if returns materialise, but the current valuation prices in perfection across hydrogen, LNG, and aerospace end-markets simultaneously. Mr. Market is in one of his most euphoric moods; the disciplined investor steps aside.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 55875,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07794495,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9333,
+      "cache_read_input_tokens": 11174,
+      "output_tokens": 2639,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9333
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 429,
+          "cache_read_input_tokens": 9124,
+          "cache_creation_input_tokens": 2259,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2259,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "AEGISVOPAK",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-20T11:12:30.674238Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Aegis Vopak is an infrastructure play on India's LPG/chemical storage demand with solid 48% operating margins, but at P/E 109 and P/S 31 it's priced for perfection with a PEG well north of 2. The growth story is real but modest (revenue 562→621 Cr, only ~10% YoY), and ROE of 8.7% doesn't justify paying 4.66x book.",
+    "key_strengths": [
+      "Strong tollbooth-style economics: 48% operating margin, 99% gross margin on terminal storage fees",
+      "Indian LPG/chemical import tailwinds; Vopak JV parentage provides global terminal expertise",
+      "OCF turned sharply positive (478 Cr in FY25) and FCF flipped to +350 Cr after heavy capex"
+    ],
+    "key_risks": [
+      "Valuation absurd for the growth: P/E 109 vs revenue growth only ~10.5% (2024→2025) = PEG ~10",
+      "ROE 8.73% / ROCE 7.01% — below cost of capital; finance cost 193 Cr eats nearly 60% of operating income",
+      "Heavily capex-intensive and debt-funded (2,004 Cr borrowings); returns depend on terminal utilization ramp"
+    ],
+    "red_flags": [
+      "PEG ratio >5 — classic 'hot IPO' overvaluation pattern",
+      "Net profit of 127 Cr on 22,244 Cr market cap implies 175x earnings — buying terminals at theme-park prices",
+      "Revenue growth decelerating: 59% (FY23→24) → 10.5% (FY24→25)"
+    ],
+    "detailed_analysis": "What's the story? India imports ~60% of its LPG and a growing volume of chemicals, and Aegis Vopak owns the tanks at the ports. That's a good business — 48% operating margins and 99% gross margins tell you it's a tollbooth. But Peter Lynch's cardinal rule is growth at a *reasonable* price, and there's nothing reasonable here. You're paying 109x trailing earnings and 31x sales for a company growing revenue 10.5% year-over-year with ROE under 9%. The PEG is effectively off the charts. This is a recent IPO riding thematic enthusiasm — exactly the setup Lynch warned about.\\n\\nThe fundamentals underneath the valuation are mediocre, not exceptional. Finance costs of 193 Cr consume 42% of operating income, ROCE of 7% is below the cost of debt, and the company just raised equity (reserves jumped from 996 Cr to 3,634 Cr) to deleverage — which dilutes the growth story further. I'd want to revisit this at half the current price (P/E ~50) once utilization on new terminals proves out and earnings double. Until then, the story is \"good business, terrible stock.\" Avoid.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 25118,
+    "model_used": "opus",
+    "total_cost_usd": 0.1031115,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 10146,
+      "cache_read_input_tokens": 14488,
+      "output_tokens": 1297,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10146,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 11644,
+          "cache_creation_input_tokens": 1346,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1346
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

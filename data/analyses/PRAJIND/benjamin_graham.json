@@ -1,0 +1,70 @@
+{
+  "symbol": "PRAJIND",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T22:05:27.773669Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Praj Industries trades at 87x earnings and 4.95x book — roughly 2.5x above my Graham Number of ~₹138 — offering zero margin of safety for the disciplined investor. FY2025 showed simultaneous earnings decline (₹283→₹219 Cr), OCF collapse (₹199→₹43 Cr), and negative free cash flow, precisely the wrong time to pay a speculative premium.",
+    "key_strengths": [
+      "Nine consecutive years of positive earnings — passes my continuity test",
+      "Negligible leverage (D/E 0.16) with strong interest coverage (~19.6x on EBITDA/finance cost)",
+      "Revenue CAGR of 13.6% over nine years demonstrates a real, growing business"
+    ],
+    "key_risks": [
+      "P/E of 87.3x vs my maximum of 15x — the price already discounts decades of perfect execution",
+      "Operating cash flow collapsed 78% in FY2025 (₹199→₹43 Cr) and FCF turned negative — the business is not generating the cash its earnings suggest",
+      "Finance costs compounding at 28.4% CAGR (₹10→₹19 Cr in two years) on rising borrowings (₹0→₹210 Cr since 2020) — early but accelerating leverage trend"
+    ],
+    "red_flags": [
+      "Graham Number ~₹138 vs market price ₹351 — paying 154% premium to calculated intrinsic value",
+      "Net profit fell 22.6% in FY2025 (₹283→₹219 Cr) while revenue also contracted — margin compression is real",
+      "Other income (₹89 Cr in FY2025) now constitutes ~41% of reported net profit — operating earnings quality is deteriorating",
+      "Reported operating margin of 2.46% is dangerously thin for an engineering firm exposed to project cost overruns"
+    ],
+    "detailed_analysis": "Mr. Market is offering Praj Industries at ₹351 with a P/E of 87 and P/B of nearly 5. My Graham Number — the square root of 22.5 times EPS (₹11.92) times book value per share (₹70.8) — yields approximately ₹138. The stock must fall 61% merely to reach fair value on my formula, and I require a further discount below that for a margin of safety. At P/S of 2.03 and EV/EBITDA of 45x, every valuation measure screams speculation, not investment. The price embeds optimistic assumptions about India's ethanol blending policy and biotech growth — assumptions I am constitutionally unwilling to pay for.\n\nThe FY2025 financial deterioration compounds my concern. Operating cash flow collapsed from ₹199 Cr to ₹43 Cr; free cash flow turned negative for the first time. Gross margins appear healthy at ~40%, yet reported operating margins of 2.46% suggest costs are consuming the spread — a treacherous combination for a project-engineering business. The growing reliance on other income (₹89 Cr, or ~41% of net profit) means the core business earned roughly ₹130 Cr on ₹3,228 Cr revenue — a 4% net margin at an 87x multiple. This is precisely the situation my mentor David Dodd and I warned against: paying for blue-sky potential while ignoring deteriorating present reality. I shall wait for Mr. Market's inevitable disillusionment.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 57748,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08557799999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9666,
+      "cache_read_input_tokens": 11155,
+      "output_tokens": 3065,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9666,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 538,
+          "cache_read_input_tokens": 9105,
+          "cache_creation_input_tokens": 2611,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2611
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

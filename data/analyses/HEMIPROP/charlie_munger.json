@@ -1,0 +1,70 @@
+{
+  "symbol": "HEMIPROP",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T17:42:49.153679Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "Hemisphere Properties is not an operating business — it is a dormant land-holding shell generating INR 1 Cr of revenue against a INR 3,773 Cr market cap, implying a P/S of 3,866x with zero prospect of near-term earnings. Inverted, the question is not \"why buy\" but \"how can this possibly be worth what the market says?\" — and the answer is pure speculation on undisclosed Delhi land values.",
+    "key_strengths": [
+      "Low debt burden (D/E 0.20, total debt only INR 60 Cr) — cannot collapse under leverage alone",
+      "Total assets ~INR 1,100 Cr book value likely understates real estate NAV in Delhi/NCR",
+      "51% promoter holding signals skin-in-the-game, though motive for holding a dormant vehicle is unclear"
+    ],
+    "key_risks": [
+      "No operating business — INR 1 Cr revenue on INR 3,773 Cr market cap; P/S of 3,866x is not a valuation, it is a lottery ticket",
+      "Chronically cash-flow negative: OCF negative all 4 years, cumulative operating losses ~INR 39 Cr since 2022",
+      "Valuation entirely dependent on opaque land-bank mark-to-market; any regulatory, zoning, or litigation risk could obliterate the thesis"
+    ],
+    "red_flags": [
+      "P/S of 3,866x and EV/EBITDA of -385.9 — valuation metrics are nonsensical for an operating analysis",
+      "Operating margin of -938% on INR 1 Cr revenue means even minimal overhead destroys the income statement",
+      "Zero positive OCF across all 4 years — capital is being consumed, not created",
+      "FII + DII ownership combined only 1.99% — institutional investors have effectively walked away"
+    ],
+    "detailed_analysis": "Hemisphere Properties fails every single filter I apply. ROIC is deeply negative, ROCE is -0.80%, ROE is -1.89%, and the company has never once generated positive operating cash flow. With annual revenue of INR 1 Cr and finance costs of INR 6 Cr, the company pays more in interest than it earns in six years of revenue. This is not a business — it is a land-banking vehicle dressed up as a listed company. The 100% gross margin is a statistical artifact of near-zero revenue, not a sign of pricing power.\n\nThe market cap of INR 3,773 Cr versus book assets of INR 1,102 Cr implies the market is pricing undisclosed Delhi land at a 3.4x book premium. That may or may not be justified — Delhi land is genuinely scarce — but I have no way to verify it, no operating history to anchor it, and no management capital-allocation track record to trust. Munger's rule: never invest in what you cannot understand. This company has no earnings, no cash flow, no transparency on asset quality, and a valuation built entirely on hope. Walk away.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 39446,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.06580275000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9631,
+      "cache_read_input_tokens": 8125,
+      "output_tokens": 1816,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9631
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 345,
+          "cache_read_input_tokens": 8125,
+          "cache_creation_input_tokens": 1506,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1506,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

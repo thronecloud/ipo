@@ -1,0 +1,69 @@
+{
+  "symbol": "GKSL",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-21T07:46:42.389330Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "GKSL scores well on capital efficiency (ROCE ~51%) but catastrophically fails the earnings yield test at ~2% (EBIT INR 17 Cr / EV ~INR 823 Cr), making the Magic Formula rank it near the bottom of any screener. You're paying 20x revenue and 90x earnings for a INR 40 Cr revenue hospital — the price completely negates the business quality.",
+    "key_strengths": [
+      "High ROCE of 51.5% — suggests strong capital efficiency in specialty healthcare",
+      "Rapid revenue ramp: 0 → 5 → 40 Cr in three years shows real operational traction",
+      "High promoter holding (71.45%) aligns founder incentives with business growth"
+    ],
+    "key_risks": [
+      "Earnings yield of ~2% (EBIT 17 Cr / EV 823 Cr) — far below the Magic Formula's 12% minimum threshold",
+      "Tiny revenue base (INR 40 Cr) with INR 805 Cr market cap; any execution stumble destroys the valuation story",
+      "Negative FCF in FY2025 (-5 Cr) despite reported profits signals heavy reinvestment or working capital strain"
+    ],
+    "red_flags": [
+      "Data anomaly: EBITDA of INR 18-22 Cr in FY2023-24 when revenue was 0-5 Cr — this is arithmetically impossible and signals data reliability concerns",
+      "P/S of 13x and P/B of 22x for a small-cap hospital company are speculative-grade multiples with zero margin of safety",
+      "Free cash flow turned negative (-5 Cr) in FY2025 despite INR 10 Cr net profit — earnings quality is questionable"
+    ],
+    "detailed_analysis": "Running the Magic Formula: EBIT (operating income) = INR 17 Cr for FY2025. Enterprise Value = Market Cap (805.4) + Total Debt (23) – Cash (5) ≈ INR 823 Cr. Earnings Yield = 17/823 = **2.1%** — this is five times below the 12% floor I require and roughly six times below the 15% I get excited about. On the ROIC side, the story is better: reported ROCE of 51.5% and capital employed of roughly INR 54 Cr (equity 34 + borrowings 20) gives EBIT/Capital of ~31%, which is genuinely excellent for a specialty hospital. But the Magic Formula requires **both** metrics to rank high, and a 2% earnings yield immediately drops this to the bottom decile.\n\nThe financial data also raises serious red flags. EBITDA was reported as INR 18-22 Cr in FY2023-24 when revenue was essentially zero — this is internally inconsistent and could reflect accounting reclassifications, stub-period reporting, or data sourcing errors from a recently-listed micro-cap. Revenue only reached INR 40 Cr in FY2025 yet the company trades at INR 805 Cr — a 20x revenue multiple typical of high-growth SaaS, not a regional specialty hospital. Even if the business doubles revenue two more times, the current price embeds a decade of perfection. Pass.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 51680,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08573475,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10821,
+      "cache_read_input_tokens": 8240,
+      "output_tokens": 2845,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10821,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 303,
+          "cache_read_input_tokens": 8240,
+          "cache_creation_input_tokens": 2581,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2581
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

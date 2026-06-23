@@ -1,0 +1,69 @@
+{
+  "symbol": "ASKAUTOLTD",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T16:29:10.798287Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "ASK Automotive is a reasonably managed OEM auto parts supplier with good returns on capital, but it is fundamentally a price-taking, capital-intensive business with nearly zero free cash flow conversion — the antithesis of a Buffett-style compounder. At 30x earnings with capex exceeding net profit and debt tripling in four years, there is no margin of safety.",
+    "key_strengths": [
+      "Strong ROE/ROCE of 26-28%, well above my 15% threshold, demonstrating decent capital efficiency on a reported basis",
+      "Consistent revenue and profit growth: revenue CAGR 12.4% and net profit CAGR 13.8% over six years with positive OCF every year",
+      "High promoter holding of 74.95% signals owner-operator alignment and skin in the game"
+    ],
+    "key_risks": [
+      "Catastrophic FCF conversion: capex of ₹346 Cr in FY25 exceeds net profit of ₹248 Cr, leaving FCF of only ₹30 Cr — reported earnings are largely illusory for the shareholder",
+      "Debt has exploded 11x in four years (₹54 Cr in FY21 to ₹612 Cr in FY25) while cash sits at just ₹20 Cr — leverage is rising fast in a cyclical business",
+      "No durable pricing power: OEM suppliers are price takers, not price setters; customers (auto OEMs) will perpetually squeeze margins"
+    ],
+    "red_flags": [
+      "FCF/Net Profit ratio of ~12% in FY25 — the business is essentially consuming all its earnings in capex just to grow",
+      "Borrowings tripled from FY22 to FY25 (₹175 Cr → ₹612 Cr); CWIP jumped to ₹163 Cr, signalling more capital spending ahead",
+      "D/E of 0.53 exceeds my preferred ceiling of 0.3 and is worsening, not improving"
+    ],
+    "detailed_analysis": "ASK Automotive checks some surface-level boxes — ROE above 26%, consistent profit growth, and a dominant promoter — but a deeper look reveals a business I would not touch. The FCF story is disqualifying: in FY25 the company earned ₹248 Cr in net profit but spent ₹346 Cr on capex, leaving just ₹30 Cr in free cash flow. Over the past four years, cumulative FCF has been essentially nil. A business that must reinvest more than it earns just to sustain growth is not a compounder; it is a treadmill. I want businesses that generate surplus cash I can redeploy — this one cannot even fund its own growth organically.\n\nThe competitive moat is thin. Brake shoes, clutch plates, and control cables are components where OEM customers hold all the negotiating power. There are no network effects, no consumer brand, and switching costs exist only at the qualification level — not the structural, durable kind that protects margins for decades. At 30x trailing earnings and 18.8x EV/EBITDA, the market is pricing in a wonderful business. What I see instead is a capital-hungry, cyclically exposed OEM supplier with rapidly rising debt and negligible free cash flow. The price demands perfection; the business does not deliver it.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 61716,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07731840000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10734,
+      "cache_read_input_tokens": 8873,
+      "output_tokens": 2293,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10734,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 482,
+          "cache_read_input_tokens": 8873,
+          "cache_creation_input_tokens": 1861,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1861
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

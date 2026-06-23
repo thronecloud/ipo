@@ -1,0 +1,71 @@
+{
+  "symbol": "DIACABS",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T17:05:52.777579Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Diamond Power Infrastructure is a speculative turnaround story priced at 74x earnings with deeply negative book value (-INR 714 Cr equity), offering no margin of safety whatsoever. A commodity cable manufacturer with no discernible moat, fresh off near-insolvency, is not a business I'd own at any price near these levels.",
+    "key_strengths": [
+      "Revenue recovery is real — from zero in 2022 to INR 1,115 Cr in FY2025, suggesting operational rehabilitation",
+      "India's power infrastructure buildout (renewables, T&D capex) provides genuine secular tailwind for cables/conductors",
+      "Operating margin of 12.9% is respectable for the sector, showing some pricing discipline post-restructuring"
+    ],
+    "key_risks": [
+      "Negative book equity of -INR 714 Cr makes P/B meaningless and signals the balance sheet has not healed — the company is technically insolvent on book terms",
+      "Extreme valuation: 74x P/E and 68x EV/EBITDA for a company earning only INR 34 Cr net profit on INR 1,115 Cr revenue leaves zero margin of safety",
+      "History of catastrophic capital destruction — revenues collapsed from INR 3,153 Cr (2014) to near-zero, and accumulated losses wiped out all reserves (-INR 767 Cr in reserves)"
+    ],
+    "red_flags": [
+      "Negative shareholders' equity (-INR 714 Cr) — the company owes more than it owns",
+      "Zero institutional conviction: FII at 0.36%, DII at 0.07% — sophisticated money is entirely absent",
+      "Promoter holding of 84.02% means minimal public float — classic setup for price manipulation in a hot sector theme",
+      "Debt still INR 610 Cr in borrowings despite apparent restructuring; total debt data shows dramatic haircut (2,355→463 Cr between 2024-2025), implying creditor losses, not business recovery",
+      "Market cap of INR 7,884 Cr is 7x FY2025 revenue and 232x FY2025 net profit — pricing in years of flawless execution that this company has never demonstrated"
+    ],
+    "detailed_analysis": "This company is a textbook case of what I avoid. Diamond Power Infrastructure collapsed spectacularly — revenues fell from INR 3,153 Cr in FY2014 to literally zero by FY2022, burning through equity and accumulating massive losses. The FY2017 net loss of -INR 805 Cr destroyed the balance sheet entirely. What we're looking at today is essentially a phoenix story: the company appears to have gone through debt resolution (total debt dropped from ~INR 2,355 Cr in FY2024 to INR 463 Cr in FY2025 — a haircut that hurt creditors, not a triumph of management). FY2025 shows INR 1,115 Cr revenue and INR 34 Cr net profit, but shareholders' equity remains deeply negative at -INR 714 Cr. There is no book value to anchor the valuation.\n\nThe market has priced this as a high-growth infrastructure darling riding India's power capex wave, but the underlying economics are weak. Commodity cables and conductors have no pricing power, no switching costs, and no network effects — none of my criteria for a durable moat. At 74x earnings and 68x EV/EBITDA, you're paying for perfection from a business that has demonstrated only imperfection. The complete absence of institutional investors (FII + DII combined under 0.5%) tells me everything: the people who do real due diligence have walked away. With promoters holding 84% of a thinly traded stock in a hot sector, this has the hallmarks of a momentum/theme trade, not an investment. I'd need to see consistent profitability for at least 3-5 years, positive book equity, debt-to-equity below 0.5x, and a P/E under 20x before this would even enter my circle of consideration.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 53543,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0799716,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10976,
+      "cache_read_input_tokens": 8892,
+      "output_tokens": 2409,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10976
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 373,
+          "cache_read_input_tokens": 8892,
+          "cache_creation_input_tokens": 2084,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2084,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

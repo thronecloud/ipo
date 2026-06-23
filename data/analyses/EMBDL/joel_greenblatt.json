@@ -1,0 +1,71 @@
+{
+  "symbol": "EMBDL",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T17:12:50.508666Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Embassy Developments scores at the bottom of both Magic Formula metrics — Earnings Yield of ~2.5% (vs. 12%+ threshold) and ROIC of ~3% (vs. 20%+ threshold) — making it fundamentally unqualified for the formula. The business is a real estate developer, a capital-intensive sector Greenblatt explicitly deprioritizes because capital structure distorts both metrics.",
+    "key_strengths": [
+      "Balance sheet massively recapitalized in FY25 — equity surged from -1,446 Cr (2024) to 10,258 Cr (2025), de-risking insolvency concerns",
+      "FY25 recovery visible: revenue +84% YoY to 2,180 Cr, EBITDA turned positive to 322 Cr after -501 Cr in FY23",
+      "FII ownership of 25.3% suggests some institutional validation of the restructuring thesis"
+    ],
+    "key_risks": [
+      "Earnings Yield (EBIT/EV) = 293/11,513 Cr ≈ 2.5% — catastrophically below Magic Formula threshold of 12%",
+      "ROCE of 3.19% on a 20,857 Cr asset base is capital destruction; ROIC has never sustainably exceeded 5% in the last decade",
+      "Massive debt jump from 693 Cr (FY23) to 7,749 Cr (FY24) then 4,599 Cr (FY25) signals leveraged restructuring, not organic strength"
+    ],
+    "red_flags": [
+      "Net losses in 3 of last 4 years: -137 Cr (FY22), -608 Cr (FY23), -517 Cr (FY24) — EBIT was negative, Magic Formula inapplicable",
+      "EV/EBITDA reported as -100.6x (negative EBITDA on trailing basis) — metric is meaningless and confirms earnings quality issues",
+      "Operating CF positive only 2 of last 5 years; real estate developer with lumpy, untrustworthy earnings recognition",
+      "Revenue CAGR of -3.3% over 9 years — the business is structurally smaller than a decade ago",
+      "Name change from Equinox India Developments → Embassy Developments (Feb 2025) mid-restructuring adds opacity"
+    ],
+    "detailed_analysis": "Running the Magic Formula on EMBDL yields disqualifying numbers on both axes. Enterprise Value = Market Cap (6,983 Cr) + Net Debt (4,530 Cr) = ~11,513 Cr. EBIT (FY25 Operating Income) = 293 Cr. Earnings Yield = 293/11,513 = 2.5% — less than one-fifth of the 12% minimum I look for. Return on Capital = EBIT / invested capital is confirmed by the company's own ROCE of 3.19% — on a bloated 20,857 Cr asset base, the business earns almost nothing. Both legs of the formula are broken simultaneously, which historically predicts poor future returns.\n\nThe backstory here is a deeply troubled developer that was losing money from FY22–FY24 (cumulative ~1.26 Cr in losses) and carried negative equity as recently as FY24. The FY25 recapitalization — equity swinging from -1,446 Cr to +10,258 Cr — and the brand relaunch under the Embassy name are corporate actions, not evidence of a high-return business recovering. Real estate developers like this structurally fail the Magic Formula: revenue is lumpy, capital is tied up in land and WIP for years, and returns on that capital are rarely above cost of capital. Until EBIT/EV crosses 10%+ and ROCE exceeds 15% on a sustained basis, this is not a Magic Formula candidate.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 50217,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08606745,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11329,
+      "cache_read_input_tokens": 8999,
+      "output_tokens": 2725,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11329
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 433,
+          "cache_read_input_tokens": 8999,
+          "cache_creation_input_tokens": 2330,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2330,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

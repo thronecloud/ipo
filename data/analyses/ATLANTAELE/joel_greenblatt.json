@@ -1,0 +1,69 @@
+{
+  "symbol": "ATLANTAELE",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T16:32:18.431605Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Atlanta Electricals is a genuinely high-quality transformer manufacturer with ~50% ROCE — exactly the kind of business the Magic Formula loves. But the Magic Formula requires both quality AND cheapness, and at a P/E of 73x the earnings yield is only ~1.8% (EBIT INR 194 Cr / EV ~INR 10,772 Cr), far below the 12–15% threshold needed to rank well.",
+    "key_strengths": [
+      "Exceptional capital efficiency: ROCE of 50.1% and ROE of 41% — well above the 25%+ Magic Formula benchmark",
+      "Strong revenue growth (33.6% CAGR 4Y) with operating leverage: EBIT CAGR 56.9% outpacing revenue",
+      "Low debt historically (D/E 0.46 on 2025 equity of INR 782 Cr) with growing operating cash flow (INR 84 Cr in 2025)"
+    ],
+    "key_risks": [
+      "Earnings yield of ~1.8% (EBIT/EV) is one-tenth the 15% threshold — wildly overvalued by Magic Formula standards at P/E 73x",
+      "Balance sheet nearly tripled in one year (assets INR 559 Cr → INR 1,618 Cr in 2025): capex surged to INR 113 Cr, FCF turned negative (−INR 30 Cr), and borrowings jumped from INR 49 Cr to INR 362 Cr — unclear if returns justify this capital deployment",
+      "Profit volatility: Net profit fell from INR 87 Cr (2023) to INR 64 Cr (2024) before recovering — single-year spikes inflate ROIC; need 3+ years of sustained returns post-expansion"
+    ],
+    "red_flags": [
+      "Note: Provided EV/EBITDA of 9.8x is inconsistent with disclosed data; correct calculation (INR 10,772 Cr EV / INR 198 Cr EBITDA) yields ~54x — a significant data discrepancy",
+      "Promoter holding at 87.28% leaves very thin public float, amplifying price volatility and exit risk",
+      "Sudden tripling of total assets in FY2025 (likely QIP + aggressive capex) without clear visibility on returns from new capacity"
+    ],
+    "detailed_analysis": "Using the Magic Formula, Atlanta Electricals scores on only one of two required pillars. The business quality is legitimately excellent: ROCE of 50%, ROE of 41%, and operating margin of 17.45% reflect durable competitive advantages in niche transformer segments (furnace, solar, special duty). Revenue has compounded at 33.6% and EBIT at 56.9% over four years. This is the kind of business Greenblatt wants to own — the problem is exclusively price.\n\nThe earnings yield (EBIT/EV) works out to ~1.8% using the available data (EBIT INR 194 Cr, EV ~INR 10,772 Cr). Magic Formula demands 12–15%+ to rank in the top decile; 1.8% is a near-total disqualification. At P/E 73x, the market has already priced in years of exceptional execution. Additionally, FY2025 saw a capital-raise-driven balance sheet explosion (+INR 1 trillion in assets), INR 113 Cr in capex, and negative FCF (−INR 30 Cr) — meaning the high historical ROIC may compress as the new, heavier asset base seasons. The Magic Formula is not for buying great businesses at any price; it is for buying great businesses at great prices. Atlanta Electricals is currently neither cheap nor generating free cash flow.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 62640,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0945885,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11566,
+      "cache_read_input_tokens": 8690,
+      "output_tokens": 3240,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11566,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 407,
+          "cache_read_input_tokens": 8690,
+          "cache_creation_input_tokens": 2876,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2876
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

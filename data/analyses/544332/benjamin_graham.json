@@ -1,0 +1,69 @@
+{
+  "symbol": "544332",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-20T09:45:22.716089Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Fabtech trades at P/E 27.6 and P/B ~2.84 (270 Cr / 95 Cr equity), both well above my strict limits, offering no margin of safety. While earnings have been positive every year since 2020, this is a recently listed small-cap with IPO-inflated pricing — precisely the setup where Mr. Market favors the seller, not the buyer.",
+    "key_strengths": [
+      "Positive net profit every year 2020–2025 (5/5), growing at 26.6% CAGR to ₹13 Cr",
+      "Low leverage: borrowings ₹10 Cr vs equity ₹95 Cr (D/E ~0.10), interest cover ~17x",
+      "Promoter holding 68.49% signals skin-in-the-game; ROCE 21.2% is respectable"
+    ],
+    "key_risks": [
+      "P/E 27.6 and P/B ~2.84 violate Graham thresholds (<15 and <1.5) — no margin of safety",
+      "Operating cash flow ₹3 Cr vs net profit ₹13 Cr in FY25 — earnings quality concern",
+      "Micro-cap (₹270 Cr) and recent IPO; equity jumped from 52→95 Cr in FY25 (dilution via primary issue)"
+    ],
+    "red_flags": [
+      "FY25 OCF (₹3 Cr) is only ~23% of reported net profit — working capital leakage",
+      "Recently listed IPO: no seasoned trading history; investment bank priced to maximize seller's proceeds",
+      "No dividend track record disclosed"
+    ],
+    "detailed_analysis": "From a strict Graham lens, Fabtech fails the two cardinal valuation tests. The Graham Number ceiling ≈ √(22.5 × EPS × BVPS). With net profit ₹13 Cr and equity ₹95 Cr on ~1 Cr shares (implied from ₹270 Cr cap at ₹268), EPS ≈ ₹13 and BVPS ≈ ₹94, giving a Graham Number of ~₹165 — the stock trades 62% above this intrinsic ceiling. P/E 27.6 is nearly double my <15 threshold, and P/B ~2.84 is almost twice the 1.5 limit. The balance sheet is genuinely clean (D/E 0.10, zero CWIP, reserves ₹83 Cr), and earnings have been uninterrupted — these are the bright spots. But balance-sheet strength alone cannot rescue a valuation this rich.\n\nThe cash-flow picture troubles me more than the headline numbers suggest. Despite FY25 net profit of ₹13 Cr, operating cash flow was only ₹3 Cr — this is the fourth consecutive year OCF has lagged reported earnings, consistent with stretched receivables in a turnkey engineering business where customer milestone payments are lumpy. The ₹24 Cr financing inflow and ₹26 Cr investing outflow in FY25 confirm this is fresh IPO capital being deployed, meaning current earnings power has not yet been demonstrated on the enlarged equity base. Combined with micro-cap size and the inherent information asymmetry of any recent listing, this is a speculation, not an investment. I would revisit only if the price fell below book value (~₹94) with at least three more years of OCF-backed earnings on the record.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 39738,
+    "model_used": "opus",
+    "total_cost_usd": 0.11876999999999999,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 10656,
+      "cache_read_input_tokens": 14580,
+      "output_tokens": 1794,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10656,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 11694,
+          "cache_creation_input_tokens": 1848,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1848
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

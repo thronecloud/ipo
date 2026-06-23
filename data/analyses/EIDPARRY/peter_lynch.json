@@ -1,0 +1,69 @@
+{
+  "symbol": "EIDPARRY",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-22T16:25:58.934121Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "E.I.D.-Parry is a cheap stalwart (P/E 14.6, EV/EBITDA 5.92) with a clean balance sheet (D/E 0.18), but the core sugar business is cyclical and margin-thin (6.12% operating margin), making it a value stock rather than the growth story I need. The ethanol/nutraceuticals kickers are real but too small and uncertain to justify a buy conviction at this stage.",
+    "key_strengths": [
+      "Pristine balance sheet — D/E slashed from 1.23 (2020) to 0.18; borrowings under control at INR 2,666 Cr",
+      "Deeply cheap valuation — EV/EBITDA of 5.92 and P/S of 0.41 price in almost no growth premium",
+      "Policy tailwind in ethanol blending — distillery segment benefits from India's 20% ethanol blending mandate, providing a visible demand floor"
+    ],
+    "key_risks": [
+      "Sugar cyclicality wrecks the story — revenue swung from INR 35,244 Cr (2023) to INR 29,413 Cr (2024), a 17% drop in one year; margins follow the same roller-coaster",
+      "ROE of 9.54% is below my 12% threshold — a company earning less than 10% on equity is destroying value vs. alternatives; ROCE of 16.6% is better but inflated by subsidiary structures",
+      "Growth deceleration is real — net profit peaked at INR 1,828 Cr (2023) and hasn't recovered (FY25: INR 1,773 Cr), while INR 706 Cr of 'other income' in FY25 masks weak operating performance"
+    ],
+    "red_flags": [
+      "Other income surged to INR 706 Cr in FY25 vs INR 304 Cr in FY24 — earnings quality suspect; strip this out and operating profits are flat",
+      "Capex accelerating (INR 449 Cr FY22 → INR 1,046 Cr FY25) with CWIP near doubling to INR 967 Cr — returns on this invested capital are unproven",
+      "Revenue CAGR of only 8.4% over 9 years — this is a slow grower dressed up by commodity cycles, not a compounder"
+    ],
+    "detailed_analysis": "As Peter Lynch, I classify E.I.D.-Parry as a **stalwart** leaning toward **cyclical** — not the fast-grower I hunt for. The 9-year net profit CAGR of 29.3% looks electrifying on paper, but that number is distorted by a terrible base (INR 175 Cr in FY16) and a sugar supercycle peak in FY23. Strip out the cycle and look at recent trajectory: FY23 profit of INR 1,828 Cr fell to INR 1,618 Cr in FY24, barely recovering to INR 1,773 Cr in FY25. The PEG using recent earnings growth (~9-10%) is ~1.45 — too rich for a cyclical. If I use the forward P/E implied growth of ~28%, PEG drops to ~0.52, but I don't trust that number given the other-income inflation.\n\nThe nutraceuticals angle (spirulina, chlorella, astaxanthin, lutein) is the most interesting piece — I could walk into a Whole Foods and understand why these products are in demand globally. But without segment-level disclosure on what portion of revenue this drives, I'm guessing in the dark. The ethanol distillery story is a genuine policy tailwind but again, buried inside a conglomerate structure with Coromandel International as a subsidiary. The \"invest in what you know\" principle breaks down here — this is too complex a holding company structure for me to trust the numbers cleanly. At INR 865 and a market cap of INR 15,399 Cr, the stock is undeniably cheap, but cheap alone is never enough — I need a clear story, and this one reads like a commodity company with optionality rather than a growth machine.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "undervalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 66836,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09648570000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 12076,
+      "cache_read_input_tokens": 9289,
+      "output_tokens": 3227,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 12076,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 496,
+          "cache_read_input_tokens": 9289,
+          "cache_creation_input_tokens": 2787,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2787
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

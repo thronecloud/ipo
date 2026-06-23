@@ -1,0 +1,69 @@
+{
+  "symbol": "EIDPARRY",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-22T16:25:36.869914Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "EIDPARRY is a cheap holding company (EV/EBITDA 5.9x, P/E 14.6x) whose value is substantially anchored by its ~58% stake in Coromandel International, masking a mediocre core sugar business with only 6.1% operating margins. The valuation offers a margin of safety, but sugar's commodity nature and government price controls make this structurally unattractive for long-term compounding.",
+    "key_strengths": [
+      "Coromandel International stake creates a high-quality NAV floor and growing dividend income — 'other income' surged to ₹706 Cr in FY25 (up from ₹304 Cr in FY24), now ~40% of net profits",
+      "Conservative balance sheet — D/E of 0.18, borrowings collapsed from ₹4,347 Cr (2020) to ₹2,666 Cr (2025) despite heavy capex cycle",
+      "Operating income CAGR of 13.5% over 9 years with OCF positive all 5 recent years — the Murugappa Group pedigree brings capital discipline"
+    ],
+    "key_risks": [
+      "Sugar is a regulated commodity with no pricing power — SAP/FRP controls, ethanol policy shifts, and cyclical cane supply make 6.1% operating margins structurally fragile",
+      "Heavy and accelerating capex (₹449 Cr → ₹1,046 Cr, CWIP up to ₹967 Cr) without disclosed return targets; investing outflows hit ₹2,783 Cr in FY25, draining cash from ₹1,440 Cr to ₹404 Cr",
+      "Holding company complexity — true earnings power obscured by Coromandel dividends, subsidiary consolidation, and conglomerate structure makes normalized ROE of 9.5% look thin"
+    ],
+    "red_flags": [
+      "Other income of ₹706 Cr in FY25 is doing heavy lifting — strip it out and core sugar/nutraceuticals earns far less than reported",
+      "FCF turned negative in FY23 (−₹370 Cr) and remains lumpy; large investing outflows suggest capital is being redeployed at uncertain returns",
+      "ROE of 9.5% is well below a compounder's threshold — the business is not earning exceptional returns on equity over time"
+    ],
+    "detailed_analysis": "Inversion first: what makes this a bad investment? Sugar is among the worst commodity businesses — government-mandated cane prices, ethanol blending policy whims, monsoon dependence, and zero pricing power. Operating margins of 6.1% confirm this. The 29.3% net profit CAGR looks impressive but started from a depressed ₹175 Cr base in FY16 and is increasingly propped by Coromandel dividends, not operational excellence. A business whose earnings quality depends on a subsidiary's generosity is not a compounder — it's a holding company with complexity I would not want to pay up for.\n\nThe honest case for EIDPARRY is a NAV discount play. Coromandel International, which has ROIC well above 20% in specialty fertilizers, is worth multiples of what EIDPARRY's market cap implies for that stake alone. The D/E of 0.18, Murugappa's conservative financial culture, and a forward P/E of 11.4x create a reasonable margin of safety. But I will not confuse cheap with good. Accelerating capex (₹1,046 Cr in FY25) and a CWIP pile of ₹967 Cr without disclosed return hurdles is exactly the kind of capital allocation opacity that should make any investor nervous. A fair price for a mediocre business is still just a mediocre investment.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "good",
+      "financial_health": "adequate",
+      "valuation": "undervalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 52903,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08928705,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11681,
+      "cache_read_input_tokens": 9181,
+      "output_tokens": 2848,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11681,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 419,
+          "cache_read_input_tokens": 9181,
+          "cache_creation_input_tokens": 2500,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2500
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

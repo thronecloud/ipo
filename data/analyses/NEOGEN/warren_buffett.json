@@ -1,0 +1,70 @@
+{
+  "symbol": "NEOGEN",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T18:22:54.089177Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Neogen is a capital-hungry specialty chemicals business drowning in debt and priced at 150x earnings despite a 5.59% ROE and six consecutive years of negative free cash flow. The business is destroying capital, not creating it — the antithesis of what I look for.",
+    "key_strengths": [
+      "Revenue CAGR of 25.6% over 9 years shows genuine demand for bromine/lithium chemistry products",
+      "Exports to 33 countries with diversified end-markets including battery materials — a real secular growth vector",
+      "Gross margin of 45.85% suggests some pricing power at the product level"
+    ],
+    "key_risks": [
+      "Debt explosion: borrowings surged from 409 Cr (FY24) to 1,132 Cr (FY25), pushing D/E to 1.41 — in a cyclical, capital-intensive business, this is dangerous",
+      "Finance costs (48 Cr) nearly equal net profit (35 Cr) and are growing at 28.6% CAGR — interest burden is structurally eroding earnings",
+      "FCF has been negative every single year since at least FY20 (cumulative ~-766 Cr), with 318 Cr capex in FY25 and 335 Cr CWIP still to be absorbed"
+    ],
+    "red_flags": [
+      "ROE of 5.59% is less than a fixed deposit — the business earns far below its cost of capital",
+      "Net profit stagnated/declined: 50 Cr → 36 Cr → 35 Cr (FY23-25) while revenue grew — profits are being swallowed by interest and capex depreciation",
+      "P/E of 150x (forward 65.8x) for a company with declining earnings and 1.41 D/E offers zero margin of safety",
+      "Other income turned sharply negative (-10 Cr in FY25) after masking weak core earnings in prior years"
+    ],
+    "detailed_analysis": "Neogen fails my most basic tests. I demand a durable competitive advantage translated into high returns on equity — Neogen delivers 5.59% ROE. That means for every 100 rupees of shareholder capital employed, the business earns less than 6 rupees. Meanwhile, it has taken on debt at rates that cost it 48 Cr in interest on a business earning only 35 Cr in net profit. The finance cost CAGR of 28.6% is outrunning revenue growth of 25.6%, and the company's net profit has been flat-to-declining for three years while the balance sheet nearly doubled. This is the opposite of a self-funding compounding machine.\n\nThe capex story — 303 Cr in FY24, 318 Cr in FY25, and 335 Cr still sitting in CWIP — is the bull case, but it requires massive faith: faith that these assets will generate adequate returns, faith that debt can be serviced and refinanced, and faith that specialty chemical pricing holds up. At 150x trailing P/E and EV/EBITDA of 39x, the market is pricing in perfection. I don't pay for hope. A business that has never generated positive free cash flow over a sustained period, funded by debt that now exceeds total equity, trading at one of the most extreme valuations I've seen — I would not touch this at any price remotely near current levels.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 45640,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07842645,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11005,
+      "cache_read_input_tokens": 9129,
+      "output_tokens": 2294,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11005
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 460,
+          "cache_read_input_tokens": 9129,
+          "cache_creation_input_tokens": 1876,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1876,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

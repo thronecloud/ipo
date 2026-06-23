@@ -1,0 +1,68 @@
+{
+  "symbol": "JUSTDIAL",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T17:52:02.704966Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Just Dial trades below book value (P/B 0.92) with a likely negative enterprise value — the cash/investment pile is larger than the market cap minus debt — making it an intriguing asset play rather than a wonderful business. However, a 3.63% ROE is disqualifying for Berkshire; the core search moat has been hollowed out by Google and vertical apps, and revenue has compounded at only 6.1% over nine years.",
+    "key_strengths": [
+      "Near-zero debt (D/E 0.02) and a massive investment corpus that creates a negative EV — investors are essentially getting the operating business for free",
+      "Asset-light model with rising free cash flow (INR 305 Cr in FY25, up from 24 Cr in FY22) and positive OCF in each of the last 5 years",
+      "Reliance Retail's 74.15% ownership provides strategic distribution muscle via the Jio ecosystem and financial backstop"
+    ],
+    "key_risks": [
+      "Moat has structurally eroded — Google, Zomato, Swiggy, and vertical platforms have displaced Just Dial as the first-stop local search tool for most Indians",
+      "ROE of 3.63% signals the business cannot earn a decent return on its capital; a large portion of 'earnings' (INR 305 Cr other income in FY24) is investment income, not operating power",
+      "JD Mart B2B marketplace faces entrenched competition from IndiaMart/TradeIndia — speculative adjacency with no proven monetization scale"
+    ],
+    "red_flags": [
+      "Trailing P/E of 33.5x versus Forward P/E of 7.69x — a gap that large implies FY25 net profit (INR 584 Cr) contains large non-recurring or non-operating items; core business earnings appear far lower",
+      "Operating Income in FY25 reported at INR 675 Cr exceeds EBITDA of INR 369 Cr — an accounting anomaly that demands scrutiny of what is being classified as 'operating'"
+    ],
+    "detailed_analysis": "Just Dial is effectively a liquidation-grade value play dressed up as a growth story. At INR 550 the market cap is INR 4,675 Cr against total equity of INR 4,606 Cr (P/B 0.92), and the enormous investment portfolio — evidenced by INR 305 Cr of other income in FY24 alone and a negative EV/EBITDA of -3.06x — means the operating business is being handed to buyers at close to zero cost. That is genuinely interesting from a Ben Graham standpoint. Debt is negligible at INR 100 Cr, capex is almost nonexistent (INR 6 Cr in FY25 on INR 1,142 Cr revenue), and operating margins of 25% are respectable for a software/platform business.\n\nThe problem, and it is a serious one by my standards, is that the wonderful economics stop there. ROE of 3.63% — well below the 15% I insist upon — reveals a business that cannot deploy its enormous equity base productively. Revenue has grown at a pedestrian 6.1% CAGR over nine years. The competitive moat has all but disappeared: Google Maps, Zomato, and dozens of category killers have made Just Dial's general-purpose directory redundant for most searches. Reliance's ownership introduces strategic optionality — integration with JioMart or the Jio payments stack could re-ignite the business — but that is speculative, not a durable advantage I can underwrite today. I would neither buy aggressively nor sell a small position; this is a HOLD for those already owning it as a deep-value asset play, not a new purchase at Berkshire.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "undervalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 73442,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.10944255,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 12553,
+      "cache_read_input_tokens": 9116,
+      "output_tokens": 3975,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 12553
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 572,
+          "cache_read_input_tokens": 9116,
+          "cache_creation_input_tokens": 3437,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 3437,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "BECTORFOOD",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T16:45:16.819481Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "BECTORFOOD fails both legs of the Magic Formula — earnings yield of ~4.2% (EBIT INR 252 Cr / EV ~INR 5,999 Cr) is far below the 6% floor, and ROCE of 18.1% is adequate but not exceptional. At EV/EBITDA 25x and P/E 42x, you're paying a premium price for a middling-moat packaged foods business with deteriorating free cash flow.",
+    "key_strengths": [
+      "Revenue CAGR of 15.3% and net profit CAGR of 21.8% over 7 years shows consistent compounding",
+      "Low leverage (D/E 0.15) with strong promoter holding (49%) — solid governance signal",
+      "OCF positive all 5 years (peak INR 164 Cr in FY23), indicating underlying operational health"
+    ],
+    "key_risks": [
+      "FCF has turned sharply negative — FY24: -INR 61 Cr, FY25: -INR 97 Cr — as capex surged to INR 259 Cr vs OCF of INR 161 Cr; capital intensity is rising fast",
+      "Operating margin of only 8.6% leaves little buffer; thin margins in competitive biscuits/bakery provide weak pricing power against input cost shocks",
+      "Valuation is punishing — earnings yield of 4.2% means the market is pricing in high perpetual growth that may not materialize in a commodity-adjacent food category"
+    ],
+    "red_flags": [
+      "Negative FCF for two consecutive years (FY24 and FY25) driven by capex 1.6x operating cash flow in FY25",
+      "CWIP jumped from INR 49 Cr (FY23) to INR 176 Cr (FY25) — large unproductive capital sitting on balance sheet",
+      "Other income growing at 46.5% CAGR — disproportionate contribution to reported profit, potentially masking weak core earnings quality"
+    ],
+    "detailed_analysis": "By the Magic Formula, BECTORFOOD is expensive and merely adequate — a losing combination. Earnings yield (EBIT/EV) computes to ~4.2% (INR 252 Cr EBIT ÷ ~INR 5,999 Cr EV), well below the 6% floor I require as a minimum and far from the 12–15% range that signals a genuine bargain. ROCE of 18.1% is decent but short of the 20–25%+ threshold that marks a truly high-quality business with durable competitive advantage. You need both metrics to screen well; here, neither does.\n\nThe capital intensity story is worsening materially. Capex has ballooned from INR 60 Cr (FY22) to INR 259 Cr (FY25), now running 1.6x operating cash flow and generating two straight years of negative FCF (-INR 61 Cr and -INR 97 Cr). The Magic Formula rewards businesses that generate high returns on *existing* capital without needing to continuously reinvest at the same pace — BECTORFOOD is doing the opposite. Until these capacity additions translate into meaningfully higher EBIT and ROIC, the investment case simply doesn't meet the bar. Pass.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 46019,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0808659,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11022,
+      "cache_read_input_tokens": 8898,
+      "output_tokens": 2457,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11022
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 370,
+          "cache_read_input_tokens": 8898,
+          "cache_creation_input_tokens": 2124,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2124,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "symbol": "IXIGO",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T17:46:48.140215Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "IXIGO trades at INR 179 against a Graham Number of approximately INR 23 (sqrt(22.5 × EPS ~1.35 × BV/share ~17.26)), meaning the investor pays nearly 8x intrinsic value by any defensible quantitative standard. With a P/E of 133x, P/B of 10.37x, and earnings that swung from losses as recently as FY2022 to thin profits today, there is no margin of safety whatsoever.",
+    "key_strengths": [
+      "Minimal leverage: D/E of 0.04 and net cash positive (cash INR 81 Cr vs debt INR 40 Cr)",
+      "Recent free cash flow generation is real: FCF INR 118 Cr in FY2025, OCF INR 122 Cr",
+      "Asset-light model with high gross margins (81.7%) limiting capital destruction risk"
+    ],
+    "key_risks": [
+      "Ruinous valuation: P/E 133x, P/B 10.37x — both exceed my limits by 9–10x; any earnings disappointment collapses the price",
+      "Earnings record is neither long nor consistent: losses in 2019, 2020, and 2022; only 3 profitable years in 7, violating my 5-consecutive-year requirement",
+      "Net profit actually declined FY2024→FY2025 (INR 73 Cr → 60 Cr) despite strong revenue growth — operating leverage is not materialising"
+    ],
+    "red_flags": [
+      "Price is 7.8x the Graham Number (~INR 23 vs INR 179 market price)",
+      "No dividend history — shareholders receive no tangible cash return",
+      "FII ownership at 64% creates vulnerability to foreign capital flight",
+      "Other income of INR 23–39 Cr is propping up reported net profit — strip it out and operating earnings are far thinner (operating income FY2025: INR 72 Cr vs net profit INR 60 Cr only after adding INR 23 Cr other income)"
+    ],
+    "detailed_analysis": "From the perspective of the intelligent investor, IXIGO is a speculation dressed in the language of growth. The numbers tell the story plainly: at INR 179, the buyer pays 133 times earnings and 10.37 times book value. My upper limits are 15x earnings and 1.5x book — both are violated by a factor approaching an order of magnitude. The Graham Number of roughly INR 23 exposes the full gap. Mr. Market is pricing in years of compounding success that has not yet been demonstrated; the disciplined investor buys facts, not promises.\n\nThe earnings history disqualifies the stock on its own: losses in four of the last seven years, a profit dip in FY2025 despite 39% revenue growth, and an operating margin of only 7% suggest the business model has not yet proven it can convert scale into durable, growing earnings. The sole quantitative comfort is the clean balance sheet (D/E of 0.04), but a strong fortress wall cannot justify paying castle-prices for a structure still under construction. I find no margin of safety here at any reasonable scenario and must unequivocally avoid this security.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "insufficient_data",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 47289,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.06941459999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8662,
+      "cache_read_input_tokens": 10877,
+      "output_tokens": 2244,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 8662
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 401,
+          "cache_read_input_tokens": 8827,
+          "cache_creation_input_tokens": 1885,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1885,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

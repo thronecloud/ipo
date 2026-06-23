@@ -1,0 +1,69 @@
+{
+  "symbol": "KPIGREEN",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T17:58:38.482849Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "KPI Green Energy is a fast-growing Indian renewable IPP with impressive top-line momentum, but it is a structurally capital-hungry business with persistently negative free cash flow and rising debt — the antithesis of what I look for. At 20.6x P/E the price is not absurd, but I don't pay fair prices for businesses that consume capital indefinitely without generating owner earnings.",
+    "key_strengths": [
+      "Exceptional revenue growth — 92.6% CAGR over 6 years; net profit compounded at 81.8%",
+      "Decent profitability metrics: ROE 19.7%, ROCE 17.5%, operating margin 30.6%",
+      "India's renewable energy mandate provides a multi-decade demand runway and regulatory tailwind"
+    ],
+    "key_risks": [
+      "Chronically negative FCF: burned -1,297 Cr in FY25 alone; FCF negative in 5 of 5 years shown",
+      "Debt/Equity of 0.88 (borrowings surged from 1,036 to 2,533 Cr in a single year) — highly leveraged for a utility",
+      "No durable economic moat — power is a commodity; IPPs compete on PPA tariffs with zero pricing power"
+    ],
+    "red_flags": [
+      "FCF of -1,297 Cr in FY25 — growth entirely funded by external capital (1,807 Cr financing CF)",
+      "Borrowings nearly doubled YoY to 2,533 Cr; CWIP jumped to 709 Cr signaling further capex commitments",
+      "Business model requires perpetual capital recycling — incompatible with compounding owner earnings"
+    ],
+    "detailed_analysis": "KPI Green Energy is essentially a capital-allocation machine that must borrow or raise equity to grow — the exact opposite of the toll-booth businesses I love. Free cash flow has been negative every single year, reaching -1,297 Cr in FY25, entirely because the capex bill (-1,505 Cr in FY25) dwarfs operating cash generation. The balance sheet ballooned from 2,436 Cr to 6,164 Cr in one year, financed by 1,807 Cr of net new financing. A D/E of 0.88 is uncomfortable for any business; in a rate-sensitive, regulated utility it introduces real refinancing risk.\n\nThe reported earnings look attractive — 20.6x P/E, 19.7% ROE — but these numbers flatter the reality. ROE is partially manufactured by leverage, and reported profits are not the same as cash profits. The company has no pricing power (power is bid at auction), limited switching costs outside captive clients, and faces dozens of equally aggressive peers in India's solar/wind space. Charlie and I could not identify a durable moat here, and without a moat, today's impressive growth rates will inevitably revert to the sector average as competition intensifies and capital costs rise.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 43719,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07736655,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10891,
+      "cache_read_input_tokens": 8871,
+      "output_tokens": 2257,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10891
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 270,
+          "cache_read_input_tokens": 8871,
+          "cache_creation_input_tokens": 2020,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2020,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

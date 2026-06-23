@@ -1,0 +1,69 @@
+{
+  "symbol": "AHLUCONT",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T16:16:52.817442Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "AVOID",
+    "investment_thesis": "Ahluwalia Contracts is a conservatively financed EPC company (D/E of 0.04) with decent revenue growth, but paper-thin operating margins of 6.59% and sub-15% ROE reveal a commodity-like construction business with no durable moat. At 20.9x P/E on what appear to be near-peak earnings (FY24 was distorted by INR 232 Cr one-time other income), the price does not compensate for the structural weakness.",
+    "key_strengths": [
+      "Fortress balance sheet: D/E of 0.04, net cash positive (cash INR 318 Cr vs debt INR 76 Cr)",
+      "Consistent operating cash flow — positive all 5 years, INR 359 Cr in FY25; revenue CAGR of 14.1% over 9 years",
+      "High promoter ownership (55.32%) and strong institutional interest (DII 22.3% + FII 13.7%) signal alignment and credibility"
+    ],
+    "key_risks": [
+      "No economic moat: construction is a competitive-bidding, commoditized business with no pricing power and easy substitution",
+      "Dangerously thin operating margins (6.59%) leave virtually no buffer for cost overruns, material inflation, or project delays",
+      "Rising capex (INR 189 Cr in FY25 vs 28 Cr in FY22) is increasing capital intensity, pressuring free cash flow quality"
+    ],
+    "red_flags": [
+      "FY24 net profit of INR 375 Cr was massively inflated by INR 232 Cr 'other income' — normalized PAT is closer to INR 140-170 Cr, making the 20.9x P/E understated on true earnings power",
+      "EBITDA declined from INR 406 Cr (FY24) to INR 392 Cr (FY25) and operating income fell from 388 to 342 — potential margin compression already underway",
+      "ROE of only 11.9% is below my minimum 15% threshold, indicating the business does not earn exceptional returns on shareholder capital"
+    ],
+    "detailed_analysis": "Ahluwalia Contracts runs a perfectly respectable construction business, but respectable is not wonderful. With a 6.59% operating margin, it competes in a world where a few bad contracts, a spike in steel prices, or a government payment delay can slash profitability overnight — as evidenced by net profit collapsing from INR 117 Cr (FY19) to INR 64 Cr (FY20). The near-zero debt (D/E 0.04) is commendable and protects against insolvency, but it cannot manufacture a moat where none exists. I need businesses that can raise prices without losing customers; EPC contractors win work by bidding lowest.\n\nThe valuation picture is further muddied by the INR 232 Cr spike in \"other income\" in FY24, which artificially inflated net profit to INR 375 Cr. Strip that out and normalize earnings, and the P/E is closer to 30-35x — not a bargain for a single-digit margin cyclical. The forward P/E of 17.1x is more palatable, but only if management can meaningfully expand margins, which decades of history in Indian construction suggest is structurally difficult. I'd rather buy a toll road, a consumer brand, or an insurance company — businesses where the economics compound quietly year after year. Ahluwalia builds fine structures; it just doesn't build lasting shareholder wealth at this price.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 57463,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08100645,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11141,
+      "cache_read_input_tokens": 9029,
+      "output_tokens": 2434,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11141,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 350,
+          "cache_read_input_tokens": 9029,
+          "cache_creation_input_tokens": 2112,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2112
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

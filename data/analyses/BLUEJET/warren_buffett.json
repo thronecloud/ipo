@@ -1,0 +1,69 @@
+{
+  "symbol": "BLUEJET",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-19T05:56:16.129183Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Blue Jet Healthcare is a genuinely high-quality specialty pharma business with an extraordinary ROE of 52%, ROCE of 57%, near-zero debt, and 52.9% gross margins — the economics of a niche contrast media intermediate producer with limited global competition are excellent. However, revenue was essentially flat from FY2020–FY2024 before jumping 44% in FY2025, and OCF collapsed to INR 46 Cr that same year despite a profit surge to INR 305 Cr, raising questions about the sustainability and cash quality of the apparent breakout.",
+    "key_strengths": [
+      "ROE of 52% and ROCE of 57% with Debt/Equity of 0.02 — the rarest combination of quality and balance sheet strength",
+      "Gross margin of 52.9% and operating margin of 21.3% reflect genuine niche pricing power in contrast media intermediates",
+      "Essentially debt-free with growing equity base (202 Cr in 2020 to 1,133 Cr in 2025) — strong intrinsic value accretion"
+    ],
+    "key_risks": [
+      "Revenue and profits were flat for four years (FY2020–FY2024) before a FY2025 jump — may reflect a one-time supply windfall (global contrast media shortage), not a structural step-up",
+      "OCF collapsed from INR 241 Cr (FY2024) to INR 46 Cr (FY2025) despite profits doubling — large working capital build raises earnings quality concerns",
+      "FII holding of only 0.89% suggests limited institutional diligence; the business is not well understood by markets"
+    ],
+    "red_flags": [
+      "OCF of only 46 Cr vs net profit of 305 Cr in FY2025 — a 6:1 earnings-to-cash divergence demands explanation",
+      "FCF turned negative in FY2025 (-34 Cr) for the first time — capex of INR 80 Cr and working capital squeeze combined",
+      "If FY2025 profit was driven by a non-recurring contrast media supply disruption, the normalised P/E is closer to 40–45x, not 24x"
+    ],
+    "detailed_analysis": "Blue Jet's underlying business architecture is genuinely attractive — a niche specialty chemicals company serving the global pharma supply chain with products (iodine-based contrast media intermediates, CDMO services) that few can replicate due to chemistry expertise and regulatory approvals. The capital efficiency metrics are among the best I've seen in Indian healthcare. This is not a mediocre business.\n\nBut the FY2025 numbers require careful scrutiny before I would act. Profits near-doubled while operating cash flow fell 81% — that divergence almost certainly reflects either aggressive revenue recognition, large receivables build (CDMO milestone billing), or both. Until the cash conversion normalises, I cannot underwrite the FY2025 earnings as sustainable. At 24x forward P/E on potentially peak earnings, the margin of safety is insufficient. I would watch for two more quarters of strong OCF before upgrading to a buy.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "excellent",
+      "valuation": "fair",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 142486,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.20116815000000002,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 21805,
+      "cache_read_input_tokens": 15218,
+      "output_tokens": 7655,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 21805,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 895,
+          "cache_read_input_tokens": 15218,
+          "cache_creation_input_tokens": 6587,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 6587
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

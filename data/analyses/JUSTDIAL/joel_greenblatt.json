@@ -1,0 +1,69 @@
+{
+  "symbol": "JUSTDIAL",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T17:57:16.267604Z",
+  "analysis": {
+    "score": 7,
+    "recommendation": "BUY",
+    "investment_thesis": "Just Dial's negative enterprise value (~-INR 1,130 Cr) means you are literally being paid INR 1,130 Cr to own a business generating INR 289 Cr of core EBIT and INR 305 Cr of free cash flow — the Magic Formula's dream scenario. At P/B of 0.92x and near-zero capex (INR 6 Cr in FY2025), the asset-light operating model ranks near the top decile on earnings yield despite modest revenue growth.",
+    "key_strengths": [
+      "Negative EV (~-INR 1,130 Cr): Cash/investments of ~INR 5,900 Cr exceed Market Cap (INR 4,675 Cr) + Debt (INR 100 Cr) — buying core business for free",
+      "Exceptional FCF conversion: INR 305 Cr FCF on INR 311 Cr OCF with only INR 6 Cr capex — near 100% conversion, hallmark of a high-ROIC asset-light business",
+      "Strong operational recovery: Core EBITDA surged from INR 26 Cr (FY2022) to INR 369 Cr (FY2025), 25.35% operating margin on INR 1,142 Cr revenue"
+    ],
+    "key_risks": [
+      "Revenue growth only 6.1% 9-year CAGR — Google Maps, Swiggy, and IndiaMART are eroding local-search moat without pricing power evidence",
+      "Earnings quality: ~INR 305 Cr 'Other Income' (investment returns) dominates reported net profit of INR 584 Cr; P/E of 33.5x on core operating earnings reveals the real operational multiple",
+      "Reliance (74.15%) controls capital allocation — excess INR 5,900 Cr investment portfolio may never be returned to minority shareholders via buybacks/dividends"
+    ],
+    "red_flags": [
+      "Operating Income (INR 675 Cr FY2025) vastly exceeds EBITDA (INR 369 Cr) — data inconsistency or large non-recurring item inflating headline EBIT; true core EBIT is likely INR 289 Cr (25.35% margin × revenue)",
+      "Reported ROE 3.63% and ROCE 4.81% — capital drag from giant investment float masks operational quality and signals management is NOT reinvesting at high rates",
+      "FY2022 near-zero EBITDA (INR 26 Cr) shows the core business has limited pricing power when competition intensifies — not a Buffett-style durable moat"
+    ],
+    "detailed_analysis": "The Magic Formula hinges on two numbers: Earnings Yield (EBIT/EV) and Return on Capital. For Just Dial, EV/EBITDA of -3.06x implies an Enterprise Value of approximately -INR 1,130 Cr — meaning the company holds roughly INR 5,900 Cr in cash and financial investments against a market cap of only INR 4,675 Cr. With core EBIT of ~INR 289 Cr (operating margin 25.35% × INR 1,142 Cr revenue), the earnings yield on this negative EV is theoretically infinite. On ROIC: strip out the passive investment portfolio and you have a nearly zero-capex digital directory business (INR 6 Cr capex in FY2025) generating INR 305 Cr FCF — operational ROIC is exceptional, though it is obscured by Reliance parking a massive treasury on the books post-2021 acquisition.\n\nThe business quality case is more nuanced. Revenue CAGR of 6.1% over 9 years is unimpressive for an internet-content business, and the FY2022 EBITDA collapse to INR 26 Cr reveals how thin the competitive moat truly is. The \"Other Income\" line (~INR 305 Cr in FY2024) now rivals core operating profit, meaning investors are effectively buying a fixed-income fund with a free local-search business attached. Greenblatt's formula mechanically ranks this as a top-decile cheap stock, and the forward P/E of 7.69x (vs. trailing 33.5x on core earnings) confirms the valuation anomaly. The key risk is whether Reliance will ever unlock the trapped value — at 74.15% ownership, minority investors depend entirely on the promoter's capital-allocation intent.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "undervalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 116012,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.15340035,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 15005,
+      "cache_read_input_tokens": 9142,
+      "output_tokens": 6292,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 15005
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 473,
+          "cache_read_input_tokens": 9142,
+          "cache_creation_input_tokens": 5863,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 5863,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

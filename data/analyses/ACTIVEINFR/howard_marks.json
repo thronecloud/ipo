@@ -1,0 +1,69 @@
+{
+  "symbol": "ACTIVEINFR",
+  "persona": "howard_marks",
+  "persona_display_name": "Howard Marks",
+  "analyzed_at": "2026-04-20T11:14:03.778850Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Active Infra is a tiny, recently-listed civil construction micro-cap whose revenue inflected from ₹1 Cr to ₹90 Cr in three years and whose 2025 equity jump (₹27→₹116 Cr) reflects IPO proceeds, not organic compounding. At 26x P/E for a sub-scale, cyclical, working-capital-heavy contractor with FCF collapsing to ₹2 Cr in FY25, the price already reflects heroic assumptions with zero margin of safety.",
+    "key_strengths": [
+      "Deleveraged post-IPO: borrowings down ₹109→60 Cr while equity rose to ₹116 Cr",
+      "EBITDA margin expanding (₹13→28 Cr) with ROCE at 15.5%",
+      "High promoter skin-in-the-game at 72.38%"
+    ],
+    "key_risks": [
+      "FY25 OCF crashed to ₹5 Cr and FCF to ₹2 Cr despite ₹13 Cr reported profit — earnings quality deteriorating",
+      "Revenue flat/declining in FY25 (₹97→90 Cr) — the hyper-growth story is already cracking",
+      "Civil construction is cyclical, WC-intensive, and unproven through a downturn at this scale"
+    ],
+    "red_flags": [
+      "Classic SME/recent-IPO pattern: capital raised at peak optimism, flat top-line immediately after",
+      "Operating CF (₹5 Cr) vastly below reported PAT (₹13 Cr) in FY25",
+      "Total assets doubled to ₹220 Cr in one year — receivables/inventory build likely"
+    ],
+    "detailed_analysis": "Second-level thinking: the market sees \"construction micro-cap with 348% 3-yr revenue CAGR and 15.5% ROCE\" and pays 26x earnings. But that CAGR is an artifact of a ₹1 Cr base in 2022, and the truth is FY24→FY25 revenue actually contracted from ₹97 Cr to ₹90 Cr. Meanwhile OCF collapsed from ₹32 Cr to ₹5 Cr and investing outflows continued — a textbook working-capital-driven contractor where reported profit diverges from cash. The ₹63 Cr of financing inflow in FY25 is the IPO, which mechanically boosted book value but doesn't change the underlying economics.\\n\\nWhere are we in the cycle? Indian SME/micro-cap construction is firmly in the euphoria quadrant — IPOs sold at cycle peaks when optimism is highest, exactly Marks's warning. A ₹267 Cr market cap for ₹13 Cr PAT with decelerating revenue and deteriorating cash conversion offers no margin of safety; a mild sector slowdown or a single large receivable write-off could halve earnings. The downside floor is arguably book value (~₹73/share vs ₹170 price), implying 55%+ permanent loss risk in a stress scenario. Risk/reward is decidedly asymmetric to the downside. Pass.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 24670,
+    "model_used": "opus",
+    "total_cost_usd": 0.10265025,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 9819,
+      "cache_read_input_tokens": 14153,
+      "output_tokens": 1367,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9819,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 11271,
+          "cache_creation_input_tokens": 1430,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1430
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

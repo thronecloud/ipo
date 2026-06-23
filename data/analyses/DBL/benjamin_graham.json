@@ -1,0 +1,70 @@
+{
+  "symbol": "DBL",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T17:03:51.799156Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Dilip Buildcon trades near book value (P/B 0.98) and below 15x trailing earnings, which superficially satisfies two Graham filters, but the debt/equity of 1.71 and interest coverage of roughly 1.7x make this a highly leveraged speculation, not a sound investment. Losses in FY2022 (-₹550 Cr) and FY2023 (-₹1 Cr) break the required streak of consecutive positive earnings, and persistently negative free cash flow signals that stated profits are not translating into real owner cash.",
+    "key_strengths": [
+      "P/B of 0.98 trades at a slight discount to book value — the one genuine Grahamian comfort here",
+      "Trailing P/E of 11.4 is below the 15x ceiling, and revenue has compounded at 11.6% over nine years",
+      "Operating cash flow was positive all five years (₹44–₹2,845 Cr range), showing the business does generate gross operating cash"
+    ],
+    "key_risks": [
+      "Debt/equity of 1.71 vastly exceeds my 0.5 ceiling; borrowings surged from ₹7,240 Cr to ₹10,375 Cr in a single year (FY2025)",
+      "Interest coverage ≈ 1.7x (Operating Income ₹2,159 Cr ÷ Finance Costs ₹1,249 Cr) — well below the 3.5x minimum I require",
+      "Earnings are unreliable: two loss years in the last five, a forward P/E of 26.9 vs. trailing 11.4 implies the market expects a sharp profit decline, and ₹417 Cr of 'Other Income' props up FY2025's ₹840 Cr net profit"
+    ],
+    "red_flags": [
+      "Free cash flow is negative every single year (-₹4,134 Cr in FY2025) — profits are an accounting construct here, not cash in the owner's pocket",
+      "Net losses in FY2022 and FY2023 destroy the 5-year consecutive positive earnings test that is non-negotiable in my framework",
+      "Debt resurged sharply in FY2025 after deleveraging (FY2023 borrowings ₹6,658 Cr → FY2025 ₹10,375 Cr), signalling the balance sheet is structurally dependent on rolling credit",
+      "No dividend history mentioned — a company with this debt load has nothing left for shareholders"
+    ],
+    "detailed_analysis": "Dilip Buildcon passes only the most superficial of my quantitative screens. The Graham Number — √(22.5 × EPS ₹51.7 × BVPS ₹355) ≈ ₹643 — sits above the current price of ₹457, which would normally interest me. However, the Graham Number is predicated on stable, reliable earnings and a clean balance sheet. Neither condition is met. With debt/equity at 1.71, net borrowings of ₹10,375 Cr against equity of ₹5,772 Cr, and finance costs consuming ₹1,249 Cr against operating income of ₹2,159 Cr, the company is one bad contract cycle or rising interest rate environment away from repeating FY2022's ₹550 Cr loss. A margin of safety cannot exist when the company's solvency depends on continuous refinancing.\n\nThe cash flow picture is equally disqualifying. Free cash flow has been negative in every reported year, reaching -₹4,134 Cr in FY2025 with capex of ₹4,265 Cr. In my experience, an enterprise whose book of infrastructure contracts demands perpetual external financing is not a business generating owner earnings — it is a machine that converts shareholder equity and bank credit into fixed assets for the government. The forward P/E of 26.9 versus trailing 11.4 tells me that analysts expect the ₹840 Cr FY2025 profit — itself heavily assisted by ₹417 Cr of Other Income — to be unsustainable. For the disciplined investor, there is insufficient margin of safety at any price when the debt burden, earnings volatility, and cash burn are this severe.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 63316,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08536365,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9799,
+      "cache_read_input_tokens": 11228,
+      "output_tokens": 3016,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9799
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 399,
+          "cache_read_input_tokens": 9178,
+          "cache_creation_input_tokens": 2671,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2671,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "INDIAGLYCO",
+  "persona": "howard_marks",
+  "persona_display_name": "Howard Marks",
+  "analyzed_at": "2026-04-18T17:55:53.454310Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "India Glycols is a bio-based chemicals business undergoing a heavy capex expansion (INR 760 Cr in FY2025 alone), with debt/EBITDA crossing 3.5x and four consecutive years of negative FCF — yet the market prices it at 24x P/E as if the cycle and expansion risks don't exist. Until the capex cycle converts to positive FCF, there is no margin of safety at current prices.",
+    "key_strengths": [
+      "EBITDA growing faster than revenue (12.9% vs 5.5% CAGR), demonstrating genuine operating leverage and margin expansion toward 14.5%",
+      "Bio-based green chemistry positioning offers a structural ESG tailwind as regulators pressure petroleum-derived ethylene glycol",
+      "High promoter holding (59.63%) with operating CF positive all 5 years — the core business does generate cash before capex"
+    ],
+    "key_risks": [
+      "Debt/EBITDA has crossed 3.5x (borrowings INR 2,055 Cr vs EBITDA INR 545 Cr) and jumped 52% in a single year — dangerously exposed to a rate or demand shock",
+      "Free cash flow negative four years running (FY2022–2025: -264, -109, -103, -391 Cr) — the business is consuming capital faster than it earns; FCF yield is effectively negative",
+      "Revenue CAGR of only 5.5% over nine years barely clears inflation; chemicals is a cyclical, commodity-adjacent business and the 24x P/E already prices in a smooth expansion narrative"
+    ],
+    "red_flags": [
+      "Finance costs rose from INR 83 Cr (FY2021) to INR 164 Cr (FY2025) — interest burden is doubling while net profit is only INR 231 Cr, leaving thin coverage",
+      "FY2022 net profit spike (INR 340 Cr) driven by INR 260 Cr of other income — a one-off that flatters the earnings history and may distort trailing P/E multiples",
+      "CWIP jumped to INR 267 Cr in FY2025 with no clear project timeline disclosed — investors are being asked to fund capacity with uncertain returns"
+    ],
+    "detailed_analysis": "The central question Howard Marks always asks: what does the price already reflect? At INR 974, the market is paying 24x earnings and ~15x EV/EBITDA (EV ~INR 8,430 Cr on my calculation) for a cyclical chemicals company with 11% ROE and 5.5% nine-year revenue CAGR. That pricing assumes the ongoing capex (INR 553 Cr FY2024, INR 760 Cr FY2025) will deliver handsome incremental returns in a timely manner, margins will continue expanding, and debt will be comfortably serviced. The consensus appears to be buying the \"green chemistry\" story without demanding a margin of safety for the execution risk.\n\nThe stress scenario is the real test. If chemicals demand softens even modestly — as it did in FY2020-21 — EBITDA could compress toward INR 380-400 Cr. Against INR 1,892 Cr of debt and INR 164 Cr in annual finance costs, that leaves very little room before covenant pressure or equity dilution becomes necessary. The company has no meaningful cash cushion (INR 7 Cr in FY2025). With FCF at -INR 391 Cr in FY2025, the business is entirely dependent on continued debt financing to fund its expansion — precisely the wrong posture to hold heading into any credit tightening. The risk/reward is unfavorable: limited upside if the capex pays off perfectly; meaningful downside if execution slips or the cycle turns.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 70063,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0929691,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9954,
+      "cache_read_input_tokens": 11292,
+      "output_tokens": 3483,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9954
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 753,
+          "cache_read_input_tokens": 9238,
+          "cache_creation_input_tokens": 2770,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2770,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

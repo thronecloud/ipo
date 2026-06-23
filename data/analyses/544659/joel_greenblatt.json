@@ -1,0 +1,69 @@
+{
+  "symbol": "544659",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-20T11:06:39.876506Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Stanbik Agro fails the Magic Formula on the quality dimension — ROE of 0.38% implies near-zero return on capital, which disqualifies it regardless of price. A P/E of 11.9 is not cheap enough to compensate for a commodity-trading business earning essentially nothing on its asset base.",
+    "key_strengths": [
+      "P/E of 11.9 is moderate, not extreme (earnings yield ~8.4%)",
+      "Promoter skin-in-the-game at 98.92%",
+      "Micro-cap with some theoretical room to re-rate if operations scale"
+    ],
+    "key_risks": [
+      "ROE of 0.38% signals no competitive moat and terrible capital productivity",
+      "Agri-commodity wholesaling is a low-margin, price-taker business",
+      "Incorporated 2021 — no multi-year track record of high ROIC"
+    ],
+    "red_flags": [
+      "ROE 0.38% — effectively destroys capital vs. risk-free rate of ~7%",
+      "Promoter holding 98.92% = near-zero float, illiquid, governance risk",
+      "Market cap INR 44.6 Cr suggests SME-tier disclosures and shallow diligence"
+    ],
+    "detailed_analysis": "The Magic Formula ranks companies on two axes: earnings yield (cheap) and return on capital (good). Stanbik Agro fails decisively on the second. An ROE of 0.38% is a catastrophic number — it is not a business earning high returns on incremental capital; it is a business barely generating any return at all. Even if I cannot compute EBIT/Invested Capital directly, an ROE this low makes it mathematically impossible for ROIC to be attractive. Agri-commodity wholesaling is inherently a thin-margin, working-capital-heavy business with no pricing power, so the low return is structural rather than cyclical.\n\nOn the valuation side, a P/E of 11.9 yields an earnings yield of roughly 8.4% — decent but not \"bargain-bin,\" and certainly not cheap enough to rescue a business compounding at sub-1% on equity. Combine that with 98.92% promoter holding (essentially no public float, illiquid, prone to price manipulation) and a 2021 incorporation date (no cycle-tested track record), and this is exactly the kind of name the systematic Magic Formula screen would reject. Avoid.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 19035,
+    "model_used": "opus",
+    "total_cost_usd": 0.08935375000000001,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8843,
+      "cache_read_input_tokens": 13460,
+      "output_tokens": 1093,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8843,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10590,
+          "cache_creation_input_tokens": 1123,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1123
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

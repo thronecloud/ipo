@@ -1,0 +1,69 @@
+{
+  "symbol": "NAVA",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-22T16:33:42.505547Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Nava is a capital-intensive, coal-dependent conglomerate spanning ferro alloys, power, mining, and agribusiness — precisely the complex, cyclical structure I avoid. Improving margins (33% operating) and near-zero debt (D/E 0.16) are genuine positives, but at 22x earnings the stock offers no margin of safety for a business with no durable moat.",
+    "key_strengths": [
+      "Dramatic debt elimination: borrowings collapsed from ₹3,587 Cr (2022) to ₹414 Cr (2024), finance costs from ₹397 Cr to ₹26 Cr — a genuine balance sheet transformation",
+      "Strong integrated margins: 33% operating margin reflects captive coal power feeding ferro alloy smelters, a real cost advantage",
+      "Consistent free cash flow: positive OCF all 5 years, FCF of ₹1,305 Cr in FY25 on net profit of ₹1,434 Cr — earnings quality is high"
+    ],
+    "key_risks": [
+      "Coal secular risk: three coal power plants (614 MW India + 300 MW Zambia) face terminal demand destruction as renewables scale — not a 10-year moat",
+      "CWIP explosion: ₹50 Cr → ₹1,359 Cr in one year signals heavy capex underway; FCF will compress sharply and debt is already rebounding (₹893 Cr total debt FY25 vs ₹414 Cr FY24)",
+      "Conglomerate complexity with Zambia exposure: ferro alloys + power + mining + pharma distribution + avocado plantations across India/Zambia/US/UAE is not a business I can value with confidence"
+    ],
+    "red_flags": [
+      "Finance cost dropped from ₹275 Cr (FY24) to just ₹26 Cr (FY25) while borrowings remain ₹1,596 Cr — accounting treatment or timing warrants scrutiny",
+      "Other income volatile and significant: ranged ₹10–₹400 Cr annually, inflating headline profits in certain years (FY23: ₹400 Cr other income alongside ₹1,222 Cr net profit)",
+      "Net profit near-doubled in FY23 (₹573 Cr → ₹1,222 Cr) without proportionate revenue growth — suggests one-off gains rather than operational step-change"
+    ],
+    "detailed_analysis": "Nava Limited is the kind of business that looks attractive in a spreadsheet but makes me uncomfortable as an owner. The conglomerate spans ferro alloys, thermal power, coal mining, pharma distribution, and African avocado plantations — I simply cannot assess the competitive dynamics of all these segments simultaneously, and management's capital allocation across such disparate businesses is inherently hard to evaluate. The captive power-to-ferro-alloys integration is genuinely clever and explains the 33% operating margins, but these are commodity businesses where price cycles, not management brilliance, drive most of the earnings variance. The revenue dip from ₹2,946 Cr (FY19) to ₹2,548 Cr (FY21) illustrates the cyclical nature vividly.\n\nThe balance sheet story is the most compelling aspect: borrowings fell from ₹3,587 Cr to ₹414 Cr in just two years, funded by spectacular FY24 operating cash flow of ₹3,174 Cr. But that FY24 OCF surge appears to have included significant working capital or asset realization (financing outflow of -₹3,066 Cr in the same year), and the CWIP jump from ₹50 Cr to ₹1,359 Cr in FY25 tells me a major capital cycle is beginning again — likely the 300 MW Zambia expansion or new Indian capacity. At P/E 22x with capex ramping, coal facing secular headwinds, and Zambia adding political risk, I see no margin of safety. This is a fair business at a fair price — exactly what I do not buy.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 54413,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08460240000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11530,
+      "cache_read_input_tokens": 9303,
+      "output_tokens": 2571,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11530,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 418,
+          "cache_read_input_tokens": 9303,
+          "cache_creation_input_tokens": 2227,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2227
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "FIEMIND",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T17:18:56.276104Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Fiem Industries is a well-run, nearly debt-free auto-components supplier with a consistent 9-year earnings record — precisely the kind of business I admire — but the current price of INR 2,259 offers no margin of safety, trading at 2.67x my calculated Graham Number of ~INR 847. At P/B of 5.5 and P/E of 24.7, Mr. Market is charging a handsome premium for quality I insist on receiving at a discount.",
+    "key_strengths": [
+      "Nearly debt-free balance sheet: D/E of 0.06, borrowings collapsed from INR 127 Cr (2020) to INR 62 Cr (2025), finance cost a trivial INR 2 Cr",
+      "Unbroken 9-year earnings history with net profit CAGR of 15.3% and OCF positive in all 5 observable years — exactly the earnings stability I require",
+      "Exceptional interest coverage (Operating Income INR 322 Cr vs Finance Cost INR 2 Cr = ~160x) and growing cash hoard of INR 298 Cr"
+    ],
+    "key_risks": [
+      "Price far exceeds intrinsic value: Graham Number ~INR 847 vs market price INR 2,259 — a 167% premium with zero margin of safety",
+      "P/B of 5.50 is more than 3.5x my upper tolerance of 1.5; investors are paying INR 5.50 for every INR 1 of net assets with no asset-based protection on the downside",
+      "Auto-component supplier concentration risk: revenue is OEM-dependent (two-wheeler segment), leaving earnings vulnerable to any cyclical downturn — as 2020-21 demonstrated (net profit fell to INR 47 Cr from INR 75 Cr)"
+    ],
+    "red_flags": [
+      "P/B of 5.50 — more than 3.5x my absolute ceiling of 1.5",
+      "Capex accelerating sharply (INR 130 Cr in FY25 vs INR 19 Cr in FY22), compressing free cash flow to INR 132 Cr against net profit of INR 205 Cr — capital intensity is rising",
+      "No dividend yield data provided; at this price level any dividend would be negligible, depriving the defensive investor of a real cash return"
+    ],
+    "detailed_analysis": "By my strict quantitative standards, Fiem Industries fails on the two most important price-related filters: P/E of 24.7 (my ceiling is 15) and P/B of 5.50 (my ceiling is 1.5). The Graham Number — computed as √(22.5 × EPS ~INR 78 × BVPS ~INR 410) — yields approximately INR 847, meaning the stock trades at roughly 2.67x fair value. There is simply no margin of safety here. A business that is priced for perfection will punish any investor the moment conditions deteriorate, as they inevitably do in cyclical industries.\n\nThat said, I must give credit where it is due. The balance sheet is a model of conservative finance: debt has been systematically retired, cash has tripled to INR 298 Cr, and interest coverage is almost immeasurably comfortable. Nine consecutive years of positive earnings — surviving the COVID disruption of FY21 with a modest, not catastrophic, decline — satisfies my insistence on a proven earnings record. The ROCE of 27.8% demonstrates genuine capital efficiency. This is the right kind of business to own; it is simply the wrong price at which to buy it. I would wait patiently for Mr. Market's inevitable pessimism to bring the price closer to INR 850–1,000 before I would consider a position.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "excellent",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 41642,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.06957795,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8885,
+      "cache_read_input_tokens": 11134,
+      "output_tokens": 2194,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 8885
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 379,
+          "cache_read_input_tokens": 9084,
+          "cache_creation_input_tokens": 1851,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1851,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

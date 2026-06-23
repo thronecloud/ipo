@@ -1,0 +1,71 @@
+{
+  "symbol": "MTARTECH",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T18:26:46.284027Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "MTAR Technologies trades at 16x its Graham Number (calculated at ~INR 306 vs. current price of INR 4,858), making it one of the most egregiously overpriced securities I have encountered — no margin of safety whatsoever exists. The business generates positive earnings but profits are declining (INR 103 Cr in 2023 → INR 53 Cr in 2025) while the speculative premium embedded in the price demands perfection forever.",
+    "key_strengths": [
+      "Multi-year positive earnings track record (2020–2025) with revenue CAGR of 25.9%",
+      "Manageable Debt/Equity of 0.25 and interest coverage of ~5.5x (EBIT INR 121 Cr / Finance Cost INR 22 Cr)",
+      "Operating in high-barriers-to-entry sectors (space, nuclear, defence) with 48.8% gross margin"
+    ],
+    "key_risks": [
+      "Catastrophic overvaluation: P/E 226x, P/B 20x — both 10-15x above my maximum thresholds",
+      "Free cash flow has been negative in 4 of the last 5 years (cumulative FCF: ~−INR 269 Cr) due to relentless capex (INR 100 Cr in 2025 alone)",
+      "Net profit declining sharply from INR 103 Cr (2023) to INR 53 Cr (2025) while finance costs surged 34.5% CAGR — the earnings power narrative is deteriorating"
+    ],
+    "red_flags": [
+      "Graham Number ~INR 306 (√(22.5 × EPS ₹17.2 × BVPS ₹241.8)) versus market price of INR 4,858 — a 16x premium over intrinsic value",
+      "Cash on balance sheet has collapsed to INR 2 Cr at end of 2025 — a liquidity warning",
+      "Finance costs compounding at 34.5% CAGR; debt has risen from INR 29 Cr (2020) to INR 186 Cr (2025) with no commensurate earnings growth",
+      "No dividend yield data — shareholders receive no cash return while management consumes capital",
+      "Promoter holding of only 30.44% is low, suggesting insiders themselves are not highly committed"
+    ],
+    "detailed_analysis": "By every quantitative measure I hold sacred, MTAR Technologies is uninvestable at current prices. The P/E of 226 is fifteen times my maximum acceptable ratio of 15; the P/B of 20 is thirteen times my ceiling of 1.5. The Graham Number — the most honest expression of what an enterprise is worth based on proven earnings and tangible book — computes to approximately INR 306, meaning the market is demanding you pay roughly sixteen times intrinsic value. That is not optimism; that is speculation of the purest and most dangerous kind.\n\nThe underlying business shows a troubling divergence between its revenue story and its cash reality. Revenue has grown respectably (25.9% CAGR), but net profits peaked at INR 103 Cr in 2023 and have since fallen to INR 53 Cr — a 49% decline in earning power while the share price presumably reflects perpetual glory. Free cash flow has been negative in four of the last five years totalling roughly INR 269 Cr of cash consumed, capex runs INR ~100 Cr annually, and the company ended 2025 with just INR 2 Cr in cash. Mr. Market has priced this company as if its defence and space contracts guarantee decades of compounding returns. The intelligent investor, however, does not pay for what might be — he pays only for what has been proven, and at a discount.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 48641,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07323885,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8987,
+      "cache_read_input_tokens": 10962,
+      "output_tokens": 2416,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 8987
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 346,
+          "cache_read_input_tokens": 8912,
+          "cache_creation_input_tokens": 2125,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2125,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "PGIL",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T21:54:16.178659Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "AVOID",
+    "investment_thesis": "Pearl Global is a China+1 beneficiary riding a genuine export tailwind, but at its core it's a low-margin (~6% operating), capital-intensive contract garment manufacturer with no durable pricing power — precisely the kind of commodity business I've spent 60 years avoiding. At 29x trailing P/E and 5.9x book, the market is already pricing in perfection for an inherently cyclical, moat-less operation.",
+    "key_strengths": [
+      "Revenue and profit acceleration post-2022 is real: revenue doubled to INR 4,506 Cr and net profit jumped 22.6% CAGR over 9 years, benefiting from China+1 sourcing shifts by global retailers.",
+      "Returns are respectable for the sector: ROE of 24.3% and ROCE of 22.1% indicate management is squeezing decent returns from the asset base.",
+      "High promoter holding (61.16%) and growing cash pile (INR 510 Cr in 2025) provide some confidence in capital stewardship."
+    ],
+    "key_risks": [
+      "Razor-thin operating margins (6.29%) leave almost no room for error — a wage increase, currency move, or freight spike can wipe out profitability quickly, as the 2020–21 period (net profit INR 22–17 Cr) brutally demonstrated.",
+      "Finance costs are compounding at 20.4% CAGR, faster than revenue (13.9%), and total debt swelled from INR 558 Cr to INR 773 Cr in FY25 — a dangerous trend in a cyclical industry.",
+      "FCF collapsed from INR 229 Cr (FY24) to INR 81 Cr (FY25) even as revenues surged 31% — working capital intensity and rising capex (INR 119 Cr) are consuming the growth."
+    ],
+    "red_flags": [
+      "No discernible economic moat: contract garment manufacturing is a pure commodity business with buyers (global retailers) holding all the pricing power and freely switching among Bangladesh, Vietnam, and India.",
+      "Operating margin of 6.29% provides no margin of safety — Berkshire's owned businesses typically operate at 15–25% margins; I would not pay 29x earnings for 6% margins.",
+      "Finance cost CAGR (20.4%) outpacing revenue CAGR (13.9%) signals the business is leveraging up to fund growth, not generating self-funded compounding."
+    ],
+    "detailed_analysis": "Pearl Global is a competent operator riding a genuine structural tailwind — Western retailers diversifying away from China — and the numbers from 2022–2025 reflect that clearly: revenue nearly tripled from INR 1,491 Cr (FY21) to INR 4,506 Cr (FY25) and net profit grew 13x over the same stretch. ROE above 24% and ROCE above 22% are admirable. But I've learned to distinguish between a business that *earns* high returns and one that is temporarily *reporting* them. A 6.29% operating margin in an industry where your customers are Walmart, H&M, and Gap — companies that use their purchasing power to grind suppliers down every contract cycle — tells me where the economic value is being captured, and it isn't here.\n\nThe deeper concern is the cash flow profile: FY25 free cash flow was only INR 81 Cr on INR 231 Cr of reported net profit, a conversion ratio of roughly 35%. Debt climbed from INR 558 Cr to INR 773 Cr in a single year while finance costs rose to INR 112 Cr. The business requires relentless capital injections — new factories, machinery, working capital — to maintain its growth, which is the hallmark of a capital trap, not a capital compounder. At 29x trailing earnings and 5.9x book, investors are paying a quality-business multiple for a commodity-manufacturing business. I'd need to see this trade at 12–15x earnings with a clear moat before giving it serious consideration.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 48070,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08348595,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11139,
+      "cache_read_input_tokens": 9069,
+      "output_tokens": 2599,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11139,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 564,
+          "cache_read_input_tokens": 9069,
+          "cache_creation_input_tokens": 2070,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2070
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

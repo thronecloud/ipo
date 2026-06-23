@@ -1,0 +1,68 @@
+{
+  "symbol": "CIGNITITEC",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T16:58:00.139405Z",
+  "analysis": {
+    "score": 6,
+    "recommendation": "HOLD",
+    "investment_thesis": "Cigniti is a high-quality, asset-light IT testing business with excellent ROIC (~30%) and nearly zero debt, but at current prices the earnings yield (~8.5%) falls short of my 12% Magic Formula threshold — making it a good business at a fair, not bargain, price. The Coforge subsidiary structure further complicates independent valuation and capital allocation visibility.",
+    "key_strengths": [
+      "Exceptional ROIC (~30%): EBIT of INR 289 Cr on ~INR 950 Cr adjusted capital — well above my 25% 'excellent' threshold",
+      "Near-zero leverage (D/E 0.02, borrowings INR 20 Cr) with INR 199 Cr cash — balance sheet is pristine",
+      "Consistent FCF generation (INR 124–160 Cr last 3 years) with capex only INR 6–14 Cr/year — highly capital-light"
+    ],
+    "key_risks": [
+      "Earnings yield of ~8.5% (EBIT INR 289 Cr / EV ~INR 3,400 Cr) is below my 12% buy threshold — not cheap enough for Magic Formula",
+      "Subsidiary of Coforge since Dec 2024 — risk of below-market delisting offer; minority shareholders have limited say on capital allocation",
+      "Operating income volatile (INR -22 Cr in 2017, INR 92 Cr in 2022 vs. INR 289 Cr in 2025) — business quality has been uneven historically"
+    ],
+    "red_flags": [
+      "Coforge subsidiary status: potential open offer/delisting at a price that may not reflect intrinsic value",
+      "Other Income of INR -332 Cr in 2017 caused massive net loss — historical one-time charges show earnings fragility"
+    ],
+    "detailed_analysis": "Running the Magic Formula: EBIT FY2025 = INR 289 Cr. EV = Market Cap (INR 3,571 Cr) + Debt (INR 28 Cr) − Cash (INR 199 Cr) = ~INR 3,400 Cr. Earnings Yield = 289/3,400 = **8.5%** — decent but below my 12% buy threshold. ROIC using adjusted capital employed (Equity + Debt − Cash ≈ INR 958 Cr) = 289/958 = **~30%** — excellent, confirmed by the reported ROCE of 34.1%. The business earns extraordinary returns on capital; the problem is the market knows it and has priced that quality in.\n\nOn quality metrics, Cigniti scores well: 14.5% revenue CAGR over 9 years, FCF conversion is strong (FCF/Net Profit ~74% in FY2025), and capex is negligible (INR 14 Cr on INR 2,014 Cr revenue = 0.7% intensity). However, the Coforge acquisition changes the risk calculus meaningfully — as a listed subsidiary, Cigniti may face an open offer or delisting at Coforge's convenience, creating an asymmetric outcome for minority investors. Magic Formula works best on independently operated businesses with straightforward capital structures. A better entry would require either a price drop to ~INR 900 (yielding ~12% earnings yield) or clarity that no forced delisting is imminent.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "excellent",
+      "valuation": "fair",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 49889,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08532765,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11411,
+      "cache_read_input_tokens": 9158,
+      "output_tokens": 2652,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11411
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 443,
+          "cache_read_input_tokens": 9158,
+          "cache_creation_input_tokens": 2253,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2253,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "symbol": "BELRISE",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-22T16:22:09.027640Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Belrise trades at INR 214 versus a Graham Number of ~INR 71 — a 3× premium that leaves no margin of safety whatsoever. A P/E of 39.6× and P/B of 3.51× on a thin-margin (8.3%), capital-intensive auto-parts manufacturer is precisely the kind of speculative pricing the disciplined investor must shun.",
+    "key_strengths": [
+      "Consistent revenue growth — 15.4% CAGR over 3 years, reaching INR 8,291 Cr in FY25",
+      "Operating cash flow positive all 4 years; D/E (borrowings basis) a moderate 0.29×",
+      "Diversified product portfolio across 2W/3W/4W and niche segments (solar, home appliances)"
+    ],
+    "key_risks": [
+      "P/E 39.6× is nearly 3× my ceiling of 15; no margin of safety at current price",
+      "Interest coverage of only 3.32× (Finance Cost INR 307 Cr vs EBIT INR 1,021 Cr) — below my 3.5× threshold",
+      "Free cash flow was negative in FY25 (−INR 163 Cr) with capex surging to INR 868 Cr — earnings are not converting to cash"
+    ],
+    "red_flags": [
+      "Graham Number ~INR 71 vs market price INR 214 — stock trades at 3× intrinsic value by my formula",
+      "Equity nearly doubled FY24→FY25 (INR 2,340 Cr → INR 4,971 Cr), strongly indicating a recent large equity raise/IPO — the investment bank priced it for sellers, not buyers",
+      "Finance costs grew 12.4% CAGR, faster than net profit (10.7%) — leverage is eating into earnings growth",
+      "No dividend history disclosed — no cash returned to shareholders to validate earnings quality"
+    ],
+    "detailed_analysis": "By every quantitative filter I apply, Belrise fails. The Graham Number — the ceiling price I will pay — is approximately INR 71 (√[22.5 × EPS ~4 × BVPS ~56]), yet the market asks INR 214. That 3× premium demands perfection in execution for years into the future, and I never pay for perfection. The P/E of 39.6 and P/B of 3.51 are more than double my upper limits of 15 and 1.5 respectively. The interest coverage at 3.32× is below my 3.5× minimum, meaning a moderate earnings shock could leave debt service in jeopardy. Operating margins of only 8.3% in a commoditised auto-parts business provide little cushion.\n\nThe balance sheet transformation in FY25 — equity leaping from INR 2,340 Cr to INR 4,971 Cr while borrowings fell — signals a sizable IPO or equity issuance. As I have always warned, the seller (the investment bank) knows the business far better than the buying public and prices accordingly. Capex of INR 868 Cr consumed all operating cash flow and then some, producing negative FCF of INR 163 Cr. Net profit stagnated at INR 314 Cr for two consecutive years before ticking to INR 355 Cr — hardly the earnings power that justifies a 40× multiple. Mr. Market is offering this business at a speculative premium; the intelligent investor waits for panic, not euphoria.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 53798,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0767718,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9254,
+      "cache_read_input_tokens": 11051,
+      "output_tokens": 2583,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9254,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 361,
+          "cache_read_input_tokens": 9001,
+          "cache_creation_input_tokens": 2303,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2303
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

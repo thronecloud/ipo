@@ -1,0 +1,70 @@
+{
+  "symbol": "544331",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-20T09:43:41.821124Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "A three-year-old micro-cap (INR 17.8 Cr) wholesaler of FMCG and garments with a 0.15% ROE has neither moat nor proven economics. At 12x P/E on essentially zero earnings, the multiple is meaningless — this is a speculation, not an investment.",
+    "key_strengths": [
+      "Asset-light wholesale model requires modest capital",
+      "Low absolute share price masks small float",
+      "Promoter retains a 49.68% skin-in-the-game stake"
+    ],
+    "key_risks": [
+      "ROE of 0.15% indicates the business barely earns its keep",
+      "Incorporated 2022 — no track record through any cycle",
+      "Wholesale FMCG + garments is brutally commoditized with no pricing power"
+    ],
+    "red_flags": [
+      "Sub-1% ROE is essentially a non-economic business",
+      "Micro-cap BSE listing (INR 17.8 Cr) — classic SME vulnerable to manipulation",
+      "Two unrelated business lines (FMCG wholesale + garments) suggests lack of focus",
+      "P/E of 12 on near-zero earnings is mathematically misleading"
+    ],
+    "detailed_analysis": "I look for wonderful businesses I can understand and hold for decades. Davin Sons Retail fails on every count I care about. A 0.15% return on equity tells me management is destroying capital relative to a risk-free FD yielding 7%+ — there is no economic engine here. Wholesale distribution of FMCG and ready-made garments is a razor-thin-margin trade dependent entirely on volume, relationships, and working capital discipline; with three years of history and a INR 17.8 Cr market cap, none of that has been demonstrated.\n\nThe 12x P/E looks reasonable only because the \"E\" is a rounding error — multiply 0.15% ROE by book and you get tiny absolute earnings that any quarter's working-capital hiccup can wipe out. Promoter holding at just 49.68% is below the 60-75% I prefer in owner-operator small caps, and there is no moat — no brand, no switching costs, no scale, no network effects. This is precisely the kind of speculative micro-cap I have warned investors away from for sixty years. Pass, and don't look back.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 21372,
+    "model_used": "opus",
+    "total_cost_usd": 0.08848075,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8821,
+      "cache_read_input_tokens": 13389,
+      "output_tokens": 1065,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8821,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10552,
+          "cache_creation_input_tokens": 1106,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1106
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "symbol": "GOKEX",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-18T17:33:58.488118Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Gokaldas rides a real India garment export tailwind (China+1), but at a P/E of 45.5x with a 2.92% operating margin and 8.16% ROE, you're paying fast-grower prices for a thin-margin assembler. The story is there, but the numbers don't support it — negative FCF two years running and a promoter holding just 9.15% are disqualifying flags.",
+    "key_strengths": [
+      "Revenue acceleration: FY2025 revenue hit INR 3,864 Cr (+62% YoY), showing aggressive capacity/acquisition-driven scaling in a real tailwind sector.",
+      "Operating income CAGR of 29.2% over 9 years signals improving operational leverage from the turnaround era.",
+      "Debt-to-equity of 0.46 is within Lynch's acceptable threshold, despite the recent acquisition-driven borrowing surge (INR 154→993 Cr)."
+    ],
+    "key_risks": [
+      "Razor-thin operating margins (2.92%): the 50-point gap between gross margin (49.83%) and operating margin is a structural red flag — any revenue headwind goes straight to losses.",
+      "FCF is deeply negative (-INR 865 Cr in FY2024, -INR 131 Cr in FY2025) as the company burns cash on capex (INR 689 Cr in FY2024); capital intensity makes this a poor Lynch business.",
+      "Net profit growth (21% in FY2025) massively lags revenue growth (62%), suggesting the large acquisition is dilutive to margins and hasn't delivered the earnings leverage expected."
+    ],
+    "red_flags": [
+      "Promoter stake only 9.15% — management has almost no skin in the game, a major warning sign Lynch would not ignore.",
+      "Trailing PEG ~1.8x (P/E 45.5 / ~25% growth) — firmly in overvalued territory by Lynch's discipline; needs to be below 1.0.",
+      "ROE of 8.16% and ROCE of 10.6% are both below Lynch's 12% minimum hurdle, signaling poor capital efficiency despite years of turnaround.",
+      "Operating CF was negative in FY2024 (-INR 177 Cr) and barely positive in FY2025 (+INR 57 Cr) — the business isn't self-funding, it's equity/debt dependent.",
+      "History of heavy losses (FY2017: -INR 47 Cr, FY2018: -INR 31 Cr) shows this is a fragile business in downturns."
+    ],
+    "detailed_analysis": "Gokaldas is a classic case of a good macro story attached to a mediocre business. The India garment export theme is real — global brands are genuinely diversifying from China, and Gokaldas with its 50-country reach is positioned for that wave. Revenue has nearly quadrupled since FY2021 (INR 1,211 Cr → INR 3,864 Cr), and EBITDA has expanded from INR 154 Cr to INR 380 Cr over the same period. That sounds exciting — until you realize the FY2025 revenue surge (+62%) is acquisition-driven, and net profit only grew 21% despite that. Operating margin sits at a precarious 2.92%, meaning a single bad season, a rupee appreciation, or a client pullback can erase the year's profits entirely.\n\nFrom a Lynch standpoint, the PEG ratio is the deal-breaker. At P/E 45.5 and a sustainable earnings growth rate of ~20-25%, you're paying a PEG of ~1.8x — Lynch's sell signal, not a buy. The forward P/E of 24.41 is more interesting and suggests the market is pricing in a near-doubling of earnings, but the business hasn't earned that trust: ROE is 8.16% (below his 12% floor), FCF has been negative for two straight years, and a 9.15% promoter stake tells me management has already cashed out its conviction. I need to see margins expand to 6%+, sustained positive FCF, and a PEG below 1.0 before this story becomes worth buying.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 66939,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.1011531,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 12074,
+      "cache_read_input_tokens": 8972,
+      "output_tokens": 3545,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 12074
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 469,
+          "cache_read_input_tokens": 8972,
+          "cache_creation_input_tokens": 3102,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 3102,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

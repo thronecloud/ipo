@@ -1,0 +1,70 @@
+{
+  "symbol": "HCC",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-18T17:40:38.464183Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "HCC is a century-old construction company in structural decline — revenue has shrunk at -4.6% CAGR over 9 years, hitting INR 5,603 Cr in 2025 vs. INR 8,540 Cr in 2016, with no credible growth story to justify a 30x P/E. The only partial positive is aggressive debt reduction, but that's a survival story, not a ten-bagger.",
+    "key_strengths": [
+      "Debt dramatically reduced: borrowings fell from INR 5,512 Cr (2023) to INR 1,610 Cr (2025), easing financial stress",
+      "Equity turned positive in 2025 (INR 1,092 Cr) after 5+ consecutive years of negative book value — existential risk has receded",
+      "OCF positive in all last 5 years, providing minimal but consistent cash generation"
+    ],
+    "key_risks": [
+      "Revenue in freefall: -4.6% CAGR over 9 years with no reversal — this is a shrinking business, not a growth story",
+      "Earnings wildly erratic — net profit swung from +INR 563 Cr (2022) to -INR 28 Cr (2023) to +INR 478 Cr (2024) to just INR 113 Cr (2025); P/E of 30x is unjustifiable",
+      "Other income (INR 653 Cr) nearly equals operating income (INR 634 Cr) in 2025 — core construction operations barely break even"
+    ],
+    "red_flags": [
+      "PEG ratio is incalculable — negative revenue growth makes the 30x P/E absurd by Lynch standards",
+      "Promoter holds only 16.72% — exceptionally low skin-in-the-game for a company fighting for survival",
+      "Negative equity for the entire 2020–2024 period signals deep structural insolvency that a single year's recovery doesn't erase",
+      "Gross margin 40% vs. operating margin 6.73% implies massive cost overruns or write-offs eating the spread"
+    ],
+    "detailed_analysis": "As Peter Lynch, I look for companies where the story is simple and the numbers confirm it. HCC's story is simple — but it's the wrong kind of simple: a 99-year-old infrastructure company that has been shrinking for nearly a decade. Revenue dropped from INR 10,544 Cr in 2019 to INR 5,603 Cr in 2025, a 47% contraction in six years. I can't get excited about any turnaround when the top line keeps eroding. The PEG ratio — my favorite metric — is completely broken here; you can't divide a 30x P/E by a negative growth rate and get anything investable. At best, this is a \"turnaround\" classification, and even turnarounds need a catalyst I can articulate clearly.\n\nThe one genuine positive is the debt cleanup: borrowings collapsed from INR 5,512 Cr to INR 1,610 Cr in just two years, and equity finally turned positive at INR 1,092 Cr in 2025. But the profitability that drove this was largely non-operating — \"other income\" of INR 653 Cr nearly matches operating income of INR 634 Cr, suggesting asset sales rather than business improvement. With a promoter stake of only 16.72% and operating margins of just 6.73% in a commodity construction business, there's no moat, no growth, and no one with meaningful conviction betting on the upside. I'd pass entirely.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 45724,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.080022,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11000,
+      "cache_read_input_tokens": 9060,
+      "output_tokens": 2403,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11000
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 505,
+          "cache_read_input_tokens": 9060,
+          "cache_creation_input_tokens": 1940,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1940,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

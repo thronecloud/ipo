@@ -1,0 +1,69 @@
+{
+  "symbol": "544434",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-20T20:08:34.620123Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "A five-year-old castings and forgings outfit with explosive but unproven growth, negative free cash flow every year, and a recent IPO-funded equity balloon from INR 20 Cr to INR 123 Cr. At 20x earnings with no track record, no moat, and a commodity-adjacent product, this is speculation dressed up as investing.",
+    "key_strengths": [
+      "Eye-popping ROE 51% and ROCE 46% — though on a tiny, recently-raised base",
+      "Revenue CAGR of 142% (2022→2025) from INR 5 Cr to INR 71 Cr",
+      "Low leverage post-IPO: borrowings INR 14 Cr against equity INR 123 Cr"
+    ],
+    "key_risks": [
+      "Free cash flow negative all four years (-1, -9, -7, -3 Cr) — growth is being subsidised by capital raises",
+      "Castings/forgings is a commodity, capital-intensive industry with no durable moat or pricing power",
+      "Incorporated only in Jan 2020; five-year operating history is far too short to assess management or earnings durability"
+    ],
+    "red_flags": [
+      "Equity jumped 6x in one year (INR 20 Cr → INR 123 Cr) indicating IPO/placement — classic hot-listing pattern",
+      "Persistent negative FCF despite reported profits — a mismatch I distrust",
+      "Tiny float, 70% promoter holding, BSE SME-style listing — liquidity and governance concerns"
+    ],
+    "detailed_analysis": "The headline ratios here are seductive — ROE of 51% and ROCE of 46% alongside 142% revenue CAGR — but I've seen this movie before. These returns are computed on a minuscule pre-IPO equity base that has since been inflated sixfold (reserves jumped from INR 16 Cr to INR 104 Cr in a single year, clearly IPO proceeds). The honest forward ROE, computed on the new INR 123 Cr equity base against INR 16 Cr net profit, is closer to 13% — respectable but not extraordinary, and in a commodity castings business with no brand, no switching costs, and no cost moat, entirely unremarkable.\n\nMore troubling, this company has never generated free cash flow: -1, -9, -7, -3 crore across the four years shown. Reported profits of INR 16 Cr in 2025 produced only INR 12 Cr of operating cash and another INR 17 Cr of investing outflow. That's the signature of a capital-hungry industrial that must keep raising money to grow — the opposite of the See's Candies economics I look for. Couple that with a five-year operating history, an unproven management team, and a 20x P/E on peak margins that may not survive a steel-price cycle, and there is no margin of safety. I pass.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 23736,
+    "model_used": "opus",
+    "total_cost_usd": 0.09883025000000001,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 9691,
+      "cache_read_input_tokens": 14063,
+      "output_tokens": 1248,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9691,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 11226,
+          "cache_creation_input_tokens": 1302,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1302
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

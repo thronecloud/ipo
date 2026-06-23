@@ -1,0 +1,71 @@
+{
+  "symbol": "OLAELEC",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-22T16:44:03.034836Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "Ola Electric is a deeply loss-making, capital-hungry EV scooter maker with no competitive moat, negative FCF in every single year of its existence, and revenue that actually declined from ₹5,010 Cr to ₹4,514 Cr in FY25 while losses widened to ₹2,276 Cr. I wouldn't pay any price for a business that burns more cash every year with no credible path to profitability.",
+    "key_strengths": [
+      "Early-mover scale in India's EV two-wheeler segment — reached ₹5,000 Cr revenue in ~4 years from near zero",
+      "Vertically integrated cell+battery ambition (Gigafactory) could eventually reduce input costs if executed",
+      "India's EV transition tailwind provides a large addressable market"
+    ],
+    "key_risks": [
+      "Losses are accelerating, not shrinking — net loss grew 44% YoY to ₹2,276 Cr in FY25 even as revenue fell",
+      "FCF was -₹3,367 Cr in FY25; the company has burned cash in all 5 years — survival depends entirely on external financing",
+      "No moat: Bajaj, TVS, Ather, and Hero are all competing aggressively; Ola has no pricing power, switching costs, or defensible advantage"
+    ],
+    "red_flags": [
+      "Revenue actually declined 10% in FY25 (₹5,010→₹4,514 Cr) while losses widened — the growth narrative is broken",
+      "Operating margin of -93.83% means the company loses nearly as much as it earns in revenue from operations",
+      "Finance costs surged 96% YoY to ₹366 Cr as borrowings spiral; debt-funded losses are an investor's nightmare",
+      "Promoter holding of only 34.59% — unusually low for a founder-led company, raising governance questions",
+      "OCF negative all 5 years; entire existence funded by outside capital — this is not a business, it's an experiment"
+    ],
+    "detailed_analysis": "Ola Electric is the antithesis of everything I look for in a business. I want companies that generate cash — Ola has never generated a single rupee of positive operating cash flow in its entire history. In FY25 alone, it burned ₹2,391 Cr from operations and ₹2,864 Cr in investing activities, plugging the hole with ₹5,429 Cr in financing — meaning the company raises money faster than it earns it. The operating margin of -94% tells you that the unit economics are fundamentally broken: there is no hidden profitability waiting to emerge at scale when you lose nearly a rupee for every rupee of revenue earned.\n\nThe competitive position is equally troubling. Electric scooters are a commodity product with no switching costs, no network effects, and no brand loyalty strong enough to command premium pricing. Bajaj Chetak, TVS iQube, Ather Energy, and now Hero Vida are all credible, better-capitalized competitors. Ola's only edge was first-mover speed, and that window is closing as FY25 revenue declined 10%. At 6.6x price-to-sales on a loss-making, revenue-shrinking business, the market is paying a speculative premium I am simply not willing to pay. Charlie Munger used to say \"show me the incentive and I'll show you the outcome\" — here the outcome is clear: more dilution, more losses, and no moat to protect shareholders if the financing ever dries up.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 39597,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07188765,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10363,
+      "cache_read_input_tokens": 8758,
+      "output_tokens": 2026,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10363,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 475,
+          "cache_read_input_tokens": 8758,
+          "cache_creation_input_tokens": 1605,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1605
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

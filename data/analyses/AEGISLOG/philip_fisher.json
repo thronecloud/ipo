@@ -1,0 +1,68 @@
+{
+  "symbol": "AEGISLOG",
+  "persona": "philip_fisher",
+  "persona_display_name": "Philip Fisher",
+  "analyzed_at": "2026-04-19T06:22:59.653172Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Aegis Logistics is a well-run oil, gas, and chemical logistics infrastructure platform with consistently growing EBITDA (22.6% CAGR) and net profit (22.6% CAGR) despite top-line revenues that have plateaued and declined in FY24–FY25 — a business mixing in quality but not a classic Fisher growth story. It operates critical LPG and liquid terminal infrastructure benefiting from India's long-term gas penetration trajectory, but the innovation quotient is low and the business is capital-intensive.",
+    "key_strengths": [
+      "EBITDA and net profit compounding at 22%+ CAGR over nine years even as revenues fluctuate — margin improvement story is genuine (operating margin improved from 8.4% in FY16 to 14.2% in FY25)",
+      "OCF positive in all five tracked years with growing absolute OCF (INR 558 Cr in FY25 vs INR 146 Cr in FY20) — demonstrating real cash generation from the terminal business",
+      "Promoter holding 58.1% and net debt manageable relative to EBITDA — long-term aligned ownership in a capital-intensive sector"
+    ],
+    "key_risks": [
+      "Revenue declined from INR 8,627 Cr (FY23) to INR 6,764 Cr (FY25) — top-line contraction even as infrastructure assets balloon to INR 12,050 Cr in total assets",
+      "Finance costs surging: INR 165 Cr in FY25 vs INR 22 Cr in FY22, and total debt reported at INR 4,606 Cr (FY25) — rapidly rising leverage against a commodity-price-exposed revenue base",
+      "ROCE of only 13.2% on a growing asset base signals diminishing returns on capital deployed in new terminal expansions"
+    ],
+    "red_flags": [
+      "Revenue mix is heavily commodity-price-linked (LPG throughput revenue); margin gains may partly reflect commodity pass-through distortions rather than structural competitive improvement",
+      "FCF was negative INR 386 Cr in FY25 with investing outflows of INR 1,463 Cr — the infrastructure build-out must be justified by long-term contracted volumes"
+    ],
+    "detailed_analysis": "Aegis has successfully transformed from a revenue-driven logistics company to a margin-driven terminal infrastructure business — operating income grew from INR 185 Cr (FY16) to INR 1,098 Cr (FY25) even as headline revenues fell. This reflects a deliberate shift toward higher-margin terminal throughput and LPG supply chain services. The India gas story (LPG penetration, city gas distribution) provides a long-duration tailwind. However, from Fisher's lens, this is an infrastructure compounder, not an innovation-driven growth company — there is no R&D pipeline, the moat is geographic asset positioning rather than technological superiority, and revenue growth at 13.2% CAGR is below his 20% threshold.\n\nThe balance sheet warrants watching closely: total assets nearly doubled from INR 7,069 Cr (FY23) to INR 12,050 Cr (FY25), funded largely by debt (total debt INR 4,606 Cr in FY25). If the new terminal capacity wins long-term throughput contracts, this is a value-creating expansion; if volumes disappoint, the leverage will compress returns further. Fisher would acknowledge the business quality but would not classify this as the kind of exceptional growth company he concentrates in.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 173909,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.23931929999999998,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 24578,
+      "cache_read_input_tokens": 15776,
+      "output_tokens": 9494,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 24578,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 571,
+          "cache_read_input_tokens": 15776,
+          "cache_creation_input_tokens": 8802,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8802
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

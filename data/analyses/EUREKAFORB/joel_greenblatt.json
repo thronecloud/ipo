@@ -1,0 +1,69 @@
+{
+  "symbol": "EUREKAFORB",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T17:18:04.962288Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Eureka Forbes has a recognizable brand and improving operating trajectory, but the Magic Formula rejects it outright — Earnings Yield of ~2.9% (EBIT INR 266 Cr / EV ~INR 9,249 Cr) is far below the 12% minimum threshold, meaning the market is pricing in perfection. At a P/E of 47x and EV/EBITDA of 32x for a business with ROE of just 3.71%, you are paying a luxury price for a still-recovering business.",
+    "key_strengths": [
+      "Improving FCF and margins: Operating CF grew from INR 37 Cr (2022) to INR 246 Cr (2025), with EBIT margin expanding to ~10.9%",
+      "Dominant brand in water purifiers with direct-to-home distribution moat and 59% gross margin indicating pricing power",
+      "Near-zero leverage (D/E: 0.02) and INR 96 Cr cash provide financial flexibility"
+    ],
+    "key_risks": [
+      "Earnings Yield of ~2.9% (EBIT/EV) is catastrophically low by Magic Formula standards — requires exceptional growth just to justify current price",
+      "ROCE of 5.07% and ROE of 3.71% are well below cost of capital, largely due to INR ~4,500+ Cr goodwill-inflated balance sheet from the Advent International acquisition distorting returns",
+      "Rising capex (INR 5→60 Cr over 3 years) and large investing CF outflow of INR 168 Cr in FY25 signal capital intensity increasing just as FCF improves"
+    ],
+    "red_flags": [
+      "Earnings Yield of 2.9% is 4x below my 12% minimum threshold — the #1 Magic Formula disqualifier",
+      "Goodwill-bloated equity base (INR 4,520 Cr equity vs ~INR 2,437 Cr revenue) suppresses all return metrics and masks true asset intensity",
+      "FY25 investing CF of -INR 168 Cr vs FCF of INR 190 Cr leaves almost nothing after reinvestment — capital allocation discipline unclear"
+    ],
+    "detailed_analysis": "Running the Magic Formula on Eureka Forbes produces a clear rejection. EBIT for FY2025 is approximately INR 266 Cr (EBITDA 275 minus ~9 Cr D&A). Enterprise Value = Market Cap INR 9,319 Cr + Debt INR 26 Cr - Cash INR 96 Cr = ~INR 9,249 Cr. Earnings Yield = 266/9,249 = 2.87%. My threshold is 12%+. For the earnings yield to reach 12%, EBIT would need to nearly quadruple to ~INR 1,110 Cr — a heroic assumption for a company currently earning INR 164 Cr net profit. The other half of the formula (Return on Capital) is distorted by the massive goodwill balance from the 2022 de-merger/listing, giving a reported ROCE of just 5.07%. On tangible capital the number is likely much higher, but the Magic Formula uses what the market must price in — and that equity base is real.\n\nThe underlying business story is genuinely improving: revenue compounded from INR 382 Cr (FY22) to INR 2,437 Cr (FY25), operating margins expanded from 4.7% to 10.9%, and FCF turned strongly positive at INR 190 Cr. The brand (Aquaguard) has a real direct-to-home distribution moat reflected in 59% gross margins. But \"improving\" and \"cheap\" are not the same thing. At 47x trailing earnings and 32x EV/EBITDA, the market is already paying for years of further improvement. Greenblatt's formula insists you buy good businesses cheap — Eureka Forbes passes one test (reasonable business quality) but fails the other (cheap price) by a wide margin. I would revisit at a 50%+ lower price.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 60365,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0885414,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11186,
+      "cache_read_input_tokens": 8633,
+      "output_tokens": 2933,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11186
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 408,
+          "cache_read_input_tokens": 8633,
+          "cache_creation_input_tokens": 2553,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2553,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

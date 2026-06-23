@@ -1,0 +1,70 @@
+{
+  "symbol": "PRAJIND",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T22:05:30.006632Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Praj Industries fails both Magic Formula screens decisively: Earnings Yield of ~3.4% (EBIT ~222 Cr / EV ~6,519 Cr) is far below the 12% threshold, while ROIC/ROCE of ~16–18% falls short of the 25%+ excellence bar. The stock is priced as though flawless growth is guaranteed, but FY2025 showed revenue and profit contraction with near-zero FCF.",
+    "key_strengths": [
+      "Ethanol blending tailwinds: India's E20 mandate provides secular demand for Praj's core bioethanol plant business",
+      "Clean balance sheet: Debt/Equity of only 0.16, with total debt just 195 Cr vs. equity of 1,301 Cr",
+      "Long revenue track record: 13.6% revenue CAGR over 9 years (FY2016→FY2025) with diversified segments (biopharma, brewing, wastewater)"
+    ],
+    "key_risks": [
+      "Deeply overvalued by Magic Formula: EV/EBITDA of 45x and P/E of 87x leave almost no margin of safety — any earnings miss triggers severe downside",
+      "FY2025 deterioration: Revenue fell 7% (3,466→3,228 Cr), net profit fell 23% (283→219 Cr), and FCF turned negative (-1 Cr vs. +111 Cr in FY2024)",
+      "Operating CF collapse: OCF dropped 78% YoY from 199 Cr to just 43 Cr in FY2025, suggesting significant working capital buildup and earnings quality concerns"
+    ],
+    "red_flags": [
+      "Earnings Yield of ~3.4% (EBIT 222 Cr / EV 6,519 Cr) — less than one-third of Magic Formula's 12% minimum threshold",
+      "FCF turned negative in FY2025 despite reported net profit of 219 Cr — divergence signals poor cash conversion",
+      "Finance costs growing at 28.4% CAGR (2→19 Cr), accelerating as debt quietly scales up",
+      "Other income of 89 Cr in FY2025 represents ~40% of net profit — core operating earnings are even weaker than they appear"
+    ],
+    "detailed_analysis": "Applying the Magic Formula, Praj Industries scores poorly on both critical dimensions. Earnings Yield (EBIT/EV): backing out other income (89 Cr) from the reported operating income line gives a true EBIT of roughly 222 Cr. Against an Enterprise Value of ~6,519 Cr (market cap 6,450 + debt 195 − cash 126), that yields only ~3.4% — less than a risk-free deposit rate, and far below Greenblatt's 12% threshold for attractiveness. Return on Capital (EBIT / Invested Capital): using invested capital of ~1,370 Cr (equity 1,301 + debt 195 − cash 126), ROIC is ~16%, confirmed by the stated ROCE of 17.9%. This is a mediocre business by Magic Formula standards — not bad, but nowhere near the 25%+ that justifies premium pricing.\n\nThe FY2025 results compound the concern. Both revenue and profits contracted YoY; operating cash flow collapsed from 199 Cr to 43 Cr; capex remained elevated at 87 Cr, leaving FCF at essentially zero. The 2.46% reported operating margin is alarmingly thin for an engineering company. With a P/E of 87x and EV/EBITDA of 45x, the market is pricing in years of strong re-acceleration — but the current data shows the opposite trajectory. At this valuation, there is virtually no margin of safety. The Magic Formula would rank this stock in the bottom decile on earnings yield, making it a clear pass regardless of the company's long-term ethanol story.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 72527,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.1114872,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 12768,
+      "cache_read_input_tokens": 9094,
+      "output_tokens": 4058,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 12768,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 418,
+          "cache_read_input_tokens": 9094,
+          "cache_creation_input_tokens": 3674,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 3674
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

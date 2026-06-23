@@ -1,0 +1,69 @@
+{
+  "symbol": "BRIGADE",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-19T12:49:04.928503Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Brigade Enterprises trades at P/E 24.6 and P/B 2.87 — nearly double my maximum tolerance on both counts — with no margin of safety whatsoever. The company posted net losses in FY21 and FY22, disqualifying it from my requirement of five consecutive years of positive earnings, and interest coverage of roughly 2.9x falls below my 3.5x minimum.",
+    "key_strengths": [
+      "Operating cash flow positive all 5 of the last 5 years, demonstrating real cash generation",
+      "Revenue and EBITDA on a steady expansion trend (9Y CAGR 10.7% and 11.8% respectively)",
+      "Equity base nearly doubled in FY25 (INR 6,481 Cr vs INR 3,516 Cr in FY24), improving the leverage picture"
+    ],
+    "key_risks": [
+      "Debt/Equity of 0.76 exceeds my 0.5 ceiling, and absolute borrowings remain high at INR 5,375 Cr",
+      "Interest coverage of ~2.9x (EBIT INR 1,421 Cr / Finance Cost INR 495 Cr) is below my 3.5x floor",
+      "Real estate earnings are lumpy and cyclical — FY21 and FY22 net losses prove this is not a business with consistent, dependable earning power"
+    ],
+    "red_flags": [
+      "Net losses recorded in two of the past nine years (FY21: -96 Cr, FY22: -65 Cr) — fails my five-year consecutive earnings test",
+      "P/B of 2.87 far exceeds my 1.5 maximum and breaches the >2.0 red-flag threshold",
+      "Real estate development is inherently speculative — revenue recognition tied to project completions creates volatile reported earnings"
+    ],
+    "detailed_analysis": "Brigade's financials show a business emerging from a difficult period: losses in FY21–22 gave way to strong profit recovery (FY25 net profit INR 680 Cr, up from INR 401 Cr in FY24), with EBITDA now at INR 1,630 Cr on a 11.8% nine-year CAGR. However, from my standpoint, past losses are not forgiven merely because present earnings are improving — they reveal the cyclical fragility of the business model. Finance costs of INR 495 Cr in FY25 represent a heavy fixed burden that nearly consumed operating profit during the lean years.\n\nAt INR 762, the market is charging me INR 2.87 for every rupee of book value and P/E of 24.6x — prices that leave no room for error. The intelligent investor demands a significant discount to intrinsic value; here the market demands a premium. The promoter's 41% stake and institutional ownership are reassuring on governance, but real estate remains a highly leveraged, project-dependent sector prone to sudden reversals. I would require the stock to trade near book value (roughly INR 265 per share based on equity per share) before considering it seriously.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 150406,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.204411,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 22348,
+      "cache_read_input_tokens": 15340,
+      "output_tokens": 7733,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 22348,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 610,
+          "cache_read_input_tokens": 15340,
+          "cache_creation_input_tokens": 7008,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 7008
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

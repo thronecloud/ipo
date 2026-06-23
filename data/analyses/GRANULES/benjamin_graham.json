@@ -1,0 +1,70 @@
+{
+  "symbol": "GRANULES",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-22T16:39:49.605092Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Granules India trades at a severe premium to intrinsic value — P/E of 29.9x and P/B of 4.0x are nearly double my maximum thresholds, and the Graham Number of ~₹271 implies the stock is priced at 2.4x what a rational analysis of assets and earnings would justify. With revenue stagnant at ₹4,482–4,512 Cr for three consecutive years and debt more than doubling since 2021, there is no margin of safety whatsoever.",
+    "key_strengths": [
+      "10 consecutive years of positive net profit (₹123 Cr in 2016 → ₹502 Cr in 2025, 16.9% CAGR) — the earnings track record I require exists",
+      "Debt/Equity of 0.45 just under my 0.5 ceiling, and interest coverage of ~9x (EBITDA ₹925 Cr / finance cost ₹103 Cr) remains adequate",
+      "Operating cash flow positive all 5 years reviewed, with ₹867 Cr in FY2025 demonstrating real cash generation"
+    ],
+    "key_risks": [
+      "P/B of 4.0 is nearly 3x my maximum — shareholders are paying ₹4 for every ₹1 of net assets, leaving catastrophic downside if earnings deteriorate",
+      "Borrowings more than doubled in 4 years (₹849 Cr in 2021 → ₹1,807 Cr in 2025), while finance costs quadrupled (₹26 Cr → ₹103 Cr) — leverage is accelerating dangerously",
+      "Revenue completely stagnant for three years (₹4,512 Cr / ₹4,506 Cr / ₹4,482 Cr in 2023/24/25) yet the market prices in robust growth"
+    ],
+    "red_flags": [
+      "Graham Number ≈ ₹271 vs. market price ₹656 — the stock trades at a 142% premium to my calculated intrinsic value",
+      "CWIP surged to ₹702 Cr in FY2025 (from ₹272 Cr prior year), signaling a large unproven capex commitment financed largely by debt",
+      "No dividend data provided; a company growing borrowings this rapidly while offering no meaningful cash return to shareholders is speculative by my standards",
+      "Promoter holding of only 38% is low — insiders have limited skin in the game"
+    ],
+    "detailed_analysis": "Applying my strict quantitative filters, Granules India fails every valuation test I set. The P/E of 29.9x is double my ceiling of 15x, and the P/B of 4.0x is nearly three times my maximum of 1.5x. The Graham Number — calculated as √(22.5 × EPS of ~₹20.3 × BVPS of ~₹160.8) — yields approximately ₹271, against which the current price of ₹656 represents a 142% premium. Mr. Market is not offering a bargain here; he is demanding one from the buyer. The only passing metric is Debt/Equity at 0.45, but that ratio is rapidly worsening — borrowings have risen from ₹849 Cr to ₹1,807 Cr in four years, and finance costs have grown from ₹26 Cr to ₹103 Cr in the same period. This is precisely the kind of trajectory that punishes shareholders when business conditions soften.\n\nThe business itself has respectable history — a decade of unbroken profitability and a 16.9% net profit CAGR since 2016 — but the last three years reveal the troubling truth: revenue has flatlined at roughly ₹4,500 Cr while the company has loaded its balance sheet with debt and committed ₹702 Cr in CWIP for unproven expansion. Free cash flow has been erratic (negative in 2022, only ₹61 Cr in 2024) and entirely insufficient to justify the premium investors are paying. The intelligent investor does not pay four times book value for a business with stagnant revenues and rising debt; he waits for Mr. Market's inevitable pessimism to bring the price to him.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 50199,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07207125,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9303,
+      "cache_read_input_tokens": 11370,
+      "output_tokens": 2251,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9303,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 302,
+          "cache_read_input_tokens": 9320,
+          "cache_creation_input_tokens": 2033,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2033
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

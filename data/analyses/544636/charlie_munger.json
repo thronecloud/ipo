@@ -1,0 +1,69 @@
+{
+  "symbol": "544636",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-20T11:01:40.750117Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Western Overseas is a micro-cap (INR 9.97 Cr) visa/study-abroad advisory with a 0.40% ROE — essentially no economic engine despite an optically cheap 4.53 P/E. Inversion test fails instantly: tiny, commoditized, no moat, and a business model exposed to visa-policy whim.",
+    "key_strengths": [
+      "Promoter skin in the game at 70.09% ownership",
+      "Asset-light advisory model requires little capital",
+      "Optically low P/E of 4.53 on trailing earnings"
+    ],
+    "key_risks": [
+      "ROE of 0.40% indicates no meaningful value creation",
+      "Micro-cap (INR 10 Cr) = illiquid, manipulation-prone, minimal disclosure",
+      "Business is a commoditized agent service, vulnerable to visa-policy shocks (US/UK/Canada tightening)"
+    ],
+    "red_flags": [
+      "ROE far below cost of capital — capital is being destroyed in real terms",
+      "Sub-INR 10 Cr market cap typical of SME/BSE speculative names",
+      "Low P/E likely reflects earnings quality/sustainability doubts, not a bargain"
+    ],
+    "detailed_analysis": "Invert first: what would make this a terrible investment? A tiny, unbranded advisory firm earning 0.40% on equity in an industry gated entirely by foreign government visa policy — and that's exactly what we have. A 0.40% ROE is not a business; it's a job for the promoters. At that return, reinvested capital compounds below inflation, which is value destruction. The 4.53 P/E is meaningless when the \"E\" is trivial and the \"P\" is a INR 10 Cr micro-cap float where price discovery barely exists.\n\nThere is no identifiable moat — study-abroad consultancy is a fragmented cottage industry competing with thousands of local agents, and increasingly with free online platforms and university direct channels. A single adverse policy change in the US, Canada, UK, or Australia (all currently tightening student visas) can vaporize the order book. 70% promoter holding is the only mild positive, but alignment without a quality business is just concentrated exposure to a weak asset. This fails every Munger filter: no durable advantage, no ROIC, no scale, no circle-of-competence clarity. Pass decisively.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 21465,
+    "model_used": "opus",
+    "total_cost_usd": 0.08969,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8860,
+      "cache_read_input_tokens": 13170,
+      "output_tokens": 1108,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8860,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10443,
+          "cache_creation_input_tokens": 1144,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1144
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

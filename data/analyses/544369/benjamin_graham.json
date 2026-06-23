@@ -1,0 +1,69 @@
+{
+  "symbol": "544369",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-20T19:41:05.929336Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "A freshly-listed small explosives maker trading at 22.4x earnings and roughly 2.7x book — well outside my quantitative limits — with a short, uneven profit history and persistently negative free cash flow. The margin of safety required by a prudent investor simply does not exist at INR 196.",
+    "key_strengths": [
+      "Post-IPO balance sheet is clean: Debt/Equity ~0.24 (borrowings 25 vs equity 105 Cr).",
+      "Operating profit and EBITDA expanding rapidly (OP CAGR 56.5%, EBITDA 54.9%).",
+      "Strong promoter skin in the game at 70.68% and healthy ROCE of 22.8%."
+    ],
+    "key_risks": [
+      "P/E 22.4 and P/B ~2.7 — both breach Graham limits of <15 and <1.5.",
+      "Free cash flow negative every year 2022–2025 (-6, -8, -2, -12 Cr); growth is being funded externally.",
+      "Very short earnings record: net profit only 3 Cr in 2022 & 2023 before 2025's jump to 14 Cr — no multi-year stability."
+    ],
+    "red_flags": [
+      "Recent IPO (equity jumped from 24 → 105 Cr in 2025) — sellers/bankers price these to maximum, not to the buyer's advantage.",
+      "Graham Number check fails: sqrt(22.5 × ~9.5 EPS × ~71 BVPS) ≈ INR 123 vs market price INR 196.",
+      "Chronic negative FCF despite reported profits raises quality-of-earnings questions."
+    ],
+    "detailed_analysis": "From a strict value standpoint, Beezaasan fails nearly every quantitative filter I require. Price-to-earnings of 22.4 is roughly 50% above my 15x ceiling; price-to-book of ~2.7 (market cap 288 Cr vs equity 105 Cr) demands a premium over tangible assets that no prudent investor should pay for a 288 Cr micro-cap in a cyclical commodity industry. The Graham Number check — approximately INR 123 against a market price of INR 196 — indicates a ~37% overpayment versus proven earning power and book. The earnings record is too short and too volatile (3, 3, 5, 14 Cr) to extrapolate; 2025's profit surge coincided with fresh IPO equity (reserves leaping from 14 to 92 Cr), so one cannot yet distinguish operating improvement from capital-structure effects.\n\nThe balance sheet is now conservatively financed post-issue, and ROCE of 22.8% is commendable — if sustainable. But free cash flow has been negative in all four reported years (-6, -8, -2, -12 Cr), meaning reported profits are not yet converting to cash returnable to owners. There is no dividend record of consequence, and the IPO itself is the kind of situation where the selling party knows more than the buyer. I would set Beezaasan aside and revisit only if the stock traded near or below book value (~INR 70) with three more years of proven, cash-backed earnings.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 36499,
+    "model_used": "opus",
+    "total_cost_usd": 0.11508275,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 10349,
+      "cache_read_input_tokens": 14343,
+      "output_tokens": 1728,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10349,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 11457,
+          "cache_creation_input_tokens": 1778,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1778
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "CHOICEIN",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-19T13:01:39.065591Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Choice International has delivered impressive revenue and profit growth (net profit CAGR 51% over 9 years), and its ROE/ROCE of ~20% clears the quality threshold, but the stock trades at 77x trailing P/E with negative OCF in 4 of 5 years — an investor is being asked to pay an enormous premium for a small, capital-hungry broker-cum-NBFC in a brutally competitive capital markets ecosystem. The valuation is the risk.",
+    "key_strengths": [
+      "Net profit CAGR of 51% over 9 years is exceptional, and operating margin of 32% with ROE/ROCE both near 20% shows the business can compound when markets cooperate",
+      "Diversified financial services model (broking, wealth, NBFC, advisory, insurance distribution) creates cross-sell opportunities and reduces single-revenue dependency",
+      "Revenue accelerating sharply: ₹285 Cr (FY22) → ₹921 Cr (FY25), showing genuine scale benefits in a bull market cycle"
+    ],
+    "key_risks": [
+      "OCF negative in 4 of 5 years (only 1/5 positive); FY25 OCF was -₹294 Cr on ₹163 Cr net profit — the business consumes more cash than it generates, funded entirely by equity and debt raises",
+      "P/E of 77x for a business whose revenues are tied to capital market activity — a market downturn will compress earnings severely and the stock will re-rate brutally",
+      "Finance costs grew at 14.8% CAGR and hit ₹66 Cr in FY25 — the NBFC book is funding itself with borrowed money, creating leverage risk in a credit cycle"
+    ],
+    "red_flags": [
+      "Market cap of ₹16,163 Cr on revenues of ₹921 Cr (P/S 16.1x) is pricing in years of perfect execution — there is no margin of safety whatsoever",
+      "DII holding of 0.30% is a significant tell — Indian domestic institutions that have analyzed this thoroughly have essentially zero conviction in it",
+      "Negative free cash flow of -₹451 Cr in FY25 means the company is absorbing capital, not generating it — the opposite of what Munger looks for"
+    ],
+    "detailed_analysis": "Choice International is what I'd call a 'narrative stock' — the story is compelling (India's capital markets boom, fintech disruption of broking, wealth management scaling) but the economics do not support the price. At 77x earnings with consistently negative OCF, the market is treating this as a high-certainty compounder when in reality it is a capital-intensive, cyclical financial services firm in the early stages of building out its loan book and distribution network.\n\nThe 51% net profit CAGR is real but built on a tiny base and highly market-dependent — when Sensex volumes slow, this business will deleverage quickly. The DII ownership of 0.30% is telling: serious institutional analysts who have done the work have concluded this price is not justified. Munger's principle applies: the price you pay determines your return, and at 77x P/E you are already 'discounting the future perfectly.' I would need to see this at 20-25x with positive OCF before reconsidering.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 146706,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.2067753,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 22918,
+      "cache_read_input_tokens": 15796,
+      "output_tokens": 7739,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 22918,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 542,
+          "cache_read_input_tokens": 15796,
+          "cache_creation_input_tokens": 7122,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 7122
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

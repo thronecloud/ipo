@@ -1,0 +1,69 @@
+{
+  "symbol": "544640",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-20T11:01:22.742259Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "At a P/E of 4.56 the stock appears statistically cheap, but a 0.61% ROE indicates the \"E\" is essentially negligible — this is a micro-cap (₹23 Cr) with no demonstrated earning power. Without multi-year earnings history, dividends, or balance-sheet data, there is no verifiable margin of safety.",
+    "key_strengths": [
+      "Headline P/E of 4.56 is optically low versus my <15 threshold",
+      "High promoter holding (71.43%) signals skin in the game",
+      "Operating in a tangible, understandable business (display & refrigeration equipment)"
+    ],
+    "key_risks": [
+      "ROE of 0.61% — earnings power is essentially non-existent, making the low P/E illusory",
+      "Micro-cap (₹23 Cr) with negligible institutional ownership (FII 0.32%, DII 1.43%) — illiquid and unresearched",
+      "No visible dividend, debt, current ratio, or multi-year earnings data to verify solvency"
+    ],
+    "red_flags": [
+      "Return on equity of 0.61% is below risk-free rate — capital is being destroyed relative to alternatives",
+      "Recent BSE listing (symbol 544640) — IPO-adjacent with no long-term public earnings record",
+      "Absence of disclosed book value, debt, and current ratio prevents Graham Number computation"
+    ],
+    "detailed_analysis": "A P/E of 4.56 would normally pique my interest, but Mr. Market is not offering a bargain here — he is offering a company whose earnings are trivially small. A 0.61% ROE means the business earns less on shareholders' equity than a savings account; multiplying a tiny E by a low multiple produces a market cap of ₹23 Cr, which is consistent with a company that has barely turned a profit. Graham's requirement is stable, proven earning power over 5–10 years, ideally growing — a 0.61% return suggests this company cannot clear that bar.\n\nCritical data are missing: book value, current ratio, debt-to-equity, interest coverage, and dividend history. Without these I cannot compute the Graham Number or confirm balance-sheet strength — and in micro-cap housewares manufacturing, working-capital and leverage risk are exactly where disasters hide. The 71% promoter stake is reassuring only if the promoter is honest and capable; with negligible institutional scrutiny (under 2% combined FII+DII), there is no external check. I would avoid this security until several years of audited earnings and a demonstrable margin of safety against tangible book emerge.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "insufficient_data",
+      "valuation": "overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 22378,
+    "model_used": "opus",
+    "total_cost_usd": 0.092323,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8988,
+      "cache_read_input_tokens": 13536,
+      "output_tokens": 1174,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8988,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10650,
+          "cache_creation_input_tokens": 1224,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1224
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

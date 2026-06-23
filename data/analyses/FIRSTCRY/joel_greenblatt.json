@@ -1,0 +1,70 @@
+{
+  "symbol": "FIRSTCRY",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-22T16:34:27.195285Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "FirstCry fails both legs of the Magic Formula completely — EBIT is effectively negative (operating margin -0.27% on INR 7,660 Cr revenue) yielding a near-zero or negative Earnings Yield, while ROCE of -0.40% confirms zero return on capital. There is nothing to buy here at any price, let alone at EV/EBITDA of 585x.",
+    "key_strengths": [
+      "Revenue scale and growth: 56.2% CAGR over 7 years, reaching INR 7,660 Cr — genuine category leadership in India's mother-baby segment",
+      "Improving EBITDA trajectory: turned positive in FY24 (INR 158 Cr) and expanded to INR 374 Cr in FY25 — directional progress",
+      "Gross margin of 35.25% suggests reasonable unit economics before operating cost drag"
+    ],
+    "key_risks": [
+      "Persistently negative FCF — 0/5 years positive, burning INR 292 Cr in FY25 alone; survival depends on repeated capital raises",
+      "Borrowings exploded from INR 34 Cr (FY20) to INR 1,661 Cr (FY25) — finance costs of INR 158 Cr now consume nascent operating profit entirely",
+      "Zero promoter holding (0%) removes any alignment incentive and raises governance concerns for a company still losing money"
+    ],
+    "red_flags": [
+      "EBIT is negative or near-zero — Magic Formula is inapplicable by design",
+      "Forward P/E of 785x and EV/EBITDA of 585.5x: market is pricing in a decade of perfect execution for a company with no proven profit",
+      "Net losses every year except FY21: cumulative destruction of equity since IPO",
+      "Finance cost CAGR of 106% (7Y) — debt servicing growing faster than revenue"
+    ],
+    "detailed_analysis": "The Magic Formula demands two things: a cheap price (high Earnings Yield = EBIT/EV) and a good business (high ROIC = EBIT / Net Working Capital + Fixed Assets). FirstCry delivers neither. EBIT on an operating basis is roughly -INR 21 Cr (operating margin -0.27% × revenue INR 7,660 Cr), meaning Earnings Yield on an EV of ~INR 14,510 Cr (market cap INR 13,211 Cr + debt INR 1,570 Cr – cash INR 271 Cr) is essentially zero or negative. ROCE of -0.40% and ROE of -4.07% confirm the business has never cleared its cost of capital. The EV/EBITDA of 585x is not a valuation — it is a hope premium.\n\nWhat makes this worse structurally is the FCF profile: the company has burned cash in every single year of recorded history, with INR 1,299 Cr cumulative FCF destruction from FY20–FY25. Borrowings have compounded at 106% annually over seven years, and finance costs of INR 158 Cr in FY25 now fully offset the INR 158 Cr improvement in EBITDA. The directional improvement in EBITDA (INR -216 Cr in FY23 → INR +374 Cr in FY25) is real and worth noting, but the path to a double-digit Earnings Yield at current market cap is implausible without either a dramatic collapse in the share price or a multi-year earnings inflection. My formula does not reward stories — it rewards numbers.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 53110,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08571870000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11320,
+      "cache_read_input_tokens": 9049,
+      "output_tokens": 2703,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11320,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 471,
+          "cache_read_input_tokens": 9049,
+          "cache_creation_input_tokens": 2271,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2271
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

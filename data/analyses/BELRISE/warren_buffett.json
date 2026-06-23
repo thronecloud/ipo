@@ -1,0 +1,69 @@
+{
+  "symbol": "BELRISE",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-22T16:22:09.103583Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Belrise is a capital-intensive auto parts supplier with thin 8.3% operating margins, sub-15% ROE, and no discernible economic moat — yet priced at 39.6x trailing earnings. This is a fair business at a rich price, precisely the combination I have spent a lifetime avoiding.",
+    "key_strengths": [
+      "Revenue growing at a solid 15.4% CAGR (₹5,397 Cr → ₹8,291 Cr), with EBITDA keeping pace at 12% CAGR.",
+      "Post-IPO balance sheet is notably cleaner: D/E of 0.29 with borrowings cut from ₹2,504 Cr to ₹1,418 Cr.",
+      "High promoter holding of 66.46% signals owner-operator alignment."
+    ],
+    "key_risks": [
+      "No pricing power — OEMs perpetually squeeze Tier-1 suppliers, keeping margins structurally thin at 8.3% operating margin.",
+      "Free cash flow is deeply unreliable: negative in 2 of 4 years (−₹31 Cr in FY22, −₹163 Cr in FY25) as capex surged to ₹868 Cr in FY25.",
+      "Finance costs compounding at 12.4% CAGR crowd out profits; net profit was flat at ₹314 Cr for two consecutive years (FY23–FY24)."
+    ],
+    "red_flags": [
+      "ROE of 14.1% falls below my 15% threshold — and this is post-IPO with fresh equity inflating the denominator; pre-IPO ROE was likely lower.",
+      "Massive equity raise (reserves nearly doubled from ₹2,015 Cr to ₹4,526 Cr in FY25) while D/E looks artificially low — true leverage picture requires scrutiny.",
+      "39.6x trailing P/E for a commoditised auto ancillary with no moat is speculation masquerading as valuation."
+    ],
+    "detailed_analysis": "Belrise is a diversified auto components manufacturer supplying 2W/3W/4W OEMs — a business I would characterise as structurally mediocre. Auto parts suppliers sit at the mercy of their customers (Bajaj, Hero, Maruti et al.), who have immense bargaining power and force price concessions every model cycle. The result is visible in the numbers: gross margins of 18.8% and operating margins of 8.3% leave almost nothing for error, and net profit has barely grown — ₹314 Cr in both FY23 and FY24 before a modest ₹355 Cr in FY25. ROCE of 14.3% and ROE of 14.1% are below the 15% hurdle I require before I even begin to think about valuation.\n\nThe capital intensity is the killer. Capex has ballooned to ₹868 Cr in FY25 (>10% of revenue), turning free cash flow negative even as operating cash flows remain positive. This is the hallmark of a business that must run hard just to stay in place. The IPO proceeds have temporarily cleaned up the balance sheet (D/E 0.29), but total debt actually rose from ₹2,504 Cr to ₹2,964 Cr in FY25, and finance costs now consume roughly ₹307 Cr annually — nearly 87% of net profit. At 39.6x P/E and 17.5x EV/EBITDA, the market is pricing in a wonderful business; the financials reveal an ordinary one.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 51870,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07820445000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10975,
+      "cache_read_input_tokens": 8964,
+      "output_tokens": 2290,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10975,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 337,
+          "cache_read_input_tokens": 8964,
+          "cache_creation_input_tokens": 2011,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2011
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

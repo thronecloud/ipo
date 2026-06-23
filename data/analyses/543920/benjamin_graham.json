@@ -1,0 +1,70 @@
+{
+  "symbol": "543920",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-20T09:44:44.212959Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "At P/E 73 and P/B 10.9, this aerospace microcap offers zero margin of safety against Graham's quantitative filters. Compounding the price problem, free cash flow has been negative for three consecutive years (-29, -43, -8 Cr), meaning the reported earnings are not translating into cash.",
+    "key_strengths": [
+      "Revenue and net profit compounding ~45% over 3 years (2022→2025)",
+      "ROCE of 23.65% indicates efficient capital deployment on paper",
+      "Debt reduced from 46 Cr (2023) to 21 Cr (2025); promoter stake high at 68%"
+    ],
+    "key_risks": [
+      "P/E 73 and P/B 10.9 — pricing assumes perpetual 45% growth with no cushion",
+      "Operating cash flow negative in 3 of last 4 years; FCF cumulatively negative ~80 Cr",
+      "Cash collapsed from 17 Cr to 3 Cr in one year — working capital stress"
+    ],
+    "red_flags": [
+      "Earnings quality poor: Net profit 24 Cr vs OCF -3 Cr in FY25",
+      "P/B >10x — paying a decade of book value for a 16% ROE",
+      "Equity jumped from 25 to 126 Cr in FY24 suggesting dilutive equity raise baked into price",
+      "No dividend history disclosed"
+    ],
+    "detailed_analysis": "From the standpoint of Security Analysis, this stock fails nearly every quantitative gate. The Graham Number requires price < sqrt(22.5 × EPS × BVPS). With earnings yield of ~1.4% (P/E 73) and book value ~1/11th of price, the intrinsic-value test is violated by an order of magnitude. A rational investor does not pay 73 years of current earnings for a 1,516 Cr defense microcap regardless of the growth narrative — Mr. Market is clearly infatuated with the \"Aerospace & Defense\" label.\n\nMore troubling than valuation is the divergence between reported profit and cash. Net profit aggregated ~51 Cr over 2023-2025, yet operating cash flow was cumulatively -39 Cr over the same period, and free cash flow was -80 Cr. The business is funded by financing inflows (+85 Cr in 2023-2024), not self-generated cash. Cash on the balance sheet fell from 17 Cr to 3 Cr in a single year while debt remains at 21 Cr — the current ratio and interest coverage deserve scrutiny I cannot perform from this data alone. This is precisely the speculative growth profile Graham warned against: accounting earnings unsupported by cash, priced for flawless execution. Avoid.",
+    "metrics_evaluated": {
+      "moat_strength": "insufficient_data",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 21834,
+    "model_used": "opus",
+    "total_cost_usd": 0.09906324999999999,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 9735,
+      "cache_read_input_tokens": 14229,
+      "output_tokens": 1243,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9735,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 11343,
+          "cache_creation_input_tokens": 1278,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1278
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

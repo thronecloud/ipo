@@ -1,0 +1,68 @@
+{
+  "symbol": "MASTEK",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T21:53:50.810666Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Mastek is a decent mid-tier IT services business trading at a modest 12.8x P/E with strong historical CAGR (23% revenue, 32% net profit over 9 years) and excellent FCF conversion — but the narrow moat, decelerating growth, and margin profile below top-tier IT peers limits its compounding potential. At this price, it is fair but not compelling enough to deploy significant capital.",
+    "key_strengths": [
+      "Excellent FCF quality — FCF of INR 515 Cr exceeded net profit of INR 404 Cr in FY26, confirming high earnings quality (FCF/NI >100%)",
+      "ROCE of 18% above threshold with low leverage (D/E 0.20) and all 5 years OCF-positive — balance sheet discipline is commendable",
+      "Undemanding valuation at 12.8x P/E and 9.8x EV/EBITDA for a business that compounded net profit at 32.5% CAGR over 9 years"
+    ],
+    "key_risks": [
+      "Mid-tier IT services has weak moat — no pricing power, high people-dependency, and constant pressure from larger peers (TCS, Infosys, Wipro) and offshore challengers",
+      "Revenue growth visibly decelerating (3,055→3,455→3,699 Cr) while margins remain below category leaders (~14% vs 21%+ for top-tier IT)",
+      "Finance costs ballooned from INR 6 Cr (FY19) to INR 44 Cr (FY24), signaling acquisition-driven debt; EBITDA dipped in FY25 (535→455 Cr) despite revenue growth — margin discipline is not yet proven"
+    ],
+    "red_flags": [
+      "EBITDA compression in FY25 (535→455 Cr) even as revenue grew — absorbed costs from acquisitions without operating leverage, a hallmark of weak moat businesses",
+      "Promoter stake at only 35.77% is modest; combined with rising borrowings (INR 273 Cr in FY21 to INR 583 Cr in FY25), acquisition strategy warrants monitoring for capital allocation discipline"
+    ],
+    "detailed_analysis": "Mastek has delivered impressive headline numbers — 23% revenue CAGR and 32.5% net profit CAGR over nine years — but inversion demands we ask: how durable is this? IT services at the mid-tier level is a commodity business. Clients can switch vendors, pricing is squeezed in renegotiations, and attrition is chronic. Operating margins of 14.1% compare unfavorably to TCS (~24%) or Infosys (~21%), revealing the absence of the pricing power that separates great businesses from merely adequate ones. The FY25 EBITDA dip to INR 455 Cr (from INR 535 Cr in FY24) — even as revenue grew from INR 3,055 Cr to INR 3,455 Cr — is the clearest symptom: when revenue grows but profits shrink, operating leverage is absent.\n\nThe positives are real and should not be dismissed: FCF exceeds reported net profit (INR 515 Cr vs. INR 404 Cr in FY26), which is a hallmark of honest accounting and asset-light economics. Debt-to-equity at 0.20 is conservative. And at 12.8x trailing earnings with a forward P/E of 11.3x, Mr. Market is not demanding payment for hope. But Munger's dictum — a great business at a fair price beats a fair business at a great price — cuts both ways: this is a fair business at a fair price, which produces fair returns. Without a discernible moat, Mastek is a HOLD for those already invested, but not a high-conviction addition.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 54253,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0871374,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11364,
+      "cache_read_input_tokens": 9078,
+      "output_tokens": 2786,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11364,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 548,
+          "cache_read_input_tokens": 9078,
+          "cache_creation_input_tokens": 2286,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2286
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

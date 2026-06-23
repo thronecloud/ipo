@@ -1,0 +1,69 @@
+{
+  "symbol": "CGCL",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-19T12:58:34.454368Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Capri Global Capital is an NBFC — a financial company explicitly excluded from the Magic Formula because lending businesses use debt as raw material, making EBIT/EV and ROIC completely misleading. The 37.2% revenue CAGR is genuinely impressive, but ROE of only 11.8% on leverage of 2.52x D/E means the business is earning low returns on risk capital.",
+    "key_strengths": [
+      "Revenue CAGR of 37.2% over 9 years (₹189 Cr → ₹3,248 Cr) and net profit CAGR of 30.4% show genuine franchise-building in MSME and home loans",
+      "Forward P/E of 12.96x suggests the market expects significant earnings acceleration — if it materializes, today's price may prove reasonable for non-formula investors",
+      "Strong promoter holding of 59.92% and DII holding of 20.09% signals institutional confidence and aligned ownership"
+    ],
+    "key_risks": [
+      "Finance costs growing at 67.9% CAGR — nearly double the revenue growth rate — means the cost of funding is eating into spread economics as the book scales",
+      "OCF negative in all 5 of 5 years (−₹4,312 Cr in 2025) — while normal for an NBFC, it underscores the constant need for external capital to fund growth",
+      "ROE of 11.8% and ROCE of 11.2% are low returns for the leverage deployed; the business does not yet earn significantly above cost of equity"
+    ],
+    "red_flags": [
+      "NBFCs and financial companies are explicitly excluded from the Magic Formula — the business model makes my two core metrics uncomputable and misleading",
+      "Total debt surged from ₹7,511 Cr (2023) to ₹15,577 Cr (2025) — a doubling in 2 years — creating significant liquidity risk if funding markets tighten",
+      "Operating margin of 46% sounds high but is an artifact of NBFC accounting; the gross spread on lending may be eroding as finance costs outrun asset yields"
+    ],
+    "detailed_analysis": "The Magic Formula cannot be applied here: CGCL is a financial services business where debt is inventory, not a leverage choice. Calculating EBIT/EV or ROIC produces numbers that are meaningless by construction — a point I made explicit in 'The Little Book.' Setting aside the formula, this is a fast-growing NBFC in India's underpenetrated MSME-lending segment, which is a structurally attractive market. However, the rapid balance-sheet expansion at low ROE, combined with explosive growth in finance costs, creates a profile more suited to a credit analyst's stress test than my quantitative ranking.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "good",
+      "financial_health": "adequate",
+      "valuation": "insufficient_data",
+      "growth_potential": "exceptional"
+    }
+  },
+  "metadata": {
+    "duration_ms": 165486,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.22400864999999998,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 23875,
+      "cache_read_input_tokens": 15928,
+      "output_tokens": 8646,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 23875,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 666,
+          "cache_read_input_tokens": 15928,
+          "cache_creation_input_tokens": 7947,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 7947
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

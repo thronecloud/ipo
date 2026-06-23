@@ -1,0 +1,70 @@
+{
+  "symbol": "SPEB",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-21T08:03:00.474566Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "SPEB Adhesives is a micro-cap commodity adhesives manufacturer with a 0.27% ROE — a business that is barely distinguishable from capital destruction. At a 20x P/E, you are paying a growth premium for a business with near-zero returns on equity and no identifiable moat.",
+    "key_strengths": [
+      "High promoter holding (73.18%) signals skin in the game",
+      "Specialty chemicals sub-sector can occasionally command premium pricing",
+      "DII presence (10.15%) suggests some institutional awareness"
+    ],
+    "key_risks": [
+      "ROE of 0.27% is catastrophically low — capital is essentially idle or being consumed",
+      "Solvent-based rubber adhesives is a commoditized, undifferentiated product with no pricing power",
+      "Micro-cap at INR 120 Cr with illiquid float — exit risk is severe"
+    ],
+    "red_flags": [
+      "ROE of 0.27% fails every basic quality threshold — Munger's minimum is 15%+",
+      "P/E of 20x is pricing in growth that a 0.27% ROE business cannot possibly deliver",
+      "Solvent-based adhesives face structural headwinds from environmental regulation and substitution by water-based alternatives",
+      "Insufficient public data on ROIC, FCF, debt levels, or revenue trajectory — opacity is itself a red flag"
+    ],
+    "detailed_analysis": "Invert first: what would make this a terrible investment? A ROE of 0.27% answers the question immediately. For every 100 rupees of shareholder equity, this business earns 27 paise. That is not a business — that is a warehouse for capital slowly eroded by inflation and opportunity cost. With implied earnings of roughly INR 6 Cr on a INR 120 Cr market cap, the 20x P/E is not \"cheap\" — it is expensive for a business that has demonstrated no ability to generate returns above the risk-free rate.\n\nThe product itself — solvent-based synthetic rubber adhesives — is a commodity. There is no switching cost, no network effect, no brand premium, no proprietary formula that cannot be replicated. Worse, solvent-based formulations face regulatory and substitution pressure from water-based and hot-melt alternatives globally. I have no interest in owning a business with no moat, near-zero profitability, trading at a speculative P/E, in a segment facing secular headwinds. The high promoter stake is the only data point that isn't alarming, but promoter alignment means nothing when the underlying business economics are this poor.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 33960,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.06546135,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8847,
+      "cache_read_input_tokens": 7437,
+      "output_tokens": 2003,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8847,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 625,
+          "cache_read_input_tokens": 7437,
+          "cache_creation_input_tokens": 1410,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1410
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

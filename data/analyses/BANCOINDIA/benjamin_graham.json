@@ -1,0 +1,70 @@
+{
+  "symbol": "BANCOINDIA",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T16:41:39.965571Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Banco Products is a legitimate, profitable auto-components manufacturer with a 10-year earnings record — but at P/B of 5.47 and a price of INR 625 versus my calculated Graham Number of ~INR 265, the investor is paying a 136% premium over intrinsic value with no margin of safety whatsoever. Mr. Market is pricing in years of growth; the disciplined investor demands proof in the balance sheet, not promises in the income statement.",
+    "key_strengths": [
+      "Unbroken 10-year profit record (INR 90 Cr → 392 Cr), satisfying my minimum earnings continuity requirement",
+      "Debt/Equity of 0.45 just clears my 0.5 ceiling, and interest coverage of ~23.5x (EBIT 611/Finance Cost 26) is comfortably above my 3.5x floor",
+      "High ROE/ROCE (32%+) confirms genuine business efficiency — the underlying enterprise earns its keep"
+    ],
+    "key_risks": [
+      "P/B of 5.47 is nearly 4x my maximum threshold of 1.5 — the investor owns INR 114 of book value for each INR 625 paid, a dangerous premium if conditions deteriorate",
+      "Debt has exploded from INR 14 Cr (2021) to INR 729 Cr (2025) — a 52x increase in four years — while cash sits at a paltry INR 22 Cr, signalling aggressive balance-sheet leverage",
+      "Free cash flow (INR 86 Cr) is only 22% of reported net profit (INR 392 Cr) in FY2025, suggesting earnings quality is poor and capital consumption is high"
+    ],
+    "red_flags": [
+      "Graham Number ~INR 265 (√[22.5 × EPS ~27.4 × BVPS ~114]) versus market price INR 625 — stock trades at 2.36x intrinsic value by my formula",
+      "P/E of 18.70 exceeds my hard ceiling of 15; combined P/E × P/B = 18.7 × 5.47 = 102, catastrophically above my combined ceiling of 22.5",
+      "Negative OCF in FY2023 (−INR 41 Cr) and negative FCF in both FY2022 (−INR 15 Cr) and FY2023 (−INR 135 Cr) reveal lumpy, unreliable cash generation",
+      "Finance costs growing at 27.1% CAGR — the fastest-growing line item on the income statement — as the company funds expansion with debt"
+    ],
+    "detailed_analysis": "Banco Products passes the qualitative screen — it makes real products, has real customers, and has reported profits every year for a decade. But the quantitative screen, which is the only screen I trust, is damning. My Graham Number computes to approximately INR 265 (√[22.5 × 27.4 EPS × 114 BVPS]), implying the stock must fall 58% before offering fair value. The P/B of 5.47 tells me that for every rupee of tangible net worth, the market charges nearly five and a half — acceptable only if one believes future earnings will perpetually justify it. I do not make such bets. The combined P/E × P/B of ~102 obliterates my ceiling of 22.5, a filter designed precisely to weed out stocks priced for perfection.\n\nThe balance sheet deterioration compounds my concern. Borrowings surged from INR 14 Cr in FY2021 to INR 729 Cr in FY2025 to fund what appears to be capacity expansion (capex averaging ~INR 98 Cr/year). The enterprise is cannibalising shareholder equity to grow — a strategy that works in bull cycles and fails catastrophically in downturns. Free cash flow of INR 86 Cr against net profit of INR 392 Cr is a 78% gap I cannot explain away. The business may be excellent; the price is not. An investor who buys here owns a good company at a dangerous price — and in my experience, overpaying for quality is still overpaying.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 54049,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0770439,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9356,
+      "cache_read_input_tokens": 11183,
+      "output_tokens": 2573,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9356
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 376,
+          "cache_read_input_tokens": 9133,
+          "cache_creation_input_tokens": 2273,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2273,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

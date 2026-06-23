@@ -1,0 +1,70 @@
+{
+  "symbol": "HCC",
+  "persona": "rakesh_jhunjhunwala",
+  "persona_display_name": "Rakesh Jhunjhunwala",
+  "analyzed_at": "2026-04-18T17:40:35.713087Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "HCC is a century-old construction company in structural decline — revenue has shrunk at -4.6% CAGR over nine years to ₹5,603 Cr, with promoters holding a dangerously low 16.72% stake, signalling near-zero conviction in their own business. While the deleveraging story is real, paying 30x P/E for a company that has posted net losses in six of the last ten years is speculating, not investing.",
+    "key_strengths": [
+      "Meaningful debt reduction: borrowings fell from ₹5,512 Cr (2023) to ₹1,610 Cr (2025), finance costs down to ₹600 Cr",
+      "OCF positive all 5 years; balance sheet equity finally turned positive at ₹1,092 Cr in 2025 after years of insolvency",
+      "Operates in infrastructure (roads, hydro, nuclear, metro) — a sector with genuine government tailwinds under India's capex push"
+    ],
+    "key_risks": [
+      "Promoter holding of only 16.72% — far below my 50%+ threshold; promoters have little skin in the game and this is non-negotiable for me",
+      "Revenue in secular decline at -4.6% CAGR (2016→2025), shrinking from ₹8,540 Cr to ₹5,603 Cr — this is a contracting business, not a growth story",
+      "Finance cost (₹600 Cr) nearly equals OCF (₹134 Cr), with D/E still at 1.47x and other income (₹653 Cr) masking operational weakness"
+    ],
+    "red_flags": [
+      "Negative equity for five consecutive years (2020–2024) — technically insolvent; equity only turned positive in 2025 to ₹1,092 Cr",
+      "Net profit is wildly volatile: losses in 2016, 2017, 2018, 2021, 2023; 2025 profit of only ₹113 Cr mostly propped up by ₹653 Cr 'other income' (likely asset disposals — not recurring)",
+      "P/E of 30.1x on ₹113 Cr net profit is grossly expensive for a company of this quality; ROE of -0.70% confirms no real return on shareholder capital",
+      "Operating margin of just 6.73% leaves zero buffer against project cost overruns — endemic risk in Indian infra EPC"
+    ],
+    "detailed_analysis": "HCC's nine-year data tells a story of chronic underperformance. Revenue peaked around ₹10,668 Cr in FY22 and has collapsed to ₹5,603 Cr in FY25 — nearly half. EBITDA of ₹703 Cr looks reasonable, but ₹600 Cr vanishes immediately as finance costs, leaving a paper-thin ₹113 Cr net profit. Worse, ₹653 Cr of \"other income\" in FY25 — likely gains from asset monetisation — is what rescued the P&L; strip that out and the company is operationally loss-making. EV/EBITDA of 5.46x appears cheap on the surface, but it is cheap for a reason.\n\nThe promoter stake of 16.72% is a deal-breaker under any framework, but especially mine. In India, a promoter who holds less than 20% is either unable to raise capital to hold more, or has systematically exited. Either interpretation is deeply unfavourable. The company spent years with negative equity — a de facto balance sheet insolvency — and while the deleveraging from ₹5,512 Cr to ₹1,610 Cr in borrowings is commendable, it was largely achieved by shrinking the business and selling assets, not by earning superior returns. At 30x P/E for erratic, sub-scale earnings with a high-debt balance sheet and a disengaged promoter, this is not an India growth story — it is a distressed workouts bet, and that is not my game.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 61068,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0870108,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9794,
+      "cache_read_input_tokens": 11231,
+      "output_tokens": 3127,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9794
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 426,
+          "cache_read_input_tokens": 9128,
+          "cache_creation_input_tokens": 2769,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2769,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

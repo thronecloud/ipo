@@ -1,0 +1,70 @@
+{
+  "symbol": "CPPLUS",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-22T16:23:01.355402Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "CPPLUS trades at INR 2,264 — approximately 7.5x my calculated Graham Number of ~INR 301 (based on EPS ~₹29.8 and BVPS ~₹134.7), offering zero margin of safety. The 2025 net profit surge to ₹351 Cr is almost entirely illusory, driven by ₹259 Cr in \"Other Income\" against operating cash flow of a mere ₹27 Cr.",
+    "key_strengths": [
+      "Debt/Equity of 0.08 — an unusually clean balance sheet, borrowings reduced to ₹128 Cr in FY25",
+      "Five consecutive years of positive reported earnings (2020–2025) — passes the basic continuity test",
+      "Revenue CAGR of 20.2% over five years showing real business growth in a growing surveillance market"
+    ],
+    "key_risks": [
+      "Valuation is absurd: P/E of 105x and P/B of 16x against my hard limits of 15x and 1.5x respectively",
+      "Earnings quality is severely impaired: ₹351 Cr net profit in FY25 rests on ₹259 Cr Other Income, while operating cash flow is only ₹27 Cr — the business earned almost nothing in cash",
+      "Free cash flow was -₹187 Cr in FY24 and essentially zero (₹1 Cr) in FY25 — reported profits are not translating to real cash"
+    ],
+    "red_flags": [
+      "Graham Number ~₹301 vs. market price of ₹2,264 — an 87% premium to intrinsic value by my formula",
+      "FY25 Other Income of ₹259 Cr nearly equals total operating income of ₹248 Cr — operating business alone earns almost nothing extra",
+      "OCF turned sharply negative in FY24 (-₹180 Cr) and barely recovered in FY25 (₹27 Cr) despite a tripling of reported net profit — working capital destruction is a serious concern",
+      "No disclosed dividend — shareholders receive no cash return from the business"
+    ],
+    "detailed_analysis": "By every quantitative standard I have applied for fifty years, CPPLUS is a speculation masquerading as an investment. A P/E of 105x demands that the company sustain extraordinary growth for a decade without interruption — a condition I have never found reliable enough to pay for. A P/B of 16x means the investor is paying ₹16 for every ₹1 of net assets; at that price, even a modest contraction in margins or a sector slowdown destroys the entire equity cushion. The Graham Number of approximately ₹301 — derived from ₹29.8 EPS and ₹134.7 book value per share — tells me in plain arithmetic that the current price embeds no margin of safety whatsoever.\n\nThe earnings quality problem is equally troubling. FY2025 net profit more than tripled to ₹351 Cr, yet operating cash flow was only ₹27 Cr. The gap is explained almost entirely by ₹259 Cr of \"Other Income\" — a line I treat with the deepest suspicion when it exceeds the operating profit of the core business. In FY2024, the company burned ₹187 Cr in free cash flow. A business that cannot convert its stated profits into cash is not, in my judgment, earning those profits at all. Mr. Market has priced this company for perfection; the disciplined investor must demand a discount, not a premium.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 46749,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0725487,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9232,
+      "cache_read_input_tokens": 11249,
+      "output_tokens": 2303,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9232,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 296,
+          "cache_read_input_tokens": 9199,
+          "cache_creation_input_tokens": 2083,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2083
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

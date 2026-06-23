@@ -1,0 +1,70 @@
+{
+  "symbol": "NAZARA",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-18T21:59:43.014605Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Nazara has a compelling 25.5% revenue CAGR story in India's fast-growing gaming sector, but net profits actually declined 32% in FY25 (75→51 Cr) despite 43% revenue growth — making the P/E of 133.6 unjustifiable and the PEG ratio effectively infinite. This is a roll-up engine dressed up as a growth stock, and I won't pay 133x earnings for a business with 1.98% operating margins.",
+    "key_strengths": [
+      "Revenue CAGR of 25.5% over 9 years with India's gaming/esports market still in early innings — the sector tailwind is real",
+      "Gross margin of 71% proves underlying unit economics are strong; the profitability problem is self-inflicted via M&A costs, not structural",
+      "Near-zero debt (D/E 0.06) with 299 Cr cash — balance sheet isn't the issue"
+    ],
+    "key_risks": [
+      "PEG ratio is essentially infinite — net profit of 51 Cr is DOWN from 75 Cr while revenue grew 43%; Lynch's cardinal rule broken",
+      "1.98% operating margin vs 71% gross margin is a catastrophic gap — SG&A and acquisition integration are consuming all the economics",
+      "Serial dilutive roll-up model: investing outflows of -1,139 Cr in FY25, funded by 805 Cr financing inflows — shareholders are constantly diluted to fund the next deal"
+    ],
+    "red_flags": [
+      "Net profit declined 32% (75→51 Cr) while revenue grew 43% — operating leverage is moving in reverse",
+      "Other income (80 Cr) nearly equals operating income (115 Cr) — core gaming operations are barely profitable on their own",
+      "Free cash flow turned negative (-82 Cr) in FY25 as capex surged 5x to 148 Cr",
+      "ROE of 2.9% and ROCE of 2.5% — management is destroying value with every rupee of capital raised"
+    ],
+    "detailed_analysis": "Nazara is the kind of stock that looks exciting in a headline — Indian gaming, esports, Africa expansion, a portfolio of 20+ IPs — but falls apart the moment you look at the numbers. Lynch's first question is always \"what's the earnings story?\" and here it's awful. Revenue hit 1,624 Cr in FY25, up 43% YoY, which would normally excite me. But net profit went from 75 Cr to 51 Cr in the same year. The company is spending aggressively on acquisitions (Animal Jam, Fusebox Games, Space and Time, etc.) funded by repeated equity raises — total equity ballooned from 1,999 Cr to 3,395 Cr in one year. This is a roll-up, not an organic grower, and roll-ups need to show earnings leverage eventually.\n\nAt P/E 133.6, I'd need to see at minimum 20%+ earnings growth to justify even considering a PEG analysis. Instead, earnings are falling. The 71% gross margin tells me the games themselves are profitable — but the overhead of stitching together dozens of acquired businesses, paying content costs, and running an ad-tech operation is eating everything. Even the forward P/E of 56.55 implies a near-3x earnings recovery that I haven't seen evidence for. Lynch's rule: never buy a stock where the P/E is double the growth rate. Here the P/E is 133x and earnings growth is negative. AVOID until operating margins break above 8-10% and the earnings story re-emerges.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 57447,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09185625,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11699,
+      "cache_read_input_tokens": 9070,
+      "output_tokens": 3017,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11699,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 438,
+          "cache_read_input_tokens": 9070,
+          "cache_creation_input_tokens": 2629,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2629
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

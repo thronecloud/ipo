@@ -1,0 +1,69 @@
+{
+  "symbol": "544409",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-20T19:57:46.109081Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Astonea Labs is a sub-scale 2017-vintage contract pharma manufacturer earning a rounding-error 0.35% ROE yet trading at 35.6x earnings — the math of compounding simply cannot work here. Inverting: this is precisely the kind of commodity, capital-hungry, moatless business Munger tells you to discard in the first 30 seconds.",
+    "key_strengths": [
+      "High promoter holding of 72.3% signals skin in the game",
+      "Pharma/cosmetic contract manufacturing is a growing end-market in India",
+      "Small base of INR 165 Cr leaves theoretical room to scale"
+    ],
+    "key_risks": [
+      "ROE of 0.35% — capital is being destroyed, not compounded",
+      "P/E of 35.6x on negligible earnings implies extreme overvaluation",
+      "Contract manufacturing is a price-taking, low-moat, customer-concentrated business"
+    ],
+    "red_flags": [
+      "ROE (0.35%) is effectively zero — far below cost of capital",
+      "Institutional holding near nil (FII 0%, DII 0.07%) — no serious money validates this",
+      "Recently listed SME-scale operator with no track record of consistent ROIC"
+    ],
+    "detailed_analysis": "Apply the Munger filter: a business must earn a high, durable return on invested capital. Astonea's 0.35% ROE tells you the enterprise is generating essentially nothing on shareholders' money — well below any plausible cost of capital in India (12-14%). Paying 35.6x earnings for that is paying a growth multiple for value destruction. Contract manufacturing for third-party brands is structurally a low-moat business: customers own the brand, pricing is negotiated, capacity is commoditized, and scale economics favor large incumbents like Divi's or Piramal — not a 2017-incorporated INR 165 Cr operator.\n\nInverting as Munger insists: what would make me lose money here? Customer concentration, regulatory slip (USFDA/CDSCO), working-capital blowups from receivables, equity dilution to fund capex, and multiple compression as the post-listing euphoria fades. All plausible, all simultaneously. There is no compounding machine here, no identifiable moat, no evidence of management capability yet, and the price embeds optimism rather than discounts risk. Pass without hesitation; there are better fish in clearer waters.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 22264,
+    "model_used": "opus",
+    "total_cost_usd": 0.09281674999999999,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8979,
+      "cache_read_input_tokens": 13186,
+      "output_tokens": 1203,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8979,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10459,
+          "cache_creation_input_tokens": 1247,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1247
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

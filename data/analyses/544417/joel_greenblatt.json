@@ -1,0 +1,69 @@
+{
+  "symbol": "544417",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-20T20:03:33.302492Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Aten Papers screens as optically cheap (P/E 2.94, ~34% earnings yield proxy) but fails the \"good business\" half of the Magic Formula with ROE of just 0.67%, implying negligible return on capital. A paper trading intermediary at nano-cap scale with near-zero profitability is a classic value trap, not a Magic Formula buy.",
+    "key_strengths": [
+      "Low headline P/E of 2.94 suggests high earnings yield on stated earnings",
+      "High promoter skin-in-the-game at 67.96%",
+      "Operates in a real, cash-generating supply-chain niche (paper intermediary)"
+    ],
+    "key_risks": [
+      "ROE of 0.67% implies ROIC is almost certainly well below the 20%+ Magic Formula threshold",
+      "Nano-cap (INR 16 Cr) intermediary/trading business — thin margins, no pricing power, zero moat",
+      "Young company (2019) with no track record of sustained high returns on capital"
+    ],
+    "red_flags": [
+      "Return on equity of 0.67% is effectively zero — capital is not earning its keep",
+      "Zero institutional ownership (FII 0%, DII 0%) signals lack of professional validation",
+      "Trading-intermediary model is inherently capital-intensive with low ROIC — structurally fails Magic Formula"
+    ],
+    "detailed_analysis": "From a Magic Formula lens, the two screens that matter are earnings yield (EBIT/EV) and return on capital (EBIT/(NWC+NFA)). The P/E of 2.94 is eye-catching and superficially points to a very high earnings yield, but a paper intermediary typically carries meaningful working capital (inventory + receivables), so EV is likely well above market cap and the true EBIT/EV will be materially lower than 1/P/E suggests. More importantly, ROE of 0.67% is a disqualifying signal — even with zero leverage that maps to a return on capital in low single digits, nowhere near the 20%+ threshold I require. Cheap + bad = avoid; the formula only works when both boxes are ticked.\n\nThe business itself — a 2019-vintage paper supply-chain intermediary — is exactly the kind of low-moat, commoditized middleman operation that structurally cannot earn high returns on capital. Nano-cap size (INR 16 Cr) means illiquidity and governance risk, and the absence of any FII/DII holding suggests no institutional diligence has validated the numbers. I'd pass and redeploy capital to names where both earnings yield and ROIC clear the bar simultaneously.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 34262,
+    "model_used": "opus",
+    "total_cost_usd": 0.09887875,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 9159,
+      "cache_read_input_tokens": 13460,
+      "output_tokens": 1395,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9159,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10590,
+          "cache_creation_input_tokens": 1439,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1439
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

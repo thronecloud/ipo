@@ -1,0 +1,69 @@
+{
+  "symbol": "ANONDITA",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-20T11:15:08.496034Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "A company founded in March 2024 selling flavored condoms under one brand, trading at 74x earnings with a 1,274 Cr market cap, is speculation dressed up as investing. Invert: the probability of durable 20-year compounding from a single-SKU start-up in a category dominated by Mankind (Manforce), Reckitt (Durex) and JK Ansell is vanishingly small.",
+    "key_strengths": [
+      "Headline ROE of 41.7% on a small, newly-deployed capital base",
+      "Promoter holding of 62.4% signals skin in the game",
+      "Condom category has decent gross margins and recurring consumption"
+    ],
+    "key_risks": [
+      "Barely 2-year operating history — no proof of durable economics through a cycle",
+      "ROCE of 16.67% vs ROE of 41.7% implies meaningful leverage inflating returns",
+      "Single product 'COBRA' competing against entrenched giants with 10-100x the distribution"
+    ],
+    "red_flags": [
+      "P/E of 73.9x for an unproven 2024-vintage SME-style listing",
+      "Wide ROE–ROCE gap (25pp) suggests debt-amplified returns, not operating excellence",
+      "No track record of capital allocation, margin stability, or brand-building"
+    ],
+    "detailed_analysis": "Applying inversion first: what destroys capital here? A brand-new company (March 2024), one product, no moat, and a valuation that assumes it will become the next Mankind Pharma. The condom market in India is an oligopoly with Manforce (~30% share), Durex, Skore and Kamasutra owning shelf space, distributor relationships, and ad budgets measured in hundreds of crores. A 1,274 Cr market cap for a business this young at 74x earnings is the kind of setup that Ben Graham warned about and I've watched blow up repeatedly — the market is paying today for a 10-year compounding story with zero evidence it will materialize.\n\nOn quality: ROCE of 16.67% is merely adequate, not the >20% I require, and the gap to ROE of 41.7% tells me leverage is doing the heavy lifting — a fragile foundation for a consumer start-up. There is no visibility into FCF conversion, working capital discipline, distribution economics, or management's capital allocation history because the history doesn't exist. This is outside any circle of competence worth drawing. Too hard pile — pass without regret.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "insufficient_data",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 27383,
+    "model_used": "opus",
+    "total_cost_usd": 0.097719,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 9142,
+      "cache_read_input_tokens": 13203,
+      "output_tokens": 1358,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9142,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10476,
+          "cache_creation_input_tokens": 1393,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1393
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "MIDHANI",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T18:18:48.261734Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "MIDHANI is a strategically important defense-materials PSU with a niche product portfolio, but deteriorating earnings (-2.7% net profit CAGR), ROE of only 8.1%, and a punishing 63x P/E make this a mediocre business at an awful price. I don't pay growth multiples for shrinking profits.",
+    "key_strengths": [
+      "Defense/aerospace monopoly supplier — sole domestic producer of strategic superalloys and titanium for DRDO, ISRO, Navy, giving it genuine captive demand",
+      "Low debt at D/E 0.23 with CWIP fully absorbed (₹549 Cr in 2021 → ₹24 Cr in 2025), freeing capital for operations",
+      "FCF turned solidly positive in FY24-25 (₹136 Cr / ₹149 Cr) after a painful 2021-23 capex cycle"
+    ],
+    "key_risks": [
+      "Earnings are shrinking, not growing — net profit declined from ₹177 Cr (2022) to ₹111 Cr (2025) at -2.7% CAGR while revenue grew 7.1%, signaling severe cost inflation and loss of pricing power",
+      "Operating margin collapsed from ~30% (2019) to 13.7% (2025) — a 1,600bps compression with no clear recovery path, making the PSU look operationally fragile",
+      "Finance costs compounding at 27.4% CAGR (₹7 Cr → ₹30 Cr) disproportionately eroding thin profits in a low-ROE (8.1%) business"
+    ],
+    "red_flags": [
+      "P/E of 63x on declining earnings is speculative pricing — you're paying a world-class growth multiple for a company whose profits are going backwards",
+      "ROE of 8.1% is well below my 15% floor and barely exceeds India's risk-free rate — capital is not being compounded effectively",
+      "Government PSU with 74% promoter holding limits management incentive alignment and capital allocation discipline"
+    ],
+    "detailed_analysis": "MIDHANI operates in a genuinely rare niche — it is India's only domestic manufacturer of superalloys and titanium for strategic defense and space applications. That is a real moat of sorts, underpinned by government policy and import substitution. The gross margin of 60.3% reflects the specialty nature of the products. However, the operating margin has been gutted — from 26% in FY21 to 13.7% in FY25 — as input costs, employee costs (PSU-typical), and finance charges have eaten into the top line. Revenue grew at a pedestrian 7.1% over six years, but net profit actually shrank at 2.7% CAGR. That is not a wonderful business; that is an adequate business with a structural cost problem.\n\nThe valuation is the final nail. At ₹370, investors are paying 63x trailing earnings and 33x EV/EBITDA for a company earning 8.1% ROE. Even on the optimistic forward P/E of 38.5x, the market is pricing in a dramatic earnings recovery that the operating trend does not justify. Charlie Munger would call this a \"cigar-butt with no puffs left.\" The only scenario where this works is a major defense order surge driving utilization and margin expansion — but that's speculation, not investing. I would need the price to fall to roughly 20-25x earnings (around ₹130-160) before this would even approach fair value territory for a low-ROE government enterprise.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 39573,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07486485000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10803,
+      "cache_read_input_tokens": 8932,
+      "output_tokens": 2111,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10803
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 302,
+          "cache_read_input_tokens": 8932,
+          "cache_creation_input_tokens": 1871,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1871,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

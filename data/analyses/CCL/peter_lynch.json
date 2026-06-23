@@ -1,0 +1,69 @@
+{
+  "symbol": "CCL",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-19T12:52:15.340196Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "CCL Products is a compelling B2B niche dominator — India's largest instant coffee manufacturer exporting to global brands — with revenue growing 17% in FY25 to ₹3,106 Cr and profits up 24% to ₹310 Cr as new capacity comes online. The risk is a rapidly inflating debt load (₹469 Cr to ₹1,628 Cr in 5 years), chronically negative FCF, and a P/E of 38.7x that prices in a growth acceleration that's not yet proven.",
+    "key_strengths": [
+      "Genuine niche dominator: India's #1 instant coffee exporter, serving global brands that value CCL's cost and quality advantage — a simple, understandable story",
+      "Revenue growth accelerating: 14.3% 9Y CAGR with FY25 clocking 17% YoY growth; earnings grew 24% YoY as newly commissioned capacity kicks in",
+      "ROE of 17% and consistent OCF positive across 5 years — the underlying operations are profitable; negative FCF is investment-driven, not operational failure"
+    ],
+    "key_risks": [
+      "Debt/equity of 0.78 breaches Lynch's 0.6 ceiling; borrowings tripled from ₹469 Cr to ₹1,628 Cr in 5 years and finance costs nearly doubled to ₹113 Cr in FY25",
+      "FCF has been deeply negative 3 of last 4 years (-₹159 Cr, -₹458 Cr, -₹128 Cr) — the company is in a capital-intensive expansion mode with no near-term cash return",
+      "Coffee is a commodity-exposed business — green coffee price spikes or global demand slowdown could squeeze margins at exactly the wrong time given leverage"
+    ],
+    "red_flags": [
+      "Finance costs have tripled in 3 years (₹34→₹78→₹113 Cr) as the company has borrowed aggressively; earnings growth could reverse quickly if expansion doesn't deliver",
+      "PEG of ~3.5 (P/E 38.7 / 10.9% long-term earnings CAGR) is unattractive; forward PEG of ~1.9 requires sustained 15%+ earnings growth to justify",
+      "CWIP of ₹501 Cr in FY24 collapsing to ₹18 Cr in FY25 suggests capacity came online — but FY26 earnings will reveal if utilization and margins meet expectations"
+    ],
+    "detailed_analysis": "Lynch would understand CCL's story immediately: India grows coffee, CCL processes it into instant coffee for Nestlé, Jacobs, and other global giants who want low-cost, high-quality supply. It's a classic export-oriented manufacturer with a global TAM and India's natural cost advantage. The FY25 results show the investment thesis is working — ₹310 Cr profit on ₹3,106 Cr revenue, with CWIP converting to operational capacity. But Lynch's rule is clear: D/E above 0.6 is a warning sign, and at 0.78 with finance costs exploding, this company must now execute flawlessly on its expanded capacity to service that debt. At forward P/E of ~29x with 15-20% expected growth, the PEG of 1.5-2.0 is acceptable but not exciting. Wait for FCF to turn consistently positive before adding aggressively.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 191363,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.22930605000000004,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 23671,
+      "cache_read_input_tokens": 15486,
+      "output_tokens": 9059,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 23671,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 889,
+          "cache_read_input_tokens": 15486,
+          "cache_creation_input_tokens": 8185,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8185
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "CHENNPETRO",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-19T06:06:39.675679Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Chennai Petroleum Corporation is a commodity refiner with a 2.51% ROE and 4.3% ROCE — it is destroying shareholder value on every rupee employed. Net profit collapsed from INR 2,745 Cr in 2024 to INR 214 Cr in 2025, an 92% decline in a single year, which perfectly illustrates why I never invest in businesses whose economics are entirely dictated by crack spreads and crude oil prices they cannot control.",
+    "key_strengths": [
+      "Debt has been reduced dramatically: borrowings fell from INR 9,167 Cr (2021) to INR 1,933 Cr (2025), and equity has grown to INR 8,826 Cr — the balance sheet is far cleaner than five years ago",
+      "Consistent operating cash flow over the last 5 years (5/5 positive) provides some stability despite earnings volatility",
+      "Trades at an extremely low P/S of 0.24x and P/E of 7.2x — the market already prices in very little"
+    ],
+    "key_risks": [
+      "ROE of 2.51% and ROCE of 4.3% are below the cost of capital — shareholders would be better off in a fixed deposit; this is value destruction, not creation",
+      "Operating income and EBITDA are in a structural declining trend with a -4.1% CAGR in EBITDA; 2025 EBITDA of INR 1,117 Cr vs. INR 5,708 Cr in 2023 shows extreme volatility",
+      "Gross margins of 8.34% leave virtually no buffer for input cost increases, and margins are entirely at the mercy of global refining margins"
+    ],
+    "red_flags": [
+      "Net profit CAGR of -13.2% over 9 years — this company is earning less today than a decade ago despite massive capital employed",
+      "Earnings swung from +INR 3,532 Cr (2023) to +INR 2,745 Cr (2024) to +INR 214 Cr (2025) — no business with this volatility deserves a premium",
+      "As a subsidiary of Indian Oil Corporation, management priorities serve the parent, not minority shareholders — capital allocation is not in Chola minority holders' hands"
+    ],
+    "detailed_analysis": "Oil refining is among the worst businesses to own. It is capital-intensive, commodity-priced, margin-thin, and CPCL proves every one of these flaws. A 2.51% ROE on INR 8,826 Cr of equity means the business generates roughly INR 221 Cr of net income on assets worth INR 16,558 Cr — that is economic failure dressed up as a going concern. The parent IOC relationship adds another layer of concern: investment and pricing decisions are made in a larger strategic context, not for minority shareholder value.\n\nEven the apparent cheapness at 7.2x P/E is a trap. When a business earns poor returns on capital, a low P/E merely reflects low earnings quality and high cyclicality — both of which are present here. The 2025 earnings collapse to INR 214 Cr from INR 2,745 Cr confirms this is not a business I would own at any multiple.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "poor",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 140412,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.1955661,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 22302,
+      "cache_read_input_tokens": 15882,
+      "output_tokens": 7144,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 22302,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 576,
+          "cache_read_input_tokens": 15882,
+          "cache_creation_input_tokens": 6420,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 6420
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

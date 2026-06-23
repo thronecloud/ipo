@@ -1,0 +1,70 @@
+{
+  "symbol": "NEULANDLAB",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-22T16:38:04.452321Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Neuland is a decent API/CDMO business with improving long-term fundamentals, but at 110x trailing P/E on a year that just saw revenue and profit decline, the market is pricing perfection into an inherently cyclical, capital-intensive manufacturer. At INR 19,623 Cr market cap for INR 260 Cr of net profit, I'd be paying an absurd price for a business I don't consider wonderfully moated.",
+    "key_strengths": [
+      "Low leverage with D/E of only 0.16 and finance costs declining from INR 24 Cr (2016) to INR 8 Cr (2025)",
+      "Strong long-run profit CAGR of 28.6% over 9 years, driven by shift toward higher-value CDMO/peptide work",
+      "OCF positive all 5 years with INR 317 Cr OCF in FY2025, and cash balance growing to INR 132 Cr"
+    ],
+    "key_risks": [
+      "Earnings quality concern: 'Other Income' spiked to INR 90 Cr in FY2025 (vs INR 12 Cr prior year) — stripping this out, operating performance looks significantly weaker",
+      "Business already deteriorating: Revenue fell from INR 1,559 Cr to INR 1,477 Cr and net profit from INR 300 Cr to INR 260 Cr in FY2025, yet the stock still commands 110x P/E",
+      "Accelerating capex cycle (INR 206 Cr in FY2025 vs INR 144 Cr in FY2024) with CWIP tripling to INR 140 Cr — capital-intensive build-outs in cyclical industries rarely produce the returns the market implies"
+    ],
+    "red_flags": [
+      "Other Income INR 90 Cr in FY2025 vs INR 12 Cr in FY2024 — distorts net profit of INR 260 Cr; underlying operating earnings power is far lower than headline",
+      "EV/EBITDA of ~57x (even on my own calculation) for a manufacturer with 12.1% operating margins is indefensible on any reasonable valuation framework",
+      "Borrowings jumped from INR 95 Cr to INR 265 Cr in FY2025 during an earnings decline — leverage rising at exactly the wrong time",
+      "ROE of 14.8% barely clears my 15% threshold and is being achieved with expanding equity base; returns are not durable at these capital intensity levels"
+    ],
+    "detailed_analysis": "Neuland is a niche API and CDMO player with meaningful exposure to peptide synthesis — a genuinely interesting specialty area. The nine-year journey from INR 510 Cr to INR 1,477 Cr in revenue and a long debt-reduction track record speak to a management team that runs the business with discipline. Finance costs have been cut nearly in half relative to 2016 levels, and OCF has been consistently positive. These are not nothing. However, I do not see the durable competitive moat I require. API manufacturing is a competitive, specification-driven business where customers can and do switch suppliers, margins are structurally thin (12.1% operating margin), and returns on capital are modest (ROE 14.8%). I cannot identify pricing power of the kind Coca-Cola or See's Candies possesses.\n\nThe valuation is the decisive problem. At 110x trailing earnings — on a year where both revenue and profit declined — the market is embedding a recovery and re-acceleration that may or may not materialize. Worse, INR 90 Cr of \"Other Income\" in FY2025 inflates headline profit; strip that out and earnings are closer to INR 170-185 Cr, implying a true trailing P/E north of 100x. Meanwhile, capex is accelerating sharply (INR 206 Cr, the largest in the company's history) and borrowings jumped INR 170 Cr in a single year. I am paying a luxury price for a business entering a heavy investment cycle with declining near-term returns. In my experience, that combination rarely ends well for the buyer. I'd want to see this trade at 25-30x earnings on a clean, recovered profit base before I'd even begin to get interested.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 52354,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08776424999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11453,
+      "cache_read_input_tokens": 9005,
+      "output_tokens": 2807,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11453,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 389,
+          "cache_read_input_tokens": 9005,
+          "cache_creation_input_tokens": 2448,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2448
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

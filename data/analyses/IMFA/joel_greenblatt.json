@@ -1,0 +1,69 @@
+{
+  "symbol": "IMFA",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T17:40:55.910094Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "IMFA scores adequately on ROIC (~21%) but the earnings yield of ~6% (EBIT INR 531 Cr / EV ~INR 8,828 Cr) barely clears the Magic Formula threshold, making it neither cheap nor expensive. Severe earnings cyclicality — three loss years in the last decade — undermines the reliability of the ROIC signal, which is central to the formula's logic.",
+    "key_strengths": [
+      "Debt dramatically reduced: borrowings fell from INR 713 Cr (2020) to INR 237 Cr (2024); finance costs down 66% over 9 years",
+      "Consistent OCF generation: 5/5 positive years, INR 585 Cr in FY25 — strong FCF conversion of INR 471 Cr",
+      "Integrated operations (captive chrome ore mines + 204 MW power plant) reduce input cost volatility and support ROCE of 21.3%"
+    ],
+    "key_risks": [
+      "Extreme earnings cyclicality: net losses in 2016, 2019, 2020 — Magic Formula ROIC is unreliable on cyclical troughs/peaks",
+      "Revenue and operating income both declined in FY25 (2,565 Cr vs 2,780 Cr; EBIT 531 Cr vs 587 Cr), suggesting commodity cycle headwinds",
+      "Large capex cycle restarting: investing CF surged to -562 Cr in FY25 and borrowings jumped from 237 to 435 Cr — FCF and balance sheet could deteriorate"
+    ],
+    "red_flags": [
+      "Earnings Yield of only ~6.0% (531/8,828) — barely at the Magic Formula floor; EV/EBITDA of 16.6x is expensive for a commodity cyclical",
+      "Borrowings rose sharply from INR 237 Cr (FY24) to INR 435 Cr (FY25) — debt reduction narrative partially reversed",
+      "Net profit is highly volatile: swung from -66 Cr (2020) to +508 Cr (2022) to 379 Cr (2025) — commodity price dependency, not durable earnings power"
+    ],
+    "detailed_analysis": "Running the Magic Formula on IMFA: Earnings Yield = EBIT/EV = 531 / (8,446 + 389 – 7) = 6.0%, and ROIC proxied via ROCE = 21.3%. On Greenblatt's dual-ranking system, ROIC clears the \">20% good business\" bar, but an earnings yield of 6% barely scrapes the minimum acceptable threshold — far from the 12–15%+ that makes the formula sing. The forward P/E of 13.1x (vs trailing 22.9x) suggests the street is pricing in an earnings recovery, but as a formula investor, I rely on demonstrated, not forecast, earnings.\n\nThe bigger structural problem is cyclicality. Ferro chrome is a direct input to stainless steel, so IMFA's profits are slave to global stainless demand and chrome ore prices. Three loss years (2016, 2019, 2020) and an EBITDA range of INR 193–802 Cr over nine years makes this a commodity cycle bet, not a compounding machine. The balance sheet cleanup (D/E now 0.17) and captive power are genuine strengths, but the FY25 capex ramp (investing CF –562 Cr, CWIP up to 197 Cr) introduces execution risk. At current valuation, there is insufficient margin of safety for a Magic Formula buy.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "good",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 57270,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09092775,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11611,
+      "cache_read_input_tokens": 8975,
+      "output_tokens": 2979,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11611
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 380,
+          "cache_read_input_tokens": 8975,
+          "cache_creation_input_tokens": 2636,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2636,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "symbol": "PCJEWELLER",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T21:58:12.601825Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "PC Jeweller fails both legs of the Magic Formula decisively — ROCE of 6.55% is less than a third of the 20% threshold, and Earnings Yield (EBIT ₹396 Cr / EV ~₹11,400 Cr) of ~3.5% sits well below the minimum 6% hurdle. This is a distressed-recovery story masquerading as a value play, not the \"cheap AND good\" combination the formula demands.",
+    "key_strengths": [
+      "Debt dramatically restructured: borrowings fell from ₹4,150 Cr (2024) to ₹1,594 Cr (2025), sharply cutting finance costs from ₹505 Cr to ₹52 Cr",
+      "Revenue recovering from ₹604 Cr trough (2024) to ₹2,244 Cr (2025) and EBITDA turned positive at ₹528 Cr",
+      "Low D/E of 0.22 post-restructuring improves solvency runway"
+    ],
+    "key_risks": [
+      "Operating CF was -₹633 Cr in FY25 despite reported net profit of ₹578 Cr — massive working capital drag signals earnings quality is poor",
+      "Revenue at ₹2,244 Cr (2025) is still only ~23% of the 2018 peak of ₹9,610 Cr; business destruction is severe and market position may be permanently impaired",
+      "ROIC of ~6.55% (ROCE) signals the jewelry retail model earns below its cost of capital — a structurally poor business by Magic Formula standards"
+    ],
+    "red_flags": [
+      "Net profit swung from -₹629 Cr (2024) to +₹578 Cr (2025) — likely driven by one-time debt write-off gains, not operational earnings power",
+      "5 consecutive years of net losses (2019–2024) including negative EBIT in 2022 (−₹91 Cr) and 2024 (−₹170 Cr): Magic Formula cannot even be applied to negative-EBIT years",
+      "Equity doubled from ₹2,931 Cr to ₹7,238 Cr in one year — suggests a large dilutive capital raise that inflates book value but destroys per-share value",
+      "Forward P/E of 0.47 is likely a data artifact from restructuring gains, not sustainable earnings; extremely misleading valuation signal"
+    ],
+    "detailed_analysis": "Magic Formula arithmetic is straightforward here: EBIT of ₹396 Cr against an Enterprise Value of roughly ₹11,400 Cr (market cap ₹9,303 Cr + net debt ~₹2,089 Cr) yields an Earnings Yield of ~3.5% — far below the 6% floor and nowhere near the 12%+ that signals a bargain. Return on Capital (proxied by stated ROCE of 6.55%) is similarly disqualifying; the business earns well below its cost of capital, meaning every rupee reinvested destroys value. Both pillars of the Magic Formula collapse simultaneously.\n\nThe FY25 \"turnaround\" is misleading on closer inspection. Finance costs plummeted from ₹505 Cr to ₹52 Cr — almost certainly due to a debt restructuring/OTS settlement that generated accounting income, not operating improvement. Free cash flow was -₹633 Cr in FY25 while net profit was +₹578 Cr, a gap of over ₹1,200 Cr that screams non-cash or one-time items. Revenue at ₹2,244 Cr is 77% below the 2018 peak and the company has lost most of its showroom network. This is a speculative turnaround at a market cap of ₹9,303 Cr — expensive for the actual cash-generating power of the business.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 51768,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09140714999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11719,
+      "cache_read_input_tokens": 9023,
+      "output_tokens": 2983,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11719,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 357,
+          "cache_read_input_tokens": 9023,
+          "cache_creation_input_tokens": 2696,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2696
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

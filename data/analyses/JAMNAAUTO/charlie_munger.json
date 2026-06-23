@@ -1,0 +1,68 @@
+{
+  "symbol": "JAMNAAUTO",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T17:57:52.357851Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Jamna Auto is India's dominant leaf spring manufacturer (~68% CV market share) with a 70-year operating history and lean balance sheet — a quality niche business, but a thoroughly cyclical one priced at 25x earnings during a revenue downturn (FY25 revenue -6.5%, profit -12% YoY). Wait for a better entry or clearer CV cycle recovery before adding capital.",
+    "key_strengths": [
+      "Market leadership with ~68% share in commercial vehicle leaf springs — genuine pricing power in a narrow niche",
+      "Near debt-free balance sheet (D/E 0.15, net cash ~0 after netting 140 Cr cash vs 140 Cr total debt) with ROCE of 20.7%",
+      "Disciplined deleveraging — finance costs collapsed from 20 Cr (2016) to 5 Cr (2025), showing capital discipline"
+    ],
+    "key_risks": [
+      "Classic cyclical business — FY2020 saw revenue crash 47% (2,135→1,129 Cr); FY2025 already showing renewed decline",
+      "Rising capex cycle (196 Cr in FY25, CWIP surged to 270 Cr) risks return dilution if CV demand stays soft",
+      "Structural EV transition risk for CVs long-term could erode leaf spring demand, though timeline is uncertain"
+    ],
+    "red_flags": [
+      "FCF/Net Income of only 57% in FY25 (103/180 Cr) — below Munger's 80% quality threshold, partly capex-driven but bears watching",
+      "FY2025 revenue and profit both declining YoY despite India infrastructure tailwinds — suggests CV demand weakness not fully priced in at 25x P/E"
+    ],
+    "detailed_analysis": "Inversion first: what makes this dangerous? Jamna Auto earns its returns almost entirely from one product (leaf springs) sold to one sector (commercial vehicles). The FY2020 episode — revenue halved, net profit collapsed 65% to 48 Cr — is the honest base case stress test. We are now seeing a mild repeat: FY25 revenue fell to 2,270 Cr from 2,427 Cr, net profit to 180 from 205 Cr. Paying 25x earnings for a cyclical at the top of an earnings curve is precisely the mistake Munger warns against. That said, the business itself is genuinely good: 20.7% ROCE, expanding reserves (477→996 Cr in five years), near-zero debt, and a customer base that cannot easily substitute a dominant supplier mid-cycle.\n\nThe heavy capex cycle (163 Cr FY24, 196 Cr FY25, CWIP at 270 Cr) is the critical near-term variable. If this is capacity addition for air suspension, lift axles, and stabilizer bars — higher-margin, growing adjacencies — it could re-rate the business upward. If the CV cycle stays depressed, these assets will sit underutilized and drag ROIC below the 15% threshold. Forward P/E of 19.5x assumes earnings recovery; that is a reasonable bet but not a margin-of-safety bet. At INR 95–105 (roughly 15x normalized earnings of ~200 Cr), this becomes genuinely interesting. At 129, it is fair but not compelling — a business worth understanding deeply and owning at the right price.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 56617,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09252645,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11581,
+      "cache_read_input_tokens": 8979,
+      "output_tokens": 3093,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11581
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 529,
+          "cache_read_input_tokens": 8979,
+          "cache_creation_input_tokens": 2602,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2602,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

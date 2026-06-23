@@ -1,0 +1,67 @@
+{
+  "symbol": "544667",
+  "persona": "howard_marks",
+  "persona_display_name": "Howard Marks",
+  "analyzed_at": "2026-04-20T11:08:24.681628Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "A micro-cap (INR 75.5 Cr) publisher earning a negligible 0.31% ROE yet trading at 15.9x P/E offers no margin of safety — the price reflects speculative optimism, not business quality. In a declining print industry with no visible moat, the risk/reward is decisively unfavorable.",
+    "key_strengths": [
+      "Promoter holding of 64.78% signals skin in the game"
+    ],
+    "key_risks": [
+      "ROE of 0.31% indicates capital is essentially unproductive",
+      "Print & publication is a structurally declining industry facing digital disruption",
+      "Micro-cap illiquidity amplifies permanent loss risk in any downturn"
+    ],
+    "red_flags": [
+      "15.9x P/E on 0.31% ROE — mathematically unjustifiable valuation",
+      "Negligible earnings base makes P/E meaningless; implied earnings ~INR 4.7 Cr",
+      "Obscure BSE micro-cap — classic setting for price manipulation"
+    ],
+    "detailed_analysis": "Second-level thinking forces us to ask: what does INR 75.5 Cr market cap already reflect? At 15.9x P/E, the implied profit is only ~INR 4.7 Cr, and an ROE of 0.31% means equity is producing almost nothing. A business that cannot earn its cost of capital is destroying value; paying a market multiple for it is paying for the hope of a turnaround rather than the reality of the cash flows. Print publishing in India, outside a few dominant franchises, is a secularly shrinking pond — not where contrarian gold is typically found.\n\nThe margin of safety is non-existent. There is no evidence of a moat, no disclosed growth catalyst, and micro-cap illiquidity means exits in stressed markets are punitive. Institutional presence (FII 4.46%, DII 8.09%) looks modest and does not validate the thesis at this size. In a cycle where IPO-era micro-caps trade on narrative, Marks' rule applies: the price is wrong in the wrong direction. Pass — revisit only if the price collapses to a deep discount to tangible book with evidence of operational improvement.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 20502,
+    "model_used": "opus",
+    "total_cost_usd": 0.09010025,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8817,
+      "cache_read_input_tokens": 13478,
+      "output_tokens": 1129,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8817,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 59,
+          "cache_read_input_tokens": 10596,
+          "cache_creation_input_tokens": 1103,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1103
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

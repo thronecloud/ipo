@@ -1,0 +1,70 @@
+{
+  "symbol": "ADVANCE",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-20T11:10:51.714290Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Advance Agrolife is a recently-listed agrochemical company with strong growth but trades at P/E 28 and P/B 2.27 — well above my Graham thresholds. The persistent negative free cash flow (-28 Cr in 2025) alongside rising debt disqualifies it as a margin-of-safety investment.",
+    "key_strengths": [
+      "Revenue CAGR of 25.5% and net profit CAGR of 42.5% over 3 years",
+      "High ROE of 29.1% and ROCE of 28.0% show efficient capital use",
+      "Promoter holding of 69.89% indicates strong skin-in-the-game"
+    ],
+    "key_risks": [
+      "FCF negative all 4 years (-28 Cr in 2025); growth funded by debt (D/E rose from 0.58 to 0.79 on capital)",
+      "P/E 28 and P/B 2.27 offer no margin of safety vs. Graham Number",
+      "Thin 4.3% operating margin in a commoditized agrochemical segment, exposed to monsoon/pricing cycles"
+    ],
+    "red_flags": [
+      "IPO-era listing — insufficient multi-year public earnings track record",
+      "No meaningful dividend history",
+      "Cash balance of just INR 1 Cr against INR 80 Cr debt — liquidity thin",
+      "Total debt nearly quadrupled from 21 Cr (2022) to 80 Cr (2025)"
+    ],
+    "detailed_analysis": "From a Graham perspective, the quantitative filters fail decisively. Graham Number ≈ sqrt(22.5 × ~4.9 EPS × ~49 BVPS) ≈ INR 73 — the stock at INR 112 trades ~53% above its Graham fair value. P/E of 28 is nearly double my 15 ceiling, and P/B of 2.27 exceeds my 1.5 limit. While ROE (29%) and ROCE (28%) are admirable, these are recent figures without the 5–10 year consistency I demand. The company is a young listing in a cyclical, commodity-linked agrochemical space where 4.3% operating margins offer little cushion.\n\nMore troubling is the cash flow picture: every year from 2022–2025 shows negative free cash flow, with FCF of -28 Cr in 2025 against reported net profit of 26 Cr — earnings are not converting to cash, and the gap is being plugged by debt (up from 21 Cr to 80 Cr) and financing inflows. Mr. Market is pricing in continued growth, but the seller (promoters at the IPO/listing stage) typically knows more than the buyer. Without a track record of distributable cash, a dividend history, or a price below tangible book, this is speculation, not investment. AVOID.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 25577,
+    "model_used": "opus",
+    "total_cost_usd": 0.104014,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 10040,
+      "cache_read_input_tokens": 14518,
+      "output_tokens": 1359,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10040,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 109,
+          "cache_read_input_tokens": 11632,
+          "cache_creation_input_tokens": 1294,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1294
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

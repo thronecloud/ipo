@@ -1,0 +1,69 @@
+{
+  "symbol": "KNRCON",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T17:57:50.922872Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "KNR Constructions looks superficially cheap at 6.41x trailing earnings and 0.73x book, but it is a capital-intensive government-contract construction business that has generated positive free cash flow in only 1 of the last 5 years — reported profits are not real owner earnings. This is a fair business at a seemingly wonderful price, not the other way around.",
+    "key_strengths": [
+      "Exceptional reported returns — ROE 27.2%, ROCE 28.6%, operating margin 20.4% are unusually strong for a construction company",
+      "Decade-long revenue CAGR of 16.6% and net profit CAGR of 27.6% show genuine execution ability",
+      "Valuation is extremely depressed — P/B 0.73, EV/EBITDA 4.59 — suggesting significant margin of safety on an asset basis"
+    ],
+    "key_risks": [
+      "Persistent negative free cash flow: FCF was negative in 4 of 5 years (-592 Cr in 2025 alone) — profits are being trapped in working capital, the hallmark of a bad business disguised as a good one",
+      "Debt surging dangerously: borrowings quadrupled from 652 Cr (2023) to 2,321 Cr (2025) while cash collapsed from 356 Cr to 103 Cr — this is not a financially conservative balance sheet",
+      "No durable moat: government-contract construction is a competitive-bidding commodity business; there is no pricing power, no customer lock-in, no brand advantage"
+    ],
+    "red_flags": [
+      "OCF positive only 1/5 years — 2025 OCF was -567 Cr despite 1,002 Cr net profit; this gap destroys the earnings quality thesis",
+      "Borrowings exploded from 652 Cr to 2,321 Cr in two years — nearly 4x — raising solvency risk in a cyclical sector",
+      "Forward P/E of 15.85 vs trailing P/E of 6.41 implies the market expects a sharp earnings mean-reversion; 2025 profit surge may be non-recurring"
+    ],
+    "detailed_analysis": "KNR Constructions operates in infrastructure EPC — roads, highways, irrigation — a business I have little affection for. The numbers tell a deceptive story: headline ROE of 27% and a net profit CAGR of 27.6% over nine years look wonderful, but follow the cash. In 2025, KNR reported 1,002 Cr of net profit yet burned 567 Cr of operating cash flow. In 2022, it reported 366 Cr profit but burned 336 Cr OCF. Positive free cash flow appeared only once in five years (2023: +1,100 Cr), and that single good year was sandwiched between two terrible ones. A business that consistently earns profits on paper while consuming cash is not compounding my wealth — it is financing its own reported earnings with debt and working capital. That is not a business I want to own.\n\nThe balance sheet deterioration is equally alarming. Borrowings went from 652 Cr in 2023 to 2,321 Cr in 2025 — a near-quadrupling in 24 months — while cash shrank from 191 Cr to 103 Cr. Debt-to-equity of 0.49 may look acceptable in isolation, but the trajectory is the wrong direction, and construction companies face brutal working capital cycles tied to government payment delays. The absence of any competitive moat compounds the risk: every new contract is won at razor-thin competitive margins, and pricing power is zero when the client is a state highway authority. At Berkshire, I buy toll roads, not the contractor who builds them. I would pass on this one entirely.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "undervalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 50119,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08222895,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11187,
+      "cache_read_input_tokens": 8979,
+      "output_tokens": 2505,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11187
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 345,
+          "cache_read_input_tokens": 8979,
+          "cache_creation_input_tokens": 2208,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2208,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "544329",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-20T09:44:10.855518Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "A sub-100 Cr micro-cap trader of spices and dry fruits earning a laughable 0.17% ROE — this is the opposite of a compounding machine. Invert: everything that makes a bad business is present here (no moat, commodity product, tiny scale, low promoter skin, short history).",
+    "key_strengths": [
+      "Optically low P/E of 6.08 (but on near-zero earnings, so meaningless)",
+      "Debt-light market cap of INR 78.6 Cr keeps downside contained in absolute terms",
+      "Operating in a growing FMCG/dry-fruits demand category in India"
+    ],
+    "key_risks": [
+      "ROE of 0.17% indicates capital is earning essentially nothing — worse than a savings account",
+      "Commodity trading of spices/dry fruits offers zero pricing power or durable moat",
+      "Low promoter holding (38.11%) and negligible institutional interest (FII 0.91%, DII 0%) signal no smart-money conviction"
+    ],
+    "red_flags": [
+      "ROE of 0.17% — ten-thousand-mile distance from the >15% ROIC bar",
+      "Incorporated only in Nov 2019 — no multi-cycle track record",
+      "SME-scale trading business with opaque disclosure and easily manipulated micro-cap dynamics"
+    ],
+    "detailed_analysis": "Applying inversion: what would make this a terrible investment? A trading business with no brand, no switching costs, no scale advantages, earning 0.17% on equity, run for only ~6 years, in a commoditized category where Indian households have hundreds of substitutes. Leo Dryfruits checks every one of those boxes. The low P/E of 6 is a statistical mirage — when earnings are trivially small, the multiple tells you nothing about value and everything about the denominator's fragility. One bad quarter of spice price volatility and the \"E\" flips negative.\n\nMunger's rule: the first filter is quality, not price. This fails at the first filter. A 0.17% ROE means management is destroying economic value versus the cost of capital (India's risk-free rate alone is ~7%). With promoter holding at only 38% and zero DII presence, there is no credible long-term owner whose incentives I'd want to ride alongside. I'd put this in the \"too-hard pile\" and never revisit — life is too short, and the world has better businesses.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 21987,
+    "model_used": "opus",
+    "total_cost_usd": 0.09269675,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8975,
+      "cache_read_input_tokens": 13196,
+      "output_tokens": 1199,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8975,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10469,
+          "cache_creation_input_tokens": 1233,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1233
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

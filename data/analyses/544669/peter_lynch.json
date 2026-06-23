@@ -1,0 +1,69 @@
+{
+  "symbol": "544669",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-20T11:12:42.991054Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Admach is a tiny (INR 130 Cr) special-purpose machinery maker with a 0.44% ROE — earnings are effectively nil, so the 14.9x P/E is misleading and PEG is incalculable. No visible growth story, no moat, and no margin of safety — this is not a Lynch buy.",
+    "key_strengths": [
+      "Niche in custom SPM/automation — a space with India capex tailwinds if execution improves",
+      "Promoter holding at 52.95% shows skin in the game",
+      "Small base (INR 130 Cr mcap) leaves theoretical room to scale if orders flow"
+    ],
+    "key_risks": [
+      "ROE of 0.44% is effectively zero — capital is not earning",
+      "No disclosed earnings growth rate, so PEG cannot be justified at 14.9x P/E",
+      "Micro-cap industrial with negligible FII/DII interest (~2%) — liquidity and governance risk"
+    ],
+    "red_flags": [
+      "ROE <1% despite a positive P/E suggests razor-thin earnings on a tiny base",
+      "Project-based SPM revenue is lumpy and customer-concentrated",
+      "Recently listed BSE SME-profile name with thin institutional validation"
+    ],
+    "detailed_analysis": "From a Lynch lens, the story is missing. Special-purpose machines are a decent niche riding India's manufacturing/automation capex, but a 0.44% ROE tells me the business is not yet earning its cost of capital — a P/E of 14.9x on near-zero earnings means the denominator is tiny, not that the stock is cheap. Without disclosed revenue/EPS growth, I cannot compute a PEG, and Lynch doesn't buy blind hope at 14x earnings on a INR 130 Cr industrial with no visible operating leverage yet.\n\nI'd want to see two consecutive years of 20%+ revenue growth, ROE climbing toward mid-teens, and an order book that proves the SPM pipeline is real before touching this. Until then it's a classic \"too small, too unproven\" — pass, revisit after 2-4 quarters of evidence.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 20676,
+    "model_used": "opus",
+    "total_cost_usd": 0.0898015,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8810,
+      "cache_read_input_tokens": 13418,
+      "output_tokens": 1120,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8810,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 77,
+          "cache_read_input_tokens": 10574,
+          "cache_creation_input_tokens": 1080,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1080
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "AURIONPRO",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T16:33:24.411277Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Aurionpro is a decent capital-light software business with improving ROIC (~18%) and strong recent revenue growth, but at an earnings yield of ~5% it fails the Magic Formula's cheapness test and does not meet the buy threshold. Until the valuation compresses, the margin of safety is insufficient for a systematic value purchase.",
+    "key_strengths": [
+      "Near-zero leverage (D/E 0.02, net cash ~INR 239 Cr) with 5/5 years of positive OCF gives balance-sheet resilience",
+      "Revenue and EBIT on a clear upswing — revenue +32% YoY in FY2025, EBIT CAGR 10% over 9 years with expanding margins",
+      "Operating margin expanding to 17.4% and ROCE at 18.1% shows the core fintech-software business earns above cost of capital"
+    ],
+    "key_risks": [
+      "Earnings yield ~5% (EBIT INR 242 Cr / EV ~INR 4,855 Cr) is well below the Magic Formula's 12%+ threshold — stock is priced for perfection",
+      "FY2025 FCF (INR 62 Cr) is only 33% of net profit (INR 188 Cr) with capex surging to INR 95 Cr and investing outflows of INR 421 Cr, signaling aggressive acquisition-led growth with uncertain returns",
+      "Promoter stake at a low 26.88% reduces alignment, and the FY2021 large write-down (-INR 192 Cr net profit, -INR 118 Cr 'other income') raises historic capital-allocation concerns"
+    ],
+    "red_flags": [
+      "Earnings yield of ~5% fails Magic Formula minimum threshold of 12%",
+      "FCF-to-net-profit conversion collapsed to ~33% in FY2025; heavy acquisition spending (INR 421 Cr investing outflows) may dilute future ROIC",
+      "FY2021 goodwill/impairment-driven loss of INR -192 Cr — a reminder that management has made costly capital misallocation before"
+    ],
+    "detailed_analysis": "Running the Magic Formula on Aurionpro: EBIT FY2025 = INR 242 Cr; EV = Market Cap (INR 5,094 Cr) + Debt (INR 30 Cr) – Cash (INR 269 Cr) = ~INR 4,855 Cr. Earnings yield = 242/4,855 = ~5.0% — well below the 12% threshold where Greenblatt begins to find stocks attractive. ROIC, proxied by reported ROCE of 18.1%, is decent but below the 25%+ level that signals a truly exceptional business moat. On both axes of the Magic Formula — cheapness AND quality — Aurionpro falls into mediocre territory, earning neither a standout cheap valuation nor an elite return-on-capital profile.\n\nThe business trajectory is genuinely improving: operating income has grown from INR 84 Cr (FY2021) to INR 242 Cr (FY2025), finance costs are falling, and the balance sheet is essentially debt-free. However, the FY2025 investing outflow of INR 421 Cr (acquisitions/capex) and a financing inflow of INR 283 Cr (likely equity raise) indicate management is diluting and deploying capital aggressively — exactly the serial-acquirer behavior that can destroy ROIC over time. The P/E of 25x and EV/EBITDA of 18.4x offer no margin of safety. The stock is a fair business at a full price; it enters buy territory only if EV/EBIT falls toward 8–9x (implying a ~35–40% price decline from current levels).",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 62054,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09095535,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11621,
+      "cache_read_input_tokens": 9142,
+      "output_tokens": 2975,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11621,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 523,
+          "cache_read_input_tokens": 9142,
+          "cache_creation_input_tokens": 2479,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2479
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

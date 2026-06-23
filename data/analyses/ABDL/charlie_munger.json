@@ -1,0 +1,68 @@
+{
+  "symbol": "ABDL",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-19T06:17:29.520237Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Allied Blenders owns Officer's Choice, India's largest-selling whisky by volume, which is a real brand asset — but five-year revenue CAGR of 3.3% reveals a business barely keeping pace with inflation, and the company was effectively earning nothing (net profit of ₹1–3 Cr annually) for four straight years before a one-time IPO-year jump. Paying 60x earnings for slow-growing, recently profitable mass-market IMFL is not rational.",
+    "key_strengths": [
+      "Officer's Choice brand has genuine mass-market recognition and distribution depth across India",
+      "EBITDA improving sharply in FY25 (₹262 Cr → ₹451 Cr) suggests operating leverage is finally kicking in",
+      "Debt/Equity of 0.67 is conservative for an IMFL company; balance sheet is not stressed"
+    ],
+    "key_risks": [
+      "Revenue grew at just 3.3% CAGR over five years — below nominal GDP growth and well below inflation in spirits pricing",
+      "Net profit was essentially zero for FY21–FY24 (₹1–3 Cr), making the FY25 ₹195 Cr look like IPO-window earnings management rather than structural improvement",
+      "State government excise policy is the dominant driver of margins; this is a business where regulators, not management, set profitability"
+    ],
+    "red_flags": [
+      "Operating CF swung from +₹186 Cr (FY24) to -₹678 Cr (FY25) in the same year net profit surged — a massive divergence that demands explanation",
+      "P/E of 59.8x on a business with a five-year profit near-zero history and 3.3% revenue CAGR is speculative pricing, not value investing"
+    ],
+    "detailed_analysis": "The IMFL sector has regulatory moats (state licensing, distribution control) that protect incumbents from new entrants, but those same regulations cap upside and make earnings inherently unpredictable. Officer's Choice competes on price in the mass segment, where brand loyalty is thin and switching to the next cheaper label is easy — this is not Coca-Cola. The FY25 step-up in net profit coincides with the IPO, and the simultaneous OCF collapse (-₹678 Cr) and financing inflow (+₹922 Cr) confirms IPO proceeds were deployed in working capital, not earned through operations.\n\nAt ₹16,050 Cr market cap on a business earning ₹195 Cr with 3.3% revenue growth, the market is pricing in a premium spirits re-rating that may never arrive. Premium spirits (Sterling Reserve) are growing faster but remain a small fraction of volume. I see a business that is structurally constrained by regulatory pricing, excise volatility, and slow volume growth — not the kind of compounder I want to own at 60x earnings.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 163784,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.23170725,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 24017,
+      "cache_read_input_tokens": 15515,
+      "output_tokens": 9132,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 24017,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 515,
+          "cache_read_input_tokens": 15515,
+          "cache_creation_input_tokens": 8502,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8502
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

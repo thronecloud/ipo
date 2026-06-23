@@ -1,0 +1,69 @@
+{
+  "symbol": "MAHSCOOTER",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T18:16:39.170714Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Maharashtra Scooters is a financial holding company — explicitly excluded from the Magic Formula — with Earnings Yield of ~0.9% (EBIT ₹170 Cr / EV ~₹18,730 Cr) and ROIC of ~0.5%, both catastrophically below the 12% and 20% thresholds respectively. The sole interesting data point is a 55% discount to book (P/B 0.45x), but that metric belongs to Graham's framework, not Greenblatt's.",
+    "key_strengths": [
+      "P/B of 0.45x implies ~55% discount to NAV (₹34,588 Cr assets vs ₹15,007 Cr market cap) — a classic holdco discount.",
+      "Near-zero capex business with 4/4 years of positive OCF (₹159–209 Cr range); FCF converts 1:1 to net profit.",
+      "51% promoter holding (Bajaj group) provides governance stability; growing net profit CAGR of 14.5%."
+    ],
+    "key_risks": [
+      "Magic Formula explicitly excludes financial/investment holding companies — both ROIC (0.55%) and Earnings Yield (~0.9%) are meaningless for capital allocation here.",
+      "Revenue declined -1.9% CAGR (2022–2025) to ₹183 Cr; EBITDA collapsed -9.6% CAGR — underlying investment income is shrinking.",
+      "P/S of 47.87x and EV/EBITDA of 47.84x confirm the stock is priced as a pure NAV play, not an earnings compounder — holdco discounts can persist indefinitely."
+    ],
+    "red_flags": [
+      "Financial holding company — Magic Formula does not apply; ROIC and Earnings Yield are structurally near-zero.",
+      "ROE of 0.69% on ₹30,863 Cr equity: capital is almost entirely idle investment securities generating negligible operating returns.",
+      "EBITDA fell sharply to ₹128 Cr in FY25 from ₹204 Cr in FY24 — a 37% single-year drop not explained by revenue alone."
+    ],
+    "detailed_analysis": "From a Magic Formula standpoint, Maharashtra Scooters is an automatic disqualification. Greenblatt's framework was built to rank operating businesses on Earnings Yield (EBIT/EV) and Return on Capital (EBIT / NWC + Net Fixed Assets). Here, EBIT of ₹170 Cr against an enterprise value of roughly ₹18,730 Cr yields an Earnings Yield of ~0.9% — versus my 12% minimum threshold. ROIC is equally meaningless: the ₹34,588 Cr balance sheet is almost entirely investment securities, not productive operating capital, giving ROCE of just 0.55%. This is why Greenblatt explicitly removes financial companies from the screen.\n\nThe only analytically interesting feature is the 55% discount to book value (P/B 0.45x), which is a classic Bajaj group holdco structure where listed subsidiaries hold equity stakes far exceeding their market cap. But that thesis belongs to Ben Graham or event-driven arbitrage — not the Magic Formula. Net profit growing 14.5% CAGR to ₹214 Cr is entirely driven by mark-to-market or dividend income on the investment portfolio, not by any improvement in the underlying business franchise. I have no edge here, and the framework simply does not apply.",
+    "metrics_evaluated": {
+      "moat_strength": "insufficient_data",
+      "management_quality": "adequate",
+      "financial_health": "insufficient_data",
+      "valuation": "insufficient_data",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 42475,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07753905,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10347,
+      "cache_read_input_tokens": 8246,
+      "output_tokens": 2417,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10347
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 372,
+          "cache_read_input_tokens": 8246,
+          "cache_creation_input_tokens": 2101,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2101,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

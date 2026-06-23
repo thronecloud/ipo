@@ -1,0 +1,70 @@
+{
+  "symbol": "BBOX",
+  "persona": "philip_fisher",
+  "persona_display_name": "Philip Fisher",
+  "analyzed_at": "2026-04-18T16:43:54.990891Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Black Box is a systems integrator masquerading as a software company — thin 7.3% operating margins, zero discernible R&D, and now declining revenues (FY2025: ₹5,967 Cr vs. FY2023 peak: ₹6,288 Cr) disqualify it from my framework of exceptional compounders. The FY2025 negative operating cash flow (-₹88 Cr) against ₹205 Cr reported net profit signals dangerous earnings quality deterioration precisely when debt has tripled from ₹328 Cr to ₹1,038 Cr.",
+    "key_strengths": [
+      "Operating income CAGR of 64.8% over 9 years shows genuine margin improvement from a very low base",
+      "Equity recovery from deeply negative (-₹176 Cr, FY2020) to ₹905 Cr (FY2025) reflects successful financial restructuring",
+      "High promoter holding (70%) and diversified end-markets (defense, healthcare, government) provide stability"
+    ],
+    "key_risks": [
+      "Revenue contraction in FY2024–FY2025 breaks the growth narrative Fisher requires; this is not a temporary dip",
+      "Borrowings surged from ₹328 Cr (FY2021) to ₹1,038 Cr (FY2025) — D/E of 1.15 far exceeds my <0.5 threshold",
+      "Negative OCF (-₹88 Cr) and negative FCF (-₹129 Cr) in FY2025 despite ₹205 Cr profit indicates severe working capital deterioration"
+    ],
+    "red_flags": [
+      "FY2025 Operating CF turned negative (-₹88 Cr) while net profit hit a record ₹205 Cr — classic earnings quality red flag",
+      "Other Income has been persistently negative (FY2019: -₹67 Cr, FY2020: -₹178 Cr, FY2025: -₹68 Cr), likely masking forex and financial losses",
+      "Revenue peaked in FY2023 and has declined two consecutive years — growth deceleration in a supposed technology company",
+      "No evidence of meaningful R&D investment; gross margin of only 15.5% confirms this is a low-value-add integrator, not an innovator"
+    ],
+    "detailed_analysis": "From my scuttlebutt lens, Black Box fails the most fundamental Fisher test: does this company have products or services with significant long-term growth potential driven by innovation? The answer is no. With 7.3% operating margins and 15.5% gross margins, Black Box is a hardware and IT infrastructure integrator — a commodity services business where pricing power is structurally limited. There is no R&D disclosure and no proprietary technology moat. The P/E of 35x demands high-conviction compounding; this business cannot deliver it. The reclassification from AGC Networks to \"Black Box Limited\" in 2021 rebranded the company but has not transformed its economics.\n\nThe financial trajectory tells a more troubling story in FY2025: revenues fell 5% YoY, yet borrowings jumped ₹326 Cr to ₹1,038 Cr and operating cash flow turned sharply negative. A ₹334 Cr gap between EBITDA (₹536 Cr) and operating cash flow (-₹88 Cr) points to aggressive working capital consumption — likely extended receivables from government/infrastructure clients — a pattern I have seen destroy seemingly profitable businesses. With financing CF turning positive (₹192 Cr) only because the company raised more debt, this is a cash-burning cycle. Fisher's rule is clear: a great business finances its own growth; a troubled one borrows to stay afloat.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 48181,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07602030000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9340,
+      "cache_read_input_tokens": 11271,
+      "output_tokens": 2507,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9340
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 386,
+          "cache_read_input_tokens": 9217,
+          "cache_creation_input_tokens": 2177,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2177,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

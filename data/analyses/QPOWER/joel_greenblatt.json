@@ -1,0 +1,69 @@
+{
+  "symbol": "QPOWER",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T22:12:13.222711Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "QPOWER has decent capital returns (ROCE 26.6%) but trades at an earnings yield of ~0.7% (EBIT ₹65 Cr / EV ₹9,168 Cr), catastrophically failing the Magic Formula's core cheapness test. A good business at 87x earnings is not a good investment.",
+    "key_strengths": [
+      "High ROCE of 26.6% and operating margin of 19%+ — capital-light for an equipment business",
+      "Revenue CAGR of 22.6% with operating profit CAGR of 41.4% (2022–2025) — genuine growth",
+      "Near-zero leverage (D/E 0.05, net cash ₹172 Cr) — fortress balance sheet"
+    ],
+    "key_risks": [
+      "Earnings yield ~0.71% (EBIT ₹65 Cr / EV ₹9,168 Cr) — Magic Formula requires >12%; this fails by a factor of 17x",
+      "Other income ₹54 Cr vs operating income ₹65 Cr — nearly half of profits are non-operating, inflating apparent quality",
+      "Post-IPO equity surge (₹153 Cr → ₹469 Cr equity, financing CF ₹171 Cr in 2025) — valuation bakes in perfection with fresh capital still undeployed"
+    ],
+    "red_flags": [
+      "Other income (₹54 Cr) is 54% of net profit (₹100 Cr) — operating earnings are far weaker than headline numbers suggest",
+      "Investing CF of -₹100 Cr in 2025 against OCF of ₹62 Cr — heavy reinvestment, FCF only ₹39 Cr vs ₹100 Cr net profit",
+      "EV/EBITDA of 59x and P/S of 12x — the market has already priced in many years of flawless execution"
+    ],
+    "detailed_analysis": "Running the Magic Formula on QPOWER produces a clear verdict. Earnings Yield = EBIT (₹65 Cr) / EV (Market Cap ₹9,340 + Debt ₹9 - Cash ₹181 = ₹9,168 Cr) = **0.71%** — a number so far below my 12% threshold it doesn't even warrant a ranking. Return on Capital is acceptable at 26.6% ROCE, but the Magic Formula requires BOTH legs of the equation to work. One leg (cheapness) is broken beyond repair at this price. Even generous assumptions — using EBITDA of ₹115 Cr instead of EBIT — yield only 1.25%.\n\nThe quality-of-earnings picture raises further concerns. Other income of ₹54 Cr in FY25 accounts for 54% of net profit of ₹100 Cr. Strip that out and core operating profit is just ₹65 Cr against a ₹9,340 Cr market cap — a pure-play P/E closer to 145x. The FY25 balance sheet explosion (assets ₹359 Cr → ₹978 Cr, equity ₹153 Cr → ₹469 Cr) is consistent with a recent IPO raising ~₹171 Cr; the fresh capital sits largely idle in cash while the market assigns a 19.9x price-to-book on it. The business itself — serving renewable energy, railways, and power utilities with specialized power electronics — is genuinely well-positioned. But the Magic Formula is a price-disciplined system: a great business at a terrible price is simply a bad investment.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 57119,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09235469999999998,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11442,
+      "cache_read_input_tokens": 8644,
+      "output_tokens": 3123,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11442,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 406,
+          "cache_read_input_tokens": 8644,
+          "cache_creation_input_tokens": 2798,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2798
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

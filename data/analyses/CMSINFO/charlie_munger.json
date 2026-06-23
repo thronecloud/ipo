@@ -1,0 +1,69 @@
+{
+  "symbol": "CMSINFO",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T17:03:54.870120Z",
+  "analysis": {
+    "score": 6,
+    "recommendation": "HOLD",
+    "investment_thesis": "CMS Info Systems is a quasi-toll-road on India's cash economy — dominant market position, ROCE of 23.7%, and net profit growing at 24.6% CAGR while trading at just 15.9x earnings. However, zero promoter holding and the secular digital-payments headwind cap the quality ceiling, making this a fair-price-decent-business rather than a compounding machine.",
+    "key_strengths": [
+      "Exceptional operating leverage: revenue grew 13.9% CAGR but net profit compounded at 24.6% — 2025 margins at net level held even as revenue grew 7%",
+      "Near-monopoly operational moat: RBI licensing, armored fleet, embedded bank contracts, and route density create high switching costs",
+      "Pristine balance sheet: D/E of 0.10, FCF/Net Income ~89% (INR 331 Cr FCF vs INR 372 Cr net profit in FY25), OCF positive all 5 years"
+    ],
+    "key_risks": [
+      "Secular UPI/digital payments displacement — existential long-term risk even if cash-in-circulation remains elevated near-term",
+      "Zero promoter holding — Blackstone-exited PE-backed company with no founder skin in the game; professional management lacks owner-operator incentives",
+      "EBITDA compressed INR 717 Cr → INR 649 Cr in FY25 despite revenue growth, signaling possible cost pressures or margin deterioration deserving investigation"
+    ],
+    "red_flags": [
+      "0% promoter holding is unusual and concerning — no insider alignment, governance relies entirely on institutional shareholders (FII 28.2% + DII 32.6%)",
+      "EBITDA declined 9.5% YoY in FY25 while revenue grew 7% — margin inversion at EBITDA level warrants scrutiny",
+      "CWIP surged from INR 18 Cr to INR 142 Cr in FY25 — large capex cycle beginning, FCF may compress in FY26-27"
+    ],
+    "detailed_analysis": "CMS is India's largest cash logistics operator — a business Munger would understand as a \"toll road\" model: once you have the routes, the armored fleet, and the bank contracts, incremental volume is nearly free. ROCE of 23.7% and a net profit CAGR of 24.6% over seven years validate genuine operating leverage. At P/E 15.9x and EV/EBITDA 9.56x, the stock is priced for moderate growth, not for a compounder — the PEG ratio (~0.66) looks optically cheap. The balance sheet is clean with D/E of 0.10 and INR 231 Cr in cash, and FCF conversion is high quality.\n\nThe inversion question is paramount: what kills this business? Digital payments displacing cash is the slow-moving train. India's currency in circulation has grown alongside UPI, and rural/semi-urban ATM penetration is still expanding — so the runway is likely 5-10 years, not 1-2. But unlike a Visa or an exchange, CMS does not benefit from the shift to digital; it merely survives it. The zero-promoter-holding structure (Blackstone exit post-IPO) is a genuine governance concern — Munger has consistently warned against businesses where management doesn't own the store. The FY25 EBITDA compression alongside a surge in CWIP suggests a new capex cycle that bears watching. This is a solid, cash-generative business at a fair price — worthy of monitoring, not of concentrated conviction.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 67817,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09639344999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11797,
+      "cache_read_input_tokens": 8919,
+      "output_tokens": 3298,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11797
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 460,
+          "cache_read_input_tokens": 8919,
+          "cache_creation_input_tokens": 2878,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2878,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "544354",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-20T09:50:11.690546Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Solarium Green is a young (2018) solar EPC/turnkey contractor riding a thematic tailwind, but civil construction and EPC are commoditized, tender-driven, working-capital-heavy businesses with no durable moat. At 21.5x P/E for a 301 Cr micro-cap with a ~3-year public track record, I'd invert and pass — the probability of disappointment far outweighs the visible upside.",
+    "key_strengths": [
+      "ROCE 20.1% and ROE 23% look respectable at current scale",
+      "Promoter skin-in-the-game at 58.34% keeps incentives aligned",
+      "Structural tailwind from India's solar capacity push"
+    ],
+    "key_risks": [
+      "Solar EPC is a tender-driven commodity business with zero pricing power",
+      "Incorporated 2018 — no cycle-tested track record through a downturn",
+      "Working-capital and receivables risk typical of civil construction eats FCF"
+    ],
+    "red_flags": [
+      "Near-zero institutional ownership (FII 0.22%, DII 3.15%) suggests no serious diligence has validated the story",
+      "Industry classification 'Civil Construction' — historically one of the worst ROIC industries in India",
+      "Micro-cap EPC with inflated returns often reflects one good order-book year, not durable economics"
+    ],
+    "detailed_analysis": "Inverting first: what kills this investment? Solar EPC and turnkey civil construction is a brutal business — thin margins, L1 tender bidding, long receivables from government/DISCOM counterparties, and capital that gets trapped in work-in-progress. History is littered with Indian infra/EPC names (Suzlon, IVRCL, Punj Lloyd) that posted 20%+ ROCE on the way up, then blew up when the order book turned or working capital exploded. A 2018-incorporated company with 301 Cr market cap has simply not been tested through a full cycle, and I have no basis to believe current ROCE is normalized rather than a point-in-time artifact of a strong solar capex wave.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "insufficient_data",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 26120,
+    "model_used": "opus",
+    "total_cost_usd": 0.09650624999999999,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 9093,
+      "cache_read_input_tokens": 13190,
+      "output_tokens": 1322,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9093,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10463,
+          "cache_creation_input_tokens": 1357,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1357
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

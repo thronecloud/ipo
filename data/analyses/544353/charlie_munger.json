@@ -1,0 +1,69 @@
+{
+  "symbol": "544353",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-20T09:48:54.124852Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "A micro-cap pharmaceutical wholesale trader earning a pathetic 0.25% ROE is not a business — it's a capital destroyer wearing a pharma costume. Invert: would I put my sister's money here? Absolutely not.",
+    "key_strengths": [
+      "High promoter holding at 70.65% signals skin in the game",
+      "Low headline P/E of 7.54 (though meaningless given near-zero earnings)",
+      "Pharma wholesale distribution is a simple, understandable business"
+    ],
+    "key_risks": [
+      "ROE of 0.25% is catastrophic — well below cost of capital, destroying value",
+      "Wholesale trading = commodity business with zero pricing power or moat",
+      "Tiny ₹60.9 Cr market cap on BSE — illiquid, minimal disclosures, governance risk"
+    ],
+    "red_flags": [
+      "ROE 0.25% vs Munger threshold of 15%+ — fails by two orders of magnitude",
+      "P/E 7.54 on near-zero earnings is a statistical mirage, not cheapness",
+      "Pure trading/distribution model with no proprietary products or IP"
+    ],
+    "detailed_analysis": "Charlie's first filter is simple: show me a business that earns high returns on capital with a durable moat. Amwill fails instantly. A 0.25% ROE means the company is earning essentially nothing on shareholders' equity — a bank fixed deposit yields 28x more with zero risk. Wholesale pharmaceutical trading is a razor-thin-margin distribution business where the trader sits between manufacturers and retailers with no pricing power, no brand, no patents, and no switching costs. This is the opposite of a compounding machine.\\n\\nInverting: what would make this a good investment? Nothing in the disclosed data. The low P/E is a statistical illusion on near-zero earnings — a tiny numerator flattering a tiny denominator. At ₹60.9 Cr market cap on BSE with minimal float and limited transparency, you also import governance and liquidity risk. Promoter holding of 70.65% is the only mild positive, but aligned incentives in a structurally poor business just means you ride the poor business together. Pass decisively and go hunt elsewhere.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 21065,
+    "model_used": "opus",
+    "total_cost_usd": 0.08964074999999999,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8857,
+      "cache_read_input_tokens": 13159,
+      "output_tokens": 1107,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8857,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10432,
+          "cache_creation_input_tokens": 1152,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1152
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

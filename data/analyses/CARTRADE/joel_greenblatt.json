@@ -1,0 +1,69 @@
+{
+  "symbol": "CARTRADE",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-19T12:55:43.461092Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "CarTrade is a digital auto marketplace with improving revenue momentum, but it is one of the worst Magic Formula scores I can assign: earnings yield is only ~1.7% (EBIT ₹152 Cr / EV ₹9,034 Cr) and ROCE is a feeble 7.6% — both metrics fail, and by wide margins. Paying 12× revenue for a platform earning a 7.6% return on capital is precisely the kind of speculative purchase my formula is designed to avoid.",
+    "key_strengths": [
+      "Operating income inflected from -₹133 Cr in FY22 to +₹152 Cr in FY25 — operational turnaround is real and accelerating",
+      "Asset-light model: capex is only ₹5 Cr per year, meaning capital employed is minimal and OCF conversion is improving (FY25 OCF ₹171 Cr)",
+      "Revenue growing strongly at ~26% CAGR over recent years (₹313 Cr to ₹641 Cr, FY22–FY25) across multi-brand auto platform"
+    ],
+    "key_risks": [
+      "Earnings yield of ~1.7% is ruinous — the market is capitalizing future growth perfectly, leaving no value buffer",
+      "Other income (₹70 Cr) represents ~48% of net profit (₹145 Cr) in FY25 — operating earnings alone barely justify any premium valuation",
+      "ROCE of 7.59% is structurally poor; the bloated equity base (₹2,330 Cr, largely from IPO) means the company must grow enormously just to earn an adequate return"
+    ],
+    "red_flags": [
+      "P/S of 11.98× for an Indian auto marketplace — extraordinarily optimistic pricing",
+      "Net profit in FY24 was only ₹20 Cr despite ₹490 Cr revenue — earnings are lumpy and heavily influenced by non-operating items",
+      "FII ownership of 64.58% with no disclosed promoter — concentration of foreign capital creates sharp exit risk in a risk-off environment"
+    ],
+    "detailed_analysis": "Magic Formula verdict: FAIL on both legs. Earnings yield = ₹152 Cr EBIT / ₹9,034 Cr EV = 1.68% — catastrophically low, less than the risk-free rate. ROCE of 7.6% is not only below my 20% threshold, it barely exceeds the cost of capital. The large equity pile (₹2,330 Cr reserves, largely undeployed IPO capital) is simultaneously suppressing ROCE and distorting ROE (6.24%). Until that capital is either returned or compounded into high-ROIC assets, returns will disappoint.\n\nCarTrade does have the bones of an interesting platform franchise (CarWale, BikeWale, Shriram Automall, OLX autos) and the trajectory is improving. But at ₹8,932 Cr market cap against ₹152 Cr EBIT, you are paying for a perfect five-year execution story that doesn't yet exist. My formula is brutally quantitative — if I cannot compute an acceptable earnings yield today, I don't buy today.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 212545,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.2804235,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 26770,
+      "cache_read_input_tokens": 15490,
+      "output_tokens": 11692,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 26770,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 543,
+          "cache_read_input_tokens": 15490,
+          "cache_creation_input_tokens": 11280,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 11280
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

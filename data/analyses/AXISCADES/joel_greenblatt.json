@@ -1,0 +1,70 @@
+{
+  "symbol": "AXISCADES",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T16:38:15.364697Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "AXISCADES scores poorly on both Magic Formula pillars: earnings yield of ~1.75% (EBIT INR 144 Cr / EV ~INR 8,243 Cr) is catastrophically below the 12% minimum, and ROIC of ~16% (EBIT/Invested Capital of ~INR 899 Cr) is mediocre rather than exceptional. The market is pricing in a decade of flawless execution for a company with a deeply erratic profit history.",
+    "key_strengths": [
+      "Genuine revenue CAGR of ~12% over 9 years shows consistent top-line growth in defensible engineering services niches (aerospace, defense, ADAS)",
+      "OCF positive all 5 years (INR 61–122 Cr range) — business does generate real cash despite volatile net profits",
+      "High promoter holding at 58% aligns management skin-in-the-game"
+    ],
+    "key_risks": [
+      "Earnings yield ~1.75% — EV/EBIT of ~57x means you are paying a massive premium for modest earnings power",
+      "Chronic profit volatility: net losses in 2018, 2019, 2021, and 2023 — Magic Formula requires durable, predictable EBIT",
+      "Finance costs 37% CAGR over 9 years; borrowings exploded from INR 72 Cr (2022) to INR 346 Cr (2023), likely acquisition-driven leverage"
+    ],
+    "red_flags": [
+      "Earnings Yield of ~1.75% is one of the lowest possible scores under Magic Formula — stock is priced for perfection",
+      "4 out of last 9 years had net losses — this is not the durable earnings quality the formula requires",
+      "ROCE of 13.8% and ROE of 12.7% are below my 20%+ threshold for a 'good business' designation",
+      "Low FII (1.16%) and DII (1.63%) ownership signals weak institutional conviction at current prices"
+    ],
+    "detailed_analysis": "Magic Formula verdict is swift and harsh. Earnings Yield = EBIT INR 144 Cr / EV ~INR 8,243 Cr (Market Cap INR 8,037 Cr + Debt INR 258 Cr − Cash INR 52 Cr) = ~1.75%. That places AXISCADES in the bottom decile of any Magic Formula screen — I need to see north of 12% to get interested, and over 15% to get excited. The EV/EBITDA of 50.6x and P/E of 73x corroborate this: the stock is priced as if it were a high-growth software compounder, not a mid-size Indian engineering services firm.\n\nThe second leg, Return on Capital, offers only partial redemption. Using invested capital (Equity INR 693 Cr + Debt INR 258 Cr − Cash INR 52 Cr = INR 899 Cr), ROIC is ~16% — passable but not exceptional, and the company's reported ROCE of 13.8% is below my 20% bar. Worse, this ROIC is not reliably earned: net profits swung negative in four of the last nine years, including as recently as 2023. A business that loses money with regularity does not possess the durable competitive advantage that justifies a high return on capital premium. Both criteria failing simultaneously means AVOID — no amount of defense/drone narrative changes the math.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 44741,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08167754999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11227,
+      "cache_read_input_tokens": 9191,
+      "output_tokens": 2454,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11227
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 454,
+          "cache_read_input_tokens": 9191,
+          "cache_creation_input_tokens": 2036,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2036,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

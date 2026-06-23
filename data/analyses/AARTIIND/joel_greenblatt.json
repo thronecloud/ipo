@@ -1,0 +1,69 @@
+{
+  "symbol": "AARTIIND",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-19T06:17:47.591396Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Aarti Industries fails both Magic Formula tests simultaneously: earnings yield is only ~5.1% (EBIT ~INR 1,000 Cr / EV ~INR 19,655 Cr) and ROCE has collapsed to 6.32%, well below my 20% minimum threshold. With net profit declining 72% from its INR 1,186 Cr peak (FY22) to INR 331 Cr (FY25) while capex remains ~INR 1,386 Cr/year, this is an expensive stock with deteriorating returns.",
+    "key_strengths": [
+      "Revenue CAGR of 10.3% over 9 years shows the underlying chemicals demand is intact",
+      "OCF positive for 5/5 years (INR 519–1,319 Cr range) — the business does generate operating cash even during a down-cycle",
+      "Forward P/E of 28x vs trailing 43x implies the market expects an earnings recovery, which is plausible if specialty chemicals margins normalize"
+    ],
+    "key_risks": [
+      "ROCE of 6.32% and ROE of 6.03% are far below my 20% threshold — the massive capex cycle (INR 5,605 Cr deployed FY22–25) has not yet translated into returns",
+      "Net profit has contracted 4 years in a row: INR 1,186 Cr (FY22) → INR 545 Cr → INR 416 Cr → INR 331 Cr (FY25); earnings quality is deteriorating, not temporarily depressed",
+      "Finance costs rose from INR 102 Cr (FY22) to INR 275 Cr (FY25) as debt funded capex; FCF has been negative every single year"
+    ],
+    "red_flags": [
+      "EBITDA trend is contracting despite revenue growth — margin compression is structural, not cyclical",
+      "FCF consistently negative: INR -646 Cr (FY22), INR -8 Cr (FY23), INR -96 Cr (FY24), INR -137 Cr (FY25); capex consumes more than OCF",
+      "Earnings yield ~5.1% fails my minimum 6% threshold; at 43x trailing P/E on already-compressed earnings, the stock is pricing in a full recovery that hasn't materialized"
+    ],
+    "detailed_analysis": "Computing the Magic Formula: EBIT ≈ Operating Income INR 1,000 Cr (FY25). Enterprise Value = Market Cap INR 16,006 Cr + Debt INR 3,848 Cr − Cash INR 199 Cr = INR 19,655 Cr. Earnings Yield = 1,000/19,655 = 5.1% — below my 6% floor for even considering a stock. ROCE at 6.32% means the company is earning just barely above its cost of capital on a rapidly expanding asset base. Both Magic Formula legs are broken simultaneously, which is the worst outcome.\n\nThe capex story is the central problem: Aarti has deployed ~INR 1,300+ Cr/year for four consecutive years (CWIP still INR 1,596 Cr in FY25), yet EBITDA has barely grown from INR 971 Cr (FY24) to INR 986 Cr (FY25) while net profit has collapsed. Management is investing for future specialty chemical capacity, but until those plants generate returns, the business earns sub-cost-of-capital returns at an expensive headline multiple. The Magic Formula demands you find good businesses at cheap prices — Aarti Industries is currently neither.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 180544,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.25746959999999997,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 25350,
+      "cache_read_input_tokens": 15627,
+      "output_tokens": 10514,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 25350,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 679,
+          "cache_read_input_tokens": 15627,
+          "cache_creation_input_tokens": 9723,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 9723
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

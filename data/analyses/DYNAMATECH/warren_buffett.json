@@ -1,0 +1,69 @@
+{
+  "symbol": "DYNAMATECH",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T17:06:52.391652Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Dynamatic Technologies is a capital-intensive auto/aerospace parts manufacturer with zero revenue growth over nine years (−0.7% CAGR) and a paltry 6.2% ROE, yet the market has priced it at an absurd 150x trailing P/E. At INR 7,016 Cr market cap, investors are paying an extraordinary premium for a business that earned just ₹43 Cr in operating profits in FY25 — this is speculation, not investment.",
+    "key_strengths": [
+      "Aerospace exposure (airframe structures, UAVs) provides some differentiation and potential defence tailwinds in India",
+      "Consistently positive operating cash flows across all 5 years reviewed (₹78–226 Cr range), showing the business does generate real cash",
+      "Debt is slowly declining — borrowings down from ₹744 Cr (FY21) to ₹594 Cr (FY25) with finance costs falling to ₹59 Cr"
+    ],
+    "key_risks": [
+      "Extreme overvaluation: 150x P/E on ₹43 Cr net profit; FY24's ₹122 Cr profit was inflated by ₹105 Cr other income — a one-time event the market appears to have permanently re-rated",
+      "No business growth: revenue of ₹1,404 Cr in FY25 is below the ₹1,490 Cr reported in FY16 — nine years of stagnation in a capital-intensive sector",
+      "Structurally poor returns: ROE of 6.2% and ROCE of 8.96% fail to cover the cost of capital, meaning every rupee retained destroys value"
+    ],
+    "red_flags": [
+      "FY24 net profit of ₹122 Cr was 86% driven by ₹105 Cr 'other income' — strip this out and true earnings are ~₹17–20 Cr, implying an even more alarming real P/E of 350x+",
+      "EBITDA CAGR of −1.0% over 9 years while the stock commands EV/EBITDA of 58x — a catastrophic mismatch between price and fundamental reality",
+      "Free cash flow collapsing: FCF went from ₹168 Cr (FY20) to ₹22 Cr (FY24), recovering only slightly to ₹78 Cr in FY25"
+    ],
+    "detailed_analysis": "Dynamatic Technologies is precisely the kind of business I instinctively avoid: capital-intensive, cyclical, earning thin 7.2% operating margins, with no durable competitive moat I can identify. Revenue has gone nowhere in nine years — ₹1,490 Cr in 2016, ₹1,404 Cr in 2025. EBITDA is similarly flat-to-declining. The ROE of 6.2% is a damning indictment — a business earning less than the risk-free rate on equity is not compounding wealth for shareholders; it is destroying it slowly. The D/E of 0.78 further constrains flexibility, and ₹59 Cr in annual finance costs consumes over a third of operating income.\n\nThe valuation is the final, fatal flaw. The market has assigned a ₹7,016 Cr cap on ₹43 Cr of net profit — a 150x multiple — apparently seduced by the FY24 spike to ₹122 Cr which was 86% other income (likely asset sales or one-offs). Forward P/E of 72x assumes a dramatic earnings re-rating that the underlying business does not remotely justify given stagnant revenue and structurally weak returns. I have no interest in paying a wonderful price for a mediocre business. I'd want a P/E below 15x and ROE above 15% to even begin a conversation here. Pass.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 55751,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08338229999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11286,
+      "cache_read_input_tokens": 9186,
+      "output_tokens": 2553,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11286
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 520,
+          "cache_read_input_tokens": 9186,
+          "cache_creation_input_tokens": 2100,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2100,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

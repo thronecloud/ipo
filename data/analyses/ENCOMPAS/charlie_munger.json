@@ -1,0 +1,70 @@
+{
+  "symbol": "ENCOMPAS",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-21T07:55:35.567686Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Encompass Design trades at 32x earnings while generating a near-zero ROE of 0.50% — a combination that signals either rampant capital misallocation or severe earnings distortion. There is no identifiable moat, no financial quality, and the valuation is indefensible by any rational framework.",
+    "key_strengths": [
+      "Promoter holding of 58.94% provides reasonable alignment of interest",
+      "INR 347 Cr market cap keeps it in small-cap territory where mispricing can eventually correct",
+      "FII presence (7.87%) suggests some institutional diligence has occurred"
+    ],
+    "key_risks": [
+      "ROE of 0.50% is catastrophically low — the business is essentially earning nothing on shareholder capital",
+      "P/E of 32.2x is wildly incongruent with near-zero returns — severe overvaluation risk",
+      "Trading & Distribution sector carries no durable moat; margin compression is structurally built-in"
+    ],
+    "red_flags": [
+      "ROE of 0.50% at a 32x P/E multiple is a fundamental contradiction — either earnings are illusory or capital base is massively bloated",
+      "Rebrand to 'ScaleSauce' is a marketing veneer on a commodity trading/distribution business — classic promotional behavior",
+      "Vague business description ('builds and scales consumer brands') with no specifics on revenue model, customers, or competitive differentiation",
+      "No data provided on ROIC, FCF, or revenue growth — opacity itself is a red flag in small-cap India"
+    ],
+    "detailed_analysis": "Inversion first: what would make this a disaster? A 32x P/E with 0.50% ROE tells me either the 'E' is manufactured (one-time gains, accounting tricks) or the equity base has been massively diluted with zero productive deployment. Either way, the business is earning roughly nothing on the capital entrusted to it. For context, a savings account in India yields more than this company earns on equity. At INR 347 Cr market cap, you are paying a premium multiple for what is, by the numbers, a near-zero return enterprise in a structurally undifferentiated sector.\n\nThe business description — \"builds and scales consumer brands\" operating under the whimsical name 'ScaleSauce' — is the kind of language that should make a rational investor deeply suspicious. Incorporated in 2010, categorized as Trading & Distributors, yet presenting itself as a brand-builder. This is a mismatch I've seen before; it usually ends badly for outside shareholders. With no evidence of ROIC above cost of capital, no moat, and a valuation that requires heroic growth assumptions, this fails every quality test I apply. I would not touch this at any price without dramatically better financial disclosure.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 36560,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0602472,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8816,
+      "cache_read_input_tokens": 7444,
+      "output_tokens": 1663,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8816,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 325,
+          "cache_read_input_tokens": 7444,
+          "cache_creation_input_tokens": 1372,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1372
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

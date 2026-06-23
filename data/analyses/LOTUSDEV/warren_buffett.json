@@ -1,0 +1,71 @@
+{
+  "symbol": "LOTUSDEV",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T18:09:22.204680Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Sri Lotus is a tiny Mumbai luxury real estate developer with eye-catching headline numbers (ROE 41%, margins 35%) built on project-completion accounting, not real cash generation — OCF was -₹20 Cr in FY25 despite ₹228 Cr reported profit. The business is capital-intensive, cyclical, and carries a murky corporate history (renamed from AKP Holdings in Dec 2024 with an unexplained ₹1,500+ Cr equity jump), none of which fits my requirement for a simple, durable business generating honest owner earnings.",
+    "key_strengths": [
+      "Near-zero leverage (D/E 0.08) after debt paydown from equity raise, balance sheet looks superficially clean",
+      "Revenue scaled 6x in 3 years (88→548 Cr) and operating margins expanded dramatically to 35%",
+      "Mumbai luxury real estate segment commands premium pricing, reflected in 51% gross margins"
+    ],
+    "key_risks": [
+      "Cash conversion is broken — FY25 shows ₹228 Cr net profit yet -₹20 Cr OCF; OCF positive in only 2 of 4 years, classic real estate accounting illusion",
+      "Equity surged from ₹170 Cr (FY24) to ₹1,748 Cr (FY25) — net profit explains only ₹228 Cr of the ₹1,578 Cr increase, implying a massive dilutive capital raise with no clear explanation in the data",
+      "Business model is diffuse and unusual: luxury real estate combined with film production/distribution, with a name change just 4 months ago — raises questions about focus and corporate governance"
+    ],
+    "red_flags": [
+      "Negative free cash flow (-₹21 Cr) in FY25 despite record ₹228 Cr profits — earnings are not translating to cash",
+      "Company renamed from AKP Holdings to Sri Lotus Developers in December 2024; incorporated only 2015 — extremely short and opaque track record",
+      "Institutional ownership near zero (FII 1.76%, DII 2.84%) — smart money is staying away",
+      "P/S ratio of 10.5x is egregiously high for a real estate developer whose revenue is lumpy project-by-project",
+      "Equity reserves jumped ₹1,549 Cr in one year with only ₹228 Cr earned — large undisclosed equity infusion"
+    ],
+    "detailed_analysis": "Sri Lotus presents a classic Indian real estate trap: spectacular reported numbers driven by percentage-completion accounting that bear little resemblance to actual cash economics. Revenue grew 84% CAGR and net profit grew 205% CAGR over three years, but these are project-delivery figures — the moment you look at operating cash flow (-₹20 Cr in FY25 on ₹228 Cr \"profit\"), the illusion dissolves. Real estate developers book revenue as construction progresses while cash arrives only at possession; this creates perpetually misleading income statements. I want businesses where earnings and cash flow converge reliably — this one diverges violently.\n\nThe corporate structure raises serious governance concerns I cannot look past. The company changed its name in December 2024 and shows equity reserves jumping from ₹150 Cr to ₹1,699 Cr in a single year — net profit accounts for only ₹228 Cr of that increase, meaning ~₹1,300 Cr appeared from sources not explained by the data provided. The addition of a film production business to a luxury real estate developer has no logical synergy and is precisely the kind of complexity that obscures underlying economics. Promoters hold 81.87% with virtually no institutional backing — the market cap of ₹6,839 Cr on ₹548 Cr of lumpy project revenue at P/S of 10.5x prices in a level of growth certainty that a three-year-old Mumbai developer with negative FCF has simply not earned. I'll pass.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 63217,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08711775,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11171,
+      "cache_read_input_tokens": 8525,
+      "output_tokens": 2844,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11171
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 261,
+          "cache_read_input_tokens": 8525,
+          "cache_creation_input_tokens": 2646,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2646,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

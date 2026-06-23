@@ -1,0 +1,69 @@
+{
+  "symbol": "CORONA",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T16:59:50.458483Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Corona Remedies is a genuinely high-quality pharma business with ~32% ROIC and accelerating margins, but at a P/E of 62x and an earnings yield of only ~2.6% (EBIT/EV), it fails the Magic Formula's \"cheap\" test by a wide margin. You're paying a growth-stock premium for a mid-sized specialty pharma that the formula simply cannot justify.",
+    "key_strengths": [
+      "ROIC ~32% (EBIT 241 Cr / Invested Capital ~742 Cr) — top-decile business quality for Indian pharma",
+      "Revenue CAGR ~16% (884→1,196 Cr) with operating income nearly doubling in two years (128→241 Cr), showing strong operating leverage",
+      "Debt/Equity 0.10 and OCF positive all 3 years; debt spiked to 159 Cr in FY24 but has already been paid down to 86 Cr"
+    ],
+    "key_risks": [
+      "Earnings Yield (EBIT/EV) ≈ 2.6% — far below the 12% Magic Formula threshold; stock is ~5x too expensive for the formula to work",
+      "Large CWIP of 205 Cr (up from 65 Cr in FY23) signals heavy ongoing capex; FCF was deeply negative in FY24 (-129 Cr) and only 99 Cr in FY25 — FCF conversion is weak relative to stated profits",
+      "Small-cap Indian pharma with 69% promoter concentration; limited institutional coverage (FII 1.84%) and no disclosed market cap make position sizing and exit difficult"
+    ],
+    "red_flags": [
+      "Earnings Yield ~2.6% — approximately 5x below the Magic Formula's minimum attractive threshold of 12%",
+      "CWIP ballooned from 65 Cr (FY23) to 205 Cr (FY25) — capital is being deployed faster than it is earning; risk of delayed returns",
+      "Net profit jumped 65% YoY (90→149 Cr) — possible one-time or timing benefits; sustainability needs scrutiny before trusting the forward P/E of 40x"
+    ],
+    "detailed_analysis": "Running the Magic Formula: EBIT of 241 Cr divided by estimated Enterprise Value (~9,336 Cr, derived from 149 Cr net profit × 62.1 P/E = ~9,253 Cr market cap + 86 Cr debt − 3 Cr cash) yields an Earnings Yield of just 2.6%. The ROIC of ~32% (consistent with the reported ROCE of 31.5%) earns an A+ on business quality, but the Magic Formula requires BOTH metrics to be high. A 2.6% earnings yield ranks in the bottom decile of any Magic Formula screen — you would need the stock to fall roughly 75% to reach the 12% threshold that makes a purchase attractive.\n\nThe business itself is doing the right things: margins are expanding (operating margin 14.5%→15.4%→20.2%), revenue growth is accelerating, and debt is being actively managed down post the FY24 capacity build-out. But the market has fully priced in the quality story at 34× EV/EBITDA. For a Greenblatt-style investor, the entry price is the whole game — a wonderful company at a terrible price is still a terrible investment. Pass, and revisit if the valuation corrects to an earnings yield above 10%.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 53364,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08520839999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10606,
+      "cache_read_input_tokens": 8223,
+      "output_tokens": 2864,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10606
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 525,
+          "cache_read_input_tokens": 8223,
+          "cache_creation_input_tokens": 2383,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2383,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

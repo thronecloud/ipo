@@ -1,0 +1,69 @@
+{
+  "symbol": "MANYAVAR",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T18:19:39.034905Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Vedant Fashions is a genuinely fine business with proven earnings, but at P/E 26.7x and P/B 6.24x it offers no margin of safety whatsoever — the intelligent investor does not pay a premium for quality, he demands a discount to intrinsic value. The Graham Number works out to approximately INR 163 (sqrt(22.5 × EPS ~16 × BV/share ~74)), meaning the market is asking nearly 2.7 times what a conservative calculation of intrinsic value would justify.",
+    "key_strengths": [
+      "Eight consecutive years of positive earnings (FY18–FY25) with 14.8% net profit CAGR — the earnings track record Graham demands exists here",
+      "Exceptionally capital-light franchise model: annual capex only INR 3–4 Cr while generating INR 385–484 Cr free cash flow; gross margins of 71.7% are extraordinary for apparel",
+      "Conservative debt load: D/E 0.27, interest coverage ~12x (EBITDA INR 671 Cr vs finance cost INR 55 Cr)"
+    ],
+    "key_risks": [
+      "Price-to-book of 6.24 means you are paying for an intangible brand franchise, not tangible assets — precisely the speculative element Graham warns against",
+      "Earnings are decelerating and declining: net profit peaked at INR 429 Cr in FY23 and has fallen to INR 388 Cr in FY25, suggesting the growth story the price embeds may not materialise",
+      "Revenue growth nearly stalled at 2% per year (FY23: 1,355 → FY25: 1,384 Cr) while finance costs compounded at 37.3% CAGR, squeezing future profit potential"
+    ],
+    "red_flags": [
+      "Graham Number ~INR 163 vs current price INR 443 — stock trades at 2.7x calculated intrinsic value with zero margin of safety",
+      "Net profit declining three consecutive years (FY23: 429 → FY24: 414 → FY25: 388 Cr) while the market still prices in growth via 27x forward P/E",
+      "Finance costs have ballooned from INR 6 Cr (FY18) to INR 55 Cr (FY25) — a 37.3% CAGR — reflecting lease liabilities that inflate apparent asset-lightness"
+    ],
+    "detailed_analysis": "From my standpoint, Manyavar passes only one of my critical tests: it has a genuine multi-year earnings record. Everything else fails. A P/E of 26.7 is nearly double my absolute ceiling of 15, and a P/B of 6.24 is more than four times my preferred limit of 1.5. When I apply my formula — the Graham Number — I arrive at roughly INR 163 per share. The market is asking INR 443. That is not an investment; it is speculation on the perpetuation of a brand premium that is already showing signs of fatigue.\n\nThe recent financial trend deepens my concern. Revenue has been essentially flat for three years. Operating income fell from INR 671 Cr in FY23 to INR 575 Cr in FY25 — a 14% decline. Net profit is down 10% from peak. Meanwhile, borrowings have grown from near-zero to INR 483 Cr and finance costs are rising sharply. Mr. Market is pricing this as though the FY23 peak will be surpassed; the numbers say otherwise. A business of genuine quality, yes — but not at any price. I require a margin of safety, and here there is none.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 53079,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08327715,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9551,
+      "cache_read_input_tokens": 11073,
+      "output_tokens": 2942,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9551
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 418,
+          "cache_read_input_tokens": 9023,
+          "cache_creation_input_tokens": 2578,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2578,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

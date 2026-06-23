@@ -1,0 +1,69 @@
+{
+  "symbol": "AHLUCONT",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T16:17:42.424845Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Ahluwalia Contracts is a financially clean but structurally ordinary EPC business — nearly debt-free with consistent OCF, yet operating in a commodity-like, low-moat construction sector with thin 6.6% margins and a ROE of only 11.9% that fails to clear Munger's 15% hurdle. At P/E 20.9x on earnings partially inflated by a suspicious INR 232 Cr \"Other Income\" spike in FY24, the price demands quality the business hasn't demonstrated.",
+    "key_strengths": [
+      "Near-zero debt (D/E 0.04) with INR 318 Cr cash vs INR 76 Cr debt — fortress balance sheet rare in EPC",
+      "Consistent OCF generation (5/5 years positive); revenue CAGR of 14.1% over 9 years shows execution capability",
+      "Diversified government/PSU order book across metros, hospitals, data centres — reduces customer concentration risk"
+    ],
+    "key_risks": [
+      "Thin operating margins (6.6% EBITDA 9.6%) with zero pricing power — EPC is structurally competitive and margin-compressive",
+      "ROE of only 11.9% destroys economic value at any cost of equity above that; ROCE of 18.5% looks better but includes non-operating assets",
+      "Capex surged from INR 28 Cr (FY22) to INR 189 Cr (FY25) while FCF remains modest at INR 171 Cr — capital intensity is rising without clear return visibility"
+    ],
+    "red_flags": [
+      "FY24 'Other Income' of INR 232 Cr dwarfed core operating profit (INR 388 Cr) — inflated net profit to INR 375 Cr vs a normalized INR ~140-160 Cr; FY25 collapsed to INR 202 Cr confirming one-time nature",
+      "Operating income actually fell YoY in FY25 (INR 342 Cr vs INR 388 Cr) while revenue grew 6.3% — margin compression in motion",
+      "P/B of 2.9x on ROE of 11.9% implies the market is paying a premium the returns do not justify — fair P/B should be ~1.2-1.5x"
+    ],
+    "detailed_analysis": "Inverting first: what makes this a bad investment? Construction EPC is a brutal business — low differentiation, cost-plus contracts, client payment delays, and perpetual working capital strain. Ahluwalia's 6.6% operating margin leaves almost no room for error on input cost inflation (steel, cement, labor). ROE of 11.9% against a cost of equity likely north of 13-14% for Indian mid-caps means the business is slowly destroying economic value even as it grows. The FY24 earnings spike driven by INR 232 Cr of other income (likely asset monetization or investment gains) artificially flatters the trailing P/E of 20.9x — normalized earnings are closer to INR 160-200 Cr, implying a true P/E of 28-35x for a low-moat contractor. That is not a price I would pay.\n\nThe positives are real but insufficient to change the thesis. The balance sheet is genuinely clean — net cash positive, D/E of 0.04, reserves growing steadily from INR 789 Cr (FY20) to INR 1,911 Cr (FY25). Promoter holding of 55.3% with 22.3% DII ownership suggests institutional confidence. But a clean balance sheet in a commodity business simply means management isn't making the mistake of leverage — it doesn't create a moat. The accelerating capex (INR 189 Cr in FY25) into an unclear asset base warrants scrutiny. This is an adequately managed company in a structurally unattractive industry, priced for growth it may not deliver consistently. Hold if already owned; do not initiate at current prices.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 53185,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08347439999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11082,
+      "cache_read_input_tokens": 8943,
+      "output_tokens": 2615,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11082,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 518,
+          "cache_read_input_tokens": 8943,
+          "cache_creation_input_tokens": 2139,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2139
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

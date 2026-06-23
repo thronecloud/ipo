@@ -1,0 +1,69 @@
+{
+  "symbol": "ARVIND",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T16:24:50.526688Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Arvind Limited trades at INR 387 — approximately 80% above its Graham Number of ~INR 215 (sqrt(22.5 × EPS₁₄ × BVPS₁₄₆)) — with a P/E of 24.1x and P/B of 2.64x, both far exceeding my strict thresholds of 15x and 1.5x respectively. A 9-year revenue CAGR of just 0.4% and a net loss in FY2021 disqualify this from meeting my requirement of consistent, proven earning power.",
+    "key_strengths": [
+      "Debt deleveraging is genuine — borrowings fell from INR 2,640 Cr (2020) to INR 1,537 Cr (2025), with D/E a comfortable 0.39x",
+      "Operating cash flow positive in all 5 measured years — the business is not a cash incinerator",
+      "Gross margin of 49% suggests reasonable pricing power in its fabric segments"
+    ],
+    "key_risks": [
+      "Price trades at 80% premium to Graham Number (~INR 215 vs market INR 387) — no margin of safety whatsoever",
+      "Net loss in FY2021 (-INR 27 Cr) breaks the consecutive-earnings requirement; revenue CAGR over 9 years is a negligible 0.4%",
+      "FCF collapsed from INR 687 Cr (2021) to INR 280 Cr (2025) as capex surged to INR 535 Cr — capital allocation risk rising"
+    ],
+    "red_flags": [
+      "P/B of 2.64x — well above my 2.0x red-flag threshold; paying a large premium for assets in a commodity textile business",
+      "FY2021 net loss violates multi-year positive earnings rule — earnings are fragile, not durable",
+      "EBITDA CAGR of -3.1% over 9 years means the business has not compounded in real terms — a fundamental test of business quality that it fails"
+    ],
+    "detailed_analysis": "Applying my quantitative filters, Arvind fails on nearly every count. The Graham Number computes to approximately INR 215 (using FY2025 EPS of ~INR 14 and BVPS of ~INR 146 on ~26.2 Cr shares), yet Mr. Market prices it at INR 387 — an 80% premium with zero margin of safety. P/E at 24.1x is 60% above my ceiling of 15x, and P/B at 2.64x is nearly double my preferred level of 1.5x. These are not numbers that offer the defensive investor any protection. The business has been essentially treading water for a decade: revenue grew at just 0.4% annually from 2016 to 2025, and EBITDA actually shrank at -3.1% per year. A company that cannot grow its earning power over nine years does not merit a premium valuation.\n\nThe balance sheet shows genuine improvement — debt has been cut meaningfully and D/E of 0.39x passes my leverage test — and operating cash flow has remained positive throughout. These are not nothing. But a sound balance sheet cannot rescue a stock trading at 80% above intrinsic value. The accelerating capex (INR 535 Cr in FY2025 vs INR 186 Cr in FY2022) is compressing free cash flow precisely at a time when returns on existing capital (ROE 9.3%, ROCE 13%) are already mediocre. The intelligent investor demands a discount to proven value, not a premium to speculative improvement. Arvind today offers neither the price nor the earnings quality to warrant purchase.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 58677,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07644314999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9307,
+      "cache_read_input_tokens": 11193,
+      "output_tokens": 2545,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9307,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 375,
+          "cache_read_input_tokens": 9143,
+          "cache_creation_input_tokens": 2214,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2214
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

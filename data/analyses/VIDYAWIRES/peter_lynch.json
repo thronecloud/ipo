@@ -1,0 +1,69 @@
+{
+  "symbol": "VIDYAWIRES",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-21T07:58:45.931767Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Vidya Wires is a legitimate beneficiary of India's energy transition (EVs, solar, power infra) with 27% profit CAGR and 27.8% ROE — a decent growth story. However, at PEG ~1.2 (P/E 32.6 / 27% growth) with persistently negative free cash flow and near-zero cash, the price isn't cheap enough to compensate for the commodity risk and balance sheet stretch.",
+    "key_strengths": [
+      "27% net profit CAGR (FY22→FY25) with expanding EBITDA margins from 3.8% to 4.6% — operating leverage is showing",
+      "ROE of 27.8% and ROCE of 24.2% are impressive for a winding wire manufacturer — capital efficiency is real",
+      "Secular tailwinds: EV motors, solar cables, railway electrification, and power infra spending directly consume their product mix"
+    ],
+    "key_risks": [
+      "Negative free cash flow 3 of 4 years (FY25 FCF: -24 Cr despite 41 Cr net profit) — profits are not converting to cash, a classic red flag",
+      "Debt/Equity at 0.99 (above Lynch's 0.6 ceiling), borrowings surged from 110 to 187 Cr in FY25 alone, with zero cash buffer",
+      "Operating margin of only 5.06% — copper/aluminum commodity input exposure means any raw material spike can wipe profits; no pricing power"
+    ],
+    "red_flags": [
+      "Working capital trap: OCF was -17 Cr in FY25 vs. net profit of 41 Cr — 58 Cr earnings-to-cash gap signals aggressive revenue recognition or receivables buildup",
+      "Borrowings jumped 70% YoY (110→187 Cr) to fund balance sheet expansion — growth is debt-funded, not self-financing",
+      "Near-zero cash across all 4 years — no liquidity cushion if credit markets tighten"
+    ],
+    "detailed_analysis": "Vidya Wires fits Lynch's 'fast grower in an expanding market' archetype — winding wires go into EV motors, solar panels, power transformers, and railway systems, all of which India is spending heavily on. Revenue growing 17.5% and profits at 27% CAGR with ROE near 28% is legitimately good. The PEG ratio of ~1.21 (32.6 P/E ÷ 27% growth) is above my sweet spot of below 1.0, but not outrageously so. The real issue is the quality of those earnings.\n\nWhat worries me is that this company made 41 Cr of net profit in FY25 but burned 17 Cr of operating cash. That gap — nearly 60 Cr — is working capital being swallowed up, almost certainly receivables and inventory as the business scales fast. Meanwhile, borrowings jumped 70% in one year and there's not a rupee of cash on the balance sheet. This is a commodity business (copper/aluminum wire) with sub-6% gross margins — the margin for error is razor thin. I'd want to see two consecutive years of positive FCF and debt stabilization before getting excited. At INR 69.60, the story is priced in; I'd wait for proof of cash conversion.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 48835,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07729035,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10681,
+      "cache_read_input_tokens": 8742,
+      "output_tokens": 2307,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10681,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 412,
+          "cache_read_input_tokens": 8742,
+          "cache_creation_input_tokens": 1939,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1939
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

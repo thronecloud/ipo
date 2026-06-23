@@ -1,0 +1,69 @@
+{
+  "symbol": "CEMPRO",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-19T06:04:13.613691Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "AVOID",
+    "investment_thesis": "Cemindia Projects has impressive ROCE of 27.6% and strong revenue growth (9,097 Cr in FY25 vs 2,892 Cr a decade ago), but construction and civil engineering is fundamentally a project-by-project, order-book-dependent business with no durable moat, wafer-thin margins, and perpetual working-capital risk. A P/B of 5.44x for such a business is far too rich for my taste.",
+    "key_strengths": [
+      "ROCE of 27.6% and ROE of 21.8% are genuinely impressive, suggesting disciplined capital deployment and good returns on projects currently in hand",
+      "Revenue has grown nearly 3x in a decade with net profit turning from a loss to INR 373 Cr — meaningful operational improvement",
+      "D/E of 0.48 is manageable, and OCF was positive in all five of the last five years"
+    ],
+    "key_risks": [
+      "Operating margins of 7.74% offer almost no buffer — cost overruns on a few projects can wipe out annual profits entirely",
+      "Business is entirely dependent on government and quasi-government contracts; policy delays, payment cycles, and political risk can freeze revenue",
+      "Free cash flow collapsed to just INR 30 Cr in FY25 from INR 369 Cr the prior year, revealing the working-capital intensiveness of construction"
+    ],
+    "red_flags": [
+      "P/B of 5.44x is exceptionally stretched for a construction contractor with no proprietary technology or brand advantage",
+      "Recent name change from ITD Cementation to Cemindia Projects (Aug 2025) and ownership shift to Renew Exim DMCC adds corporate structure uncertainty",
+      "Finance costs of INR 229 Cr in FY25 and growing, against net profit of INR 373 Cr, means interest absorbs 61% of operating earnings — leverage risk is real"
+    ],
+    "detailed_analysis": "Cemindia specialises in marine structures, tunnels, airports, and infrastructure — technically complex work, but not work that creates a repeatable economic moat. Every project is competitively bid, margins are thin (~7.74% operating), and the cycle repeats. The high ROCE is encouraging but reflects current project mix; it is not a structural advantage. I have no way to predict the order book three years out, which is a business I simply cannot understand well enough.\n\nAt P/B of 5.44x and P/E of 23.7x, the market is pricing in sustained high-quality growth for a business that is inherently lumpy and dependent on government capex cycles. India's infrastructure spending boom could sustain the order book, but that is a macro bet, not a business-quality bet. I prefer businesses where I can predict earnings ten years from now with high confidence — construction contracting does not qualify.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "good",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 146063,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.21417960000000003,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 23332,
+      "cache_read_input_tokens": 15902,
+      "output_tokens": 8127,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 23332,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 524,
+          "cache_read_input_tokens": 15902,
+          "cache_creation_input_tokens": 7430,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 7430
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

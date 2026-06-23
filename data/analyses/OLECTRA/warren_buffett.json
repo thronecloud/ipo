@@ -1,0 +1,70 @@
+{
+  "symbol": "OLECTRA",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-22T16:44:50.170109Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Olectra operates in India's nascent EV bus segment with impressive revenue growth (39% CAGR), but the business lacks a durable competitive moat, is entirely dependent on government tenders, and trades at an extreme 70x earnings with persistently negative free cash flow. At INR 10,056 Cr market cap on INR 139 Cr net profit, the price already discounts decades of flawless execution I have no reason to expect.",
+    "key_strengths": [
+      "Strong revenue acceleration: 1,802 Cr in FY25, up from 93 Cr in FY16 — genuine execution, not hype",
+      "Manageable leverage at D/E of 0.33, well within comfortable bounds",
+      "ROCE of 20.5% suggests reasonable capital deployment efficiency in a capital-intensive sector"
+    ],
+    "key_risks": [
+      "No discernible moat: competes with Tata Motors, JBM Auto on government tenders — price is the only differentiator",
+      "Chronically negative or volatile FCF (-36 Cr in FY25) despite 1,802 Cr revenue; business consumes cash as it grows",
+      "Borrowings tripled in one year (121→366 Cr) while cash sits at 6 Cr — liquidity vulnerability as capex ramps to 177 Cr"
+    ],
+    "red_flags": [
+      "EV/EBITDA of 1,082x is not a typo — it reflects near-zero earnings power relative to enterprise value",
+      "FCF negative in FY25 on accelerating capex (177 Cr) and CWIP of 207 Cr — classic capital trap",
+      "ROE of 14.3% is below my 15% threshold even at peak cycle conditions",
+      "100% government customer dependency means policy risk, payment delays, and no pricing power"
+    ],
+    "detailed_analysis": "Olectra is a genuine early mover in India's electric bus revolution — that part is real. Revenue has grown nearly 20x in nine years and operating margins have expanded from near-zero to 12%. But being early in a government-mandated industry is not the same as having a moat. State transport undertakings award contracts on L1 (lowest bid) basis, which structurally prevents pricing power. Tata Motors and JBM Auto are not going away, and new entrants will continue to pressure margins. I look for businesses where the competitive advantage widens over time; here, every bus order is a fresh battle.\n\nThe financials reveal a business that must spend heavily to grow. Free cash flow has been negative in three of the last six years, including FY25 despite 1,802 Cr in revenue and 139 Cr in net profit — accounting profits are not the same as owner earnings. The 177 Cr capex surge and 207 Cr CWIP signal further cash consumption ahead. Meanwhile, borrowings leapt 3x in a single year with only 6 Cr of cash on hand. At 70x trailing earnings and P/S of 59x, the stock prices in perfection while the business is still building the factory. I prefer to pay a fair price for a wonderful business — this is an expensive price for an unproven one.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 43563,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0754563,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11044,
+      "cache_read_input_tokens": 9141,
+      "output_tokens": 2086,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11044,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 221,
+          "cache_read_input_tokens": 9141,
+          "cache_creation_input_tokens": 1903,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1903
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

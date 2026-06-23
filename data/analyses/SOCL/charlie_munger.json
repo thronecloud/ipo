@@ -1,0 +1,70 @@
+{
+  "symbol": "SOCL",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-21T07:48:11.671599Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "AVOID",
+    "investment_thesis": "Sundrex Oil shows superficially attractive capital returns (ROCE 34.8%), but it operates in a commoditized lubricants market with no discernible moat, an INR 35 Cr micro-cap size that signals illiquidity and governance opacity, and insufficient financial disclosure to assess earnings quality. The numbers intrigue, but the business does not pass the \"thoroughly understand it\" test.",
+    "key_strengths": [
+      "ROCE of 34.8% clears the 15% hurdle meaningfully — suggests some pricing power or asset efficiency",
+      "P/E of 7.28 offers a statistical margin of safety if earnings are real and recurring",
+      "Promoter holding at 72% signals skin in the game"
+    ],
+    "key_risks": [
+      "Lubricants is a commodity business — no switching costs, no network effects, pricing set by crude oil and competition",
+      "ROE (55.6%) far exceeds ROCE (34.8%), implying financial leverage is inflating equity returns — a classic accounting illusion",
+      "INR 35 Cr micro-cap: near-zero liquidity, zero institutional oversight, governance impossible to verify from outside"
+    ],
+    "red_flags": [
+      "ROE/ROCE divergence of ~21 percentage points suggests hidden leverage boosting equity returns",
+      "DII ownership of only 0.56% — professional capital has looked and walked away",
+      "No FCF data, no revenue growth figures, no debt-to-EBITDA disclosed — cannot assess earnings quality",
+      "Commodity business with no identifiable moat in a highly fragmented Indian lubricants market dominated by Castrol, Gulf, and Servo"
+    ],
+    "detailed_analysis": "Invert first: what makes this a dangerous investment? A 55.6% ROE in a commodity lubricants business is almost always a debt story, not a quality story. The 21-percentage-point gap between ROE and ROCE confirms leverage is doing the heavy lifting. At INR 35 Cr market cap, the company is too small to attract meaningful analyst coverage, institutional scrutiny, or audit rigor — precisely the environment where accounting irregularities fester undetected. The 0.56% DII ownership is not a contrarian signal; it is a warning that professional investors with resources to dig deeper have passed.\n\nThe ROCE of 34.8% is the one genuinely interesting data point — if sustainable, it suggests above-average asset turns or margins for the industry. But without FCF conversion data, revenue trajectory, or debt levels, I cannot verify whether this ROCE is structural or a one-year artifact. Munger's rule applies here: I would rather be idle with cash than invest in a business I cannot understand deeply at a micro-cap size where governance risk is unquantifiable. The P/E of 7.28 is not cheap enough to compensate for what I do not know.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "insufficient_data",
+      "financial_health": "insufficient_data",
+      "valuation": "insufficient_data",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 48728,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07264935,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9311,
+      "cache_read_input_tokens": 7447,
+      "output_tokens": 2366,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9311,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 540,
+          "cache_read_input_tokens": 7447,
+          "cache_creation_input_tokens": 1864,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1864
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

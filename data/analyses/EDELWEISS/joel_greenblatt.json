@@ -1,0 +1,70 @@
+{
+  "symbol": "EDELWEISS",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T17:09:18.731101Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Edelweiss is a financial conglomerate that is explicitly excluded from the Magic Formula — debt is its raw material, making EV-based earnings yield meaningless. The business has destroyed value since its 2019 peak with EBIT collapsing from INR 6,571 Cr to INR 3,382 Cr and equity shrinking from INR 6,744 Cr (2023) to INR 4,419 Cr (2025).",
+    "key_strengths": [
+      "Declining borrowings: down from INR 36,657 Cr (2020) to INR 19,459 Cr (2025), improving balance sheet leverage",
+      "Forward P/E of 7.56 implies market expects significant earnings recovery — some optionality if ARC/AMC businesses re-rate",
+      "OCF positive all 5 years with INR 4,938 Cr cash built up, providing liquidity cushion"
+    ],
+    "key_risks": [
+      "Financial company exclusion: D/E of 3.51 makes ROIC and earnings yield calculations structurally misleading under Magic Formula",
+      "Destroyed returns: EBIT CAGR of only 0.4% over 9 years; operating income today (INR 3,382 Cr) is nearly HALF the 2019 peak of INR 6,571 Cr",
+      "Equity erosion: total equity fell from INR 6,744 Cr (2023) to INR 4,419 Cr (2025) — capital is being consumed, not compounded"
+    ],
+    "red_flags": [
+      "EXCLUDED from Magic Formula — financial conglomerate with debt as core input",
+      "Catastrophic 2020 loss of INR -2,044 Cr reveals fragility of leveraged model under stress",
+      "ROE of 8.68% far below cost of equity — management is not earning adequate returns on shareholder capital",
+      "Revenue trend contracting last 5 years despite broader Indian financial services tailwind"
+    ],
+    "detailed_analysis": "The Magic Formula cannot be applied cleanly to Edelweiss — this is precisely the class of business I exclude. With D/E of 3.51, computing EV by adding INR 18,004 Cr of debt gives an enterprise value of ~INR 24,344 Cr, producing an earnings yield of ~13.9% (EBIT INR 3,382 Cr / EV INR 24,344 Cr) that looks superficially attractive. But for a financial company, that debt is inventory, not financial leverage — so the metric is apples-to-oranges. The real return metric is ROE: 8.68%. That is weak, full stop. ROCE of 13.3% is mediocre and insufficient to clear a hurdle that compensates for the leverage risk.\n\nThe fundamental business story is one of contraction after over-expansion. EBITDA peaked at INR 6,703 Cr in 2019, collapsed during the IL&FS-era credit crisis to INR 2,711 Cr in 2020, and has only partially recovered to INR 3,529 Cr in 2025 — still 47% below peak. Meanwhile, equity has shrunk two years running (INR 6,744 → INR 6,537 Cr after 2022; then sharply to INR 4,419 Cr by 2025), meaning the business is consuming its own capital base. The forward P/E of 7.56 vs. trailing 19.0x implies the market is pricing in a large earnings jump — but with a business that has failed to recover to 2019 levels after six years, I need to see that proof before paying even this price.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "insufficient_data",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 47265,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.080121,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11150,
+      "cache_read_input_tokens": 9165,
+      "output_tokens": 2370,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11150
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 419,
+          "cache_read_input_tokens": 9165,
+          "cache_creation_input_tokens": 1985,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1985,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "EXIMROUTES",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-21T07:52:56.857297Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Exim Routes is a 6-year-old commodities trading intermediary with zero moat, trading at 37.5x P/E, that has never generated a single rupee of positive operating cash flow across all five years of its existence. The reported INR 8 Cr net profit in FY25 is entirely fictitious from a cash perspective — the business actually consumed INR 9 Cr of cash from operations, making this a value-destroying speculation at current prices.",
+    "key_strengths": [
+      "Revenue CAGR of 134.5% (FY21→FY25): INR 4 Cr to INR 121 Cr demonstrates strong demand capture in the recycled paper segment.",
+      "ROCE of 55.3% and ROE of 54% look impressive on paper, reflecting asset-light trading model on a small equity base.",
+      "Debt-to-EBITDA of 0.9x (INR 9 Cr borrowings / INR 10 Cr EBITDA) is manageable — leverage is not the immediate danger."
+    ],
+    "key_risks": [
+      "Zero cash conversion — OCF has been negative all 5 years; FY25 shows -INR 9 Cr OCF against +INR 8 Cr net profit (FCF/NI = -112%), the most damning quality failure possible.",
+      "No competitive moat — recyclable paper trading is a pure commodity intermediary with no switching costs, no IP, and no pricing power; margins can compress to zero with one aggressive competitor.",
+      "Valuation is irrational at 37.5x P/E (2x revenue) for a no-moat trading business incorporated only in 2019 with zero business cycle track record."
+    ],
+    "red_flags": [
+      "OCF negative all 5 years (0/5 positive) — revenue growth is being funded by working capital destruction, not economic profit.",
+      "FY25 equity jumped from INR 4 Cr to INR 25 Cr — suggests IPO proceeds masking operational cash drain; the business cannot self-fund.",
+      "No operating history before 2021; no evidence of performance through a demand downturn or credit cycle."
+    ],
+    "detailed_analysis": "Invert first, as always: what would make this a terrible investment? Easy — a commodities trading middleman that has never converted a rupee of accounting profit into actual cash. In FY25, Exim Routes reported INR 8 Cr net profit while burning INR 5 Cr in operations and another INR 4 Cr in investing activities. Free cash flow was -INR 9 Cr. This is not a temporary working capital blip — it has been negative every single year. The balance sheet confirms the story: total assets ballooned from INR 2 Cr to INR 54 Cr in four years, funded primarily by external capital (equity issuance + borrowings), not retained earnings from genuine economic activity. The high ROE/ROCE figures are a mirage — they reflect a tiny, recently recapitalized equity base, not durable capital efficiency.\n\nThe business itself — facilitating recyclable paper exchange between global suppliers and Indian mills — has essentially no barriers to entry. Paper recycling is an undifferentiated commodity; any well-capitalized trader can replicate this model. At 37.5x P/E and 2x revenue, the market is pricing in decades of compounding from a business with six years of history, razor-thin 6.6% net margins, and no demonstrated ability to generate cash. Munger's cardinal rule: earnings quality must be verified by cash flow. Here, it fails completely. This is a lottery ticket dressed up as a growth stock.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 51678,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08279535,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10505,
+      "cache_read_input_tokens": 8142,
+      "output_tokens": 2730,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10505,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 404,
+          "cache_read_input_tokens": 8142,
+          "cache_creation_input_tokens": 2363,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2363
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

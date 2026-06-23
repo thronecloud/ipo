@@ -1,0 +1,71 @@
+{
+  "symbol": "PWL",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-21T08:07:36.955457Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "PhysicsWallah is a loss-making EdTech company trading at 49.69x book value with three consecutive years of net losses — it fails virtually every quantitative criterion I require before committing a dollar of capital. At INR 108, the buyer receives no margin of safety, no earnings record, and no dividends; only a speculative promise of future profits.",
+    "key_strengths": [
+      "Revenue growing explosively at 131% CAGR (2022–2025), demonstrating real market demand",
+      "Operating cash flow positive all four years (INR 507 Cr in FY25), suggesting the core business model generates cash despite accounting losses",
+      "High promoter holding at 72.3% aligns management incentives with long-term outcomes"
+    ],
+    "key_risks": [
+      "Persistent net losses — INR -84 Cr, -1,131 Cr, -243 Cr in FY23/24/25 — with no demonstrated capacity for sustainable profit",
+      "P/B of 49.69x and EV/EBITDA of 433x represent catastrophic overvaluation; my maximum tolerance is P/B 1.5x",
+      "Equity was deeply negative through FY23–FY24 (−INR 1,246 Cr), and the balance sheet only turned positive via capital infusion, not earnings"
+    ],
+    "red_flags": [
+      "Company incorporated in 2020 — lacks the 5-year earnings track record I require as a baseline for analysis",
+      "FY24 net loss of INR 1,131 Cr included INR 672 Cr negative 'other income' — likely goodwill write-downs from acquisition spree, signalling capital destruction",
+      "Borrowings surged from zero to INR 2,461 Cr in FY24 before partial repayment; debt-funded expansion without profitability is a hallmark of speculative enterprise",
+      "No dividend — zero cash return to shareholders in any year of operation",
+      "Graham Number is mathematically incalculable — you cannot take a square root of a negative EPS"
+    ],
+    "detailed_analysis": "By every quantitative filter I have applied for fifty years, PhysicsWallah fails comprehensively. The stock trades at 49.69x book value against my ceiling of 1.5x, and the Forward P/E of 99.68x is rendered almost irrelevant by the fact that the company has been loss-making in three of four reported years. The EV/EBITDA of 433x suggests the market is paying for perhaps a decade of future profits today — with no certainty those profits will ever materialise. The balance sheet tells a damning story: equity collapsed to negative INR 1,246 Cr in FY24, borrowings ballooned to INR 2,461 Cr, and the company appears to have written off substantial acquisition value in a single year (the INR 672 Cr negative \"other income\" in FY24). The equity base visible in FY25 (INR 1,398 Cr) is fresh capital, not earned surplus.\n\nThe one genuine positive is operating cash flow — INR 507 Cr in FY25 — which tells me the core tutoring business collects fees in advance and has low working capital intensity. This is a real asset. But it does not justify the current price. Mr. Market, in his manic enthusiasm for India's EdTech narrative, has priced this company as though it already dominates an unassailable market. I see a four-year-old firm in a highly competitive, low-barrier sector, run by talented but unproven capital allocators who spent INR 1,513 Cr in investing activities in FY25 alone. The intelligent investor waits for Mr. Market to offer him a bargain. At INR 108, he is being asked to pay a premium for a lottery ticket.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 53632,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0745344,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8818,
+      "cache_read_input_tokens": 10693,
+      "output_tokens": 2550,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8818,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 375,
+          "cache_read_input_tokens": 8643,
+          "cache_creation_input_tokens": 2225,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2225
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

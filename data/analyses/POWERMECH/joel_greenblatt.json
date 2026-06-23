@@ -1,0 +1,69 @@
+{
+  "symbol": "POWERMECH",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T22:04:13.717555Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Power Mech Projects earns a decent ROCE of 22.9% and has grown revenue at 16% CAGR over 9 years, but at an earnings yield of only ~7.4% (EBIT INR 602 Cr / EV ~INR 8,141 Cr), it doesn't screen cheaply enough on the Magic Formula to act on. The 2025 cash flow collapse (OCF: INR 1 Cr; FCF: -INR 159 Cr) and near-doubling of borrowings to INR 960 Cr are structural concerns that prevent a buy rating.",
+    "key_strengths": [
+      "ROCE of 22.9% clears Greenblatt's 20% threshold — the business does generate genuine returns on capital",
+      "Revenue CAGR of 16% and net profit CAGR of 18.6% over 9 years shows durable compounding",
+      "Strong promoter holding (58.4%) and rising DII ownership (20.2%) provide governance comfort"
+    ],
+    "key_risks": [
+      "Earnings yield ~7.4% (EBIT/EV) is well below the Magic Formula's 12%+ attractive threshold — not cheap",
+      "OCF collapsed to INR 1 Cr in FY25 (from INR 205 Cr in FY24) and FCF turned -INR 159 Cr — working capital deterioration is severe",
+      "Borrowings nearly tripled in one year (INR 396 Cr → INR 960 Cr) raising leverage concerns for a cyclical EPC player"
+    ],
+    "red_flags": [
+      "FY25 OCF essentially zero despite INR 348 Cr net profit — massive working capital drag or receivables build-up",
+      "Borrowings surged INR 564 Cr in a single year with no clear asset backing (CWIP only rose INR 61 Cr)",
+      "FY21 net loss of -INR 49 Cr reveals deep cyclicality — ROIC consistency cannot be assumed across cycles"
+    ],
+    "detailed_analysis": "Running the Magic Formula: EBIT FY25 = INR 602 Cr. Enterprise Value = Market Cap INR 7,512 Cr + Debt INR 721 Cr - Cash INR 92 Cr = ~INR 8,141 Cr. Earnings Yield = 602/8,141 = **7.4%** — meaningfully below the 12% I want to see and barely above the 6% floor. On the quality side, ROCE of 22.9% is respectable and passes the threshold, but it's aided by thin operating margins (~9.9%) amplified by revenue growth. The sustained CAGR in revenues (16%) and profits (18.6%) is real, but EPC businesses earn these returns via high asset turns, not pricing power, making them vulnerable in downturns — as FY21 proved with a -INR 49 Cr loss.\n\nThe FY25 cash flow is the deal-breaker for now. Net profit of INR 348 Cr produced INR 1 Cr of OCF — a near-total accounting-to-cash disconnect, likely from receivables bloat or aggressive revenue recognition on long-cycle projects. Simultaneously, borrowings jumped from INR 396 Cr to INR 960 Cr and capex rose to INR 163 Cr, suggesting the company is funding growth and working capital with debt. Until OCF normalizes and the balance sheet stabilizes, the Magic Formula's two-factor ranking would place this stock in the middle quintiles at best — hold existing positions, but this is not a new buy at current earnings yield.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 49844,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08281140000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11360,
+      "cache_read_input_tokens": 9258,
+      "output_tokens": 2495,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11360,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 431,
+          "cache_read_input_tokens": 9258,
+          "cache_creation_input_tokens": 2102,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2102
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

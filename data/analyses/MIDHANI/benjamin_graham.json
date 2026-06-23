@@ -1,0 +1,70 @@
+{
+  "symbol": "MIDHANI",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T18:23:58.307655Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "MIDHANI trades at INR 370 against a Graham Number of approximately INR 101 (EPS ~5.92, BVPS ~76.9), implying the market price is 3.7x intrinsic value by my calculation — there is no margin of safety whatsoever. With net profit declining at -2.7% CAGR and P/E at 63x, the investor is paying a speculative premium for a government-owned specialty metals franchise, not a bargain.",
+    "key_strengths": [
+      "Manageable leverage: Debt/Equity of 0.23 and interest coverage ~7.3x (EBIT ₹219 Cr / Finance Cost ₹30 Cr) pass my balance sheet tests.",
+      "Seven consecutive years of positive net earnings (2019–2025) demonstrate baseline earnings durability.",
+      "Captive defense/aerospace customer base provides some revenue stability, evidenced by steady 7.1% revenue CAGR."
+    ],
+    "key_risks": [
+      "Valuation is absurd by any quantitative standard: P/E 63x (my limit: 15x), P/B 4.81x (my limit: 1.5x) — the investor is paying for a story, not proven earning power.",
+      "Earnings power is deteriorating: net profit fell from ₹177 Cr (2022) to ₹92 Cr (2024), a 48% collapse, with only partial recovery to ₹111 Cr in 2025 — negative 6Y CAGR of -2.7%.",
+      "Finance costs exploding at 27.4% CAGR (₹7 Cr → ₹30 Cr), compressing net margins even as gross margins appear healthy at 60%."
+    ],
+    "red_flags": [
+      "Graham Number ~₹101 vs. market price ₹370 — stock trades at a 266% premium to intrinsic value.",
+      "ROE of 8.1% on a P/B of 4.81x means the investor earns a paltry 1.7% real return on market price paid — worse than a savings account.",
+      "Operating cash flow turned negative in 2023 (-₹35 Cr); free cash flow was negative for three of the last five measured years.",
+      "Operating income CAGR of only 2.9% while finance costs grew at 27.4% — the debt burden is outrunning operating leverage."
+    ],
+    "detailed_analysis": "From my strictly quantitative framework, MIDHANI fails virtually every filter I require. The Graham Number — derived from 2025 EPS of ~₹5.92 and book value per share of ~₹76.9 — yields approximately ₹101. The market demands ₹370, a 266% premium. At P/E of 63x and P/B of 4.81x, the purchaser is not acquiring earning power at a discount; he is paying an enormous premium for the narrative of a defense PSU in a strategic sector. Mr. Market is being wildly optimistic, and the disciplined investor must refuse his price.\n\nThe financial fundamentals compound the valuation problem. Net profit has declined from ₹177 Cr in FY2022 to ₹111 Cr in FY2025 — the business is earning less, not more, than it did three years ago. Meanwhile, borrowings surged from ₹134 Cr (2020) to a peak of ₹489 Cr (2023), and finance costs have risen at 27.4% CAGR. The company's sole quantitative merits — a current debt/equity of 0.23, solid interest coverage of ~7.3x, and unbroken earnings history — are real but wholly insufficient to justify this price. At ₹370, MIDHANI offers no margin of safety. I would require a price near or below ₹100 before I would even begin to consider this security.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 50073,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07669095,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9271,
+      "cache_read_input_tokens": 11019,
+      "output_tokens": 2574,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9271
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 282,
+          "cache_read_input_tokens": 8969,
+          "cache_creation_input_tokens": 2352,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2352,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "ARVIND",
+  "persona": "philip_fisher",
+  "persona_display_name": "Philip Fisher",
+  "analyzed_at": "2026-04-18T16:25:46.736645Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Arvind Limited is a century-old textile conglomerate with a near-zero revenue CAGR of 0.4% over nine years and ROE of only 9.32% — both disqualifying on my core criteria. The recent capex surge (₹535 Cr in FY25 vs. ₹186 Cr in FY22) hints at expansion ambition, but commoditized textile manufacturing offers no innovation moat to sustain the compounding I require.",
+    "key_strengths": [
+      "Disciplined debt reduction: borrowings cut from ₹2,640 Cr (FY20) to ₹1,537 Cr (FY25), keeping D/E at a manageable 0.39",
+      "Consistent operating cash generation: 5/5 years positive OCF averaging ~₹700 Cr, demonstrating basic operational durability",
+      "Advanced Materials diversification into technical textiles (defense, healthcare, automotive filtration) offers a modest growth niche beyond commodity denim"
+    ],
+    "key_risks": [
+      "Stagnant top line: FY25 revenue of ₹8,329 Cr barely exceeds FY16's ₹8,011 Cr — nine years of essentially zero real growth",
+      "Structurally low ROE of 9.32%, well below my 20% threshold, with no evidence of a structural improvement trajectory",
+      "Sharply declining free cash flow — from ₹687 Cr (FY21) to ₹280 Cr (FY25) — as capex triples, compressing returns before new capacity proves itself"
+    ],
+    "red_flags": [
+      "EBITDA CAGR of -3.1% over 9 years signals margin erosion, not expansion",
+      "Net profit of ₹367 Cr in FY25 is barely above the FY16 level of ₹316 Cr — zero earnings compounding over a decade",
+      "No meaningful R&D investment or innovation pipeline identifiable in a low-differentiation commodity textile business"
+    ],
+    "detailed_analysis": "Applying my 15-point checklist, Arvind fails on the most fundamental questions. Does the company have products with sufficient market potential for years of superior sales growth? The data says no — revenue has been flat in nominal terms for nearly a decade (₹8,011 Cr in FY16 to ₹8,329 Cr in FY25, a 0.4% CAGR). Does management continue to develop new products that can open up additional large markets? The Advanced Materials segment is interesting but sub-scale relative to the core denim/woven fabric business. Does it have a worthwhile and improving profit margin? Operating margin is only 8.52% and EBITDA has compounded at -3.1% annually — this is the opposite of what I look for.\n\nOn management quality, I give partial credit: the team has reduced borrowings by ₹1,103 Cr over five years and maintained positive OCF through the COVID shock, which shows operational discipline. The sharp FY25 capex of ₹535 Cr and CWIP build to ₹331 Cr suggest they are betting on a demand cycle, possibly driven by China+1 supply chain shifts. That is a reasonable macro thesis, but macro tailwinds alone do not create the self-sustaining, innovation-driven growth compounding I need. At a P/E of 24x for a business growing earnings at 1.7% annually over nine years, the market is already pricing in an optimistic recovery. I would not pay a growth multiple for a value-grade business.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 46903,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07100805,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9109,
+      "cache_read_input_tokens": 11201,
+      "output_tokens": 2232,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9109,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 261,
+          "cache_read_input_tokens": 9147,
+          "cache_creation_input_tokens": 2016,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2016
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

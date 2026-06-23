@@ -1,0 +1,68 @@
+{
+  "symbol": "IGL",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-19T12:54:42.063735Z",
+  "analysis": {
+    "score": 7,
+    "recommendation": "BUY",
+    "investment_thesis": "IGL is a textbook regulated utility monopoly — it owns the only CNG and piped gas network in Delhi/NCR, making it the toll road of natural gas distribution. At 14.2x earnings with virtually zero debt and consistent 15%+ net profit CAGR over nine years, the price is fair for the quality on offer.",
+    "key_strengths": [
+      "Geographic monopoly: pipeline infrastructure creates an insurmountable natural moat — no competitor can economically duplicate the network",
+      "Fortress balance sheet: debt/equity of 0.01, equity grew from INR 5,358 Cr to INR 11,221 Cr in five years, and OCF positive all 5 years",
+      "Durable regulatory moat: city gas distribution licenses grant exclusive rights for 25 years, providing predictable, inflation-linked pricing power"
+    ],
+    "key_risks": [
+      "FY2025 net profit fell to INR 1,713 Cr from INR 1,983 Cr in FY2024 — margin compression from gas procurement cost volatility is real",
+      "Regulatory pricing risk: government intervention in CNG prices could compress spread between APM gas cost and retail tariff",
+      "EV adoption threatens long-term CNG vehicle volumes, the highest-margin segment"
+    ],
+    "red_flags": [
+      "Operating income declined to INR 1,994 Cr in FY2025 from INR 2,388 Cr in FY2024 — consecutive-year profit decline warrants monitoring",
+      "Heavy capex (INR 1,100–1,300 Cr annually) keeps free cash flow modest relative to earnings, limiting near-term capital return"
+    ],
+    "detailed_analysis": "IGL is the kind of business I understand and love — it distributes a utility under a government-granted monopoly, has pricing power built into its regulatory framework, and runs on almost no debt while generating consistent cash. The nine-year net profit CAGR of 15.8% and ROCE of 20.8% confirm this is a high-quality compounder. The only real blemish is the FY2025 earnings dip, driven by gas procurement cost spikes that temporarily squeezed the margin between APM allocation price and retail CNG tariffs — a cyclical, not structural, issue.\n\nAt a forward P/E of 12.4x and EV/EBITDA of 10.2x, the market is not pricing in the durability of this monopoly franchise. Persistent FII (17%) and DII (23%) institutional ownership signals sophisticated long-term holders. The expanding CWIP (INR 1,701 Cr) suggests geographic expansion into new areas, which will underpin the next leg of volume growth. This is a fair price for a wonderful regulated business.",
+    "metrics_evaluated": {
+      "moat_strength": "strong",
+      "management_quality": "good",
+      "financial_health": "excellent",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 141107,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.20011440000000003,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 22012,
+      "cache_read_input_tokens": 15268,
+      "output_tokens": 7532,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 22012,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 612,
+          "cache_read_input_tokens": 15268,
+          "cache_creation_input_tokens": 6744,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 6744
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

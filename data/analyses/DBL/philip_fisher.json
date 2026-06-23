@@ -1,0 +1,70 @@
+{
+  "symbol": "DBL",
+  "persona": "philip_fisher",
+  "persona_display_name": "Philip Fisher",
+  "analyzed_at": "2026-04-18T17:06:39.061785Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Dilip Buildcon is a capital-heavy government-contract EPC business with no innovation moat, chronically negative free cash flow, and debt-to-equity of 1.71x — the antithesis of the compounding growth machine I seek. Revenue CAGR of just 11.6% over nine years and ROE of under 10% do not justify a long-term commitment despite cheap headline multiples.",
+    "key_strengths": [
+      "Large-scale EPC operator with proven execution across roads, tunnels, metro — diversified project portfolio",
+      "Net profit recovery to INR 840 Cr in FY25 after two loss years (FY22: -550 Cr, FY23: -1 Cr) signals operational stabilization",
+      "High promoter holding of 63.14% indicates skin in the game and long-term alignment"
+    ],
+    "key_risks": [
+      "Debt explosion: borrowings surged from INR 6,658 Cr (FY23) to INR 10,375 Cr (FY25), D/E at 1.71x — far exceeding my 0.5x ceiling",
+      "Persistently negative free cash flow every single year (-4,134 Cr in FY25); the business destroys cash at scale despite positive operating income",
+      "Zero innovation DNA — no R&D, no proprietary technology, no pricing power; revenue is purely government tender-dependent"
+    ],
+    "red_flags": [
+      "FCF negative in all 6 years shown — this is structural, not cyclical",
+      "Finance costs at INR 1,249 Cr in FY25 now consume ~111% of operating income (INR 1,126 Cr pre-other income) — debt is eating the business",
+      "Revenue flat over 5 years (INR 9,701 Cr in FY20 → INR 11,317 Cr in FY25, ~3% CAGR) despite massive capex deployment of INR 3,916–5,554 Cr annually",
+      "Forward P/E of 26.91x vs trailing 11.4x implies the market expects FY25 earnings of INR 840 Cr to revert sharply — a warning signal"
+    ],
+    "detailed_analysis": "Through my scuttlebutt lens, DBL operates in a structurally uninspiring business: it wins contracts through competitive government tenders, deploys enormous capital, and generates revenue that grows at only 11.6% over nine years — well below the 20–30% I require. The EBITDA CAGR of just 5.5% over the same period tells me margins are under pressure despite scale. Most damning is the free cash flow picture: not a single positive FCF year in six years of data, with negative FCF of INR 4,134 Cr in FY25 alone. This is not a business compounding value for shareholders; it is a machine that converts equity and debt into project revenues and then requires even more capital to do it again.\n\nThe debt trajectory disqualifies DBL on first principles. Borrowings have ballooned back to INR 10,375 Cr in FY25 after a brief deleveraging phase, and finance costs of INR 1,249 Cr now rival operating income. ROE of 9.97% on this leveraged base is actually poor — remove the debt amplification and the underlying return on capital is pedestrian. There is no R&D, no proprietary technology, no durable competitive advantage of the kind I require. India's infrastructure spending cycle may provide a revenue tailwind, but the economics accrue to government coffers and project execution risk, not to long-term shareholder wealth creation. I will pass.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 40242,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.06665355,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8773,
+      "cache_read_input_tokens": 11236,
+      "output_tokens": 2025,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 8773
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 427,
+          "cache_read_input_tokens": 9182,
+          "cache_creation_input_tokens": 1645,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1645,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

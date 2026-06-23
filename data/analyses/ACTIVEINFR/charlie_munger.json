@@ -1,0 +1,69 @@
+{
+  "symbol": "ACTIVEINFR",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-20T11:11:24.168170Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Small civil construction contractor with lumpy revenue (Rs 1 Cr in 2022 to Rs 90 Cr in 2025 suggests a recent business reorganization or IPO-driven transformation, not organic compounding). At 26x P/E for a 13.6% ROE project-based contractor with collapsing FCF conversion and Rs 60 Cr debt, this fails every Munger quality test.",
+    "key_strengths": [
+      "Debt reduced from Rs 109 Cr (2022) to Rs 60 Cr (2025); equity infusion of ~Rs 86 Cr strengthened balance sheet",
+      "EBITDA margin expanded from ~15% (2023) to ~31% (2025)",
+      "Promoter holding at 72.38% — skin in the game"
+    ],
+    "key_risks": [
+      "Civil construction is a cyclical, low-moat, working-capital-heavy business — no durable competitive advantage",
+      "FCF collapsed to Rs 2 Cr in 2025 vs Rs 13 Cr net profit — earnings quality deteriorating (FCF/NI ~15%)",
+      "Revenue jump from Rs 1 Cr to Rs 89 Cr in one year signals opaque accounting/restructuring; tiny Rs 267 Cr micro-cap with zero institutional cushion"
+    ],
+    "red_flags": [
+      "Operating CF crashed from Rs 32 Cr (2024) to Rs 5 Cr (2025) while revenue held — working capital bleed",
+      "Rs 86 Cr reserves jump in 2025 suggests IPO/preferential allotment; pricing reflects post-listing euphoria, not fundamentals",
+      "Revenue of Rs 1 Cr in 2022 for a company 'incorporated in 2007' is a major discontinuity — business is effectively 3 years old in current form"
+    ],
+    "detailed_analysis": "Invert first: what kills this investment? A civil construction micro-cap where FY22 revenue was Rs 1 Cr and FY25 is Rs 90 Cr is not a compounding machine — it's a recently restructured/IPO'd entity with no track record I can underwrite. ROCE of 15.5% is barely above cost of capital for a project-based business, and the 2025 FCF of Rs 2 Cr against Rs 13 Cr reported profit tells me earnings are being consumed by working capital — classic contractor disease. The Rs 86 Cr reserves increase in 2025 is almost certainly fresh equity issuance, which deflates the apparent \"deleveraging\" story.\n\nMunger's filter: do I understand this business's competitive advantage over decades? No — civil contractors compete on L1 tenders, have no pricing power, face cement/steel input volatility, and depend on government/private capex cycles. At 26x earnings for Rs 13 Cr of profit with deteriorating cash conversion and no moat, this is the kind of speculative small-cap I'd put in the \"too hard\" pile and walk away. Price tells you nothing when the underlying business quality is mediocre. Pass.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 27087,
+    "model_used": "opus",
+    "total_cost_usd": 0.10239525,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 9799,
+      "cache_read_input_tokens": 13843,
+      "output_tokens": 1368,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9799,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 11116,
+          "cache_creation_input_tokens": 1410,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1410
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

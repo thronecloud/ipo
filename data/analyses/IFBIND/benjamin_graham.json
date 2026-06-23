@@ -1,0 +1,70 @@
+{
+  "symbol": "IFBIND",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T17:38:56.703170Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "IFB Industries trades at INR 1,116 against a calculated Graham Number of approximately INR 386 (sqrt(22.5 × EPS ~29.3 × BVPS ~227)), meaning the stock is roughly 190% above the maximum price a disciplined value investor should pay. With a P/E of 34.9x and P/B of 4.9x — both more than double my strict upper limits — there is no margin of safety whatsoever.",
+    "key_strengths": [
+      "Debt/Equity of 0.18 — well within my 0.5x limit, and finance costs are contracting (INR 35Cr → 27Cr), indicating prudent deleveraging",
+      "Revenue CAGR of 14.2% over 8 years (INR 1,758Cr → 5,092Cr) demonstrates genuine business scale-up, not a flash in the pan",
+      "Operating cash flow positive in all 5 of the last 5 years — the business does convert some real cash, even if inconsistently"
+    ],
+    "key_risks": [
+      "Net loss of INR -48Cr in FY2022 breaks the consecutive positive earnings record I require — a company that cannot sustain profits through a difficult year is not the fortress I seek",
+      "Operating margin of just 3.19% on INR 5,092Cr revenue is dangerously thin — one input cost spike or demand slowdown turns profits to losses instantly, as 2022 proved",
+      "Free cash flow collapsed to only INR 12Cr in FY2025 despite INR 119Cr reported net profit — a stark divergence that demands explanation and raises questions about earnings quality"
+    ],
+    "red_flags": [
+      "P/E of 34.9x — more than twice my absolute ceiling of 15x; the market is pricing in a rosy future I cannot verify with balance sheet facts",
+      "P/B of 4.9x — over three times my maximum of 1.5x; buyers are paying nearly INR 5 for every INR 1 of tangible book assets (equity INR 923Cr, market cap INR 4,532Cr)",
+      "FY2022 net loss of INR -48Cr violates the 3-5 year consecutive positive earnings requirement; speculative cyclical risk is real in this appliance segment",
+      "No dividend information provided — a company earning thin margins and posting occasional losses should not command growth-stock multiples"
+    ],
+    "detailed_analysis": "From a strict quantitative standpoint, IFB Industries fails nearly every test I apply before even considering a purchase. The Graham Number — computed as sqrt(22.5 × ~29.3 EPS × ~227 BVPS) — yields roughly INR 386, against a market price of INR 1,116. The stock must decline 65% simply to reach the upper boundary of fair value by my method. A P/E of 34.9x and P/B of 4.9x tell me Mr. Market is in an optimistic mood about this company's future — but I do not pay for futures; I pay for proven earning power, and this company lost money in FY2022 and earned a mere INR 15Cr in FY2023 on INR 4,195Cr of revenue. That is not a record of dependable earnings; it is a record of fragility.\n\nThe balance sheet offers the only partial comfort: D/E of 0.18 is conservative, and the deleveraging trend (borrowings fell from INR 363Cr in FY2022 to INR 168Cr in FY2025) is commendable. But a 3.19% operating margin in a commodity-adjacent appliance business — where raw material costs, competition from Chinese imports, and consumer sentiment all interact — provides virtually no buffer. The FY2025 FCF of INR 12Cr against net profit of INR 119Cr is particularly troubling; working capital consumption or capex acceleration is eating the reported earnings. At this price and these metrics, the intelligent investor has no margin of safety — only hope. Hope is not an investment strategy.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 52043,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07499624999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9125,
+      "cache_read_input_tokens": 11095,
+      "output_tokens": 2496,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9125
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 419,
+          "cache_read_input_tokens": 9045,
+          "cache_creation_input_tokens": 2130,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2130,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

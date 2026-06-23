@@ -1,0 +1,70 @@
+{
+  "symbol": "CSBBANK",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T17:01:43.795862Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "CSB Bank is explicitly excluded from my Magic Formula — financial companies distort both EBIT/EV and ROIC calculations. Even applying bank-adapted metrics (ROE as ROIC proxy, earnings yield via P/E), the numbers disappoint: ROE of 13.2% falls well short of my 20%+ hurdle, and net profit CAGR of just 9% against 33.8% surging finance costs signals accelerating NIM compression that will erode future returns.",
+    "key_strengths": [
+      "Reasonable valuation: forward P/E of 7.86 implies ~12.7% earnings yield — the cheapness side of the formula clears the 12% bar",
+      "Revenue growing at 20.5% CAGR (2022–2025), showing genuine loan book expansion",
+      "Solid promoter holding (40%) with FII + DII together at 28%, indicating institutional confidence"
+    ],
+    "key_risks": [
+      "Finance costs exploding at 33.8% CAGR vs. 20.5% revenue growth — cost of funds is outrunning income, compressing margins structurally",
+      "Free cash flow collapsed to -5,556 Cr in FY2025 and OCF positive only 2 of 4 years — earnings are not converting to cash",
+      "Net profit growth decelerating sharply: 9% CAGR vs. 20.5% revenue CAGR means the bank is working harder for less"
+    ],
+    "red_flags": [
+      "BANK — categorically excluded from Magic Formula; EBIT/EV and ROIC are meaningless metrics here",
+      "Finance cost CAGR (33.8%) > Revenue CAGR (20.5%) — funding costs are eating the business alive",
+      "FCF -5,556 Cr in FY2025 after +1,665 Cr in FY2024 — violent cash flow swings signal balance sheet stress, not operating strength",
+      "Debt surged from 1,757 Cr to 5,246 Cr in a single year (FY2024→FY2025) — 3x increase demands explanation"
+    ],
+    "detailed_analysis": "My Magic Formula cannot be applied to CSB Bank — I explicitly exclude all financial companies because customer deposits masquerade as debt, destroying enterprise value calculations, and 'capital' in a bank has nothing to do with net working capital plus fixed assets. Forcing the formula here would produce nonsense. Adapting to bank-relevant metrics: ROE of 13.2% is the closest proxy for return on capital, and it fails my 20% hurdle outright. This is a mediocre-quality business at a modestly cheap price — the worst outcome from a Magic Formula lens (cheap AND bad).\n\nThe deteriorating economics are the real story. Revenue grew 20.5% CAGR but net profit only 9% — the gap is entirely explained by finance costs compounding at 33.8%. The bank is funding growth with expensive liabilities, and profitability is being squeezed. The FY2025 OCF of -5,256 Cr (after +1,783 Cr in FY2024) is a serious warning sign. On the quality-vs-price matrix, this stock scores on neither dimension that matters to me: quality is sub-threshold, and cheapness alone never wins the formula.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 46763,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0731103,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10302,
+      "cache_read_input_tokens": 8546,
+      "output_tokens": 2127,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10302
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 417,
+          "cache_read_input_tokens": 8546,
+          "cache_creation_input_tokens": 1756,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1756,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

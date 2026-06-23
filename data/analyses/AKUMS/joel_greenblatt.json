@@ -1,0 +1,70 @@
+{
+  "symbol": "AKUMS",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T16:19:01.975624Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Akums fails the Magic Formula on both dimensions — earnings yield of ~5.6% (below the 6% threshold) and ROIC of ~15% (below the 20% good-business threshold) — making it neither cheap nor a high-quality compounder. The FY25 profit surge to ₹344 Cr follows near-zero profit in FY24 (₹1 Cr) and a massive loss in FY22 (-₹251 Cr), signaling structurally volatile, low-quality earnings.",
+    "key_strengths": [
+      "Near-zero debt post-IPO (D/E 0.03, borrowings collapsed from ₹565 Cr to ₹90 Cr in one year via IPO proceeds)",
+      "OCF positive all 5 years with FY25 OCF of ₹465 Cr — at least operations generate cash",
+      "High promoter holding (75.26%) signals skin-in-the-game alignment"
+    ],
+    "key_risks": [
+      "Earnings wildly erratic: Net Profit ₹123 Cr → -₹251 Cr → ₹98 Cr → ₹1 Cr → ₹344 Cr — Magic Formula EBIT is unreliable here",
+      "Thin operating margin (9.24%) typical of commoditized CDMO/contract manufacturing — little pricing power",
+      "Capital intensive: ₹272–329 Cr annual capex vs. thin earnings; FCF was negative in FY22 and FY23"
+    ],
+    "red_flags": [
+      "FY24 net profit of just ₹1 Cr on ₹4,178 Cr revenue — near-total earnings collapse with no explanation in data",
+      "FY22 net loss of -₹251 Cr suggests significant one-time charges or writedowns around the time of heavy debt build-up",
+      "Revenue actually declined YoY: ₹4,178 Cr (FY24) → ₹4,118 Cr (FY25) — growth stalled despite large capex cycle",
+      "FY25 'Other Income' of ₹69 Cr (vs. ₹8 Cr prior year) inflates reported EBIT — strip this and core EBIT ≈ ₹396 Cr, pushing earnings yield to ~4.7%"
+    ],
+    "detailed_analysis": "**Magic Formula Numbers:** EV = Market Cap (₹8,355 Cr) + Debt (₹88 Cr) – Cash (₹101 Cr) ≈ ₹8,343 Cr. FY25 Operating Income (EBIT) = ₹465 Cr, but includes ₹69 Cr of Other Income — core EBIT ≈ ₹396 Cr. Earnings Yield = 396/8,343 = **4.7%** (well below the 6% floor). Capital Employed (Equity + Debt) ≈ ₹3,237 Cr → ROIC = 465/3,237 = **~14%**, consistent with the stated ROCE of 16.2%. Both Magic Formula legs — earnings yield AND return on capital — fall below acceptable thresholds. At P/E 26.5x you're paying a quality premium for a business that hasn't yet demonstrated sustained quality.\n\n**Business Quality Concern:** The CDMO/contract manufacturing model is inherently low-margin and commoditized. Nine years of data show operating margin oscillating wildly (₹-89 Cr to ₹465 Cr operating income), with two episodes of near-zero or negative profits. The FY25 equity balloon (₹710 Cr → ₹3,149 Cr) from the IPO cleans up the balance sheet, but it also dilutes ROIC and doesn't fix the underlying thin-margin structure. High sustained capex (₹270–330 Cr/year) vs. historically weak FCF suggests the business must keep reinvesting just to stay competitive — the hallmark of a low-moat operation. Pass.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 63136,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09771269999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11850,
+      "cache_read_input_tokens": 8804,
+      "output_tokens": 3375,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11850,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 417,
+          "cache_read_input_tokens": 8804,
+          "cache_creation_input_tokens": 3046,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 3046
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

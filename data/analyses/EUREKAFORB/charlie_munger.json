@@ -1,0 +1,69 @@
+{
+  "symbol": "EUREKAFORB",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T17:24:11.681376Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Eureka Forbes owns a recognizable brand (Aquaguard) with genuinely improving margins, but earns a 3.71% ROE and 5.07% ROCE on a bloated INR 4,520 Cr equity base — far below any reasonable cost of capital. The market prices it at 47x earnings and 32x EV/EBITDA as if it were a compounding machine, which it demonstrably is not.",
+    "key_strengths": [
+      "Gross margin of 59.11% reflects genuine brand pricing power for Aquaguard water purifiers",
+      "Operating margins expanding sharply: 6.9% (FY23) → 9.1% (FY24) → 10.9% (FY25), showing real operating leverage",
+      "FCF/Net Income of 116% (FY25: INR 190 Cr FCF vs 164 Cr profit) confirms earnings quality with near-zero debt (D/E 0.02)"
+    ],
+    "key_risks": [
+      "ROIC catastrophically below cost of capital — ROCE 5.07% and ROE 3.71% on INR 4,520 Cr equity means the business destroys economic value at current scale",
+      "Valuation demands perfection: 47x P/E and 32x EV/EBITDA leave zero margin of safety for execution risk or competitive pressure",
+      "Intense competition from Kent RO, Unilever Pureit, and Havells limits pricing power and makes current margin expansion difficult to sustain"
+    ],
+    "red_flags": [
+      "ROE 3.71% and ROCE 5.07% — both well below the 12% minimum I require; earning less than cost of equity for shareholders",
+      "INR 6,787 Cr in total assets generating only INR 164 Cr profit = massive capital inefficiency from demerger-inflated goodwill/intangibles",
+      "Revenue growth of ~11% (FY25) priced at 47x P/E — the growth does not justify the multiple for a business with sub-6% returns on capital"
+    ],
+    "detailed_analysis": "Invert first: what makes this a bad investment? A business earning 3.71% ROE while the market charges you 47x earnings. That's the core problem. The demerger from Forbes & Company in 2022 left Eureka Forbes with INR 4,520 Cr in equity against a business generating INR 164 Cr in profit — the equity base is simply too large relative to earnings power. Even if net profits double to INR 330 Cr, ROE reaches only ~7.3%, still inadequate. The gross margin of 59% is seductive and suggests real brand strength, but gross margin is not the same as return on invested capital. The direct sales force model and Aquaguard brand create switching costs, but the moat hasn't been wide enough to generate acceptable returns through a full business cycle.\n\nThe operating trajectory is genuinely improving — margins expanded 400 bps in two years, FCF conversion is excellent at 116%, and debt has been nearly eliminated (INR 26 Cr total debt). These are not trivial achievements. But the stock is priced as if this improvement is both certain to continue and already justifies a 32x EV/EBITDA. At INR 9,319 Cr market cap, the free cash flow yield is barely 2% (INR 190 Cr FCF). I look for businesses that can compound capital at 15-20% ROIC for decades. Eureka Forbes, constrained by its capital structure and competitive dynamics, cannot plausibly reach that threshold in the medium term. Overpaying for mediocre returns is the surest path to poor outcomes.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 54952,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0882753,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10984,
+      "cache_read_input_tokens": 8521,
+      "output_tokens": 2968,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10984
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 537,
+          "cache_read_input_tokens": 8521,
+          "cache_creation_input_tokens": 2463,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2463,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

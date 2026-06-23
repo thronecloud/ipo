@@ -1,0 +1,69 @@
+{
+  "symbol": "ALLTIME",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-20T11:13:57.514798Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "All Time Plastics is a simple, understandable household plastics business with decent ROE (19%) and low leverage (D/E 0.22), but it operates in a commodity-like category with thin 10% operating margins and no durable moat. At 36.5x earnings following a fresh IPO capital raise (equity jumped from INR 202 Cr to 594 Cr in 2025), the price offers no margin of safety.",
+    "key_strengths": [
+      "Clean balance sheet: D/E 0.22, promoter holding 70%, 60+ year operating history since 1964",
+      "ROE of 19% and 3Y net profit CAGR of 24% shows improving economics",
+      "Simple, understandable business with export diversification (EU/UK/US)"
+    ],
+    "key_risks": [
+      "Commodity plastic goods with no pricing power vs. Cello, Milton, Wim Plast — ROCE only 13.9%",
+      "Fresh IPO priced at 36.5x P/E — classic \"IPO hype\" territory Buffett avoids",
+      "Capex-heavy: FCF swung to -INR 62 Cr in 2025 on INR 114 Cr capex, raw material (plastic/crude) cost volatility"
+    ],
+    "red_flags": [
+      "Recent IPO with equity nearly tripling in 2025 — Buffett's rule: be skeptical of IPOs",
+      "Operating margin 10% is thin for a \"branded\" consumer company, indicating weak moat",
+      "ROCE (13.9%) meaningfully below ROE (19%) suggests returns flatter at the asset level"
+    ],
+    "detailed_analysis": "This is the kind of business I can understand — plastic buckets, containers, hangers — but understanding a business is not the same as wanting to own it. The numbers tell me this is a decent, not wonderful, enterprise: revenue compounding at ~12%, operating margins stuck around 10%, and ROCE of just 13.9%. In branded household goods, the real winners (think See's Candies-style economics) earn 20%+ operating margins with negative working capital. All Time is competing against Cello, Milton, and cheap unbranded imports in a category where the consumer rarely pays up for the label on a chopping board. That's not a moat; that's a treadmill.\n\nThe valuation seals it. 36.5x earnings for an 11.9% topline grower in a capital-intensive, commodity-input business is the sort of price Mr. Market offers when recency bias meets IPO euphoria — note the equity base tripled in 2025, clearly an IPO raise, and free cash flow promptly went negative on a INR 114 Cr capex bill. I don't need to form a view on whether management deploys that capital well; I just need to know I'm being asked to pay ahead of the evidence. Pass, and revisit only if the price halves or the business proves it has pricing power through a full cycle.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 27859,
+    "model_used": "opus",
+    "total_cost_usd": 0.1131965,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 10606,
+      "cache_read_input_tokens": 14658,
+      "output_tokens": 1582,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10606,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 11821,
+          "cache_creation_input_tokens": 1622,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1622
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

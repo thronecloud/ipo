@@ -1,0 +1,69 @@
+{
+  "symbol": "AVALON",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-18T16:36:36.051729Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Avalon is an Indian EMS play on clean energy and aerospace supply-chain diversification, but at P/E 77.8x with only 11.3% revenue CAGR and consistently negative free cash flow, the story doesn't support the price. I need growth AND value — this has neither.",
+    "key_strengths": [
+      "India EMS tailwind: global supply-chain shifts from China benefit domestic assemblers serving aerospace, clean energy, and mobility",
+      "Debt cleanup story: borrowings nearly halved from INR 342 Cr (FY23) to INR 163 Cr (FY25), D/E now a safe 0.25",
+      "Diversified customer base across regulated sectors (aerospace, railway signaling) provides some revenue stickiness"
+    ],
+    "key_risks": [
+      "Grossly overvalued for the growth on offer: P/E 77.8x on 11.3% revenue CAGR gives PEG ~7x — I want PEG under 1",
+      "Chronically negative free cash flow: FCF negative in 4 of 5 years (FY25: -INR 21 Cr), capex rising to INR 46 Cr — the business consumes, not generates, cash",
+      "Volatile, low-quality earnings: net profit swung 67→52→28→63 Cr in four years, ROE only 10.4% (below my 12% floor), operating margins thin at 9.6%"
+    ],
+    "red_flags": [
+      "PEG ratio ~7x using 5Y revenue CAGR of 11.3% — extreme overvaluation by my standards",
+      "Free cash flow negative every recent year despite INR 450+ Cr IPO proceeds injected in FY23; cash position already drained from INR 422 Cr to INR 69 Cr",
+      "EV/EBITDA of 52x for a low-margin, capital-intensive EMS business is difficult to justify on any reasonable growth scenario"
+    ],
+    "detailed_analysis": "Avalon is a classic case of a decent business dressed up in an unjustifiable valuation. The EMS sector story is real — India is getting serious defense, clean energy, and electronics orders as global OEMs diversify from China — but Avalon's own numbers don't validate \"fast grower\" status. Revenue CAGR of just 11.3% over five years, operating margins stuck at ~9.6%, and ROE of 10.4% tell me this is a slow grower pretending to be a high-flier. At P/E 77.8x, the market has priced in a decade of compounding that the company hasn't yet demonstrated. When I walk into a store and see a product, I want to understand the business intuitively — Avalon's story is \"India's EMS boom,\" but the numbers say \"inconsistent execution.\"\n\nThe free cash flow picture is what kills it for me. A manufacturing business burning cash despite rising revenue is a red flag, not a growth signal. Capex is accelerating (INR 46 Cr in FY25 vs INR 16 Cr in FY22), OCF is anemic at INR 25 Cr, and net profit has swung wildly from INR 28 Cr to INR 67 Cr and back. The IPO cash infusion papered over the balance sheet temporarily, but the underlying cash generation engine is weak. I'd revisit at P/E 20-25x (implying ~INR 300-380/share) if revenue growth accelerates to 20%+ with consistent FCF conversion — until then, this is a pass.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 48932,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08141250000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10980,
+      "cache_read_input_tokens": 8895,
+      "output_tokens": 2504,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10980
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 452,
+          "cache_read_input_tokens": 8895,
+          "cache_creation_input_tokens": 2085,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2085,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

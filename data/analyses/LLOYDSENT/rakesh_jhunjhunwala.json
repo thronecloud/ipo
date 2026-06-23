@@ -1,0 +1,71 @@
+{
+  "symbol": "LLOYDSENT",
+  "persona": "rakesh_jhunjhunwala",
+  "persona_display_name": "Rakesh Jhunjhunwala",
+  "analyzed_at": "2026-04-18T18:20:39.187250Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Lloyds Enterprises is a rebranded former shell company (Shree Global Tradefin) with near-zero revenue as recently as FY21 that has ballooned to ₹9,684 Cr market cap on the back of erratic acquisitions, non-operating income, and narrative. At 78x EV/EBITDA with a 2.5% ROE and operating margin of 6%, the market is pricing in a transformation story that current fundamentals flatly contradict.",
+    "key_strengths": [
+      "Revenue recovery is real — ₹1,488 Cr in FY25 vs ₹1 Cr in FY21, showing at least acquired scale",
+      "Low D/E of 0.16 at the consolidated level (though borrowings surged 5x to ₹671 Cr in FY25)",
+      "Promoter holding stable at 62.7%, no obvious dilution recently"
+    ],
+    "key_risks": [
+      "Core operations barely profitable — Operating Income ₹118 Cr but ₹83 Cr of net profit is non-operating 'Other Income'; strip it out and the business earns almost nothing",
+      "Absurd valuation: EV/EBITDA 78x and P/E 37x for a steel trader with 6% operating margins and ROCE below cost of capital (5.97%)",
+      "Incoherent conglomerate — steel trading, real estate, engineering, gold mining, and pizza outlets (1441 Pizzeria) in a single entity signals lack of focus and likely capital misallocation"
+    ],
+    "red_flags": [
+      "Former near-dormant shell (₹1 Cr revenue FY20/21) — total assets exploded 16x from ₹335 Cr to ₹5,582 Cr in 4 years; provenance of acquired assets is opaque",
+      "Net profits have consistently been propped up by 'Other Income' (₹159 Cr in FY22, ₹135 Cr in FY24, ₹83 Cr in FY25) — core steel business generates negligible earnings",
+      "Near-zero institutional interest: FII 0.69%, DII 0.07% — smart money is absent entirely",
+      "Finance costs surged from zero to ₹27 Cr in FY25 (CAGR 44%) as debt load builds rapidly",
+      "Name change from Shree Global Tradefin to Lloyds Enterprises in Sept 2023 — classic re-rating play with a borrowed brand name"
+    ],
+    "detailed_analysis": "This business has all the hallmarks of a promoted story stock that I would run away from. The company was essentially a shell (₹1 Cr revenue in FY20-FY21), changed its name in 2023, and its balance sheet assets exploded from ₹335 Cr to ₹5,582 Cr in four years — a 16x jump with no clear organic explanation. Net profits are largely phantom: in FY22 the company reported ₹154 Cr net profit on just ₹4 Cr operating income, all courtesy of ₹159 Cr \"Other Income.\" In FY24, Other Income of ₹135 Cr again dwarfed operating income of ₹89 Cr. Strip out these non-recurring items and the core steel trading business earns almost nothing — which is exactly what ROE of 2.48% and ROCE of 5.97% are telling you.\n\nThe market is pricing this at 78x EV/EBITDA — a number I would expect for a monopoly consumer franchise compounding at 25%+ for a decade, not a steel trader running 6% operating margins that also sells pizza. Promoter quality here is a serious question mark: the conglomerate keeps adding unrelated businesses (mining, real estate, 1441 Pizzeria) which suggests either opportunistic deal-making or value destruction in the making. The fact that institutions own a combined 0.76% (FII + DII) tells you everything you need to know about what informed capital thinks of this story. This is not an India growth champion — it is a story dressed up in steel and infrastructure clothing during a construction boom. Hard avoid.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 48298,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07802429999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9186,
+      "cache_read_input_tokens": 11076,
+      "output_tokens": 2683,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9186
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 428,
+          "cache_read_input_tokens": 8973,
+          "cache_creation_input_tokens": 2316,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2316,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

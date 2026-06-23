@@ -1,0 +1,69 @@
+{
+  "symbol": "AVANTIFEED",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T16:37:07.717657Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Avanti Feeds is the dominant Indian shrimp feed manufacturer with a pristine balance sheet (effectively zero debt, ROCE of 24%), but its commodity-adjacent, cyclical business model and a P/E of 31.7x on what appears to be a peak earnings year (₹557 Cr net profit) offers insufficient margin of safety for a Munger-style concentrated bet.",
+    "key_strengths": [
+      "Market leadership in Indian shrimp feed with scale/distribution advantages over regional competitors",
+      "Fortress balance sheet: near-zero debt (₹15 Cr borrowings vs ₹3,011 Cr equity), enabling resilience through shrimp-cycle downturns",
+      "ROCE of 24% and net profit CAGR of 15% over 9 years demonstrate real capital efficiency above cost of capital"
+    ],
+    "key_risks": [
+      "Earnings are highly cyclical — operating income swung from ₹684 Cr (2018) down to ₹314 Cr (2022), exposing the market to severe mean-reversion risk at current valuations",
+      "Thin operating margins (~11.6%) leave little buffer against raw material spikes (fish meal, soybean), which are globally priced commodities",
+      "Other income of ₹166 Cr (30% of net profit) is inflating headline earnings — stripping it out reveals core business margins significantly weaker than they appear"
+    ],
+    "red_flags": [
+      "2025 is likely a cyclical peak: EBITDA at ₹738 Cr is the highest ever, making the 31.7x P/E on peak earnings particularly dangerous — normalized P/E is closer to 45-50x",
+      "FCF/Net Income at 78% (₹437/₹557 Cr) is slightly below the 80% quality threshold; investing CF of -₹485 Cr in 2025 signals heavy capital deployment whose returns are unproven",
+      "Revenue growth has essentially stalled in the core 5-year period (2021: ₹4,101 Cr → 2025: ₹5,612 Cr = ~6.5% CAGR), undermining the growth premium embedded in the valuation"
+    ],
+    "detailed_analysis": "Avanti Feeds passes the basic quality checklist — clean balance sheet, decent ROCE, understandable business — but as I always say, invert first. The shrimp feed business is structurally thin-margined and cyclical. The 2018 EBITDA peak of ₹708 Cr was followed by a brutal trough of ₹346 Cr in 2022 — a 51% collapse. The current ₹738 Cr EBITDA in 2025 looks suspiciously like another peak. At EV/EBITDA of 21x, the market is pricing this as if the cycle has been abolished. It hasn't.\n\nThe other income line deserves particular scrutiny: ₹166 Cr in FY25 (up from ₹54 Cr in FY22), driven by treasury/investment returns on accumulated cash, is papering over the core operating reality. A business where 30% of net profit comes from financial investments is telling you something. At 31.7x P/E on peak-cycle numbers, the stock offers a fair business at an unfair price — the precise inverse of what Munger seeks. I would wait for a cyclical trough that brings the price to 18-20x normalized earnings before considering a position.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 64180,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08423925000000002,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11229,
+      "cache_read_input_tokens": 8905,
+      "output_tokens": 2630,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11229
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 356,
+          "cache_read_input_tokens": 8905,
+          "cache_creation_input_tokens": 2324,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2324,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

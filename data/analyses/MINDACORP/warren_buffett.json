@@ -1,0 +1,69 @@
+{
+  "symbol": "MINDACORP",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-22T16:29:20.080283Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Minda Corporation is a competent auto ancillary supplier but a mediocre business by quality standards — thin 8% operating margins, ROE of only 12%, and a capital-intensive model with no durable pricing power over OEM customers. At 43.9x trailing earnings, the market is pricing perfection into an inherently cyclical, low-ROIC business.",
+    "key_strengths": [
+      "Revenue growing at 8.5% CAGR with operating income growing faster at 10.8%, showing modest operating leverage",
+      "High promoter holding of 64.84% signals owner alignment; OCF positive all 5 of last 5 years",
+      "Diversified product mix spanning mechatronics, wiring harness, EV components — positioning for EV transition"
+    ],
+    "key_risks": [
+      "Debt nearly tripled in FY2025 (₹535 Cr → ₹1,610 Cr) with investing outflows of ₹1,409 Cr — a leveraged acquisition whose returns are unproven",
+      "Auto ancillary suppliers have weak bargaining power over OEM customers, keeping operating margins structurally thin at ~8%",
+      "Net profit swung to -₹200 Cr in FY2020, exposing deep cyclicality; FCF averaged only ~₹88 Cr/year over FY2021–24"
+    ],
+    "red_flags": [
+      "Borrowings jumped from ₹540 Cr (FY24) to ₹1,536 Cr (FY25) — a 3x spike in one year, funded by ₹788 Cr financing inflow; large undisclosed acquisition risk",
+      "ROE of 12.1% and ROCE of 12.7% are well below my 15% minimum threshold — the business doesn't earn adequate returns on capital",
+      "FY2020 other income of -₹238 Cr and net loss of -₹200 Cr suggests goodwill impairment or acquisition writedown — pattern may repeat with new FY25 deal"
+    ],
+    "detailed_analysis": "Minda Corporation is a classic Tier-1 auto ancillary supplier — the kind of business I find structurally unattractive. It sells components to OEMs who have immense bargaining power, resulting in operating margins capped around 8%. The 12.1% ROE is uninspiring and reflects the capital-intensive nature of the business: capex has been running ₹250–350 Cr/year, eating most of the operating cash flow and leaving FCF thin (₹36 Cr in FY24, ₹202 Cr in FY25). Revenue CAGR of 8.5% over 9 years is respectable but not exceptional, and the FY2020 net loss of ₹200 Cr is a reminder of how cyclical auto demand can devastate earnings.\n\nThe most alarming signal is the FY2025 balance sheet: debt nearly tripled to ₹1,610 Cr with investing outflows of ₹1,409 Cr, pointing to a large leveraged acquisition. The company already made an acquisition around FY2023 (investing CF of -₹425 Cr), and history shows such moves can result in impairments (FY2020 other income -₹238 Cr). At 43.9x trailing P/E and 22.5x EV/EBITDA, the market is paying a premium business price for a commodity-supplier business. Even the forward P/E of 29.4x assumes sharp earnings recovery — heroic assumptions when interest costs are rising (finance cost up 21% YoY to ₹69 Cr) and the new debt load is untested. This is not a wonderful business at any price, let alone at this one.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 40426,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07885980000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11388,
+      "cache_read_input_tokens": 9386,
+      "output_tokens": 2222,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11388,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 281,
+          "cache_read_input_tokens": 9386,
+          "cache_creation_input_tokens": 2002,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2002
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

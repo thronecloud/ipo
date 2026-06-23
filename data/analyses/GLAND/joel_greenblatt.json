@@ -1,0 +1,70 @@
+{
+  "symbol": "GLAND",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-22T16:42:05.849115Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Gland Pharma scores poorly on both Magic Formula pillars: earnings yield of ~4.6% (EV ~INR 27,371 Cr, EBIT INR 1,269 Cr) is well below the 6% minimum, and ROIC of ~17% is sub-par for a specialty pharma business. With net profit declining -2% CAGR over 5 years and ROE at a meager 7.81%, this is neither cheap nor good.",
+    "key_strengths": [
+      "Near-zero leverage (D/E 0.03, net cash of ~INR 2,242 Cr) provides balance sheet safety",
+      "Strong gross margins of 58.9% reflect injectable formulation pricing power and B2B CDMO model",
+      "Revenue CAGR of 16.4% (2020→2025) shows top-line growth capacity in regulated markets (US, EU, Australia)"
+    ],
+    "key_risks": [
+      "Earnings yield ~4.6% (EBIT 1,269/EV 27,371) — deeply below Magic Formula's 6% floor; market is pricing in perfection that hasn't materialized",
+      "Net profit collapsed from INR 1,212 Cr (2022) to INR 699 Cr (2025) — a 42% peak decline with no recovery; EBITDA margins compressed while revenue grew, signalling structural cost issues",
+      "Fosun Pharma (Chinese conglomerate) controls 51.83% — elevated geopolitical and governance risk, with limited promoter accountability to minority shareholders"
+    ],
+    "red_flags": [
+      "ROE of 7.81% on a ~INR 9,562 Cr equity base is capital destruction territory — earning far below cost of equity",
+      "Finance costs surged from INR 7 Cr (2020) to INR 42 Cr (2025) — 43% CAGR, inconsistent with 'debt-free' narrative",
+      "Investing CF volatile (swings from -1,749 to +1,718 Cr) suggests large treasury/investment churn masking weak core business returns",
+      "ROCE of only 11.9% — barely above risk-free rate; the business is not earning excess returns on its enormous asset base"
+    ],
+    "detailed_analysis": "Magic Formula math kills the thesis quickly. Enterprise Value = Market Cap (29,613) + Debt (314) − Cash (2,556) = INR 27,371 Cr. EBIT (operating income) = INR 1,269 Cr. Earnings Yield = 4.6% — well below the 6% floor that triggers any interest, and a fraction of the 12%+ that signals genuine cheapness. Invested capital (Equity + Debt − Cash) = ~INR 7,320 Cr yields ROIC of ~17%, which is mediocre — decent for a capital-heavy manufacturer, but not the 25%+ moat-signalling ROIC I want to pair with a cheap price. The business is neither cheap nor exceptional; it sits in the worst quadrant of the Magic Formula matrix.\n\nThe operating story is equally troubled. Revenue grew 16.4% CAGR but net profit shrank -2% CAGR, meaning every rupee of incremental revenue came at deteriorating economics — operating leverage working in reverse. EBITDA grew only 7% vs revenue at 16%, confirming margin dilution. Free cash flow conversion is acceptable (INR 521 Cr FCF vs 699 Cr net profit) but OCF/Net Profit is declining. The Chinese parent's majority stake adds a non-trivial governance premium that further discounts intrinsic value. At P/E 34x on shrinking earnings, there is no margin of safety — the Magic Formula firmly signals AVOID.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 51705,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08575725000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11365,
+      "cache_read_input_tokens": 9115,
+      "output_tokens": 2693,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11365,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 484,
+          "cache_read_input_tokens": 9115,
+          "cache_creation_input_tokens": 2250,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2250
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

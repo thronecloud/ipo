@@ -37,7 +37,7 @@ log() {
 log "Starting analysis runner: model=$MODEL, delay=$DELAY"
 log "Target: $TARGET analyses"
 
-cd /workspace/india
+cd "$(dirname "$0")"
 
 for p in "${PERSONAS[@]}"; do
     python3 -m src.analyze --persona "$p" --model "$MODEL" --delay "$DELAY" > /dev/null 2>&1 &

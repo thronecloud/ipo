@@ -1,0 +1,69 @@
+{
+  "symbol": "GABRIEL",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-22T16:32:47.603894Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Gabriel India trades at INR 1,014 against a calculated Graham Number of approximately INR 185 (√22.5 × EPS₁₇ × BVPS₈₉), meaning the market demands a 5.5× premium over my intrinsic value estimate with zero margin of safety. At P/E 56× and P/B 11.4×, the investor is paying overwhelmingly for speculative growth expectations rather than proven asset value.",
+    "key_strengths": [
+      "Debt/Equity of 0.08 — nearly debt-free balance sheet with strong interest coverage of ~39× (EBIT 390 Cr / Finance Cost 10 Cr)",
+      "Unbroken earnings growth across 4 observable years; net profit CAGR of 39.9% (2022–2025) is genuine and not accounting-driven",
+      "Operating cash flow positive all 4 years, demonstrating real cash earnings despite thin margins"
+    ],
+    "key_risks": [
+      "Price is 5.5× the Graham Number (~185 INR) — any earnings disappointment or multiple compression from 56× toward a normal 15× would cause a catastrophic ~70% drawdown",
+      "Free cash flow has collapsed to effectively zero in FY2025 (OCF 204 Cr minus capex 209 Cr = −5 Cr); the company returns nothing to shareholders after reinvestment",
+      "Operating margin of only 6.91% in a cyclical auto-parts business — any volume softness or raw material spike destroys profitability with no cushion"
+    ],
+    "red_flags": [
+      "P/B of 11.4× is 7.6× my maximum acceptable threshold of 1.5× — shareholders are paying INR 11.40 for every INR 1 of net assets",
+      "P/E of 56× is nearly 4× my ceiling of 15×; even the forward P/E of 32× remains more than double my limit",
+      "Capital intensity is accelerating dangerously: capex grew from 76 Cr (2022) to 209 Cr (2025), a 175% increase, while equity grew only 66% — returns on incremental capital are unproven"
+    ],
+    "detailed_analysis": "Gabriel India is a competent manufacturer in a mundane but essential auto-components niche — shock absorbers, struts, and dampers. The balance sheet is exemplary by my standards: debt of just 69 Cr against equity of 1,277 Cr yields a D/E of 0.08, and interest coverage approaches 40×. Earnings have been consistently positive and growing. These are facts I can respect. But the intelligent investor does not pay for facts already baked into an exorbitant price — and this price is exorbitant by any objective measure I apply.\n\nThe Graham Number stands near INR 185, yet Mr. Market offers the stock at INR 1,014 — a 447% premium to intrinsic value. The P/B of 11.4× means that if this business were wound up tomorrow, I would receive roughly 9 paise for every rupee I paid. The P/E of 56× requires the company to maintain extraordinary growth for many years simply to justify today's price. Worse, free cash flow has evaporated entirely in FY2025 as capex consumed 209 Cr against OCF of 204 Cr — the company is reinvesting every rupee it earns. The thin 6.91% operating margin in a cyclical sector provides no earnings buffer. This is a fine business at the wrong price, and the wrong price by a very wide margin. I shall not pay it.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 45731,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07099995,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8753,
+      "cache_read_input_tokens": 10824,
+      "output_tokens": 2328,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8753,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 394,
+          "cache_read_input_tokens": 8774,
+          "cache_creation_input_tokens": 2029,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2029
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "symbol": "APOLLO",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T16:24:53.519520Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Apollo Micro Systems fails both legs of the Magic Formula decisively — Earnings Yield of ~1.2% (EBIT INR 129 Cr / EV ~INR 10,934 Cr) is 10x below the 12% minimum, and ROIC of ~9–14% sits below the 20% threshold for quality. At 113x trailing P/E with persistently negative free cash flow, the market is pricing in a decade of flawless execution — not a bargain.",
+    "key_strengths": [
+      "Revenue growing at 18% CAGR with operating income growing faster at 21.4%, showing modest operating leverage",
+      "Defense/aerospace sector with high barriers to entry and government order-driven visibility",
+      "Debt/Equity of 0.33 is manageable and promoter holding at 52% aligns incentives"
+    ],
+    "key_risks": [
+      "Earnings Yield (~1.2%) is catastrophically below Magic Formula threshold — stock is 10x overpriced on this metric",
+      "FCF has been negative for three consecutive years (2023: -50, 2024: -131, 2025: -82 Cr) — the business consumes more cash than it generates",
+      "Finance costs growing 17.8% CAGR (INR 34 Cr in 2025 vs. Net Profit INR 56 Cr) — debt service eats ~60% of net earnings"
+    ],
+    "red_flags": [
+      "Earnings Yield of ~1.2% vs. Magic Formula minimum of 12% — needs ~10x compression in EV or 10x increase in EBIT to qualify",
+      "Free Cash Flow negative in 3 of last 5 years including -INR 82 Cr in FY2025 despite INR 56 Cr reported profit",
+      "Capex (INR 92 Cr) exceeds Net Profit (INR 56 Cr) — high capital intensity destroying FCF conversion",
+      "OCF turned positive only marginally in FY2025 (INR 10 Cr) after two deeply negative years — earnings quality is low"
+    ],
+    "detailed_analysis": "The Magic Formula delivers a clear verdict here. Earnings Yield = EBIT/EV = INR 129 Cr / INR 10,934 Cr ≈ 1.2%. I want to see 12%+. This company would rank in the bottom decile of any earnings yield screen globally. Return on Capital (EBIT / tangible capital ≈ INR 129 Cr / INR 1,375 Cr) is ~9.4%, or at best 14% using management-reported ROCE — still below the 20% threshold I look for. When BOTH legs of the formula fail, there is nothing for the systematic investor to hold onto.\n\nThe cash flow story makes this worse, not better. Reported net profit has grown impressively to INR 56 Cr, but FY2024 OCF was -INR 76 Cr and FY2025 OCF only scraped back to +INR 10 Cr. Capex of INR 92 Cr in FY2025 alone exceeds full-year net profit, producing -INR 82 Cr FCF. The company is funding growth through debt (borrowings up from INR 83 Cr in FY2020 to INR 361 Cr in FY2025), and finance costs at INR 34 Cr now consume 60% of net profit. At 113x P/E and an EV/EBITDA of 58x, the market has already priced in a best-case scenario — the Magic Formula sees no margin of safety here.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 46653,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.079194,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11016,
+      "cache_read_input_tokens": 9100,
+      "output_tokens": 2343,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11016,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 466,
+          "cache_read_input_tokens": 9100,
+          "cache_creation_input_tokens": 1916,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1916
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "NEOCHEM",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-21T08:00:20.971748Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "AVOID",
+    "investment_thesis": "Neochem Bio shows impressive headline ROE and revenue growth, but catastrophically poor earnings quality (OCF/Net Income = 37% vs. my 80% threshold) suggests profits are accounting fiction, not cash reality. At INR 117 Cr market cap with 36 Cr in borrowings and near-zero free cash flow, this micro-cap specialty chemical business lacks the financial fortress required to merit capital allocation.",
+    "key_strengths": [
+      "Revenue growing at ~32% CAGR (48→84 Cr in 3 years) with expanding EBITDA margins (10.4%→16.7%)",
+      "ROCE of 27.2% and Debt/EBITDA of 2.6x are borderline acceptable for a growing small-cap",
+      "Promoter holding at 66.7% with DII at 13.2% suggests institutional validation at the micro-cap level"
+    ],
+    "key_risks": [
+      "Abysmal earnings quality: FY25 Net Profit = 8 Cr but Operating CF = only 3 Cr (37% conversion) — working capital is consuming all reported profits",
+      "High financial leverage: 36 Cr borrowings against 20 Cr equity (D/E = 1.8x) with 4 Cr annual finance costs — a margin reversal kills solvency",
+      "Zero competitive moat disclosed: specialty chemicals is a commoditized, fragmented market vulnerable to Chinese competition and raw material price spikes"
+    ],
+    "red_flags": [
+      "Free Cash Flow barely positive at 1 Cr in FY25 despite 8 Cr net profit — massive working capital trap",
+      "Negative FCF in 2023 and 2024 (-4 Cr, -3 Cr); growth entirely funded by debt (borrowings rose from 26→36 Cr)",
+      "Micro-cap (117 Cr MCap) with 19 years of operation and still a tiny business — no evidence of durable competitive advantage after two decades"
+    ],
+    "detailed_analysis": "Invert first, as I always do: what destroys this business? A 15-20% raw material price spike (common in specialty chemicals) collapses the thin margins, and with 36 Cr of debt and only 3 Cr of operating cash flow, the company cannot service obligations. The gap between reported net profit (8 Cr) and operating cash flow (3 Cr) is the most damning data point — in a legitimate high-quality business, cash tracks earnings. Here, 5 Cr of \"profit\" simply vanished into working capital. This is the hallmark of a working-capital-intensive commodity processor, not a specialty chemicals compounder. The 48% ROE is a mathematical artifact of razor-thin equity (20 Cr) amplified by debt leverage, not a reflection of genuine economic returns.\n\nAt 16x P/E, the stock appears cheap, but P/E is meaningless when earnings don't convert to cash. On a free cash flow basis, the company trades at 117x FCF (1 Cr FCF / 117 Cr MCap) — wildly expensive for an undifferentiated micro-cap. A business that has operated for 19 years and achieved only 117 Cr in market capitalization has already told us everything about its economic engine. I can find no evidence of pricing power, switching costs, or network effects. This fails my most basic test: I cannot identify why a customer must buy from Neochem Bio rather than its competitors.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 52821,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08022554999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10203,
+      "cache_read_input_tokens": 7901,
+      "output_tokens": 2639,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10203,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 375,
+          "cache_read_input_tokens": 7901,
+          "cache_creation_input_tokens": 2302,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2302
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "INOXINDIA",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T17:45:18.727345Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "INOX India is a genuinely high-quality cryogenic equipment business with ROCE of 38%, but the Magic Formula collapses on valuation — Earnings Yield (EBIT/EV) of just ~2.1% is roughly six times below the 12% threshold needed for the formula to work. The market has already priced in the quality, leaving no margin of safety.",
+    "key_strengths": [
+      "ROCE of 38% is exceptional — one of the highest-quality businesses in Indian industrials by Greenblatt's return-on-capital metric",
+      "Near debt-free balance sheet (D/E 0.10), with borrowings declining from INR 145 Cr (2020) to INR 43 Cr net debt currently",
+      "Secular tailwinds across LNG, green hydrogen, and aerospace/cryogenic propulsion with consistent 12% revenue CAGR"
+    ],
+    "key_risks": [
+      "Valuation is the primary killer: EV ≈ INR 13,578 Cr vs EBIT of INR 285 Cr = Earnings Yield of just 2.1%; Magic Formula requires >12%",
+      "FCF has collapsed — from INR 225 Cr (2021) to -INR 3 Cr (2025) as capex surged to INR 125 Cr; the business is in heavy investment mode with uncertain return timeline",
+      "6-year Net Profit CAGR of only 2.7% (INR 193 Cr in 2019 → INR 226 Cr in 2025) exposes that reported earnings are supported by lumpy 'other income' rather than pure operating leverage"
+    ],
+    "red_flags": [
+      "Earnings Yield (EBIT/EV) of ~2.1% — roughly 1/6th of Greenblatt's 12% minimum threshold; EV/EBITDA of 41x confirms extreme overvaluation on Magic Formula basis",
+      "FCF turned negative in FY2025 (-INR 3 Cr) despite INR 285 Cr EBIT; capex tripled in two years (INR 44 Cr → INR 125 Cr), raising capital efficiency questions",
+      "Net Profit CAGR of 2.7% over six years signals significant one-time/other income dependency in early years (FY2019 NP of INR 193 Cr was artificially high)"
+    ],
+    "detailed_analysis": "Running the Magic Formula on INOX India yields a stark split: the business is excellent, the price is punishing. EBIT of INR 285 Cr against an Enterprise Value of ~INR 13,578 Cr (Market Cap INR 13,539 Cr + Net Debt ~INR 39 Cr) produces an Earnings Yield of just 2.1% — well below the 6% floor I consider minimally acceptable and far from the 12%+ that makes the formula fire. On the other side, ROCE of 38% is genuinely top-decile; the business earns extraordinary returns on the capital it deploys, sustaining 19.6% operating margins on specialty cryogenic equipment that serves LNG, hydrogen, and aerospace clients. The formula requires BOTH legs. With only one, I pass.\n\nThe FCF deterioration is a secondary but real concern. Free cash flow has eroded from INR 225 Cr (FY2021) to negative INR 3 Cr (FY2025) as annual capex tripled to INR 125 Cr. This may well be value-creating investment — the addressable market in LNG infrastructure and cryogenic propulsion is expanding — but at 41x EV/EBITDA, the market is already pricing in a flawless execution of that expansion. Greenblatt's edge comes from buying cheap and good simultaneously; at 53x P/E, there is no cheapness buffer. If capex returns normalize and ROIC holds, this stock could re-rate lower even if the business performs fine. I would revisit at Earnings Yield >8% (roughly INR 600–700 price range at current EBIT), where the formula begins to make sense.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 59645,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09251414999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11695,
+      "cache_read_input_tokens": 9113,
+      "output_tokens": 3061,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11695
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 514,
+          "cache_read_input_tokens": 9113,
+          "cache_creation_input_tokens": 2582,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2582,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

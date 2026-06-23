@@ -1,0 +1,69 @@
+{
+  "symbol": "AKUMS",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-18T16:19:50.260805Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Akums is India's largest CDMO with a valid long-term thesis on pharma outsourcing, but the revenue story has stalled (4,178 → 4,118 Cr) and the PEG ratio of ~1.5-1.8 (P/E 26.5 / ~15% sustainable earnings growth) is unattractive by my standards. I'd need to see consistent 15%+ revenue growth and a PEG below 1.0 before getting excited.",
+    "key_strengths": [
+      "Essentially debt-free post-IPO (D/E: 0.03, borrowings crashed from ₹565 Cr to ₹90 Cr) — clean balance sheet removes a major overhang",
+      "CDMO niche with India's pharma export opportunity: contract manufacturing is a scalable, asset-light model once capex cycle matures",
+      "OCF positive all 5 years; FCF finally turning positive (₹212 Cr FY24, ₹201 Cr FY25) after heavy capex years"
+    ],
+    "key_risks": [
+      "Revenue growth has stopped — FY25 revenue (₹4,118 Cr) is BELOW FY24 (₹4,178 Cr); a Lynch fast-grower needs 15-20%+ top-line growth, not contraction",
+      "Earnings quality is deeply suspect: FY22 produced ₹-251 Cr net loss on ₹420 Cr EBITDA, FY24 had ₹1 Cr net profit on ₹516 Cr EBITDA — massive unexplained gap between EBITDA and bottom line across multiple years",
+      "FY25 net profit of ₹344 Cr is flattered by ₹69 Cr other income (vs ₹8 Cr prior year) and lower finance costs from IPO debt paydown — underlying earnings power is likely lower"
+    ],
+    "red_flags": [
+      "PEG ratio likely 1.5-1.8 — above my 1.0 threshold; P/E of 26.5 demands 25%+ growth to justify, which revenue trends don't support",
+      "Three consecutive years of near-zero or negative net profit (FY22–FY24) despite growing revenues signals serious execution or accounting issues I can't fully explain from these financials",
+      "Investing CF of -₹548 Cr in FY25 (heaviest yet) while revenue is declining — capital intensity rising as growth slows is a bad combination"
+    ],
+    "detailed_analysis": "Akums is a CDMO and generic pharma play — a category I find interesting because you can see India's pharma manufacturing ambitions playing out in the real world. The balance sheet cleanup post-IPO is genuinely positive: debt fell from ₹619 Cr (FY23 peak) to just ₹88 Cr in FY25, and the company is finally generating meaningful free cash flow (₹201 Cr). But the headline story is broken. Revenue has flatlined at ~₹4,100 Cr, and when a company can't grow its top line while spending ₹272-329 Cr annually on capex, that's a problem. The operating margin at 9.24% is thin for a pharma manufacturer, suggesting limited pricing power in the contract manufacturing business.\n\nThe earnings volatility is the bigger concern — this is a business that generated ₹420 Cr EBITDA in FY22 but somehow posted a ₹251 Cr net loss, then ₹516 Cr EBITDA in FY24 with essentially zero net profit. That kind of gap (D&A + exceptional items?) makes it nearly impossible to assess true earnings power. The FY25 \"recovery\" to ₹344 Cr net profit includes a suspicious ₹69 Cr other income spike. Lynch's rule: if you can't explain the numbers simply, don't own the stock. At a P/E of 26.5x with flat revenue growth, the market is pricing in a clean earnings recovery that the historical pattern doesn't inspire confidence in. Wait for 2-3 quarters of revenue re-acceleration and margin clarity before committing.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 87617,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.10539525,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 12255,
+      "cache_read_input_tokens": 8800,
+      "output_tokens": 3786,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 12255,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 393,
+          "cache_read_input_tokens": 8800,
+          "cache_creation_input_tokens": 3455,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 3455
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

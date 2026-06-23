@@ -1,0 +1,69 @@
+{
+  "symbol": "AFCONS",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-19T06:22:42.444279Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Afcons is a recently listed IPO (2024) from the Shapoorji Pallonji group with a genuinely modest P/E of 24 and EV/EBITDA of 10.74 — the least egregiously priced stock in this group — but its D/E of 0.66 breaches my threshold, interest coverage is only ~2.8x (below my 3.5x minimum), and the 2025 operating cash flow turned negative for the first time, signalling deteriorating working capital management. IPO sellers never leave money on the table for buyers.",
+    "key_strengths": [
+      "Revenue of INR 12,548 Cr with consistent profit growth (5-year net profit CAGR 14.4%) — established operating history pre-dating the listing",
+      "P/S of 0.98 and EV/EBITDA of 10.74 are the most defensible valuation multiples in this cohort by Graham standards",
+      "ROCE of 19.6% indicates reasonable capital efficiency on operating assets despite overall modest ROE"
+    ],
+    "key_risks": [
+      "D/E of 0.66 exceeds my 0.5 ceiling; finance costs of INR 629 Cr consume 36% of EBITDA — heavy interest burden limits earnings resilience",
+      "2025 OCF turned negative (–INR 132 Cr) and FCF collapsed to –INR 470 Cr — working capital deterioration in a construction business is a serious warning sign",
+      "Revenue growth of only 4.8% CAGR over 5 years in a booming Indian infrastructure cycle raises execution and contract-mix concerns"
+    ],
+    "red_flags": [
+      "Recent IPO (2024) — investment banks priced this for the seller, Shapoorji Pallonji; by definition the buyers have no informational advantage",
+      "Interest coverage ~2.8x (EBITDA INR 1,750 Cr ÷ Finance Cost INR 629 Cr) — below my minimum 3.5x threshold; a downcycle in order inflows could threaten debt service",
+      "Other Income of INR 469 Cr in 2025 represents 96% of reported net profit — strip out non-operating income and the core construction business is barely earning"
+    ],
+    "detailed_analysis": "Afcons is India's largest marine and specialist infrastructure contractor with genuine project credentials across metros, tunnels, ports, and oil-and-gas facilities. At P/E 24 and EV/EBITDA 10.7, it is the cheapest stock in this set on earnings multiples — but cheap relative to peers is not the same as cheap in absolute terms, and Graham does not grade on a curve. My alarm bells ring loudest on two counts: the 2025 cash flow reversal (positive OCF five years running then suddenly –INR 132 Cr) and the near-total dependence on Other Income (INR 469 Cr) to deliver any net profit above negligible levels.\n\nThe IPO provenance compounds my caution. Shapoorji Pallonji was raising capital under financial stress; buyers absorbed that risk at listing price. D/E of 0.66 and rising finance costs (INR 629 Cr, up 10% CAGR) leave inadequate cushion if large projects face delays or payment disputes — routine in Indian construction. I would require the price to fall below INR 200 before the balance sheet and earnings provide the safety margin I demand.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 136105,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.2057781,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 22938,
+      "cache_read_input_tokens": 15772,
+      "output_tokens": 7668,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 22938,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 486,
+          "cache_read_input_tokens": 15772,
+          "cache_creation_input_tokens": 7166,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 7166
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

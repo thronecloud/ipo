@@ -1,0 +1,69 @@
+{
+  "symbol": "MOIL",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T18:24:38.325684Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "MOIL fails the Magic Formula on both dimensions: Earnings Yield of ~5.8% (EBIT INR 389 Cr / EV ~INR 6,670 Cr) sits below the 6% minimum, and ROCE of 11.4% is well short of the 20%+ threshold I require for a \"good business.\" A capital-intensive, cyclical manganese miner with volatile margins is not the kind of durable, high-return compounder the Magic Formula is designed to find.",
+    "key_strengths": [
+      "Zero debt across the entire history — pristine balance sheet with no financial leverage risk",
+      "Government-backed monopoly position (64.68% promoter holding) in Indian manganese ore mining provides pricing power in a concentrated market",
+      "OCF positive all 5 years; 2025 OCF of INR 434 Cr was strong, yielding positive FCF of INR 137 Cr"
+    ],
+    "key_risks": [
+      "ROIC of ~11.4% is well below the Magic Formula 20% threshold — capital is not being deployed productively",
+      "High and rising capex (INR 297–306 Cr/yr) destroys FCF conversion — only 32% in the best recent year (2025) and negative in 2023–24",
+      "Severe earnings cyclicality: Operating Income ranged from INR 70 Cr (2016) to INR 600 Cr (2019) — not a stable, predictable business"
+    ],
+    "red_flags": [
+      "P/E of 64.2x on current earnings signals either cyclical trough pricing or significant overvaluation — current EBIT margin of 14.7% is historically weak, so forward multiples assume a mean-reversion that may not materialize",
+      "Other Income historically INR 178–317 Cr/yr (interest on cash pile) has been propping up net profit above operating income — strips out this, the core mining business earns even less",
+      "Revenue essentially flat over a decade: INR 822 Cr (2015) → INR 1,579 Cr (2025), a mere ~6.7% CAGR with no volume growth story"
+    ],
+    "detailed_analysis": "Running the Magic Formula numbers on MOIL: EBIT (Operating Income) for FY2025 is INR 389 Cr against an Enterprise Value of ~INR 6,670 Cr (market cap INR 6,673 Cr less INR 3 Cr cash, zero debt), yielding an Earnings Yield of just 5.83% — below my 6% floor. Return on Capital using reported ROCE is 11.4%, barely half the 20% minimum I look for. The business fails both screens simultaneously. A cyclical miner hitting a trough in operating margins (14.7% vs. peak 41% in 2015) at a current P/E of 64x is simply not a Magic Formula candidate at any stretch.\n\nThe structural problem is capital intensity: MOIL has been spending INR 245–306 Cr annually in capex while generating INR 212–434 Cr in OCF, leaving FCF conversion that is negative in two of the last four years. The large cash pile generates meaningful Other Income (historically INR 178–317 Cr/yr), which flatters reported net profit well above operating earnings — the core mining business is a mediocre returner on capital. The zero-debt balance sheet and government ownership provide downside protection, but these are defensive qualities, not Magic Formula qualities. I want cheap AND good; MOIL is neither cheap enough nor good enough on returns.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 50310,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08237355,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11113,
+      "cache_read_input_tokens": 8936,
+      "output_tokens": 2534,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11113
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 407,
+          "cache_read_input_tokens": 8936,
+          "cache_creation_input_tokens": 2177,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2177,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

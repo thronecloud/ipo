@@ -1,0 +1,70 @@
+{
+  "symbol": "GOKEX",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T17:34:17.172802Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Gokaldas is a low-moat apparel exporter riding the China+1 tailwind, but with a 2.92% operating margin, sub-threshold ROIC (ROCE 10.6%), and deeply negative FCF (-₹865 Cr in FY24, -₹131 Cr in FY25), the business earns far below my 15% hurdle. A P/E of 45.5x for a commodity garment manufacturer with a 9.15% promoter stake is frankly absurd pricing.",
+    "key_strengths": [
+      "China+1 structural tailwind — revenue surged 62% to ₹3,864 Cr in FY25, proving real export demand capture",
+      "Institutional backing is heavy (FII 23.7% + DII 39.0%), providing some governance oversight given absent promoters",
+      "Debt/Equity at 0.46 remains technically manageable despite borrowings jumping 6x from ₹154 Cr to ₹993 Cr in two years"
+    ],
+    "key_risks": [
+      "Catastrophic promoter misalignment — 9.15% promoter stake means management has almost no skin in the game, a cardinal sin",
+      "Razor-thin economics — 2.92% operating margin leaves zero buffer; any wage inflation, FX shift, or demand slowdown destroys profitability",
+      "Capital destruction cycle — FCF was -₹865 Cr in FY24 and -₹131 Cr in FY25, funded by ₹840 Cr of new debt and equity dilution; integration of what appears to be a large acquisition is unproven"
+    ],
+    "red_flags": [
+      "Promoter stake at 9.15% — one of the lowest I'd see in any serious business; incentive structure is broken",
+      "Total assets doubled in 2 years (₹1,342 Cr → ₹3,899 Cr) via debt + equity issuance — classic aggressive acquisition with unclear returns",
+      "Net profit of ₹159 Cr in FY25 on ₹3,864 Cr revenue = 4.1% net margin; the gross margin of 49.8% is eaten alive by operating costs",
+      "Finance costs surged from ₹26 Cr (FY23) to ₹77 Cr (FY25) — the debt binge is already hitting earnings"
+    ],
+    "detailed_analysis": "Inversion first: what would make this a terrible investment? A commodity manufacturer with no pricing power, promoters who've sold down to 9%, two consecutive years of deeply negative free cash flow, and a balance sheet that's tripled via an apparent acquisition of unknown quality — all priced at 45x earnings. That is precisely what Gokaldas Exports offers today. The 2.92% operating margin is not a temporary dip; it reflects the structural reality of being a contract manufacturer for international fashion brands who hold all the pricing leverage. ROIC and ROCE in the 8-11% range confirm the business destroys value relative to its cost of capital over a cycle.\n\nThe China+1 narrative is real and revenue growth is genuine (14.5% CAGR over 9 years, accelerating recently). But Munger's lesson is that a lousy business at a fair price remains a lousy investment. The massive capital expenditure cycle (₹689 Cr capex in FY24 alone) and jump in borrowings from ₹154 Cr to ₹993 Cr suggests an acquisition-led growth strategy — precisely the \"frequent acquisitions without clear integration success\" red flag I avoid. At EV/EBITDA of 23.7x and P/E of 45.5x, the market is pricing in flawless execution of a turnaround I see no structural reason to trust, especially with promoters holding barely 9% of the company they allegedly run.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 51286,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08120445,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11107,
+      "cache_read_input_tokens": 8864,
+      "output_tokens": 2459,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11107
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 284,
+          "cache_read_input_tokens": 8864,
+          "cache_creation_input_tokens": 2243,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2243,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

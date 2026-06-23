@@ -1,0 +1,69 @@
+{
+  "symbol": "DCBBANK",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T17:12:07.501092Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "DCB Bank trades at book value (P/B: 1.0) with a 28.9% net profit CAGR, offering surface-level cheapness — but a 10.81% ROE and finance costs compounding at 26.5% against only 16.3% revenue growth signal a mediocre, margin-squeezed regional bank with no durable competitive advantage. This is the kind of business Munger would call \"a treadmill dressed as an escalator.\"",
+    "key_strengths": [
+      "Net profit CAGR of 28.9% (2022-2025) shows operational improvement from a low base, and forward P/E of 6.54 prices in little optimism.",
+      "P/B of 1.0 provides some downside protection — you're not paying for goodwill that doesn't exist.",
+      "DII holding of 32.8% suggests domestic institutional conviction at current valuation levels."
+    ],
+    "key_risks": [
+      "Finance costs (CAGR 26.5%) are massively outpacing revenue growth (16.3%), signaling NIM compression and a deteriorating funding cost structure.",
+      "ROE of 10.81% is well below the 15%+ threshold for a quality bank — capital is being deployed at inadequate returns.",
+      "Promoter holding of only 16.23% is dangerously low — minimal skin in the game, raising long-term governance and alignment concerns."
+    ],
+    "red_flags": [
+      "OCF positive in only 2 of 4 years (-1,566 Cr in 2023, -441 Cr in 2025) — highly erratic even accounting for loan book expansion.",
+      "Finance cost base (INR 4,364 Cr in 2025) now exceeds total revenue (INR 2,848 Cr) — this bank earns less than it pays for funds on a standalone income statement basis, a structural fragility.",
+      "Zero pricing power competing against HDFC Bank, Kotak, and ICICI with far lower cost-of-funds due to superior CASA franchises."
+    ],
+    "detailed_analysis": "DCB Bank is a small regional lender with INR 76,810 Cr in assets — a minnow in India's banking ocean. Munger's first instinct is to invert: what destroys a small bank? Rising funding costs, asset quality shocks, and capital erosion. All three risks are present here. Finance costs compounding at 26.5% while revenue grows at only 16.3% is the central problem — this spread destruction means profitability depends on sustaining loan growth, not on durable pricing power. The ROE of 10.81% fails to clear even a basic cost-of-equity hurdle; after adjusting for risk, this bank creates almost no economic value for shareholders.\n\nThe promoter stake of 16.23% is a significant red flag in Munger's framework — management with little ownership tends toward short-term expansion over long-term quality. The erratic operating cash flows (negative in FY23 and FY25) reflect aggressive balance sheet expansion funded by costlier borrowings (total debt jumped from INR 3,982 Cr to INR 7,400 Cr). At P/B of 1.0 the stock is not egregiously priced, but cheapness is not a virtue when the underlying business cannot earn above its cost of capital. A fair business at a fair price is still not what Munger seeks — he wants a wonderful business, and DCB Bank is decidedly ordinary.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 48785,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07318575,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10269,
+      "cache_read_input_tokens": 8360,
+      "output_tokens": 2144,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10269
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 270,
+          "cache_read_input_tokens": 8360,
+          "cache_creation_input_tokens": 1909,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1909,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

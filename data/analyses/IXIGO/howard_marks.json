@@ -1,0 +1,70 @@
+{
+  "symbol": "IXIGO",
+  "persona": "howard_marks",
+  "persona_display_name": "Howard Marks",
+  "analyzed_at": "2026-04-18T18:05:47.060317Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "IXIGO is a legitimate India travel beneficiary with 68.5% revenue CAGR, but at 119x EV/EBITDA and a 1.5% FCF yield, the price reflects a decade of perfect execution with zero margin for error. Net profit actually declined YoY (INR 73 Cr → INR 60 Cr) despite 39% revenue growth — the market is ignoring this while pricing in a flawless future.",
+    "key_strengths": [
+      "Revenue growth is genuine: INR 40 Cr → INR 914 Cr over 6 years (68.5% CAGR), showing real platform traction in Tier 2/3 India travel",
+      "Near-debt-free balance sheet (D/E: 0.04) with INR 81 Cr cash — no balance sheet risk even in a downturn",
+      "FCF turned meaningfully positive in FY2025 (INR 118 Cr), showing the business can generate cash"
+    ],
+    "key_risks": [
+      "Valuation is priced-to-perfection: EV/EBITDA 119x, P/E 133x, FCF yield ~1.5% — any slowdown will be catastrophic for the stock price",
+      "Net profit DECLINED FY2025 vs FY2024 (INR 60 Cr vs INR 73 Cr) even as revenue grew 39% — operating leverage is not materializing as priced in",
+      "64.2% FII ownership creates fragile price structure — any global risk-off or FII reallocation out of Indian internet names unwinds fast"
+    ],
+    "red_flags": [
+      "Net income fell YoY (INR 73 Cr→60 Cr) while revenue grew 39% — quality of earnings is deteriorating",
+      "Other income (INR 39 Cr FY24, INR 23 Cr FY25) is masking weak core profitability; strip it out and operating earnings are INR ~49 Cr on a INR 7,837 Cr market cap",
+      "Recent IPO vintage (2024) — historically IPOs are sold near cycle peaks when promoter/PE exit optimism is highest; EV/EBITDA of 119x at listing reflects that dynamic",
+      "Operating margin of only 7.08% in a commoditized OTA market dominated by MakeMyTrip — thin margin means brutal sensitivity to any CAC or competitive pressure increase"
+    ],
+    "detailed_analysis": "Second-level thinking demands asking not \"is Indian travel growing?\" but \"what does INR 179/share already price in?\" The answer is disturbing: at 119x EV/EBITDA and a 1.5% FCF yield, the market has already capitalized years of 30-40% EBITDA growth. IXIGO's operating margin of 7.08% on INR 914 Cr revenue yields just INR 72 Cr operating income — you are paying INR 7,837 Cr for that. Strip out other income (INR 23 Cr, which itself fell 41% YoY from IPO-era interest earnings), and the underlying earnings power is even weaker. This is not a business priced for reasonable returns; it is priced for a flawless compounding machine, which it has not yet demonstrated.\n\nThe stress-test is damning. A derating to 40x EV/EBITDA — still a premium multiple — implies ~65% downside from current price. MakeMyTrip, the sector leader with far superior margins, trades cheaper on forward multiples. IXIGO competes in train and bus ticketing where IRCTC retains structural dominance and pricing power. The 64.2% FII ownership concentration is a crowded trade risk: if global sentiment shifts or Indian internet multiples compress, there is no natural domestic buyer base of size to absorb the selling. Asymmetry here is entirely unfavorable — limited upside if everything goes right, severe downside if anything goes wrong.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 58613,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.077112,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9082,
+      "cache_read_input_tokens": 10885,
+      "output_tokens": 2652,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9082
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 397,
+          "cache_read_input_tokens": 8831,
+          "cache_creation_input_tokens": 2305,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2305,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

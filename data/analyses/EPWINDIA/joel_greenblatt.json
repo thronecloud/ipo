@@ -1,0 +1,69 @@
+{
+  "symbol": "EPWINDIA",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-21T07:47:32.266109Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "EPW India's Magic Formula metrics are deeply unattractive — Earnings Yield is ~4.3% (EBIT ₹6 Cr / EV ~₹141 Cr), well below the 6% floor I require. While headline ROCE looks strong, cash flows flatly contradict the accounting profits, disqualifying this from consideration.",
+    "key_strengths": [
+      "Revenue tripled in one year (₹19 Cr → ₹53 Cr), showing real commercial momentum",
+      "Zero finance cost historically and asset-light model suits working capital cycles in theory",
+      "High promoter holding (71.4%) aligns management with the business"
+    ],
+    "key_risks": [
+      "Negative FCF of -₹12 Cr in FY25 against net profit of ₹4 Cr — cash earnings are fictional at this point",
+      "Borrowings surged from ₹0 to ₹12 Cr in one year to fund working capital; equity base is only ₹5 Cr (2.4x leverage)",
+      "Refurbished IT hardware is a commoditized, low-moat business with no pricing power"
+    ],
+    "red_flags": [
+      "Operating CF of -₹11 Cr in FY25 despite ₹4 Cr net profit — massive working capital bleed",
+      "Company is micro-cap (₹129 Cr) with only two years of meaningful revenue history — no track record of sustained ROIC",
+      "P/E of 31x on ₹4 Cr profit in a no-moat sector is unjustifiable valuation"
+    ],
+    "detailed_analysis": "Running the Magic Formula: EBIT is ₹6 Cr for FY25. EV = Market Cap (₹129 Cr) + Debt (₹12 Cr) ≈ ₹141 Cr, giving an Earnings Yield of ~4.3% — well below my 6% floor and nowhere near the 12–15% range I find attractive. ROCE of 65.7% looks eye-catching, but this is an artifact of a nearly zero equity base two years ago; the denominator is artificially tiny and doesn't reflect a genuine competitive advantage compounding capital.\n\nThe cash flow statement exposes the real problem: FY25 shows ₹4 Cr net profit but -₹11 Cr operating cash flow and -₹12 Cr FCF. In a refurbished hardware distribution business, this signals aggressive inventory buildup to support rapid revenue growth — but growth funded entirely by borrowings (₹12 Cr) on a ₹5 Cr equity base is fragile. A single demand slowdown or credit squeeze destroys the equity. The Magic Formula requires genuine earnings, and this business isn't generating them yet on a cash basis.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 43418,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07420815,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9985,
+      "cache_read_input_tokens": 8018,
+      "output_tokens": 2290,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9985,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 370,
+          "cache_read_input_tokens": 8018,
+          "cache_creation_input_tokens": 1967,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1967
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

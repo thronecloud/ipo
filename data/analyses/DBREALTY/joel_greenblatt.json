@@ -1,0 +1,70 @@
+{
+  "symbol": "DBREALTY",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T17:06:06.015317Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "Valor Estate fails both Magic Formula tests: EBIT is negative in 2025 (-119 Cr operating income) making earnings yield incalculable, and ROIC is deeply negative, disqualifying it entirely from systematic ranking. The sole \"profitable\" year (2024 net profit of ₹1,317 Cr) was 100% driven by non-operating other income (₹1,453 Cr), masking a core business that has generated negative EBIT in 8 of the last 10 years.",
+    "key_strengths": [
+      "Revenue CAGR of 20.9% over 9 years — top-line growth is real, from ₹206 Cr to ₹1,133 Cr",
+      "Debt dramatically reduced from ₹3,721 Cr (2022) to ₹995 Cr (2025), improving balance sheet quality",
+      "Operating CF turned strongly positive in 2025 (₹540 Cr) and FCF at ₹436 Cr — best in a decade"
+    ],
+    "key_risks": [
+      "Negative EBIT in 2025 (-₹119 Cr) and negative in 8/10 years — core operations structurally unprofitable",
+      "2024 net profit of ₹1,317 Cr was entirely illusory — driven by ₹1,453 Cr 'other income' (asset sales/revaluations), not real earnings",
+      "P/E of 106x is based on a distorted, non-recurring earnings base — fair value is impossible to anchor"
+    ],
+    "red_flags": [
+      "Magic Formula cannot be applied — EBIT is negative, making both Earnings Yield and ROIC undefined or negative",
+      "ROE -2.54% and ROCE -1.38% confirm capital destruction, not value creation",
+      "Extreme earnings volatility: net profit swings from -₹440 Cr to +₹1,317 Cr to -₹118 Cr in consecutive years — driven by lumpy asset sales, not operations",
+      "EV/EBITDA of 26x is meaningless — 2025 EBITDA is -₹45 Cr; the ratio is computed off a single anomalous year"
+    ],
+    "detailed_analysis": "Valor Estate is a textbook Magic Formula disqualifier. Earnings Yield (EBIT/EV) requires positive EBIT — the company posted -₹119 Cr operating income in FY2025 on ₹1,133 Cr revenue. The only year with positive EBIT in the entire decade was FY2024 (₹28 Cr), yielding a paltry earnings yield of 28/7,669 = 0.37% against an enterprise value of ~₹7,669 Cr. Even that number is irrelevant — the ₹1,317 Cr net profit in FY2024 came almost entirely from ₹1,453 Cr in \"other income,\" almost certainly asset disposals or revaluations, not operating earnings. Return on Capital is equally broken: with negative operating income and a massive asset base (₹7,136 Cr total assets), ROIC is deeply negative.\n\nReal estate development is inherently a low-ROIC, capital-intensive business that the Magic Formula systematically deprioritizes. Valor has spent 17 years incinerating capital — cumulative losses are embedded in the equity structure (reserves collapsed from ₹4,477 Cr in 2024 to ₹3,512 Cr in 2025 in just one year). Debt reduction is a positive sign, and the revenue acceleration to ₹1,133 Cr is encouraging, but until the company demonstrates sustained, repeatable operating profits, the Magic Formula verdict is clear: no earnings, no ranking, no investment.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 46891,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08168565,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11105,
+      "cache_read_input_tokens": 8893,
+      "output_tokens": 2491,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11105
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 353,
+          "cache_read_input_tokens": 8893,
+          "cache_creation_input_tokens": 2212,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2212,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

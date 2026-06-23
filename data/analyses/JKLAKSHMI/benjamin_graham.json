@@ -1,0 +1,71 @@
+{
+  "symbol": "JKLAKSHMI",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T17:50:46.403270Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "JK Lakshmi Cement trades at INR 674 — roughly 74% above my calculated Graham Number of ~INR 387 (sqrt(22.5 × EPS₂₂.₂ × BVPS₂₉₉)) — offering no margin of safety whatsoever. Compounding the overvaluation, FY2025 net profit collapsed 43% YoY to INR 276 Cr while debt surged 28% to INR 2,673 Cr, precisely the combination of deteriorating earnings and rising leverage I find most dangerous.",
+    "key_strengths": [
+      "Ten consecutive years of positive earnings (even if volatile), satisfying my minimum earnings continuity requirement",
+      "Operating cash flow positive all five recent years (INR 650–1,032 Cr), confirming the business generates real cash",
+      "Interest coverage ~5x (EBITDA INR 897 Cr ÷ Finance Cost INR 181 Cr), comfortably above my 3.5x floor"
+    ],
+    "key_risks": [
+      "Price far above Graham Number (~74% premium): no margin of safety at INR 674 vs calculated intrinsic value of ~INR 387",
+      "Debt/Equity of 0.72 exceeds my 0.50 limit; borrowings jumped from INR 2,084 Cr (FY24) to INR 2,673 Cr (FY25) — a 28% surge in one year",
+      "Earnings power severely deteriorating: net profit fell 43% in FY2025 to INR 276 Cr and FCF was negative in both FY2023 (−INR 98 Cr) and FY2024 (−INR 107 Cr)"
+    ],
+    "red_flags": [
+      "P/B of 2.26 — well above my hard limit of 1.5; I am paying INR 2.26 for every INR 1 of net assets in a commodity business",
+      "P/E of 17.5 on already-depressed FY2025 earnings; on normalized earnings the multiple is even worse",
+      "Revenue contracted in FY2025 (INR 6,193 Cr vs INR 6,788 Cr in FY2024) — top-line reversal in a capex-heavy cycle is alarming",
+      "Cash position of only INR 76 Cr against INR 2,673 Cr in borrowings — razor-thin liquidity buffer",
+      "EBITDA trend contracting (INR 1,109 Cr FY24 → INR 897 Cr FY25) while capex remains heavy (INR 661 Cr in FY25)"
+    ],
+    "detailed_analysis": "From my strictly quantitative standpoint, JK Lakshmi Cement fails almost every screen I apply. The Graham Number — my bedrock test — yields approximately INR 387 against a market price of INR 674, meaning the stock must fall 43% merely to reach fair value by my measure. The P/B of 2.26 and P/E of 17.5 both breach my maximum thresholds of 1.5 and 15 respectively. Debt-to-equity at 0.72 exceeds my 0.50 ceiling, and the acceleration of borrowings by INR 589 Cr in a single year while profits cratered is precisely the pattern that precedes financial distress in commodity businesses. The cement industry is inherently cyclical with no durable pricing power — the sort of business where Mr. Market's optimism routinely leads the ordinary investor to overpay.\n\nThe one concession I grant this company is operational longevity: 86 years in business, a decade of unbroken (if lumpy) profitability, and consistent operating cash generation. However, the intelligent investor does not pay for history alone — the price must reflect an adequate discount to intrinsic value. With FCF negative in two of the last three years, a 43% profit collapse in FY2025, rising finance costs (INR 181 Cr in FY25 vs INR 150 Cr in FY24), and a cash reserve of only INR 76 Cr against over INR 2,600 Cr in debt, the balance sheet offers scant protection against further deterioration. I would require the price to fall to at least INR 350–400 — near or below the Graham Number — before any consideration of purchase.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 53715,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08037075,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9533,
+      "cache_read_input_tokens": 11260,
+      "output_tokens": 2749,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9533
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 421,
+          "cache_read_input_tokens": 9210,
+          "cache_creation_input_tokens": 2373,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2373,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

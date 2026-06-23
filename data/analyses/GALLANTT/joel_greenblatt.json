@@ -1,0 +1,69 @@
+{
+  "symbol": "GALLANTT",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-22T16:39:19.889004Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Gallantt Ispat scores poorly on both Magic Formula pillars — earnings yield of ~3.3% (EBIT INR 694 Cr / EV ~INR 20,965 Cr) is far below the 12% threshold, and ROCE of 19.2% is decent but not exceptional for a capital-intensive steel business. The market is pricing in substantial future growth that a disciplined quantitative investor should not pay for in a cyclical commodity business.",
+    "key_strengths": [
+      "Strong earnings growth trajectory: EBITDA CAGR of 26.7% over 9 years with 2025 EBITDA at INR 707 Cr",
+      "Low leverage: Debt/Equity of 0.21 and finance costs only INR 22 Cr vs EBIT INR 694 Cr — almost no financial risk",
+      "FCF turned strongly positive in 2025 (INR 337 Cr), showing capex cycle is maturing"
+    ],
+    "key_risks": [
+      "Valuation is the killer: Earnings Yield of ~3.3% is less than a quarter of the 12%+ Magic Formula threshold — you're paying 43x earnings for a steel company",
+      "Steel is cyclical and capital-intensive: 2020 collapse (net profit INR 22 Cr vs INR 104 Cr in 2019) proves earnings are not durable; sustained high ROIC is illusory in commodity cycles",
+      "Ongoing heavy capex: INR 242 Cr capex in 2025 with CWIP of INR 172 Cr signals further capital deployment ahead, suppressing free capital returns"
+    ],
+    "red_flags": [
+      "Earnings Yield of ~3.3% (EBIT 694 / EV 20,965) fails the Magic Formula minimum threshold of 6% by nearly half",
+      "Near-zero institutional conviction: FII 0.15%, DII 0.05% — the smart money has passed",
+      "FCF was negative in 2022 (−INR 39 Cr) and 2023 (−INR 132 Cr) despite reported earnings — real capital consumption disguised by accrual accounting"
+    ],
+    "detailed_analysis": "Running the Magic Formula on Gallantt Ispat produces a failing grade on valuation. Enterprise Value = Market Cap (INR 20,592 Cr) + Total Debt (INR 378 Cr) − Cash (INR 5 Cr) = INR 20,965 Cr. EBIT (using Operating Income) = INR 694 Cr. Earnings Yield = 3.3% — catastrophically low versus the 12% minimum I require. EV/EBITDA of 19.55x and P/E of 43x confirm the market is pricing this like a high-quality compounder, not the cyclical steel manufacturer it is. The reported ROCE of 19.2% is respectable but borderline — I want 25%+ and sustained across cycles, not just peak cycle years. The 2020 EBIT collapse to INR 32 Cr from INR 125 Cr (2019) is the honest picture of what steel ROICs look like in a down cycle.\n\nThe business has genuine positives — revenue scaled from INR 670 Cr to INR 4,293 Cr over 9 years (22.9% CAGR), debt is conservatively managed, and 2025 FCF of INR 337 Cr shows the heavy capex phase may be normalizing. But none of this matters at the current valuation. The Magic Formula works precisely by being disciplined about price — a good business at a bad price is still a bad investment. At 43x earnings, Gallantt is pricing in flawless execution in a commodity sector notorious for destroying capital. I would need to see earnings yield exceed 10% (implying a stock price around INR 200 Cr) before this enters my investable universe.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 54093,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0901353,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11670,
+      "cache_read_input_tokens": 9096,
+      "output_tokens": 2909,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11670,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 373,
+          "cache_read_input_tokens": 9096,
+          "cache_creation_input_tokens": 2574,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2574
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

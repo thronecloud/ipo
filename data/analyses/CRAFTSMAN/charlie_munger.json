@@ -1,0 +1,69 @@
+{
+  "symbol": "CRAFTSMAN",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-19T13:04:36.708184Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Craftsman is a cyclical auto-parts manufacturer with ROCE of only 11.7% (below the 12% floor), 1.09x debt-to-equity, thin 9.6% operating margins, and negative free cash flow of -INR 706 Cr in FY25 — yet it trades at 52x trailing earnings. This is a textbook example of paying a growth premium for a capital-intensive, leveraged, cyclical business that cannot cover its own investment needs.",
+    "key_strengths": [
+      "Impressive revenue growth: 22.8% CAGR over 8 years, diversified across powertrain, aluminium products, and industrial engineering segments",
+      "Strong institutional ownership (FII 15.2% + DII 28.3%) and promoter stake of 48.7% suggesting management confidence",
+      "Scale advantages in machining and casting that provide some customer switching costs in commercial vehicle supply chains"
+    ],
+    "key_risks": [
+      "Borrowings exploded from INR 1,755 Cr to INR 3,311 Cr in FY25 (total assets nearly doubled to INR 8,266 Cr) — a massive leveraged acquisition mid-cycle creates significant financial risk",
+      "Net profit declined sharply from INR 337 Cr (FY24) to INR 201 Cr (FY25) even as revenue grew — margin compression despite scale, with finance costs rising to INR 217 Cr",
+      "Auto parts is inherently cyclical and vulnerable to EV disruption of traditional powertrain components (cylinder blocks, camshafts, gear housings)"
+    ],
+    "red_flags": [
+      "Free cash flow of -INR 706 Cr in FY25 and -INR 115 Cr in FY24 — the business is consuming capital faster than it generates it, financed by equity raises and debt",
+      "ROCE of 11.7% and ROE of 9.4% — below the minimum quality threshold; paying 52x earnings for a sub-12% return on capital business is economically irrational",
+      "Finance costs have grown from INR 90 Cr (FY17) to INR 217 Cr (FY25) — a 11.6% CAGR in interest burden that directly competes with earnings growth"
+    ],
+    "detailed_analysis": "I have always believed the single most dangerous investment is a capital-intensive, cyclical business bought at a high multiple during a growth phase. Craftsman presents exactly this profile. The ROCE of 11.7% tells me this business does not earn its cost of capital with any margin of comfort. The massive balance sheet expansion in FY25 (assets from INR 4,706 Cr to INR 8,266 Cr, borrowings from INR 1,755 Cr to INR 3,311 Cr) suggests a large acquisition — without any clarity yet on returns. Meanwhile, the business it already owns generated -INR 706 Cr in free cash flow last year, requiring external capital to fund growth. At 52x trailing earnings with declining net profit, investors are paying tomorrow's price for yesterday's growth. The EV transition poses an existential question for the powertrain segment — cylinder blocks, camshafts, and gearbox housings are precisely the components electric vehicles eliminate. Management may be diversifying into aluminium castings for EVs, but the transition risk is real and unquantifiable. This fails my basic quality test.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 172277,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.2225337,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 23538,
+      "cache_read_input_tokens": 15824,
+      "output_tokens": 8634,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 23538,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 811,
+          "cache_read_input_tokens": 15824,
+          "cache_creation_input_tokens": 7714,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 7714
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

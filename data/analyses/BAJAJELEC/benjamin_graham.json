@@ -1,0 +1,71 @@
+{
+  "symbol": "BAJAJELEC",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T16:38:50.484937Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Bajaj Electricals trades at 120x earnings and 2.62x book — far exceeding every quantitative threshold I require — while delivering a negative operating margin of -2.1% and revenue that has barely grown 0.6% annually over nine years. Mr. Market is pricing a business that has not earned its keep as though it were a high-growth compounder; the disciplined investor must refuse.",
+    "key_strengths": [
+      "Consistent positive operating cash flow across all 5 measured years (INR 347–914 Cr), confirming real cash generation despite thin reported earnings",
+      "Established brands (Bajaj, Morphy Richards) and an 86-year operating history provide durability and distribution moats against new entrants",
+      "Debt has been dramatically reduced from INR 1,084 Cr (2020) to INR 243 Cr (2025), improving balance-sheet quality significantly"
+    ],
+    "key_risks": [
+      "P/E of 120x and a Graham Number of ~INR 196 vs. current price of INR 391 — the stock must be bought at half its current price merely to reach fair value by my method",
+      "Revenue flat at essentially zero real growth (0.6% CAGR over 9 years) while the current operating margin is negative (-2.1%) — the business is not earning its cost of capital",
+      "D/E of 0.85 exceeds my 0.5 threshold, and net profit is contracting (INR 216 Cr in 2023 → INR 133 Cr in 2025), making interest coverage precarious if conditions worsen"
+    ],
+    "red_flags": [
+      "P/E of 120x — fails my strict <15 filter by a factor of 8x",
+      "Negative operating margin (-2.10%) — the core business is not profitably covering operating costs",
+      "P/B of 2.62x — exceeds my 1.5x ceiling; at 2.0x I grow uncomfortable, at 2.62x I walk away",
+      "Graham Number ~INR 196 implies 50% downside from current price of INR 391 to reach intrinsic value",
+      "9-year revenue CAGR of 0.6% — no meaningful growth to justify any premium over book value"
+    ],
+    "detailed_analysis": "Bajaj Electricals fails virtually every quantitative criterion I have established over a lifetime of studying balance sheets. The P/E ratio of 120x is not merely elevated — it is speculative, more than eight times my maximum threshold of 15x. A business reporting INR 133 Cr in net profit on INR 4,826 Cr of revenue with a negative operating margin of -2.1% is not a business earning its keep; it is surviving on other income (INR 76 Cr in FY25) and financial engineering. My Graham Number — the geometric mean of earnings power and asset value — computes to approximately INR 196 per share (√(22.5 × INR 11.5 EPS × INR 148 book value)), meaning the market is currently offering this security at exactly double what I would consider fair value. That is not a margin of safety; it is a margin of danger.\n\nThe balance sheet has improved — debt fell from INR 1,084 Cr in 2020 to INR 243 Cr in 2025, and cash generation has been consistently positive. These are real merits, and the Bajaj brand carries genuine consumer recognition. But in my framework, a good business bought at the wrong price is a bad investment. With ROE of only 7.12%, ROCE of 11.6%, and nine-year revenue growth of less than 1% per annum, there is no reasonable basis for paying 2.62x book and 120x earnings. The intelligent investor does not overpay for a slow-growing, margin-challenged consumer appliance business simply because it bears a respected name. I would require this stock to trade below INR 200 before beginning serious analysis.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 46143,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07557330000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9238,
+      "cache_read_input_tokens": 11206,
+      "output_tokens": 2504,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9238
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 417,
+          "cache_read_input_tokens": 9156,
+          "cache_creation_input_tokens": 2132,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2132,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "symbol": "FWSTC",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-21T07:55:36.140265Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Flywings Simula trades at a P/E of 17x — above my strict threshold of 15x — in a niche, asset-light aviation training business with no disclosed balance sheet data to assess margin of safety. Without book value, current ratio, or debt figures, the disciplined investor cannot calculate intrinsic value and must stand aside.",
+    "key_strengths": [
+      "High ROE of 28% and ROCE of 25% suggest efficient capital deployment, though the source (leverage vs. genuine business quality) is unknown without the balance sheet",
+      "Promoter holding of 59.87% indicates management has skin in the game",
+      "Aviation simulator training has some barriers to entry due to regulatory approvals and capital equipment requirements"
+    ],
+    "key_risks": [
+      "Critical financial data missing — no P/B, current ratio, or debt/equity — making margin of safety calculation impossible",
+      "P/E of 17x exceeds my 15x ceiling; at INR 185, the price already embeds optimistic assumptions",
+      "Tiny market cap of INR 192 Cr means illiquidity risk and vulnerability to earnings deterioration in a specialized, cyclical sector (aviation demand)"
+    ],
+    "red_flags": [
+      "No book value per share disclosed — cannot compute Graham Number or Price-to-Book",
+      "No dividend history mentioned — zero evidence of cash returns to shareholders",
+      "Niche single-business model dependent on aviation sector health and regulatory licensing",
+      "High ROE of 28% with insufficient data may mask leverage-driven returns rather than genuine earning power"
+    ],
+    "detailed_analysis": "Benjamin Graham's method is not a story — it is arithmetic. At INR 185 and a P/E of 17x, this stock already fails my first quantitative gate. I require a P/E below 15x for defensive investors, and ideally below 10x for a genuine bargain. More critically, the data provided contains no book value per share, no current ratio, and no debt-to-equity figure. Without these, I cannot compute the Graham Number (√(22.5 × EPS × BVPS)), I cannot assess liquidity, and I cannot determine whether the impressive 28% ROE is the product of genuine earning power or financial leverage obscuring balance sheet fragility. An investor who cannot measure risk has no business buying.\n\nThe business itself — aviation simulator training in Gurgaon, incorporated 2011 — is a narrow, regulated niche entirely dependent on pilot training demand, airline capex cycles, and government licensing. These are not durable, recession-resistant characteristics. Mr. Market may admire the ROE today, but I demand proof of earnings stability across full economic cycles, a strong balance sheet, and a price meaningfully below demonstrated asset value. None of those conditions are met here. With a market cap of only INR 192 Cr, even a single bad year could devastate the stock price. I see no margin of safety and abundant uncertainty. Pass.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "insufficient_data",
+      "valuation": "overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 34270,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.05508525,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 6957,
+      "cache_read_input_tokens": 9625,
+      "output_tokens": 1740,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 6957,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 341,
+          "cache_read_input_tokens": 7575,
+          "cache_creation_input_tokens": 1432,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1432
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

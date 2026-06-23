@@ -1,0 +1,68 @@
+{
+  "symbol": "KTKBANK",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T18:06:23.843694Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Karnataka Bank is a 100-year-old regional lender trading at a meaningful discount to book (0.74x P/B, 8x P/E), suggesting optically cheap valuation. However, sub-15% ROE (11.1%), nearly evaporated FCF (INR 48 Cr in FY2025 vs. INR 1,743 Cr just two years prior), and the absence of a durable competitive moat make this a fair business at a fair price — not the wonderful business I seek.",
+    "key_strengths": [
+      "Compelling statistical cheapness: P/B 0.74x and forward P/E 6x offer a margin of safety against outright loss",
+      "Strong equity capital build-up: book value grew from INR 5,971 Cr to INR 12,589 Cr in 5 years (+111%), supporting the low P/B case",
+      "Century-old franchise (est. 1924) with a loyal South Indian deposit base provides some deposit stability vs. younger peers"
+    ],
+    "key_risks": [
+      "FCF collapse is alarming: dropped from INR 1,743 Cr (FY2023) to just INR 48 Cr (FY2025), signaling serious deterioration in cash earnings quality",
+      "ROE of 11.1% is well below my 15% threshold and ROCE of 6.33% suggests poor capital deployment — a bank that can't earn its cost of capital destroys value over time",
+      "No economic moat: a Karnataka-focused regional bank competes directly with HDFC Bank, ICICI Bank, and SBI with no differentiated product, technology edge, or pricing power"
+    ],
+    "red_flags": [
+      "Net profit effectively flat/declining: INR 1,307 Cr (FY2024) → INR 1,273 Cr (FY2025) — the strong 5Y profit CAGR of 24.1% is entirely explained by a single-year jump in FY2023, not a durable trend",
+      "Operating cash flow deteriorating sharply: INR 681 Cr (FY2024) → INR 210 Cr (FY2025), suggesting rising provisions or NPA stress not yet fully reflected in reported earnings"
+    ],
+    "detailed_analysis": "Karnataka Bank checks the \"statistically cheap\" box that would have excited the young Benjamin Graham version of me — sub-book valuation, single-digit P/E, and a long operating history. But I learned long ago that a cheap price on a mediocre business is a trap. The bank earns only 11.1% ROE on an expanding equity base, meaning it is compounding shareholder capital below what a disciplined owner could earn elsewhere. The near-zero FCF in FY2025 (INR 48 Cr on INR 9,310 Cr market cap — a 0.05% FCF yield) is particularly troubling for a bank that reported INR 1,273 Cr in net profit; that gap demands explanation and warrants deep scrutiny on provisioning and off-balance-sheet items.\n\nThe competitive picture is equally unattractive. Karnataka Bank operates in a geography served aggressively by India's top private banks, which have superior technology stacks, cheaper funding costs, and national distribution. There is no switching cost moat, no network effect, and no brand premium that lets it charge more or pay depositors less. Revenue CAGR of just 6.8% over five years confirms this lack of pricing power. I would not buy this bank for Berkshire. For existing holders, the sub-book valuation limits downside, so a forced sale is also unwarranted — hence HOLD rather than outright AVOID.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "undervalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 48815,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08007329999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10922,
+      "cache_read_input_tokens": 8856,
+      "output_tokens": 2430,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10922
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 396,
+          "cache_read_input_tokens": 8856,
+          "cache_creation_input_tokens": 2066,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2066,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

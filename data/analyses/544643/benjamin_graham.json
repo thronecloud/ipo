@@ -1,0 +1,69 @@
+{
+  "symbol": "544643",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-20T11:07:14.446843Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "Prodocs Solutions is a recently incorporated (2019) micro-cap BPO that fails nearly every quantitative Graham filter — P/E of 25.5 is nearly double my 15 ceiling, and a 0.41% ROE indicates the business earns essentially nothing on its equity. There is no margin of safety, no multi-year earnings record, and the IPO-style pricing embeds speculative growth assumptions I refuse to underwrite.",
+    "key_strengths": [
+      "Promoter holding of 51.99% provides majority skin-in-the-game",
+      "Some institutional validation (FII 3.70% + DII 1.08%)",
+      "Operates in a cash-generative industry (ITES/BPO) with low capex needs"
+    ],
+    "key_risks": [
+      "ROE of 0.41% means earnings are essentially non-existent relative to book equity",
+      "Company is only ~7 years old — fails my 5-year stable earnings history requirement",
+      "P/E of 25.5 implies paying for growth, not proven earning power"
+    ],
+    "red_flags": [
+      "Negligible ROE (0.41%) inconsistent with a P/E of 25.5 — price detached from fundamentals",
+      "Recently-listed micro-cap (INR 130 Cr) with typical IPO asymmetric information risk",
+      "No evidence of dividend history or shareholder cash returns"
+    ],
+    "detailed_analysis": "From my framework, this security is disqualified before deeper analysis. A 0.41% ROE on a business priced at 25.5x earnings means Mr. Market is valuing a rupee of book equity at roughly 10 paise of current earning power — that is speculation, not investment. Incorporated in March 2019 and recently listed, Prodocs has neither the five-to-ten year earnings record nor the dividend continuity I require. In BPO/ITES, scale and client concentration drive margins; a 130-crore company has neither moat nor demonstrated earning power.\n\nThe only positives — majority promoter ownership and token institutional participation — do not substitute for quantitative margin of safety. With earnings this anemic, even a modest client loss could turn profits negative, and at 25.5x a tiny earnings base, downside is severe. I would need to see P/E below 15, P/B below 1.5, current ratio above 2, and at least five years of consistent profits before this warrants a second look. Until then, this is a speculation dressed as an investment. Avoid.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "insufficient_data",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 23185,
+    "model_used": "opus",
+    "total_cost_usd": 0.09584425,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 9005,
+      "cache_read_input_tokens": 13516,
+      "output_tokens": 1311,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9005,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 83,
+          "cache_read_input_tokens": 10630,
+          "cache_creation_input_tokens": 1261,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1261
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

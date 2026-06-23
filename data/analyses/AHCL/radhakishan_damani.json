@@ -1,0 +1,70 @@
+{
+  "symbol": "AHCL",
+  "persona": "radhakishan_damani",
+  "persona_display_name": "Radhakishan Damani",
+  "analyzed_at": "2026-04-20T11:14:18.841027Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Anlon Healthcare shows attractive headline ratios (ROE 25.5%, OM 33.7%) but operating cash flow has been negative for 4 consecutive years while reported profits grew — a classic mismatch that signals working capital bloat or earnings quality concerns. At a 616 Cr micro-cap with volatile revenue (57→113→67→120 Cr), short listed history, and deeply negative FCF (-23 Cr in FY25), this fails my basic test of a predictable compounder.",
+    "key_strengths": [
+      "Strong reported margins (OM 33.7%, ROCE 38.1%) and ROE 25.5%",
+      " D/E down to 0.27 post recent equity infusion (equity 21→80 Cr)",
+      "Niche API/intermediates portfolio across multiple therapeutic areas"
+    ],
+    "key_risks": [
+      "OCF negative in 4/4 years despite rising PAT — earnings quality suspect",
+      "Revenue highly volatile (FY24 dropped to 67 Cr from 113 Cr) — not a steady compounder",
+      "Micro-cap, recently listed, unproven promoter track record; promoter holding only 52.7%"
+    ],
+    "red_flags": [
+      "Profit of 21 Cr but operating cash flow of -23 Cr in FY25 — ~44 Cr gap",
+      "Zero free cash generation across entire visible history",
+      "Debt still 67 Cr, 83% of equity book, in a capex-hungry API business",
+      "Promoter stake just above 50% — below my >55% threshold"
+    ],
+    "detailed_analysis": "The business superficially screens well — 33.7% operating margin, 38% ROCE, P/E of 17.75 — but when I look past the ratios I cannot reconcile the profit statement with the cash flow statement. PAT cumulatively over FY23-25 is ~37 Cr, yet cumulative OCF is roughly -29 Cr. That means every rupee of reported profit has been locked up in receivables or inventory, a pattern I've seen too often in small API/chemical companies and one I refuse to underwrite. Revenue swinging from 113 Cr (FY23) to 67 Cr (FY24) back to 120 Cr (FY25) also tells me this is a lumpy order-driven business, not the predictable consumer-facing demand I prefer.\\n\\nThe balance sheet cleanup (equity jumping 21→80 Cr in FY25) is almost entirely IPO proceeds, not retained earnings, and debt at 67 Cr is still meaningful for a 120 Cr revenue company. Promoter holding at 52.7% is at the lower end of acceptable and will likely dilute further given the negative FCF trajectory. This is outside my circle of competence — API manufacturing for 13 therapeutic areas is not a moat I can verify — and the fundamentals do not yet earn the benefit of the doubt. I pass.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 27945,
+    "model_used": "opus",
+    "total_cost_usd": 0.11218925,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 10409,
+      "cache_read_input_tokens": 14656,
+      "output_tokens": 1591,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10409,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 11712,
+          "cache_creation_input_tokens": 1641,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1641
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

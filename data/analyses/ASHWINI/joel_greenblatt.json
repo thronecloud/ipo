@@ -1,0 +1,69 @@
+{
+  "symbol": "ASHWINI",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-21T07:52:10.998985Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Ashwini Container Movers fails both legs of the Magic Formula — ROE of 0.72% signals near-zero return on capital, while a ~7.4% earnings yield (1/P/E of 13.6x) falls well short of the 12%+ threshold I require for a \"cheap\" stock. A bad business at a mediocre price is not a bargain.",
+    "key_strengths": [
+      "Modest valuation at 13.6x P/E provides some downside cushion vs. deep overvaluation",
+      "High promoter holding of 66.67% aligns owner interests with shareholders",
+      "FII + DII combined 14.6% ownership suggests some institutional validation of the name"
+    ],
+    "key_risks": [
+      "ROE of 0.72% is catastrophically low — barely above zero, failing the quality test decisively",
+      "Road transport is capital-intensive and commoditized — trucks, fuel, and driver costs destroy ROIC",
+      "Geographic concentration in Maharashtra/Gujarat limits scale and pricing power"
+    ],
+    "red_flags": [
+      "ROE 0.72% — the Magic Formula requires ROIC >20%; this is 28x below that threshold",
+      "Earnings yield ~7.4% (1/13.6x P/E) — below Greenblatt's 12% minimum; not cheap enough to offset poor quality",
+      "Micro-cap (INR 208 Cr) in a fragmented commodity transport sector — no visible moat"
+    ],
+    "detailed_analysis": "The Magic Formula asks two questions simultaneously: is this a good business, and is it cheap? Ashwini fails on quality in emphatic fashion. An ROE of just 0.72% in a capital-intensive trucking business means the company is deploying shareholder equity into trucks, terminals, and working capital and earning virtually nothing in return. In Greenblatt's framework, ROIC must exceed 20-25% for a business to rank in the top decile — Ashwini's implied ROIC is likely in low single digits at best, placing it firmly in the bottom tier. Road transport in India is a hyper-fragmented, low-margin sector with no pricing power, making sustained improvement structurally difficult.\n\nOn valuation, the P/E of 13.6x implies an earnings yield of ~7.4% — marginally above a risk-free rate but well below the 12-15% EBIT/EV I look for as a \"cheap\" signal. The stock is neither cheap enough to compensate for poor capital returns, nor good enough as a business to merit a premium. With INR 208 Cr market cap, thin institutional sponsorship outside promoters, and no identifiable competitive moat, there is no Magic Formula case here. I would need to see ROIC above 15% and earnings yield above 12% simultaneously to get interested — both metrics would need to roughly double from current levels.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 38165,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.06807705,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9355,
+      "cache_read_input_tokens": 7556,
+      "output_tokens": 2048,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9355,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 285,
+          "cache_read_input_tokens": 7556,
+          "cache_creation_input_tokens": 1799,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1799
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

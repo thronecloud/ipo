@@ -1,0 +1,69 @@
+{
+  "symbol": "544340",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-20T09:49:06.331120Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Rikhav Securities is a tiny, highly cyclical stockbroker whose earnings quality is deteriorating — net profit fell from INR 42 Cr (2024) to INR 24 Cr (2025) even as revenue tripled to INR 328 Cr, and FCF swung to INR -189 Cr. At 6.6x P/E it looks cheap on the surface, but broking profits are a direct bet on bull-market volumes, not a durable franchise I would underwrite.",
+    "key_strengths": [
+      "Promoter skin in the game at 64.06% and low borrowings (INR 5 Cr vs INR 244 Cr equity)",
+      "Headline growth optics: 3Y revenue CAGR of 108.9% and ROCE of 16.7%",
+      "Optically cheap at 6.63x P/E on a market cap of just INR 159 Cr"
+    ],
+    "key_risks": [
+      "Net profit collapsed 43% in 2025 (INR 42→24 Cr) despite revenue tripling — margin compression is severe",
+      "Operating cash flow deeply negative (INR -188 Cr in 2025); OCF positive in only 1 of last 4 years",
+      "Pure brokerage model has no moat — commoditized, fee-pressured, and fully cyclical to Indian equity volumes"
+    ],
+    "red_flags": [
+      "OCF of INR -188 Cr in 2025 directly contradicts reported profit of INR 24 Cr",
+      "Other Income collapsed from INR 7 Cr to 0 — prior profits may have been propped up by non-operating items",
+      "Operating income fell from INR 55 Cr to INR 34 Cr year-over-year while revenue tripled — suggests low-quality, pass-through or client-float revenue"
+    ],
+    "detailed_analysis": "The numbers tell a story Charlie and I have seen many times in brokerage houses: a bull-market tailwind that masks the absence of a real franchise. Revenue scaling from INR 36 Cr to INR 328 Cr in three years is the signature of rising retail F&O volumes in India, not of any durable competitive advantage. When operating profit falls from INR 55 Cr to INR 34 Cr while the top line triples, it tells me much of the \"revenue\" is low-margin turnover-linked income. ROE of 12.9% is mediocre for a capital-light business — our best financial holdings compound at 18–25%.\n\nThe cash flow statement is where I stop reading. Operating cash flow of INR -188 Cr against reported profit of INR 24 Cr is an enormous gap — likely client float or margin-funding working capital, but still a signal that reported earnings are not turning into owner earnings. Add the cyclicality (SEBI F&O curbs, eventual bear market), the lack of any moat, and a tiny INR 159 Cr market cap with negligible institutional ownership, and this sits well outside my circle of competence for good reason. Cheap optical P/E does not create a margin of safety when the E is this volatile. Pass.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 28702,
+    "model_used": "opus",
+    "total_cost_usd": 0.1117155,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 10102,
+      "cache_read_input_tokens": 14246,
+      "output_tokens": 1657,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10102,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 176,
+          "cache_read_input_tokens": 11409,
+          "cache_creation_input_tokens": 1530,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1530
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

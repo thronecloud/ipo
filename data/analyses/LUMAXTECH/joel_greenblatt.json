@@ -1,0 +1,69 @@
+{
+  "symbol": "LUMAXTECH",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T18:15:03.006962Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Lumax Auto Technologies is a decent auto-components business with solid revenue growth (16.7% CAGR) and improving margins, but at current prices the Magic Formula yields only ~3.6% on earnings yield — less than half the 6% minimum required — making this far too expensive to act on. The rapidly rising debt load (INR 165 Cr → 902 Cr in 3 years) and capex intensity compressing free cash flow further disqualify it from the formula ranking.",
+    "key_strengths": [
+      "Revenue and EBIT compounding well — EBIT CAGR 23.8% over 9 years with consistent margin expansion (EBITDA margin ~13.5% in FY25)",
+      "Promoter holding stable at 55.98% with meaningful institutional participation (DII 16.5%); operating cash flow positive all 5 years reviewed",
+      "Diversified product portfolio across lighting, mechatronics, structures, and alt-fuels — reduces OEM concentration risk"
+    ],
+    "key_risks": [
+      "Overvalued on Magic Formula: Earnings Yield = EBIT/EV = 465/13,064 = 3.6%, well below the 6% floor; EV/EBITDA at 23.5x prices in perfection",
+      "Debt exploded from INR 165 Cr (FY22) to INR 902 Cr (FY25); finance costs CAGR 36% — rising interest burden could pressure net profit if growth slows",
+      "Capex intensity rising sharply (INR 180 Cr in FY25) — FCF only INR 118 Cr vs reported Net Profit of INR 229 Cr, a 48% FCF conversion gap"
+    ],
+    "red_flags": [
+      "Earnings Yield ~3.6% — the single most important Magic Formula metric fails badly at this price",
+      "Debt surged 5.5x in 3 years (FY22→FY25), almost certainly acquisition-driven (FY23 investing CF was -476 Cr); capital allocation risk is elevated",
+      "FCF of INR 118 Cr vs Net Profit of INR 229 Cr implies heavy capital recycling back into the business — not a high-quality compounder by Greenblatt standards"
+    ],
+    "detailed_analysis": "Running the Magic Formula on Lumax: EBIT FY25 = INR 465 Cr. Enterprise Value = Market Cap (12,234) + Debt (902) – Cash (72) = INR 13,064 Cr. Earnings Yield = 3.6% — this is disqualifyingly low. The 6% minimum threshold exists precisely to avoid situations like this: you are paying ~28x EBIT for an auto-parts manufacturer in a cyclical industry. Return on Capital is proxied by the reported ROCE of 19%, which is acceptable but falls short of the 25%+ level that justifies premium multiples in the Magic Formula framework. At current prices, neither leg of the formula works.\n\nThe business itself is operationally improving — EBITDA margins have expanded from ~10% in FY16 to ~13.5% in FY25 and management has clearly executed acquisitions to scale into new segments. However, those acquisitions came with significant debt (borrowings grew from INR 165 Cr to INR 1,111 Cr), and the quality of earnings is deteriorating: FCF conversion is only 52% of net profit in FY25 as capex ramped to INR 180 Cr. A P/E of 47.6x for a capital-intensive, cyclical auto-ancillary business with D/E of 0.87 and rising finance costs (INR 80 Cr in FY25) leaves no margin of safety. Wait for a significant price correction — at INR 900–1,000 the earnings yield improves to ~7% and the thesis becomes more interesting.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 50233,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08437485,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11441,
+      "cache_read_input_tokens": 9207,
+      "output_tokens": 2580,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11441
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 385,
+          "cache_read_input_tokens": 9207,
+          "cache_creation_input_tokens": 2234,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2234,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

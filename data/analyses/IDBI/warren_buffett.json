@@ -1,0 +1,69 @@
+{
+  "symbol": "IDBI",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-19T12:52:15.339737Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "IDBI Bank is a recovering government-owned institution that has dug itself out of a severe NPA crisis, but nine years of near-zero revenue growth and sub-15% ROE leave no room to call this a wonderful business. The overhanging privatisation saga — promoter holding sits at a stifling 94.72% — has suppressed the stock for years, and a Forward P/E of 15.32 implies the market expects current earnings to deteriorate.",
+    "key_strengths": [
+      "Remarkable NPA cleanup: losses of INR 14,970 Cr in FY19 reversed to INR 7,656 Cr net profit in FY25, a genuine operational turnaround",
+      "Balance sheet has grown — total assets from INR 300,699 Cr (FY20) to INR 416,730 Cr (FY25) — and capital base (equity) nearly doubled in five years",
+      "P/B of 1.16x is modest for a bank that now generates positive ROE, offering limited downside if privatisation proceeds"
+    ],
+    "key_risks": [
+      "Revenue CAGR of just 0.3% over nine years — the franchise has not grown; it has merely stopped shrinking",
+      "ROE of 13.6% is below my 15% minimum for a bank with this risk history; ROCE of 6.78% reflects the asset-heavy nature of banking",
+      "Privatisation by the Government of India and LIC (94.72% combined) is years behind schedule — capital locked in overhang, no catalysts visible"
+    ],
+    "red_flags": [
+      "Forward P/E of 15.32 vs trailing P/E of 8.69 implies the market models a ~43% earnings decline — something is not adding up",
+      "Negative operating cash flow in both FY23 (-INR 2,701 Cr) and FY24 (-INR 1,252 Cr), with FY25 OCF of INR 25,796 Cr appearing driven by balance-sheet changes rather than core earnings",
+      "A decade of accumulated losses destroyed enormous shareholder value; credibility as a capital allocator is not yet re-established"
+    ],
+    "detailed_analysis": "IDBI's turnaround from an institution that lost INR 14,970 Cr in a single year (FY19) to one earning INR 7,656 Cr in FY25 is operationally commendable. Credit goes to the resolution of legacy NPAs and tighter underwriting. However, I do not buy banks for their recoveries — I buy them for their future compounding ability, and here IDBI falls short. Revenue in FY25 (INR 28,917 Cr) is barely above FY16 levels (INR 28,058 Cr); a franchise that cannot grow revenues over a full economic cycle has no durable competitive edge.\n\nThe 94.72% promoter concentration means this is effectively still a government bank in terms of strategic decision-making. The promised strategic divestiture has dragged on through multiple budget cycles with no resolution. At P/B of 1.16x, the stock is not expensive in absolute terms, but I require both quality and a sensible price — and this bank does not yet demonstrate the consistent returns on equity that define a business worth owning for the long run.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 178497,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.23121345000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 23741,
+      "cache_read_input_tokens": 15219,
+      "output_tokens": 9174,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 23741,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 501,
+          "cache_read_input_tokens": 15219,
+          "cache_creation_input_tokens": 8522,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8522
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

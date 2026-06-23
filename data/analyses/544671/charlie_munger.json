@@ -1,0 +1,70 @@
+{
+  "symbol": "544671",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-20T11:11:09.662245Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "A sub-100 Cr revenue, leveraged (D/E 1.16) capital-goods micro-cap whose earnings spiked from ~0 Cr to 14 Cr in a single year — the kind of cyclically-amplified, un-moated business that fails the \"great business at a fair price\" test. The headline 73.8% ROE is a leverage artifact, not a durable compounder.",
+    "key_strengths": [
+      "Revenue CAGR of 20.5% (FY21→25) with operating margin expanding from ~6% to 18%",
+      "High promoter skin-in-the-game at 73.05% with reserves tripling in FY25",
+      "OCF turned positive and reached 15 Cr in FY25, debt reduced from 46 to 32 Cr"
+    ],
+    "key_risks": [
+      "Micro-cap (~99 Cr revenue) in a brutally cyclical infra-capex niche with no scale moat vs global rig OEMs",
+      "ROE of 73.8% is flattered by 1.16x leverage and a tiny 29 Cr equity base — not a quality signal",
+      "Profit went from 0→1→3→14 Cr; one-year earnings jump on construction cycle is unlikely to persist through a downturn"
+    ],
+    "red_flags": [
+      "Net profit grew ~14x in one year (3→14 Cr) on modest revenue growth — earnings quality questionable",
+      "Cash balance reported as ~0 despite 15 Cr OCF — working-capital/receivables need scrutiny",
+      "Borrowings of 33 Cr vs 29 Cr equity in a cyclical business; 3 Cr annual finance cost against thin historical profits",
+      "Recently listed (BSE 544671), no long public track record of capital allocation or through-cycle performance"
+    ],
+    "detailed_analysis": "Inverting first: what could go wrong? A small drilling-rig manufacturer selling into Indian construction/infra — HDD rigs, diaphragm wall rigs, rotary rigs — is a textbook cyclical with no identifiable moat. Competitors include global players (Bauer, Soilmec, Vermeer) with vastly more R&D and installed base. The business has sub-10% historical operating margins until a sudden FY25 jump to 18%, which more likely reflects a capex cycle peak in Indian infrastructure than structural improvement. Finance cost has consumed most of operating profit in prior years, and the balance sheet still carries 32 Cr of debt against 29 Cr of equity. Reported cash of zero alongside 15 Cr OCF is an accounting pattern that warrants serious scrutiny of working capital.\n\nOn Munger's checklist, this fails multiple gates. ROIC looks optically high only because the equity base is tiny and leveraged — strip the leverage and you get a mediocre industrial returning mid-teens on assets in its best year. There is no pricing power, no recurring revenue, no network effect, no brand. At P/E 11 and EV/EBITDA 11, it is not cheap enough to compensate for cyclical and quality risk — and I do not buy mediocre businesses cheaply anyway. Pass without regret; set this one in the \"too hard\" pile and wait for several years of through-cycle data before reconsidering.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 29622,
+    "model_used": "opus",
+    "total_cost_usd": 0.11399799999999999,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 10724,
+      "cache_read_input_tokens": 14536,
+      "output_tokens": 1587,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10724,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 11809,
+          "cache_creation_input_tokens": 1642,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1642
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

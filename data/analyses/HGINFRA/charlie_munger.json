@@ -1,0 +1,70 @@
+{
+  "symbol": "HGINFRA",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T17:44:45.683794Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "HG Infra's P/E of 10.6x masks a deeply flawed earnings quality story — FCF has been negative every year for five years, reaching -₹2,415 Cr in FY25 against net profit of ₹505 Cr, meaning reported earnings are essentially an accounting fiction. The business is funding aggressive HAM project expansion with debt (borrowings quadrupled from ₹1,513 Cr to ₹5,669 Cr in a single year), creating a fragile capital structure with no margin of safety.",
+    "key_strengths": [
+      "Strong 9-year revenue CAGR of 23.8% and EBITDA CAGR of 30.4% demonstrate genuine execution capability in Indian road infrastructure",
+      "Operating margins of 18.6% are healthy for EPC, suggesting disciplined project selection and cost control",
+      "High promoter holding of 71.78% aligns founder incentives with the business, and 71.78% skin-in-the-game limits asset stripping risk"
+    ],
+    "key_risks": [
+      "Cash flow destruction is severe — OCF negative in 4 of 5 years, FCF -₹2,415 Cr in FY25; earnings quality (FCF/NI) is deeply negative, the cardinal sin in Munger's framework",
+      "Debt explosion is alarming — borrowings surged from ₹1,513 Cr to ₹5,669 Cr (+274%) in FY25 alone; finance costs of ₹265 Cr now consume 52% of net profit",
+      "EPC/HAM is a structurally weak business — zero pricing power, perpetual bid competition, government counterparty risk, and no moat whatsoever"
+    ],
+    "red_flags": [
+      "FCF/Net Income deeply negative for 5 consecutive years — a structural problem, not a temporary one",
+      "Borrowings quadrupled in a single year (FY24→FY25: ₹1,513 Cr → ₹5,669 Cr); CWIP exploded from ₹14 Cr to ₹1,322 Cr — HAM funding binge with unclear return timeline",
+      "Revenue and net profit both declined in FY25 (revenue -6%, PAT -6%) while debt soared — negative operating leverage emerging",
+      "Finance cost CAGR of 36.6% matches net profit CAGR exactly — debt is eating all the value being created"
+    ],
+    "detailed_analysis": "Invert first: what makes this a terrible investment? The answer is right there in the cash flows. A company reporting ₹505 Cr in net profit while burning ₹878 Cr in operating cash and ₹2,415 Cr in free cash flow is not creating value — it is consuming it. The HAM (Hybrid Annuity Model) business requires HG Infra to fund 40% of project costs upfront, booking revenue via percentage-completion accounting while cash goes out the door. This accounting-reality divergence is exactly the complexity Munger warns against. The debt load is now existential: at D/E of 1.83x with negative operating cash flows, any slowdown in NHAI awarding or payment delays creates a liquidity crisis.\n\nThe business has no moat. EPC contractors win on price bids, have no pricing power, face intense competition from L&T, KNR, PNC Infra, and hundreds of smaller players, and are entirely dependent on government capex cycles. The 18.6% operating margin looks attractive but is a function of project mix, not durable competitive advantage. ROCE of 16.8% would be acceptable in a cash-generative business, but here it is a mirage — capital is being deployed into HAM assets at an accelerating pace, and the annuity cash inflows will take 15+ years to recoup. At ₹621/share with a P/E of 10.6x, the stock appears cheap, but cheap on illusory earnings is not cheap at all. This is a fair business at a misleadingly low price — precisely the trap Munger's framework is designed to avoid.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 51650,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0852315,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11232,
+      "cache_read_input_tokens": 8925,
+      "output_tokens": 2695,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11232
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 445,
+          "cache_read_input_tokens": 8925,
+          "cache_creation_input_tokens": 2307,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2307,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

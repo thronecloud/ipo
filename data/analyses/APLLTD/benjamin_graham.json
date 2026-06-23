@@ -1,0 +1,69 @@
+{
+  "symbol": "APLLTD",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T16:22:36.259956Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Alembic Pharmaceuticals is a century-old business with ten consecutive years of positive earnings, but at P/E 23.2x and P/B 2.9x it trades nearly double my maximum tolerable valuation. The Graham Number (~INR 425) implies the market is asking me to pay an 85% premium over intrinsic asset-earning value — a bargain hunter's nightmare.",
+    "key_strengths": [
+      "Unbroken 10-year earnings record (2016–2025) with profits ranging INR 342–1,146 Cr — the minimum consistency I demand",
+      "Conservative balance sheet: D/E of 0.28 is well below my 0.5 ceiling, and borrowings were restrained until 2025",
+      "High promoter holding (69.74%) aligns management with long-term ownership, not short-term stock games"
+    ],
+    "key_risks": [
+      "Valuation grotesquely exceeds Graham Number: price INR 785 vs. computed Graham Number ~INR 425 (EPS ~29.6, BVPS ~271) — an 85% premium with zero margin of safety",
+      "Deteriorating earning power: 9-year Net Profit CAGR is -2.3% and EBITDA CAGR is -0.3% — revenue grows but profits shrink, the classic margin compression trap",
+      "Cash flow collapse in FY2025: OCF plunged from INR 803 Cr to just INR 88 Cr; FCF turned deeply negative (-INR 466 Cr); borrowings nearly tripled from INR 513 Cr to INR 1,489 Cr in a single year"
+    ],
+    "red_flags": [
+      "FY2025 OCF (INR 88 Cr) is a fraction of reported net profit (INR 582 Cr) — earnings quality is suspect; cash is not following profits",
+      "Finance costs compounding at 35.9% CAGR (INR 5 Cr → INR 79 Cr) signal mounting debt servicing burden eating into earnings",
+      "CWIP rose sharply to INR 903 Cr in FY2025 alongside a debt surge — capital allocation is voracious with no demonstrated payoff in profits yet"
+    ],
+    "detailed_analysis": "By every quantitative yardstick I have prescribed, Alembic Pharmaceuticals fails the test of the intelligent investor. P/E of 23.2x is 55% above my absolute ceiling of 15x. P/B of 2.9x is nearly double my 1.5x limit. The computed Graham Number of approximately INR 425 (using FY2025 EPS of ~29.6 and book value per share of ~271) exposes that the market demands an 85% premium over the price I would consider fair. Mr. Market is feeling ebullient; I am not obliged to join him.\n\nWhat troubles me more than the price is the trend in earning power — the true foundation of intrinsic value. Over nine years, revenue grew 8.6% annually while net profits actually *shrank* at -2.3% CAGR. The company is running faster to stand still. Worse, FY2025 delivered a severe warning: operating cash flow collapsed to INR 88 Cr against net profit of INR 582 Cr, free cash flow turned negative at -INR 466 Cr, and management nearly tripled borrowings in one year to fund a capex binge (INR 564 Cr capex, CWIP INR 903 Cr). When a company earns on paper but cannot convert that to cash, I grow deeply suspicious. I require a margin of safety before I invest; here I find only a margin of danger.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 53575,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07616429999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9256,
+      "cache_read_input_tokens": 11151,
+      "output_tokens": 2540,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9256,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 381,
+          "cache_read_input_tokens": 9101,
+          "cache_creation_input_tokens": 2205,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2205
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "symbol": "ACMESOLAR",
+  "persona": "vijay_kedia",
+  "persona_display_name": "Vijay Kedia",
+  "analyzed_at": "2026-04-19T06:21:28.097925Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "ACME Solar operates in the right secular theme (India's 500 GW renewable target) but is structurally debt-laden (D/E 2.72, borrowings 12,998 Cr), delivers meager returns (ROE 7.57%, ROCE 8.42%), and posted contracting revenues at -4.6% CAGR over 5 years — all at 36.8x P/E and 18,440 Cr market cap. The economics of Indian solar IPPs benefit the nation, not minority shareholders.",
+    "key_strengths": [
+      "Massive operational scale: 2,540 MW installed + 3,780 MW under construction — one of India's largest renewable IPPs with long-term PPA visibility",
+      "Promoter holding 83.29% with very high skin in game — promoter believes in the long-term build-out story",
+      "OCF positive all 5 years (922 Cr to 1,543 Cr) — underlying solar assets generate stable cash flows even as growth capex weighs on FCF"
+    ],
+    "key_risks": [
+      "D/E of 2.72 with 12,998 Cr borrowings; finance cost of 759 Cr in FY25 consumes the majority of operating income — equity holders are residual claimants on a leveraged structure",
+      "Revenue contracted from 1,777 Cr (FY20) to 1,405 Cr (FY25) at -4.6% CAGR — old capacity is being sold/decommissioned faster than new capacity is being recognized",
+      "FCF deeply negative (-1,719 Cr in FY25) — this is a perpetual capital-raising machine where equity holders face continuous dilution risk"
+    ],
+    "red_flags": [
+      "D/E 2.72 — far exceeds the 0.4 red-flag threshold; debt is 12,998 Cr vs equity 4,784 Cr",
+      "ROE 7.57%, ROCE 8.42% — both below cost of capital; value destruction at current leverage",
+      "Revenue CAGR -4.6% over 5 years — not growth, but churn",
+      "FCF -1,719 Cr in FY25 — the business consumes far more than it generates",
+      "Market cap 18,440 Cr for a loss-of-scale, high-debt renewable developer"
+    ],
+    "detailed_analysis": "ACME Solar is a capital recycling story — build solar capacity, earn regulated returns via PPAs, potentially sell assets to infrastructure funds. The structural thesis around India's energy transition is real, but the financial model is deeply unfriendly to minority equity holders. Interest costs of 759 Cr in FY25 consumed 54% of EBITDA (1,396 Cr), leaving almost nothing for equity. The net profit of 251 Cr in FY25 vs 698 Cr in FY24 confirms one-off gains are inflating the earnings picture — FY24 had extraordinary 'other income' of 891 Cr.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 204974,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.25491645,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 22309,
+      "cache_read_input_tokens": 16679,
+      "output_tokens": 11083,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 22309,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 1094,
+          "cache_read_input_tokens": 14554,
+          "cache_creation_input_tokens": 9880,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 9880
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

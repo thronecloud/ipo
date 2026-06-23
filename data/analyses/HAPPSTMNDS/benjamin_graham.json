@@ -1,0 +1,70 @@
+{
+  "symbol": "HAPPSTMNDS",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T17:32:24.064022Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Happiest Minds trades at INR 382 against a Graham Number of approximately INR 173 (sqrt(22.5 × EPS ~12.3 × BVPS ~108)), meaning the market demands a 120% premium over intrinsic value with zero margin of safety. The company's exploding debt load — borrowings up 6.6x from INR 193 Cr (2021) to INR 1,274 Cr (2025) — while net profit actually fell from INR 248 Cr to INR 185 Cr is precisely the kind of deteriorating financial reality masked by a bullish growth narrative.",
+    "key_strengths": [
+      "Six consecutive years of positive earnings (INR 14 Cr → 248 Cr, 2019–2024) — the one genuine Graham virtue here.",
+      "Operating cash flow positive all 5 years (OCF INR 236 Cr in 2025), meaning earnings are not illusory.",
+      "Debt/Equity of 0.28 remains below Graham's 0.5 threshold — for now."
+    ],
+    "key_risks": [
+      "Borrowings exploded from INR 193 Cr to INR 1,274 Cr in four years; finance costs surged from INR 7 Cr to INR 99 Cr, directly killing net profit in FY2025.",
+      "Interest coverage has collapsed from 27x (FY2021) to barely 3.6x (354/99) — dangerously close to Graham's 3.5x minimum floor.",
+      "P/E of 28 and P/B of 3.51 both fail Graham's screens decisively; the market is pricing in years of future growth, leaving nothing for the buyer."
+    ],
+    "red_flags": [
+      "Graham Number ~INR 173 vs market price INR 382 — trading at 2.2x intrinsic value, no margin of safety whatsoever.",
+      "Net profit fell 25% (INR 248→185 Cr) in FY2025 despite 27% revenue growth — debt servicing is visibly eroding shareholder returns.",
+      "Investing cash outflows of INR 731 Cr in FY2025 financed by INR 499 Cr in new borrowings — acquisition-driven growth strategy carries hidden integration and leverage risk.",
+      "No dividend yield disclosed — the shareholder receives no current income while paying a speculative premium."
+    ],
+    "detailed_analysis": "By every quantitative standard I have established in fifty years of practice, Happiest Minds is priced for the optimist, not the analyst. A P/E of 28 is nearly double my maximum of 15; a P/B of 3.51 is more than double my threshold of 1.5. The Graham Number — the most honest single measure of what a defensive investor should pay — stands near INR 173, making the current price of INR 382 a 121% premium. Mr. Market is in an extraordinarily cheerful mood about this company's future, but I am paid to be skeptical of cheerfulness.\n\nWhat concerns me more than the valuation is the structural shift in the balance sheet. In four years this company has borrowed an additional INR 1,081 Cr, sending annual finance costs from INR 7 Cr to INR 99 Cr. The consequence is visible in FY2025: revenue grew 27% yet net profit shrank by INR 63 Cr. This is the arithmetic of leverage working against the common shareholder. The operating business remains sound — positive free cash flow, decent margins — but the intelligent investor does not buy a sound business at any price. He buys it at a price that provides a margin of safety against error, adversity, and the inevitable disappointments that no business escapes. That price is nowhere near INR 382.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 51575,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0816894,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9596,
+      "cache_read_input_tokens": 11168,
+      "output_tokens": 2823,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9596
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 346,
+          "cache_read_input_tokens": 9118,
+          "cache_creation_input_tokens": 2528,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2528,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

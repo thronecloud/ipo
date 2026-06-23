@@ -1,0 +1,69 @@
+{
+  "symbol": "544665",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-20T11:07:10.576852Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "Global Ocean fails the Magic Formula on both axes — a dismal 0.53% ROE implies near-zero return on capital, while a 21.7x P/E (earnings yield ~4.6%) is expensive, not cheap. You are paying a premium multiple for a business that is barely earning anything on its capital base.",
+    "key_strengths": [
+      "Asset-light freight forwarding model can scale without heavy capex if utilization improves",
+      "Promoter holding of 59.86% shows skin in the game",
+      "Small base (₹148 Cr mcap) allows optionality if execution turns around"
+    ],
+    "key_risks": [
+      "ROE of 0.53% is effectively no return on capital — fails ROIC test badly",
+      "Earnings yield ~4.6% at 21.7x P/E means it is expensive on an absolute basis",
+      "Incorporated Jan 2021 — no multi-year track record of sustained profitability"
+    ],
+    "red_flags": [
+      "ROE of 0.53% — roughly 30x below Magic Formula threshold",
+      "Earnings yield below 6% threshold — overvalued by quantitative screens",
+      "Freight forwarding is a commoditized, low-margin industry dominated by global players"
+    ],
+    "detailed_analysis": "Qualitatively, freight forwarding is a brutally competitive, low-margin industry where scale, global network, and carrier relationships determine economics. A ₹148 Cr company incorporated in 2021 has none of these advantages versus DHL, Kuehne+Nagel, or even domestic players like Allcargo. The 59.86% promoter holding is the lone bright spot, but it does not compensate for the fact that investors are paying 21.7x earnings for a business earning 0.53% on equity. Systematic discipline says avoid — there will be dozens of genuinely cheap, high-ROIC names on the BSE that rank far better.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 24840,
+    "model_used": "opus",
+    "total_cost_usd": 0.096937,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8916,
+      "cache_read_input_tokens": 13464,
+      "output_tokens": 1378,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8916,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10594,
+          "cache_creation_input_tokens": 1192,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1192
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

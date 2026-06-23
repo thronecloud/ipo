@@ -1,0 +1,71 @@
+{
+  "symbol": "LLOYDSENT",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-18T18:22:02.609597Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Lloyds Enterprises is a sprawling conglomerate (steel, real estate, engineering, pizza outlets, mining) with revenue that surged from near-zero to INR 1,488 Cr — but net profit is actually *declining* (INR 175 Cr→123 Cr), operating margins are a thin 6%, and EV/EBITDA of 78x is indefensible for any steel/trading business. There is no clean story here, just noise.",
+    "key_strengths": [
+      "Revenue CAGR of 30.9% (2016→2025) shows the business is operationally scaling fast",
+      "Low Debt/Equity of 0.16 — balance sheet not yet dangerously leveraged despite rapid growth",
+      "Promoter holding of 62.72% provides stability and alignment"
+    ],
+    "key_risks": [
+      "Net profit declining (-30%, INR 175 Cr→123 Cr in FY25) despite revenue growth — the story is already weakening",
+      "Profits are fake: 'Other Income' drove FY22 (INR 159 Cr) and FY24 (INR 135 Cr) earnings; operating income alone can't justify the valuation",
+      "Extreme 'diworsification' — steel trading, real estate, pizza (1441 Pizzeria), gold mining, and engineering under one roof with no apparent synergy"
+    ],
+    "red_flags": [
+      "EV/EBITDA of 78x for a 6% operating margin steel-trading/conglomerate — egregiously overvalued",
+      "ROE of only 2.48% and ROCE of 5.97% — destroying value at cost of equity",
+      "Balance sheet ballooned 2.3x in one year (INR 2,396 Cr→5,582 Cr assets) with borrowings jumping 5x (INR 125→671 Cr) — aggressive and opaque capital deployment",
+      "Institutional ownership near zero: FII 0.69%, DII 0.07% — smart money is absent",
+      "Former shell/NBFC (Shree Global Tradefin Ltd) rebranded in 2023 — classic promoter vehicle repositioning"
+    ],
+    "detailed_analysis": "Lloyds Enterprises fails every Lynch test. The \"story\" is incomprehensible: steel trading, residential real estate, engineering, electrical, pizza restaurants, and mining — this is not a focused compounder, it's a promoter conglomerate masquerading as a growth stock. The P/E of 37x sounds manageable until you realize net profit is *falling* (INR 175 Cr to 123 Cr), making the PEG ratio effectively infinite. Worse, the headline profits in FY22 and FY24 were almost entirely \"Other Income\" (INR 159 Cr and 135 Cr respectively vs. thin operating income) — these are non-recurring asset-sale or investment gains, not business earnings. Lynch would say: never confuse financial engineering with operating prowess.\n\nThe balance sheet is alarming. Total assets more than doubled in one year (INR 2,396→5,582 Cr) while borrowings surged 5x. CWIP jumped to INR 132 Cr, signaling heavy unproven capex. With ROCE at 5.97% and ROE at 2.48%, the company is earning far below any reasonable cost of capital — every rupee deployed is eroding shareholder value. At EV/EBITDA of 78x for a business generating 6% operating margins, the market is pricing in a perfection that the numbers explicitly contradict. Institutional investors (FII + DII = 0.76%) have voted with their feet. Avoid.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 49697,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08344800000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11078,
+      "cache_read_input_tokens": 8905,
+      "output_tokens": 2615,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11078
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 500,
+          "cache_read_input_tokens": 8905,
+          "cache_creation_input_tokens": 2173,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2173,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

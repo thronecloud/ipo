@@ -1,0 +1,71 @@
+{
+  "symbol": "AWFIS",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T16:36:12.129310Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "Awfis fails virtually every Graham quantitative filter — P/E of 44x, P/B of 5.18x, and D/E of 2.91x — with only a single year of net profitability (INR 68 Cr in FY25) after six consecutive years of losses, offering zero margin of safety. The capital-intensive co-working model with finance costs growing at a 73% CAGR is a debt trap masquerading as a growth story.",
+    "key_strengths": [
+      "Revenue growing at 41% CAGR (2019→2025), reaching INR 1,208 Cr — genuine commercial traction",
+      "Operating cash flow positive 5/5 years with FCF improving to INR 163 Cr in FY25 — real cash generation",
+      "EBITDA expanded to INR 456 Cr in FY25, demonstrating operating leverage exists in the model"
+    ],
+    "key_risks": [
+      "Debt/Equity of 2.91 with borrowings of INR 1,451 Cr — leverage is ruinous by any conservative standard",
+      "Only one year of net profitability in company history; no earnings track record whatsoever to base intrinsic value on",
+      "Finance costs at INR 136 Cr growing 73% CAGR — rising faster than revenue and will consume profits if rates rise or occupancy falters"
+    ],
+    "red_flags": [
+      "Promoter holding at merely 17% — the founders themselves show limited conviction in the business",
+      "Reserves were deeply negative as recently as FY24 (INR -113 Cr), turned positive only via FY25 equity raise",
+      "Graham Number cannot be meaningfully calculated — book value per share is thin and earnings history is one year old",
+      "WeWork's global collapse demonstrates co-working is a cyclical, lease-liability-heavy business with no durable moat",
+      "P/B of 5.18 — the market demands you pay INR 5.18 for every INR 1 of net assets in a capital-light-narrative but capital-heavy-reality business"
+    ],
+    "detailed_analysis": "From the perspective of Security Analysis, Awfis is a speculation dressed as an investment. The company spent six years — 2019 through 2024 — destroying capital, accumulating losses totalling approximately INR 295 Cr. FY25 produced INR 68 Cr of net profit, a single data point upon which the market has assigned a P/E of 44x. Graham's first requirement is a minimum of five consecutive years of positive earnings; Awfis has one. The balance sheet is alarming: borrowings of INR 1,451 Cr dwarf equity of INR 499 Cr, producing a D/E of 2.91 against my threshold of 0.5. Finance costs of INR 136 Cr in FY25 consumed fully 200% of reported net profit — meaning the business effectively earned nothing after servicing its lenders. No dividend has ever been paid.\n\nThe co-working sector compounds these concerns structurally. Awfis signs long-term leases (liabilities) and sells short-term memberships (revenue) — an inherently fragile mismatch that evaporates during economic downturns, as WeWork demonstrated catastrophically at scale. The 17% promoter holding suggests the founding shareholders have already partially monetised; institutional holders (FII 26%, DII 40%) are betting on a growth narrative, not asset value. Mr. Market is offering this company at INR 2,592 Cr — more than 5x book value and 22x next year's optimistic earnings. The intelligent investor does not pay for hope. There is no margin of safety here whatsoever.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 45777,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.06994125,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8771,
+      "cache_read_input_tokens": 10920,
+      "output_tokens": 2251,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 8771
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 346,
+          "cache_read_input_tokens": 8870,
+          "cache_creation_input_tokens": 1951,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1951,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

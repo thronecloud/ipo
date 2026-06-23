@@ -1,0 +1,69 @@
+{
+  "symbol": "AVANTIFEED",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T16:33:50.242480Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Avanti Feeds is a dominant shrimp feed player (~50% Indian market share) with a pristine balance sheet (D/E ≈ 0), but cyclical earnings and commodity-linked margins limit the durability of its moat. At 31.7x P/E, the market is pricing in perfection for a business that dropped net profit 38% in a single year (FY22).",
+    "key_strengths": [
+      "Near-zero debt (INR 15 Cr borrowings vs INR 3,011 Cr equity) — fortress balance sheet with reserves compounding from 1,390 to 2,997 Cr in 5 years",
+      "Dominant market position in Indian shrimp feed with established brand trust among aqua farmers, creating meaningful switching costs",
+      "Revenue CAGR of 12.6% and net profit CAGR of 15% over 9 years with FY25 momentum (OCF 584 Cr, highest on record)"
+    ],
+    "key_risks": [
+      "Severe earnings cyclicality — net profit swung from 466 Cr (FY18) → 245 Cr (FY22) → 557 Cr (FY25); this is not the predictable earnings stream I require",
+      "Commodity input exposure (fishmeal, soya) compresses pricing power and squeezes margins, with operating margins already thin at 11.6%",
+      "Shrimp disease outbreaks (EMS, WSSV) and weather events can crater aqua farmer demand overnight — an uncontrollable external risk"
+    ],
+    "red_flags": [
+      "Other income surging to INR 166 Cr in FY25 (29% of net profit) — suggests core earnings quality is lower than reported; treasury gains are masking operating performance",
+      "Investing outflow of -485 Cr in FY25 with only INR 26 Cr cash on hand raises questions about capital deployment discipline",
+      "FY22 saw negative OCF (-212 Cr) and negative FCF (-267 Cr) despite a profitable P&L — working capital volatility in commodity businesses is a hidden risk"
+    ],
+    "detailed_analysis": "Avanti Feeds runs a genuinely good business — it dominates India's shrimp feed industry, carries virtually no debt, and has compounded equity from INR 1,404 Cr to INR 3,011 Cr over five years. ROCE of 24% and ROE of 19.5% are respectable, and the FY25 recovery (net profit INR 557 Cr, OCF INR 584 Cr) is encouraging. But the 9-year earnings history tells a story I cannot ignore: profits nearly halved from FY18 to FY22 and OCF went sharply negative. When a business's fortunes hinge on shrimp disease cycles, monsoon patterns, and fishmeal spot prices, I struggle to predict earnings 10 years out — and that predictability is what I pay for.\n\nAt 31.7x trailing P/E and 21x EV/EBITDA, the stock prices in sustained compounding from a cyclical agri-commodity processor. The rapidly growing \"other income\" (INR 20 Cr in FY16 → INR 166 Cr in FY25, 26.5% CAGR) distorts the quality of reported earnings — strip it out and the core operating business is valued even more richly. I'd want to own this around 20–22x earnings with a clearer growth runway. A fair business at an expensive price is not my style.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 58002,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08383005,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11089,
+      "cache_read_input_tokens": 8991,
+      "output_tokens": 2636,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11089,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 578,
+          "cache_read_input_tokens": 8991,
+          "cache_creation_input_tokens": 2098,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2098
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

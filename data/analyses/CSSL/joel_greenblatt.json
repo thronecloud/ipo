@@ -1,0 +1,69 @@
+{
+  "symbol": "CSSL",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-21T08:01:49.105481Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "CSSL scores poorly on both Magic Formula metrics — earnings yield of ~8.4% (EBIT ₹31 Cr / EV ~₹371 Cr) falls well short of the 12% threshold, and despite a stated ROCE of 20.4%, consistently negative free cash flow (-₹3, -₹7, -₹26 Cr over three years) signals the returns on capital are illusory. Revenue is growing but the business is burning cash and piling on debt, making it a low-quality compounder at a fair-to-expensive price.",
+    "key_strengths": [
+      "Revenue growing at ~24% CAGR (₹309 Cr → ₹476 Cr), showing real top-line momentum.",
+      "Promoter holding of 73% indicates strong owner-operator alignment.",
+      "ROCE of 20.4% is nominally above Greenblatt's 20% threshold."
+    ],
+    "key_risks": [
+      "Borrowings nearly tripled in two years (₹44 Cr → ₹128 Cr), driving finance costs from ₹4 Cr to ₹10 Cr and squeezing net profit to ₹10 Cr from ₹12 Cr — growth is debt-funded, not self-funded.",
+      "Free cash flow is deeply negative and worsening (-₹26 Cr in 2025); OCF positive only 1 of 3 years — the Magic Formula requires real earnings, not accounting profits.",
+      "Operating margins are razor-thin at ~6.5% (₹31 Cr EBIT on ₹476 Cr revenue), typical of commoditised facility/security services with no pricing power."
+    ],
+    "red_flags": [
+      "Net profit FELL from ₹12 Cr to ₹10 Cr in 2025 despite 37% revenue growth — interest burden is eating the incremental earnings.",
+      "Free cash flow of -₹26 Cr in 2025 with financing cash flow of +₹37 Cr: the company is surviving on borrowed money, not operations.",
+      "CWIP jumped to ₹22 Cr and total assets doubled to ₹327 Cr — capital is being deployed heavily with no FCF payback visible yet."
+    ],
+    "detailed_analysis": "On the Magic Formula twin tests, CSSL fails to impress. Earnings yield (EBIT ₹31 Cr / EV ~₹371 Cr) comes in at roughly 8.4% — below the 12% floor Greenblatt demands for a stock to even enter the ranking. ROCE of 20.4% is marginally acceptable on paper, but that figure is undermined by the consistently negative free cash flow. The ROIC calculation using capital employed (equity ₹136 Cr + borrowings ₹128 Cr = ₹264 Cr) yields only ~11.7%, squarely in the \"mediocre\" zone. At a P/E of 18.8x on ₹10 Cr of net profit, the market is paying a full price for a business that converts zero earnings to cash.\n\nThe structural story is weak for a Magic Formula investor. Facility management and security staffing are low-moat, labour-intensive businesses with high competitive pressure and no pricing power — exactly the kind Greenblatt screens out in favour of businesses earning high returns on tangible capital. The debt explosion (₹44 Cr → ₹128 Cr in two years), declining net profit, and negative OCF in 2 of 3 years suggest the revenue growth is being funded externally rather than generated organically. Until the business demonstrates self-funding growth with FCF turning positive and margins expanding meaningfully, this fails both halves of the Magic Formula.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 41849,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07730535,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10183,
+      "cache_read_input_tokens": 8017,
+      "output_tokens": 2447,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10183,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 348,
+          "cache_read_input_tokens": 8017,
+          "cache_creation_input_tokens": 2166,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2166
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

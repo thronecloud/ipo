@@ -1,0 +1,71 @@
+{
+  "symbol": "GOKEX",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T17:26:54.126543Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Gokaldas Exports trades at 2.24x its Graham Number (INR 325 vs. price INR 727), with a P/E of 45.5x and P/B of 2.48x — every quantitative threshold I demand is violated. The business carries razor-thin operating margins of 2.92%, has delivered negative free cash flow in both FY24 and FY25, and financed its expansion with a 6.5x surge in borrowings (INR 154 Cr → INR 993 Cr in two years), making this a speculative growth bet masquerading as an operating business.",
+    "key_strengths": [
+      "Revenue CAGR of 14.5% over 9 years with strong recent acceleration (INR 2,379 Cr → INR 3,864 Cr in FY25) demonstrates real commercial traction.",
+      "Debt/Equity of 0.46 is technically below my 0.5 threshold — though trending in the wrong direction rapidly.",
+      "Operating income has recovered from losses (FY17: -32 Cr, FY18: -23 Cr) to INR 371 Cr in FY25, showing the business can earn at scale."
+    ],
+    "key_risks": [
+      "Earnings losses in FY17 (-47 Cr) and FY18 (-31 Cr) disqualify the company from my requirement of 5 consecutive years of positive earnings — the record is inherently interrupted.",
+      "Borrowings surged from INR 154 Cr (FY23) to INR 993 Cr (FY25) while finance costs doubled to INR 77 Cr; this leverage expansion during a thin-margin period is alarming.",
+      "Free cash flow was -INR 865 Cr in FY24 and -INR 131 Cr in FY25; the company is consuming cash, not producing it — the cardinal sin for a Graham investor."
+    ],
+    "red_flags": [
+      "Graham Number: ~INR 325 vs. price INR 727 — stock trades at a 124% premium to intrinsic value by my formula.",
+      "P/E of 45.5x is 3x my maximum acceptable threshold of 15x; no margin of safety whatsoever.",
+      "Promoter stake of only 9.15% is extraordinarily low — insiders own almost nothing, a profound alignment failure.",
+      "Operating margin of 2.92% leaves no buffer against any demand shock, currency move, or input cost increase.",
+      "No dividend history mentioned — shareholders receive no tangible cash return while management deploys capital aggressively."
+    ],
+    "detailed_analysis": "Applying my strict quantitative filters, Gokaldas Exports fails on virtually every dimension. The Graham Number — derived from EPS of ~INR 16 (implied by 45.5x P/E) and book value of ~INR 293 per share — yields roughly INR 325, meaning the market demands a 124% premium over what the numbers justify. A P/B of 2.48x means I am paying INR 2.48 for every rupee of net assets, when I prefer to pay less than INR 1.00. The operating margin of 2.92% on INR 3,864 Cr of revenue leaves the company perpetually one bad season away from losses — as FY17 and FY18 demonstrated when the business went deeply into the red. ROE of 8.16% and ROCE of 10.60% are mediocre; I expect businesses I own to compound equity at meaningful rates, and these figures do not compensate for the risk embedded in a capital-intensive, export-dependent garment manufacturer.\n\nWhat concerns me most is the capital structure trajectory. Borrowings have ballooned from INR 154 Cr to INR 993 Cr in just two years, funding an acquisition-driven asset base that grew from INR 1,342 Cr to INR 3,899 Cr. Free cash flow was negative INR 865 Cr in FY24 and negative INR 131 Cr in FY25 — the business is burning cash during its supposed expansion. The promoter's 9.15% stake tells me management has little skin in the game. Mr. Market has assigned a euphoric multiple to a revenue growth story; the disciplined analyst must ask what happens when that growth disappoints, margins remain thin, and rising interest costs (INR 77 Cr in FY25, up from INR 26 Cr in FY23) erode already fragile earnings. I see no margin of safety here — only speculation priced as certainty.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 65689,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09034634999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9899,
+      "cache_read_input_tokens": 11037,
+      "output_tokens": 3327,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9899
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 406,
+          "cache_read_input_tokens": 8987,
+          "cache_creation_input_tokens": 2962,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2962,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

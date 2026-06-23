@@ -1,0 +1,70 @@
+{
+  "symbol": "544340",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-20T09:49:42.192393Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Rikhav is a sub-scale stockbroker whose headline revenue tripled to INR 328 Cr in FY25 while net profit collapsed from 42 Cr to 24 Cr and operating cash flow swung to NEGATIVE 188 Cr — classic signs of a cyclical, commoditised business riding a bull-market top. Invert: at the next bear market, volumes vanish, margins compress further, and the \"cheap\" 6.6x P/E evaporates — this is a value trap, not a compounder.",
+    "key_strengths": [
+      "High promoter holding at 64.06% signals aligned skin-in-the-game",
+      "Low borrowings (INR 5 Cr) and equity raise (reserves 124→225 Cr) keep balance sheet unlevered",
+      "Revenue CAGR 109% (FY22→FY25) shows it captured retail broking tailwind"
+    ],
+    "key_risks": [
+      "Net profit fell 43% YoY (42→24 Cr) despite revenue tripling — severe margin decay",
+      "OCF positive only 1/4 years; FY25 OCF -188 Cr and FCF -189 Cr — earnings quality is poor",
+      "Discount-broking is a commoditised, hyper-cyclical business with zero durable moat vs Zerodha/Groww/Angel"
+    ],
+    "red_flags": [
+      "Operating income collapsed from 55 Cr (FY24) to 34 Cr (FY25) while revenue 3x — suggests low-margin prop/arbitrage revenue inflating topline",
+      "Other Income went to zero — prior profits partly non-operating",
+      "ROE of 12.9% is mediocre for an asset-light broker at a market cycle peak",
+      "Financing CF turned positive (+19 Cr) in FY25 via fresh capital — growth is being funded externally, not internally"
+    ],
+    "detailed_analysis": "Apply inversion: what kills a stockbroker? Falling market volumes, regulatory tightening on F&O (already underway via SEBI), and rising tech-driven price competition from Zerodha/Groww. Rikhav ticks every vulnerability box — it is a small, undifferentiated player whose FY25 numbers look superficially explosive but hide margin collapse (operating margin crashed from ~50% in FY24 to ~10% in FY25) and a violent negative operating cash flow of INR 188 Cr. The divergence between accounting profit (24 Cr) and cash generation (-188 Cr) is exactly the pattern that punishes unwary investors when the cycle turns.\n\nROCE of 16.7% and ROE of 12.9% are unimpressive for a capital-light business at peak-cycle, well below the 20%+ threshold I look for in a compounder. The \"cheap\" 6.6x P/E reflects the market's correct skepticism that FY25 earnings are repeatable — this is peak-earnings-times-peak-multiple masquerading as value. A Munger portfolio has no place for a sub-scale brokerage with no moat, volatile cash flow, and a business model fundamentally dependent on retail speculation. Pass decisively; revisit only after a full cycle proves normalised earnings power.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 30040,
+    "model_used": "opus",
+    "total_cost_usd": 0.11328674999999999,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 10215,
+      "cache_read_input_tokens": 14026,
+      "output_tokens": 1696,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10215,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 113,
+          "cache_read_input_tokens": 11299,
+          "cache_creation_input_tokens": 1643,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1643
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

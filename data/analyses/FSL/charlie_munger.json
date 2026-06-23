@@ -1,0 +1,69 @@
+{
+  "symbol": "FSL",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-22T16:38:18.482160Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "AVOID",
+    "investment_thesis": "Firstsource is a competent BPO operator but competes in a structurally commoditized industry with no durable pricing power — exactly the kind of business Munger avoids regardless of price. Deteriorating FCF (₹806 Cr → ₹477 Cr over 4 years despite revenue growth) and a sharp debt surge in FY25 signal worsening capital efficiency, not compounding quality.",
+    "key_strengths": [
+      "Consistent revenue growth at 10.6% 9Y CAGR with operating income growing faster at 13.4%, showing modest operating leverage",
+      "Promoter holding of 53.66% (RPSG Group) provides alignment; DII ownership of 25.49% adds institutional validation",
+      "OCF positive all 5 years; diversified across Healthcare, BFSI, and CMT reduces client concentration risk"
+    ],
+    "key_risks": [
+      "Weak moat — BPO/IT services is deeply commoditized; clients routinely retendering contracts and threatening margin compression",
+      "FCF declining sharply (₹806→477 Cr, 2021-2025) while net profit grew — cash conversion deteriorating, FCF/NI at 80% barely passes the threshold",
+      "Debt nearly doubled in one year (₹1,526→₹2,569 Cr, FY24→FY25) with cash near zero (₹13 Cr); finance costs growing at 13.1% CAGR outpacing revenue"
+    ],
+    "red_flags": [
+      "FY25 investing CF of -₹744 Cr suggests a large acquisition — opaque capital allocation with no visible integration track record",
+      "Net profit CAGR (9.6%) lagging revenue CAGR (10.6%) over 9 years — structural margin dilution, not expansion",
+      "ROE of 15% and ROCE of 15.4% barely clear Munger's minimum hurdle; these are not the economics of a toll-bridge or dominant franchise"
+    ],
+    "detailed_analysis": "Applying inversion first: what makes this a bad investment? BPO is labor arbitrage dressed up as technology enablement. Clients stay only as long as cost and quality hold up — there is no switching cost comparable to enterprise software, no network effect, no proprietary data advantage that compounds. Firstsource's operating margin of 11.93% reflects this — it is perpetually one Indian wage cycle or one competitor price cut away from margin erosion. The 9-year net profit CAGR of 9.6% trailing revenue at 10.6% confirms that scale has not generated the pricing power or margin expansion a true compounder would exhibit.\n\nThe FY25 balance sheet is the sharpest red flag. Total debt surged from ₹1,526 Cr to ₹2,569 Cr in a single year, cash collapsed to ₹13 Cr, and the investing CF was -₹744 Cr — almost certainly an acquisition. Munger despises acquisitions made at speed without a clear integration thesis, and frequent acquisitions without demonstrated returns are explicitly on his avoid-list. At 24x P/E and 15.5x EV/EBITDA for a 15% ROE business with declining FCF and a leveraged balance sheet, the price offers no margin of safety. This is a fair business at a fair price — which, by definition, is not worth owning.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 50290,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08100779999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11410,
+      "cache_read_input_tokens": 9271,
+      "output_tokens": 2362,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11410,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 271,
+          "cache_read_input_tokens": 9271,
+          "cache_creation_input_tokens": 2139,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2139
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

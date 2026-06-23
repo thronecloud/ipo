@@ -1,0 +1,69 @@
+{
+  "symbol": "544347",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-20T09:49:46.791796Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "CLN Energy is a tiny 2019-vintage EV components maker (Mcap ₹296 Cr) with mediocre ROCE of 12.25% — below my 15% threshold — trading at 25.4x earnings. Invert: a sub-scale lithium-ion battery assembler competing against Chinese giants and well-capitalized Indian players has no visible moat, and paying a premium multiple for commodity-like economics is how you lose money slowly.",
+    "key_strengths": [
+      "High promoter holding (72.6%) signals skin in the game",
+      "FII interest (12.6%) suggests some institutional validation",
+      "Exposure to structurally growing EV powertrain demand"
+    ],
+    "key_risks": [
+      "ROCE 12.25% < cost of capital in India — value-destructive at scale",
+      "Lithium-ion cells are commoditised; India imports cells from China — no cost moat",
+      "Tiny Mcap (₹296 Cr) + 5-year operating history = unproven through a cycle"
+    ],
+    "red_flags": [
+      "ROCE (12.25%) below ROE (13.70%) divergence suggests some leverage use",
+      "P/E 25.4x for sub-15% ROCE business is mispriced optimism",
+      "Auto-component classification masks what is effectively a battery-pack assembler — limited IP"
+    ],
+    "detailed_analysis": "Applying inversion: what kills this business? Chinese cell dumping, a capex arms race from Exide/Amara Raja/Ola/Tata on gigafactories, or OEMs in-sourcing battery packs. CLN is a ₹296 Cr assembler with ROCE of 12.25% — barely clearing the cost of equity in India, and well below the 15%+ I require for a quality compounder. A 2019-founded company has not been tested through a demand cycle, a commodity price spike, or a technology transition (LFP vs NMC vs sodium-ion). Paying 25.4x earnings for this profile prices in execution perfection.\n\nThe EV tailwind is real, but tailwinds don't create moats — scale, IP, and switching costs do, and CLN demonstrably has none of these at its current size. I'd want to see ROCE sustained above 18% for three years, FCF/PAT above 80%, and evidence of a defensible customer relationship before revisiting. Until then, this is a speculation on the Indian EV theme, not an investment in a compounding machine. Pass.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 25196,
+    "model_used": "opus",
+    "total_cost_usd": 0.09037624999999999,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8915,
+      "cache_read_input_tokens": 13205,
+      "output_tokens": 1121,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8915,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10478,
+          "cache_creation_input_tokens": 1164,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1164
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "KRBL",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T18:07:23.094688Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "KRBL passes most of my quantitative filters — near-zero debt, 10 consecutive years of positive earnings, and a P/E of 12.4 — but the stock trades at approximately INR 351 against a calculated Graham Number of ~INR 335 (using 2025 EPS of ~INR 20.8 and BVPS of ~INR 239.5), offering no margin of safety. With earnings and EBITDA in a clear multi-year contraction, I cannot justify paying even a modest premium to intrinsic value.",
+    "key_strengths": [
+      "Virtually debt-free: D/E of 0.01, finance costs collapsed from INR 67 Cr (2016) to INR 15 Cr (2025), interest coverage ~50x — fortress balance sheet by any standard",
+      "Unbroken 10-year earnings record with net profit CAGR of 5.5% (2016–2025); the business has survived multiple commodity cycles without a loss year",
+      "P/B of 1.47 is just within my 1.5x ceiling, and P/E of 12.4 (forward 9.4x) represents the kind of modest pricing I respect in a consumer staples company"
+    ],
+    "key_risks": [
+      "Earnings are deteriorating badly: net profit fell from INR 701 Cr (2023) to INR 476 Cr (2025), a 32% decline in two years — the business is not growing, it is shrinking",
+      "ROE of only 9.4% and ROCE of 11.8% are mediocre; a business retaining earnings at these returns destroys value relative to its cost of capital over time",
+      "Operating cash flow swung from INR -360 Cr (2023) to INR +961 Cr (2025), masking erratic working capital management typical of commodity-linked agri businesses — rice inventories can trap capital unpredictably"
+    ],
+    "red_flags": [
+      "Price of INR 351 trades ~5% ABOVE the Graham Number of ~INR 335 — there is no margin of safety whatsoever at current levels",
+      "Large and unexplained investing outflow of INR -523 Cr in FY2025 vs. capex of only INR -96 Cr — the gap of ~INR 427 Cr is unaccounted and warrants scrutiny",
+      "EBITDA margin compressed from 20.9% (FY2019) to 13.5% (FY2025) — a decade-long structural margin erosion that the income statement CAGR obscures"
+    ],
+    "detailed_analysis": "KRBL is among the more interesting names I have encountered in the Indian consumer space by my strict standards. The balance sheet is exemplary — borrowings of a mere INR 71 Cr against equity of INR 5,483 Cr, reserves compounding at a steady pace, and finance costs that have virtually disappeared. A current ratio I can infer is strong. Founded in 1889, this is a 135-year-old enterprise with a genuine brand (India Gate commands dominant basmati shelf space globally) and an unbroken earnings record across my full data window. These are rare qualities.\n\nYet the margin of safety — the very cornerstone of my method — is absent. My Graham Number calculation (√(22.5 × INR 20.8 EPS × INR 239.5 BVPS)) yields approximately INR 335, and the stock trades at INR 351, a 5% premium to intrinsic value. I require a 30–50% discount, not a premium. Worse, the earnings power underlying that number is declining: net profit has fallen 32% in two years, EBITDA margins have compressed from ~21% to ~13.5% over the decade, and operating income in FY2025 (INR 674 Cr) is barely above FY2016 levels (INR 447 Cr) adjusted for ten years of inflation. Mr. Market is not yet offering this at a bargain — a patient investor should wait for INR 230–250, where a proper margin of safety would exist.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "excellent",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 53715,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08190465,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9577,
+      "cache_read_input_tokens": 11173,
+      "output_tokens": 2842,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9577
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 378,
+          "cache_read_input_tokens": 9123,
+          "cache_creation_input_tokens": 2504,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2504,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "BRIGADE",
+  "persona": "howard_marks",
+  "persona_display_name": "Howard Marks",
+  "analyzed_at": "2026-04-19T12:53:21.956915Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Brigade is a quality South India real estate developer showing genuine EBITDA expansion, but at 24.6x trailing P/E and 15.3x EV/EBITDA the market is pricing continued upcycle execution with no margin of safety — a dangerous posture for a business that posted negative net profits in FY21 and FY22. FCF yield of ~1.9% (INR 358 Cr FCF / INR 18,644 Cr market cap) is dramatically below the 6-8% threshold required to compensate for cyclical risk.",
+    "key_strengths": [
+      "EBITDA expanded from INR 713 Cr (FY21) to INR 1,630 Cr (FY25) with operating margins widening to ~32%, demonstrating real execution quality",
+      "Large equity raise in FY25 (equity jumped from INR 3,516 Cr to INR 6,481 Cr) strengthened balance sheet, reducing net debt/EBITDA to ~2.85x",
+      "Diversified revenue streams across residential, commercial leasing, and hospitality provide partial cycle insulation"
+    ],
+    "key_risks": [
+      "Net debt of ~INR 4,651 Cr (Debt INR 5,950 Cr minus Cash INR 1,299 Cr) against EBITDA of INR 1,630 Cr is stressful if the property cycle turns — a 20% revenue decline would materially stress debt service",
+      "Gross capex surged to INR 639 Cr in FY25, compressing FCF to INR 358 Cr and signaling continued capital intensity at the top of the cycle",
+      "Deeply cyclical: the company generated negative net profit in both FY21 (-INR 96 Cr) and FY22 (-INR 65 Cr), proving how quickly profitability evaporates in downturns"
+    ],
+    "red_flags": [
+      "FCF yield of ~1.9% is well below the 6-8% minimum Marks demands to compensate for cyclical capital loss risk",
+      "Finance costs remain elevated at INR 495 Cr annually and growing at 10.7% CAGR — interest coverage is improving but thin in a stress scenario",
+      "Real estate sector broadly appears late-cycle with uniform bullishness; Bengaluru residential prices have run sharply and affordability is stretched"
+    ],
+    "detailed_analysis": "Brigade's 9-year revenue CAGR of 10.7% and EBITDA CAGR of 11.8% reflect a capable developer, and the FY25 performance (revenue INR 5,074 Cr, net profit INR 680 Cr) is genuinely impressive. However, second-level thinking demands I ask: what is this price already reflecting? At 15.3x EV/EBITDA for a capital-heavy cyclical with INR 5,950 Cr gross debt, the market is pricing near-perfect execution through a cycle that, by definition, must turn. The FY25 equity raise (reserves jumped INR 2,952 Cr) was dilutive and suggests management itself felt the balance sheet needed reinforcement.\n\nThe most dangerous time to own real estate developers is when everybody is bullish, construction is booming, and the last cycle's scars (FY21-22 losses) are forgotten. At current prices, the downside in a meaningful slowdown — slower pre-sales, higher rates, inventory buildup — could easily be 30-40% before any rational value support emerges. The risk/reward is not favorable for a new buyer.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 244541,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.30665595,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 27865,
+      "cache_read_input_tokens": 15344,
+      "output_tokens": 13170,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 27865,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 477,
+          "cache_read_input_tokens": 15344,
+          "cache_creation_input_tokens": 12521,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 12521
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

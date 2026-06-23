@@ -1,0 +1,69 @@
+{
+  "symbol": "CCL",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-19T12:55:53.626976Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "CCL Products is a genuine scale player in global instant coffee processing with a 14.3% revenue CAGR over nine years, but the business is in a debt-financed expansion cycle that has produced negative FCF in three of the last four years and nearly tripled borrowings to ₹1,813 Cr. At 38.7x P/E, investors are paying growth-stock valuations for a commodity-adjacent processor with sub-threshold ROCE.",
+    "key_strengths": [
+      "14.3% revenue CAGR over nine years demonstrates genuine market share gains in export markets; CCL is a credible global-scale coffee processor, not just a domestic story",
+      "Continental brand in India is an early-stage B2C asset with optionality — if consumer coffee penetration in India grows (which it will), this brand could command premium margins over time",
+      "ROE of 17% and promoter holding of 46.11% indicate management alignment and adequate equity returns when the capex cycle normalises"
+    ],
+    "key_risks": [
+      "ROCE of 13.1% is below my 15% floor, and it is being suppressed by a massive capex cycle (₹513 Cr in FY2024, ₹418 Cr in FY2025); if new capacity earns similar or lower returns, ROIC will not improve",
+      "Finance costs exploded from ₹11 Cr (FY2016) to ₹113 Cr (FY2025) — a 29.5% CAGR — directly compressing net margins; debt/equity rose from ~0.5x to 0.78x and total debt tripled in 3 years to ₹1,813 Cr",
+      "FCF has been negative in FY2022 (-₹74 Cr), FY2023 (-₹159 Cr), FY2024 (-₹458 Cr), FY2025 (-₹128 Cr) — four consecutive years of free cash burn means the business is not yet self-funding its ambitions"
+    ],
+    "red_flags": [
+      "Net profit of ₹250 Cr in FY2024 vs ₹284 Cr in FY2023 — profit actually declined in a year of heavy investment; this is a warning that scale is not translating to improved unit economics as expected",
+      "Total debt nearly tripled from ₹655 Cr (FY2022) to ₹1,813 Cr (FY2025) while EBITDA grew from ₹332 Cr to ₹559 Cr — debt is growing much faster than earnings capacity",
+      "At 38.7x P/E and 6.96x P/B for a B2B coffee processor with negative FCF, the valuation assumes perfect execution of a capacity expansion whose returns are not yet demonstrated"
+    ],
+    "detailed_analysis": "I respect businesses that build scale in global commodity processing — it is harder than it looks and requires operational excellence. CCL has done this in instant coffee, growing revenue from ₹932 Cr to ₹3,106 Cr over nine years. However, I think with great clarity when I invert: what kills this investment? The answer is a debt-funded capacity expansion at low marginal ROIC, with ₹1,813 Cr of debt earning 13.1% ROCE and paying ~6-7% interest — the spread is thin, and any demand softness or coffee price shock will squeeze it further.\n\nThe FCF story is the most honest picture: four consecutive years of negative free cash flow signal that this business is consuming capital faster than it generates it. Management may argue this is temporary — once the new capacity is utilised, FCF will normalise. That may be true. But I require a margin of safety, and 38.7x P/E offers none. I will not pay a premium multiple for a negative-FCF business with rising debt, even one with genuine growth. The business earns a HOLD until the capex cycle ends and ROCE demonstrably recovers above 15%.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 208923,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.27467865,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 26199,
+      "cache_read_input_tokens": 15378,
+      "output_tokens": 11454,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 26199,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 559,
+          "cache_read_input_tokens": 15378,
+          "cache_creation_input_tokens": 10821,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 10821
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

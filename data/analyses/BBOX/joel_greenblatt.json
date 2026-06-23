@@ -1,0 +1,70 @@
+{
+  "symbol": "BBOX",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T16:44:26.996422Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Black Box scores well on return on capital (~33% ROIC, ROCE 29.8%) but fails the Magic Formula's equally critical earnings yield test at just ~5.2% EBIT/EV — well below the 12% minimum threshold for attractiveness. The business is a good one priced too richly to act on.",
+    "key_strengths": [
+      "High ROIC ~33% (EBIT INR 538 Cr / Invested Capital ~INR 1,633 Cr) — sustained capital efficiency",
+      "Operating income CAGR of 64.8% over 9 years, with a clear expanding trend in FY24–25",
+      "Strong promoter conviction at 69.99% holding"
+    ],
+    "key_risks": [
+      "Earnings yield only ~5.2% (EV ~INR 10,335 Cr vs EBIT INR 538 Cr) — well below Magic Formula's 12% floor",
+      "FCF turned sharply negative in FY25 (-INR 129 Cr) and OCF also negative (-INR 88 Cr) — working capital deterioration",
+      "Debt rising fast (INR 628 Cr → INR 942 Cr in 2 years) while revenue actually contracted YoY (INR 6,282 → INR 5,967 Cr)"
+    ],
+    "red_flags": [
+      "Negative Free Cash Flow in FY25 (-INR 129 Cr) undermines the quality of reported EBIT",
+      "Finance costs INR 145 Cr = 27% of EBIT — interest burden severely clips equity returns",
+      "Other income persistently negative (FY25: -INR 68 Cr), suggesting recurring forex or goodwill charges obscured in EBIT",
+      "Revenue declining YoY in FY25 contradicts the growth premium embedded in 35x P/E"
+    ],
+    "detailed_analysis": "Magic Formula verdict: Black Box passes the quality screen (ROIC ~33%, ROCE 29.8%) but fails the value screen decisively. EV ≈ INR 10,335 Cr (Market Cap INR 9,607 Cr + Debt INR 942 Cr − Cash INR 214 Cr) against EBIT of INR 538 Cr yields an earnings yield of only 5.2% — less than half the 12% Greenblatt threshold. At P/E 35x and EV/EBITDA 21.7x, the market is paying a steep multiple for thin 7.3% operating margins in a largely systems-integration/IT-services business with significant debt (D/E 1.15). The Magic Formula only rewards companies cheap enough that even modest execution delivers strong returns; at current prices, there's no margin of safety.\n\nOperational quality is a mixed picture. The 9-year EBIT CAGR of 64.8% is impressive but heavily driven by the 2019 acquisition (revenue jumped from INR 733 Cr to INR 1,853 Cr then INR 4,994 Cr). More worryingly, FY25 OCF turned negative (-INR 88 Cr) for the first time since the consolidation, borrowings jumped INR 230 Cr in one year, and revenue contracted. Finance costs of INR 145 Cr consume 27% of EBIT, meaning reported ROE (44%) is heavily leveraged and fragile. This is a decent business at a bad price — watch for earnings yield to improve to 10%+ (EV compression or EBIT doubling) before revisiting.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 56763,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0905646,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11720,
+      "cache_read_input_tokens": 9202,
+      "output_tokens": 2923,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11720
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 446,
+          "cache_read_input_tokens": 9202,
+          "cache_creation_input_tokens": 2518,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2518,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

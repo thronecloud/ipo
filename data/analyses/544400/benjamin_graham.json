@@ -1,0 +1,70 @@
+{
+  "symbol": "544400",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-20T19:57:26.870842Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "A microcap jewellery retailer with P/E of 4.96 that superficially looks cheap, but ROE of 0.39% reveals earnings power is negligible — the low P/E is a mirage on a tiny earnings base. Without a multi-year earnings track record, dividend history, or meaningful returns on capital, this fails every quantitative test I require.",
+    "key_strengths": [
+      "Low headline P/E of 4.96 suggests market is not paying for growth",
+      "Promoter holding of 65.28% indicates skin in the game",
+      "Operates in tangible-asset business (gold/diamond inventory) with liquidation value"
+    ],
+    "key_risks": [
+      "ROE of 0.39% is essentially zero earning power — capital is dormant",
+      "Recently listed microcap (INR 40 Cr) — no multi-year audited earnings record",
+      "Jewellery retail is low-margin, working-capital heavy, vulnerable to gold price swings"
+    ],
+    "red_flags": [
+      "ROE below risk-free rate — destroys shareholder value in real terms",
+      "Recent IPO/SME listing lacks the 5-10 year consecutive earnings history I demand",
+      "No disclosed dividend — no proof of real cash returns to owners",
+      "Insufficient data on current ratio, D/E, or book value to verify balance sheet safety"
+    ],
+    "detailed_analysis": "The headline P/E of 4.96 will tempt undisciplined value hunters, but one must never confuse a low multiple with a bargain. With ROE of 0.39%, this business is earning almost nothing on its equity — a bank fixed deposit yields 17x more with none of the operating risk. A low P/E on razor-thin earnings simply means the market is correctly recognising that the earnings base is unreliable and the business is barely economic. The Graham formula requires *proven earning power*, not the mathematical artefact of dividing a share price by a trivial EPS.\n\nFurthermore, this is a INR 40 Cr microcap in the jewellery retail trade — an industry characterised by bloated inventory, thin margins, and susceptibility to gold-price volatility and unorganised-sector competition. I have no visibility on the current ratio, debt-to-equity, interest coverage, or book value per share — all non-negotiable filters. Absent a 5-10 year record of consecutive profits, a dividend history, and a demonstrable margin of safety against net-net or book value, Mr. Market's \"cheap\" price is not a gift — it is a warning. Avoid.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "insufficient_data",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 23131,
+    "model_used": "opus",
+    "total_cost_usd": 0.0960385,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8948,
+      "cache_read_input_tokens": 13517,
+      "output_tokens": 1333,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8948,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 171,
+          "cache_read_input_tokens": 10631,
+          "cache_creation_input_tokens": 1203,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1203
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

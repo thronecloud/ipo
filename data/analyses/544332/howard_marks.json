@@ -1,0 +1,67 @@
+{
+  "symbol": "544332",
+  "persona": "howard_marks",
+  "persona_display_name": "Howard Marks",
+  "analyzed_at": "2026-04-20T09:47:53.226579Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Fabtech is a tiny (Rs 270 Cr) recent-listing cleanroom EPC player riding the pharma capex cycle, trading at 27.6x P/E with FY25 FCF of essentially zero despite reported profits — the price embeds execution perfection in a cyclical, working-capital-heavy turnkey business. The margin of safety is absent: there is no cushion if pharma capex cools or receivables stretch.",
+    "key_strengths": [
+      "Promoter holding healthy at 68.49%, signalling alignment"
+    ],
+    "key_risks": [
+      "OCF of just Rs 3 Cr vs Rs 13 Cr PAT in FY25 — earnings quality is suspect, working-capital absorbing profits",
+      "Lumpy turnkey order book: revenue dipped from 125 (2023) to 97 (2024) before rebounding — cyclicality proven",
+      "Micro-cap post-IPO euphoria: 27.6x P/E on Rs 13 Cr PAT leaves zero margin for error"
+    ],
+    "red_flags": [
+      "FCF collapsed to Rs 0 Cr in FY25 despite record profits — classic receivables/WIP build",
+      "Rs 26 Cr investing outflow + Rs 24 Cr financing inflow in FY25 = IPO-funded capex still unproven",
+      "Recent BSE listing at cycle high for Indian small-cap industrials"
+    ],
+    "detailed_analysis": "Second-level thinking here starts with: what does 27.6x P/E on a Rs 13 Cr profit base already assume? It assumes the FY25 jump (revenue 97→150, PAT 6→13) is a new baseline, not a cyclical peak. But look at the five-year pattern — revenue has oscillated 70/114/125/97/150. This is not a compounder; it's a project-EPC business whose P&L jumps with order execution timing. The 26.6% PAT CAGR is flattered by a weak 2020 base (Rs 4 Cr) and a strong 2025 finish. Meanwhile, OCF has been Rs 3 Cr for three of the last five years — the business generates accounting profit, not cash.\\n\\nOn risk: borrowings are modest (Rs 10 Cr), equity just raised (reserves jumped 49→83, financing CF +24), so solvency is fine near-term. But the real risk is permanent capital loss if pharma capex slows, receivables age, and the multiple derates from 27x to a more honest 12-15x for lumpy EPC work — that's a 40-55% downside from here. The asymmetry is wrong way round: limited upside (already priced for growth), meaningful downside (cycle + derating). I pass. If it traded at Rs 130-150 (P/E ~12-14x on normalized earnings), the conversation would be different.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "insufficient_data",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 26978,
+    "model_used": "opus",
+    "total_cost_usd": 0.10607225,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 10145,
+      "cache_read_input_tokens": 14572,
+      "output_tokens": 1414,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10145,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 114,
+          "cache_read_input_tokens": 11690,
+          "cache_creation_input_tokens": 1337,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1337
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

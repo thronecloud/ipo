@@ -1,0 +1,70 @@
+{
+  "symbol": "PCJEWELLER",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-18T22:10:17.328595Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "PC Jeweller is a turnaround story that looks compelling on the surface after a massive debt restructuring in FY2025, but the catastrophic ₹578 Cr \"profit\" masked by ₹633 Cr negative operating cash flow signals the gain is largely non-cash debt forgiveness, not genuine business recovery. With revenue still 77% below its 2018 peak and no clear path to recapturing lost market share, this is a value trap, not a ten-bagger.",
+    "key_strengths": [
+      "Debt dramatically restructured: borrowings fell ₹4,150 Cr → ₹1,594 Cr, D/E now just 0.22 — balance sheet existential risk largely removed",
+      "Finance costs collapsed from ₹505 Cr (FY2024) to ₹52 Cr (FY2025), freeing ~₹450 Cr annually that was bleeding the business",
+      "P/B of 0.92 offers slim asset-play floor, and strong 22% operating margins suggest the core jewelry brand retains some pricing power"
+    ],
+    "key_risks": [
+      "Revenue collapse is severe and unresolved: ₹9,610 Cr peak (FY2018) → ₹2,244 Cr (FY2025), only 23% recovered — no fast-grower story here",
+      "Earnings quality is deeply suspect: ₹578 Cr net profit alongside ₹-633 Cr operating cash flow implies the profit is overwhelmingly a non-cash debt-forgiveness accounting gain",
+      "Governance history is a dealbreaker for Lynch — this company had promoter pledge crises, banking relationship collapses, and years of negative net worth that built distrust"
+    ],
+    "red_flags": [
+      "OCF -₹633 Cr vs Net Profit +₹578 Cr: a ₹1,200 Cr divergence in a single year is a screaming earnings quality alarm",
+      "Equity surged ₹4,307 Cr in one year (₹2,931 Cr → ₹7,238 Cr) with no equivalent capex or business investment — consistent with OTS/debt write-off accounting, not real value creation",
+      "Revenue CAGR of -12.3% over 9 years is not a turnaround — it's a structurally broken business still hunting for its footing",
+      "Forward P/E of 0.47 implies explosive forward earnings that would require revenue recovery to ₹7,000+ Cr — implausible given FY2025 actuals of ₹2,244 Cr"
+    ],
+    "detailed_analysis": "PC Jeweller is a turnaround in the Lynch classification, but the worst kind: one where the triggering event (debt restructuring) creates a false accounting profit that obscures whether the underlying business is truly healing. The ₹578 Cr FY2025 net profit is almost entirely illusory from a cash perspective — operating cash flow was negative ₹633 Cr. The equity base jumped ₹4,300 Cr in a single year while borrowings fell ₹2,556 Cr, a pattern consistent with an OTS (One Time Settlement) with banks where haircut debt gets reversed as profit. Lynch's first question for a turnaround is: \"Is the worst behind, and will revenues return?\" Here, revenues at ₹2,244 Cr are 77% below peak, and the FY2024 revenue of just ₹604 Cr suggests the brand has lost significant consumer relevance to competitors like Tanishq and Kalyan Jewellers who grew during PC Jeweller's crisis years.\n\nThe balance sheet cleanup is real — D/E of 0.22 and finance costs dropping from ₹505 Cr to ₹52 Cr are genuine positives that remove the existential risk. But Lynch would want to see the business *earning* its way back, not just restructuring its liabilities. A company that went from ₹9,610 Cr revenue in FY2018 to ₹604 Cr in FY2024 has lost showrooms, supplier relationships, consumer trust, and talent. Rebuilding that takes years of consistent FCF-positive execution. With free cash flow negative ₹633 Cr in FY2025, OCF positive in only 3 of the last 5 years, and no visible catalyst for rapid volume recovery, this fails the most basic GARP test. The PEG ratio is unmeasurable in any meaningful way given the artificially reported earnings. Pass.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "insufficient_data",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 69937,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.10093469999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 12156,
+      "cache_read_input_tokens": 9019,
+      "output_tokens": 3509,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 12156,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 451,
+          "cache_read_input_tokens": 9019,
+          "cache_creation_input_tokens": 3137,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 3137
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

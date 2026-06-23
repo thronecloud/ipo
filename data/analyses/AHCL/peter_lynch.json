@@ -1,0 +1,69 @@
+{
+  "symbol": "AHCL",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-20T11:11:21.106382Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Anlon is a small-cap API/intermediates play with eye-popping profitability ratios (ROE 25.5%, ROCE 38.1%) and a seemingly attractive PEG (~0.63 on P/E 17.75 vs 28% revenue CAGR), but the reported earnings are not converting to cash — operating cash flow was negative in all 4 of the last 4 years, culminating in -23 Cr OCF on 21 Cr net profit in FY25. Until the cash-flow story matches the P&L story, this is a watch-list name, not a buy.",
+    "key_strengths": [
+      "Strong returns on capital: ROE 25.5%, ROCE 38.1%, operating margin 33.7% expanding meaningfully (FY22 ~7% → FY25 26%).",
+      "Reasonable PEG: P/E 17.75 against 28% revenue CAGR and 97% op-income CAGR, with modest D/E of 0.27 post-equity raise.",
+      "Niche API/intermediates exporter across multiple therapeutic areas — the kind of small ~600 Cr Rajkot-based manufacturer that can scale into a multi-bagger if execution holds."
+    ],
+    "key_risks": [
+      "Zero cash conversion: OCF negative 4/4 years, FY25 FCF -23 Cr — profits stuck in working capital or receivables.",
+      "Lumpy revenue (57→113→67→120) suggests customer/order concentration rather than steady compounding.",
+      "Recent equity infusion (equity 21→80 Cr) signals fresh IPO-era story stock with only 1 Cr cash and limited public track record."
+    ],
+    "red_flags": [
+      "Net profit 21 Cr in FY25 but operating cash flow -23 Cr — a 44 Cr gap that needs explaining.",
+      "Revenue fell 41% in FY24 (113→67) before rebounding — growth is not linear.",
+      "FII holding just 0.32% and DII 4.6% — no institutional validation yet."
+    ],
+    "detailed_analysis": "The headline numbers are the kind that normally make me pick up the phone: a tiny 616 Cr pharma-intermediates manufacturer in Rajkot, ROCE of 38%, operating margins expanding from single digits to 33.7%, and a PEG well under 1. On paper this looks like a classic Lynch \"fast grower\" in a niche I can understand — APIs for NSAIDs, antidepressants, GERD, diabetes — with India's CDMO/API tailwind still in early innings. The 3-year operating income CAGR of 97% against a P/E of just 17.75 is exactly the kind of mispricing I hunt for in the small-cap corner of the market.\n\nBut the story falls apart when I flip to the cash flow statement. Four straight years of negative operating cash flow, with the gap widening to -23 Cr in FY25 even as reported net profit hit 21 Cr, tells me the \"earnings\" are being funded by working capital build-up and fresh financing (19 Cr from financing activities, equity base ballooning from 21 to 80 Cr). The revenue line is also jagged — 113 Cr in FY23, then a collapse to 67 Cr in FY24 — which screams customer concentration or project-based lumpiness, not the steady market-share compounding I want. I'd want to see two consecutive years of positive OCF and a smoother revenue curve before paying up. Score 4, HOLD — put it on the watchlist, re-check at FY26 results.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "insufficient_data",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 33715,
+    "model_used": "opus",
+    "total_cost_usd": 0.12312675000000001,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 10763,
+      "cache_read_input_tokens": 14456,
+      "output_tokens": 1944,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10763,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 11612,
+          "cache_creation_input_tokens": 1995,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1995
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "CRIZAC",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T17:06:10.152622Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Crizac is a genuinely high-quality, asset-light education intermediary with exceptional ROCE of 48%, zero debt, and a 66% revenue CAGR — but the business is a commission-driven middleman entirely exposed to the ongoing crackdown on international student visas across Canada, UK, and Australia. At 20.8x trailing P/E, the market is pricing in continued hypergrowth that regulatory headwinds make deeply uncertain.",
+    "key_strengths": [
+      "Exceptional capital efficiency: ROCE 48%, ROE 36%, zero debt — a rare combination in services",
+      "Asset-light model produces high-quality cash flow: OCF INR 187 Cr vs Net Profit INR 153 Cr = 122% conversion in FY25",
+      "Explosive revenue compounding: 66% CAGR over 4 years from INR 111 Cr → INR 849 Cr, with margin expansion"
+    ],
+    "key_risks": [
+      "Existential regulatory risk: Canada slashed international student permits 35%+ in 2024-25; UK and Australia tightening — Crizac's entire revenue base depends on foreign admission volumes",
+      "Weak moat: No proprietary technology or lock-in; IDP Education, AECC, Edwise, and hundreds of local agents offer near-identical services to the same universities",
+      "Other income comprises INR 35 Cr of INR 153 Cr net profit (23%) in FY25 — strip treasury/investment income and core operating earnings are materially overstated"
+    ],
+    "red_flags": [
+      "FY25 revenue grew 60% YoY despite Canada/UK restriction environment — either unsustainable channel-shift or data lags real headwinds; forward P/E of 16x implies continued strong growth that looks optimistic",
+      "Promoter holding 79.94% with low float raises governance scrutiny, especially for a Kolkata-based company with minimal institutional oversight (FII 2.48%, DII 3.48%)",
+      "FY24 capex of INR 119 Cr is anomalous against otherwise negligible fixed-asset needs — nature unexplained; inconsistency with investing CF of -79 Cr warrants scrutiny of what was actually acquired"
+    ],
+    "detailed_analysis": "Crizac's financial scorecard is genuinely impressive on its face: ROCE of 48%, zero borrowings throughout the entire history, operating cash flows positive all four years, and a 4-year revenue CAGR of 66%. The business model — earning commissions from UK, Canadian, Irish, Australian, and New Zealand universities for student recruitment — is capital-light by design, and margin expansion from 24% EBITDA margin in FY21 to 28% in FY25 shows operating leverage. P/B of 6.72x is justifiable if 36% ROE is sustainable — that's the crux of the bet. However, applying Munger's inversion, the single most important question is: what kills this business? Answer: a sustained fall in international student volumes, which is already underway. Canada's 2024-25 policy reversal (35%+ permit cuts) and UK's tightening of dependent visas are not tail risks — they are present reality. The fact that FY25 revenue surged 60% YoY amid this crackdown suggests Crizac may have front-loaded volumes or pivoted to other markets, but forward P/E of 16x implies ~30% earnings growth ahead, which strikes me as heroic pricing for an intermediary fully dependent on bureaucratic goodwill across five foreign governments.\n\nThe moat question is equally troubling. Crizac does not own any universities, proprietary data, or technology platform. It is a commission agent with scale and relationships — valuable, but not durable. IDP Education (ASX-listed, much larger) and dozens of regional competitors occupy the same space. Switching costs for universities are low; they multi-home across agents. The ~INR 35 Cr \"other income\" in FY25 (23% of net profit) likely reflects IPO proceeds parked in liquid investments — benign explanation, but it inflates headline earnings quality. At 20.8x trailing P/E, you're paying a fair-quality-business price for what could rapidly become a cyclically pressured earnings stream. I'd want a 30-40% margin of safety before committing capital here.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "excellent",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 72405,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.10398584999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11725,
+      "cache_read_input_tokens": 8477,
+      "output_tokens": 3831,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11725
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 622,
+          "cache_read_input_tokens": 8477,
+          "cache_creation_input_tokens": 3248,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 3248,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

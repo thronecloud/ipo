@@ -1,0 +1,69 @@
+{
+  "symbol": "CRAFTSMAN",
+  "persona": "vijay_kedia",
+  "persona_display_name": "Vijay Kedia",
+  "analyzed_at": "2026-04-19T12:59:24.929934Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Craftsman Automation is a capital-hungry auto-ancillary conglomerate with D/E of 1.09 and rapidly rising borrowings (₹3,311 Cr in FY25 vs ₹800 Cr in FY22) that is consuming all operating cashflows through capex, leaving FCF at -₹706 Cr in FY25. At 52.2x trailing P/E with ROE of 9.4% and promoter below 50%, this fails every key SMILE metric simultaneously.",
+    "key_strengths": [
+      "Revenue CAGR of 22.8% over 8 years (₹1,102 Cr → ₹5,690 Cr) demonstrates genuine operational scale-up across Powertrain, Aluminium, and Industrial segments",
+      "Diversification across CV, 2W, PV, and industrial storage/racking reduces single-customer dependency and creates cross-cycle resilience",
+      "Operating cashflow positive all 5 years (₹283–608 Cr range) shows the underlying business generates real cash before capex"
+    ],
+    "key_risks": [
+      "D/E of 1.09 with borrowings surging to ₹3,311 Cr (FY25) and finance cost of ₹217 Cr consuming 108% of FY25 net profit of ₹201 Cr — debt is eating shareholder returns",
+      "Net profit collapsed from ₹337 Cr (FY24) to ₹201 Cr (FY25) despite revenue growing 28% — a massive margin and interest squeeze that questions the investment thesis",
+      "FCF of -₹706 Cr in FY25 with capex of ₹992 Cr — the company is in a capital consumption phase with no near-term FCF visibility"
+    ],
+    "red_flags": [
+      "D/E 1.09 — hard red flag; Kedia's ceiling is 0.4x; at 1.09x this is a leveraged industrial cyclical, not a compounder",
+      "Promoter 48.70% — below 50% threshold; majority owner has less than majority stake",
+      "P/E 52.2x for a business with 9.4% ROE and declining PAT in FY25 — the market is pricing a recovery that may not materialize as interest costs compound"
+    ],
+    "detailed_analysis": "Craftsman's story is one of aggressive capacity-led growth — it has nearly quintupled revenue over 8 years by taking on debt and building out machining and casting facilities. The Aluminium Products segment serving EV-adjacent applications is genuinely interesting. But at ₹18,347 Cr market cap, you are paying large-cap valuations for a company that generated only ₹201 Cr PAT in FY25 on ₹5,690 Cr revenue — an alarmingly thin 3.5% net margin.\n\nThe FY25 balance sheet is alarming: total assets doubled to ₹8,266 Cr while borrowings swelled to ₹3,311 Cr. Financing CF of +₹1,393 Cr confirms heavy equity/debt raise. This is not a SMILE business — it is a leveraged industrial rollup at a premium multiple with no FCF, below-50% promoter, and returns (ROE 9.4%) below cost of equity. Avoid completely.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 140565,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.20819759999999998,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 21578,
+      "cache_read_input_tokens": 18187,
+      "output_tokens": 8121,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 21578,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 546,
+          "cache_read_input_tokens": 16062,
+          "cache_creation_input_tokens": 7641,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 7641
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

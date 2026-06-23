@@ -1,0 +1,70 @@
+{
+  "symbol": "DBL",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-18T17:09:03.238922Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "DBL is a debt-laden EPC cyclical that just engineered a profit recovery (INR 840 Cr in FY25 vs. losses in FY22-23), but the forward P/E of 26.91 vs. trailing 11.40 signals that analysts expect earnings to collapse sharply — a turnaround story that hasn't fully turned. With D/E at 1.71, persistent negative FCF, and borrowings surging INR 3,100 Cr in a single year, this is not a business I'd want to own.",
+    "key_strengths": [
+      "Current P/E of 11.40 and P/B of 0.98 appear cheap on surface; stock trades near book value",
+      "Net profit recovered strongly to INR 840 Cr in FY25 from losses in FY22-23 — turnaround in progress",
+      "Promoter holding at 63.14% with INR 12,000 Cr revenue base indicates scale and government contract access"
+    ],
+    "key_risks": [
+      "Debt/Equity of 1.71 (my limit is 0.6) — borrowings jumped to INR 10,375 Cr in FY25, exceeding the entire market cap of INR 7,424 Cr",
+      "Free cash flow has been negative every single year: -5,042 → -3,229 → -2,360 → -1,071 → -4,473 → -4,134 Cr; OCF collapsed from INR 2,845 Cr (FY23) to just INR 131 Cr (FY25)",
+      "Forward P/E of 26.9 vs. trailing 11.4 implies earnings will shrink ~58% — the FY25 profit spike looks non-recurring"
+    ],
+    "red_flags": [
+      "Finance cost of INR 1,249 Cr consumes 65% of EBITDA (INR 1,917 Cr) — interest coverage ~1.5x is dangerously thin",
+      "Other income (INR 417 Cr FY25) represents ~50% of net profit — strip it out and core earnings are razor-thin",
+      "EBITDA CAGR of only 5.5% over 9 years; operating loss of INR 550 Cr in FY22 shows extreme earnings volatility typical of bad cyclicals",
+      "Capex of INR 4,265 Cr in FY25 against OCF of INR 131 Cr — company is burning cash to grow, not generating it"
+    ],
+    "detailed_analysis": "Dilip Buildcon fits the profile of what I call a dangerous cyclical — it looks cheap on trailing earnings right after a peak, but the forward numbers are screaming trouble. The trailing P/E of 11.4 seems like a bargain, but when the forward P/E jumps to 26.9, the market is telling you that FY25's INR 840 Cr profit is a fluke. Peel back the financials and you see why: INR 417 Cr of \"other income\" contributed half the net profit, while core EBITDA-to-interest coverage sits at a precarious 1.5x. A company with INR 10,375 Cr in borrowings versus a INR 7,424 Cr market cap is structurally fragile — any project delay or rate shock and this stock is in trouble again, just like FY22 when it posted a INR 550 Cr loss.\n\nThe FCF story is the real deal-breaker for me. I need businesses that convert earnings into cash — this one has never done it. Negative FCF every year for six consecutive years, with capex alone running INR 4,265 Cr in FY25 against just INR 131 Cr of operating cash flow. Revenue growth of 11.6% CAGR is ordinary; EBITDA CAGR of 5.5% is worse. The ROE of just 9.97% on a highly leveraged balance sheet means the equity returns are mediocre even after taking all that debt risk. This isn't a ten-bagger — it's a value trap dressed in cheap multiples. I'll pass.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 61930,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09162915,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11711,
+      "cache_read_input_tokens": 9163,
+      "output_tokens": 2997,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11711
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 509,
+          "cache_read_input_tokens": 9163,
+          "cache_creation_input_tokens": 2548,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2548,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "SHYAMDHANI",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-21T07:45:28.753552Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "At 13.40x P/E the headline valuation appears modest, but a ROE of 0.41% reveals a business earning almost nothing on shareholder capital — this is not cheap, it is merely inexpensive. Insufficient data on book value, current ratio, debt, and dividend history makes a margin-of-safety calculation impossible.",
+    "key_strengths": [
+      "P/E of 13.40 is below my 15x ceiling — one of the few metrics that passes muster",
+      "72% promoter holding signals owner-operated business with aligned interests",
+      "Established since 1995 — at least 30 years of operating history in a stable consumable category"
+    ],
+    "key_risks": [
+      "ROE of 0.41% is near-zero — the business is destroying value relative to cost of equity; I require sustained double-digit ROE",
+      "No balance sheet data provided — current ratio, debt-to-equity, and interest coverage are all unknown and critical to my analysis",
+      "INR 108 Cr micro-cap with no reported dividend — illiquid, no cash return to shareholders, and no earnings cushion data"
+    ],
+    "red_flags": [
+      "ROE 0.41% — effectively zero earning power on equity; this fails my core profitability requirement",
+      "No dividend history disclosed — a business that cannot pay dividends has not demonstrated real, distributable earning power",
+      "Critical Graham metrics (P/B, current ratio, D/E, interest coverage, 5-year earnings track record) are entirely absent from the filing"
+    ],
+    "detailed_analysis": "Graham's first law: know what you own, quantitatively. This analysis is crippled by data gaps — no book value per share means I cannot compute the Graham Number, no balance sheet means I cannot verify the current ratio exceeds 2.0 or that debt-to-equity is below 0.5. The one profitability metric provided — ROE of 0.41% — is disqualifying on its own. A business earning less than half a percent on shareholders' equity is not a going concern worth owning; it is capital slowly evaporating. The spice industry offers no natural moat: commoditised inputs, fragmented competition, and pricing power largely dictated by agricultural cycles.\n\nThe P/E of 13.40 is the lone bright spot, and even that requires scrutiny — if earnings are cyclically inflated or one-time, the true normalised P/E could be far higher. A 72% promoter stake in a micro-cap is a double-edged sword: it can mean a founder who cares, or it can mean a float so thin that any institutional exit collapses the price. Mr. Market may be offering this at INR 52 for good reason. Without a full set of audited financial ratios demonstrating balance-sheet strength, consistent multi-year earnings, and a dividend record, I see no margin of safety here whatsoever.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "insufficient_data",
+      "financial_health": "insufficient_data",
+      "valuation": "insufficient_data",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 35160,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.055623149999999996,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 7007,
+      "cache_read_input_tokens": 9643,
+      "output_tokens": 1763,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 7007,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 345,
+          "cache_read_input_tokens": 7593,
+          "cache_creation_input_tokens": 1464,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1464
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

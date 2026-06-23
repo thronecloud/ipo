@@ -1,0 +1,69 @@
+{
+  "symbol": "ACMESOLAR",
+  "persona": "howard_marks",
+  "persona_display_name": "Howard Marks",
+  "analyzed_at": "2026-04-19T06:20:51.584339Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "ACME Solar is a highly leveraged solar IPP (Debt/EBITDA ~7.9x) that listed via IPO in late 2024 — precisely when renewable energy enthusiasm peaked — with revenue that has actually contracted 4.6% per annum over 5 years, ROE of only 7.57% barely above a risk-free rate, and free cash flow of -INR 1,719 Cr in FY25. The equity is a thin sliver sitting atop a INR 11,000 Cr debt mountain.",
+    "key_strengths": [
+      "Operating CF has been positive all 5 years (5/5), confirming existing projects do generate cash from contracted power purchase agreements",
+      "Massive 3,780 MW under-development pipeline could significantly grow EBITDA once commissioned, with long-term government-backed PPAs providing revenue visibility",
+      "Operating margin of 65.28% reflects the economics of mature solar assets — once debt is serviced, the cash flow per MW is attractive"
+    ],
+    "key_risks": [
+      "Total debt of INR 10,976 Cr vs EBITDA of INR 1,396 Cr = Debt/EBITDA of 7.9x — finance costs (INR 759 Cr) consume 54% of EBITDA, leaving almost nothing for equity holders after reinvestment",
+      "Revenue has contracted at -4.6% CAGR over 5 years; the growth story is all in future project commissioning, which carries execution, tariff, and grid curtailment risks",
+      "FCF of -INR 1,719 Cr in FY25 means the company requires continuous access to capital markets — any tightening of credit or equity sentiment directly threatens solvency trajectory"
+    ],
+    "red_flags": [
+      "IPO listed November 2024 — classic cycle-peak issuance when renewable sentiment was at maximum optimism; promoters raised capital at the top",
+      "Promoter holds 83.29% — low public float amplifies volatility and limits price discovery, and any promoter pledge unwinding creates asymmetric downside",
+      "ROE of 7.57% is barely above India's 10-year G-Sec yield; P/E of 36.8x means the market is paying a 36-year payback for a 7.5% equity return — deeply irrational"
+    ],
+    "detailed_analysis": "Solar IPPs are infrastructure businesses masquerading as growth stocks when listed. The economic reality is: you build an asset, lever it 4-5x, earn a contracted return spread over the cost of debt, and slowly delever over 20-25 years. At 36.8x P/E for 7.57% ROE, the market is pricing ACMESOLAR as if it were a technology compounder, not a utility with a 20-year payback horizon burdened by INR 11,000 Cr of debt.\n\nThe FY25 investing outflow of -INR 3,976 Cr tells you this company is in hyper-expansion mode, funded almost entirely by debt (financing CF +INR 3,408 Cr). If the next 3,780 MW of capacity is commissioned on time, at the right tariffs, with no curtailment, the forward story improves — but that's a chain of optimistic assumptions. My philosophy demands I ask: what is the floor? With D/E of 2.72x and negative FCF, the floor for equity is uncomfortably close to zero in a stress scenario. The IPO timing alone would make me deeply cautious. I require a far larger margin of safety before touching this name.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 172178,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.22020689999999998,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 22392,
+      "cache_read_input_tokens": 14443,
+      "output_tokens": 8793,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 22392,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 669,
+          "cache_read_input_tokens": 14443,
+          "cache_creation_input_tokens": 7949,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 7949
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

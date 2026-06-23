@@ -1,0 +1,69 @@
+{
+  "symbol": "ACTIVEINFR",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-20T11:13:33.338532Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Active Infra fails the Magic Formula on both dimensions: earnings yield of ~7.3% (EBIT 24 / EV ~327) is below my 12% threshold, and ROCE of 15.5% falls short of the 20%+ required for \"good business.\" A civil construction micro-cap at 26x P/E with single-digit crore profits is neither cheap nor high-quality enough.",
+    "key_strengths": [
+      "Revenue scaling fast (1→90 Cr) with margins expanding (EBITDA 28 Cr in 2025)",
+      "Debt reduced from 109 Cr (2022) to 60 Cr (2025); equity infusion strengthened balance sheet",
+      "Promoter holding high at 72.38%, aligned skin-in-the-game"
+    ],
+    "key_risks": [
+      "Earnings yield ~7.3% — not cheap for a cyclical construction micro-cap",
+      "ROCE 15.5% is mediocre; construction is capital-intensive with lumpy working capital",
+      "FCF collapsed from 11 Cr (2023) to 2 Cr (2025) despite rising profits — working capital sink"
+    ],
+    "red_flags": [
+      "OCF fell to 5 Cr in 2025 vs PAT of 13 Cr — earnings quality deteriorating",
+      "Total assets doubled (108→220 Cr) funded by equity raise, diluting ROE durability",
+      "Only 3 years of meaningful operating history — ROIC sustainability unproven"
+    ],
+    "detailed_analysis": "Running the Magic Formula: EBIT of ~24 Cr against an enterprise value of roughly 327 Cr (MCap 267 + Debt 60) yields an earnings yield near 7.3% — well short of the 12% threshold I consider attractive. Return on capital, proxied by the stated ROCE of 15.5%, is similarly mediocre against my 20%+ bar. A stock that is neither cheap nor a demonstrably high-return business does not make the cut — and civil construction is a notoriously capital-intensive, working-capital-hungry, cyclically exposed industry where one-off project wins can distort a single year's numbers.\n\nThe 2025 equity raise (reserves jumped from 22→108 Cr) inflated the asset base and will drag future ROE/ROCE unless deployed at high returns. More concerning is cash conversion: operating cash flow fell to 5 Cr against a 13 Cr PAT, and FCF is barely positive at 2 Cr. On the Magic Formula's unemotional ranking, Active Infra would sit in the bottom half of the screen — pass.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 23787,
+    "model_used": "opus",
+    "total_cost_usd": 0.10156950000000001,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 9732,
+      "cache_read_input_tokens": 14129,
+      "output_tokens": 1346,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9732,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 48,
+          "cache_read_input_tokens": 11259,
+          "cache_creation_input_tokens": 1343,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1343
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

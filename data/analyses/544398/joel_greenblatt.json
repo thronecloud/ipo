@@ -1,0 +1,69 @@
+{
+  "symbol": "544398",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-20T19:52:52.204040Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Kenrik Industries fails the Magic Formula on the quality dimension — ROE of 0.08% implies ROIC is essentially zero, meaning the business earns almost nothing on the capital it deploys. A low P/E of 5.99 on near-zero earnings is a value trap, not a bargain.",
+    "key_strengths": [
+      "Optically cheap at P/E 5.99 on trailing earnings",
+      "High promoter skin in the game at 72.01%",
+      "Asset-light gold/silver trading model (low fixed assets)"
+    ],
+    "key_risks": [
+      "ROE of 0.08% → ROIC effectively zero, fails Magic Formula quality test",
+      "Micro-cap (7.25 Cr) bullion trader — commodity pass-through with razor-thin margins",
+      "No competitive moat; trading gold/silver is a commoditized, price-taker business"
+    ],
+    "red_flags": [
+      "ROE 0.08% suggests earnings are essentially a rounding error",
+      "Tiny market cap (7.25 Cr) with concentrated promoter holding — liquidity and governance risk",
+      "Bullion trading requires heavy working capital with minimal spread capture"
+    ],
+    "detailed_analysis": "The Magic Formula ranks stocks on earnings yield AND return on capital — you need both. Kenrik is superficially cheap (P/E ~6 implies earnings yield ~16% on equity), but the 0.08% ROE tells me the absolute earnings are trivially small and the denominator-driven cheapness is illusory. A jewelry/bullion trader incorporated only in 2017 with 7.25 Cr market cap deploying capital at sub-1% returns is the opposite of what I look for: I want high returns on capital at bargain prices, signaling a good business temporarily mispriced. This is a marginal business at any price.\n\nBullion trading has structurally low ROIC because inventory is expensive (gold is the working capital), margins are thin, and there is no pricing power or brand. Without EBIT disclosure I cannot compute true EY/EV, but with ROE near zero, ROIC will also be near zero — a clear fail. Pass.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 21218,
+    "model_used": "opus",
+    "total_cost_usd": 0.09259075,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8957,
+      "cache_read_input_tokens": 13459,
+      "output_tokens": 1194,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8957,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10589,
+          "cache_creation_input_tokens": 1238,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1238
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

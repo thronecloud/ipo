@@ -1,0 +1,70 @@
+{
+  "symbol": "EXIMROUTES",
+  "persona": "rakesh_jhunjhunwala",
+  "persona_display_name": "Rakesh Jhunjhunwala",
+  "analyzed_at": "2026-04-21T07:53:11.186160Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Exim Routes is a tiny, 6-year-old paper recycling trader with spectacular revenue growth (134% CAGR) but zero cash generation — a fatal flaw for a commodity middleman with no moat. At 37.5x P/E with INR 248 Cr market cap and chronically negative OCF, the market is pricing in a business quality that does not exist.",
+    "key_strengths": [
+      "Revenue has scaled from INR 4 Cr (2021) to INR 121 Cr (2025) — execution speed is real",
+      "ROCE of 55% and ROE of 54% look impressive, reflecting asset-light trading model on a small equity base",
+      "Promoter holding stable at 52.44% with FII/DII participation providing some institutional validation"
+    ],
+    "key_risks": [
+      "Profit-to-cash disconnect is alarming: INR 8 Cr net profit in 2025 but OCF of -5 Cr and FCF of -9 Cr — 0/5 years of positive operating cash flow signals aggressive revenue recognition or working capital trap",
+      "Zero moat: paper recycling facilitation is a pure commodity trading model, easily replicated by any well-capitalised trader with supplier/mill relationships",
+      "Overvalued at 37.5x P/E for a business with INR 121 Cr revenue, no cash generation, and no durable competitive advantage in a thin-margin sector"
+    ],
+    "red_flags": [
+      "OCF negative every single year (-5 Cr in FY25) while reporting INR 8 Cr net profit — classic earnings quality red flag",
+      "Total assets ballooned from INR 21 Cr to INR 54 Cr in one year, funded mostly by IPO equity (INR 25 Cr) and borrowings (INR 9 Cr), not organic cash generation",
+      "Incorporated only in April 2019 — no tested business cycle experience; entire track record is during a bull run in commodity volumes",
+      "Paper & paper products is a structurally weak sector — no government PLI tailwind, no consumption upgrade story, no pricing power for a middleman"
+    ],
+    "detailed_analysis": "From where I sit, the first thing I check in any business is whether profits convert to cash — and Exim Routes fails this test comprehensively. They reported INR 8 Cr net profit in FY25, but operating cash flow was negative INR 5 Cr and free cash flow was negative INR 9 Cr. This gap, repeated across every single year (0/5 years positive OCF), tells me that revenue is being booked before cash is collected, or working capital is being stuffed into the supply chain. In a commodity trading business, this is deeply worrying — these businesses must turn inventory and receivables fast, or they destroy value.\n\nThe business model itself offers no reason for long-term ownership. Exim Routes is a platform that connects recycled paper suppliers to Indian paper mills. There is no technology barrier, no brand, no switching cost, and no regulatory protection. Any paper mill can source directly; any well-funded trader can replicate this model. The 134% revenue CAGR from a INR 4 Cr base is impressive optically but tells us more about the starting point than about durable competitive advantage. At 37.5x P/E for a commodity facilitation business generating negative free cash, the market is pricing in a story that the fundamentals do not support. I would rather sit on cash than own this.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 62035,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09341175,
+    "usage": {
+      "input_tokens": 4,
+      "cache_creation_input_tokens": 9321,
+      "cache_read_input_tokens": 20820,
+      "output_tokens": 3480,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9321,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 474,
+          "cache_read_input_tokens": 10399,
+          "cache_creation_input_tokens": 1025,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1025
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "symbol": "BELRISE",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-22T16:22:20.524489Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Belrise is a capital-hungry auto-parts supplier earning sub-12% ROIC (~9.7%) priced at 39.6x earnings — a textbook case of paying a premium price for a mediocre, commoditized business. The chronic gap between reported profits (INR 355 Cr) and negative free cash flow (-163 Cr in FY25) confirms the business consumes capital faster than it creates economic value.",
+    "key_strengths": [
+      "Revenue growing at 15.4% CAGR (FY22–25), with EBITDA expanding from INR 762 Cr to 1,072 Cr, reflecting real end-market demand.",
+      "Post-IPO balance sheet cleaned up: borrowings fell from INR 2,504 Cr to 1,418 Cr; D/E now 0.29x.",
+      "High promoter stake at 66.46% provides alignment; 4/4 years of positive operating cash flow shows the business is operationally functional."
+    ],
+    "key_risks": [
+      "ROIC ~9.7% (NOPAT/Invested Capital) is well below the 12% minimum threshold — this business destroys value relative to its cost of capital at current scale.",
+      "Capex of INR 868 Cr in FY25 dwarfs net profit of INR 355 Cr, producing negative FCF of -163 Cr; there is no free cash being generated for shareholders.",
+      "Valuation at 39.6x P/E and 17.5x EV/EBITDA is pricing in a quality compounder — the business is delivering a commodity auto-parts supplier."
+    ],
+    "red_flags": [
+      "Finance costs growing at 12.4% CAGR (INR 216 Cr → 307 Cr) — debt servicing is eroding profit quality.",
+      "Other income surged 64.2% CAGR (INR 14 Cr → 62 Cr) — inflating reported PAT; strip this out and earnings growth is even weaker.",
+      "Business has diversified into rose plantations and home security locks — a hallmark of undisciplined capital allocation and management distraction.",
+      "No operating leverage: revenue CAGR 15.4% but EBITDA CAGR only 12% — margins are actually compressing, not expanding.",
+      "FY25 investing CF of -981 Cr signals an aggressive capex cycle with uncertain returns; reserves doubled via IPO proceeds masking underlying leverage."
+    ],
+    "detailed_analysis": "Belrise fails the most fundamental Munger test: a business must earn returns on capital exceeding its cost of capital. With invested capital of ~INR 7,858 Cr and NOPAT of ~INR 766 Cr, ROIC is approximately 9.7% — comfortably below the 12% floor I require. Worse, the ROE of 14.1% and ROCE of 14.3% are flattered by the large equity infusion from the recent IPO (equity nearly doubled from INR 2,340 Cr to INR 4,971 Cr in one year). The operating margin of 8.3% on a thin gross of 18.8% leaves virtually no buffer for cyclical downturns in auto demand.\n\nThe capital intensity is alarming. In FY25 alone, capex was INR 868 Cr against operating cash flow of INR 704 Cr — the company literally spent more investing than it earned from operations, yielding -163 Cr FCF. A business that cannot convert profits to cash is not a business I want to own, regardless of headline revenue growth. The rose plantation and home appliance diversions signal exactly the kind of undisciplined, empire-building management behavior that destroys compounding. At 39.6x earnings, Mr. Market is pricing this as a high-quality compounder. It is not. The price is badly wrong for what is fundamentally a contract manufacturer in a cyclical, price-competitive industry.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 49657,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08497740000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11320,
+      "cache_read_input_tokens": 8878,
+      "output_tokens": 2657,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11320,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 261,
+          "cache_read_input_tokens": 8878,
+          "cache_creation_input_tokens": 2442,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2442
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

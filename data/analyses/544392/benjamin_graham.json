@@ -1,0 +1,70 @@
+{
+  "symbol": "544392",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-20T19:52:10.875711Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "At a P/E of 32.7 and ROE of 0.21%, Spinaroo fails every quantitative filter I demand — there is no margin of safety, only speculation. A micro-cap (INR 41 Cr) paper/aluminium converter earning essentially nothing on equity is not an investment; it is a gamble.",
+    "key_strengths": [
+      "Promoter holding of 47.66% provides some skin in the game",
+      "Tangible manufacturing business (aluminium/paper) with physical assets",
+      "Small size leaves room for operational improvement if management executes"
+    ],
+    "key_risks": [
+      "ROE of 0.21% is effectively zero — capital earns nothing",
+      "P/E of 32.7 with negligible earnings implies extreme overvaluation",
+      "Micro-cap of INR 41 Cr in a commodity industry = illiquidity + no pricing power"
+    ],
+    "red_flags": [
+      "P/E 32.7 on near-zero earnings — classic speculative pricing",
+      "ROE 0.21% indicates destroyed or absent earning power",
+      "No visible dividend yield or multi-year earnings record disclosed",
+      "Recently listed BSE micro-cap — typical IPO/SME speculation profile"
+    ],
+    "detailed_analysis": "From my framework, this security fails on arithmetic alone. A 0.21% ROE means the business earns roughly nothing on shareholder capital — yet the market demands 32.7x those near-zero earnings. The Graham Number cannot plausibly justify INR 58.90 when EPS is a rounding error; any reasonable intrinsic value calculation collapses to a fraction of the current price. There is no margin of safety here — the price embeds optimism, not proven earning power.\n\nFurthermore, at INR 41.20 Cr market capitalization in a commoditized industry (paper and aluminium conversion), there is no competitive moat, no pricing power, and no demonstrated multi-year record of stable profits. Promoter holding of 47.66% is the single neutral data point. Mr. Market is offering a lottery ticket dressed as equity; the disciplined investor declines. I would require either (a) price below net current asset value, or (b) a 5-year record of consistent earnings and a P/E under 15 before even opening the annual report.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "insufficient_data",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 19891,
+    "model_used": "opus",
+    "total_cost_usd": 0.08881325,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8827,
+      "cache_read_input_tokens": 13479,
+      "output_tokens": 1075,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8827,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10593,
+          "cache_creation_input_tokens": 1120,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1120
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

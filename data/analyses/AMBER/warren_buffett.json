@@ -1,0 +1,69 @@
+{
+  "symbol": "AMBER",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-19T05:44:52.135636Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Amber Enterprises is a contract manufacturer of room air conditioners — a business with thin 5.3% operating margins, no pricing power (OEM customers dictate terms), elevated leverage (D/E 0.74), and ROE of only 11.3%. The stock trades at 120x trailing P/E, making this perhaps the clearest example of a fair business at a terrible price that I would encounter.",
+    "key_strengths": [
+      "India's RAC penetration remains low (~8%) versus China (60%+), providing a long structural volume growth runway that will benefit contract manufacturers alongside OEM brands",
+      "Revenue CAGR of 27.9% over 9 years demonstrates Amber's ability to capture share as the RAC market grows, and OCF has been positive all 5 of the last 5 years",
+      "Diversification into railways, defense, and EMS components reduces pure RAC cyclicality and expands the addressable market"
+    ],
+    "key_risks": [
+      "Operating margin of 5.26% is structurally thin for a capital-intensive manufacturing business — there is virtually no buffer against raw material cost increases, customer pricing pressure, or execution errors",
+      "Finance costs have grown from 43 Cr (FY20) to 209 Cr (FY25), and at D/E of 0.74 with borrowings of 2,793 Cr, the debt burden is substantial relative to 251 Cr net profit",
+      "Contract manufacturing inherently lacks pricing power — OEM customers (Voltas, Blue Star, LG, etc.) can dual-source or bring manufacturing in-house, keeping Amber perpetually price-constrained"
+    ],
+    "red_flags": [
+      "P/E of 120x is extreme for a 5.3% operating margin contract manufacturer — this valuation is indefensible by any reasonable earnings power analysis",
+      "ROE of 11.3% and ROCE of 14.5% are both below my 15% threshold, demonstrating that despite growing revenues, the business does not earn exceptional returns on capital",
+      "Finance costs of 209 Cr are nearly equal to net profit of 251 Cr — a razor-thin coverage ratio that makes equity returns hostage to interest rate movements and credit availability"
+    ],
+    "detailed_analysis": "I have a simple rule: I will not buy a business whose customers have more power than it does. Amber is a contract manufacturer entirely dependent on OEM brands for volume and pricing — the moment a Voltas or Blue Star decides to shift volume or demand lower prices, Amber's thin 5.3% operating margin offers nowhere to hide. This is the exact opposite of the businesses I love, where customers continue buying because they have no better alternative. The 29.8% net profit CAGR over 9 years is impressive in aggregate, but profits swung from 164 Cr (FY20) to 83 Cr (FY21) to 164 Cr (FY23) to 139 Cr (FY24) — a rollercoaster that exposes the cyclical, customer-dependent nature of the earnings.\n\nThe valuation at 120x earnings is simply absurd for this business profile. Even accepting the forward P/E of 53x, I would need this company to earn near-monopoly returns — which the 5.3% operating margin and 11.3% ROE prove it does not. The debt of 2,793 Cr borrowings (and 2,059 Cr total debt by another measure) against 251 Cr net profit creates uncomfortable financial leverage. India's RAC market is real and growing, but I would rather own the brands — not the contract manufacturer who serves them at their pleasure. This is a business I would not own at any price near current levels.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 181833,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.23295825,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 24201,
+      "cache_read_input_tokens": 15735,
+      "output_tokens": 9165,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 24201,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 593,
+          "cache_read_input_tokens": 15735,
+          "cache_creation_input_tokens": 8466,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8466
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "symbol": "544343",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-20T09:52:17.075275Z",
+  "analysis": {
+    "score": 7,
+    "recommendation": "BUY",
+    "investment_thesis": "CapitalNumbers screens well on the Magic Formula: earnings yield of ~15% (EBIT 30 Cr / EV ~203 Cr, likely higher adjusting for post-IPO cash) paired with ROCE of 26.5% and zero debt. Cheap AND good — exactly the combination the formula seeks, though small-cap IT services cyclicality warrants position sizing discipline.",
+    "key_strengths": [
+      "Earnings Yield ~15% (EBIT 30 Cr / MC 203 Cr) — attractive per Magic Formula threshold >12%",
+      "ROCE 26.5% and ROE 20% — capital-efficient, asset-light IT services model",
+      "Debt-free balance sheet, 5/5 years positive OCF, 39% PAT CAGR over 5 years"
+    ],
+    "key_risks": [
+      "FY25 EBIT dipped from 34→30 Cr — watch for margin compression / growth deceleration",
+      "Small-cap IT services exposure: client concentration and currency/discretionary-spend cyclicality",
+      "77 Cr investing outflow in FY25 — capital deployment execution risk on recently raised funds"
+    ],
+    "red_flags": [
+      "Operating income and OCF both declined YoY in FY25 despite revenue growth — early sign of operating leverage reversing"
+    ],
+    "detailed_analysis": "Running the Magic Formula: Earnings Yield = EBIT/EV = 30 / ~203 ≈ 14.8% (likely 18%+ adjusted for net cash from the FY25 equity raise of 64 Cr financing inflow, since borrowings are zero and equity jumped from 67→171 Cr). Return on Capital is excellent — reported ROCE 26.5%, which comfortably clears my >20% bar, and the capital base is light (no CWIP, minimal fixed assets for a services firm). Both factors rank well — this is the rare combo of cheap AND good that the formula is designed to surface. P/E of 8.91 against 39% 5Y PAT CAGR is statistically mispriced on its face.\\n\\nThe caveats keep this from an 8+: FY25 showed the first signs of deceleration — Operating Income contracted 34→30 Cr, OCF fell 22→19 Cr, and revenue growth slowed to ~2% YoY (98→100 Cr). If FY26 confirms a plateau rather than a dip, the earnings yield compresses. The 77 Cr investing outflow funded by the IPO raise is also a watch item — capital allocation on fresh cash is where high-ROIC stories often go wrong. Still, on a systematic basis, this is a buy-the-basket candidate: cheap on EBIT/EV, high on ROC, debt-free, 74.67% promoter skin-in-the-game. I'd size it as one of many in a Magic Formula portfolio rather than concentrate.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "good",
+      "financial_health": "excellent",
+      "valuation": "undervalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 30941,
+    "model_used": "opus",
+    "total_cost_usd": 0.11525225,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 10507,
+      "cache_read_input_tokens": 14507,
+      "output_tokens": 1692,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10507,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 11637,
+          "cache_creation_input_tokens": 1740,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1740
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "CHALET",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-19T06:06:39.579749Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Chalet Hotels is a capital-intensive, cyclical lodging business with a paltry 5.77% ROE that does not meet my minimum threshold of 15% — shareholders are not being rewarded for the capital deployed. At 28x P/E with negative free cash flow in 2025 (capex surged to INR 969 Cr) and a history littered with net losses (six of ten years), the price demands perfection that this business cannot reliably deliver.",
+    "key_strengths": [
+      "Strong and expanding operating margins (35.5%) and EBITDA CAGR of 14% over 9 years indicate real operating leverage in the hotel portfolio",
+      "Revenue has recovered sharply post-COVID, reaching INR 1,718 Cr in 2025 — a 9Y CAGR of 12.8% — showing brand relevance in upper-upscale segment",
+      "Borrowings actually declined from INR 3,005 Cr to INR 2,489 Cr in 2025 alongside a large equity raise, improving the balance sheet"
+    ],
+    "key_risks": [
+      "ROE of only 5.77% on INR 3,415 Cr of equity is economically destructive; hotel real estate eats capital without commensurate returns",
+      "Free cash flow turned negative in 2025 (-INR 14 Cr) as capex exploded to INR 969 Cr — the business is in heavy investment mode with uncertain payback",
+      "Cyclicality is proven and brutal: revenue crashed from INR 981 Cr (2020) to INR 286 Cr (2021) and the company burned cash for three consecutive years"
+    ],
+    "red_flags": [
+      "Net profit has been negative in six out of ten fiscal years — this is not a durable earnings machine",
+      "D/E of 0.73 in a highly cyclical, capital-intensive business leaves little cushion in downturns",
+      "Capex jumped 122% year-on-year to INR 969 Cr in 2025 with investing outflows of INR 1,355 Cr — capital allocation discipline is questionable"
+    ],
+    "detailed_analysis": "Chalet Hotels exemplifies the type of business I actively avoid: it requires constant capital infusions to grow, earns mediocre returns on that capital, and is beholden to macroeconomic cycles. A 5.77% ROE tells me management has not earned the right to deploy more capital, yet they are aggressively doing so. The hotel industry has no lasting moat — a new Marriott or Hilton property nearby can immediately erode occupancy and pricing power.\n\nThe valuation of 28x P/E on volatile, historically loss-prone earnings offers no margin of safety. While operating margins look attractive at 35%, heavy depreciation, finance costs, and now accelerating capex consume the economic profits. The large equity raise in 2025 (equity jumped INR 1.56 lakh Cr) diluted shareholders to fund expansion — I want management allocating profits, not continuously seeking new capital.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 140412,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.1955661,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 22302,
+      "cache_read_input_tokens": 15882,
+      "output_tokens": 7144,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 22302,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 576,
+          "cache_read_input_tokens": 15882,
+          "cache_creation_input_tokens": 6420,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 6420
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "symbol": "AHCL",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-20T11:09:19.192029Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Anlon shows headline profitability (ROE 25.5%, ROCE 38%) but the cash register tells a different story — operating cash flow has been negative all four years and FCF was -₹23 Cr in 2025. This is a small, commodity-like API intermediate maker with lumpy revenue (₹57→113→67→120 Cr), a recent equity raise inflating book value, and no discernible moat — not a wonderful business at any price.",
+    "key_strengths": [
+      "Reported ROCE of 38.12% and operating margin of 33.7% in 2025 are impressive if sustainable"
+    ],
+    "key_risks": [
+      "Operating cash flow negative 4/4 years despite reported profits — earnings quality is suspect",
+      "Revenue is lumpy and unpredictable (₹113→67→120 Cr) — typical small API contract business, no pricing power",
+      "Equity jumped from ₹21 Cr to ₹80 Cr in 2025 indicating fresh capital raise, not retained earnings"
+    ],
+    "red_flags": [
+      "Zero years of positive OCF in the last four — classic working-capital-trap business",
+      "FCF worsening (-2 → -23 Cr) even as reported profit grows — a divergence I distrust",
+      "Tiny 12-year-old company in a commoditized API-intermediates niche with no brand, switching cost, or scale moat"
+    ],
+    "detailed_analysis": "The ratios glitter but the cash flow statement is where the truth lives. A business reporting ₹21 Cr of net profit in 2025 while bleeding ₹23 Cr of operating cash is not generating owner earnings — it is funding working capital and inventory with equity and debt (financing CF +₹19 Cr). Revenue volatility (down 41% in 2024, then up 79% in 2025) tells me this is a project/contract-driven intermediate supplier, not a predictable consumer-like franchise. The Rajkot-based generics/API intermediate space is crowded, price-competitive, and utterly without moat — customers switch on price, and regulatory/quality advantages belong to the larger, older players.\n\nAt ₹616 Cr market cap on 17.75x earnings, the price isn't absurd, but I'd need a margin of safety measured in owner cash flow, and there is none to measure. The recent equity raise (equity 21→80 Cr) suggests promoters and new investors just funded the very working capital gap that the P&L pretends doesn't exist. This is outside my circle of competence in the important sense: I can't predict what this business will look like or earn in a decade. Pass.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 27557,
+    "model_used": "opus",
+    "total_cost_usd": 0.109876,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 10340,
+      "cache_read_input_tokens": 14442,
+      "output_tokens": 1520,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10340,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 11605,
+          "cache_creation_input_tokens": 1572,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1572
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "544334",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-20T09:44:37.837203Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "At a P/E of 20 and ROE of a paltry 0.21%, Indobell Insulation offers no margin of safety and fails nearly every quantitative screen I require. This is a recently-listed micro-cap (INR 44.9 Cr) with negligible earning power — precisely the speculative territory I counsel investors to avoid.",
+    "key_strengths": [
+      "Long operating history since 1972 provides business continuity",
+      "High promoter holding at 65% signals insider commitment",
+      "Operates in a tangible, understandable industrial product category"
+    ],
+    "key_risks": [
+      "ROE of 0.21% indicates essentially no productive use of shareholder capital",
+      "P/E of 20 exceeds my 15 ceiling — price detached from earning power",
+      "Micro-cap (INR 44.9 Cr) with no visible dividend history or balance-sheet disclosure"
+    ],
+    "red_flags": [
+      "ROE near zero — the business is barely earning on its equity base",
+      "Recently listed IPO-type security lacking the 5-year earnings record I demand",
+      "No data on current ratio, debt/equity, or book value — cannot verify solvency"
+    ],
+    "detailed_analysis": "The numbers condemn this security from my perspective. A 0.21% ROE means the business is earning virtually nothing on its capital — a fixed deposit would do dramatically better with zero risk. Yet Mr. Market is asking 20 times earnings, which implies an earnings yield of 5% against a near-zero return on equity. That is the definition of speculation on future improvement, not investment in demonstrated earning power. I cannot compute a Graham Number without book value per share, but the combination of 20x P/E and 0.21% ROE makes any reasonable intrinsic value calculation produce a figure far below market price.\n\nEqually troubling is the absence of the data a defensive investor requires: no current ratio, no debt-to-equity, no interest coverage, no dividend record. A 54-year-old company that only recently came to the public markets with a market cap of INR 44.9 Cr fits the classic profile of a small promoter-driven issue where the seller knows far more than the buyer. The 65% promoter stake is the only mild positive, but insider ownership does not rescue miserable economics. I would require a price closer to 30–40% of book value and demonstrated earnings stability before considering this — conditions not remotely met here.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "insufficient_data",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 22776,
+    "model_used": "opus",
+    "total_cost_usd": 0.0923535,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8934,
+      "cache_read_input_tokens": 13472,
+      "output_tokens": 1190,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8934,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10586,
+          "cache_creation_input_tokens": 1234,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1234
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

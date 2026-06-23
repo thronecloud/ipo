@@ -1,0 +1,69 @@
+{
+  "symbol": "AARTIIND",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-19T06:17:27.722612Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Aarti Industries is the worst kind of story for a GARP investor: a company that peaked in 2022 and is now in earnings freefall, yet trades at P/E 43x — implying a PEG north of 15. The growth story has broken down completely, and you are being asked to pay a premium price for a deteriorating business.",
+    "key_strengths": [
+      "Revenue has still grown from INR 3,006 Cr (FY16) to INR 7,271 Cr (FY25), showing the underlying market opportunity in specialty chemicals is real",
+      "Debt/Equity of 0.70 is manageable and the balance sheet is not yet in distress",
+      "Positive OCF in all 5 years (INR 519–1,319 Cr range) provides some financial resilience"
+    ],
+    "key_risks": [
+      "Net profit has collapsed from the peak of INR 1,186 Cr (FY22) to INR 331 Cr in FY25 — a 72% decline in three years while the stock still commands P/E 43x",
+      "ROE of just 6.03% and ROCE of 6.32% mean the company is barely earning its cost of capital despite heavy capex (INR 1,300–1,400 Cr/year) — classic value destruction",
+      "EBITDA margin has contracted sharply: from INR 1,687 Cr (FY22) to INR 986 Cr (FY25) as Chinese competition and raw material pressures have not abated"
+    ],
+    "red_flags": [
+      "Earnings are going the wrong direction: INR 1,186 Cr → 545 → 416 → 331 Cr over four years — this is not a dip, this is a trend",
+      "EV/EBITDA of 18.4x and P/E of 43x are growth-company multiples for a business where earnings are down 72% from peak — the market is pricing in a recovery that has not materialised",
+      "Finance costs rose from INR 86 Cr (FY21) to INR 275 Cr (FY25) as capex was debt-funded, but returns have not followed"
+    ],
+    "detailed_analysis": "The cardinal Lynch rule is 'never fall in love with a story when the numbers stop working.' Aarti Industries had a brilliant story in FY22 (specialty chemicals as China+1 beneficiary), but the numbers have unraveled violently since. Net profit dropped from INR 1,186 Cr to INR 331 Cr across four years — a 72% earnings collapse — while the company continued to pour INR 1,300+ Cr annually into capex with almost no FCF to show for it. The market still prices it at P/E 43x, implying it expects a massive earnings rebound; yet operating margins are stuck at 8.8% and ROE is a miserable 6%.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 161503,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.21403215000000003,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 22995,
+      "cache_read_input_tokens": 15623,
+      "output_tokens": 8207,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 22995,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 704,
+          "cache_read_input_tokens": 15623,
+          "cache_creation_input_tokens": 7372,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 7372
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

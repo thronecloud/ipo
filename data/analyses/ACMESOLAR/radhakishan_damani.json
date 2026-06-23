@@ -1,0 +1,70 @@
+{
+  "symbol": "ACMESOLAR",
+  "persona": "radhakishan_damani",
+  "persona_display_name": "Radhakishan Damani",
+  "analyzed_at": "2026-04-19T06:19:51.237195Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "ACME Solar is a highly leveraged renewable energy project developer with D/E of 2.72, revenue that has contracted every year since 2020, ROE of just 7.57%, and finance costs of INR 759 Cr consuming 54% of EBITDA — this is a project finance vehicle masquerading as an equity investment, and it fails every financial quality test I apply.",
+    "key_strengths": [
+      "Operating margin of 65.28% looks impressive and OCF has been positive all five years, reflecting the predictable cash flows of long-term power purchase agreements",
+      "Promoter holding of 83.29% is very high, indicating controlling family commitment to the business",
+      "India's renewable energy buildout is a genuine multi-decade structural story with government-backed demand"
+    ],
+    "key_risks": [
+      "Debt/Equity of 2.72 with INR 12,998 Cr in total borrowings — the company is essentially an SPV portfolio where equity holders are subordinate to massive debt obligations",
+      "Revenue has contracted at -4.6% CAGR over five years despite capacity additions — a deeply troubling signal about tariff realisations and project economics",
+      "Finance costs of INR 759 Cr eat more than half of EBITDA (INR 1,396 Cr), leaving minimal room for error and no dividend capacity"
+    ],
+    "red_flags": [
+      "D/E of 2.72 — absolute hard stop; I will not own businesses with this leverage regardless of sector",
+      "Free cash flow was negative INR 1,719 Cr in FY25 and -INR 1,368 Cr in FY24 — the business is a perpetual cash consumer",
+      "Net profit is wildly volatile (INR 86 Cr → 15 → 62 → -3 → 698 → 251 Cr) driven largely by asset sale gains and one-off items, not operational consistency",
+      "ROE of 7.57% is below the risk-free rate — shareholders are earning less than a fixed deposit after all this leverage risk"
+    ],
+    "detailed_analysis": "The 65% operating margin is seductive until you realise that INR 759 Cr of interest expense devours the majority of it, leaving ROE at a paltry 7.57%. This is not a business — it is a heavily levered infrastructure project where equity returns depend on asset monetisation events, tariff outcomes, and refinancing cycles rather than operational excellence. The high promoter holding does little to comfort me when the business is consuming cash at the rate of INR 1,700 Cr annually.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 135889,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.18358020000000003,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 18802,
+      "cache_read_input_tokens": 16529,
+      "output_tokens": 7207,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 18802,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 641,
+          "cache_read_input_tokens": 14479,
+          "cache_creation_input_tokens": 6373,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 6373
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

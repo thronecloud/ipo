@@ -1,0 +1,70 @@
+{
+  "symbol": "POWERMECH",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T21:58:02.576403Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "AVOID",
+    "investment_thesis": "Power Mech is a competent E&C operator riding India's infrastructure capex cycle, but it is a project-based, working-capital-hungry business with thin margins and negligible free cash flow — precisely the type of capital-intensive contractor I have spent a lifetime avoiding. At 22x earnings with no durable moat, I see no margin of safety.",
+    "key_strengths": [
+      "Revenue CAGR of 16% over 9 years with clear acceleration — INR 1,378 Cr (2016) to INR 5,234 Cr (2025)",
+      "ROCE of 22.9% and ROE of 16.3% — ROE barely clears my 15% threshold, suggesting decent asset utilisation",
+      "High promoter holding (58.4%) and strong DII ownership (20.2%) signal institutional conviction and aligned management"
+    ],
+    "key_risks": [
+      "Cash flow catastrophe in 2025: INR 348 Cr net profit yet OCF of just INR 1 Cr and FCF of -159 Cr — earnings are not converting to cash, a classic E&C working capital trap",
+      "Borrowings nearly tripled in one year — from INR 396 Cr (2024) to INR 960 Cr (2025) — while D/E crossed 0.41; debt is accelerating faster than the business can self-fund",
+      "No economic moat — E&C contracts are won on price and relationships; the 2021 net loss of -49 Cr proved how quickly profitability collapses when project execution stalls"
+    ],
+    "red_flags": [
+      "2025 OCF collapsed to INR 1 Cr despite record profits — massive working capital deterioration unexplained by disclosed data",
+      "Borrowings surged ~142% YoY (396→960 Cr), driving financing CF to +232 Cr; growth is being funded by debt, not operations",
+      "2021 net loss (-49 Cr) on INR 1,884 Cr revenue illustrates severe earnings cyclicality — unsuitable for a long-term owner",
+      "Finance costs have risen every single year for 9 years (33→99 Cr CAGR 13%) — interest burden compounds regardless of project wins"
+    ],
+    "detailed_analysis": "Power Mech Projects ticks some surface-level boxes — double-digit revenue growth, improving margins, and a reasonable 22x P/E with a forward multiple of ~16x. But when I look past the income statement, I see a business that consumed all of its earnings in working capital in 2025, generating a mere INR 1 Cr of operating cash flow on INR 348 Cr of reported net profit. That is not a business; that is a receivables factory. The company's capex is also accelerating (INR 163 Cr in 2025 vs. INR 44 Cr in 2022), and the near-tripling of borrowings in a single year to INR 960 Cr tells me management is funding growth with leverage rather than retained earnings. That is not how durable wealth is created.\n\nOn moat, there is simply nothing here that prevents a competitor from bidding away the next thermal plant O&M contract or railway electrification project. The operating margin of 9.9% is thin and was effectively zero in 2021 when the cycle turned. I admire India's infrastructure ambition and Power Mech will likely benefit from it — but I want to own the toll road, not the construction crew building it. At INR 7,512 Cr market cap for a business that generated negative free cash flow last year and carries rising debt, I am not being paid to take on this risk. I will leave this one for someone else.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 48756,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0831036,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11392,
+      "cache_read_input_tokens": 9232,
+      "output_tokens": 2507,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11392,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 403,
+          "cache_read_input_tokens": 9232,
+          "cache_creation_input_tokens": 2160,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2160
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

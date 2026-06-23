@@ -1,0 +1,69 @@
+{
+  "symbol": "CSBBANK",
+  "persona": "rakesh_jhunjhunwala",
+  "persona_display_name": "Rakesh Jhunjhunwala",
+  "analyzed_at": "2026-04-18T17:08:04.035598Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "CSB Bank is a cheap regional bank (P/E 11x, P/B 1.48x) being scaled by Fairfax India, but rising finance costs (34% CAGR) crushing profit growth to a mere 9% CAGR against 20.5% revenue growth signals dangerous NIM compression. At sub-15% ROE with promoter below 50%, this lacks the quality threshold I demand for a high-conviction India financial services bet.",
+    "key_strengths": [
+      "Cheap valuation — forward P/E 7.86x and P/B 1.48x offer meaningful margin of safety for a growing bank",
+      "Strong asset growth — balance sheet expanded from ₹25,356 Cr to ₹47,836 Cr (3Y CAGR ~24%), showing aggressive loan book scaling",
+      "Gold loan and SME focus gives product differentiation; backed by disciplined Fairfax India capital"
+    ],
+    "key_risks": [
+      "Finance costs exploding at 33.8% CAGR vs 20.5% revenue growth — NIM compression is destroying operating leverage and limiting profit CAGR to only 9%",
+      "ROE at 13.2% is below my 15% floor; a bank growing assets at 24% while earning sub-15% ROE is destroying value at the margin",
+      "Highly erratic cash flows — OCF was -₹5,256 Cr in FY25 and debt tripled from ₹783 Cr to ₹5,246 Cr in two years, raising funding risk"
+    ],
+    "red_flags": [
+      "Promoter holding at only 40% — below my 50%+ preferred threshold and below what I'd want for a regional bank transformation story",
+      "Finance cost CAGR (33.8%) massively outpacing revenue CAGR (20.5%) — this spread is unsustainable and already compressing profits",
+      "Net profit (₹594 Cr) vs total assets (₹47,836 Cr) gives an ROA well under 1.5% — thin profitability for the balance sheet risk being taken"
+    ],
+    "detailed_analysis": "CSB Bank is a 100-year-old Kerala-based lender being reinvented under Fairfax India ownership. The asset growth story is real — the balance sheet has nearly doubled in three years — but the economics of that growth are deteriorating badly. Finance costs have risen from ₹885 Cr to ₹2,121 Cr (33.8% CAGR), far outpacing net revenue expansion, which means the bank is paying up for deposits and borrowings to fund rapid loan book growth. The consequence: net profit barely moved from ₹458 Cr to ₹594 Cr over three years (9% CAGR), ROE sits at 13.2%, and forward earnings are still not translating into quality compounding. This is the kind of bank story where the topline looks exciting but the economics are quietly eroding.\n\nFrom my lens, India's banking sector has far better compounders available — HDFC Bank, Kotak, and even select mid-size private banks with ROEs above 16-18% and clean NIM trajectories. CSB at 11x P/E is not expensive, but cheap alone doesn't make a great investment. I want to see ROE cross 16%+, finance costs stabilize relative to NII, and ideally the promoter build back toward 50%+ holding before I'd take a high-conviction position. For now it's a wait-and-watch at current prices — the valuation cushion prevents it from being an outright avoid, but the quality doesn't excite me.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 49285,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07950165,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8905,
+      "cache_read_input_tokens": 10713,
+      "output_tokens": 2859,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 8905
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 517,
+          "cache_read_input_tokens": 8610,
+          "cache_creation_input_tokens": 2398,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2398,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

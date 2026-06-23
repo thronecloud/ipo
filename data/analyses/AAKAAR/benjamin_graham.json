@@ -1,0 +1,69 @@
+{
+  "symbol": "AAKAAR",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-20T11:10:39.521675Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Aakaar Medical trades at a P/E of 11.90 but delivers an anemic ROE of just 0.34%, indicating earnings are essentially trivial relative to equity. Without a proven multi-year earnings record, dividend history, or demonstrable margin of safety, this micro-cap (INR 71.7 Cr) fails nearly every quantitative filter I demand.",
+    "key_strengths": [
+      "Promoter holding of 67.05% signals skin in the game",
+      "P/E of 11.90 is below my <15 ceiling on headline basis",
+      "DII participation of 11.17% offers some institutional validation"
+    ],
+    "key_risks": [
+      "ROE of 0.34% implies earnings are near-zero — the 'E' in P/E is fragile",
+      "Micro-cap at INR 71.7 Cr — illiquid, volatile, no durable earning power demonstrated",
+      "Zero FII and no disclosed dividend history or balance-sheet strength metrics"
+    ],
+    "red_flags": [
+      "0.34% ROE suggests the low P/E is a statistical artifact of collapsed earnings",
+      "Recently listed aesthetic/cosmetics micro-cap — speculative by Graham's IPO test",
+      "No data on current ratio, debt/equity, or interest coverage to verify solvency"
+    ],
+    "detailed_analysis": "A P/E of 11.90 looks superficially cheap, but pair it with an ROE of 0.34% and the math tells the real story: earnings are nominal, making the multiple meaningless. On a rough back-of-envelope basis, if ROE is 0.34%, book value per share must be enormous relative to EPS — or EPS is near zero — either of which suggests the Graham Number test cannot be satisfied with any margin of safety. A genuine value investor requires demonstrated earning power across 3–5 years, and no such evidence is provided here.\n\nThis is a micro-cap (INR 71.7 Cr) aesthetic cosmetics company incorporated in 2013 — precisely the type of speculative, fashion-dependent enterprise I caution against in The Intelligent Investor. There is no dividend track record in the data, no current ratio, no debt metrics, and no multi-year earnings consistency. Mr. Market may be offering this at 11.90x, but when the underlying business earns 0.34% on equity, the price is not the problem — the business is. I would require the stock to trade well below tangible book with demonstrable, stable earnings before considering it. Avoid.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "insufficient_data",
+      "valuation": "overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 20325,
+    "model_used": "opus",
+    "total_cost_usd": 0.09163275000000001,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8947,
+      "cache_read_input_tokens": 13518,
+      "output_tokens": 1157,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8947,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10632,
+          "cache_creation_input_tokens": 1201,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1201
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

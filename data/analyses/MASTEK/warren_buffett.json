@@ -1,0 +1,68 @@
+{
+  "symbol": "MASTEK",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T18:16:32.901173Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Mastek is a reasonably priced mid-tier IT services business with consistent FCF generation and a 9-year net profit CAGR of 32.5%, trading at an attractive 12.8x P/E with a ~9.5% FCF yield. However, IT services lacks the durable pricing power and wide moat I require — it is a people-intensive, competitive business where customers can and do switch vendors.",
+    "key_strengths": [
+      "Attractive valuation: 12.8x P/E, 9.8x EV/EBITDA, with FCF of INR 515 Cr yielding ~9.5% on market cap",
+      "Consistent FCF generation — positive all 5 years (276→515 Cr), low capex intensity (~20-37 Cr/yr)",
+      "Conservative balance sheet: D/E 0.20, borrowings declining from 583 Cr (2025) to 438 Cr (2026), strong equity base of 2,992 Cr"
+    ],
+    "key_risks": [
+      "No durable moat: IT services is commoditized and competitive — pricing power is limited and talent-dependent",
+      "UK/government concentration: significant UK public sector exposure creates macro and policy risk (Brexit aftermath, budget cuts)",
+      "Net profit growth has plateaued: 310→311→376→404 Cr over FY23-26, far below the 32% 9-year CAGR, signaling maturation"
+    ],
+    "red_flags": [
+      "Finance costs exploded from INR 8 Cr (FY22) to INR 44 Cr (FY24) — the FY23 acquisition (INR 719 Cr investing outflow) added material debt",
+      "ROE of 15.6% is only barely above my 15% threshold and may compress further as the equity base grows faster than earnings"
+    ],
+    "detailed_analysis": "Mastek is a competent, well-managed mid-tier IT services company with a commendable long-term track record — revenue compounding at 23% and net profit at 32% over nine years is genuinely impressive. The valuation at 12.8x trailing and 11.3x forward P/E is not expensive, and the FCF generation (INR 515 Cr on INR 5,412 Cr market cap) is the most attractive feature here. The balance sheet is clean with D/E of 0.20, and the company is actively paying down the acquisition-related debt taken on in FY23. For a value-oriented investor, the numbers superficially check many boxes.\n\nThe fundamental problem is moat. IT services is a labor-arbitrage business dressed up in digital transformation language. Mastek has carved a niche in Oracle Cloud implementations and UK public sector — these create some switching costs, but not the type of durable competitive advantage I require. The moment a competitor undercuts on price or a key account manager leaves, the business erodes. Operating margins at 14.1% are decent but not exceptional, and ROE at 15.6% barely clears my threshold. This is a fair business at a fair price — I'd rather own a wonderful business at a fair price. I would not initiate a new position, but existing holders need not panic given the valuation support.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 44417,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08419694999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11277,
+      "cache_read_input_tokens": 9164,
+      "output_tokens": 2610,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11277
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 535,
+          "cache_read_input_tokens": 9164,
+          "cache_creation_input_tokens": 2113,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2113,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

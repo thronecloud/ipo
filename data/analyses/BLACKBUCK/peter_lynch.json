@@ -1,0 +1,69 @@
+{
+  "symbol": "BLACKBUCK",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-18T16:50:20.087819Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "AVOID",
+    "investment_thesis": "BlackBuck is a genuine turnaround story — digitizing India's massive unorganized trucking sector, with EBITDA flipping from -212 Cr (FY23) to +128 Cr (FY25) and gross margins at 74%. But at 74x EV/EBITDA and 19x P/S on a company still reporting net losses, the stock has massively outrun the story — Lynch's cardinal sin.",
+    "key_strengths": [
+      "Turnaround velocity: EBITDA improved ~340 Cr in two years (FY23→FY25), proving the platform model works",
+      "Pristine balance sheet: D/E of just 0.04, borrowings collapsed from 394 Cr to 48 Cr — no debt overhang",
+      "74% gross margins signal durable SaaS-like unit economics in a capital-light model"
+    ],
+    "key_risks": [
+      "Extreme valuation: 74x EV/EBITDA on nascent profitability leaves zero margin of safety for execution stumbles",
+      "Revenue model reset: 4Y revenue CAGR is -16.2% (867 Cr in FY21 → 427 Cr in FY25), suggesting the old business was structurally different — true organic growth history is thin",
+      "Forward P/E (49x) exceeds trailing P/E (29x), implying the market expects earnings to shrink — contradicts the growth narrative"
+    ],
+    "red_flags": [
+      "Other Income was -308 Cr in FY25, nearly erasing EBITDA of 128 Cr and explaining why net profit is still -9 Cr — this large unresolved line item needs explanation (ESOP costs? write-downs?)",
+      "Promoter holding is only 25% — limited skin in the game for a founder-driven tech story",
+      "Net profit still negative in FY25 despite the P/E of 29.5 implying profitability — the metric is likely based on adjusted/EBITDA earnings, not GAAP"
+    ],
+    "detailed_analysis": "BlackBuck is a Lynch-style turnaround that I'd classify as a story in transition — from cash-burning startup to emerging platform business. The concept is compelling: India has ~10 million truck operators, overwhelmingly unorganized, and BlackBuck offers them telematics, fuel cards, load marketplace, and vehicle finance through one digital layer. Revenue has grown from 119 Cr (FY22) to 427 Cr (FY25), a ~53% CAGR on the post-restructured base, and EBITDA is finally positive at 128 Cr. OCF turned positive (58 Cr in FY25), FCF is barely positive at 15 Cr, and debt is essentially gone. This is the right direction.\n\nThe problem is price. Lynch's rule is P/E should be no more than 2x the growth rate. Even using an optimistic 50% revenue growth assumption, EV/EBITDA at 74x and P/S at 19x signal the market has already priced in perfection — and then some. The -308 Cr \"Other Income\" in FY25 is a red flag I can't ignore without explanation; it suggests hidden costs (likely ESOP charges) that make the business far less profitable than the operating line suggests. The forward P/E being 67% higher than trailing P/E is particularly troubling — that's the market saying earnings are going backwards from here. I'd rather watch BlackBuck prove two or three more years of compounding profitability and revisit at a more rational valuation.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 77319,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0991767,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11724,
+      "cache_read_input_tokens": 8609,
+      "output_tokens": 3508,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11724
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 440,
+          "cache_read_input_tokens": 8609,
+          "cache_creation_input_tokens": 3115,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 3115,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

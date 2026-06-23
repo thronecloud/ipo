@@ -1,0 +1,69 @@
+{
+  "symbol": "DEEPAKFERT",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-19T13:09:50.998710Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "DEEPAKFERT is the most Magic Formula-friendly stock of this batch — earnings yield of ~10% (EBIT ≈ INR 1,925 Cr / EV ≈ INR 19,346 Cr) and ROCE of 15.7% make it mediocre on both metrics but reasonably balanced. At EV/EBITDA of 10.91x with a 17% EBITDA CAGR over 9 years, the price is fair but not a screaming bargain.",
+    "key_strengths": [
+      "Operating income CAGR of 20.6% over 9 years with expanding EBITDA margins — the business is genuinely improving",
+      "Reasonable valuation: EV/EBITDA of 10.91x and P/S of 1.39x; earnings yield of ~10% approaches the Magic Formula 12% threshold",
+      "OCF positive all 5 of the last 5 years; FY25 OCF of INR 1,880 Cr is strong and the highest in the series"
+    ],
+    "key_risks": [
+      "ROCE of 15.7% is meaningfully below the 20%+ threshold I want — this is a capital-intensive chemical/fertiliser business, not a capital-light compounder",
+      "Debt load rising sharply: borrowings grew from INR 2,656 Cr (FY22) to INR 4,440 Cr (FY25) and finance costs nearly tripled to INR 413 Cr — leverage is consuming earnings",
+      "FCF was negative in FY23 and FY24 due to heavy capex (INR 885–1,209 Cr/year); CWIP of INR 2,230 Cr signals more capex ahead, making sustained FCF uncertain"
+    ],
+    "red_flags": [
+      "Finance cost growing at 13.7% CAGR while EBIT is volatile — debt-funded expansion compresses Magic Formula metrics if returns on new capital are modest",
+      "Net profit swung from INR 1,221 Cr (FY23) to INR 468 Cr (FY24), showing commodity-cycle sensitivity that makes 'normalized' EBIT estimates unreliable",
+      "Real estate and diversified segments add complexity and likely dilute capital returns on the core chemicals business"
+    ],
+    "detailed_analysis": "Running the Magic Formula: EV = Market Cap INR 15,547 Cr + Debt INR 4,152 Cr – Cash INR 353 Cr = INR 19,346 Cr. EBIT (Operating Income FY25) = INR 1,925 Cr. Earnings Yield = 9.95% — just below my 12% threshold for 'attractive.' ROCE (provided) = 15.7% — below the 20% floor I prefer. The stock scores 'mediocre on both' rather than 'good on both,' which is what Magic Formula demands. That said, EV/EBITDA of 10.91x is the cheapest in this cohort and 9-year operating income CAGR of 20.6% shows real operational progress.\n\nThe structural concern is rising debt funding a large capex cycle (CWIP INR 2,230 Cr in FY25). If the new TAN (Technical Ammonium Nitrate) capacity delivers expected margins, ROCE could climb toward 18–20% and push this into buy territory. Until then, it sits in HOLD territory — reasonable but not compelling enough for the Magic Formula's systematic screen.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 177688,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.2350374,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 24622,
+      "cache_read_input_tokens": 16003,
+      "output_tokens": 9193,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 24622,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 477,
+          "cache_read_input_tokens": 16003,
+          "cache_creation_input_tokens": 8619,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8619
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

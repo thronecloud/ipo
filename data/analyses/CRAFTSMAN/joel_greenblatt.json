@@ -1,0 +1,69 @@
+{
+  "symbol": "CRAFTSMAN",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-19T13:04:04.011100Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Craftsman Automation is a capital-intensive auto parts manufacturer that fails both Magic Formula tests: ROCE of 11.7% is below my 12% minimum floor, and earnings yield of ~4.0% (EBIT INR 833 Cr / EV ~INR 20,608 Cr) is unattractive — a weak business at an expensive price. The recent massive debt-funded expansion (borrowings tripled to INR 3,311 Cr, FCF -INR 706 Cr in FY2025) makes this even less compelling.",
+    "key_strengths": [
+      "Revenue CAGR of 22.8% over 8 years demonstrates execution in a competitive space, with diversification across Powertrain, Aluminium Products, and Industrial segments",
+      "OCF has been positive every year for 5 years, showing the core operations generate real cash before the capex overhang",
+      "Strong institutional ownership (FII 15.2%, DII 28.3%) suggests sophisticated investors see a long-term auto sector play with storage/logistics optionality"
+    ],
+    "key_risks": [
+      "ROCE of 11.7% and ROE of 9.41% are below the cost of capital for a levered cyclical business — this company is not earning economic profits at scale",
+      "Debt/Equity of 1.09 with borrowings tripling in one year to INR 3,311 Cr and FCF deeply negative at -INR 706 Cr in FY2025 creates meaningful financial stress if auto demand softens",
+      "Net profit fell sharply from INR 337 Cr (FY2024) to INR 201 Cr (FY2025) while finance costs rose to INR 217 Cr — rising interest burden is eating into thin earnings in an already low-margin business (operating margin 9.6%)"
+    ],
+    "red_flags": [
+      "Total assets nearly doubled from INR 4,706 Cr to INR 8,266 Cr in a single year (FY2025) — a major acquisition has dramatically changed the risk profile; ROIC on the new assets is unproven",
+      "FCF turned deeply negative: -INR 706 Cr in FY2025 after -INR 115 Cr in FY2024 — the company is consuming capital faster than it generates it, funded entirely by debt and equity issuance",
+      "P/E of 52.2x on a cyclical, capital-heavy auto parts manufacturer with declining near-term profits is a fundamental mismatch"
+    ],
+    "detailed_analysis": "The Magic Formula demands high ROIC AND cheap valuation. Craftsman delivers neither. ROCE of 11.7% reflects the reality of auto parts manufacturing — high fixed costs, customer pricing pressure, and capital intensity that structurally limits returns. The 9.59% operating margin on INR 5,690 Cr revenue shows limited pricing power vs vertically integrated OEMs.\n\nThe FY2025 balance sheet transformation (assets up INR 3,560 Cr, borrowings up INR 1,556 Cr) looks like a sizable acquisition — possibly in the industrial storage/ASRS segment. Until the acquired assets demonstrate ROIC improvement and debt begins declining, this is a show-me story. Finance cost of INR 217 Cr against net profit of INR 201 Cr underscores how much leverage is suppressing equity returns. At a Forward P/E of 32x, the market expects a sharp earnings recovery from the acquisition synergies — a bet I am not willing to make on a below-threshold ROIC business.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 186158,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.26926605000000003,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 26063,
+      "cache_read_input_tokens": 15936,
+      "output_tokens": 11116,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 26063,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 824,
+          "cache_read_input_tokens": 15936,
+          "cache_creation_input_tokens": 10127,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 10127
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

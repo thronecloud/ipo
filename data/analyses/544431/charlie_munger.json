@@ -1,0 +1,69 @@
+{
+  "symbol": "544431",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-20T20:07:01.589527Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "A sub-INR 156 Cr micro-cap consulting outfit earning a pathetic 0.41% ROE fails every Munger quality test — the business is producing returns far below the cost of capital. Inverting the question \"what could go wrong?\" yields an easy answer: almost everything already has.",
+    "key_strengths": [
+      "Low reported P/E of 12.4x (but on near-zero earnings, which is meaningless)",
+      "Promoter holding of 43.9% indicates some skin in the game",
+      "Asset-light consulting model in principle requires minimal capex"
+    ],
+    "key_risks": [
+      "ROE of 0.41% — business earns essentially nothing on equity, far below bond yields",
+      "Negligible institutional interest (FII 0.19%, DII 0.01%) signals no serious scrutiny",
+      "Tiny INR 156 Cr cap + undifferentiated 'consulting/auditing/market research' offers no moat"
+    ],
+    "red_flags": [
+      "ROE of 0.41% is an order of magnitude below my 15% threshold",
+      "Vague, kitchen-sink business description (legal + accounting + polling + consultancy) — a classic di-worsification red flag",
+      "Promoter holds under 50% — no clear controlling discipline, with 56% floating in retail hands"
+    ],
+    "detailed_analysis": "Inverting, as I always do: what would make this a disaster? A business with 0.41% return on equity IS the disaster — capital deployed here is destroying value in real terms once you account for inflation and opportunity cost. The P/E of 12.4 is a statistical illusion; on a near-zero earnings base, small absolute swings produce wild multiples. The laundry-list business description — legal, accounting, auditing, tax, market research, opinion polling, management consultancy — violates the Munger principle of understanding a durable franchise. This is not a business; it is a corporate shell doing whatever pays the bills this quarter.\n\nNegligible institutional ownership (0.20% combined FII+DII) tells you the professionals who scrutinize businesses for a living have taken one look and walked away. There is no moat, no scale, no brand, no network effect, no switching cost — just a tiny services firm competing against the Big Four at the top and thousands of CA practices at the bottom. Munger's rule: the first filter is whether a business meets quality standards; only then do you discuss price. This one doesn't clear the first filter. Pass, and find something you can actually understand and admire.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 23433,
+    "model_used": "opus",
+    "total_cost_usd": 0.09292724999999999,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8991,
+      "cache_read_input_tokens": 13207,
+      "output_tokens": 1204,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8991,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10480,
+          "cache_creation_input_tokens": 1238,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1238
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

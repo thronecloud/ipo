@@ -1,0 +1,70 @@
+{
+  "symbol": "INDIASHLTR",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T17:42:34.670186Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "India Shelter Finance trades at INR 803 against a Graham Number of ~INR 457 — a 75% premium to intrinsic value by my calculation — with P/B of 2.98 and P/E of 18.4, offering no margin of safety. The business has real and growing earnings, but Mr. Market has priced in a rosy future I am not willing to pay for.",
+    "key_strengths": [
+      "Consistent 5-year earnings record: Net profit grew from INR 87 Cr (2021) to INR 378 Cr (2025), CAGR 44.4% — genuine earning power",
+      "Strong operating margins (~61%) and ROE of 15% indicate a decent underlying franchise in affordable housing finance",
+      "Promoter holding at 47.6% with DII ownership of 20.7% signals institutional confidence and owner-operator alignment"
+    ],
+    "key_risks": [
+      "P/B of 2.98 grossly violates my 1.5 ceiling — I am paying nearly INR 3 for every INR 1 of net assets, leaving no buffer if asset quality deteriorates",
+      "Debt/Equity of 1.88 is extreme by my standards (threshold: 0.5); the entire equity base could be wiped by a modest deterioration in the INR 4,969 Cr loan book",
+      "Operating cash flow negative all 5 years (cumulative outflow ~INR 4,435 Cr) — funded entirely by INR 5,845 Cr of financing inflows; the business consumes capital relentlessly"
+    ],
+    "red_flags": [
+      "Graham Number ~INR 457 vs market price INR 803 — stock trades at a 75% premium to intrinsic value",
+      "Zero dividend payments — all earnings retained; shareholder returns depend entirely on a speculative future sale price",
+      "Finance costs rising sharply (INR 106 Cr → INR 356 Cr, CAGR 35.4%) — any rate cycle or credit-market freeze could compress spreads severely",
+      "P/S of 8.9x on a financial company whose 'revenue' is largely interest spread — an alarmingly rich multiple"
+    ],
+    "detailed_analysis": "India Shelter Finance is a small housing finance company (HFC) serving the affordable segment, and I grant it one virtue Graham respects: five consecutive years of growing, auditable profits. However, every quantitative filter I apply condemns the price. P/E of 18.4 exceeds my 15x ceiling; P/B of 2.98 is double my 1.5x limit. My Graham Number — the square root of (22.5 × EPS of ~INR 34.7 × BVPS of ~INR 268) — yields approximately INR 457, implying the market is charging a 75% premium over what I consider a fair price. I require a discount to intrinsic value, not a surcharge.\n\nThe balance sheet structure of an HFC structurally violates my debt and cash-flow norms, and I acknowledge that negative operating cash flow is a mechanical artifact of loan-book growth rather than operational failure. Yet that structural reality is precisely why I am cautious: when a lender's entire equity (INR 2,915 Cr) is leveraged 1.88x with INR 4,969 Cr of borrowed funds, a 2-3% rise in NPAs or a liquidity squeeze — as India witnessed with IL&FS in 2018 — can rapidly impair equity value. The market has priced in smooth sailing; I prefer to be paid for bearing uncertainty, not to pay a premium for it. The disciplined investor must wait for Mr. Market to offer this stock at INR 450 or below before a margin of safety exists.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 52727,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07282169999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8700,
+      "cache_read_input_tokens": 10709,
+      "output_tokens": 2465,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 8700
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 421,
+          "cache_read_input_tokens": 8659,
+          "cache_creation_input_tokens": 2091,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2091,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

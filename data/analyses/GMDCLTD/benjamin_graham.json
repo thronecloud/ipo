@@ -1,0 +1,70 @@
+{
+  "symbol": "GMDCLTD",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-22T16:37:07.284741Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "GMDC trades at INR 737 — approximately 2.3× my computed Graham Number of ~INR 320 (EPS ~₹21.6, BVPS ~₹211) — offering no margin of safety whatsoever. The stock's P/E of 36.6× and P/B of 3.48× both far exceed my maximum thresholds of 15× and 1.5× respectively, making this a speculative price for a cyclical coal miner.",
+    "key_strengths": [
+      "Near-zero debt (D/E 0.04, finance cost only ₹2 Cr) — fortress balance sheet by mining standards",
+      "74% government promoter ownership provides operational continuity and implicit sovereign support",
+      "Strong reserves of ₹6,659 Cr against modest borrowings — liquidation value remains meaningful"
+    ],
+    "key_risks": [
+      "Earnings deeply cyclical — net profit swung from +₹347 Cr (2018) to -₹39 Cr (2021), failing my 5-year positive earnings requirement",
+      "Valuation demands perfection: at P/E 36.6×, any commodity downturn (as in FY20-21) would be catastrophic for the price",
+      "Surging capex (₹644 Cr in FY25, CWIP ₹619 Cr) bets heavily on growth — speculative for a commodity business facing coal's secular decline"
+    ],
+    "red_flags": [
+      "Reported net loss in FY2021 (-₹39 Cr) — disqualifying under Graham's consecutive positive earnings rule",
+      "P/B of 3.48× means I am paying ₹3.48 for every ₹1 of net assets — wildly above my ceiling of 1.5×",
+      "Other Income (₹355 Cr in FY25) constitutes ~51% of net profit — underlying operating earnings far weaker than headline figures suggest",
+      "Free cash flow turned deeply negative in FY24 (-₹366 Cr) due to capex surge — capital allocation risk"
+    ],
+    "detailed_analysis": "GMDC fails virtually every quantitative filter I apply. The Graham Number — my bedrock test — yields approximately ₹320 against a market price of ₹737, meaning Mr. Market is pricing in optimism I am not willing to pay for. The P/E of 36.6× demands that earnings stay elevated indefinitely; history shows they will not. Operating income collapsed from ₹556 Cr (FY19) to a loss of ₹10 Cr (FY21) inside two years, and net profit went negative. A business whose earning power evaporates that rapidly cannot be valued on peak earnings.\n\nThe one genuine virtue here is the balance sheet — debt-to-equity of just 0.04 and ₹6,723 Cr in equity against ₹278 Cr borrowings is commendable. However, a clean balance sheet does not justify paying 3.48× book value. Furthermore, \"Other Income\" of ₹355 Cr in FY25 props up the ₹686 Cr net profit — strip that out and operating earnings are far thinner. CWIP has ballooned to ₹619 Cr, signalling a large capex cycle whose returns are unproven. The intelligent investor does not pay a growth premium for a coal mining PSU — the industry's long-term trajectory and earnings volatility demand a discount, not a premium.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 50573,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07465905,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9263,
+      "cache_read_input_tokens": 11246,
+      "output_tokens": 2436,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9263,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 400,
+          "cache_read_input_tokens": 9196,
+          "cache_creation_input_tokens": 2117,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2117
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

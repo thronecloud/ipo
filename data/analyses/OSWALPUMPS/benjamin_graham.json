@@ -1,0 +1,70 @@
+{
+  "symbol": "OSWALPUMPS",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T21:56:14.695151Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Oswal Pumps trades at INR 433 versus a Graham Number of ~INR 270 (based on EPS ~24.7 and BVPS ~131), a 60% premium to intrinsic value by my method, and a P/B of 3.34 that is more than double my 1.5 ceiling. Most critically, the company reported INR 281 Cr in net profit in 2025 yet burned INR 151 Cr in operating cash flow — a divergence that destroys all confidence in the quality of those earnings.",
+    "key_strengths": [
+      "Debt-to-equity of just 0.08 — balance sheet is essentially unlevered, a rare virtue",
+      "P/E of 14.10 narrowly passes my <15 threshold based on reported earnings",
+      "Revenue and profit have grown consistently for 4 consecutive years (profit: 17→34→98→281 Cr)"
+    ],
+    "key_risks": [
+      "Operating cash flow was -151 Cr in FY2025 against net profit of 281 Cr — a INR 432 Cr gap that signals aggressive working-capital build or revenue recognition issues",
+      "Business depends heavily on India's PMKUSUM government subsidy scheme for solar pumps — policy withdrawal would crater demand overnight",
+      "Equity base inflated from 179 Cr (2024) to 1,497 Cr (2025) via capital raise; forward ROE normalizes to ~19%, not the headline 87.5%"
+    ],
+    "red_flags": [
+      "Free cash flow -198 Cr in FY2025 — the company is consuming cash, not generating it",
+      "Price (433) is 60% above the Graham Number (~270); no margin of safety whatsoever",
+      "P/B of 3.34 — I am paying INR 3.34 for every INR 1 of net assets, a speculator's price not an investor's",
+      "No dividend disclosed — shareholders receive no tangible cash return to validate earnings"
+    ],
+    "detailed_analysis": "Oswal Pumps presents the classic illusion of growth without substance that Mr. Market loves to dress up and sell at a premium. The income statement looks spectacular — revenue CAGR of 58.4% and net profit CAGR of 154.7% over three years. Yet the cash flow statement tells the real story: FY2025 operating cash flow was -151 Cr while the company booked 281 Cr in net profit. This INR 432 Cr divergence almost certainly reflects a massive build in receivables or inventory tied to government subsidy reimbursements — a receivable that may or may not be collected promptly. I will not pay for earnings I cannot hold in my hand.\n\nOn valuation, the stock fails my tests decisively. P/B of 3.34 is more than twice my maximum of 1.5, and the price of 433 sits 60% above the Graham Number of ~270. The equity base itself is artificially inflated by a large 2025 capital raise (reserves grew from 173 to 1,486 Cr), masking a forward ROE closer to 19% — respectable but not worth this price. The near-zero debt (D/E 0.08) is a genuine positive, but it cannot compensate for a business burning cash, trading at a steep asset premium, and dependent on government subsidy pipelines that any change of policy can switch off. At INR 433, there is no margin of safety — there is only hope, and hope is not a method.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 56310,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08079644999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9065,
+      "cache_read_input_tokens": 10629,
+      "output_tokens": 2907,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9065,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 412,
+          "cache_read_input_tokens": 8579,
+          "cache_creation_input_tokens": 2536,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2536
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

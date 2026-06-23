@@ -1,0 +1,69 @@
+{
+  "symbol": "ICIL",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T17:45:41.743549Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Indo Count is a capital-intensive textile exporter with no real earnings growth over a decade — net profit in 2025 (INR 246 Cr) is actually below 2016 (INR 251 Cr) despite revenue doubling. At 48x trailing P/E with surging debt costs and sub-15% returns on capital, the price demands perfection that the business has never demonstrated.",
+    "key_strengths": [
+      "Revenue growing at 8.1% CAGR with clear export scale — INR 4,151 Cr in FY25, expanding steadily since 2021",
+      "Gross margin of 52% suggests reasonable brand/product mix in home textiles vs. pure commodity yarn peers",
+      "Promoter holding at 58.74% provides some alignment; Debt/Equity of 0.54 is not yet alarming"
+    ],
+    "key_risks": [
+      "Finance costs nearly doubled in one year (INR 70 Cr → 123 Cr, FY24→FY25), crushing net profit even as revenue grew 17%",
+      "No earnings growth over 9 years — net profit CAGR of -0.2%, classic textile value trap (Munger lived this at Berkshire)",
+      "FCF deeply negative in 2021-22, barely positive in 2024 (INR 11 Cr); OCF positive only 3 of 5 years — capital destruction cycle"
+    ],
+    "red_flags": [
+      "Total debt jumped from INR 956 Cr to INR 1,449 Cr in a single year (FY24→FY25) — Debt/EBITDA now 2.55x, breaching my 2.5x threshold",
+      "Operating margin collapsed to 4.86% — for a supposedly branded home textiles company, this is near-commodity economics",
+      "P/E of 48x on earnings that haven't grown in a decade is pricing in a turnaround with no historical basis for confidence"
+    ],
+    "detailed_analysis": "Charlie Munger's first rule: invert. What would make this a terrible investment? A commodity business with no pricing power, inconsistent free cash flow, rising leverage, and a valuation that prices in optimism the financials have never earned. Indo Count checks every box. ROCE of 13.5% and ROE of 11.3% are both below my 15% threshold — and more importantly, they haven't improved despite a decade of reinvestment. The company has plowed hundreds of crores into capex (INR 452 Cr in FY22 alone, INR 252 Cr in FY25) yet net profit in FY25 is lower than FY16. That is the definition of a capital-consuming treadmill.\n\nThe surge in finance costs to INR 123 Cr in FY25 (up 75% YoY) is the most alarming near-term signal. Borrowings rose INR 287 Cr in one year while EBITDA *fell* from INR 601 Cr to INR 568 Cr — the business is getting more leveraged as profitability weakens. The forward P/E of 19.7x implies the market is betting on a sharp earnings recovery, but this management team has delivered erratic profits across multiple cycles. Buffett and I learned the hard way that textile mills consume capital and reward shareholders poorly. This is that lesson, listed on NSE.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 52267,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07922775000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11071,
+      "cache_read_input_tokens": 8975,
+      "output_tokens": 2334,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11071
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 282,
+          "cache_read_input_tokens": 8975,
+          "cache_creation_input_tokens": 2096,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2096,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

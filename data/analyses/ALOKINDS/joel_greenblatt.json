@@ -1,0 +1,70 @@
+{
+  "symbol": "ALOKINDS",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T16:22:06.436400Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "Alok Industries fails both Magic Formula screens catastrophically: Earnings Yield (EBIT/EV) is ~0.08% (EBIT INR 28 Cr vs EV ~INR 33,176 Cr) and ROIC is negative, making it completely uninvestable by any systematic value framework. The company is technically insolvent with negative equity of INR -21,527 Cr and borrowings of INR 26,106 Cr dwarfing annual revenues of INR 3,715 Cr.",
+    "key_strengths": [
+      "Positive OCF in 4 of last 5 years — the operating assets still generate some cash",
+      "Reliance Industries as controlling stakeholder (post-IBC resolution) provides some operational stability",
+      "Gross margin of 31.5% suggests the core textile business has some product-level pricing power"
+    ],
+    "key_risks": [
+      "Debt burden is catastrophic: INR 26,106 Cr borrowings vs INR 3,715 Cr revenue (7x leverage); finance costs of INR 615 Cr alone nearly wipe out all operating income",
+      "Revenue in structural decline: -9% CAGR over 9 years, revenue has collapsed from INR 8,723 Cr (2017) to INR 3,715 Cr (2026)",
+      "Negative equity of -INR 21,527 Cr means the business is deeply insolvent on a book-value basis — shareholders are residual claimants on a value-negative entity"
+    ],
+    "red_flags": [
+      "EV/EBITDA of 320.8x — grotesquely overvalued even on the most generous metric",
+      "Net losses for 7 of 10 years including every year since 2022; accumulated reserves of -INR 22,024 Cr",
+      "Magic Formula cannot even be applied: negative ROIC (-3.25% ROCE) and earnings yield of 0.08% — both screens fail simultaneously",
+      "Operating income wildly volatile and near-zero: swings between -INR 13,524 Cr and +INR 564 Cr across the decade"
+    ],
+    "detailed_analysis": "Alok Industries is a Magic Formula nightmare. The two core screens — Earnings Yield (EBIT/EV) and Return on Capital — both fail completely. EBIT in FY2026 is a marginal INR 28 Cr against an Enterprise Value of approximately INR 33,176 Cr (market cap INR 7,095 Cr + borrowings INR 26,106 Cr - cash ~INR 25 Cr), yielding an earnings yield of 0.08% — essentially zero. ROIC is negative given ROCE of -3.25%. The Magic Formula was designed for profitable, capital-efficient businesses; this company is the antithesis of that.\n\nThe structural story is one of a debt-laden company that collapsed into IBC insolvency proceedings and was acquired by Reliance/JM Financial. Despite the resolution, INR 26,106 Cr in borrowings remain on the books, and with finance costs of INR 615 Cr consuming the entire operating output, the company cannot escape its debt trap through operations alone. Revenue has nearly halved over nine years. The current market cap of INR 7,095 Cr represents pure speculative premium — there is no earnings power to justify any positive equity valuation given the liability stack. Avoid entirely.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 39186,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07661295,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10877,
+      "cache_read_input_tokens": 9034,
+      "output_tokens": 2207,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10877,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 398,
+          "cache_read_input_tokens": 9034,
+          "cache_creation_input_tokens": 1843,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1843
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

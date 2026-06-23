@@ -1,0 +1,69 @@
+{
+  "symbol": "HAPPSTMNDS",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T17:32:42.048737Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Happiest Minds fails both Magic Formula screens — Earnings Yield of ~5.2% (EBIT ₹354 Cr / EV ~₹6,864 Cr) is below my 6% minimum, and ROCE of 15.2% is well below the 20% threshold for a \"good business.\" A collapsing net profit (-25% YoY to ₹185 Cr) alongside a near-tripling of borrowings to ₹1,274 Cr makes this doubly unattractive at current valuations.",
+    "key_strengths": [
+      "Revenue CAGR of 23.2% over 6 years (₹590 Cr → ₹2,061 Cr), showing consistent top-line compounding.",
+      "OCF positive all 5 years (₹112–₹236 Cr range), with low capex (~₹11 Cr in FY25) confirming asset-light model in core business.",
+      "Positioned in high-demand Gen AI/digital services segments with three-segment diversification across IMSS, PDES, and GBS."
+    ],
+    "key_risks": [
+      "Debt explosion: Borrowings surged from ₹512 Cr to ₹1,274 Cr in a single year; finance costs nearly tripled to ₹99 Cr, directly crushing net profit.",
+      "Net profit declined 25% YoY (₹248 Cr → ₹185 Cr) despite 26.8% revenue growth — a serious margin deterioration signal.",
+      "ROIC/ROCE of 15.2% and ROE of 12.6% are mediocre for an IT services company; Magic Formula requires >20% to classify as a 'good business.'"
+    ],
+    "red_flags": [
+      "Borrowings nearly tripled in FY25 (₹512 Cr → ₹1,274 Cr) with investing outflows of -₹731 Cr — likely acquisition-driven leverage that is eroding profitability.",
+      "Net profit fell from ₹248 Cr (FY24) to ₹185 Cr (FY25) despite 26.8% revenue growth — interest burden absorbing operating gains.",
+      "Earnings Yield of ~5.2% (EBIT/EV) is below the 6% floor — the market is pricing in growth that the business is not currently delivering on a net income basis."
+    ],
+    "detailed_analysis": "Running the Magic Formula on Happiest Minds: EBIT (Operating Income) for FY25 is ₹354 Cr. Enterprise Value = Market Cap (₹5,738.5 Cr) + Total Debt (₹1,244 Cr) − Cash (₹119 Cr) = ~₹6,864 Cr. Earnings Yield = 354/6,864 = **5.2%** — below my 6% minimum and far from the 12%+ I find attractive. ROCE of 15.2% also fails the 20% threshold for a \"good business.\" Neither screen passes, which means the Magic Formula would not include this stock in a ranking portfolio at current prices.\n\nThe more troubling story is structural: in FY25, Happiest Minds nearly tripled its borrowings to ₹1,274 Cr, driving finance costs to ₹99 Cr (up from ₹42 Cr). The result was a 25% drop in net profit to ₹185 Cr even as revenue grew 27% to ₹2,061 Cr. This is the opposite of operating leverage. Free cash flow (₹225 Cr) is healthy and the core business is genuinely asset-light, but aggressive debt-funded acquisitions are destroying shareholder returns in the near term. Until debt is reduced and ROIC sustainably crosses 20%, this does not meet my criteria for a \"good business bought at a bargain price.\"",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 47028,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08588235,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11371,
+      "cache_read_input_tokens": 9107,
+      "output_tokens": 2700,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11371
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 511,
+          "cache_read_input_tokens": 9107,
+          "cache_creation_input_tokens": 2264,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2264,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

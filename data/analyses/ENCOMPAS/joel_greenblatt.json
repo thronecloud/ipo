@@ -1,0 +1,70 @@
+{
+  "symbol": "ENCOMPAS",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-21T07:55:26.285143Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "Encompass Design fails both legs of the Magic Formula catastrophically — a P/E of 32.2x implies an earnings yield of only ~3.1%, while a ROE of 0.50% signals the business generates virtually no return on capital. There is no case for owning this at any reasonable price.",
+    "key_strengths": [
+      "Promoter skin in the game at 58.94% — aligned with shareholders",
+      "Consumer brand-building theme has secular tailwinds in India",
+      "Some institutional presence (FII 7.87% + DII 4.70%) suggests basic liquidity"
+    ],
+    "key_risks": [
+      "ROE of 0.50% means capital is being destroyed in real terms — ROIC almost certainly sub-5%",
+      "Earnings yield ~3.1% (1/32.2x P/E) is less than a risk-free bond — paying growth-stock multiples for a no-growth business",
+      "Trading & Distributors is a structurally low-moat, commoditised industry with no pricing power"
+    ],
+    "red_flags": [
+      "ROE 0.50% — business is essentially earning nothing on shareholder capital",
+      "P/E 32.2x with near-zero ROE is an irrational valuation; earnings yield (~3%) is far below my 12% minimum threshold",
+      "No positive EBIT story — Magic Formula cannot even be computed meaningfully at these return levels",
+      "Market cap INR 347 Cr with ROE <1% screams promoter-driven price inflation, not earnings quality"
+    ],
+    "detailed_analysis": "Through the Magic Formula lens, Encompass Design is a textbook AVOID. The two pillars I require are a high earnings yield (EBIT/EV > 12%) and a high return on capital (ROIC > 20%). Here, the implied earnings yield is roughly 3.1% (inverse of P/E 32.2x, and EBIT-based yield would be marginally higher but nowhere near 12%). More damningly, ROE of 0.50% tells me this business earns virtually nothing on the equity entrusted to it — ROIC is almost certainly in the low single digits. A company that cannot earn more than its cost of capital should never trade at 32x earnings.\n\nThe brand-building / consumer distribution story may sound appealing, but the numbers say otherwise. Trading & Distributors is a sector I approach with deep scepticism — thin margins, no proprietary assets, and easy replication. With a market cap of only INR 347 Cr and these fundamentals, this has the hallmarks of a momentum/narrative-driven small-cap rather than a compounding business. Until ROE sustainably crosses 15-20% and the earnings yield becomes attractive, this stock has no place in a Magic Formula portfolio.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 35191,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.061405799999999996,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9008,
+      "cache_read_input_tokens": 7556,
+      "output_tokens": 1690,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9008,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 269,
+          "cache_read_input_tokens": 7556,
+          "cache_creation_input_tokens": 1452,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1452
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

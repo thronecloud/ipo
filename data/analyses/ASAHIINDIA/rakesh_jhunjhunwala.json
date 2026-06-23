@@ -1,0 +1,69 @@
+{
+  "symbol": "ASAHIINDIA",
+  "persona": "rakesh_jhunjhunwala",
+  "persona_display_name": "Rakesh Jhunjhunwala",
+  "analyzed_at": "2026-04-19T06:29:35.713565Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "AVOID",
+    "investment_thesis": "Asahi India holds a near-monopoly in India's automotive glass market — a structurally sound position — but the stock trades at a punishing 69x trailing P/E with debt surging from INR 1,238 Cr to INR 2,856 Cr in three years and free cash flow turning deeply negative at -INR 536 Cr in FY25. The business quality does not justify the price.",
+    "key_strengths": [
+      "Dominant market position in Indian automotive glass (OEM + aftermarket) with high switching costs and technical barriers",
+      "Promoter holding of 51.58% provides reasonable governance alignment; 9-year net profit CAGR of 17.6% shows long-run earnings power",
+      "Operating margin of 14.15% and gross margin of 64.97% reflect genuine pricing power in a capital-intensive manufacturing niche"
+    ],
+    "key_risks": [
+      "Valuation at 69x P/E and 31.92x EV/EBITDA is extremely stretched for a business with 8.5% revenue CAGR over 9 years",
+      "Debt has surged from INR 1,238 Cr (FY22) to INR 2,856 Cr (FY25) — D/E at 0.77 breaches my 0.6 comfort level and is trending worse",
+      "FCF has turned sharply negative: from +INR 509 Cr (FY22) to -INR 536 Cr (FY25) as capex explodes to INR 1,268 Cr — heavy investment cycle with uncertain returns"
+    ],
+    "red_flags": [
+      "69x trailing P/E on a business growing revenue at ~8.5% CAGR — I never pay >40x without exceptional moat and 20%+ growth",
+      "Borrowings nearly doubled in 2 years (INR 1,401 Cr in FY23 → INR 2,856 Cr in FY25) while ROE is only 13.60% — leverage is not being deployed productively",
+      "EBITDA margins are not expanding despite scale — INR 817 Cr in FY23 to INR 782 Cr in FY25 even as revenue grew from INR 4,019 Cr to INR 4,594 Cr"
+    ],
+    "detailed_analysis": "Asahi India's business is genuinely moat-y — automotive glass manufacturing requires massive capex, strong OEM relationships (Maruti, Hyundai, Tata), and technical certifications that deter new entrants. The company is also expanding into architectural float glass, which is a solid India construction play. Long-term demand visibility is real. But the financials are deteriorating in ways that alarm me: debt has more than doubled in three years, FCF has swung from +INR 509 Cr to -INR 536 Cr, ROCE has compressed to 12.4%, and the market is pricing this at 70x earnings. This is a business I'd love to own at 25-30x, but at 70x I'm paying for a perfection that rarely materializes. The heavy capex cycle (INR 1,268 Cr in FY25, likely sustaining through FY26-27) means earnings will remain under pressure from depreciation and interest costs even after capacity comes onstream. Wait for a 40-50% correction before engaging.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 200500,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.24785295000000002,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 23871,
+      "cache_read_input_tokens": 18809,
+      "output_tokens": 10179,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 23871,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 840,
+          "cache_read_input_tokens": 16746,
+          "cache_creation_input_tokens": 9188,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 9188
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

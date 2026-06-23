@@ -1,0 +1,69 @@
+{
+  "symbol": "GOKULAGRO",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T17:35:06.912399Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "AVOID",
+    "investment_thesis": "Gokul Agro is a high-turnover commodity edible oil processor with impressive revenue growth (20.6% CAGR) but wafer-thin margins (2.33% operating) that offer zero protection against input cost volatility. Without a durable competitive advantage, the business is one bad commodity cycle away from its profits evaporating entirely.",
+    "key_strengths": [
+      "Exceptional asset turnover (~3.7x) drives high ROCE (34.2%) despite razor-thin margins",
+      "Improving OCF quality: FY25 FCF of ₹230 Cr vs net profit of ₹246 Cr (94% conversion) confirms earnings are real",
+      "Manageable leverage: Debt/EBITDA ≈ 1.1x (₹544 Cr debt vs ₹534 Cr EBITDA) with D/E of 0.48"
+    ],
+    "key_risks": [
+      "No moat whatsoever — edible oil processing is a commodity business competing against Adani Wilmar (Fortune), Marico, and Emami with zero pricing power",
+      "Finance costs (₹183 Cr in FY25) consume 74% of net profit (₹246 Cr) — a small margin deterioration destroys the P&L entirely",
+      "Total assets ballooned from ₹1,459 Cr (2020) to ₹5,327 Cr (2025) — 3.65x expansion in 5 years requires sustained high asset turnover just to maintain returns"
+    ],
+    "red_flags": [
+      "Gross margin of 4.70% and operating margin of 2.33% — this is a toll road with no toll-setting power",
+      "Finance costs grew 18.4% CAGR over 9 years, nearly matching revenue growth — leverage is structural, not temporary",
+      "FY23 saw near-zero FCF (₹-190 Cr) and OCF of just ₹20 Cr despite ₹132 Cr net profit — reveals how working-capital intensive this business can get in bad years"
+    ],
+    "detailed_analysis": "Invert first: what would destroy this business? Any input cost spike in soybean, sunflower, or palm oil that can't be passed through would wipe out the 2.33% operating margin in a quarter. That's not a tail risk — it's the central feature of commodity processing. The high ROCE (34.2%) is entirely a function of asset velocity, not business quality. A 1% operating margin compression on ₹19,551 Cr revenue erases ₹195 Cr in operating profit, nearly equaling the entire FY25 net profit of ₹246 Cr. The brand portfolio (Vitalife, Mahek, Pride, Richfield) competes in a graveyard of regional brands against Fortune — there is no evidence of brand premium.\n\nThe numbers that look impressive — 44.4% net profit CAGR, 27% ROE — are largely a leverage and volume story, not a franchise story. Finance costs of ₹183 Cr in FY25 vs ₹40 Cr in 2016 (18.4% CAGR) show the treadmill: borrow to fund working capital, grow revenue, repeat. The P/E of 20x for a sub-3% operating margin commodity processor is generous pricing for a business with no moat. I have spent decades avoiding businesses like this — great volume, great turnover, but no ability to raise prices and no lasting advantage. Pass.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 45950,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0829065,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11216,
+      "cache_read_input_tokens": 8925,
+      "output_tokens": 2544,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11216
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 316,
+          "cache_read_input_tokens": 8925,
+          "cache_creation_input_tokens": 2291,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2291,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "EPWINDIA",
+  "persona": "howard_marks",
+  "persona_display_name": "Howard Marks",
+  "analyzed_at": "2026-04-21T07:48:11.334134Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "At INR 129 Cr market cap against INR 4 Cr net profit and -INR 12 Cr free cash flow, EPW India is priced for hypergrowth perfection in a commodity business with no moat. The market is paying 31x earnings for paper profits that are not converting to cash — a classic setup for permanent capital loss.",
+    "key_strengths": [
+      "Revenue hypergrowth: 7→19→53 Cr in 2 years (~7.5x), demonstrating real demand capture",
+      "Zero finance cost until FY2024; lean operating model suggests capital-light intent",
+      "High promoter holding (71.43%) signals skin in the game"
+    ],
+    "key_risks": [
+      "Deeply negative FCF (-12 Cr in FY2025) despite INR 4 Cr reported profit — earnings quality is suspect, likely working capital trap",
+      "Borrowings exploded from 0 to INR 12 Cr in one year; Debt/Equity of 2.4x on a 5 Cr equity base is fragile",
+      "Commodity hardware refurbishing has near-zero barriers to entry — no pricing power, no moat, brutal competition"
+    ],
+    "red_flags": [
+      "FCF of -12 Cr vs. net profit of +4 Cr: the 16 Cr gap signals aggressive revenue recognition or severe working capital bleed",
+      "EV/EBITDA ~23x (EV ~141 Cr, EBITDA 6 Cr) for a sub-scale commodity trader is indefensible",
+      "Micro-cap with only INR 53 Cr revenue — one bad quarter or credit squeeze ends the growth story"
+    ],
+    "detailed_analysis": "Second-level thinking demands we ask: what must be true for this price to be justified? At INR 129 Cr market cap, the market is pricing in sustained revenue doubling for several more years in a business — refurbished laptops and Chromebooks — where anyone with a warehouse and working capital can compete. The ROE of 139% looks sensational until you realize it sits on an equity base of just INR 5 Cr; one bad receivables cycle wipes it out. More damning, FY2025 operating cash flow was -INR 11 Cr against INR 6 Cr EBITDA — the growth machine is consuming cash faster than it generates it, funded entirely by new borrowings (INR 12 Cr, up from zero). That is not a business compounding value; it is a business mortgaging its balance sheet to chase revenue.\n\nFrom a cycle and margin-of-safety perspective, this has all the hallmarks of a small-cap momentum story at peak enthusiasm. The stock is priced at 31x earnings that don't show up in cash. There is essentially no floor — if revenue growth decelerates to even 30-40% (still impressive), the valuation collapses. The free cash flow yield is negative, meaning shareholders are diluted in real terms even as earnings appear positive. Howard Marks' first rule: never lose money. At this price, with this cash profile, in this commodity industry, the probability of permanent capital loss is unacceptably high.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 47538,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.06956385,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8005,
+      "cache_read_input_tokens": 10087,
+      "output_tokens": 2434,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8005,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 440,
+          "cache_read_input_tokens": 8033,
+          "cache_creation_input_tokens": 2026,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2026
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

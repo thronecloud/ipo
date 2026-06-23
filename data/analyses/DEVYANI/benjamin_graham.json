@@ -1,0 +1,69 @@
+{
+  "symbol": "DEVYANI",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-19T13:08:01.972130Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "Devyani International has reported net losses in seven of ten fiscal years, carries debt/equity of 1.71x, and is priced at 8.43x book value despite negative retained earnings as recently as FY20 — it violates every quantitative standard Graham set. The forward P/E of 127x for a restaurant franchise operator with 4% operating margins is fantasy pricing.",
+    "key_strengths": [
+      "Operating cash flow has been consistently positive (5/5 years) and growing — the EBITDA-level cash generation is real, even if it does not reach net profit after depreciation and interest",
+      "Revenue CAGR of 19.3% over nine years and the licensed KFC/Pizza Hut franchise model provide some volume durability",
+      "Promoter holding of 61.4% (RJ Corp) aligns management with long-term franchise stewardship"
+    ],
+    "key_risks": [
+      "Net losses in FY24 (−INR 10 Cr) and FY25 (−INR 7 Cr) despite record revenue of INR 4,951 Cr — the business is structurally unable to convert revenue growth into net profit due to rising lease costs and finance charges",
+      "Debt/equity of 1.71x (borrowings INR 3,343 Cr) is more than triple Graham's maximum; interest coverage from operating income of 839 Cr ÷ finance cost 267 Cr = ~3.1x, below the 3.5x safety threshold",
+      "P/B of 8.43x — paying INR 8.43 for each rupee of net assets in a capital-light but debt-heavy restaurant business with negative equity history"
+    ],
+    "red_flags": [
+      "Negative total equity of −INR 189 Cr as recently as FY20 indicates the company was technically insolvent less than five years ago; equity has been rebuilt primarily via the FY22 IPO, not earnings",
+      "Finance costs have grown at 22.5% CAGR over nine years while net profits remain elusive — debt is growing faster than the business can service it through earnings",
+      "Borrowings more than doubled from INR 1,565 Cr (FY23) to INR 3,343 Cr (FY25) in two years, largely for new store expansion whose returns are unproven and not yet visible in net margins"
+    ],
+    "detailed_analysis": "Graham's first and most important rule is that a company must demonstrate sustained earning power. Devyani has been profitable in only three of the last ten years, and even those years were modest (INR 155 Cr in FY22, INR 263 Cr in FY23). The QSR franchise model in India carries structurally high lease costs, royalty payments, and food inflation risk that compress margins relentlessly. A 4.17% operating margin leaves no room for error.\n\nThe stock's market capitalisation of INR 13,279 Cr implies the market expects a dramatic and sustained profitability inflection that has never materialised in Devyani's decade-long history as a public company. With debt approaching INR 3,500 Cr and the company unable to cover it through current earnings without stress, the downside risk in an economic slowdown is severe. At nearly 8.5x book value for a loss-making, highly-leveraged QSR operator, the margin of safety is not merely absent — it is deeply negative.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 170201,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.22683945,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 24187,
+      "cache_read_input_tokens": 16014,
+      "output_tokens": 8755,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 24187,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 504,
+          "cache_read_input_tokens": 16014,
+          "cache_creation_input_tokens": 8173,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8173
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "QPOWER",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T22:05:12.574365Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Quality Power is a niche but genuine business serving the power quality and renewable energy transition with decent economics (ROCE 26.6%, near-zero debt), but at 87x trailing P/E and nearly 60x EV/EBITDA, I am being asked to pay a extraordinary price for a INR 337 Cr revenue company. The quality of earnings is also deeply suspect — \"Other Income\" of INR 54 Cr represents 54% of Net Profit in FY25, meaning core operating earnings are far thinner than they appear.",
+    "key_strengths": [
+      "Near-zero leverage (D/E 0.05) with INR 181 Cr cash, giving resilience and acquisition optionality",
+      "Strong operating margins (26.6%) and ROCE (26.6%), indicating a degree of pricing power in specialized power equipment",
+      "Revenue growing at 22.6% CAGR with net profit CAGR of 33.5% — genuine tailwinds from India's grid modernization and renewable buildout"
+    ],
+    "key_risks": [
+      "Egregious valuation: 87x P/E on a sub-400 Cr revenue company; market cap of INR 9,340 Cr implies perfection with zero margin of safety",
+      "Earnings quality is poor: Other Income (INR 54 Cr in FY25) constitutes ~54% of reported Net Profit — strip it out and the core business earns ~46 Cr, implying a true P/E closer to 200x",
+      "Small scale and customer concentration risk — at INR 337 Cr revenue, a few large project wins or delays can swing results dramatically"
+    ],
+    "red_flags": [
+      "Other Income exceeded or nearly matched Operating Income in 3 of 4 years — this is not a quality earnings stream",
+      "Total Assets nearly tripled (359→978 Cr) and Financing CF surged to +171 Cr in FY25, signaling a large capital raise (likely IPO) — post-IPO stocks frequently disappoint as growth expectations are baked in at peak enthusiasm",
+      "Free Cash Flow of only INR 39 Cr against a INR 9,340 Cr market cap gives a FCF yield of 0.4% — I can earn more in a savings account with no risk"
+    ],
+    "detailed_analysis": "Quality Power operates in a genuinely interesting niche — power quality systems, reactive compensation, and specialty transformers — sectors that benefit from India's grid expansion and renewable energy integration. The business economics are acceptable: ROCE of 26.6%, virtually no debt (D/E of 0.05), and consistent positive operating cash flows. Revenue has grown at a solid 22.6% CAGR. These are the bones of a decent business. However, this is a INR 337 Cr revenue company priced at INR 9,340 Cr — a Price-to-Sales of 12x. I do not pay 12x sales for industrial equipment companies.\n\nThe deeper concern is earnings quality. In every year provided, \"Other Income\" — typically interest, investment gains, or one-time items — has been a massive proportion of reported Net Profit: 69% in FY22, 50% in FY23, 55% in FY24, and 54% in FY25. Core operating earnings are roughly half what the income statement advertises. At the true operating earnings power of ~INR 40-50 Cr, this company trades at 185-230x. The balance sheet also expanded dramatically post-IPO (equity jumped from INR 153 Cr to INR 469 Cr), and the market has priced in extraordinary growth that may or may not materialize. In my experience, wonderful businesses occasionally come at wonderful prices — this is neither.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 54534,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08665814999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10893,
+      "cache_read_input_tokens": 8618,
+      "output_tokens": 2881,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10893,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 647,
+          "cache_read_input_tokens": 8618,
+          "cache_creation_input_tokens": 2275,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2275
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

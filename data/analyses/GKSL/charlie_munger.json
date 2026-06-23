@@ -1,0 +1,69 @@
+{
+  "symbol": "GKSL",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-21T07:46:21.250653Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "GKSL is a micro-cap specialty hospital with genuine operating momentum (revenue 0→40 Cr in 2 years, ROCE 51%), but the valuation at 90x earnings and P/B of 22x prices in decades of flawless execution for a company with less than 2 years of meaningful revenue history. The internally inconsistent financials — EBITDA of INR 18 Cr against reported revenue of INR 0 Cr in FY2023 — make it impossible to trust the numbers.",
+    "key_strengths": [
+      "High-margin specialty hospital model: operating margin 23.9%, gross margin 70.3% — structurally sound if scaled",
+      "Explosive early revenue ramp: 0→5→40 Cr, with OCF turning positive at INR 14 Cr in FY2025",
+      "Promoter skin-in-game at 71.45% holding, aligning incentives with long-term performance"
+    ],
+    "key_risks": [
+      "Absurd valuation: INR 805 Cr market cap on INR 10 Cr net profit (P/E 90x, P/S 13x) leaves zero margin of safety",
+      "Microscopic operating history: FY2025 is essentially Year 1 of real revenues; track record too thin to underwrite",
+      "Accounting opacity: FY2023 EBITDA of INR 18 Cr with revenue of INR 0 Cr is unexplainable and disqualifying"
+    ],
+    "red_flags": [
+      "FY2023 EBITDA (18 Cr) exceeds reported revenue (0 Cr) — this is either a data error or a serious accounting concern",
+      "Negative FCF (−5 Cr) in FY2025 despite positive OCF; capex-heavy expansion phase with INR 20 Cr in new borrowings",
+      "P/B of 22x on a 2-year-old revenue-generating business with no durable moat established yet"
+    ],
+    "detailed_analysis": "Invert first: what would make this a terrible investment? A near-90x P/E on a company with one year of real revenue, internally inconsistent historical financials, and a total equity base of INR 34 Cr against a INR 805 Cr market cap. All three boxes are checked. The FY2023 figures — INR 18 Cr EBITDA against zero revenue — are inexplicable and destroy any confidence in the reported numbers. As Munger says, show me the incentives and I'll show you the outcome; here, the incentive is to list at sky-high multiples and ride speculative enthusiasm in the small-cap hospital space.\n\nThe underlying business concept — super-specialty hospitals in Tier-2 India — is a legitimate long-term opportunity. But a great industry does not redeem a bad price. ROIC/ROCE of 51% looks spectacular, but it's computed on INR 34 Cr of equity and one year of operating data — statistically meaningless. Until this company demonstrates at least 3-5 years of consistent, audited revenue growth with clean cash flow conversion (FCF/Net Income >80%, currently negative) and borrowings under control, there is simply not enough knowable information to justify ownership at any price, let alone this one.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 41099,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07309365000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10039,
+      "cache_read_input_tokens": 8128,
+      "output_tokens": 2200,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10039,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 320,
+          "cache_read_input_tokens": 8128,
+          "cache_creation_input_tokens": 1911,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1911
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

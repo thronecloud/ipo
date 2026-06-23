@@ -1,0 +1,70 @@
+{
+  "symbol": "544378",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-20T19:47:35.819735Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "PDP Shipping is a micro-cap logistics firm (market cap just INR 16.70 Cr) with a negligible ROE of 0.17%, which signals earnings power barely above zero despite a superficially low P/E of 5.97. Without evidence of a multi-year earnings record, adequate balance-sheet strength, or dividend history, this security fails my quantitative filters and offers no margin of safety.",
+    "key_strengths": [
+      "P/E of 5.97 is below my 15x ceiling — optically cheap",
+      "High promoter holding at 69.61% suggests aligned ownership",
+      "Operating in an essential industry (logistics/supply chain)"
+    ],
+    "key_risks": [
+      "ROE of 0.17% is effectively zero — no real earning power",
+      "Micro-cap of INR 16.70 Cr implies illiquidity and operational fragility",
+      "No data provided on current ratio, debt/equity, book value, or dividend record"
+    ],
+    "red_flags": [
+      "ROE of 0.17% indicates near-absent profitability — a low P/E on trivial earnings is meaningless",
+      "Recent listing (BSE code 544378 suggests new issue) — lacks the 5-10 year earnings record I require",
+      "No disclosed book value, so Graham Number cannot be verified",
+      "No dividend history evident"
+    ],
+    "detailed_analysis": "From a Graham perspective, the headline P/E of 5.97 is a mirage. A ROE of 0.17% means the company is earning almost nothing on its capital — the \"E\" in P/E is so thin that minor operating variance could erase it entirely. I require proven, stable earning power over at least five consecutive years; a micro-cap logistics firm at INR 16.70 Cr market cap with this profile almost certainly cannot demonstrate that, and the data provided contains no book value, current ratio, or debt-to-equity figure to verify balance-sheet safety or compute the Graham Number.\n\nThe 69.61% promoter stake is a modest positive, but alignment does not substitute for financial strength. Without evidence of a current ratio above 2.0, debt-to-equity below 0.5, interest coverage above 3.5x, and a multi-year dividend record, this is speculation, not investment. Mr. Market may be offering this at INR 56, but the disciplined investor declines — there is no margin of safety when the denominator of value (earning power) is essentially zero. Avoid.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "insufficient_data",
+      "valuation": "overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 21949,
+    "model_used": "opus",
+    "total_cost_usd": 0.09284675,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8873,
+      "cache_read_input_tokens": 13471,
+      "output_tokens": 1225,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8873,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 99,
+          "cache_read_input_tokens": 10585,
+          "cache_creation_input_tokens": 1174,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1174
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "CUB",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-19T13:04:14.973005Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "City Union Bank is a conservatively run regional bank with a 120-year track record, consistent earnings growth of ~14% CAGR, and a forward P/E of just 12.5x — making the PEG the most reasonable in this group at roughly 1.1x. It's not a ten-bagger story, but it's an honest stalwart at a fair price.",
+    "key_strengths": [
+      "Net profit has compounded at 13.9% over 3 years (INR 760 Cr → INR 1,124 Cr) with no year of decline — rare consistency for a regional bank",
+      "Forward P/E of 12.54x with PEG near 1.0 — the most GARP-friendly valuation metric I can find across this cohort",
+      "Borrowings cut nearly in half from INR 5,312 Cr to INR 1,790 Cr (FY22→FY25), indicating disciplined liability management and balance sheet strengthening"
+    ],
+    "key_risks": [
+      "Revenue CAGR of only 6.3% — slow-grower pace that limits the size of the opportunity; this won't double revenue in 5 years",
+      "Finance costs growing at 17.2% CAGR (much faster than 6.3% revenue growth) signals NIM compression risk as deposit costs remain elevated",
+      "ROE of 11.87% sits just below my 12% threshold — a mediocre return on equity for shareholders, meaning capital efficiency needs to improve"
+    ],
+    "red_flags": [
+      "Operating cash flow collapsed from INR 1,166 Cr (FY22) to INR 436 Cr (FY24) before recovering to INR 1,128 Cr in FY25 — the volatility makes trend analysis unreliable for a bank",
+      "P/B of 1.92x is acceptable but leaves no margin of safety if asset quality deteriorates — single-state concentration in Tamil Nadu amplifies regional economic risk",
+      "Revenue in FY24 actually contracted from FY23 (INR 2,973 Cr → INR 2,865 Cr) — a top-line shrinkage year is not what I want to see mid-cycle"
+    ],
+    "detailed_analysis": "City Union Bank is the kind of quiet, conservative franchise that's been running its business for over a century without blowing up. It doesn't have the flashiest growth profile, but it competes well in SME and trader financing in South India — a niche I respect. The steady profit climb from INR 760 Cr to INR 1,124 Cr over three years is reassuring, and the balance sheet cleanup (debt nearly halved) shows management is thinking long-term.\n\nBanks are inherently complex animals — leverage, credit cycles, and regulation make them harder to evaluate simply. At forward P/E of 12.5x and PEG around 1.1x, you're not overpaying, but you're not getting a bargain either. The revenue slowdown, rising funding costs, and sub-12% ROE mean this is a HOLD, not a BUY. I'd need to see ROE sustainably above 14% and revenue growth re-accelerating past 10% to get excited.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 167033,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.22832609999999998,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 23748,
+      "cache_read_input_tokens": 15357,
+      "output_tokens": 8977,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 23748,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 537,
+          "cache_read_input_tokens": 15357,
+          "cache_creation_input_tokens": 8391,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8391
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

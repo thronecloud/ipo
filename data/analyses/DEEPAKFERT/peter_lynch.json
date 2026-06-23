@@ -1,0 +1,68 @@
+{
+  "symbol": "DEEPAKFERT",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-19T13:07:57.339457Z",
+  "analysis": {
+    "score": 6,
+    "recommendation": "HOLD",
+    "investment_thesis": "Deepak Fertilisers is a classic Lynch cyclical play: trading at a cheap forward P/E of 13.38x while recovering from an earnings trough (INR 468 Cr in FY24 → INR 945 Cr in FY25), with INR 2,230 Cr of CWIP signaling capacity coming online. The story works if new chemical capacity translates to higher-margin revenue — but the cyclical nature of earnings makes it a 'hold until the story clarifies' rather than a full buy.",
+    "key_strengths": [
+      "Forward P/E of 13.38x implies significant earnings upside priced in; PEG ~0.68 using 9Y net profit CAGR of 26.2% looks compelling",
+      "Operating cash flow surged to INR 1,880 Cr in FY25 — the strongest in the dataset — showing genuine cash generation power",
+      "Large CWIP of INR 2,230 Cr represents future earnings capacity; if deployed well, this is the next earnings catalyst"
+    ],
+    "key_risks": [
+      "Earnings are wildly cyclical: INR 1,221 Cr (FY23) → INR 468 Cr (FY24) → INR 945 Cr (FY25) — the 26% CAGR overstates earnings predictability",
+      "Debt/equity at 0.62 (right at my 0.60 threshold) with finance costs of INR 413 Cr annually, eating ~44% of operating income",
+      "Revenue CAGR of only 10.1% over 9 years is mediocre — the earnings growth story depends entirely on margin expansion holding, not volume"
+    ],
+    "red_flags": [
+      "Free cash flow was negative in FY23 (-INR 716 Cr) and FY24 (-INR 94 Cr) — capex-heavy model means earnings don't reliably convert to cash",
+      "Finance costs have nearly doubled from INR 195 Cr (FY23) to INR 413 Cr (FY25) as borrowings climbed to INR 4,440 Cr"
+    ],
+    "detailed_analysis": "Deepak Fertilisers is a cyclical chemicals-and-fertilisers company where the key question is whether it's transitioning into a higher-value specialty chemicals business. The FY25 EBITDA recovery to INR 1,972 Cr from FY24's INR 1,311 Cr, combined with a forward P/E of just 13.38x, makes the valuation look cheap on paper. But the huge swings in net profit — halving from FY23 to FY24 and then doubling back in FY25 — are a reminder that this is a commodity-adjacent business, not a durable growth compounder.\n\nThe INR 2,230 Cr CWIP is the real 'story' here: if new capacity in value-added chemicals comes online cleanly, forward earnings could surprise upward and the stock re-rates. Until then, the rising debt (INR 4,440 Cr borrowings), ballooning finance costs, and volatile margins cap my enthusiasm. Lynch would keep this one on the watchlist — it's a cyclical to revisit when the new capacity starts generating revenue.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "good",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 216978,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.2954337,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 27568,
+      "cache_read_input_tokens": 15999,
+      "output_tokens": 12483,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 27568,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 796,
+          "cache_read_input_tokens": 15999,
+          "cache_creation_input_tokens": 11569,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 11569
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

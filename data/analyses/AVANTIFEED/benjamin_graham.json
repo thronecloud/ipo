@@ -1,0 +1,69 @@
+{
+  "symbol": "AVANTIFEED",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T16:34:21.470648Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Avanti Feeds is a fundamentally sound, debt-free shrimp feed business with a 10-year earnings record and 15% net profit CAGR — exactly the kind of enterprise I admire. However, at P/E 31.7x and P/B 6.67x, the price demands perfection and leaves no margin of safety whatsoever for the disciplined value investor.",
+    "key_strengths": [
+      "Zero debt: borrowings of just INR 15 Cr against equity of INR 3,011 Cr — a fortress balance sheet that can survive industry downturns",
+      "Ten consecutive years of positive net profit (INR 158 Cr → INR 557 Cr), satisfying my minimum earnings continuity requirement",
+      "Strong capital returns: ROCE of 24% and ROE of 19.5% demonstrate genuine competitive advantage in shrimp feed manufacturing"
+    ],
+    "key_risks": [
+      "Cyclical, commodity-like earnings: net profit swung from INR 466 Cr (2018) to INR 245 Cr (2022) — a 47% collapse — exposing severe vulnerability to shrimp disease cycles and raw material costs",
+      "Other income of INR 166 Cr represents ~30% of INR 557 Cr net profit in 2025 — core operating earnings are flattered by investment income, not pure business strength",
+      "Single-industry concentration in Indian aquaculture: regulatory changes, disease outbreaks, or export bans could devastate results with little diversification cushion"
+    ],
+    "red_flags": [
+      "Graham Number ≈ INR 451 (√22.5 × EPS ₹40.9 × BVPS ₹221) — current price of INR 1,473 is 3.3× above intrinsic value by my formula; margin of safety is deeply negative",
+      "P/B of 6.67x is 4.4× my absolute ceiling of 1.5x — the market is pricing in a decade of future growth that may never materialize",
+      "OCF turned sharply negative in 2022 (−INR 212 Cr) — proof that reported profits can diverge violently from cash reality in this business"
+    ],
+    "detailed_analysis": "Avanti Feeds passes my qualitative screens admirably: zero leverage, a decade of unbroken profitability, and genuine market leadership in Indian shrimp feed. The balance sheet has compounded equity from INR 1,404 Cr (2020) to INR 3,011 Cr (2025) without issuing meaningful debt — a sign of honest, self-funding management. ROCE of 24% tells me the business earns well above its cost of capital. These are virtues I respect. Yet virtue in a business is not the same as wisdom in a purchase price.\n\nThe numbers are unambiguous on valuation. My Graham Number formula yields approximately INR 451 per share; the stock trades at INR 1,473 — a 227% premium to intrinsic value, the precise opposite of the margin of safety I require. At P/E 31.7x and P/B 6.67x, the buyer is paying not for what the company *has earned* but for an optimistic extrapolation of what it *might earn* — pure speculation by my definition. The cyclicality of earnings (a 47% profit collapse in 2022) confirms this business is no stalwart utility; it is exposed to shrimp prices, disease, monsoon, and export demand. Mr. Market is pricing this agricultural feed company like a technology monopoly. I shall let him keep it at these levels.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 75900,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0805299,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9410,
+      "cache_read_input_tokens": 11078,
+      "output_tokens": 2794,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9410,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 438,
+          "cache_read_input_tokens": 9028,
+          "cache_creation_input_tokens": 2432,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2432
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

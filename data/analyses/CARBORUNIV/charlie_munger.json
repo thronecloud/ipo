@@ -1,0 +1,69 @@
+{
+  "symbol": "CARBORUNIV",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-19T12:55:53.594427Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Carborundum Universal is a decent specialty industrials business with seven decades of operating history and a clean balance sheet, but FY2025 saw a severe earnings collapse (net profit down 37% YoY to ₹299 Cr) driven by negative other income and deteriorating free cash flow. At 74x P/E on trough earnings, the market is pricing in a recovery that may or may not materialise.",
+    "key_strengths": [
+      "Near-debt-free balance sheet (D/E of 0.08) with equity compounding steadily from ₹1,858 Cr to ₹3,745 Cr over five years",
+      "ROCE of 16.1% clears my 15% threshold, indicating the business does earn acceptable returns on incremental capital in normal years",
+      "Diversified product portfolio (abrasives, ceramics, electrominerals) provides some cyclical buffer and serves high-growth end markets like semiconductors and defense"
+    ],
+    "key_risks": [
+      "Operating margin of only 7.43% is dangerously thin for a self-described specialty manufacturer — leaves almost no buffer against input cost inflation",
+      "FY2025 free cash flow collapsed to ₹28 Cr (from ₹367 Cr in FY2024) with capex of ₹278 Cr, meaning capital is being consumed without near-term return",
+      "Net profit CAGR of 7.6% lags revenue CAGR of 10.8% over nine years, signalling deteriorating unit economics, not improving ones"
+    ],
+    "red_flags": [
+      "FY2025 net profit of ₹299 Cr vs ₹476 Cr in FY2024 — a 37% YoY collapse; the underlying business is clearly not compounding",
+      "Other income swung from +₹118 Cr (FY2024) to -₹23 Cr (FY2025), making reported earnings unstable and unreliable as a base for valuation",
+      "P/E of 74x on depressed earnings and EV/EBITDA of 32x leaves no margin of safety — the market is paying for perfection in a business that just disappointed badly"
+    ],
+    "detailed_analysis": "Carborundum Universal is a legitimate industrial business with real products and a long operating history, but I cannot call it a moat business when operating margins sit at 7.43%. A truly differentiated specialty manufacturer should earn 15-20% operating margins — this looks more like a commoditised industrial with occasional pricing power. The gross margin of 57.63% vs operating margin of 7.43% suggests enormous overhead drag, which compounds the problem when volumes soften.\n\nThe FY2025 earnings deterioration is the most troubling signal. OCF halved, FCF almost vanished, and net profit fell 37% even as revenue grew 4%. Management is deploying ₹278 Cr in capex (CWIP up to ₹203 Cr) while returns on existing capital are declining. Inversion tells me: if the business cannot generate FCF during an expansion phase and operating margins continue compressing, the capital cycle could destroy rather than create value. At 74x P/E, I require near-certainty of a V-shaped recovery. I do not have that certainty.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 208923,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.27467865,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 26199,
+      "cache_read_input_tokens": 15378,
+      "output_tokens": 11454,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 26199,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 559,
+          "cache_read_input_tokens": 15378,
+          "cache_creation_input_tokens": 10821,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 10821
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

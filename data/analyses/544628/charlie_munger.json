@@ -1,0 +1,69 @@
+{
+  "symbol": "544628",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-20T11:00:57.483190Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "Astron Multigrain is a INR 14 Cr micro-cap instant noodle maker earning a derisory 0.25% ROE — by definition, it is destroying economic value against any reasonable cost of capital. A low headline P/E of 6.18 on near-zero earnings is a statistical mirage, not a bargain.",
+    "key_strengths": [
+      "High promoter holding (66.05%) indicates skin in the game",
+      "Operating in a consumable category (noodles) with repeat demand",
+      "Optically cheap P/E of 6.18"
+    ],
+    "key_risks": [
+      "ROE of 0.25% — capital is earning less than a savings account",
+      "Micro-cap (INR 14.3 Cr) competing vs Nestle, ITC, Patanjali — no moat",
+      "Packaged-foods commodity with brutal distribution economics and pricing power entirely with large players"
+    ],
+    "red_flags": [
+      "ROE 0.25% is effectively zero — business is not earning its cost of capital",
+      "Tiny market cap + FMCG competitive intensity = structurally disadvantaged",
+      "Incorporation date missing from disclosure — limited operating history transparency"
+    ],
+    "detailed_analysis": "Inverting first: what would make this a disaster? A sub-scale noodle manufacturer with no brand, no distribution, and no pricing power, grinding out 0.25% ROE while Nestle's Maggi, ITC's Yippee, and Patanjali own the shelf. That is precisely what the numbers describe. A 0.25% return on equity means every rupee retained in this business produces essentially nothing — you would do better in a bank FD with zero operational risk. The low P/E of 6.18 is meaningless because the \"E\" is trivially small; a small multiple on near-zero earnings is still near-zero value.\n\nThere is no identifiable moat, no evidence of management excellence, and the industry structure is wildly unfavorable to a INR 14 Cr player. Munger's rule applies bluntly: a fair business at any price is still a fair (or worse, poor) business. I want compounders earning 20%+ ROIC consistently — this earns less than inflation. Avoid. The only scenario to revisit is a fundamental change in the business model, management, or capital structure — none of which is visible in the data.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 20453,
+    "model_used": "opus",
+    "total_cost_usd": 0.08847550000000001,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8808,
+      "cache_read_input_tokens": 13141,
+      "output_tokens": 1073,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8808,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10414,
+          "cache_creation_input_tokens": 1121,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1121
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

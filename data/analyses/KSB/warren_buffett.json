@@ -1,0 +1,68 @@
+{
+  "symbol": "KSB",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T18:04:33.036190Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "AVOID",
+    "investment_thesis": "KSB Limited is a high-quality industrial business with zero debt, 16.4% earnings CAGR, and strong German parent backing — but at 58x P/E with near-zero FCF in FY2025, the market is pricing perfection into a capital-intensive, modest-margin machinery company. I don't pay full price for anything, let alone 44x EV/EBITDA for a pump manufacturer.",
+    "key_strengths": [
+      "Virtually debt-free balance sheet (borrowings just INR 5 Cr vs equity INR 1,679 Cr) — exceptional financial discipline",
+      "ROCE of 24.5% and consistent 9-year revenue CAGR of 14% demonstrate a durable, well-run franchise",
+      "Strong promoter parent (KSB SE Germany at 69.8%) provides brand credibility, technology access, and governance discipline"
+    ],
+    "key_risks": [
+      "Extreme valuation — P/E 58x on a ~14-16% grower implies PEG of ~3.5x; I'd need this at half the price to be interested",
+      "Capital intensity is concerning — annual capex of INR 94-107 Cr with FY2025 FCF = ~zero despite INR 270 Cr net profit; cash conversion is poor",
+      "Cyclical B2B industrial exposure — revenue dipped in FY2020 and growth depends on government infrastructure spending cycles (water, energy, oil & gas)"
+    ],
+    "red_flags": [
+      "FY2025 free cash flow essentially zero (OCF INR 93 Cr vs capex INR 94 Cr) despite INR 270 Cr reported profit — earnings quality concern",
+      "Operating margin only 14.5% — limited pricing power for a specialty machinery company signals moderate, not strong, competitive moat"
+    ],
+    "detailed_analysis": "KSB Limited is a respectable industrial franchise — a 65-year-old subsidiary of Germany's KSB SE, making pumps and valves for water, energy, chemicals, and mining. The financials tell a story of steady compounding: revenues grew from INR 826 Cr to INR 2,696 Cr over nine years (14% CAGR), net profit from INR 69 Cr to INR 270 Cr (16.4% CAGR), and the balance sheet is essentially pristine with zero meaningful debt and INR 167 Cr cash. ROCE of 24.5% is solid for an industrial company. The business benefits from India's infrastructure buildout in water treatment, power, and industrialization — genuine secular tailwinds. The promoter's 69.8% stake aligns interests well.\n\nHowever, the valuation demands perfection and then some. At 58x trailing P/E, 42x forward P/E, and 44x EV/EBITDA, the market has already priced in many years of optimistic execution. Worse, FY2025 free cash flow was essentially zero — INR 270 Cr of net profit was entirely absorbed by working capital and capex of INR 94 Cr. This is a capital-hungry business, not the kind of cash machine I love at Berkshire. Operating margins of just 14.5% suggest the pricing power moat is moderate at best — industrial buyers are sophisticated and have alternatives. I'd revisit KSB enthusiastically around 25-30x earnings (~INR 400-500 price range), but at current prices, I'm being asked to pay a wonderful-business premium for a fair-to-good business. That's not my game.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "excellent",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 45421,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0821238,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11206,
+      "cache_read_input_tokens": 9191,
+      "output_tokens": 2489,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11206
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 514,
+          "cache_read_input_tokens": 9191,
+          "cache_creation_input_tokens": 2015,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2015,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

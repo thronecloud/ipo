@@ -1,0 +1,68 @@
+{
+  "symbol": "BLUEJET",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-19T12:49:22.960918Z",
+  "analysis": {
+    "score": 7,
+    "recommendation": "BUY",
+    "investment_thesis": "Blue Jet Healthcare is a genuinely differentiated specialty chemical business making contrast media intermediates — a niche with enormous technical barriers, global oligopoly dynamics, and returns that would make most manufacturers blush (ROCE 57.3%, ROE 52.1%) on a near-zero debt balance sheet. At 23.78x forward earnings after a near-doubling of revenue and profit in FY2025, the quality-to-price ratio is compelling.",
+    "key_strengths": [
+      "Extraordinary capital returns — ROCE of 57.3% and ROE of 52.1% in a manufacturing business with 52.96% gross margins signal genuine competitive advantage in niche contrast media intermediates with very few global suppliers",
+      "Effectively debt-free (Debt/Equity: 0.02) with INR 33 Cr cash, meaning all earnings accrue to equity owners without financial risk — this is the ideal balance sheet",
+      "Revenue accelerated 44% in FY2025 (INR 710 Cr → INR 1,026 Cr) and net profit nearly doubled (INR 164 Cr → INR 305 Cr), demonstrating operating leverage as the specialty chemistry scale increases"
+    ],
+    "key_risks": [
+      "FY2025 operating cash flow collapsed to INR 46 Cr versus INR 305 Cr net profit (OCF/NI of only 15%) — a severe working capital deterioration that must be explained and resolved before this is a clear compounder",
+      "Revenue base of INR 1,026 Cr is still small and concentrated in a narrow product set; loss of a major customer or a shift in contrast media formulations could significantly impair earnings",
+      "FII ownership of only 0.89% and DII of 4.51% suggests limited institutional visibility — thin institutional coverage means less price discipline on the downside"
+    ],
+    "red_flags": [
+      "The FY2025 OCF collapse (INR 46 Cr operating cash on INR 305 Cr net profit) is the single most important unanswered question about this business — if it reflects permanent working capital deterioration from a concentrated customer, this changes the investment case materially",
+      "FCF turned negative in FY2025 (INR -34 Cr) — for a business that was consistently FCF positive at 70-85% of net income from FY2020-FY2024, this is a meaningful change in pattern requiring explanation"
+    ],
+    "detailed_analysis": "Contrast media intermediates occupy a fascinating industrial niche: iodine-based compounds used in MRI and CT contrast agents require specialized chemistry expertise, strict regulatory validation, and long customer qualification cycles that create lasting switching costs. Blue Jet appears to be one of very few Indian manufacturers with credible global customers — hence gross margins of 53% in a manufacturing business, which is extraordinary. The 57% ROCE is the real signal: when a manufacturer earns returns that high on its asset base, it means customers are not shopping for alternatives.\n\nThe critical risk I must confront honestly is the FY2025 OCF collapse. INR 305 Cr of net profit generating only INR 46 Cr of operating cash means approximately INR 260 Cr was absorbed by working capital — likely receivables and inventory build from the rapid revenue ramp. This could normalize in FY2026 as collections catch up, or it could signal a structural shift in payment terms with large customers. At forward P/E of 23.78x for a business with 57% ROCE and near-zero debt, I am willing to accept this uncertainty with a smaller initial position pending clarification of the cash flow issue.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "excellent",
+      "valuation": "fair",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 169935,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.22379985000000002,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 23207,
+      "cache_read_input_tokens": 15132,
+      "output_tokens": 8815,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 23207,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 589,
+          "cache_read_input_tokens": 15132,
+          "cache_creation_input_tokens": 8075,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8075
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

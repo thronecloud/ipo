@@ -1,0 +1,70 @@
+{
+  "symbol": "APLLTD",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-18T16:25:23.606976Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Alembic is a century-old integrated pharma stalwart with 8.6% revenue CAGR but a net profit CAGR of -2.3% over nine years — a classic case of topline growth not flowing to the bottom line. At P/E 23x with earnings actually declining, the PEG is effectively infinite, making this a terrible GARP candidate.",
+    "key_strengths": [
+      "High gross margins (71.5%) reflect genuine product quality and formulation depth across 12+ therapeutic areas",
+      "Low D/E of 0.28 and 69.7% promoter holding signal management alignment and financial discipline — until 2025",
+      "Forward P/E of 18.5x implies the market expects earnings recovery, leaving some optionality"
+    ],
+    "key_risks": [
+      "Earnings destruction: net profit collapsed from INR 1,146 Cr (2021) to INR 582 Cr (2025) — nearly halved despite revenue growing 24%",
+      "2025 cash flow alarm: OCF cratered from INR 803 Cr to just INR 88 Cr, FCF swung to -INR 466 Cr, and borrowings tripled from INR 513 Cr to INR 1,489 Cr in a single year",
+      "Finance costs compounding at 35.9% CAGR — rising debt load eating into already-thin operating margins (11.4%)"
+    ],
+    "red_flags": [
+      "PEG ratio is effectively undefined/infinite — P/E of 23x against negative earnings growth (-2.3% CAGR) is the opposite of GARP",
+      "FY2025 free cash flow turned sharply negative (-INR 466 Cr) after being +INR 487 Cr in FY2024 — a dramatic single-year reversal",
+      "Borrowings spiked 190% YoY (INR 513 Cr → INR 1,489 Cr in 2025) suggesting a new heavy capex cycle before the last one paid off",
+      "EBITDA 9Y CAGR is -0.3% — a company generating less operating profit today than it did in 2016 despite 8.6% revenue growth"
+    ],
+    "detailed_analysis": "Alembic fails my most basic test: the story doesn't hold up when you look at earnings. Revenue grew from INR 3,166 Cr to INR 6,672 Cr over nine years — respectable 8.6% CAGR — but net profit actually shrank from INR 720 Cr to INR 582 Cr. That means every rupee of new revenue came with deteriorating economics. The company went through a massive capex supercycle (CWIP hit INR 2,304 Cr in 2022), which I could forgive if it generated returns — but operating margins are now only 11.4% versus what would've been needed to justify the investment. With a P/E of 23x and negative earnings growth, the PEG ratio is essentially a red alarm siren.\n\nFY2025 data raises the urgency. Operating cash flow collapsed 89% in a single year (INR 803 Cr → INR 88 Cr), free cash flow turned -INR 466 Cr, and the company raised borrowings from INR 513 Cr to INR 1,489 Cr — a new capex wave before proving returns on the last one. ROE at 11.4% sits below my 12% floor. This is a stalwart that has become a capital-intensive treadmill. I'd rather own a fast grower compounding earnings at 25% than this. Pass.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 79922,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0883323,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11490,
+      "cache_read_input_tokens": 9086,
+      "output_tokens": 2834,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11490,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 471,
+          "cache_read_input_tokens": 9086,
+          "cache_creation_input_tokens": 2404,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2404
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

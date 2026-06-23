@@ -1,0 +1,69 @@
+{
+  "symbol": "ACCPL",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-20T11:10:40.540877Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "At a P/E of 8.11 the multiple looks cheap, but ROE of 0.65% reveals near-zero earning power — the \"E\" is so small the ratio is meaningless. A micro-cap pharma (INR 73.6 Cr) with negligible profitability offers no margin of safety despite the low headline price.",
+    "key_strengths": [
+      "Low headline P/E of 8.11 suggests no speculative premium",
+      "High promoter skin-in-the-game at 73.52%",
+      "Operates in a defensive pharmaceuticals industry"
+    ],
+    "key_risks": [
+      "ROE of 0.65% indicates essentially no earning power — fails Graham's proven-earnings test",
+      "Micro-cap (INR 73.6 Cr) with zero institutional ownership (FII/DII 0%) — illiquidity risk",
+      "No visible dividend record, balance sheet, current ratio, or D/E data to verify solvency"
+    ],
+    "red_flags": [
+      "ROE <1% — earnings are a rounding error on equity",
+      "Recent listing / micro-cap with insufficient multi-year earnings track record",
+      "Zero institutional interest suggests absence of independent scrutiny"
+    ],
+    "detailed_analysis": "A P/E of 8.11 is superficially attractive, but an ROE of 0.65% tells me the denominator of that ratio is trivially small — the company is earning roughly INR 9 Cr of equity capital's worth on a notional basis, nowhere near the stable, demonstrable earning power I demand. My test is five consecutive years of positive earnings of meaningful magnitude, and a single-digit ROE from a 2012-vintage micro-cap pharma does not qualify. Without book value per share I cannot compute the Graham Number, but with a sub-1% return on equity, any P/B above ~0.3 would already be excessive.\n\nAbsent data on current ratio, debt-to-equity, interest coverage, and dividend history, I must assume the worst — these are precisely the disclosures a disciplined investor needs before committing capital. The 73.52% promoter holding and 0% institutional ownership signal a closely-held, under-scrutinized float, the exact terrain where Mr. Market's emotionalism is weaponized against retail buyers. This is speculation, not investment. Avoid.",
+    "metrics_evaluated": {
+      "moat_strength": "insufficient_data",
+      "management_quality": "insufficient_data",
+      "financial_health": "insufficient_data",
+      "valuation": "overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 20458,
+    "model_used": "opus",
+    "total_cost_usd": 0.089862,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8884,
+      "cache_read_input_tokens": 13514,
+      "output_tokens": 1102,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8884,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10628,
+          "cache_creation_input_tokens": 1142,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1142
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

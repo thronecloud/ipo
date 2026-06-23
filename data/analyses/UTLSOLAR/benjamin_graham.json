@@ -1,0 +1,71 @@
+{
+  "symbol": "UTLSOLAR",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-21T08:04:42.845549Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "At a P/E of 402x and P/B of 13.72x, UTLSOLAR demands a price so far removed from any rational measure of intrinsic value that no margin of safety exists whatsoever. The divergence between INR 156 Cr reported net profit and a mere INR 18 Cr operating cash flow in FY2025 further undermines confidence in the earnings quality underpinning this speculative price.",
+    "key_strengths": [
+      "Five consecutive years of positive net profit (INR 11 Cr → INR 156 Cr), satisfying the minimum earnings track record requirement.",
+      "Revenue growing at 38.8% CAGR and EBITDA at 44.1% CAGR, indicating a genuinely expanding business.",
+      "Interest coverage remains adequate at ~11.6x (EBITDA INR 255 Cr / Finance Cost INR 22 Cr)."
+    ],
+    "key_risks": [
+      "P/E of 402x versus my strict ceiling of 15x — the stock must grow earnings roughly 27x just to reach fair value at today's price.",
+      "Debt/Equity of 1.38x far exceeds my 0.5x threshold; total debt surged to INR 395 Cr in FY2025 with only INR 8 Cr cash.",
+      "Free cash flow was -INR 101 Cr in FY2025 despite INR 156 Cr net profit — a dangerous gap suggesting aggressive working capital expansion or accounting that does not translate to real cash."
+    ],
+    "red_flags": [
+      "P/B of 13.72x — I demand below 1.5x; paying nearly 14x book is pure speculation.",
+      "OCF of INR 18 Cr vs. net profit of INR 156 Cr in FY2025: earnings quality is deeply suspect.",
+      "FCF negative in 4 of last 5 years — the business is a chronic cash consumer, not a cash generator.",
+      "No dividend history mentioned — shareholders receive no real return while promoters hold 86.76%.",
+      "Promoter concentration of 86.76% leaves negligible float and raises governance and liquidity concerns."
+    ],
+    "detailed_analysis": "By every quantitative standard I apply, UTLSOLAR fails comprehensively. A P/E of 402x against my ceiling of 15x means the market has priced in decades of flawless execution — exactly the kind of speculative premium Mr. Market loves to offer and the disciplined investor must refuse. The P/B of 13.72x is equally disqualifying: I seek to buy assets, not dreams, and paying INR 13.72 for every INR 1 of book value leaves no asset-based floor should the growth narrative falter. The Graham Number, rooted in actual EPS and book value, would be a tiny fraction of INR 259 — perhaps in the range of INR 15–25 — implying the stock is priced at 10–17x its intrinsic value as I would calculate it.\n\nThe cash flow story amplifies my concern. A company reporting INR 156 Cr net profit that converts only INR 18 Cr into operating cash flow is either building enormous receivables, stretching inventory, or benefiting from timing on payables — none of which represent durable earning power. Free cash flow has been negative in four of the last five years, and FY2025 capex of INR 119 Cr is being funded primarily by new debt (financing inflows of INR 104 Cr), pushing D/E to 1.38x. Solar is a capital-hungry, policy-dependent sector; such a balance sheet provides no margin of safety against an interest rate shock, subsidy reversal, or demand slowdown. I would require this stock to trade below INR 20 before I would even begin a serious inquiry.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 46011,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0664734,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8388,
+      "cache_read_input_tokens": 10648,
+      "output_tokens": 2121,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8388,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 323,
+          "cache_read_input_tokens": 8598,
+          "cache_creation_input_tokens": 1840,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1840
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

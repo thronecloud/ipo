@@ -1,0 +1,69 @@
+{
+  "symbol": "CIGNITITEC",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T16:56:41.338118Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Cigniti passes my P/E test at 11.7x and carries virtually no debt (D/E: 0.02), but at P/B of 3.16 it trades at a steep premium to book — well above my 1.5x ceiling — and the price of INR 1,296 sits roughly 58% above the Graham Number of ~INR 818, offering no margin of safety. A disciplined value buyer must wait for Mr. Market's pessimism to close this gap.",
+    "key_strengths": [
+      "Near-zero debt (D/E: 0.02) with INR 199 Cr cash vs INR 20 Cr borrowings — fortress balance sheet by my standards",
+      "P/E of 11.7x falls below my 15x ceiling, and ROE/ROCE of 26%/34% show genuine earning power, not financial engineering",
+      "Eight consecutive years of positive net profit (2018–2025) with operating cash flow positive all 5 recent years — the kind of earnings consistency I demand"
+    ],
+    "key_risks": [
+      "P/B of 3.16 badly fails my 1.5x threshold; the combined P/E × P/B test yields 37 vs my maximum of 22.5 — the market is pricing in growth I cannot verify",
+      "The catastrophic 2017 net loss of INR -395 Cr (likely goodwill/impairment write-off) reveals management was not immune to destructive capital allocation — a permanent scar on the earnings record",
+      "Coforge acquisition (Dec 2024 subsidiary) introduces integration risk and potential strategic subordination — minority shareholders may see capital allocated to parent priorities, not standalone value creation"
+    ],
+    "red_flags": [
+      "Graham Number ~INR 818 vs market price INR 1,296 — buyer pays a 58% premium over my intrinsic value estimate with zero margin of safety",
+      "No dividend disclosure — a company with INR 147 Cr of FCF in FY25 that does not return cash to shareholders raises questions about capital discipline",
+      "2017 Other Income line of INR -332 Cr caused a net loss of INR -395 Cr, destroying nearly a decade of retained earnings in one year — opacity around that event concerns me"
+    ],
+    "detailed_analysis": "Cigniti presents a mixed picture by my strict quantitative standards. The P/E of 11.7x is the lone valuation metric that passes muster, but my combined rule — P/E multiplied by P/B must not exceed 22.5 — yields 36.97, a decisive failure. The Graham Number, computed as √(22.5 × EPS ~72.6 × BVPS ~410), stands near INR 818, meaning the current price of INR 1,296 demands I pay for years of future growth before I receive a single rupee of margin of safety. That is speculation, not investment. The 2017 loss of INR 395 Cr — almost certainly a goodwill impairment from an earlier acquisition — is a permanent reminder that management has overpaid for assets before; I cannot simply ignore that from the ledger.\n\nOn the positive side, the balance sheet is genuinely conservative: total debt collapsed from INR 121 Cr in 2020 to just INR 20 Cr in 2025 while equity nearly quadrupled to INR 1,129 Cr. Free cash flow of INR 147 Cr in FY25 against minimal capex of INR 14 Cr confirms real earning power, not accounting fiction. ROCE of 34.1% demonstrates the business compounds capital well. But the Coforge subsidiary relationship introduced in December 2024 changes the ownership calculus — minority holders must now trust a parent's capital allocation decisions. At the right price — perhaps INR 750–850 range — this would merit serious attention. At INR 1,296, I am being asked to pay for the story, and I do not buy stories.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 107153,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08634344999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9733,
+      "cache_read_input_tokens": 11219,
+      "output_tokens": 3098,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9733
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 537,
+          "cache_read_input_tokens": 9169,
+          "cache_creation_input_tokens": 2614,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2614,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "symbol": "GREAVESCOT",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T17:37:08.634396Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Greaves Cotton is a legacy industrial engine maker in a painful, cash-destroying EV pivot — with ROCE of 5.1%, negative free cash flow in 4 of 5 years, and a net loss of INR 367 Cr in FY2024. At 34.6x trailing P/E and 2.67x P/B, investors are paying a quality premium for a business that is definitively not quality.",
+    "key_strengths": [
+      "Low leverage (D/E 0.12, borrowings INR 185 Cr) provides near-term balance sheet cushion",
+      "Revenue CAGR of 6.8% over 9 years shows some commercial relevance of the legacy engine + aftermarket network",
+      "Promoter holding at 55.8% indicates skin-in-the-game alignment"
+    ],
+    "key_risks": [
+      "EV business (Ampere 2W, ELE 3W) competes head-on against Ola Electric, Bajaj, TVS with no discernible moat and massive cash burn",
+      "Legacy diesel/petrol engine segment faces secular decline as EV adoption accelerates — the core moat is melting",
+      "Persistent negative FCF (INR -98 Cr in FY2025, -225 Cr in FY2024) with rising finance costs (36.1% CAGR) signals worsening capital consumption"
+    ],
+    "red_flags": [
+      "Net losses in 4 of 5 years; INR 367 Cr loss in FY2024 driven by INR -270 Cr 'Other Income' — almost certainly EV subsidiary impairments, a classic value destruction signal",
+      "Operating CF positive only 1/5 years — this is not a business, it is a cash incinerator",
+      "ROCE at 5.1% and ROE at 4.11% are well below any reasonable cost of capital; the company is destroying economic value",
+      "EBITDA has declined from INR 324 Cr (FY2019) to INR 176 Cr (FY2025) despite revenue growing — severe negative operating leverage in the new segment mix",
+      "Gross-to-operating margin collapse (32.7% gross vs 3.9% operating) reveals new business losses overwhelming the legacy business's profitability"
+    ],
+    "detailed_analysis": "Greaves Cotton exemplifies what I call the \"melting ice cube trying to become a Tesla\" problem. The legacy engine business — once a decent compounder with INR 287–324 Cr EBITDA in FY2017–FY2019 — is in secular decline. Management responded by entering the intensely competitive Indian EV market, acquiring the Ampere 2-wheeler brand. The result: EBITDA has collapsed 46% from its FY2019 peak despite a 45% revenue increase, and free cash flow has been deeply negative for four consecutive years. The FY2024 impairment charge implied by the INR -270 Cr \"Other Income\" line is a confession that the EV assets were written down — a textbook sign of capital misallocation.\n\nApplying inversion: what needs to go right for this investment to work? You'd need Ampere to become profitable against Ola Electric's manufacturing scale and TVS's brand equity, the legacy engine decline to slow, and margins to recover from 3.94% toward something resembling a real business — all simultaneously. The valuation at 14.76x EV/EBITDA and 34.6x P/E demands this perfect scenario, while the base case is continued cash destruction. A fair business at a great price might be tolerable; this is a deteriorating business at an expensive price. I see no reason to own it.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 58978,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09617085,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11681,
+      "cache_read_input_tokens": 9077,
+      "output_tokens": 3309,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11681
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 736,
+          "cache_read_input_tokens": 9077,
+          "cache_creation_input_tokens": 2604,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2604,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

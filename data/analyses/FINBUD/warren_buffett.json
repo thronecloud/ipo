@@ -1,0 +1,70 @@
+{
+  "symbol": "FINBUD",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-21T08:08:37.546099Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Finbud shows impressive headline ROE (35.6%) and revenue growth (36.3% CAGR), but the severe and worsening disconnect between reported profits and operating cash flows — ₹8 Cr net profit vs. -₹13 Cr OCF in FY25 — makes earnings quality deeply suspect. Without a demonstrable moat in the crowded Indian loan aggregation space, this does not meet the bar of a wonderful business.",
+    "key_strengths": [
+      "Strong revenue momentum: ₹88 Cr → ₹223 Cr in 3 years (36.3% CAGR) with operating leverage driving EBITDA up 78% CAGR",
+      "Attractive headline returns: ROE 35.6% and ROCE 34% far exceed my 15% threshold — if earnings are real",
+      "Low finance cost (flat at ₹1 Cr despite scale-up) suggests disciplined cost structure on paper"
+    ],
+    "key_risks": [
+      "Cash flow destruction is alarming: OCF swung from +₹3 Cr (FY23) to -₹13 Cr (FY25) while net profit shows ₹8 Cr — a ₹21 Cr gap that screams receivables inflation or off-balance-sheet risk",
+      "Borrowings nearly tripled to ₹35 Cr (D/E ~0.85x) in one year — unusual for a pure fee-based aggregator and suggests actual lending activity that carries credit risk",
+      "No visible moat: loan aggregation is fiercely contested by Paisabazaar, BankBazaar, and large bank digital channels; switching costs are near zero"
+    ],
+    "red_flags": [
+      "Profit-to-cash-flow divergence of ₹21 Cr on a company earning only ₹8 Cr net profit is a classic earnings-quality red flag",
+      "Total assets doubled to ₹95 Cr in one year alongside a ₹23 Cr rise in borrowings — balance sheet expansion inconsistent with an asset-light aggregator description",
+      "Only 2 of 4 years had positive OCF; FCF is -₹15 Cr in the most recent year despite claiming record profits",
+      "Market cap ₹166 Cr with no institutional conviction (FII 0.75%, DII 5.88%) — very small, illiquid, limited governance scrutiny"
+    ],
+    "detailed_analysis": "Finbud presents a textbook case of why I always insist on reading the cash flow statement before anything else. The income statement tells a flattering story — revenue compounding at 36%, EBITDA margins expanding from 3% to 7.6%, ROE of 35.6%. But the moment you turn to cash flows, the narrative collapses. A genuine loan aggregation business earns fees upfront with minimal working capital needs; it should generate cash abundantly. Instead, FY25 shows -₹13 Cr operating cash flow and -₹15 Cr free cash flow against ₹8 Cr reported profit. That gap has widened every year since FY23. Either receivables are ballooning (revenue recognised but not collected), or the company is quietly doing NBFC-style lending that requires capital — in which case the credit risk is being obscured by the \"aggregator\" label. The simultaneous tripling of borrowings to ₹35 Cr in a single year reinforces this suspicion.\n\nEven setting aside cash flow concerns, I see no durable competitive advantage. Loan aggregation in India is a commodity service — borrowers will go to whoever offers the cheapest rate, and lenders will work with whoever delivers the most volume. There are no switching costs, no network effects that competitors cannot replicate, and no proprietary technology described. At ₹166 Cr market cap and 24.5x P/E, you are paying a growth premium for a business where the growth may not be translating into real cash generation. When I cannot reconcile accounting earnings with cash reality, I simply walk away — the downside is unknowable.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 45419,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0792795,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10220,
+      "cache_read_input_tokens": 8235,
+      "output_tokens": 2565,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10220,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 638,
+          "cache_read_input_tokens": 8235,
+          "cache_creation_input_tokens": 1985,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1985
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

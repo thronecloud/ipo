@@ -1,0 +1,69 @@
+{
+  "symbol": "CANFINHOME",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-19T12:52:05.386750Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Can Fin Homes is a financial company — mortgage finance — and the Magic Formula explicitly excludes this category because debt is the raw material of the business, not a capital structure choice, making EBIT/EV and ROIC meaningless. I cannot score it on my framework, and I won't pretend otherwise.",
+    "key_strengths": [
+      "Low P/E of 11.87x and Forward P/E of 10.49x — cheap on reported earnings by conventional metrics",
+      "Strong net profit CAGR of 22.1% over 3 years (INR 471 Cr FY22 → INR 857 Cr FY25), indicating healthy loan book growth",
+      "Canara Bank parentage and affordable housing focus provide franchise stability and a reliable liability franchise"
+    ],
+    "key_risks": [
+      "D/E of 6.59x — leverage is the business model, but it amplifies any credit cycle or liquidity shock nonlinearly",
+      "Finance costs growing at 29.3% CAGR vs. revenue at 18.8% CAGR — NIM compression risk if rates stay elevated",
+      "Magic Formula exclusion: I have no reliable way to assess capital efficiency or earnings quality using my standard framework"
+    ],
+    "red_flags": [
+      "Operating CF was negative in FY22 (–INR 3,916 Cr) and FY23 (–INR 4,044 Cr) — characteristic of HFC capital deployment, but not reassuring",
+      "Total debt of INR 34,898 Cr against equity of INR 5,067 Cr means any asset quality deterioration is amplified significantly",
+      "Framework exclusion is itself a red flag for this style of investing — I don't invest where I can't compute the formula"
+    ],
+    "detailed_analysis": "Can Fin Homes is an Indian housing finance company — the Magic Formula I created in 'The Little Book That Beats the Market' explicitly excludes financial firms and utilities because the capital structure of these businesses is fundamentally different from operating companies. A bank or HFC's liabilities ARE its inputs; computing EBIT/EV or ROIC for such a business produces nonsense numbers. So I won't force the formula onto an incompatible business.\n\nFor what it's worth, Can Fin Homes looks modestly priced by conventional HFC metrics — P/E under 12x, solid ROE near 17%, and Canara Bank's institutional backing. But operating CF was sharply negative in FY22-23, finance costs are growing faster than revenues, and D/E of 6.6x means thin cushion for error. If you're a value investor using different tools (like P/B vs. ROE for financials), this merits a deeper look — but it's outside my circle of competence as defined by my formula.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "insufficient_data",
+      "valuation": "undervalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 150072,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.2245002,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 23510,
+      "cache_read_input_tokens": 15329,
+      "output_tokens": 8782,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 23510,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 495,
+          "cache_read_input_tokens": 15329,
+          "cache_creation_input_tokens": 8181,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8181
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

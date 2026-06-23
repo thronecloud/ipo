@@ -1,0 +1,69 @@
+{
+  "symbol": "ACTIVEINFR",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-20T11:12:30.465279Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Active Infra is a tiny civil construction contractor (267 Cr mcap) with lumpy revenue that jumped from ₹1 Cr in 2022 to ₹90 Cr in 2025 but just decelerated (-7% YoY). At P/E 26 with decelerating topline and single-digit profit growth, the PEG math doesn't work — the \"fast grower\" story is already weakening.",
+    "key_strengths": [
+      "Equity base jumped 4x to ₹116 Cr in 2025 (likely IPO/fundraise), cutting D/E sharply",
+      "EBITDA margin expanded to 31% in 2025 vs 15% in 2023",
+      "ROCE of 15.5% is decent for a contractor, promoter holds a healthy 72.4%"
+    ],
+    "key_risks": [
+      "Revenue dipped in FY25 (₹97→₹90 Cr) — the growth story already cracking",
+      "OCF collapsed from ₹32 Cr to ₹5 Cr in FY25; working capital-heavy EPC model",
+      "Micro-cap infra contractor with customer/project concentration and cyclical exposure"
+    ],
+    "red_flags": [
+      "Revenue deceleration (-7%) while trading at P/E 26 → PEG effectively negative",
+      "FY25 OCF ₹5 Cr vs net profit ₹13 Cr — earnings quality deteriorating",
+      "3-yr CAGR of 348% is a low-base artifact, not a durable growth rate"
+    ],
+    "detailed_analysis": "From a Lynch lens, this looks like a recently-listed micro-cap infra contractor where the exciting \"growth\" chart is really a base-effect illusion — going from ₹1 Cr to ₹89 Cr between FY22 and FY23 tells me FY22 was pre-operations, not that this is a 348% CAGR compounder. The real run-rate is FY23→FY25: revenue flat-to-down (89→97→90) while the market caps it at 26x earnings. That's the opposite of GARP: you're paying a growth multiple for a stalwart-at-best with contractor economics.\n\nThe redeeming features are genuine — margins expanded, leverage dropped meaningfully (borrowings 109→60 Cr while equity tripled via fundraise), and ROCE of 15.5% is respectable. But civil construction is a tough, cyclical, working-capital-hungry business where OCF just dropped 85% YoY, and there's no visible niche dominance or moat. I'd want to see either a PEG <1 (requires either ₹110+ price or proof of 25%+ sustained earnings growth) or an order book disclosure showing the FY25 dip is temporary. Until then, HOLD — interesting story, wrong price.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 23245,
+    "model_used": "opus",
+    "total_cost_usd": 0.09876225000000001,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 9683,
+      "cache_read_input_tokens": 14077,
+      "output_tokens": 1247,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9683,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 11233,
+          "cache_creation_input_tokens": 1294,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1294
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "LUMAXTECH",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T18:10:15.142962Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "AVOID",
+    "investment_thesis": "Lumax Auto Technologies is a decent auto-components franchise with good growth momentum, but at 47.6x P/E with D/E of 0.87 and a cyclical, OEM-dependent business model, the price demands perfection in an industry that rarely delivers it. I don't pay premium multiples for businesses that depend on someone else's production schedule.",
+    "key_strengths": [
+      "Revenue and profit growth acceleration: revenue 4x'd from INR 903 Cr (2016) to INR 3,637 Cr (2025), net profit CAGR 23.6% over 9 years",
+      "ROE of 20.2% and ROCE of 19% — respectable for an auto parts manufacturer, suggesting decent capital efficiency",
+      "Diversified product portfolio across plastics, mechatronics, structures, aftermarket, and alternate fuels (CNG/H2) — exposure to EV/alternate fuel transition"
+    ],
+    "key_risks": [
+      "Debt explosion: borrowings surged from INR 165 Cr (2022) to INR 1,111 Cr (2025) — a 6.7x increase in 3 years, pushing D/E to 0.87; finance costs grew at 36.1% CAGR, now consuming INR 80 Cr annually",
+      "Cyclical OEM dependence: no pricing power vs. Maruti, Hero, TVS — margins get squeezed whenever volumes dip, as evidenced by the 2020-21 revenue and profit contraction",
+      "FCF/Net Profit conversion deteriorating: FCF of INR 118 Cr vs. net profit of INR 229 Cr (51% conversion) — capex at INR 180 Cr in 2025 and rising, making this increasingly capital-hungry"
+    ],
+    "red_flags": [
+      "D/E of 0.87 — nearly 3x my preferred ceiling of 0.3; the 2023 jump (borrowings +INR 499 Cr, investing CF -INR 476 Cr) screams debt-funded acquisition with integration risk baked in",
+      "P/E of 47.6x for a cyclical auto parts supplier is extreme — forward P/E of 35.57x still offers minimal margin of safety if volumes slow",
+      "FCF yield of roughly 1% (INR 118 Cr FCF on INR 12,234 Cr market cap) — I'm being asked to pay as if this is a software business"
+    ],
+    "detailed_analysis": "Lumax Auto Technologies has put up impressive headline numbers — a 16.7% revenue CAGR and 23.6% net profit CAGR over nine years is genuinely good. But I notice most of the acceleration is recent and appears acquisition-driven: total assets nearly doubled from INR 1,139 Cr (2022) to INR 2,179 Cr (2023) in a single year, funded by a massive debt raise. That kind of inorganic leap always makes me nervous, because acquired growth rarely has the same economics as organic growth — you're often just buying someone else's revenue at a price that destroys value. The finance cost line growing at 36.1% CAGR, now at INR 80 Cr, is a structural headwind that didn't exist three years ago.\n\nThe business itself — supplying plastic components, sensors, and structural parts to Indian OEMs — has modest moats at best. Auto part suppliers are price-takers, not price-setters, and the 10.1% operating margin tells that story clearly. I'd want to see >15% operating margins before concluding there's meaningful pricing power. At 47.6x trailing P/E, the market is pricing in everything going right: volumes hold, debt gets paid down, margins expand, and the acquisitions integrate cleanly. In my experience, the market rarely gets all four wishes granted in cyclical manufacturing. Charlie would say we're paying a wonderful price for a fair business — and that's exactly backwards from what we like to do.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 48967,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08470079999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11350,
+      "cache_read_input_tokens": 9181,
+      "output_tokens": 2625,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11350
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 504,
+          "cache_read_input_tokens": 9181,
+          "cache_creation_input_tokens": 2169,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2169,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "544335",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-20T09:44:25.834283Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "A small-cap road/bridge EPC contractor with decent headline ROCE of 17.9% but deteriorating cash quality — OCF swung to -36 Cr in FY25 despite 25 Cr PAT, and FCF was -58 Cr. Civil construction is a low-moat, working-capital-hungry, government-dependent business that fails almost every Munger quality filter regardless of the 8.4x P/E.",
+    "key_strengths": [
+      "Profit CAGR of 25.6% (FY20→FY25) with expanding EBITDA margins (~9.4%)",
+      "High promoter skin-in-the-game at 73.6%, debt-to-equity modest at 0.31x",
+      "Reported ROCE of 17.9% is above cost of capital for the sector"
+    ],
+    "key_risks": [
+      "Earnings quality collapsing: FY25 OCF -36 Cr vs PAT +25 Cr; FCF -58 Cr",
+      "Revenue already declined 13% YoY (589→510 Cr) — cyclical/order-book dependent",
+      "Equity doubled (127→245 Cr) via fresh issuance — dilution-funded growth, not self-financing"
+    ],
+    "red_flags": [
+      "Free Cash Flow / Net Income materially negative in FY25",
+      "Asset base nearly doubled (239→440 Cr) in one year — balance sheet bloat typical of EPC working capital stretch",
+      "Recently listed micro-cap (BSE 544335) with limited public track record"
+    ],
+    "detailed_analysis": "Inverting first: what kills EPC contractors? Receivables stretch, retention money locked with government counterparties, single-project concentration, and bid-to-win margin compression. B.R. Goyal shows classic symptoms — FY25 OCF of -36 Cr against reported PAT of 25 Cr means every rupee of profit (and then some) is trapped in working capital. The 77 Cr borrowing and fresh 92 Cr financing inflow funded the growth, not internal accruals. This is the opposite of a compounding machine; it is a capital-consuming machine masquerading as one because a road-building boom lifts headline numbers.\n\nCivil construction has no durable moat — no pricing power, no brand, no switching costs, no network effects. ROCE of 17.9% looks respectable but is computed on a balance sheet that just ballooned 84% YoY, so the forward-looking figure will almost certainly compress. A 8.4x P/E is not cheap for a business whose \"E\" does not convert to cash. Munger's rule: a great business at a fair price beats a fair business at a cheap price. This is a mediocre business at an optically cheap price — pass. Score 3/10.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 30462,
+    "model_used": "opus",
+    "total_cost_usd": 0.11392574999999999,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 10387,
+      "cache_read_input_tokens": 14254,
+      "output_tokens": 1674,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10387,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 146,
+          "cache_read_input_tokens": 11527,
+          "cache_creation_input_tokens": 1587,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1587
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

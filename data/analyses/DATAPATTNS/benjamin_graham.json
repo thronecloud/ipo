@@ -1,0 +1,71 @@
+{
+  "symbol": "DATAPATTNS",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-19T13:05:06.172393Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Data Patterns is a recent IPO (listed December 2021) in defense electronics, exhibiting only four years of earnings history, negative operating cash flow in two of those four years, and a price that is simply grotesque by every quantitative measure I apply: P/E 79.4, P/B 12.72, EV/EBITDA 60, and a Graham Number of approximately INR 490 versus a market price of INR 3,494 — a 7× premium to intrinsic value. No margin of safety exists here; the investor is paying entirely for hoped-for future growth.",
+    "key_strengths": [
+      "Zero financial debt (D/E 0.00) and an essentially unlevered balance sheet — the company cannot go bankrupt due to interest obligations, which is a meaningful distinction in a capital-intensive defense sector",
+      "Exceptional operating margins of 43% and revenue CAGR of 31.6% reflect genuine competitive strength in specialised defense and aerospace electronics with high barriers to replication",
+      "ROCE of 19.62% indicates the business earns well above its cost of capital on the assets it deploys"
+    ],
+    "key_risks": [
+      "Operating cash flow was negative in FY23 (−INR 17 Cr) and dramatically negative in FY25 (−INR 90 Cr) despite growing net profits — a dangerous divergence between reported earnings and actual cash generation, often indicating working capital strain from large contract-based revenues",
+      "Free cash flow was negative INR 196 Cr in FY25 — the company is consuming cash, not generating it, even at peak reported profitability; capex is rising rapidly (INR 106 Cr in FY25 vs INR 38 Cr in FY22)",
+      "Revenue of only INR 708 Cr makes this a small, concentrated business entirely dependent on Indian government defense procurement — any budget cycle slowdown or contract delay can devastate earnings"
+    ],
+    "red_flags": [
+      "P/E of 79.45 — more than 5× my maximum threshold of 15; the entire price is speculative expectation, not proven earning power",
+      "P/B of 12.72 — paying 12.7× net assets for a four-year-old public company is the definition of speculation, not investment",
+      "Graham Number ~INR 490 versus price INR 3,494: the stock must be purchased at one-seventh the current price before it qualifies as a value investment by my standards",
+      "OCF negative in 2 of 4 years — earnings are not being converted to cash, undermining the reliability of reported profits",
+      "Recent IPO (2021): by definition the seller (investment bank, promoters) chose the moment and price of this offering to maximise proceeds, not to benefit buyers"
+    ],
+    "detailed_analysis": "Data Patterns operates an admirable business — specialised defense electronics with 43% operating margins and zero debt. I do not dispute the quality of what this company does. What I dispute, firmly and categorically, is the price being asked. At INR 3,494, Mr. Market is demanding that I pay 79× earnings, 12.7× book value, and 7× my calculated intrinsic value. This is not investment — it is speculation dressed in the language of growth. My method requires that I pay less than intrinsic value, not seven times more.\n\nThe cash flow data deepens my concern. A company reporting INR 222 Cr in net profit in FY25 whilst simultaneously generating negative INR 90 Cr in operating cash flow has a fundamental working capital problem — likely large receivables from government contracts that may be slow to collect. Free cash flow was negative INR 196 Cr in FY25. I will not pay a premium for profits that have not yet materialised as cash in the bank. The prudent investor waits — perhaps for a decade — until Mr. Market's enthusiasm for defense stocks moderates and this company's price approaches something defensible.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 216169,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.27410685,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 26067,
+      "cache_read_input_tokens": 15372,
+      "output_tokens": 11449,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 26067,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 805,
+          "cache_read_input_tokens": 15372,
+          "cache_creation_input_tokens": 10695,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 10695
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

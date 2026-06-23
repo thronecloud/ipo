@@ -1,0 +1,71 @@
+{
+  "symbol": "GAEL",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T17:21:39.923891Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "GAEL fails both Magic Formula screens — Earnings Yield of ~5.7% (EBIT ₹401 Cr / EV ~₹7,026 Cr) is below the 6% threshold, and ROCE of 11.5% is below the 12% minimum, confirming an expensive, low-quality business. You're paying a premium for a commoditised agro-processor with structurally thin margins and deteriorating fundamentals.",
+    "key_strengths": [
+      "Near-debt-free balance sheet (D/E 0.09), limiting financial risk",
+      "Promoter holding at 63.84% signals owner-operator alignment",
+      "Diversified downstream segments (starch, soya, edible oil, spinning) reduce single-commodity exposure"
+    ],
+    "key_risks": [
+      "Profitability in sharp decline: Net Profit fell from ₹475 Cr (FY22) → ₹249 Cr (FY25), a 48% drop in three years",
+      "Heavy capex cycle destroying FCF — Capex ₹296 Cr in FY25 vs OCF ₹341 Cr, leaving FCF of just ₹47 Cr against Net Profit of ₹249 Cr (19% conversion)",
+      "Other income of ₹82 Cr (FY25) represents ~33% of Operating Income — core business earnings quality is suspect"
+    ],
+    "red_flags": [
+      "Earnings Yield ~5.7% — below 6% minimum; stock is overvalued on Magic Formula",
+      "ROCE 11.5% and ROE 8.59% — both below cost of capital threshold; not a high-quality compounder",
+      "Operating margin at 4.45% — razor-thin for any business, signals commodity pricing power with no moat",
+      "CWIP surged to ₹335 Cr (FY25) with no visible earnings uplift — capex not yet productive",
+      "Revenue flat at ~₹4,600–4,900 Cr for 4 consecutive years while profits collapse"
+    ],
+    "detailed_analysis": "Running the Magic Formula on GAEL: EBIT (Operating Income) = ₹401 Cr; Enterprise Value = Market Cap ₹6,798 Cr + Debt ₹229 Cr − Cash ₹1 Cr ≈ ₹7,026 Cr. Earnings Yield = 401/7,026 = **5.7%** — below the 6% floor, meaning you are overpaying. ROCE of 11.5% is also sub-threshold at 12%, and the trend is worsening — operating income has fallen from ₹687 Cr (FY22) to ₹401 Cr (FY25) as revenue stagnated. A 33x trailing P/E for a business with 4.45% operating margins in agro-processing is a classic value trap setup.\n\nThe FCF picture is equally damaging. Free Cash Flow of just ₹47 Cr against Net Profit of ₹249 Cr (19% conversion) reveals how capital-hungry this business truly is — the company is spending nearly everything it earns to maintain/expand capacity. The ballooning CWIP (₹335 Cr) suggests another wave of capex is in progress, with no guarantee of margin improvement given commodity-like pricing across starch, edible oils, and cotton yarn. For the Magic Formula to work, I need businesses that are both cheap AND earn high returns on incremental capital — GAEL offers neither.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 51967,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08396970000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11344,
+      "cache_read_input_tokens": 9119,
+      "output_tokens": 2579,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11344
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 418,
+          "cache_read_input_tokens": 9119,
+          "cache_creation_input_tokens": 2225,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2225,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

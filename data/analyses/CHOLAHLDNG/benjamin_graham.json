@@ -1,0 +1,69 @@
+{
+  "symbol": "CHOLAHLDNG",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-19T12:58:43.010818Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Cholamandalam Financial Holdings passes the P/E test (13x, just under my 15x ceiling) and shows ten consecutive years of growing net profits — a genuine record of earning power. However, the holding company structure, P/B of 2.25x, and a D/E of 6.35x (even adjusted for NBFC norms) all prevent me from paying today's price with confidence.",
+    "key_strengths": [
+      "Net profit grew every single year from INR 1,181 Cr (FY2016) to INR 4,740 Cr (FY2025) — CAGR 16.7%, an impressive and unbroken record",
+      "P/E of 13.0x is within my threshold, and forward P/E of 10.7x suggests profits are still growing",
+      "ROE of 19.1% demonstrates the underlying lending subsidiaries are generating real returns on equity"
+    ],
+    "key_risks": [
+      "Debt/Equity of 6.35x is extreme; while normal for an NBFC, a credit-cycle shock or funding disruption could impair equity rapidly",
+      "Total debt grew from INR 69,229 Cr (FY2022) to INR 174,366 Cr (FY2025) — the balance sheet is expanding at a pace that leaves little room for error",
+      "P/B of 2.25x means investors pay a significant premium over book; in a financial company, book value IS the safety cushion"
+    ],
+    "red_flags": [
+      "Operating cash flow negative every single year for five consecutive years — though structurally normal for a lender, the scale (-34,201 Cr in FY2025) requires continuous external funding",
+      "Finance costs have exploded from INR 976 Cr (FY2016) to INR 12,494 Cr (FY2025) — a 32.7% CAGR that outpaces revenue growth in stress scenarios",
+      "Holding company discount risk: CHOLAHLDNG is an investment vehicle, not the operating entity; minority shareholders bear conglomerate opacity"
+    ],
+    "detailed_analysis": "Cholamandalam Financial Holdings occupies the uncomfortable middle ground between an acceptable investment and a speculative one. The profit record is the best of the five stocks reviewed: ten years of positive and growing net income with no interruption, not even in COVID-affected FY2021. The P/E of 13x is the first time in this exercise that a stock has cleared that threshold. These are real merits a Graham investor must acknowledge.\n\nYet I remain uncomfortable. Financial companies are inherently opaque — the 'assets' are loan books whose quality degrades silently until it cannot be hidden. The balance sheet has grown from INR 75,855 Cr to INR 239,882 Cr in five years; that velocity of growth in lending businesses has historically preceded credit losses. P/B at 2.25x offers no asset-based floor. I would require the price to decline to approximately 1.3–1.5x book (implying a price near INR 1,050–1,250) before the margin of safety is adequate for a conservative investor. At INR 1,641, the stock is fairly priced for its quality — but 'fairly priced' is not a phrase that appears in my vocabulary as a reason to buy.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 134607,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.20728095000000002,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 23027,
+      "cache_read_input_tokens": 15919,
+      "output_tokens": 7743,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 23027,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 473,
+          "cache_read_input_tokens": 15919,
+          "cache_creation_input_tokens": 7108,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 7108
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

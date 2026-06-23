@@ -1,0 +1,70 @@
+{
+  "symbol": "ARVINDFASN",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T16:25:36.834945Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Arvind Fashions is a licensed-brand apparel retailer with thin net margins, negative ROE, and excessive debt, trading at 192x trailing earnings — a price that demands near-perfection from a business with a history of large losses. The moat is borrowed, not owned: Tommy Hilfiger and Calvin Klein licenses can be revoked, leaving little durable competitive advantage worth paying up for.",
+    "key_strengths": [
+      "Strong gross margins (53.5%) signal real brand pricing power at the consumer level",
+      "FCF surged to INR 438 Cr in FY25, showing asset-light model can generate cash when operating well",
+      "ROCE of 16.9% and operating income CAGR of 30% over 8 years suggest operational improvement"
+    ],
+    "key_risks": [
+      "Most valuable brands (Tommy Hilfiger, Calvin Klein) are licensed — no durable ownership moat, renewal risk is existential",
+      "Net profit collapsed from INR 137 Cr (FY24) to INR 33 Cr (FY25) despite revenue growth — earnings quality is poor and unpredictable",
+      "Debt/Equity of 1.02 with INR 1,211 Cr borrowings and INR 170 Cr annual finance costs leaves no margin of safety in a downturn"
+    ],
+    "red_flags": [
+      "Negative ROE of -3.63% — shareholders earned nothing on their capital",
+      "Cumulative net losses of ~INR 1,200 Cr between FY19–FY22 eroded the balance sheet severely",
+      "Trailing P/E of 191.8x is speculative pricing for a cyclical fashion retailer with unproven sustained profitability",
+      "Promoter holding of only 35.1% — limited skin in the game for a founder-linked business"
+    ],
+    "detailed_analysis": "Arvind Fashions represents the kind of business I find most difficult to value and most dangerous to own: a fashion retailer dependent on third-party brand licenses with thin net profitability. The gross margin of 53.5% looks like a moat, but most of that economic surplus flows to licensors (PVH for Tommy Hilfiger/CK), leaving a meager 8.7% operating margin and a net margin so thin it produced only INR 33 Cr of profit on INR 4,620 Cr of revenue in FY25. When the next economic slowdown hits — and it will — this business has historically burned through equity at alarming speed (INR 596 Cr net loss in FY21 alone). That is not a wonderful business; that is a business that requires constant management heroism to stay afloat.\n\nAt 192x trailing earnings, the market is pricing in a dramatic profit recovery — which may come given the forward P/E of 31.6x implies roughly INR 200 Cr in forward earnings. But I have to ask: why did net profit fall from INR 137 Cr to INR 33 Cr in FY25 while revenues and operating income both grew? The growing gap between EBITDA (INR 601 Cr) and net profit (INR 33 Cr) points to significant below-the-line charges — debt service (INR 170 Cr finance cost) and likely depreciation on operating leases. This is structurally a leveraged, asset-heavy retailer dressed up in premium brand clothing. I can buy Coca-Cola and sleep well. I cannot buy Arvind Fashions and sleep at all.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 48090,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08137575,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11085,
+      "cache_read_input_tokens": 8960,
+      "output_tokens": 2474,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11085,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 383,
+          "cache_read_input_tokens": 8960,
+          "cache_creation_input_tokens": 2125,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2125
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "INTELLECT",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-19T12:56:51.233173Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Intellect Design Arena is a niche banking-software vendor with a reasonable installed base in financial institutions, but its 6.4% operating margin is embarrassingly thin for a software company and its ROE of 12.7% falls short of my minimum threshold. Revenue has flatlined at ~INR 2,500 Cr for two years, and the business lacks the high-confidence predictability I require.",
+    "key_strengths": [
+      "Sticky client base in core banking — banks rarely rip out their core systems, providing some recurring revenue visibility once a client is live",
+      "Clean balance sheet: Debt/Equity of 0.03, cash of INR 302 Cr, and borrowings down to INR 90 Cr from INR 300 Cr in 2020",
+      "Revenue CAGR of 13.3% over nine years and OCF positive all five recent years show this is a real, cash-generating business — not a speculative story"
+    ],
+    "key_risks": [
+      "Operating margin of just 6.4% is unacceptably low for a software product company — it suggests high implementation costs, client concentration pressure on pricing, or significant R&D spending that hasn't yet been monetised",
+      "Revenue stagnation: FY2024 revenue was INR 2,506 Cr; FY2025 was INR 2,500 Cr — zero growth in the latest year is a serious concern for a 25x earnings multiple",
+      "Promoter stake of only 29.73% is low; significant FII ownership (25.6%) can drive volatility and the founder's alignment with minority shareholders is less clear"
+    ],
+    "red_flags": [
+      "A software company earning 6.4% operating margins is not a high-quality business — compare to global fintech software peers at 20-30%+ margins",
+      "CWIP of INR 374 Cr as recently as 2024 collapsed to INR 1 Cr in 2025, which warrants understanding — large write-downs or reclassifications need investigation",
+      "FCF was only INR 9 Cr in FY2023 and has been inconsistent, with capex consuming INR 166-173 Cr annually — more like a services company than a true software product franchise"
+    ],
+    "detailed_analysis": "Banking software has genuine switching costs — once a bank's core is on your platform, migration is painful. That is the good news. The bad news is that Intellect's financials look more like a services company than a product company: thin margins, high capitalised development costs, and ROE stuck at 12.7%. For a product business with a real moat, I'd expect 20%+ operating margins and 20%+ ROE. Intellect achieves neither.\n\nAt 25.7x trailing earnings with zero revenue growth in the latest year, investors are paying a growth premium for a business that isn't currently growing. The forward P/E of 19x implies a profit recovery ahead, which is possible, but I require a higher margin of safety before paying up for 'possible'. This is a mediocre business at a fair-to-full price — the kind of investment I'd rather watch than own.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 123404,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.18002430000000003,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 20972,
+      "cache_read_input_tokens": 15301,
+      "output_tokens": 6452,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 20972,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 626,
+          "cache_read_input_tokens": 15301,
+          "cache_creation_input_tokens": 5671,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 5671
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

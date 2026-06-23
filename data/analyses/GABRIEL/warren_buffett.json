@@ -1,0 +1,69 @@
+{
+  "symbol": "GABRIEL",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-19T06:28:54.852391Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Gabriel India is a capital-hungry auto parts supplier with paper-thin 6.91% operating margins that leave no room for error; free cash flow collapsed to zero in FY2025 as INR 209 Cr of capex consumed every rupee of operating cash generated. At 56x trailing P/E, the market is pricing in a transformation that the business model — a commodity supplier to automakers — simply does not support.",
+    "key_strengths": [
+      "Strong near-term earnings momentum: net profit CAGR of 39.9% over three years to INR 245 Cr in FY2025",
+      "Near-debt-free balance sheet with Debt/Equity of only 0.08, limiting financial risk",
+      "Diversified product portfolio covering two-wheelers, four-wheelers, and railways with some switching-cost protection"
+    ],
+    "key_risks": [
+      "Auto parts is an inherently cyclical, low-moat business — OEMs squeeze suppliers on price constantly",
+      "FCF generation has deteriorated to zero (FY2025: OCF INR 204 Cr vs capex INR 209 Cr), meaning growth is being funded entirely by retained earnings with nothing left for owners",
+      "Operating margin of 6.91% is dangerously thin — any demand slowdown or raw material spike eliminates profitability"
+    ],
+    "red_flags": [
+      "Free cash flow = INR 0 in FY2025 despite strong reported earnings — capital intensity is destroying economic value",
+      "P/E of 56x for a sub-7% margin cyclical supplier is speculative, not value",
+      "Capex nearly tripled in three years (INR 76 Cr → INR 209 Cr) with no commensurate improvement in FCF"
+    ],
+    "detailed_analysis": "Gabriel manufactures shock absorbers and suspension components — a useful but undifferentiated product. OEMs can and do dual-source these components, keeping margins structurally suppressed at under 7%. The reported profit growth looks impressive in isolation, but when capex absorbed 100% of operating cash flow in FY2025, there is nothing real being delivered to shareholders; earnings are being reinvested just to maintain competitive position, which is the definition of a poor business.\n\nAt 56x trailing P/E (32x forward), the market assigns a premium consumer-brand multiple to what is, in reality, a moderately profitable component manufacturer. I need a margin of safety, not a margin of faith. The P/B of 11.4x for a capital-intensive industrial business is unjustifiable. I would require the stock to trade at a significant discount before the economics make sense, and even then I would question the durability of returns.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 134811,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.19825905000000002,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 21737,
+      "cache_read_input_tokens": 14871,
+      "output_tokens": 7485,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 21737,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 466,
+          "cache_read_input_tokens": 14871,
+          "cache_creation_input_tokens": 6866,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 6866
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

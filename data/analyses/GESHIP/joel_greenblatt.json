@@ -1,0 +1,68 @@
+{
+  "symbol": "GESHIP",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-22T16:40:21.398778Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "GESHIP screens attractively on both Magic Formula metrics today — Earnings Yield ~14.6% (EBIT 2,677 / EV ~18,385 Cr) and ROIC ~20% (EBIT / invested capital of ~13,276 Cr) — but shipping is deeply cyclical and current earnings likely reflect a near-peak rate environment, making normalized metrics far less compelling. The fortress balance sheet (net cash ~1,949 Cr) and disciplined capital allocation are genuine strengths, but the 9-year EBITDA CAGR of only 1.7% reveals the structural earnings stagnation beneath cycle peaks.",
+    "key_strengths": [
+      "Magic Formula Earnings Yield ~14.6% (EBIT 2,677 Cr / EV ~18,385 Cr) — well above the 12% attractiveness threshold",
+      "Near-net-cash balance sheet: debt collapsed from 5,295 Cr (2020) to 1,254 Cr (2025) while cash grew to 4,112 Cr — exceptional deleveraging",
+      "Strong FCF generation: 5/5 years positive OCF, FCF averaged ~2,200 Cr over last 3 years; Debt/Equity at 0.08"
+    ],
+    "key_risks": [
+      "Shipping is acutely cyclical — EBIT ranged from 1,067 Cr (2019) to 3,128 Cr (2023); normalized EY on 10-year avg EBIT (~1,892 Cr) drops to ~10.3%, below the compelling threshold",
+      "Rising capex (574→845→1,175 Cr) for fleet renewal will compress future FCF at a time when freight rates may be softening",
+      "9-year revenue CAGR of only 3.8% and EBITDA CAGR of 1.7% confirm this is not a growth compounder — Magic Formula works best with businesses sustaining high ROIC over time, which shipping historically cannot"
+    ],
+    "red_flags": [
+      "Net profit was negative in FY2018 (−210 Cr) and FY2019 (−21 Cr) — ROIC collapses in shipping downturns, violating the 3+ year ROIC sustainability requirement",
+      "Other income (834 Cr in FY25) is growing faster than operating income — inflating reported earnings quality"
+    ],
+    "detailed_analysis": "Running the Magic Formula on today's numbers: EV ≈ 20,334 + 2,163 − 4,112 = ~18,385 Cr; EBIT (FY25 operating income) = 2,677 Cr → Earnings Yield = 14.6%, very attractive. Invested capital = equity (15,225) + debt (2,163) − cash (4,112) = ~13,276 Cr → ROIC = ~20.2%, just crossing the \"good\" threshold. On the surface, this is a legitimate Magic Formula candidate — cheap AND decent returns on capital. The near-net-cash balance sheet and P/E of 9x with EV/EBITDA of 5.2x reinforce the value argument.\n\nThe critical flaw for a Greenblatt screen is that shipping earnings are notoriously mean-reverting. The 10-year average EBIT is ~1,892 Cr vs. the FY25 figure of 2,677 Cr — on normalized earnings, EY falls to ~10.3%, merely adequate. ROIC in prior cycle troughs was likely sub-12%, as evidenced by two years of negative net profit (FY18-19) and ROCE reported at just 13.9%. The Magic Formula demands businesses with durable competitive advantages that sustain high ROIC — commodity shipping lacks pricing power and moat. I'd want to see rates and earnings hold for another 1-2 years before treating current metrics as \"real.\"",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "good",
+      "financial_health": "excellent",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 57679,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09897675,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 12237,
+      "cache_read_input_tokens": 9280,
+      "output_tokens": 3353,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 12237,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 446,
+          "cache_read_input_tokens": 9280,
+          "cache_creation_input_tokens": 2957,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2957
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

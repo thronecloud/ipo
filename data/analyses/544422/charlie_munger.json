@@ -1,0 +1,69 @@
+{
+  "symbol": "544422",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-20T20:02:53.149910Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Abram Food is a tiny INR 32.5 Cr microcap agro-products trader with a catastrophic 0.52% ROE — capital is earning less than a savings account. A 10.6x P/E on essentially non-existent earnings power is a value trap, not a bargain; inverting Munger's rules, this fails nearly every quality test.",
+    "key_strengths": [
+      "Promoter holding of 67.33% indicates skin in the game",
+      "Low headline P/E of 10.6x (optically cheap)",
+      "Operating in consumable agro-products — simple, understandable business"
+    ],
+    "key_risks": [
+      "ROE of 0.52% — effectively destroying shareholder capital vs. cost of equity",
+      "Microcap INR 32.5 Cr — illiquid, prone to price manipulation, minimal disclosure",
+      "Commoditized agro-trading with no visible moat, scale, or pricing power"
+    ],
+    "red_flags": [
+      "ROE far below 12% threshold — fails basic quality test",
+      "Trading/agro business with razor-thin margins and no durable competitive advantage",
+      "SME-scale microcap typical of weak governance and limited analyst/audit scrutiny"
+    ],
+    "detailed_analysis": "Inverting first: what would make this a bad investment? A business earning 0.52% on equity in a commoditized trading segment with a INR 32.5 Cr market cap is the textbook definition of a mediocre, sub-scale enterprise. Munger's first filter is ROIC >15%; Abram fails by a factor of ~30x. The low P/E is meaningless because the \"E\" is a rounding error — if ROE normalized to even 10%, earnings would grow 20x, but there is no evidence of any structural reason that should happen. Agro-trading is a low-margin, working-capital-hungry business with no network effects, no brand, no switching costs.\n\nThe 67.33% promoter holding is the only mild positive, but alignment without earning power is just a captain going down with a leaky ship. Mental-model check: lollapalooza of negatives — sub-scale, commoditized, illiquid, minimal ROIC, no visible moat. This is exactly the kind of \"cigar butt that isn't even a cigar butt\" Munger warned Buffett away from decades ago. Pass decisively; there are thousands of better businesses to study.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 29152,
+    "model_used": "opus",
+    "total_cost_usd": 0.09204675,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8923,
+      "cache_read_input_tokens": 13146,
+      "output_tokens": 1187,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8923,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10419,
+          "cache_creation_input_tokens": 1231,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1231
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

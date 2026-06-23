@@ -1,0 +1,69 @@
+{
+  "symbol": "EXCELSOFT",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-21T08:03:49.992686Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Excelsoft trades at INR 91.50 versus a Graham Number of ~INR 62 (47% premium), fails the P/E and P/B screens, and lacks the unbroken 5-year earnings record I demand. The speculative SaaS multiple and volatile profits offer no margin of safety for the disciplined investor.",
+    "key_strengths": [
+      "Debt dramatically reduced from INR 168 Cr (2020) to INR 45 Cr (2025), D/E now just 0.12 — far below my 0.5 threshold",
+      "Operating cash flow positive all 5 years (INR 53–63 Cr range), demonstrating real cash generation",
+      "Interest coverage 14.6x (EBIT INR 73 Cr / Finance Cost INR 5 Cr) — debt obligations are trivially covered"
+    ],
+    "key_risks": [
+      "P/E of 27.6x is nearly double my 15x ceiling; Graham Number ~INR 62 implies current price is 47% above intrinsic value",
+      "Net profit in 2020 was negative (−INR 5 Cr), breaking the consecutive positive earnings record I require for safety",
+      "2025 net profit of INR 35 Cr is flattered by INR 15 Cr 'Other Income' — 8x the historical norm — making earnings quality suspect"
+    ],
+    "red_flags": [
+      "Other Income surged to INR 15 Cr in 2025 vs. INR 1–3 Cr historically — non-recurring items likely inflating reported profits",
+      "P/B of 1.84x exceeds my 1.5x limit; paying nearly twice book for a small-cap software firm with inconsistent profitability is imprudent",
+      "No dividend history cited — no demonstrated cash return to shareholders over the company's 25-year life"
+    ],
+    "detailed_analysis": "Excelsoft fails my core quantitative screens on multiple fronts. The P/E of 27.6x is almost twice my maximum of 15x, and the P/B of 1.84x breaches my 1.5x ceiling. My Graham Number — computed as √(22.5 × EPS ~INR 3.95 × BVPS ~INR 43.74) — yields roughly INR 62, meaning the market is asking a 47% premium over what I consider fair asset-backed value. Revenue has grown at a respectable 17.7% CAGR, but EBITDA CAGR of only 8.1% over the same period with a \"contracting\" trend tells me margin discipline is deteriorating, not improving. Net profit swung from −INR 5 Cr (2020) to INR 35 Cr (2025) with a jarring dip to INR 13 Cr in 2024 — this is exactly the earnings instability that destroys my margin of safety calculation.\n\nThe 2025 earnings figure deserves special suspicion: Other Income leapt to INR 15 Cr from a historic INR 1–3 Cr, accounting for roughly 43% of net profit. Strip that out and underlying net profit is closer to INR 20 Cr, implying a P/E nearer 40x — an egregious multiple by any standard I apply. The balance sheet improvement (debt down 73% since 2020, D/E at 0.12) and consistent operating cash flow are genuine positives, but they are already reflected — and more — in the current price. Mr. Market is pricing this as a growth story; I require payment for the risk I bear, not compensation for optimism about SaaS education software in India.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 44789,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07287539999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8992,
+      "cache_read_input_tokens": 10988,
+      "output_tokens": 2390,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8992,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 331,
+          "cache_read_input_tokens": 8938,
+          "cache_creation_input_tokens": 2104,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2104
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

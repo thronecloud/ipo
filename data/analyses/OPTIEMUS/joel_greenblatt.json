@@ -1,0 +1,70 @@
+{
+  "symbol": "OPTIEMUS",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T21:53:20.101717Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Optiemus scores poorly on both Magic Formula legs — Earnings Yield is a meager ~2.9% (EBIT INR 108 Cr / EV ~INR 3,724 Cr) and ROIC is roughly 14%, both well below my required thresholds of 15%+ and 20%+ respectively. The stock commands a premium (P/E 55.6x, EV/EBITDA 33x) that is completely unjustified for a thin-margin distributor with a troubled operating history.",
+    "key_strengths": [
+      "Revenue recovery 2022→2025: INR 472 Cr → INR 1,890 Cr, approaching 2016 highs",
+      "Low financial leverage (D/E 0.32) after aggressively deleveraging borrowings from INR 239 Cr (2020) to INR 43 Cr (2022)",
+      "High promoter holding (72.17%) signals ownership alignment"
+    ],
+    "key_risks": [
+      "Earnings Yield ~2.9% — stock is deeply overvalued relative to operating earnings",
+      "FCF has been negative three of the last four years (FY23: -99 Cr, FY24: -21 Cr, FY25: -96 Cr) with capex consuming more than operating cash flow",
+      "Operating margins razor-thin at 5.28%; ROIC ~14% — insufficient for Magic Formula inclusion"
+    ],
+    "red_flags": [
+      "Revenue collapsed 90% from INR 1,922 Cr (2016) to INR 182 Cr (2021) — structural fragility, not a temporary dip",
+      "FY2021 net profit of INR 95 Cr was entirely artificial: Other Income alone was INR 206 Cr vs. operating loss of INR -98 Cr",
+      "Finance costs surged 4x to INR 30 Cr in FY25 — debt creeping back up to INR 247 Cr in borrowings",
+      "CWIP jumped from INR 3 Cr to INR 99 Cr in FY25 — large unproductive capex commitment building"
+    ],
+    "detailed_analysis": "On the Magic Formula, Optiemus fails on both dimensions. Earnings Yield (EBIT/EV) is approximately 2.9% — INR 108 Cr EBIT against an enterprise value of ~INR 3,724 Cr — barely a third of my 12% minimum threshold. Return on Capital is ~14% (consistent with the reported ROCE of 14.4%), below my 20% floor for a \"good\" business. A company must score high on BOTH metrics to merit attention; Optiemus is poor on both, making it a clear pass under the formula.\n\nThe business quality concerns are equally damning. The company's revenue literally imploded from INR 1,922 Cr in FY16 to INR 182 Cr in FY21 — a ~90% destruction of the top line in five years — before clawing back. That kind of history suggests the company lacks a durable competitive moat. Current recovery is real but the operating margins (5.28%) reflect classic commodity distribution economics, not the high-ROIC, capital-light franchises I seek. The market is pricing this at 55.6x earnings and 33x EBITDA — a valuation that would only be justified if the company were a compounding machine at 25%+ ROIC, which it demonstrably is not.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 47315,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07932675,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10943,
+      "cache_read_input_tokens": 8955,
+      "output_tokens": 2373,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10943,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 427,
+          "cache_read_input_tokens": 8955,
+          "cache_creation_input_tokens": 1988,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1988
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

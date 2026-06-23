@@ -1,0 +1,69 @@
+{
+  "symbol": "IFBIND",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T17:35:40.323738Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "AVOID",
+    "investment_thesis": "IFB has carved a niche in front-load washing machines but operates in a brutally competitive appliance market with razor-thin 3.2% operating margins and no durable pricing power. At 34.9x trailing P/E with a history of volatile—even negative—earnings, I'm not being paid to take on this quality of business.",
+    "key_strengths": [
+      "Brand recognition in front-load washers with meaningful promoter skin in the game (74.96% holding)",
+      "Revenue growing at a respectable 14.2% CAGR over 8 years, reaching INR 5,092 Cr in FY25",
+      "Debt discipline improving — borrowings nearly halved from INR 363 Cr (FY22) to INR 168 Cr (FY25), finance costs declining"
+    ],
+    "key_risks": [
+      "Razor-thin operating margins (3.19%) in a commodity-like business facing Samsung, LG, Whirlpool, and Bosch — no pricing power",
+      "Chronically volatile earnings: loss of INR 48 Cr in FY22, near-zero INR 15 Cr profit in FY23 — predictability is absent",
+      "FCF collapsed to just INR 12 Cr in FY25 despite INR 119 Cr net profit — working capital and capex (INR 107 Cr) are consuming cash aggressively"
+    ],
+    "red_flags": [
+      "ROE of 13.7% consistently below my 15% threshold — the business does not earn exceptional returns on equity",
+      "3.19% operating margin leaves virtually no buffer for commodity cost spikes or demand softness",
+      "Free cash flow of INR 12 Cr in FY25 vs INR 119 Cr net profit — a 90% divergence signals earnings quality concerns"
+    ],
+    "detailed_analysis": "IFB is fundamentally a consumer appliances assembler competing in a market where global giants set the price ceiling. A 38.9% gross margin sounds appealing, but after selling, distribution, and overhead costs, only 3.2 paise of every rupee of revenue reaches operating profit. That is not a wonderful business — that is a business fighting for survival on cost. The earnings history tells the full story: a loss in FY22, near-breakeven in FY23, and only a recovery to INR 119 Cr in FY25 — on INR 5,092 Cr of revenue. When a business earns 2.3% net margins at its best, I struggle to identify a moat worth paying for.\n\nThe valuation asks me to pay 34.9x trailing earnings and 4.9x book for this volatile earnings stream. The market's optimism, reflected in a 23.7x forward P/E, presumes continued margin expansion — but IFB has dashed those hopes before (FY22 being the most painful example). FCF of just INR 12 Cr in FY25 while net profit was INR 119 Cr confirms the business is capital-hungry. Charlie would say the same thing I would: a business that earns 3% operating margins in a competitive market, with no identifiable switching costs or network effects, is not one we need to own at any price near today's.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 48032,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08359515,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11297,
+      "cache_read_input_tokens": 9008,
+      "output_tokens": 2568,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11297
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 321,
+          "cache_read_input_tokens": 9008,
+          "cache_creation_input_tokens": 2289,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2289,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

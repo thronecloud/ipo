@@ -1,0 +1,69 @@
+{
+  "symbol": "544667",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-20T11:05:29.109325Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "A tiny ₹75.5 Cr microcap publisher with a 0.31% ROE is earning essentially nothing on shareholder capital — the opposite of the \"wonderful business\" I seek. At 15.9x P/E, you're paying a full market multiple for a business in a structurally declining industry with no discernible moat.",
+    "key_strengths": [
+      "Promoter holding of 64.78% shows skin in the game",
+      "Some institutional interest (FII 4.46% + DII 8.09% = 12.55%)",
+      "Reported profitability (positive P/E of 15.9x)"
+    ],
+    "key_risks": [
+      "ROE of 0.31% is catastrophically below cost of capital (~12-14%)",
+      "Print publishing is in secular decline vs. digital media",
+      "₹75.5 Cr microcap — illiquid, limited analyst coverage, governance risk"
+    ],
+    "red_flags": [
+      "ROE of 0.31% indicates capital is being destroyed, not compounded",
+      "No evidence of a durable moat in regional publishing",
+      "Microcap size makes financial data reliability questionable"
+    ],
+    "detailed_analysis": "The single most important number here is ROE of 0.31%. I've said for decades that the test of a business is the return it earns on shareholder equity — a company earning one-third of one percent on its capital would be better off liquidating and putting the money in a government bond. Charlie and I look for consistent 15%+ ROE; this is roughly 50x below that threshold. Paying 15.9x earnings for near-zero returns on capital means you're compounding at the ROE, not the earnings yield — this is a value trap.\n\nBeyond the numbers, printing and publication in India faces the same headwinds that crushed newspapers globally: migration to digital, collapsing ad revenue, and rising newsprint costs. A ₹75.5 Cr regional publisher has no pricing power, no network effects, no brand moat that would let it compete with digital-native players. Promoter holding of ~65% is the only mild positive, but owner-alignment cannot fix an economically unattractive business. I'll pass — there is no margin of safety when the underlying business itself cannot earn its cost of capital.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 23444,
+    "model_used": "opus",
+    "total_cost_usd": 0.09286150000000001,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8958,
+      "cache_read_input_tokens": 13388,
+      "output_tokens": 1206,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8958,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10551,
+          "cache_creation_input_tokens": 1244,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1244
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

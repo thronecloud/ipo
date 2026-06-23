@@ -1,0 +1,69 @@
+{
+  "symbol": "MARKSANS",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T18:20:10.752471Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Marksans earns a decent ROIC (~20% ROCE) but trades at an earnings yield of only ~6.7% (EBIT INR 529 Cr / EV ~INR 7,950 Cr), failing the Magic Formula's cheapness test. Exploding capex (INR 173–209 Cr in FY24–25) has cratered free cash flow to just INR 35 Cr vs. net profit of INR 383 Cr, exposing severe capital intensity risk.",
+    "key_strengths": [
+      "Sustained revenue growth: 12.7% 9Y CAGR with accelerating trend (INR 893 Cr → INR 2,623 Cr); Net profit CAGR even stronger at 18.5%",
+      "Clean balance sheet: Debt/Equity 0.12, net cash positive (cash INR 496 Cr > debt INR 322 Cr), finance costs only INR 12 Cr",
+      "Decent operating margin of 18.1% and ROCE of 20% — just above Greenblatt's quality threshold"
+    ],
+    "key_risks": [
+      "Earnings yield ~6.7% (EBIT/EV) — well below the 12% Magic Formula threshold; stock is not cheap",
+      "FCF conversion collapsed to ~9% in FY25 (FCF INR 35 Cr vs. net profit INR 383 Cr) due to capex surge of INR 173–209 Cr in FY24–25",
+      "Operating income was volatile historically (INR 45 Cr in FY17, INR 259 Cr in FY22) — ROIC sustainability is not proven across cycles"
+    ],
+    "red_flags": [
+      "FY25 free cash flow (INR 35 Cr) is only 9% of net profit (INR 383 Cr) — massive divergence signals capex-intensive phase or working capital buildup",
+      "Capex jumped 4x from INR 54 Cr (FY23) to INR 209 Cr (FY24) — return on this investment is unproven",
+      "Other income (INR 70 Cr in FY25) inflates reported profits; stripping it out compresses true earnings quality"
+    ],
+    "detailed_analysis": "Running the Magic Formula on Marksans: EBIT = INR 529 Cr (FY25 operating income); Enterprise Value = Market Cap (INR 8,122 Cr) + Net Debt (-INR 174 Cr) ≈ INR 7,948 Cr. Earnings Yield = 529/7,948 = 6.7% — below the 12% threshold I look for, and barely above the 6% floor. ROIC proxied via ROCE = 20%, which clears my 20% hurdle, but only just. The Magic Formula requires BOTH legs to be strong. Here, only one passes. At 22.5x trailing P/E and 15.9x EV/EBITDA, the market is already pricing in the quality — leaving no margin of safety.\n\nThe capex story is the real concern. Free cash flow has imploded from INR 184 Cr (FY23) to INR 35 Cr (FY25) as capex surged to INR 173–209 Cr. This could be productive growth investment — but until returns on that capital show up in earnings without being offset by further spending, the FCF yield to enterprise value is essentially zero. Promoter holding at 43.9% with meaningful FII interest (16.8%) signals reasonable confidence, but the business needs to demonstrate that its capex cycle converts back to free cash flow before the Magic Formula score improves materially.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 51022,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08621519999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11428,
+      "cache_read_input_tokens": 9104,
+      "output_tokens": 2708,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11428
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 430,
+          "cache_read_input_tokens": 9104,
+          "cache_creation_input_tokens": 2324,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2324,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

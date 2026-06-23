@@ -1,0 +1,69 @@
+{
+  "symbol": "ASTERDM",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-19T06:31:07.852690Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "Aster DM is now a fundamentally smaller business post-GCC divestiture, with its India operations generating EBIT of ~INR 754 Cr against an EV of ~INR 37,400 Cr — an earnings yield of just 2%. The reported P/E of 99x and net profit of INR 5,408 Cr are dominated by INR 5,169 Cr of one-time divestiture gains that will never recur.",
+    "key_strengths": [
+      "India hospital business is growing — revenue up from INR 2,994 Cr (FY23) to INR 4,138 Cr (FY25), ~17.5% CAGR post-divestiture",
+      "Significant debt reduction post-GCC sale (borrowings fell from INR 6,075 Cr in FY23 to INR 2,089 Cr in FY25), cleaning up the balance sheet",
+      "FII ownership at 18.46% and DII at 26.12% indicate institutional conviction in the India healthcare growth thesis"
+    ],
+    "key_risks": [
+      "Earnings yield of ~2.0% (EBIT INR 754 Cr / EV ~INR 37,434 Cr) is the worst in this set — you are paying 50x operating earnings for a 10.7% ROCE healthcare company",
+      "OCF collapsed post-divestiture: INR 1,834 Cr (FY23, included GCC) → INR 158 Cr (FY24) → INR 425 Cr (FY25) — true earnings power of India business is thin",
+      "EBITDA actually fell from INR 1,355 Cr (FY24) to INR 875 Cr (FY25) despite revenue growth — operating leverage is moving in the wrong direction"
+    ],
+    "red_flags": [
+      "Net profit of INR 5,408 Cr in FY25 is entirely a one-time artifact; Other Income of INR 5,169 Cr represents divestiture proceeds, not business earnings",
+      "P/E of 99 based on artificial profit; underlying India operations earn far less — real P/E is likely 300x+ on recurring earnings",
+      "EBITDA declined year-over-year (INR 1,355 Cr → INR 875 Cr) — hospital business is not yet demonstrating the operating leverage that justifies a 45x EV/EBITDA"
+    ],
+    "detailed_analysis": "The Magic Formula cannot function here in the normal sense — the reported earnings are overwhelmingly from a non-recurring asset sale (INR 5,169 Cr Other Income in FY25). Stripping that out, the India hospital business generates roughly INR 239 Cr in recurring net profit (FY25 PAT of INR 5,408 Cr minus ~INR 5,169 Cr one-time gain), implying a real P/E north of 100x even being generous. EBIT of INR 754 Cr against EV of ~INR 37,400 Cr yields a 2.0% earnings yield — the Magic Formula's hard reject.\n\nThe underlying India hospital story is genuinely interesting from a growth perspective, and the balance sheet cleanup is real. But at 45.5x EV/EBITDA on FY25 EBITDA of INR 875 Cr (which itself declined from FY24), there is zero margin of safety. A great business bought at this valuation is a bad investment. ROCE of 10.7% barely covers the cost of capital.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 164749,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.2370786,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 25152,
+      "cache_read_input_tokens": 16682,
+      "output_tokens": 9183,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 25152,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 583,
+          "cache_read_input_tokens": 16682,
+          "cache_creation_input_tokens": 8470,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8470
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

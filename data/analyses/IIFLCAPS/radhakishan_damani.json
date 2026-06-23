@@ -1,0 +1,70 @@
+{
+  "symbol": "IIFLCAPS",
+  "persona": "radhakishan_damani",
+  "persona_display_name": "Radhakishan Damani",
+  "analyzed_at": "2026-04-18T17:36:48.527571Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "AVOID",
+    "investment_thesis": "IIFL Capital Services is a well-run capital markets franchise with impressive ROE (31.6%) and revenue CAGR (15.3%), but the critically low promoter holding of 30.93% and rising debt (₹1,742 Cr borrowings in 2025) disqualify it under my framework. The inherently cyclical broking business produces volatile cash flows — negative OCF in 2 of last 5 years — which is the antithesis of the steady compounders I seek.",
+    "key_strengths": [
+      "Excellent capital returns: ROE 31.6% and ROCE 33.3% are well above my 18-22% target, showing a high-quality operating franchise",
+      "Reasonable valuation: P/E of 17x sits within my acceptable 12-20x band given strong earnings trajectory (net profit CAGR 21.6% over 7 years)",
+      "Strong operating margins: 38% operating margin with growing profit (₹250 Cr in 2023 to ₹713 Cr in 2025) reflects operating leverage in the model"
+    ],
+    "key_risks": [
+      "Dangerously low promoter stake: 30.93% is far below my 55% minimum — no meaningful skin in the game raises serious alignment and governance concerns",
+      "Debt/Equity of 0.62 breaches my 0.5 hard ceiling, with borrowings nearly tripling from ₹607 Cr (2022) to ₹1,742 Cr (2025) — aggressive leverage expansion is unacceptable",
+      "Highly cyclical, capital-markets-dependent revenue: negative OCF in 2023 (-₹793 Cr) and 2024 (-₹118 Cr) shows this is not the predictable, recession-resistant business I require"
+    ],
+    "red_flags": [
+      "Promoter holding at 30.93% — deeply below my 55% threshold; this is a deal-breaker",
+      "Borrowings surged 3x in 3 years (₹607 Cr → ₹1,742 Cr), funded by debt rather than retained earnings",
+      "OCF swung from +₹795 Cr (2022) to -₹793 Cr (2023) in a single year — hallmark of a cyclical business, not a compounder",
+      "Capital markets broking faces structural disruption from zero-commission discount brokers (Zerodha, Upstox) — pricing power is under permanent pressure"
+    ],
+    "detailed_analysis": "From my perspective, IIFL Capital Services operates a genuinely competent capital markets business — the ROE of 31.6% and ROCE of 33.3% are hard to dismiss, and a revenue CAGR of 15.3% over seven years is solid. But the business that produced those numbers is a cyclical broking franchise, not a stable consumer compounder. Revenue fell from ₹933 Cr (2018) to ₹758 Cr (2020) and operating cash flow swung by ₹1,588 Cr between 2022 and 2023. I built DMart on businesses where I could predict demand five years forward with reasonable confidence — capital markets volumes are the opposite of that.\n\nThe two structural disqualifiers here are the promoter stake and the balance sheet. At 30.93%, promoters hold less than a third of the company — well below my non-negotiable 55% floor. When promoters don't own enough to feel real pain, capital allocation discipline tends to soften over time. Meanwhile, borrowings have jumped from ₹292 Cr in 2021 to ₹1,742 Cr in 2025, pushing D/E to 0.62. In my experience, financial services companies that grow leverage quickly during bull markets are precisely the ones that get hurt most in downturns. The P/E at 17x is fair, not cheap, and I would need a much larger margin of safety to compensate for the cyclicality and governance concerns here.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 48825,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07506120000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9180,
+      "cache_read_input_tokens": 11224,
+      "output_tokens": 2484,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9180
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 411,
+          "cache_read_input_tokens": 9134,
+          "cache_creation_input_tokens": 2136,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2136,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

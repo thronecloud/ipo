@@ -1,0 +1,69 @@
+{
+  "symbol": "ACCPL",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-20T11:09:35.270978Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Accretion Pharmaceuticals is a sub-100 Cr micro-cap generic manufacturer with a 0.65% ROE — essentially earning nothing on shareholder capital. The optically low P/E of 8x is a value trap; there is no visible moat, no institutional validation, and returns on equity are a rounding error away from zero.",
+    "key_strengths": [
+      "High promoter holding of 73.52% signals skin in the game",
+      "P/E of 8.11 is optically cheap versus pharma sector averages",
+      "Operates in a defensive, long-runway pharmaceuticals industry"
+    ],
+    "key_risks": [
+      "ROE of 0.65% is catastrophically poor — capital is earning nothing",
+      "Zero FII/DII holding indicates no institutional due-diligence validation",
+      "Tiny 73.6 Cr market cap means no scale, no pricing power, no moat in generic tablets/capsules"
+    ],
+    "red_flags": [
+      "ROE below 1% — the business is structurally unprofitable on equity",
+      "Zero institutional ownership in an 14-year-old company",
+      "Generic tablet/capsule manufacturing is commoditized with no differentiation disclosed"
+    ],
+    "detailed_analysis": "The single number that matters here is ROE of 0.65%. A business that earns less than a savings account on its equity is, by definition, destroying value versus any reasonable cost of capital. No P/E multiple — not 8x, not 4x — compensates for capital that compounds at zero. Charlie and I have said repeatedly: time is the friend of the wonderful business and the enemy of the mediocre one. This is the enemy case.\n\nThe qualitative picture reinforces the quantitative. Generic tablets and capsules at sub-100 Cr scale means no brand, no cost advantage, no regulatory moat, no switching costs — none of the five moats we look for. Zero FII and DII ownership tells you every professional allocator who looked at this passed. High promoter holding is the only positive, but promoter skin-in-the-game cannot manufacture a moat that doesn't exist. Pass, and wait for a wonderful pharma business at a fair price instead.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 19353,
+    "model_used": "opus",
+    "total_cost_usd": 0.0881005,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8826,
+      "cache_read_input_tokens": 13416,
+      "output_tokens": 1048,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8826,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10579,
+          "cache_creation_input_tokens": 1084,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1084
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

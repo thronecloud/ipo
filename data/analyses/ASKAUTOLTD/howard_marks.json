@@ -1,0 +1,69 @@
+{
+  "symbol": "ASKAUTOLTD",
+  "persona": "howard_marks",
+  "persona_display_name": "Howard Marks",
+  "analyzed_at": "2026-04-18T16:32:01.579313Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "ASK Automotive is a genuinely good business — 26-27% ROE/ROCE, accelerating revenues (+20% YoY) — but at 30x P/E, 19x EV/EBITDA, and a FCF yield of just 0.35% (FCF INR 30 Cr on MCap INR 8,611 Cr), the price leaves zero margin for error. Every optimistic scenario is already priced in; the asymmetry sharply favors the downside.",
+    "key_strengths": [
+      "Capital efficiency: ROE 26.6%, ROCE 27.6% — genuinely superior economics for an auto parts manufacturer",
+      "Accelerating growth: Net profit +43% YoY (INR 174→248 Cr), revenue +20% YoY — operational momentum is real",
+      "Defensible product mix: braking systems + safety cables are non-discretionary OEM content; EV lightweighting adds secular tailwind"
+    ],
+    "key_risks": [
+      "Near-zero FCF yield (0.35%): Capex of INR 346 Cr nearly matches OCF of INR 360 Cr — owners earn nothing in cash despite reported profits",
+      "Borrowings surged 77% YoY (INR 346→612 Cr) while CWIP jumped to INR 163 Cr — capex cycle is not over; leverage risk rising into an auto-cycle downturn",
+      "OEM concentration risk: 100% of revenue from OEMs means any volume cut by Maruti/Hero/TVS cascades directly — 2022 proves this (EBITDA collapsed from INR 238→177 Cr even as industry recovered)"
+    ],
+    "red_flags": [
+      "FCF yield of 0.35% — fails the 6-8% Marks threshold by a factor of 20x",
+      "Capex (INR 346 Cr) exceeds net profit (INR 248 Cr) — consensus is extrapolating growth, not discounting risk",
+      "No margin of safety: stress scenario (15% volume decline) implies MCap floor ~INR 5,200-5,500 Cr = 35-40% downside from current INR 8,611 Cr"
+    ],
+    "detailed_analysis": "ASK Automotive earns its high ROCE and is clearly in a capex-led expansion phase — CWIP of INR 163 Cr and borrowings jumping from INR 346 Cr to INR 612 Cr in a single year confirm management is betting heavily on continued OEM demand. The business model is sound and the underlying economics are attractive. But as I always say: a great company and a great investment are two very different things. At 19x EV/EBITDA and 30x trailing P/E, the market has already awarded this stock the premium it deserves for several years of flawless execution. The consensus is uniformly optimistic — and uniformly optimistic markets are precisely where I grow uncomfortable.\n\nThe FCF picture is the tell. INR 30 Cr of free cash flow on an INR 8,611 Cr market cap is a 0.35% yield — you are essentially lending capital to the company's growth ambitions and receiving nothing in return today. If the Indian auto cycle softens (as it did in 2020-22, when EBITDA fell from INR 263 Cr to INR 177 Cr), this highly-levered balance sheet with rising debt service costs could produce a painful derating. Downside to 12-14x EV/EBITDA — a historically fair multiple for Indian auto ancillaries in a trough — implies a stock price of INR 260-300, or 30-40% below current levels. That asymmetry — modest upside if everything goes right, severe downside if anything goes wrong — is precisely the risk/reward profile I avoid.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 59465,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08337689999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9314,
+      "cache_read_input_tokens": 10968,
+      "output_tokens": 3010,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9314,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 610,
+          "cache_read_input_tokens": 8914,
+          "cache_creation_input_tokens": 2454,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2454
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

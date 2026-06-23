@@ -1,0 +1,69 @@
+{
+  "symbol": "ABDL",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-19T06:17:27.757388Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Allied Blenders is a slow-grower masquerading as a growth stock: 5-year revenue CAGR of 3.3% (barely ahead of inflation), near-zero net profits for four consecutive years, and now trading at P/E 59.8x — one of the most egregious valuation mismatches in this group. The FY25 profit spike looks event-driven rather than structural.",
+    "key_strengths": [
+      "Officer's Choice is the world's largest-selling whisky by volume — genuine brand recognition in the mass-market IMFL segment",
+      "Debt has been actively reduced from INR 1,058 Cr (FY20) to INR 905 Cr (FY25 net), and D/E of 0.67 is manageable",
+      "EBITDA improved sharply in FY25 (INR 451 Cr vs INR 262 Cr in FY24), suggesting operational leverage is kicking in at higher volumes"
+    ],
+    "key_risks": [
+      "Revenue CAGR of only 3.3% over 5 years at P/E 59.8x means the PEG ratio is roughly 18 — there is almost no scenario where this is justified",
+      "Net profit was INR 1–3 Cr for FY22, FY23, FY24, then jumped to INR 195 Cr in FY25 — this non-recurring surge inflates the ROE to 20% and the P/E to 59.8x; normalised earnings are far lower",
+      "OCF turned sharply negative in FY25 (-INR 678 Cr) despite the reported profit jump — the cash earnings quality is highly suspect"
+    ],
+    "red_flags": [
+      "Net profit was near-zero for 4 consecutive years (FY21–FY24: INR 3, 1, 2, 2 Cr) — a decade-long brand with INR 3,000+ Cr revenue that couldn't earn meaningful profits is a fundamental concern",
+      "The equity base tripled in FY25 (INR 407 Cr → INR 1,558 Cr) and financing CF was +INR 922 Cr — a large equity raise at high valuation is dilutive",
+      "EV/EBITDA of 33.4x for a beverages business growing revenue at 3.3% is unjustifiable; United Spirits (Diageo subsidiary) trades cheaper on fundamentals"
+    ],
+    "detailed_analysis": "Lynch's first rule: 'If you can't explain why you own a stock in three sentences, you probably shouldn't own it.' ABDL's story is hard to tell: it makes India's most popular whisky, barely made money for 4 years, suddenly reported a big profit in FY25 (with negative cash flow that contradicts it), and trades at P/E 60. The 3.3% revenue CAGR over 5 years means this is a slow grower at best. The IMFL business is hamstrung by state government controls on pricing and distribution — this is structural, not cyclical. At P/B of 10.6x with a track record of near-zero profitability, the valuation requires perfect execution and strong growth that history doesn't support.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 161503,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.21403215000000003,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 22995,
+      "cache_read_input_tokens": 15623,
+      "output_tokens": 8207,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 22995,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 704,
+          "cache_read_input_tokens": 15623,
+          "cache_creation_input_tokens": 7372,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 7372
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

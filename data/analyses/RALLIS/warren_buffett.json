@@ -1,0 +1,69 @@
+{
+  "symbol": "RALLIS",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T22:08:01.023692Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Rallis India is a mediocre agrochem business trading at 33x earnings despite a decade of zero net profit growth — net profit of INR 125 Cr in FY2025 is actually below the INR 147 Cr earned in FY2016. At this price, you are paying a wonderful-business multiple for a clearly deteriorating one.",
+    "key_strengths": [
+      "Tata Group parentage ensures strong governance and brand credibility with promoter holding at 55.08%",
+      "Essentially debt-free balance sheet (D/E: 0.03) with improving FCF of INR 222 Cr in FY2025",
+      "Diversified product mix across crop protection, seeds, bio-fertilizers, and contract manufacturing provides some revenue stability"
+    ],
+    "key_risks": [
+      "Chronic margin erosion: operating margin collapsed to 4.66% with operating income CAGR of -1.6% over 9 years — no pricing power",
+      "ROE of 9.61% is far below my 15% threshold; the business generates inadequate returns on shareholder capital",
+      "Revenue stagnated and declined post-FY2023 (INR 2,955 Cr → INR 2,640 Cr), suggesting structural demand or competitive pressures, not a one-off blip"
+    ],
+    "red_flags": [
+      "Net profit in FY2025 (INR 125 Cr) is LOWER than FY2016 (INR 147 Cr) — a full decade of negative earnings growth at -1.8% CAGR",
+      "P/E of 33x for a business with no earnings growth is a significant valuation mismatch",
+      "Operating income dropped 39% from FY2021 peak (INR 325 Cr) to FY2025 (INR 199 Cr) — the moat is clearly eroding"
+    ],
+    "detailed_analysis": "Rallis India fails my most basic test: a wonderful business must grow earnings over time. This company earned less in FY2025 than it did in FY2016. Operating income CAGR is -1.6% and net profit CAGR is -1.8% over nine years — that is not a business compounding wealth, that is capital slowly eroding in real terms after inflation. The 4.66% operating margin is a damning signal; genuine moats in specialty chemicals and agrochem should deliver 15-20%+ operating margins. Rallis clearly lacks pricing power against generic competitors and imported Chinese molecules, and the gross-to-operating-margin gap (38.9% gross vs. 4.66% operating) suggests bloated overhead or distribution costs that management has been unable to control.\n\nThe balance sheet is clean (D/E of 0.03) and OCF is consistently positive, which keeps this from being a disaster, but cleanliness alone doesn't make it a buy. At 33x trailing P/E and 14.5x EV/EBITDA, the market is pricing in a substantial recovery that the 9-year track record gives me no reason to believe in. The Tata parentage provides governance comfort and the forward P/E of 21.5x implies the market expects an earnings bounce — but I would need to see sustained margin recovery and ROE consistently above 15% before I'd consider paying even a fair price for this business. Right now, it is a fair-at-best business at a clearly expensive price.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 52851,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07657470000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10968,
+      "cache_read_input_tokens": 9119,
+      "output_tokens": 2180,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10968,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 361,
+          "cache_read_input_tokens": 9119,
+          "cache_creation_input_tokens": 1849,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1849
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "symbol": "GREAVESCOT",
+  "persona": "philip_fisher",
+  "persona_display_name": "Philip Fisher",
+  "analyzed_at": "2026-04-18T17:30:39.894133Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Greaves Cotton is a 165-year-old industrial facing a costly EV pivot that has destroyed profitability — net losses in 4 of the last 5 years, operating margins collapsed from 12.5% to 3.94%, and FCF deeply negative. This is not a growth compounder; it is a struggling legacy business in an uncertain transition.",
+    "key_strengths": [
+      "Low leverage (D/E 0.12) gives balance sheet runway during the EV transition",
+      "Revenue at all-time high (INR 2,918 Cr in FY25), showing top-line recovery from 2021 trough",
+      "Promoter holding at 55.8% signals skin in the game; established industrial brand since 1859"
+    ],
+    "key_risks": [
+      "Chronic unprofitability: net profit negative in 4 of 5 years (including -INR 367 Cr in FY24), reserves eroding from INR 1,540 Cr to INR 1,329 Cr",
+      "Operating CF positive only 1/5 years; FCF negative four straight years (-INR 98 Cr in FY25), burning through the equity base",
+      "EV 2W/3W market is brutally competitive (Ola, Bajaj, TVS) — Ampere/ELE brands lack the scale moat needed to earn returns"
+    ],
+    "red_flags": [
+      "EBITDA CAGR of -3.8% over 9 years despite 6.8% revenue growth — cost structure has deteriorated structurally",
+      "INR -367 Cr net loss in FY24 likely reflects large write-downs on EV investments; signals capital misallocation",
+      "Finance costs compounding at 36.1% CAGR (INR 1 Cr → INR 16 Cr) — leverage creeping up quietly",
+      "ROE of 4.11% and ROCE of 5.13% are well below cost of capital — zero economic value being created"
+    ],
+    "detailed_analysis": "Through my Scuttlebutt lens, Greaves Cotton presents a deeply troubling picture. A great growth company must demonstrate expanding margins alongside revenue growth — here the opposite has occurred. Revenue grew a modest 6.8% CAGR over nine years while operating income fell at -4.3% CAGR, meaning the business is getting less profitable as it scales. ROE of 4.11% and ROCE of 5.13% are not just below my 20% threshold — they signal the business is destroying capital. Management's EV pivot (Ampere 2W, ELE e-rickshaw) was strategically directional but has been executed at enormous cost, with no discernible competitive moat against well-capitalised rivals.\n\nThe cash flow statement tells the harshest truth: operating cash flow was positive in only 1 of the last 5 years, and free cash flow has been negative every year since FY22. This is not an innovative growth company temporarily investing for the future — it is a company that cannot fund its own operations. At 34.6x P/E on near-zero earnings and EV/EBITDA of 14.76x on structurally weak EBITDA of INR 176 Cr (below FY2016's INR 249 Cr!), the market is pricing in a recovery that management has not yet demonstrated any ability to deliver. I would wait on the sidelines until two consecutive years of positive FCF and ROE visibly trending toward 15%+.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 57988,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07790639999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9304,
+      "cache_read_input_tokens": 11258,
+      "output_tokens": 2642,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9304
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 523,
+          "cache_read_input_tokens": 9204,
+          "cache_creation_input_tokens": 2154,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2154,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

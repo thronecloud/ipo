@@ -1,0 +1,68 @@
+{
+  "symbol": "BANCOINDIA",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-18T16:45:47.663920Z",
+  "analysis": {
+    "score": 7,
+    "recommendation": "BUY",
+    "investment_thesis": "Banco Products is a classic GARP stalwart-turning-fast-grower: at P/E 18.7 with earnings CAGR of 17.8% (9-year) and 44% in FY25, the PEG ratio sits comfortably below 1.0 — exactly what I love. The pivot to data center cooling and EV thermal management (battery/inverter coolers) injects secular tailwinds into a 64-year-old niche manufacturer with ROE above 32%.",
+    "key_strengths": [
+      "Exceptional capital efficiency — ROE 32.2% and ROCE 32.4% with operating leverage showing (operating income CAGR 17.2% vs revenue CAGR 12.1%)",
+      "Compelling PEG: P/E of 18.7 against 9Y earnings CAGR of 17.8% gives PEG ~1.05; on recent 4Y CAGR (~36%), PEG collapses to ~0.52",
+      "Emerging secular tailwinds — data center backup power cooling and EV thermal (battery/inverter coolers) diversify beyond traditional auto OEM dependency"
+    ],
+    "key_risks": [
+      "Auto sector cyclicality — FY20 showed what happens: revenue fell to INR 1,422 Cr and OCF to INR 52 Cr when auto demand contracted",
+      "Debt explosion: borrowings surged from INR 14 Cr (FY21) to INR 729 Cr (FY25), a 52x increase in 4 years — finance costs growing at 27.1% CAGR will eat into future profits",
+      "Volatile free cash flow — FCF was negative in FY22 (−15 Cr) and FY23 (−135 Cr); only 4/5 years OCF-positive, suggesting working capital and capex management needs watching"
+    ],
+    "red_flags": [
+      "Balance sheet expanded ~INR 1,100 Cr in a single year (FY24→FY25: assets 1,982→3,078 Cr) with equity jumping INR 583 Cr beyond retained earnings — implies a QIP/rights issue or large acquisition requiring scrutiny",
+      "FY23 operating cash flow turned negative (−INR 41 Cr) despite INR 236 Cr net profit — a working capital blowout that signals execution risk at scale"
+    ],
+    "detailed_analysis": "Banco Products is precisely the kind of stock I hunted at Magellan: a boring-sounding industrial niche player (heat exchangers, gaskets) that most investors ignore, quietly compounding at exceptional returns. ROE of 32% and ROCE of 32.4% are best-in-class — this business earns well above its cost of capital. Revenue has grown at 12.1% CAGR since 2016 but the real story is operating leverage: operating income grew 17.2% and net profit 17.8% over the same period. FY25 accelerated this — revenue +16%, net profit +44.7% — suggesting the story is getting better, not worse. At P/E 18.7, the stock is being priced like a slow grower when it's behaving like a fast grower.\n\nThe concerning part of the story is the abrupt debt surge (INR 14 Cr → INR 729 Cr in 4 years) and the single-year asset jump that implies either a capital raise or acquisition. Management needs to explain this capital allocation clearly — the D/E of 0.45 is still within my comfort zone (below 0.6), but finance costs growing at 27.1% CAGR are a silent margin killer. I'd want to understand the FY25 balance sheet expansion before sizing up aggressively. That said, the data center cooling angle — backup power thermal management is a genuine megatrend — combined with EV thermal products (battery coolers, inverter coolers already in production) gives this 64-year-old company a credible second act. This is a buy-and-monitor situation: good entry at current price, but watch the debt trajectory closely.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "undervalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 63071,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0900036,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10084,
+      "cache_read_input_tokens": 7132,
+      "output_tokens": 3336,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10084
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 442,
+          "cache_read_input_tokens": 7132,
+          "cache_creation_input_tokens": 2952,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2952,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "ABLBL",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-19T06:20:28.237352Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "ABLBL is a newly incorporated (2024) apparel retailer carrying premium brand portfolio (Louis Philippe, Van Heusen, Reebok) but priced at 73x trailing P/E and 48x EV/EBITDA, implying an earnings yield of roughly 1.4% — far below the Magic Formula's 12% threshold. Despite an adequate ROCE of 25%, the combination of sky-high leverage (D/E 2.67), a razor-thin operating margin (8.88%), and near-zero earnings yield makes this an unattractive Magic Formula candidate.",
+    "key_strengths": [
+      "Established lifestyle brand portfolio (LP, Van Heusen, Allen Solly) with pricing power in premium apparel",
+      "ROCE of 25.45% suggests the underlying brands generate decent returns on tangible capital",
+      "Reasonable FII/DII ownership (16%/17%) signals institutional interest despite newness"
+    ],
+    "key_risks": [
+      "Earnings yield of ~1.4% (P/E 73x) is severely overvalued by Magic Formula standards — no margin of safety",
+      "High financial leverage (D/E 2.67) depresses ROE to just 9.78% despite decent ROCE, meaning debt is destroying shareholder value",
+      "Company incorporated in 2024 — zero multi-year earnings track record to validate ROIC sustainability"
+    ],
+    "red_flags": [
+      "EV/EBITDA of 48x: implies earnings would need to grow dramatically for years just to justify current price",
+      "ROE (9.78%) materially below ROCE (25.45%) — high-cost debt is consuming most of the business's economic returns",
+      "No historical income statement or balance sheet data available — cannot verify ROIC durability"
+    ],
+    "detailed_analysis": "The Magic Formula requires two things simultaneously: a cheap price (earnings yield >12%) and a good business (ROIC >20%). ABLBL fails the first test decisively. With EBIT/EV implied around 1.4% and EV/EBITDA at 48x, the market is pricing in years of flawless execution — and paying for it upfront. The only redeeming factor is ROCE at 25.45%, which confirms the brand asset base does earn above-average returns, but that figure is almost certainly inflated by the newness of the balance sheet post-carve-out.\n\nThe 2.67x debt-to-equity ratio is a serious concern: interest costs are eating into the gap between ROCE and ROE, leaving shareholders with just 9.78% return. For a Magic Formula investor, the ideal is a business that earns high ROIC AND is available cheap — ABLBL offers neither. Until the P/E compresses below 20x and we have at least 3 years of verified ROIC track record, this is a pass.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 155078,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.21028739999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 22032,
+      "cache_read_input_tokens": 14428,
+      "output_tokens": 8222,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 22032,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 468,
+          "cache_read_input_tokens": 14428,
+          "cache_creation_input_tokens": 7604,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 7604
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "ASTRAMICRO",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T16:31:11.969857Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Astra Microwave fails the Magic Formula on its most critical input: earnings yield is a meager ~2.5% (EBIT ₹269 Cr / EV ~₹10,781 Cr), far below the 12% threshold, meaning you are paying a steep premium for future earnings that haven't materialized in free cash. ROIC of ~17% is adequate but not exceptional enough to justify a 64x P/E when cash generation is persistently negative.",
+    "key_strengths": [
+      "Improving operating margins — EBIT grew from ₹77 Cr (2021) to ₹269 Cr (2025), a genuine operational ramp-up in a high-barrier defense niche",
+      "Captive demand moat — defense/space/EW subsystems have limited domestic competition and long government program lifetimes",
+      "Revenue CAGR of 11.1% over 9 years with accelerating momentum in the last 3 years"
+    ],
+    "key_risks": [
+      "Chronically negative FCF — OCF was negative in 4 of last 5 years (FY25: -₹90 Cr), meaning reported earnings are NOT converting to cash; working capital trap is severe",
+      "Valuation is punishing — EV/EBITDA of 36x and earnings yield of ~2.5% leave zero margin of safety; any earnings miss or order delay could crater the stock",
+      "Finance costs doubling (₹32 Cr → ₹57 Cr in one year) as debt climbs to ₹424 Cr, eroding the quality of earnings growth"
+    ],
+    "red_flags": [
+      "Earnings yield ~2.5% — catastrophically below the Magic Formula's 12% minimum; stock is not cheap by any EBIT-based measure",
+      "Free cash flow negative ₹169 Cr in FY25 despite ₹154 Cr net profit — a massive ₹323 Cr divergence signals aggressive working capital build or revenue recognition ahead of cash collection",
+      "Promoter holding of only 6.54% is alarmingly low for a defense-tech company — almost no founder skin in the game"
+    ],
+    "detailed_analysis": "Running the Magic Formula on Astra Microwave produces a poor result on both axes. Earnings Yield: EBIT of ₹269 Cr against an Enterprise Value of ~₹10,781 Cr (market cap ₹10,382 Cr + net debt ₹399 Cr) yields just 2.5% — less than a government bond, and roughly one-fifth of the 12% threshold I look for. Return on Capital: using invested capital of ~₹1,562 Cr (equity + debt - cash), ROIC comes to ~17%, which is adequate but not the 25%+ quality I want in a Magic Formula name. The business ranks in the bottom quartile on cheapness and middle quartile on quality — a combination that the formula historically underperforms.\n\nThe deeper problem is cash generation. Net profit has grown nicely to ₹154 Cr in FY25, but operating cash flow was -₹90 Cr and free cash flow was -₹169 Cr. This pattern — positive income, deeply negative cash — has repeated in 4 of the last 5 years and signals either an aggressive revenue recognition cycle or a working capital model where government receivables pile up for years. Defense companies often have lumpy collections, but this level of divergence is a structural concern, not a timing quirk. Until earnings translate reliably into cash, the 64x P/E is pricing perfection with no cushion for delays.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 46102,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08194320000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11358,
+      "cache_read_input_tokens": 9289,
+      "output_tokens": 2437,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11358,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 431,
+          "cache_read_input_tokens": 9289,
+          "cache_creation_input_tokens": 2069,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2069
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

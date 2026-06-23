@@ -1,0 +1,70 @@
+{
+  "symbol": "FEDFINA",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T17:18:10.858532Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Fedbank Financial Services fails nearly every quantitative screen I require — P/E of 17.54, P/B of 2.02, and a Graham Number of ~₹96 versus a market price of ₹146.8, implying roughly 53% overvaluation. With debt-to-equity of 3.83x, negative operating cash flow in all four reported years, and net profit actually declining in FY2025 (₹245 Cr → ₹225 Cr), there is no margin of safety here whatsoever.",
+    "key_strengths": [
+      "Parent backing: Federal Bank holds 60.79% promoter stake, providing funding access and credibility as an NBFC.",
+      "Four consecutive years of positive net earnings (FY2022–FY2025) satisfies minimum earnings continuity requirement.",
+      "Revenue growing at 32.2% CAGR (FY2022–2025) demonstrates real business expansion — though I do not pay for growth stories."
+    ],
+    "key_risks": [
+      "Extreme leverage (D/E 3.83x) — even conceding NBFC norms, this level of borrowing (₹10,437 Cr debt vs ₹2,547 Cr equity) amplifies losses severely in a credit downturn.",
+      "Earnings reversal in FY2025: net profit fell from ₹245 Cr to ₹225 Cr — precisely the wrong direction for a growth-priced stock.",
+      "No dividend record mentioned — shareholders receive no tangible cash return while management deploys leveraged capital at a mere 8.84% ROE."
+    ],
+    "red_flags": [
+      "Graham Number (~₹96) is 35% below the current market price of ₹146.8 — the stock demands a premium I will not pay.",
+      "Operating cash flow negative in all four years (-₹578 Cr to -₹978 Cr); while typical for lending NBFCs, it means the business consumes cash and depends entirely on external financing.",
+      "ROE of only 8.84% — management is earning less than I would require even from a savings instrument, yet the market prices the equity at 2.02x book.",
+      "P/B of 2.02 exceeds my hard ceiling of 1.5; I am being asked to pay ₹2 for every ₹1 of net assets in a leveraged lending book whose credit quality I cannot fully verify."
+    ],
+    "detailed_analysis": "Fedbank Financial Services is an NBFC subsidiary of Federal Bank, and on the surface its loan book growth (total assets ₹6,556 Cr → ₹13,250 Cr in three years) looks impressive. But I do not buy impressive — I buy cheap. The Graham Number, derived from FY2025 EPS of approximately ₹6.01 and book value per share of approximately ₹68, computes to roughly ₹96. The stock trades at ₹146.8 — a 53% premium to what I consider fair asset-backed value. The P/E of 17.54 and P/B of 2.02 both breach my thresholds, and there is no dividend to compensate for the wait while Mr. Market recovers his senses.\n\nThe financial structure concerns me deeply. Debt stands at ₹10,437 Cr against equity of ₹2,547 Cr — a ratio of 3.83x. I am aware that lending businesses carry inherent leverage, but an ROE of only 8.84% on this capital structure means management is not being adequately rewarded for the risk it is running with borrowed money. More troubling still, net profit declined in FY2025 despite revenue growing 30%, suggesting rising credit costs or margin compression — exactly the warning sign one sees before an NBFC credit cycle turns. With no margin of safety on price, no dividends, and a deteriorating earnings trend, the disciplined investor must look elsewhere.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 63921,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08310645,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9137,
+      "cache_read_input_tokens": 10529,
+      "output_tokens": 3045,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9137
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 397,
+          "cache_read_input_tokens": 8479,
+          "cache_creation_input_tokens": 2708,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2708,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

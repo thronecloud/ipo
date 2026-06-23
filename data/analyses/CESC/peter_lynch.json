@@ -1,0 +1,68 @@
+{
+  "symbol": "CESC",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-19T12:55:30.112100Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "CESC is a classic slow-growing regulated utility — net profit has compounded at just 7.8% CAGR over nine years, operating income has actually declined at -1.6% CAGR, and at P/E 15.4x the PEG ratio is nearly 2.0x, meaning I'm paying a growth premium for a business that barely grows. Lynch's rule: never pay a PEG above 1.5 for a slow grower.",
+    "key_strengths": [
+      "Highly predictable business with regulated tariffs — OCF positive 5/5 years, generating ₹2,500+ Cr annually",
+      "Renewable energy expansion (solar + wind hybrid projects totalling 1,500 MW) could provide genuine growth optionality over the next 5 years",
+      "Monopoly power distribution in Kolkata provides a captive customer base and stable base earnings"
+    ],
+    "key_risks": [
+      "Operating income 9Y CAGR of -1.6% — the core generation business is actually shrinking in profitability, masked by rising 'other income' which is non-recurring in nature",
+      "Debt/Equity of 1.41 is well above Lynch's 0.6 ceiling, and borrowings jumped from ₹14,544 Cr to ₹18,811 Cr in a single year as renewable capex accelerates",
+      "Free cash flow dropped sharply to ₹729 Cr in FY25 from ₹1,586 Cr in FY24, as capex surged to ₹1,863 Cr — capital intensity is rising just as returns on the core business stagnate"
+    ],
+    "red_flags": [
+      "PEG ratio of ~1.97 (P/E 15.4 / 7.8% net profit CAGR) — overvalued relative to its own growth rate; a utility should trade at a discount to growth, not a premium",
+      "Reliance on 'other income' growing at 34% CAGR (₹1,618 Cr in FY25) to prop up profits while operating income contracts is a quality concern"
+    ],
+    "detailed_analysis": "I've always said that if you can't explain a stock's appeal in a few sentences, you probably shouldn't own it. CESC's pitch is: 'It's a stable regulated utility with some renewable upside.' That's fine — but stable and utility and regulated are three words that tell me I'm looking at a slow grower at best. Net profit grew from ₹1,309 Cr in FY20 to ₹1,428 Cr in FY25 — five years of capex, effort, and risk for 9% cumulative profit growth. That's not a compounder.\n\nThe renewable capex binge (CWIP jumped 5x to ₹890 Cr, capex doubled to ₹1,863 Cr in FY25) might bear fruit in 3-5 years, but you're paying for that optionality today at a P/E that doesn't give you a margin of safety. High leverage, declining operating margins in the core business, and PEG near 2x make this an avoid at current prices. If the stock fell 30-40% and the renewable projects came online, it might become interesting.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 189269,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.24253995,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 24833,
+      "cache_read_input_tokens": 15924,
+      "output_tokens": 9642,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 24833,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 670,
+          "cache_read_input_tokens": 15924,
+          "cache_creation_input_tokens": 8909,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8909
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

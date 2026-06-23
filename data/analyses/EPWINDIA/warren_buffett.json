@@ -1,0 +1,70 @@
+{
+  "symbol": "EPWINDIA",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-21T07:47:11.918955Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "EPW India is a micro-cap refurbished electronics dealer with no discernible moat, reporting profits while burning cash — a combination I find deeply troubling. At 32x earnings on INR 4 Cr net profit with negative free cash flow, the market is pricing in perfection for an imperfect business.",
+    "key_strengths": [
+      "Revenue tripled from INR 19 Cr to INR 53 Cr in one year, showing early commercial traction.",
+      "Zero finance cost historically suggests disciplined borrowing — until FY2025.",
+      "High promoter holding (71.4%) aligns management with shareholders on paper."
+    ],
+    "key_risks": [
+      "Massive earnings quality problem: INR 4 Cr net profit but -INR 11 Cr operating cash flow — profits are not converting to cash.",
+      "No competitive moat whatsoever — refurbished electronics is brutally commoditized with Amazon Renewed, OLX, and thousands of local dealers.",
+      "Borrowings surged from zero to INR 12 Cr in FY2025 to fund a cash-burning operation, with equity of only INR 5 Cr — fragile balance sheet."
+    ],
+    "red_flags": [
+      "Negative free cash flow of -INR 12 Cr in FY2025 despite reported profitability — classic earnings quality red flag.",
+      "Market cap of INR 129 Cr on INR 5 Cr equity = 25x book; on INR 4 Cr profit = 32x PE — deeply overvalued for a no-moat distributor.",
+      "Borrowings jumped from INR 0 to INR 12 Cr in a single year, entirely financing the cash outflow — unsustainable if growth slows.",
+      "Three-year operating history with no demonstrated cycle resilience; entire track record is one bull run."
+    ],
+    "detailed_analysis": "The most alarming number in this entire dataset is the -INR 11 Cr operating cash flow against INR 4 Cr net profit in FY2025. That INR 15 Cr divergence on a company with only INR 53 Cr revenue tells me inventory and receivables are exploding — a classic warning sign in distribution businesses that are chasing growth by stuffing the channel. When a business reports profits but hemorrhages cash, I want to understand why before I invest a single rupee. Here, the answer appears to be aggressive working capital expansion funded by INR 12 Cr in new borrowings. That is not a durable model.\n\nBeyond the cash flow concern, the business itself fails my first test: where is the moat? Refurbishing and reselling laptops and Chromebooks requires no proprietary technology, carries no brand premium, and faces unlimited competition. This is a trading business, not a franchise. The ROE of 139% sounds spectacular but is a mathematical artifact of near-zero equity — it will normalize sharply as the balance sheet grows. At INR 129 Cr market cap on a business generating INR 4 Cr in profit that isn't actually showing up in cash, I am being asked to pay dearly for a commodity operation with a two-year track record. Charlie and I have a simple rule: we'd rather own a wonderful business at a fair price. This is neither.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 40806,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0713241,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9742,
+      "cache_read_input_tokens": 7992,
+      "output_tokens": 2159,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9742,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 454,
+          "cache_read_input_tokens": 7992,
+          "cache_creation_input_tokens": 1750,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1750
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

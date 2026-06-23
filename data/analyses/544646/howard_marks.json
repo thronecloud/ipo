@@ -1,0 +1,69 @@
+{
+  "symbol": "544646",
+  "persona": "howard_marks",
+  "persona_display_name": "Howard Marks",
+  "analyzed_at": "2026-04-20T11:07:14.813161Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Shipwaves Online is a sub-Rs 50 Cr microcap digital freight-forwarder with optically attractive ratios (P/E 5.4x, ROE 56%, ROCE 35%) but essentially zero liquidity, no cycle-tested track record, and a business model exposed to freight-rate volatility. At this size and disclosure depth, the margin of safety is illusory — the real risk is permanent capital loss from governance, liquidity, or cyclical shocks, not mispricing.",
+    "key_strengths": [
+      "Capital-efficient on paper: 56% ROE / 35% ROCE suggest asset-light SaaS+forwarding model is working at current scale",
+      "Headline P/E of 5.4x is cheap vs. logistics peers (typically 20-40x)",
+      "Promoter holding of 67.36% indicates skin in the game and no immediate dilution overhang"
+    ],
+    "key_risks": [
+      "Rs 49 Cr microcap on BSE — extreme illiquidity; exit at stress prices could be impossible",
+      "Digital freight forwarding is hyper-cyclical; 2021-22 freight boom inflated earnings industry-wide and is now normalizing",
+      "Incorporated 2015, recently listed — no audited behaviour through a downturn and high risk of earnings quality/related-party issues at this size"
+    ],
+    "red_flags": [
+      "SME-scale float with promoter at 67% — price discovery and governance oversight both weak",
+      "High ROE at tiny revenue base often collapses as company scales or as freight cycle turns",
+      "Listed into a frothy Indian smallcap/microcap tape — classic Marks 'sold at the peak' setup"
+    ],
+    "detailed_analysis": "Second-level thinking here: the first-level investor sees P/E 5.4x with 56% ROE and concludes \"obvious mispricing.\" The second-level question is *why* is it cheap? At Rs 49 Cr market cap on BSE, this stock is cheap because almost no institutional capital can or will own it, liquidity is punitive, disclosure is thin, and the business is a freight-forwarding intermediary whose economics are tied to a container-shipping cycle that peaked in 2022 and has been normalizing since. The \"SaaS\" framing deserves skepticism — most Indian digital-freight plays are forwarding businesses with a software wrapper, not Shopify-like recurring revenue. Trailing earnings likely still carry residual freight-boom tailwind.\n\nFrom a risk-of-permanent-loss lens, I cannot price the downside. There is no visibility into debt, working capital, customer concentration, or receivables quality from the data given, and a microcap logistics intermediary in a slowing freight cycle can see margins compress 50-80% quickly. The 67% promoter holding is a double-edged sword: alignment, but also the minority has no leverage. For an Oaktree-style investor, this fails the basic test — the upside (2-3x if everything goes right) does not asymmetrically dominate the downside (permanent impairment, delisting risk, or an 80% drawdown with no bid). Pass. Wait for either a much deeper price dislocation with clean financials, or let the cycle wash through first.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "insufficient_data",
+      "financial_health": "insufficient_data",
+      "valuation": "fair",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 27988,
+    "model_used": "opus",
+    "total_cost_usd": 0.09908499999999999,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 9166,
+      "cache_read_input_tokens": 13485,
+      "output_tokens": 1401,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9166,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10603,
+          "cache_creation_input_tokens": 1445,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1445
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

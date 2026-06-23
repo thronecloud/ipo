@@ -1,0 +1,69 @@
+{
+  "symbol": "EXIMROUTES",
+  "persona": "howard_marks",
+  "persona_display_name": "Howard Marks",
+  "analyzed_at": "2026-04-21T07:54:28.386328Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Exim Routes is a five-year-old paper-recycling intermediary — a thin-margin trading business — priced at 37.5x P/E and ~25x EV/EBITDA despite having generated negative free cash flow every single year of its existence. The gap between reported profits (INR 8 Cr net profit, FY25) and cash reality (INR -5 Cr operating CF, INR -9 Cr FCF) is the central fact here; the rest is noise dressed as growth.",
+    "key_strengths": [
+      "Explosive revenue CAGR of 134.5% (FY21→FY25, INR 4 Cr → INR 121 Cr) signals genuine market traction in the recycled-paper supply chain.",
+      "ROCE of 55.3% and ROE of 54% on the reported P&L look exceptional, suggesting high asset-turn leverage in the trading model.",
+      "Low headline debt (INR 9 Cr borrowings; D/E ~0.36x) limits immediate insolvency risk."
+    ],
+    "key_risks": [
+      "Cash flow is structurally negative: 0/5 years of positive OCF, with FCF deteriorating to -9 Cr in FY25 as revenue scales — working capital is consuming every rupee of accounting profit and then some.",
+      "Commodity trading intermediary with 8.3% EBITDA margin has no durable pricing power; one large customer loss or margin squeeze destroys the earnings base that justifies the 37.5x P/E.",
+      "Tiny scale (INR 121 Cr revenue, INR 248 Cr market cap) with a 5-year operating history means zero cycle-tested track record; the company has never navigated a credit crunch or demand downturn."
+    ],
+    "red_flags": [
+      "Profits are illusory in cash terms: INR 8 Cr net profit vs. INR -5 Cr OCF = INR 13 Cr divergence, almost certainly bloating receivables or inventory — classic accrual inflation in a trading company.",
+      "Equity jumped from INR 4 Cr to INR 25 Cr in one year; this screams a recent capital raise (likely SME IPO), placing the stock squarely in the 'priced to perfection at listing' danger zone.",
+      "EV/EBITDA ~25x for a paper-scrap broker is pricing in Silicon Valley compounding — the consensus is uniformly bullish on a story no one can diligence properly given the short operating history."
+    ],
+    "detailed_analysis": "The single most important datapoint here is the operating cash flow trajectory: -1, -2, -5, -9 Cr in FCF over the last four years, accelerating in the wrong direction even as reported profits explode. In a trading business, cash is the only honest scorekeeper. The INR 13 Cr gap between FY25 net profit (8 Cr) and OCF (-5 Cr) tells me the balance sheet is quietly absorbing working capital — likely receivables from paper mills who are slow payers. The asset base doubling from INR 21 Cr to INR 54 Cr in one year while OCF worsened is precisely the dynamic that precedes painful equity dilutions or credit events in commodity trading firms. Second-level thinking here is simple: everyone sees the 134% revenue CAGR and 54% ROE; nobody is asking why a profitable business needs continuous external financing (Financing CF: +11 Cr in FY25) and cannot generate a single rupee of operating cash.\n\nOn valuation, there is no margin of safety at any reasonable scenario. A mature paper-recycling intermediary deserves 10–12x EBITDA at best given commodity margins, lack of moat, and execution risk. At 10x FY25 EBITDA of INR 10 Cr, fair value is ~INR 100 Cr enterprise value — roughly 60% below the current INR 248 Cr market cap before any stress assumptions. If working capital continues to expand (which the trend demands), FY26 equity dilution is probable, further pressuring per-share value. This is an SME IPO-era story stock with zero cycle history, negative cash generation, and a valuation that prices in perpetual 50%+ growth — the very definition of an unfavorable risk/reward setup. Avoid.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 65632,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08317215,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8923,
+      "cache_read_input_tokens": 10323,
+      "output_tokens": 3107,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8923,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 431,
+          "cache_read_input_tokens": 8269,
+          "cache_creation_input_tokens": 2708,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2708
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

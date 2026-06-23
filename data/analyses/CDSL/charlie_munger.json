@@ -1,0 +1,68 @@
+{
+  "symbol": "CDSL",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-19T12:55:53.630486Z",
+  "analysis": {
+    "score": 7,
+    "recommendation": "BUY",
+    "investment_thesis": "CDSL is one of only two depositories in India — a regulatory duopoly with network effects, zero variable costs, zero debt, 42% ROCE, and 52% operating margins growing at 27% CAGR over nine years. The valuation at 61x P/E is rich, but this is a genuine compounding machine whose moat is structurally protected by regulation and switching costs.",
+    "key_strengths": [
+      "Regulatory duopoly with NSDL — no new entrant can build a depository in India; every new demat account opened in India (currently running at tens of millions per year) accretes directly to CDSL's economics with near-zero marginal cost",
+      "42% ROCE with zero debt and 52% operating margins — the economics are extraordinary; the business is essentially a toll road on India's capital markets with gross margins of 100% and almost no capex required for the core business",
+      "Revenue CAGR of 27.3% over nine years with net profit CAGR of 21.5% — consistent compounding over a full market cycle including pandemic, rising rates, and market volatility"
+    ],
+    "key_risks": [
+      "SEBI regulatory risk is the single biggest threat — the regulator can mandate fee cuts (as it has historically), directly compressing revenue; this is not a business that sets its own prices",
+      "Market cycle dependency is real: operating income fell from ₹365 Cr (FY2022) to ₹319 Cr (FY2023) during a market slowdown; revenue and profits are partially correlated to transaction volumes and new account activity",
+      "Promoter ownership of only 15% means no controlling owner enforcing long-term discipline; BSE (the primary shareholder) is itself subject to SEBI oversight, creating a regulatory-within-regulatory-within-regulatory governance stack"
+    ],
+    "red_flags": [
+      "P/E of 61x, EV/EBITDA of 42x, P/S of 23.8x — the market has priced in decades of compounding; at this valuation, even a two-year earnings stall (as happened in FY2023) would be painful for new buyers",
+      "FCF/Net Income of 73.6% (₹387 Cr FCF vs ₹526 Cr net profit) is below my 80% threshold, partly because CWIP spiked to ₹174 Cr in FY2023 for infrastructure investments — bears watching as a sign of rising capital intensity"
+    ],
+    "detailed_analysis": "When I think about CDSL, I think about Benjamin Franklin's observation that death and taxes are the only certainties. In India's capital markets, a close third certainty is that every demat account needs a depository. CDSL and NSDL have a legally protected, operationally entrenched duopoly. The business model is extraordinary: customers cannot switch depositories without massive coordination costs, revenue scales with market activity with near-zero marginal cost, and the regulatory framework prevents new competition. ROCE of 42% with zero debt is the empirical proof of this moat.\n\nMy hesitation is entirely about price. At 61x P/E, I am paying for fifteen or more years of discounted earnings in advance. The risk is not that CDSL fails — it almost certainly will not — but that the market re-rates to 30x P/E during a prolonged market downturn, cutting the stock in half even with earnings intact. Munger's wisdom: the return from holding a wonderful business long enough usually overwhelms the overpayment at purchase. I score this 7 rather than 8 solely because of valuation risk. For investors with a true 10-year horizon, this is a BUY; for those with a 3-year horizon, entry price discipline matters more.",
+    "metrics_evaluated": {
+      "moat_strength": "strong",
+      "management_quality": "good",
+      "financial_health": "excellent",
+      "valuation": "overvalued",
+      "growth_potential": "exceptional"
+    }
+  },
+  "metadata": {
+    "duration_ms": 208923,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.27467865,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 26199,
+      "cache_read_input_tokens": 15378,
+      "output_tokens": 11454,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 26199,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 559,
+          "cache_read_input_tokens": 15378,
+          "cache_creation_input_tokens": 10821,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 10821
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

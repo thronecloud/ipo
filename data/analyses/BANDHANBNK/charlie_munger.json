@@ -1,0 +1,69 @@
+{
+  "symbol": "BANDHANBNK",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-19T06:33:12.958444Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "AVOID",
+    "investment_thesis": "Bandhan Bank is a microfinance-origin lender with ROE of 11.2% — below my threshold — facing a severe MFI credit cycle stress that is visible in the explosive growth of finance costs (INR 5,157 Cr to INR 10,458 Cr in three years) and wildly volatile operating cash flows. Banking is inherently a leveraged, complex business, and Bandhan's concentration in low-income microfinance borrowers makes it doubly fragile during economic stress.",
+    "key_strengths": [
+      "Low P/B of 1.14 provides some downside cushion if asset quality stabilizes",
+      "Forward P/E of 10.92 versus trailing 27.92 implies analysts expect sharp earnings recovery — if MFI stress abates, the upside is real",
+      "22.3% FII ownership signals institutional confidence in the franchise's long-term potential"
+    ],
+    "key_risks": [
+      "Finance costs compounding at 26.6% CAGR (INR 10,458 Cr in 2025) threatens net interest margins as deposit competition intensifies",
+      "MFI borrower stress — over-leveraged rural borrowers across India are defaulting; Bandhan's geographic and segment concentration amplifies this",
+      "Revenue CAGR of only 7.8% with operating margin of just 13% is fragile for a bank dependent on high-risk lending"
+    ],
+    "red_flags": [
+      "Operating CF swung from INR +14,808 Cr (2024) to INR +2,752 Cr (2025) — classic bank cash flow instability hiding true earnings quality",
+      "Net profit of INR 2,230 Cr in 2024 implies ROE barely 10%, yet the stock trades at 27.9x trailing earnings — the market is extrapolating a recovery that may not materialize",
+      "The promoter structure (subsidiary of Bandhan Life Insurance) and regulatory history of concentration in MFI creates governance complexity I cannot fully evaluate"
+    ],
+    "detailed_analysis": "I don't like analyzing banks because the true health is hidden inside the loan book, and I can't examine it from the outside. Bandhan's financial statements are particularly opaque: OCF of -INR 4,245 Cr in 2023, then +INR 14,808 Cr in 2024, then +INR 2,752 Cr in 2025 — these swings make it impossible to assess normalized earning power. The gap between trailing P/E (27.9x) and forward P/E (10.9x) is enormous, implying the street expects a near-tripling of earnings — a bold bet on MFI stress resolution.\n\nThe inversion question: what kills a microfinance bank? Borrower over-leverage, political loan waiver announcements, rising credit costs, and margin compression. All four are present today. Total debt on Bandhan's own books fell from INR 16,372 Cr to INR 11,138 Cr — that is encouraging deleveraging — but the business model requires perpetual re-leveraging to grow. At this stage, I lack the confidence to underwrite a recovery, and the opacity of a bank's balance sheet means I'm likely the last to know when things deteriorate further.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 181037,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.2307309,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 23424,
+      "cache_read_input_tokens": 14973,
+      "output_tokens": 9226,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 23424,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 668,
+          "cache_read_input_tokens": 14973,
+          "cache_creation_input_tokens": 8451,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8451
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

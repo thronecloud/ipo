@@ -1,0 +1,69 @@
+{
+  "symbol": "544656",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-20T11:05:00.840518Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "A small aluminium fabricator trading at 105x earnings on a 0.34% ROE offers no margin of safety and no discernible moat. This is precisely the kind of speculative, capital-intensive, commodity-adjacent business at a hype-driven valuation that I avoid.",
+    "key_strengths": [
+      "High promoter skin in the game at 72.49%",
+      "Simple, understandable business (aluminium windows/doors/glazing)",
+      "Some institutional interest (FII 4.78% + DII 8.13%)"
+    ],
+    "key_risks": [
+      "ROE of 0.34% is effectively no return on capital — destroys value vs. risk-free rate",
+      "P/E of 105x on a commodity fabrication business is extreme overvaluation",
+      "Tiny INR 540 Cr cap in a fragmented, low-margin industry with no pricing power"
+    ],
+    "red_flags": [
+      "P/E 105 wildly disconnected from 0.34% ROE — earnings base near zero",
+      "Recent listing with classic IPO-hype valuation signature",
+      "Low-moat industrial fabrication segment with intense local competition"
+    ],
+    "detailed_analysis": "An ROE of 0.34% tells you almost everything you need to know — this business is not earning its cost of capital, let alone compounding shareholder wealth. Pairing that with a 105x P/E means the market is pricing in transformative growth that a fragmented aluminium glazing fabricator, competing against countless regional players, is extraordinarily unlikely to deliver. There is no brand, no switching cost, no network effect, no cost advantage — just project-by-project bidding on real estate and infrastructure contracts.\n\nPromoter holding of 72.49% is the one mildly encouraging data point, but concentrated ownership cannot manufacture a moat where none exists. At INR 280 with earnings so thin that the P/E balloons to triple digits, the margin of safety is negative. I would need to see this trade at a fraction of current levels, alongside several years of demonstrated ROE above 15% and disciplined capital allocation, before it earned a place in the \"too hard\" pile — let alone the buy list. Pass.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 20525,
+    "model_used": "opus",
+    "total_cost_usd": 0.089354,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8802,
+      "cache_read_input_tokens": 13423,
+      "output_tokens": 1104,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8802,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 84,
+          "cache_read_input_tokens": 10586,
+          "cache_creation_input_tokens": 1053,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1053
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

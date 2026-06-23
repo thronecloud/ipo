@@ -1,0 +1,70 @@
+{
+  "symbol": "WAKEFIT",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-21T07:53:27.419788Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Wakefit is a loss-making D2C home furnishings brand with negative ROE (-6.72%), net losses in all three reported years, and a P/E of 118x that is meaningless given persistent red ink. There is no durable competitive moat in a commoditized mattress and furniture market, and the market is pricing this like a high-quality compounder when the financial reality is starkly different.",
+    "key_strengths": [
+      "Revenue growing at ~25% CAGR (797→1,256 Cr in 3 years), showing real consumer demand.",
+      "EBITDA turned positive and improved from -87 Cr to +83 Cr, suggesting operating leverage is beginning to appear.",
+      "OCF positive in 2024 and 2025 (81 and 77 Cr), indicating the core business can generate some cash."
+    ],
+    "key_risks": [
+      "Persistent net losses in all 3 years (-146, -15, -35 Cr); company has not yet proven it can be sustainably profitable.",
+      "No economic moat — mattresses and furniture are commodity categories with low switching costs and intense competition from Sleepwell, Duroflex, IKEA, and countless online rivals.",
+      "Debt rising rapidly (144→273 Cr) while cash is nearly depleted (7 Cr), and equity is being eroded; financing risk is real if growth stalls."
+    ],
+    "red_flags": [
+      "P/E of 118x on a company with negative net income is a valuation fiction — there are no real earnings to price.",
+      "Net losses widened in FY25 (-35 Cr) vs FY24 (-15 Cr) despite 30% revenue growth — operating leverage is not materializing at the bottom line.",
+      "Promoter holding is only 37%, relatively low for a young, founder-built brand — raises questions about long-term alignment.",
+      "Cash balance collapsed from 62 Cr (2023) to 7 Cr (2025) while debt tripled, indicating heavy reliance on external capital."
+    ],
+    "detailed_analysis": "From my vantage point in Omaha, I look for businesses that earn high returns on equity and have durable competitive advantages. Wakefit has neither. ROE is -6.72%, ROCE is -1.05%, and the company has never posted a full-year net profit. At INR 4,905 Cr market cap, the market is asking me to pay 3.4x sales and 4.35x book for a business that destroys capital. That is not a price I associate with a margin of safety — it is a price I associate with hope. I do not invest in hope.\n\nThe business itself sits in a brutally competitive, low-moat category. A mattress is a mattress. Wakefit's gross margin of 54% looks attractive on the surface, but it evaporates entirely by the time you account for marketing, logistics, and overhead in a D2C model — operating income was negative in two of three years. The one redeeming data point is positive OCF (77 Cr in FY25), but FCF is shrinking (52→26 Cr) and capex is accelerating. Rising debt, depleted cash, and a net loss that worsened in FY25 despite 30% revenue growth tell me this is a treadmill, not a compounder. I would not buy this business at any price close to today's level.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 39083,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.072048,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9840,
+      "cache_read_input_tokens": 8130,
+      "output_tokens": 2180,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9840,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 508,
+          "cache_read_input_tokens": 8130,
+          "cache_creation_input_tokens": 1710,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1710
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

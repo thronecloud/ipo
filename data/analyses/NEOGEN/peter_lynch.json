@@ -1,0 +1,70 @@
+{
+  "symbol": "NEOGEN",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-18T22:00:49.773447Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Neogen has a legitimate specialty chemicals story — 25.6% revenue CAGR over 9 years, battery materials optionality, 33-country exports — but the stock is priced for perfection at 150x P/E while earnings are actually declining and debt has tripled in a single year. At a PEG of ~6x (150 P/E ÷ 24% historical growth), there is simply no margin of safety for a company burning cash and drowning in interest costs.",
+    "key_strengths": [
+      "Long-track-record growth machine: 25.6% revenue CAGR and 27.2% EBITDA CAGR over 9 years — the underlying business has genuine momentum",
+      "Diversified end-markets with high-value optionality: pharma intermediates, agrochemicals, and emerging battery materials (lithium compounds) give multiple growth levers",
+      "Strong institutional conviction: 22% DII + 51% promoter holding signals insiders and domestic funds believe in the long-term capacity buildout"
+    ],
+    "key_risks": [
+      "Earnings are collapsing under interest burden: net profit fell from INR 50 Cr (FY23) to INR 35 Cr (FY25) while finance costs surged from INR 29 Cr → INR 48 Cr — the P&L is being eaten alive",
+      "Debt tripled in one year: borrowings exploded from INR 409 Cr (FY24) to INR 1,132 Cr (FY25) — D/E of 1.41 is more than double Lynch's 0.6 ceiling, with cash at just INR 5 Cr",
+      "Free cash flow negative for 5 consecutive years (-INR 121 Cr in FY25) with INR 335 Cr CWIP still to be absorbed — this capex cycle must generate returns or the equity is impaired"
+    ],
+    "red_flags": [
+      "PEG ratio ~6x (150 P/E ÷ 24% earnings CAGR) — Lynch's ceiling is 1.0; anything above 1.5 is a firm pass",
+      "ROE of 5.59% is below India's risk-free rate — the company is destroying value per rupee of equity",
+      "Other income swung from +INR 8 Cr (FY24) to -INR 10 Cr (FY25) — a 18 Cr swing masking further earnings deterioration",
+      "Borrowings jumped 177% YoY (INR 409 Cr → INR 1,132 Cr) in a single year — this pace of leverage is dangerous"
+    ],
+    "detailed_analysis": "Neogen is a classic \"fast grower mid-way through a painful capex cycle\" — the kind of situation I've seen many times. The 9-year revenue and EBITDA compounding is genuinely impressive, and the business model (specialty bromine/lithium/organolithium compounds serving pharma and battery markets) is exactly the kind of niche I love to find. But somewhere between 2023 and 2025, the story broke at the earnings line. Net profit peaked at INR 50 Cr in FY23, then dropped to INR 36 Cr and INR 35 Cr — even as revenue grew 13% to INR 778 Cr. The culprit is obvious: finance costs grew 66% to INR 48 Cr in FY25, and the company's balance sheet is now carrying INR 1,132 Cr in borrowings — nearly tripling in one year. At 150x trailing P/E on declining earnings, the market is pricing in a near-perfect recovery that hasn't materialized yet.\n\nThe INR 335 Cr CWIP and INR 318 Cr of FY25 capex tell me management is making a massive bet on new capacity, likely the lithium and advanced intermediates complex. That's the bull case — if utilization ramps and operating leverage kicks in, the forward P/E of 65.8x might be justified. But free cash flow has been negative every single year since FY20, and with interest coverage already under pressure and cash at just INR 5 Cr, there's zero margin for error. Lynch's rule: a great company at a terrible price is a terrible investment. I'd revisit when the capex cycle ends, debt stabilizes, ROE crosses 12%, and the PEG drops below 1.5. Right now, this is a \"story stock\" with too many moving parts and a valuation that forgives nothing.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 62928,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09242805,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11705,
+      "cache_read_input_tokens": 9151,
+      "output_tokens": 3052,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11705,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 552,
+          "cache_read_input_tokens": 9151,
+          "cache_creation_input_tokens": 2554,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2554
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

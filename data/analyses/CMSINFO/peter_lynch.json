@@ -1,0 +1,69 @@
+{
+  "symbol": "CMSINFO",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-18T17:02:59.024272Z",
+  "analysis": {
+    "score": 6,
+    "recommendation": "HOLD",
+    "investment_thesis": "CMS Info Systems is a niche stalwart in cash management — India's #1 ATM cash logistics player trading at a PEG of ~0.65 (15.9x P/E ÷ 24.6% 7-year earnings CAGR), making it a cheap stalwart on historical numbers. However, the FY2025 growth deceleration to just ~7% revenue and earnings growth signals the story may be shifting from growth stock to value stock, warranting caution rather than aggressive buying.",
+    "key_strengths": [
+      "PEG of 0.65 on 7Y earnings CAGR (24.6%) with forward P/E of just 13.45x — genuinely cheap by GARP standards",
+      "Rock-solid cash generation: OCF positive all 5 years, FCF of INR 331 Cr in FY25, D/E of only 0.10",
+      "High-quality economics: 90.7% gross margin + ROCE of 23.7% shows a capital-light, entrenched service model"
+    ],
+    "key_risks": [
+      "Growth deceleration is alarming — FY25 revenue grew only 7.1% (vs. 18%+ prior years) and net profit only 7.2%; if this is the new normal, the PEG story collapses to ~2.3x",
+      "Structural threat from India's UPI/digital payments boom — fewer cash transactions means declining ATM replenishment volumes over the medium term",
+      "Zero promoter shareholding (0.00%) is a major Lynch red flag — no owner-operator skin in the game; management incentives are opaque"
+    ],
+    "red_flags": [
+      "0% promoter holding — highly unusual for an Indian mid-cap; Lynch always wants management owning meaningful equity",
+      "Revenue growth collapsed from ~18% CAGR to 7% in FY25 — the growth story is clearly weakening",
+      "New INR 223 Cr in borrowings appeared in FY25 (first-ever) alongside a 38% jump in CWIP to 142 Cr — capital allocation shift needs monitoring"
+    ],
+    "detailed_analysis": "CMS Info Systems is a textbook Lynch stalwart — India's dominant cash-in-transit and ATM management player with a simple, understandable business serving banks. The 7-year track record is genuinely impressive: net profit compounded at 24.6% from INR 80 Cr (FY18) to INR 372 Cr (FY25), and the business throws off real cash (INR 331 Cr FCF in FY25). At 15.9x P/E with a forward P/E of 13.45x and an EV/EBITDA of only 9.56x, this looks cheap — but Lynch's key question is always \"what's the story going forward?\" and that's where the concern lies.\n\nThe FY2025 numbers flash a yellow light: revenue growth slowed to 7% and earnings growth to 7% — a sharp deceleration from historical rates. India's UPI revolution is the structural culprit; less physical cash circulation means less ATM replenishment business. CMS is pivoting into managed services (ATM manufacturing/maintenance, brown-label deployments, card services) but this transition is still unproven at scale. Add zero promoter ownership and the Lynch conviction is tempered. This is a HOLD — not cheap enough to be a deep value play, not growing fast enough to be a growth pick.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 55593,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0840321,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11212,
+      "cache_read_input_tokens": 9027,
+      "output_tokens": 2618,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11212
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 478,
+          "cache_read_input_tokens": 9027,
+          "cache_creation_input_tokens": 2185,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2185,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

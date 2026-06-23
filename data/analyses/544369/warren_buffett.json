@@ -1,0 +1,69 @@
+{
+  "symbol": "544369",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-20T19:39:51.586014Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Beezaasan is a tiny recent-IPO explosives manufacturer with improving margins and a fresh equity infusion (reserves jumped from 14 to 92 Cr), but four consecutive years of negative free cash flow and a short operating history put it well outside my circle of competence at a fair-to-full 22x P/E. I want proven, simple businesses with durable moats — this is a speculative micro-cap in a commoditized industry.",
+    "key_strengths": [
+      "ROE 20.2% and ROCE 22.8% are respectable for a small manufacturer",
+      "Promoter holding high at 70.68% — aligned owner-operator",
+      "Post-IPO balance sheet cleaned up: borrowings down 37→25 Cr, equity up to 105 Cr"
+    ],
+    "key_risks": [
+      "Free cash flow negative every year (2022-2025), cumulative -28 Cr — growth funded by debt/equity, not earnings",
+      "Commoditized explosives industry with no visible moat; net profit only 14 Cr on 215 Cr revenue (6.5% margin)",
+      "Micro-cap (288 Cr) with short listed history and heavy CWIP spend (13 Cr) — execution risk high"
+    ],
+    "red_flags": [
+      "Persistent negative FCF despite reported profits — earnings quality questionable",
+      "Capital-intensive expansion funded by IPO proceeds, not internal accruals",
+      "Investing outflow of 35 Cr in 2025 vs only 5 Cr operating CF"
+    ],
+    "detailed_analysis": "The numbers show a small manufacturer scaling up: revenue CAGR 15% over 3 years, EBITDA CAGR 55%, and net profit jumping from 3 Cr to 14 Cr. Margins are expanding (operating margin roughly 3% to 11%) and returns on capital look healthy at ROCE 22.8%. However, the cash flow statement tells a different story — operating cash flow of just 5 Cr in 2025 against net profit of 14 Cr, and free cash flow has been negative every single year. The 48 Cr financing inflow in 2025 is clearly IPO money, which recapitalized the balance sheet but hasn't yet proven the business can self-fund growth.\n\nExplosives is a regulated but commoditized industry with established players (Solar, Premier), and Beezaasan at 288 Cr market cap is a minnow with a 12-year operating history and no discernible moat beyond local customer relationships. At 22x trailing earnings on profits that just tripled in one year, you're paying a full price for a single good year. I'll happily pass — this is the kind of speculative small-cap where I have no edge, no margin of safety, and no evidence of durable competitive advantage. Come back with five more years of positive free cash flow and I'll take another look.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 26799,
+    "model_used": "opus",
+    "total_cost_usd": 0.10315250000000001,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 9880,
+      "cache_read_input_tokens": 14245,
+      "output_tokens": 1370,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9880,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 110,
+          "cache_read_input_tokens": 11408,
+          "cache_creation_input_tokens": 1309,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1309
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

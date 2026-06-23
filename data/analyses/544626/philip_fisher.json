@@ -1,0 +1,69 @@
+{
+  "symbol": "544626",
+  "persona": "philip_fisher",
+  "persona_display_name": "Philip Fisher",
+  "analyzed_at": "2026-04-20T11:02:49.438866Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Exato Technologies is a small IT-enabled services firm with respectable ROE (28.2%) and a recent profit doubling to INR 10 Cr, but the growth trajectory is decelerating (revenue growth slowed from 56% in FY24 to just 9% in FY25) and the business lacks the proprietary R&D moat I seek. At 35x P/E on a tiny INR 338 Cr micro-cap with rising borrowings and negligible free cash flow, I would wait for more operating history before committing capital.",
+    "key_strengths": [
+      "Strong ROE of 28.2% and ROCE of 26.5% indicate efficient capital deployment at current scale",
+      "Operating margin expanded from 8% (FY23) to 11% (FY25); net profit doubled YoY in FY25",
+      "Promoter holding solid at 54.73%, suggesting skin in the game"
+    ],
+    "key_risks": [
+      "Revenue growth collapsed from 56% (FY24) to 9% (FY25) — decelerating growth is my cardinal red flag",
+      "Borrowings surged 4.6x in two years (INR 6→28 Cr) while FY25 free cash flow was effectively zero",
+      "IT-enabled services is a commoditized space; no evidence of differentiated R&D or proprietary IP"
+    ],
+    "red_flags": [
+      "Growth deceleration from 56% to 9% YoY",
+      "Operating CF of -14 Cr in FY24 and FCF of 0 in FY25 despite reported profits",
+      "Financing CF of INR 19 Cr in FY25 — growth funded by debt/equity raises, not internal compounding"
+    ],
+    "detailed_analysis": "From my Scuttlebutt lens, Exato fails several of my 15 points. Point 1 (long runway of sales growth) is questionable — the jump from INR 73→114 Cr looked promising, but FY25's deceleration to INR 124 Cr (just 9% growth) suggests either market saturation or lost momentum in its customer-transformation niche. Point 3 (R&D effectiveness relative to size) is unaddressed — the business is described as a \"customer transformation partner,\" which in Indian ITES parlance often means BPO/consulting services rather than innovative product development. Point 5-6 (worthwhile and improving margins) is the one bright spot: operating margins expanded from ~8% to ~11%, and ROE of 28% is genuinely good.\n\nHowever, the cash flow and balance sheet tell a concerning story that I would want to scuttlebutt aggressively. Borrowings quadrupled from INR 6 Cr to INR 28 Cr while equity only doubled, and FY24 saw a negative INR 14 Cr operating cash flow — a sign of working capital stress common in service businesses chasing growth via receivables. FY25 FCF was zero despite reported profit of INR 10 Cr. At 35x earnings for a micro-cap with a two-year listing history (incorporated 2016, limited public track record), this does not meet my threshold of a \"genuinely superior growth company\" worth paying a premium for. I would shelve it and revisit after 2-3 more years of operating data.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "insufficient_data",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 25028,
+    "model_used": "opus",
+    "total_cost_usd": 0.10223499999999999,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 9684,
+      "cache_read_input_tokens": 14060,
+      "output_tokens": 1386,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9684,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 11160,
+          "cache_creation_input_tokens": 1424,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1424
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

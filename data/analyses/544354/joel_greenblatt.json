@@ -1,0 +1,69 @@
+{
+  "symbol": "544354",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-20T09:52:37.237565Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Solarium Green fails the Magic Formula test: at P/E 21.5, the earnings yield is only ~4.6% — well below my 12% threshold — while ROCE of 20.1% is decent but not exceptional. It's neither cheap nor a standout compounder, which is the worst combination for a systematic value approach.",
+    "key_strengths": [
+      "ROE 23% / ROCE 20.1% — respectable capital efficiency for a young company",
+      "Promoter skin-in-the-game at 58.34% aligns incentives",
+      "Exposure to fast-growing Indian solar/turnkey EPC tailwind"
+    ],
+    "key_risks": [
+      "Earnings yield ~4.6% (1/P/E) — expensive for a civil construction EPC business",
+      "Civil construction / EPC is capital- and working-capital-intensive, which often destroys ROIC at scale",
+      "Small cap (₹301 Cr), short listed history since 2018 incorporation — ROCE sustainability unproven"
+    ],
+    "red_flags": [
+      "Earnings yield well below the 12% Magic Formula threshold",
+      "No multi-year ROIC track record to confirm the 20% is not a one-time spike",
+      "EPC receivables/working-capital cycles can inflate reported returns vs cash returns"
+    ],
+    "detailed_analysis": "Running the Magic Formula: Earnings Yield proxy = 1/21.5 ≈ 4.65% (EBIT/EV likely similar absent large net cash), which is roughly a third of what I'd want to see. ROCE of 20.1% is in the \"good, not great\" zone — above 15% but shy of the 25%+ bar that defines truly excellent businesses. When I rank candidates on the combined score, Solarium lands in the bottom half on cheapness and middle-of-the-pack on quality — the signature profile of a stock to skip.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "insufficient_data",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 18672,
+    "model_used": "opus",
+    "total_cost_usd": 0.0871055,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8794,
+      "cache_read_input_tokens": 13476,
+      "output_tokens": 1015,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8794,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10606,
+          "cache_creation_input_tokens": 1058,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1058
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

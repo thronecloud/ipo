@@ -1,0 +1,69 @@
+{
+  "symbol": "544436",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-20T20:08:04.900325Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Vandan Foods is a sub-₹27 Cr microcap castor oil processor trading at a deceptively low P/E of 2.95 that masks anemic 0.53% ROE — meaning earnings are nominally tiny, not the business is cheap. Without a growth story, margin trajectory, or earnings visibility, there's nothing here that fits my \"growth at a reasonable price\" framework.",
+    "key_strengths": [
+      "High promoter holding (66.42%) signals skin in the game",
+      "Optically low P/E of 2.95 offers cushion if earnings normalize",
+      "Castor oil is a niche with export demand (lubricants, cosmetics, pharma)"
+    ],
+    "key_risks": [
+      "0.53% ROE is effectively no return on capital — the engine isn't working",
+      "₹26.6 Cr market cap = no liquidity, no institutional follow-through",
+      "Commodity edible-oil business with thin margins and zero pricing power"
+    ],
+    "red_flags": [
+      "ROE under 1% despite low leverage implied by a micro company — earnings quality is questionable",
+      "P/E of 2.95 on near-zero ROE suggests a single lumpy earnings year, not sustainable profitability",
+      "No disclosed growth rate — can't compute PEG, which is my core discipline"
+    ],
+    "detailed_analysis": "What's the story here? I can't find one. A castor oil manufacturer incorporated in 1995 that's still sitting at ₹26.6 Cr market cap after 30 years tells me this isn't a fast grower that the market has overlooked — it's a slow grower (at best) in a commoditized segment. The 2.95 P/E looks like a bargain until you see the 0.53% ROE; multiply those together and you realize the company is barely earning anything on its equity base. In my framework, a stalwart or cyclical needs to earn at least 12%+ ROE for me to care. This doesn't clear the bar.\n\nI invest in what I know, and I can't observe any consumer tailwind or niche dominance here — castor oil derivatives are an industrial commodity where India already has large competitors (Jayant Agro, NK Industries). Without revenue/earnings growth numbers disclosed, I can't compute a PEG, and without ROE expansion or margin visibility, there's no multiple-rerating catalyst. Pass. If ROE ever inflects toward double digits with visible earnings momentum, I'd take another look — until then, this is a lottery ticket, not an investment.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 32874,
+    "model_used": "opus",
+    "total_cost_usd": 0.09447175,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 9011,
+      "cache_read_input_tokens": 13396,
+      "output_tokens": 1257,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9011,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10552,
+          "cache_creation_input_tokens": 1303,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1303
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

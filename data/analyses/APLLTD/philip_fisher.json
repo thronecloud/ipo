@@ -1,0 +1,69 @@
+{
+  "symbol": "APLLTD",
+  "persona": "philip_fisher",
+  "persona_display_name": "Philip Fisher",
+  "analyzed_at": "2026-04-18T16:24:03.734232Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Alembic Pharma is an established, integrated manufacturer with a broad therapeutic portfolio, but its earnings CAGR of -2.3% over nine years and deeply negative FCF of -466 Cr in FY25 disqualify it as a Fisher-style growth compounder. Without sustained profit expansion and with contracting EBITDA trends, this is a value-trap candidate rather than an exceptional growth holding.",
+    "key_strengths": [
+      "High promoter conviction at 69.74% — aligned management with long-term skin in the game",
+      "Conservative historical leverage (D/E 0.28) giving balance-sheet flexibility for the ongoing capex cycle",
+      "Broad, diversified therapeutic footprint across cardiology, oncology, ophthalmology, and API — reducing single-product revenue risk"
+    ],
+    "key_risks": [
+      "Earnings in structural decline: net profit collapsed from INR 1,146 Cr (FY21) to INR 582 Cr (FY25), -2.3% CAGR over 9 years",
+      "FY25 operating CF cratered to just INR 88 Cr (from INR 803 Cr in FY24), producing FCF of -466 Cr — a severe liquidity deterioration signal",
+      "Borrowings surged from INR 513 Cr to INR 1,489 Cr in one year (+190%) while finance costs compound at 35.9% CAGR — rising debt burden with no commensurate earnings growth"
+    ],
+    "red_flags": [
+      "Operating CF collapsed 89% YoY in FY25 to INR 88 Cr — highly anomalous and demands explanation (working capital buildup or one-time drag?)",
+      "EBITDA in FY25 (INR 1,052 Cr) is essentially unchanged from FY16 (INR 1,079 Cr) — nine years of zero EBITDA growth is incompatible with any growth framework",
+      "CWIP jumped from INR 524 Cr to INR 903 Cr in FY25 alongside a debt spike — heavy capex without proven ROI visibility"
+    ],
+    "detailed_analysis": "From my scuttlebutt perspective, Alembic tells a story of a capable manufacturer that over-invested in capacity (peak CWIP of INR 2,304 Cr in FY22) during the US generics boom but failed to translate that into durable earnings power. Revenue has grown at only 8.6% CAGR since FY16 — a third of my 20-30% threshold — while operating income and EBITDA show a 9-year CAGR of approximately zero. The profit peak of INR 1,146 Cr in FY21 has not been revisited; FY25 net profit of INR 582 Cr is nearly 50% below that high. This is not a growth company; it is a cyclical business masquerading in a growth sector. ROE of 11.4% is nearly half my 20% minimum, signaling that the capital deployed in this massive investment cycle is not yet earning its cost.\n\nThe FY25 cash flow data is particularly alarming. Operating CF of just INR 88 Cr against net profit of INR 582 Cr implies massive working capital deterioration or earnings quality issues. Free cash flow of -466 Cr combined with a sudden surge in borrowings to INR 1,489 Cr from INR 513 Cr suggests the new capex cycle (CWIP rising again to INR 903 Cr) is being funded with debt at exactly the wrong moment in their earnings cycle. Unless management can demonstrate that this new capacity translates into a step-change in US injectable or oncology revenues — with clear regulatory approvals in the pipeline — I see no catalyst for the earnings recovery Fisher-style investing demands. At 23x trailing earnings for a business with flat 9-year profit growth, valuation offers no margin of safety either.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 48700,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07318920000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9146,
+      "cache_read_input_tokens": 11159,
+      "output_tokens": 2369,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9146,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 319,
+          "cache_read_input_tokens": 9105,
+          "cache_creation_input_tokens": 2095,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2095
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

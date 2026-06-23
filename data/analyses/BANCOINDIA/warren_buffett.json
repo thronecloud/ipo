@@ -1,0 +1,69 @@
+{
+  "symbol": "BANCOINDIA",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T16:41:16.317042Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Banco Products is a competent, high-ROE auto parts manufacturer (32%+ ROE, 12.1% revenue CAGR) at a reasonable 18.7x P/E, but the cyclicality of auto components, a sharp five-fold debt surge (₹14 Cr → ₹729 Cr in four years), and erratic free cash flow prevent it from meeting my standard of a wonderful business at a fair price. I'd watch from the sidelines until capital discipline improves.",
+    "key_strengths": [
+      "Exceptional capital returns: ROE/ROCE consistently above 32%, rare for a capital-intensive auto-parts manufacturer",
+      "Sustained compounding: net profit CAGR of 17.8% over 9 years with expanding operating margins (12.57% today vs sub-10% in 2020)",
+      "High promoter conviction at 67.88% with a 64-year operating history and diversified end-markets spanning EVs, data-center gensets, and agriculture"
+    ],
+    "key_risks": [
+      "Cyclical auto-parts exposure: net profit fell from ₹117 Cr (2018) to ₹69 Cr (2019) in one year — earnings are not truly recession-resistant",
+      "Debt explosion without clear explanation: borrowings leapt from ₹14 Cr (2021) to ₹729 Cr (2025), finance costs growing at 27% CAGR — capital allocation discipline is questionable",
+      "Free cash flow is unreliable: FCF swung from +₹363 Cr (2024) to just ₹86 Cr (2025) against ₹392 Cr net profit, implying heavy working-capital consumption or opaque acquisition spend"
+    ],
+    "red_flags": [
+      "Total assets ballooned from ₹1,982 Cr to ₹3,078 Cr in a single year (FY25) — likely a large acquisition or asset purchase not transparently explained in available data",
+      "Finance costs growing at 27.1% CAGR far outpaces revenue growth of 12.1%, suggesting debt is being added unproductively",
+      "FY25 FCF of ₹86 Cr vs net profit of ₹392 Cr — a 78% accruals gap is a red flag for earnings quality"
+    ],
+    "detailed_analysis": "Banco Products ticks several of my fundamental boxes: a 32%+ ROE sustained over many years, a 17.8% net profit CAGR, high gross margins (46.5%) unusual for a manufacturer, and a long operational track record since 1961. The P/E of 18.7x and EV/EBITDA of 15.6x are not offensive for a business of this quality. Promoter ownership at 67.88% signals alignment. The product line — radiators, gaskets, coolers — serves essential thermal and sealing functions across diverse end-markets including the emerging EV and data-centre segments, which provides a degree of secular tailwind.\n\nHowever, two things keep me from buying today. First, auto-parts manufacturing is inherently cyclical and commoditized at the margins — when the auto cycle turns (as it did in 2019-20), earnings can compress 40% in a year. Second, and more importantly, the balance sheet changed dramatically in FY25: total debt nearly doubled to ₹729 Cr and total assets surged by ₹1,100 Cr in a single year, yet operating cash flow was only ₹164 Cr and FCF collapsed to ₹86 Cr. Without a clear explanation for this capital deployment — acquisition, greenfield expansion, or working-capital trap — I cannot price the risk correctly. I prefer businesses I can understand completely, and right now the FY25 balance sheet raises more questions than the income statement answers.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 56574,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08775405,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11383,
+      "cache_read_input_tokens": 9096,
+      "output_tokens": 2822,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11383
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 580,
+          "cache_read_input_tokens": 9096,
+          "cache_creation_input_tokens": 2287,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2287,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

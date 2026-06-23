@@ -1,0 +1,69 @@
+{
+  "symbol": "544349",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-20T09:51:05.953414Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "H.M. Electro looks statistically cheap at 7.1x P/E (earnings yield ~14%) but fails the Magic Formula's critical second test catastrophically: ROE of 0.17% signals essentially zero return on capital. A cheap company that can't compound capital is a value trap, not a bargain.",
+    "key_strengths": [
+      "Low headline P/E of 7.12 implies earnings yield ~14%, above the 12% threshold",
+      "Promoter holding of 73.07% signals strong skin-in-the-game",
+      "Turnkey infra/O&M model offers recurring revenue potential"
+    ],
+    "key_risks": [
+      "ROE of 0.17% is effectively zero — business destroys value on a cost-of-capital basis",
+      "Civil construction is capex-heavy with long working-capital cycles, crushing true ROIC",
+      "Tiny INR 52.6 Cr market cap = thin liquidity and concentration risk"
+    ],
+    "red_flags": [
+      "ROE 0.17% — orders of magnitude below the 20% ROIC Magic Formula benchmark",
+      "P/E cheapness likely reflects one-time earnings or unsustainable margin, not genuine mispricing",
+      "Civil construction sector typically has receivable-heavy balance sheets that distort EBIT quality"
+    ],
+    "detailed_analysis": "The Magic Formula requires a stock to be BOTH cheap AND good. H.M. Electro clears only half the bar. Earnings yield at ~14% (inverse of 7.12 P/E) is attractive in isolation, but ROE of 0.17% is a flashing red light — the company is barely generating any return on shareholder capital, let alone the >20% ROIC threshold I look for. In civil construction, working capital (receivables, retention money, WIP) and fixed assets are large denominators, so true Return on Capital is likely even worse than ROE suggests. Buying cheap businesses that earn sub-par returns is exactly the mistake the Magic Formula was designed to prevent.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 20445,
+    "model_used": "opus",
+    "total_cost_usd": 0.09178025000000001,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8889,
+      "cache_read_input_tokens": 13488,
+      "output_tokens": 1178,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8889,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 80,
+          "cache_read_input_tokens": 10618,
+          "cache_creation_input_tokens": 1141,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1141
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

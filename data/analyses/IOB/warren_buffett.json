@@ -1,0 +1,69 @@
+{
+  "symbol": "IOB",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-19T12:56:51.237176Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Indian Overseas Bank is a government-owned PSU bank where the promoter holds 92.44% — meaning capital allocation is driven by New Delhi, not economics. With ROE of 11.4%, a forward P/E of 38.8x (implying earnings will collapse from current levels), and a structural inability to compete on talent or technology with private banks, this is a business I would not own at any price.",
+    "key_strengths": [
+      "Profits have grown from INR 758 Cr (FY21) to INR 3,396 Cr (FY25), reflecting resolution of the massive NPA crisis that plagued PSU banks for years",
+      "P/B of 1.97x and P/E of 13.6x trailing appear surface-level reasonable for a bank that is finally profitable",
+      "Large branch network and government backing provides implicit liquidity support that private peers lack"
+    ],
+    "key_risks": [
+      "Forward P/E of 38.8x vs trailing 13.6x is a catastrophic red flag — analysts expect FY26 earnings to fall precipitously, likely due to credit costs normalising upward",
+      "ROE of 11.4% is structurally inadequate for a bank; private sector peers earn 15-20%+ ROE with better technology, lower cost-to-income, and no political lending mandates",
+      "Government ownership at 92.44% means management cannot make optimal capital allocation decisions — directed lending, employee expansion, and recapitalisation are all politically driven"
+    ],
+    "red_flags": [
+      "Forward P/E of 38.84 against trailing P/E of 13.6 — this gap implies a ~60% earnings decline is expected, making the stock far more expensive than it appears",
+      "OCF was deeply negative in FY23 (-INR 13,655 Cr) and FY24 (-INR 1,119 Cr) — banking OCF is noisy but sustained negative OCF indicates aggressive loan book expansion funded by borrowed money",
+      "Total debt jumped from INR 20,804 Cr (2023) to INR 40,282 Cr (2025) — a near-doubling of borrowings in two years signals rapid balance sheet expansion that could mask deteriorating asset quality"
+    ],
+    "detailed_analysis": "I have always avoided government-owned enterprises. The chairman of a PSU bank answers to a minister, not to shareholders. Staffing, branch expansion, agricultural loan waivers — none of these decisions are made by asking 'what generates the best return on equity?' IOB's ROE of 11.4% confirms this: a decade of reforms and this is the best they can deliver in a good credit cycle. When the cycle turns, the government will need to recapitalise again.\n\nThe forward P/E discrepancy is perhaps the most alarming data point in this entire set of five stocks. The market is pricing in a near-collapse of earnings in FY26 — if that is correct, then the stock trading at INR 35 is not cheap at all. If it is wrong, the bank is still a mediocre compounder at best. Either way, I see no case for ownership.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 123404,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.18002430000000003,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 20972,
+      "cache_read_input_tokens": 15301,
+      "output_tokens": 6452,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 20972,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 626,
+          "cache_read_input_tokens": 15301,
+          "cache_creation_input_tokens": 5671,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 5671
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

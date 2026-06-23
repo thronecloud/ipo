@@ -1,0 +1,69 @@
+{
+  "symbol": "JKTYRE",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-19T13:02:27.008643Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "JK Tyre is a capital-hungry tyre manufacturer with a D/E ratio of 0.90, ROE of only 11.1%, and net profit that has compounded at a mere 1% annually over nine years — this is a fair business at best, competing in a commoditized industry against MRF, Apollo, and CEAT with no discernible moat. The combination of high leverage, weak returns on capital, and razor-thin free cash flow generation (INR 128 Cr in FY25 on INR 14,693 Cr revenue) makes this unattractive to me.",
+    "key_strengths": [
+      "Revenue has scaled to INR 14,693 Cr (8.8% CAGR) with forward P/E improving to 12.2x, suggesting near-term earnings recovery potential",
+      "OCF was positive all 5 years, and the company has been reducing debt from INR 5,549 Cr (FY2020) to INR 4,821 Cr (FY2025)",
+      "Presence across multiple tyre categories (truck, PCR, farm, 2W) provides some revenue diversification"
+    ],
+    "key_risks": [
+      "D/E of 0.90 is dangerously high for a cyclical manufacturing business — rubber prices or demand disruption can quickly impair debt service",
+      "ROE of 11.1% and ROCE of 12.8% are well below my 15% minimum — this business does not earn adequate returns on the capital it deploys",
+      "Net profit collapsed to INR 63 Cr in FY2018 and has been wildly volatile — 806 Cr in FY24 falling to 509 Cr in FY25 — I cannot build a 10-year earnings model with confidence"
+    ],
+    "red_flags": [
+      "Nine-year net profit CAGR of just 1% — shareholders have barely kept pace with inflation",
+      "FCF shrunk to only INR 128 Cr in FY2025 on INR 14,693 Cr revenue — capital intensity is devouring cash that should belong to owners",
+      "No pricing power in a competitive tyre market: rubber is a commodity input, OEM customers are powerful, and Chinese competition looms"
+    ],
+    "detailed_analysis": "The tyre business is one I understand — it requires enormous capital, competes on price, faces powerful OEM buyers and commodity input costs, and has limited ability to raise prices without losing share. JK Tyre's financials confirm this reality: despite growing revenue from INR 6,898 Cr to INR 14,693 Cr over nine years, net profit has moved from INR 467 Cr to INR 509 Cr — essentially zero real earnings growth for shareholders. All the revenue growth has been absorbed by debt costs, capex, and competitive pricing pressure.\n\nThe balance sheet carries INR 4,821 Cr in debt against INR 5,240 Cr of equity. In a severe economic downturn or a spike in natural rubber prices, this company would face serious stress. MRF — which I consider the best-run tyre company in India — has almost no debt and generates far superior returns. If I cannot buy the best business in a sector at a fair price, I have no interest in buying the second or third-best at any price.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 188679,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.24100680000000002,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 24830,
+      "cache_read_input_tokens": 16251,
+      "output_tokens": 9534,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 24830,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 840,
+          "cache_read_input_tokens": 16251,
+          "cache_creation_input_tokens": 8579,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8579
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

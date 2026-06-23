@@ -1,0 +1,69 @@
+{
+  "symbol": "PARKHOSPS",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T21:57:17.008283Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Park Medi World earns a decent ~20% ROCE but trades at an earnings yield of only ~3.8% (EBIT INR 375 Cr / EV ~INR 9,929 Cr), making it deeply expensive by Magic Formula standards. The valuation alone disqualifies this from the formula — you're paying a premium price for merely average capital returns.",
+    "key_strengths": [
+      "ROCE of 20.4% and operating margins of 20.5% show a genuinely profitable hospital network with pricing power",
+      "Revenue CAGR of 16.1% (2021–2025) demonstrates consistent top-line expansion across the network",
+      "NABH-accredited multi-super-specialty brand under 'Park' in the high-demand NCR/Gurugram market provides regional moat"
+    ],
+    "key_risks": [
+      "Earnings yield of ~3.8% (EV/EBIT ≈ 26.5x) is catastrophically low by Magic Formula standards — paying growth-company prices for slow earnings growth",
+      "Net profit CAGR of only 3.3% (2021–2025) vs. revenue CAGR of 16.1% — finance costs (26.3% CAGR) and depreciation are consuming operating leverage",
+      "FCF conversion is poor: only INR 66 Cr FCF in FY25 against INR 213 Cr net profit — heavy capex (INR 159 Cr in FY25) and CWIP of INR 54 Cr signal capital-intensive expansion drag"
+    ],
+    "red_flags": [
+      "EV/EBIT of ~26.5x implies earnings yield of 3.8% — well below the 12% minimum threshold for Magic Formula attractiveness",
+      "Net profit collapsed to INR 152 Cr in FY24 from INR 228 Cr in FY23 — earnings volatility despite growing revenue signals operational fragility",
+      "Finance costs nearly tripled from INR 24 Cr (2021) to INR 61–72 Cr (2024–25), with D/E at 0.58 and borrowings still rising"
+    ],
+    "detailed_analysis": "Magic Formula verdict is straightforward: Park Medi World fails on the cheapness leg entirely. Enterprise Value of ~INR 9,929 Cr (market cap INR 9,350 Cr + debt INR 682 Cr – cash INR 103 Cr) against EBIT of INR 375 Cr gives an earnings yield of just 3.8%, roughly one-third of the 12% minimum I require. The P/E of 44.2x and EV/EBITDA of 22.16x confirm the market is pricing in years of future growth that the business hasn't demonstrated it can deliver — net profit has only compounded at 3.3% over four years, barely ahead of inflation.\n\nOn quality, the business is decent but not exceptional. ROCE of 20.4% and gross margins of 60.8% suggest real competitive advantages in its NCR hospital network. However, FCF conversion is alarming — INR 66 Cr free cash flow against INR 213 Cr net profit means only ~31% of reported earnings actually convert to cash, with INR 159 Cr in capex consuming most operating cash flows. The expansion is ongoing (CWIP jumped to INR 54 Cr), which may improve returns later, but right now you are buying future potential at a steep premium. The Magic Formula rewards businesses that are both good AND cheap; Park Medi World is modestly good but clearly expensive.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 43880,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07544745,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10533,
+      "cache_read_input_tokens": 8649,
+      "output_tokens": 2223,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10533,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 381,
+          "cache_read_input_tokens": 8649,
+          "cache_creation_input_tokens": 1884,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1884
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

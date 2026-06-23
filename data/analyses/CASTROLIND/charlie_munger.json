@@ -1,0 +1,68 @@
+{
+  "symbol": "CASTROLIND",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-19T12:55:53.621626Z",
+  "analysis": {
+    "score": 7,
+    "recommendation": "BUY",
+    "investment_thesis": "Castrol India is a textbook brand tollbooth — ROCE of 67.97%, operating margins of 24.94%, near-zero debt, and FCF of ₹993 Cr (exceeding net profit of ₹950 Cr) for a business requiring almost no incremental capital. At 19x P/E and 12.6x EV/EBITDA, you are paying a fair price for an exceptional business.",
+    "key_strengths": [
+      "ROCE of 67.97% is among the highest I have encountered — this business earns extraordinary returns because the Castrol brand and distribution network constitute real, durable competitive advantages requiring minimal tangible capital",
+      "FCF of ₹993 Cr vs net profit ₹950 Cr means FCF/NI > 100% — earnings quality is genuine, not manufactured; the company literally returns more cash than it reports as profit",
+      "Promoter (BP/Castrol Ltd) holds 51% and has zero tolerance for leverage (D/E 0.03); the company returned ₹1,315 Cr in financing cash flow in FY2025 alone, demonstrating superb capital discipline"
+    ],
+    "key_risks": [
+      "Electric vehicles are an existential long-term threat — EVs require no engine oil, and India's EV penetration, though currently low, will compound; Castrol's pivot to EV thermal fluids is early-stage and unproven at scale",
+      "Revenue growth of only 6.2% CAGR (3Y) is modest; this is a mature, slow-growing business that reinvests little and pays out almost everything — value is income, not capital appreciation",
+      "Subsidiary structure (BP owns 51%) limits strategic flexibility — Castrol India cannot make bold independent moves; all major decisions flow through a parent with its own global priorities"
+    ],
+    "red_flags": [
+      "Reported ROE of 0.45% appears to be a data anomaly inconsistent with ₹950 Cr net profit on ~₹1,900 Cr equity; implies potential one-time equity restatement or large special dividend that inflated apparent distributions — warrants verification",
+      "Total equity dropped from ₹2,278 Cr (FY2024) to ₹1,900 Cr (FY2025) despite ₹950 Cr of profits, suggesting ₹1,328 Cr paid out — while shareholder-friendly, this leaves less equity cushion"
+    ],
+    "detailed_analysis": "Charlie Munger's favourite holding is a business that earns high returns on capital, requires little reinvestment, and has a durable brand moat. Castrol India fits this description almost perfectly. The lubricants market is not glamorous, but Castrol's brand allows it to charge premium prices (operating margin 24.94%), collect cash, and return it to owners. ROCE of 67.97% means the business is essentially a royalty stream attached to India's installed base of internal combustion engines.\n\nThe one honest concern is secular: EVs will gradually erode demand for engine oil. India has ~330 million registered vehicles with slow EV penetration, so this is a 10-15 year issue, not a 2-year one. At 19x P/E and 12.6x EV/EBITDA, the market is already discounting limited growth. This is the correct framing: buy a high-quality cash generator at a reasonable price, collect dividends, and let the terminal value question sort itself out over a decade. Not a 9/10 compounding machine given the growth ceiling, but a 7/10 quality business at a genuinely fair price.",
+    "metrics_evaluated": {
+      "moat_strength": "strong",
+      "management_quality": "good",
+      "financial_health": "excellent",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 208923,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.27467865,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 26199,
+      "cache_read_input_tokens": 15378,
+      "output_tokens": 11454,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 26199,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 559,
+          "cache_read_input_tokens": 15378,
+          "cache_creation_input_tokens": 10821,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 10821
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "symbol": "FEDFINA",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T17:25:08.578300Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Fedbank Financial Services is a fast-growing NBFC with 32% revenue CAGR, but its ROE of 8.84% is well below my 15% threshold and profits actually declined in FY2025 (₹245 Cr → ₹225 Cr) despite 30% revenue growth — a classic warning sign of margin deterioration. At D/E of 3.83 with no demonstrated pricing power or durable moat, this is a leveraged commodity lender, not a compounding machine.",
+    "key_strengths": [
+      "Federal Bank parentage (60.79% promoter stake) provides funding access and regulatory credibility",
+      "Strong top-line momentum: revenue CAGR of 32.2% from ₹854 Cr to ₹1,973 Cr over three years",
+      "Forward P/E of 11.35 offers some valuation cushion if asset quality holds and margins recover"
+    ],
+    "key_risks": [
+      "ROE of 8.84% and ROCE of 12.40% fail the quality hurdle — this business destroys value at the margin relative to its cost of equity",
+      "FY2025 earnings contraction (net profit -8% YoY, EBITDA -7% YoY) while AUM grew 19%, pointing to rising credit costs or NIM compression",
+      "D/E of 3.83 with 100% negative free cash flow history (0/4 years positive OCF) means survival depends on continuous external financing — dangerous in a credit tightening cycle"
+    ],
+    "red_flags": [
+      "Profit declined in FY2025 despite 30% revenue growth — operating leverage is running in reverse",
+      "Near-zero FII ownership (0.66%) signals institutional smart money has no conviction here",
+      "Persistently negative FCF every single year (-₹605, -₹1,489, -₹789, -₹996 Cr) — the business consumes capital relentlessly",
+      "No disclosed NPA/GNPA data; margin compression without asset quality context is a black box"
+    ],
+    "detailed_analysis": "Invert first: what would make this a terrible investment? A leveraged NBFC with sub-10% ROE, shrinking profits, no pricing power, zero free cash flow, and a business model indistinguishable from dozens of competitors. That is precisely what Fedbank Financial Services looks like today. The 32% revenue CAGR is impressive on the surface, but growth without returns is a treadmill — the company raised equity in FY2024 (equity jumped from ₹1,356 Cr to ₹2,261 Cr) and still managed to earn only 8.84% ROE. A business that can't earn above its cost of capital while borrowing at 3.83x equity is consuming, not creating, shareholder wealth.\n\nThe FY2025 data is the most alarming signal: revenue grew 30% to ₹1,973 Cr yet net profit fell 8% to ₹225 Cr. This scissors pattern — expanding book, shrinking bottom line — typically means rising credit costs (provisions eating into NIM) or funding cost pressure. Without NPA disclosures in this dataset, it's a black box, and I refuse to invest in black boxes. The competitive dynamics of Indian NBFC lending are brutal — gold loans, LAP, SME loans are all contested by banks, fintechs, and dozens of specialized lenders. There is no moat here, only leverage. Pass.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 53131,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0812283,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10650,
+      "cache_read_input_tokens": 8356,
+      "output_tokens": 2585,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10650
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 336,
+          "cache_read_input_tokens": 8356,
+          "cache_creation_input_tokens": 2294,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2294,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

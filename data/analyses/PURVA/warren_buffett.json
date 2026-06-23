@@ -1,0 +1,70 @@
+{
+  "symbol": "PURVA",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T22:04:14.190670Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Puravankara is a highly leveraged Indian real estate developer where finance costs of ₹555 Cr in FY25 exceed operating income of ₹291 Cr, producing a ₹183 Cr net loss and negative free cash flow of -₹572 Cr. With a D/E of 2.75, shrinking equity, and only 2.7% revenue CAGR over nine years, this is a capital-intensive, cyclical business with no discernible moat — precisely the kind I avoid.",
+    "key_strengths": [
+      "High promoter ownership at 75% signals skin in the game",
+      "Gross margins of 44% and operating margins of ~19% indicate decent project-level economics",
+      "FII ownership at 16.7% shows institutional interest and reasonable liquidity"
+    ],
+    "key_risks": [
+      "Debt burden is existential: borrowings surged to ₹4,497 Cr in FY25 from ₹2,670 Cr in FY20 while equity eroded from ₹1,914 Cr to ₹1,619 Cr",
+      "Finance costs (₹555 Cr FY25) growing at 9.6% CAGR far outpace revenue growth of 2.7%, making profitability structurally improbable",
+      "Operating cash flow swung to -₹531 Cr in FY25 from +₹896 Cr in FY24 — extreme volatility signals project-completion lumpiness and execution risk"
+    ],
+    "red_flags": [
+      "ROE of -10% and net loss of ₹183 Cr in FY25 — equity is being consumed",
+      "Finance costs exceed operating income in FY25 (₹555 Cr vs. ₹291 Cr), meaning operations cannot service debt from earnings",
+      "Free cash flow deeply negative at -₹572 Cr in FY25 after a decade of erratic, mostly thin positive FCF",
+      "Total assets grew 90% (₹8,071→₹15,335 Cr) since 2020 funded almost entirely by debt, not retained earnings"
+    ],
+    "detailed_analysis": "Puravankara embodies every characteristic I instinctively avoid. Real estate development is capital-intensive, cyclical, and commoditized — there is no brand moat, no switching cost, no network effect. Revenue has compounded at a mere 2.7% over nine years, barely keeping pace with inflation, while debt has grown 68% since FY20. The company earns a ROCE of just 6% — below any reasonable cost of capital — meaning every rupee reinvested destroys value. The P/B of 3.3x for a loss-making, over-leveraged developer trading at EV/EBITDA of 21x is not a bargain; it is a value trap.\n\nThe FY25 numbers are alarming in their deterioration. Finance costs of ₹555 Cr consumed not just profits but operating income itself, explaining the ₹183 Cr net loss. Operating cash flow collapsed to -₹531 Cr from +₹896 Cr just one year prior, and the company had to raise ₹354 Cr in net financing to stay afloat. When a business must borrow to fund operations, the equity holder is subordinated to creditors. At Berkshire, I would not touch this business at any price without a dramatic deleveraging, demonstrated earnings recovery, and a price closer to distressed-asset levels — none of which apply at ₹225/share.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 35900,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07291575,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10771,
+      "cache_read_input_tokens": 8935,
+      "output_tokens": 1989,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10771,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 205,
+          "cache_read_input_tokens": 8935,
+          "cache_creation_input_tokens": 1836,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1836
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

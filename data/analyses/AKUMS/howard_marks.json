@@ -1,0 +1,69 @@
+{
+  "symbol": "AKUMS",
+  "persona": "howard_marks",
+  "persona_display_name": "Howard Marks",
+  "analyzed_at": "2026-04-18T16:19:19.822256Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Akums is a contract pharma manufacturer with a freshly cleaned balance sheet post-IPO, but at 26.5x trailing P/E, 16.5x EV/EBITDA (actual), and only 2.4% FCF yield on flat/declining revenue, the price already reflects a recovery that hasn't fully materialized. There is no margin of safety here for a business with a history of violent earnings swings.",
+    "key_strengths": [
+      "Balance sheet dramatically deleveraged post-IPO: debt fell from INR 619 Cr (FY23) to INR 88 Cr (FY25), D/E now 0.03x",
+      "OCF positive all 5 years and recovering strongly: INR 465 Cr in FY25, consistent with EBITDA of INR 505 Cr",
+      "High promoter holding at 75.3% signals conviction; CDMO model benefits from India's pharma outsourcing tailwind"
+    ],
+    "key_risks": [
+      "Revenue is stagnant-to-declining: INR 4,178 Cr (FY24) → INR 4,118 Cr (FY25), zero organic growth priced at growth multiples",
+      "Structurally thin operating margins of 9.2% leave almost no buffer — the FY22 loss of INR 251 Cr and near-zero FY24 PAT (INR 1 Cr vs. INR 516 Cr EBITDA) expose large below-the-line volatility risk",
+      "FCF yield of only 2.4% (INR 201 Cr FCF / INR 8,356 Cr market cap) is less than half the 6-8% threshold required for adequate compensation"
+    ],
+    "red_flags": [
+      "Recent IPO (August 2024) — equity surged from INR 710 Cr to INR 3,149 Cr; IPOs are sold at peak promoter optimism, not investor-favorable prices",
+      "PAT of INR 1 Cr in FY24 despite INR 516 Cr EBITDA signals large but opaque below-EBITDA charges; requires deeper investigation",
+      "Capex remains heavy at INR 272 Cr in FY25 with CWIP of INR 158 Cr — capacity being built on an already-flat revenue base is a value trap risk if demand disappoints"
+    ],
+    "detailed_analysis": "Akums is India's largest CDMO by revenue, but the contract manufacturing model is structurally low-margin — 9.2% operating margins and 12.3% EBITDA margins are far below branded pharma peers. The FY22 loss of INR 251 Cr and FY24 near-zero PAT despite healthy EBITDA are unexplained by finance costs alone (INR 51 Cr), suggesting recurring one-off charges or accounting complexity that raises second-order questions about earnings quality. Revenue has compounded at less than 4% annually from FY22–FY25; the market is pricing a recovery story, not the current reality.\n\nThe post-IPO balance sheet cleanup (debt: INR 619 Cr → INR 88 Cr) is genuinely positive, but it came via dilution — not operational cash generation. At EV/EBITDA of ~16.5x (actual calculation: EV ~INR 8,342 Cr / EBITDA INR 505 Cr), you are paying a quality premium for a business whose margins, revenue trajectory, and earnings history do not yet justify it. The downside scenario — any macro slowdown, pricing pressure from large pharma customers, or capex overhang on flat demand — could compress multiples sharply with limited fundamental support. The asymmetry here is unfavorable: limited upside from current pricing, meaningful downside if the recovery thesis slips.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 59941,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08872215,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9747,
+      "cache_read_input_tokens": 10873,
+      "output_tokens": 3260,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9747,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 307,
+          "cache_read_input_tokens": 8819,
+          "cache_creation_input_tokens": 2982,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2982
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

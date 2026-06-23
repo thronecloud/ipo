@@ -1,0 +1,70 @@
+{
+  "symbol": "CSSL",
+  "persona": "rakesh_jhunjhunwala",
+  "persona_display_name": "Rakesh Jhunjhunwala",
+  "analyzed_at": "2026-04-21T08:02:21.165791Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "CSSL is a low-margin facility management company with 24% revenue CAGR (FY23–25) but deteriorating profitability — net profit *fell* from ₹12 Cr to ₹10 Cr even as revenue surged 37% in FY25, while debt more than doubled and free cash flow cratered to -₹26 Cr. There is no moat, no earnings leverage, and no India growth story compelling enough to justify the accelerating capital consumption.",
+    "key_strengths": [
+      "Revenue momentum is real — 24% CAGR FY23–25 and 37% growth in FY25 shows contract wins",
+      "Promoter holding of 73% is high and stable, reducing governance overhang",
+      "ROCE of 20.4% on paper looks decent for a services business"
+    ],
+    "key_risks": [
+      "Borrowings exploded from ₹53 Cr to ₹128 Cr (+141%) in one year; D/E now ~0.94x, well above my 0.6x comfort threshold",
+      "Free cash flow deeply negative all 3 years (-₹3, -₹7, -₹26 Cr) — business is burning cash faster as it grows",
+      "Finance costs rose 2.5x (₹4→₹10 Cr) crushing net profit, with other income turning negative (-₹2 Cr) — earnings quality is worsening"
+    ],
+    "red_flags": [
+      "Net profit DECLINED (₹12→₹10 Cr) on 37% revenue growth — zero operating leverage in this model",
+      "Operating CF negative in 2 of 3 years; FY25 OCF of -₹22 Cr is alarming for a services business that should be asset-light",
+      "Financing CF of +₹37 Cr in FY25 means the company is funding ordinary operations with debt/equity — classic cash trap",
+      "CWIP jumped from ₹8 Cr to ₹22 Cr with no clear high-return asset being created"
+    ],
+    "detailed_analysis": "Clear Secured is a ₹243 Cr micro-cap in facility management — security services, staffing, telecom, IT support. The sector has no structural moat: it is contract-by-contract, labor-intensive, and inherently commoditized. EBITDA margins are stuck at 6–7%, which leaves almost nothing after interest and tax. The 37% revenue growth in FY25 is the one positive headline, but it came at the cost of doubling the debt load (₹53→₹128 Cr) and producing *less* net profit than the prior year. This is the opposite of operating leverage — scale is not improving economics here.\n\nThe cash flow picture is the dealbreaker. A services business should be cash-generative by nature; CSSL has produced negative free cash flow every single year, with FY25 FCF hitting -₹26 Cr — a business that cannot fund itself from operations is structurally fragile. The jump in finance costs to ₹10 Cr and the reversal of other income to -₹2 Cr suggest the balance sheet stress is feeding into the P&L. At ₹18.8x P/E, the market is pricing in a turnaround that the numbers do not support. I see no reason to be in this business when far better India growth stories exist at similar or cheaper valuations.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 43280,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.06834795,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 7989,
+      "cache_read_input_tokens": 10184,
+      "output_tokens": 2355,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 7989,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 412,
+          "cache_read_input_tokens": 8081,
+          "cache_creation_input_tokens": 2011,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2011
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "AARTIIND",
+  "persona": "howard_marks",
+  "persona_display_name": "Howard Marks",
+  "analyzed_at": "2026-04-19T06:17:53.933830Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Aarti Industries is a classic cycle-peak-to-bust story: net profit collapsed from INR 1,186 Cr in FY22 to INR 331 Cr in FY25 while the stock still trades at 43x P/E and 18.4x EV/EBITDA on the hope of a specialty chemicals recovery. The price is paying for a recovery that may be years away while the underlying business earns a 6% ROE — that is an unacceptable risk/reward.",
+    "key_strengths": [
+      "Established specialty chemicals platform with complex multi-step chemistry that creates some switching costs for pharma and agrochemical customers",
+      "Revenue base of INR 7,271 Cr with 10.3% CAGR over 9 years shows the business is not structurally broken",
+      "Debt/Equity at 0.70x is manageable; the company is not at existential risk"
+    ],
+    "key_risks": [
+      "Earnings have collapsed 72% from peak (INR 1,186 Cr FY22 → INR 331 Cr FY25) with contracting EBITDA trend — paying 43x P/E on trough earnings that may not recover to peak",
+      "Finance costs have nearly tripled (INR 86 Cr FY21 → INR 275 Cr FY25) while EBITDA stagnates; operating leverage works in reverse here",
+      "Free cash flow has been negative every year for 5 years; massive capex (CWIP of INR 1,596 Cr) risks value destruction if the capacity cycle overshoots demand"
+    ],
+    "red_flags": [
+      "ROE of only 6.03% at P/B of 2.81 — the business is earning roughly its cost of equity at best; there is no economic profit justifying this premium",
+      "Net profit CAGR of only 2.4% over 9 years while the stock has been priced as a growth compounder — a fundamental mismatch",
+      "Chinese specialty chemical competition is structurally pressuring margins; the 2022 peak was a COVID-era aberration, not the new normal"
+    ],
+    "detailed_analysis": "The specialty chemicals boom of FY22 (net profit INR 1,186 Cr) was a one-time gift from supply chain disruptions — the market priced it as permanent, and the stock never fully de-rated when reality intervened. Now at INR 441, you are paying 43x earnings for a business earning 6% ROE with contracting EBITDA (FY22: INR 1,687 Cr → FY25: INR 986 Cr) and no free cash flow. This is the second-level question: analysts are bullish on recovery, forward P/E of 28x assumes significant margin expansion — but that is precisely the consensus that is already priced in.\n\nThe structural issue is Chinese overcapacity in benzene-chain intermediates, which is not a temporary headwind. Aarti has been investing heavily (INR 1,300-1,400 Cr capex annually) with CWIP of INR 1,596 Cr, betting on a demand recovery that may arrive later and shallower than expected. Meanwhile, rising interest costs eat into a thin earnings base. At 18.4x EV/EBITDA, the stock needs perfect execution on the recovery thesis to merely justify current prices — there is no margin of safety. I would not pay 43x for 6% ROE under any circumstances.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 186805,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.24013410000000002,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 24466,
+      "cache_read_input_tokens": 15642,
+      "output_tokens": 9579,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 24466,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 641,
+          "cache_read_input_tokens": 15642,
+          "cache_creation_input_tokens": 8824,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8824
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

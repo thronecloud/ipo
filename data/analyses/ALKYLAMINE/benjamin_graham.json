@@ -1,0 +1,70 @@
+{
+  "symbol": "ALKYLAMINE",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T16:20:00.876249Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Alkyl Amines is an operationally excellent, near-debt-free specialty chemicals business — but at P/E 38.8x and P/B 5.24x it is priced for perfection, trading at roughly 3× my calculated Graham Number of ~INR 474. The intelligent investor demands a margin of safety, and none exists here at INR 1,438.",
+    "key_strengths": [
+      "Near-debt-free balance sheet — Total Debt just INR 6 Cr in FY2025 against equity of INR 1,402 Cr; debt-to-equity ~0.004x, the best possible position.",
+      "10+ consecutive years of positive net profit (FY2015–FY2025), satisfying Graham's core earnings continuity requirement.",
+      "Operating cash flow positive all 5 of the last 5 years; FY2025 FCF of INR 215 Cr demonstrates genuine cash generation after heavy capex cycle wound down."
+    ],
+    "key_risks": [
+      "Cyclical earnings — net profit fell 35% in FY2024 (INR 149 Cr) from FY2023 (INR 229 Cr), exposing commodity chemical pricing risk that Mr. Market has chosen to ignore.",
+      "Valuation leaves no room for error: Graham Number ≈ INR 474 (√(22.5 × EPS ~36 × BVPS ~274)); current price is 3× that figure — any margin compression repeats the FY2024 drawdown at catastrophic multiple.",
+      "Heavy reinvestment cycle (capex INR 247 Cr in FY2022, INR 303 Cr in FY2023) generated negative FCF those years; if new capacity adds supply before demand recovers, returns on incremental capital may disappoint."
+    ],
+    "red_flags": [
+      "P/E 38.8x — more than 2.5× my absolute ceiling of 15x; no margin of safety on earnings.",
+      "P/B 5.24x — more than 3.5× my threshold of 1.5x; the market pays INR 5.24 for every INR 1 of net assets.",
+      "Graham Number ~INR 474 vs. market price INR 1,438 — purchasing at a 203% premium to calculated intrinsic value.",
+      "FY2024 net profit of INR 149 Cr represents a 35% year-on-year collapse — confirming this is a cyclical business, not a defensive franchise."
+    ],
+    "detailed_analysis": "From a quantitative standpoint, Alkyl Amines fails every primary Graham filter decisively. The P/E of 38.8x is roughly 2.6× my outer limit of 15x; the P/B of 5.24x is 3.5× my 1.5x ceiling. The Graham Number, derived from trailing EPS of ~INR 36 and book value per share of ~INR 274, works out to approximately INR 474 — meaning the stock trades at a 203% premium to that figure. I do not invest at such prices regardless of business quality. Mr. Market is paying for a decade of future growth that has not yet been earned, and that is speculation, not investment.\n\nThe balance sheet, I will concede, is admirable. Total borrowings of INR 6 Cr against equity of INR 1,402 Cr, finance costs of just INR 1 Cr in FY2025, and interest coverage that is essentially infinite — these are the hallmarks of a conservatively financed enterprise. A decade of unbroken profitability also satisfies my earnings-continuity test. But virtue in the business does not excuse profligacy in the price. The FY2024 profit drop of 35% — to INR 149 Cr — is precisely the kind of cyclical vulnerability that destroys value when you have paid a speculative premium. The disciplined investor waits for Mr. Market to offer this fine business at a price that provides genuine protection of principal. At INR 1,438, he has not done so.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "excellent",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 51088,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07774829999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9370,
+      "cache_read_input_tokens": 11106,
+      "output_tokens": 2618,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9370,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 328,
+          "cache_read_input_tokens": 9056,
+          "cache_creation_input_tokens": 2364,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2364
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

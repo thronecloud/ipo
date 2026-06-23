@@ -1,0 +1,69 @@
+{
+  "symbol": "544626",
+  "persona": "howard_marks",
+  "persona_display_name": "Howard Marks",
+  "analyzed_at": "2026-04-20T11:04:09.119838Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Exato is a freshly-listed micro-cap IT services firm priced at 35x earnings on just INR 10 Cr of profit — a valuation that embeds heroic growth assumptions during peak small-cap euphoria. With rising borrowings (6→28 Cr in 2 years), near-zero FCF, and no operating history through a downturn, the risk/reward is deeply asymmetric to the downside.",
+    "key_strengths": [
+      "Strong headline ROE (28.2%) and ROCE (26.5%) on small capital base",
+      "Revenue grew 70% over 2 years (73→124 Cr) with margin expansion in FY25",
+      "Promoter holding at 54.73% provides reasonable skin-in-the-game"
+    ],
+    "key_risks": [
+      "P/E of 35x on 10 Cr PAT leaves zero margin of safety if growth disappoints",
+      "Borrowings quadrupled (6→28 Cr) while FCF collapsed (10→-20→0); growth is debt-funded",
+      "Micro-cap IT-ES is fragmented, low-moat, and vulnerable to client concentration shocks"
+    ],
+    "red_flags": [
+      "FCF negative/zero for two consecutive years despite reported PAT growth — earnings quality suspect",
+      "Recent listing (2025) coinciding with peak small-cap euphoria in India",
+      "Financing CF of +19 Cr in FY25 funding the business rather than operations"
+    ],
+    "detailed_analysis": "Second-level thinking here is straightforward: the market is pricing Exato as a high-quality compounder (35x P/E) while the cash flow statement tells a very different story. FY24 FCF was -20 Cr, FY25 FCF was essentially zero, and the company has been funding working capital and capex via a ballooning debt pile (6→17→28 Cr) and fresh equity (financing CF of +19 Cr in FY25). Reported ROE of 28% looks impressive, but on a 50 Cr equity base with 28 Cr debt, returns are being amplified by leverage on a business that hasn't yet demonstrated self-funding growth. This is the archetypal late-cycle Indian small-cap IPO — strong topline narrative, thin profits, priced to perfection.\n\nWhere are we in the cycle? Indian small/micro-caps in 2025-26 have seen the greed pendulum swing to an extreme. A client loss, wage-cost spike, or broader small-cap derating could easily compress this multiple to 12-15x on flat earnings, implying 50-65% downside to roughly INR 150-200. The upside case requires sustained 30%+ growth with margin expansion AND multiple maintenance — three things going right simultaneously. That is not asymmetric risk/reward; it is the opposite. Pass.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "insufficient_data",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 42601,
+    "model_used": "opus",
+    "total_cost_usd": 0.15945625000000002,
+    "usage": {
+      "input_tokens": 7,
+      "cache_creation_input_tokens": 11059,
+      "cache_read_input_tokens": 26755,
+      "output_tokens": 3077,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11059,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 148,
+          "cache_read_input_tokens": 12731,
+          "cache_creation_input_tokens": 1210,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1210
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

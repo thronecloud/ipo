@@ -1,0 +1,69 @@
+{
+  "symbol": "AAVAS",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-19T06:17:47.599707Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Aavas Financiers is a mortgage finance company — the Magic Formula explicitly excludes all financial companies, as their debt-funded lending model makes EBIT/EV and Net Working Capital ROIC meaningless constructs. The underlying business quality (29.7% net profit CAGR over 7 years, strong rural focus, 24.7% FII ownership) is notable, but I cannot score it on my framework.",
+    "key_strengths": [
+      "Net Profit CAGR of 29.7% over 7 years (INR 93 Cr FY18 → INR 574 Cr FY25) is genuinely exceptional compounding",
+      "High-quality institutional ownership: FII at 24.7% and DII at 14.3% signals external validation of business quality",
+      "Forward P/E of 13.56x vs trailing 21.8x implies accelerating earnings — if the 29%+ growth trend continues, the stock offers reasonable value on a forward basis"
+    ],
+    "key_risks": [
+      "ROE of 13.9% is below what I'd expect from a high-quality business — any financial company I'd consider investing in needs to sustainably earn 18%+ ROE",
+      "Total Debt has grown from INR 8,012 Cr (FY22) to INR 13,918 Cr (FY25) — 74% growth in borrowings outpaces equity growth",
+      "Finance Cost data for FY25 shows INR 5 Cr vs INR 828 Cr in FY24 — this appears to be a reporting anomaly/data error that clouds FY25 profitability analysis"
+    ],
+    "red_flags": [
+      "Magic Formula cannot be applied: financial company with debt as an operating input, not financial leverage",
+      "Operating CF negative for 0/5 years positive — again, this is standard for a growing lender, but makes FCF-based valuation impossible",
+      "Finance Cost FY25 of INR 5 Cr vs INR 828 Cr in FY24 is almost certainly a data error; FY25 reported profits may not be directly comparable"
+    ],
+    "detailed_analysis": "The core issue with Aavas is methodological: I cannot compute Earnings Yield or Return on Capital in a meaningful way for a mortgage lender. Loans receivable ARE the business assets, and wholesale borrowings ARE the cost of goods. Stripping these out to compute net working capital or EBIT produces nonsense. This is why Greenblatt explicitly excludes financial companies from the Magic Formula universe.\n\nQualitatively, Aavas has an interesting business targeting semi-urban and rural India — an underserved housing segment with long structural tailwinds. The 29.7% net profit CAGR over 7 years and strong asset growth (INR 7,657 Cr → INR 18,618 Cr) reflect real business building. The P/B of 2.28x is modest by HFC standards. But ROE of 13.9% and ROCE of 9.91% indicate this is not an exceptional return-on-capital business by my standards — it's a decent one. A specialist credit analyst focused on NIM expansion, asset quality, and disbursement growth would evaluate this better than I can.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 180544,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.25746959999999997,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 25350,
+      "cache_read_input_tokens": 15627,
+      "output_tokens": 10514,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 25350,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 679,
+          "cache_read_input_tokens": 15627,
+          "cache_creation_input_tokens": 9723,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 9723
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

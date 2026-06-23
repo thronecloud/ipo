@@ -1,0 +1,71 @@
+{
+  "symbol": "BLACKBUCK",
+  "persona": "vijay_kedia",
+  "persona_display_name": "Vijay Kedia",
+  "analyzed_at": "2026-04-18T16:46:56.972754Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "BlackBuck fails nearly every SMILE criterion — at INR 11,333 Cr market cap it is 10x+ outside Kedia's sweet spot, promoter holds only 25% (vs. required >50%), and the stock trades at 49x forward P/E while still posting a net loss of INR 9 Cr in FY25. The trucking-tech TAM is real, but there is no margin of safety at these prices for a company that only just turned EBITDA positive.",
+    "key_strengths": [
+      "Platform moat: 74% gross margins signal genuine SaaS-like economics for a trucking OS serving India's 15M+ truck operators",
+      "EBITDA inflection: Swung from -212 Cr (FY23) to +128 Cr (FY25), proving the unit economics can work at scale",
+      "Clean balance sheet: D/E of 0.04 and fresh IPO capital (equity base jumped to 1,314 Cr) eliminate near-term solvency risk"
+    ],
+    "key_risks": [
+      "Promoter skin-in-game absent: 25% promoter holding vs. Kedia's hard floor of 50% — management incentive alignment is weak",
+      "Valuation is egregious: P/S of 19x on still-loss-making revenue of 427 Cr; EV/EBITDA of 74x leaves zero room for execution missteps",
+      "Other Income of -308 Cr in FY25 is opaque and alarming — likely massive ESOP charges or fair-value losses that depress true earnings quality"
+    ],
+    "red_flags": [
+      "Market cap INR 11,333 Cr — 10-100x outside the small-cap sweet spot where multibaggers are born",
+      "Promoter holding at 25% — well below the 50% skin-in-game threshold; FIIs own 32% and are the real owners",
+      "Revenue CAGR of -16.2% over 4 years (867 Cr → 427 Cr), even if partly a gross-to-net accounting shift, tells a messy story",
+      "Net profit still negative (-9 Cr FY25) despite operating margin of 18% — the -308 Cr 'Other Income' line destroys bottom-line profits",
+      "Forward P/E of 49x means the market is already pricing in years of perfect execution — no margin of safety"
+    ],
+    "detailed_analysis": "BlackBuck (formerly Zinka Logistics) is a genuinely interesting India logistics-tech story — a SaaS-style platform for truck operators covering loads, fuel cards, FASTag tolling, and telematics. The 74% gross margin and EBITDA swing from -212 Cr (FY23) to +128 Cr (FY25) confirm that the unit economics work. Revenue grew at a healthy ~37% CAGR from the post-restructuring FY22 base of 119 Cr to 427 Cr in FY25. But none of this matters to a Kedia-style investor at the current price: at INR 11,333 Cr market cap and a Forward P/E of 49x, the entire turnaround story is already priced in — and then some.\n\nThe SMILE scorecard is damning: wrong size (large-cap), wrong promoter holding (25% vs. 50%+ required), wrong valuation (P/S of 19x, EV/EBITDA of 74x), and net-loss status despite positive EBITDA (the -308 Cr Other Income line in FY25 is deeply unexplained and destroys real profitability). The stock is heavily institutionally owned (FII 32%), meaning the easy-money phase of discovery is over. For a Kedia-style investor, BlackBuck would only become interesting at a market cap of 1,000-2,000 Cr — roughly an 80-90% haircut from today — or if a transformative re-rating of promoter commitment and consistent FCF generation materially changes the thesis. Avoid at current prices.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 58357,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07930395,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8937,
+      "cache_read_input_tokens": 10904,
+      "output_tokens": 2834,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 8937
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 515,
+          "cache_read_input_tokens": 8739,
+          "cache_creation_input_tokens": 2363,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2363,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

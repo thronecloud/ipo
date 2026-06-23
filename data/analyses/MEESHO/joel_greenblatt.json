@@ -1,0 +1,71 @@
+{
+  "symbol": "MEESHO",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-21T07:57:04.519209Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "Meesho is a Magic Formula dead-end — negative EBIT (-578 Cr in FY25) makes both Earnings Yield and ROIC incalculable, and the stock trades at 6.5x revenue with no path to near-term profitability. The FY25 net loss exploded to -3,942 Cr (vs. -328 Cr in FY24), signaling deep structural unprofitability despite strong revenue growth.",
+    "key_strengths": [
+      "Revenue growth: 5,735 → 9,390 Cr over 2 years (~64%), indicating real business scale",
+      "Operating FCF turned positive: +186 Cr (FY24) and +516 Cr (FY25), suggesting cash burn is narrowing at the operating level",
+      "Near-zero debt (58 Cr borrowings vs. 74,700 Cr market cap), so financial distress risk is low"
+    ],
+    "key_risks": [
+      "Magic Formula cannot be applied — negative EBIT (-578 Cr) means Earnings Yield and ROIC are both negative; this stock is structurally uninvestable under my framework",
+      "Massively overvalued: EV ~74,611 Cr on -578 Cr EBIT and P/B of 50x on rapidly eroding equity (2,472 → 1,446 Cr in 2 years)",
+      "FY25 net loss of -3,942 Cr (vs. -328 Cr in FY24) driven by -835 Cr 'Other Income' swing — accounting optics mask potential one-time charges or fair-value losses"
+    ],
+    "red_flags": [
+      "Negative EBIT for all 3 years — Magic Formula is inapplicable by design",
+      "P/B of 50.42 on a company with shrinking, negative-trending equity",
+      "Net loss jumped 12x in FY25 to -3,942 Cr — major deterioration",
+      "Promoter stake only 16.57% — very low skin in the game",
+      "Other Income swung from +231 Cr to -835 Cr in one year — unexplained 1,066 Cr deterioration"
+    ],
+    "detailed_analysis": "From the Magic Formula's perspective, Meesho is a non-starter. Earnings Yield = EBIT/EV = -578/74,611 = -0.77%, and ROIC is negative across all three years (ROCE of -8.71%). The formula ranks companies on two factors — cheap AND good — and Meesho fails both: it is expensive (6.5x sales, 50x book) and destroys capital. My framework was built for businesses earning high returns on tangible capital; a company burning -578 Cr at the operating line with negative working capital returns has no place in a Magic Formula screen.\n\nThe one silver lining is that operating cash flow turned positive (+539 Cr in FY25) while capex is negligible (-23 Cr), suggesting unit economics may be improving at the transaction layer. But the accounting P&L remains deeply negative, equity is eroding fast (down 41% in two years), and the FY25 net loss explosion (-3,942 Cr) raises serious questions about hidden write-downs or fair-value losses buried in \"Other Income.\" At 74,700 Cr market cap with no visible EBIT breakeven horizon, the market is pricing in a venture-style outcome that Magic Formula investing explicitly avoids.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 39449,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07498095,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10267,
+      "cache_read_input_tokens": 8369,
+      "output_tokens": 2264,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10267,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 411,
+          "cache_read_input_tokens": 8369,
+          "cache_creation_input_tokens": 1898,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1898
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

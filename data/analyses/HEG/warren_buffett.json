@@ -1,0 +1,69 @@
+{
+  "symbol": "HEG",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-19T06:34:31.620694Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "HEG is a textbook example of a commodity cyclical that I have avoided my entire career — graphite electrode prices move in violent cycles driven by global steel production and supply/demand dynamics entirely outside management's control, producing profits of INR 3,026 Cr in 2019 and losses in 2017 and 2021. Paying 32x earnings at what appears to be a cyclical trough makes this doubly dangerous.",
+    "key_strengths": [
+      "Net debt is manageable (D/E 0.14) and the company has a large equity cushion (INR 4,666 Cr) to survive the inevitable down cycles",
+      "Strong gross margins of 58.69% reflect genuine technical barriers to entry in ultra-high-power electrode manufacturing",
+      "Other income of INR 145–223 Cr annually provides a cash cushion from the investment portfolio built during the 2018–19 super-cycle profits"
+    ],
+    "key_risks": [
+      "Earnings are violently cyclical: net profit swung from INR 3,026 Cr (2019) to a loss of INR 18 Cr (2021) to INR 115 Cr (2025) — no stable earning power exists",
+      "ROE of only 2.59% and ROCE of 3.96% in the current year are dismal; the business is destroying economic value at this point in the cycle",
+      "Graphite electrode prices are determined globally by Chinese capacity additions and electric arc furnace steel demand — HEG has no pricing power whatsoever"
+    ],
+    "red_flags": [
+      "A P/E of 32x on INR 115 Cr earnings (trough) means the market is paying for peak-cycle earnings that may not return for years — classic commodity stock trap",
+      "Free cash flow was negative in 2022 and 2023 (-INR 499 Cr and -INR 364 Cr respectively) during what was supposed to be a recovery — massive capex destroyed the cash",
+      "Revenue has been essentially flat (INR 870 Cr in 2016 to INR 2,158 Cr in 2025 including a massive spike and crash) — the 9-year CAGR of 10.6% is entirely explained by one super-cycle"
+    ],
+    "detailed_analysis": "Benjamin Graham taught me that price fluctuation is not the same as business risk, but HEG is genuinely both risky and volatile. The graphite electrode market is controlled by global forces — when Chinese steelmakers converted from blast furnaces to electric arc furnaces during 2017–18, HEG's profits went from INR 4 Cr to INR 3,026 Cr in two years. When that cycle ended, profits collapsed to near-zero. This is not a business; it is a price-taking commodity operation dressed up in manufacturing clothes.\n\nThe current ROE of 2.59% tells me everything: the company is generating returns well below its cost of capital at this point in the cycle, yet the stock trades at 32x these depressed earnings. The only way this makes sense is if investors are projecting a return to 2018–19 earnings — which requires a global steel boom and supply tightness in electrodes that cannot be predicted or counted upon. I have no interest in businesses where the economics are determined in Beijing and Pittsburgh rather than in the boardroom.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 155248,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.194112,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 21882,
+      "cache_read_input_tokens": 15435,
+      "output_tokens": 7161,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 21882,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 564,
+          "cache_read_input_tokens": 15435,
+          "cache_creation_input_tokens": 6447,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 6447
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

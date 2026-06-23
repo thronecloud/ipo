@@ -1,0 +1,68 @@
+{
+  "symbol": "AHCL",
+  "persona": "vijay_kedia",
+  "persona_display_name": "Vijay Kedia",
+  "analyzed_at": "2026-04-20T11:14:57.517965Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Anlon fits the SMILE shell — 616 Cr micro-cap API maker with 52.7% promoter holding, ROCE of 38%, and EBITDA growing at 77% CAGR. But four straight years of negative operating cash flow (-23 Cr in FY25 vs 21 Cr PAT) and lumpy revenue (57→113→67→120) mean I want to see cash conversion before committing real capital.",
+    "key_strengths": [
+      "Sweet-spot size: 616 Cr micro-cap in a multi-thousand-crore global API TAM",
+      "Stellar unit economics: 33.7% OPM, 25.5% ROE, 38.1% ROCE with D/E just 0.27",
+      "EBITDA CAGR 77%, Revenue CAGR 28%, promoter holding 52.68% — aspiration + skin in game"
+    ],
+    "key_risks": [
+      "OCF negative 4/4 years; FY25 OCF -23 Cr vs PAT +21 Cr — working capital black hole",
+      "Revenue is erratic (dropped 113→67 in FY24) suggesting customer/order concentration",
+      "Cash only 1 Cr vs debt 67 Cr; growth is being funded by IPO equity (21→80 Cr jump)"
+    ],
+    "red_flags": [
+      "Profits on paper but zero cash generation — receivables/inventory bloat needs explanation",
+      "FII at 0.32% and thin float post-IPO — price discovery still immature"
+    ],
+    "detailed_analysis": "On the surface this is a textbook Kedia candidate: small Rajkot-based API/nutraceutical/veterinary intermediate maker, 12 years old (medium experience), promoter at 52.7%, operating in a secular India-pharma-export theme. Margins are extraordinary for a company this size (33.7% OPM, 38% ROCE), growth is accelerating (EBITDA 6→13→16→32 Cr), and P/E of 17.75 on a still-scaling base isn't demanding if FY26 doubles again. The transformation catalyst — recent IPO capital (equity jumped 21→80 Cr), debt deleveraging in FY25, and global regulatory filings — is visible.\n\nWhat stops me short is the cash flow statement. Zero positive OCF years in the last four, and FY25 actually worsened to -23 Cr despite record PAT — classic sign of receivables/inventory being inflated to book revenue. For a small API player this could simply be export credit cycles, but it could also be aggressive revenue recognition. I'd hold off until I see one clean year of OCF ≥ PAT, evidence that top-5 customer concentration is below 40%, and clarity on whether the FY23→FY24 revenue drop was a one-off. At 115 with P/E 17.75, I'm not getting a margin of safety for those unknowns.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 32783,
+    "model_used": "opus",
+    "total_cost_usd": 0.13303425000000002,
+    "usage": {
+      "input_tokens": 7,
+      "cache_creation_input_tokens": 10939,
+      "cache_read_input_tokens": 27561,
+      "output_tokens": 2034,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10939,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 12733,
+          "cache_creation_input_tokens": 1236,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1236
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

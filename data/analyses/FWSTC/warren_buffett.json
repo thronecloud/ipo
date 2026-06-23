@@ -1,0 +1,68 @@
+{
+  "symbol": "FWSTC",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-21T07:54:54.676633Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Flywings shows genuinely strong capital returns (ROE 28%, ROCE 25%) at a modest P/E of 17x, suggesting a real, profitable niche in DGCA-regulated aviation simulator training. However, the INR 192 Cr market cap, absent debt/FCF/growth data, and inherently capital-intensive simulator business make this too speculative for meaningful capital allocation.",
+    "key_strengths": [
+      "ROE 28% and ROCE 25% — their proximity signals returns are driven by operations, not leverage",
+      "Regulatory moat: DGCA-certified simulators create high barriers to entry and switching costs for airlines",
+      "P/E of 17x is undemanding if earnings quality holds; not paying a premium for hope"
+    ],
+    "key_risks": [
+      "Critical data gap: no debt/equity ratio, free cash flow, or revenue growth provided — simulators are multi-crore assets that can mask leverage risk",
+      "Tiny addressable market: India's pilot pipeline is growing but small; single Gurgaon location limits scale",
+      "Illiquid micro-cap at INR 192 Cr — price discovery is poor and exit is difficult"
+    ],
+    "red_flags": [
+      "Insufficient financial disclosure: no FCF, no D/E, no earnings growth history — I won't buy what I can't fully read",
+      "Single-location operator since 2011 with no visible expansion trajectory signals limited reinvestment opportunity"
+    ],
+    "detailed_analysis": "Flywings operates in an intriguing regulatory niche — DGCA mandates simulator hours for Indian pilots, which creates a captive customer base and meaningful entry barriers. The ROE of 28% and ROCE of 25% running close together is the kind of signal I like: it suggests the business earns well on its own without leaning on borrowed money. At 17x P/E, you're not being asked to pay growth-stock prices for what appears to be a steady, rule-based training business.\n\nThat said, the data provided is too thin for me to act. Flight simulators cost $5–20M each; I need to see the balance sheet before trusting those return numbers. The company has been operating for 15 years from a single location — if this were a compounding machine, I'd expect visible geographic expansion by now. At INR 192 Cr market cap, even a small capital misallocation can be fatal. I'd want three years of audited earnings, a clear debt picture, and evidence of pricing power before considering this seriously. Interesting, not actionable.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "insufficient_data",
+      "financial_health": "insufficient_data",
+      "valuation": "fair",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 38711,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.06903165,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9267,
+      "cache_read_input_tokens": 7538,
+      "output_tokens": 2134,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9267,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 431,
+          "cache_read_input_tokens": 7538,
+          "cache_creation_input_tokens": 1729,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1729
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

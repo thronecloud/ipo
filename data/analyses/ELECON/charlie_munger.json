@@ -1,0 +1,68 @@
+{
+  "symbol": "ELECON",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-22T16:27:30.260433Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Elecon is a niche Indian industrial gear manufacturer that executed a remarkable deleveraging and margin-expansion story (D/E 0.12 from 0.36 in FY21; EBITDA margins from ~19% to ~25.6%), but FY2026 showed the first earnings decline in five years (NI ₹341 Cr vs ₹415 Cr) and FCF compression (₹218 Cr vs ₹368 Cr), raising questions about whether the peak of the upcycle has passed. At 25.9x trailing P/E on declining earnings, the risk/reward is balanced but not compelling enough for high conviction.",
+    "key_strengths": [
+      "ROCE of 21% with near-pristine balance sheet (D/E 0.12, net debt only ₹104 Cr) — earned through real deleveraging, not financial engineering",
+      "Strong operating leverage demonstrated: operating income grew at 12.9% CAGR vs 7.8% revenue CAGR, expanding margins from 14.6% (FY17) to ~22% (FY26)",
+      "Niche industrial gears business with 70+ years of installed base, serving 15+ industries — genuine switching costs in custom gearboxes and service relationships"
+    ],
+    "key_risks": [
+      "FY2026 earnings deterioration: NI fell 18% YoY (₹341 Cr vs ₹415 Cr) while capex tripled (₹120 Cr vs ₹31 Cr in FY24) — unclear if this is productive reinvestment or demand softness",
+      "Revenue CAGR of only 7.8% over 9 years in a capital-intensive cyclical business leaves thin margin for error at current valuation multiples",
+      "FCF/Net Income fell to 64% in FY2026 (below Munger's 80% threshold), and borrowings quietly doubled from ₹70 Cr to ₹273 Cr in two years — early debt creep warrants watching"
+    ],
+    "red_flags": [
+      "Simultaneous earnings decline + FCF compression + rising debt in FY2026 — the three-headed deterioration signal",
+      "Other income contributed ₹60 Cr of ₹341 Cr net profit (17.6% of earnings) — core business earnings quality needs scrutiny"
+    ],
+    "detailed_analysis": "Elecon Engineering's FY2017–FY2025 story is genuinely admirable: a heavily leveraged industrial company (finance costs ₹90 Cr in FY17) that paid down debt aggressively, expanded EBITDA margins by ~650 bps, and grew net profit from ₹11 Cr to ₹415 Cr. ROCE of 21% clears my 20% threshold, and a 59.28% promoter holding in a focused, asset-light-for-industrials business signals alignment. The gear segment is a legitimate niche with reasonable moats — customised gearboxes, long service relationships, and installed base across 15 sectors including defence and mining.\n\nHowever, inversion forces me to focus on FY2026: revenue grew only 6.3% YoY while operating income *declined* ₹20 Cr, net profit dropped 18%, FCF fell ₹150 Cr, and borrowings rose ₹92 Cr — all in the same year. At 25.9x trailing P/E, the market was pricing the FY2025 peak. The forward P/E of 16.85x is more reasonable, but only if earnings recover. This is a quality business, not a compounding machine. Munger would respect the discipline shown in debt reduction but would want to see at least two more quarters of evidence that FY2026 was a transitory capex year, not the start of a cyclical turn, before committing meaningful capital.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 57235,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0916236,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11738,
+      "cache_read_input_tokens": 9157,
+      "output_tokens": 2990,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11738,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 463,
+          "cache_read_input_tokens": 9157,
+          "cache_creation_input_tokens": 2581,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2581
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "symbol": "EIDPARRY",
+  "persona": "howard_marks",
+  "persona_display_name": "Howard Marks",
+  "analyzed_at": "2026-04-22T16:31:31.093852Z",
+  "analysis": {
+    "score": 6,
+    "recommendation": "BUY",
+    "investment_thesis": "At EV/EBITDA of 5.92x and FCF yield of ~8.6% (INR 1,323 Cr FCF vs. INR 15,399 Cr market cap), EID Parry is priced for pessimism on a commodity sugar cycle — yet the consolidated entity's Coromandel International stake alone approaches or exceeds its own market cap, creating a structural floor that limits permanent capital loss. The second-level question is whether the well-known holding company discount ever closes; but even ignoring it, the standalone business is cheap enough to compensate for cyclicality.",
+    "key_strengths": [
+      "Hidden NAV floor: EID Parry's ~58% stake in Coromandel International (market value likely INR 20,000+ Cr) exceeds its own market cap of INR 15,399 Cr — the standalone sugar+nutraceuticals+ethanol business is effectively free.",
+      "Conservative balance sheet with D/E of 0.18x and 9Y finance cost CAGR of -2.1% — unlike most commodity players, this company can survive a cycle trough without existential distress.",
+      "FCF yield of ~8.6% with 5/5 years of positive OCF — the company consistently converts earnings to cash, and the ethanol blending mandate provides a policy-backed demand floor for distillery output."
+    ],
+    "key_risks": [
+      "Sugar is India's most politically-managed commodity — FRP floors, export bans, and levy obligations mean operating margins (6.12%) can be compressed by government fiat with no warning.",
+      "Capex cycle is accelerating and cash is depleting: capex rose INR 449 Cr → INR 1,046 Cr over 4 years while cash fell from INR 1,440 Cr (FY23) to INR 404 Cr (FY25); CWIP of INR 967 Cr must convert to productive assets.",
+      "Holding company discount may be permanent — Indian conglomerate structures rarely unlock value for minority shareholders, and the Coromandel discount has persisted for over a decade."
+    ],
+    "red_flags": [
+      "Other income surged to INR 706 Cr in FY25 from INR 83 Cr in FY23 — likely Coromandel dividends, but inflates reported net profit quality; strip it out and standalone earnings power is materially lower.",
+      "Revenue peaked at INR 35,244 Cr in FY23, contracted to INR 29,413 Cr in FY24, only partially recovering to INR 31,609 Cr in FY25 — the sugar upcycle may already be past peak."
+    ],
+    "detailed_analysis": "EID Parry is a textbook case of price reflecting excessive pessimism on a commodity cycle. At 5.92x EV/EBITDA and a 29.3% net profit CAGR over 9 years (INR 175 Cr → INR 1,773 Cr), the market is paying virtually nothing for the standalone business once you credit the Coromandel stake. The balance sheet is fortress-like — D/E of 0.18x with reserves compounding from INR 3,502 Cr (FY20) to INR 8,628 Cr (FY25) — and ROCE of 16.6% suggests capital is deployed productively. The ethanol blending mandate (targeting 20% by 2025-26) provides a structural demand backstop for the distillery segment that makes this less purely cyclical than it appears on the surface.\n\nThe risks are real but manageable at this price. The accelerating capex (INR 1,046 Cr in FY25, CWIP at INR 967 Cr) could disappoint if returns are below cost of capital in a sugar downturn. The FY23 revenue peak of INR 35,244 Cr vs. INR 31,609 Cr today signals we may be in a softening cycle. And that INR 706 Cr of \"other income\" in FY25 — likely Coromandel dividends — must be treated as non-recurring when valuing the core business. Still, with a margin of safety embedded in the Coromandel discount and FCF yield above 8%, the downside scenario (sugar trough + capex disappointment) appears manageable, while the upside (cycle recovery + partial discount narrowing) offers asymmetric reward. The risk/reward is favorable, not exceptional.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "undervalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 92997,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.1148826,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11460,
+      "cache_read_input_tokens": 11362,
+      "output_tokens": 4566,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11460,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 396,
+          "cache_read_input_tokens": 9308,
+          "cache_creation_input_tokens": 4206,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 4206
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

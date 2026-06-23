@@ -1,0 +1,69 @@
+{
+  "symbol": "KSB",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T18:09:06.131101Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "KSB Limited is an operationally sound industrial business with zero debt and a decade of uninterrupted profit growth — yet at P/E 58x and P/B 10x, it offers no margin of safety whatsoever. The current price of INR 968 is more than five times my computed Graham Number of ~INR 184, making this a pure speculative purchase at current levels.",
+    "key_strengths": [
+      "Pristine balance sheet: zero net debt (borrowings INR 5 Cr vs equity INR 1,679 Cr), near-impregnable financial fortress",
+      "Consistent 9-year earnings record — net profit compounded at 16.4% CAGR from INR 69 Cr (2016) to INR 270 Cr (2025), never a loss year",
+      "High ROCE of 24.5% signals genuine competitive advantage in niche pump/valve engineering"
+    ],
+    "key_risks": [
+      "Extreme overvaluation — Graham Number ~INR 184 vs market price INR 968, implying an 81% decline needed just to reach fair value",
+      "Free cash flow collapsed to zero in FY2025 (OCF INR 93 Cr minus capex INR 94 Cr) despite reported profits of INR 270 Cr — earnings quality concern",
+      "Cyclicality risk: industrial capex-dependent revenues (water, oil & gas, mining) can deteriorate sharply in downturns, yet the stock is priced for perpetual perfection"
+    ],
+    "red_flags": [
+      "P/E 58.3x — nearly 4x my hard ceiling of 15x; the investor is paying for decades of future growth upfront",
+      "P/B 10.05x — nearly 7x my limit of 1.5x; every rupee of assets is priced at ten rupees",
+      "FY2025 free cash flow is effectively nil (INR 0 Cr) despite INR 270 Cr net profit — working capital absorption and heavy capex (INR 89 Cr CWIP) are consuming all operating cash"
+    ],
+    "detailed_analysis": "By every quantitative standard I have laid out in my work, KSB fails the valuation test decisively. The Graham Number — derived from EPS of roughly INR 15.5 and book value per share of roughly INR 96.5 — computes to approximately INR 184. The stock trades at INR 968, a 427% premium to intrinsic value as I measure it. Mr. Market has fallen in love with this company's growth story and zero-debt balance sheet, and has priced in years of rosy earnings that have not yet materialized. I do not pay for what a business might earn; I pay for what it has proven it can earn, discounted to a price that protects me if I am wrong.\n\nThe business itself is admirable — 60+ years old, a global parent (KSB SE Germany) with 69.8% promoter commitment, steadily expanding operating margins (14.5%), and a spotless debt record. But admiration is not the same as investment. The intelligent investor does not buy a fine business at any price; he demands a margin of safety. At 58x earnings and 10x book, there is no cushion — not even a thin one. The FY2025 free cash flow of zero is a warning sign that capex intensity is rising (CWIP jumped from INR 55 Cr to INR 89 Cr) precisely as the stock commands its richest premium in years. I would watch this company with respect and buy it enthusiastically if Mr. Market ever offers it near book value — but that day is not today.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "excellent",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 48964,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0729399,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9122,
+      "cache_read_input_tokens": 11278,
+      "output_tokens": 2356,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9122
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 454,
+          "cache_read_input_tokens": 9228,
+          "cache_creation_input_tokens": 1944,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1944,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

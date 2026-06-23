@@ -1,0 +1,69 @@
+{
+  "symbol": "AFCONS",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-19T05:44:52.129305Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Afcons is a competent engineering and construction contractor, but construction is the antithesis of what I look for — low margins (10.6%), commoditized bidding, no pricing power, high capital requirements, and cyclical revenues. The fatal signal is that finance costs of 629 Cr in FY25 actually exceed net profit of 487 Cr, meaning the lenders are effectively capturing more of the economic value created than the equity owners.",
+    "key_strengths": [
+      "Diversified project portfolio spanning marine, metro, tunnels, and highways reduces single-sector dependency and provides order book visibility",
+      "ROCE of 19.6% is above average for a construction company and suggests reasonable capital efficiency on deployed assets",
+      "50.2% promoter holding and 66 years of operating history provide institutional credibility for large government infrastructure contracts"
+    ],
+    "key_risks": [
+      "Finance costs (629 Cr) exceed net profit (487 Cr) in FY25 — a structurally dangerous position where any revenue shortfall or interest rate increase tips the company into losses",
+      "Revenue declined from 13,268 Cr (FY24) to 12,548 Cr (FY25), and OCF turned negative (–132 Cr) in FY25 — momentum is deteriorating, not improving",
+      "Debt/Equity of 0.66 in a cyclical, low-margin construction business creates fragility; borrowings have grown from 2,118 Cr (FY20) to 3,565 Cr (FY25)"
+    ],
+    "red_flags": [
+      "Finance cost of 629 Cr exceeds net profit of 487 Cr — lenders earn more than equity holders, which is deeply unfavorable for shareholders",
+      "OCF turned negative (–132 Cr) in FY25 and FCF plunged to –470 Cr — the business consumed more cash than it generated for the first time in recent history",
+      "Revenue contraction in FY25 (–5.4% YoY) signals potential project execution delays or order book quality issues"
+    ],
+    "detailed_analysis": "I have never been attracted to construction and engineering businesses, and Afcons illustrates exactly why. These companies bid competitively on projects, execute over multi-year cycles, and are exposed to cost overruns, delayed payments from government clients, and working capital traps. The 10.6% operating margin is structurally thin and leaves no buffer for project mishaps. The fact that other income (469 Cr in FY25) contributes nearly as much as operating income to profitability raises questions about the sustainability of core earnings.\n\nThe critical red flag here is that finance costs (629 Cr) now exceed net profit (487 Cr). This means the equity investor's return depends entirely on the company continuing to earn a spread over its cost of debt — a narrow and fragile proposition. At 24x P/E and 10.7x EV/EBITDA the valuation appears modest, but there is no moat, no pricing power, and the FY25 cash flow statement is alarming. I would require a much larger margin of safety — perhaps 8–10x EV/EBITDA with improving FCF trends — before considering this business.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 181833,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.23295825,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 24201,
+      "cache_read_input_tokens": 15735,
+      "output_tokens": 9165,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 24201,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 593,
+          "cache_read_input_tokens": 15735,
+          "cache_creation_input_tokens": 8466,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8466
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

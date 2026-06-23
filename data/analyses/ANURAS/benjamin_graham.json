@@ -1,0 +1,69 @@
+{
+  "symbol": "ANURAS",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-19T06:25:02.559701Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "Anupam Rasayan trades at P/E 85x while earning an ROE of only 3.32% — the company is destroying capital in real terms, consuming INR 410 Cr of capex in FY25 while generating INR 160 Cr of net profit, with free cash flow of -INR 440 Cr. This is not investment; it is speculation on a future that has not yet materialised.",
+    "key_strengths": [
+      "Long-term CDMO relationships with global agrochemical and pharma clients provide some revenue visibility",
+      "Revenue CAGR of 19.2% over 6 years demonstrates the business can grow",
+      "D/E of 0.38 is technically within my threshold, though absolute debt of INR 1,223 Cr is large relative to earning power"
+    ],
+    "key_risks": [
+      "ROE of 3.32% is lower than a fixed deposit rate — the company is not creating value for shareholders at current asset intensity",
+      "Free cash flow has been negative in 5 of 6 years (-INR 440 Cr in FY25) — the company is a cash incinerator despite accounting profits",
+      "Net profit declined from INR 217 Cr (FY23) to INR 160 Cr (FY25) while assets grew from INR 3,778 Cr to INR 5,650 Cr — returns on capital are collapsing as the asset base expands"
+    ],
+    "red_flags": [
+      "P/E of 85.2x — I have never in my career recommended a stock at this multiple, and I do not intend to start now",
+      "ROE of 3.32% on a P/B of 4.55x is economically incoherent — the market pays 4.5x book for a business earning 3.3% on that book",
+      "Finance costs grew at 29.3% CAGR and reached INR 112 Cr in FY25 — debt service is consuming an increasing share of operating profits"
+    ],
+    "detailed_analysis": "The fundamental arithmetic of ANURAS is deeply unfavourable. The company spent INR 716 Cr on capex in FY24 and INR 410 Cr in FY25, yet net profit was only INR 167 Cr and INR 160 Cr respectively. Every rupee reinvested is generating sub-cost-of-capital returns — total assets grew by INR 1,848 Cr over two years while net profit fell. This is a growth-at-any-cost strategy, and shareholders are bearing the cost.\n\nSpecialty chemicals businesses can indeed create value — but only when returns on incremental capital are high. Here, ROCE of 7.33% barely covers the cost of debt, let alone equity. At P/E 85x, the market is paying for a transformation that shows no sign of arriving. Even if earnings normalise to the FY23 peak of INR 217 Cr, the forward P/E would be approximately 68x. The margin of safety is not thin — it is non-existent.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 134625,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.1983921,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 21852,
+      "cache_read_input_tokens": 15277,
+      "output_tokens": 7457,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 21852,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 784,
+          "cache_read_input_tokens": 15277,
+          "cache_creation_input_tokens": 6575,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 6575
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

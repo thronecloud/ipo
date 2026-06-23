@@ -1,0 +1,69 @@
+{
+  "symbol": "GREAVESCOT",
+  "persona": "howard_marks",
+  "persona_display_name": "Howard Marks",
+  "analyzed_at": "2026-04-18T17:42:04.943409Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Greaves Cotton trades at 34x trailing P/E and 14.76x EV/EBITDA despite 4 consecutive years of near-zero or negative net profit, consistently negative FCF, and ROCE of just 5.1% — far below any reasonable cost of capital. The price reflects a near-perfect EV turnaround that remains unproven, offering no margin of safety.",
+    "key_strengths": [
+      "Low leverage (D/E 0.12) limits near-term bankruptcy risk despite cash burn",
+      "Promoter holding of 55.8% provides some alignment on long-term survival",
+      "Revenue recovering to ₹2,918 Cr (2025) with 6.8% 9-year CAGR — core engine business is resilient"
+    ],
+    "key_risks": [
+      "Chronic negative FCF: ₹-23 Cr (2025), ₹-225 Cr (2024), ₹-206 Cr (2023) — cash is being destroyed, not created",
+      "ROCE of 5.1% is structurally below WACC; the EV pivot has compressed EBITDA from ₹324 Cr (2019) to ₹176 Cr (2025) despite higher revenues",
+      "Forward P/E of 18.55x implies earnings recovery to ~₹200 Cr — a >30x swing from current near-zero profits that is far from assured in a highly competitive EV market"
+    ],
+    "red_flags": [
+      "₹-367 Cr net loss in FY2024 included ₹-270 Cr in 'other income' — almost certainly a major impairment/write-down on EV assets, suggesting capital destruction in that division",
+      "Operating CF positive in only 1 of the last 5 years — this is not a cyclical trough, it is a structural problem",
+      "Reserves eroding: ₹1,540 Cr (2023, post equity raise) → ₹1,329 Cr (2025) as accumulated losses eat into the book"
+    ],
+    "detailed_analysis": "The second-level question is not 'can Greaves Cotton recover?' but 'what recovery is already priced in at ₹161?' The answer is aggressive: the market needs EBITDA to roughly double from ₹176 Cr and net profit to swing from near-zero to ₹200+ Cr to justify current multiples. Meanwhile, the actual business has delivered negative free cash flow for four straight years, EBITDA is still 46% below its 2019 peak of ₹324 Cr on 45% higher revenues — a devastating margin compression story driven by the costly, loss-making EV segment. The FY2024 ₹-270 Cr 'other income' line is a smoking gun for capital destruction in the EV subsidiaries.\n\nIn a stress scenario — EV competition intensifies (Ola, Bajaj, TVS all competing aggressively), traditional engine demand softens, or interest rates remain elevated — Greaves Cotton could trade to 1.0–1.2x book (₹59–71/share), representing 55–63% downside. The upside case (successful EV turnaround, 15–20% EBITDA margins) is possible but would take 3–5 years to materialize, during which the company continues burning cash. The asymmetry here is deeply unfavorable: limited upside priced in by consensus optimism, substantial downside from a business structurally below its cost of capital. As I've written, the goal is not to find good companies — it's to find good bargains. This is neither.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 60170,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08783265,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9799,
+      "cache_read_input_tokens": 11258,
+      "output_tokens": 3180,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9799
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 593,
+          "cache_read_input_tokens": 9204,
+          "cache_creation_input_tokens": 2649,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2649,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

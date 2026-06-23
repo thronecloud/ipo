@@ -1,0 +1,70 @@
+{
+  "symbol": "544659",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-20T11:05:21.945016Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Stanbik Agro is a 2021-incorporated micro-cap with a trivial ROE of 0.38%, virtually no earning power, and no multi-year track record that my discipline requires. At a P/E of 11.90 on near-zero earnings and 98.92% promoter concentration, there is no margin of safety and minimal public float to protect a minority investor.",
+    "key_strengths": [
+      "P/E of 11.90 is below my <15 threshold on a nominal basis.",
+      "Engaged in a tangible, understandable business (agricultural commodities).",
+      "Promoter skin-in-the-game is high at 98.92%."
+    ],
+    "key_risks": [
+      "ROE of just 0.38% indicates negligible earning power on equity.",
+      "Incorporated only in 2021 — fails my 3-5 year consecutive earnings test.",
+      "98.92% promoter holding leaves ~1% float — illiquid and prone to manipulation."
+    ],
+    "red_flags": [
+      "No multi-year proven earnings history.",
+      "Earnings so low (ROE 0.38%) that the P/E is mathematically unreliable.",
+      "Extreme promoter concentration on a BSE SME-scale INR 44.6 Cr market cap — speculative territory.",
+      "Agricultural commodity trading is typically low-margin with no durable moat."
+    ],
+    "detailed_analysis": "From my vantage point, this security fails nearly every quantitative filter I insist upon. A company incorporated in 2021 cannot possibly demonstrate the 3-5 years of consecutive positive earnings I demand, and an ROE of 0.38% tells me the business is generating almost no return on shareholders' capital — it is economically indistinguishable from leaving money in a current account. The headline P/E of 11.90 looks superficially reasonable, but a P/E derived from trivial earnings is a mathematical artifact, not a valuation signal. Without disclosed book value, current ratio, debt-to-equity, or interest coverage figures, I cannot even verify a margin of safety — and silence on balance-sheet metrics is itself a warning.\n\nThe 98.92% promoter holding on a INR 44.6 Cr market cap means roughly INR 0.5 Cr of public float; Mr. Market here is not an emotional counterparty but a captive, thinly-traded quote that can be moved by a single order. This is the opposite of the liquid, well-analyzed securities I prefer. Agricultural commodity wholesaling is a commoditized, working-capital-heavy business with no structural moat, and nothing in the disclosure suggests Stanbik has solved that. This is speculation, not investment. I would pass without hesitation.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "insufficient_data",
+      "valuation": "overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 23084,
+    "model_used": "opus",
+    "total_cost_usd": 0.09650725,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 9009,
+      "cache_read_input_tokens": 13492,
+      "output_tokens": 1337,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9009,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 85,
+          "cache_read_input_tokens": 10606,
+          "cache_creation_input_tokens": 1289,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1289
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "symbol": "AARTIDRUGS",
+  "persona": "vijay_kedia",
+  "persona_display_name": "Vijay Kedia",
+  "analyzed_at": "2026-04-18T16:11:11.315670Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Aarti Drugs is a mid-cap API manufacturer at INR 3,408 Cr market cap — well outside SMILE's small-cap sweet spot — with revenues and profits in a post-COVID contraction (revenue -12% from peak 2,716 Cr to 2,387 Cr; net profit -40% from peak 280 Cr to 168 Cr). There is no visible transformation catalyst or inflection point to justify a re-rating.",
+    "key_strengths": [
+      "Promoter holding at 55% provides skin-in-the-game alignment",
+      "Debt/Equity at 0.39 is within acceptable range, OCF positive all 5 years",
+      "Heavy CWIP (INR 179 Cr) and capex cycle may set up future capacity in an API sector benefiting from China+1 tailwinds"
+    ],
+    "key_risks": [
+      "Revenue declining two consecutive years (2,716 Cr → 2,529 → 2,387 Cr) with operating income contracting from 440 Cr (2021) to 290 Cr (2025)",
+      "Operating margin dangerously thin at 6.16% — any raw material or pricing pressure can wipe out profitability",
+      "Market cap at 3,408 Cr is 3x above the SMILE sweet spot; P/E at 16.8x is above the 8-15x value entry range for this quality of business"
+    ],
+    "red_flags": [
+      "Market cap 3,408 Cr — far outside Kedia's sub-1000 Cr sweet spot",
+      "Revenue and net profit both in multi-year contraction post-2021 peak — no inflection in sight",
+      "ROE of 12.7% and ROCE of 13.1% both below the 15% minimum threshold despite heavy capex deployment",
+      "FCF erratic and thin (67 Cr in FY25 on 2,387 Cr revenue) — capex intensity is consuming all cash generation"
+    ],
+    "detailed_analysis": "Aarti Drugs fails the SMILE framework on multiple dimensions. The 'S' (Small in size) criterion is immediately violated — at INR 3,408 Cr, the company is a mid-cap, not a small-cap where information asymmetry creates multibagger opportunity. The 'L' (Large aspiration) and 'E' (Extra-large market) criteria are questionable given the business is actually shrinking: revenue has fallen from a FY2023 peak of INR 2,716 Cr to INR 2,387 Cr in FY2025, and net profit has halved from INR 280 Cr (FY2021) to INR 168 Cr (FY2025). The post-COVID peak normalization in API pricing and margins is a structural headwind, not a one-time blip.\n\nThe thin 6.16% operating margin is particularly alarming for a specialty API manufacturer — it signals the company lacks pricing power and operates in a commoditized segment of the API value chain. While there is a significant capex cycle underway (INR 179 Cr CWIP, cumulative capex of ~INR 720 Cr over last 4 years), the returns on this capital are weak: ROCE is a modest 13.1% and FCF is being consistently consumed. For Kedia's multibagger framework, the business needs to show an 'inflection point' — rising margins, accelerating revenue, or a new product/market unlocking. None of these signals are present here. This looks like a business going sideways to slightly down, valued at a premium it does not deserve.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 77062,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0770589,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9508,
+      "cache_read_input_tokens": 11733,
+      "output_tokens": 2525,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9508,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 456,
+          "cache_read_input_tokens": 9568,
+          "cache_creation_input_tokens": 2105,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2105
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

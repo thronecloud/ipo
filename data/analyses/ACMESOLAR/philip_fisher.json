@@ -1,0 +1,69 @@
+{
+  "symbol": "ACMESOLAR",
+  "persona": "philip_fisher",
+  "persona_display_name": "Philip Fisher",
+  "analyzed_at": "2026-04-19T06:20:00.212918Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "ACME Solar presents as an India renewable energy growth story, but the underlying financials reveal a business with declining revenues (-4.6% CAGR), debt of INR 12,998 Cr consuming 54% of revenues in interest alone, negative free cash flow of INR 1,719 Cr in FY2025, and ROE of just 7.57% — the financial architecture destroys value even as the sector narrative is compelling.",
+    "key_strengths": [
+      "Operating cash flow has been positive for 5/5 years and growing (INR 1,543 Cr in FY2025), reflecting the predictable cash generation of long-term power purchase agreements",
+      "Operating margin of 65.28% and gross margin of 99.42% illustrate the inherent efficiency of solar assets once commissioned",
+      "Significant project pipeline of 3,780 MW under development alongside 2,540 MW operational could support future revenue re-rating if executed"
+    ],
+    "key_risks": [
+      "Debt/Equity of 2.72 with borrowings of INR 12,998 Cr and finance cost of INR 759 Cr — interest expense equals 54% of FY2025 revenue, leaving almost nothing for equity holders",
+      "Revenue CAGR of -4.6% over 5 years and EBITDA CAGR of -9.9% — this is a contracting business in absolute terms despite a booming sector",
+      "Free cash flow deeply negative at -INR 1,719 Cr in FY2025 — the business requires continuous external capital to fund growth, diluting future equity returns"
+    ],
+    "red_flags": [
+      "Finance costs (INR 759 Cr) nearly match reported revenue-level profitability — the equity story exists only because of debt-funded project construction, not operational excellence",
+      "Net profit extremely volatile: INR 86 Cr → 15 → 62 → -3 → 698 → 251 Cr — the 2024 spike was driven by INR 891 Cr in other income, not operating performance",
+      "Promoter holds 83.29% — high concentration signals limited institutional accountability and raises governance questions for minority holders"
+    ],
+    "detailed_analysis": "I have always insisted that the quality of a business cannot be evaluated in isolation from its capital structure. ACME Solar's operating margins of 65% look extraordinary until you recognise that solar IPPs operate as heavily-leveraged infrastructure trusts: every rupee of EBITDA is pre-pledged to debt servicing. The finance cost of INR 759 Cr against FY2025 revenue of INR 1,405 Cr means lenders, not equity holders, are the real beneficiaries of this business. ROE of 7.57% confirms this — the company earns less on equity than a fixed deposit.\n\nThe new capacity under development (3,780 MW) might eventually change this calculus, but the pattern of debt expansion — borrowings jumped from INR 8,536 Cr (2024) to INR 12,998 Cr (2025) — suggests the capital intensity only grows with scale. A genuine growth company generates increasing free cash flow as it matures; ACME generated -INR 1,719 Cr in FCF in FY2025. This is infrastructure project finance, not the compounding growth business my methodology seeks. The Indian renewable energy story is real and important — but I would seek it through better-capitalised operators.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 149829,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.19291815,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 20987,
+      "cache_read_input_tokens": 14443,
+      "output_tokens": 7325,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 20987,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 639,
+          "cache_read_input_tokens": 14443,
+          "cache_creation_input_tokens": 6544,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 6544
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

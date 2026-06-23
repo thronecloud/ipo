@@ -1,0 +1,69 @@
+{
+  "symbol": "CEATLTD",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-19T12:56:22.733268Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "CEAT trades at INR 3,716 against a computed Graham Number of approximately INR 1,722 — a 116% premium to intrinsic value by my measure. Despite a decade of revenue growth, net profit has barely budged in nine years (0.9% CAGR), meaning the business is not earning its cost of capital for shareholders.",
+    "key_strengths": [
+      "Operating cash flow positive in all 5 of the last 5 years, demonstrating real cash generation",
+      "Revenue has grown at a steady 10.3% CAGR over 9 years — a durable business with OEM and retail distribution",
+      "Promoter holding at 47.2% with meaningful FII/DII presence suggests institutional confidence"
+    ],
+    "key_risks": [
+      "Net profit CAGR of only 0.9% over 9 years while revenue grew 10.3% — margins are being consumed, not expanded",
+      "Borrowings surged from INR 1,792 Cr in FY24 to INR 3,114 Cr in FY25 — a 74% jump in one year that demands explanation",
+      "Finance costs compound at 11.9% annually, growing faster than operating income — interest burden is structurally rising"
+    ],
+    "red_flags": [
+      "P/E of 24.1 and P/B of 3.29 both exceed my strict thresholds of 15 and 1.5 respectively",
+      "Debt/Equity of 0.68 exceeds my ceiling of 0.5 and is deteriorating with the FY25 borrowing spike",
+      "Price at INR 3,716 is 116% above the Graham Number of ~INR 1,722 — the intelligent investor demands a margin of SAFETY, not a margin of DANGER"
+    ],
+    "detailed_analysis": "CEAT manufactures tyres across all vehicle categories and has a legitimate franchise in India, but Mr. Market is pricing it for optimism I am not prepared to pay for. A P/B of 3.29 means I am paying INR 3.29 for every rupee of net assets — far above the 1.5x I consider reasonable for a manufacturer in a cyclical sector where raw material costs (natural rubber, carbon black) swing violently. The net profit of INR 471 Cr in FY25 is actually lower than the INR 635 Cr earned in FY24, suggesting margins are under renewed pressure even as revenue grows.\n\nThe sharp increase in borrowings — from INR 1,792 Cr to INR 3,114 Cr in a single year — is alarming and suggests an aggressive capex cycle or working capital stress that has not yet been adequately explained. Finance costs of INR 278 Cr now consume a meaningful portion of operating profits. My philosophy demands that I receive a substantial discount to demonstrated value; at current prices, I am paying a large premium. I would not be a buyer until the price fell to near INR 1,700–1,900.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 220503,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.29222444999999997,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 27345,
+      "cache_read_input_tokens": 15939,
+      "output_tokens": 12326,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 27345,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 774,
+          "cache_read_input_tokens": 15939,
+          "cache_creation_input_tokens": 11406,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 11406
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

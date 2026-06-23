@@ -1,0 +1,70 @@
+{
+  "symbol": "ICIL",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T17:38:15.769655Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Indo Count scores poorly on both Magic Formula metrics — earnings yield of ~7.9% (EBIT ₹535 Cr / EV ~₹6,806 Cr) falls well below my 12% threshold, and ROCE of 13.5% is far short of the 20%+ I require for a \"good\" business. A capital-heavy, cyclical textile exporter with rising debt and erratic free cash flow does not deserve a P/E of 48x.",
+    "key_strengths": [
+      "Revenue scaling steadily — 8.1% CAGR over 9 years reaching ₹4,151 Cr in FY25, with genuine US bedding market presence",
+      "Promoter holding of 58.74% aligns management interests, and rising FII/DII interest signals institutional awareness",
+      "Gross margin of 52.4% is respectable for textiles, suggesting some brand/product differentiation in home bedding"
+    ],
+    "key_risks": [
+      "Debt explosion: borrowings surged from ₹349 Cr (FY20) to ₹1,243 Cr (FY25), dragging finance costs from ₹28 Cr to ₹123 Cr — a 4.4x increase that ate FY25 net profit (₹246 Cr vs ₹338 Cr in FY24)",
+      "Erratic free cash flow — FCF positive in only 3 of last 5 years; FY22 FCF was -₹489 Cr; heavy capex cycle (₹252 Cr in FY25) continues to strain cash generation",
+      "Net profit CAGR of -0.2% over 9 years: despite doubling revenue since 2016, bottom-line is flat — a hallmark of a low-ROIC commodity business with no pricing power"
+    ],
+    "red_flags": [
+      "Earnings yield ~7.9% — well below Magic Formula's 12% minimum; stock is not cheap enough for its quality",
+      "ROCE of 13.5% and ROE of 11.3% — both below cost of equity; the business is not earning excess returns on capital",
+      "Finance costs quadrupled in 4 years while net profit declined — leverage is amplifying risk, not returns",
+      "P/E of 48x on a cyclical textile manufacturer with no earnings growth over a decade is a valuation trap"
+    ],
+    "detailed_analysis": "Running the Magic Formula on Indo Count: EBIT (Operating Income) FY25 = ₹535 Cr. Enterprise Value = Market Cap ₹5,463 Cr + Net Debt ₹1,343 Cr ≈ ₹6,806 Cr. Earnings Yield = 7.9% — not cheap enough. Return on Capital (ROCE) = 13.5% — not a good-enough business. The Magic Formula demands BOTH metrics to be high simultaneously. Indo Count is mediocre on both, earning it a rank near the bottom of any screened universe. The EV/EBITDA of 18.3x is expensive for a cyclical exporter dependent on US demand, USD/INR rates, and cotton input costs.\n\nThe deeper problem is capital destruction: the company deployed massive capex (₹452 Cr in FY22, ₹342 Cr in FY23) financed by debt, yet net profit in FY25 (₹246 Cr) is below FY16 levels (₹251 Cr) on twice the revenue. That is the signature of a business with no durable competitive advantage — every rupee reinvested earns sub-par returns. Rising finance costs (₹123 Cr in FY25 vs ₹28 Cr in FY21) are now a structural drag. Unless ROIC can sustainably clear 20%+ and the balance sheet is deleveraged, this fails the Magic Formula screen decisively.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 72249,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.10049385,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 12169,
+      "cache_read_input_tokens": 9087,
+      "output_tokens": 3475,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 12169
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 455,
+          "cache_read_input_tokens": 9087,
+          "cache_creation_input_tokens": 3082,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 3082,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "symbol": "AARADHYA",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-20T11:10:24.469887Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Aaradhya Disposal trades at a P/E of 12.4 yet delivers a miserable 0.45% ROE — this is a low-quality microcap where the optically low multiple reflects near-zero earning power, not a bargain. Without multi-year audited earnings history, adequate returns on capital, or a demonstrated dividend record, it fails my core quantitative tests.",
+    "key_strengths": [
+      "High promoter skin-in-the-game at 70.58%",
+      "P/E of 12.4 is below my 15x ceiling",
+      "Small, focused manufacturing niche (paper products/exports)"
+    ],
+    "key_risks": [
+      "ROE of 0.45% signals virtually no real earning power",
+      "Microcap (INR 159 Cr) with limited liquidity and disclosure depth",
+      "No visible dividend history or balance-sheet data (D/E, current ratio unknown)"
+    ],
+    "red_flags": [
+      "ROE <1% — capital is essentially idle",
+      "Insufficient data on debt, current ratio, book value for Graham Number",
+      "Commodity-exposed paper industry with thin margins",
+      "Recent listing profile typical of speculative SME issuance"
+    ],
+    "detailed_analysis": "From a Graham lens, the single most damning figure is the 0.45% ROE. A P/E of 12.4 only looks cheap until you realize earnings are a rounding error on equity — at that return, shareholders would be better off in a savings account. I cannot compute the Graham Number without book value and EPS, but any business earning sub-1% on equity cannot generate the proven earning power I require. The 70.58% promoter stake is reassuring for alignment but also means minimal public float and governance scrutiny.\n\nThe absence of disclosed current ratio, debt-to-equity, interest coverage, and dividend history means the company fails my documentation bar before it even fails my numerical ones. Paper products is a commodity industry with input-cost volatility, and a 12-year-old microcap in this space offers no durable moat. Mr. Market is not offering a bargain here — he is offering a mediocre business at a mediocre price. Pass.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "insufficient_data",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 20910,
+    "model_used": "opus",
+    "total_cost_usd": 0.08959375,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8787,
+      "cache_read_input_tokens": 13490,
+      "output_tokens": 1116,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8787,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 87,
+          "cache_read_input_tokens": 10604,
+          "cache_creation_input_tokens": 1069,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1069
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

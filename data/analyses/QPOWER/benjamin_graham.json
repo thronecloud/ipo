@@ -1,0 +1,70 @@
+{
+  "symbol": "QPOWER",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T22:12:06.219716Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "QPOWER trades at INR 1,206 against a Graham Number of ~INR 133 (9x intrinsic value), with a P/E of 87x and P/B of 19.9x — multiples that offer zero margin of safety by any conservative standard. The business has genuine quality, but the price bakes in years of flawless execution and demands perfection.",
+    "key_strengths": [
+      "Near-zero leverage (D/E: 0.05) with INR 181 Cr cash vs. INR 9 Cr total debt — fortress balance sheet",
+      "Consistent profitability all 4 years; net profit CAGR 33.5% (2022–2025); ROCE 26.6%",
+      "Interest coverage of ~32x (Operating Income INR 65 Cr / Finance Cost INR 2 Cr) — virtually no financial risk"
+    ],
+    "key_risks": [
+      "Catastrophic overvaluation: Graham Number ~INR 133 vs. price INR 1,206 — paying 9x intrinsic value",
+      "Earnings quality concern: Other Income (INR 54 Cr) represents ~54% of net profit (INR 100 Cr) in FY2025 — true operating earnings far lower",
+      "Likely recent IPO (FY2025 financing CF: +INR 171 Cr, equity jumped from INR 153 Cr to INR 469 Cr) — investment banks price IPOs to maximize seller proceeds, not buyer value"
+    ],
+    "red_flags": [
+      "P/E 87x vs. Graham maximum of 15 — nearly 6x his ceiling",
+      "P/B 19.9x vs. Graham maximum of 1.5 — over 13x his ceiling",
+      "Other Income (INR 54 Cr) distorts reported profits; core operating earnings are materially lower than headline INR 100 Cr net profit",
+      "Revenue of INR 337 Cr is small-scale for a INR 9,340 Cr market cap — P/S of 12x leaves no room for error"
+    ],
+    "detailed_analysis": "From my standpoint, the arithmetic here is decisive. The Graham Number — the ceiling price a defensive investor should pay — works out to approximately INR 133 (EPS ~INR 12.9, BVPS ~INR 60.5). The market is asking INR 1,206, or nine times that ceiling. No amount of optimism about India's power infrastructure boom justifies paying nine times intrinsic value. The P/E of 87x and P/B of 20x are not growth premiums — they are speculative excess. The forward P/E of 33x assumes earnings triple from here without a hitch; Mr. Graham taught us never to rely on what a business might earn, only what it demonstrably has earned.\n\nThe underlying business is not without merit — the balance sheet is genuinely sound, debt is negligible, and earnings have grown steadily. However, a serious red flag is that INR 54 Cr of \"Other Income\" underpins nearly half of FY2025's reported net profit. Strip that out, and operating profit after tax is far more modest than the headlines suggest. The large FY2025 financing inflow (INR 171 Cr) and the doubling of equity strongly indicate an IPO, which by definition means the selling side — promoters and investment bankers — set the price to their maximum advantage, not yours. I require a margin of safety. Here, I find none.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 49133,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.076458,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8918,
+      "cache_read_input_tokens": 10705,
+      "output_tokens": 2653,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8918,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 391,
+          "cache_read_input_tokens": 8655,
+          "cache_creation_input_tokens": 2313,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2313
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

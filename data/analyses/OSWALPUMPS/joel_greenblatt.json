@@ -1,0 +1,69 @@
+{
+  "symbol": "OSWALPUMPS",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T21:55:39.266252Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Oswal Pumps has extraordinary underlying economics — EBIT CAGR of 120%+ and a capital-light model generating triple-digit ROIC on pre-IPO operating capital — but the Magic Formula earnings yield (~11% on EV of ~₹3,800 Cr) falls just shy of my 12% buy threshold. A catastrophic 2025 OCF of −₹151 Cr against ₹281 Cr net profit destroys the \"real earnings\" case, making this a watch-and-wait at current prices.",
+    "key_strengths": [
+      "Exceptional ROIC on operating capital: stripping out ~₹1,200 Cr IPO cash from invested capital yields ROIC well above 50% — the underlying business is extremely capital-light",
+      "Margin expansion is real: operating margin expanded from 10.8% (2022) → 15.1% → 20.2% → 29.4% (2025) as revenue scaled 4× to ₹1,430 Cr",
+      "PM-KUSUM structural tailwind: government solar pump subsidies create a durable demand runway with near-zero competition risk from traditional pump makers"
+    ],
+    "key_risks": [
+      "Negative FCF is disqualifying: 2025 OCF = −₹151 Cr vs. net profit of ₹281 Cr — a ₹432 Cr working capital drain signals government receivable buildup, a classic Indian infra trap",
+      "IPO-inflated equity base (₹44 Cr → ₹1,497 Cr in 3 years) means future ROIC will compress sharply; deploying ₹1,200+ Cr of IPO proceeds at similar returns is unlikely",
+      "Earnings yield at 8.3–11% (depending on cash treatment) is below my 12% buy threshold — the market has already priced in significant growth"
+    ],
+    "red_flags": [
+      "2025 Free Cash Flow: −₹198 Cr — company is cash-flow negative despite 25.8% operating margins, almost certainly due to government subsidy receivables aging on the balance sheet",
+      "Finance costs grew 73.8% CAGR (₹8 Cr → ₹42 Cr) despite D/E of only 0.08 — inconsistency suggests off-balance-sheet financing or working capital debt not fully captured",
+      "Net profit CAGR of 154.7% with near-zero cash conversion screams aggressive revenue recognition risk — I need 3+ years of positive FCF before trusting these earnings"
+    ],
+    "detailed_analysis": "Magic Formula math: EBIT 2025 = ₹420 Cr. If I accept the EV/EBITDA of 8.85× (implying EV ≈ ₹3,832 Cr, meaning ~₹1,222 Cr cash on balance sheet post-IPO), then Earnings Yield = 420/3,832 = 11% — right at the border of attractive but below my 12% threshold. On operating capital excluding IPO cash (≈₹400 Cr invested), ROIC is stratospheric at 100%+, confirming the underlying business is genuinely exceptional. The solar pump model benefits from recurring government procurement, low capex (₹25 Cr/year pre-IPO), and the dominant Oswal brand in Haryana/Punjab agricultural belt. This is a legitimately good business.\n\nThe problem is cash flow. In 2025, despite ₹420 Cr EBIT and ₹281 Cr net profit, the company burned ₹151 Cr of operating cash and ₹198 Cr of free cash flow. Government solar scheme receivables in India can age 12–18 months, and the company likely has massive PM-KUSUM receivables sitting uncollected. Until OCF turns positive and FCF conversion reaches ≥60% of net profit, reported earnings cannot be trusted for Magic Formula purposes. At 14× trailing P/E the stock isn't expensive for the growth rate, but Greenblatt's formula requires real, cash-backed earnings — these aren't there yet.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "exceptional"
+    }
+  },
+  "metadata": {
+    "duration_ms": 86303,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.11698815,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 12645,
+      "cache_read_input_tokens": 8568,
+      "output_tokens": 4466,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 12645,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 473,
+          "cache_read_input_tokens": 8568,
+          "cache_creation_input_tokens": 4077,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 4077
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "COHANCE",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-19T13:01:24.610078Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Cohance (formerly Suven Pharma) presents a deteriorating earnings picture — net profit has fallen from INR 454 Cr (FY22) to INR 265 Cr (FY25), a 42% decline — yet the market still values it at 49.7x trailing earnings and an EV/EBITDA of 94.7x. This combination of contracting fundamentals and speculative pricing is precisely what the intelligent investor must avoid.",
+    "key_strengths": [
+      "Operating cash flow has been positive every year (INR 288–407 Cr range), confirming earnings are real and not accounting constructs",
+      "Debt/equity of 0.11 is modest, and the company carries adequate cash reserves",
+      "High gross margin of 71.5% suggests genuine value-added manufacturing rather than pass-through chemistry"
+    ],
+    "key_risks": [
+      "Earnings have declined for three consecutive years (FY23–FY25): operating income contracted from INR 574 Cr to INR 375 Cr — the business is shrinking in real terms",
+      "Total assets nearly tripled from INR 2,254 Cr to INR 5,568 Cr in FY25 alone, with borrowings jumping from INR 65 Cr to INR 451 Cr — a major acquisition whose economics are unproven",
+      "Operating margin of only 8.89% is dangerously thin for a specialty pharma CDMO; any pricing pressure or customer loss destroys profitability"
+    ],
+    "red_flags": [
+      "Graham Number ≈ INR 133 (EPS ~INR 7.9, BVPS ~INR 99); current price of INR 391 is 2.9x that figure",
+      "EV/EBITDA of 94.7x is not a valuation — it is speculation; I have never paid such a multiple in my career",
+      "Net profit declining three years running while the P/E expands is the definition of a value trap in reverse — a growth story with no growth"
+    ],
+    "detailed_analysis": "The fundamental problem with Cohance is that the story has moved in exactly the wrong direction. Revenue peaked at INR 1,340 Cr in FY23 and remains below that level; EBITDA has contracted from INR 639 Cr to INR 419 Cr; net profit has fallen from INR 454 Cr to INR 265 Cr. A business I would insist on buying only at a significant discount to proven earning power cannot be bought here at any reasonable price — the trailing multiple already discounts a recovery that may not materialise.\n\nThe sudden balance-sheet expansion in FY25 (total assets from INR 2,254 Cr to INR 5,568 Cr) suggests a substantial acquisition was completed, likely using a combination of equity and new borrowings (debt rose from INR 65 Cr to INR 279 Cr in total debt terms). The returns on this acquired capital are completely unknown. When a business I already find overpriced doubles its asset base through an acquisition of uncertain quality, my only response is to step aside entirely.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 156176,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.21759810000000002,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 23420,
+      "cache_read_input_tokens": 15947,
+      "output_tokens": 8332,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 23420,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 726,
+          "cache_read_input_tokens": 15947,
+          "cache_creation_input_tokens": 7473,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 7473
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

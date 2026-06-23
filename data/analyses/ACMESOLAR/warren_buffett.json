@@ -1,0 +1,69 @@
+{
+  "symbol": "ACMESOLAR",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-19T05:41:44.855891Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "ACME Solar's high operating margins are a mirage — finance costs of INR 759 Cr consumed 54% of EBITDA in FY25, revenue has declined at -4.6% CAGR over 5 years, and the company burned INR 1,719 Cr of free cash flow in FY25 alone while carrying INR 12,998 Cr of borrowings. This is a capital-intensive utility with insufficient returns on capital (ROE: 7.57%, ROCE: 8.42%) and a balance sheet that demands perpetual refinancing.",
+    "key_strengths": [
+      "Operating margin of 65.28% reflects the contracted, pass-through nature of solar power revenues — PPA agreements with government-backed offtakers provide some cash flow visibility",
+      "OCF has been positive in all 5 years, demonstrating that at the asset level the existing projects do generate cash before debt service",
+      "Installed capacity of 2,540 MW with 3,780 MW under development indicates scale and execution capability in a sector with India's long-term policy tailwinds"
+    ],
+    "key_risks": [
+      "D/E of 2.72 with INR 12,998 Cr in borrowings and finance costs of INR 759 Cr vs net profit of INR 251 Cr — debt service dominates earnings and any refinancing disruption is existential",
+      "Revenue has contracted -4.6% CAGR over 5 years despite being in a 'growth' sector — the business has been shrinking its existing asset base while the new capacity pipeline is not yet earning",
+      "Free cash flow deeply negative: -INR 1,719 Cr in FY25 and negative in 3 of 5 years; the company requires continuous capital markets access to fund its expansion, creating significant dilution and refinancing risk"
+    ],
+    "red_flags": [
+      "Net profit is wildly volatile (INR 86 Cr → 15 → 62 → -3 → 698 → 251 Cr over 5 years), largely driven by asset disposals and other income, not sustainable operating earnings",
+      "ROCE of 8.42% on a massively debt-funded capital structure — the business earns below what it costs to run; this destroys, not creates, economic value",
+      "Recently listed IPO (2024) at 36.8x P/E for a utility-scale solar business with these return characteristics — IPO market optimism, not fundamental value, is driving the price"
+    ],
+    "detailed_analysis": "I have a simple test for capital-intensive businesses: does the business earn a return on invested capital that exceeds its cost of capital? ACME Solar fails this test decisively. With ROCE of 8.42% and a weighted cost of capital that almost certainly exceeds 10% given the D/E of 2.72, every rupee invested in this business destroys shareholder value at the margin. The operating margin of 65% that looks attractive on a percentage basis translates to INR 1,396 Cr of EBITDA — but INR 759 Cr goes immediately to finance costs, leaving precious little for maintenance, taxes, and actual returns to equity holders.\n\nSolar power has a role in India's energy future, and I wish these companies well. But as an investor, I cannot get excited about a business where growth requires taking on enormous debt, where the equity holder is the last in line after banks, government, and bond markets, and where the intrinsic value of my ownership shrinks with each new project financed at inadequate returns. At 36.8x P/E for 7.57% ROE, the market is asking me to pay a premium for substandard returns. I decline.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 160330,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.2013321,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 21542,
+      "cache_read_input_tokens": 14402,
+      "output_tokens": 7748,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 21542,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 463,
+          "cache_read_input_tokens": 14402,
+          "cache_creation_input_tokens": 7140,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 7140
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

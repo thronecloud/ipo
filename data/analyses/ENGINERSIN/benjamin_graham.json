@@ -1,0 +1,69 @@
+{
+  "symbol": "ENGINERSIN",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-22T16:25:34.415688Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Engineers India Limited is a financially sound PSU consultancy with a 10-year earnings record and negligible debt, but it trades at INR 242 versus a Graham Number of ~INR 106 — a 128% premium to intrinsic value with no margin of safety. At P/B of 5.01 and P/E of 17.5, the price fully reflects business quality and then some, leaving the disciplined investor nothing to gain.",
+    "key_strengths": [
+      "Virtually debt-free: D/E of 0.01 with only INR 22 Cr borrowings against INR 2,705 Cr equity — fortress balance sheet",
+      "Consistent 10-year positive earnings record (2016–2025) with FY2025 net profit at INR 580 Cr, the highest in the period",
+      "Negligible finance cost (INR 5 Cr) yields near-infinite interest coverage, meeting Graham's >3.5x threshold many times over"
+    ],
+    "key_risks": [
+      "P/B of 5.01 is 3.3x Graham's maximum of 1.5 — paying a steep premium over tangible asset value with no liquidation cushion",
+      "Free cash flow deeply erratic: negative INR 147 Cr in 2023, only INR 68 Cr in 2025 despite INR 580 Cr net profit — raises earnings quality concerns",
+      "~27% of FY2025 net profit (INR 160 Cr) derives from 'Other Income' (investment income), not core operations — normalised earning power is materially lower"
+    ],
+    "red_flags": [
+      "Graham Number ≈ INR 106 [sqrt(22.5 × EPS ~10.3 × BVPS ~48.1)] — current price of INR 242 represents a 128% premium, the antithesis of margin of safety",
+      "OCF-to-Net-Profit conversion is poor: FY2025 OCF INR 109 Cr vs net profit INR 580 Cr — significant working capital absorption in a project-driven business",
+      "PSU status (Government 51.32%) historically constrains capital allocation efficiency and pricing discipline"
+    ],
+    "detailed_analysis": "From my strict quantitative standpoint, Engineers India fails on the two most important valuation tests simultaneously. The P/B of 5.01 is more than three times my ceiling of 1.5, and the Graham Number — computed at approximately INR 106 using FY2025 EPS of ~INR 10.3 and book value per share of ~INR 48 — reveals the market is charging a 128% premium over intrinsic value. A P/E of 17.5 also exceeds my preferred ceiling of 15, and the Forward P/E of 20.55 demands that growth materialize exactly as hoped — a speculative posture I reject. Mr. Market is in an optimistic mood, and I am not inclined to join him at these prices.\n\nThe business itself is not without merit — I will grant it that. Ten consecutive years of positive earnings, near-zero debt, and a 25% ROCE are precisely the durable operating characteristics I look for. However, reported profits are flattered by substantial other income (INR 160 Cr in FY2025, down from INR 255 Cr in FY2020), and free cash flow has been volatile and thin relative to reported earnings — a warning sign about cash conversion quality. Revenue growth of 8% CAGR over nine years is respectable but unremarkable. I require a margin of safety, and there is none here. The prudent investor waits for the price to come to him.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 52816,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07889879999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9496,
+      "cache_read_input_tokens": 11366,
+      "output_tokens": 2658,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9496,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 482,
+          "cache_read_input_tokens": 9316,
+          "cache_creation_input_tokens": 2230,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2230
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

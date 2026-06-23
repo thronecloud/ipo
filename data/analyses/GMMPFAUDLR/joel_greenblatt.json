@@ -1,0 +1,69 @@
+{
+  "symbol": "GMMPFAUDLR",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T17:23:46.454577Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "GMM Pfaudler fails the Magic Formula on both legs: Earnings Yield of ~7.9% is well below my 12% hurdle, and the acquisition-bloated debt load has crushed ROIC to levels (stated ROCE 13.1%) that don't compensate for the risk. With net profit collapsing 71% YoY (₹171 Cr → ₹49 Cr), this is neither cheap nor good enough.",
+    "key_strengths": [
+      "Niche moat in glass-lined equipment — high switching costs in pharma/chemical process industries",
+      "FCF generation has been consistently positive (5/5 years), improving to ₹318 Cr in FY2025 despite earnings collapse",
+      "Revenue 9Y CAGR of 30.5% via Pfaudler International acquisition, creating global scale with Indian cost base"
+    ],
+    "key_risks": [
+      "Finance costs exploded from ₹1 Cr (FY2016) to ₹103 Cr (FY2025) — consuming ~29% of EBIT and gutting net profit to ₹49 Cr",
+      "Revenue declined 7% YoY in FY2025 (₹3,446 Cr → ₹3,199 Cr) — first contraction since the acquisition, suggesting demand softness",
+      "Promoter stake at only 25.18% — unusually low for an Indian industrial mid-cap, weak alignment signal"
+    ],
+    "red_flags": [
+      "Net profit collapsed 71% YoY (₹171 Cr FY2024 → ₹49 Cr FY2025) — Magic Formula requires positive, stable EBIT",
+      "Other income turned deeply negative (-₹17 Cr FY2025) suggesting potential forex or impairment losses post-acquisition",
+      "Borrowings surged from ₹34 Cr (FY2020) to ₹1,079 Cr (FY2025) — acquisition-driven leverage at D/E 0.90 is structurally dangerous for a cyclical industrial business"
+    ],
+    "detailed_analysis": "Magic Formula math: EBIT FY2025 = ₹361 Cr; EV = Market Cap (₹4,183 Cr) + Debt (₹850 Cr) – Cash (₹445 Cr) = ₹4,588 Cr. Earnings Yield = 361/4,588 = **7.9%** — below my 12% minimum. On ROIC, using invested capital (Equity ₹1,176 Cr + Debt ₹850 Cr – Cash ₹445 Cr = ₹1,581 Cr), ROIC = 361/1,581 = ~22.8%, but the stated ROCE of 13.1% (which includes goodwill/intangibles from the Pfaudler acquisition) is more accurate to economic reality — and below my 20% threshold. Neither metric clears the bar.\n\nThe 2021 acquisition of Pfaudler International was transformational but came at a steep cost: debt ballooned 32x, finance costs now consume 29% of operating income, and the integration appears to be struggling (operating margin compressed from 13.5% in FY2024 to 7.7% in FY2025). The forward P/E of 20.99 implies the market is pricing in a sharp recovery — but that's a bet on execution, not a margin-of-safety investment. The Magic Formula demands I buy good businesses cheap, not recovery stories at fair prices.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 60279,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.10722675,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 12679,
+      "cache_read_input_tokens": 9255,
+      "output_tokens": 3793,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 12679
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 428,
+          "cache_read_input_tokens": 9255,
+          "cache_creation_input_tokens": 3424,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 3424,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "544373",
+  "persona": "peter_lynch",
+  "persona_display_name": "Peter Lynch",
+  "analyzed_at": "2026-04-20T19:45:59.538712Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "NAPS Global is a sub-16 Cr micro-cap fabric importer/reseller with a 0.16% ROE — the low P/E of 5.91 is a value trap, not a bargain. There's no \"story\" here: no moat, no growth data, no niche dominance, just a trading middleman in a commoditized textile segment.",
+    "key_strengths": [
+      "Promoter holding is high at 70.20%, showing skin in the game",
+      "Optically low P/E of 5.91 (but meaningless given near-zero earnings)",
+      "Asset-light import/distribution model requires little capex"
+    ],
+    "key_risks": [
+      "ROE of 0.16% indicates essentially no value creation on equity",
+      "Commoditized fabric-trading business with no pricing power or moat",
+      "Tiny 15.70 Cr market cap = illiquidity and governance risk on BSE SME"
+    ],
+    "red_flags": [
+      "ROE of 0.16% is effectively a rounding error — the business is barely profitable",
+      "No growth rate disclosed, making PEG analysis impossible — the core Lynch metric",
+      "Single-line business (fabric imports) with customer concentration risk in garment makers"
+    ],
+    "detailed_analysis": "From a Lynch GARP lens, this fails the first test: there's no credible growth story. A fabric importer reselling to garment manufacturers is a thin-margin trading business with no proprietary product, no brand, no network effect. The 0.16% ROE is the tell — management is deploying capital at essentially zero productivity. A P/E of 5.91 on wafer-thin earnings means a trivial drop in sales can flip this to losses, and without a growth rate there's no PEG to justify anything.\n\nI like small-caps with room to compound, but I want niche dominators, not sub-scale middlemen. At 15.70 Cr, NAPS is below my liquidity comfort and lacks any consumer-observable edge I could \"invest in what I know.\" This is a classic BSE micro-cap where the only catalyst would be promoter-driven story-spinning, not fundamentals. Pass — I'd rather wait for the fat pitch.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "insufficient_data"
+    }
+  },
+  "metadata": {
+    "duration_ms": 29164,
+    "model_used": "opus",
+    "total_cost_usd": 0.09521175000000001,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 8937,
+      "cache_read_input_tokens": 13401,
+      "output_tokens": 1305,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8937,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 124,
+          "cache_read_input_tokens": 10557,
+          "cache_creation_input_tokens": 1224,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1224
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

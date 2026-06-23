@@ -1,0 +1,69 @@
+{
+  "symbol": "MEESHO",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-21T07:57:41.946679Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Meesho is a real and growing business — revenue up 64% in two years and OCF turning positive — but at 6.5x revenue with negative EBITDA, a mysterious INR 835 Cr \"other income\" loss in FY25, and no visible path to returns on capital, Mr. Market is asking you to pay handsomely for a highly uncertain future. A great business at a fair price beats a fair business at any price — Meesho is neither great nor fairly priced.",
+    "key_strengths": [
+      "Revenue growing briskly — INR 5,735 Cr to INR 9,390 Cr (2023–25, ~28% CAGR) with structurally high gross margin (~92%) confirming a capital-light marketplace model.",
+      "OCF turned decisively positive: -2,303 Cr in FY23 → +220 Cr → +539 Cr in FY25, showing real operating leverage is beginning to emerge.",
+      "Minimal balance sheet leverage (debt INR 58 Cr vs INR 7,226 Cr assets), leaving headroom to absorb losses without near-term insolvency risk."
+    ],
+    "key_risks": [
+      "Profitability is deteriorating at the net level — net loss exploded from INR 328 Cr (FY24) to INR 3,942 Cr (FY25) driven by INR 835 Cr negative 'other income', a large unexplained swing that destroys earnings quality.",
+      "Promoter stake of only 16.57% signals extreme prior dilution; parent is a US-incorporated entity (Meesho Inc.), creating governance complexity and potential misalignment with Indian minority shareholders.",
+      "Competition from Amazon, Flipkart/Myntra, and Reliance's JioMart in the exact same value-fashion / Tier 2-3 India segment means no durable pricing power — the moat is thin and contested."
+    ],
+    "red_flags": [
+      "FY25 'Other Income' swung from +231 Cr to -835 Cr — a 1,066 Cr deterioration with no clear explanation in public data; likely ESOP fair-value charges or investment write-downs but opacity is unacceptable.",
+      "Equity has been hollowed out: reserves collapsed from INR 2,230 Cr (FY24) to INR 1,445 Cr (FY25) while assets ballooned to INR 7,226 Cr — financed by INR 2,105 Cr of fresh external capital raising, suggesting ongoing cash burn dependency.",
+      "P/B of 50x and market cap of INR 74,700 Cr on INR 9,390 Cr revenue prices in a near-perfect profitability scenario; ROIC is deeply negative with zero near-term visibility to exceed cost of capital."
+    ],
+    "detailed_analysis": "Meesho's marketplace model — connecting value-conscious Tier 2/3 India shoppers with small sellers — is genuinely interesting, and the 92% gross margin confirms they earn a take-rate rather than carry inventory risk. The OCF improvement from -2,303 Cr in FY23 to +539 Cr in FY25 is the one legitimate bright spot, hinting that contribution margins are improving. But the core operating loss (-578 Cr in FY25) is still large relative to revenue, and the EBITDA of -1,002 Cr is *worse* than FY24's -281 Cr, meaning even before the accounting noise the business is not converging on profitability on the EBITDA line. Invert: what needs to be true to justify a 74,700 Cr market cap? The company would need to reach, say, 4–5% net margins on 2x revenue (~INR 18,000–20,000 Cr) — implying a P/E of 40–50x on normalized earnings a decade away. That is pure hope, priced as fact.\n\nThe governance structure adds another layer of discomfort. With only 16.57% promoter skin in the game and a US parent as the controlling entity, minority investors on NSE have limited recourse if capital allocation decisions favor the parent or employees over public shareholders. The FY25 'other income' collapse — a 1,066 Cr year-on-year swing — is precisely the kind of accounting opacity that should make any serious investor slam their book shut. I do not invest in businesses I cannot fully understand. Meesho fails that test.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 68542,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.11918505,
+    "usage": {
+      "input_tokens": 4,
+      "cache_creation_input_tokens": 12061,
+      "cache_read_input_tokens": 19031,
+      "output_tokens": 4549,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 12061,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 867,
+          "cache_read_input_tokens": 10774,
+          "cache_creation_input_tokens": 1287,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1287
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

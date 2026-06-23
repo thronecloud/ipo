@@ -1,0 +1,70 @@
+{
+  "symbol": "BANDHANBNK",
+  "persona": "radhakishan_damani",
+  "persona_display_name": "Radhakishan Damani",
+  "analyzed_at": "2026-04-19T06:32:13.460602Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Bandhan Bank's microfinance roots give it access to an underserved market, but its promoter holding of only 39.74% — far below my 55% threshold — is a non-negotiable governance failure, and its concentrated MFI loan book makes it structurally vulnerable to rural credit stress cycles. Finance costs growing at 26.6% CAGR against revenue growth of only 7.8% CAGR signals spread compression, and ROE of 11.16% does not justify a 27.9x P/E.",
+    "key_strengths": [
+      "Forward P/E of 10.92x suggests the market has already priced in significant bad news, offering optionality if asset quality recovers",
+      "Absolute profit levels have recovered strongly post-COVID (2,745 Cr in FY25 vs 126 Cr in FY22), showing the franchise is still intact",
+      "P/B of 1.14x is relatively modest for a bank with a differentiated distribution model in underpenetrated markets"
+    ],
+    "key_risks": [
+      "Microfinance/MFI loan book concentration creates lumpy, cyclical credit losses — this is not the steady, predictable earnings I require",
+      "Finance costs growing at 26.6% CAGR (5,157 to 10,458 Cr) while revenue grows at 7.8% CAGR — the spread math is deteriorating",
+      "OCF was deeply negative in FY23 (-4,245 Cr), underscoring the episodic and volatile nature of cash generation"
+    ],
+    "red_flags": [
+      "Promoter holding of 39.74% — significantly below my 55% minimum, the single most important qualitative test I apply",
+      "ROE of 11.16% is below my 15% threshold, meaning the bank is not earning adequate returns on capital at the current scale",
+      "Net profit of only 126 Cr in FY22 (vs 2,195 Cr in FY23) illustrates extreme earnings volatility — the opposite of what I seek",
+      "Finance costs surged from 5,157 Cr to 10,458 Cr in 3 years, growing more than 2x faster than revenues"
+    ],
+    "detailed_analysis": "Bandhan Bank was founded with a genuine mission to serve the unbanked, and that mission has commercial merit. But from a pure investment standpoint, the bank fails multiple criteria simultaneously. The promoter holding of 39.74% is the most fundamental concern — in my experience, promoters who hold less than 55% are less likely to act in minority shareholders' interests over the long run. Combined with the fact that this is essentially a microfinance-heavy bank where NPAs can spike violently (as seen in FY22), the business model lacks the durability I require.\n\nThe revenue and profit trajectory shows improvement (FY25 net profit of 2,745 Cr), and the forward P/E of 10.92x is arithmetically appealing. But I have learned not to be seduced by cheap-looking multiples in businesses with structural vulnerabilities. The MFI sector in India is under stress from over-leveraging at the borrower level, and Bandhan's balance sheet at 1.9 lakh Cr in total assets is built on a foundation that has proven fragile before. Until promoter holding stabilizes above 55% and ROE sustains above 15%, this does not meet my bar.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 228796,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.27891855,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 24405,
+      "cache_read_input_tokens": 17186,
+      "output_tokens": 12149,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 24405,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 686,
+          "cache_read_input_tokens": 15136,
+          "cache_creation_input_tokens": 11319,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 11319
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

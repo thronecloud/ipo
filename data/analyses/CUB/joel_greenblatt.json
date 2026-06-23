@@ -1,0 +1,68 @@
+{
+  "symbol": "CUB",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-19T13:06:47.733070Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "City Union Bank is a financial company — the Magic Formula explicitly excludes banks and financials because leverage is their raw material, not a capital structure choice, making EBIT/EV and ROIC meaningless. Even on bank-specific metrics, ROE of only 11.87% and revenue CAGR of 6.3% are uninspiring for a stock trading at 1.92x book.",
+    "key_strengths": [
+      "Net profit has grown consistently: 760→937→1,016→1,124 Cr (FY22-FY25), CAGR of 13.9%",
+      "P/E of 15.3x and forward P/E of 12.5x offer modest valuation relative to large private banks",
+      "Strong institutional ownership (FII 23%, DII 41%) signals some confidence in the franchise"
+    ],
+    "key_risks": [
+      "ROE of 11.87% is well below the 15-18% I'd expect from a bank worth owning — cost of equity is likely higher than returns generated",
+      "Finance costs growing at 17.2% CAGR (FY22-FY25) while revenue grows at 6.3% — funding costs are outpacing earning assets",
+      "Revenue of 3,214 Cr on a market cap of 19,158 Cr gives P/S of 5.73x — expensive for a bank with mediocre ROE"
+    ],
+    "red_flags": [
+      "Magic Formula explicitly excludes financial institutions — EBIT/EV and ROIC are not applicable, removing this stock from the investable universe",
+      "Operating CF in 2024 dropped to only 436 Cr before recovering to 1,128 Cr in 2025 — lumpy cash generation raises questions about loan quality"
+    ],
+    "detailed_analysis": "Banks are structurally excluded from the Magic Formula because their balance sheets — funded predominantly by deposits and borrowings — make enterprise value and return on capital comparisons meaningless. CUB's 'operating margin' of 46% is a net interest spread metric, not an industrial EBIT. Evaluated on bank-specific terms: ROE of 11.87% is weak, total assets grew from 61,531 to 77,623 Cr (26% in 3 years) but equity only from 6,586 to 9,467 Cr, suggesting asset growth is outpacing capital generation. The bank is a mediocre regional franchise in a sector I simply can't rank using my framework.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 158171,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.23871105,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 24181,
+      "cache_read_input_tokens": 15361,
+      "output_tokens": 9561,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 24181,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 612,
+          "cache_read_input_tokens": 15361,
+          "cache_creation_input_tokens": 8820,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8820
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

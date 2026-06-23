@@ -1,0 +1,70 @@
+{
+  "symbol": "CSSL",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-21T08:02:19.885668Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Clear Secured is a low-margin, capital-intensive facility management company with no discernible moat, burning cash at an accelerating rate (-₹26 Cr FCF in FY25) while piling on debt. Accounting profits are an illusion — the business destroys cash even as revenues grow.",
+    "key_strengths": [
+      "Revenue growing 35%+ YoY (₹309→₹476 Cr), suggesting contract wins",
+      "ROCE of 20.4% looks acceptable on the surface",
+      "High promoter holding (73%) indicates skin in the game"
+    ],
+    "key_risks": [
+      "FCF deeply negative and worsening: -₹3 → -₹7 → -₹26 Cr; only 1/3 years OCF-positive",
+      "Debt exploded from ₹53 Cr to ₹128 Cr in one year; Debt/EBITDA = 3.9x (above my 2.5x limit)",
+      "Net profit FELL from ₹12→₹10 Cr despite 37% revenue growth — finance costs tripled (₹4→₹10 Cr), eating the business alive"
+    ],
+    "red_flags": [
+      "FCF/Net Income deeply negative (-260%) — accounting profits are not real cash earnings",
+      "Borrowings up 141% YoY (₹53→₹128 Cr); CWIP up 175% (₹8→₹22 Cr) — growth funded entirely by debt",
+      "Other income swung from +₹3 Cr to -₹2 Cr — possible write-offs or treasury losses",
+      "ROIC ≈ 8-9% (NOPAT ~₹23 Cr / invested capital ~₹264 Cr) — well below my 15% minimum threshold"
+    ],
+    "detailed_analysis": "Invert first: what makes this a terrible business? Facility management is a commodity — contracts are won on price, clients switch freely, and there is no switching cost. EBITDA margins are 6-7% with net margins below 3%. The business cannot grow without consuming enormous capital, evidenced by assets nearly doubling (₹170→₹327 Cr) in a single year while net profit shrank. The gap between reported net income (₹10 Cr) and free cash flow (-₹26 Cr) — a ₹36 Cr divergence — is the most damning number in this entire data set. When a business consistently fails to convert earnings into cash, I want nothing to do with it.\n\nThe balance sheet is deteriorating rapidly. Debt tripling in a year to fund working capital and CWIP in a services business is a serious warning sign. At ₹128 Cr borrowings against ₹33 Cr EBITDA, debt service is consuming the marginal economics of growth — finance costs already jumped from ₹4 Cr to ₹10 Cr, directly suppressing net profit despite strong topline growth. The P/E of 18.8x is expensive for a business of this quality; on an EV/EBITDA basis (~11x), the market is pricing this as if it had durable advantages it simply does not possess. A poor business, in debt, burning cash, with no moat — I would not own this at any price near current levels.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 49685,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07828800000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9958,
+      "cache_read_input_tokens": 7905,
+      "output_tokens": 2571,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9958,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 616,
+          "cache_read_input_tokens": 7905,
+          "cache_creation_input_tokens": 2053,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2053
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

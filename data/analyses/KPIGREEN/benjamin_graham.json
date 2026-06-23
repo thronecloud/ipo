@@ -1,0 +1,70 @@
+{
+  "symbol": "KPIGREEN",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T18:06:25.576754Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "KPI Green Energy trades at INR 448 versus a Graham Number of ~INR 256 (using EPS ≈ ₹21.75 and BVPS ≈ ₹134), a 75% premium to intrinsic value by my calculation — offering zero margin of safety. The business has never generated positive free cash flow, surviving entirely on debt and equity issuances, which is precisely the kind of speculative capital structure I refuse to own.",
+    "key_strengths": [
+      "Six consecutive years of positive net profit (₹9 Cr → ₹325 Cr), providing an actual earnings track record",
+      "Interest coverage of ~7x (EBIT ₹564 Cr / Finance cost ₹79 Cr in FY25) is adequate",
+      "Revenue growth of 92.6% CAGR — the underlying business is clearly winning contracts"
+    ],
+    "key_risks": [
+      "FCF has been negative every single year (-₹88 Cr to -₹1,297 Cr), meaning reported profits are accounting entries, not cash in hand",
+      "D/E of 0.88 far exceeds my 0.5 limit; borrowings ballooned from ₹139 Cr (2020) to ₹2,533 Cr (2025) — a 18x increase in 5 years",
+      "P/B of 3.34 means you are paying ₹3.34 for every ₹1 of tangible net assets — dangerous in a capital-intensive industry"
+    ],
+    "red_flags": [
+      "Graham Number ~₹256 vs market price ₹448 — stock is 75% above intrinsic value by my formula",
+      "Free cash flow negative in all 6 years of data; FY25 FCF was -₹1,297 Cr — growth funded entirely by external capital",
+      "No dividend — in a capital-intensive utility, absence of dividends means shareholders receive no tangible return",
+      "CWIP surged to ₹709 Cr (2025) from near-zero — large unproductive asset base at risk if projects are delayed"
+    ],
+    "detailed_analysis": "KPI Green Energy fails every quantitative screen I apply. The P/E of 20.6 exceeds my ceiling of 15; the P/B of 3.34 is more than double my maximum of 1.5. My Graham Number (√(22.5 × ₹21.75 EPS × ₹134 BVPS)) yields approximately ₹256, meaning the market demands a 75% premium over what the numbers justify. Debt/equity of 0.88 also breaches my 0.5 limit. The current ratio is not explicitly stated but the financing structure — ₹2,533 Cr in borrowings against ₹119 Cr cash — signals a business wholly dependent on the continued goodwill of lenders and equity markets.\n\nThe most damning fact is the cash flow record: free cash flow has been negative every year without exception, reaching -₹1,297 Cr in FY25. The ₹325 Cr net profit is real on paper, but the company simultaneously burned ₹1,505 Cr in capex and raised ₹1,807 Cr from financing. This is a growth machine funded by the capital markets, not a self-sustaining business. Mr. Market is pricing in a bright renewable energy future; I require proof of present value. The promoter holding of 49.5% and strong ROE of 19.7% are encouraging qualities, but they do not compensate for paying three times book for a cash-burning enterprise. Intelligent investors do not pay for hope.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "exceptional"
+    }
+  },
+  "metadata": {
+    "duration_ms": 45317,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07404764999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8991,
+      "cache_read_input_tokens": 10958,
+      "output_tokens": 2469,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 8991
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 410,
+          "cache_read_input_tokens": 8908,
+          "cache_creation_input_tokens": 2133,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2133,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

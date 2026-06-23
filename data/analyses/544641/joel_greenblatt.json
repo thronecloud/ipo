@@ -1,0 +1,69 @@
+{
+  "symbol": "544641",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-20T11:01:48.725410Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "K.V. Toys fails the Magic Formula on both axes: an earnings yield of ~3.7% (P/E 27.2) is far too expensive, and ROE of 1.01% implies a dismally low return on capital — nowhere near the >20% threshold. Cheap-and-good is the goal; this is expensive-and-poor.",
+    "key_strengths": [
+      "Promoter holding of 58.34% shows reasonable skin-in-the-game",
+      "Some institutional interest (DII 8.03%) despite micro-cap status",
+      "Asset-light contract manufacturing model (plastic-moulded toys)"
+    ],
+    "key_risks": [
+      "ROE of 1.01% signals near-zero return on capital — Magic Formula disqualifier",
+      "P/E of 27.2 = earnings yield ~3.7%, well below the 12% attractive threshold",
+      "Micro-cap (INR 124 Cr) in commoditized toy contract manufacturing with thin moat"
+    ],
+    "red_flags": [
+      "ROE ~1% — either margin collapse, over-capitalization, or near-zero earnings base",
+      "Paying 27x earnings for a sub-scale contract manufacturer is irrational",
+      "No disclosed EBIT/EV or ROIC data — but ROE of 1% makes ROIC almost certainly <5%"
+    ],
+    "detailed_analysis": "The Magic Formula ranks companies on earnings yield (EBIT/EV) and return on capital. K.V. Toys fails both. A P/E of 27.2 translates to an earnings yield of roughly 3.7% — less than a government bond and one-fourth of what I'd consider attractive. Simultaneously, ROE of 1.01% tells me the business is barely generating any return on the capital deployed; even with modest leverage adjustments, ROIC is almost certainly in low single digits versus my 20%+ target. This is the textbook \"expensive-and-bad\" quadrant — the exact opposite of what the formula seeks.\n\nContract manufacturing of plastic and metal toys is a low-margin, commoditized business with little pricing power, competing against unorganized players and Chinese imports. There is no evidence of a durable moat, and the valuation reflects micro-cap SME-platform speculation rather than earnings power. I'd need to see ROIC expand above 20% AND the price fall by more than half before this screens anywhere near my universe. Pass decisively.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 21512,
+    "model_used": "opus",
+    "total_cost_usd": 0.0940695,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 9012,
+      "cache_read_input_tokens": 13479,
+      "output_tokens": 1239,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9012,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10609,
+          "cache_creation_input_tokens": 1273,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1273
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "ELECON",
+  "persona": "howard_marks",
+  "persona_display_name": "Howard Marks",
+  "analyzed_at": "2026-04-22T16:33:55.486376Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Elecon is a genuinely solid industrial franchise — 70+ years old, nearly debt-free, 21% ROCE — but the market is pricing in a ~61% earnings recovery (forward P/E implies ~INR 550 Cr profit vs. INR 341 Cr in FY2026) after an 18% profit decline, leaving zero margin of safety. At a 2.4% FCF yield and EV/EBITDA of 14.3x for a cyclical machinery company, consensus optimism is doing all the heavy lifting.",
+    "key_strengths": [
+      "Balance sheet discipline: D/E 0.12, borrowings slashed from INR 335 Cr (2021) to INR 52 Cr (2023) — management proved it can delever under pressure.",
+      "Consistent OCF generation — 5/5 years positive, peak INR 432 Cr in FY2025, with ROCE of 21% well above cost of capital.",
+      "Diversified industrial moat: gears + material handling across cement, steel, mining, defense, power — cyclical risk spread across many end markets."
+    ],
+    "key_risks": [
+      "FY2026 earnings already declining: net profit fell 18% (INR 415→341 Cr) and EBITDA stalled (INR 611→605 Cr) — the forward P/E of 16.85 prices in a 61% profit rebound that has no near-term evidence.",
+      "FCF collapsed 41% (INR 368→218 Cr in FY2026) as capex doubled to INR 120 Cr — a new investment cycle is beginning just as margins are compressing, a dangerous combination.",
+      "Debt quietly returning: borrowings rose from INR 52 Cr (FY2023) to INR 273 Cr (FY2026), with finance costs tripling — if the capex cycle disappoints, balance sheet deteriorates fast."
+    ],
+    "red_flags": [
+      "Forward P/E of 16.85 embeds ~61% earnings recovery from FY2026 lows — consensus is uniformly bullish with no margin for error.",
+      "FCF yield of only 2.4% (INR 218 Cr / INR 9,262 Cr market cap) — well below the 6-8% minimum threshold; you are not being paid to wait.",
+      "Revenue growing (+8.7% YoY) while profits fell 18% — margin compression underway, and the market has not repriced for it."
+    ],
+    "detailed_analysis": "Second-level thinking requires asking not \"is Elecon a good business?\" — it clearly is — but \"what does INR 413 already reflect?\" The answer is uncomfortable: the market is pricing in an earnings recovery to ~INR 550 Cr from INR 341 Cr in FY2026, a 61% jump, from a business that just delivered its worst profit year since FY2023. Revenue grew fine (+8.7% to INR 2,366 Cr) but operating income actually contracted (INR 543→523 Cr), EBITDA was flat (INR 611→605 Cr), and FCF cratered 41%. Something structural — whether cost inflation, product mix, or aggressive capex — is compressing margins. The market is treating this as a one-quarter blip; it may be a cycle turn.\n\nThe balance sheet cleanup from 2021–2023 was genuinely impressive and de-risked the company. But debt is quietly re-accumulating (INR 273 Cr vs. INR 52 Cr three years ago), capex doubled to INR 120 Cr in FY2026, and free cash flow is now only INR 218 Cr — meaning at today's market cap you earn a 2.4% FCF yield while taking on cyclical industrial exposure. At EV/EBITDA of 14.3x, you'd need continued margin expansion and earnings recovery that simply isn't visible in the numbers yet. A stress scenario — Indian capex slowdown, infrastructure budget cut, or another earnings miss — could easily put this at 18–20x EBITDA on depressed profits, implying 25–35% downside. The risk/reward is unfavorable.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 74397,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09222915,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10105,
+      "cache_read_input_tokens": 11338,
+      "output_tokens": 3395,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10105,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 579,
+          "cache_read_input_tokens": 9284,
+          "cache_creation_input_tokens": 2875,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2875
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

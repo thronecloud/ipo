@@ -1,0 +1,69 @@
+{
+  "symbol": "MANORAMA",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T18:18:21.128844Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Manorama scores adequately on Return on Capital (~20% ROCE) but fails catastrophically on Earnings Yield — EBIT of INR 186 Cr against an EV of ~INR 8,944 Cr produces just a 2.1% earnings yield, far below my 12% minimum. The Magic Formula requires BOTH metrics to be attractive; here, only one qualifies, and the other is disqualifying.",
+    "key_strengths": [
+      "Growing niche moat in specialty fats/shea butter — operating margins expanded from 13.7% (2022) to 24.1% (2025), signaling pricing power",
+      "Revenue CAGR of 40.5% and EBIT CAGR of 69.2% over 3 years — scale is clearly being gained in a specialized ingredient space",
+      "ROCE of ~20% and ROE of 23.9% — adequate return on capital meeting Greenblatt's lower threshold"
+    ],
+    "key_risks": [
+      "Earnings yield of 2.1% (EBIT 186 Cr / EV ~8,944 Cr) — the stock is priced for perfection at 39.5x P/E and 26.5x EV/EBITDA",
+      "Chronically negative free cash flow: FCF was negative in 3 of 4 years (-93, +8, -193, -89 Cr) — reported profits are not converting to cash",
+      "Finance costs growing at 100% CAGR (5 Cr → 39 Cr) and debt ballooning from 108 Cr to 482 Cr — balance sheet risk rising fast"
+    ],
+    "red_flags": [
+      "Earnings Yield of 2.1% — deeply below the 6% floor required by the Magic Formula",
+      "Operating CF negative in 3 of 4 years: INR 110 Cr net profit in FY25 but OCF of -57 Cr and FCF of -89 Cr suggests aggressive working capital build or accounting-cash disconnect",
+      "Cash near zero (INR 3 Cr vs. INR 482 Cr debt) with financing flows the only lifeline — highly dependent on capital markets"
+    ],
+    "detailed_analysis": "By the Magic Formula, the two questions are: is the business good (ROIC), and is it cheap (Earnings Yield)? Manorama's ROCE of ~20% is borderline acceptable — it clears my 20% threshold just barely, and the expanding operating margins (13.7% in 2022 to ~24% in 2025) suggest some real competitive advantage in specialty fats sourcing. However, the business earns INR 186 Cr in EBIT against an enterprise value of roughly INR 8,944 Cr — that's a 2.1% earnings yield. My framework requires >12% to rank favorably; anything below 6% is simply overvalued. The market is pricing in flawless execution of the hypergrowth story for many years ahead, leaving zero margin of safety.\n\nThe cash flow picture is a serious structural red flag that goes beyond valuation. Net profit has grown impressively from INR 24 Cr to INR 110 Cr, but free cash flow has been negative in 3 of the last 4 years, summing to -367 Cr cumulatively. The company has funded this with debt (108 Cr → 482 Cr) and equity issuance, and cash has collapsed to near zero. Finance costs growing at 100% CAGR will increasingly erode earnings. For the Magic Formula to work, I need businesses that generate real cash — this one currently does not. At 39.5x earnings with no FCF, this is a speculative growth bet, not a value investment.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 48434,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07973039999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10740,
+      "cache_read_input_tokens": 8588,
+      "output_tokens": 2458,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 10740
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 358,
+          "cache_read_input_tokens": 8588,
+          "cache_creation_input_tokens": 2152,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2152,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "symbol": "HCG",
+  "persona": "philip_fisher",
+  "persona_display_name": "Philip Fisher",
+  "analyzed_at": "2026-04-18T17:35:34.467823Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "HCG operates a genuinely differentiated oncology platform in a high-growth Indian cancer care market, but crushing debt (D/E 1.78), near-negligible earnings (INR 49 Cr net profit on INR 2,218 Cr revenue), and a P/E of 310x make this uninvestable at current prices. Until the balance sheet cleans up and ROIC meaningfully exceeds cost of capital, this is a business quality story without the financial quality to match.",
+    "key_strengths": [
+      "Specialized oncology moat — India's largest cancer-care network with end-to-end services (diagnostics → treatment → post-care) that generic hospital chains cannot replicate",
+      "Secular TAM expansion — India's cancer burden is structurally rising, ensuring 10-15+ years of demand runway for a focused operator",
+      "Operating leverage materializing — Operating Income CAGR (18.2%) exceeds Revenue CAGR (16.0%) and OCF has been positive all 5 years, growing from INR 130 Cr to INR 317 Cr"
+    ],
+    "key_risks": [
+      "Debt burden is crippling profitability — Finance costs (INR 155 Cr in FY25) are 3x net profit (INR 49 Cr); borrowings surged from INR 901 Cr to INR 1,768 Cr in just two years, raising refinancing risk",
+      "ROE of 5.14% and ROCE of 8.56% signal capital is being destroyed, not compounded — Fisher demands >20% ROE; this falls far short",
+      "Valuation completely disconnects from fundamentals — P/E of 310x on razor-thin 2.2% net margins leaves zero margin of safety and prices in decades of perfect execution"
+    ],
+    "red_flags": [
+      "Net losses in FY2019 (-31 Cr), FY2020 (-125 Cr), and FY2021 (-221 Cr) — a prolonged value-destruction period that reveals capital allocation weaknesses in management",
+      "Investing CF spiked to -488 Cr in FY25 (vs. OCF of only 317 Cr), suggesting debt-funded acquisitions that further strain the balance sheet",
+      "Operating margin of only 7.73% despite gross margin of 51.47% — massive overhead and finance cost leakage that squeezes what should be a premium-service business"
+    ],
+    "detailed_analysis": "HCG is the closest thing India has to a dedicated oncology platform — a genuinely rare business operating in a market where cancer incidence is rising and quality specialized care is scarce. The scuttlebutt on this company would be positive: patients travel hundreds of kilometers for HCG's radiation oncology, bone marrow transplants, and CAR T-cell therapies. Revenue has grown at a solid 16% CAGR over nine years, and the last five years show clear operating leverage with EBITDA expanding from INR 239 Cr (FY22) to INR 422 Cr (FY25). This is a business with genuine differentiation that competitors cannot easily replicate.\n\nHowever, the financial structure is deeply troubling by my standards. Management went through a ruinous expansion phase in 2019-2021 that produced three consecutive years of losses totaling INR 377 Cr — a period that destroyed shareholder value and required dilution (equity jumped from INR 382 Cr to INR 697 Cr via fundraising). The current borrowing surge from INR 901 Cr to INR 1,768 Cr in two years, while net profit sits at only INR 49 Cr, is precisely the kind of financially aggressive behavior I find uncomfortable. A great business should fund growth from its own earnings over time, not from ever-rising debt. At P/E 310x with ROE of 5%, the market is pricing this as a world-class compounder before it has earned that designation.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 60527,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0817302,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9666,
+      "cache_read_input_tokens": 11329,
+      "output_tokens": 2805,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9666
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 416,
+          "cache_read_input_tokens": 9275,
+          "cache_creation_input_tokens": 2445,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2445,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

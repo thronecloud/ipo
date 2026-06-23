@@ -1,0 +1,69 @@
+{
+  "symbol": "EIEL",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T17:09:33.918464Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "EIEL trades at INR 213 against a calculated Graham Number of ~INR 121 — a 76% premium to intrinsic value — offering zero margin of safety. Negative operating cash flow in both FY2024 (-102 Cr) and FY2025 (-47 Cr) exposes reported profits as largely uncollected earnings trapped in working capital.",
+    "key_strengths": [
+      "Debt/Equity of 0.26 is well within Graham's 0.5 limit — balance sheet is not overleveraged",
+      "Six consecutive years of positive net profit (INR 5 Cr → 177 Cr) satisfies the earnings history requirement",
+      "Interest coverage of ~7.6x (EBITDA 280 / finance cost 37) provides adequate debt service cushion"
+    ],
+    "key_risks": [
+      "Price-to-Book of 3.28 is more than double Graham's maximum of 1.5 — paying INR 3.28 for every rupee of net assets",
+      "Operating cash flow has been negative for two consecutive years despite surging book profits — a classic sign of earnings quality deterioration in working-capital-intensive EPC contracts",
+      "No dividend history — shareholders receive no tangible cash return; the stock is entirely a speculation on future growth"
+    ],
+    "red_flags": [
+      "Recent IPO (FY2025 equity jumped from INR 292 Cr to INR 1,139 Cr; financing CF +471 Cr) — investment banks price IPOs to maximise proceeds for sellers, not buyers",
+      "Free cash flow deeply negative in FY2024 (-135 Cr) and FY2025 (-93 Cr) — reported net profit of 177 Cr is not being collected in cash",
+      "58% revenue CAGR and 104% net profit CAGR are extraordinary rates that the market has fully priced in — Graham distrusts such speculative growth baked into valuations"
+    ],
+    "detailed_analysis": "By every quantitative filter I insist upon, EIEL fails. The P/E of 17.8x exceeds my ceiling of 15x; the P/B of 3.28x is more than twice my upper limit of 1.5x. My Graham Number — derived solely from proven EPS (~INR 10.1) and book value per share (~INR 64.9) — yields approximately INR 121, against a market price of INR 213. The intelligent investor never pays a 76% premium above intrinsic value; that is not an investment, it is speculation dressed in a hard hat.\n\nThe cash flow picture is the most damning evidence. A government EPC contractor billing INR 1,066 Cr in revenue yet consuming INR 47 Cr in operating cash flow is simply advancing work on credit, with the government as a slow-paying debtor. The IPO in FY2025 raised roughly INR 471 Cr in financing — that capital infusion is masking what is otherwise a cash-hungry business. Mr. Market's enthusiasm for water-infrastructure stories has priced EIEL as though its extraordinary growth rates are perpetual. I require a margin of safety, not a margin of hope.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 48429,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.06994815,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8741,
+      "cache_read_input_tokens": 10868,
+      "output_tokens": 2260,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 8741
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 333,
+          "cache_read_input_tokens": 8818,
+          "cache_creation_input_tokens": 1973,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1973,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

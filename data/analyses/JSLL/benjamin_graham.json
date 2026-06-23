@@ -1,0 +1,70 @@
+{
+  "symbol": "JSLL",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T17:54:29.687891Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "At INR 686, JSLL trades at a P/B of 24.11x and P/E of 64x — both more than four times my maximum thresholds — offering zero margin of safety by any quantitative measure. The Graham Number, computed at approximately INR 64 (sqrt(22.5 × ~6.4 EPS × ~28.5 BVPS)), implies the market price is a staggering 10x intrinsic value.",
+    "key_strengths": [
+      "Consistent earnings growth over 4 years with Net Profit CAGR of 93.7% (INR 11 Cr → 80 Cr)",
+      "Conservative balance sheet with Debt/Equity of 0.30 — one of the few ratios that passes my screen",
+      "OCF positive all 4 years, with free cash flow turning positive in 2024-25 (INR 27 Cr)"
+    ],
+    "key_risks": [
+      "Grotesque overvaluation: P/B of 24x destroys any asset-based margin of safety; liquidation value covers only ~4% of market cap",
+      "Sudden debt surge — borrowings leapt from INR 1 Cr (2024) to INR 106 Cr (2025), with finance costs jumping to INR 11 Cr",
+      "Ayurvedic/wellness niche lacks proven durability — fewer than 5 years of earnings history fails my minimum track record requirement"
+    ],
+    "red_flags": [
+      "P/B of 24.11x vs my hard ceiling of 1.5x — paying 16x the acceptable premium over book value",
+      "Graham Number ~INR 64 implies current price of INR 686 is approximately 970% above intrinsic value",
+      "No dividend — no evidence of real cash returns to shareholders",
+      "Only 4 years of earnings history — insufficient to establish proven earning power"
+    ],
+    "detailed_analysis": "By every quantitative filter I have devised, JSLL fails decisively. A P/E of 64 is more than four times my maximum of 15; a P/B of 24.11 is sixteen times my ceiling of 1.5. The Graham Number — the geometric mean of earnings and book value — works out to roughly INR 64 per share. The market is demanding INR 686, meaning a buyer today is paying for a decade of optimistic growth assumptions baked in at full price, with no cushion whatsoever if the business stumbles. That is not investing; that is speculation.\n\nThe underlying business is not without merit — rapid revenue growth from INR 147 Cr to INR 469 Cr in three years, a 40% operating margin, and consistent positive cash flow are real achievements. However, the intelligent investor must distinguish between a fine business and a fine investment. Mr. Market has priced this company as though nothing can go wrong for the next ten years in the unpredictable Ayurveda-wellness segment. The sudden borrowing of INR 106 Cr in FY2025 (up from INR 1 Cr) warrants scrutiny. I require a margin of safety — here, there is none. I will wait patiently at the sideline.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 43833,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0659556,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8332,
+      "cache_read_input_tokens": 10672,
+      "output_tokens": 2100,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 8332
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 384,
+          "cache_read_input_tokens": 8622,
+          "cache_creation_input_tokens": 1760,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1760,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

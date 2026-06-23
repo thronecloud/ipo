@@ -1,0 +1,70 @@
+{
+  "symbol": "AWFIS",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T16:37:26.652962Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Awfis fails both legs of the Magic Formula — Earnings Yield of ~10% (EBIT ₹407 Cr / EV ~₹3,972 Cr) sits below the 12% threshold, and ROCE of 12.9% is well short of the 20%+ needed to call this a \"good business.\" A capital-intensive lease-arbitrage model carrying ₹1,451 Cr in borrowings on ₹499 Cr equity does not qualify as a high-ROIC compounder at any price.",
+    "key_strengths": [
+      "Revenue scaling rapidly — 41% CAGR over 6 years, ₹154 Cr → ₹1,208 Cr",
+      "FCF turning positive: ₹163 Cr in FY25 after years of cash burn, OCF positive 5/5 years",
+      "High gross margins (82%) suggest strong unit economics at the seat level"
+    ],
+    "key_risks": [
+      "ROCE only 12.9% — well below Magic Formula's 20% floor; business consumes capital faster than it earns on it",
+      "Debt spiral risk: borrowings ₹1,451 Cr (D/E 2.91), finance costs CAGR 73% vs revenue CAGR 41%",
+      "Single year of profitability (FY25 net profit ₹68 Cr) after six consecutive loss years — far too thin a track record"
+    ],
+    "red_flags": [
+      "Earnings Yield ~10% and ROIC 12.9% — both metrics fail Magic Formula thresholds simultaneously",
+      "Promoter holding at just 17% — dangerously low skin in the game",
+      "IND-AS 116 lease capitalisation inflates EBITDA (₹456 Cr) and operating income, masking the true cost of occupancy obligations",
+      "Finance costs rose from ₹5 Cr (2019) to ₹136 Cr (2025) — 73% CAGR — outpacing revenue growth"
+    ],
+    "detailed_analysis": "Magic Formula verdict is quick: EV = Market Cap ₹2,592 Cr + Debt ₹1,413 Cr − Cash ₹33 Cr = ~₹3,972 Cr. EBIT (Operating Income) FY25 = ₹407 Cr → Earnings Yield ≈ 10.2%, below the 12% attractiveness threshold. ROCE reported at 12.9% — well under the 20% hurdle. The business fails both filters simultaneously, which the Magic Formula treats as a hard pass. The high EBITDA margin is an accounting artifact of IND-AS 116, which capitalises leases and pushes rent expense below the EBITDA line; strip that out and the underlying economics look far less impressive.\n\nThe structural problem is the business model itself: Awfis leases space on long contracts and subleases short — classic real estate arbitrage. This generates operating leverage in upcycles but destroys ROIC because the balance sheet keeps bloating (assets: ₹509 Cr in 2021 → ₹2,695 Cr in 2025) with no commensurate improvement in capital efficiency. FY25 net profit of ₹68 Cr is the first positive year after six years of losses; that is nowhere near enough history to validate a sustained high-ROIC franchise. At P/E 44x and EV/EBITDA 15.9x, the market is pricing in a high-quality compounder — but the underlying numbers do not support that label by any quantitative screen Greenblatt would run.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 58141,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.09354794999999999,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11679,
+      "cache_read_input_tokens": 8859,
+      "output_tokens": 3139,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11679
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 375,
+          "cache_read_input_tokens": 8859,
+          "cache_creation_input_tokens": 2820,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2820,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

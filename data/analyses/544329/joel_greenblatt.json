@@ -1,0 +1,69 @@
+{
+  "symbol": "544329",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-20T09:46:34.953248Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Leo Dryfruits fails the Magic Formula's \"good business\" test decisively — a 0.17% ROE in a low-margin commodity trading business signals capital is earning essentially nothing. The optically cheap 6.08x P/E cannot compensate for what looks like near-zero return on capital, so this scores poorly on the quality leg even if the cheapness leg looks acceptable.",
+    "key_strengths": [
+      "P/E of 6.08x implies a ~16% earnings yield on equity, optically cheap",
+      "Asset-light spices/dry fruits trading — limited fixed-asset capital intensity",
+      "Small ₹78.6 Cr market cap leaves room for re-rating if returns improve"
+    ],
+    "key_risks": [
+      "ROE of 0.17% means return on capital is effectively zero — fails Magic Formula quality leg",
+      "Commodity trading business with no pricing power or moat in spices/dry fruits",
+      "Low 38.11% promoter holding and recent 2019 incorporation — limited operating history"
+    ],
+    "red_flags": [
+      "ROE 0.17% is incompatible with P/E of 6 unless earnings are based on inflated post-IPO equity or a one-time item",
+      "Negligible institutional ownership (FII 0.91%, DII 0%) — no smart-money validation",
+      "SME-tier scale in a fragmented, low-margin trading category"
+    ],
+    "detailed_analysis": "The Magic Formula ranks companies on two axes: how cheap (EBIT/EV) and how good (ROIC). Leo Dryfruits passes the cheapness screen on the surface — a 6.08x P/E translates to a ~16% earnings yield, which would normally be attractive. But the quality side collapses: a 0.17% ROE in a business with modest fixed assets implies ROIC is also near zero. The arithmetic doesn't even reconcile cleanly — a 6x P/E with 0.17% ROE suggests either earnings are tiny on a recently inflated post-IPO equity base, or a one-time gain is propping up the P/E. Either way, the \"good business earning high returns on capital\" criterion is failed outright.\n\nGreenblatt's whole point is to buy good businesses at bargain prices, not bad businesses at any price. Spices and dry fruits trading is a fragmented, working-capital-heavy commodity business with no structural moat, and a five-year-old SME without a track record of sustained ROIC has nothing to suggest the formula will work here. With negligible institutional sponsorship and a thin promoter stake, I would skip this and rank it well below the Magic Formula cutoff. Score: 2/10, AVOID.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 33636,
+    "model_used": "opus",
+    "total_cost_usd": 0.10532725000000001,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 9321,
+      "cache_read_input_tokens": 13482,
+      "output_tokens": 1612,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9321,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 75,
+          "cache_read_input_tokens": 10612,
+          "cache_creation_input_tokens": 1579,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1579
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

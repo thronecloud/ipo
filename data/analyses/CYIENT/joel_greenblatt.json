@@ -1,0 +1,68 @@
+{
+  "symbol": "CYIENT",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-19T13:06:47.736868Z",
+  "analysis": {
+    "score": 5,
+    "recommendation": "HOLD",
+    "investment_thesis": "Cyient is the closest to a Magic Formula candidate in this batch: earnings yield of ~11.3% (EBIT 1,138 Cr / EV ~10,071 Cr) is approaching attractive territory, and ROIC on tangible capital is decent at ~22%. However, the FY2025 margin contraction — operating income fell from 1,303 to 1,138 Cr despite revenue growth — is exactly the kind of earnings quality deterioration that makes me wait rather than act.",
+    "key_strengths": [
+      "Earnings yield of ~11.3% (EV = 10,071 Cr on EBIT of 1,138 Cr) is the best in this peer group, approaching the >12% threshold",
+      "Virtually debt-free in practice (net cash position: cash 1,067 Cr vs debt 513 Cr) reduces financial risk significantly",
+      "9-year revenue CAGR of 10.1% shows consistent top-line compounding across aerospace, defense, utilities, and digital services"
+    ],
+    "key_risks": [
+      "Operating income declined from 1,303 Cr (FY24) to 1,138 Cr (FY25) — a 13% drop — while revenue grew, signaling margin pressure from wage inflation or mix shift",
+      "Net profit also declined from 703 to 648 Cr (FY24→FY25) — two consecutive metrics moving the wrong direction kills conviction",
+      "ROCE of 16.6% is below my 20% threshold; the large equity base (5,565 Cr) from acquisitions dilutes capital efficiency"
+    ],
+    "red_flags": [
+      "Finance costs surged from 16 Cr (FY16) to 93-116 Cr (FY24-25), a 21.6% CAGR — acquisitions have added meaningful debt servicing burden",
+      "Other income collapsed from consistently 100-160 Cr range to negative 2 Cr in FY24 before partial recovery — suggests non-recurring items were masking core earnings weakness"
+    ],
+    "detailed_analysis": "EV calculation: Market Cap 10,625 + Debt 513 - Cash 1,067 = 10,071 Cr. EBIT (Operating Income) FY25 = 1,138 Cr → Earnings Yield = 11.3%. Invested capital (equity 5,565 + debt 513 - cash 1,067) = ~5,011 Cr → ROIC = 22.7%. These numbers look decent, but the FY2025 earnings regression is a yellow flag. The Magic Formula works best when high ROIC is durable — one bad year can be ignored, but the trend here (EBIT peak 1,303 Cr in FY24, now 1,138) warrants monitoring. At current levels, Cyient is a Hold with potential to become a Buy if margins stabilize and earnings yield crosses 13%+.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 158171,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.23871105,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 24181,
+      "cache_read_input_tokens": 15361,
+      "output_tokens": 9561,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 24181,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 612,
+          "cache_read_input_tokens": 15361,
+          "cache_creation_input_tokens": 8820,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8820
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

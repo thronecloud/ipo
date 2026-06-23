@@ -1,0 +1,71 @@
+{
+  "symbol": "BLUESTONE",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T16:46:19.070632Z",
+  "analysis": {
+    "score": 1,
+    "recommendation": "AVOID",
+    "investment_thesis": "BlueStone has never produced a rupee of net profit across all four years of data — losses widened to ₹222 Cr in FY2025 despite 56% revenue CAGR, and free cash flow collapsed to -₹828 Cr. At P/B of 4.34x with no earnings, no dividend, and ballooning debt, there is no margin of safety whatsoever.",
+    "key_strengths": [
+      "Revenue growing at 56.5% CAGR (₹461 Cr → ₹1,770 Cr in 3 years) — a real business scaling rapidly",
+      "EBITDA turned positive in FY2024-25 (₹121 Cr), suggesting some unit economics improvement",
+      "Strong institutional interest (FII 34.19% + DII 33.90%) providing liquidity"
+    ],
+    "key_risks": [
+      "Never profitable — net losses in all 4 years, with FY2025 loss of ₹222 Cr worse than FY2024's ₹142 Cr despite revenue scaling",
+      "Free cash flow imploding: -₹828 Cr in FY2025 vs -₹280 Cr prior year; the business is a cash furnace",
+      "Debt of ₹1,915 Cr growing at ~86% CAGR; finance costs at ₹208 Cr (124% CAGR) will strangle any nascent profitability"
+    ],
+    "red_flags": [
+      "Zero consecutive years of positive earnings — fails Graham's minimum 3-5 year requirement entirely",
+      "P/B of 4.34x — nearly 3x my maximum tolerable level of 1.5x; paying ₹4.34 for ₹1 of book value",
+      "Promoter holding of just 16.27% — insiders have minimal skin in the game post-IPO",
+      "Operating cash flow deteriorated from +₹33 Cr (FY2022) to -₹666 Cr (FY2025) — business consumes more cash the bigger it grows",
+      "D/E of 1.14x vs my limit of 0.5x; equity only turned positive due to IPO capital infusion, not earnings"
+    ],
+    "detailed_analysis": "BlueStone fails every quantitative filter I have ever applied in fifty years of security analysis. There is no P/E to compute because there are no earnings — the company has lost ₹1,799 Cr cumulatively over four years. The Graham Number cannot be calculated. P/B at 4.34x is nearly three times my ceiling of 1.5x. The business is structurally cash-destructive: the faster it grows, the more cash it burns, evidenced by operating cash flow falling from +₹33 Cr to -₹666 Cr as revenues quadrupled. Finance costs compounding at 124% annually will ensure that even a future EBITDA-positive trajectory gets consumed by interest before reaching shareholders. The lone concession I would grant is that EBITDA has improved directionally (₹-1,222 Cr → ₹121 Cr), suggesting the unit model is not permanently broken. But Mr. Market is pricing this hope at ₹7,939 Cr market cap — EV/EBITDA of 60.6x on EBITDA that is itself insufficient to cover ₹208 Cr of annual interest. A speculator may be willing to pay for the dream of profitability in year five or six; an intelligent investor demands proof of earning power today. That proof is absent. I would not purchase this security at any price above tangible book value, and tangible book itself is entirely a product of recent equity issuance, not retained profits.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 55521,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0897492,
+    "usage": {
+      "input_tokens": 4,
+      "cache_creation_input_tokens": 9264,
+      "cache_read_input_tokens": 20624,
+      "output_tokens": 3254,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9264
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 502,
+          "cache_read_input_tokens": 10185,
+          "cache_creation_input_tokens": 1129,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1129,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

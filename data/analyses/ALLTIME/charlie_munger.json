@@ -1,0 +1,69 @@
+{
+  "symbol": "ALLTIME",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-20T11:14:27.478125Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "AVOID",
+    "investment_thesis": "All Time Plastics is a commodity plastic houseware maker with mediocre ROCE (13.9%), thin operating margins (10%), and negligible moat — exactly the kind of business I try to avoid. At 36.5x earnings for a capex-hungry, low-differentiation manufacturer, the price demands growth that the economics don't support.",
+    "key_strengths": [
+      "Promoter skin-in-the-game at 70.15% and modest D/E of 0.22",
+      "Operating profit CAGR of 31.7% shows recent margin expansion and export traction",
+      "60+ year operating history and diversified SKU portfolio across kitchen/storage/bath"
+    ],
+    "key_risks": [
+      "ROCE of 13.89% is below my 15% threshold for a 'quality' compounder",
+      "FY25 FCF turned sharply negative (-INR 62 Cr) on INR 114 Cr capex — growth is bought, not earned",
+      "No durable moat: plastic houseware is commoditized, price-sensitive, and exposed to raw material (crude) swings"
+    ],
+    "red_flags": [
+      "P/E of 36.5x for a 12% revenue CAGR commodity manufacturer is expensive",
+      "Total assets doubled in FY25 (415→823 Cr) via IPO proceeds — execution risk on deploying capital",
+      "Gap between EBITDA (INR 102 Cr) and OCF (INR 52 Cr) in FY25 suggests working capital absorption"
+    ],
+    "detailed_analysis": "Invert first: what kills this investment? A commodity plastic-goods maker with 10% operating margins competing against Cello, Milton, Wimplast and countless unbranded rivals, priced at 36.5x earnings, is a setup for disappointment. The \"brand\" has limited pricing power — customers switch on shelf price. ROCE of 13.89% tells the real story: for every rupee of capital deployed, the business earns sub-15% pre-tax returns, and that's at peak utilization. The recent capex binge (INR 200+ Cr over three years, INR 114 Cr in FY25 alone) funded by fresh equity means the denominator of ROCE is about to balloon, and incremental returns on that capital are uncertain.\n\nThe operating leverage story is real — op income tripled from INR 44 Cr to INR 101 Cr over three years — but much of that came from export tailwinds and scale. At current valuation, the market is extrapolating this. Meanwhile FCF is lumpy and negative in the capex year, net profit-to-OCF conversion is weak, and there's no switching cost, network effect, or cost advantage I can point to. This is a fair business at an unfair price. I'd rather own a great franchise at 30x than a commodity at 36x. Pass.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 24146,
+    "model_used": "opus",
+    "total_cost_usd": 0.10245525000000001,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 10265,
+      "cache_read_input_tokens": 14438,
+      "output_tokens": 1242,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10265,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 11711,
+          "cache_creation_input_tokens": 1281,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1281
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

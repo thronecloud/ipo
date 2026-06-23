@@ -1,0 +1,69 @@
+{
+  "symbol": "JAMNAAUTO",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-18T17:45:17.551750Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "AVOID",
+    "investment_thesis": "Jamna Auto is a market-leading but deeply cyclical commercial vehicle parts supplier — exactly the kind of capital-intensive, OEM-price-pressured business I avoid, and at 25x P/E for a company whose revenue nearly halved in FY2020-21, the margin of safety is insufficient. The balance sheet is clean and ROE is respectable, but predictability and durability of earnings are simply not there.",
+    "key_strengths": [
+      "Market leadership in leaf springs for Indian CVs since 1954 — scale and customer relationships create moderate switching friction for OEMs",
+      "Lean balance sheet: D/E of just 0.15 with cash of ₹140 Cr; finance costs collapsed from ₹28 Cr (2019) to ₹5 Cr (2025)",
+      "Decent returns: ROE 19.2%, ROCE 20.7%, operating margin 14.4% — above-average for an auto parts supplier"
+    ],
+    "key_risks": [
+      "Brutal cyclicality: revenue cratered from ₹2,135 Cr (2019) to ₹1,079 Cr (2021), a 50% collapse — this is not a business with predictable earnings",
+      "Heavy capex cycle underway: ₹196 Cr capex + ₹270 Cr CWIP in FY2025 — FCF has been negative in 3 of the last 6 years (-101, -36, -73 Cr)",
+      "Entirely tied to commercial vehicle OEM demand — no pricing power, subject to OEM squeeze and macro/freight cycles"
+    ],
+    "red_flags": [
+      "FY2025 revenue declined to ₹2,270 Cr from ₹2,427 Cr in FY2024 — top-line deceleration even as capex accelerates",
+      "Free cash flow deeply erratic (ranging -₹101 Cr to +₹286 Cr) — cannot reliably project owner earnings",
+      "P/B of 4.93x is expensive for a commodity auto parts supplier with no durable pricing power"
+    ],
+    "detailed_analysis": "Jamna Auto has built a real business over 70 years — it dominates Indian leaf spring manufacturing and has steadily grown net profit at a 10.7% CAGR over nine years. The balance sheet is genuinely clean, with debt-to-equity at 0.15 and borrowings essentially eliminated in FY2025 (₹12 Cr). ROE of 19.2% and ROCE of 20.7% are respectable. These are not the numbers of a broken company.\n\nBut I do not buy cyclical businesses at full prices, and this one is both cyclical and capital-hungry. The revenue history tells the story plainly: ₹2,135 Cr in 2019 collapsed to ₹1,079 Cr in 2021, and now FY2025 has again turned lower at ₹2,270 Cr versus ₹2,427 Cr the prior year. The company is simultaneously undertaking its heaviest capex cycle ever (₹196 Cr in FY2025, CWIP of ₹270 Cr), which will pressure FCF further. At 25x trailing P/E with no durable moat — leaf springs face substitution risk from air suspension over time — and with no visibility into when the CV upcycle resumes, I'm not being offered a margin of safety. I'd need the price cut nearly in half, or a sustained earnings re-rating, before this becomes interesting to me.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "good",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 54390,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0848535,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11392,
+      "cache_read_input_tokens": 9065,
+      "output_tokens": 2627,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11392
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 361,
+          "cache_read_input_tokens": 9065,
+          "cache_creation_input_tokens": 2327,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2327,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

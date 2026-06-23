@@ -1,0 +1,70 @@
+{
+  "symbol": "MTARTECH",
+  "persona": "charlie_munger",
+  "persona_display_name": "Charlie Munger",
+  "analyzed_at": "2026-04-18T21:59:38.019319Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "MTAR operates in a genuinely defensible niche — precision components for ISRO, nuclear, and clean energy — but pays zero reward to shareholders at 226x earnings with profits that have nearly halved since FY23 peak despite continued revenue growth. A fine business at a catastrophically wrong price, with deteriorating capital returns that disqualify it on first-principles quality tests.",
+    "key_strengths": [
+      "Irreplaceable niche supplier to ISRO, nuclear, and defense sectors with high switching costs and long qualification cycles",
+      "Respectable gross margins (48.8%) signal genuine pricing power on precision-engineered components",
+      "25.9% revenue CAGR over 5 years shows real demand from India's expanding space/defense ambitions"
+    ],
+    "key_risks": [
+      "Net profit has collapsed 48% from INR 103 Cr (FY23) to INR 53 Cr (FY25) while revenue grew — operating leverage is working in reverse, not forward",
+      "Free cash flow is essentially zero (INR 2 Cr in FY25); capex of ~INR 100 Cr/year swallows all operating cash flow, making this a treadmill, not a compounder",
+      "Finance costs growing at 34.5% CAGR as borrowings ballooned from INR 29 Cr to INR 186 Cr — the balance sheet is accumulating risk while returns deteriorate"
+    ],
+    "red_flags": [
+      "ROE of 7.4% and ROCE of 10.4% are both below my 12% minimum — the business is not earning its cost of capital",
+      "P/E of 226x and EV/EBITDA of 103x price in perfection; reality delivered a 49% profit decline",
+      "Promoter holding of only 30.4% is low for a precision engineering company — skin-in-the-game concern",
+      "FCF/Net Income ratio is near zero — earnings are accounting fiction unsupported by cash generation"
+    ],
+    "detailed_analysis": "Invert first: what does it take for MTAR to justify INR 14,952 Cr market cap on INR 53 Cr of net profit? It requires multi-decade flawless execution at high growth, expanding margins, and zero capital intensity — none of which the last three years have demonstrated. The pattern is damning: FY23 looked like a breakout (INR 103 Cr profit), but FY24 and FY25 show profits collapsing to roughly half despite revenues continuing to climb. When revenue rises and profits fall, it usually means rising costs, margin compression from customers, or project execution issues. Here, finance costs grew 34.5% CAGR while operating leverage has been zero. The business is consuming capital voraciously — INR 393 Cr of cumulative capex over FY22–25 — while generating INR 2 Cr of free cash flow in the best recent year.\n\nThe underlying business quality is real: ISRO's cadence of launches is accelerating, India's civil nuclear program is growing, and MTAR's machined components carry genuine qualification barriers. But quality of business and quality of investment are different things. At 20x book, 226x earnings, and with ROIC sitting around 9–10% post-tax, the market is pricing a perfect future that the recent financials actively contradict. Charlie Munger's rule applies cleanly: a wonderful company at a terrible price is not a wonderful investment. I would watch this at 5–6x EBITDA if profits recover sustainably; at 103x EBITDA today, it fails every test I apply.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 46249,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07580445000000001,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 10657,
+      "cache_read_input_tokens": 8789,
+      "output_tokens": 2213,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10657,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 381,
+          "cache_read_input_tokens": 8789,
+          "cache_creation_input_tokens": 1868,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1868
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

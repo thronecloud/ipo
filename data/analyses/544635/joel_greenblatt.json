@@ -1,0 +1,68 @@
+{
+  "symbol": "544635",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-20T11:01:14.685050Z",
+  "analysis": {
+    "score": 4,
+    "recommendation": "HOLD",
+    "investment_thesis": "Luxury Time scores well on return on capital (ROCE 33%, ROE 26%) but the earnings yield (~11% EBIT/EV on ~INR 53 Cr EV vs INR 6 Cr EBIT) is only borderline attractive, not a Magic Formula bargain. Negative operating cash flow in 2 of 3 years signals working-capital drag typical of luxury inventory distributors, blunting the high-ROC signal.",
+    "key_strengths": [
+      "ROCE 33.1% and ROE 26.3% indicate genuinely capital-efficient distribution model",
+      "Low debt (INR 2 Cr borrowings vs INR 19 Cr equity) — clean balance sheet",
+      "Revenue rebounded 20% in FY25 (INR 50→60 Cr) with EBIT doubling to INR 6 Cr"
+    ],
+    "key_risks": [
+      "Earnings yield ~11% — cheap-ish, not the >12-15% Magic Formula sweet spot",
+      "OCF negative in FY23 & FY25; reported earnings not converting to cash (inventory build)",
+      "INR 52 Cr micro-cap with 68.5% promoter holding — illiquid, single-brand distribution risk"
+    ],
+    "red_flags": [
+      "FY25 OCF ~0 and FCF negative INR 1 Cr despite INR 4 Cr reported net profit — earnings quality concern",
+      "Recently listed small-cap in niche luxury segment; limited history to verify sustained ROC"
+    ],
+    "detailed_analysis": "Running the Magic Formula: FY25 EBIT of ~INR 6 Cr against an enterprise value of ~INR 53 Cr (market cap 51.9 + debt 2) gives an earnings yield of ~11.3% — decent but below my 12%+ threshold. Return on capital is the brighter spot: on capital employed of roughly INR 21 Cr (equity 19 + debt 2), EBIT of 6 Cr implies ROC near 28-33%, which matches the reported ROCE of 33.1%. So the business scores well on \"good\" but only marginally on \"cheap.\" In my systematic ranking this would be a middle-of-the-pack name, not a top-decile pick.\n\nThe bigger caveat is cash conversion. Operating cash flow was -1, +3, and ~0 across FY23-25 while reported profits were 3, 2, 4 Cr — the gap is almost certainly inventory (Swiss watch distributors tie up significant working capital). High ROIC with poor FCF conversion is exactly the kind of setup where screen metrics mislead. Combined with the micro-cap size (INR 52 Cr), thin float, and single-line-of-business exposure to imported Swiss luxury goods (FX and demand cyclical), I would pass on this as an individual pick. Inside a diversified 20-30 stock Magic Formula basket it could earn a slot, but standalone it doesn't clear the bar.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "insufficient_data",
+      "financial_health": "good",
+      "valuation": "fair",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 30215,
+    "model_used": "opus",
+    "total_cost_usd": 0.11191324999999999,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 10019,
+      "cache_read_input_tokens": 14029,
+      "output_tokens": 1690,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10019,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 11159,
+          "cache_creation_input_tokens": 1730,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1730
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

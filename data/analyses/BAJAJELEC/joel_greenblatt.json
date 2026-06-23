@@ -1,0 +1,69 @@
+{
+  "symbol": "BAJAJELEC",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-18T16:40:09.749650Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Bajaj Electricals fails both legs of the Magic Formula — earnings yield of ~6.6% (EBIT ₹307 Cr / EV ₹4,648 Cr) is well below the 12% threshold, and ROCE of 11.6% is far below the 20% minimum for a \"good\" business. At 120x trailing P/E with nine-year revenue CAGR of just 0.6%, the market is pricing in a dramatic turnaround that the fundamentals do not yet support.",
+    "key_strengths": [
+      "Strong operating cash flow — 5/5 years positive OCF (₹347 Cr in FY25), demonstrating basic business viability",
+      "Debt dramatically reduced from ₹1,084 Cr (FY20) to ₹243 Cr (FY25), improving balance sheet quality",
+      "Promoter holding of 62.7% aligns management with shareholders"
+    ],
+    "key_risks": [
+      "No revenue growth — 9-year CAGR of just 0.6% (₹4,590 Cr in 2016 vs ₹4,826 Cr in 2025); not a growth business",
+      "Net profit in structural decline: ₹216 Cr (FY23) → ₹131 Cr (FY24) → ₹133 Cr (FY25), while the stock trades at 120x earnings",
+      "ROCE of 11.6% and ROE of 7.12% signal a low-quality business that earns less than its cost of capital"
+    ],
+    "red_flags": [
+      "Operating margin reported at -2.10% — the company is destroying value at the operating level in recent reporting",
+      "P/E of 120x on stagnant, declining earnings; EV/EBITDA of 33x is extreme for a zero-growth consumer durables firm",
+      "Net profit declined ~38% from FY23 peak while stock remains richly valued — clear earnings deterioration"
+    ],
+    "detailed_analysis": "Running the Magic Formula on Bajaj Electricals produces poor results on both dimensions. Earnings yield (EBIT/EV) = ₹307 Cr / ₹4,648 Cr = 6.6% — barely above the 6% floor where I'd call a stock definitively overvalued, and well short of the 12% that makes a business attractive. Return on Capital (proxied by ROCE) is 11.6%, far below the 20% threshold I require to call a business \"good.\" A company must score well on BOTH metrics; Bajaj Electricals fails both. The combination of a 120x trailing P/E and nine-year revenue CAGR of 0.6% is particularly alarming — the market is essentially pricing in a decade of strong earnings recovery that has not materialized despite multiple years of opportunity.\n\nThe balance sheet cleanup (borrowings down from ₹1,084 Cr to ₹215-243 Cr) is commendable, and consistent positive free cash flow (₹318 Cr in FY25) shows the business is not a cash incinerator. However, free cash flow has been declining steadily from ₹871 Cr (FY22) to ₹318 Cr (FY25), driven by lower operating income and rising capex. The Morphy Richards and Bajaj brand portfolio operates in a highly competitive, fragmented consumer durables space with no evident pricing power — operating margins have oscillated between 4-8% for a decade with no upward trend. There is no identifiable moat, no growth, and no margin of safety at current valuations. This is a pass.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "adequate",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 55550,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08918625,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 11589,
+      "cache_read_input_tokens": 9145,
+      "output_tokens": 2865,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 11589
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 472,
+          "cache_read_input_tokens": 9145,
+          "cache_creation_input_tokens": 2444,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2444,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

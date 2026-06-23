@@ -1,0 +1,69 @@
+{
+  "symbol": "KIRLOSBROS",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T18:02:39.569759Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "Kirloskar Brothers is a legitimate, century-old industrial franchise with improving profitability and negligible debt, but at P/E 33.9x and P/B 6.35x it trades at roughly 3× its Graham Number (~INR 574 vs market price INR 1,764), offering zero margin of safety. The intelligent investor does not pay three times intrinsic value for any business, however admirable its recent earnings trajectory.",
+    "key_strengths": [
+      "Debt virtually eliminated — D/E of 0.10, borrowings fell from INR 578 Cr to INR 219 Cr over five years, interest coverage ~24x",
+      "Genuine cash earnings — OCF positive all 5 years, FY25 free cash flow INR 297 Cr, cash on balance sheet INR 323 Cr",
+      "Operating leverage improving — EBITDA CAGR 18.7% far outpacing revenue CAGR of 6.1%, margins structurally expanding"
+    ],
+    "key_risks": [
+      "Valuation is the dominant risk — Graham Number ≈ INR 574; buyer at INR 1,764 must assume perpetual high growth with zero room for error",
+      "Earnings record has blemishes — net loss in 2016 (−INR 23 Cr) and near-zero profit in 2017 and 2019 break the 10-year unbroken record Graham requires",
+      "Cyclical industrial exposure — revenue contracted in 2017, 2020, and 2021; any infrastructure spending slowdown could quickly reverse margin expansion"
+    ],
+    "red_flags": [
+      "P/B of 6.35 is more than 4× Graham's maximum threshold of 1.5; stockholder is paying INR 6.35 for every INR 1 of net assets",
+      "P/E of 33.9 is more than double Graham's ceiling of 15; combined P/E × P/B = 215, far above Graham's composite limit of 22.5",
+      "Net loss as recently as 2016 disqualifies the stock from Graham's requirement of consistent, uninterrupted earnings over a full business cycle"
+    ],
+    "detailed_analysis": "Kirloskar Brothers passes precisely one of my primary quantitative screens outright: the debt-to-equity ratio at 0.10 is exemplary, and the steady reduction of borrowings from INR 578 Cr to INR 182 Cr is the conduct of prudent management. Interest coverage of roughly 24× in FY25 (operating income INR 609 Cr ÷ finance cost INR 25 Cr) is more than adequate. Free cash flow of INR 297 Cr in FY25, positive in every recent year, confirms that the reported earnings are real. These are qualities I admire. Yet admirable qualities in a business do not produce satisfactory investment results when the price paid is irrational.\n\nThe arithmetic is unambiguous. The Graham Number — the geometric mean of 22.5× earnings and book value — works out to approximately INR 574 per share (EPS ~INR 53, BVPS ~INR 278). The market demands INR 1,764, a premium of more than 3× to conservatively calculated intrinsic value. At P/B of 6.35, an investor is paying for five years of future book value accumulation before he even owns the underlying assets at cost. Mr. Market is in an extremely optimistic mood regarding Indian infrastructure capex and this company's ability to sustain 20%+ profit growth indefinitely. He may be right. But my discipline is built on the certainty that I do not know the future, and I will not abandon the margin of safety principle for a pleasant story. I counsel patience — should the price ever approach INR 600–700, the calculation changes entirely.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "good",
+      "valuation": "extremely_overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 268756,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.0734133,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9154,
+      "cache_read_input_tokens": 11206,
+      "output_tokens": 2381,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9154
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 384,
+          "cache_read_input_tokens": 9156,
+          "cache_creation_input_tokens": 2048,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2048,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

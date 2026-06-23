@@ -1,0 +1,71 @@
+{
+  "symbol": "ASHAPURMIN",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T16:26:43.013588Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Ashapura Minechem trades at 617 vs. a Graham Number of ~319 — a 94% premium to intrinsic value — with a P/B of 4.13 that is nearly three times my maximum acceptable threshold of 1.5. The company recorded net losses in 2017, 2018, and 2019, violating my requirement for five consecutive years of positive earnings, and has produced negative free cash flow every single year in the data set.",
+    "key_strengths": [
+      "Revenue recovery is real: revenue grew from 334 Cr (2020) to 2,739 Cr (2025), with EBITDA reaching 469 Cr",
+      "ROE of 27.1% and ROCE of 18.6% suggest the underlying business earns well on employed capital — if debt were lower",
+      "Five consecutive years of positive net profit (2021–2025: 87, 87, 110, 282, 289 Cr) shows operational recovery"
+    ],
+    "key_risks": [
+      "P/B of 4.13 far exceeds my hard ceiling of 1.5 — shareholders are paying INR 4.13 for every INR 1 of net assets",
+      "Free cash flow has been negative every year: -3, -196, -2, -40, -125, -208 Cr — capex (401 Cr in 2025) systematically destroys cash",
+      "Borrowings surged from 441 Cr (2020) to 1,228 Cr (2025) at 22.7% CAGR while revenue CAGR was only 4.9% — debt is outpacing business growth dangerously"
+    ],
+    "red_flags": [
+      "Net losses in three consecutive years (2017: -19, 2018: -45, 2019: -327 Cr) — fails my multi-year earnings stability test",
+      "2020 'profit' of 383 Cr was almost entirely Other Income (487 Cr) — a non-recurring item masking operating weakness",
+      "Finance costs growing at 17.8% CAGR vs. revenue at 4.9% — the debt burden is compounding faster than the business",
+      "No dividend history cited — the company retains all earnings yet produces no free cash flow, a troubling combination",
+      "Price of 617 vs. Graham Number of ~319 (sqrt(22.5 × 30.2 EPS × 149 BVPS)) — trading at nearly double intrinsic value"
+    ],
+    "detailed_analysis": "From my strict value investing framework, Ashapura Minechem fails on nearly every quantitative filter I require. The P/B of 4.13 is the most damning figure — I rarely pay more than 1.5x book, and never more than 2x absent extraordinary circumstances. The computed Graham Number is approximately INR 319 (using 2025 EPS of ~30 and BVPS of ~149), placing the current price of 617 at a 94% premium. The P/E of 15.5 is marginally above my preferred ceiling of 15. Debt-to-equity at 0.86 is well above my 0.5 limit, and borrowings have compounded at 22.7% annually since 2020 while revenues grew at only 4.9% — a structural imbalance that will squeeze future earnings through rising finance costs (96 Cr in 2025, up from 22 Cr in 2016).\\n\\nThe earnings record is also disqualifying. Three years of losses (2017–2019) break my requirement for uninterrupted positive earnings, and the 2020 \"recovery\" to 383 Cr was manufactured by a 487 Cr Other Income item — almost certainly a one-time transaction, not operating power. Most critically, free cash flow has never been positive in this dataset. A business that earns 289 Cr in net profit but burns 208 Cr in free cash is, in my view, consuming capital rather than creating it. Mr. Market has bid this stock to speculative levels; a disciplined investor should wait for a price closer to INR 300–320 before considering any position.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "adequate",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "moderate"
+    }
+  },
+  "metadata": {
+    "duration_ms": 57009,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.08109315,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9563,
+      "cache_read_input_tokens": 11243,
+      "output_tokens": 2790,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9563,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 431,
+          "cache_read_input_tokens": 9193,
+          "cache_creation_input_tokens": 2420,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2420
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

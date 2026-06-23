@@ -1,0 +1,69 @@
+{
+  "symbol": "JPPOWER",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-19T13:02:27.179692Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Jaiprakash Power Ventures is a troubled independent power producer emerging from years of catastrophic losses and debt restructuring, with the Jaypee Group's notorious history of capital misallocation — ROE is only 6.85%, operating margin a paltry 4.68%, and the forward P/E is negative, signaling expected losses ahead. This is precisely the kind of business I would avoid regardless of price: commodity power generation, weak promoter conviction at only 24% holding, and a track record of destroying shareholder wealth.",
+    "key_strengths": [
+      "Debt has declined sharply from INR 6,023 Cr (FY2020) to INR 3,519 Cr (FY2025) — the deleveraging trajectory is real and meaningful",
+      "OCF positive all 5 recent years, generating INR 1,714 Cr in FY2025 — the underlying power plants do produce cash",
+      "D/E of 0.28 is now manageable after years of restructuring, removing near-term bankruptcy risk"
+    ],
+    "key_risks": [
+      "Promoter holding at only 24% is alarming — when insiders own only a quarter of their own company after all the restructuring pain, it tells me they have lost faith in the business",
+      "Negative forward P/E means analysts expect the company to swing back to losses — the FY2024 profit of INR 1,022 Cr followed by FY2025's INR 814 Cr already shows deterioration",
+      "EBITDA CAGR of -4.5% over 9 years means the core business is shrinking in real terms — revenue grew only 3.2% annually while costs rose faster"
+    ],
+    "red_flags": [
+      "History of massive net losses: -INR 243 Cr (2016), -INR 1,295 Cr (2017), -INR 1,690 Cr (2018), -INR 2,147 Cr (2020) — this company has destroyed enormous capital",
+      "Negative forward P/E of -11.29 signals the market expects a return to losses — I do not invest in businesses with uncertain near-term profitability",
+      "The Jaypee Group name itself is a red flag — this conglomerate built its empire on leverage and transferred risk to public shareholders; I require extraordinary proof to overcome that reputational burden"
+    ],
+    "detailed_analysis": "Commodity power generation earns whatever the grid regulator or PPA contract allows — there is no pricing power, no moat, no ability to raise rates because the product is identical to every other kilowatt-hour on the grid. JPPOWER's EBITDA has declined from INR 3,187 Cr in FY2016 to INR 2,113 Cr in FY2025 — a decade of value destruction in the very metric used to value infrastructure assets. The operating margin of 4.68% on revenues of INR 5,462 Cr is astonishingly thin for a capital-heavy business.\n\nThe promoter holding of 24% is the detail that most troubles me. I like to see management eating their own cooking — owning large stakes because they believe deeply in the business. At 24%, the Jaiprakash Group has dramatically reduced its skin in this game. Combine that with the negative forward P/E and I have seen enough: this is a cigar-butt recovery story, not a wonderful business, and the last puff may already have been taken.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 188679,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.24100680000000002,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 24830,
+      "cache_read_input_tokens": 16251,
+      "output_tokens": 9534,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 24830,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 840,
+          "cache_read_input_tokens": 16251,
+          "cache_creation_input_tokens": 8579,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8579
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

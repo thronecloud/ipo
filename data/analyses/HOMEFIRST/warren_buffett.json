@@ -1,0 +1,68 @@
+{
+  "symbol": "HOMEFIRST",
+  "persona": "warren_buffett",
+  "persona_display_name": "Warren Buffett",
+  "analyzed_at": "2026-04-19T12:49:11.313866Z",
+  "analysis": {
+    "score": 6,
+    "recommendation": "HOLD",
+    "investment_thesis": "Home First Finance is a focused affordable housing finance company with a 40.5% revenue CAGR, 27% net profit CAGR, ROE of 15% and ROCE of 21% — a genuinely compounding business serving the underpenetrated sub-₹50 lakh home loan segment. At 23x trailing P/E and 17.7x forward P/E, the valuation is fair but not cheap enough to provide the margin of safety I demand before committing capital.",
+    "key_strengths": [
+      "Exceptional growth with revenue expanding from ₹478 Cr in FY22 to ₹1,325 Cr in FY25 (40.5% CAGR) while maintaining profitability throughout — rare in financial services",
+      "ROE of 15.1% and ROCE of 21.1% at scale indicate a capital-efficient lending model; operating margins of 66.6% reflect strong NIM discipline",
+      "Institutional validation through 45.7% FII ownership and 27.5% DII ownership signals sophisticated investors have done due diligence on asset quality"
+    ],
+    "key_risks": [
+      "Promoter stake of just 6.98% is concerningly low — management skin in the game is limited, which makes me nervous about long-term alignment",
+      "Total debt of ₹9,551 Cr versus equity of ₹2,521 Cr (D/E 2.4x) is manageable by NBFC standards but any credit cycle deterioration in the affordable housing segment could impair book value rapidly",
+      "Negative operating cash flow every year (by design for a lender) means valuation depends entirely on loan book quality, which I cannot independently verify from these financials"
+    ],
+    "red_flags": [
+      "Low promoter ownership (6.98%) — I strongly prefer owner-operators with significant personal capital at risk",
+      "Rapid loan book growth (total assets ₹5,117 Cr to ₹12,212 Cr in 3 years) can mask deteriorating underwriting standards that surface only in a downturn"
+    ],
+    "detailed_analysis": "Home First is a well-run niche lender targeting first-time homebuyers in Tier 2 and Tier 3 cities — a segment with genuine structural growth as India urbanizes and housing penetration deepens. The financial track record is strong: consistent profitability, expanding margins, and returns on equity touching the 15% threshold I use as a minimum bar. The business model is simple and understandable, and the focus on affordable housing creates a social moat of sorts, as government policy broadly supports this segment.\n\nMy hesitation is twofold: the near-absence of promoter ownership (6.98%) means I am betting on professional managers rather than owner-operators, and the valuation at P/B of 2.9x and 23x earnings, while not outrageous for the growth rate, does not offer the compelling margin of safety that would make me want to buy aggressively. I would watch for any credit quality deterioration and would reconsider at a more attractive entry price.",
+    "metrics_evaluated": {
+      "moat_strength": "moderate",
+      "management_quality": "good",
+      "financial_health": "adequate",
+      "valuation": "fair",
+      "growth_potential": "good"
+    }
+  },
+  "metadata": {
+    "duration_ms": 137583,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.17886015,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 19269,
+      "cache_read_input_tokens": 13158,
+      "output_tokens": 6843,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 19269,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 625,
+          "cache_read_input_tokens": 13158,
+          "cache_creation_input_tokens": 6111,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 6111
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

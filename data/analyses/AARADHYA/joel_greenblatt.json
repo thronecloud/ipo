@@ -1,0 +1,69 @@
+{
+  "symbol": "AARADHYA",
+  "persona": "joel_greenblatt",
+  "persona_display_name": "Joel Greenblatt",
+  "analyzed_at": "2026-04-20T11:11:49.250286Z",
+  "analysis": {
+    "score": 2,
+    "recommendation": "AVOID",
+    "investment_thesis": "Aaradhya fails the Magic Formula decisively — a 0.45% ROE implies near-zero return on capital, meaning this is not a \"good business\" at any price. The 12.4x P/E (~8% earnings yield) is mediocre and not cheap enough to compensate for the capital inefficiency in a commodity paper business.",
+    "key_strengths": [
+      "High promoter skin-in-the-game at 70.58% alignment",
+      "Positive earnings (P/E 12.4x) — EBIT likely positive, so formula is computable",
+      "Small 159 Cr market cap leaves theoretical room for operational improvement"
+    ],
+    "key_risks": [
+      "ROE of 0.45% indicates abysmal return on capital — Magic Formula's #1 disqualifier",
+      "Commodity paper industry with no pricing power or moat",
+      "Tiny microcap in a capital-intensive business — low FCF conversion likely"
+    ],
+    "red_flags": [
+      "ROE 0.45% is essentially zero — capital is being destroyed or barely preserved",
+      "If ROE is 0.45% and P/E is 12.4x, net margin must be razor-thin — earnings quality suspect",
+      "Paper products = commodity with high capex intensity, structurally low ROIC"
+    ],
+    "detailed_analysis": "The Magic Formula ranks stocks on two axes: how cheap (earnings yield) and how good (return on capital). Aaradhya ranks catastrophically on the \"good business\" axis — a 0.45% ROE is roughly 1/50th of what I consider investable (~20%+ ROIC). Even if EBIT/Capital is somewhat higher than ROE due to leverage mechanics, this level of return indicates the business cannot compound capital. In Greenblatt's framework, a cheap bad business is still a bad business — you do not want to own companies earning sub-FD returns on shareholder equity, regardless of valuation.\n\nThe 12.4x P/E translates to roughly an 8% earnings yield, which is below my 12%+ threshold for \"attractive\" and nowhere near the 15%+ needed to compensate for a structurally weak business. Paper & paper products is a commodity industry with heavy capex and cyclical pricing — exactly the kind of capital-intensive sector where Magic Formula economics rarely work. Promoter holding of 70.58% is the only mild positive, but alignment cannot rescue sub-1% ROE. This is a clear AVOID; there are thousands of Indian listed names with better earnings-yield and ROIC combinations.",
+    "metrics_evaluated": {
+      "moat_strength": "none",
+      "management_quality": "insufficient_data",
+      "financial_health": "poor",
+      "valuation": "fair",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 23654,
+    "model_used": "opus",
+    "total_cost_usd": 0.09647774999999999,
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 9079,
+      "cache_read_input_tokens": 13458,
+      "output_tokens": 1319,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9079,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 3,
+          "cache_read_input_tokens": 10588,
+          "cache_creation_input_tokens": 1361,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1361
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}

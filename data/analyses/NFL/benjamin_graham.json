@@ -1,0 +1,70 @@
+{
+  "symbol": "NFL",
+  "persona": "benjamin_graham",
+  "persona_display_name": "Benjamin Graham",
+  "analyzed_at": "2026-04-18T21:53:23.774088Z",
+  "analysis": {
+    "score": 3,
+    "recommendation": "AVOID",
+    "investment_thesis": "NFL fails nearly every quantitative Graham filter — D/E of 1.77 dwarfs my 0.5 ceiling, earnings have been negative in two of the last six years, and at INR 77.40 the stock trades above my computed Graham Number of ~INR 66 (√(22.5 × EPS ₹3.75 × BVPS ₹52.3)). There is no margin of safety here, only government subsidy dependency dressed up as a business.",
+    "key_strengths": [
+      "Low Price-to-Sales of 0.18 reflects the enormous revenue base relative to market cap",
+      "P/B of 1.48 is near the outer edge of my acceptable range — asset backing is partially real",
+      "74.71% GoI promoter stake provides implicit sovereign backstop against outright bankruptcy"
+    ],
+    "key_risks": [
+      "Debt/Equity of 1.77 — borrowings ballooned from ₹1,892 Cr (2021) to ₹4,537 Cr (2025), obliterating balance sheet safety",
+      "Earnings wholly unreliable: net losses in 2020 (−₹181 Cr) and 2022 (−₹95 Cr); nine-year net profit CAGR is −0.8%",
+      "Operating margin of 2.70% leaves zero buffer — any subsidy policy shift or input cost spike destroys profits entirely"
+    ],
+    "red_flags": [
+      "Price INR 77.40 exceeds computed Graham Number of ~INR 66 — no discount to intrinsic value",
+      "OCF positive in only 3 of last 5 years; FCF swings from −₹1,322 Cr to +₹6,607 Cr, signalling working-capital chaos tied to subsidy receivable timing",
+      "EBITDA CAGR of 2.1% over nine years while borrowings rose sharply — leverage is rising faster than earning power",
+      "P/E of 19.50 exceeds my hard ceiling of 15; for a business with negative net profit CAGR, any earnings multiple above 10 is unjustifiable"
+    ],
+    "detailed_analysis": "National Fertilizers Limited is a government-owned urea producer whose economics are almost entirely dictated by New Delhi's subsidy mechanism rather than management or competitive skill. Revenue has compounded at 11% over nine years, yet operating income grew at a mere 1% and net profit shrank at −0.8% — the classic trap of volume growth that profits nothing. The D/E of 1.77 is more than three times my maximum threshold; the company must continuously roll over short-term borrowings to finance subsidy receivables from the Government of India, which introduces meaningful refinancing risk that any intelligent investor must price in severely.\n\nFrom a pure Graham filter standpoint, NFL fails on five of my eight key criteria simultaneously: P/E above 15, D/E above 0.5, no five-year streak of positive earnings, current price above Graham Number, and an interest coverage ratio that the thin 2.70% operating margin renders dangerously fragile (finance cost of ₹233 Cr against EBIT of roughly ₹615 Cr gives ~2.6× coverage — below my 3.5× floor). The only partial credit I extend is for the P/B of 1.48 and the sovereign ownership backstop. Mr. Market is offering NFL at a price that already embeds optimism about subsidy reforms and urea demand — precisely the speculative assumption I refuse to pay for.",
+    "metrics_evaluated": {
+      "moat_strength": "weak",
+      "management_quality": "poor",
+      "financial_health": "poor",
+      "valuation": "overvalued",
+      "growth_potential": "low"
+    }
+  },
+  "metadata": {
+    "duration_ms": 49302,
+    "model_used": "sonnet",
+    "total_cost_usd": 0.07265835,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 9167,
+      "cache_read_input_tokens": 11177,
+      "output_tokens": 2328,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9167,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [
+        {
+          "input_tokens": 1,
+          "output_tokens": 297,
+          "cache_read_input_tokens": 9127,
+          "cache_creation_input_tokens": 2090,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 2090
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    }
+  }
+}
