@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+/* ── The Terminal & The Council — design tokens ─────────────────── */
+@theme {
+  --color-ink: #0d1014;
+  --color-panel: #161a1f;
+  --color-panel2: #1d222a;
+  --color-hairline: #262c34;
+  --color-paper: #ede8dc;
+  --color-muted: #8a93a0;
+  --color-brass: #c8a24b;
+  --color-sage: #4fb286;
+  --color-terracotta: #d9614c;
+
+  /* recommendation aliases */
+  --color-buy: #4fb286;
+  --color-hold: #c8a24b;
+  --color-avoid: #d9614c;
+
+  --font-sans: var(--font-plex-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, "SFMono-Regular", monospace;
+  --font-serif: var(--font-newsreader), ui-serif, Georgia, serif;
+
+  --radius-sm: 2px;
+  --radius: 3px;
+  --radius-md: 4px;
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  background: var(--color-ink);
+  color: var(--color-paper);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* numerics: mono + tabular everywhere the class is applied */
+.num {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1, "zero" 1;
+  letter-spacing: -0.01em;
+}
+
+.serif {
+  font-family: var(--font-serif);
+}
+
+/* editorial serif italic used for wisdom / thesis */
+.wisdom {
+  font-family: var(--font-serif);
+  font-style: italic;
+}
+
+/* visible keyboard focus everywhere */
+:focus-visible {
+  outline: 2px solid var(--color-brass);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* thin custom scrollbars for the terminal feel */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-hairline) transparent;
+}
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+*::-webkit-scrollbar-thumb {
+  background: var(--color-hairline);
+  border-radius: 4px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::selection {
+  background: rgba(200, 162, 75, 0.25);
+  color: var(--color-paper);
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@keyframes shimmer {
+  0% { opacity: 0.45; }
+  50% { opacity: 0.85; }
+  100% { opacity: 0.45; }
+}
+.skeleton {
+  background: var(--color-panel2);
+  animation: shimmer 1.4s ease-in-out infinite;
+  border-radius: 2px;
+}
