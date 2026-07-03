@@ -49,7 +49,9 @@ class Stock(Base):
 
     id: Mapped[int] = mapped_column(primary_key=True)
     symbol: Mapped[str] = mapped_column(String(64), unique=True, index=True)
+    isin: Mapped[str | None] = mapped_column(String(16), index=True)   # universal cross-source identity key
     company_name: Mapped[str | None] = mapped_column(String(512))
+    cap_category: Mapped[str | None] = mapped_column(String(16))       # large / mid / small (per AMFI/SEBI)
     exchange: Mapped[str | None] = mapped_column(String(16))          # NSE / BSE
     nse_symbol: Mapped[str | None] = mapped_column(String(64))
     yf_symbol: Mapped[str | None] = mapped_column(String(64))         # e.g. ATHERENERG.NS
@@ -100,11 +102,13 @@ class StockSnapshot(Base):
 
     # Raw payloads (immutable facts).
     info: Mapped[dict | None] = mapped_column(JSONType)
-    financials: Mapped[dict | None] = mapped_column(JSONType)
+    financials: Mapped[dict | None] = mapped_column(JSONType)              # yfinance annual
+    quarterly_financials: Mapped[dict | None] = mapped_column(JSONType)    # yfinance quarterly
     balance_sheet: Mapped[dict | None] = mapped_column(JSONType)
     cashflow: Mapped[dict | None] = mapped_column(JSONType)
     history_summary: Mapped[dict | None] = mapped_column(JSONType)
     ipo_data: Mapped[dict | None] = mapped_column(JSONType)
+    screener: Mapped[dict | None] = mapped_column(JSONType)                # screener.in scrape (multi-year, quarterly, ROCE, shareholding)
 
     # Extracted convenience columns for fast querying/screening.
     current_price: Mapped[float | None] = mapped_column(Float)

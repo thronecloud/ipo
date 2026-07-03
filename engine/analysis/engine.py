@@ -67,7 +67,8 @@ def run_incremental(personas=None, universe=None, model=None, force=False,
         touched_stock_ids = set()
         for i, (stock, snap, slug) in enumerate(work):
             persona = PERSONAS[slug]
-            user_prompt = build_user_prompt(stock, snap)
+            screener_snap = latest_snapshot(session, stock.id, source="screener")
+            user_prompt = build_user_prompt(stock, snap, screener_snap)
             result, meta = backend.analyze(persona["system_prompt"], user_prompt, model)
 
             if result is None:

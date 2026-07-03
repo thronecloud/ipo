@@ -18,6 +18,7 @@ from db.base import SessionLocal
 from db.models import Analysis, CompositeScore, JobRun, Stock, StockSnapshot
 from engine.analysis.engine import run_incremental
 from engine.ingest.discover import discover_ipos
+from engine.ingest.screener_enrich import enrich
 from engine.ingest.yf_refresh import refresh
 from engine.repo import job_run, recompute_scores_for_stock
 
@@ -27,12 +28,19 @@ def cmd_discover(a):
 
 
 def cmd_refresh(a):
-    print(refresh(universe=a.universe, symbols=a.symbols, limit=a.limit, delay=a.delay))
+    kw = {}
+    if a.status:
+        kw["statuses"] = tuple(a.status)
+    print(refresh(universe=a.universe, symbols=a.symbols, limit=a.limit, delay=a.delay, **kw))
 
 
 def cmd_analyze(a):
     print(run_incremental(universe=a.universe, model=a.model, force=a.force,
                           limit=a.limit, delay=a.delay))
+
+
+def cmd_enrich(a):
+    print(enrich(universe=a.universe, symbols=a.symbols, limit=a.limit, delay=a.delay))
 
 
 def cmd_score(a):
@@ -89,6 +97,8 @@ def main():
     r = sub.add_parser("refresh", help="Refresh stock data from yfinance (hash-gated)")
     r.add_argument("--universe", default=None)
     r.add_argument("--symbols", nargs="*", default=None)
+    r.add_argument("--status", nargs="*", default=None,
+                   help="Stock statuses to fetch (default: active new). Backfill uses: --status new")
     r.add_argument("--limit", type=int, default=0)
     r.add_argument("--delay", type=float, default=2.0)
     r.set_defaults(func=cmd_refresh)
@@ -100,6 +110,13 @@ def main():
     an.add_argument("--delay", type=float, default=2.0)
     an.add_argument("--force", action="store_true")
     an.set_defaults(func=cmd_analyze)
+
+    en = sub.add_parser("enrich", help="Scrape screener.in fundamentals into screener snapshots")
+    en.add_argument("--universe", default=None)
+    en.add_argument("--symbols", nargs="*", default=None)
+    en.add_argument("--limit", type=int, default=0)
+    en.add_argument("--delay", type=float, default=1.5)
+    en.set_defaults(func=cmd_enrich)
 
     sc = sub.add_parser("score", help="Recompute composite scores")
     sc.set_defaults(func=cmd_score)

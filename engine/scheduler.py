@@ -21,6 +21,7 @@ from apscheduler.triggers.cron import CronTrigger
 
 from engine.analysis.engine import run_incremental
 from engine.ingest.discover import discover_ipos
+from engine.ingest.screener_enrich import enrich
 from engine.ingest.yf_refresh import refresh
 from engine.run import cmd_score
 
@@ -35,16 +36,24 @@ def _int(env, default):
 # Bounded batch sizes so a single tick can't blow the Max-plan usage budget.
 ANALYZE_BATCH = _int("SCHED_ANALYZE_BATCH", 20)
 REFRESH_BATCH = _int("SCHED_REFRESH_BATCH", 100)
+ENRICH_BATCH = _int("SCHED_ENRICH_BATCH", 50)
 
 
 def job_discover():
-    print("[scheduler] discover")
-    discover_ipos(year=None, pages=5)
+    # APPEND-ONLY: scrapes screener's recent-IPO front pages and registers any
+    # newly-listed company. Never mutates or removes existing stocks.
+    print("[scheduler] discover (append-only)")
+    discover_ipos(year=None, pages=3)
 
 
 def job_refresh():
     print("[scheduler] refresh")
     refresh(limit=REFRESH_BATCH, verbose=False)
+
+
+def job_enrich():
+    print("[scheduler] screener enrich batch")
+    enrich(limit=ENRICH_BATCH, verbose=False)
 
 
 def job_analyze_and_score():
@@ -53,12 +62,15 @@ def job_analyze_and_score():
 
 
 def build_scheduler() -> BlockingScheduler:
-    sched = BlockingScheduler(timezone=os.environ.get("SCHED_TZ", "Asia/Kolkata"))
-    # Weekly discovery — Monday 06:00
-    sched.add_job(job_discover, CronTrigger(day_of_week="mon", hour=6, minute=0), id="discover")
-    # Daily refresh — 07:00
-    sched.add_job(job_refresh, CronTrigger(hour=7, minute=0), id="refresh")
-    # Hourly analysis batch (drains the backlog over time)
+    # Default to UTC so schedules are unambiguous across hosts.
+    sched = BlockingScheduler(timezone=os.environ.get("SCHED_TZ", "UTC"))
+    # Daily discovery at 14:00 UTC — APPEND-ONLY (adds new companies).
+    sched.add_job(job_discover, CronTrigger(hour=14, minute=0), id="discover")
+    # Daily data refresh at 02:00 UTC (hash-gated; a snapshot is added only when data changed).
+    sched.add_job(job_refresh, CronTrigger(hour=2, minute=0), id="refresh")
+    # Weekly screener enrichment (fundamentals move quarterly) — Sunday 03:00 UTC.
+    sched.add_job(job_enrich, CronTrigger(day_of_week="sun", hour=3, minute=0), id="enrich")
+    # Hourly analysis batch drains the backlog over time.
     sched.add_job(job_analyze_and_score, CronTrigger(minute=30), id="analyze")
     return sched
 

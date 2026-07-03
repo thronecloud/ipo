@@ -119,10 +119,13 @@ def universe_contains(tag: str):
 
 # ---------- snapshots ----------
 
-def latest_snapshot(session, stock_id: int, quality: str | None = None) -> StockSnapshot | None:
+def latest_snapshot(session, stock_id: int, quality: str | None = None,
+                    source: str | None = None) -> StockSnapshot | None:
     q = select(StockSnapshot).where(StockSnapshot.stock_id == stock_id)
     if quality:
         q = q.where(StockSnapshot.data_quality == quality)
+    if source:
+        q = q.where(StockSnapshot.source == source)
     return session.scalar(q.order_by(StockSnapshot.captured_at.desc()).limit(1))
 
 
@@ -153,9 +156,11 @@ def add_snapshot(session, stock: Stock, payload: dict, extracted: dict, *,
         content_hash=chash,
         info=payload.get("info"),
         financials=payload.get("financials"),
+        quarterly_financials=payload.get("quarterly_financials"),
         balance_sheet=payload.get("balance_sheet"),
         cashflow=payload.get("cashflow"),
         history_summary=payload.get("history_summary"),
+        screener=payload.get("screener"),
         ipo_data=ipo_data,
         **extracted,
     )

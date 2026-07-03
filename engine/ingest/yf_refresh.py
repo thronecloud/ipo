@@ -56,6 +56,7 @@ def fetch_payload(yf_symbol):
         return None, f"error: {e}"
 
     financials = safe_fetch(lambda: ticker.financials, "financials", yf_symbol)
+    quarterly = safe_fetch(lambda: ticker.quarterly_financials, "quarterly_financials", yf_symbol)
     balance_sheet = safe_fetch(lambda: ticker.balance_sheet, "balance_sheet", yf_symbol)
     cashflow = safe_fetch(lambda: ticker.cashflow, "cashflow", yf_symbol)
     history = safe_fetch(lambda: ticker.history(period="max"), "history", yf_symbol)
@@ -63,6 +64,7 @@ def fetch_payload(yf_symbol):
     payload = {
         "info": serialize_info(info),
         "financials": serialize_dataframe(financials),
+        "quarterly_financials": serialize_dataframe(quarterly),
         "balance_sheet": serialize_dataframe(balance_sheet),
         "cashflow": serialize_dataframe(cashflow),
         "history_summary": _history_summary(history),
@@ -91,25 +93,49 @@ def refresh_one(session, stock: Stock) -> str:
     return "new_snapshot" if created else "unchanged"
 
 
-def refresh(universe=None, symbols=None, limit=0, delay=REFRESH_DELAY, verbose=True):
-    """Refresh a set of stocks. Returns a stats dict."""
-    with job_run("refresh", target=universe or (symbols and ",".join(symbols)) or "all") as (session, stats):
-        q = select(Stock).where(Stock.status == "active").order_by(Stock.symbol)
+def refresh(universe=None, symbols=None, statuses=("active", "new"), promote=True,
+            limit=0, delay=REFRESH_DELAY, verbose=True):
+    """
+    Fetch/refresh a set of stocks into snapshots. Returns a stats dict.
+
+    Closes the discovery loop: a `new` stock's first successful fetch promotes it
+    to `active` (so analysis picks it up); a `new` stock that can't be fetched at
+    all (bad symbol / no yfinance data — common for BSE-only SME) is parked as
+    `unfetchable` so it doesn't clog every future batch. `active` stocks that error
+    are left active (transient). New stocks are fetched first.
+    """
+    with job_run("refresh", target=universe or (symbols and ",".join(symbols)) or ",".join(statuses)) as (session, stats):
+        q = select(Stock)
         if symbols:
             q = q.where(Stock.symbol.in_(symbols))
+        else:
+            q = q.where(Stock.status.in_(list(statuses)))
         if universe:
             q = q.where(universe_contains(universe))
+        q = q.order_by((Stock.status != "new"), Stock.symbol)  # new stocks first
         stocks = session.scalars(q).all()
         if limit:
             stocks = stocks[:limit]
 
-        counts = {"new_snapshot": 0, "unchanged": 0, "no_symbol": 0, "error": 0}
+        counts = {"new_snapshot": 0, "unchanged": 0, "no_symbol": 0, "error": 0,
+                  "promoted": 0, "unfetchable": 0}
         for i, stock in enumerate(stocks):
+            was_new = stock.status == "new"
             res = refresh_one(session, stock)
             key = "error" if res.startswith("error") else res
             counts[key] = counts.get(key, 0) + 1
+
+            if was_new and promote:
+                if res in ("new_snapshot", "unchanged"):
+                    stock.status = "active"
+                    counts["promoted"] += 1
+                else:  # no_symbol / hard fetch error on first attempt
+                    stock.status = "unfetchable"
+                    counts["unfetchable"] += 1
+
             if verbose:
-                print(f"  [{i+1}/{len(stocks)}] {stock.symbol}: {res}")
+                tag = "new" if was_new else stock.status
+                print(f"  [{i+1}/{len(stocks)}] {stock.symbol} ({tag}): {res}")
             session.commit()
             if i < len(stocks) - 1:
                 time.sleep(delay)
