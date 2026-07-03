@@ -1,3 +1,17 @@
+# WisdomInvest production stack — the whole living engine on one Docker host.
+#
+#   db        Postgres 16 (the durable store)
+#   api       FastAPI read-layer (+ runs alembic migrations on boot)   :8000
+#   web       Next.js dashboards (Research Desk + Engine Room)         :3000
+#   scheduler always-on ingestion/analysis daemon (UTC cron)
+#   backup    daily pg_dump into ./backups (14-day retention)
+#
+# Bring up:            docker compose up -d --build
+# Watch the engine:    docker compose logs -f scheduler
+# Enable analysis:     run `claude setup-token`, put CLAUDE_CODE_OAUTH_TOKEN in .env
+#
+# See DEPLOY.md for the full runbook.
+
 services:
   db:
     image: postgres:16
@@ -16,6 +30,89 @@ services:
       interval: 5s
       timeout: 5s
       retries: 10
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.engine
+    image: wisdominvest-engine
+    container_name: ipo_api
+    init: true
+    restart: unless-stopped
+    command: sh -c "alembic upgrade head && uvicorn api.main:app --host 0.0.0.0 --port 8000"
+    environment:
+      DATABASE_URL: postgresql+psycopg://ipo:ipo@db:5432/ipo
+      ANALYSIS_BACKEND: ${ANALYSIS_BACKEND:-cli}
+      ANALYSIS_MODEL: ${ANALYSIS_MODEL:-claude-fable-5}
+      ADMIN_TOKEN: ${ADMIN_TOKEN:-}
+      CLAUDE_CODE_OAUTH_TOKEN: ${CLAUDE_CODE_OAUTH_TOKEN:-}
+    ports:
+      - "8000:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost:8000/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+
+  web:
+    build:
+      context: ./web
+    image: wisdominvest-web
+    container_name: ipo_web
+    restart: unless-stopped
+    environment:
+      # Server-side only: RSC fetches + the /api rewrite target.
+      # The browser always calls same-origin /api, so this never leaks.
+      NEXT_PUBLIC_API_BASE: http://api:8000
+    ports:
+      - "3000:3000"
+    depends_on:
+      api:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://localhost:3000').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+
+  scheduler:
+    image: wisdominvest-engine
+    container_name: ipo_scheduler
+    init: true
+    restart: unless-stopped
+    command: python -m engine.scheduler
+    environment:
+      DATABASE_URL: postgresql+psycopg://ipo:ipo@db:5432/ipo
+      ANALYSIS_BACKEND: ${ANALYSIS_BACKEND:-cli}
+      ANALYSIS_MODEL: ${ANALYSIS_MODEL:-claude-fable-5}
+      CLAUDE_CODE_OAUTH_TOKEN: ${CLAUDE_CODE_OAUTH_TOKEN:-}
+      SCHED_TZ: UTC
+      SCHED_ANALYZE_BATCH: ${SCHED_ANALYZE_BATCH:-20}
+      SCHED_ANALYZE_DAILY_CAP: ${SCHED_ANALYZE_DAILY_CAP:-200}
+      SCHED_REFRESH_BATCH: ${SCHED_REFRESH_BATCH:-100}
+      SCHED_ENRICH_BATCH: ${SCHED_ENRICH_BATCH:-50}
+    depends_on:
+      api:
+        condition: service_healthy   # api runs migrations first
+
+  backup:
+    image: postgres:16
+    container_name: ipo_backup
+    restart: unless-stopped
+    environment:
+      PGPASSWORD: ipo
+    volumes:
+      - ./backups:/backups
+      - ./scripts/backup/backup.sh:/backup.sh:ro
+    entrypoint: ["sh", "/backup.sh"]
+    depends_on:
+      db:
+        condition: service_healthy
 
 volumes:
   ipo_pgdata:

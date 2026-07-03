@@ -1,0 +1,27 @@
+# Engine image — used by both the `api` and `scheduler` services.
+# Python (engine + API) with Node + Claude Code CLI so the analysis
+# backend (Max plan via CLAUDE_CODE_OAUTH_TOKEN) can run headless in-container.
+FROM python:3.11-slim
+
+ENV PYTHONUNBUFFERED=1 \
+    PIP_NO_CACHE_DIR=1
+
+RUN apt-get update \
+ && apt-get install -y --no-install-recommends curl ca-certificates gnupg \
+ && curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
+ && apt-get install -y --no-install-recommends nodejs \
+ && npm install -g @anthropic-ai/claude-code \
+ && apt-get clean && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+
+COPY requirements.txt ./
+RUN pip install -r requirements.txt
+
+COPY alembic.ini ./
+COPY alembic ./alembic
+COPY db ./db
+COPY engine ./engine
+COPY src ./src
+COPY api ./api
+COPY scripts ./scripts
