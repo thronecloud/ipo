@@ -25,7 +25,7 @@ from engine.repo import (
 )
 from src.personas import PERSONAS, get_persona_slugs
 
-PROMPT_VERSION = "v2"  # v1 = imported (pre-fix) prompts; v2 = corrected prompts
+PROMPT_VERSION = "v3"  # v1 = imported; v2 = corrected scales; v3 = research-grounded revamp (said-vs-did, verified thresholds, screener-aware)
 
 
 def find_work(session, personas, universe=None, force=False, limit=0):
