@@ -51,6 +51,12 @@ def job_run(job_type: str, target: str = "all"):
         job.error = str(e)[:4000]
         job.finished_at = utcnow()
         session.commit()
+        try:
+            from engine.notify import notify
+            notify(f"engine job failed: {job_type}",
+                   f"target={target}\n{str(e)[:400]}", priority="high", tags="rotating_light")
+        except Exception:
+            pass
         raise
     finally:
         session.close()

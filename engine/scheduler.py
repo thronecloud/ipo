@@ -28,8 +28,10 @@ from apscheduler.triggers.cron import CronTrigger
 from sqlalchemy import func, select
 
 from engine.analysis.engine import run_incremental
+from engine.ingest.amfi import auto_reingest
 from engine.ingest.discover import discover_ipos
 from engine.ingest.screener_enrich import enrich
+from engine.ingest.upcoming import promote_listed, register_upcoming
 from engine.ingest.yf_refresh import refresh
 
 
@@ -58,9 +60,15 @@ def safe(job_fn):
     def wrapper():
         try:
             job_fn()
-        except Exception:
+        except Exception as e:
             print(f"[scheduler][{_now()}] TICK FAILED in {job_fn.__name__}:")
             traceback.print_exc()
+            try:
+                from engine.notify import notify
+                notify(f"scheduler tick failed: {job_fn.__name__}",
+                       str(e)[:400], priority="high", tags="rotating_light")
+            except Exception:
+                pass
 
     wrapper.__name__ = job_fn.__name__
     return wrapper
@@ -110,6 +118,20 @@ def job_enrich():
     enrich(limit=ENRICH_BATCH, verbose=False)
 
 
+def job_upcoming():
+    # APPEND-ONLY on real rows: registers pre-listing IPO shells (DRHP/open/close
+    # stage from ipowatch), then graduates due ones into the live pipeline.
+    print(f"[scheduler][{_now()}] upcoming discover + promote")
+    register_upcoming(verbose=False)
+    promote_listed(verbose=False)
+
+
+def job_amfi():
+    # Idempotent: only ingests when AMFI publishes a NEW Jan/Jul reclassification.
+    print(f"[scheduler][{_now()}] amfi release check")
+    auto_reingest(verbose=True)
+
+
 def job_analyze_and_score():
     if not analysis_available():
         print(f"[scheduler][{_now()}] analyze SKIPPED — no Claude credential "
@@ -136,12 +158,17 @@ def build_scheduler() -> BlockingScheduler:
             "misfire_grace_time": 3600,
         },
     )
+    # Daily upcoming-IPO check at 13:30 UTC — after Indian market close, before
+    # the 14:00 listed-discovery so promotion's twin-merge sees prior discoveries.
+    sched.add_job(safe(job_upcoming), CronTrigger(hour=13, minute=30), id="upcoming")
     # Daily discovery at 14:00 UTC — APPEND-ONLY (adds new companies).
     sched.add_job(safe(job_discover), CronTrigger(hour=14, minute=0), id="discover")
     # Daily data refresh at 02:00 UTC (hash-gated; snapshot added only when data changed).
     sched.add_job(safe(job_refresh), CronTrigger(hour=2, minute=0), id="refresh")
     # Weekly screener enrichment (fundamentals move quarterly) — Sunday 03:00 UTC.
     sched.add_job(safe(job_enrich), CronTrigger(day_of_week="sun", hour=3, minute=0), id="enrich")
+    # Monthly AMFI release check (new Jan/Jul reclassifications auto-ingest) — 5th, 04:00 UTC.
+    sched.add_job(safe(job_amfi), CronTrigger(day=5, hour=4, minute=0), id="amfi")
     # Hourly analysis batch drains the backlog over time (credential- and cap-gated).
     sched.add_job(safe(job_analyze_and_score), CronTrigger(minute=30), id="analyze")
     return sched

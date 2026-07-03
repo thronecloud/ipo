@@ -16,6 +16,7 @@ from engine.repo import add_snapshot, extract_columns, job_run, universe_contain
 from src.fetch_stock_data import safe_fetch, serialize_dataframe, serialize_info, serialize_value
 
 REFRESH_DELAY = 2.0
+PARK_THRESHOLD = 3  # consecutive failures before an active stock is parked as "stale"
 
 
 def _history_summary(history):
@@ -118,20 +119,43 @@ def refresh(universe=None, symbols=None, statuses=("active", "new"), promote=Tru
             stocks = stocks[:limit]
 
         counts = {"new_snapshot": 0, "unchanged": 0, "no_symbol": 0, "error": 0,
-                  "promoted": 0, "unfetchable": 0}
+                  "promoted": 0, "unfetchable": 0, "parked": 0, "revived": 0}
         for i, stock in enumerate(stocks):
             was_new = stock.status == "new"
             res = refresh_one(session, stock)
+            ok = res in ("new_snapshot", "unchanged")
             key = "error" if res.startswith("error") else res
             counts[key] = counts.get(key, 0) + 1
 
             if was_new and promote:
-                if res in ("new_snapshot", "unchanged"):
+                if ok:
                     stock.status = "active"
                     counts["promoted"] += 1
                 else:  # no_symbol / hard fetch error on first attempt
                     stock.status = "unfetchable"
                     counts["unfetchable"] += 1
+            elif ok:
+                stock.fetch_failures = 0
+                if stock.status == "stale":  # manual retry succeeded — revive
+                    stock.status = "active"
+                    counts["revived"] += 1
+            else:
+                # Active stock failing repeatedly = likely delisting/symbol change.
+                # Park it so it stops clogging every future batch, and alert.
+                stock.fetch_failures = (stock.fetch_failures or 0) + 1
+                if stock.status == "active" and stock.fetch_failures >= PARK_THRESHOLD:
+                    stock.status = "stale"
+                    counts["parked"] += 1
+                    try:
+                        from engine.notify import notify
+                        notify("stock auto-parked (repeated fetch failures)",
+                               f"{stock.symbol} ({stock.company_name}) failed "
+                               f"{stock.fetch_failures} consecutive fetches — "
+                               f"possible delisting or symbol change. "
+                               f"Retry: engine.run refresh --status stale --symbols {stock.symbol}",
+                               tags="package")
+                    except Exception:
+                        pass
 
             if verbose:
                 tag = "new" if was_new else stock.status

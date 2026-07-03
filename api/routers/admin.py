@@ -240,7 +240,13 @@ def usage(db: Session = Depends(get_db)):
         a["analyses"] += 1
         a["cost"] += cost or 0.0
         use = use or {}
-        a["in"] += int(use.get("input_tokens") or 0)
+        # True input volume = fresh input + cache writes + cache reads
+        # (the CLI reports these separately; summing only input_tokens undercounts badly).
+        a["in"] += (
+            int(use.get("input_tokens") or 0)
+            + int(use.get("cache_creation_input_tokens") or 0)
+            + int(use.get("cache_read_input_tokens") or 0)
+        )
         a["out"] += int(use.get("output_tokens") or 0)
     for m, a in acc.items():
         by_model[m] = ModelUsage(

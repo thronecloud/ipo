@@ -64,7 +64,12 @@ class Stock(Base):
 
     # Universe membership tags, e.g. ["ipo_2025", "ipo_2026", "nse_smallcap"].
     universe: Mapped[list] = mapped_column(JSONType, default=list)
+    # active / new / unfetchable / stale (auto-parked after repeated fetch failures)
+    # / upcoming / listed_merged / withdrawn (pre-listing pipeline states)
     status: Mapped[str] = mapped_column(String(32), default="active", index=True)
+    # Consecutive failed fetches; reset on success. At >= 3 an active stock is
+    # auto-parked as "stale" (delisting / symbol change) and an alert is sent.
+    fetch_failures: Mapped[int] = mapped_column(Integer, default=0, server_default="0")
 
     first_seen: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
     last_updated: Mapped[datetime] = mapped_column(
