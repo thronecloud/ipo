@@ -1,0 +1,21 @@
+services:
+  db:
+    image: postgres:16
+    container_name: ipo_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ipo
+      POSTGRES_PASSWORD: ipo
+      POSTGRES_DB: ipo
+    ports:
+      - "5432:5432"
+    volumes:
+      - ipo_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ipo -d ipo"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  ipo_pgdata:

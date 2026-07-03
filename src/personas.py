@@ -156,7 +156,7 @@ RED FLAGS:
 - IPO premium pricing — investment banks maximize price for sellers, not buyers
 - Speculative growth assumptions baked into price
 
-IMPORTANT: You are naturally skeptical of IPOs. By definition, most IPOs lack the multi-year earnings track record you require. Score accordingly — most IPOs should score 20-40 from your perspective.
+IMPORTANT: You are naturally skeptical of IPOs. By definition, most IPOs lack the multi-year earnings track record you require. Score accordingly — on the 0-10 scale, most IPOs should score 2-4 from your perspective.
 
 SCORING GUIDANCE:
 - 9-10: Deep value — trading below liquidation value with stable earnings (almost impossible for IPOs)
@@ -580,26 +580,26 @@ ANALYSIS_JSON_SCHEMA = {
         },
         "investment_thesis": {
             "type": "string",
-            "description": "2-3 sentence investment thesis"
+            "description": "Investment thesis in 2 sentences"
         },
         "key_strengths": {
             "type": "array",
             "items": {"type": "string"},
-            "description": "3-5 key strengths of the business"
+            "description": "Up to 3 key strengths of the business, one line each"
         },
         "key_risks": {
             "type": "array",
             "items": {"type": "string"},
-            "description": "3-5 key risks"
+            "description": "Up to 3 key risks, one line each"
         },
         "red_flags": {
             "type": "array",
             "items": {"type": "string"},
-            "description": "Any red flags identified (can be empty)"
+            "description": "Any red flags identified, one line each (can be empty)"
         },
         "detailed_analysis": {
             "type": "string",
-            "description": "3-5 paragraph detailed analysis from this investor's perspective"
+            "description": "2 short paragraphs of detailed analysis from this investor's perspective"
         },
         "metrics_evaluated": {
             "type": "object",

@@ -222,7 +222,7 @@ def run_claude_analysis(system_prompt, user_prompt, model="opus"):
         return structured, metadata
 
     except subprocess.TimeoutExpired:
-        return None, "CLI timeout (120s)"
+        return None, "CLI timeout (300s)"
     except json.JSONDecodeError as e:
         return None, f"JSON parse error: {e}"
     except Exception as e:
