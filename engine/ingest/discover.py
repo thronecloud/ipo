@@ -61,7 +61,7 @@ def discover_ipos(year=None, pages=5, resolve=True, verbose=True):
                 screener_url=e.get("screener_url"),
                 exchange="NSE" if (e.get("yf_symbol") or "").endswith(".NS") else "BSE",
             )
-            add_universe_tag(stock, tag)
+            add_universe_tag(session, stock, tag)
             if is_new:
                 stock.status = "new"
                 new_symbols.append(symbol)

@@ -189,8 +189,8 @@ def ingest_smallcaps(path: str, release_tag: str, nse_only: bool = True, verbose
             # Authoritative fields — set/refresh even on existing rows.
             stock.isin = stock.isin or row["isin"]
             stock.cap_category = "small"
-            add_universe_tag(stock, "nse_smallcap")
-            add_universe_tag(stock, release_tag)
+            add_universe_tag(session, stock, "nse_smallcap")
+            add_universe_tag(session, stock, release_tag)
 
             if is_new:
                 stock.status = "new"

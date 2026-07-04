@@ -61,12 +61,16 @@ services:
   web:
     build:
       context: ./web
+      args:
+        # BUILD-TIME: next build bakes this into routes-manifest.json as the
+        # /api rewrite destination (see web/Dockerfile / ISSUE-001).
+        NEXT_PUBLIC_API_BASE: http://api:8000
     image: wisdominvest-web
     container_name: ipo_web
     restart: unless-stopped
     environment:
-      # Server-side only: RSC fetches + the /api rewrite target.
-      # The browser always calls same-origin /api, so this never leaks.
+      # Runtime parity for RSC fetches. The browser always calls same-origin
+      # /api (proxied server-side to the baked base), so this never leaks.
       NEXT_PUBLIC_API_BASE: http://api:8000
     ports:
       - "3000:3000"

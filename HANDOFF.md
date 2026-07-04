@@ -1,0 +1,114 @@
+# HANDOFF — WisdomInvest living engine (session state, 2026-07-04)
+
+**Read this first after a context clear.** It is the single source of truth for where the
+project stands and what to do next. Product frame: **private prop-trading tool for the
+owner. No buyers, no monetization, no SEBI/compliance work, personalization welcome, no
+approval gates — proceed autonomously.**
+
+## Where things stand
+
+- Branch `living-engine` (main untouched). **128 tests green** (`pytest tests/`, uses
+  throwaway `ipo_test` DB). Migrations linear, head applied to prod DB `ipo`;
+  `tests/test_migrations.py` guards ORM⇔Alembic parity.
+- Prod stack: docker compose (db/api/web/scheduler/backup) all healthy; web at :3000,
+  api at :8000. Scheduler jobs: upcoming, discover, refresh, **refresh_stuck (Sun 06:00)**,
+  enrich, amfi, analyze, **score (:50 hourly reconcile)**, dq_audit (05:00), dq_fill (Sat).
+- Analysis backend: `claude -p --model claude-fable-5` CLI (Max plan). 512/2,643 stocks
+  scored; book is bearish (mostly AVOID; ~1 honest BUY).
+
+## Certified work DONE this session (all manager-certified, red→green TDD)
+
+1. **P0** — composite `UNIQUE(stock_id)` + upsert-under-lock + `reconcile_scores`;
+   LLM output contract enforced in `save_analysis` (`engine/analysis/contract.py`);
+   coverage-correct composite = mean(persona 0-10)×10 (0-100), clamped, derived
+   TOTAL_PERSONAS. Old-formula composites backfilled (F1).
+2. **Determinism** — `id.desc()` tiebreak on every "latest" query; migration-parity test.
+3. **Tier 2.5** — `composite_score_history` append-only point-in-time table
+   (`information_date = max(analyzed_at)` is the backtest key). First cohort captured
+   (512 rows, info date 2026-04-20). Written on every recompute, idempotent per day.
+4. **LEAK#1 confidence layer (backend)** — `engine/scoring/confidence.py`, frozen
+   partition `axis-v1`: core={buffett,munger,damani,jhunjhunwala}, growth={fisher,lynch},
+   value={graham,marks,greenblatt}, independent={kedia}. Pole-median axis scores; tiers
+   {high, moderate, provisional (axis missing), mixed (poles diverge)};
+   `LCB = composite − 1·stderr_eff(axes) − 3·(4−axes_present)`. Persisted on
+   `composite_scores` + history (`axis_scores`, `confidence_tier`, `score_stderr_eff`,
+   `lcb`, `factor_version`). Prod backfilled: high 243 / moderate 100 / provisional 110 /
+   mixed 59. **Rationale (R2 study): the 10 personas are ~2.3 independent voices
+   (PC1=64%); never market "10 experts agree"; stdev-of-10 confidence is theater.**
+5. **P3 hardening (all)** — ON CONFLICT conflict-safe writes (`add_snapshot`,
+   `upsert_daily_prices`, `get_or_create_stock`); atomic `add_universe_tag(session,…)`
+   (DB-side JSONB append; signature changed — callers pass session); deterministic
+   `as_of` audit + insert-only-on-change (`audit()` idempotent); `Stock.last_fetched_at`
+   (attempt-tracking freshness); stuck-status rework in `yf_refresh.refresh`:
+   new stocks get grace (park only after `PARK_THRESHOLD=3`), viability = latest yf
+   snapshot `data_quality=="full"` (minimal data no longer promotes/resets), atomic
+   `bump_fetch_failures` RETURNING, auto-revive stale/unfetchable on success, weekly
+   `refresh_stuck` sweep.
+6. **P4-M3** — fundamentals-only content hash (`VOLATILE_INFO_KEYS` + drop
+   `history_summary` from hash): price/volume moves no longer churn snapshots or
+   re-trigger analysis.
+
+**NOTE:** the final P3 + M3 packages were implemented and are green but the manager
+agent's certification reply was cut off by an API error — treat them as "done, cert
+pending" (a fresh review pass is fine).
+
+## Key research findings (decision-grade, all in repo history)
+
+- **R1 (backtest audit):** score had no time dimension → fixed via history table. Only
+  ~1 month forward price data from the Apr-2026 cohort; **no benchmark index in DB**;
+  147/512 scored stocks unpriced (mostly BSE-SME). True backtest needs months of accrued
+  history; near-term only a 1-month pilot event-study is honest.
+- **R2 (persona validity):** mean pairwise r=0.586; PC1=64%; effective voices ≈2.3.
+  Basis of the axis-v1 confidence design.
+- **Munger persona review:** single-voice BUY was "a printed lie" (fixed by LEAK#1);
+  macro ±40% multiplier = "two unknowns multiplied" → **display-only, never in rank
+  until backtest evidence**; the real moat is the DQ/data engine, not the persona oracle.
+- **DQ system** (built earlier, live): `engine/quality/` audit+gapfill, A-F grades,
+  nightly; avg quality 82.8; dashboard `/admin/data-quality`.
+
+## PENDING queue (execute top-down; manager pattern: red→green test per package)
+
+1. **P4 remainder (hygiene):**
+   - X1: unique/dedupe `analyses` natural key (stock_id, persona, data_hash, model) +
+     dedup migration.
+   - Gapfill loop-closure: route `quarters` + `stale_prices` missing-tokens; extend
+     `_fill_identity` to isin/cap_category; post-fill targeted re-audit read-back.
+   - Analysis retry/dead-letter: failed (stock,persona) pairs persist a marker so
+     `find_work` skips them (stop re-burning the daily cap).
+   - Kill silent `except Exception: pass` (repo.py, scheduler.py, yf_refresh.py — log
+     ≥WARN); JobRun with high item-error ratio must not report clean "success".
+   - `DATABASE_URL` fail-loud (db/base.py silently defaults to localhost).
+   - Retire legacy `src/score.py` SUM-scorer (contradicts DB mean×10).
+2. **P2 — BACKTEST (north star):** close price gap for scored names (backfill_prices);
+   ingest Nifty Smallcap benchmark (`^CNXSC`) into an `index_prices` table;
+   survivorship-safe pilot event-study: forward returns by confidence_tier and LCB
+   quintile vs benchmark, from `composite_score_history` × `daily_prices`, cohorts
+   frozen on `information_date`, **never filter status='active', never delete parked
+   names**. Answers: does high-tier/high-LCB outperform? does LCB beat raw composite?
+   Coefficients (K_DISP=1, K_COV=3, MAG=15) are unvalidated priors to calibrate.
+3. **LEAK#1 UI:** Discovery ranks by `lcb`; expose/show `confidence_tier` chips,
+   "~2-3 independent signals" honesty copy, provisional/mixed badges. API: consumer.py
+   list+detail add the new fields.
+4. **Macro Board (display-only):** research pipeline per certified 5-WP plan in history —
+   sector×(industry) themes, daily 14:15 UTC job, Δ-cap 0.15/day, clamp 0.6-1.4;
+   **never multiplies rank** unless backtest proves it adds edge.
+5. **P7:** event-driven re-analysis (price-shock/earnings triggers → queue jump) +
+   personal alerts (personalization fine now).
+6. **P5:** analyze the dark 81% backlog (wire ApiBackend or push CLI cap), triage by
+   owner interest.
+7. **CAPSTONE:** walk all 10 personas (their real `src/personas.py` prompts) through the
+   finished product, collate top-10 asks, implement.
+
+## Conventions to preserve
+
+- TDD: failing test first; every schema change ships ORM + Alembic migration together.
+- Determinism invariants: frozen `factor_version`; no live population fitting in scoring;
+  every "latest" query has `id.desc()` tiebreak; hashes exclude volatile fields.
+- Survivorship invariant: no hard-delete of parked stocks; no `status='active'` filters
+  in historical/backtest queries.
+- Composite point estimate (mean×10) is immutable; confidence/macro are additive layers.
+- Env: `source .venv/bin/activate`; prod DB `postgresql+psycopg://ipo:ipo@localhost:5432/ipo`;
+  tests set their own `ipo_test` URL via conftest.
+- Optional pattern from this session: a "Principal Engineer manager" subagent certifying
+  each package against red→green bars — respawn one if useful (it does not survive
+  context clears; this file replaces its memory).

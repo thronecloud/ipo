@@ -8,7 +8,7 @@ import type { Meta, StockList, StockRow } from "@/lib/types";
 import { DEFAULT_FILTERS, Filters } from "@/lib/filters";
 import { PERSONA_SLUGS } from "@/lib/personas";
 import { effectiveComposite } from "@/lib/compute";
-import { crore, num, pct, DASH } from "@/lib/format";
+import { crore, num, pct, relTime, DASH } from "@/lib/format";
 import FilterRail from "@/components/FilterRail";
 import DataTable, { Column, SortState } from "@/components/DataTable";
 import ConvictionStrip from "@/components/ConvictionStrip";
@@ -183,18 +183,35 @@ export default function DiscoveryPage() {
         header: "Composite",
         sortKey: "composite_score",
         align: "left",
-        width: 120,
+        width: 128,
         render: (r) => {
           const eff = effectiveComposite(r, selectedPersonas, total);
           if (eff.composite === null)
             return <span className="text-xs text-muted">not analyzed</span>;
-          return <ScoreBar value={eff.composite} />;
+          return (
+            <div>
+              <ScoreBar value={eff.composite} />
+              {r.composite_updated_at && (
+                <span
+                  className="num mt-0.5 block text-[9px] leading-none text-muted"
+                  title={`Last analyzed ${new Date(r.composite_updated_at).toLocaleString("en-IN")}`}
+                >
+                  {relTime(r.composite_updated_at)}
+                </span>
+              )}
+            </div>
+          );
         },
       },
       {
         key: "consensus",
-        header: "Call",
-        width: 64,
+        header: (
+          <CallFilter
+            value={filters.consensus}
+            onChange={(v) => patchFilters({ consensus: v })}
+          />
+        ),
+        width: 74,
         render: (r) => {
           const eff = effectiveComposite(r, selectedPersonas, total);
           return <RecChip rec={eff.consensus} size="xs" />;
@@ -252,7 +269,7 @@ export default function DiscoveryPage() {
       },
     ];
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [selectedPersonas, total, page, watchlist]);
+  }, [selectedPersonas, total, page, watchlist, filters.consensus, patchFilters]);
 
   const totalCount = data?.total ?? 0;
   const totalPages = Math.max(1, Math.ceil(totalCount / PAGE_SIZE));
@@ -348,6 +365,51 @@ export default function DiscoveryPage() {
         )}
       </div>
     </div>
+  );
+}
+
+const CALL_OPTIONS = [
+  { value: "", label: "Call" },
+  { value: "BUY", label: "Buy" },
+  { value: "HOLD", label: "Hold" },
+  { value: "AVOID", label: "Avoid" },
+];
+
+// Column-header filter for the Call column — drives the same consensus filter
+// as the sidebar, so the two stay in sync.
+function CallFilter({
+  value,
+  onChange,
+}: {
+  value: string;
+  onChange: (v: string) => void;
+}) {
+  const active = value !== "";
+  return (
+    <span className="relative inline-flex items-center">
+      <select
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
+        aria-label="Filter by call"
+        className={`cursor-pointer appearance-none rounded-sm border bg-transparent py-0.5 pl-1 pr-4 text-[10px] font-semibold uppercase tracking-[0.1em] outline-none transition-colors ${
+          active
+            ? "border-brass/50 text-brass"
+            : "border-transparent text-muted hover:text-paper"
+        }`}
+      >
+        {CALL_OPTIONS.map((o) => (
+          <option key={o.value} value={o.value} className="bg-panel text-paper">
+            {o.label}
+          </option>
+        ))}
+      </select>
+      <span
+        className={`pointer-events-none absolute right-1 text-[8px] ${active ? "text-brass" : "text-hairline"}`}
+        aria-hidden
+      >
+        ▾
+      </span>
+    </span>
   );
 }
 

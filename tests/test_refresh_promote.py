@@ -41,18 +41,48 @@ def test_new_stock_success_promotes_to_active(db_session, monkeypatch):
     assert snap.current_price == 100.0
 
 
-def test_new_stock_fetch_error_parked_unfetchable(db_session, monkeypatch):
-    stock = make_stock(db_session, "NEWBAD", status="new")
+def test_new_stock_first_error_gets_grace(db_session, monkeypatch):
+    """A single transient error no longer exiles a freshly-discovered stock forever."""
+    make_stock(db_session, "NEWBAD", status="new")
     monkeypatch.setattr(yfr, "fetch_payload", lambda sym: (None, "error: boom"))
 
     stats = yfr.refresh(symbols=["NEWBAD"], delay=0, verbose=False)
 
-    assert stats["error"] == 1
-    assert stats["unfetchable"] == 1
-    assert stats["promoted"] == 0
+    assert stats["error"] == 1 and stats["soft_fail"] == 1
+    assert stats["unfetchable"] == 0 and stats["promoted"] == 0
     stock = _reload(db_session, "NEWBAD")
-    assert stock.status == "unfetchable"
-    assert _snapshot_count(db_session, stock.id) == 0
+    assert stock.status == "new"              # grace — stays in the pipeline
+    assert stock.fetch_failures == 1
+
+
+def test_new_stock_repeated_errors_park_unfetchable(db_session, monkeypatch):
+    make_stock(db_session, "NEWGONE", status="new")
+    monkeypatch.setattr(yfr, "fetch_payload", lambda sym: (None, "error: boom"))
+    for _ in range(yfr.PARK_THRESHOLD):
+        yfr.refresh(symbols=["NEWGONE"], delay=0, verbose=False)
+    stock = _reload(db_session, "NEWGONE")
+    assert stock.status == "unfetchable"      # exiled only after PARK_THRESHOLD attempts
+    assert stock.fetch_failures >= yfr.PARK_THRESHOLD
+
+
+def test_new_stock_minimal_data_not_promoted(db_session, monkeypatch):
+    """Below-viability (minimal) data must not graduate a stock into analysis."""
+    make_stock(db_session, "NEWMIN", status="new")
+    monkeypatch.setattr(yfr, "fetch_payload", lambda sym: (yf_payload(), "minimal"))
+    stats = yfr.refresh(symbols=["NEWMIN"], delay=0, verbose=False)
+    stock = _reload(db_session, "NEWMIN")
+    assert stats["promoted"] == 0 and stats["soft_fail"] == 1
+    assert stock.status == "new"
+    assert stock.fetch_failures == 1          # soft failure, not a clean success
+
+
+def test_parked_stock_revives_on_success(db_session, monkeypatch):
+    make_stock(db_session, "REVIVE", status="unfetchable")
+    monkeypatch.setattr(yfr, "fetch_payload", lambda sym: (yf_payload(), "full"))
+    stats = yfr.refresh(symbols=["REVIVE"], delay=0, verbose=False)
+    stock = _reload(db_session, "REVIVE")
+    assert stats["revived"] == 1
+    assert stock.status == "active"           # recovered symbol auto-revived
 
 
 def test_new_stock_without_symbol_parked_unfetchable(db_session, monkeypatch):
@@ -98,7 +128,8 @@ def test_unchanged_payload_is_noop(db_session, monkeypatch):
 
 def test_changed_payload_appends_snapshot(db_session, monkeypatch):
     stock = make_stock(db_session, "CHANGED", status="active")
-    payloads = iter([(yf_payload(price=100.0), "full"), (yf_payload(price=105.0), "full")])
+    # vary a fundamental (revenue) so the hash actually changes (price is volatile)
+    payloads = iter([(yf_payload(revenue=1000.0), "full"), (yf_payload(revenue=2000.0), "full")])
     monkeypatch.setattr(yfr, "fetch_payload", lambda sym: next(payloads))
 
     yfr.refresh(symbols=["CHANGED"], delay=0, verbose=False)

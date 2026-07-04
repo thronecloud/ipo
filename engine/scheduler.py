@@ -33,6 +33,9 @@ from engine.ingest.discover import discover_ipos
 from engine.ingest.screener_enrich import enrich
 from engine.ingest.upcoming import promote_listed, register_upcoming
 from engine.ingest.yf_refresh import refresh
+from engine.quality.audit import audit
+from engine.quality.gapfill import gapfill
+from engine.repo import job_run, reconcile_scores
 
 
 def _int(env, default):
@@ -48,6 +51,8 @@ REFRESH_BATCH = _int("SCHED_REFRESH_BATCH", 100)
 ENRICH_BATCH = _int("SCHED_ENRICH_BATCH", 50)
 # Hard ceiling on persona analyses per UTC day (Max-plan protection).
 ANALYZE_DAILY_CAP = _int("SCHED_ANALYZE_DAILY_CAP", 200)
+# Bounded gap-fill sweep per weekly tick (identity is free; network parts capped).
+DQ_FILL_BATCH = _int("SCHED_DQ_FILL_BATCH", 150)
 
 
 def _now() -> str:
@@ -113,6 +118,13 @@ def job_refresh():
     refresh(limit=REFRESH_BATCH, verbose=False)
 
 
+def job_refresh_stuck():
+    # Weekly retry of parked stocks — a transiently-unfetchable/stale name that has
+    # since recovered is auto-revived, so parking is never a permanent dead-end.
+    print(f"[scheduler][{_now()}] refresh stuck (unfetchable+stale)")
+    refresh(statuses=("unfetchable", "stale"), limit=REFRESH_BATCH, verbose=False)
+
+
 def job_enrich():
     print(f"[scheduler][{_now()}] screener enrich (batch={ENRICH_BATCH})")
     enrich(limit=ENRICH_BATCH, verbose=False)
@@ -130,6 +142,26 @@ def job_amfi():
     # Idempotent: only ingests when AMFI publishes a NEW Jan/Jul reclassification.
     print(f"[scheduler][{_now()}] amfi release check")
     auto_reingest(verbose=True)
+
+
+def job_score():
+    # Reconcile composites for stocks whose latest analysis is newer than their
+    # score (heals orphans left by an interrupted analyze batch). Cheap, DB-only.
+    print(f"[scheduler][{_now()}] score reconcile")
+    with job_run("score_reconcile", target="stale") as (session, stats):
+        stats["rescored"] = reconcile_scores(session)
+
+
+def job_dq_audit():
+    # Score every active stock's data quality into data_quality_reports.
+    print(f"[scheduler][{_now()}] dq_audit (all active)")
+    audit(verbose=False)
+
+
+def job_dq_fill():
+    # Close the gaps the latest audit flagged (identity free; network parts capped).
+    print(f"[scheduler][{_now()}] dq_fill (batch={DQ_FILL_BATCH})")
+    gapfill(limit=DQ_FILL_BATCH, verbose=False)
 
 
 def job_analyze_and_score():
@@ -165,12 +197,22 @@ def build_scheduler() -> BlockingScheduler:
     sched.add_job(safe(job_discover), CronTrigger(hour=14, minute=0), id="discover")
     # Daily data refresh at 02:00 UTC (hash-gated; snapshot added only when data changed).
     sched.add_job(safe(job_refresh), CronTrigger(hour=2, minute=0), id="refresh")
+    # Weekly retry of parked (unfetchable/stale) stocks — Sunday 06:00 UTC. Closes the
+    # dead-end: a recovered symbol auto-revives instead of needing a manual run.
+    sched.add_job(safe(job_refresh_stuck), CronTrigger(day_of_week="sun", hour=6, minute=0), id="refresh_stuck")
     # Weekly screener enrichment (fundamentals move quarterly) — Sunday 03:00 UTC.
     sched.add_job(safe(job_enrich), CronTrigger(day_of_week="sun", hour=3, minute=0), id="enrich")
     # Monthly AMFI release check (new Jan/Jul reclassifications auto-ingest) — 5th, 04:00 UTC.
     sched.add_job(safe(job_amfi), CronTrigger(day=5, hour=4, minute=0), id="amfi")
     # Hourly analysis batch drains the backlog over time (credential- and cap-gated).
     sched.add_job(safe(job_analyze_and_score), CronTrigger(minute=30), id="analyze")
+    # Hourly composite reconcile at :50 — heals any composites orphaned by an
+    # interrupted analyze batch (analysis and scoring never drift apart).
+    sched.add_job(safe(job_score), CronTrigger(minute=50), id="score")
+    # Nightly data-quality audit at 05:00 UTC — after refresh (02:00) so it scores fresh data.
+    sched.add_job(safe(job_dq_audit), CronTrigger(hour=5, minute=0), id="dq_audit")
+    # Weekly gap-fill sweep — Saturday 04:00 UTC (bounded; identity fill is free).
+    sched.add_job(safe(job_dq_fill), CronTrigger(day_of_week="sat", hour=4, minute=0), id="dq_fill")
     return sched
 
 

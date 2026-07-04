@@ -14,10 +14,12 @@ import {
   num,
   pct,
   price,
+  relTime,
   titleCase,
   DASH,
 } from "@/lib/format";
 import ConvictionStrip from "@/components/ConvictionStrip";
+import PriceChart from "@/components/PriceChart";
 import RecChip from "@/components/RecChip";
 import CouncilBlock from "@/components/CouncilBlock";
 import DebatePanel from "@/components/DebatePanel";
@@ -223,6 +225,15 @@ export default function StockPage() {
               </span>
             </div>
 
+            {analyzed && comp.updated_at && (
+              <span
+                className="num text-[11px] text-muted"
+                title={new Date(comp.updated_at).toLocaleString("en-IN")}
+              >
+                Last analyzed {relTime(comp.updated_at)}
+              </span>
+            )}
+
             <div className="mt-1">
               <ConvictionStrip perPersona={perPersona} size="lg" labeled />
             </div>
@@ -251,6 +262,9 @@ export default function StockPage() {
           </div>
         </div>
       </Panel>
+
+      {/* ── Price ────────────────────────────────────────────── */}
+      <PriceChart symbol={identity.symbol} />
 
       {/* ── The Council ──────────────────────────────────────── */}
       <Panel>

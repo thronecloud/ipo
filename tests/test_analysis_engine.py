@@ -8,8 +8,8 @@ from src.personas import get_persona_slugs
 PERSONAS = get_persona_slugs()
 
 
-def _full_snapshot(session, stock, price=100.0, minutes=0):
-    payload = yf_payload(price=price)
+def _full_snapshot(session, stock, price=100.0, minutes=0, revenue=1000.0):
+    payload = yf_payload(price=price, revenue=revenue)
     snap, _ = add_snapshot(
         session, stock, payload, extract_columns(payload["info"]),
         data_quality="full", captured_at=utc(minutes),
@@ -19,7 +19,23 @@ def _full_snapshot(session, stock, price=100.0, minutes=0):
 
 
 def _fake_result(score=7):
-    return {"score": score, "recommendation": "BUY"}
+    # Contract-complete (save_analysis validates against ANALYSIS_JSON_SCHEMA).
+    return {
+        "score": score,
+        "recommendation": "BUY",
+        "investment_thesis": "Solid.",
+        "key_strengths": ["a"],
+        "key_risks": ["b"],
+        "red_flags": [],
+        "detailed_analysis": "Detailed.",
+        "metrics_evaluated": {
+            "moat_strength": "moderate",
+            "management_quality": "good",
+            "financial_health": "good",
+            "valuation": "fair",
+            "growth_potential": "good",
+        },
+    }
 
 
 def test_persona_roster_is_ten():
@@ -69,7 +85,8 @@ def test_changed_snapshot_reincludes_pair(db_session):
     db_session.commit()
     assert len(find_work(db_session, PERSONAS)) == 9
 
-    snap2 = _full_snapshot(db_session, stock, price=222.0, minutes=0)
+    # a fundamentals change (revenue) is what re-hashes and re-stales the pair
+    snap2 = _full_snapshot(db_session, stock, revenue=5000.0, minutes=0)
     assert snap2.content_hash != snap1.content_hash
 
     work = find_work(db_session, PERSONAS)

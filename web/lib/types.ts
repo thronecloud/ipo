@@ -36,6 +36,7 @@ export interface StockRow {
   composite_score: number | null;
   consensus_recommendation: Recommendation | null;
   analysis_coverage: number;
+  composite_updated_at: string | null;
   per_persona: Record<string, PerPersonaVerdict>;
   current_price: number | null;
   market_cap_cr: number | null;
@@ -85,6 +86,7 @@ export interface CompositeSummary {
   recommendation_counts: Partial<Record<Recommendation, number>>;
   analysis_coverage: number;
   total_personas: number;
+  updated_at: string | null;
 }
 
 export interface CouncilVerdict {
@@ -124,6 +126,24 @@ export interface StockDetail {
   council: CouncilVerdict[];
   fundamentals: Fundamentals;
   conviction_history: ConvictionPoint[];
+}
+
+export type CandleRange = "1m" | "3m" | "6m" | "1y" | "3y" | "5y" | "max";
+
+export interface Candle {
+  time: string; // "YYYY-MM-DD"
+  open: number | null;
+  high: number | null;
+  low: number | null;
+  close: number | null;
+  volume: number | null;
+}
+
+export interface CandleSeries {
+  symbol: string;
+  range: CandleRange;
+  count: number;
+  candles: Candle[];
 }
 
 // ── Admin ─────────────────────────────────────────────────────────
@@ -182,7 +202,48 @@ export interface Usage {
   backlog: number;
 }
 
-export type JobType = "discover" | "refresh" | "enrich" | "analyze" | "score";
+export type JobType =
+  | "discover"
+  | "refresh"
+  | "enrich"
+  | "analyze"
+  | "score"
+  | "backfill"
+  | "dq_audit"
+  | "dq_fill";
+
+export interface DimensionCoverage {
+  avg_score: number | null;
+  pct_pass: number | null;
+  scored: number;
+}
+
+export interface DQStockRow {
+  symbol: string;
+  company_name: string | null;
+  overall_score: number | null;
+  grade: string | null;
+  flags: string[];
+  missing: string[];
+}
+
+export interface DQDiscrepancy {
+  symbol: string;
+  type: string;
+  detail: string;
+}
+
+export interface DataQualityOverview {
+  audited_at: string | null;
+  audited: number;
+  avg_overall: number | null;
+  grades: Record<string, number>;
+  dimension_coverage: Record<string, DimensionCoverage>;
+  flags: Record<string, number>;
+  missing: Record<string, number>;
+  worst: DQStockRow[];
+  discrepancies: DQDiscrepancy[];
+}
 
 export interface JobRunResponse {
   launched: boolean;

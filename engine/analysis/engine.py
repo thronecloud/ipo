@@ -28,9 +28,11 @@ from src.personas import PERSONAS, get_persona_slugs
 PROMPT_VERSION = "v3"  # v1 = imported; v2 = corrected scales; v3 = research-grounded revamp (said-vs-did, verified thresholds, screener-aware)
 
 
-def find_work(session, personas, universe=None, force=False, limit=0):
+def find_work(session, personas, universe=None, symbols=None, force=False, limit=0):
     """Yield (stock, snapshot, persona_slug) tuples that need analysis."""
     q = select(Stock).order_by(Stock.symbol)
+    if symbols:
+        q = q.where(Stock.symbol.in_([s.upper() for s in symbols]))
     if universe:
         q = q.where(universe_contains(universe))
     stocks = session.scalars(q).all()
@@ -49,15 +51,17 @@ def find_work(session, personas, universe=None, force=False, limit=0):
     return work
 
 
-def run_incremental(personas=None, universe=None, model=None, force=False,
+def run_incremental(personas=None, universe=None, symbols=None, model=None, force=False,
                     limit=0, delay=2.0, verbose=True):
     """Analyze all stock×persona pairs that need it. Returns a stats dict."""
     personas = personas or get_persona_slugs()
     model = model or default_model()
     backend = get_backend()
 
-    with job_run("analyze", target=universe or "all") as (session, stats):
-        work = find_work(session, personas, universe=universe, force=force, limit=limit)
+    target = universe or (symbols and f"{len(symbols)} symbols") or "all"
+    with job_run("analyze", target=target) as (session, stats):
+        work = find_work(session, personas, universe=universe, symbols=symbols,
+                         force=force, limit=limit)
         stats.update({"backend": backend.name, "model": model, "planned": len(work),
                       "success": 0, "error": 0})
         if verbose:
@@ -66,32 +70,41 @@ def run_incremental(personas=None, universe=None, model=None, force=False,
 
         touched_stock_ids = set()
         for i, (stock, snap, slug) in enumerate(work):
-            persona = PERSONAS[slug]
-            screener_snap = latest_snapshot(session, stock.id, source="screener")
-            user_prompt = build_user_prompt(stock, snap, screener_snap)
-            result, meta = backend.analyze(persona["system_prompt"], user_prompt, model)
+            # Per-pair isolation: one bad result (backend error, off-contract output,
+            # any exception) increments `error` and is skipped — it never aborts the
+            # batch or leaves the batch's earlier committed analyses un-scored.
+            try:
+                persona = PERSONAS[slug]
+                screener_snap = latest_snapshot(session, stock.id, source="screener")
+                user_prompt = build_user_prompt(stock, snap, screener_snap)
+                result, meta = backend.analyze(persona["system_prompt"], user_prompt, model)
 
-            if result is None:
+                if result is None:
+                    stats["error"] += 1
+                    if verbose:
+                        print(f"  [{i+1}/{len(work)}] {stock.symbol} x {slug}: ERROR {meta}")
+                else:
+                    model_used = (meta or {}).get("model_used", model)
+                    save_analysis(session, stock, snap, slug, model_used, PROMPT_VERSION, result, meta)
+                    # Rescore this stock immediately so a committed analysis always has a
+                    # matching composite (no orphan window on interruption).
+                    recompute_scores_for_stock(session, stock)
+                    touched_stock_ids.add(stock.id)
+                    stats["success"] += 1
+                    if verbose:
+                        print(f"  [{i+1}/{len(work)}] {stock.symbol} x {slug}: "
+                              f"score={result.get('score')} rec={result.get('recommendation')} "
+                              f"model={model_used}")
+                    session.commit()
+            except Exception as e:
+                session.rollback()
                 stats["error"] += 1
                 if verbose:
-                    print(f"  [{i+1}/{len(work)}] {stock.symbol} x {slug}: ERROR {meta}")
-            else:
-                model_used = (meta or {}).get("model_used", model)
-                save_analysis(session, stock, snap, slug, model_used, PROMPT_VERSION, result, meta)
-                touched_stock_ids.add(stock.id)
-                stats["success"] += 1
-                if verbose:
-                    print(f"  [{i+1}/{len(work)}] {stock.symbol} x {slug}: "
-                          f"score={result.get('score')} rec={result.get('recommendation')} "
-                          f"model={model_used}")
-                session.commit()
+                    print(f"  [{i+1}/{len(work)}] {stock.symbol} x {slug}: SKIPPED ({type(e).__name__}: {e})")
 
             if i < len(work) - 1:
                 time.sleep(delay)
 
-        # Recompute composite scores for every stock we touched.
-        for sid in touched_stock_ids:
-            recompute_scores_for_stock(session, session.get(Stock, sid))
         stats["stocks_rescored"] = len(touched_stock_ids)
         session.commit()
 

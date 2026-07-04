@@ -12,7 +12,16 @@ import yfinance as yf
 from sqlalchemy import select
 
 from db.models import Stock
-from engine.repo import add_snapshot, extract_columns, job_run, universe_contains
+from engine.repo import (
+    add_snapshot,
+    bump_fetch_failures,
+    extract_columns,
+    job_run,
+    latest_snapshot,
+    reset_fetch_failures,
+    universe_contains,
+    upsert_daily_prices,
+)
 from src.fetch_stock_data import safe_fetch, serialize_dataframe, serialize_info, serialize_value
 
 REFRESH_DELAY = 2.0
@@ -32,6 +41,29 @@ def _history_summary(history):
         "low_52w": serialize_value(history["Close"].tail(252).min()) if len(history) >= 252 else serialize_value(history["Close"].min()),
         "avg_volume_30d": serialize_value(history["Volume"].tail(30).mean()) if len(history) >= 30 else serialize_value(history["Volume"].mean()),
     }
+
+
+def _price_rows(history):
+    """Full daily OHLCV series from a yfinance history frame → list of bar dicts.
+    NaN/inf are coerced to None. Returns [] when there is no usable history."""
+    if history is None or getattr(history, "empty", True):
+        return []
+    if not all(col in history.columns for col in ("Open", "High", "Low", "Close", "Volume")):
+        return []
+    idx = history.index
+    o, h, l, c, v = (history[col] for col in ("Open", "High", "Low", "Close", "Volume"))
+    rows = []
+    for i in range(len(history)):
+        vol = serialize_value(v.iloc[i])
+        rows.append({
+            "date": idx[i].date(),
+            "open": serialize_value(o.iloc[i]),
+            "high": serialize_value(h.iloc[i]),
+            "low": serialize_value(l.iloc[i]),
+            "close": serialize_value(c.iloc[i]),
+            "volume": int(vol) if vol is not None else None,
+        })
+    return rows
 
 
 def _quality(info, financials, balance_sheet, cashflow, history):
@@ -69,6 +101,10 @@ def fetch_payload(yf_symbol):
         "balance_sheet": serialize_dataframe(balance_sheet),
         "cashflow": serialize_dataframe(cashflow),
         "history_summary": _history_summary(history),
+        # Full OHLCV series rides along under a private key; refresh_one pops it
+        # (into daily_prices) BEFORE the payload is hashed/stored, so snapshot
+        # dedup semantics are unchanged and snapshots never carry the bulky series.
+        "_price_rows": _price_rows(history),
     }
     return payload, _quality(info, financials, balance_sheet, cashflow, history)
 
@@ -76,9 +112,15 @@ def fetch_payload(yf_symbol):
 def refresh_one(session, stock: Stock) -> str:
     if not stock.yf_symbol:
         return "no_symbol"
+    # Record the attempt regardless of outcome — freshness tracks attempts, not just
+    # hash-changing snapshots (a stable stock refreshed daily stays "fresh").
+    from db.models import utcnow
+    stock.last_fetched_at = utcnow()
     payload, quality = fetch_payload(stock.yf_symbol)
     if payload is None:
         return quality  # "error: ..."
+    # Pop the OHLCV series out before hashing/storing the snapshot payload.
+    price_rows = payload.pop("_price_rows", [])
     ipo_data = {
         "listing_date": stock.listing_date,
         "issue_price": stock.issue_price,
@@ -91,7 +133,55 @@ def refresh_one(session, stock: Stock) -> str:
         source="yfinance", fetch_status="success",
         data_quality=quality, ipo_data=ipo_data,
     )
+    # Append-only; idempotent whether or not the snapshot itself was new.
+    upsert_daily_prices(session, stock.id, price_rows)
     return "new_snapshot" if created else "unchanged"
+
+
+def backfill_prices(universe=None, symbols=None, statuses=("active", "new"),
+                    limit=0, delay=1.0, verbose=True):
+    """Populate daily_prices for a set of stocks WITHOUT creating snapshots.
+
+    Decoupled from the snapshot/analysis pipeline: it fetches only yfinance
+    history and appends new OHLCV bars. Safe to run alongside analysis — it never
+    changes a stock's latest snapshot hash, so it can't retrigger staleness.
+    """
+    _t = universe or (symbols and f"{len(symbols)} symbols") or "all"
+    with job_run("backfill_prices", target=_t) as (session, stats):
+        q = select(Stock)
+        if symbols:
+            q = q.where(Stock.symbol.in_(symbols))
+        else:
+            q = q.where(Stock.status.in_(list(statuses)))
+        if universe:
+            q = q.where(universe_contains(universe))
+        stocks = session.scalars(q.order_by(Stock.symbol)).all()
+        if limit:
+            stocks = stocks[:limit]
+
+        counts = {"stocks": 0, "bars_added": 0, "no_symbol": 0, "error": 0, "no_history": 0}
+        for i, stock in enumerate(stocks):
+            if not stock.yf_symbol:
+                counts["no_symbol"] += 1
+                continue
+            hist = safe_fetch(
+                lambda: yf.Ticker(stock.yf_symbol).history(period="max"),
+                "history", stock.yf_symbol,
+            )
+            rows = _price_rows(hist)
+            if not rows:
+                counts["no_history"] += 1
+            else:
+                counts["bars_added"] += upsert_daily_prices(session, stock.id, rows)
+            counts["stocks"] += 1
+            session.commit()
+            if verbose:
+                print(f"  [{i+1}/{len(stocks)}] {stock.symbol}: +{len(rows)} bars")
+            if i < len(stocks) - 1:
+                time.sleep(delay)
+
+        stats.update(counts)
+    return stats
 
 
 def refresh(universe=None, symbols=None, statuses=("active", "new"), promote=True,
@@ -105,7 +195,8 @@ def refresh(universe=None, symbols=None, statuses=("active", "new"), promote=Tru
     `unfetchable` so it doesn't clog every future batch. `active` stocks that error
     are left active (transient). New stocks are fetched first.
     """
-    with job_run("refresh", target=universe or (symbols and ",".join(symbols)) or ",".join(statuses)) as (session, stats):
+    _t = universe or (symbols and f"{len(symbols)} symbols") or ",".join(statuses)
+    with job_run("refresh", target=_t) as (session, stats):
         q = select(Stock)
         if symbols:
             q = q.where(Stock.symbol.in_(symbols))
@@ -119,43 +210,56 @@ def refresh(universe=None, symbols=None, statuses=("active", "new"), promote=Tru
             stocks = stocks[:limit]
 
         counts = {"new_snapshot": 0, "unchanged": 0, "no_symbol": 0, "error": 0,
-                  "promoted": 0, "unfetchable": 0, "parked": 0, "revived": 0}
+                  "promoted": 0, "unfetchable": 0, "parked": 0, "revived": 0, "soft_fail": 0}
         for i, stock in enumerate(stocks):
             was_new = stock.status == "new"
             res = refresh_one(session, stock)
-            ok = res in ("new_snapshot", "unchanged")
             key = "error" if res.startswith("error") else res
             counts[key] = counts.get(key, 0) + 1
 
-            if was_new and promote:
-                if ok:
+            got_snapshot = res in ("new_snapshot", "unchanged")
+            hard_fail = res == "no_symbol"
+            # "Viable" = we actually obtained analysis-grade (full) data. A minimal/limited
+            # snapshot is NOT viable — it must not promote a `new` stock nor reset failures
+            # (that was the "degraded data logged as success, never parked" bug).
+            latest = latest_snapshot(session, stock.id, source="yfinance") if got_snapshot else None
+            viable = latest is not None and latest.data_quality == "full"
+
+            if viable:
+                reset_fetch_failures(session, stock)
+                if promote and was_new:
                     stock.status = "active"
                     counts["promoted"] += 1
-                else:  # no_symbol / hard fetch error on first attempt
-                    stock.status = "unfetchable"
-                    counts["unfetchable"] += 1
-            elif ok:
-                stock.fetch_failures = 0
-                if stock.status == "stale":  # manual retry succeeded — revive
-                    stock.status = "active"
+                elif promote and stock.status in ("stale", "unfetchable"):
+                    stock.status = "active"          # a parked stock became fetchable → revive
                     counts["revived"] += 1
+            elif hard_fail:
+                if promote and was_new:
+                    stock.status = "unfetchable"     # no yfinance symbol = genuinely unfetchable
+                    counts["unfetchable"] += 1
             else:
-                # Active stock failing repeatedly = likely delisting/symbol change.
-                # Park it so it stops clogging every future batch, and alert.
-                stock.fetch_failures = (stock.fetch_failures or 0) + 1
-                if stock.status == "active" and stock.fetch_failures >= PARK_THRESHOLD:
-                    stock.status = "stale"
-                    counts["parked"] += 1
-                    try:
-                        from engine.notify import notify
-                        notify("stock auto-parked (repeated fetch failures)",
-                               f"{stock.symbol} ({stock.company_name}) failed "
-                               f"{stock.fetch_failures} consecutive fetches — "
-                               f"possible delisting or symbol change. "
-                               f"Retry: engine.run refresh --status stale --symbols {stock.symbol}",
-                               tags="package")
-                    except Exception:
-                        pass
+                # Soft failure: a transient error OR a below-viability (minimal) snapshot.
+                # Give grace via the failure counter; park only after PARK_THRESHOLD — a
+                # single blip no longer exiles a freshly-discovered stock forever.
+                counts["soft_fail"] += 1
+                n = bump_fetch_failures(session, stock)
+                if promote and n >= PARK_THRESHOLD:
+                    if stock.status == "new":
+                        stock.status = "unfetchable"
+                        counts["unfetchable"] += 1
+                    elif stock.status in ("active", "stale"):
+                        stock.status = "stale"
+                        counts["parked"] += 1
+                        try:
+                            from engine.notify import notify
+                            notify("stock auto-parked (repeated fetch failures)",
+                                   f"{stock.symbol} ({stock.company_name}) failed "
+                                   f"{n} consecutive fetches — possible delisting or symbol "
+                                   f"change. Retry sweep runs weekly; or "
+                                   f"engine.run refresh --status stale --symbols {stock.symbol}",
+                                   tags="package")
+                        except Exception:
+                            pass
 
             if verbose:
                 tag = "new" if was_new else stock.status

@@ -12,21 +12,31 @@ import json
 from collections import Counter
 from contextlib import contextmanager
 
-from sqlalchemy import cast, select
+from sqlalchemy import cast, func, insert, select, update
 from sqlalchemy.dialects.postgresql import JSONB
+from sqlalchemy.dialects.postgresql import insert as pg_insert
 
 from db.base import SessionLocal
 from db.models import (
     Analysis,
     CompositeScore,
+    CompositeScoreHistory,
+    DailyPrice,
     JobRun,
     Stock,
     StockSnapshot,
     utcnow,
 )
+from src.personas import PERSONAS
 
-TOTAL_PERSONAS = 10
-SCORING_METHOD = "sum_of_persona_scores_each_0_to_10"
+# Derived, not hardcoded — the council's size is defined in one place (src/personas).
+TOTAL_PERSONAS = len(PERSONAS)
+assert TOTAL_PERSONAS > 0, "PERSONAS is empty — the council must have members"
+# Composite is coverage-weighted: mean of the per-persona 0-10 scores, ×10 → a 0-100
+# scale that does NOT depend on how many personas have run (a 4-persona and a
+# 10-persona stock are directly comparable). Consensus cuts at 60 / 40 on that scale.
+SCORING_METHOD = "coverage_weighted_mean_x10_0_to_100"
+SCORE_MIN, SCORE_MAX = 0, 10
 
 
 # ---------- job observability ----------
@@ -35,6 +45,8 @@ SCORING_METHOD = "sum_of_persona_scores_each_0_to_10"
 def job_run(job_type: str, target: str = "all"):
     """Wrap a unit of engine work in a JobRun row. Yields (session, stats_dict)."""
     session = SessionLocal()
+    # target is VARCHAR(128); a large symbol list would overflow it — cap defensively.
+    target = (target or "all")[:128]
     job = JobRun(job_type=job_type, target=target, status="running")
     session.add(job)
     session.commit()
@@ -64,9 +76,34 @@ def job_run(job_type: str, target: str = "all"):
 
 # ---------- hashing ----------
 
+# Intraday market-quote fields that move every tick — they live in the extracted
+# columns / daily_prices, and must NOT be in the content hash or an unchanged business
+# would mint a "new" snapshot daily and needlessly re-trigger analysis staleness.
+VOLATILE_INFO_KEYS = frozenset({
+    "currentPrice", "regularMarketPrice", "previousClose", "regularMarketPreviousClose",
+    "open", "regularMarketOpen", "dayHigh", "dayLow", "regularMarketDayHigh",
+    "regularMarketDayLow", "bid", "ask", "bidSize", "askSize", "volume",
+    "regularMarketVolume", "averageVolume", "averageVolume10days", "averageDailyVolume10Day",
+    "marketCap", "fiftyTwoWeekLow", "fiftyTwoWeekHigh", "fiftyDayAverage",
+    "twoHundredDayAverage", "postMarketPrice", "preMarketPrice", "targetMeanPrice",
+    "regularMarketChange", "regularMarketChangePercent", "regularMarketTime",
+})
+
+
+def _hashable_payload(payload: dict) -> dict:
+    """A copy of the payload with volatile market data stripped, for a STABLE hash:
+    the digest reflects fundamentals (financials/statements/quarterly), not the quote."""
+    p = dict(payload)
+    p.pop("history_summary", None)  # last_close / avg_volume move daily
+    info = p.get("info")
+    if isinstance(info, dict):
+        p["info"] = {k: v for k, v in info.items() if k not in VOLATILE_INFO_KEYS}
+    return p
+
+
 def compute_content_hash(payload: dict) -> str:
-    """Stable hash of a scraped payload (order-independent)."""
-    blob = json.dumps(payload, sort_keys=True, default=str)
+    """Stable hash of a scraped payload (order-independent, volatile-quote-independent)."""
+    blob = json.dumps(_hashable_payload(payload), sort_keys=True, default=str)
     return hashlib.sha256(blob.encode()).hexdigest()
 
 
@@ -104,23 +141,63 @@ def extract_columns(info: dict) -> dict:
 def get_or_create_stock(session, symbol: str, **defaults) -> Stock:
     stock = session.scalar(select(Stock).where(Stock.symbol == symbol))
     if stock is None:
-        stock = Stock(symbol=symbol, universe=defaults.pop("universe", []), status="active")
-        session.add(stock)
+        # Conflict-safe create: a concurrent discover/amfi run inserting the same
+        # symbol no longer crashes with an IntegrityError — the loser re-reads.
+        stmt = (
+            pg_insert(Stock)
+            .values(symbol=symbol, universe=defaults.pop("universe", []), status="active")
+            .on_conflict_do_nothing(index_elements=["symbol"])
+            .returning(Stock.id)
+        )
+        new_id = session.execute(stmt).scalar()
         session.flush()
+        stock = (
+            session.get(Stock, new_id) if new_id is not None
+            else session.scalar(select(Stock).where(Stock.symbol == symbol))
+        )
     for k, v in defaults.items():
         if v is not None and getattr(stock, k, None) in (None, "", []):
             setattr(stock, k, v)
     return stock
 
 
-def add_universe_tag(stock: Stock, tag: str):
-    if tag and tag not in (stock.universe or []):
-        stock.universe = (stock.universe or []) + [tag]
+def add_universe_tag(session, stock: Stock, tag: str):
+    """Atomically append a universe tag, dedup-guarded — a single UPDATE at the DB, so
+    two jobs (e.g. discover + amfi) tagging the same stock concurrently can't lose each
+    other's tag the way a Python read-modify-write would."""
+    if not tag:
+        return
+    # coalesce NULL universe -> '[]' so the append + dedup-guard work on any row.
+    uni = cast(func.coalesce(cast(Stock.universe, JSONB), func.jsonb_build_array()), JSONB)
+    session.execute(
+        update(Stock)
+        .where(Stock.id == stock.id, ~uni.contains([tag]))
+        .values(universe=uni.op("||")(func.jsonb_build_array(tag)))
+    )
+    session.expire(stock, ["universe"])  # ORM copy is stale after the DB-side append
 
 
 def universe_contains(tag: str):
     """SQL predicate for 'stock is tagged <tag>' using the JSONB @> operator (GIN-indexed)."""
     return cast(Stock.universe, JSONB).contains([tag])
+
+
+def bump_fetch_failures(session, stock: Stock) -> int:
+    """Atomically increment fetch_failures and return the NEW value — so the park
+    decision keys off the post-increment count, not a racy Python read-modify-write."""
+    n = session.execute(
+        update(Stock).where(Stock.id == stock.id)
+        .values(fetch_failures=func.coalesce(Stock.fetch_failures, 0) + 1)
+        .returning(Stock.fetch_failures)
+    ).scalar()
+    session.expire(stock, ["fetch_failures"])
+    return n
+
+
+def reset_fetch_failures(session, stock: Stock):
+    if stock.fetch_failures:
+        session.execute(update(Stock).where(Stock.id == stock.id).values(fetch_failures=0))
+        session.expire(stock, ["fetch_failures"])
 
 
 # ---------- snapshots ----------
@@ -132,7 +209,10 @@ def latest_snapshot(session, stock_id: int, quality: str | None = None,
         q = q.where(StockSnapshot.data_quality == quality)
     if source:
         q = q.where(StockSnapshot.source == source)
-    return session.scalar(q.order_by(StockSnapshot.captured_at.desc()).limit(1))
+    # id.desc() tiebreaker → deterministic "latest" even when captured_at ties.
+    return session.scalar(
+        q.order_by(StockSnapshot.captured_at.desc(), StockSnapshot.id.desc()).limit(1)
+    )
 
 
 def add_snapshot(session, stock: Stock, payload: dict, extracted: dict, *,
@@ -144,16 +224,7 @@ def add_snapshot(session, stock: Stock, payload: dict, extracted: dict, *,
     holds the convenience columns (current_price, pe_ratio, ...).
     """
     chash = compute_content_hash(payload)
-    existing = session.scalar(
-        select(StockSnapshot).where(
-            StockSnapshot.stock_id == stock.id,
-            StockSnapshot.content_hash == chash,
-        )
-    )
-    if existing:
-        return existing, False
-
-    snap = StockSnapshot(
+    values = dict(
         stock_id=stock.id,
         captured_at=captured_at or utcnow(),
         source=source,
@@ -170,9 +241,45 @@ def add_snapshot(session, stock: Stock, payload: dict, extracted: dict, *,
         ipo_data=ipo_data,
         **extracted,
     )
-    session.add(snap)
-    session.flush()
-    return snap, True
+    # Conflict-safe insert on (stock_id, content_hash): concurrent writers of the same
+    # snapshot never raise — one wins (RETURNING id), the other resolves to the winner.
+    stmt = (
+        pg_insert(StockSnapshot).values(**values)
+        .on_conflict_do_nothing(index_elements=["stock_id", "content_hash"])
+        .returning(StockSnapshot.id)
+    )
+    new_id = session.execute(stmt).scalar()
+    if new_id is not None:
+        session.flush()
+        return session.get(StockSnapshot, new_id), True
+    existing = session.scalar(
+        select(StockSnapshot).where(
+            StockSnapshot.stock_id == stock.id,
+            StockSnapshot.content_hash == chash,
+        )
+    )
+    return existing, False
+
+
+# ---------- daily prices (OHLCV time series) ----------
+
+def upsert_daily_prices(session, stock_id: int, rows: list[dict]) -> int:
+    """Append new daily OHLCV bars for a stock; existing (stock_id, date) rows are
+    left untouched (append-only). `rows` items: {date, open, high, low, close, volume}.
+    Returns the count of newly-inserted bars.
+    """
+    if not rows:
+        return 0
+    # ON CONFLICT DO NOTHING is atomic + concurrency-safe: a bar another writer
+    # already inserted is skipped, never an IntegrityError that aborts the batch.
+    # RETURNING yields only the rows actually inserted (conflicts are skipped).
+    payload = [{"stock_id": stock_id, **r} for r in rows]
+    stmt = (
+        pg_insert(DailyPrice).values(payload)
+        .on_conflict_do_nothing(index_elements=["stock_id", "date"])
+        .returning(DailyPrice.id)
+    )
+    return len(session.execute(stmt).fetchall())
 
 
 # ---------- analyses ----------
@@ -190,6 +297,9 @@ def existing_persona_hashes(session, stock_id: int) -> dict[str, set]:
 
 def save_analysis(session, stock: Stock, snapshot: StockSnapshot, persona: str,
                   model: str, prompt_version: str, result: dict, meta: dict) -> Analysis:
+    # LLM output is untrusted — enforce the contract before it can touch the DB.
+    from engine.analysis.contract import validate_analysis_result
+    validate_analysis_result(result)
     row = Analysis(
         stock_id=stock.id,
         persona=persona,
@@ -217,37 +327,128 @@ def save_analysis(session, stock: Stock, snapshot: StockSnapshot, persona: str,
 # ---------- scoring ----------
 
 def recompute_scores_for_stock(session, stock: Stock):
-    """Recompute the composite score for one stock from its latest per-persona analyses."""
-    analyses = session.scalars(
-        select(Analysis).where(Analysis.stock_id == stock.id)
+    """Recompute the composite score for one stock from its latest per-persona analyses.
+
+    Deterministic + concurrency-safe: the per-persona "latest" is totally ordered
+    (analyzed_at DESC, id DESC — no timestamp-tie ambiguity), and the write is an
+    atomic upsert under a row lock on the parent stock, so N workers recomputing the
+    same stock converge to exactly one row (uq_composite_stock) with no torn state.
+    """
+    # Serialize concurrent recomputes of THIS stock.
+    session.execute(select(Stock.id).where(Stock.id == stock.id).with_for_update()).first()
+
+    rows = session.scalars(
+        select(Analysis)
+        .where(Analysis.stock_id == stock.id)
+        .order_by(Analysis.persona, Analysis.analyzed_at.desc(), Analysis.id.desc())
     ).all()
     latest: dict[str, Analysis] = {}
-    for a in analyses:
+    for a in rows:
         if a.score is None:
             continue
-        cur = latest.get(a.persona)
-        if cur is None or a.analyzed_at > cur.analyzed_at:
-            latest[a.persona] = a
+        latest.setdefault(a.persona, a)  # first seen per persona = newest by ordering
     if not latest:
         return None
 
-    persona_scores = {p: a.score for p, a in latest.items()}
-    composite = sum(persona_scores.values())
-    recs = [a.recommendation for a in latest.values() if a.recommendation]
+    # Clamp defensively (save_analysis already rejects out-of-range, but a rogue row
+    # inserted by other means must never skew the composite). Sorted → stable JSON.
+    persona_scores = {
+        p: max(SCORE_MIN, min(SCORE_MAX, latest[p].score)) for p in sorted(latest)
+    }
+    composite = round(sum(persona_scores.values()) / len(persona_scores) * 10, 1)
+    recs = [latest[p].recommendation for p in sorted(latest) if latest[p].recommendation]
     consensus = "BUY" if composite >= 60 else "HOLD" if composite >= 40 else "AVOID"
+    # The date the view actually FORMED (max analyzed_at) — the point-in-time key.
+    information_date = max(latest[p].analyzed_at for p in latest)
 
-    # Replace any prior score row for this stock.
-    session.query(CompositeScore).filter(CompositeScore.stock_id == stock.id).delete()
-    row = CompositeScore(
+    # Confidence layer (LEAK#1): tier + LCB on the independent axis subspace.
+    from engine.scoring.confidence import compute_confidence
+    conf = compute_confidence(persona_scores, round(composite, 1))
+
+    vals = dict(
         stock_id=stock.id,
+        computed_at=utcnow(),
         composite_score=round(composite, 1),
         persona_scores=persona_scores,
         consensus_recommendation=consensus,
-        recommendation_counts=dict(Counter(recs)),
+        recommendation_counts=dict(Counter(sorted(recs))),
         analysis_coverage=len(persona_scores),
         total_personas=TOTAL_PERSONAS,
         scoring_method=SCORING_METHOD,
+        axis_scores=conf["axis_scores"],
+        confidence_tier=conf["confidence_tier"],
+        score_stderr_eff=conf["score_stderr_eff"],
+        lcb=conf["lcb"],
+        factor_version=conf["factor_version"],
     )
-    session.add(row)
+    stmt = pg_insert(CompositeScore).values(**vals)
+    stmt = stmt.on_conflict_do_update(
+        index_elements=["stock_id"],
+        set_={k: stmt.excluded[k] for k in vals if k != "stock_id"},
+    )
+    session.execute(stmt)
+
+    # Append-only point-in-time history — one row per (stock, day), idempotent within
+    # the day (a re-recompute refreshes, never duplicates). This is what a backtest
+    # reads; deferring it loses cohorts permanently.
+    hist = dict(
+        stock_id=stock.id,
+        as_of_date=utcnow().date(),
+        information_date=information_date,
+        composite_score=vals["composite_score"],
+        persona_scores=persona_scores,
+        axis_scores=conf["axis_scores"],
+        confidence_tier=conf["confidence_tier"],
+        score_stderr_eff=conf["score_stderr_eff"],
+        lcb=conf["lcb"],
+        factor_version=conf["factor_version"],
+        consensus_recommendation=consensus,
+        analysis_coverage=len(persona_scores),
+    )
+    hstmt = pg_insert(CompositeScoreHistory).values(**hist)
+    hstmt = hstmt.on_conflict_do_update(
+        index_elements=["stock_id", "as_of_date"],
+        set_={k: hstmt.excluded[k] for k in hist if k not in ("stock_id", "as_of_date")},
+    )
+    session.execute(hstmt)
     session.flush()
-    return row
+    return session.scalar(
+        select(CompositeScore).where(CompositeScore.stock_id == stock.id)
+    )
+
+
+def reconcile_scores(session, limit: int = 0) -> int:
+    """Recompute composites for stocks whose latest analysis is newer than their
+    composite (or which have analyses but no composite — orphans left by an
+    interrupted analyze batch). Returns the number rescored. Idempotent: converges
+    to zero work once every composite is current."""
+    latest_analysis = (
+        select(Analysis.stock_id, func.max(Analysis.analyzed_at).label("a"))
+        .group_by(Analysis.stock_id)
+        .subquery()
+    )
+    cs = select(
+        CompositeScore.stock_id,
+        CompositeScore.computed_at,
+        CompositeScore.scoring_method,
+    ).subquery()
+    q = (
+        select(Stock)
+        .join(latest_analysis, latest_analysis.c.stock_id == Stock.id)
+        .outerjoin(cs, cs.c.stock_id == Stock.id)
+        .where(
+            (cs.c.stock_id.is_(None))                      # orphan: no composite
+            | (latest_analysis.c.a > cs.c.computed_at)     # stale: newer analysis
+            | (cs.c.scoring_method != SCORING_METHOD)      # scored under an old formula
+        )
+        .order_by(Stock.id)
+    )
+    stocks = session.scalars(q).all()
+    if limit:
+        stocks = stocks[:limit]
+    n = 0
+    for st in stocks:
+        if recompute_scores_for_stock(session, st) is not None:
+            n += 1
+        session.commit()
+    return n

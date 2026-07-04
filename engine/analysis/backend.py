@@ -66,10 +66,19 @@ class CliBackend(AnalysisBackend):
         result = resp.get("structured_output")
         if not result:
             return None, "no structured_output in response"
+        if not isinstance(result, dict):
+            return None, f"structured_output is {type(result).__name__}, not an object"
 
         # Detect the model that actually ran (Fable can reroute refusals to Opus 4.8).
+        # Deterministic: pick the highest-token model, not arbitrary dict order.
         model_usage = resp.get("modelUsage") or {}
-        model_used = next(iter(model_usage), model) if model_usage else model
+        model_used = model
+        if model_usage:
+            model_used = max(
+                model_usage,
+                key=lambda k: (model_usage[k] or {}).get("outputTokens", 0)
+                if isinstance(model_usage[k], dict) else 0,
+            )
         meta = {
             "duration_ms": resp.get("duration_ms"),
             "total_cost_usd": resp.get("total_cost_usd"),

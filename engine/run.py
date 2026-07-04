@@ -19,8 +19,10 @@ from db.models import Analysis, CompositeScore, JobRun, Stock, StockSnapshot
 from engine.analysis.engine import run_incremental
 from engine.ingest.discover import discover_ipos
 from engine.ingest.screener_enrich import enrich
-from engine.ingest.yf_refresh import refresh
-from engine.repo import job_run, recompute_scores_for_stock
+from engine.ingest.yf_refresh import backfill_prices, refresh
+from engine.quality.audit import audit
+from engine.quality.gapfill import ALL_TARGETS, gapfill
+from engine.repo import job_run, reconcile_scores, recompute_scores_for_stock
 
 
 def cmd_discover(a):
@@ -44,6 +46,11 @@ def cmd_enrich(a):
 
 
 def cmd_score(a):
+    if a.reconcile:
+        with job_run("score_reconcile", target="stale") as (session, stats):
+            stats["rescored"] = reconcile_scores(session)
+            print(f"[score] reconciled {stats['rescored']} stale/orphaned composites")
+        return
     with job_run("score", target="all") as (session, stats):
         stocks = session.scalars(select(Stock)).all()
         made = 0
@@ -53,6 +60,20 @@ def cmd_score(a):
         session.commit()
         stats["scored"] = made
         print(f"[score] recomputed {made} composite scores")
+
+
+def cmd_backfill(a):
+    print(backfill_prices(universe=a.universe, symbols=a.symbols, limit=a.limit, delay=a.delay))
+
+
+def cmd_dq_audit(a):
+    print(audit(universe=a.universe, symbols=a.symbols, limit=a.limit))
+
+
+def cmd_dq_fill(a):
+    targets = tuple(a.targets) if a.targets else ALL_TARGETS
+    print(gapfill(targets=targets, universe=a.universe, symbols=a.symbols,
+                  limit=a.limit, delay=a.delay))
 
 
 def cmd_status(a):
@@ -119,7 +140,32 @@ def main():
     en.set_defaults(func=cmd_enrich)
 
     sc = sub.add_parser("score", help="Recompute composite scores")
+    sc.add_argument("--reconcile", action="store_true",
+                    help="only rescore stocks whose composite is stale/missing (heals orphans)")
     sc.set_defaults(func=cmd_score)
+
+    bf = sub.add_parser("backfill", help="Backfill daily OHLCV prices (no snapshots)")
+    bf.add_argument("--universe", default=None)
+    bf.add_argument("--symbols", nargs="*", default=None)
+    bf.add_argument("--limit", type=int, default=0)
+    bf.add_argument("--delay", type=float, default=0.5)
+    bf.set_defaults(func=cmd_backfill)
+
+    da = sub.add_parser("dq_audit", help="Score every stock's data quality into data_quality_reports")
+    da.add_argument("--universe", default=None)
+    da.add_argument("--symbols", nargs="*", default=None)
+    da.add_argument("--limit", type=int, default=0)
+    da.set_defaults(func=cmd_dq_audit)
+
+    df = sub.add_parser("dq_fill", help="Fill the gaps the latest audit flagged")
+    df.add_argument("--targets", nargs="*", default=None,
+                    help=f"subset of {list(ALL_TARGETS)} (default: all)")
+    df.add_argument("--universe", default=None)
+    df.add_argument("--symbols", nargs="*", default=None)
+    df.add_argument("--limit", type=int, default=0)
+    df.add_argument("--delay", type=float, default=None,
+                    help="seconds between network requests (set 6-8 to avoid screener rate limits)")
+    df.set_defaults(func=cmd_dq_fill)
 
     stt = sub.add_parser("status", help="Show engine status")
     stt.set_defaults(func=cmd_status)

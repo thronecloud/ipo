@@ -42,6 +42,7 @@ class StockListItem(BaseModel):
     composite_score: float | None = None
     consensus_recommendation: str | None = None
     analysis_coverage: int | None = None
+    composite_updated_at: datetime | None = None
     per_persona: dict[str, PersonaVerdict] = {}
     current_price: float | None = None
     market_cap_cr: float | None = None
@@ -93,6 +94,7 @@ class Composite(BaseModel):
     recommendation_counts: dict[str, int] = {}
     analysis_coverage: int | None = None
     total_personas: int | None = None
+    updated_at: datetime | None = None
 
 
 class CouncilMember(BaseModel):
@@ -134,6 +136,22 @@ class StockDetail(BaseModel):
     conviction_history: list[ConvictionPoint]
 
 
+class Candle(BaseModel):
+    time: str  # ISO date "YYYY-MM-DD" (lightweight-charts business-day format)
+    open: float | None = None
+    high: float | None = None
+    low: float | None = None
+    close: float | None = None
+    volume: int | None = None
+
+
+class CandleSeries(BaseModel):
+    symbol: str
+    range: str
+    count: int
+    candles: list[Candle]
+
+
 # ---------- admin ----------
 
 class CoverageRow(BaseModel):
@@ -148,6 +166,39 @@ class Freshness(BaseModel):
     fresh_24h: int
     stale_7d: int
     older: int
+
+
+class DimensionCoverage(BaseModel):
+    avg_score: float | None = None
+    pct_pass: float | None = None
+    scored: int = 0
+
+
+class DQStockRow(BaseModel):
+    symbol: str
+    company_name: str | None = None
+    overall_score: float | None = None
+    grade: str | None = None
+    flags: list[str] = []
+    missing: list[str] = []
+
+
+class DQDiscrepancy(BaseModel):
+    symbol: str
+    type: str
+    detail: str
+
+
+class DataQualityOverview(BaseModel):
+    audited_at: datetime | None = None
+    audited: int = 0
+    avg_overall: float | None = None
+    grades: dict[str, int] = {}
+    dimension_coverage: dict[str, DimensionCoverage] = {}
+    flags: dict[str, int] = {}
+    missing: dict[str, int] = {}
+    worst: list[DQStockRow] = []
+    discrepancies: list[DQDiscrepancy] = []
 
 
 class JobRow(BaseModel):

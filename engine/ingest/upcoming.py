@@ -346,7 +346,7 @@ def register_upcoming(verbose: bool = True, entries: list | None = None):
                 already_listed += 1  # provisional symbol collided with a live row; leave it alone
                 continue
 
-            add_universe_tag(stock, UNIVERSE_TAG)
+            add_universe_tag(session, stock, UNIVERSE_TAG)
             # Provenance: hash-gated snapshot of the raw scraped payload. Invisible to
             # the analysis loop (which requires data_quality="full").
             add_snapshot(session, stock, payload={"upcoming": e}, extracted={},
@@ -413,13 +413,13 @@ def _find_listed_twin(stock, listed_named):
     return best if best_r >= 0.90 else None
 
 
-def _merge_into(twin: Stock, upcoming: Stock, verbose: bool):
+def _merge_into(session, twin: Stock, upcoming: Stock, verbose: bool):
     """Copy IPO metadata onto the listed row (only where missing) and retire the shell."""
     if twin.issue_price is None and upcoming.issue_price is not None:
         twin.issue_price = upcoming.issue_price
     if not twin.listing_date and upcoming.listing_date:
         twin.listing_date = upcoming.listing_date
-    add_universe_tag(twin, UNIVERSE_TAG)
+    add_universe_tag(session, twin, UNIVERSE_TAG)
     upcoming.status = "listed_merged"
     if verbose:
         print(f"  MERGED: {upcoming.symbol} -> {twin.symbol} ({twin.company_name})")
@@ -471,7 +471,7 @@ def promote_listed(verbose: bool = True):
                 # 1) listed twin already registered by the daily discovery job
                 twin = _find_listed_twin(s, listed_named)
                 if twin is not None:
-                    _merge_into(twin, s, verbose)
+                    _merge_into(session, twin, s, verbose)
                     merged += 1
                     continue
 
@@ -481,7 +481,7 @@ def promote_listed(verbose: bool = True):
                 if resolved:
                     existing = by_symbol.get(resolved["symbol"])
                     if existing is not None and existing.id != s.id:
-                        _merge_into(existing, s, verbose)  # discovery raced us
+                        _merge_into(session, existing, s, verbose)  # discovery raced us
                         merged += 1
                         continue
                     old = s.symbol

@@ -6,7 +6,10 @@
 
 import type {
   AdminOverview,
+  CandleRange,
+  CandleSeries,
   CoverageRow,
+  DataQualityOverview,
   JobRun,
   JobRunResponse,
   JobType,
@@ -105,6 +108,12 @@ export const api = {
   stock: (symbol: string, signal?: AbortSignal) =>
     get<StockDetail>(`/api/stocks/${encodeURIComponent(symbol)}`, signal),
 
+  candles: (symbol: string, range: CandleRange = "1y", signal?: AbortSignal) =>
+    get<CandleSeries>(
+      `/api/stocks/${encodeURIComponent(symbol)}/candles?range=${range}`,
+      signal,
+    ),
+
   // ── Admin endpoints ───────────────────────────────────────────
   adminOverview: (signal?: AbortSignal) =>
     get<AdminOverview>("/api/admin/overview", signal),
@@ -119,6 +128,9 @@ export const api = {
     get<PersonaDistribution[]>("/api/admin/personas/distribution", signal),
 
   adminUsage: (signal?: AbortSignal) => get<Usage>("/api/admin/usage", signal),
+
+  adminDataQuality: (signal?: AbortSignal) =>
+    get<DataQualityOverview>("/api/admin/data-quality", signal),
 
   runJob: async (
     job: JobType,

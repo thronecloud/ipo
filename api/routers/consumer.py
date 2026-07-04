@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+from datetime import timedelta
+
 from fastapi import APIRouter, Depends, HTTPException, Query
 from sqlalchemy import distinct, func, select
 from sqlalchemy.orm import Session
@@ -16,6 +18,8 @@ from api.deps import (
     to_cr,
 )
 from api.schemas import (
+    Candle,
+    CandleSeries,
     Composite,
     CouncilMember,
     Fundamentals,
@@ -28,7 +32,7 @@ from api.schemas import (
     ConvictionPoint,
     PersonaVerdict,
 )
-from db.models import Analysis, CompositeScore, Stock, StockSnapshot
+from db.models import Analysis, CompositeScore, DailyPrice, Stock, StockSnapshot
 from engine.repo import universe_contains
 
 router = APIRouter(prefix="/api", tags=["consumer"])
@@ -51,7 +55,7 @@ def _latest_yf_snapshot_sq():
             StockSnapshot.captured_at,
         )
         .where(StockSnapshot.source == "yfinance")
-        .order_by(StockSnapshot.stock_id, StockSnapshot.captured_at.desc())
+        .order_by(StockSnapshot.stock_id, StockSnapshot.captured_at.desc(), StockSnapshot.id.desc())
         .distinct(StockSnapshot.stock_id)
         .subquery()
     )
@@ -68,7 +72,7 @@ def _latest_composite_sq():
             CompositeScore.persona_scores,
             CompositeScore.computed_at,
         )
-        .order_by(CompositeScore.stock_id, CompositeScore.computed_at.desc())
+        .order_by(CompositeScore.stock_id, CompositeScore.computed_at.desc(), CompositeScore.id.desc())
         .distinct(CompositeScore.stock_id)
         .subquery()
     )
@@ -199,6 +203,7 @@ def list_stocks(
                 composite_score=comp_score,
                 consensus_recommendation=consensus_rec,
                 analysis_coverage=coverage,
+                composite_updated_at=row._mapping.get("computed_at"),
                 per_persona=per_persona_by_stock.get(stock.id, {}),
                 current_price=row._mapping.get("current_price"),
                 market_cap_cr=to_cr(row._mapping.get("market_cap")),
@@ -226,7 +231,7 @@ def _per_persona_for_stocks(db: Session, stock_ids: list[int]) -> dict[int, dict
             Analysis.recommendation,
         )
         .where(Analysis.stock_id.in_(stock_ids))
-        .order_by(Analysis.stock_id, Analysis.persona, Analysis.analyzed_at.desc())
+        .order_by(Analysis.stock_id, Analysis.persona, Analysis.analyzed_at.desc(), Analysis.id.desc())
         .distinct(Analysis.stock_id, Analysis.persona)
     )
     out: dict[int, dict[str, PersonaVerdict]] = {}
@@ -245,7 +250,7 @@ def stock_detail(symbol: str, db: Session = Depends(get_db)):
     yf = db.scalar(
         select(StockSnapshot)
         .where(StockSnapshot.stock_id == stock.id, StockSnapshot.source == "yfinance")
-        .order_by(StockSnapshot.captured_at.desc())
+        .order_by(StockSnapshot.captured_at.desc(), StockSnapshot.id.desc())
         .limit(1)
     )
     quote = Quote(
@@ -264,7 +269,7 @@ def stock_detail(symbol: str, db: Session = Depends(get_db)):
     cs = db.scalar(
         select(CompositeScore)
         .where(CompositeScore.stock_id == stock.id)
-        .order_by(CompositeScore.computed_at.desc())
+        .order_by(CompositeScore.computed_at.desc(), CompositeScore.id.desc())
         .limit(1)
     )
     composite = Composite(
@@ -273,13 +278,14 @@ def stock_detail(symbol: str, db: Session = Depends(get_db)):
         recommendation_counts=(cs.recommendation_counts if cs else {}) or {},
         analysis_coverage=cs.analysis_coverage if cs else None,
         total_personas=(cs.total_personas if cs else None) or TOTAL_PERSONAS,
+        updated_at=cs.computed_at if cs else None,
     )
 
     # --- council: latest analysis per persona, fixed order ---
     analyses = db.scalars(
         select(Analysis)
         .where(Analysis.stock_id == stock.id)
-        .order_by(Analysis.analyzed_at.desc())
+        .order_by(Analysis.analyzed_at.desc(), Analysis.id.desc())
     ).all()
     latest: dict[str, Analysis] = {}
     for a in analyses:
@@ -347,6 +353,44 @@ def stock_detail(symbol: str, db: Session = Depends(get_db)):
     )
 
 
+_RANGE_DAYS = {"1m": 31, "3m": 92, "6m": 183, "1y": 365, "3y": 1095, "5y": 1826}
+
+
+@router.get("/stocks/{symbol}/candles", response_model=CandleSeries)
+def stock_candles(
+    symbol: str,
+    range: str = Query("1y", pattern="^(1m|3m|6m|1y|3y|5y|max)$"),
+    db: Session = Depends(get_db),
+):
+    """Daily OHLCV series for the price chart. `range` windows off the latest
+    available bar (not wall-clock today) so a window is never empty on stale data."""
+    stock = db.scalar(select(Stock).where(Stock.symbol == symbol.upper()))
+    if stock is None:
+        raise HTTPException(status_code=404, detail=f"Unknown symbol: {symbol}")
+
+    q = select(DailyPrice).where(DailyPrice.stock_id == stock.id)
+    if range != "max":
+        last = db.scalar(
+            select(func.max(DailyPrice.date)).where(DailyPrice.stock_id == stock.id)
+        )
+        if last is not None:
+            q = q.where(DailyPrice.date >= last - timedelta(days=_RANGE_DAYS[range]))
+    bars = db.scalars(q.order_by(DailyPrice.date.asc())).all()
+
+    candles = [
+        Candle(
+            time=b.date.isoformat(),
+            open=b.open,
+            high=b.high,
+            low=b.low,
+            close=b.close,
+            volume=b.volume,
+        )
+        for b in bars
+    ]
+    return CandleSeries(symbol=stock.symbol, range=range, count=len(candles), candles=candles)
+
+
 def _fundamentals(db: Session, stock: Stock) -> Fundamentals:
     """Fundamentals from the latest screener snapshot, falling back to yfinance financials."""
     scr_snap = db.scalar(
@@ -356,7 +400,7 @@ def _fundamentals(db: Session, stock: Stock) -> Fundamentals:
             StockSnapshot.source == "screener",
             StockSnapshot.screener.isnot(None),
         )
-        .order_by(StockSnapshot.captured_at.desc())
+        .order_by(StockSnapshot.captured_at.desc(), StockSnapshot.id.desc())
         .limit(1)
     )
     if scr_snap and scr_snap.screener:
@@ -373,7 +417,7 @@ def _fundamentals(db: Session, stock: Stock) -> Fundamentals:
     yf = db.scalar(
         select(StockSnapshot)
         .where(StockSnapshot.stock_id == stock.id, StockSnapshot.source == "yfinance")
-        .order_by(StockSnapshot.captured_at.desc())
+        .order_by(StockSnapshot.captured_at.desc(), StockSnapshot.id.desc())
         .limit(1)
     )
     if yf:

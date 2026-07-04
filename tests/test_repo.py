@@ -65,7 +65,8 @@ class TestAddSnapshot:
 
     def test_changed_payload_creates_new_row(self, db_session):
         stock = make_stock(db_session, "HASHNEW")
-        p1, p2 = yf_payload(price=100.0), yf_payload(price=101.0)
+        # vary a FUNDAMENTAL (revenue) — a price-only change no longer re-hashes
+        p1, p2 = yf_payload(revenue=1000.0), yf_payload(revenue=2000.0)
 
         _, created1 = add_snapshot(db_session, stock, p1, extract_columns(p1["info"]))
         _, created2 = add_snapshot(db_session, stock, p2, extract_columns(p2["info"]))
@@ -142,19 +143,52 @@ class TestGetOrCreateStock:
 class TestAddUniverseTag:
     def test_no_duplicate_tag(self, db_session):
         stock = make_stock(db_session, "TAGME", universe=["ipo_2025"])
-        add_universe_tag(stock, "ipo_2025")
+        add_universe_tag(db_session, stock, "ipo_2025")
         assert stock.universe == ["ipo_2025"]
-        add_universe_tag(stock, "ipo_2026")
-        add_universe_tag(stock, "ipo_2026")
+        add_universe_tag(db_session, stock, "ipo_2026")
+        add_universe_tag(db_session, stock, "ipo_2026")
         assert stock.universe == ["ipo_2025", "ipo_2026"]
 
     def test_handles_none_universe_and_empty_tag(self, db_session):
         stock = make_stock(db_session, "TAGNONE")
         stock.universe = None
-        add_universe_tag(stock, "nse_smallcap")
+        add_universe_tag(db_session, stock, "nse_smallcap")
         assert stock.universe == ["nse_smallcap"]
-        add_universe_tag(stock, "")  # falsy tag is a no-op
+        add_universe_tag(db_session, stock, "")  # falsy tag is a no-op
         assert stock.universe == ["nse_smallcap"]
+
+    def test_concurrent_different_tags_both_survive(self, db_session):
+        """Two sessions tag the same stock with DIFFERENT tags at once — the atomic
+        DB-side append means neither is lost (a Python read-modify-write would)."""
+        import threading
+        from db.base import SessionLocal
+        stock = make_stock(db_session, "TAGRACE", universe=[])
+        db_session.commit()
+        sid = stock.id
+        barrier = threading.Barrier(2)
+        errors = []
+
+        def worker(tag):
+            s = SessionLocal()
+            try:
+                st = s.get(Stock, sid)
+                barrier.wait()
+                add_universe_tag(s, st, tag)
+                s.commit()
+            except Exception as e:  # pragma: no cover
+                errors.append(e)
+                s.rollback()
+            finally:
+                s.close()
+
+        ts = [threading.Thread(target=worker, args=(t,)) for t in ("ipo_2026", "nse_smallcap")]
+        for t in ts:
+            t.start()
+        for t in ts:
+            t.join()
+        assert not errors, f"concurrent tag raised: {errors}"
+        db_session.expire(stock, ["universe"])
+        assert set(stock.universe) == {"ipo_2026", "nse_smallcap"}  # neither lost
 
 
 # ---------- universe_contains ----------

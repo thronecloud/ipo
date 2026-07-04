@@ -15,6 +15,10 @@ from api.deps import PERSONA_ORDER, TOTAL_PERSONAS, get_db, persona_meta
 from api.schemas import (
     AdminOverview,
     CoverageRow,
+    DataQualityOverview,
+    DimensionCoverage,
+    DQDiscrepancy,
+    DQStockRow,
     Freshness,
     JobRow,
     JobRunRequest,
@@ -23,12 +27,20 @@ from api.schemas import (
     PersonaDistribution,
     Usage,
 )
-from db.models import Analysis, CompositeScore, JobRun, Stock, StockSnapshot
+from db.models import (
+    Analysis,
+    CompositeScore,
+    DataQualityReport,
+    JobRun,
+    Stock,
+    StockSnapshot,
+)
 
 router = APIRouter(prefix="/api/admin", tags=["admin"])
 
 # Jobs that map to `python -m engine.run <job>`.
-ALLOWED_JOBS = {"discover", "refresh", "enrich", "analyze", "score", "status"}
+ALLOWED_JOBS = {"discover", "refresh", "enrich", "analyze", "score", "status",
+                "backfill", "dq_audit", "dq_fill"}
 ANALYZE_MAX_LIMIT = 25  # refuse a bare analyze; require a small limit
 
 
@@ -181,12 +193,76 @@ def coverage(db: Session = Depends(get_db)):
     return _coverage_rows(db)
 
 
+@router.get("/data-quality", response_model=DataQualityOverview)
+def data_quality(db: Session = Depends(get_db)):
+    """Latest data-quality picture: rollup from the last dq_audit run + the current
+    worst offenders and cross-source discrepancy flags (from the latest report/stock)."""
+    # Rollup from the most recent dq_audit JobRun (audit already computed it).
+    last = db.scalar(
+        select(JobRun)
+        .where(JobRun.job_type == "dq_audit", JobRun.status == "success")
+        .order_by(JobRun.id.desc())
+        .limit(1)
+    )
+    stats = (last.stats if last else None) or {}
+    dim_cov = {
+        k: DimensionCoverage(**v) for k, v in (stats.get("dimension_coverage") or {}).items()
+    }
+
+    # Latest report per stock (DISTINCT ON) joined to identity.
+    sq = (
+        select(
+            DataQualityReport.stock_id,
+            DataQualityReport.overall_score,
+            DataQualityReport.grade,
+            DataQualityReport.flags,
+            DataQualityReport.missing,
+        )
+        .order_by(DataQualityReport.stock_id, DataQualityReport.checked_at.desc(), DataQualityReport.id.desc())
+        .distinct(DataQualityReport.stock_id)
+        .subquery()
+    )
+    rows = db.execute(
+        select(Stock.symbol, Stock.company_name, sq.c.overall_score, sq.c.grade,
+               sq.c.flags, sq.c.missing)
+        .join(sq, sq.c.stock_id == Stock.id)
+    ).all()
+
+    worst: list[DQStockRow] = []
+    discrepancies: list[DQDiscrepancy] = []
+    scored_rows = []
+    for sym, name, overall, grade, flags, missing in rows:
+        flag_types = [f.get("type") for f in (flags or [])]
+        if overall is not None:
+            scored_rows.append((sym, name, overall, grade, flag_types, missing or []))
+        for f in (flags or []):
+            if str(f.get("type", "")).endswith("_mismatch"):
+                discrepancies.append(DQDiscrepancy(symbol=sym, type=f["type"], detail=f.get("detail", "")))
+
+    scored_rows.sort(key=lambda r: r[2])  # lowest overall first
+    for sym, name, overall, grade, flag_types, missing in scored_rows[:25]:
+        worst.append(DQStockRow(symbol=sym, company_name=name, overall_score=overall,
+                                grade=grade, flags=flag_types, missing=missing))
+
+    return DataQualityOverview(
+        audited_at=last.finished_at if last else None,
+        audited=stats.get("audited", len(rows)),
+        avg_overall=stats.get("avg_overall"),
+        grades=stats.get("grades", {}),
+        dimension_coverage=dim_cov,
+        flags=stats.get("flags", {}),
+        missing=stats.get("missing", {}),
+        worst=worst,
+        discrepancies=discrepancies[:50],
+    )
+
+
 @router.get("/personas/distribution", response_model=list[PersonaDistribution])
 def personas_distribution(db: Session = Depends(get_db)):
     # Latest analysis per (stock, persona).
     sq = (
         select(Analysis.persona, Analysis.score, Analysis.recommendation)
-        .order_by(Analysis.stock_id, Analysis.persona, Analysis.analyzed_at.desc())
+        .order_by(Analysis.stock_id, Analysis.persona, Analysis.analyzed_at.desc(), Analysis.id.desc())
         .distinct(Analysis.stock_id, Analysis.persona)
         .subquery()
     )

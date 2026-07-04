@@ -13,6 +13,9 @@ const SAFE_JOBS: { job: JobType; label: string; desc: string }[] = [
   { job: "discover", label: "Discover", desc: "find new listings" },
   { job: "refresh", label: "Refresh", desc: "re-pull snapshots" },
   { job: "enrich", label: "Enrich", desc: "screener detail" },
+  { job: "backfill", label: "Backfill", desc: "daily prices" },
+  { job: "dq_audit", label: "DQ Audit", desc: "score data quality" },
+  { job: "dq_fill", label: "DQ Fill", desc: "close data gaps" },
   { job: "score", label: "Score", desc: "recompute composites" },
 ];
 

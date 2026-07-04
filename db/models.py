@@ -13,10 +13,12 @@ Design principles:
 - `stock_insights` is the seed of the memory/knowledge layer (populated later).
 """
 
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
 
 from sqlalchemy import (
     JSON,
+    BigInteger,
+    Date,
     DateTime,
     Float,
     ForeignKey,
@@ -75,6 +77,9 @@ class Stock(Base):
     last_updated: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), default=utcnow, onupdate=utcnow
     )
+    # Last time a fetch was ATTEMPTED (updated even when the hash is unchanged and no
+    # new snapshot is written) — so freshness reflects attempts, not just new data.
+    last_fetched_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
 
     snapshots: Mapped[list["StockSnapshot"]] = relationship(
         back_populates="stock", cascade="all, delete-orphan"
@@ -126,6 +131,61 @@ class StockSnapshot(Base):
     stock: Mapped["Stock"] = relationship(back_populates="snapshots")
 
 
+class DailyPrice(Base):
+    """Daily OHLCV bar — the price-chart time series.
+
+    Populated from the full yfinance history already pulled during refresh (which
+    was previously summarized and discarded). Append-only by (stock_id, date):
+    new trading days are inserted, existing ones left untouched. Deliberately NOT
+    exposed as an ORM collection on Stock — a single name can carry thousands of
+    bars, so all access is via explicit date-bounded queries. FK ondelete=CASCADE
+    handles cleanup when a stock is removed.
+    """
+
+    __tablename__ = "daily_prices"
+    __table_args__ = (
+        UniqueConstraint("stock_id", "date", name="uq_daily_price_stock_date"),
+        Index("ix_daily_price_stock_date", "stock_id", "date"),
+    )
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    stock_id: Mapped[int] = mapped_column(
+        ForeignKey("stocks.id", ondelete="CASCADE"), index=True
+    )
+    date: Mapped[date] = mapped_column(Date)
+    open: Mapped[float | None] = mapped_column(Float)
+    high: Mapped[float | None] = mapped_column(Float)
+    low: Mapped[float | None] = mapped_column(Float)
+    close: Mapped[float | None] = mapped_column(Float)
+    volume: Mapped[int | None] = mapped_column(BigInteger)
+
+
+class DataQualityReport(Base):
+    """Per-stock data-quality scorecard, one row per audit run (append-only).
+
+    Queried "latest per stock" like snapshots. `dimensions` holds the per-dimension
+    breakdown, `flags` the discrepancies/gaps found (never mutates source data — the
+    engine flags, the human decides), and `missing` the concrete fillable data points
+    that drive the gap-fill jobs.
+    """
+
+    __tablename__ = "data_quality_reports"
+    __table_args__ = (
+        Index("ix_dq_stock_checked", "stock_id", "checked_at"),
+    )
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    stock_id: Mapped[int] = mapped_column(
+        ForeignKey("stocks.id", ondelete="CASCADE"), index=True
+    )
+    checked_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
+    overall_score: Mapped[float | None] = mapped_column(Float, index=True)  # 0-100
+    grade: Mapped[str | None] = mapped_column(String(2))                    # A/B/C/D/F
+    dimensions: Mapped[dict | None] = mapped_column(JSONType)               # {dim: {score,status,detail}}
+    flags: Mapped[list | None] = mapped_column(JSONType)                    # [{type,severity,detail}]
+    missing: Mapped[list | None] = mapped_column(JSONType)                  # ["screener","prices",...]
+
+
 class Analysis(Base):
     __tablename__ = "analyses"
     __table_args__ = (
@@ -164,6 +224,11 @@ class Analysis(Base):
 
 class CompositeScore(Base):
     __tablename__ = "composite_scores"
+    __table_args__ = (
+        # Exactly one composite per stock — makes recompute an atomic upsert and
+        # kills the concurrent delete-then-insert duplicate-row race.
+        UniqueConstraint("stock_id", name="uq_composite_stock"),
+    )
 
     id: Mapped[int] = mapped_column(primary_key=True)
     stock_id: Mapped[int] = mapped_column(ForeignKey("stocks.id", ondelete="CASCADE"), index=True)
@@ -176,7 +241,51 @@ class CompositeScore(Base):
     total_personas: Mapped[int | None] = mapped_column(Integer)
     scoring_method: Mapped[str | None] = mapped_column(String(64))
 
+    # Confidence layer (LEAK#1) — defined on the independent axis subspace, not raw stdev.
+    axis_scores: Mapped[dict | None] = mapped_column(JSONType)          # {core,growth,value,independent}
+    confidence_tier: Mapped[str | None] = mapped_column(String(16))     # high/moderate/provisional/mixed
+    score_stderr_eff: Mapped[float | None] = mapped_column(Float)       # dispersion across independent axes
+    lcb: Mapped[float | None] = mapped_column(Float, index=True)        # lower-confidence-bound = rank key
+    factor_version: Mapped[str | None] = mapped_column(String(16))
+
     stock: Mapped["Stock"] = relationship(back_populates="composite_scores")
+
+
+class CompositeScoreHistory(Base):
+    """Append-only point-in-time record of the composite, one row per (stock, as_of_date).
+
+    The `composite_scores` table is upsert-pinned to the CURRENT score per stock (its
+    unique constraint is correct for "latest"). This separate history sink preserves the
+    time series a backtest needs — and its cost is irreversible if deferred: every day
+    without it is a permanently unrecoverable cohort.
+
+    `information_date` = max(analyzed_at) of the contributing analyses — the date the view
+    actually FORMED (distinct from `as_of_date`, when it was computed). Point-in-time
+    backtests freeze cohorts on `information_date` (no lookahead). Written for stocks of
+    ANY status (survivorship: dead names keep their history — never filtered out).
+    """
+
+    __tablename__ = "composite_score_history"
+    __table_args__ = (
+        UniqueConstraint("stock_id", "as_of_date", name="uq_score_history_stock_day"),
+        Index("ix_score_history_stock_asof", "stock_id", "as_of_date"),
+    )
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    stock_id: Mapped[int] = mapped_column(
+        ForeignKey("stocks.id", ondelete="CASCADE"), index=True
+    )
+    as_of_date: Mapped[date] = mapped_column(Date)                 # when computed (daily point)
+    information_date: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))  # when the view formed
+    composite_score: Mapped[float | None] = mapped_column(Float)
+    persona_scores: Mapped[dict | None] = mapped_column(JSONType)
+    axis_scores: Mapped[dict | None] = mapped_column(JSONType)
+    confidence_tier: Mapped[str | None] = mapped_column(String(16))
+    score_stderr_eff: Mapped[float | None] = mapped_column(Float)
+    lcb: Mapped[float | None] = mapped_column(Float)
+    factor_version: Mapped[str | None] = mapped_column(String(16))
+    consensus_recommendation: Mapped[str | None] = mapped_column(String(16))
+    analysis_coverage: Mapped[int | None] = mapped_column(Integer)
 
 
 class JobRun(Base):

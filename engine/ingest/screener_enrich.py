@@ -71,7 +71,8 @@ def enrich_one(session, stock: Stock) -> str:
 
 def enrich(universe=None, symbols=None, limit=0, delay=DELAY, verbose=True):
     """Scrape screener for a set of stocks into screener snapshots. Returns stats."""
-    with job_run("screener_enrich", target=universe or (symbols and ",".join(symbols)) or "all") as (session, stats):
+    _t = universe or (symbols and f"{len(symbols)} symbols") or "all"
+    with job_run("screener_enrich", target=_t) as (session, stats):
         q = select(Stock).where(Stock.status == "active")
         if symbols:
             q = q.where(Stock.symbol.in_(symbols))

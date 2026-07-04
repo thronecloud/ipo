@@ -140,6 +140,49 @@ def test_stock_detail_unknown_404(client, seeded):
     assert "NOPE" in r.json()["detail"]
 
 
+# ---------- /api/stocks/{symbol}/candles ----------
+
+def test_candles_returns_series(client, seeded, db_session):
+    from datetime import date
+    from engine.repo import upsert_daily_prices
+    bars = [
+        {"date": date(2026, 1, d), "open": 100.0 + d, "high": 106.0 + d,
+         "low": 99.0 + d, "close": 102.0 + d, "volume": 1000 + d}
+        for d in range(1, 11)
+    ]
+    upsert_daily_prices(db_session, seeded["alpha"].id, bars)
+    db_session.commit()
+
+    r = client.get("/api/stocks/ALPHA/candles?range=max")
+    assert r.status_code == 200
+    body = r.json()
+    assert body["symbol"] == "ALPHA"
+    assert body["count"] == 10
+    first = body["candles"][0]
+    assert set(first) == {"time", "open", "high", "low", "close", "volume"}
+    assert first["time"] == "2026-01-01"
+    # ascending by date
+    times = [c["time"] for c in body["candles"]]
+    assert times == sorted(times)
+
+
+def test_candles_empty_when_no_prices(client, seeded):
+    r = client.get("/api/stocks/BETA/candles")
+    assert r.status_code == 200
+    assert r.json()["count"] == 0
+    assert r.json()["candles"] == []
+
+
+def test_candles_unknown_symbol_404(client, seeded):
+    r = client.get("/api/stocks/NOPE/candles")
+    assert r.status_code == 404
+
+
+def test_candles_bad_range_422(client, seeded):
+    r = client.get("/api/stocks/ALPHA/candles?range=notarange")
+    assert r.status_code == 422
+
+
 # ---------- /api/admin/overview ----------
 
 def test_admin_overview_shape(client, seeded):
