@@ -14,14 +14,15 @@ from engine.repo import job_run, upsert_index_prices
 from engine.ingest.yf_refresh import _price_rows
 from src.fetch_stock_data import safe_fetch
 
-# Benchmarks the engine tracks. The plan named ^CNXSC (Nifty Smallcap) but Yahoo
-# serves it exactly 1 bar (verified 2026-07-04: period='max' rejected, start= gives
-# a single day) — it is unusable. BSE-SMLCAP.BO is the closest smallcap comparator
-# WITH real history (2016→), and fits this BSE-SME-heavy universe better anyway.
+# Benchmarks the engine tracks. Yahoo reality check (2026-07-04): ^CNXSC (Nifty
+# Smallcap) serves exactly 1 bar — unusable; BSE-SMLCAP.BO stopped updating
+# 2024-05-30 — kept only for pre-2024 reference. ^CRSLDX (Nifty 500) is the
+# deepest CURRENT series (2005→today) that still contains the smallcap tail, so
+# it is the primary excess-return comparator.
 BENCHMARKS = {
-    "BSE-SMLCAP.BO": "S&P BSE SmallCap",   # primary excess-return comparator
-    "^CRSLDX": "Nifty 500",                # broad-market alternative
+    "^CRSLDX": "Nifty 500",                # primary excess-return comparator
     "^NSEI": "Nifty 50",                   # headline reference line
+    "BSE-SMLCAP.BO": "S&P BSE SmallCap",   # STALE on Yahoo since 2024-05-30
 }
 
 FETCH_DELAY = 1.0

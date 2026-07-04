@@ -8,6 +8,8 @@ from fastapi import APIRouter, Depends, HTTPException, Query
 from sqlalchemy import distinct, func, select
 from sqlalchemy.orm import Session
 
+from engine.backtest.study import DEFAULT_BENCHMARK, run_event_study
+
 from api.deps import (
     PERSONA_ORDER,
     TOTAL_PERSONAS,
@@ -429,3 +431,15 @@ def _fundamentals(db: Session, stock: Stock) -> Fundamentals:
             about=(yf.info or {}).get("longBusinessSummary") if yf.info else None,
         )
     return Fundamentals()
+
+
+@router.get("/backtest")
+def backtest(
+    benchmark: str = Query(DEFAULT_BENCHMARK),
+    db: Session = Depends(get_db),
+):
+    """Point-in-time event study: forward/excess returns of every scored cohort
+    member, grouped by confidence tier, LCB/composite quintile and consensus
+    recommendation, plus Spearman ICs. Computed on demand (512-stock cohort is
+    cheap); unpriced names are reported, never dropped."""
+    return run_event_study(db, benchmark=benchmark)

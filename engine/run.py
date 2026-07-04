@@ -19,6 +19,8 @@ from db.models import Analysis, CompositeScore, JobRun, Stock, StockSnapshot
 from engine.analysis.engine import run_incremental
 from engine.ingest.discover import discover_ipos
 from engine.ingest.screener_enrich import enrich
+from engine.backtest.study import DEFAULT_BENCHMARK, run_event_study
+from engine.ingest.index_prices import refresh_index_prices
 from engine.ingest.yf_refresh import backfill_prices, refresh
 from engine.quality.audit import audit
 from engine.quality.gapfill import ALL_TARGETS, gapfill
@@ -74,6 +76,49 @@ def cmd_dq_fill(a):
     targets = tuple(a.targets) if a.targets else ALL_TARGETS
     print(gapfill(targets=targets, universe=a.universe, symbols=a.symbols,
                   limit=a.limit, delay=a.delay))
+
+
+def cmd_indexes(a):
+    print(refresh_index_prices(symbols=a.symbols or None))
+
+
+def cmd_backtest(a):
+    s = SessionLocal()
+    try:
+        r = run_event_study(s, benchmark=a.benchmark)
+    finally:
+        s.close()
+
+    def fmt(v):
+        return "    —  " if v is None else f"{v:+6.2f}%"
+
+    print(f"=== EVENT STUDY vs {r['benchmark']} ===")
+    print(f"cohort {r['cohort_size']}  priced {r['priced']}  "
+          f"unpriced {len(r['unpriced_symbols'])}")
+    for title, key in (("confidence tier", "by_tier"),
+                       ("LCB quintile (5=best)", "by_lcb_quintile"),
+                       ("composite quintile (5=best)", "by_composite_quintile"),
+                       ("recommendation", "by_recommendation")):
+        print(f"\n-- by {title} --")
+        for name, st in r[key].items():
+            cells = "  ".join(
+                f"{h}d {fmt(st['mean_excess'][h])} hit "
+                f"{'—' if st['hit_rate'][h] is None else round(st['hit_rate'][h])}%"
+                for h in r["horizons"]
+            )
+            print(f"  {str(name):<12} n={st['n']:>3}  {cells}")
+    print("\n-- Spearman IC (score vs forward return) --")
+    for k in ("composite", "lcb"):
+        print(f"  {k:<10}",
+              {h: (None if v is None else round(v, 3)) for h, v in r["ic"][k].items()})
+    ranked = sorted((x for x in r["stocks"] if x["excess_to_date"] is not None),
+                    key=lambda x: x["excess_to_date"], reverse=True)
+    for label, rows in (("winners", ranked[:10]), ("losers", ranked[-10:])):
+        print(f"\n-- top {label} (excess to date) --")
+        for x in rows:
+            print(f"  {x['symbol']:<14} comp {x['composite']:>3.0f}  lcb {x['lcb']:>3.0f}  "
+                  f"{x['tier']:<11} {x['recommendation']:<5} "
+                  f"excess {fmt(x['excess_to_date'])}")
 
 
 def cmd_status(a):
@@ -166,6 +211,14 @@ def main():
     df.add_argument("--delay", type=float, default=None,
                     help="seconds between network requests (set 6-8 to avoid screener rate limits)")
     df.set_defaults(func=cmd_dq_fill)
+
+    ix = sub.add_parser("indexes", help="Refresh benchmark index price series")
+    ix.add_argument("--symbols", nargs="*", default=None)
+    ix.set_defaults(func=cmd_indexes)
+
+    bt = sub.add_parser("backtest", help="Point-in-time event study of scored cohorts")
+    bt.add_argument("--benchmark", default=DEFAULT_BENCHMARK)
+    bt.set_defaults(func=cmd_backtest)
 
     stt = sub.add_parser("status", help="Show engine status")
     stt.set_defaults(func=cmd_status)

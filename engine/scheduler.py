@@ -31,6 +31,7 @@ from engine.analysis.engine import run_incremental
 from engine.ingest.amfi import auto_reingest
 from engine.ingest.discover import discover_ipos
 from engine.ingest.screener_enrich import enrich
+from engine.ingest.index_prices import refresh_index_prices
 from engine.ingest.upcoming import promote_listed, register_upcoming
 from engine.ingest.yf_refresh import refresh
 from engine.quality.audit import audit
@@ -141,6 +142,13 @@ def job_amfi():
     auto_reingest(verbose=True)
 
 
+def job_index_prices():
+    # Append-only benchmark bars — the backtest's excess-return comparator
+    # must never lag the stock series it is compared against.
+    print(f"[scheduler][{_now()}] index prices refresh")
+    refresh_index_prices(verbose=False)
+
+
 def job_score():
     # Reconcile composites for stocks whose latest analysis is newer than their
     # score (heals orphans left by an interrupted analyze batch). Cheap, DB-only.
@@ -206,6 +214,9 @@ def build_scheduler() -> BlockingScheduler:
     # Hourly composite reconcile at :50 — heals any composites orphaned by an
     # interrupted analyze batch (analysis and scoring never drift apart).
     sched.add_job(safe(job_score), CronTrigger(minute=50), id="score")
+    # Daily benchmark bars at 12:00 UTC — after NSE close (10:00 UTC) so the
+    # day's index close is final before the evening jobs read it.
+    sched.add_job(safe(job_index_prices), CronTrigger(hour=12, minute=0), id="index_prices")
     # Nightly data-quality audit at 05:00 UTC — after refresh (02:00) so it scores fresh data.
     sched.add_job(safe(job_dq_audit), CronTrigger(hour=5, minute=0), id="dq_audit")
     # Weekly gap-fill sweep — Saturday 04:00 UTC (bounded; identity fill is free).
