@@ -1,4 +1,44 @@
-# HANDOFF — WisdomInvest living engine (session state, 2026-07-04)
+# HANDOFF — WisdomInvest living engine (session state, 2026-07-04, evening update)
+
+## NEW since the morning handoff (all committed on living-engine, 173 tests green)
+
+1. **P4 hygiene committed** (f2905b1): analyses natural-key dedup + upsert, analysis
+   dead-letter (`analysis_failures`), gapfill loop-closure (quarters/stale_prices
+   routing, isin/cap_category identity fill, post-fill re-audit), silent excepts
+   killed, DATABASE_URL fail-loud, legacy src/score.py retired.
+2. **Benchmark layer** (088e2c9): `index_prices` table (migration 53de03c90075,
+   applied to prod) + `engine/ingest/index_prices.py`. **Yahoo reality: ^CNXSC serves
+   1 bar (dead); BSE-SMLCAP.BO frozen since 2024-05-30; primary comparator is
+   ^CRSLDX (Nifty 500, 2005→today), plus ^NSEI.** 10,234 bars in prod. Daily
+   scheduler job `index_prices` at 12:00 UTC.
+3. **Backtest engine** (e68f18f): `engine/backtest/study.py` point-in-time event
+   study — entry = first close STRICTLY after information_date; survivorship-safe;
+   excess vs benchmark same-window; groupings by tier/LCB-quintile/composite-quintile/
+   recommendation; Spearman ICs. `python -m engine.run backtest` CLI +
+   `GET /api/backtest`.
+4. **LEAK#1 API** (19c3f22): /api/stocks exposes lcb + confidence_tier, sort=lcb;
+   detail composite exposes lcb/tier/stderr/axis_scores/factor_version.
+5. **Ops**: 23 orphaned 'running' job_runs marked error; api+scheduler containers
+   rebuilt on current code. Scheduler has NO Claude credential
+   (analyze available=False) — set CLAUDE_CODE_OAUTH_TOKEN to drain backlog (P5).
+6. **Price backfill truth**: 146/512 scored names have NO yfinance history at all
+   (BSE-SME) — hard coverage boundary; backtest reports them as unpriced, never drops.
+
+**Pilot event-study results (1 cohort, ~2.5mo forward, NOT judgment day):**
+overall +2.5% mean excess @21d (could be smallcap beta vs Nifty 500);
+high tier beats others (+3.95% @21d, 60% hit) but Spearman IC slightly NEGATIVE
+(composite −0.097, lcb −0.094 @21d) — score LEVEL not yet predictive, tier maybe;
+AVOID names outperformed BUY in the rally. K_DISP/K_COV still uncalibrated priors.
+63d/126d horizons unlock as history accrues (first cohort info-date 2026-04-20).
+
+**In flight at handoff time:** web UI for backtest page (/admin/backtest) + LEAK#1
+confidence surfacing (Research Desk lcb ranking, tier chips, honesty copy) — check
+`git status` in web/; if uncommitted changes exist, review + `cd web && npm run
+build` + commit; then `docker compose build web && docker compose up -d web`.
+
+---
+
+# Below: morning handoff (superseded where the above says so)
 
 **Read this first after a context clear.** It is the single source of truth for where the
 project stands and what to do next. Product frame: **private prop-trading tool for the
