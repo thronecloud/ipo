@@ -6,6 +6,7 @@
 
 import type {
   AdminOverview,
+  BacktestStudy,
   CandleRange,
   CandleSeries,
   CoverageRow,
@@ -113,6 +114,9 @@ export const api = {
       `/api/stocks/${encodeURIComponent(symbol)}/candles?range=${range}`,
       signal,
     ),
+
+  backtest: (signal?: AbortSignal) =>
+    get<BacktestStudy>("/api/backtest", signal),
 
   // ── Admin endpoints ───────────────────────────────────────────
   adminOverview: (signal?: AbortSignal) =>

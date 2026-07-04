@@ -1,6 +1,7 @@
 // ── API contract types (mirror DASHBOARDS_SPEC.md) ─────────────────
 
 export type Recommendation = "BUY" | "HOLD" | "AVOID";
+export type ConfidenceTier = "high" | "moderate" | "provisional" | "mixed";
 export type CapCategory = "small" | "mid" | "large";
 export type DataQuality = "full" | "partial" | "limited" | "minimal";
 export type StockStatus = "active" | "new" | "unfetchable";
@@ -34,6 +35,8 @@ export interface StockRow {
   universe: string[];
   status: StockStatus | null;
   composite_score: number | null;
+  lcb: number | null; // rank key: composite minus confidence penalty
+  confidence_tier: ConfidenceTier | null;
   consensus_recommendation: Recommendation | null;
   analysis_coverage: number;
   composite_updated_at: string | null;
@@ -87,6 +90,13 @@ export interface CompositeSummary {
   analysis_coverage: number;
   total_personas: number;
   updated_at: string | null;
+  // Confidence layer (LEAK#1): the 10 personas are ~2-3 independent signals,
+  // so honesty lives here, not in "10 experts agree".
+  lcb: number | null;
+  confidence_tier: ConfidenceTier | null;
+  score_stderr_eff: number | null;
+  axis_scores: Record<string, number | null>; // core/growth/value/independent -> 0-100
+  factor_version: string | null;
 }
 
 export interface CouncilVerdict {
@@ -248,4 +258,58 @@ export interface DataQualityOverview {
 export interface JobRunResponse {
   launched: boolean;
   job: string;
+}
+
+// ── Backtest (point-in-time event study) ─────────────────────────
+// All returns are percentages already (3.95 = +3.95%); null = horizon not
+// yet computable. Horizon-keyed dicts arrive JSON-stringified: {"5": …}.
+
+export interface BacktestStock {
+  symbol: string;
+  company_name: string | null;
+  status: StockStatus | null;
+  composite: number | null;
+  lcb: number | null;
+  tier: ConfidenceTier | null;
+  recommendation: Recommendation | null;
+  coverage: number | null;
+  information_date: string | null; // "YYYY-MM-DD"
+  entry_date: string | null;
+  entry_price: number | null;
+  returns: Record<string, number | null>; // horizon (trading days) -> pct
+  excess: Record<string, number | null>;
+  latest_date: string | null;
+  latest_price: number | null;
+  return_to_date: number | null;
+  excess_to_date: number | null;
+  lcb_quintile?: number | null; // 1..5, 5 = best (priced cohort only)
+  composite_quintile?: number | null;
+}
+
+export interface BacktestBucket {
+  n: number;
+  priced: number;
+  mean_excess: Record<string, number | null>;
+  median_excess: Record<string, number | null>;
+  hit_rate: Record<string, number | null>; // % of names beating the benchmark
+  mean_return: Record<string, number | null>;
+}
+
+export interface BacktestStudy {
+  benchmark: string;
+  benchmark_bars: number;
+  horizons: number[]; // trading days, e.g. [5, 21, 63, 126]
+  cohort_size: number;
+  priced: number;
+  unpriced_symbols: string[];
+  stocks: BacktestStock[];
+  by_tier: Record<string, BacktestBucket>;
+  by_recommendation: Record<string, BacktestBucket>;
+  by_lcb_quintile: Record<string, BacktestBucket>;
+  by_composite_quintile: Record<string, BacktestBucket>;
+  ic: {
+    composite: Record<string, number | null>; // Spearman rho, -1..1
+    lcb: Record<string, number | null>;
+  };
+  overall: BacktestBucket;
 }

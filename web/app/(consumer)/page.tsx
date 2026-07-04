@@ -8,12 +8,13 @@ import type { Meta, StockList, StockRow } from "@/lib/types";
 import { DEFAULT_FILTERS, Filters } from "@/lib/filters";
 import { PERSONA_SLUGS } from "@/lib/personas";
 import { effectiveComposite } from "@/lib/compute";
-import { crore, num, pct, relTime, DASH } from "@/lib/format";
+import { composite, compositeColor, crore, num, pct, relTime, DASH } from "@/lib/format";
 import FilterRail from "@/components/FilterRail";
 import DataTable, { Column, SortState } from "@/components/DataTable";
 import ConvictionStrip from "@/components/ConvictionStrip";
 import RecChip from "@/components/RecChip";
 import ScoreBar from "@/components/ScoreBar";
+import TierChip from "@/components/TierChip";
 import { ErrorState, EmptyState, TableSkeleton } from "@/components/States";
 
 const PAGE_SIZE = 50;
@@ -28,8 +29,10 @@ export default function DiscoveryPage() {
     PERSONA_SLUGS,
   );
   const [watchlist, setWatchlist] = useLocalStorage<string[]>("wi.watchlist", []);
+  // Default rank key is the LCB — composite minus a confidence penalty —
+  // so conviction the engine can't back doesn't float to the top.
   const [sort, setSort] = useState<SortState>({
-    key: "composite_score",
+    key: "lcb",
     order: "desc",
   });
   const [page, setPage] = useState(1);
@@ -177,6 +180,29 @@ export default function DiscoveryPage() {
             {r.company_name}
           </span>
         ),
+      },
+      {
+        key: "lcb",
+        header: "Conviction (LCB)",
+        sortKey: "lcb",
+        align: "left",
+        width: 132,
+        render: (r) => {
+          if (r.lcb == null)
+            return <span className="num text-xs text-muted">{DASH}</span>;
+          return (
+            <div className="flex items-center gap-1.5">
+              <span
+                className="num text-xs"
+                style={{ color: compositeColor(r.lcb), minWidth: 30 }}
+                title="Lower confidence bound: composite minus dispersion + coverage penalty"
+              >
+                {composite(r.lcb)}
+              </span>
+              {r.confidence_tier && <TierChip tier={r.confidence_tier} size="xs" />}
+            </div>
+          );
+        },
       },
       {
         key: "composite",

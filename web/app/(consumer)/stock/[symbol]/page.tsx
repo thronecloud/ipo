@@ -5,7 +5,12 @@ import { useParams } from "next/navigation";
 import { useCallback, useMemo } from "react";
 import { api } from "@/lib/api";
 import { useAsync, useLocalStorage } from "@/lib/hooks";
-import type { CouncilVerdict, PerPersonaVerdict, StockDetail } from "@/lib/types";
+import type {
+  CompositeSummary,
+  CouncilVerdict,
+  PerPersonaVerdict,
+  StockDetail,
+} from "@/lib/types";
 import { PERSONA_ORDER } from "@/lib/personas";
 import {
   composite,
@@ -21,6 +26,7 @@ import {
 import ConvictionStrip from "@/components/ConvictionStrip";
 import PriceChart from "@/components/PriceChart";
 import RecChip from "@/components/RecChip";
+import TierChip from "@/components/TierChip";
 import CouncilBlock from "@/components/CouncilBlock";
 import DebatePanel from "@/components/DebatePanel";
 import Fundamentals from "@/components/Fundamentals";
@@ -259,6 +265,10 @@ export default function StockPage() {
                 ))}
               </div>
             )}
+
+            {analyzed && (comp.confidence_tier || comp.lcb != null) && (
+              <ConfidenceBlock comp={comp} />
+            )}
           </div>
         </div>
       </Panel>
@@ -308,6 +318,83 @@ export default function StockPage() {
         <PanelHeader title="Conviction over time" editorial />
         <ConvictionHistory history={data.conviction_history} />
       </Panel>
+    </div>
+  );
+}
+
+// The confidence layer (LEAK#1): tier, LCB and the 4 independent axes.
+const AXIS_ORDER: { key: string; label: string }[] = [
+  { key: "core", label: "Core" },
+  { key: "growth", label: "Growth" },
+  { key: "value", label: "Value" },
+  { key: "independent", label: "Indep" },
+];
+
+const TIER_CAPTION: Record<string, string> = {
+  provisional:
+    "Provisional — at least one scoring axis has no voice yet, so confidence cannot be assessed.",
+  mixed: "Mixed — the independent axes point in opposite directions.",
+};
+
+function ConfidenceBlock({ comp }: { comp: CompositeSummary }) {
+  const caption = comp.confidence_tier
+    ? TIER_CAPTION[comp.confidence_tier]
+    : undefined;
+  return (
+    <div className="w-full self-stretch rounded-sm border border-hairline bg-panel2/50 p-3">
+      <div className="flex items-center justify-between gap-2">
+        <span className="text-[10px] font-semibold uppercase tracking-[0.16em] text-muted">
+          Confidence
+        </span>
+        <TierChip tier={comp.confidence_tier} size="xs" />
+      </div>
+
+      <div className="num mt-2 flex flex-wrap gap-x-4 gap-y-1 text-xs text-muted">
+        <span title="Lower confidence bound: composite minus dispersion + coverage penalty">
+          LCB{" "}
+          <span className="font-medium" style={{ color: compositeColor(comp.lcb) }}>
+            {composite(comp.lcb)}
+          </span>
+        </span>
+        <span title="Standard error across the independent axes">
+          stderr{" "}
+          <span className="text-paper">
+            {comp.score_stderr_eff == null
+              ? DASH
+              : `±${num(comp.score_stderr_eff, { decimals: 2 })}`}
+          </span>
+        </span>
+        {comp.factor_version && <span>{comp.factor_version}</span>}
+      </div>
+
+      <div className="mt-2.5 grid grid-cols-4 gap-2">
+        {AXIS_ORDER.map(({ key, label }) => {
+          const v = comp.axis_scores?.[key] ?? null;
+          return (
+            <div key={key}>
+              <div className="text-[9px] font-semibold uppercase tracking-[0.12em] text-muted">
+                {label}
+              </div>
+              <div
+                className="num mt-0.5 text-sm"
+                style={{
+                  color: v == null ? "var(--color-muted)" : compositeColor(v),
+                }}
+              >
+                {v == null ? DASH : v.toFixed(0)}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      {caption && <p className="mt-2 text-[11px] leading-snug text-muted">{caption}</p>}
+
+      <p className="wisdom mt-2 max-w-[280px] text-[11px] leading-snug text-muted">
+        The 10-persona council carries roughly 2–3 independent signals —
+        confidence is measured across those axes, not by counting agreeing
+        voices.
+      </p>
     </div>
   );
 }
