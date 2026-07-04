@@ -160,6 +160,30 @@ class DailyPrice(Base):
     volume: Mapped[int | None] = mapped_column(BigInteger)
 
 
+class IndexPrice(Base):
+    """Daily OHLCV bar for a benchmark index (e.g. ^CNXSC Nifty Smallcap 250).
+
+    The backtest's excess-return comparator. Append-only by (symbol, date), same
+    discipline as daily_prices: new trading days insert, existing rows are never
+    rewritten. Indexes are not stocks — no FK, the yfinance symbol is the key.
+    """
+
+    __tablename__ = "index_prices"
+    __table_args__ = (
+        UniqueConstraint("symbol", "date", name="uq_index_price_symbol_date"),
+        Index("ix_index_price_symbol_date", "symbol", "date"),
+    )
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    symbol: Mapped[str] = mapped_column(String(32))
+    date: Mapped[date] = mapped_column(Date)
+    open: Mapped[float | None] = mapped_column(Float)
+    high: Mapped[float | None] = mapped_column(Float)
+    low: Mapped[float | None] = mapped_column(Float)
+    close: Mapped[float | None] = mapped_column(Float)
+    volume: Mapped[int | None] = mapped_column(BigInteger)
+
+
 class DataQualityReport(Base):
     """Per-stock data-quality scorecard, one row per audit run (append-only).
 

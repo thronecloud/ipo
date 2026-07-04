@@ -23,6 +23,7 @@ from db.models import (
     CompositeScore,
     CompositeScoreHistory,
     DailyPrice,
+    IndexPrice,
     JobRun,
     Stock,
     StockSnapshot,
@@ -309,6 +310,20 @@ def upsert_daily_prices(session, stock_id: int, rows: list[dict]) -> int:
         pg_insert(DailyPrice).values(payload)
         .on_conflict_do_nothing(index_elements=["stock_id", "date"])
         .returning(DailyPrice.id)
+    )
+    return len(session.execute(stmt).fetchall())
+
+
+def upsert_index_prices(session, symbol: str, rows: list[dict]) -> int:
+    """Append new daily bars for a benchmark index; existing (symbol, date) rows
+    are left untouched (append-only). Returns the count of newly-inserted bars."""
+    if not rows:
+        return 0
+    payload = [{"symbol": symbol, **r} for r in rows]
+    stmt = (
+        pg_insert(IndexPrice).values(payload)
+        .on_conflict_do_nothing(index_elements=["symbol", "date"])
+        .returning(IndexPrice.id)
     )
     return len(session.execute(stmt).fetchall())
 
