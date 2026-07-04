@@ -276,6 +276,99 @@ def test_job_run_truncates_oversized_target(db_session):
     assert j.target is not None and len(j.target) <= 128
 
 
+# ---------- gapfill loop-closure (P4) ----------
+
+def test_quarters_shortfall_routes_to_both_sources(db_session, monkeypatch):
+    """A stock short of the quarters target must be re-pulled at BOTH quarterly
+    sources (screener + yfinance) — previously the 'quarters' token went nowhere."""
+    import engine.quality.gapfill as gf
+    st = make_stock(db_session, "FEWQ", isin="INE20", sector="X",
+                    industry="Y", cap_category="small")
+    _yf(db_session, st, quarters=4)          # < QUARTERS_TARGET
+    _screener(db_session, st, quarters=4)
+    rep = score_stock(db_session, st)
+    assert "quarters" in rep["missing"]
+    audit(symbols=["FEWQ"], verbose=False)
+    calls = {}
+    monkeypatch.setattr(gf, "enrich", lambda **kw: calls.setdefault("enrich", kw) or {})
+    monkeypatch.setattr(gf, "refresh", lambda **kw: calls.setdefault("refresh", kw) or {})
+    monkeypatch.setattr(gf, "backfill_prices", lambda **kw: {})
+    monkeypatch.setattr(gf, "dq_audit", lambda **kw: {})
+    gapfill(targets=["screener", "yfinance"], symbols=["FEWQ"], verbose=False)
+    assert "FEWQ" in (calls.get("enrich", {}).get("symbols") or [])
+    assert "FEWQ" in (calls.get("refresh", {}).get("symbols") or [])
+
+
+def test_stale_prices_emits_missing_token_and_routes(db_session, monkeypatch):
+    """Stale daily bars are fillable (backfill_prices) — they must surface as a
+    missing token and route to the prices backfill, not rot as an info flag."""
+    from datetime import date, timedelta
+    import engine.quality.gapfill as gf
+    from engine.repo import upsert_daily_prices
+    st = make_stock(db_session, "STALEBAR", isin="INE21", sector="X",
+                    industry="Y", cap_category="small")
+    _yf(db_session, st)
+    _screener(db_session, st)
+    upsert_daily_prices(db_session, st.id, [
+        {"date": date.today() - timedelta(days=45),
+         "open": 1, "high": 1, "low": 1, "close": 1, "volume": 10},
+    ])
+    db_session.commit()
+    rep = score_stock(db_session, st)
+    assert "stale_prices" in rep["missing"]
+    audit(symbols=["STALEBAR"], verbose=False)
+    calls = {}
+    monkeypatch.setattr(gf, "backfill_prices", lambda **kw: calls.setdefault("prices", kw) or {})
+    monkeypatch.setattr(gf, "enrich", lambda **kw: {})
+    monkeypatch.setattr(gf, "refresh", lambda **kw: {})
+    monkeypatch.setattr(gf, "dq_audit", lambda **kw: {})
+    gapfill(targets=["prices"], symbols=["STALEBAR"], verbose=False)
+    assert "STALEBAR" in (calls.get("prices", {}).get("symbols") or [])
+
+
+def test_fill_identity_isin_and_cap_from_amfi(db_session, monkeypatch):
+    """identity:isin / identity:cap_category are fillable offline from the newest
+    downloaded AMFI xlsx — the authoritative SEBI classification."""
+    import engine.quality.gapfill as gf
+    st = make_stock(db_session, "AMFIFILL")  # no isin / cap_category / sector
+    _yf(db_session, st)
+    audit(symbols=["AMFIFILL"], verbose=False)
+    monkeypatch.setattr(gf, "_amfi_identity_map",
+                        lambda: {"AMFIFILL": {"isin": "INE999X01010", "cap_category": "small"}})
+    monkeypatch.setattr(gf, "dq_audit", lambda **kw: {})
+    res = gapfill(targets=["identity"], symbols=["AMFIFILL"], verbose=False)
+    db_session.expire_all()
+    from db.models import Stock
+    refreshed = db_session.scalar(select(Stock).where(Stock.symbol == "AMFIFILL"))
+    assert refreshed.isin == "INE999X01010"
+    assert refreshed.cap_category == "small"
+    assert refreshed.sector == "Healthcare"          # yf copy still works
+    assert res["result"]["identity_filled"] >= 1
+
+
+def test_gapfill_post_audit_readback(db_session):
+    """After a fill, gapfill re-audits the touched stocks so data_quality_reports
+    reflect the new state — the loop CLOSES instead of trusting the fill blindly."""
+    from db.models import DataQualityReport
+    st = make_stock(db_session, "READBACK")  # sector missing
+    _yf(db_session, st)  # yf info carries sector=Healthcare
+    audit(symbols=["READBACK"], verbose=False)
+    before = db_session.scalar(
+        select(DataQualityReport).where(DataQualityReport.stock_id == st.id)
+        .order_by(DataQualityReport.checked_at.desc(), DataQualityReport.id.desc()).limit(1)
+    )
+    assert "identity:sector" in (before.missing or [])
+    res = gapfill(targets=["identity"], symbols=["READBACK"], verbose=False)
+    assert res["result"].get("post_audit", {}).get("audited", 0) >= 1
+    db_session.expire_all()
+    after = db_session.scalar(
+        select(DataQualityReport).where(DataQualityReport.stock_id == st.id)
+        .order_by(DataQualityReport.checked_at.desc(), DataQualityReport.id.desc()).limit(1)
+    )
+    assert after.id != before.id                       # read-back wrote a fresh report
+    assert "identity:sector" not in (after.missing or [])
+
+
 def test_gapfill_identity_copies_sector_from_yf(db_session):
     st = make_stock(db_session, "FILLME")  # no sector
     _yf(db_session, st)  # yf info carries sector=Healthcare

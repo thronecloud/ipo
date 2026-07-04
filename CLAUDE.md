@@ -8,7 +8,7 @@ AI-powered stock analysis tool that evaluates Indian IPOs through 10 legendary i
 - `src/fetch_stock_data.py` — Stage 2: Fetch financial data via yfinance
 - `src/personas.py` — 10 investor persona definitions + prompts + JSON schema
 - `src/analyze.py` — Stage 3: Run Claude CLI persona analysis per stock
-- `src/score.py` — Stage 3b: Compute composite scores
+- `engine/repo.py` — Composite scoring (mean×10, DB engine); legacy `src/score.py` SUM-scorer retired
 - `src/utils.py` — Shared utilities (log, JSON I/O)
 - `app.py` — Streamlit dashboard
 - `run_pipeline.py` — Pipeline orchestrator
@@ -27,7 +27,7 @@ python run_pipeline.py --stages 1,2,3,4
 python3 -m src.fetch_ipo_list --year 2025 --pages 25
 python3 -m src.fetch_stock_data
 python3 -m src.analyze --model opus
-python3 -m src.score
+python3 -m engine.run score
 
 # Analyze specific stock
 python3 -m src.analyze --symbol ATHERENERG --persona warren_buffett --model sonnet

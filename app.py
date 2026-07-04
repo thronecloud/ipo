@@ -9,7 +9,6 @@ Multi-page Streamlit dashboard for AI-powered Indian IPO stock analysis:
 
 import math
 import os
-import subprocess
 import time
 
 import pandas as pd
@@ -134,21 +133,13 @@ def _is_valid_number(val):
         return False
 
 
-def recompute_scores():
-    """Re-run score computation to pick up new analyses."""
-    try:
-        subprocess.run(
-            ["python3", "-m", "src.score"],
-            capture_output=True,
-            timeout=30,
-        )
-    except (subprocess.TimeoutExpired, FileNotFoundError):
-        pass
-
-
 def load_scores():
-    """Load pre-computed scores (no cache -- always fresh)."""
-    recompute_scores()
+    """Load pre-computed scores from data/scores.json (legacy snapshot).
+
+    The legacy SUM-scorer is retired; the DB engine (`python -m engine.run score`,
+    mean×10 composite) is the only scorer. This dashboard is a frozen legacy
+    viewer — the live UI is the Next.js Research Desk.
+    """
     data = load_json(SCORES_PATH)
     if not data:
         return None

@@ -14,10 +14,15 @@ from sqlalchemy.orm import DeclarativeBase, sessionmaker
 
 load_dotenv()
 
-DATABASE_URL = os.environ.get(
-    "DATABASE_URL",
-    "postgresql+psycopg://ipo:ipo@localhost:5432/ipo",
-)
+DATABASE_URL = os.environ.get("DATABASE_URL")
+if not DATABASE_URL:
+    # Fail loud, never guess: a silent localhost default sends a misconfigured
+    # container's writes to the wrong (or no) database. Every legitimate context
+    # provides the URL — .env (local dev), docker-compose (prod), conftest (tests).
+    raise RuntimeError(
+        "DATABASE_URL is not set and no .env supplied one. Set it explicitly, "
+        "e.g. DATABASE_URL=postgresql+psycopg://ipo:ipo@localhost:5432/ipo"
+    )
 
 engine = create_engine(DATABASE_URL, future=True, pool_pre_ping=True)
 

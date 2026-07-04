@@ -250,16 +250,13 @@ def refresh(universe=None, symbols=None, statuses=("active", "new"), promote=Tru
                     elif stock.status in ("active", "stale"):
                         stock.status = "stale"
                         counts["parked"] += 1
-                        try:
-                            from engine.notify import notify
-                            notify("stock auto-parked (repeated fetch failures)",
-                                   f"{stock.symbol} ({stock.company_name}) failed "
-                                   f"{n} consecutive fetches — possible delisting or symbol "
-                                   f"change. Retry sweep runs weekly; or "
-                                   f"engine.run refresh --status stale --symbols {stock.symbol}",
-                                   tags="package")
-                        except Exception:
-                            pass
+                        from engine.notify import notify_safe
+                        notify_safe("stock auto-parked (repeated fetch failures)",
+                                    f"{stock.symbol} ({stock.company_name}) failed "
+                                    f"{n} consecutive fetches — possible delisting or symbol "
+                                    f"change. Retry sweep runs weekly; or "
+                                    f"engine.run refresh --status stale --symbols {stock.symbol}",
+                                    tags="package")
 
             if verbose:
                 tag = "new" if was_new else stock.status

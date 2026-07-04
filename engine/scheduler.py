@@ -68,12 +68,9 @@ def safe(job_fn):
         except Exception as e:
             print(f"[scheduler][{_now()}] TICK FAILED in {job_fn.__name__}:")
             traceback.print_exc()
-            try:
-                from engine.notify import notify
-                notify(f"scheduler tick failed: {job_fn.__name__}",
-                       str(e)[:400], priority="high", tags="rotating_light")
-            except Exception:
-                pass
+            from engine.notify import notify_safe
+            notify_safe(f"scheduler tick failed: {job_fn.__name__}",
+                        str(e)[:400], priority="high", tags="rotating_light")
 
     wrapper.__name__ = job_fn.__name__
     return wrapper

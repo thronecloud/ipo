@@ -19,6 +19,7 @@ from sqlalchemy.dialects.postgresql import insert as pg_insert
 from db.base import SessionLocal
 from db.models import (
     Analysis,
+    AnalysisFailure,
     CompositeScore,
     CompositeScoreHistory,
     DailyPrice,
@@ -41,6 +42,28 @@ SCORE_MIN, SCORE_MAX = 0, 10
 
 # ---------- job observability ----------
 
+# Above this fraction of failed items, a completed job is recorded as "partial",
+# not "success" — a batch where most items errored is not a clean run.
+JOB_ERROR_RATIO_PARTIAL = 0.5
+# Stats keys that can serve as the item total, in preference order.
+_JOB_TOTAL_KEYS = ("planned", "processed", "stocks", "audited", "total")
+
+
+def _item_error_ratio(stats: dict) -> float | None:
+    """Fraction of failed items in a job's stats, or None when not measurable."""
+    errors = stats.get("error")
+    if not isinstance(errors, int) or errors <= 0:
+        return 0.0 if isinstance(errors, int) else None
+    for key in _JOB_TOTAL_KEYS:
+        total = stats.get(key)
+        if isinstance(total, int) and total > 0:
+            return errors / total
+    success = stats.get("success")
+    if isinstance(success, int):
+        return errors / (errors + success)
+    return None
+
+
 @contextmanager
 def job_run(job_type: str, target: str = "all"):
     """Wrap a unit of engine work in a JobRun row. Yields (session, stats_dict)."""
@@ -53,7 +76,18 @@ def job_run(job_type: str, target: str = "all"):
     stats: dict = {}
     try:
         yield session, stats
-        job.status = "success"
+        # Honesty gate: a run where most items failed is "partial", never a clean
+        # "success" — the dashboard and alerting must see degraded batches.
+        ratio = _item_error_ratio(stats)
+        if ratio is not None and ratio >= JOB_ERROR_RATIO_PARTIAL:
+            job.status = "partial"
+            job.error = (f"{stats.get('error')} item error(s) — "
+                         f"{ratio:.0%} of the batch failed")[:4000]
+            from engine.notify import notify_safe
+            notify_safe(f"engine job degraded: {job_type}",
+                        f"target={target}\n{job.error}", tags="warning")
+        else:
+            job.status = "success"
         job.finished_at = utcnow()
         job.stats = stats
         session.commit()
@@ -63,12 +97,9 @@ def job_run(job_type: str, target: str = "all"):
         job.error = str(e)[:4000]
         job.finished_at = utcnow()
         session.commit()
-        try:
-            from engine.notify import notify
-            notify(f"engine job failed: {job_type}",
-                   f"target={target}\n{str(e)[:400]}", priority="high", tags="rotating_light")
-        except Exception:
-            pass
+        from engine.notify import notify_safe
+        notify_safe(f"engine job failed: {job_type}",
+                    f"target={target}\n{str(e)[:400]}", priority="high", tags="rotating_light")
         raise
     finally:
         session.close()
@@ -300,7 +331,7 @@ def save_analysis(session, stock: Stock, snapshot: StockSnapshot, persona: str,
     # LLM output is untrusted — enforce the contract before it can touch the DB.
     from engine.analysis.contract import validate_analysis_result
     validate_analysis_result(result)
-    row = Analysis(
+    values = dict(
         stock_id=stock.id,
         persona=persona,
         model=model,
@@ -315,13 +346,65 @@ def save_analysis(session, stock: Stock, snapshot: StockSnapshot, persona: str,
         red_flags=result.get("red_flags"),
         detailed_analysis=result.get("detailed_analysis"),
         metrics_evaluated=result.get("metrics_evaluated"),
+        analyzed_at=utcnow(),
         duration_ms=(meta or {}).get("duration_ms"),
         total_cost_usd=(meta or {}).get("total_cost_usd"),
         usage=(meta or {}).get("usage"),
     )
-    session.add(row)
+    # Upsert on the natural key (stock, persona, data_hash, model): a force re-run
+    # over unchanged data refreshes the verdict in place (analyzed_at moves forward
+    # so recompute/reconcile pick it up) instead of minting a duplicate row.
+    stmt = pg_insert(Analysis).values(**values)
+    stmt = stmt.on_conflict_do_update(
+        constraint="uq_analysis_natural_key",
+        set_={k: stmt.excluded[k] for k in values
+              if k not in ("stock_id", "persona", "data_hash", "model")},
+    ).returning(Analysis.id)
+    row_id = session.execute(stmt).scalar()
     session.flush()
+    row = session.get(Analysis, row_id)
+    session.refresh(row)  # the ORM identity map may hold the pre-upsert state
     return row
+
+
+# ---------- analysis dead-letter ----------
+
+def record_analysis_failure(session, stock_id: int, persona: str,
+                            data_hash: str, error: str) -> int:
+    """Atomically bump the failure count for (stock, persona, data_hash) and
+    return the NEW count. Conflict-safe: concurrent workers never lose a bump."""
+    stmt = pg_insert(AnalysisFailure).values(
+        stock_id=stock_id, persona=persona, data_hash=data_hash,
+        failures=1, last_error=(error or "")[:4000], last_attempt_at=utcnow(),
+    )
+    stmt = stmt.on_conflict_do_update(
+        constraint="uq_analysis_failure_key",
+        set_={
+            "failures": AnalysisFailure.failures + 1,
+            "last_error": stmt.excluded.last_error,
+            "last_attempt_at": stmt.excluded.last_attempt_at,
+        },
+    ).returning(AnalysisFailure.failures)
+    return session.execute(stmt).scalar()
+
+
+def clear_analysis_failure(session, stock_id: int, persona: str, data_hash: str):
+    """A successful analysis wipes the pair's dead-letter marker for that data."""
+    session.query(AnalysisFailure).filter(
+        AnalysisFailure.stock_id == stock_id,
+        AnalysisFailure.persona == persona,
+        AnalysisFailure.data_hash == data_hash,
+    ).delete()
+
+
+def dead_letter_pairs(session, stock_id: int, threshold: int) -> set:
+    """(persona, data_hash) pairs of this stock at/over the failure threshold."""
+    rows = session.execute(
+        select(AnalysisFailure.persona, AnalysisFailure.data_hash)
+        .where(AnalysisFailure.stock_id == stock_id,
+               AnalysisFailure.failures >= threshold)
+    ).all()
+    return {(p, h) for p, h in rows}
 
 
 # ---------- scoring ----------

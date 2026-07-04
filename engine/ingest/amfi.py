@@ -104,14 +104,11 @@ def auto_reingest(verbose: bool = True) -> dict:
         print(f"[amfi] NEW release detected: {tag} — downloading {url}")
     path = download_amfi(url)
     stats = ingest_smallcaps(path, release_tag=tag, verbose=verbose)
-    try:
-        from engine.notify import notify
-        notify("AMFI reclassification ingested",
-               f"{tag}: {stats.get('new', 0)} new small-caps, "
-               f"{stats.get('updated', 0)} updated "
-               f"({stats.get('total_nse_smallcap', 0)} total)", tags="card_index_dividers")
-    except Exception:
-        pass
+    from engine.notify import notify_safe
+    notify_safe("AMFI reclassification ingested",
+                f"{tag}: {stats.get('new', 0)} new small-caps, "
+                f"{stats.get('updated', 0)} updated "
+                f"({stats.get('total_nse_smallcap', 0)} total)", tags="card_index_dividers")
     return stats
 
 

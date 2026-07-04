@@ -12,14 +12,42 @@ Run `dq_audit` first so `data_quality_reports` reflects reality; gapfill targets
 exactly what that audit flagged.
 """
 
+import glob
+import os
+
 from sqlalchemy import select
 
 from db.models import DataQualityReport, Stock
 from engine.ingest.screener_enrich import enrich
 from engine.ingest.yf_refresh import backfill_prices, refresh
+from engine.quality.audit import audit as dq_audit
 from engine.repo import job_run, latest_snapshot, universe_contains
 
 ALL_TARGETS = ("identity", "prices", "screener", "yfinance")
+
+AMFI_SOURCES_DIR = "data/sources"
+
+
+def _amfi_identity_map() -> dict:
+    """symbol -> {isin, cap_category} from the newest downloaded AMFI xlsx.
+
+    Offline (no network): AMFI is the authoritative SEBI classification and its
+    file is already on disk from the amfi ingest job. Both NSE and BSE symbols
+    are keyed. Empty dict when no file has been downloaded yet.
+    """
+    from engine.ingest.amfi import parse_amfi
+    files = sorted(glob.glob(os.path.join(AMFI_SOURCES_DIR, "*.xlsx")),
+                   key=os.path.getmtime)
+    if not files:
+        return {}
+    out: dict = {}
+    for row in parse_amfi(files[-1]):
+        for sym in (row["nse_symbol"], row["bse_symbol"]):
+            if sym:
+                out[str(sym).upper()] = {
+                    "isin": row["isin"], "cap_category": row["category"],
+                }
+    return out
 
 
 def _latest_reports(session, symbols, universe):
@@ -38,7 +66,11 @@ def _latest_reports(session, symbols, universe):
 
 
 def _fill_identity(session, stocks) -> int:
-    """Populate Stock.sector/industry from the already-stored yfinance info."""
+    """Populate Stock identity fields from already-stored/offline sources:
+    sector/industry from the stock's yfinance info, isin/cap_category from the
+    newest AMFI xlsx. Fills only NULL fields — never overwrites."""
+    amfi = (_amfi_identity_map()
+            if any(not st.isin or not st.cap_category for st in stocks) else {})
     filled = 0
     for st in stocks:
         yf = latest_snapshot(session, st.id, source="yfinance")
@@ -50,6 +82,15 @@ def _fill_identity(session, stocks) -> int:
         if not st.industry and info.get("industry"):
             st.industry = info["industry"]
             changed = True
+        ref = (amfi.get((st.symbol or "").upper())
+               or amfi.get((st.nse_symbol or "").upper()))
+        if ref:
+            if not st.isin and ref.get("isin"):
+                st.isin = ref["isin"]
+                changed = True
+            if not st.cap_category and ref.get("cap_category"):
+                st.cap_category = ref["cap_category"]
+                changed = True
         if changed:
             filled += 1
     session.commit()
@@ -68,29 +109,52 @@ def gapfill(targets=ALL_TARGETS, symbols=None, universe=None, limit=0, delay=Non
             missing = missing or []
             if any(m.startswith("identity") for m in missing):
                 need_identity.append(st)
-            if "prices" in missing:
+            # "stale_prices" -> the series exists but is behind; same fill path.
+            if "prices" in missing or "stale_prices" in missing:
                 need_prices.append(st.symbol)
-            # "latest_quarter" -> re-pull both sources to capture the newest quarter.
-            if "screener" in missing or "latest_quarter" in missing:
+            # "latest_quarter"/"quarters" -> re-pull both quarterly sources
+            # (newest quarter missing, or history short of the 8q target).
+            if "screener" in missing or "latest_quarter" in missing or "quarters" in missing:
                 need_screener.append(st.symbol)
-            if "yfinance" in missing or "yfinance_refresh" in missing or "latest_quarter" in missing:
+            if ("yfinance" in missing or "yfinance_refresh" in missing
+                    or "latest_quarter" in missing or "quarters" in missing):
                 need_yf.append(st.symbol)
 
         def cap(xs):
             return xs[:limit] if limit else xs
 
         result = {}
+        touched: set = set()
         # 1) identity first — cheap, no network, in this session.
         if "identity" in targets:
-            result["identity_filled"] = _fill_identity(session, cap(need_identity))
+            idents = cap(need_identity)
+            result["identity_filled"] = _fill_identity(session, idents)
+            touched.update(st.symbol for st in idents)
 
         # 2) network jobs — each opens its own job_run/session (nested observability).
         if "yfinance" in targets and need_yf:
-            result["yfinance"] = refresh(symbols=cap(need_yf), verbose=verbose, **net_kw)
+            syms = cap(need_yf)
+            result["yfinance"] = refresh(symbols=syms, verbose=verbose, **net_kw)
+            touched.update(syms)
         if "screener" in targets and need_screener:
-            result["screener"] = enrich(symbols=cap(need_screener), verbose=verbose, **net_kw)
+            syms = cap(need_screener)
+            result["screener"] = enrich(symbols=syms, verbose=verbose, **net_kw)
+            touched.update(syms)
         if "prices" in targets and need_prices:
-            result["prices"] = backfill_prices(symbols=cap(need_prices), verbose=verbose, **net_kw)
+            syms = cap(need_prices)
+            result["prices"] = backfill_prices(symbols=syms, verbose=verbose, **net_kw)
+            touched.update(syms)
+
+        # 3) read-back: re-audit exactly the stocks we touched so the reports
+        #    reflect the post-fill state — the loop closes on evidence, not hope.
+        #    (Insert-only-on-change: unchanged scorecards write no new rows.)
+        if touched:
+            pa = dq_audit(symbols=sorted(touched), verbose=False)
+            result["post_audit"] = {
+                "audited": pa.get("audited"),
+                "reports_written": pa.get("reports_written"),
+                "avg_overall": pa.get("avg_overall"),
+            }
 
         stats.update({
             "candidates": {

@@ -76,10 +76,12 @@ def main():
         if not run_stage("AI Persona Analysis (Claude)", cmd):
             failed.append(3)
 
-    # Stage 4: Compute scores
+    # Stage 4: Compute scores — the DB engine is the ONLY scorer (mean×10).
+    # The legacy JSON SUM-scorer is retired: it used a different formula and
+    # produced contradictory composites.
     if 4 in stages:
-        cmd = [sys.executable, "-m", "src.score"]
-        if not run_stage("Compute Composite Scores", cmd):
+        cmd = [sys.executable, "-m", "engine.run", "score"]
+        if not run_stage("Compute Composite Scores (DB engine)", cmd):
             failed.append(4)
 
     elapsed = time.time() - start_time

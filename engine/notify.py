@@ -12,9 +12,12 @@ Design rules:
 """
 
 import json
+import logging
 import os
 import time
 import urllib.request
+
+log = logging.getLogger(__name__)
 
 _last_sent: dict[str, float] = {}
 RATE_LIMIT_S = int(os.environ.get("NOTIFY_RATE_LIMIT_S", "900"))  # 15 min per title
@@ -60,3 +63,17 @@ def notify(title: str, message: str, priority: str = "default", tags: str = "war
     if not topic and not webhook:
         print(f"[notify] (no channel configured) {title}: {message[:120]}")
     return sent
+
+
+def notify_safe(title: str, message: str, **kwargs) -> bool:
+    """notify() that provably cannot raise — the sanctioned best-effort call.
+
+    Use this from engine code paths where an exception in the notifier must not
+    break the work (job wrappers, park alerts, tick failure handlers). Failures
+    are logged at WARNING — never silently swallowed.
+    """
+    try:
+        return notify(title, message, **kwargs)
+    except Exception:
+        log.warning("notify failed for %r", title, exc_info=True)
+        return False

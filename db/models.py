@@ -189,6 +189,12 @@ class DataQualityReport(Base):
 class Analysis(Base):
     __tablename__ = "analyses"
     __table_args__ = (
+        # Natural key: one verdict per (stock, persona, data, model). A force re-run
+        # of the same data with the same model REFRESHES the row (upsert in
+        # save_analysis), never duplicates it. NULL data_hash/model rows are exempt
+        # (Postgres treats NULLs as distinct) — no hash means no dedup identity.
+        UniqueConstraint("stock_id", "persona", "data_hash", "model",
+                         name="uq_analysis_natural_key"),
         Index("ix_analysis_stock_persona", "stock_id", "persona"),
         Index("ix_analysis_data_hash", "data_hash"),
     )
@@ -220,6 +226,32 @@ class Analysis(Base):
     usage: Mapped[dict | None] = mapped_column(JSONType)
 
     stock: Mapped["Stock"] = relationship(back_populates="analyses")
+
+
+class AnalysisFailure(Base):
+    """Dead-letter ledger for persona analysis: one row per failing
+    (stock, persona, data_hash). Each failed attempt increments `failures`;
+    at the engine's threshold the pair is skipped by find_work — for THAT hash
+    only, so changed fundamentals automatically re-qualify the pair. A later
+    success deletes the row."""
+
+    __tablename__ = "analysis_failures"
+    __table_args__ = (
+        UniqueConstraint("stock_id", "persona", "data_hash",
+                         name="uq_analysis_failure_key"),
+    )
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    stock_id: Mapped[int] = mapped_column(
+        ForeignKey("stocks.id", ondelete="CASCADE"), index=True
+    )
+    persona: Mapped[str] = mapped_column(String(64))
+    data_hash: Mapped[str] = mapped_column(String(64))
+    failures: Mapped[int] = mapped_column(Integer, default=0, server_default="0")
+    last_error: Mapped[str | None] = mapped_column(Text)
+    last_attempt_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow
+    )
 
 
 class CompositeScore(Base):

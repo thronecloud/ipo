@@ -136,6 +136,7 @@ def _prices(n, last_bar, yf_viable, flags, missing, as_of):
     if age <= 7:
         return _dim(1.0, "pass", f"{n} bars, current")
     flags.append({"type": "stale_prices", "severity": "info", "detail": f"last bar {age}d old"})
+    missing.append("stale_prices")  # fillable: backfill_prices extends the series
     return _dim(0.5, "partial", f"{n} bars, {age}d stale")
 
 

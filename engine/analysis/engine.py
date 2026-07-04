@@ -8,6 +8,7 @@ NOT force re-analysis (avoids re-running the whole backfill on a prompt tweak);
 use force=True for that.
 """
 
+import logging
 import time
 
 from sqlalchemy import select
@@ -16,16 +17,26 @@ from db.models import Stock
 from engine.analysis.backend import default_model, get_backend
 from engine.analysis.prompt import build_user_prompt
 from engine.repo import (
+    clear_analysis_failure,
+    dead_letter_pairs,
     existing_persona_hashes,
     job_run,
     latest_snapshot,
+    record_analysis_failure,
     recompute_scores_for_stock,
     save_analysis,
     universe_contains,
 )
 from src.personas import PERSONAS, get_persona_slugs
 
+log = logging.getLogger(__name__)
+
 PROMPT_VERSION = "v3"  # v1 = imported; v2 = corrected scales; v3 = research-grounded revamp (said-vs-did, verified thresholds, screener-aware)
+
+# A (stock, persona) that failed this many times on the SAME data_hash is
+# dead-lettered: find_work stops planning it (it was silently re-burning the
+# daily cap). New data (new hash) re-qualifies the pair; force=True overrides.
+DEAD_LETTER_THRESHOLD = 3
 
 
 def find_work(session, personas, universe=None, symbols=None, force=False, limit=0):
@@ -42,12 +53,14 @@ def find_work(session, personas, universe=None, symbols=None, force=False, limit
         if snap is None:
             continue  # only analyze stocks with full financial data
         done = existing_persona_hashes(session, stock.id)
+        dead = set() if force else dead_letter_pairs(session, stock.id, DEAD_LETTER_THRESHOLD)
         for slug in personas:
             has_current = (not force) and (snap.content_hash in done.get(slug, set()))
-            if not has_current:
-                work.append((stock, snap, slug))
-                if limit and len(work) >= limit:
-                    return work
+            if has_current or (slug, snap.content_hash) in dead:
+                continue
+            work.append((stock, snap, slug))
+            if limit and len(work) >= limit:
+                return work
     return work
 
 
@@ -81,11 +94,17 @@ def run_incremental(personas=None, universe=None, symbols=None, model=None, forc
 
                 if result is None:
                     stats["error"] += 1
+                    # Dead-letter bookkeeping: repeated failures on this exact data
+                    # eventually stop being planned (find_work skips at threshold).
+                    record_analysis_failure(session, stock.id, slug, snap.content_hash,
+                                            str((meta or {}).get("error") or meta))
+                    session.commit()
                     if verbose:
                         print(f"  [{i+1}/{len(work)}] {stock.symbol} x {slug}: ERROR {meta}")
                 else:
                     model_used = (meta or {}).get("model_used", model)
                     save_analysis(session, stock, snap, slug, model_used, PROMPT_VERSION, result, meta)
+                    clear_analysis_failure(session, stock.id, slug, snap.content_hash)
                     # Rescore this stock immediately so a committed analysis always has a
                     # matching composite (no orphan window on interruption).
                     recompute_scores_for_stock(session, stock)
@@ -99,6 +118,16 @@ def run_incremental(personas=None, universe=None, symbols=None, model=None, forc
             except Exception as e:
                 session.rollback()
                 stats["error"] += 1
+                # Off-contract output / any exception is a failure of THIS pair on
+                # THIS data — record it (fresh transaction after the rollback).
+                try:
+                    record_analysis_failure(session, stock.id, slug, snap.content_hash,
+                                            f"{type(e).__name__}: {e}")
+                    session.commit()
+                except Exception:
+                    session.rollback()
+                    log.warning("could not record analysis failure for %s x %s",
+                                stock.symbol, slug, exc_info=True)
                 if verbose:
                     print(f"  [{i+1}/{len(work)}] {stock.symbol} x {slug}: SKIPPED ({type(e).__name__}: {e})")
 

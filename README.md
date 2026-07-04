@@ -170,8 +170,8 @@ python3 -m src.fetch_screener_data
 # Stage 3: Run AI persona analysis (each stock x 10 personas)
 python3 -m src.analyze --model opus
 
-# Stage 3b: Compute composite scores
-python3 -m src.score
+# Stage 3b: Compute composite scores (DB engine, mean×10 — the only scorer)
+python3 -m engine.run score
 ```
 
 ### Analyze a Single Stock
