@@ -40,6 +40,8 @@ class StockListItem(BaseModel):
     universe: list[str] = []
     status: str | None = None
     composite_score: float | None = None
+    lcb: float | None = None                 # rank key: composite minus confidence penalty
+    confidence_tier: str | None = None       # high/moderate/provisional/mixed
     consensus_recommendation: str | None = None
     analysis_coverage: int | None = None
     composite_updated_at: datetime | None = None
@@ -95,6 +97,13 @@ class Composite(BaseModel):
     analysis_coverage: int | None = None
     total_personas: int | None = None
     updated_at: datetime | None = None
+    # Confidence layer (LEAK#1): the 10 personas are ~2-3 independent signals,
+    # so honesty lives here, not in "10 experts agree".
+    lcb: float | None = None
+    confidence_tier: str | None = None
+    score_stderr_eff: float | None = None
+    axis_scores: dict = {}
+    factor_version: str | None = None
 
 
 class CouncilMember(BaseModel):

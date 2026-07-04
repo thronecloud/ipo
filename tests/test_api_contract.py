@@ -257,3 +257,35 @@ def test_jobs_run_launches_allowed_job(client, db_session, admin_auth):
     assert len(admin_auth["calls"]) == 1
     cmd = admin_auth["calls"][0][0][0]
     assert cmd[-1] == "status" and "engine.run" in cmd
+
+
+# ---------- LEAK#1: confidence layer exposed to consumers ----------
+
+def test_stocks_list_exposes_lcb_and_confidence_tier(client, seeded):
+    r = client.get("/api/stocks", params={"analyzed_only": True})
+    assert r.status_code == 200
+    (alpha,) = [i for i in r.json()["items"] if i["symbol"] == "ALPHA"]
+    assert alpha["lcb"] is not None
+    assert alpha["confidence_tier"] in ("high", "moderate", "provisional", "mixed")
+    # The rank key must never exceed the point estimate.
+    assert alpha["lcb"] <= alpha["composite_score"]
+
+
+def test_stocks_list_sorts_by_lcb(client, seeded):
+    r = client.get("/api/stocks", params={"sort": "lcb", "order": "desc"})
+    assert r.status_code == 200
+    items = r.json()["items"]
+    lcbs = [i["lcb"] for i in items if i["lcb"] is not None]
+    assert lcbs == sorted(lcbs, reverse=True)
+    # Unscored stocks sink to the bottom, never 500 the sort.
+    assert items[-1]["lcb"] is None
+
+
+def test_stock_detail_exposes_confidence_block(client, seeded):
+    r = client.get("/api/stocks/ALPHA")
+    assert r.status_code == 200
+    comp = r.json()["composite"]
+    assert comp["lcb"] is not None
+    assert comp["confidence_tier"] is not None
+    assert comp["factor_version"] == "axis-v1"
+    assert isinstance(comp["axis_scores"], dict) and comp["axis_scores"]

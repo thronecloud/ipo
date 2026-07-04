@@ -73,6 +73,8 @@ def _latest_composite_sq():
             CompositeScore.analysis_coverage,
             CompositeScore.persona_scores,
             CompositeScore.computed_at,
+            CompositeScore.lcb,
+            CompositeScore.confidence_tier,
         )
         .order_by(CompositeScore.stock_id, CompositeScore.computed_at.desc(), CompositeScore.id.desc())
         .distinct(CompositeScore.stock_id)
@@ -163,6 +165,7 @@ def list_stocks(
         "pe_ratio": snap.c.pe_ratio,
         "revenue_growth": snap.c.revenue_growth,
         "composite_score": cs.c.composite_score,
+        "lcb": cs.c.lcb,
     }
     if sort in sort_map:
         col = sort_map[sort]
@@ -203,6 +206,8 @@ def list_stocks(
                 universe=stock.universe or [],
                 status=stock.status,
                 composite_score=comp_score,
+                lcb=row._mapping.get("lcb"),
+                confidence_tier=row._mapping.get("confidence_tier"),
                 consensus_recommendation=consensus_rec,
                 analysis_coverage=coverage,
                 composite_updated_at=row._mapping.get("computed_at"),
@@ -281,6 +286,11 @@ def stock_detail(symbol: str, db: Session = Depends(get_db)):
         analysis_coverage=cs.analysis_coverage if cs else None,
         total_personas=(cs.total_personas if cs else None) or TOTAL_PERSONAS,
         updated_at=cs.computed_at if cs else None,
+        lcb=cs.lcb if cs else None,
+        confidence_tier=cs.confidence_tier if cs else None,
+        score_stderr_eff=cs.score_stderr_eff if cs else None,
+        axis_scores=(cs.axis_scores if cs else {}) or {},
+        factor_version=cs.factor_version if cs else None,
     )
 
     # --- council: latest analysis per persona, fixed order ---
