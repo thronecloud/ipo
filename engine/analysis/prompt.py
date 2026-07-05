@@ -1,7 +1,42 @@
 """Build the per-stock user prompt from a DB snapshot (reuses the proven formatters)."""
 
+import re
+from datetime import datetime, timezone
+
 from src.analyze import build_financial_summary, format_currency
 from src.personas import ANALYSIS_PROMPT_TEMPLATE
+
+# Personas were burning output tokens lamenting data gaps on recent listings and
+# defaulting scores toward zero for what is simply recency. This block reframes
+# the gaps once, up front, so the analysis spends itself on what IS visible.
+RECENT_IPO_CONTEXT = """
+IMPORTANT CONTEXT — RECENTLY LISTED COMPANY:
+This company listed on the exchange only recently. Sparse data is EXPECTED:
+few or no historical quarters, short price history, missing ratios, thin
+coverage. Treat those gaps as artifacts of recency, not as red flags in
+themselves, and do not spend your analysis enumerating what is unavailable.
+Score the company on what IS visible — issue pricing vs current price, sector
+economics, promoter/management quality, the quarters that do exist, screener
+fundamentals — and let the limited history temper your CONVICTION language,
+not drag the score toward zero by default.
+"""
+
+# A listing (or universe vintage) within this many years counts as recent.
+RECENT_YEARS = 2
+_EVERGREEN_RECENT_TAGS = {"ipo_recent", "ipo_upcoming"}
+
+
+def _is_recent_ipo(stock) -> bool:
+    cutoff = datetime.now(timezone.utc).year - RECENT_YEARS
+    tags = set(stock.universe or [])
+    if tags & _EVERGREEN_RECENT_TAGS:
+        return True
+    for tag in tags:
+        m = re.fullmatch(r"ipo_(\d{4})", tag)
+        if m and int(m.group(1)) >= cutoff:
+            return True
+    m = re.search(r"(19|20)\d{2}", stock.listing_date or "")
+    return bool(m and int(m.group(0)) >= cutoff)
 
 
 def snapshot_to_stock_data(stock, snap) -> dict:
@@ -86,4 +121,6 @@ def build_user_prompt(stock, snap, screener_snap=None) -> str:
         ipo_return_pct=ipo_return,
         financial_summary=build_financial_summary(sd),
     )
+    if _is_recent_ipo(stock):
+        base += RECENT_IPO_CONTEXT
     return base + format_screener(screener_snap.screener if screener_snap else None)

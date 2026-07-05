@@ -40,7 +40,7 @@ def cmd_refresh(a):
 
 def cmd_analyze(a):
     print(run_incremental(universe=a.universe, model=a.model, force=a.force,
-                          limit=a.limit, delay=a.delay))
+                          limit=a.limit, delay=a.delay, workers=a.workers))
 
 
 def cmd_enrich(a):
@@ -175,6 +175,8 @@ def main():
     an.add_argument("--limit", type=int, default=0)
     an.add_argument("--delay", type=float, default=2.0)
     an.add_argument("--force", action="store_true")
+    an.add_argument("--workers", type=int, default=1,
+                    help="concurrent persona calls per stock (10 = full council at once)")
     an.set_defaults(func=cmd_analyze)
 
     en = sub.add_parser("enrich", help="Scrape screener.in fundamentals into screener snapshots")
