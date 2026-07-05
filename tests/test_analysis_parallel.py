@@ -149,3 +149,27 @@ def test_workers_one_matches_serial_semantics(db_session, monkeypatch):
                                 delay=0, verbose=False)
     assert stats["success"] == len(PERSONAS)
     assert probe.max_active == 1
+
+
+def test_backend_string_error_meta_recorded_verbatim(db_session, monkeypatch):
+    """CLI error paths return (None, '<string>') — the failure ledger must keep
+    that message (it's the ops signal: usage limit vs timeout vs parse error),
+    not crash on meta.get and double-count the error."""
+
+    class StringErrorBackend:
+        name = "strerr"
+
+        def analyze(self, system_prompt, user_prompt, model):
+            return None, "Claude AI usage limit reached|resets 09:00"
+
+    stock = make_stock(db_session, "PAR4", universe=["ipo_2026"])
+    _snap(db_session, stock)
+    monkeypatch.setattr(eng, "get_backend", lambda: StringErrorBackend())
+
+    stats = eng.run_incremental(universe="ipo_2026", model="m", workers=2,
+                                delay=0, verbose=False)
+
+    assert stats["error"] == len(PERSONAS)          # counted ONCE per pair
+    failures = db_session.scalars(select(AnalysisFailure)).all()
+    assert len(failures) == len(PERSONAS)
+    assert "usage limit" in failures[0].last_error

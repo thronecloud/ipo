@@ -131,10 +131,14 @@ def run_incremental(personas=None, universe=None, symbols=None, model=None, forc
 
                     if result is None:
                         stats["error"] += 1
+                        # Backend error meta is a plain string on CLI failures
+                        # (usage limit / timeout / parse error) and a dict on
+                        # structured ones — keep the message verbatim either way.
+                        err = (meta.get("error") or meta) if isinstance(meta, dict) else meta
                         # Dead-letter bookkeeping: repeated failures on this exact data
                         # eventually stop being planned (find_work skips at threshold).
                         record_analysis_failure(session, stock.id, slug, snap.content_hash,
-                                                str((meta or {}).get("error") or meta))
+                                                str(err))
                         session.commit()
                         if verbose:
                             print(f"  [{i+1}/{len(work)}] {stock.symbol} x {slug}: ERROR {meta}")
