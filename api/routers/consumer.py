@@ -9,6 +9,7 @@ from sqlalchemy import distinct, func, select
 from sqlalchemy.orm import Session
 
 from engine.backtest.study import DEFAULT_BENCHMARK, run_event_study
+from src.fetch_screener_data import parse_number
 
 from api.deps import (
     PERSONA_ORDER,
@@ -61,6 +62,29 @@ def _latest_yf_snapshot_sq():
         .distinct(StockSnapshot.stock_id)
         .subquery()
     )
+
+
+def _screener_quote_fallback(db: Session, stock_ids: list[int]) -> dict[int, tuple]:
+    """stock_id -> (market_cap_cr, current_price) from the latest screener
+    ratios. Fresh listings have no yfinance quote at all — screener's top
+    ratios ('Market Cap' in ₹ Cr, 'Current Price') are the only quote source
+    until Yahoo starts covering the name. Read-layer only; never persisted."""
+    if not stock_ids:
+        return {}
+    rows = db.execute(
+        select(StockSnapshot.stock_id, StockSnapshot.screener)
+        .where(StockSnapshot.stock_id.in_(stock_ids),
+               StockSnapshot.source == "screener")
+        .order_by(StockSnapshot.stock_id, StockSnapshot.captured_at.desc(),
+                  StockSnapshot.id.desc())
+        .distinct(StockSnapshot.stock_id)
+    ).all()
+    out: dict[int, tuple] = {}
+    for sid, scr in rows:
+        ratios = (scr or {}).get("ratios") or {}
+        out[sid] = (parse_number(ratios.get("Market Cap")),
+                    parse_number(ratios.get("Current Price")))
+    return out
 
 
 def _latest_composite_sq():
@@ -189,6 +213,12 @@ def list_stocks(
 
     stock_ids = [r[0].id for r in rows]
     per_persona_by_stock = _per_persona_for_stocks(db, stock_ids)
+    quote_fb = _screener_quote_fallback(
+        db,
+        [r[0].id for r in rows
+         if r._mapping.get("market_cap") is None
+         or r._mapping.get("current_price") is None],
+    )
 
     items: list[StockListItem] = []
     for row in rows:
@@ -197,6 +227,13 @@ def list_stocks(
         comp_score = row._mapping.get("composite_score")
         consensus_rec = row._mapping.get("consensus_recommendation")
         coverage = row._mapping.get("analysis_coverage")
+        mcap_cr = to_cr(row._mapping.get("market_cap"))
+        price = row._mapping.get("current_price")
+        fb_mcap, fb_price = quote_fb.get(stock.id, (None, None))
+        if mcap_cr is None:
+            mcap_cr = fb_mcap
+        if price is None:
+            price = fb_price
         items.append(
             StockListItem(
                 symbol=stock.symbol,
@@ -212,13 +249,13 @@ def list_stocks(
                 analysis_coverage=coverage,
                 composite_updated_at=row._mapping.get("computed_at"),
                 per_persona=per_persona_by_stock.get(stock.id, {}),
-                current_price=row._mapping.get("current_price"),
-                market_cap_cr=to_cr(row._mapping.get("market_cap")),
+                current_price=price,
+                market_cap_cr=mcap_cr,
                 pe_ratio=row._mapping.get("pe_ratio"),
                 roe=row._mapping.get("roe"),
                 debt_to_equity=row._mapping.get("debt_to_equity"),
                 revenue_growth=row._mapping.get("revenue_growth"),
-                ipo_return_pct=ipo_return_pct(stock.issue_price, row._mapping.get("current_price")),
+                ipo_return_pct=ipo_return_pct(stock.issue_price, price),
                 data_quality=row._mapping.get("data_quality"),
             )
         )

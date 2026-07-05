@@ -34,6 +34,22 @@ def parse_number(text):
         return None
 
 
+def extract_classification(soup):
+    """Sector→industry chain from the peers section, broadest to most specific.
+
+    Screener's peers header links the full market classification
+    (e.g. Consumer Discretionary > Textiles > ... > Other Textile Products).
+    This is the ONLY sector source for fresh listings — yfinance carries
+    nothing for them and AMFI only classifies established names.
+    """
+    peers = soup.find("section", id="peers")
+    sub = peers.find("p", class_="sub") if peers else None
+    if not sub:
+        return []
+    return [a.get_text(strip=True) for a in sub.find_all("a")
+            if a.get_text(strip=True)]
+
+
 def scrape_top_ratios(soup):
     """Extract key ratios from the top section of the company page."""
     ratios = {}
@@ -111,6 +127,7 @@ def scrape_company_page(url):
 
     # 1. Top ratios
     data["ratios"] = scrape_top_ratios(soup)
+    data["classification"] = extract_classification(soup)
 
     # 2. About/description
     about_section = soup.find("div", class_="about")

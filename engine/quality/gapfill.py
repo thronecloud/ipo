@@ -67,20 +67,29 @@ def _latest_reports(session, symbols, universe):
 
 def _fill_identity(session, stocks) -> int:
     """Populate Stock identity fields from already-stored/offline sources:
-    sector/industry from the stock's yfinance info, isin/cap_category from the
-    newest AMFI xlsx. Fills only NULL fields — never overwrites."""
+    sector/industry from the stock's yfinance info, falling back to the
+    screener peers classification (the only source covering fresh listings);
+    isin/cap_category from the newest AMFI xlsx. Fills only NULL fields —
+    never overwrites."""
     amfi = (_amfi_identity_map()
             if any(not st.isin or not st.cap_category for st in stocks) else {})
     filled = 0
     for st in stocks:
         yf = latest_snapshot(session, st.id, source="yfinance")
         info = (yf.info if yf else None) or {}
+        cls = []
+        if not st.sector or not st.industry:
+            scr = latest_snapshot(session, st.id, source="screener")
+            cls = ((scr.screener if scr else None) or {}).get("classification") or []
+        # yf naming wins when present; screener chain is broadest -> most specific.
+        sector = info.get("sector") or (cls[0] if cls else None)
+        industry = info.get("industry") or (cls[-1] if len(cls) > 1 else None)
         changed = False
-        if not st.sector and info.get("sector"):
-            st.sector = info["sector"]
+        if not st.sector and sector:
+            st.sector = sector
             changed = True
-        if not st.industry and info.get("industry"):
-            st.industry = info["industry"]
+        if not st.industry and industry:
+            st.industry = industry
             changed = True
         ref = (amfi.get((st.symbol or "").upper())
                or amfi.get((st.nse_symbol or "").upper()))
