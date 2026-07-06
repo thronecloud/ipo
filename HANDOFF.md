@@ -1,4 +1,20 @@
-# HANDOFF — WisdomInvest living engine (session state, 2026-07-04, evening update)
+# HANDOFF — WisdomInvest living engine (session state, updated 2026-07-06)
+
+## 2026-07-06: ipo_2026 universe COMPLETE (109/109, single-model councils)
+
+- All 109 ipo_2026 stocks fully analyzed (10 personas each), one-company-one-model:
+  ~96 Fable (prompt v4), 13+ Opus 4.8 (`analyze --symbols ... --model opus --workers 10`).
+  Zero BUYs; ~24 HOLDs led by VALUE360/ADISOFT/Msafe (LCB ~46-47); rest AVOID.
+- Analysis engine now: `--workers N` parallel personas (10× throughput),
+  `--symbols` on analyze CLI, recent-IPO prompt context (v4), verbatim CLI error
+  in dead-letter (usage-limit failures purged, never dead-letter transient quota).
+- find_work accepts screener-full snapshots (pinned by test) — fresh listings
+  analyzable before Yahoo covers them. Screener classification → sector/industry
+  gapfill; API mcap/price falls back to screener ratios (108/109 sectors filled).
+- Owner deliverable: Google Sheet "IPO 2026 Analysis Board — FINAL (109/109)"
+  (formulas: ARRAYFORMULA returns/days-listed/upside + summary block).
+- Max-plan usage windows cap ~300-360 CLI pairs; probe quota before big runs
+  (see scratchpad run_split_analysis.py pattern). 189 tests green.
 
 ## NEW since the morning handoff (all committed on living-engine, 173 tests green)
 
