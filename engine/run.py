@@ -39,8 +39,9 @@ def cmd_refresh(a):
 
 
 def cmd_analyze(a):
-    print(run_incremental(universe=a.universe, model=a.model, force=a.force,
-                          limit=a.limit, delay=a.delay, workers=a.workers))
+    print(run_incremental(universe=a.universe, symbols=a.symbols, model=a.model,
+                          force=a.force, limit=a.limit, delay=a.delay,
+                          workers=a.workers))
 
 
 def cmd_enrich(a):
@@ -171,6 +172,7 @@ def main():
 
     an = sub.add_parser("analyze", help="Run incremental persona analysis")
     an.add_argument("--universe", default=None)
+    an.add_argument("--symbols", nargs="*", default=None)
     an.add_argument("--model", default=None)
     an.add_argument("--limit", type=int, default=0)
     an.add_argument("--delay", type=float, default=2.0)
