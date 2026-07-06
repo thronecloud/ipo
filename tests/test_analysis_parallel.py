@@ -173,3 +173,31 @@ def test_backend_string_error_meta_recorded_verbatim(db_session, monkeypatch):
     failures = db_session.scalars(select(AnalysisFailure)).all()
     assert len(failures) == len(PERSONAS)
     assert "usage limit" in failures[0].last_error
+
+
+def test_find_work_accepts_screener_backed_fresh_listing(db_session):
+    """Fresh listings often never get a 'full' yfinance snapshot, but screener
+    carries their prospectus fundamentals — the analysis gate must accept a
+    minimal yf snapshot when screener P&L exists, else they stay dark forever."""
+    from engine.analysis.engine import find_work
+
+    covered = make_stock(db_session, "FWSCR1", universe=["ipo_2026"])
+    payload = yf_payload()
+    snap, _ = add_snapshot(db_session, covered, payload,
+                           extract_columns(payload["info"]),
+                           data_quality="minimal", captured_at=utc())
+    add_snapshot(db_session, covered,
+                 {"screener": {"ratios": {"Market Cap": "100"},
+                               "profit_loss": {"2026": {"Sales": 10}}}},
+                 {}, source="screener", data_quality="full", captured_at=utc())
+
+    dark = make_stock(db_session, "FWSCR2", universe=["ipo_2026"])
+    dp = yf_payload(price=50.0)
+    add_snapshot(db_session, dark, dp, extract_columns(dp["info"]),
+                 data_quality="minimal", captured_at=utc())
+    db_session.commit()
+
+    work = find_work(db_session, ["warren_buffett"], universe="ipo_2026")
+    symbols = {s.symbol for s, _, _ in work}
+    assert "FWSCR1" in symbols          # minimal yf + screener P&L -> analyzable
+    assert "FWSCR2" not in symbols      # minimal yf, no screener -> still gated
