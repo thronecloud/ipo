@@ -11,14 +11,18 @@ export interface AsyncState<T> {
 }
 
 // Generic fetch hook with loading/error and abort on unmount / dep change.
+// `refreshMs` adds a silent background refetch (no loading flash) while the
+// tab is visible — the engine writes continuously, open tabs must not go stale.
 export function useAsync<T>(
   fetcher: (signal: AbortSignal) => Promise<T>,
   deps: unknown[],
+  opts?: { refreshMs?: number },
 ): AsyncState<T> {
   const [data, setData] = useState<T | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [tick, setTick] = useState(0);
+  const refreshMs = opts?.refreshMs;
 
   // keep the latest fetcher without making it a dependency
   const fetcherRef = useRef(fetcher);
@@ -27,34 +31,48 @@ export function useAsync<T>(
   useEffect(() => {
     const ctrl = new AbortController();
     let alive = true;
-    setLoading(true);
-    setError(null);
-    fetcherRef
-      .current(ctrl.signal)
-      .then((d) => {
-        if (alive) {
-          setData(d);
-          setLoading(false);
-        }
-      })
-      .catch((e) => {
-        if (!alive) return;
-        if (e instanceof DOMException && e.name === "AbortError") return;
-        const msg =
-          e instanceof ApiError
-            ? e.message
-            : e instanceof Error
+
+    const run = (silent: boolean) => {
+      if (!silent) {
+        setLoading(true);
+        setError(null);
+      }
+      fetcherRef
+        .current(ctrl.signal)
+        .then((d) => {
+          if (alive) {
+            setData(d);
+            setLoading(false);
+          }
+        })
+        .catch((e) => {
+          if (!alive) return;
+          if (e instanceof DOMException && e.name === "AbortError") return;
+          if (silent) return; // background refresh failures never clobber good data
+          const msg =
+            e instanceof ApiError
               ? e.message
-              : "Something went wrong.";
-        setError(msg);
-        setLoading(false);
-      });
+              : e instanceof Error
+                ? e.message
+                : "Something went wrong.";
+          setError(msg);
+          setLoading(false);
+        });
+    };
+
+    run(false);
+    const timer = refreshMs
+      ? setInterval(() => {
+          if (document.visibilityState === "visible") run(true);
+        }, refreshMs)
+      : undefined;
     return () => {
       alive = false;
       ctrl.abort();
+      if (timer) clearInterval(timer);
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [...deps, tick]);
+  }, [...deps, tick, refreshMs]);
 
   const refetch = useCallback(() => setTick((t) => t + 1), []);
   return { data, loading, error, refetch };

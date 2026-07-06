@@ -40,7 +40,7 @@ export default function DiscoveryPage() {
   const debouncedQ = useDebounced(filters.q, 350);
 
   const metaFetcher = useCallback((s: AbortSignal) => api.meta(s), []);
-  const { data: meta } = useAsync<Meta>(metaFetcher, []);
+  const { data: meta } = useAsync<Meta>(metaFetcher, [], { refreshMs: 60_000 });
 
   const query: StockQuery = useMemo(
     () => ({
@@ -64,9 +64,11 @@ export default function DiscoveryPage() {
     (s: AbortSignal) => api.stocks(query, s),
     [query],
   );
-  const { data, loading, error, refetch } = useAsync<StockList>(stockFetcher, [
-    query,
-  ]);
+  const { data, loading, error, refetch } = useAsync<StockList>(
+    stockFetcher,
+    [query],
+    { refreshMs: 60_000 },
+  );
 
   const patchFilters = useCallback(
     (patch: Partial<Filters>) => {

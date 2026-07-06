@@ -8,7 +8,7 @@ import type { Meta } from "@/lib/types";
 
 export default function TopBar() {
   const fetcher = useCallback((s: AbortSignal) => api.meta(s), []);
-  const { data } = useAsync<Meta>(fetcher, []);
+  const { data } = useAsync<Meta>(fetcher, [], { refreshMs: 60_000 });
 
   return (
     <header className="sticky top-0 z-40 border-b border-hairline bg-ink/90 backdrop-blur supports-[backdrop-filter]:bg-ink/80">
