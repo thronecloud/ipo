@@ -1,0 +1,39 @@
+# Production overlay for the always-on server. Applied on top of
+# docker-compose.yml. The server auto-includes it via
+#   COMPOSE_FILE=docker-compose.yml:docker-compose.prod.yml
+# in its .env, so `docker compose up -d` picks it up; local dev, which has no
+# such env, ignores this file and stays on the plain stack.
+#
+# It binds Postgres and the API to localhost, drops the web host port, and
+# fronts everything with Caddy: public dashboard, automatic HTTPS, and HTTP
+# basic auth on the Engine Room (/admin) and its API. Caddy reads SITE_ADDRESS
+# and ADMIN_HASH from .env (see DEPLOY.md → "Server deployment").
+services:
+  db:
+    ports: !override
+      - "127.0.0.1:5432:5432"
+  api:
+    ports: !override
+      - "127.0.0.1:8000:8000"
+  web:
+    ports: !override []
+
+  caddy:
+    image: caddy:2
+    container_name: ipo_caddy
+    restart: unless-stopped
+    env_file: .env
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      web:
+        condition: service_healthy
+
+volumes:
+  caddy_data:
+  caddy_config:

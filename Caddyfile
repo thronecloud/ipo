@@ -1,0 +1,14 @@
+# Reverse proxy for the server deployment (see docker-compose.prod.yml).
+# SITE_ADDRESS and ADMIN_HASH come from the environment (.env, passed in via the
+# caddy service's env_file). SITE_ADDRESS as a hostname enables automatic HTTPS;
+# swapping to a real domain is just a .env change. ADMIN_HASH is a bcrypt hash
+# from `caddy hash-password` — the plaintext never lives in the repo.
+{$SITE_ADDRESS} {
+	# The public Research Desk is open. The Engine Room and its API require auth
+	# because the app only token-guards job *mutations*, not the admin read views.
+	@admin path /admin /admin/* /api/admin /api/admin/*
+	basic_auth @admin {
+		admin {$ADMIN_HASH}
+	}
+	reverse_proxy web:3000
+}

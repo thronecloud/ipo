@@ -68,3 +68,38 @@ docker compose exec scheduler python -m engine.run score
 The host `.venv` + `uvicorn`/`npm run dev` workflow still works against
 `localhost:5432` (the same Postgres container). Stop the containerized
 api/web first if you need ports 8000/3000.
+
+## Server deployment (always-on, public dashboard)
+
+`docker-compose.prod.yml` is a production overlay for a real always-on host. It
+binds Postgres and the API to `127.0.0.1`, removes the web host port, and adds a
+Caddy reverse proxy: public Research Desk, automatic HTTPS, and HTTP basic auth
+on the Engine Room (`/admin`) and its API — the app itself only token-guards job
+*runs*, not the admin read views, so the lock lives at the proxy.
+
+Local dev never loads this overlay. The server opts in with one line in `.env`:
+
+```
+COMPOSE_FILE=docker-compose.yml:docker-compose.prod.yml
+SITE_ADDRESS=your.host.example        # a hostname (not a bare IP) → enables HTTPS
+ADMIN_HASH=<bcrypt>                    # docker run --rm caddy:2 caddy hash-password --plaintext 'yourpassword'
+ADMIN_TOKEN=<random>                   # guards job-trigger endpoints
+```
+
+`SITE_ADDRESS` must be a DNS name for Let's Encrypt to issue a cert (a bare IP
+can't be certified). With no domain, a wildcard-DNS host like `<ip>.sslip.io`
+works and gets a real cert. Swapping to your own domain is just editing
+`SITE_ADDRESS` and `docker compose up -d`.
+
+Deploy / update on the server:
+
+```bash
+git pull
+docker compose up -d --build     # COMPOSE_FILE makes this include the prod overlay
+```
+
+Resurrect on a fresh always-on host: clone → put the dump in `backups/` → write
+`.env` (the four keys above) → `docker compose up -d --build`. The db
+auto-restores the newest dump on first boot; Caddy fetches HTTPS automatically.
+
+`.env` and `DEPLOY_SECRETS.txt` are gitignored — secrets never enter the repo.
