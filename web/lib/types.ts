@@ -41,13 +41,13 @@ export interface StockRow {
   analysis_coverage: number;
   composite_updated_at: string | null;
   per_persona: Record<string, PerPersonaVerdict>;
-  current_price: number | null;
-  market_cap_cr: number | null;
-  pe_ratio: number | null;
-  roe: number | null;
-  debt_to_equity: number | null;
-  revenue_growth: number | null;
-  ipo_return_pct: number | null;
+  current_price: number | null; // rupees
+  market_cap_cr: number | null; // crore
+  pe_ratio: number | null; // ratio
+  roe: number | null; // percent, e.g. 39.42
+  debt_to_equity: number | null; // ratio, e.g. 0.00818
+  revenue_growth: number | null; // percent, e.g. 12.5
+  ipo_return_pct: number | null; // percent
   data_quality: DataQuality | null;
 }
 
@@ -72,13 +72,14 @@ export interface StockIdentity {
 }
 
 export interface StockQuote {
-  current_price: number | null;
-  market_cap_cr: number | null;
-  pe_ratio: number | null;
-  roe: number | null;
-  debt_to_equity: number | null;
-  revenue_growth: number | null;
-  ipo_return_pct: number | null;
+  // Units are canonical as emitted by the API — render as-is, never rescale.
+  current_price: number | null; // rupees
+  market_cap_cr: number | null; // crore
+  pe_ratio: number | null; // ratio
+  roe: number | null; // percent, e.g. 39.42
+  debt_to_equity: number | null; // ratio, e.g. 0.00818
+  revenue_growth: number | null; // percent, e.g. 12.5
+  ipo_return_pct: number | null; // percent
   data_quality: DataQuality | null;
   as_of: string | null;
 }

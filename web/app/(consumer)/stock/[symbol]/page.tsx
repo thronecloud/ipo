@@ -165,7 +165,7 @@ export default function StockPage() {
                 value={
                   quote.debt_to_equity == null
                     ? DASH
-                    : num(quote.debt_to_equity, { decimals: 2 })
+                    : num(quote.debt_to_equity, { decimals: 2, suffix: "x" })
                 }
               />
               {quote.ipo_return_pct != null && (
