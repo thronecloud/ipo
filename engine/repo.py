@@ -305,12 +305,12 @@ PRICE_REBASE_TOLERANCE = 1e-6
 
 
 def _bar_field_changed(stored, incoming):
-    """SQL predicate: the provider moved this price field beyond float noise.
-    NULL-safe — filling a hole (NULL -> value) counts as a change, NULL == NULL
-    does not."""
-    return stored.op("IS DISTINCT FROM")(incoming) & (
+    """SQL predicate: the provider carried a real value that moves this field beyond
+    float noise. Asymmetric on NULL — an incoming NULL is 'no data', never a correction,
+    so it never counts as a change (and coalesce preserves the stored value). Filling a
+    hole (stored NULL -> incoming value) does count."""
+    return ~incoming.is_(None) & (
         stored.is_(None)
-        | incoming.is_(None)
         | (
             func.abs(stored - incoming)
             > PRICE_REBASE_TOLERANCE * func.greatest(func.abs(stored), func.abs(incoming))
@@ -318,67 +318,89 @@ def _bar_field_changed(stored, incoming):
     )
 
 
-def upsert_daily_prices(session, stock_id: int, rows: list[dict]) -> int:
-    """Insert new daily OHLCV bars for a stock and correct existing ones the provider
-    has since rebased. `rows` items: {date, open, high, low, close, volume}.
-    Returns the count of rows actually written (inserted + rebased).
+BAR_FIELDS = ("open", "high", "low", "close", "volume")
 
-    NOT append-only. yfinance serves split/dividend-adjusted history (auto_adjust
-    defaults to True), so after a corporate action every historical bar comes back
-    rebased. Ignoring the conflict would keep the pre-action closes next to the
-    post-action ones and manufacture a one-day return that never happened — a 1:10
-    split reads as -90%. Rebases are corrections to point-in-time research input, so
-    they are logged, not applied silently.
+
+def _upsert_bars(session, model, key, payload, subject, counts) -> int:
+    """Insert new OHLCV bars and rewrite existing ones the provider has corrected.
+    Returns the count of bars INSERTED only; rewrites are reported solely via the
+    `counts["bars_rebased"]` tally.
+
+    ON CONFLICT DO UPDATE is atomic + concurrency-safe: a bar another writer already
+    inserted resolves to an update, never an IntegrityError that aborts the batch. The
+    `where` restricts writes to genuinely-changed bars, so the nightly `period=max`
+    re-send touches nothing (6.5M bars stay untouched) and RETURNING yields only the
+    rows written. `xmax = 0` distinguishes a fresh insert from an update.
+
+    A rewrite changes point-in-time research input, so it is never silent: it is logged
+    and, when `counts` is supplied, tallied under `bars_rebased` — the caller's job
+    stats persist to `job_runs`, which outlives the container that printed the log.
     """
-    if not rows:
-        return 0
-    # ON CONFLICT DO UPDATE is atomic + concurrency-safe: a bar another writer
-    # already inserted resolves to an update, never an IntegrityError that aborts
-    # the batch. The `where` restricts writes to genuinely-changed bars, so the
-    # nightly `period=max` re-send touches nothing (6.5M bars stay untouched) and
-    # RETURNING yields only the rows written. `xmax = 0` distinguishes a fresh
-    # insert from an update of an existing tuple.
-    payload = [{"stock_id": stock_id, **r} for r in rows]
-    stmt = pg_insert(DailyPrice).values(payload)
-    changed = (
-        _bar_field_changed(DailyPrice.open, stmt.excluded.open)
-        | _bar_field_changed(DailyPrice.high, stmt.excluded.high)
-        | _bar_field_changed(DailyPrice.low, stmt.excluded.low)
-        | _bar_field_changed(DailyPrice.close, stmt.excluded.close)
-        | DailyPrice.volume.op("IS DISTINCT FROM")(stmt.excluded.volume)
-    )
+    # Dedup on the conflict key — yfinance occasionally serves a duplicate-date frame,
+    # and a single payload naming the same key twice makes ON CONFLICT DO UPDATE raise
+    # CardinalityViolation ("cannot affect row a second time"). Last occurrence wins:
+    # later rows are the provider's later word.
+    deduped: dict = {}
+    for row in payload:
+        deduped[tuple(row[k] for k in key)] = row
+    payload = list(deduped.values())
+
+    stmt = pg_insert(model).values(payload)
+    changed = _bar_field_changed(model.open, stmt.excluded.open)
+    for f in ("high", "low", "close"):
+        changed |= _bar_field_changed(getattr(model, f), getattr(stmt.excluded, f))
+    changed |= ~stmt.excluded.volume.is_(None) & model.volume.op("IS DISTINCT FROM")(
+        stmt.excluded.volume)
+    # coalesce: a partial row corrects the fields it carries and preserves the rest — a
+    # stored non-NULL value is never degraded to NULL by a glitched (NaN->None) fetch row.
     stmt = stmt.on_conflict_do_update(
-        index_elements=["stock_id", "date"],
-        set_={
-            "open": stmt.excluded.open,
-            "high": stmt.excluded.high,
-            "low": stmt.excluded.low,
-            "close": stmt.excluded.close,
-            "volume": stmt.excluded.volume,
-        },
+        index_elements=key,
+        set_={f: func.coalesce(getattr(stmt.excluded, f), getattr(model, f))
+              for f in BAR_FIELDS},
         where=changed,
     ).returning(literal_column("(xmax = 0)").label("is_insert"))
 
     written = session.execute(stmt).fetchall()
     rebased = sum(1 for (is_insert,) in written if not is_insert)
     if rebased:
-        log(f"prices: stock_id={stock_id} — {rebased} existing bar(s) rebased by the "
-            f"provider (corporate action); stored history rewritten")
-    return len(written)
+        log(f"prices: {subject} — {rebased} existing bar(s) rewritten to the "
+            f"provider's corrected values")
+        if counts is not None:
+            counts["bars_rebased"] = counts.get("bars_rebased", 0) + rebased
+    return len(written) - rebased
 
 
-def upsert_index_prices(session, symbol: str, rows: list[dict]) -> int:
-    """Append new daily bars for a benchmark index; existing (symbol, date) rows
-    are left untouched (append-only). Returns the count of newly-inserted bars."""
+def upsert_daily_prices(session, stock_id: int, rows: list[dict], counts=None) -> int:
+    """Insert new daily OHLCV bars for a stock and correct existing ones the provider
+    has since rebased. `rows` items: {date, open, high, low, close, volume}. Returns the
+    count of bars INSERTED; corrections are reported via `counts["bars_rebased"]`.
+
+    NOT append-only. yfinance serves split/dividend-adjusted history (auto_adjust
+    defaults to True), so after a corporate action every historical bar comes back
+    rebased. Ignoring the conflict would keep the pre-action closes next to the
+    post-action ones and manufacture a one-day return that never happened — a 1:10
+    split reads as -90%.
+    """
     if not rows:
         return 0
-    payload = [{"symbol": symbol, **r} for r in rows]
-    stmt = (
-        pg_insert(IndexPrice).values(payload)
-        .on_conflict_do_nothing(index_elements=["symbol", "date"])
-        .returning(IndexPrice.id)
-    )
-    return len(session.execute(stmt).fetchall())
+    return _upsert_bars(session, DailyPrice, ["stock_id", "date"],
+                        [{"stock_id": stock_id, **r} for r in rows],
+                        f"stock_id={stock_id}", counts)
+
+
+def upsert_index_prices(session, symbol: str, rows: list[dict], counts=None) -> int:
+    """Insert new daily bars for a benchmark index and correct existing ones. Returns the
+    count of bars INSERTED; corrections are reported via `counts["bars_rebased"]`.
+
+    Indices carry no corporate actions, so the split-rebase case cannot arise here.
+    The corrective upsert is still the right shape: index bars are the denominator of
+    every excess-return number the backtest reports, and under append-only storage a
+    single NULL or bad close from a provider hiccup would be unrepairable forever.
+    """
+    if not rows:
+        return 0
+    return _upsert_bars(session, IndexPrice, ["symbol", "date"],
+                        [{"symbol": symbol, **r} for r in rows], symbol, counts)
 
 
 # ---------- analyses ----------

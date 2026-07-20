@@ -107,16 +107,19 @@ def test_reingesting_split_adjusted_history_corrects_stored_bars(db_session):
     ])
     db_session.commit()
 
-    # Same date, rebased 1:10 by the provider.
-    written = repo.upsert_daily_prices(db_session, stock.id, [
+    # Same date, rebased 1:10 by the provider. Nothing is INSERTED — the existing bar
+    # is rewritten — so the return is 0 and the correction shows up under bars_rebased.
+    counts: dict = {}
+    inserted = repo.upsert_daily_prices(db_session, stock.id, [
         {"date": date(2026, 1, 5), "open": 100.0, "high": 101.0,
          "low": 99.0, "close": 100.0, "volume": 10},
-    ])
+    ], counts=counts)
     db_session.commit()
 
     bar = db_session.scalar(select(DailyPrice).where(
         DailyPrice.stock_id == stock.id, DailyPrice.date == date(2026, 1, 5)))
-    assert written == 1
+    assert inserted == 0
+    assert counts["bars_rebased"] == 1
     assert (bar.open, bar.high, bar.low, bar.close, bar.volume) == (
         100.0, 101.0, 99.0, 100.0, 10)
 
@@ -126,13 +129,18 @@ def test_identical_reingest_writes_nothing(db_session):
     are unchanged must not be rewritten — otherwise every refresh churns the table."""
     stock = make_stock(db_session, "NOCHURN")
     rows = _bars(1, 20)
+    counts: dict = {}
     assert repo.upsert_daily_prices(db_session, stock.id, rows) == 20
     db_session.commit()
 
-    assert repo.upsert_daily_prices(db_session, stock.id, rows) == 0
+    # A re-send of the identical series must touch nothing: no insert AND no rewrite.
+    # (The inserted-only return is 0 whether or not unchanged bars are rewritten, so the
+    # rebase tally is what actually proves the where-clause suppressed the writes.)
+    assert repo.upsert_daily_prices(db_session, stock.id, rows, counts=counts) == 0
     db_session.commit()
-    assert repo.upsert_daily_prices(db_session, stock.id, rows) == 0
+    assert repo.upsert_daily_prices(db_session, stock.id, rows, counts=counts) == 0
     db_session.commit()
+    assert counts.get("bars_rebased", 0) == 0
 
 
 def test_subtolerance_float_noise_does_not_rewrite(db_session):
@@ -145,7 +153,9 @@ def test_subtolerance_float_noise_does_not_rewrite(db_session):
     noisy = _bars(1, 1)
     noisy[0]["close"] = 103.0 * (1 + 1e-13)
     noisy[0]["open"] = 101.0 * (1 - 1e-13)
-    assert repo.upsert_daily_prices(db_session, stock.id, noisy) == 0
+    counts: dict = {}
+    assert repo.upsert_daily_prices(db_session, stock.id, noisy, counts=counts) == 0
+    assert counts.get("bars_rebased", 0) == 0  # sub-tolerance noise is not a rewrite
 
 
 def test_null_close_is_repaired_by_reingest(db_session):
@@ -158,7 +168,89 @@ def test_null_close_is_repaired_by_reingest(db_session):
     ])
     db_session.commit()
 
-    assert repo.upsert_daily_prices(db_session, stock.id, _bars(5, 1)) == 1
+    # Filling the hole rewrites the existing bar, so nothing is inserted; the repair
+    # is visible as a rebase.
+    counts: dict = {}
+    assert repo.upsert_daily_prices(db_session, stock.id, _bars(5, 1), counts=counts) == 0
     db_session.commit()
+    assert counts["bars_rebased"] == 1
     bar = db_session.scalar(select(DailyPrice).where(DailyPrice.stock_id == stock.id))
     assert bar.close == 107.0
+
+
+def test_duplicate_date_payload_stores_last_row(db_session):
+    """yfinance sometimes serves a frame with the same date twice. ON CONFLICT DO UPDATE
+    would raise CardinalityViolation on the dup, so the payload is deduped first — the
+    LAST occurrence (the provider's later word) is the one stored."""
+    stock = make_stock(db_session, "DUPDATE")
+    inserted = repo.upsert_daily_prices(db_session, stock.id, [
+        {"date": date(2026, 1, 5), "open": 100.0, "high": 105.0,
+         "low": 99.0, "close": 102.0, "volume": 1000},
+        {"date": date(2026, 1, 5), "open": 200.0, "high": 205.0,
+         "low": 199.0, "close": 202.0, "volume": 2000},
+    ])
+    db_session.commit()
+    assert inserted == 1
+    bar = db_session.scalar(select(DailyPrice).where(DailyPrice.stock_id == stock.id))
+    assert (bar.open, bar.high, bar.low, bar.close, bar.volume) == (
+        200.0, 205.0, 199.0, 202.0, 2000)
+
+
+def test_all_null_incoming_does_not_degrade_stored_bar(db_session):
+    """A glitched fetch row (every field NaN->None) must not overwrite a good stored bar
+    with NULLs. It carries no data, so it is a complete no-op: nothing inserted, nothing
+    rebased, stored values intact."""
+    stock = make_stock(db_session, "NULLGLITCH")
+    repo.upsert_daily_prices(db_session, stock.id, _bars(5, 1))
+    db_session.commit()
+
+    counts: dict = {}
+    inserted = repo.upsert_daily_prices(db_session, stock.id, [
+        {"date": date(2026, 1, 5), "open": None, "high": None,
+         "low": None, "close": None, "volume": None},
+    ], counts=counts)
+    db_session.commit()
+    assert inserted == 0
+    assert counts.get("bars_rebased", 0) == 0
+    bar = db_session.scalar(select(DailyPrice).where(DailyPrice.stock_id == stock.id))
+    assert (bar.open, bar.high, bar.low, bar.close, bar.volume) == (
+        105.0, 110.0, 104.0, 107.0, 1005)
+
+
+def test_partial_row_corrects_carried_field_and_preserves_the_rest(db_session):
+    """A row with open=None but a genuinely changed close corrects the close and leaves
+    the stored open intact — coalesce writes the field it carries and preserves the rest."""
+    stock = make_stock(db_session, "PARTIAL")
+    repo.upsert_daily_prices(db_session, stock.id, _bars(5, 1))  # open=105.0, close=107.0
+    db_session.commit()
+
+    counts: dict = {}
+    inserted = repo.upsert_daily_prices(db_session, stock.id, [
+        {"date": date(2026, 1, 5), "open": None, "high": 110.0,
+         "low": 104.0, "close": 10.7, "volume": 1005},
+    ], counts=counts)
+    db_session.commit()
+    assert inserted == 0
+    assert counts["bars_rebased"] == 1
+    bar = db_session.scalar(select(DailyPrice).where(DailyPrice.stock_id == stock.id))
+    assert bar.open == 105.0     # preserved — incoming NULL never degrades it
+    assert bar.close == 10.7     # corrected
+
+
+def test_rebase_count_is_reported_to_the_caller(db_session):
+    """A rebase rewrites point-in-time research input. `log()` is a bare print, so
+    without an accumulator the only record is an ephemeral container log."""
+    stock = make_stock(db_session, "COUNTED")
+    repo.upsert_daily_prices(db_session, stock.id, _bars(1, 3))
+    db_session.commit()
+
+    counts: dict = {}
+    rebased = [dict(b, close=b["close"] / 10) for b in _bars(1, 3)]
+    repo.upsert_daily_prices(db_session, stock.id, rebased, counts=counts)
+    db_session.commit()
+    assert counts["bars_rebased"] == 3
+
+    # Insert-only work leaves the tally untouched.
+    repo.upsert_daily_prices(db_session, stock.id, _bars(10, 2), counts=counts)
+    db_session.commit()
+    assert counts["bars_rebased"] == 3

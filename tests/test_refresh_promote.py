@@ -149,3 +149,51 @@ def test_promote_false_leaves_new_status(db_session, monkeypatch):
     assert stats["new_snapshot"] == 1
     assert stats["promoted"] == 0
     assert _reload(db_session, "NOPROMO").status == "new"
+
+
+def test_refresh_records_rebased_bars_in_job_stats(db_session, monkeypatch):
+    """A corporate action rewrites stored history. That rewrite must leave a durable,
+    queryable record — stdout logs die with the container."""
+    from datetime import date
+    from sqlalchemy import select as sa_select
+    from db.models import JobRun
+    from engine.repo import upsert_daily_prices
+
+    stock = make_stock(db_session, "REBASED")
+    bars = [{"date": date(2026, 1, 5), "open": 1000.0, "high": 1010.0,
+             "low": 990.0, "close": 1000.0, "volume": 1}]
+    upsert_daily_prices(db_session, stock.id, bars)
+    db_session.commit()
+
+    split = [dict(bars[0], open=100.0, high=101.0, low=99.0, close=100.0)]
+    monkeypatch.setattr(yfr, "fetch_payload",
+                        lambda sym: ({**yf_payload(), "_price_rows": split}, "full"))
+    stats = yfr.refresh(symbols=["REBASED"], delay=0, verbose=False)
+
+    assert stats["bars_rebased"] == 1
+    job = db_session.scalar(
+        sa_select(JobRun).where(JobRun.job_type == "refresh")
+        .order_by(JobRun.id.desc()).limit(1)
+    )
+    assert job.stats["bars_rebased"] == 1
+
+
+def test_backfill_records_rebased_bars_without_inflating_added(db_session, monkeypatch):
+    """The backfill path also corrects rebased bars; that must be tallied under
+    bars_rebased, not counted as bars_added."""
+    from datetime import date
+    from engine.repo import upsert_daily_prices
+
+    stock = make_stock(db_session, "BFREBASE", status="active")
+    bars = [{"date": date(2026, 1, 5), "open": 1000.0, "high": 1010.0,
+             "low": 990.0, "close": 1000.0, "volume": 1}]
+    upsert_daily_prices(db_session, stock.id, bars)
+    db_session.commit()
+
+    split = [dict(bars[0], open=100.0, high=101.0, low=99.0, close=100.0)]
+    monkeypatch.setattr(yfr, "safe_fetch", lambda fn, *a, **k: None)
+    monkeypatch.setattr(yfr, "_price_rows", lambda hist: split)
+    stats = yfr.backfill_prices(symbols=["BFREBASE"], delay=0, verbose=False)
+
+    assert stats["bars_rebased"] == 1
+    assert stats["bars_added"] == 0

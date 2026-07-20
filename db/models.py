@@ -135,11 +135,13 @@ class DailyPrice(Base):
     """Daily OHLCV bar — the price-chart time series.
 
     Populated from the full yfinance history already pulled during refresh (which
-    was previously summarized and discarded). Append-only by (stock_id, date):
-    new trading days are inserted, existing ones left untouched. Deliberately NOT
-    exposed as an ORM collection on Stock — a single name can carry thousands of
-    bars, so all access is via explicit date-bounded queries. FK ondelete=CASCADE
-    handles cleanup when a stock is removed.
+    was previously summarized and discarded). Corrective upsert by (stock_id, date):
+    new trading days are inserted (the upsert returns the inserted count) and provider
+    corrections — e.g. a corporate-action rebase — rewrite the existing bar in place; an
+    incoming NULL never degrades a stored value. Deliberately NOT exposed as an ORM
+    collection on Stock — a single name can carry thousands of bars, so all access is via
+    explicit date-bounded queries. FK ondelete=CASCADE handles cleanup when a stock is
+    removed.
     """
 
     __tablename__ = "daily_prices"
@@ -163,9 +165,11 @@ class DailyPrice(Base):
 class IndexPrice(Base):
     """Daily OHLCV bar for a benchmark index (e.g. ^CNXSC Nifty Smallcap 250).
 
-    The backtest's excess-return comparator. Append-only by (symbol, date), same
-    discipline as daily_prices: new trading days insert, existing rows are never
-    rewritten. Indexes are not stocks — no FK, the yfinance symbol is the key.
+    The backtest's excess-return comparator. Corrective upsert by (symbol, date), same
+    discipline as daily_prices: new trading days insert (the upsert returns the inserted
+    count) and provider corrections rewrite the existing bar in place; an incoming NULL
+    never degrades a stored value. Indexes are not stocks — no FK, the yfinance symbol is
+    the key.
     """
 
     __tablename__ = "index_prices"

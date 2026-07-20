@@ -10,7 +10,7 @@ genuine source limit never masquerades as an F we could fix.
 Correctness NEVER mutates data: mismatches become flags for human review (decision #3).
 """
 
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 
 from sqlalchemy import func, select
 
@@ -83,16 +83,28 @@ def _price_coverage(session, stock_id):
 # signature of an unadjusted split (1:2 = -50%, 1:10 = -90%).
 CLIFF_BAND = (-0.35, 0.55)
 
+# Only cliffs inside this trailing window are reported. A cliff matters when a consumer
+# can read across it: the backtest anchors a cohort on its information_date and measures
+# forward returns out to 126 trading days (~6 calendar months), and the analysis prompt
+# reads a trailing 52-week window of the same series. The 6-month leg runs forward
+# (toward newer bars), so the OLDEST bar any consumer reads across is (oldest live
+# information_date - 1y). Three years therefore leaves room for two full years
+# (3y - 1y) of accumulated cohort history beyond today's oldest analysis before the
+# window could ever clip a relevant cliff.
+#
+# Without the floor the flag is noise: two-thirds of production's cliffs are pre-2010
+# Yahoo adjusted-close artifacts — including a single-day cluster of 159 bars in 2005 —
+# that no study or prompt can touch, and they bury the handful that are actionable.
+CLIFF_LOOKBACK = timedelta(days=3 * 365)
 
-def _price_cliffs(session, stock_id):
-    """Adjacent-day moves outside CLIFF_BAND, as (count, latest_date, latest_return),
-    or None when the series is clean.
 
-    Reports the most RECENT cliff, not the largest. The backtest anchors on
-    information_date and measures 1w-6m forward returns, so it only ever reads recent
-    bars — while the largest move in a long series is usually a pre-2005 adjusted-close
-    artifact that no study will touch. Ranking by magnitude would let that ancient noise
-    mask the recent unadjusted split that actually corrupts a live study.
+def _price_cliffs(session, stock_id, floor):
+    """Adjacent-day moves outside CLIFF_BAND on or after `floor`, as
+    (count, latest_date, latest_return), or None when the series is clean.
+
+    Reports the most RECENT cliff, not the largest: within the window the largest move
+    is still usually an artifact, while the recent unadjusted split is what corrupts a
+    live study. Ranking by magnitude would let the former mask the latter.
 
     Bars with a non-positive previous close are skipped: those same artifacts leave
     negative closes in old history, and a ratio against a negative base is meaningless —
@@ -110,7 +122,9 @@ def _price_cliffs(session, stock_id):
     ret = (series.c.close / series.c.prev - 1).label("ret")
     cliffs = (
         select(series.c.date, ret)
-        .where(series.c.prev > 0, series.c.close.isnot(None),
+        # The lag runs over the whole series, so a cliff on the first in-window bar
+        # still compares against its true predecessor; only the report is windowed.
+        .where(series.c.date >= floor, series.c.prev > 0, series.c.close.isnot(None),
                (ret < CLIFF_BAND[0]) | (ret > CLIFF_BAND[1]))
         .subquery()
     )
@@ -303,7 +317,8 @@ def score_stock(session, stock, as_of=None) -> dict:
     yf = latest_snapshot(session, stock.id, source="yfinance")
     scr = latest_snapshot(session, stock.id, source="screener")
     n_prices, last_bar = _price_coverage(session, stock.id)
-    cliff = _price_cliffs(session, stock.id) if n_prices else None
+    cliff = (_price_cliffs(session, stock.id, as_of.date() - CLIFF_LOOKBACK)
+             if n_prices else None)
     yf_viable, scr_viable = _viability(yf, scr)
     source_dark = not yf_viable and not scr_viable
 

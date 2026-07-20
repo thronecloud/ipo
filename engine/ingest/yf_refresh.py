@@ -109,7 +109,7 @@ def fetch_payload(yf_symbol):
     return payload, _quality(info, financials, balance_sheet, cashflow, history)
 
 
-def refresh_one(session, stock: Stock) -> str:
+def refresh_one(session, stock: Stock, counts=None) -> str:
     if not stock.yf_symbol:
         return "no_symbol"
     # Record the attempt regardless of outcome — freshness tracks attempts, not just
@@ -133,8 +133,8 @@ def refresh_one(session, stock: Stock) -> str:
         source="yfinance", fetch_status="success",
         data_quality=quality, ipo_data=ipo_data,
     )
-    # Append-only; idempotent whether or not the snapshot itself was new.
-    upsert_daily_prices(session, stock.id, price_rows)
+    # Idempotent whether or not the snapshot itself was new.
+    upsert_daily_prices(session, stock.id, price_rows, counts)
     return "new_snapshot" if created else "unchanged"
 
 
@@ -143,8 +143,9 @@ def backfill_prices(universe=None, symbols=None, statuses=("active", "new"),
     """Populate daily_prices for a set of stocks WITHOUT creating snapshots.
 
     Decoupled from the snapshot/analysis pipeline: it fetches only yfinance
-    history and appends new OHLCV bars. Safe to run alongside analysis — it never
-    changes a stock's latest snapshot hash, so it can't retrigger staleness.
+    history, inserting new OHLCV bars and correcting any the provider has since
+    rebased. Safe to run alongside analysis — it never changes a stock's latest
+    snapshot hash, so it can't retrigger staleness.
     """
     _t = universe or (symbols and f"{len(symbols)} symbols") or "all"
     with job_run("backfill_prices", target=_t) as (session, stats):
@@ -159,7 +160,8 @@ def backfill_prices(universe=None, symbols=None, statuses=("active", "new"),
         if limit:
             stocks = stocks[:limit]
 
-        counts = {"stocks": 0, "bars_added": 0, "no_symbol": 0, "error": 0, "no_history": 0}
+        counts = {"stocks": 0, "bars_added": 0, "bars_rebased": 0, "no_symbol": 0,
+                  "error": 0, "no_history": 0}
         for i, stock in enumerate(stocks):
             if not stock.yf_symbol:
                 counts["no_symbol"] += 1
@@ -172,7 +174,7 @@ def backfill_prices(universe=None, symbols=None, statuses=("active", "new"),
             if not rows:
                 counts["no_history"] += 1
             else:
-                counts["bars_added"] += upsert_daily_prices(session, stock.id, rows)
+                counts["bars_added"] += upsert_daily_prices(session, stock.id, rows, counts)
             counts["stocks"] += 1
             session.commit()
             if verbose:
@@ -210,10 +212,11 @@ def refresh(universe=None, symbols=None, statuses=("active", "new"), promote=Tru
             stocks = stocks[:limit]
 
         counts = {"new_snapshot": 0, "unchanged": 0, "no_symbol": 0, "error": 0,
-                  "promoted": 0, "unfetchable": 0, "parked": 0, "revived": 0, "soft_fail": 0}
+                  "promoted": 0, "unfetchable": 0, "parked": 0, "revived": 0,
+                  "soft_fail": 0, "bars_rebased": 0}
         for i, stock in enumerate(stocks):
             was_new = stock.status == "new"
-            res = refresh_one(session, stock)
+            res = refresh_one(session, stock, counts)
             key = "error" if res.startswith("error") else res
             counts[key] = counts.get(key, 0) + 1
 

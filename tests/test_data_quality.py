@@ -431,13 +431,69 @@ def test_negative_close_does_not_produce_a_cliff(db_session):
 
 
 def test_cliff_reports_the_recent_one_not_the_largest(db_session):
-    """An ancient adjusted-close artifact must not mask the recent unadjusted split.
-    Studies only read recent bars, so recency — not magnitude — is what to surface."""
+    """A large early artifact must not mask the later unadjusted split. Studies read
+    the most recent bars, so recency — not magnitude — is what to surface."""
     st = _priced_stock(db_session, "OLDNOISE",
-                       [1.0, 5000.0, 5050.0, 5000.0, 500.0], start=date(2004, 3, 1))
+                       [1.0, 5000.0, 5050.0, 5000.0, 500.0], start=date(2026, 3, 1))
     rep = score_stock(db_session, st)
     flag = _flag(rep, "price_cliff")
     assert flag is not None
-    assert "2004-03-05" in flag["detail"]      # the latest cliff, the 1:10 drop
+    assert "2026-03-05" in flag["detail"]      # the latest cliff, the 1:10 drop
     assert "-90.0%" in flag["detail"]
     assert flag["detail"].startswith("2 impossible")  # both counted
+
+
+def test_cliff_outside_the_lookback_window_is_not_flagged(db_session):
+    """A pre-2010 adjusted-close artifact sits far outside any window a study or a
+    persona prompt can read. Flagging it buries the cliffs that are actionable."""
+    st = _priced_stock(db_session, "ANCIENT",
+                       [1000.0, 1010.0, 1005.0, 100.0, 102.0], start=date(2005, 7, 25))
+    rep = score_stock(db_session, st)
+    assert _flag(rep, "price_cliff") is None
+
+
+def test_cliff_on_first_in_window_bar_uses_predecessor_outside_window(db_session):
+    """The window bounds the REPORT, not the lag. A cliff on the very first in-window
+    bar must still be computed against its true predecessor, even when that predecessor
+    sits one day outside the window. (Filtering before the lag would strip the
+    predecessor and hide the cliff.)"""
+    from datetime import timedelta
+    from engine.quality.dimensions import CLIFF_LOOKBACK
+    from engine.repo import upsert_daily_prices
+    st = make_stock(db_session, "BOUNDARY", isin="INEBOUNDARY", sector="X",
+                    industry="Y", cap_category="small")
+    _yf(db_session, st)
+    _screener(db_session, st)
+    floor = date.today() - CLIFF_LOOKBACK
+    upsert_daily_prices(db_session, st.id, [
+        {"date": floor - timedelta(days=1), "open": 1000.0, "high": 1000.0,
+         "low": 1000.0, "close": 1000.0, "volume": 100},  # predecessor, just out of window
+        {"date": floor, "open": 100.0, "high": 100.0,
+         "low": 100.0, "close": 100.0, "volume": 100},     # first in-window bar: -90%
+    ])
+    db_session.commit()
+    rep = score_stock(db_session, st)
+    flag = _flag(rep, "price_cliff")
+    assert flag is not None
+    assert "-90.0%" in flag["detail"]
+
+
+def test_cliff_count_covers_only_the_lookback_window(db_session):
+    """A stock with both ancient and recent cliffs still flags — but the count
+    describes the actionable ones, so the number is one a human can act on."""
+    from datetime import timedelta
+    from engine.repo import upsert_daily_prices
+    st = _priced_stock(db_session, "MIXEDAGE",
+                       [1000.0, 1010.0, 1005.0, 100.0, 102.0], start=date(2005, 7, 25))
+    recent = date.today() - timedelta(days=30)
+    upsert_daily_prices(db_session, st.id, [
+        {"date": recent + timedelta(days=i), "open": c, "high": c,
+         "low": c, "close": c, "volume": 100}
+        for i, c in enumerate([100.0, 102.0, 10.0])
+    ])
+    db_session.commit()
+    rep = score_stock(db_session, st)
+    flag = _flag(rep, "price_cliff")
+    assert flag is not None
+    assert flag["detail"].startswith("1 impossible")   # the 2005 drop is excluded
+    assert str(recent + timedelta(days=2)) in flag["detail"]

@@ -1,6 +1,6 @@
 """Benchmark index ingestion: keep index_prices current for the backtest.
 
-Same append-only discipline as stock daily_prices, but keyed by yfinance symbol
+Same corrective-upsert discipline as stock daily_prices, but keyed by yfinance symbol
 (indexes are not stocks — no Stock row, no snapshot, no analysis). The fetcher is
 isolated in `_fetch_history_rows` so tests monkeypatch it and nothing here ever
 hits the network in CI.
@@ -34,16 +34,17 @@ def _fetch_history_rows(symbol: str) -> list[dict]:
 
 
 def refresh_index_prices(symbols=None, delay=FETCH_DELAY, verbose=True):
-    """Fetch full history for each benchmark and append any new bars."""
+    """Fetch full history for each benchmark, adding new bars and correcting any the
+    provider has since revised."""
     targets = list(symbols) if symbols else list(BENCHMARKS)
     with job_run("index_prices", target=",".join(targets)) as (session, stats):
-        counts = {"indexes": 0, "bars_added": 0, "no_history": 0}
+        counts = {"indexes": 0, "bars_added": 0, "bars_rebased": 0, "no_history": 0}
         for i, symbol in enumerate(targets):
             rows = _fetch_history_rows(symbol)
             if not rows:
                 counts["no_history"] += 1
             else:
-                counts["bars_added"] += upsert_index_prices(session, symbol, rows)
+                counts["bars_added"] += upsert_index_prices(session, symbol, rows, counts)
                 counts["indexes"] += 1
             session.commit()
             if verbose:
