@@ -132,7 +132,11 @@ services:
     container_name: ipo_backup
     restart: unless-stopped
     environment:
-      PGPASSWORD: ipo
+      PGHOST: db
+      PGPASSWORD: ${POSTGRES_PASSWORD:-ipo}
+      NTFY_TOPIC: ${NTFY_TOPIC:-}
+      POSTGRES_USER: ipo
+      POSTGRES_DB: ipo
     volumes:
       - ./backups:/backups
       - ./scripts/backup/backup.sh:/backup.sh:ro
