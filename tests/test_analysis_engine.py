@@ -202,3 +202,15 @@ def test_prompt_price_is_as_of_the_requested_date(db_session):
 
     assert "Current Price: INR 150" in prompt
     assert "250" not in prompt
+
+
+def test_prompt_falls_back_to_regular_market_price_when_that_is_all_there_is(db_session):
+    """Production carries snapshots whose only quote field is regularMarketPrice."""
+    stock = make_stock(db_session, "RMPONLY")
+    payload = yf_payload(price=100.0)
+    payload["info"].pop("currentPrice")
+    snap, _ = add_snapshot(db_session, stock, payload, extract_columns(payload["info"]),
+                           data_quality="full", captured_at=utc())
+    db_session.commit()
+
+    assert "Current Price: INR 100" in build_user_prompt(db_session, stock, snap)

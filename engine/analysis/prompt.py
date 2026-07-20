@@ -125,6 +125,12 @@ _SCALES_INVERSELY = ("dividendYield",)
 _EV_MULTIPLES = ("enterpriseToEbitda", "enterpriseToRevenue")
 
 
+def snapshot_price(info: dict) -> float | None:
+    """The quote the snapshot's own multiples were computed against."""
+    return (_num(info.get("currentPrice")) or _num(info.get("regularMarketPrice"))
+            or _num(info.get("previousClose")))
+
+
 def reprice(info: dict, price: float | None) -> dict:
     """Restate every price-derived figure in `info` at `price`.
 
@@ -133,8 +139,7 @@ def reprice(info: dict, price: float | None) -> dict:
     stale, because the persona cannot tell which number to trust.
     """
     out = dict(info)
-    base = (_num(info.get("currentPrice")) or _num(info.get("regularMarketPrice"))
-            or _num(info.get("previousClose")))
+    base = snapshot_price(info)
     if price is None:
         return out
     out["currentPrice"] = price
@@ -174,7 +179,7 @@ def build_user_prompt(session, stock, snap, screener_snap=None,
     sd = snapshot_to_stock_data(stock, snap)
     ipo = sd["ipo_data"]
 
-    price = latest_close(session, stock.id, as_of) or _num(snap.info.get("currentPrice") if snap.info else None)
+    price = latest_close(session, stock.id, as_of) or snapshot_price(sd["info"])
     info = sd["info"] = reprice(sd["info"], price)
 
     current_price = round(price, 2) if price is not None else "N/A"
