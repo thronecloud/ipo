@@ -4,8 +4,15 @@
 
 1. `git clone https://github.com/thronecloud/ipo.git && cd ipo && git checkout living-engine`
    (main is stale; everything lives on living-engine).
-2. **Copy `backups/ipo_migration_20260719.dump`** (243 MB, NOT in git) from the old
-   machine into `backups/`. All data — 2,657 stocks, 6.5M bars, 5,567 analyses — is in it.
+2. **Copy `backups/ipo_migration_20260719.dump`** (243 MB, NOT in git) into `backups/`.
+   All data — 2,657 stocks, 6.5M bars, 5,567 analyses — is in it. A copy is parked on
+   the owner's Hetzner box (root@46.62.236.46, key `~/.ssh/pclaw2026hertzner`):
+   ```
+   scp root@46.62.236.46:/root/ipo-transfer/ipo_migration_20260719.dump backups/
+   ```
+   (sha256 recorded in the transfer session; verify after download. NOTE: the
+   `hetzner-canton` ssh-config entry points at a stale rebuilt host — the live box
+   is 46.62.236.46.)
 3. `docker compose up -d --build` — that's it. The db container **auto-restores the
    newest `backups/ipo_*.dump` on first boot** (scripts/db-init/, verified end-to-end
    2026-07-19: fresh volume → full restore incl. alembic head 53de03c90075). Web :3000,
