@@ -61,9 +61,12 @@ take_backup() {
     return 1
   fi
 
-  # A dump we cannot list is a dump we cannot restore. Never promote it.
-  if ! pg_restore -l "$tmp" >/dev/null 2>&1; then
-    FAIL_REASON="dump did not verify (pg_restore -l could not read it)"
+  # A dump we cannot read end to end is a dump we cannot restore. `-l` reads
+  # only the TOC at the head of the archive, so a truncated dump — the exact
+  # shape a full disk produces — lists cleanly and exits 0. `-f /dev/null`
+  # decodes every entry and fails on the short read.
+  if ! pg_restore -f /dev/null "$tmp" >/dev/null 2>&1; then
+    FAIL_REASON="dump did not verify (pg_restore could not read it end to end)"
     rm -f "$tmp"
     return 1
   fi

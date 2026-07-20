@@ -3,8 +3,28 @@
 # runs /docker-entrypoint-initdb.d on a fresh data dir), restore the newest
 # custom-format dump from /backups. Turns machine migration into:
 #   git clone && copy backups/ && docker compose up -d
-# Existing volumes are never touched — this script simply doesn't run again.
+# The entrypoint only runs this on a fresh volume, so a populated volume is
+# never seeded twice. It is NOT inert if invoked by hand against a running
+# container: restoring into a populated database fails, which takes the abort
+# path below. That path is what makes the guard in first_boot_only() mandatory.
 set -euo pipefail
+
+# The entrypoint's first-boot temp server is socket-only (-c listen_addresses='');
+# a server serving real traffic is not. Empty here means "this process is the
+# initialization the data directory is being created by", which is the only
+# situation in which discarding that data directory is a repair rather than a
+# deletion. Anything else — including a probe we cannot run — is a refusal.
+first_boot_only() {
+  local addrs
+  if ! addrs=$(psql --username "$POSTGRES_USER" --dbname postgres -tAc 'SHOW listen_addresses'); then
+    echo "[db-init] cannot confirm this is first-boot init — refusing to touch $PGDATA" >&2
+    exit 1
+  fi
+  if [ -n "$addrs" ]; then
+    echo "[db-init] not running under first-boot init — refusing to touch $PGDATA" >&2
+    exit 1
+  fi
+}
 
 # A failed init script still leaves the initdb-created cluster on disk, so the
 # next boot sees PG_VERSION, skips initialization, and serves an EMPTY database
@@ -13,8 +33,17 @@ set -euo pipefail
 # the restore is retried on every restart instead of silently giving up.
 abort() {
   echo "[db-init] FATAL: $*" >&2
+  first_boot_only
   echo "[db-init] Refusing to leave a partial database; discarding the data directory." >&2
   rm -rf "${PGDATA:?PGDATA unset}"/* "${PGDATA:?}"/.[!.]* 2>/dev/null || true
+  # Removing only some of it is the worst outcome: without PG_VERSION the next
+  # boot re-runs initdb, which refuses a non-empty directory and crash-loops on
+  # an error that names neither this script nor the restore.
+  if [ -n "$(ls -A "$PGDATA" 2>/dev/null)" ]; then
+    echo "[db-init] FATAL: could not clear $PGDATA; it is now partially removed and" >&2
+    echo "[db-init] must be emptied by hand before this container will start." >&2
+    exit 1
+  fi
   exit 1
 }
 
