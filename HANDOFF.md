@@ -1,4 +1,45 @@
-# HANDOFF — WisdomInvest living engine (session state, updated 2026-07-06)
+# HANDOFF — WisdomInvest living engine (session state, updated 2026-07-19)
+
+## MIGRATING TO A NEW SYSTEM — do this first
+
+1. **Clone + branch**: `git clone https://github.com/thronecloud/ipo.git && cd ipo && git checkout living-engine` (main is stale; everything lives on living-engine).
+2. **Copy the DB dump** (NOT in git — 243 MB): carry `backups/ipo_migration_20260719.dump`
+   from the old machine (AirDrop/drive). It contains all 2,647 stocks, 6.5M price bars,
+   ~5.6K analyses, scores, history — without it the engine starts empty.
+3. **Create `.env`** (gitignored; no secrets beyond local DB creds):
+   ```
+   DATABASE_URL=postgresql+psycopg://ipo:ipo@localhost:5432/ipo
+   ANALYSIS_BACKEND=cli
+   ANALYSIS_MODEL=claude-fable-5
+   ```
+4. **Start stack + restore**:
+   ```
+   docker compose up -d db
+   docker cp backups/ipo_migration_20260719.dump ipo_postgres:/tmp/r.dump
+   docker exec ipo_postgres pg_restore -U ipo -d ipo --clean --if-exists /tmp/r.dump
+   docker compose up -d          # api :8000, web :3000, scheduler, backup
+   ```
+5. **Python env**: `python3.10 -m venv .venv && .venv/bin/pip install -r requirements.txt`
+   (tests create their own throwaway `ipo_test` DB; run `PATH="$PWD/.venv/bin:$PATH"
+   .venv/bin/python -m pytest tests/ -q` → expect 189 passed).
+6. **Claude CLI**: install Claude Code + login (Max plan). Analysis uses `claude -p`;
+   scheduler analyze stays dormant until `CLAUDE_CODE_OAUTH_TOKEN` is set in compose env
+   (`claude setup-token`). Usage windows cap ~300-360 pairs; probe quota before big runs.
+7. `alembic heads` == DB revision already (restored dump carries schema at 53de03c90075).
+
+## 2026-07-06→19 additions (all committed)
+
+- **Web auto-refresh**: Discovery/TopBar silently refetch every 60s while visible
+  (stale-tab fix — `useAsync(..., {refreshMs})`).
+- **Owner research artifacts**: Google Sheet "IPO 2026 Analysis Board — FINAL (109/109)"
+  (in priyeshu1@gmail.com Drive); SEDEMAC Q4FY26 deck reviewed — corrigendum restated
+  customer concentration 49%→58% (single customer likely ⅔ of revenue); thesis: best
+  business in vintage, wrong price at ~120x; accumulate on derating; checkpoints =
+  Q1FY27 ISG launches, MF3 plant Q2FY27, annual-report concentration disclosure.
+- **Top-5 thematic picks delivered** (grid/electrification capex = dominant tailwind):
+  AVANA, SEDEMAC (on derating), VIVIDEL, OMPOWER (watch OCF), TIPCO. AI: only FRACTAL
+  is institutional-scale, services economics. CLEANMAX: real tailwind, levered equity.
+- Fresh migration dump: `backups/ipo_migration_20260719.dump` (2026-07-19).
 
 ## 2026-07-06: ipo_2026 universe COMPLETE (109/109, single-model councils)
 
