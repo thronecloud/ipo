@@ -49,21 +49,21 @@ def _result(score=7):
 def test_recent_ipo_universe_gets_context_block(db_session):
     stock = make_stock(db_session, "RIPO1", universe=["ipo_2026"])
     snap = _snap(db_session, stock)
-    prompt = build_user_prompt(stock, snap)
+    prompt = build_user_prompt(db_session, stock, snap)
     assert RECENT_IPO_CONTEXT.strip() in prompt
 
 
 def test_recent_listing_date_gets_context_block(db_session):
     stock = make_stock(db_session, "RIPO2", listing_date="2026-03-15")
     snap = _snap(db_session, stock)
-    assert RECENT_IPO_CONTEXT.strip() in build_user_prompt(stock, snap)
+    assert RECENT_IPO_CONTEXT.strip() in build_user_prompt(db_session, stock, snap)
 
 
 def test_seasoned_stock_has_no_recency_block(db_session):
     stock = make_stock(db_session, "OLD1", universe=["nse_smallcap"],
                        listing_date="2010-05-01")
     snap = _snap(db_session, stock)
-    assert RECENT_IPO_CONTEXT.strip() not in build_user_prompt(stock, snap)
+    assert RECENT_IPO_CONTEXT.strip() not in build_user_prompt(db_session, stock, snap)
 
 
 def test_prompt_version_bumped():

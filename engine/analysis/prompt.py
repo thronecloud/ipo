@@ -1,8 +1,12 @@
 """Build the per-stock user prompt from a DB snapshot (reuses the proven formatters)."""
 
 import re
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
 
+from sqlalchemy import select
+
+from db.models import DailyPrice
+from engine.repo import _num
 from src.analyze import build_financial_summary, format_currency
 from src.personas import ANALYSIS_PROMPT_TEMPLATE
 
@@ -65,8 +69,13 @@ def format_screener(sc: dict) -> str:
     lines = []
     ratios = sc.get("ratios", {})
     if ratios:
-        keep = ["Stock P/E", "ROCE", "ROE", "Debt to equity", "Dividend Yield",
-                "Book Value", "Market Cap", "Current Price", "High / Low"]
+        # Price-derived ratios (Current Price, Market Cap, Stock P/E) are
+        # deliberately absent: the screener scrape is timed independently of the
+        # quote the prompt states, so including them puts two contradictory
+        # prices in front of the persona. The yfinance block carries those,
+        # restated at the quoted price. What is unique here is the history.
+        keep = ["ROCE", "ROE", "Debt to equity", "Dividend Yield",
+                "Book Value", "High / Low"]
         r = [f"{k}: {ratios[k]}" for k in keep if k in ratios]
         if r:
             lines.append("Key ratios — " + " | ".join(r))
@@ -94,19 +103,88 @@ def format_screener(sc: dict) -> str:
     return "\n\n=== SCREENER FUNDAMENTALS (multi-year history) ===\n" + "\n".join(lines)
 
 
-def build_user_prompt(stock, snap, screener_snap=None) -> str:
+def latest_close(session, stock_id: int, as_of: date | None = None) -> float | None:
+    """Most recent stored close, optionally bounded to a point in time.
+
+    daily_prices is refreshed nightly; a snapshot's quote fields are not, because
+    compute_content_hash deliberately excludes them so daily churn does not
+    re-trigger analysis. `as_of` bounds the lookup so re-running an analysis over
+    a historical date cannot quote a price that had not happened yet.
+    """
+    q = select(DailyPrice.close).where(DailyPrice.stock_id == stock_id)
+    if as_of is not None:
+        q = q.where(DailyPrice.date <= as_of)
+    return session.scalar(q.order_by(DailyPrice.date.desc()).limit(1))
+
+
+# Ratios that move linearly with the share price, given the same share count and
+# the same trailing earnings / book / sales denominators.
+_SCALES_WITH_PRICE = ("marketCap", "trailingPE", "forwardPE", "priceToBook",
+                      "priceToSalesTrailing12Months")
+_SCALES_INVERSELY = ("dividendYield",)
+_EV_MULTIPLES = ("enterpriseToEbitda", "enterpriseToRevenue")
+
+
+def reprice(info: dict, price: float | None) -> dict:
+    """Restate every price-derived figure in `info` at `price`.
+
+    Quoting a fresh price beside multiples computed from the snapshot's old one
+    leaves the prompt internally inconsistent — arguably worse than uniformly
+    stale, because the persona cannot tell which number to trust.
+    """
+    out = dict(info)
+    base = (_num(info.get("currentPrice")) or _num(info.get("regularMarketPrice"))
+            or _num(info.get("previousClose")))
+    if price is None:
+        return out
+    out["currentPrice"] = price
+    out["regularMarketPrice"] = price
+    if not base or base == price:
+        return out
+
+    k = price / base
+    for field in _SCALES_WITH_PRICE:
+        v = _num(info.get(field))
+        if v is not None:
+            out[field] = v * k
+    for field in _SCALES_INVERSELY:
+        v = _num(info.get(field))
+        if v:
+            out[field] = v / k
+
+    # Only the equity leg of enterprise value moves; net debt is unchanged.
+    ev, mcap = _num(info.get("enterpriseValue")), _num(info.get("marketCap"))
+    if ev and mcap:
+        ev_new = ev + mcap * (k - 1)
+        out["enterpriseValue"] = ev_new
+        for field in _EV_MULTIPLES:
+            v = _num(info.get(field))
+            if v is None:
+                continue
+            # A repriced EV that crosses zero makes its multiples meaningless —
+            # drop them rather than hand the persona a nonsense figure.
+            out[field] = v * ev_new / ev if ev > 0 and ev_new > 0 else None
+            if out[field] is None:
+                out.pop(field)
+    return out
+
+
+def build_user_prompt(session, stock, snap, screener_snap=None,
+                      as_of: date | None = None) -> str:
     sd = snapshot_to_stock_data(stock, snap)
-    info = sd["info"]
     ipo = sd["ipo_data"]
 
-    current_price = info.get("currentPrice") or info.get("regularMarketPrice") or "N/A"
+    price = latest_close(session, stock.id, as_of) or _num(snap.info.get("currentPrice") if snap.info else None)
+    info = sd["info"] = reprice(sd["info"], price)
+
+    current_price = round(price, 2) if price is not None else "N/A"
     issue_price = ipo.get("issue_price") or stock.issue_price
 
     ipo_return = "N/A"
-    if ipo.get("ipo_return_pct") is not None:
+    if price is not None and issue_price:
+        ipo_return = f"{round((price - issue_price) / issue_price * 100, 1)}%"
+    elif ipo.get("ipo_return_pct") is not None:
         ipo_return = f"{ipo.get('ipo_return_pct')}%"
-    elif isinstance(current_price, (int, float)) and issue_price:
-        ipo_return = f"{round((current_price - issue_price) / issue_price * 100, 1)}%"
 
     base = ANALYSIS_PROMPT_TEMPLATE.format(
         company_name=info.get("longName") or ipo.get("company_name") or stock.company_name or stock.symbol,

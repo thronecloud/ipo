@@ -102,7 +102,7 @@ def run_incremental(personas=None, universe=None, symbols=None, model=None, forc
         i = -1
         for gi, (stock, snap, slugs) in enumerate(groups):
             screener_snap = latest_snapshot(session, stock.id, source="screener")
-            user_prompt = build_user_prompt(stock, snap, screener_snap)
+            user_prompt = build_user_prompt(session, stock, snap, screener_snap)
 
             # Fire this stock's personas concurrently; collect (kind, payload)
             # so backend exceptions surface per-pair, never abort the batch.
