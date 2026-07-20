@@ -16,11 +16,11 @@ from alembic.autogenerate import compare_metadata
 from alembic.migration import MigrationContext
 from sqlalchemy import create_engine
 
-from conftest import PG_HOST, PG_PORT, PROJECT_ROOT
+from conftest import PARITY_DB_NAME, PG_HOST, PG_PORT, PROJECT_ROOT
 from db.base import Base
 import db.models  # noqa: F401  (populate Base.metadata)
 
-PARITY_DB = "ipo_migparity"
+PARITY_DB = PARITY_DB_NAME
 ADMIN_DSN = f"dbname=postgres user=ipo password=ipo host={PG_HOST} port={PG_PORT}"
 PARITY_URL = f"postgresql+psycopg://ipo:ipo@{PG_HOST}:{PG_PORT}/{PARITY_DB}"
 

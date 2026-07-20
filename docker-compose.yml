@@ -117,7 +117,9 @@ services:
 
   # One-shot containerized test run (no host Python needed):
   #   docker compose --profile test run --rm test
-  # Uses the same engine image; creates/drops its own ipo_test DB on `db`.
+  # Uses the same engine image; creates/drops its own ipo_test_<run id> DB on
+  # `db`. Unset TEST_RUN_ID means the suite picks a fresh id, so concurrent runs
+  # (one per worktree) never share a database; set it to pin a known name.
   test:
     image: wisdominvest-engine
     profiles: ["test"]
@@ -127,6 +129,7 @@ services:
     environment:
       TEST_PG_HOST: db
       TEST_PG_PORT: "5432"
+      TEST_RUN_ID: ${TEST_RUN_ID:-}
     volumes:
       - ./:/app
     depends_on:
