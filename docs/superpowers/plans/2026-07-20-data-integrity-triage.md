@@ -28,3 +28,5 @@ noted (deferred at task time, not yet addressed).
 | Q | Task 8 | `as_of` in `prompt.py` has no caller yet — Phase 4's historical re-run must wire it. | deferred (Phase 4) |
 | R | Task 8 | `test_prompt_version_bumped` asserts `v4`; the test name now misleads. | open |
 | S | Task 8 | `PROMPT_VERSION` stayed `v4` though task 8 materially changed the prompt — old and new output are indistinguishable in the corpus. Reviewer suggests stamping a `prompt_variant`/template hash. | open |
+| T | Task 10 | Prompt-side provenance unaddressed: imputed sector still reaches the LLM prompt unqualified (as if measured). Named in Task 10's Why, absent from its steps — the DB now records provenance but the prompt does not surface it. | open |
+| U | Task 10 | `'unknown'` provenance markers are unrecoverable without a re-measure path: gapfill writes a `_source` only when the value is absent, so no path ever upgrades an `'unknown'` (or `'screener'`) marker to `'yfinance'`/`'amfi'`. Clearing the backfilled `'unknown'` requires an active re-measure, which no job performs. | open |

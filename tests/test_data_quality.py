@@ -381,6 +381,133 @@ def test_gapfill_identity_copies_sector_from_yf(db_session):
     assert res["result"]["identity_filled"] >= 1
 
 
+# ---------- field provenance (imputed vs measured) ----------
+
+def test_gapfill_stamps_yfinance_source_on_copied_sector(db_session):
+    """A sector copied from yfinance info is measured — stamp it 'yfinance'."""
+    st = make_stock(db_session, "STAMPYF")  # no sector/industry
+    _yf(db_session, st)  # yf info carries sector=Healthcare industry=Drugs
+    audit(symbols=["STAMPYF"], verbose=False)
+    gapfill(targets=["identity"], symbols=["STAMPYF"], verbose=False)
+    db_session.expire_all()
+    from db.models import Stock
+    refreshed = db_session.scalar(select(Stock).where(Stock.symbol == "STAMPYF"))
+    assert refreshed.sector == "Healthcare"
+    assert refreshed.sector_source == "yfinance"
+    assert refreshed.industry_source == "yfinance"
+
+
+def test_gapfill_stamps_screener_source_on_classification_sector(db_session):
+    """A sector inferred from the screener breadcrumb is imputed, not measured —
+    it must be distinguishable from a yfinance value."""
+    st = make_stock(db_session, "STAMPSCR")  # no sector/industry, no yf snapshot
+    data = {"classification": ["Materials", "Chemicals", "Commodity Chemicals"],
+            "profit_loss": {"Sales": {"2025": 1}}}
+    add_snapshot(db_session, st, {"screener": data}, {}, source="screener",
+                 data_quality="full", captured_at=utc(-1))
+    db_session.commit()
+    audit(symbols=["STAMPSCR"], verbose=False)
+    gapfill(targets=["identity"], symbols=["STAMPSCR"], verbose=False)
+    db_session.expire_all()
+    from db.models import Stock
+    refreshed = db_session.scalar(select(Stock).where(Stock.symbol == "STAMPSCR"))
+    assert refreshed.sector == "Materials"
+    assert refreshed.sector_source == "screener"
+    assert refreshed.industry == "Commodity Chemicals"
+    assert refreshed.industry_source == "screener"
+
+
+def test_imputed_identity_scores_partial_credit_not_full(db_session):
+    """Gapfill must not be able to raise a stock's grade to the same level as
+    measured data — otherwise the audit validates its own guesses."""
+    from engine.quality import dimensions
+    measured = make_stock(db_session, "MEASURED", sector="Technology",
+                          sector_source="yfinance")
+    imputed = make_stock(db_session, "GUESSED", sector="Technology",
+                         sector_source="screener")
+    assert dimensions.identity_score(imputed) < dimensions.identity_score(measured)
+
+
+def test_identity_detail_names_imputed_fields(db_session):
+    """A fully-populated stock whose sources are imputed scores 'partial' — the
+    detail must say WHY (which fields are imputed), not read as a bare '4/4'."""
+    from engine.quality import dimensions
+    st = make_stock(db_session, "IMPDETAIL", isin="INE1", sector="Tech",
+                    industry="Software", cap_category="large",
+                    sector_source="screener", industry_source="screener",
+                    isin_source="yfinance")
+    dim = dimensions._identity(st, [])
+    assert dim["status"] == "partial"
+    assert dim["detail"].startswith("4/4 identity fields")
+    assert "2 imputed (sector, industry)" in dim["detail"]
+
+
+def test_amfi_isin_skipped_on_company_name_mismatch(db_session, monkeypatch):
+    """A flat AMFI symbol map collides NSE/BSE namespaces with last-wins overwrite.
+    Before trusting an ISIN — the universal identity key — the AMFI row's company
+    name must agree with the stock's; a mismatch is skipped and counted."""
+    import engine.quality.gapfill as gf
+    st = make_stock(db_session, "COLLIDE", company_name="Acme Industries Ltd")
+    _yf(db_session, st)
+    audit(symbols=["COLLIDE"], verbose=False)
+    monkeypatch.setattr(gf, "_amfi_identity_map", lambda: {
+        "COLLIDE": {"isin": "INE000WRONG01", "cap_category": "small",
+                    "company": "Zenith Textiles Limited"},
+    })
+    monkeypatch.setattr(gf, "dq_audit", lambda **kw: {})
+    res = gapfill(targets=["identity"], symbols=["COLLIDE"], verbose=False)
+    db_session.expire_all()
+    from db.models import Stock
+    refreshed = db_session.scalar(select(Stock).where(Stock.symbol == "COLLIDE"))
+    assert refreshed.isin is None                      # the wrong ISIN was refused
+    assert res.get("amfi_name_mismatch", 0) >= 1
+
+
+def test_amfi_isin_filled_on_company_name_match(db_session, monkeypatch):
+    """The guard must still let a genuine match through: agreeing company names
+    fill the ISIN and stamp it 'amfi'."""
+    import engine.quality.gapfill as gf
+    st = make_stock(db_session, "MATCHCO", company_name="Acme Chemicals Limited")
+    _yf(db_session, st)
+    audit(symbols=["MATCHCO"], verbose=False)
+    monkeypatch.setattr(gf, "_amfi_identity_map", lambda: {
+        "MATCHCO": {"isin": "INE222B02022", "cap_category": "small",
+                    "company": "Acme Chemicals Ltd"},
+    })
+    monkeypatch.setattr(gf, "dq_audit", lambda **kw: {})
+    gapfill(targets=["identity"], symbols=["MATCHCO"], verbose=False)
+    db_session.expire_all()
+    from db.models import Stock
+    refreshed = db_session.scalar(select(Stock).where(Stock.symbol == "MATCHCO"))
+    assert refreshed.isin == "INE222B02022"
+    assert refreshed.isin_source == "amfi"
+
+
+def test_names_agree_refuses_on_differing_second_token():
+    """Intentional strictness pending Task 11's dedicated AMFI matcher: when the
+    second significant token differs ('Tech' vs 'Technologies'), the names are
+    treated as disagreeing. Fail-safe direction — refusing a fill never corrupts
+    the identity key, whereas a loose match on the universal ISIN could."""
+    from engine.quality.gapfill import _names_agree
+    assert _names_agree("KFin Tech Ltd", "Kfin Technologies Limited") is False
+
+
+def test_amfi_ingest_stamps_isin_source(db_session, monkeypatch):
+    """The AMFI ingest write path must stamp isin_source='amfi', not just the ISIN
+    — otherwise an ingested ISIN is indistinguishable from an unknown one."""
+    import engine.ingest.amfi as amfi
+    rows = [{"company": "Acme Industries Ltd", "isin": "INE111A01011",
+             "nse_symbol": "ACMEIND", "bse_symbol": None,
+             "nse_mcap_cr": 500.0, "category": "small"}]
+    monkeypatch.setattr(amfi, "parse_amfi", lambda path: rows)
+    amfi.ingest_smallcaps("dummy.xlsx", "nse_smallcap_2026", verbose=False)
+    db_session.expire_all()
+    from db.models import Stock
+    st = db_session.scalar(select(Stock).where(Stock.symbol == "ACMEIND"))
+    assert st.isin == "INE111A01011"
+    assert st.isin_source == "amfi"
+
+
 # ---------- price cliff detection ----------
 
 def _priced_stock(db_session, symbol, closes, start=date(2026, 1, 5)):

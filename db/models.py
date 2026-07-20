@@ -59,6 +59,11 @@ class Stock(Base):
     yf_symbol: Mapped[str | None] = mapped_column(String(64))         # e.g. ATHERENERG.NS
     sector: Mapped[str | None] = mapped_column(String(128))
     industry: Mapped[str | None] = mapped_column(String(256))
+    # Provenance of the imputable identity fields: measured (yfinance/amfi) vs
+    # imputed (screener breadcrumb) vs unknown (predates provenance tracking).
+    sector_source: Mapped[str | None] = mapped_column(String(16))
+    industry_source: Mapped[str | None] = mapped_column(String(16))
+    isin_source: Mapped[str | None] = mapped_column(String(16))
     listing_date: Mapped[str | None] = mapped_column(String(32))
     issue_price: Mapped[float | None] = mapped_column(Float)
     ipo_mcap_cr: Mapped[float | None] = mapped_column(Float)

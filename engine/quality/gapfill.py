@@ -14,6 +14,7 @@ exactly what that audit flagged.
 
 import glob
 import os
+import re
 
 from sqlalchemy import select
 
@@ -46,8 +47,28 @@ def _amfi_identity_map() -> dict:
             if sym:
                 out[str(sym).upper()] = {
                     "isin": row["isin"], "cap_category": row["category"],
+                    "company": row["company"],
                 }
     return out
+
+
+# Exchange and provider company names differ in suffixes and punctuation. Compare
+# the first two significant tokens so a genuine match survives, while a
+# cross-namespace symbol collision (a different company entirely) is caught.
+_NAME_STOPWORDS = {"ltd", "limited", "the", "india", "industries", "company",
+                   "co", "pvt", "private"}
+
+
+def _name_tokens(s: str) -> list:
+    return [t for t in re.sub(r"[^a-z0-9 ]", " ", s.lower()).split()
+            if t not in _NAME_STOPWORDS][:2]
+
+
+def _names_agree(a, b) -> bool:
+    if not a or not b:
+        return True  # cannot disprove on missing data; do not block the fill
+    ta, tb = _name_tokens(a), _name_tokens(b)
+    return bool(ta) and bool(tb) and ta == tb
 
 
 def _latest_reports(session, symbols, universe):
@@ -65,12 +86,13 @@ def _latest_reports(session, symbols, universe):
     return session.execute(q).all()
 
 
-def _fill_identity(session, stocks) -> int:
+def _fill_identity(session, stocks, stats=None) -> int:
     """Populate Stock identity fields from already-stored/offline sources:
     sector/industry from the stock's yfinance info, falling back to the
     screener peers classification (the only source covering fresh listings);
     isin/cap_category from the newest AMFI xlsx. Fills only NULL fields —
-    never overwrites."""
+    never overwrites. Each write stamps its `_source` so an imputed value stays
+    distinguishable from a measured one."""
     amfi = (_amfi_identity_map()
             if any(not st.isin or not st.cap_category for st in stocks) else {})
     filled = 0
@@ -82,21 +104,32 @@ def _fill_identity(session, stocks) -> int:
             scr = latest_snapshot(session, st.id, source="screener")
             cls = ((scr.screener if scr else None) or {}).get("classification") or []
         # yf naming wins when present; screener chain is broadest -> most specific.
-        sector = info.get("sector") or (cls[0] if cls else None)
-        industry = info.get("industry") or (cls[-1] if len(cls) > 1 else None)
+        yf_sector, yf_industry = info.get("sector"), info.get("industry")
+        sector = yf_sector or (cls[0] if cls else None)
+        industry = yf_industry or (cls[-1] if len(cls) > 1 else None)
         changed = False
         if not st.sector and sector:
             st.sector = sector
+            st.sector_source = "yfinance" if yf_sector else "screener"
             changed = True
         if not st.industry and industry:
             st.industry = industry
+            st.industry_source = "yfinance" if yf_industry else "screener"
             changed = True
         ref = (amfi.get((st.symbol or "").upper())
                or amfi.get((st.nse_symbol or "").upper()))
         if ref:
             if not st.isin and ref.get("isin"):
-                st.isin = ref["isin"]
-                changed = True
+                # The AMFI map keys NSE and BSE symbols into one flat dict with
+                # last-wins overwrite, so a cross-namespace collision would assign
+                # another company's ISIN — on the universal cross-source identity
+                # key. Trust it only when the AMFI company name agrees.
+                if _names_agree(ref.get("company"), st.company_name):
+                    st.isin = ref["isin"]
+                    st.isin_source = "amfi"
+                    changed = True
+                elif stats is not None:
+                    stats["amfi_name_mismatch"] = stats.get("amfi_name_mismatch", 0) + 1
             if not st.cap_category and ref.get("cap_category"):
                 st.cap_category = ref["cap_category"]
                 changed = True
@@ -137,7 +170,7 @@ def gapfill(targets=ALL_TARGETS, symbols=None, universe=None, limit=0, delay=Non
         # 1) identity first — cheap, no network, in this session.
         if "identity" in targets:
             idents = cap(need_identity)
-            result["identity_filled"] = _fill_identity(session, idents)
+            result["identity_filled"] = _fill_identity(session, idents, stats)
             touched.update(st.symbol for st in idents)
 
         # 2) network jobs — each opens its own job_run/session (nested observability).

@@ -23,6 +23,12 @@ import db.models  # noqa: F401  (populate Base.metadata)
 PARITY_DB = PARITY_DB_NAME
 ADMIN_DSN = f"dbname=postgres user=ipo password=ipo host={PG_HOST} port={PG_PORT}"
 PARITY_URL = f"postgresql+psycopg://ipo:ipo@{PG_HOST}:{PG_PORT}/{PARITY_DB}"
+PARITY_DSN = f"dbname={PARITY_DB} user=ipo password=ipo host={PG_HOST} port={PG_PORT}"
+
+# Provenance migration boundary: the revision immediately before it (schema without
+# the *_source columns) and the revision that adds them + backfills 'unknown'.
+PRE_PROVENANCE_REV = "53de03c90075"
+PROVENANCE_REV = "d1f7a3c9e5b2"
 
 # Structural drift we refuse to allow. modify_*/index reflection noise is ignored;
 # a new/removed table or column (the untracked-model trap) is not.
@@ -70,5 +76,45 @@ def test_orm_matches_migration_head():
             "ORM models and Alembic migration head disagree on tables/columns — "
             f"ship the missing migration:\n{drift}"
         )
+    finally:
+        _admin(f"DROP DATABASE IF EXISTS {PARITY_DB} WITH (FORCE)")
+
+
+def _alembic(rev, env):
+    return subprocess.run(
+        ["alembic", "upgrade", rev],
+        cwd=PROJECT_ROOT, env=env, capture_output=True, text=True,
+    )
+
+
+def test_provenance_migration_backfills_preexisting_values_as_unknown():
+    """The provenance migration must stamp pre-existing non-null sector/industry/isin
+    'unknown' — they predate provenance and must not read as measured (identity_score
+    gives an unmarked value full credit). A column that was already NULL stays NULL:
+    there is nothing to disprove."""
+    _admin(f"DROP DATABASE IF EXISTS {PARITY_DB} WITH (FORCE)")
+    _admin(f"CREATE DATABASE {PARITY_DB}")
+    try:
+        env = {**os.environ, "DATABASE_URL": PARITY_URL}
+        # Schema at the revision *before* provenance, then seed a legacy row:
+        # sector + isin populated, industry NULL.
+        r = _alembic(PRE_PROVENANCE_REV, env)
+        assert r.returncode == 0, f"pre-provenance upgrade failed:\n{r.stderr}"
+        with psycopg.connect(PARITY_DSN, autocommit=True) as conn:
+            conn.execute(
+                "INSERT INTO stocks (symbol, sector, isin, universe, status, "
+                "first_seen, last_updated) VALUES "
+                "('OLDSTOCK', 'Technology', 'INE111A01011', '[]'::jsonb, 'active', "
+                "now(), now())"
+            )
+        # Apply the provenance migration (adds the columns + backfills).
+        r = _alembic(PROVENANCE_REV, env)
+        assert r.returncode == 0, f"provenance upgrade failed:\n{r.stderr}"
+        with psycopg.connect(PARITY_DSN, autocommit=True) as conn:
+            row = conn.execute(
+                "SELECT sector_source, industry_source, isin_source "
+                "FROM stocks WHERE symbol='OLDSTOCK'"
+            ).fetchone()
+        assert row == ("unknown", None, "unknown")
     finally:
         _admin(f"DROP DATABASE IF EXISTS {PARITY_DB} WITH (FORCE)")

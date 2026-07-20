@@ -141,23 +141,57 @@ def _price_cliffs(session, stock_id, floor):
 
 # ---------- per-dimension scorers ----------
 
-def _identity(stock, missing):
+# Identity fields carry provenance: a value gapfill imputed must not earn the same
+# credit as a measured one, or filling a hole raises the grade and the audit ends up
+# validating its own guesses. Measured (yfinance/amfi) scores full; imputed
+# (screener breadcrumb) and pre-provenance ('unknown') score half. An absent marker
+# is a direct pre-provenance write, not evidence of imputation — it keeps full credit.
+_IMPUTED_CREDIT = {"screener": 0.5, "unknown": 0.5}
+
+
+def _identity_fields(stock):
+    """Identity field -> (value, source). `source` is None for fields with no
+    provenance column (cap_category and the ipo-only fields)."""
     fields = {
-        "isin": stock.isin,
-        "sector": stock.sector,
-        "industry": stock.industry,
-        "cap_category": stock.cap_category,
+        "isin": (stock.isin, stock.isin_source),
+        "sector": (stock.sector, stock.sector_source),
+        "industry": (stock.industry, stock.industry_source),
+        "cap_category": (stock.cap_category, None),
     }
     if any(str(t).startswith("ipo_") for t in (stock.universe or [])):
-        fields["listing_date"] = stock.listing_date
-        fields["issue_price"] = stock.issue_price
-    present = [k for k, v in fields.items() if v not in (None, "", [])]
-    for k, v in fields.items():
+        fields["listing_date"] = (stock.listing_date, None)
+        fields["issue_price"] = (stock.issue_price, None)
+    return fields
+
+
+def _field_credit(value, source):
+    if value in (None, "", []):
+        return 0.0
+    return _IMPUTED_CREDIT.get(source, 1.0)
+
+
+def identity_score(stock) -> float:
+    fields = _identity_fields(stock)
+    return sum(_field_credit(v, s) for v, s in fields.values()) / len(fields)
+
+
+def _identity(stock, missing):
+    fields = _identity_fields(stock)
+    present = [k for k, (v, _) in fields.items() if v not in (None, "", [])]
+    imputed = [k for k, (v, s) in fields.items()
+               if v not in (None, "", []) and s in _IMPUTED_CREDIT]
+    for k, (v, _) in fields.items():
         if v in (None, "", []):
             missing.append(f"identity:{k}")
-    score = len(present) / len(fields)
+    score = identity_score(stock)
     status = "pass" if score == 1 else "partial" if score > 0 else "fail"
-    return _dim(round(score, 3), status, f"{len(present)}/{len(fields)} identity fields")
+    # A present-but-imputed field lowers the score without being "missing" (it is
+    # not fillable — gapfill routes on `missing`). Name it so a "partial" grade on a
+    # fully-populated stock is explainable instead of contradictory.
+    detail = f"{len(present)}/{len(fields)} identity fields"
+    if imputed:
+        detail += f", {len(imputed)} imputed ({', '.join(imputed)})"
+    return _dim(round(score, 3), status, detail)
 
 
 def _yfinance(yf, flags, missing):

@@ -184,7 +184,9 @@ def ingest_smallcaps(path: str, release_tag: str, nse_only: bool = True, verbose
                 exchange="NSE",
             )
             # Authoritative fields — set/refresh even on existing rows.
-            stock.isin = stock.isin or row["isin"]
+            if not stock.isin and row["isin"]:
+                stock.isin = row["isin"]
+                stock.isin_source = "amfi"
             stock.cap_category = "small"
             add_universe_tag(session, stock, "nse_smallcap")
             add_universe_tag(session, stock, release_tag)
