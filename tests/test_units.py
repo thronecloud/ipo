@@ -28,7 +28,9 @@ def test_debt_to_equity_percent_becomes_ratio():
 
 
 def test_debt_to_equity_near_zero_is_not_mistaken_for_a_ratio():
-    # 9.745 is the prod median: 0.09745x, i.e. essentially debt-free.
+    # EMMVEE's raw yfinance debtToEquity is 9.745, i.e. 0.09745x — essentially
+    # debt-free, not 9.7x leveraged. Single-digit inputs like this are common:
+    # 967 of the 3,622 non-null snapshots sit below 10 (the median is 29.786).
     assert normalize_quote({"debt_to_equity": 9.745})["debt_to_equity"] == pytest.approx(0.09745, abs=0.00001)
 
 
@@ -47,6 +49,28 @@ def test_none_stays_none_and_is_never_coerced_to_zero():
 
 def test_zero_is_preserved_and_distinguishable_from_missing():
     assert normalize_quote({"roe": 0.0})["roe"] == 0.0
+
+
+def test_zero_is_converted_not_skipped():
+    # Guards `if v is not None` against being relaxed to `if v:`. Zero is falsy
+    # but present, and 0 * 100 == 0 / 100 == 0, so the arithmetic alone cannot
+    # tell the two apart — only the int -> float promotion proves the
+    # conversion ran on a falsy value rather than being skipped.
+    out = normalize_quote({"roe": 0, "revenue_growth": 0, "debt_to_equity": 0})
+    for key in ("roe", "revenue_growth", "debt_to_equity"):
+        assert out[key] == 0.0
+        assert isinstance(out[key], float), f"{key} was skipped, not converted"
+
+
+def test_input_dict_is_not_mutated():
+    # Callers pass dicts built from ORM rows and keep using them afterwards.
+    # If the defensive copy is ever dropped, normalising the same row twice
+    # compounds: ROE 0.394 -> 39.4 -> 3942.0.
+    raw = {"roe": 0.394, "revenue_growth": 0.185, "debt_to_equity": 637.09}
+    normalize_quote(raw)
+    assert raw["roe"] == 0.394
+    assert raw["revenue_growth"] == 0.185
+    assert raw["debt_to_equity"] == 637.09
 
 
 def test_unknown_keys_are_passed_through():
