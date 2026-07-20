@@ -10,6 +10,7 @@ from engine.analysis.engine import find_work
 from engine.analysis.prompt import build_user_prompt, latest_close, reprice
 from engine.repo import add_snapshot, extract_columns, save_analysis
 from factories import full_info, make_stock, utc, yf_payload
+from src.analyze import build_financial_summary
 from src.personas import get_persona_slugs
 
 PERSONAS = get_persona_slugs()
@@ -234,7 +235,7 @@ def test_reprice_moves_only_the_equity_leg_of_enterprise_value():
 
 def test_reprice_moves_dividend_yield_inversely_to_price():
     """Yield is dividend/price: the one ratio that falls when the price rises."""
-    assert REPRICED["dividendYield"] == approx(0.016 / 2.5)
+    assert REPRICED["dividendYield"] == approx(1.6 / 2.5)
     assert REPRICED["dividendYield"] < full_info()["dividendYield"]
 
 
@@ -266,6 +267,33 @@ def test_reprice_keeps_price_to_book_consistent_with_book_value():
     """Mutual consistency: the persona can divide the stated numbers itself."""
     assert REPRICED["priceToBook"] == approx(
         REPRICED["currentPrice"] / REPRICED["bookValue"])
+
+
+def test_dividend_yield_is_stated_in_percentage_points():
+    """yfinance hands us dividendYield already denominated in percent, unlike
+    every other ratio in `info`. Across 2,053 positive snapshots the median is
+    0.61 and p75 is 1.36 — a fraction column would sit near 0.01 — and against
+    screener's own percent-quoted figure 1,038 pairs have a median ratio of
+    exactly 1.0000. Multiplying by 100 stated a 0.57% yield as 57%."""
+    for raw, expected in [(0.57, "0.6%"), (2.1, "2.1%"), (4.74, "4.7%"), (9.28, "9.3%")]:
+        summary = build_financial_summary({"info": {"dividendYield": raw}})
+        assert f"Dividend Yield: {expected}" in summary
+        assert f"{raw * 100:.1f}%" not in summary
+
+
+def test_fraction_scaled_ratios_still_render_as_percentages():
+    """Guards the narrow fix against being widened into format_pct itself:
+    margins, growth and holdings ARE fractions and must keep their x100."""
+    summary = build_financial_summary({"info": {
+        "profitMargins": 0.152,
+        "returnOnEquity": 0.18,
+        "revenueGrowth": 0.22,
+        "heldPercentInsiders": 0.6612,
+    }})
+    assert "Net Margin: 15.2%" in summary
+    assert "ROE: 18.0%" in summary
+    assert "Revenue Growth (YoY): 22.0%" in summary
+    assert "Insider Holding: 66.1%" in summary
 
 
 def test_prompt_states_one_dividend_yield(db_session):

@@ -47,12 +47,25 @@ def format_currency(value):
 
 
 def format_pct(value):
-    """Format percentage: 0.152 -> '15.2%'."""
+    """Format a fraction as a percentage: 0.152 -> '15.2%'."""
     if value is None:
         return "N/A"
     if isinstance(value, str):
         return value
     return f"{value * 100:.1f}%"
+
+
+def format_pct_points(value):
+    """Format a figure already denominated in percent: 0.57 -> '0.6%'.
+
+    yfinance is not internally consistent: margins, growth and holdings come
+    back as fractions, but dividendYield arrives in percentage points.
+    """
+    if value is None:
+        return "N/A"
+    if isinstance(value, str):
+        return value
+    return f"{value:.1f}%"
 
 
 def build_financial_summary(stock_data):
@@ -136,7 +149,7 @@ def build_financial_summary(stock_data):
     for key, label, fmt in [
         ("heldPercentInsiders", "Insider Holding", format_pct),
         ("heldPercentInstitutions", "Institutional Holding", format_pct),
-        ("dividendYield", "Dividend Yield", format_pct),
+        ("dividendYield", "Dividend Yield", format_pct_points),
     ]:
         val = info.get(key)
         if val is not None:

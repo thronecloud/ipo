@@ -214,7 +214,10 @@ def merge_screener_into_stock(stock_path, screener_data):
     if not info.get("dividendYield") and ratios.get("Dividend Yield"):
         dy = parse_number(ratios["Dividend Yield"])
         if dy is not None:
-            info["dividendYield"] = dy / 100.0
+            # Percentage points, matching yfinance's own dividendYield scale.
+            # returnOnEquity above divides by 100 because yfinance stores THAT
+            # one as a fraction; the two are not the same convention.
+            info["dividendYield"] = dy
 
     # Add ROCE (not in yfinance)
     if ratios.get("ROCE"):

@@ -22,7 +22,7 @@ def full_info(price: float = 100.0, **overrides) -> dict:
         "priceToSalesTrailing12Months": 4.0,
         "enterpriseToEbitda": 16.67,
         "enterpriseToRevenue": 5.0,
-        "dividendYield": 0.016,
+        "dividendYield": 1.6,  # percentage points, as yfinance reports it
         "bookValue": 20.0,
         "trailingEps": 3.92,
         "ebitda": 3_600_000_000.0,
