@@ -1,57 +1,87 @@
-# Indian IPO Analyzer
+# WisdomInvest — Indian IPO Analyzer
 
-AI-powered stock analysis tool that evaluates Indian IPOs through 10 legendary investor personas (Buffett, Munger, Graham, Lynch, Fisher, Greenblatt, Marks, Jhunjhunwala, Damani, Kedia).
+AI-powered fundamental analysis of Indian IPO stocks (NSE/BSE) through 10 legendary
+investor personas (Buffett, Munger, Graham, Lynch, Fisher, Greenblatt, Marks,
+Jhunjhunwala, Damani, Kedia). It runs as an always-on "living engine": Postgres is the
+durable store, a scheduler daemon ingests and analyses continuously, and Next.js
+dashboards read a FastAPI layer.
 
-## Project Structure
+## Tech stack
 
-- `src/fetch_ipo_list.py` — Stage 1: Scrape IPO list from screener.in
-- `src/fetch_stock_data.py` — Stage 2: Fetch financial data via yfinance
-- `src/personas.py` — 10 investor persona definitions + prompts + JSON schema
-- `src/analyze.py` — Stage 3: Run Claude CLI persona analysis per stock
-- `engine/repo.py` — Composite scoring (mean×10, DB engine); legacy `src/score.py` SUM-scorer retired
-- `src/utils.py` — Shared utilities (log, JSON I/O)
-- `app.py` — Streamlit dashboard
-- `run_pipeline.py` — Pipeline orchestrator
-- `data/ipo_list.json` — Master IPO registry (scraped from screener.in)
-- `data/stocks/{SYMBOL}.json` — Per-stock yfinance data
-- `data/analyses/{SYMBOL}/{persona}.json` — Per-stock per-persona AI analysis
-- `data/scores.json` — Pre-computed composite scores for dashboard
+- **Store:** Postgres 16, schema via Alembic (`db/`, `alembic/`).
+- **Engine:** Python — ingestion, analysis, quality, scoring, backtest, scheduler (`engine/`).
+- **API:** FastAPI read-layer (`api/`, port 8000).
+- **Web:** Next.js / TypeScript dashboards (`web/`, port 3000).
+- **Analysis backend:** the Max-plan `claude` CLI (`claude -p --json-schema`), no API key.
+- **Data sources:** yfinance (`.NS`/`.BO`), screener.in (HTML scrape), AMFI (universe).
+- Everything ships as Docker Compose services.
 
-## Key Commands
+## How to run
 
 ```bash
-# Run full pipeline
-python run_pipeline.py --stages 1,2,3,4
+docker compose up -d --build          # db, api, web, scheduler, backup
+docker compose ps                     # all services should be healthy
+docker compose logs -f scheduler      # watch the engine work
 
-# Run individual stages
-python3 -m src.fetch_ipo_list --year 2025 --pages 25
-python3 -m src.fetch_stock_data
-python3 -m src.analyze --model opus
-python3 -m engine.run score
+# Tests (containerized; no host Python or DB needed). Creates/drops its own
+# ipo_test_<id> database on the db service.
+docker compose --profile test run --rm test
 
-# Analyze specific stock
-python3 -m src.analyze --symbol ATHERENERG --persona warren_buffett --model sonnet
-
-# Launch dashboard
-streamlit run app.py
-
-# Limit stocks for testing
-python3 -m src.analyze --limit 5 --model sonnet
+# Manual engine ops (inside the running scheduler container)
+docker compose exec scheduler python -m engine.run status
+docker compose exec scheduler python -m engine.run discover --year 2026 --pages 6
+docker compose exec scheduler python -m engine.run refresh --limit 50
+docker compose exec scheduler python -m engine.run analyze --limit 10   # spends Max quota
+docker compose exec scheduler python -m engine.run score
 ```
 
-## Data Pipeline
+Migrations are **not** run by hand — the `api` service runs `alembic upgrade head` on
+boot before serving. See `DEPLOY.md` for the full runbook (scheduler cadences, backup/
+restore, server overlay).
 
-1. IPO list scraped from screener.in/ipo/recent/ (376 IPOs for 2025)
-2. Financial data fetched from yfinance (.NS for NSE, .BO for BSE-only)
-3. AI analysis via `claude -p --model opus --json-schema` (Claude Max plan, no API key)
-4. Composite scores computed from persona analyses
-5. Dashboard reads pre-computed JSON files (no API calls at runtime)
+## Project structure
 
-## Important Notes
+- `engine/` — the living engine:
+  - `ingest/` — screener/yfinance/AMFI/index pulls, IPO discovery, enrichment
+  - `analysis/` — persona analysis (prompt build, claude backend, output contract)
+  - `quality/` — data-quality scoring, gap-fill, audit
+  - `scoring/` — composite confidence scoring
+  - `backtest/` — signal/IC study
+  - `scheduler.py` — always-on cron daemon; `run.py` — CLI entrypoint; `repo.py` — DB access; `notify.py` — ntfy/webhook alerts
+- `api/` — FastAPI app (`main.py`), routers (consumer + admin), Pydantic schemas, unit conversion (`units.py`)
+- `web/` — Next.js dashboards: Research Desk (`/`) and Engine Room (`/admin`)
+- `db/` + `alembic/` — SQLAlchemy models and migrations
+- `src/` — **shared library** for the engine (imported in 10+ places): `personas.py`
+  (persona defs + prompt template + JSON schema), `fetch_*.py` (screener/yfinance
+  scrapers), `analyze.py` (financial-summary + currency formatters), `utils.py`.
+  `run_pipeline.py` / `run_analysis.sh` are the legacy gen-1 file-based entrypoints that
+  still drive these modules; the scheduler is the live path.
+- `scripts/` — backup/restore, db-init, one-off backfills, JSON→DB migration, benchmarks
+- `docs/` — plans, specs, research, archived handoffs
 
-- JSON files are the cache layer — never re-query data already stored
-- Use `--force` flag to re-fetch or re-analyze
-- yfinance: BSE-only SME stocks have limited data; NSE stocks have full data
-- Claude CLI: uses `--no-session-persistence --output-format json --json-schema`
-- Each analysis call takes ~30-100s depending on model (sonnet ~30s, opus ~60-100s)
-- Full pipeline for 376 stocks x 10 personas = 3,760 analyses
+## Key conventions
+
+- **`src/` is live**, not legacy — `engine/` and `api/` import from it. Do not delete it.
+- **Analysis backend:** `ANALYSIS_BACKEND=cli` shells out to `claude -p
+  --no-session-persistence --output-format json --json-schema`. Containers can't read the
+  Keychain login, so headless auth is a long-lived `CLAUDE_CODE_OAUTH_TOKEN` (from
+  `claude setup-token`) in `.env`. Unset ⇒ scheduler runs data-only and skips analysis.
+- **`.env` keys** the stack reads: `CLAUDE_CODE_OAUTH_TOKEN` (analysis auth),
+  `NTFY_TOPIC` (failure alerts — must also be *subscribed*, or alerts are silent),
+  `NOTIFY_WEBHOOK_URL` (optional second channel), `ADMIN_TOKEN` (guards job-trigger
+  endpoints), the `SCHED_*` tuning knobs, and the prod-overlay `SITE_ADDRESS`/`ADMIN_HASH`.
+  `.env` is gitignored.
+- **Backups are the crown jewels.** The `backup` service dumps nightly to `./backups/`
+  (14-day retention; never touches `manual_*`/`ipo_migration_*`). A fresh `db` volume
+  auto-restores the newest dump on first boot — that is the machine-migration path.
+  **Never `docker compose down -v`** (destroys `ipo_pgdata`). Restore drills:
+  `scripts/backup/restore.sh`.
+- Idempotent ingestion: re-running is safe; `--force` overrides caches. `claude` analysis
+  calls take ~30-100s each (sonnet ~30s, opus/fable slower).
+
+## History
+
+This began as a gen-1 file pipeline: `src/` scripts wrote `data/*.json`, a Streamlit app
+read them. That app is retired. **Postgres is now the source of truth.** The `data/*.json`
+tree (`ipo_list.json`, `stocks/`, `analyses/`, `scores.json`) is the gen-1 cache, retained
+for reference and one-time migration (`scripts/migrate_json_to_db.py`) — not authoritative.

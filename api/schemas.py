@@ -1,4 +1,4 @@
-"""Pydantic v2 response models — the exact JSON shapes in DASHBOARDS_SPEC.md."""
+"""Pydantic v2 response models — the exact JSON shapes in docs/DASHBOARDS_SPEC.md."""
 
 from __future__ import annotations
 

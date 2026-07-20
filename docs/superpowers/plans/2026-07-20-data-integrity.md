@@ -1634,7 +1634,7 @@ Real findings, deliberately out of scope here because they do not affect data co
 - **`--force` overwrites the historical verdict in place**, destroying the per-persona audit trail behind a historical score.
 - **`scoring_rubric` in `src/personas.py` is dead** — defined 10 times, read by nothing; each system prompt duplicates its rubric inline. Editing the wrong copy is a silent no-op.
 - **DEPLOY.md documents macOS** on a Linux host, including the reboot-survival instructions.
-- **HANDOFF.md publishes infrastructure coordinates** (`root@46.62.236.46`, key filename, dump path). Check repo visibility.
+- **docs/HANDOFF.md publishes infrastructure coordinates** (`root@46.62.236.46`, key filename, dump path). Check repo visibility.
 
 ---
 

@@ -2,7 +2,7 @@
 
 **AI-powered fundamental analysis of 370+ Indian IPO stocks using 10 legendary investor personas -- Warren Buffett, Charlie Munger, Benjamin Graham, Peter Lynch, Rakesh Jhunjhunwala, and more.**
 
-An open-source Indian stock market analysis tool that uses large language models (LLMs) to evaluate IPO stocks listed on NSE and BSE. Built with Python, Claude AI, Streamlit, yfinance, and screener.in.
+An open-source Indian stock market analysis tool that uses large language models (LLMs) to evaluate IPO stocks listed on NSE and BSE. Built with Python, Claude AI, Postgres, FastAPI, Next.js, yfinance, and screener.in.
 
 **Keywords:** Indian stock analysis, IPO analysis tool, NSE BSE stock screener, AI stock picker, value investing India, fundamental analysis automation, stock scoring system, investment persona analysis, fintech open source, Python stock analyzer, Indian equity research, IPO rating system, quantitative stock screening, Claude AI finance, LLM stock analysis
 
@@ -14,7 +14,7 @@ India's IPO market has exploded. In 2025 alone, over 370 companies listed on NSE
 
 This project solves that problem by automating deep fundamental analysis across every recent IPO, viewed through 10 distinct investment philosophies. Instead of a single opinion, each stock receives a structured evaluation from value investors, growth investors, quantitative screeners, and India-market specialists -- producing a composite score grounded in the frameworks that have generated the best long-term returns in investing history.
 
-The result is a Streamlit dashboard where you can filter, sort, and drill into any IPO by sector, valuation, score, or individual persona -- with full transparency into the reasoning behind every rating.
+The result is a web dashboard where you can filter, sort, and drill into any IPO by sector, valuation, score, or individual persona -- with full transparency into the reasoning behind every rating.
 
 ---
 
@@ -36,8 +36,8 @@ The result is a Streamlit dashboard where you can filter, sort, and drill into a
    ipo_list.json   stocks/{SYM}.json  analyses/{SYM}/         scores.json
                                        {persona}.json                |
                                                                      v
-                                                             Streamlit Dashboard
-                                                                  (app.py)
+                                                               Web Dashboard
+                                                              (web/ ← api/)
 ```
 
 All intermediate outputs are JSON files. The dashboard reads only pre-computed data -- zero API calls at runtime.
@@ -123,7 +123,7 @@ all persona analyses --> aggregation --> data/scores.json
 | AI Analysis | Claude CLI (`claude -p`) with structured JSON output |
 | Financial Data | yfinance (NSE/BSE), screener.in (scraping) |
 | Web Scraping | requests + BeautifulSoup4 |
-| Dashboard | Streamlit |
+| Dashboard | Next.js (read via FastAPI over Postgres) |
 | Data Layer | JSON files (flat-file cache) |
 | Data Processing | pandas, NumPy |
 | Orchestration | Custom pipeline runner (subprocess-based) |
@@ -187,8 +187,10 @@ python3 -m src.analyze --symbol SWIGGY --persona warren_buffett --model opus
 ### Launch the Dashboard
 
 ```bash
-streamlit run app.py
+docker compose up -d --build     # db, api, web, scheduler, backup
 ```
+
+Research Desk: http://localhost:3000 · Engine Room: http://localhost:3000/admin
 
 ---
 
@@ -266,8 +268,7 @@ This project uses `claude -p` (the CLI tool with `--output-format json --json-sc
 ```
 indian-ipo-analyzer/
 |
-|-- run_pipeline.py              # Pipeline orchestrator (stages 1-4)
-|-- app.py                       # Streamlit dashboard
+|-- run_pipeline.py              # Legacy gen-1 file pipeline (stages 1-4)
 |-- requirements.txt             # Python dependencies
 |
 |-- src/
@@ -315,7 +316,7 @@ The data layer is intentionally simple: JSON files on disk, organized by convent
 
 ### Separation of Compute and Presentation
 
-The dashboard (`app.py`) makes zero API calls. All analysis, scoring, and data fetching happens in the pipeline stages. The dashboard reads pre-computed JSON and renders it. This means the dashboard loads instantly and can be deployed as a static data app.
+The Next.js dashboard makes no analysis calls of its own. All ingestion, analysis, and scoring happens in the engine and lands in Postgres; the dashboard reads a FastAPI layer over that store. This keeps presentation cheap and the compute path fully offline.
 
 ---
 

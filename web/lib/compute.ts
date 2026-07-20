@@ -1,7 +1,7 @@
 // Client-side recomputation of the composite from a chosen subset of the
-// council — mirrors the Streamlit persona selector. When all 10 are selected
-// this should track the server composite closely; deselecting personas lets a
-// user weight the verdict toward the investors they trust.
+// council. When all 10 are selected this should track the server composite
+// closely; deselecting personas lets a user weight the verdict toward the
+// investors they trust.
 
 import type { PerPersonaVerdict, Recommendation, StockRow } from "./types";
 

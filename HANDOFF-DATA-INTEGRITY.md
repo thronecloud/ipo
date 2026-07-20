@@ -3,7 +3,7 @@
 **Read this with `docs/superpowers/plans/2026-07-20-data-integrity.md` (the plan) and
 `.superpowers/sdd/progress.md` (the per-task ledger, gitignored but on disk).**
 
-Branch `living-engine`, pushed to origin at `7f5d745`. 21 commits. Tests **189 → 231**.
+Branch `living-engine`, at `17f8007`. Tests **189 → 246**.
 Production intact throughout: 2,657 stocks / 5,567 analyses / 6,495,088 bars.
 
 Execution method: superpowers subagent-driven-development — one implementer per task,
@@ -13,20 +13,16 @@ an independent reviewer after each, fix rounds until both spec and quality verdi
 
 ## RESUME HERE
 
-**1. There is stashed incomplete work.** `stash@{0}` — Task 9 follow-ups (cliff date
-floor, `bars_rebased` tally, index corrective upsert). It implements review findings 1,
-3 and 4 from Task 9 but **2 tests fail**:
+**1. The Task 9 follow-ups are settled** — landed in commit `17f8007`. The corrective
+upsert now returns inserted-only rows, tallies `bars_rebased` into job stats from refresh,
+index refresh **and** backfill, dedupes dup-date frames on the conflict key, and never lets
+an incoming NULL degrade a stored bar (asymmetric change predicate + per-field coalesce).
+The two previously failing tests pass. Tests **231 → 246**. No stash remains.
 
-```
-FAILED tests/test_index_prices.py::test_upsert_inserts_only_new_dates
-FAILED tests/test_refresh_promote.py::test_refresh_records_rebased_bars_in_job_stats
-```
-
-Either finish it (`git stash pop`, fix the two, verify 231+, commit) or drop it and
-re-dispatch Task 9's follow-ups fresh. Do not commit it as-is.
-
-**2. Next planned task is Task 10** (field provenance — `sector_source`/`isin_source`,
-so imputed values stop posing as measured). Phase 2 tasks 10–12 remain, then Phases 3–4.
+**2. Next planned task is Task 10** (field provenance — `sector_source`/`isin_source`, so
+imputed values stop posing as measured), from
+`docs/superpowers/plans/2026-07-20-data-integrity.md`. Phase 2 tasks 10–12 remain, then
+Phases 3–4.
 
 ---
 
@@ -64,7 +60,7 @@ corrects provider-rebased bars instead of ignoring them, plus a cliff detector.
 
 ## Things a future session must not get wrong
 
-- **`src/` is LIVE**, not legacy, despite what `CLAUDE.md` and the old `HANDOFF.md` imply.
+- **`src/` is LIVE**, not legacy, despite what the old `docs/HANDOFF.md` implies.
   `src/personas.py`, `src/analyze.py`, `src/fetch_*.py` are imported by `engine/`. Only
   `src/utils.py` is unreferenced. Deleting `src/` breaks production.
 - **Never `docker compose down -v`** — destroys `ipo_pgdata`.
@@ -138,5 +134,5 @@ Full list in `.superpowers/sdd/progress.md` (items B–S). The ones most worth p
 - `as_of` in `prompt.py` has no caller yet; Phase 4's historical re-run must wire it.
 - Negative EV renders unformatted via `src/analyze.py` `format_currency`.
 - `SCHED_REAP_ORPHAN_HOURS` unreachable from `.env` (scheduler has no `env_file:`).
-- `DEPLOY.md` documents macOS on a Linux host; `HANDOFF.md` publishes the Hetzner IP and
+- `DEPLOY.md` documents macOS on a Linux host; `docs/HANDOFF.md` publishes the Hetzner IP and
   ssh key filename — check repo visibility.

@@ -94,7 +94,7 @@ def main():
     log(f"{'=' * 60}")
 
     if not failed:
-        log(f"\nDashboard: streamlit run app.py")
+        log(f"\nDashboard: docker compose up -d  →  http://localhost:3000")
 
 
 if __name__ == "__main__":

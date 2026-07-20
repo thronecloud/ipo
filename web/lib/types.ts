@@ -1,4 +1,4 @@
-// ── API contract types (mirror DASHBOARDS_SPEC.md) ─────────────────
+// ── API contract types (mirror docs/DASHBOARDS_SPEC.md) ─────────────────
 
 export type Recommendation = "BUY" | "HOLD" | "AVOID";
 export type ConfidenceTier = "high" | "moderate" | "provisional" | "mixed";
