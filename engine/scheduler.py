@@ -9,6 +9,7 @@ Cadence (UTC, all configurable via env):
   - analyze   hourly :30  : drain the analysis backlog in bounded batches,
                             gated by credential availability + a DAILY CAP so
                             an unattended scheduler can never burn the Max plan.
+  - reap      hourly :10  : error out job_runs stranded at 'running' by a restart
 
 Production hardening:
   - every tick is exception-isolated (one bad tick never kills the daemon);
@@ -201,6 +202,21 @@ def job_dq_fill():
     gapfill(limit=DQ_FILL_BATCH, verbose=False)
 
 
+def job_reap():
+    # A restart strands its own in-flight runs, and the boot-time reap spares them
+    # for being seconds old. Recurring so those rows are cleared within the hour
+    # after the grace window elapses, instead of waiting for the next restart.
+    from db.base import SessionLocal
+
+    session = SessionLocal()
+    try:
+        n = reap_orphaned_runs(session)
+        if n:
+            print(f"[scheduler][{_now()}] reaped {n} orphaned job_run(s)")
+    finally:
+        session.close()
+
+
 def job_analyze_and_score():
     if not analysis_available():
         print(f"[scheduler][{_now()}] analyze SKIPPED — no Claude credential "
@@ -246,6 +262,9 @@ def build_scheduler() -> BlockingScheduler:
     # Hourly composite reconcile at :50 — heals any composites orphaned by an
     # interrupted analyze batch (analysis and scoring never drift apart).
     sched.add_job(safe(job_score), CronTrigger(minute=50), id="score")
+    # Hourly orphan reap at :10 — the startup pass alone can never clear a run
+    # stranded by the very restart that ran it (the row is seconds old and spared).
+    sched.add_job(safe(job_reap), CronTrigger(minute=10), id="reap")
     # Daily benchmark bars at 12:00 UTC — after NSE close (10:00 UTC) so the
     # day's index close is final before the evening jobs read it.
     sched.add_job(safe(job_index_prices), CronTrigger(hour=12, minute=0), id="index_prices")

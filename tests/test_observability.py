@@ -101,14 +101,38 @@ def test_grep_no_silent_pass_in_engine():
     assert not offenders, f"silent except/pass in: {offenders}"
 
 
+def test_scheduler_reaps_orphans_recurrently_not_only_at_boot():
+    """The event that strands a job_run IS usually the restart, and the boot-time
+    reap spares it for being seconds old. Without a recurring tick the row sits at
+    'running' until the next restart, and the jobs page polls on it forever.
+    """
+    from engine.scheduler import build_scheduler
+
+    jobs = {j.id: j for j in build_scheduler().get_jobs()}
+    assert "reap" in jobs, "orphan reap must be scheduled, not only run at startup"
+
+    fields = {f.name: str(f) for f in jobs["reap"].trigger.fields}
+    assert fields["hour"] == "*", f"reap must run hourly, got hour={fields['hour']}"
+
+    hourly_minutes = {
+        jid: {f.name: str(f) for f in j.trigger.fields}["minute"]
+        for jid, j in jobs.items()
+        if {f.name: str(f) for f in j.trigger.fields}["hour"] == "*"
+    }
+    assert len(set(hourly_minutes.values())) == len(hourly_minutes), (
+        f"hourly jobs collide on the same minute: {hourly_minutes}"
+    )
+
+
 def test_reap_orphaned_runs_marks_stranded_runs_as_error(db_session):
     from engine.repo import JobRun
-    from engine.scheduler import reap_orphaned_runs
+    from engine.scheduler import REAP_ORPHAN_HOURS, reap_orphaned_runs
 
-    stranded = JobRun(job_type="analyze", status="running",
-                      started_at=datetime(2026, 7, 5, tzinfo=timezone.utc))
-    live = JobRun(job_type="score", status="success",
-                  started_at=datetime(2026, 7, 19, tzinfo=timezone.utc))
+    # Both rows sit OUTSIDE the grace window, so only the status filter can
+    # tell them apart — the assertion holds whatever the wall-clock date is.
+    old = datetime.now(timezone.utc) - timedelta(hours=REAP_ORPHAN_HOURS + 1)
+    stranded = JobRun(job_type="analyze", status="running", started_at=old)
+    live = JobRun(job_type="score", status="success", started_at=old)
     db_session.add_all([stranded, live])
     db_session.commit()
 
