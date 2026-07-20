@@ -3,11 +3,13 @@
 from datetime import date
 from types import SimpleNamespace
 
+from pytest import approx
+
 from engine import repo
 from engine.analysis.engine import find_work
-from engine.analysis.prompt import build_user_prompt
+from engine.analysis.prompt import build_user_prompt, latest_close, reprice
 from engine.repo import add_snapshot, extract_columns, save_analysis
-from factories import make_stock, utc, yf_payload
+from factories import full_info, make_stock, utc, yf_payload
 from src.personas import get_persona_slugs
 
 PERSONAS = get_persona_slugs()
@@ -214,3 +216,87 @@ def test_prompt_falls_back_to_regular_market_price_when_that_is_all_there_is(db_
     db_session.commit()
 
     assert "Current Price: INR 100" in build_user_prompt(db_session, stock, snap)
+
+
+# ---------- restatement arithmetic ----------
+
+# 100 -> 250 is k = 2.5 against the full_info fixture: marketCap 50bn,
+# enterpriseValue 60bn (so 10bn of net debt), bookValue 20 with P/B 5.
+REPRICED = reprice(full_info(price=100.0), 250.0)
+
+
+def test_reprice_moves_only_the_equity_leg_of_enterprise_value():
+    """EV is equity + net debt. Repricing the shares does not reprice the debt,
+    so EV' = EV + mcap*(k-1) = 135bn — emphatically NOT EV*k = 150bn."""
+    assert REPRICED["enterpriseValue"] == approx(135_000_000_000.0)
+    assert REPRICED["enterpriseValue"] != approx(150_000_000_000.0)
+
+
+def test_reprice_moves_dividend_yield_inversely_to_price():
+    """Yield is dividend/price: the one ratio that falls when the price rises."""
+    assert REPRICED["dividendYield"] == approx(0.016 / 2.5)
+    assert REPRICED["dividendYield"] < full_info()["dividendYield"]
+
+
+def test_reprice_scales_price_derived_ratios_linearly():
+    assert REPRICED["marketCap"] == approx(125_000_000_000.0)
+    assert REPRICED["priceToBook"] == approx(12.5)
+    assert REPRICED["trailingPE"] == approx(63.75)
+    assert REPRICED["forwardPE"] == approx(50.0)
+    assert REPRICED["priceToSalesTrailing12Months"] == approx(10.0)
+
+
+def test_reprice_restates_ev_multiples_off_the_restated_ev():
+    """EV multiples ride the restated EV, not the price factor — 135/60, not 2.5."""
+    ratio = 135.0 / 60.0
+    assert REPRICED["enterpriseToEbitda"] == approx(16.67 * ratio)
+    assert REPRICED["enterpriseToRevenue"] == approx(5.0 * ratio)
+
+
+def test_reprice_leaves_accounting_figures_untouched():
+    """A share price move restates valuation, never the accounts behind it."""
+    before = full_info(price=100.0)
+    for field in ("bookValue", "trailingEps", "ebitda", "totalRevenue",
+                  "returnOnEquity", "operatingMargins", "profitMargins",
+                  "debtToEquity", "revenueGrowth"):
+        assert REPRICED[field] == approx(before[field]), field
+
+
+def test_reprice_keeps_price_to_book_consistent_with_book_value():
+    """Mutual consistency: the persona can divide the stated numbers itself."""
+    assert REPRICED["priceToBook"] == approx(
+        REPRICED["currentPrice"] / REPRICED["bookValue"])
+
+
+def test_prompt_states_one_dividend_yield(db_session):
+    """The screener's as-scraped yield contradicted the repriced yfinance one."""
+    stock = make_stock(db_session, "ONEDIV")
+    snap = _full_snapshot(db_session, stock, price=100.0)
+    _add_bars(db_session, stock, [(date(2026, 7, 17), 250.0)])
+    screener = SimpleNamespace(screener={
+        "ratios": {"Dividend Yield": "3.40", "ROCE": "22%"},
+    })
+
+    prompt = build_user_prompt(db_session, stock, snap, screener)
+
+    assert prompt.count("Dividend Yield") == 1
+    assert "3.40" not in prompt
+    assert "Dividend Yield: 0.6%" in prompt
+    assert "ROCE: 22%" in prompt
+
+
+def test_latest_close_skips_a_null_newest_bar(db_session):
+    """Production carries bars whose close never arrived. Taking the newest row
+    regardless returns None, and the snapshot-price fallback then quotes the
+    stale price the whole fix exists to replace."""
+    stock = make_stock(db_session, "NULLBAR")
+    snap = _full_snapshot(db_session, stock, price=100.0)
+    _add_bars(db_session, stock, [(date(2026, 7, 16), 250.0)])
+    repo.upsert_daily_prices(db_session, stock.id, [
+        {"date": date(2026, 7, 17), "open": None, "high": None,
+         "low": None, "close": None, "volume": 0},
+    ])
+    db_session.commit()
+
+    assert latest_close(db_session, stock.id) == 250.0
+    assert "Current Price: INR 250" in build_user_prompt(db_session, stock, snap)

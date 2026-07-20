@@ -69,13 +69,13 @@ def format_screener(sc: dict) -> str:
     lines = []
     ratios = sc.get("ratios", {})
     if ratios:
-        # Price-derived ratios (Current Price, Market Cap, Stock P/E) are
-        # deliberately absent: the screener scrape is timed independently of the
-        # quote the prompt states, so including them puts two contradictory
-        # prices in front of the persona. The yfinance block carries those,
-        # restated at the quoted price. What is unique here is the history.
-        keep = ["ROCE", "ROE", "Debt to equity", "Dividend Yield",
-                "Book Value", "High / Low"]
+        # Price-derived ratios (Current Price, Market Cap, Stock P/E, Dividend
+        # Yield) are deliberately absent: the screener scrape is timed
+        # independently of the quote the prompt states, so including them puts
+        # two contradictory prices in front of the persona. The yfinance block
+        # carries those, restated at the quoted price. What is unique here is
+        # the history.
+        keep = ["ROCE", "ROE", "Debt to equity", "Book Value", "High / Low"]
         r = [f"{k}: {ratios[k]}" for k in keep if k in ratios]
         if r:
             lines.append("Key ratios — " + " | ".join(r))
@@ -110,8 +110,16 @@ def latest_close(session, stock_id: int, as_of: date | None = None) -> float | N
     compute_content_hash deliberately excludes them so daily churn does not
     re-trigger analysis. `as_of` bounds the lookup so re-running an analysis over
     a historical date cannot quote a price that had not happened yet.
+
+    Bars with a NULL close are skipped rather than returned: a gap in the
+    stored series is not a quote, and taking it would fall back to the stale
+    snapshot price when a perfectly good earlier bar exists. A close of exactly
+    0.0 is left alone — no such row exists, and one would signal a corrupt
+    store rather than a gap, so it should surface as the (falsy) no-quote path
+    instead of being papered over with an older bar.
     """
-    q = select(DailyPrice.close).where(DailyPrice.stock_id == stock_id)
+    q = select(DailyPrice.close).where(DailyPrice.stock_id == stock_id,
+                                       DailyPrice.close.isnot(None))
     if as_of is not None:
         q = q.where(DailyPrice.date <= as_of)
     return session.scalar(q.order_by(DailyPrice.date.desc()).limit(1))
