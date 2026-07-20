@@ -1,31 +1,29 @@
 # HANDOFF — WisdomInvest living engine (session state, updated 2026-07-19)
 
-## MIGRATING TO A NEW SYSTEM — do this first
+## MIGRATING TO A NEW SYSTEM — fully dockerized, 3 steps
 
-1. **Clone + branch**: `git clone https://github.com/thronecloud/ipo.git && cd ipo && git checkout living-engine` (main is stale; everything lives on living-engine).
-2. **Copy the DB dump** (NOT in git — 243 MB): carry `backups/ipo_migration_20260719.dump`
-   from the old machine (AirDrop/drive). It contains all 2,647 stocks, 6.5M price bars,
-   ~5.6K analyses, scores, history — without it the engine starts empty.
-3. **Create `.env`** (gitignored; no secrets beyond local DB creds):
-   ```
-   DATABASE_URL=postgresql+psycopg://ipo:ipo@localhost:5432/ipo
-   ANALYSIS_BACKEND=cli
-   ANALYSIS_MODEL=claude-fable-5
-   ```
-4. **Start stack + restore**:
-   ```
-   docker compose up -d db
-   docker cp backups/ipo_migration_20260719.dump ipo_postgres:/tmp/r.dump
-   docker exec ipo_postgres pg_restore -U ipo -d ipo --clean --if-exists /tmp/r.dump
-   docker compose up -d          # api :8000, web :3000, scheduler, backup
-   ```
-5. **Python env**: `python3.10 -m venv .venv && .venv/bin/pip install -r requirements.txt`
-   (tests create their own throwaway `ipo_test` DB; run `PATH="$PWD/.venv/bin:$PATH"
-   .venv/bin/python -m pytest tests/ -q` → expect 189 passed).
-6. **Claude CLI**: install Claude Code + login (Max plan). Analysis uses `claude -p`;
-   scheduler analyze stays dormant until `CLAUDE_CODE_OAUTH_TOKEN` is set in compose env
-   (`claude setup-token`). Usage windows cap ~300-360 pairs; probe quota before big runs.
-7. `alembic heads` == DB revision already (restored dump carries schema at 53de03c90075).
+1. `git clone https://github.com/thronecloud/ipo.git && cd ipo && git checkout living-engine`
+   (main is stale; everything lives on living-engine).
+2. **Copy `backups/ipo_migration_20260719.dump`** (243 MB, NOT in git) from the old
+   machine into `backups/`. All data — 2,657 stocks, 6.5M bars, 5,567 analyses — is in it.
+3. `docker compose up -d --build` — that's it. The db container **auto-restores the
+   newest `backups/ipo_*.dump` on first boot** (scripts/db-init/, verified end-to-end
+   2026-07-19: fresh volume → full restore incl. alembic head 53de03c90075). Web :3000,
+   API :8000. The api may restart once or twice while the restore runs — self-heals.
+
+No host Python needed:
+- **Tests in-container**: `docker compose --profile test run --rm test` → 189 passed
+  (verified). Host venv (`python3.10 -m venv .venv; pip install -r requirements.txt`)
+  remains optional for dev ergonomics.
+- **Analysis in-container**: engine image ships Node + Claude Code CLI. Set
+  `CLAUDE_CODE_OAUTH_TOKEN` in `.env` (`claude setup-token` anywhere, token is portable)
+  and the scheduler's hourly analyze batches go live. Ad-hoc runs:
+  `docker compose exec scheduler python -m engine.run analyze --universe ipo_2026 --workers 10`.
+- Optional `.env` (compose has defaults): ANALYSIS_MODEL=claude-fable-5,
+  ANALYSIS_BACKEND=cli, ADMIN_TOKEN, CLAUDE_CODE_OAUTH_TOKEN. For host-side venv work
+  add DATABASE_URL=postgresql+psycopg://ipo:ipo@localhost:5432/ipo.
+- Ongoing backups: the backup container dumps daily into ./backups (14-day retention),
+  so any machine with a recent clone + backups/ folder can resurrect the whole system.
 
 ## 2026-07-06→19 additions (all committed)
 

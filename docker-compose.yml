@@ -25,6 +25,11 @@ services:
       - "5432:5432"
     volumes:
       - ipo_pgdata:/var/lib/postgresql/data
+      # First-boot auto-restore: newest ./backups/ipo_*.dump seeds an EMPTY
+      # volume (official image runs initdb.d only then). Migration to a new
+      # machine = clone repo + copy backups/ + docker compose up -d.
+      - ./backups:/backups:ro
+      - ./scripts/db-init:/docker-entrypoint-initdb.d:ro
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U ipo -d ipo"]
       interval: 5s
@@ -103,6 +108,24 @@ services:
     depends_on:
       api:
         condition: service_healthy   # api runs migrations first
+
+  # One-shot containerized test run (no host Python needed):
+  #   docker compose --profile test run --rm test
+  # Uses the same engine image; creates/drops its own ipo_test DB on `db`.
+  test:
+    image: wisdominvest-engine
+    profiles: ["test"]
+    init: true
+    working_dir: /app
+    command: python -m pytest tests/ -q
+    environment:
+      TEST_PG_HOST: db
+      TEST_PG_PORT: "5432"
+    volumes:
+      - ./:/app
+    depends_on:
+      db:
+        condition: service_healthy
 
   backup:
     image: postgres:16
