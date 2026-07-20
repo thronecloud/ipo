@@ -9,6 +9,8 @@ If neither env var is set, notify() is a silent no-op (logs only).
 Design rules:
 - Never raise: a broken notifier must never break the engine.
 - Rate-limited per (title) key to avoid alert storms from a looping job.
+- Never send from a test run: a suite that pages the owner trains him to
+  ignore the alerts, which is worse than having no alerting at all.
 """
 
 import json
@@ -30,6 +32,14 @@ def _post(url: str, data: bytes, headers: dict) -> None:
 
 def notify(title: str, message: str, priority: str = "default", tags: str = "warning") -> bool:
     """Send a notification. Returns True if at least one channel accepted it."""
+    # The suite drives failing batches through job_run() on purpose, and
+    # db.base's load_dotenv() puts the real topic in os.environ — so without
+    # this the tests page a real phone. Every channel is dispatched below, so
+    # this is the one point all of them pass through.
+    if "PYTEST_CURRENT_TEST" in os.environ:
+        print(f"[notify] (suppressed under pytest) {title}: {message[:120]}")
+        return False
+
     now = time.time()
     if now - _last_sent.get(title, 0) < RATE_LIMIT_S:
         return False

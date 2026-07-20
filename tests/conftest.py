@@ -25,6 +25,15 @@ TEST_DATABASE_URL = f"postgresql+psycopg://ipo:ipo@{PG_HOST}:{PG_PORT}/{TEST_DB_
 # MUST happen before any project import pulls in db.base.
 os.environ["DATABASE_URL"] = TEST_DATABASE_URL
 
+# Second line of defence behind engine.notify's PYTEST_CURRENT_TEST guard, which
+# cannot cover two cases: PYTEST_CURRENT_TEST is unset outside a test's own
+# phases (collection, session-fixture teardown), and it is not inherited in a
+# meaningful way by an engine subprocess. Empty (not absent) is what blocks it:
+# db.base's load_dotenv() skips keys already present, so this stops the real
+# topic from ever entering the environment the suite or its children see.
+os.environ["NTFY_TOPIC"] = ""
+os.environ["NOTIFY_WEBHOOK_URL"] = ""
+
 import psycopg  # noqa: E402
 import pytest  # noqa: E402
 from sqlalchemy import text  # noqa: E402

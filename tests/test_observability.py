@@ -7,14 +7,52 @@
 """
 
 import logging
+import os
 from datetime import datetime, timedelta, timezone
 
 import pytest
 from sqlalchemy import select
 
 from db.models import JobRun
-from engine.notify import notify_safe
+from engine.notify import notify, notify_safe
 from engine.repo import job_run
+
+
+@pytest.fixture()
+def notify_transport(monkeypatch):
+    """Spy on the network boundary and start from a clean rate-limit slate."""
+    import engine.notify as notify_mod
+
+    calls = []
+    monkeypatch.setattr(notify_mod, "_post",
+                        lambda url, data, headers: calls.append(url))
+    monkeypatch.setattr(notify_mod, "_last_sent", {})
+    monkeypatch.delenv("NOTIFY_WEBHOOK_URL", raising=False)
+    return calls
+
+
+def test_notify_does_not_send_under_pytest(notify_transport, monkeypatch, capsys):
+    """The suite must never page the owner, even with a topic configured.
+
+    tests/test_observability.py drives job_run() with deliberately failing
+    batches; db/base.py's load_dotenv() puts the real NTFY_TOPIC in os.environ.
+    Without a guard that combination sends real pushes to a real phone.
+    """
+    monkeypatch.setenv("NTFY_TOPIC", "should-never-be-reached")
+    assert "PYTEST_CURRENT_TEST" in os.environ
+
+    assert notify("suppressed-title", "msg") is False
+    assert notify_transport == [], "notifier reached the network under pytest"
+    assert "suppressed" in capsys.readouterr().out.lower()
+
+
+def test_notify_sends_when_not_under_pytest(notify_transport, monkeypatch):
+    """Production must still page: the guard keys on pytest, not on notifying."""
+    monkeypatch.setenv("NTFY_TOPIC", "prod-topic")
+    monkeypatch.delenv("PYTEST_CURRENT_TEST", raising=False)
+
+    assert notify("live-title", "msg") is True
+    assert notify_transport == ["https://ntfy.sh/prod-topic"]
 
 
 def test_notify_safe_never_raises_and_logs_warning(monkeypatch, caplog):
