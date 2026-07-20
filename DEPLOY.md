@@ -46,6 +46,10 @@ Put the printed token in `.env` as `CLAUDE_CODE_OAUTH_TOKEN=...`, then
 - **Real recovery**: `scripts/backup/restore.sh backups/ipo_<ts>.dump ipo` (asks for confirmation)
 - Consider syncing `./backups/` offsite (iCloud/rclone) — the dumps are the crown jewels.
 
+## Database password (do not template it)
+
+The password is hardcoded to `ipo` in both `db` (`POSTGRES_PASSWORD`) and `backup` (`PGPASSWORD`) — deliberately, not by oversight. Postgres reads `POSTGRES_PASSWORD` only at initdb time, and `DATABASE_URL` is hardcoded in `api`, `scheduler`, `tests/conftest.py` and `tests/test_migrations.py`. Making it `${POSTGRES_PASSWORD:-ipo}` therefore looks harmless on an existing volume but breaks the whole stack on a fresh one — exactly the migration path above. To rotate, use `ALTER USER ipo WITH PASSWORD ...` and update every `DATABASE_URL` in the same change.
+
 ## Manual operations
 
 ```bash

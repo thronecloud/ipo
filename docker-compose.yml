@@ -19,7 +19,7 @@ services:
     restart: unless-stopped
     environment:
       POSTGRES_USER: ipo
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-ipo}
+      POSTGRES_PASSWORD: ipo
       POSTGRES_DB: ipo
     ports:
       - "5432:5432"
@@ -136,7 +136,7 @@ services:
     restart: unless-stopped
     environment:
       PGHOST: db
-      PGPASSWORD: ${POSTGRES_PASSWORD:-ipo}
+      PGPASSWORD: ipo
       NTFY_TOPIC: ${NTFY_TOPIC:-}
       POSTGRES_USER: ipo
       POSTGRES_DB: ipo
