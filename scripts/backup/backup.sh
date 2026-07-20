@@ -10,7 +10,7 @@ log() { echo "[backup] $(date -u) $*"; }
 
 notify() {
   [ -n "${NTFY_TOPIC:-}" ] || return 0
-  wget -q -O /dev/null --post-data="$1" "https://ntfy.sh/${NTFY_TOPIC}" || true
+  curl -fsS -m 10 -o /dev/null -d "$1" "https://ntfy.sh/${NTFY_TOPIC}" || true
 }
 
 wait_for_db() {

@@ -128,7 +128,10 @@ services:
         condition: service_healthy
 
   backup:
-    image: postgres:16
+    build:
+      context: .
+      dockerfile: Dockerfile.backup
+    image: wisdominvest-backup
     container_name: ipo_backup
     restart: unless-stopped
     environment:

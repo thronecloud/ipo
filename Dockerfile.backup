@@ -1,0 +1,10 @@
+# Backup service image: postgres:16 plus an HTTP client.
+#
+# The stock postgres:16 image ships no curl, wget, nc or python3, so the
+# failure notification in scripts/backup/backup.sh could never leave the
+# container. A backup system that fails silently is the bug this fixes.
+FROM postgres:16
+
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends curl ca-certificates \
+    && rm -rf /var/lib/apt/lists/*
