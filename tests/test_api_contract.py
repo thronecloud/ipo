@@ -289,3 +289,56 @@ def test_stock_detail_exposes_confidence_block(client, seeded):
     assert comp["confidence_tier"] is not None
     assert comp["factor_version"] == "axis-v1"
     assert isinstance(comp["axis_scores"], dict) and comp["axis_scores"]
+
+
+# ---------- canonical units ----------
+
+QUOTE_FIELDS = ("current_price", "market_cap_cr", "pe_ratio", "roe",
+                "debt_to_equity", "revenue_growth", "ipo_return_pct")
+
+
+def test_quote_units_are_canonical_on_list_and_detail(client, seeded_stock_with_quote):
+    """roe percent, revenue_growth percent, debt_to_equity ratio — on BOTH surfaces.
+
+    The list and detail endpoints build their quote separately; this asserts
+    they agree, which they previously did not. The list item is flat
+    (DASHBOARDS_SPEC) while detail nests the same fields under `quote`.
+    """
+    symbol = seeded_stock_with_quote
+
+    listed = client.get("/api/stocks", params={"q": symbol}).json()["items"][0]
+    detail = client.get(f"/api/stocks/{symbol}").json()["quote"]
+
+    # seeded raw: roe=0.25, revenue_growth=0.30, debt_to_equity=150.0
+    assert listed["roe"] == pytest.approx(25.0)
+    assert detail["roe"] == pytest.approx(25.0)
+    assert detail["revenue_growth"] == pytest.approx(30.0)
+    assert detail["debt_to_equity"] == pytest.approx(1.5)
+
+    # market_cap is stored in rupees; both surfaces must publish crore.
+    assert detail["market_cap_cr"] == pytest.approx(5000.0)
+
+    for field in QUOTE_FIELDS:
+        assert listed[field] == pytest.approx(detail[field]), f"{field} diverges"
+
+
+def test_screener_quote_fallback_applies_to_detail_too(client, db_session):
+    """A name Yahoo does not cover yet must show the same screener-sourced
+    market cap and price on the list and on its detail page."""
+    from engine.repo import add_snapshot
+    from factories import make_stock, utc
+
+    stock = make_stock(db_session, "NOYF", company_name="No Yahoo Ltd",
+                       universe=["ipo_2025"], issue_price=25.0)
+    screener = {"ratios": {"Market Cap": "60.3", "Current Price": "33.5"}}
+    add_snapshot(db_session, stock, {"screener": screener}, {},
+                 source="screener", captured_at=utc(-1))
+    db_session.commit()
+
+    listed = client.get("/api/stocks", params={"q": "NOYF"}).json()["items"][0]
+    detail = client.get("/api/stocks/NOYF").json()["quote"]
+
+    assert listed["market_cap_cr"] == pytest.approx(60.3)
+    assert detail["market_cap_cr"] == pytest.approx(60.3)
+    assert detail["current_price"] == pytest.approx(33.5)
+    assert detail["ipo_return_pct"] == pytest.approx(listed["ipo_return_pct"])

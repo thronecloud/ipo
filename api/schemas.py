@@ -46,13 +46,13 @@ class StockListItem(BaseModel):
     analysis_coverage: int | None = None
     composite_updated_at: datetime | None = None
     per_persona: dict[str, PersonaVerdict] = {}
-    current_price: float | None = None
-    market_cap_cr: float | None = None
-    pe_ratio: float | None = None
-    roe: float | None = None
-    debt_to_equity: float | None = None
-    revenue_growth: float | None = None
-    ipo_return_pct: float | None = None
+    current_price: float | None = None       # rupees
+    market_cap_cr: float | None = None       # crore
+    pe_ratio: float | None = None            # ratio
+    roe: float | None = None                 # percent, e.g. 39.4
+    debt_to_equity: float | None = None      # ratio, e.g. 0.098
+    revenue_growth: float | None = None      # percent, e.g. 18.5
+    ipo_return_pct: float | None = None      # percent
     data_quality: str | None = None
 
 
@@ -79,13 +79,13 @@ class Identity(BaseModel):
 
 
 class Quote(BaseModel):
-    current_price: float | None = None
-    market_cap_cr: float | None = None
-    pe_ratio: float | None = None
-    roe: float | None = None
-    debt_to_equity: float | None = None
-    revenue_growth: float | None = None
-    ipo_return_pct: float | None = None
+    current_price: float | None = None       # rupees
+    market_cap_cr: float | None = None       # crore
+    pe_ratio: float | None = None            # ratio
+    roe: float | None = None                 # percent, e.g. 39.4
+    debt_to_equity: float | None = None      # ratio, e.g. 0.098
+    revenue_growth: float | None = None      # percent, e.g. 18.5
+    ipo_return_pct: float | None = None      # percent
     data_quality: str | None = None
     as_of: datetime | None = None
 

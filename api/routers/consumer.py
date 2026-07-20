@@ -35,6 +35,7 @@ from api.schemas import (
     ConvictionPoint,
     PersonaVerdict,
 )
+from api.units import normalize_quote
 from db.models import Analysis, CompositeScore, DailyPrice, Stock, StockSnapshot
 from engine.repo import universe_contains
 
@@ -85,6 +86,32 @@ def _screener_quote_fallback(db: Session, stock_ids: list[int]) -> dict[int, tup
         out[sid] = (parse_number(ratios.get("Market Cap")),
                     parse_number(ratios.get("Current Price")))
     return out
+
+
+def _quote_fields(raw, fallback: tuple | None, issue_price: float | None) -> dict:
+    """Canonical quote fields from one yfinance snapshot row.
+
+    The list and detail endpoints both go through here so they cannot disagree.
+    `market_cap` is stored in rupees and becomes crore at this boundary; the
+    screener fallback is already in crore. Scale fixes for roe, revenue_growth
+    and debt_to_equity live in api.units."""
+    fb_mcap, fb_price = fallback or (None, None)
+    price = raw.get("current_price")
+    if price is None:
+        price = fb_price
+    mcap_cr = to_cr(raw.get("market_cap"))
+    if mcap_cr is None:
+        mcap_cr = fb_mcap
+    return normalize_quote({
+        "current_price": price,
+        "market_cap_cr": mcap_cr,
+        "pe_ratio": raw.get("pe_ratio"),
+        "roe": raw.get("roe"),
+        "debt_to_equity": raw.get("debt_to_equity"),
+        "revenue_growth": raw.get("revenue_growth"),
+        "ipo_return_pct": ipo_return_pct(issue_price, price),
+        "data_quality": raw.get("data_quality"),
+    })
 
 
 def _latest_composite_sq():
@@ -227,13 +254,6 @@ def list_stocks(
         comp_score = row._mapping.get("composite_score")
         consensus_rec = row._mapping.get("consensus_recommendation")
         coverage = row._mapping.get("analysis_coverage")
-        mcap_cr = to_cr(row._mapping.get("market_cap"))
-        price = row._mapping.get("current_price")
-        fb_mcap, fb_price = quote_fb.get(stock.id, (None, None))
-        if mcap_cr is None:
-            mcap_cr = fb_mcap
-        if price is None:
-            price = fb_price
         items.append(
             StockListItem(
                 symbol=stock.symbol,
@@ -249,14 +269,7 @@ def list_stocks(
                 analysis_coverage=coverage,
                 composite_updated_at=row._mapping.get("computed_at"),
                 per_persona=per_persona_by_stock.get(stock.id, {}),
-                current_price=price,
-                market_cap_cr=mcap_cr,
-                pe_ratio=row._mapping.get("pe_ratio"),
-                roe=row._mapping.get("roe"),
-                debt_to_equity=row._mapping.get("debt_to_equity"),
-                revenue_growth=row._mapping.get("revenue_growth"),
-                ipo_return_pct=ipo_return_pct(stock.issue_price, price),
-                data_quality=row._mapping.get("data_quality"),
+                **_quote_fields(row._mapping, quote_fb.get(stock.id), stock.issue_price),
             )
         )
 
@@ -297,15 +310,20 @@ def stock_detail(symbol: str, db: Session = Depends(get_db)):
         .order_by(StockSnapshot.captured_at.desc(), StockSnapshot.id.desc())
         .limit(1)
     )
+    raw = {
+        "current_price": yf.current_price if yf else None,
+        "market_cap": yf.market_cap if yf else None,
+        "pe_ratio": yf.pe_ratio if yf else None,
+        "roe": yf.roe if yf else None,
+        "debt_to_equity": yf.debt_to_equity if yf else None,
+        "revenue_growth": yf.revenue_growth if yf else None,
+        "data_quality": yf.data_quality if yf else None,
+    }
+    fallback = None
+    if raw["market_cap"] is None or raw["current_price"] is None:
+        fallback = _screener_quote_fallback(db, [stock.id]).get(stock.id)
     quote = Quote(
-        current_price=yf.current_price if yf else None,
-        market_cap_cr=to_cr(yf.market_cap) if yf else None,
-        pe_ratio=yf.pe_ratio if yf else None,
-        roe=yf.roe if yf else None,
-        debt_to_equity=yf.debt_to_equity if yf else None,
-        revenue_growth=yf.revenue_growth if yf else None,
-        ipo_return_pct=ipo_return_pct(stock.issue_price, yf.current_price if yf else None),
-        data_quality=yf.data_quality if yf else None,
+        **_quote_fields(raw, fallback, stock.issue_price),
         as_of=yf.captured_at if yf else None,
     )
 

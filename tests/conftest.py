@@ -83,3 +83,26 @@ def db_session(test_database):
     yield session
     session.rollback()
     session.close()
+
+
+@pytest.fixture()
+def seeded_stock_with_quote(db_session):
+    """One stock whose latest yfinance snapshot carries yfinance-native scales:
+    roe/revenue_growth as fractions, debt_to_equity as a percentage. Returns
+    the symbol. Canonical output is roe 25.0, revenue_growth 30.0, d/e 1.5."""
+    from engine.repo import add_snapshot, extract_columns
+    from factories import full_info, make_stock, utc, yf_payload
+
+    stock = make_stock(db_session, "UNITS", company_name="Units Ltd",
+                       universe=["ipo_2025"], issue_price=100.0)
+    payload = yf_payload(price=120.0)
+    payload["info"] = full_info(
+        price=120.0,
+        returnOnEquity=0.25,
+        revenueGrowth=0.30,
+        debtToEquity=150.0,
+    )
+    add_snapshot(db_session, stock, payload, extract_columns(payload["info"]),
+                 data_quality="full", captured_at=utc(-1))
+    db_session.commit()
+    return stock.symbol
