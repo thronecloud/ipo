@@ -129,3 +129,81 @@ def test_api_list_yf_values_win_over_screener(db_session):
     (item,) = r.json()["items"]
     assert item["current_price"] == 200.0                  # yf wins
     assert item["market_cap_cr"] == 5000.0                 # 50B abs -> 5,000 Cr
+
+
+# ---------- 4. ticker-belongs-to-company guard (yf_refresh) ----------
+#
+# The screener slug is assumed to be the NSE ticker with no verification. A
+# slug/ticker mismatch fetches a *different* listed company; every downstream
+# number is internally consistent and about the wrong business. refresh() must
+# refuse to promote (or store) a payload whose longName disagrees with the
+# stock's company_name.
+
+from sqlalchemy import func, select
+
+import engine.ingest.yf_refresh as yfr
+from db.models import Stock, StockSnapshot
+
+
+def _reload_stock(db_session, symbol: str) -> Stock:
+    db_session.expire_all()
+    return db_session.scalar(select(Stock).where(Stock.symbol == symbol))
+
+
+def _snapshot_count(db_session, stock_id: int) -> int:
+    return db_session.scalar(
+        select(func.count(StockSnapshot.id)).where(StockSnapshot.stock_id == stock_id)
+    )
+
+
+def _payload_named(long_name):
+    payload = yf_payload()
+    payload["info"]["longName"] = long_name
+    return payload
+
+
+def test_refresh_refuses_to_promote_on_company_name_mismatch(db_session, monkeypatch):
+    make_stock(db_session, "IDENTMIS", status="new",
+               company_name="Acme Industries Ltd")
+    payload = _payload_named("Zenith Textiles Limited")
+    monkeypatch.setattr(yfr, "fetch_payload", lambda sym: (payload, "full"))
+
+    stats = yfr.refresh(symbols=["IDENTMIS"], delay=0, verbose=False)
+
+    assert stats["identity_mismatch"] == 1
+    assert stats["promoted"] == 0
+    stock = _reload_stock(db_session, "IDENTMIS")
+    assert stock.status != "active"
+    assert stock.status == "new"                       # not promoted, not parked
+    assert _snapshot_count(db_session, stock.id) == 0  # mismatched payload never stored
+
+
+def test_refresh_promotes_when_company_names_agree(db_session, monkeypatch):
+    """The guard must not block a legitimate refresh: a first-token match promotes."""
+    make_stock(db_session, "IDENTOK", status="new",
+               company_name="Acme Industries Ltd")
+    payload = _payload_named("Acme Textiles Ltd")   # first significant token agrees
+    monkeypatch.setattr(yfr, "fetch_payload", lambda sym: (payload, "full"))
+
+    stats = yfr.refresh(symbols=["IDENTOK"], delay=0, verbose=False)
+
+    assert stats["promoted"] == 1
+    assert stats.get("identity_mismatch", 0) == 0
+    stock = _reload_stock(db_session, "IDENTOK")
+    assert stock.status == "active"
+    assert _snapshot_count(db_session, stock.id) == 1
+
+
+def test_refresh_allows_promotion_when_longname_missing(db_session, monkeypatch):
+    """Missing longName cannot disprove identity — fail-safe: do not block."""
+    make_stock(db_session, "IDENTNONE", status="new",
+               company_name="Acme Industries Ltd")
+    payload = yf_payload()                           # full_info carries no longName
+    assert "longName" not in payload["info"]
+    monkeypatch.setattr(yfr, "fetch_payload", lambda sym: (payload, "full"))
+
+    stats = yfr.refresh(symbols=["IDENTNONE"], delay=0, verbose=False)
+
+    assert stats["promoted"] == 1
+    assert stats.get("identity_mismatch", 0) == 0
+    assert _reload_stock(db_session, "IDENTNONE").status == "active"

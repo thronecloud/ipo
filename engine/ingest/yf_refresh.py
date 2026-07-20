@@ -6,6 +6,7 @@ no-op (no duplicate row) — this is the "never store the same data twice" rule.
 Reuses the proven serializers from the original fetcher.
 """
 
+import re
 import time
 
 import yfinance as yf
@@ -26,6 +27,30 @@ from src.fetch_stock_data import safe_fetch, serialize_dataframe, serialize_info
 
 REFRESH_DELAY = 2.0
 PARK_THRESHOLD = 3  # consecutive failures before an active stock is parked as "stale"
+
+
+def names_agree(a: str | None, b: str | None) -> bool:
+    """Loose company-name agreement, used to block promotion when yfinance's
+    longName clearly names a *different* listed company than the screener slug
+    resolved to. Provider and exchange names differ in suffixes and punctuation,
+    so agreement is judged on the first significant token only.
+
+    Deliberately asymmetric with gapfill's `_names_agree`: that one fills
+    identity data (ISIN) only on *clear agreement* and is stricter (both leading
+    tokens must match); this one blocks promotion only on *clear disagreement*
+    and is looser (first token suffices). Both fail-safe in their own direction —
+    gapfill withholds on doubt, this admits on doubt.
+    """
+    if not a or not b:
+        return True  # cannot disprove; do not block on missing data
+    drop = {"ltd", "limited", "the", "india", "industries", "company", "co", "pvt", "private"}
+
+    def toks(s):
+        parts = [t for t in re.sub(r"[^a-z0-9 ]", " ", s.lower()).split() if t not in drop]
+        return parts[:2]
+
+    ta, tb = toks(a), toks(b)
+    return bool(ta) and bool(tb) and ta[0] == tb[0]
 
 
 def _history_summary(history):
@@ -119,6 +144,12 @@ def refresh_one(session, stock: Stock, counts=None) -> str:
     payload, quality = fetch_payload(stock.yf_symbol)
     if payload is None:
         return quality  # "error: ..."
+    # Guard identity before anything is stored: if the fetched company's name
+    # clearly disagrees with ours, the slug resolved to a different listed
+    # business. Return early so no snapshot (and no daily prices) is written —
+    # a mismatched payload must never overwrite this stock's stored data.
+    if not names_agree((payload.get("info") or {}).get("longName"), stock.company_name):
+        return "identity_mismatch"
     # Pop the OHLCV series out before hashing/storing the snapshot payload.
     price_rows = payload.pop("_price_rows", [])
     ipo_data = {
@@ -213,12 +244,29 @@ def refresh(universe=None, symbols=None, statuses=("active", "new"), promote=Tru
 
         counts = {"new_snapshot": 0, "unchanged": 0, "no_symbol": 0, "error": 0,
                   "promoted": 0, "unfetchable": 0, "parked": 0, "revived": 0,
-                  "soft_fail": 0, "bars_rebased": 0}
+                  "soft_fail": 0, "bars_rebased": 0, "identity_mismatch": 0}
         for i, stock in enumerate(stocks):
             was_new = stock.status == "new"
             res = refresh_one(session, stock, counts)
             key = "error" if res.startswith("error") else res
             counts[key] = counts.get(key, 0) + 1
+
+            if res == "identity_mismatch":
+                # A wrong-company payload: don't promote, don't park, don't bump
+                # failures (this isn't a transient fetch blip). Notify once so the
+                # slug/ticker mapping gets a human look; nothing was stored.
+                from engine.notify import notify_safe
+                notify_safe("stock identity mismatch (wrong company fetched)",
+                            f"{stock.symbol} ({stock.company_name}) resolved to a "
+                            f"different listed company on yfinance — the slug/ticker "
+                            f"mapping is wrong. Payload discarded, not stored.",
+                            tags="warning")
+                if verbose:
+                    print(f"  [{i+1}/{len(stocks)}] {stock.symbol}: identity_mismatch")
+                session.commit()
+                if i < len(stocks) - 1:
+                    time.sleep(delay)
+                continue
 
             got_snapshot = res in ("new_snapshot", "unchanged")
             hard_fail = res == "no_symbol"
