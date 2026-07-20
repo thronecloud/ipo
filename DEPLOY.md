@@ -88,7 +88,15 @@ COMPOSE_FILE=docker-compose.yml:docker-compose.prod.yml
 SITE_ADDRESS=your.host.example        # a hostname (not a bare IP) → enables HTTPS
 ADMIN_HASH=<bcrypt, every $ doubled>  # see note below
 ADMIN_TOKEN=<random>                   # guards job-trigger endpoints
+NTFY_TOPIC=<unique string>             # failure alerts; see below
 ```
+
+`NTFY_TOPIC` is the only channel by which the engine and the backup job can
+tell you something broke. Setting it is half the job — **subscribe to
+`https://ntfy.sh/<topic>` in the ntfy app or browser**, or alerts publish into
+a topic nobody reads and every failure stays silent. `NOTIFY_WEBHOOK_URL` is an
+optional second channel (Slack/Discord/Telegram bridge) taking the same events
+as JSON.
 
 Generate `ADMIN_HASH` and escape it in one step — Compose reads `.env` and
 interpolates `$`, so each `$` in the bcrypt hash must be doubled to `$$` or the
