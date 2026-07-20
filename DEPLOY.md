@@ -82,8 +82,16 @@ Local dev never loads this overlay. The server opts in with one line in `.env`:
 ```
 COMPOSE_FILE=docker-compose.yml:docker-compose.prod.yml
 SITE_ADDRESS=your.host.example        # a hostname (not a bare IP) → enables HTTPS
-ADMIN_HASH=<bcrypt>                    # docker run --rm caddy:2 caddy hash-password --plaintext 'yourpassword'
+ADMIN_HASH=<bcrypt, every $ doubled>  # see note below
 ADMIN_TOKEN=<random>                   # guards job-trigger endpoints
+```
+
+Generate `ADMIN_HASH` and escape it in one step — Compose reads `.env` and
+interpolates `$`, so each `$` in the bcrypt hash must be doubled to `$$` or the
+hash is silently truncated:
+
+```bash
+docker run --rm caddy:2 caddy hash-password --plaintext 'yourpassword' | sed 's/\$/$$/g'
 ```
 
 `SITE_ADDRESS` must be a DNS name for Let's Encrypt to issue a cert (a bare IP
