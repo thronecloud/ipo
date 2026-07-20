@@ -20,7 +20,7 @@ Run:  python -m engine.scheduler   (host or container — see docker-compose.yml
 
 import os
 import traceback
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from apscheduler.schedulers.blocking import BlockingScheduler
@@ -54,6 +54,12 @@ ENRICH_BATCH = _int("SCHED_ENRICH_BATCH", 50)
 ANALYZE_DAILY_CAP = _int("SCHED_ANALYZE_DAILY_CAP", 200)
 # Bounded gap-fill sweep per weekly tick (identity is free; network parts capped).
 DQ_FILL_BATCH = _int("SCHED_DQ_FILL_BATCH", 150)
+# Grace window before a still-"running" job_run is treated as dead. The api
+# container launches detached engine jobs of its own, so a scheduler restart must
+# not error work that is genuinely in flight elsewhere. The slowest bounded batch
+# is 25 analyze pairs x the 300s backend cap ~= 2h; 24h clears that by an order of
+# magnitude while still catching zombies, which otherwise persist forever.
+REAP_ORPHAN_HOURS = _int("SCHED_REAP_ORPHAN_HOURS", 24)
 
 
 def _now() -> str:
@@ -102,6 +108,32 @@ def analyses_done_today() -> int:
         ) or 0
     finally:
         session.close()
+
+
+def reap_orphaned_runs(session) -> int:
+    """Mark job_runs stranded at 'running' by process death as errored.
+
+    status='running' is only ever cleared by the job's own finally block, so a
+    container restart, rebuild, or OOM kill leaves the row running forever.
+    Only runs older than REAP_ORPHAN_HOURS are touched, so a job still executing
+    in another container is never mistaken for a corpse.
+    """
+    from sqlalchemy import update
+
+    from db.models import JobRun
+
+    now = datetime.now(timezone.utc)
+    result = session.execute(
+        update(JobRun)
+        .where(JobRun.status == "running",
+               JobRun.started_at < now - timedelta(hours=REAP_ORPHAN_HOURS))
+        .values(status="error",
+                error="orphaned by process restart",
+                finished_at=now)
+        .execution_options(synchronize_session=False)
+    )
+    session.commit()
+    return result.rowcount
 
 
 def job_discover():
@@ -225,6 +257,16 @@ def build_scheduler() -> BlockingScheduler:
 
 
 def main():
+    from db.base import SessionLocal
+
+    session = SessionLocal()
+    try:
+        n = reap_orphaned_runs(session)
+        if n:
+            print(f"[scheduler][{_now()}] reaped {n} orphaned job_run(s)")
+    finally:
+        session.close()
+
     sched = build_scheduler()
     print(f"Living engine scheduler starting at {_now()}. Jobs:")
     for job in sched.get_jobs():

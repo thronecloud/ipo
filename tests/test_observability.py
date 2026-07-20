@@ -7,6 +7,7 @@
 """
 
 import logging
+from datetime import datetime, timedelta, timezone
 
 import pytest
 from sqlalchemy import select
@@ -98,3 +99,59 @@ def test_grep_no_silent_pass_in_engine():
         if re.search(r"except\s+\w*Exception\w*[^\n]*:\s*\n\s*pass\b", src):
             offenders.append(str(p))
     assert not offenders, f"silent except/pass in: {offenders}"
+
+
+def test_reap_orphaned_runs_marks_stranded_runs_as_error(db_session):
+    from engine.repo import JobRun
+    from engine.scheduler import reap_orphaned_runs
+
+    stranded = JobRun(job_type="analyze", status="running",
+                      started_at=datetime(2026, 7, 5, tzinfo=timezone.utc))
+    live = JobRun(job_type="score", status="success",
+                  started_at=datetime(2026, 7, 19, tzinfo=timezone.utc))
+    db_session.add_all([stranded, live])
+    db_session.commit()
+
+    reaped = reap_orphaned_runs(db_session)
+
+    db_session.refresh(stranded)
+    db_session.refresh(live)
+    assert reaped == 1
+    assert stranded.status == "error"
+    assert "orphaned" in (stranded.error or "")
+    assert stranded.finished_at is not None
+    assert live.status == "success"
+
+
+def test_reap_orphaned_runs_spares_recent_runs_and_is_idempotent(db_session):
+    """A job legitimately in flight in another container must survive a reap.
+
+    The scheduler restarting must never error a run the api container just
+    launched, so only runs older than the grace window are reaped.
+    """
+    from engine.repo import JobRun
+    from engine.scheduler import REAP_ORPHAN_HOURS, reap_orphaned_runs
+
+    now = datetime.now(timezone.utc)
+    fresh = JobRun(job_type="analyze", status="running", started_at=now)
+    inside = JobRun(job_type="analyze", status="running",
+                    started_at=now - timedelta(hours=REAP_ORPHAN_HOURS - 1))
+    outside = JobRun(job_type="analyze", status="running",
+                     started_at=now - timedelta(hours=REAP_ORPHAN_HOURS + 1))
+    db_session.add_all([fresh, inside, outside])
+    db_session.commit()
+
+    assert reap_orphaned_runs(db_session) == 1
+    for j in (fresh, inside, outside):
+        db_session.refresh(j)
+    assert fresh.status == "running"
+    assert fresh.finished_at is None
+    assert inside.status == "running"
+    assert inside.finished_at is None
+    assert outside.status == "error"
+
+    # Second boot must be a no-op, not a re-write of the row it already reaped.
+    reaped_at = outside.finished_at
+    assert reap_orphaned_runs(db_session) == 0
+    db_session.refresh(outside)
+    assert outside.finished_at == reaped_at
