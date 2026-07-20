@@ -22,7 +22,9 @@ services:
       POSTGRES_PASSWORD: ipo
       POSTGRES_DB: ipo
     ports:
-      - "5432:5432"
+      # Loopback only: the credentials are ipo:ipo, so this must never be
+      # reachable from off-host. Containers reach it over the compose network.
+      - "127.0.0.1:5432:5432"
     volumes:
       - ipo_pgdata:/var/lib/postgresql/data
       # First-boot auto-restore: newest ./backups/ipo_*.dump seeds an EMPTY
@@ -51,6 +53,8 @@ services:
       ANALYSIS_MODEL: ${ANALYSIS_MODEL:-claude-fable-5}
       ADMIN_TOKEN: ${ADMIN_TOKEN:-}
       CLAUDE_CODE_OAUTH_TOKEN: ${CLAUDE_CODE_OAUTH_TOKEN:-}
+      NTFY_TOPIC: ${NTFY_TOPIC:-}
+      NOTIFY_WEBHOOK_URL: ${NOTIFY_WEBHOOK_URL:-}
     ports:
       - "8000:8000"
     depends_on:
@@ -100,6 +104,8 @@ services:
       ANALYSIS_BACKEND: ${ANALYSIS_BACKEND:-cli}
       ANALYSIS_MODEL: ${ANALYSIS_MODEL:-claude-fable-5}
       CLAUDE_CODE_OAUTH_TOKEN: ${CLAUDE_CODE_OAUTH_TOKEN:-}
+      NTFY_TOPIC: ${NTFY_TOPIC:-}
+      NOTIFY_WEBHOOK_URL: ${NOTIFY_WEBHOOK_URL:-}
       SCHED_TZ: UTC
       SCHED_ANALYZE_BATCH: ${SCHED_ANALYZE_BATCH:-20}
       SCHED_ANALYZE_DAILY_CAP: ${SCHED_ANALYZE_DAILY_CAP:-200}
