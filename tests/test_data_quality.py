@@ -379,3 +379,65 @@ def test_gapfill_identity_copies_sector_from_yf(db_session):
     refreshed = db_session.scalar(select(Stock).where(Stock.symbol == "FILLME"))
     assert refreshed.sector == "Healthcare"
     assert res["result"]["identity_filled"] >= 1
+
+
+# ---------- price cliff detection ----------
+
+def _priced_stock(db_session, symbol, closes, start=date(2026, 1, 5)):
+    """A fully-identified stock with both sources viable and a given close series."""
+    from datetime import timedelta
+    from engine.repo import upsert_daily_prices
+    st = make_stock(db_session, symbol, isin=f"INE{symbol}", sector="X",
+                    industry="Y", cap_category="small")
+    _yf(db_session, st)
+    _screener(db_session, st)
+    upsert_daily_prices(db_session, st.id, [
+        {"date": start + timedelta(days=i), "open": c, "high": c,
+         "low": c, "close": c, "volume": 100}
+        for i, c in enumerate(closes)
+    ])
+    db_session.commit()
+    return st
+
+
+def _flag(rep, kind):
+    return next((f for f in rep["flags"] if f["type"] == kind), None)
+
+
+def test_price_cliff_flagged_on_unadjusted_split(db_session):
+    """A 1:10 split that the provider never back-adjusted leaves a -90% one-day
+    move that never happened. Bar count and recency cannot see it."""
+    st = _priced_stock(db_session, "CLIFF", [1000.0, 1010.0, 1005.0, 100.0, 102.0])
+    rep = score_stock(db_session, st)
+    flag = _flag(rep, "price_cliff")
+    assert flag is not None
+    assert flag["severity"] == "warn"
+    assert "-90" in flag["detail"] or "-0.9" in flag["detail"]
+
+
+def test_normal_volatility_is_not_a_cliff(db_session):
+    """Indian smallcaps legitimately hit +/-20% circuit limits. That is not a cliff."""
+    st = _priced_stock(db_session, "NOCLIFF", [100.0, 120.0, 96.0, 115.0, 92.0])
+    rep = score_stock(db_session, st)
+    assert _flag(rep, "price_cliff") is None
+
+
+def test_negative_close_does_not_produce_a_cliff(db_session):
+    """Adjusted-close artifacts leave negative closes in old history; a ratio against
+    a negative base is meaningless and must not be reported as a cliff."""
+    st = _priced_stock(db_session, "NEGCLOSE", [-0.13, -0.05, 1.0, 1.02, 1.01])
+    rep = score_stock(db_session, st)
+    assert _flag(rep, "price_cliff") is None
+
+
+def test_cliff_reports_the_recent_one_not_the_largest(db_session):
+    """An ancient adjusted-close artifact must not mask the recent unadjusted split.
+    Studies only read recent bars, so recency — not magnitude — is what to surface."""
+    st = _priced_stock(db_session, "OLDNOISE",
+                       [1.0, 5000.0, 5050.0, 5000.0, 500.0], start=date(2004, 3, 1))
+    rep = score_stock(db_session, st)
+    flag = _flag(rep, "price_cliff")
+    assert flag is not None
+    assert "2004-03-05" in flag["detail"]      # the latest cliff, the 1:10 drop
+    assert "-90.0%" in flag["detail"]
+    assert flag["detail"].startswith("2 impossible")  # both counted

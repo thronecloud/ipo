@@ -74,6 +74,57 @@ def _price_coverage(session, stock_id):
     return row[0] or 0, row[1]
 
 
+# A one-day move outside this band is not a market move. Indian equities carry 2/5/10/20%
+# circuit limits, so even a limit-down day cannot reach -35%; a series that drops further
+# in a single session is almost always a corporate action (split/bonus/demerger) the
+# provider failed to back-adjust, leaving a return that never happened. The band is
+# asymmetric because large upside gaps are far more often genuine — thin SME counters and
+# post-listing re-openings really do print +50% — while a large downside gap is the
+# signature of an unadjusted split (1:2 = -50%, 1:10 = -90%).
+CLIFF_BAND = (-0.35, 0.55)
+
+
+def _price_cliffs(session, stock_id):
+    """Adjacent-day moves outside CLIFF_BAND, as (count, latest_date, latest_return),
+    or None when the series is clean.
+
+    Reports the most RECENT cliff, not the largest. The backtest anchors on
+    information_date and measures 1w-6m forward returns, so it only ever reads recent
+    bars — while the largest move in a long series is usually a pre-2005 adjusted-close
+    artifact that no study will touch. Ranking by magnitude would let that ancient noise
+    mask the recent unadjusted split that actually corrupts a live study.
+
+    Bars with a non-positive previous close are skipped: those same artifacts leave
+    negative closes in old history, and a ratio against a negative base is meaningless —
+    it would report a cliff that is really just a bad base.
+    """
+    prev = func.lag(DailyPrice.close).over(
+        partition_by=DailyPrice.stock_id, order_by=DailyPrice.date
+    )
+    series = (
+        select(DailyPrice.date.label("date"), DailyPrice.close.label("close"),
+               prev.label("prev"))
+        .where(DailyPrice.stock_id == stock_id)
+        .subquery()
+    )
+    ret = (series.c.close / series.c.prev - 1).label("ret")
+    cliffs = (
+        select(series.c.date, ret)
+        .where(series.c.prev > 0, series.c.close.isnot(None),
+               (ret < CLIFF_BAND[0]) | (ret > CLIFF_BAND[1]))
+        .subquery()
+    )
+    row = session.execute(
+        select(func.count(), func.max(cliffs.c.date)).select_from(cliffs)
+    ).one()
+    if not row[0]:
+        return None
+    latest_ret = session.execute(
+        select(cliffs.c.ret).where(cliffs.c.date == row[1]).limit(1)
+    ).scalar()
+    return row[0], row[1], latest_ret
+
+
 # ---------- per-dimension scorers ----------
 
 def _identity(stock, missing):
@@ -126,12 +177,24 @@ def _screener(scr_snap, flags, missing):
     return _dim(round(score, 3), status, f"{len(present)}/4 screener sections")
 
 
-def _prices(n, last_bar, yf_viable, flags, missing, as_of):
+def _prices(n, last_bar, cliff, yf_viable, flags, missing, as_of):
     if not yf_viable:
         return _dim(None, "na", "no yfinance price history available")
     if n == 0:
         missing.append("prices")
         return _dim(0.0, "fail", "no daily bars")
+    if cliff:
+        # A flag, not a score cut: the series is fully covered and current, so the
+        # coverage score is honest. What is wrong is a *value*, and per this module's
+        # contract correctness issues surface as flags for human review. It is also
+        # not fillable — re-fetching returns the same unadjusted series from Yahoo.
+        n_cliffs, cliff_date, cliff_ret = cliff
+        flags.append({
+            "type": "price_cliff", "severity": "warn",
+            "detail": f"{n_cliffs} impossible one-day move(s); latest "
+                      f"{cliff_ret * 100:+.1f}% on {cliff_date} — likely a corporate "
+                      f"action the provider never back-adjusted",
+        })
     age = (as_of.date() - last_bar).days if last_bar else 9999
     if age <= 7:
         return _dim(1.0, "pass", f"{n} bars, current")
@@ -240,6 +303,7 @@ def score_stock(session, stock, as_of=None) -> dict:
     yf = latest_snapshot(session, stock.id, source="yfinance")
     scr = latest_snapshot(session, stock.id, source="screener")
     n_prices, last_bar = _price_coverage(session, stock.id)
+    cliff = _price_cliffs(session, stock.id) if n_prices else None
     yf_viable, scr_viable = _viability(yf, scr)
     source_dark = not yf_viable and not scr_viable
 
@@ -255,7 +319,7 @@ def score_stock(session, stock, as_of=None) -> dict:
     else:
         dims["yfinance"] = _yfinance(yf, flags, missing)
         dims["screener"] = _screener(scr, flags, missing)
-        dims["prices"] = _prices(n_prices, last_bar, yf_viable, flags, missing, as_of)
+        dims["prices"] = _prices(n_prices, last_bar, cliff, yf_viable, flags, missing, as_of)
         dims["quarters"] = _quarters(yf, scr, yf_viable, scr_viable, flags, missing, as_of)
         dims["correctness"] = _correctness(yf, scr, yf_viable, scr_viable, flags)
 

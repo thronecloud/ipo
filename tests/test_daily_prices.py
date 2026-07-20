@@ -1,4 +1,4 @@
-"""Daily OHLCV ingestion: append-only upsert + refresh_one wiring.
+"""Daily OHLCV ingestion: upsert + corporate-action rebase + refresh_one wiring.
 
 `fetch_payload` is monkeypatched so no network / yfinance call ever happens.
 """
@@ -14,16 +14,20 @@ from tests.factories import make_stock, yf_payload
 
 
 def _bars(start_day: int, n: int) -> list[dict]:
+    """Bars whose values are a function of the DATE, not of the window offset — the
+    provider returns the same bar for the same day on every fetch, so overlapping
+    windows must agree. (Values keyed to the offset would make every overlapping
+    re-fetch look like a corporate-action rebase.)"""
     return [
         {
-            "date": date(2026, 1, start_day + i),
-            "open": 100.0 + i,
-            "high": 105.0 + i,
-            "low": 99.0 + i,
-            "close": 102.0 + i,
-            "volume": 1000 + i,
+            "date": date(2026, 1, day),
+            "open": 100.0 + day,
+            "high": 105.0 + day,
+            "low": 99.0 + day,
+            "close": 102.0 + day,
+            "volume": 1000 + day,
         }
-        for i in range(n)
+        for day in range(start_day, start_day + n)
     ]
 
 
@@ -57,7 +61,7 @@ def test_stored_bar_values_roundtrip(db_session):
     db_session.commit()
     bar = db_session.scalar(select(DailyPrice).where(DailyPrice.stock_id == stock.id))
     assert (bar.date, bar.open, bar.high, bar.low, bar.close, bar.volume) == (
-        date(2026, 1, 10), 100.0, 105.0, 99.0, 102.0, 1000,
+        date(2026, 1, 10), 110.0, 115.0, 109.0, 112.0, 1010,
     )
 
 
@@ -89,3 +93,72 @@ def test_refresh_one_without_price_rows_is_safe(db_session, monkeypatch):
     assert db_session.scalar(
         select(func.count()).select_from(DailyPrice).where(DailyPrice.stock_id == stock.id)
     ) == 0
+
+
+# ---------- corporate-action rebase ----------
+
+def test_reingesting_split_adjusted_history_corrects_stored_bars(db_session):
+    """After a 1:10 split Yahoo rebases history. Append-only storage would keep the
+    pre-split closes and create a -90% cliff that never happened."""
+    stock = make_stock(db_session, "SPLITCO")
+    repo.upsert_daily_prices(db_session, stock.id, [
+        {"date": date(2026, 1, 5), "open": 1000.0, "high": 1010.0,
+         "low": 990.0, "close": 1000.0, "volume": 1},
+    ])
+    db_session.commit()
+
+    # Same date, rebased 1:10 by the provider.
+    written = repo.upsert_daily_prices(db_session, stock.id, [
+        {"date": date(2026, 1, 5), "open": 100.0, "high": 101.0,
+         "low": 99.0, "close": 100.0, "volume": 10},
+    ])
+    db_session.commit()
+
+    bar = db_session.scalar(select(DailyPrice).where(
+        DailyPrice.stock_id == stock.id, DailyPrice.date == date(2026, 1, 5)))
+    assert written == 1
+    assert (bar.open, bar.high, bar.low, bar.close, bar.volume) == (
+        100.0, 101.0, 99.0, 100.0, 10)
+
+
+def test_identical_reingest_writes_nothing(db_session):
+    """The nightly refresh re-sends the whole `period=max` series. Bars whose values
+    are unchanged must not be rewritten — otherwise every refresh churns the table."""
+    stock = make_stock(db_session, "NOCHURN")
+    rows = _bars(1, 20)
+    assert repo.upsert_daily_prices(db_session, stock.id, rows) == 20
+    db_session.commit()
+
+    assert repo.upsert_daily_prices(db_session, stock.id, rows) == 0
+    db_session.commit()
+    assert repo.upsert_daily_prices(db_session, stock.id, rows) == 0
+    db_session.commit()
+
+
+def test_subtolerance_float_noise_does_not_rewrite(db_session):
+    """Float round-trip noise is not a corporate action. A bar differing in the last
+    bits must not be rewritten, or it would churn nightly forever."""
+    stock = make_stock(db_session, "FUZZ")
+    repo.upsert_daily_prices(db_session, stock.id, _bars(1, 1))
+    db_session.commit()
+
+    noisy = _bars(1, 1)
+    noisy[0]["close"] = 103.0 * (1 + 1e-13)
+    noisy[0]["open"] = 101.0 * (1 - 1e-13)
+    assert repo.upsert_daily_prices(db_session, stock.id, noisy) == 0
+
+
+def test_null_close_is_repaired_by_reingest(db_session):
+    """A bar stored with a NULL close is a hole; a later fetch carrying a real
+    value must fill it."""
+    stock = make_stock(db_session, "NULLFIX")
+    repo.upsert_daily_prices(db_session, stock.id, [
+        {"date": date(2026, 1, 5), "open": None, "high": None,
+         "low": None, "close": None, "volume": None},
+    ])
+    db_session.commit()
+
+    assert repo.upsert_daily_prices(db_session, stock.id, _bars(5, 1)) == 1
+    db_session.commit()
+    bar = db_session.scalar(select(DailyPrice).where(DailyPrice.stock_id == stock.id))
+    assert bar.close == 107.0

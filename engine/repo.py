@@ -12,7 +12,7 @@ import json
 from collections import Counter
 from contextlib import contextmanager
 
-from sqlalchemy import cast, func, insert, select, update
+from sqlalchemy import cast, func, insert, literal_column, select, update
 from sqlalchemy.dialects.postgresql import JSONB
 from sqlalchemy.dialects.postgresql import insert as pg_insert
 
@@ -30,6 +30,7 @@ from db.models import (
     utcnow,
 )
 from src.personas import PERSONAS
+from src.utils import log
 
 # Derived, not hardcoded — the council's size is defined in one place (src/personas).
 TOTAL_PERSONAS = len(PERSONAS)
@@ -295,23 +296,75 @@ def add_snapshot(session, stock: Stock, payload: dict, extracted: dict, *,
 
 # ---------- daily prices (OHLCV time series) ----------
 
+# Relative tolerance for "the provider actually changed this bar". Sits far above
+# float64 round-trip noise (~1e-16) and far below the smallest genuine rebase (a
+# dividend adjustment moves a close by >=1e-4 relative), so a bar is never rewritten
+# twice for the same value. Relative rather than absolute because closes in this
+# universe span 0.22 to 18543 — one absolute epsilon cannot serve both ends.
+PRICE_REBASE_TOLERANCE = 1e-6
+
+
+def _bar_field_changed(stored, incoming):
+    """SQL predicate: the provider moved this price field beyond float noise.
+    NULL-safe — filling a hole (NULL -> value) counts as a change, NULL == NULL
+    does not."""
+    return stored.op("IS DISTINCT FROM")(incoming) & (
+        stored.is_(None)
+        | incoming.is_(None)
+        | (
+            func.abs(stored - incoming)
+            > PRICE_REBASE_TOLERANCE * func.greatest(func.abs(stored), func.abs(incoming))
+        )
+    )
+
+
 def upsert_daily_prices(session, stock_id: int, rows: list[dict]) -> int:
-    """Append new daily OHLCV bars for a stock; existing (stock_id, date) rows are
-    left untouched (append-only). `rows` items: {date, open, high, low, close, volume}.
-    Returns the count of newly-inserted bars.
+    """Insert new daily OHLCV bars for a stock and correct existing ones the provider
+    has since rebased. `rows` items: {date, open, high, low, close, volume}.
+    Returns the count of rows actually written (inserted + rebased).
+
+    NOT append-only. yfinance serves split/dividend-adjusted history (auto_adjust
+    defaults to True), so after a corporate action every historical bar comes back
+    rebased. Ignoring the conflict would keep the pre-action closes next to the
+    post-action ones and manufacture a one-day return that never happened — a 1:10
+    split reads as -90%. Rebases are corrections to point-in-time research input, so
+    they are logged, not applied silently.
     """
     if not rows:
         return 0
-    # ON CONFLICT DO NOTHING is atomic + concurrency-safe: a bar another writer
-    # already inserted is skipped, never an IntegrityError that aborts the batch.
-    # RETURNING yields only the rows actually inserted (conflicts are skipped).
+    # ON CONFLICT DO UPDATE is atomic + concurrency-safe: a bar another writer
+    # already inserted resolves to an update, never an IntegrityError that aborts
+    # the batch. The `where` restricts writes to genuinely-changed bars, so the
+    # nightly `period=max` re-send touches nothing (6.5M bars stay untouched) and
+    # RETURNING yields only the rows written. `xmax = 0` distinguishes a fresh
+    # insert from an update of an existing tuple.
     payload = [{"stock_id": stock_id, **r} for r in rows]
-    stmt = (
-        pg_insert(DailyPrice).values(payload)
-        .on_conflict_do_nothing(index_elements=["stock_id", "date"])
-        .returning(DailyPrice.id)
+    stmt = pg_insert(DailyPrice).values(payload)
+    changed = (
+        _bar_field_changed(DailyPrice.open, stmt.excluded.open)
+        | _bar_field_changed(DailyPrice.high, stmt.excluded.high)
+        | _bar_field_changed(DailyPrice.low, stmt.excluded.low)
+        | _bar_field_changed(DailyPrice.close, stmt.excluded.close)
+        | DailyPrice.volume.op("IS DISTINCT FROM")(stmt.excluded.volume)
     )
-    return len(session.execute(stmt).fetchall())
+    stmt = stmt.on_conflict_do_update(
+        index_elements=["stock_id", "date"],
+        set_={
+            "open": stmt.excluded.open,
+            "high": stmt.excluded.high,
+            "low": stmt.excluded.low,
+            "close": stmt.excluded.close,
+            "volume": stmt.excluded.volume,
+        },
+        where=changed,
+    ).returning(literal_column("(xmax = 0)").label("is_insert"))
+
+    written = session.execute(stmt).fetchall()
+    rebased = sum(1 for (is_insert,) in written if not is_insert)
+    if rebased:
+        log(f"prices: stock_id={stock_id} — {rebased} existing bar(s) rebased by the "
+            f"provider (corporate action); stored history rewritten")
+    return len(written)
 
 
 def upsert_index_prices(session, symbol: str, rows: list[dict]) -> int:
