@@ -162,6 +162,32 @@ def test_scheduler_reaps_orphans_recurrently_not_only_at_boot():
     )
 
 
+def test_analyses_done_today_counts_attempts_not_just_successes(db_session):
+    """A rate-limited day records errors, not successes. If the cap counts only
+    successes it never advances and every hourly tick fires into the limit —
+    so the cap must count attempts (success + error) from today's analyze runs."""
+    from db.models import JobRun
+    from engine.scheduler import analyses_done_today
+
+    now = datetime.now(timezone.utc)
+    # A rate-limited tick: 20 errors, 0 successes — must still count as attempts.
+    db_session.add(JobRun(job_type="analyze", status="partial", started_at=now,
+                          finished_at=now, stats={"success": 0, "error": 20}))
+    # A healthy tick.
+    db_session.add(JobRun(job_type="analyze", status="success", started_at=now,
+                          finished_at=now, stats={"success": 5, "error": 1}))
+    # A non-analyze job today must not be counted.
+    db_session.add(JobRun(job_type="refresh", status="success", started_at=now,
+                          finished_at=now, stats={"success": 99, "error": 0}))
+    # An analyze run from before midnight must not be counted.
+    yesterday = now.replace(hour=0, minute=0, second=0, microsecond=0) - timedelta(minutes=1)
+    db_session.add(JobRun(job_type="analyze", status="success", started_at=yesterday,
+                          finished_at=yesterday, stats={"success": 7, "error": 0}))
+    db_session.commit()
+
+    assert analyses_done_today() == 26
+
+
 def test_reap_orphaned_runs_marks_stranded_runs_as_error(db_session):
     from engine.repo import JobRun
     from engine.scheduler import REAP_ORPHAN_HOURS, reap_orphaned_runs

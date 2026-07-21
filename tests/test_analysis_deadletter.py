@@ -7,6 +7,7 @@ skipped by find_work until the data changes (new hash), force=True overrides,
 and a later success clears the marker.
 """
 
+import pytest
 from sqlalchemy import func, select
 
 from db.models import AnalysisFailure
@@ -126,3 +127,63 @@ def test_run_incremental_records_and_clears_failures(db_session, monkeypatch):
     eng.run_incremental(personas=["warren_buffett"], delay=0, verbose=False)
     db_session.expire_all()
     assert db_session.scalar(select(func.count()).select_from(AnalysisFailure)) == 0
+
+
+# ---- transient vs permanent classification ----
+
+TRANSIENT = [
+    "Claude AI usage limit reached|resets 09:00",
+    "rate limit exceeded",
+    "CLI timeout after 300s",
+    "Error: connection reset by peer",
+    "overloaded_error",
+    "",
+]
+PERMANENT = [
+    "contract violation: score out of range",
+    "invalid json schema",
+    "CLI exit 2: unknown flag --nope",
+]
+
+
+@pytest.mark.parametrize("msg", TRANSIENT)
+def test_transient_errors_are_classified_transient(msg):
+    from engine.analysis.errors import is_transient
+    assert is_transient(msg) is True
+
+
+@pytest.mark.parametrize("msg", PERMANENT)
+def test_permanent_errors_are_classified_permanent(msg):
+    from engine.analysis.errors import is_transient
+    assert is_transient(msg) is False
+
+
+def test_usage_limit_does_not_increment_dead_letter_counter(db_session):
+    """Three quota failures must not permanently drop a pair from coverage."""
+    from engine.analysis.engine import is_dead_lettered, record_failure
+
+    stock, snap = _stock_with_snap(db_session, "QUOTA")
+    for _ in range(DEAD_LETTER_THRESHOLD):
+        record_failure(db_session, stock.id, "warren_buffett", snap.content_hash,
+                       "Claude AI usage limit reached")
+    db_session.commit()
+
+    assert is_dead_lettered(db_session, stock.id, "warren_buffett", snap.content_hash) is False
+    # The pair stays plannable — coverage is preserved, not silently lost.
+    work = find_work(db_session, ["warren_buffett"])
+    assert [(st.symbol, slug) for st, _, slug in work] == [("QUOTA", "warren_buffett")]
+
+
+def test_permanent_error_still_dead_letters(db_session):
+    """A genuine per-pair defect (bad output) must still stop being re-planned."""
+    from engine.analysis.engine import is_dead_lettered, record_failure
+
+    stock, snap = _stock_with_snap(db_session, "BADOUT")
+    for _ in range(DEAD_LETTER_THRESHOLD):
+        record_failure(db_session, stock.id, "warren_buffett", snap.content_hash,
+                       "contract violation: score out of range")
+    db_session.commit()
+
+    assert is_dead_lettered(db_session, stock.id, "warren_buffett", snap.content_hash) is True
+    work = find_work(db_session, ["warren_buffett"])
+    assert [(st.symbol, slug) for st, _, slug in work] == []

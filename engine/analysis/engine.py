@@ -16,6 +16,7 @@ from sqlalchemy import select
 
 from db.models import Stock
 from engine.analysis.backend import default_model, get_backend
+from engine.analysis.errors import is_transient
 from engine.analysis.prompt import build_user_prompt
 from engine.repo import (
     clear_analysis_failure,
@@ -38,6 +39,24 @@ PROMPT_VERSION = "v4"  # v1 = imported; v2 = corrected scales; v3 = research-gro
 # dead-lettered: find_work stops planning it (it was silently re-burning the
 # daily cap). New data (new hash) re-qualifies the pair; force=True overrides.
 DEAD_LETTER_THRESHOLD = 3
+
+
+def record_failure(session, stock_id: int, persona: str, data_hash: str, error: str) -> int:
+    """Record an analysis failure, advancing the dead-letter counter ONLY for
+    permanent errors. A transient failure (quota outage, timeout, network reset)
+    is a property of the world at that moment, not of this pair — retrying will
+    help, so it is recorded for observability but never counted toward the dead
+    letter. Otherwise a few bad hours silently and non-randomly drop stocks from
+    the council until their fundamentals change — months, for a stable company."""
+    return record_analysis_failure(session, stock_id, persona, data_hash, error,
+                                   advance=not is_transient(error))
+
+
+def is_dead_lettered(session, stock_id: int, persona: str, data_hash: str,
+                     threshold: int = DEAD_LETTER_THRESHOLD) -> bool:
+    """True when (persona, data_hash) has reached the dead-letter threshold and
+    find_work will stop planning it for that stock."""
+    return (persona, data_hash) in dead_letter_pairs(session, stock_id, threshold)
 
 
 def find_work(session, personas, universe=None, symbols=None, force=False, limit=0):
@@ -135,10 +154,11 @@ def run_incremental(personas=None, universe=None, symbols=None, model=None, forc
                         # (usage limit / timeout / parse error) and a dict on
                         # structured ones — keep the message verbatim either way.
                         err = (meta.get("error") or meta) if isinstance(meta, dict) else meta
-                        # Dead-letter bookkeeping: repeated failures on this exact data
-                        # eventually stop being planned (find_work skips at threshold).
-                        record_analysis_failure(session, stock.id, slug, snap.content_hash,
-                                                str(err))
+                        # Dead-letter bookkeeping: repeated PERMANENT failures on this
+                        # exact data eventually stop being planned. Transient failures
+                        # (quota/timeout) are recorded but never advance the counter.
+                        record_failure(session, stock.id, slug, snap.content_hash,
+                                       str(err))
                         session.commit()
                         if verbose:
                             print(f"  [{i+1}/{len(work)}] {stock.symbol} x {slug}: ERROR {meta}")
@@ -162,8 +182,8 @@ def run_incremental(personas=None, universe=None, symbols=None, model=None, forc
                     # Off-contract output / any exception is a failure of THIS pair on
                     # THIS data — record it (fresh transaction after the rollback).
                     try:
-                        record_analysis_failure(session, stock.id, slug, snap.content_hash,
-                                                f"{type(e).__name__}: {e}")
+                        record_failure(session, stock.id, slug, snap.content_hash,
+                                       f"{type(e).__name__}: {e}")
                         session.commit()
                     except Exception:
                         session.rollback()

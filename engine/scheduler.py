@@ -26,7 +26,7 @@ from pathlib import Path
 
 from apscheduler.schedulers.blocking import BlockingScheduler
 from apscheduler.triggers.cron import CronTrigger
-from sqlalchemy import func, select
+from sqlalchemy import select
 
 from engine.analysis.engine import run_incremental
 from engine.ingest.amfi import auto_reingest
@@ -98,15 +98,30 @@ def analysis_available() -> bool:
 
 
 def analyses_done_today() -> int:
+    """Backend attempts made today (successes + errors), against the daily cap.
+
+    Counting only successful Analysis rows let a rate-limited day burn the plan:
+    every failed attempt left the count at zero, the cap never advanced, and all
+    24 hourly ticks fired straight into the limit. An outage is exactly when the
+    cap must engage — so count what every tick actually spent: success + error
+    from today's analyze job_runs, where a failed attempt costs as much as a
+    successful one."""
     from db.base import SessionLocal
-    from db.models import Analysis
+    from db.models import JobRun
 
     midnight = datetime.now(timezone.utc).replace(hour=0, minute=0, second=0, microsecond=0)
     session = SessionLocal()
     try:
-        return session.scalar(
-            select(func.count()).select_from(Analysis).where(Analysis.analyzed_at >= midnight)
-        ) or 0
+        rows = session.scalars(
+            select(JobRun.stats).where(
+                JobRun.job_type == "analyze",
+                JobRun.started_at >= midnight,
+            )
+        ).all()
+        return sum(
+            (stats.get("success") or 0) + (stats.get("error") or 0)
+            for stats in rows if isinstance(stats, dict)
+        )
     finally:
         session.close()
 

@@ -173,6 +173,10 @@ def test_backend_string_error_meta_recorded_verbatim(db_session, monkeypatch):
     failures = db_session.scalars(select(AnalysisFailure)).all()
     assert len(failures) == len(PERSONAS)
     assert "usage limit" in failures[0].last_error
+    # A plan-level rate limit is a global outage, not a per-pair defect: the
+    # message is recorded for observability, but NONE of the ten may advance the
+    # dead-letter counter — otherwise a quota hour silently drops the whole batch.
+    assert all(f.failures == 0 for f in failures)
 
 
 def test_find_work_accepts_screener_backed_fresh_listing(db_session):

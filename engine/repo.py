@@ -469,17 +469,23 @@ def save_analysis(session, stock: Stock, snapshot: StockSnapshot, persona: str,
 # ---------- analysis dead-letter ----------
 
 def record_analysis_failure(session, stock_id: int, persona: str,
-                            data_hash: str, error: str) -> int:
-    """Atomically bump the failure count for (stock, persona, data_hash) and
-    return the NEW count. Conflict-safe: concurrent workers never lose a bump."""
+                            data_hash: str, error: str, advance: bool = True) -> int:
+    """Record a failure for (stock, persona, data_hash) and return the current
+    count. Conflict-safe: concurrent workers never lose a bump.
+
+    `advance` gates the dead-letter counter. A transient failure (quota outage,
+    network reset) is recorded for observability but must NOT advance the count
+    — retrying will help, so counting it toward the dead letter would silently
+    drop the pair from coverage for a world-state problem it never caused."""
+    inc = 1 if advance else 0
     stmt = pg_insert(AnalysisFailure).values(
         stock_id=stock_id, persona=persona, data_hash=data_hash,
-        failures=1, last_error=(error or "")[:4000], last_attempt_at=utcnow(),
+        failures=inc, last_error=(error or "")[:4000], last_attempt_at=utcnow(),
     )
     stmt = stmt.on_conflict_do_update(
         constraint="uq_analysis_failure_key",
         set_={
-            "failures": AnalysisFailure.failures + 1,
+            "failures": AnalysisFailure.failures + inc,
             "last_error": stmt.excluded.last_error,
             "last_attempt_at": stmt.excluded.last_attempt_at,
         },
