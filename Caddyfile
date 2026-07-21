@@ -4,11 +4,8 @@
 # swapping to a real domain is just a .env change. ADMIN_HASH is a bcrypt hash
 # from `caddy hash-password` — the plaintext never lives in the repo.
 {$SITE_ADDRESS} {
-	# The public Research Desk is open. The Engine Room and its API require auth
-	# because the app only token-guards job *mutations*, not the admin read views.
-	@admin path /admin /admin/* /api/admin /api/admin/*
-	basic_auth @admin {
-		admin {$ADMIN_HASH}
-	}
+	# The whole site is open, Engine Room read views included. Job mutations are
+	# still guarded app-side by ADMIN_TOKEN (X-Admin-Token header) — without it
+	# the API restricts job runs to localhost.
 	reverse_proxy web:3000
 }
