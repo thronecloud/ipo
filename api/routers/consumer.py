@@ -346,6 +346,11 @@ def stock_detail(symbol: str, db: Session = Depends(get_db)):
         score_stderr_eff=cs.score_stderr_eff if cs else None,
         axis_scores=(cs.axis_scores if cs else {}) or {},
         factor_version=cs.factor_version if cs else None,
+        prompt_versions=(cs.prompt_versions if cs else {}) or {},
+        models_used=(cs.models_used if cs else {}) or {},
+        is_homogeneous=(
+            len(cs.prompt_versions or {}) == 1 and len(cs.models_used or {}) == 1
+        ) if cs and (cs.prompt_versions or cs.models_used) else None,
     )
 
     # --- council: latest analysis per persona, fixed order ---

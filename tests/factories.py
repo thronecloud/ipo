@@ -67,7 +67,9 @@ def make_stock(session, symbol: str, *, status: str = "active",
 def make_analysis(session, stock, persona: str, score: int | None,
                   recommendation: str | None = None, *,
                   data_hash: str | None = None, snapshot_id: int | None = None,
-                  analyzed_at: datetime | None = None) -> Analysis:
+                  analyzed_at: datetime | None = None,
+                  model: str | None = "test-model",
+                  prompt_version: str | None = "test") -> Analysis:
     row = Analysis(
         stock_id=stock.id,
         persona=persona,
@@ -76,8 +78,8 @@ def make_analysis(session, stock, persona: str, score: int | None,
         data_hash=data_hash,
         snapshot_id=snapshot_id,
         analyzed_at=analyzed_at or utc(),
-        model="test-model",
-        prompt_version="test",
+        model=model,
+        prompt_version=prompt_version,
     )
     session.add(row)
     session.commit()

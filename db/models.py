@@ -313,6 +313,12 @@ class CompositeScore(Base):
     lcb: Mapped[float | None] = mapped_column(Float, index=True)        # lower-confidence-bound = rank key
     factor_version: Mapped[str | None] = mapped_column(String(16))
 
+    # What produced this composite: count per value across the contributing analyses
+    # (latest per persona), e.g. {"v4": 6, "v1": 4}. factor_version is the scoring-axis
+    # version — a different thing. A NULL prompt_version/model counts as "unknown".
+    prompt_versions: Mapped[dict | None] = mapped_column(JSONType)
+    models_used: Mapped[dict | None] = mapped_column(JSONType)
+
     stock: Mapped["Stock"] = relationship(back_populates="composite_scores")
 
 
@@ -351,6 +357,10 @@ class CompositeScoreHistory(Base):
     factor_version: Mapped[str | None] = mapped_column(String(16))
     consensus_recommendation: Mapped[str | None] = mapped_column(String(16))
     analysis_coverage: Mapped[int | None] = mapped_column(Integer)
+
+    # Count per value across the analyses behind this point-in-time composite.
+    prompt_versions: Mapped[dict | None] = mapped_column(JSONType)
+    models_used: Mapped[dict | None] = mapped_column(JSONType)
 
 
 class JobRun(Base):

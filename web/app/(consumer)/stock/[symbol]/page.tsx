@@ -334,6 +334,8 @@ const TIER_CAPTION: Record<string, string> = {
   provisional:
     "Provisional — at least one scoring axis has no voice yet, so confidence cannot be assessed.",
   mixed: "Mixed — the independent axes point in opposite directions.",
+  high_bearish:
+    "High (bearish) — the axes agree with conviction, and what they agree on is bad.",
 };
 
 function ConfidenceBlock({ comp }: { comp: CompositeSummary }) {
@@ -346,7 +348,20 @@ function ConfidenceBlock({ comp }: { comp: CompositeSummary }) {
         <span className="text-[10px] font-semibold uppercase tracking-[0.16em] text-muted">
           Confidence
         </span>
-        <TierChip tier={comp.confidence_tier} size="xs" />
+        <span className="flex items-center gap-1.5">
+          {comp.is_homogeneous === false && (
+            <span
+              className="inline-flex items-center rounded-sm border border-brass/40 bg-brass/10 px-1.5 py-0.5 text-[10px] font-medium uppercase tracking-wide text-brass"
+              title={`Mixed provenance — this composite blends analyses from different prompt versions/models (${[
+                ...Object.keys(comp.prompt_versions ?? {}),
+                ...Object.keys(comp.models_used ?? {}),
+              ].join(", ")}) and is not directly comparable across stocks.`}
+            >
+              mixed provenance
+            </span>
+          )}
+          <TierChip tier={comp.confidence_tier} size="xs" />
+        </span>
       </div>
 
       <div className="num mt-2 flex flex-wrap gap-x-4 gap-y-1 text-xs text-muted">

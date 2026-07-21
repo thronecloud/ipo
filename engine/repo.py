@@ -567,6 +567,14 @@ def recompute_scores_for_stock(session, stock: Stock):
     recs = [latest[p].recommendation for p in sorted(latest) if latest[p].recommendation]
     rec_counts = dict(Counter(sorted(recs)))
     consensus = _consensus_from_votes(rec_counts, composite)
+
+    # What produced this composite: count per value across the contributing analyses.
+    # A NULL prompt_version/model predates provenance tracking → counted as "unknown".
+    # Sorted by key → stable JSON.
+    prompt_versions = dict(sorted(
+        Counter(latest[p].prompt_version or "unknown" for p in latest).items()))
+    models_used = dict(sorted(
+        Counter(latest[p].model or "unknown" for p in latest).items()))
     # The date the view actually FORMED (max analyzed_at) — the point-in-time key.
     information_date = max(latest[p].analyzed_at for p in latest)
 
@@ -589,6 +597,8 @@ def recompute_scores_for_stock(session, stock: Stock):
         score_stderr_eff=conf["score_stderr_eff"],
         lcb=conf["lcb"],
         factor_version=conf["factor_version"],
+        prompt_versions=prompt_versions,
+        models_used=models_used,
     )
     stmt = pg_insert(CompositeScore).values(**vals)
     stmt = stmt.on_conflict_do_update(
@@ -615,6 +625,8 @@ def recompute_scores_for_stock(session, stock: Stock):
             factor_version=conf["factor_version"],
             consensus_recommendation=consensus,
             analysis_coverage=len(persona_scores),
+            prompt_versions=prompt_versions,
+            models_used=models_used,
         )
         hstmt = pg_insert(CompositeScoreHistory).values(**hist)
         hstmt = hstmt.on_conflict_do_update(

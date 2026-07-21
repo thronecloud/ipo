@@ -104,6 +104,12 @@ class Composite(BaseModel):
     score_stderr_eff: float | None = None
     axis_scores: dict = {}
     factor_version: str | None = None
+    # Provenance: counts per prompt_version / model across contributing analyses.
+    # is_homogeneous is false when a composite mixes versions or models — such a
+    # score is not comparable across stocks and the UI must mark it.
+    prompt_versions: dict[str, int] = {}
+    models_used: dict[str, int] = {}
+    is_homogeneous: bool | None = None
 
 
 class CouncilMember(BaseModel):

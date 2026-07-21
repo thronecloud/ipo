@@ -98,6 +98,11 @@ export interface CompositeSummary {
   score_stderr_eff: number | null;
   axis_scores: Record<string, number | null>; // core/growth/value/independent -> 0-100
   factor_version: string | null;
+  // Provenance: counts per prompt_version / model behind this composite. A score
+  // mixing versions or models is not comparable across stocks; the UI marks it.
+  prompt_versions: Record<string, number>;
+  models_used: Record<string, number>;
+  is_homogeneous: boolean | null;
 }
 
 export interface CouncilVerdict {

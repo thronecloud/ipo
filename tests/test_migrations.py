@@ -30,6 +30,11 @@ PARITY_DSN = f"dbname={PARITY_DB} user=ipo password=ipo host={PG_HOST} port={PG_
 PRE_PROVENANCE_REV = "53de03c90075"
 PROVENANCE_REV = "d1f7a3c9e5b2"
 
+# Composite-provenance boundary: the revision before prompt_versions/models_used
+# exist on the composite tables, and the one that adds them + backfills the counts.
+PRE_COMPOSITE_PROVENANCE_REV = "d1f7a3c9e5b2"
+COMPOSITE_PROVENANCE_REV = "e2b5c8a41f96"
+
 # Structural drift we refuse to allow. modify_*/index reflection noise is ignored;
 # a new/removed table or column (the untracked-model trap) is not.
 STRUCTURAL = {"add_table", "remove_table", "add_column", "remove_column"}
@@ -116,5 +121,63 @@ def test_provenance_migration_backfills_preexisting_values_as_unknown():
                 "FROM stocks WHERE symbol='OLDSTOCK'"
             ).fetchone()
         assert row == ("unknown", None, "unknown")
+    finally:
+        _admin(f"DROP DATABASE IF EXISTS {PARITY_DB} WITH (FORCE)")
+
+
+def test_composite_provenance_migration_backfills_counts_from_analyses():
+    """The composite-provenance migration must stamp prompt_versions/models_used on
+    pre-existing composites as a count-per-value across the SAME latest-per-persona
+    selection recompute uses: a superseded older analysis is excluded, a NULL
+    prompt_version/model counts as 'unknown', and a score-less analysis is ignored.
+    The count is applied to composite_score_history rows for the stock too."""
+    _admin(f"DROP DATABASE IF EXISTS {PARITY_DB} WITH (FORCE)")
+    _admin(f"CREATE DATABASE {PARITY_DB}")
+    try:
+        env = {**os.environ, "DATABASE_URL": PARITY_URL}
+        r = _alembic(PRE_COMPOSITE_PROVENANCE_REV, env)
+        assert r.returncode == 0, f"pre-composite-provenance upgrade failed:\n{r.stderr}"
+        with psycopg.connect(PARITY_DSN, autocommit=True) as conn:
+            conn.execute(
+                "INSERT INTO stocks (symbol, universe, status, first_seen, last_updated) "
+                "VALUES ('OLDCOMP', '[]'::jsonb, 'active', now(), now())"
+            )
+            (stock_id,) = conn.execute(
+                "SELECT id FROM stocks WHERE symbol='OLDCOMP'"
+            ).fetchone()
+            conn.execute(
+                "INSERT INTO composite_scores (stock_id, computed_at) "
+                "VALUES (%s, now())", (stock_id,)
+            )
+            conn.execute(
+                "INSERT INTO composite_score_history (stock_id, as_of_date) "
+                "VALUES (%s, current_date)", (stock_id,)
+            )
+            # warren_buffett: latest v4/claude-fable-5 supersedes older v1/opus.
+            # charlie_munger: v4/claude-fable-5. benjamin_graham: NULL/NULL -> unknown.
+            # peter_lynch: score NULL -> not a contributing analysis, ignored.
+            conn.execute(
+                "INSERT INTO analyses "
+                "(stock_id, persona, score, prompt_version, model, analyzed_at) VALUES "
+                "(%(s)s, 'warren_buffett', 3, 'v1', 'opus', now() - interval '2 day'),"
+                "(%(s)s, 'warren_buffett', 9, 'v4', 'claude-fable-5', now()),"
+                "(%(s)s, 'charlie_munger', 8, 'v4', 'claude-fable-5', now()),"
+                "(%(s)s, 'benjamin_graham', 4, NULL, NULL, now()),"
+                "(%(s)s, 'peter_lynch', NULL, 'v4', 'claude-fable-5', now())",
+                {"s": stock_id},
+            )
+        r = _alembic(COMPOSITE_PROVENANCE_REV, env)
+        assert r.returncode == 0, f"composite-provenance upgrade failed:\n{r.stderr}"
+        with psycopg.connect(PARITY_DSN, autocommit=True) as conn:
+            cs = conn.execute(
+                "SELECT prompt_versions, models_used FROM composite_scores "
+                "WHERE stock_id=%s", (stock_id,)
+            ).fetchone()
+            hist = conn.execute(
+                "SELECT prompt_versions, models_used FROM composite_score_history "
+                "WHERE stock_id=%s", (stock_id,)
+            ).fetchone()
+        assert cs == ({"v4": 2, "unknown": 1}, {"claude-fable-5": 2, "unknown": 1})
+        assert hist == ({"v4": 2, "unknown": 1}, {"claude-fable-5": 2, "unknown": 1})
     finally:
         _admin(f"DROP DATABASE IF EXISTS {PARITY_DB} WITH (FORCE)")

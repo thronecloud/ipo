@@ -237,6 +237,74 @@ def test_reconcile_rescores_old_scoring_method(db_session):
     assert updated.composite_score == 60.0
 
 
+def test_recompute_records_prompt_versions_and_models(db_session):
+    """The composite carries a count-per-value of the prompt versions and models
+    behind it, so a mixed-provenance score is detectable downstream."""
+    stock = make_stock(db_session, "PROV")
+    make_analysis(db_session, stock, "warren_buffett", 7, "BUY",
+                  prompt_version="v4", model="claude-fable-5")
+    make_analysis(db_session, stock, "charlie_munger", 8, "BUY",
+                  prompt_version="v4", model="claude-fable-5")
+    make_analysis(db_session, stock, "benjamin_graham", 3, "AVOID",
+                  prompt_version="v1", model="opus")
+
+    row = recompute_scores_for_stock(db_session, stock)
+    db_session.commit()
+
+    assert row.prompt_versions == {"v1": 1, "v4": 2}
+    assert row.models_used == {"claude-fable-5": 2, "opus": 1}
+
+
+def test_provenance_counts_only_the_latest_analysis_per_persona(db_session):
+    """A superseded older analysis must not be counted — provenance tracks the same
+    latest-per-persona selection that produces the composite."""
+    stock = make_stock(db_session, "PROVLATEST")
+    make_analysis(db_session, stock, "warren_buffett", 3, "AVOID",
+                  prompt_version="v1", model="opus", analyzed_at=utc(-60))
+    make_analysis(db_session, stock, "warren_buffett", 9, "BUY",
+                  prompt_version="v4", model="claude-fable-5", analyzed_at=utc(0))
+
+    row = recompute_scores_for_stock(db_session, stock)
+    db_session.commit()
+
+    assert row.prompt_versions == {"v4": 1}
+    assert row.models_used == {"claude-fable-5": 1}
+
+
+def test_null_provenance_counts_as_unknown(db_session):
+    """An analysis predating provenance tracking (NULL prompt_version/model) is
+    counted under 'unknown' rather than dropped."""
+    stock = make_stock(db_session, "NULLPROV")
+    make_analysis(db_session, stock, "warren_buffett", 7, "BUY",
+                  prompt_version=None, model=None)
+    make_analysis(db_session, stock, "charlie_munger", 8, "BUY",
+                  prompt_version="v4", model="claude-fable-5")
+
+    row = recompute_scores_for_stock(db_session, stock)
+    db_session.commit()
+
+    assert row.prompt_versions == {"unknown": 1, "v4": 1}
+    assert row.models_used == {"claude-fable-5": 1, "unknown": 1}
+
+
+def test_history_row_records_provenance(db_session):
+    """The point-in-time history row carries the same provenance as the composite."""
+    from db.models import CompositeScoreHistory
+    stock = make_stock(db_session, "PROVHIST")
+    for persona in PERSONA_POOL[:7]:  # >= MIN_COVERAGE_FOR_HISTORY -> history written
+        make_analysis(db_session, stock, persona, 6, "HOLD",
+                      prompt_version="v4", model="claude-fable-5")
+
+    recompute_scores_for_stock(db_session, stock)
+    db_session.commit()
+
+    hist = db_session.scalar(
+        select(CompositeScoreHistory).where(CompositeScoreHistory.stock_id == stock.id)
+    )
+    assert hist.prompt_versions == {"v4": 7}
+    assert hist.models_used == {"claude-fable-5": 7}
+
+
 def test_null_scores_ignored_and_no_row_when_nothing_scored(db_session):
     stock = make_stock(db_session, "NOSCORE")
     make_analysis(db_session, stock, "warren_buffett", None, "HOLD")
