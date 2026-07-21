@@ -116,10 +116,15 @@ def _window_metrics(members: list[dict], h: int, n_boot: int) -> dict:
     over ``members`` — the resample unit is the stock. Shared by the whole
     window and by each era slice."""
     excess = [m["meas"]["excess"][h] for m in members if m["meas"]["excess"].get(h) is not None]
+    net_excess = [m["meas"]["net_excess"][h] for m in members if m["meas"]["net_excess"].get(h) is not None]
 
     def _ex(sample):
         return _mean_of([m["meas"]["excess"][h] for m in sample
                          if m["meas"]["excess"].get(h) is not None])
+
+    def _net_ex(sample):
+        return _mean_of([m["meas"]["net_excess"][h] for m in sample
+                         if m["meas"]["net_excess"].get(h) is not None])
 
     def _hit(sample):
         return _hit_of([m["meas"]["excess"][h] for m in sample
@@ -137,6 +142,8 @@ def _window_metrics(members: list[dict], h: int, n_boot: int) -> dict:
         "n": len(excess),
         "mean_excess": _mean_of(excess),
         "mean_excess_ci": bootstrap_ci(members, _ex, n_boot=n_boot),
+        "net_mean_excess": _mean_of(net_excess),
+        "net_mean_excess_ci": bootstrap_ci(members, _net_ex, n_boot=n_boot),
         "hit_rate": _hit(members),
         "hit_rate_ci": hit_ci,
         "ic": _ic(members),

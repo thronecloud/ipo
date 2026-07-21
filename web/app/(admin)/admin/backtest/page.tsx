@@ -109,6 +109,10 @@ export default function BacktestPage() {
 
   const [metric, setMetric] = useState<Metric>("mean_excess");
   const [focusH, setFocusH] = useState<number>(21);
+  // Execution-reality lenses on the grouped tables: show returns after trading
+  // costs, and/or drop the thin (unrealizable-in-size) names.
+  const [basis, setBasis] = useState<"gross" | "net">("gross");
+  const [exThin, setExThin] = useState(false);
 
   const [wSort, setWSort] = useState<SortState>({
     key: "excess_to_date",
@@ -173,12 +177,22 @@ export default function BacktestPage() {
         header: "Symbol",
         sortKey: "symbol",
         render: (r) => (
-          <Link
-            href={`/stock/${encodeURIComponent(r.symbol)}`}
-            className="num font-medium text-paper hover:text-brass"
-          >
-            {r.symbol}
-          </Link>
+          <span className="flex items-center gap-1.5">
+            <Link
+              href={`/stock/${encodeURIComponent(r.symbol)}`}
+              className="num font-medium text-paper hover:text-brass"
+            >
+              {r.symbol}
+            </Link>
+            {r.thin && (
+              <span
+                className="rounded-sm bg-brass/15 px-1 text-[9px] uppercase tracking-wide text-brass"
+                title="Thin — trades below ₹25 lakh/day (median). Its return may be unrealizable in size."
+              >
+                thin
+              </span>
+            )}
+          </span>
         ),
       },
       {
@@ -230,10 +244,23 @@ export default function BacktestPage() {
         header: "Entry",
         sortKey: "entry_date",
         align: "right",
-        title: "First close strictly after the day the view formed (no lookahead).",
+        title:
+          "The next session's open after the view formed (no lookahead); the price you could actually have bought at.",
         render: (r) => (
-          <span className="num whitespace-nowrap text-xs text-muted">
+          <span
+            className="num whitespace-nowrap text-xs text-muted"
+            title={
+              r.entry_delay_days > 0
+                ? `Entry delayed ${r.entry_delay_days} trading ${r.entry_delay_days === 1 ? "day" : "days"} past circuit locks. Basis: ${r.entry_basis ?? "—"}.`
+                : r.entry_basis
+                  ? `Filled at the ${r.entry_basis}.`
+                  : undefined
+            }
+          >
             {shortDate(r.entry_date)}
+            {r.entry_delay_days > 0 && (
+              <span className="text-brass/70"> +{r.entry_delay_days}d</span>
+            )}
           </span>
         ),
       },
@@ -357,6 +384,9 @@ export default function BacktestPage() {
         validation of it.
       </div>
 
+      {/* execution reality — the terms these returns are measured under */}
+      <ExecutionNote study={data} />
+
       {/* header stats */}
       <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">
         <StatCard
@@ -452,8 +482,19 @@ export default function BacktestPage() {
               <p className="mt-2 text-[11px] text-muted">
                 {pdata.subset.n_buy} BUY {pdata.subset.n_buy === 1 ? "pick" : "picks"} in
                 this selection ({pdata.subset.n_buy_priced} with prices) ·{" "}
-                {pdata.subset.n_avoid} AVOID. The basket can shrink at longer
-                horizons as forward prices run out — hover any point for its size.
+                {pdata.subset.n_avoid} AVOID.
+                {pdata.subset.n_thin > 0 && (
+                  <span
+                    title="Below the liquidity floor (₹25 lakh/day median traded value) — their contribution to this basket may be unrealizable in size."
+                  >
+                    {" "}
+                    <span className="text-brass">{pdata.subset.n_thin}</span>{" "}
+                    of these {pdata.subset.n_thin === 1 ? "is" : "are"} thin.
+                  </span>
+                )}{" "}
+                The dashed line is the same basket after 85 bps/side trading
+                costs. The basket can shrink at longer horizons as forward prices
+                run out — hover any point for its size.
               </p>
             )}
           </div>
@@ -528,14 +569,52 @@ export default function BacktestPage() {
 
       {/* ── TABLES AFTER ─────────────────────────────────────────── */}
 
+      {/* lens controls for the grouped tables: gross vs after-friction, and
+          whether to drop thin (unrealizable-in-size) names from the headline */}
+      <div className="flex flex-wrap items-center justify-between gap-2">
+        <span className="text-xs text-muted">
+          Return basis for the grouped tables
+        </span>
+        <div className="flex flex-wrap items-center gap-2">
+          <Toggle
+            options={[
+              { key: "gross", label: "Gross", title: "Before trading costs." },
+              {
+                key: "net",
+                label: "After friction",
+                title: "Net of 85 bps a side, charged on both the buy and the sell.",
+              },
+            ]}
+            value={basis}
+            onChange={(v) => setBasis(v as "gross" | "net")}
+          />
+          {data.overall_ex_thin && (
+            <label
+              className="flex cursor-pointer items-center gap-1.5 text-[11px] text-muted"
+              title={`Drop names trading below ₹${(data.adv_floor / 100000).toFixed(0)} lakh/day (median) from the All-cohort row — their returns may be unrealizable in size.`}
+            >
+              <input
+                type="checkbox"
+                checked={exThin}
+                onChange={(e) => setExThin(e.target.checked)}
+                className="accent-brass"
+              />
+              Exclude thin picks
+            </label>
+          )}
+        </div>
+      </div>
+
       <BucketTable
         title="By confidence level"
         hint="excess return vs benchmark, per horizon"
         buckets={data.by_tier}
         order={TIER_ORDER}
         horizons={data.horizons}
-        overall={data.overall}
+        overall={exThin && data.overall_ex_thin ? data.overall_ex_thin : data.overall}
+        overallLabel={exThin && data.overall_ex_thin ? "All cohort · ex-thin" : "All cohort"}
         labelFor={(k) => <TierChip tier={k} size="xs" />}
+        basis={basis}
       />
 
       <div className="grid grid-cols-1 gap-5 xl:grid-cols-2">
@@ -545,6 +624,7 @@ export default function BacktestPage() {
           buckets={data.by_lcb_quintile}
           order={QUINTILE_ORDER}
           horizons={data.horizons}
+          basis={basis}
           labelFor={(k) => (
             <span className="num text-paper" title={`Fifth ${k} of 5 (5 = highest)`}>
               Fifth {k}
@@ -557,6 +637,7 @@ export default function BacktestPage() {
           buckets={data.by_composite_quintile}
           order={QUINTILE_ORDER}
           horizons={data.horizons}
+          basis={basis}
           labelFor={(k) => (
             <span className="num text-paper" title={`Fifth ${k} of 5 (5 = highest)`}>
               Fifth {k}
@@ -709,6 +790,75 @@ function Toggle({
   );
 }
 
+// ── execution-reality note ────────────────────────────────────────
+// Plain-language statement of the terms the returns are measured under: how
+// entries fill, what friction is charged, and where the liquidity floor sits.
+// This is the honesty banner for B2 — the gross numbers elsewhere are academic
+// without it.
+
+function ExecutionNote({ study }: { study: BacktestStudy }) {
+  const lakh = (study.adv_floor / 100000).toFixed(0);
+  const unenterable = study.cohort.excluded.unenterable;
+  const thin = study.cohort.thin;
+  const measured = study.cohort.measured;
+  return (
+    <div className="rounded-md border border-hairline bg-panel/60 px-4 py-2.5 text-xs leading-relaxed text-muted">
+      <span className="font-semibold uppercase tracking-[0.12em] text-paper/80">
+        Execution reality
+      </span>{" "}
+      — entries fill at the{" "}
+      <span
+        className="text-paper/90"
+        title="The signal forms on a close you can't transact at, so we buy at the next session's opening price (or that day's close when no open is recorded)."
+      >
+        next session&apos;s open
+      </span>{" "}
+      after the view forms, skipping{" "}
+      <span
+        className="text-paper/90"
+        title={`A day pinned at a price limit (no intraday range, a full band from the prior close) can't be traded. Entry waits up to ${study.entry_window} trading days for a tradeable session.`}
+      >
+        circuit-locked days
+      </span>
+      {unenterable > 0 ? (
+        <>
+          {" "}
+          (
+          <span className="text-terracotta">
+            {unenterable} never opened a window
+          </span>
+          )
+        </>
+      ) : null}
+      . Returns are shown gross and{" "}
+      <span
+        className="text-paper/90"
+        title={`${study.friction_bps} basis points one way — securities tax, exchange fees, and a spread/impact allowance for illiquid smallcaps — charged on both the buy and the sell.`}
+      >
+        after {study.friction_bps} bps/side friction
+      </span>
+      .{" "}
+      {thin > 0 ? (
+        <>
+          <span className="text-brass">{thin}</span> of {measured} measured names
+          trade below{" "}
+          <span
+            className="text-paper/90"
+            title="Median daily traded value over the 21 sessions before entry. Below this, a position of any size may not be fillable at the printed price."
+          >
+            ₹{lakh} lakh/day
+          </span>{" "}
+          — flagged thin and reported separately.
+        </>
+      ) : (
+        <>
+          All measured names clear the ₹{lakh} lakh/day liquidity floor.
+        </>
+      )}
+    </div>
+  );
+}
+
 // ── cohort completeness banner ────────────────────────────────────
 // "measured N of M scored (K excluded: …)" — prominent, with an expandable
 // breakdown and a caution line when coverage is thin. Vanishing names are not
@@ -723,7 +873,10 @@ function CohortSummary({
 }) {
   const { scored, measured, excluded, presumed_outcomes: outcomes } = cohort;
   const totalExcluded =
-    excluded.no_bars + excluded.bars_predate_view + excluded.insufficient_forward;
+    excluded.no_bars +
+    excluded.unenterable +
+    excluded.bars_predate_view +
+    excluded.insufficient_forward;
   const ratio = scored > 0 ? measured / scored : 1;
   const partial = ratio < 0.8;
   const pol = cohort.policy;
@@ -731,6 +884,9 @@ function CohortSummary({
 
   const reasonBits = [
     excluded.no_bars > 0 ? `${excluded.no_bars} no price bars` : null,
+    excluded.unenterable > 0
+      ? `${excluded.unenterable} circuit-locked at entry`
+      : null,
     excluded.bars_predate_view > 0
       ? `${excluded.bars_predate_view} bars predate the view`
       : null,
@@ -783,11 +939,20 @@ function CohortSummary({
             Excluded, by reason
           </div>
           <Row label="No price bars" value={excluded.no_bars} />
+          <Row label="Circuit-locked at entry" value={excluded.unenterable} />
           <Row label="Bars predate the view" value={excluded.bars_predate_view} />
           <Row
             label="Too little forward data"
             value={excluded.insufficient_forward}
           />
+          {cohort.thin > 0 && (
+            <div
+              className="mt-1 border-t border-hairline/50 pt-1"
+              title="Not excluded — measured, but below the liquidity floor. Their returns may be unrealizable in size, so headline stats are also published ex-thin."
+            >
+              <Row label="Thin (below ADV floor)" value={cohort.thin} />
+            </div>
+          )}
         </div>
         <div>
           <div className="mb-1 text-[10px] uppercase tracking-wide text-muted/80">
@@ -841,6 +1006,8 @@ function BucketTable({
   horizons,
   overall,
   labelFor,
+  basis = "gross",
+  overallLabel = "All cohort",
 }: {
   title: string;
   hint?: string;
@@ -849,7 +1016,10 @@ function BucketTable({
   horizons: number[];
   overall?: BacktestBucket;
   labelFor?: (key: string) => ReactNode;
+  basis?: "gross" | "net";
+  overallLabel?: string;
 }) {
+  const net = basis === "net";
   // Known keys in canonical order first, then anything unexpected.
   const keys = [
     ...order.filter((k) => buckets[k]),
@@ -865,9 +1035,13 @@ function BucketTable({
         right={
           <span
             className="num text-[10px] text-muted"
-            title="Each cell shows: mean excess return / median excess return · share of names that beat the benchmark."
+            title={
+              net
+                ? "Each cell shows: mean excess return AFTER trading costs (85 bps a side) / median gross excess · share of names that beat the benchmark. Hover a cell for the gross figure."
+                : "Each cell shows: mean excess return / median excess return · share of names that beat the benchmark. Hover a cell for the after-friction figure."
+            }
           >
-            mean / median excess · hit rate
+            {net ? "net mean" : "mean"} / median excess · hit rate
           </span>
         }
       />
@@ -900,17 +1074,19 @@ function BucketTable({
                 label={labelFor ? labelFor(k) : k}
                 bucket={buckets[k]}
                 horizons={horizons}
+                net={net}
               />
             ))}
             {overall && (
               <BucketRow
                 label={
                   <span className="text-xs uppercase tracking-wide text-muted">
-                    All cohort
+                    {overallLabel}
                   </span>
                 }
                 bucket={overall}
                 horizons={horizons}
+                net={net}
               />
             )}
           </tbody>
@@ -924,24 +1100,34 @@ function BucketRow({
   label,
   bucket,
   horizons,
+  net = false,
 }: {
   label: ReactNode;
   bucket: BacktestBucket;
   horizons: number[];
+  net?: boolean;
 }) {
   return (
     <tr className="border-b border-hairline/60 last:border-0">
       <td className="px-3 py-2">{label}</td>
-      <td className="num px-3 py-2 text-right text-xs text-muted">
+      <td
+        className="num px-3 py-2 text-right text-xs text-muted"
+        title={bucket.thin > 0 ? `${bucket.thin} thin (below the liquidity floor)` : undefined}
+      >
         <span className="text-paper">{bucket.priced}</span>/{bucket.n}
+        {bucket.thin > 0 && (
+          <span className="text-brass/70"> · {bucket.thin} thin</span>
+        )}
       </td>
       {horizons.map((h) => {
         const k = String(h);
-        const mean = bucket.mean_excess?.[k] ?? null;
+        const gross = bucket.mean_excess?.[k] ?? null;
+        const netMean = bucket.net_mean_excess?.[k] ?? null;
+        const shown = net ? netMean : gross;
         const med = bucket.median_excess?.[k] ?? null;
         const hit = bucket.hit_rate?.[k] ?? null;
-        const meanCi = bucket.mean_excess_ci?.[k] ?? null;
-        if (mean == null && med == null && hit == null) {
+        const meanCi = net ? bucket.net_mean_excess_ci?.[k] ?? null : bucket.mean_excess_ci?.[k] ?? null;
+        if (shown == null && med == null && hit == null) {
           return (
             <td key={h} className="num px-3 py-2 text-right text-xs text-muted">
               {DASH}
@@ -952,10 +1138,10 @@ function BucketRow({
           <td
             key={h}
             className="num whitespace-nowrap px-3 py-2 text-right text-xs"
-            title={`mean excess ${pct(mean)} · median ${med == null ? DASH : pct(med)} · ${hit == null ? DASH : `${hit.toFixed(0)}% beat benchmark`}${meanCi ? ` · ${ciRange(meanCi)}` : ""}`}
+            title={`gross mean excess ${pct(gross)} · after friction ${pct(netMean)} · median ${med == null ? DASH : pct(med)} · ${hit == null ? DASH : `${hit.toFixed(0)}% beat benchmark`}${meanCi ? ` · ${ciRange(meanCi)}` : ""}`}
           >
-            <span style={{ color: isNoise(meanCi) ? "var(--color-muted)" : signColor(mean) }}>
-              {pct(mean)}
+            <span style={{ color: isNoise(meanCi) ? "var(--color-muted)" : signColor(shown) }}>
+              {pct(shown)}
             </span>
             <span className="text-muted"> / {med == null ? DASH : pct(med)}</span>
             <span className="text-muted"> · </span>

@@ -21,6 +21,17 @@ from datetime import date, datetime, time, timezone
 from sqlalchemy import select
 
 from db.models import Analysis, CompositeScoreHistory, DailyPrice, IndexPrice, Stock
+from engine.backtest.execution import (
+    ADV_FLOOR,
+    Bar,
+    ENTRY_WINDOW,
+    FRICTION_BPS,
+    apply_friction,
+    friction_multiplier,
+    is_thin,
+    resolve_entry,
+    trailing_adv,
+)
 from engine.backtest.stats import bootstrap_ci, bootstrap_paths, verdict
 from src.personas import PERSONAS
 
@@ -136,18 +147,21 @@ def _cohort(session) -> list[tuple]:
     return rows
 
 
-def _price_series(session, stock_ids: list[int]) -> dict[int, list[tuple[date, float]]]:
-    """stock_id -> [(date, close)] ascending, only bars with a usable close."""
-    out: dict[int, list[tuple[date, float]]] = {}
+def _price_series(session, stock_ids: list[int]) -> dict[int, list[Bar]]:
+    """stock_id -> [Bar] ascending, only bars with a usable close. Carries full
+    OHLCV so execution logic can read the open (entry basis), the high/low range
+    (circuit detection) and the volume (ADV thinness)."""
+    out: dict[int, list[Bar]] = {}
     if not stock_ids:
         return out
     rows = session.execute(
-        select(DailyPrice.stock_id, DailyPrice.date, DailyPrice.close)
+        select(DailyPrice.stock_id, DailyPrice.date, DailyPrice.open,
+               DailyPrice.high, DailyPrice.low, DailyPrice.close, DailyPrice.volume)
         .where(DailyPrice.stock_id.in_(stock_ids), DailyPrice.close.is_not(None))
         .order_by(DailyPrice.stock_id, DailyPrice.date.asc(), DailyPrice.id.desc())
     ).all()
-    for sid, d, close in rows:
-        out.setdefault(sid, []).append((d, close))
+    for sid, d, o, hi, lo, close, vol in rows:
+        out.setdefault(sid, []).append(Bar(d, o, hi, lo, close, vol))
     return out
 
 
@@ -177,48 +191,74 @@ def _last_on_or_before(series: list[tuple[date, float]], d: date) -> tuple[date,
     return prev
 
 
-def _measure(series: list[tuple[date, float]], bench: list[tuple[date, float]],
-             info_date: date, horizons) -> tuple[int | None, dict]:
+def _measure(series: list[Bar], bench: list[tuple[date, float]],
+             info_date: date, horizons, friction_bps: float = FRICTION_BPS) -> tuple[int | None, dict]:
     """Entry + forward/excess returns for one stock. Pure; shared by both studies.
 
-    Entry = first close STRICTLY after info_date (no lookahead). Returns
-    (entry_idx, measurement); measurement carries None-filled returns when the
-    stock has no usable bar after the information date.
+    Entry is the first TRADEABLE session strictly after info_date (no lookahead),
+    filled at its open (fallback close), skipping circuit-locked sessions up to
+    the entry window — see engine.backtest.execution. Alongside the gross
+    fields, every return carries a net-of-friction twin (``friction_bps`` charged
+    on both legs) and the pick's trailing liquidity (``adv`` / ``thin``).
+    Returns (entry_idx, measurement); measurement carries None-filled returns
+    when the stock has no tradeable bar after the information date, with
+    ``unenterable`` set when bars existed but every one in the window was locked.
     """
     m = {
-        "entry_date": None, "entry_price": None,
+        "entry_date": None, "entry_price": None, "entry_basis": None,
+        "entry_delay_days": 0, "unenterable": False,
+        "adv": None, "thin": False,
         "returns": {h: None for h in horizons},
         "excess": {h: None for h in horizons},
+        "net_returns": {h: None for h in horizons},
+        "net_excess": {h: None for h in horizons},
         "latest_date": None, "latest_price": None,
         "return_to_date": None, "excess_to_date": None,
+        "net_return_to_date": None, "net_excess_to_date": None,
     }
-    entry_idx = next((i for i, (d, _) in enumerate(series) if d > info_date), None)
-    if entry_idx is None:
+    if not series:
         return None, m
 
-    entry_d, entry_px = series[entry_idx]
+    res = resolve_entry(series, info_date)
+    if res.status != "ok":
+        m["unenterable"] = res.status == "unenterable"
+        return None, m
+
+    entry_idx, entry_px = res.index, res.price
+    entry_d = series[entry_idx].date
     m["entry_date"], m["entry_price"] = entry_d, entry_px
-    last_d, last_px = series[-1]
-    m["latest_date"], m["latest_price"] = last_d, last_px
+    m["entry_basis"], m["entry_delay_days"] = res.basis, res.delay
+    m["adv"] = trailing_adv(series, entry_idx)
+    m["thin"] = is_thin(m["adv"])
+    last = series[-1]
+    m["latest_date"], m["latest_price"] = last.date, last.close
     if entry_px:
-        m["return_to_date"] = _pct(entry_px, last_px)
+        m["return_to_date"] = _pct(entry_px, last.close)
+        m["net_return_to_date"] = apply_friction(m["return_to_date"], friction_bps)
 
     b_entry = _first_on_or_after(bench, entry_d)
     for h in horizons:
         if entry_idx + h < len(series) and entry_px:
-            exit_d, exit_px = series[entry_idx + h]
+            exit_px = series[entry_idx + h].close
             m["returns"][h] = _pct(entry_px, exit_px)
+            m["net_returns"][h] = apply_friction(m["returns"][h], friction_bps)
             if b_entry:
-                b_exit = _last_on_or_before(bench, exit_d)
+                b_exit = _last_on_or_before(bench, series[entry_idx + h].date)
+                bench_move = None
                 if b_exit and b_exit[0] > b_entry[0] and b_entry[1]:
-                    m["excess"][h] = m["returns"][h] - _pct(b_entry[1], b_exit[1])
+                    bench_move = _pct(b_entry[1], b_exit[1])
                 elif b_exit and b_entry[1]:
                     # Same-bar window (thin benchmark): 0% benchmark move.
-                    m["excess"][h] = m["returns"][h]
+                    bench_move = 0.0
+                if bench_move is not None:
+                    m["excess"][h] = m["returns"][h] - bench_move
+                    m["net_excess"][h] = m["net_returns"][h] - bench_move
     if b_entry and b_entry[1] and m["return_to_date"] is not None:
-        b_exit = _last_on_or_before(bench, last_d)
+        b_exit = _last_on_or_before(bench, last.date)
         if b_exit:
-            m["excess_to_date"] = m["return_to_date"] - _pct(b_entry[1], b_exit[1])
+            bench_move = _pct(b_entry[1], b_exit[1])
+            m["excess_to_date"] = m["return_to_date"] - bench_move
+            m["net_excess_to_date"] = m["net_return_to_date"] - bench_move
     return entry_idx, m
 
 
@@ -236,12 +276,17 @@ def _bucket_stats(rows: list[dict], horizons, n_boot: int = N_BOOT) -> dict:
     stats = {
         "n": len(rows),
         "priced": sum(1 for r in rows if r["entry_price"] is not None),
+        "thin": sum(1 for r in rows if r.get("thin")),
         "mean_excess": {}, "median_excess": {}, "hit_rate": {}, "mean_return": {},
         "mean_excess_ci": {}, "hit_rate_ci": {},
+        # Net-of-friction twin of mean excess (friction charged on both legs).
+        "net_mean_excess": {}, "net_mean_excess_ci": {},
     }
     for h in horizons:
         vals = [r["excess"][h] for r in rows if r["excess"].get(h) is not None]
         rets = [r["returns"][h] for r in rows if r["returns"].get(h) is not None]
+        net_vals = [r["net_excess"][h] for r in rows if r["net_excess"].get(h) is not None]
+        stats["net_mean_excess"][h] = _mean_of(net_vals)
         if vals:
             svals = sorted(vals)
             mid = len(svals) // 2
@@ -265,7 +310,11 @@ def _bucket_stats(rows: list[dict], horizons, n_boot: int = N_BOOT) -> dict:
         def _hit(sample, _h=h):
             return _hit_of([r["excess"][_h] for r in sample if r["excess"].get(_h) is not None])
 
+        def _net_excess(sample, _h=h):
+            return _mean_of([r["net_excess"][_h] for r in sample if r["net_excess"].get(_h) is not None])
+
         stats["mean_excess_ci"][h] = bootstrap_ci(rows, _excess, n_boot=n_boot)
+        stats["net_mean_excess_ci"][h] = bootstrap_ci(rows, _net_excess, n_boot=n_boot)
         hr_ci = bootstrap_ci(rows, _hit, n_boot=n_boot)
         if hr_ci is not None:
             hr_ci["verdict"] = verdict(hr_ci["ci_low"] - COINFLIP, hr_ci["ci_high"] - COINFLIP)
@@ -281,14 +330,19 @@ def _quintile_of(rank_pos: int, n: int) -> int:
 # ---------- cohort completeness + delisting policy ----------
 
 def _classify(series: list, entry_idx: int | None, meas: dict, horizons) -> str:
-    """One of: measured | no_bars | bars_predate_view | insufficient_forward.
+    """One of: measured | no_bars | unenterable | bars_predate_view |
+    insufficient_forward.
 
     A partition of the cohort, disjoint from the measurement math. 'measured'
-    means the stock contributed at least one forward-horizon return; the three
-    exclusion reasons name exactly why the others did not.
+    means the stock contributed at least one forward-horizon return; the four
+    exclusion reasons name exactly why the others did not. 'unenterable' is a
+    name that traded after the view but was circuit-locked through the entire
+    entry window — bars existed, yet no fill was possible.
     """
     if not series:
         return "no_bars"
+    if meas.get("unenterable"):
+        return "unenterable"
     if entry_idx is None:
         return "bars_predate_view"
     if not any(meas["returns"].get(h) is not None for h in horizons):
@@ -315,19 +369,23 @@ def _cohort_block(records: list[dict], horizons) -> tuple[dict, list[dict]]:
     application is counted separately so a reader can strip it back out.
     """
     excluded: dict[str, list[str]] = {
-        "no_bars": [], "bars_predate_view": [], "insufficient_forward": [],
+        "no_bars": [], "unenterable": [], "bars_predate_view": [],
+        "insufficient_forward": [],
     }
     presumed: dict[str, list[str]] = {"delisted": [], "merged": [], "unknown": []}
     applied: dict[str, list[str]] = {
         "constant": [], "actual_last": [], "merged": [], "unknown": [],
     }
     policy_rows: list[dict] = []
+    thin: list[str] = []
     measured = priceable = 0
 
     for rec in records:
         series, entry_idx, meas = rec["series"], rec["entry_idx"], rec["meas"]
         if series:
             priceable += 1
+        if meas.get("thin"):
+            thin.append(rec["symbol"])
         cls = _classify(series, entry_idx, meas, horizons)
         if cls == "measured":
             measured += 1
@@ -349,10 +407,15 @@ def _cohort_block(records: list[dict], horizons) -> tuple[dict, list[dict]]:
             else:
                 applied["constant"].append(rec["symbol"])
                 ex = ret = DELISTING_RETURN
+            net_ex = apply_friction(ex)
+            net_ret = apply_friction(ret)
             policy_rows.append({
                 "entry_price": meas["entry_price"] if meas["entry_price"] is not None else 1.0,
+                "thin": False,
                 "excess": {h: ex for h in horizons},
                 "returns": {h: ret for h in horizons},
+                "net_excess": {h: net_ex for h in horizons},
+                "net_returns": {h: net_ret for h in horizons},
             })
         else:
             applied[outcome].append(rec["symbol"])  # merged / unknown: no synthetic return
@@ -361,6 +424,11 @@ def _cohort_block(records: list[dict], horizons) -> tuple[dict, list[dict]]:
         "scored": len(records),
         "priceable": priceable,
         "measured": measured,
+        # Thin overlay (not an exclusion): measured names below the ADV floor,
+        # whose printed returns may be unrealizable in size.
+        "thin": len(thin),
+        "thin_symbols": thin,
+        "adv_floor": ADV_FLOOR,
         "excluded": {k: len(v) for k, v in excluded.items()},
         "excluded_symbols": excluded,
         "presumed_outcomes": {k: len(v) for k, v in presumed.items()},
@@ -448,6 +516,9 @@ def run_event_study(session, benchmark: str = DEFAULT_BENCHMARK,
             ic[key][h] = _rho(pairs)
             ic_ci[key][h] = bootstrap_ci(pairs, _rho, n_boot=n_boot)
 
+    thin_free = [r for r in stocks if not r.get("thin")]
+    any_thin = len(thin_free) != len(stocks)
+
     return {
         "benchmark": benchmark,
         "benchmark_bars": len(bench),
@@ -455,6 +526,11 @@ def run_event_study(session, benchmark: str = DEFAULT_BENCHMARK,
         "cohort_size": len(stocks),
         "priced": len(priced_rows),
         "unpriced_symbols": sorted(r["symbol"] for r in stocks if r["entry_price"] is None),
+        # Execution-reality constants, surfaced so the UI can state its terms.
+        "friction_bps": FRICTION_BPS,
+        "adv_floor": ADV_FLOOR,
+        "entry_window": ENTRY_WINDOW,
+        "entry_basis": "next_open",
         "stocks": stocks,
         "by_tier": _group(stocks, lambda r: r["tier"]),
         "by_recommendation": _group(stocks, lambda r: r["recommendation"]),
@@ -474,6 +550,13 @@ def run_event_study(session, benchmark: str = DEFAULT_BENCHMARK,
         "overall_with_policy": (
             _bucket_stats(stocks + policy_rows, horizons, n_boot=n_boot)
             if policy_rows else None
+        ),
+        # Both-ways liquidity guard: the SAME overall stat over the non-thin
+        # subset (gross AND net), so a reader sees the headline with and without
+        # the names whose returns may be unrealizable in size. None when no thin
+        # pick exists (ex-thin would equal overall).
+        "overall_ex_thin": (
+            _bucket_stats(thin_free, horizons, n_boot=n_boot) if any_thin else None
         ),
     }
 
@@ -556,14 +639,15 @@ def _equity_curve(picks: list[dict], bench, offsets, n_boot: int = CURVE_N_BOOT)
     for m in picks:
         ei, series = m["entry_idx"], m["series"]
         path: dict = {}
-        if ei is not None and series and series[ei][1]:
-            entry_px = series[ei][1]
+        if ei is not None and series and series[ei].close:
+            entry_px = series[ei].close
             for t in offsets:
                 if ei + t < len(series):
-                    path[t] = series[ei + t][1] / entry_px
+                    path[t] = series[ei + t].close / entry_px
         pick_paths.append(path)
 
     band = bootstrap_paths(pick_paths, offsets, n_boot=n_boot)
+    net_mult = friction_multiplier()  # scales every gross ratio to its round-trip-net value
 
     curve = []
     for t in offsets:
@@ -571,17 +655,21 @@ def _equity_curve(picks: list[dict], bench, offsets, n_boot: int = CURVE_N_BOOT)
         b_ratios = []
         for m in picks:
             ei, series = m["entry_idx"], m["series"]
-            if ei is None or ei + t >= len(series) or not series[ei][1]:
+            if ei is None or ei + t >= len(series) or not series[ei].close:
                 continue
-            b_entry = _first_on_or_after(bench, series[ei][0])
-            b_exit = _last_on_or_before(bench, series[ei + t][0])
+            b_entry = _first_on_or_after(bench, series[ei].date)
+            b_exit = _last_on_or_before(bench, series[ei + t].date)
             if b_entry and b_exit and b_entry[1]:
                 b_ratios.append(b_exit[1] / b_entry[1])
         if p_ratios:
             lo, hi = band.get(t, (None, None))
+            portfolio = 100 * sum(p_ratios) / len(p_ratios)
             curve.append({
                 "t": t,
-                "portfolio": round(100 * sum(p_ratios) / len(p_ratios), 4),
+                "portfolio": round(portfolio, 4),
+                # The same basket net of round-trip friction (a constant scaling
+                # of the gross value) — the second line on the equity chart.
+                "net_portfolio": round(portfolio * net_mult, 4),
                 "benchmark": round(100 * sum(b_ratios) / len(b_ratios), 4) if b_ratios else None,
                 "n": len(p_ratios),
                 "p5": round(100 * lo, 4) if lo is not None else None,
@@ -620,11 +708,17 @@ def _portfolio(members: list[dict], subset, bench, horizons, offsets,
             return sum(bv) / len(bv) - sum(av) / len(av)
 
         spread_ci[h] = bootstrap_ci(tagged, _spread, n_boot=n_boot)
+    thin_free = [m for m in buy_meas if not m.get("thin")]
+    any_thin = len(thin_free) != len(buy_meas)
     return {
         "n_buy": len(buys),
         "n_avoid": len(avoids),
         "n_buy_priced": sum(1 for m in buys if m["entry_idx"] is not None),
+        "n_thin": sum(1 for m in buy_meas if m.get("thin")),
         "stats": _bucket_stats(buy_meas, horizons, n_boot=n_boot),
+        # Both-ways: the BUY-pick stats over the non-thin subset (gross AND net).
+        # None when no BUY pick is thin.
+        "stats_ex_thin": _bucket_stats(thin_free, horizons, n_boot=n_boot) if any_thin else None,
         "spread": spread,
         "spread_ci": spread_ci,
         "curve": _equity_curve(buys, bench, offsets, n_boot=curve_n_boot),
@@ -689,6 +783,9 @@ def run_persona_study(session, benchmark: str = DEFAULT_BENCHMARK,
         "cohort_size": len(members),
         "cohort": cohort_block,
         "delisting_return_policy": DELISTING_RETURN,
+        "friction_bps": FRICTION_BPS,
+        "adv_floor": ADV_FLOOR,
+        "entry_basis": "next_open",
         "council": list(COUNCIL),
         "personas": per_persona,
         "subset": {"personas": subset,

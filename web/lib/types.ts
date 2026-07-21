@@ -377,10 +377,21 @@ export interface BacktestStock {
   entry_price: number | null;
   returns: Record<string, number | null>; // horizon (trading days) -> pct
   excess: Record<string, number | null>;
+  // Net-of-friction twins (85 bps/side charged on entry and exit).
+  net_returns: Record<string, number | null>;
+  net_excess: Record<string, number | null>;
   latest_date: string | null;
   latest_price: number | null;
   return_to_date: number | null;
   excess_to_date: number | null;
+  net_return_to_date: number | null;
+  net_excess_to_date: number | null;
+  // Execution reality: how the fill was resolved and the pick's liquidity.
+  entry_basis: "open" | "close" | null; // next-open, or close where no open exists
+  entry_delay_days: number; // trading days entry slipped past circuit locks
+  adv: number | null; // trailing median daily traded value (₹)
+  thin: boolean; // below the ADV floor — returns may be unrealizable in size
+  unenterable: boolean; // circuit-locked through the whole entry window
   lcb_quintile?: number | null; // 1..5, 5 = best (priced cohort only)
   composite_quintile?: number | null;
 }
@@ -388,12 +399,16 @@ export interface BacktestStock {
 export interface BacktestBucket {
   n: number;
   priced: number;
+  thin: number; // names in the bucket flagged thin (below the ADV floor)
   mean_excess: Record<string, number | null>;
   median_excess: Record<string, number | null>;
   hit_rate: Record<string, number | null>; // % of names beating the benchmark
   mean_return: Record<string, number | null>;
-  // Bootstrap CIs for the two hypothesis-bearing stats (vs zero / vs coin flip).
+  // Net-of-friction twin of mean excess (85 bps/side, both legs).
+  net_mean_excess: Record<string, number | null>;
+  // Bootstrap CIs for the hypothesis-bearing stats (vs zero / vs coin flip).
   mean_excess_ci: Record<string, CI | null>;
+  net_mean_excess_ci: Record<string, CI | null>;
   hit_rate_ci: Record<string, CI | null>;
 }
 
@@ -405,13 +420,19 @@ export interface CohortBlock {
   scored: number;
   priceable: number; // has >=1 price bar
   measured: number; // contributed >=1 forward-horizon return
+  // Thin overlay (not an exclusion): measured names below the ADV floor.
+  thin: number;
+  thin_symbols: string[];
+  adv_floor: number; // ₹ median daily traded value below which a pick is thin
   excluded: {
     no_bars: number;
+    unenterable: number; // circuit-locked through the entry window
     bars_predate_view: number;
     insufficient_forward: number;
   };
   excluded_symbols: {
     no_bars: string[];
+    unenterable: string[];
     bars_predate_view: string[];
     insufficient_forward: string[];
   };
@@ -439,6 +460,11 @@ export interface BacktestStudy {
   cohort_size: number;
   priced: number;
   unpriced_symbols: string[];
+  // Execution-reality terms the study was run under.
+  friction_bps: number; // one-way, charged on both legs
+  adv_floor: number; // ₹ median daily traded value below which a pick is thin
+  entry_window: number; // trading days allowed to find a tradeable session
+  entry_basis: string; // "next_open"
   stocks: BacktestStock[];
   by_tier: Record<string, BacktestBucket>;
   by_recommendation: Record<string, BacktestBucket>;
@@ -458,6 +484,10 @@ export interface BacktestStudy {
   // The SAME overall stat recomputed with presumed-delisted names folded back in
   // via the policy. null when no policy row applied.
   overall_with_policy: BacktestBucket | null;
+  // The SAME overall stat over the non-thin subset (gross AND net), so the
+  // headline can be read with and without unrealizable-in-size names. null when
+  // no thin pick exists.
+  overall_ex_thin: BacktestBucket | null;
 }
 
 // ── Per-persona backtest (equity curves + summary stats) ─────────
@@ -465,7 +495,8 @@ export interface BacktestStudy {
 // rebased to 100 at entry, alongside the same picks' benchmark path.
 export interface EquityPoint {
   t: number; // trading days since entry
-  portfolio: number; // rebased to 100
+  portfolio: number; // rebased to 100 (gross)
+  net_portfolio: number; // the same basket net of round-trip friction
   benchmark: number | null; // rebased to 100
   n: number; // basket size at this offset
   // p5/p95 band of the portfolio mean from resampling the picks (rebased to
@@ -479,7 +510,10 @@ export interface PortfolioResult {
   n_buy: number;
   n_avoid: number;
   n_buy_priced: number;
+  n_thin: number; // BUY picks flagged thin (below the ADV floor)
   stats: BacktestBucket; // over the BUY picks
+  // BUY-pick stats over the non-thin subset. null when no BUY pick is thin.
+  stats_ex_thin: BacktestBucket | null;
   spread: Record<string, number | null>; // BUY excess minus AVOID excess, per horizon
   spread_ci: Record<string, CI | null>; // bootstrap band on the spread (vs zero)
   curve: EquityPoint[];
@@ -519,6 +553,8 @@ export interface EraSlice {
   insufficient: boolean;
   mean_excess?: number | null;
   mean_excess_ci?: CI | null;
+  net_mean_excess?: number | null;
+  net_mean_excess_ci?: CI | null;
   hit_rate?: number | null;
   hit_rate_ci?: CI | null;
   ic?: number | null;
@@ -531,6 +567,8 @@ export interface VintageWindow {
   n: number; // measured at the hold horizon
   mean_excess: number | null;
   mean_excess_ci: CI | null;
+  net_mean_excess: number | null;
+  net_mean_excess_ci: CI | null;
   hit_rate: number | null;
   hit_rate_ci: CI | null;
   ic: number | null;

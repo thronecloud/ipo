@@ -89,6 +89,7 @@ export default function EquityCurve({
     const vals: number[] = [];
     for (const p of points) {
       vals.push(p.portfolio);
+      if (p.net_portfolio != null) vals.push(p.net_portfolio);
       if (p.benchmark != null) vals.push(p.benchmark);
       if (p.p5 != null) vals.push(p.p5);
       if (p.p95 != null) vals.push(p.p95);
@@ -154,11 +155,14 @@ export default function EquityCurve({
   }
 
   const portfolioPath = linePath(points, (p) => p.portfolio, geom.x, geom.y);
+  const netPath = linePath(points, (p) => p.net_portfolio, geom.x, geom.y);
   const benchPath = linePath(points, (p) => p.benchmark, geom.x, geom.y);
   const bandPath = bandArea(points, geom.x, geom.y);
   const hasBand = bandPath.length > 0;
   const last = points[points.length - 1];
   const finalRet = last.portfolio - 100;
+  const finalNetRet =
+    last.net_portfolio != null ? last.net_portfolio - 100 : null;
   const finalExcess =
     last.benchmark != null ? last.portfolio - last.benchmark : null;
 
@@ -168,6 +172,15 @@ export default function EquityCurve({
         <span className="flex items-center gap-1.5">
           <span className="inline-block h-[3px] w-4 rounded-full bg-brass" />
           <span className="text-paper/80">Selected council</span>
+        </span>
+        <span
+          className="flex items-center gap-1.5"
+          title="The same basket after trading costs (85 bps a side, charged on both the buy and the sell) — what you could actually keep."
+        >
+          <span
+            className="inline-block h-0 w-4 border-t-2 border-dashed border-brass/70"
+          />
+          <span className="text-muted">After friction</span>
         </span>
         <span className="flex items-center gap-1.5">
           <span
@@ -191,6 +204,18 @@ export default function EquityCurve({
             {finalRet >= 0 ? "+" : ""}
             {finalRet.toFixed(1)}%
           </span>
+          {finalNetRet != null && (
+            <span title="After 85 bps/side trading costs on both legs.">
+              {" "}
+              <span className="text-muted">net</span>{" "}
+              <span
+                style={{ color: finalNetRet >= 0 ? "var(--color-sage)" : "var(--color-terracotta)" }}
+              >
+                {finalNetRet >= 0 ? "+" : ""}
+                {finalNetRet.toFixed(1)}%
+              </span>
+            </span>
+          )}
           {finalExcess != null && (
             <>
               {" "}
@@ -257,6 +282,16 @@ export default function EquityCurve({
           <path d={bandPath} fill="var(--color-brass)" fillOpacity={0.14} stroke="none" />
         )}
         <path d={benchPath} fill="none" stroke="var(--color-muted)" strokeWidth={1.5} />
+        {/* net-of-friction line: same colour as gross, dashed + thinner so it
+            reads as "the gross basket, minus costs" without a new hue. */}
+        <path
+          d={netPath}
+          fill="none"
+          stroke="var(--color-brass)"
+          strokeWidth={1.5}
+          strokeDasharray="4 3"
+          opacity={0.75}
+        />
         <path d={portfolioPath} fill="none" stroke="var(--color-brass)" strokeWidth={2} />
 
         {/* crosshair */}
@@ -273,6 +308,17 @@ export default function EquityCurve({
               opacity={0.7}
             />
             <circle cx={geom.x(hovered.t)} cy={geom.y(hovered.portfolio)} r={3.5} fill="var(--color-brass)" />
+            {hovered.net_portfolio != null && (
+              <circle
+                cx={geom.x(hovered.t)}
+                cy={geom.y(hovered.net_portfolio)}
+                r={3}
+                fill="none"
+                stroke="var(--color-brass)"
+                strokeWidth={1.5}
+                opacity={0.75}
+              />
+            )}
             {hovered.benchmark != null && (
               <circle
                 cx={geom.x(hovered.t)}
@@ -301,6 +347,13 @@ export default function EquityCurve({
             <span className="text-paper">{hovered.portfolio.toFixed(1)}</span>
             <span className="text-muted">council</span>
           </div>
+          {hovered.net_portfolio != null && (
+            <div className="num flex items-center gap-1.5">
+              <span className="inline-block h-0 w-2 border-t-2 border-dashed border-brass/70" />
+              <span className="text-paper">{hovered.net_portfolio.toFixed(1)}</span>
+              <span className="text-muted">after friction</span>
+            </div>
+          )}
           {hovered.benchmark != null && (
             <div className="num flex items-center gap-1.5">
               <span

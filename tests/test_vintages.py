@@ -31,8 +31,11 @@ def _weekday_dates(start: date, n: int) -> list[date]:
 
 
 def _bars(start: date, closes: list[float]) -> list[dict]:
+    # Nonzero intraday range (high != low) so ordinary bars are not read as
+    # zero-range circuit locks; open == close for the next-open entry basis.
     dates = _weekday_dates(start, len(closes))
-    return [{"date": d, "open": c, "high": c, "low": c, "close": c, "volume": 1000}
+    return [{"date": d, "open": c, "high": round(c * 1.005, 4),
+             "low": round(c * 0.995, 4), "close": c, "volume": 1000}
             for d, c in zip(dates, closes)]
 
 
@@ -170,6 +173,11 @@ def test_window_mean_excess_ci_present(db_session):
     ci = win["mean_excess_ci"]
     assert ci is not None and ci["ci_low"] > 0 and ci["verdict"] == "positive"
     assert win["hit_rate_ci"]["verdict"] == "positive"
+    # Net-of-friction twin of the window mean excess: present and strictly worse
+    # than gross for a positive-return window.
+    assert win["net_mean_excess"] is not None
+    assert win["net_mean_excess"] < win["mean_excess"]
+    assert win["net_mean_excess_ci"] is not None
 
 
 # ── API contract ──────────────────────────────────────────────────

@@ -11,21 +11,29 @@ from datetime import date, datetime, timedelta, timezone
 
 from db.models import CompositeScoreHistory
 from engine import repo
+from engine.backtest.execution import FRICTION_BPS, friction_multiplier
 from engine.backtest.study import run_event_study, run_persona_study, spearman
 from tests.factories import make_analysis, make_stock
 
 
 BENCH = "BSE-SMLCAP.BO"
+FRICTION_MULT = friction_multiplier()
+FRICTION_BPS_EXPECTED = FRICTION_BPS
 
 
-def _bars(start: date, closes: list[float]) -> list[dict]:
-    """One bar per weekday starting at `start` (skips Sat/Sun like a real market)."""
+def _bars(start: date, closes: list[float], volume: int = 1000) -> list[dict]:
+    """One bar per weekday starting at `start` (skips Sat/Sun like a real market).
+
+    Open == close so the next-open entry basis reads the close value; a nonzero
+    intraday range (high != low) keeps these ordinary bars from tripping the
+    zero-range circuit detector (a real locked bar is built by `_locked_bar`).
+    """
     rows, d, i = [], start, 0
     while i < len(closes):
         if d.weekday() < 5:
             c = closes[i]
-            rows.append({"date": d, "open": c, "high": c, "low": c, "close": c,
-                         "volume": 1000})
+            rows.append({"date": d, "open": c, "high": round(c * 1.005, 4),
+                         "low": round(c * 0.995, 4), "close": c, "volume": volume})
             i += 1
         d += timedelta(days=1)
     return rows
@@ -255,9 +263,13 @@ def test_persona_curve_rebased_and_forward_return(db_session):
     buffett = _persona(report, "warren_buffett")
     assert buffett["n_buy"] == 1 and buffett["n_avoid"] == 0
     # A single pick can't support a band — p5/p95 are honestly None, not the point.
+    # The net line carries round-trip friction at every offset, so even day 0
+    # (sell-immediately) sits below 100 by the full cost.
     assert buffett["curve"] == [
-        {"t": 0, "portfolio": 100.0, "benchmark": 100.0, "n": 1, "p5": None, "p95": None},
-        {"t": 1, "portfolio": 110.0, "benchmark": 100.0, "n": 1, "p5": None, "p95": None},
+        {"t": 0, "portfolio": 100.0, "net_portfolio": round(100.0 * FRICTION_MULT, 4),
+         "benchmark": 100.0, "n": 1, "p5": None, "p95": None},
+        {"t": 1, "portfolio": 110.0, "net_portfolio": round(110.0 * FRICTION_MULT, 4),
+         "benchmark": 100.0, "n": 1, "p5": None, "p95": None},
     ]
     assert abs(buffett["stats"]["mean_return"][1] - 10.0) < 1e-9
     assert abs(buffett["stats"]["hit_rate"][1] - 100.0) < 1e-9
@@ -422,7 +434,8 @@ def test_cohort_accounting_partitions_stocks(db_session):
     assert c["priceable"] == 3          # everyone but the no-bars name
     assert c["measured"] == 1
     assert c["excluded"] == {
-        "no_bars": 1, "bars_predate_view": 1, "insufficient_forward": 1,
+        "no_bars": 1, "unenterable": 0, "bars_predate_view": 1,
+        "insufficient_forward": 1,
     }
     assert c["excluded_symbols"]["no_bars"] == ["COM2"]
     assert c["excluded_symbols"]["bars_predate_view"] == ["COM3"]
@@ -578,3 +591,218 @@ def test_api_backtest_personas_ci_fields(db_session):
     # Four BUYs and no AVOID: the spread is undefined, so its CI is honestly None.
     assert buffett["spread_ci"]["5"] is None
     assert "spread_ci" in body["subset"]
+
+
+# ── execution reality: entry basis, circuits, friction, thinness ──
+
+
+def _wd(n: int) -> list[date]:
+    """The first n weekday dates from MON (a real market calendar)."""
+    out, d = [], MON
+    while len(out) < n:
+        if d.weekday() < 5:
+            out.append(d)
+        d += timedelta(days=1)
+    return out
+
+
+def _locked(d: date, px: float) -> dict:
+    """A zero-range (high==low) bar — a locked-circuit print in EOD data."""
+    return {"date": d, "open": px, "high": px, "low": px, "close": px, "volume": 1000}
+
+
+def test_study_entry_uses_next_open(db_session):
+    # info_date MON; the first session strictly after opens at 105 (close 110).
+    # Entry is the OPEN, so the +5-day return is measured off 105, not 110.
+    d = _wd(3)
+    st = make_stock(db_session, "EX_OPEN")
+    _history_row(db_session, st, info_date=MON, composite=80.0)
+    bars = [
+        {"date": d[0], "open": 100, "high": 101, "low": 99, "close": 100, "volume": 1000},
+        {"date": d[1], "open": 105, "high": 112, "low": 104, "close": 110, "volume": 1000},
+        {"date": d[2], "open": 111, "high": 116, "low": 110, "close": 115, "volume": 1000},
+    ]
+    repo.upsert_daily_prices(db_session, st.id, bars)
+    _seed_benchmark(db_session, MON)
+    db_session.commit()
+
+    report = run_event_study(db_session, benchmark=BENCH, horizons=(1,))
+    (row,) = report["stocks"]
+    assert row["entry_date"] == d[1]
+    assert row["entry_price"] == 105
+    assert row["entry_basis"] == "open"
+    assert abs(row["returns"][1] - (115 / 105 - 1) * 100.0) < 1e-6
+    assert report["entry_basis"] == "next_open"
+
+
+def test_study_circuit_locks_delay_entry(db_session):
+    # The first session after the view is a locked upper circuit; entry slips to
+    # the next tradeable session, recorded as a one-day delay.
+    d = _wd(4)
+    st = make_stock(db_session, "EX_LOCK")
+    _history_row(db_session, st, info_date=MON, composite=80.0)
+    bars = [
+        {"date": d[0], "open": 100, "high": 101, "low": 99, "close": 100, "volume": 1000},
+        _locked(d[1], 110.0),  # +10% locked band, untradeable
+        {"date": d[2], "open": 111, "high": 114, "low": 110, "close": 112, "volume": 1000},
+        {"date": d[3], "open": 112, "high": 113, "low": 111, "close": 113, "volume": 1000},
+    ]
+    repo.upsert_daily_prices(db_session, st.id, bars)
+    _seed_benchmark(db_session, MON)
+    db_session.commit()
+
+    report = run_event_study(db_session, benchmark=BENCH, horizons=(1,))
+    (row,) = report["stocks"]
+    assert row["entry_date"] == d[2]
+    assert row["entry_delay_days"] == 1
+    assert row["entry_price"] == 111
+
+
+def test_study_unenterable_excluded_with_reason(db_session):
+    # Every session in the entry window is a locked limit-up: no fill possible.
+    d = _wd(7)
+    st = make_stock(db_session, "EX_UNENT")
+    _history_row(db_session, st, info_date=MON, composite=80.0)
+    bars = [{"date": d[0], "open": 100, "high": 101, "low": 99, "close": 100, "volume": 1000}]
+    px = 100.0
+    for i in range(1, 6):
+        px = round(px * 1.10, 4)
+        bars.append(_locked(d[i], px))
+    repo.upsert_daily_prices(db_session, st.id, bars)
+    _seed_benchmark(db_session, MON)
+    db_session.commit()
+
+    report = run_event_study(db_session, benchmark=BENCH, horizons=(1,))
+    (row,) = report["stocks"]
+    assert row["entry_price"] is None
+    assert row["unenterable"] is True
+    c = report["cohort"]
+    assert c["excluded"]["unenterable"] == 1
+    assert c["excluded_symbols"]["unenterable"] == ["EX_UNENT"]
+    assert c["measured"] == 0
+
+
+def test_study_friction_nets_exact_values(db_session):
+    # One +10% winner over a flat benchmark: net excess == the friction-adjusted
+    # +10%, computed by the same primitive (both legs charged).
+    st = make_stock(db_session, "EX_FRIC")
+    _history_row(db_session, st, info_date=MON, composite=80.0)
+    repo.upsert_daily_prices(db_session, st.id, _bars(MON, [100.0, 100.0, 110.0], volume=100_000))
+    _seed_benchmark(db_session, MON)
+    db_session.commit()
+
+    report = run_event_study(db_session, benchmark=BENCH, horizons=(1,))
+    (row,) = report["stocks"]
+    assert abs(row["excess"][1] - 10.0) < 1e-9
+    # net excess = friction-adjusted +10% (flat benchmark subtracts 0).
+    assert abs(row["net_excess"][1] - ((1.10 * friction_multiplier() - 1) * 100.0)) < 1e-9
+    assert report["friction_bps"] == FRICTION_BPS_EXPECTED
+    ov = report["overall"]
+    assert abs(ov["net_mean_excess"][1] - row["net_excess"][1]) < 1e-9
+    # Net is strictly worse than gross for a positive return.
+    assert ov["net_mean_excess"][1] < ov["mean_excess"][1]
+
+
+def test_study_thin_flag_and_ex_thin_divergence(db_session):
+    # A liquid +10% winner and a thin -10% loser. Gross overall averages to ~0;
+    # dropping the thin name (ex-thin) leaves only the +10% winner -> they differ.
+    liquid = make_stock(db_session, "EX_LIQ")
+    _history_row(db_session, liquid, info_date=MON, composite=80.0)
+    repo.upsert_daily_prices(db_session, liquid.id,
+                             _bars(MON, [100.0, 100.0, 110.0], volume=100_000))  # 10M/day
+
+    thin = make_stock(db_session, "EX_THIN")
+    _history_row(db_session, thin, info_date=MON, composite=40.0)
+    repo.upsert_daily_prices(db_session, thin.id,
+                             _bars(MON, [100.0, 100.0, 90.0], volume=100))  # 10k/day
+    _seed_benchmark(db_session, MON)
+    db_session.commit()
+
+    report = run_event_study(db_session, benchmark=BENCH, horizons=(1,))
+    by_sym = {r["symbol"]: r for r in report["stocks"]}
+    assert by_sym["EX_THIN"]["thin"] is True
+    assert by_sym["EX_LIQ"]["thin"] is False
+    assert report["cohort"]["thin"] == 1
+    assert report["cohort"]["thin_symbols"] == ["EX_THIN"]
+
+    assert abs(report["overall"]["mean_excess"][1] - 0.0) < 1e-9   # (+10 -10)/2
+    ex = report["overall_ex_thin"]
+    assert ex is not None
+    assert abs(ex["mean_excess"][1] - 10.0) < 1e-9                 # only the winner
+    assert report["overall"]["mean_excess"][1] != ex["mean_excess"][1]
+
+
+def test_study_ex_thin_none_when_no_thin(db_session):
+    # A single liquid name: nothing to filter, so ex-thin is honestly None.
+    st = make_stock(db_session, "EX_ALLLIQ")
+    _history_row(db_session, st, info_date=MON, composite=80.0)
+    repo.upsert_daily_prices(db_session, st.id,
+                             _bars(MON, [100.0, 100.0, 110.0], volume=100_000))
+    _seed_benchmark(db_session, MON)
+    db_session.commit()
+
+    report = run_event_study(db_session, benchmark=BENCH, horizons=(1,))
+    assert report["cohort"]["thin"] == 0
+    assert report["overall_ex_thin"] is None
+
+
+def test_persona_thin_count_and_ex_thin(db_session):
+    # Buffett BUYs one liquid and one thin winner. n_thin counts the thin one and
+    # stats_ex_thin holds the liquid-only stats.
+    liquid = make_stock(db_session, "PT_LIQ")
+    _history_row(db_session, liquid, info_date=MON, composite=80.0)
+    repo.upsert_daily_prices(db_session, liquid.id,
+                             _bars(MON, [100.0, 100.0, 110.0], volume=100_000))
+    thin = make_stock(db_session, "PT_THIN")
+    _history_row(db_session, thin, info_date=MON, composite=80.0)
+    repo.upsert_daily_prices(db_session, thin.id,
+                             _bars(MON, [100.0, 100.0, 130.0], volume=100))
+    _seed_benchmark(db_session, MON)
+    _verdict(db_session, liquid, "warren_buffett", 9, "BUY")
+    _verdict(db_session, thin, "warren_buffett", 9, "BUY")
+    db_session.commit()
+
+    report = run_persona_study(db_session, benchmark=BENCH, horizons=(1,))
+    buffett = _persona(report, "warren_buffett")
+    assert buffett["n_buy"] == 2 and buffett["n_thin"] == 1
+    assert buffett["stats_ex_thin"] is not None
+    # Ex-thin drops the +30% thin name, leaving the liquid +10%.
+    assert abs(buffett["stats_ex_thin"]["mean_return"][1] - 10.0) < 1e-9
+    assert report["friction_bps"] == FRICTION_BPS_EXPECTED
+
+
+def test_api_execution_reality_contract(db_session):
+    from fastapi.testclient import TestClient
+    from api.main import app
+
+    liquid = make_stock(db_session, "AXLIQ")
+    _history_row(db_session, liquid, info_date=MON, composite=80.0, tier="high")
+    repo.upsert_daily_prices(db_session, liquid.id, _bars(MON, RISING, volume=100_000))
+    thin = make_stock(db_session, "AXTHIN")
+    _history_row(db_session, thin, info_date=MON, composite=60.0, tier="high")
+    repo.upsert_daily_prices(db_session, thin.id, _bars(MON, RISING, volume=100))
+    _seed_benchmark(db_session, MON)
+    db_session.commit()
+
+    with TestClient(app) as client:
+        resp = client.get("/api/backtest", params={"benchmark": BENCH})
+    assert resp.status_code == 200
+    body = resp.json()
+    # Execution constants surface for the UI.
+    assert body["friction_bps"] == FRICTION_BPS_EXPECTED
+    assert body["adv_floor"] == 2_500_000.0
+    assert body["entry_basis"] == "next_open"
+    # Net-of-friction bucket field, horizon-keyed as JSON strings.
+    assert "net_mean_excess" in body["overall"]
+    assert "5" in body["overall"]["net_mean_excess"]
+    assert "net_mean_excess_ci" in body["by_tier"]["high"]
+    # Cohort carries the thin overlay and the unenterable exclusion key.
+    assert body["cohort"]["thin"] == 1
+    assert body["cohort"]["adv_floor"] == 2_500_000.0
+    assert "unenterable" in body["cohort"]["excluded"]
+    # ex-thin headline present because a thin pick exists.
+    assert body["overall_ex_thin"] is not None
+    # Per-stock net + execution fields.
+    stock = body["stocks"][0]
+    assert set(stock) >= {"net_excess", "net_returns", "entry_basis",
+                          "entry_delay_days", "thin", "adv", "unenterable"}
