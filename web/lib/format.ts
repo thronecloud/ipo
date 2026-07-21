@@ -56,6 +56,7 @@ export function relTime(iso: string | null | undefined): string {
   const then = new Date(iso).getTime();
   if (Number.isNaN(then)) return DASH;
   const diff = Date.now() - then;
+  if (diff < 0) return relFuture(-diff);
   const s = Math.round(diff / 1000);
   if (s < 60) return `${s}s ago`;
   const m = Math.round(s / 60);
@@ -67,6 +68,30 @@ export function relTime(iso: string | null | undefined): string {
   const mo = Math.round(d / 30);
   if (mo < 12) return `${mo}mo ago`;
   return `${Math.round(mo / 12)}y ago`;
+}
+
+// Forward-looking counterpart of relTime — "in 4h 56m" for a time still ahead,
+// so a "next expected" never reads as a negative "-17759s ago".
+function relFuture(ms: number): string {
+  const s = Math.round(ms / 1000);
+  if (s < 60) return `in ${s}s`;
+  const m = Math.round(s / 60);
+  if (m < 60) return `in ${m}m`;
+  const totalMin = Math.round(s / 60);
+  const h = Math.floor(totalMin / 60);
+  if (h < 24) {
+    const remM = totalMin % 60;
+    return remM ? `in ${h}h ${remM}m` : `in ${h}h`;
+  }
+  const totalHrs = Math.floor(totalMin / 60);
+  const d = Math.floor(totalHrs / 24);
+  if (d < 30) {
+    const remH = totalHrs % 24;
+    return remH ? `in ${d}d ${remH}h` : `in ${d}d`;
+  }
+  const mo = Math.round(d / 30);
+  if (mo < 12) return `in ${mo}mo`;
+  return `in ${Math.round(mo / 12)}y`;
 }
 
 export function shortDate(iso: string | null | undefined): string {

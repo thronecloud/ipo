@@ -6,6 +6,21 @@ Quarterly data: one row per (stock, period_end), so a weekly sweep that re-sees 
 already-stored quarter is a no-op (ON CONFLICT DO NOTHING). Percentages are parsed
 tolerantly from the feed's category rows and left NULL when a category is absent; the
 untouched source record is kept in `raw`. `_fetch_shareholding` is the network seam.
+
+DISABLED — collector known-broken (verified 2026-07, prod):
+  - `NSE_SHAREHOLDING` returns 404 (path-not-found, not a cookie 403) from every
+    datacenter IP. NSE's OTHER JSON APIs (corporate-announcements) DO answer from the
+    box, so this is a retired/renamed endpoint, not an IP block on the box.
+  - The current path could not be rediscovered: NSE edge-blocks datacenter IPs
+    (homepage 302/403), so the get-quotes web-app bundle that would name the new
+    corporate-shareholding path is unreachable for probing from here.
+  - Prod has ZERO shareholding_pattern rows and ZERO successful `shareholding` runs
+    ever — the job has never produced data.
+Decision: leave the parser/storage/dedup intact (they are source-shape-agnostic and
+fully tested), but treat the dataset as PROVISIONAL — its freshness SLO reads grey,
+not red (engine/quality/slo.py), so the dashboard tells the truth instead of alerting
+on a plumbing outage. Re-enabling needs the new NSE path found from a residential IP,
+or a fallback built on the announcement-attachment (XBRL shareholding filing) feed.
 """
 
 from datetime import datetime, timezone
@@ -18,9 +33,9 @@ from engine.ingest.archive import archive_safe
 from engine.ingest.exchange_base import NSE_BASE, clean, nse_session, to_float
 from engine.repo import job_run
 
-# PROVISIONAL: this path 404s from a datacenter IP as of 2026-07 (NSE appears to have
-# moved shareholding behind the Akamai-guarded quote endpoint). Parser/storage/dedup
-# below are source-shape-agnostic and fully tested; confirm/patch this URL on the box.
+# Retired endpoint (404 from every datacenter IP as of 2026-07); see the module
+# docstring for the verification and the re-enable path. Parser/storage/dedup below are
+# source-shape-agnostic and fully tested, so a rediscovered URL is a one-line swap here.
 NSE_SHAREHOLDING = f"{NSE_BASE}/api/corporate-share-holdings-pattern"
 
 

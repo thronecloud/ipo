@@ -309,6 +309,13 @@ class SchedulerJob(BaseModel):
     last_run: JobRow | None = None
     next_expected: datetime | None = None
     missed: bool | None = None       # None when the job writes no job_run (untracked)
+    # ok        — ran on time (or not yet due)
+    # due        — past its expected fire but still inside the grace window
+    # missed     — overdue beyond grace (missed ⇒ missed=True)
+    # never_ran  — tracked, but no run on record
+    # untracked  — writes no job_run, so freshness can't be judged (reap, heartbeat)
+    # disabled   — analyze is gated off (ANALYSIS_ENABLED=0 or no credential)
+    state: str = "ok"
     recent_runs: list[JobRow] = []   # last 10, only on ?job= drill-down
 
 

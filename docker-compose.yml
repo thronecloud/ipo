@@ -51,6 +51,9 @@ services:
       DATABASE_URL: postgresql+psycopg://ipo:ipo@db:5432/ipo
       ANALYSIS_BACKEND: ${ANALYSIS_BACKEND:-cli}
       ANALYSIS_MODEL: ${ANALYSIS_MODEL:-claude-fable-5}
+      # Mechanical freeze: "0" reports analyze as disabled on the dashboard regardless
+      # of credentials. Must match the scheduler's value so the two agree.
+      ANALYSIS_ENABLED: ${ANALYSIS_ENABLED:-1}
       ADMIN_TOKEN: ${ADMIN_TOKEN:-}
       CLAUDE_CODE_OAUTH_TOKEN: ${CLAUDE_CODE_OAUTH_TOKEN:-}
       NTFY_TOPIC: ${NTFY_TOPIC:-}
@@ -103,6 +106,9 @@ services:
       DATABASE_URL: postgresql+psycopg://ipo:ipo@db:5432/ipo
       ANALYSIS_BACKEND: ${ANALYSIS_BACKEND:-cli}
       ANALYSIS_MODEL: ${ANALYSIS_MODEL:-claude-fable-5}
+      # Mechanical freeze: "0" makes the scheduler skip analyze (logging a skipped
+      # job_run) whatever credentials exist. Keep in step with the api service.
+      ANALYSIS_ENABLED: ${ANALYSIS_ENABLED:-1}
       CLAUDE_CODE_OAUTH_TOKEN: ${CLAUDE_CODE_OAUTH_TOKEN:-}
       NTFY_TOPIC: ${NTFY_TOPIC:-}
       NOTIFY_WEBHOOK_URL: ${NOTIFY_WEBHOOK_URL:-}

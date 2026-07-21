@@ -52,6 +52,41 @@ def test_parser_skips_non_dict_rows():
     assert ann.parse_nse_announcements([123, "x", None]) == []
 
 
+# ---------- BSE pagination ----------
+
+def test_bse_table_reads_empty_window_as_no_rows():
+    # The empty-window response is the bare string, not a dict.
+    assert ann._bse_table("No Record Found!") == []
+    assert ann._bse_table({"Table1": [{"ROWCNT": 0}]}) == []
+    assert ann._bse_table({"Table": [{"NEWSID": "x"}]}) == [{"NEWSID": "x"}]
+
+
+def test_fetch_bse_walks_all_pages_until_empty(monkeypatch):
+    # Page 1 (2 rows) + page 2 (1 row) + page 3 empty ("No Record Found!"): the
+    # loop must gather all three rows, not truncate at page 1, and stop at the
+    # first empty page.
+    p1 = _load("bse_announcements_page1.json")
+    p2 = _load("bse_announcements_page2.json")
+    calls = []
+
+    def fake_page(http, pageno, prev_date, to_date):
+        calls.append(pageno)
+        if pageno == 1:
+            return p1
+        if pageno == 2:
+            return p2
+        return "No Record Found!"
+
+    monkeypatch.setattr(ann, "_fetch_bse_page", fake_page)
+    payload = ann._fetch_bse_announcements()
+    ids = [r["NEWSID"] for r in payload["Table"]]
+    assert ids == ["BSE-P1-1", "BSE-P1-2", "BSE-P2-1"]   # page 1 was NOT truncated
+    assert calls == [1, 2, 3]                            # stopped at first empty page
+    # and the accumulated payload parses through the normal parser
+    rows = ann.parse_bse_announcements(payload)
+    assert {r["announcement_id"] for r in rows} == {"BSE-P1-1", "BSE-P1-2", "BSE-P2-1"}
+
+
 # ---------- resolution + dedup ----------
 
 def test_upsert_resolves_known_symbol_and_flags_unmatched(db_session):

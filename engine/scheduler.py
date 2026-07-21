@@ -114,10 +114,17 @@ def _now() -> str:
     return datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%SZ")
 
 
-def safe(job_fn):
-    """Exception-isolate a tick: log loudly, never kill the daemon."""
+def safe(job_fn, sched_id=None):
+    """Exception-isolate a tick: log loudly, never kill the daemon.
+
+    `sched_id` (the scheduler job id) is published for the duration of the tick so
+    the JobRun the underlying work opens stamps stats["sched_id"] — that is what lets
+    the dashboard tell apart two jobs sharing one job_type (refresh vs refresh_stuck).
+    """
 
     def wrapper():
+        from engine.repo import sched_id_var
+        token = sched_id_var.set(sched_id) if sched_id else None
         try:
             job_fn()
         except Exception as e:
@@ -126,17 +133,25 @@ def safe(job_fn):
             from engine.notify import notify_safe
             notify_safe(f"scheduler tick failed: {job_fn.__name__}",
                         str(e)[:400], priority="high", tags="rotating_light")
+        finally:
+            if token is not None:
+                sched_id_var.reset(token)
 
     wrapper.__name__ = job_fn.__name__
     return wrapper
 
 
 def analysis_available() -> bool:
-    """True when the Claude CLI has a usable credential in this environment.
+    """True when analysis is both permitted and has a usable credential.
 
-    Headless/container: CLAUDE_CODE_OAUTH_TOKEN (from `claude setup-token`).
-    Host: an interactive `claude` login (~/.claude exists).
+    ANALYSIS_ENABLED is a mechanical freeze: "0" disables analysis unconditionally,
+    whatever credentials exist — the way to park the LLM spend without pulling the
+    token. Default "1" keeps the credential check the sole gate:
+      Headless/container: CLAUDE_CODE_OAUTH_TOKEN (from `claude setup-token`).
+      Host: an interactive `claude` login (~/.claude exists).
     """
+    if os.environ.get("ANALYSIS_ENABLED", "1") == "0":
+        return False
     if os.environ.get("CLAUDE_CODE_OAUTH_TOKEN"):
         return True
     if os.environ.get("ANTHROPIC_API_KEY") and os.environ.get("ANALYSIS_BACKEND") == "api":
@@ -402,20 +417,63 @@ def job_heartbeat():
         _heartbeat_state["ok"] = ok
 
 
+def _skipped_analyze(reason: str) -> None:
+    """Record a skipped analyze tick as a lightweight job_run so the dashboard can
+    tell 'the scheduler ticked and chose not to spend' from 'the scheduler is dead'.
+    stats["skipped"] carries no success/error counts, so it never advances the cap."""
+    with job_run("analyze", target="skipped") as (_session, stats):
+        stats["skipped"] = reason
+
+
 def job_analyze_and_score():
+    if os.environ.get("ANALYSIS_ENABLED", "1") == "0":
+        print(f"[scheduler][{_now()}] analyze SKIPPED — ANALYSIS_ENABLED=0 (frozen)")
+        _skipped_analyze("disabled")
+        return
     if not analysis_available():
         print(f"[scheduler][{_now()}] analyze SKIPPED — no Claude credential "
               f"(set CLAUDE_CODE_OAUTH_TOKEN via `claude setup-token` to enable)")
+        _skipped_analyze("no_credential")
         return
     done = analyses_done_today()
     remaining = ANALYZE_DAILY_CAP - done
     if remaining <= 0:
         print(f"[scheduler][{_now()}] analyze SKIPPED — daily cap reached "
               f"({done}/{ANALYZE_DAILY_CAP})")
+        _skipped_analyze(f"daily_cap {done}/{ANALYZE_DAILY_CAP}")
         return
     batch = min(ANALYZE_BATCH, remaining)
     print(f"[scheduler][{_now()}] analyze batch={batch} (today {done}/{ANALYZE_DAILY_CAP})")
     run_incremental(limit=batch, verbose=False)
+
+
+def job_backtest_warm():
+    # Pre-compute the default backtest studies off the request path. Each study is a
+    # ~25s cohort scan behind Next's ~30s /api proxy; warming them here means the
+    # dashboard's first loader gets a cache hit instead of eating that latency (or a
+    # 500). cached_study no-ops in microseconds when the data version is unchanged, so
+    # running this hourly costs real work only right after new scores or bars land.
+    from db.base import SessionLocal
+    from engine.backtest.cache import cached_study
+    from engine.backtest.study import (DEFAULT_BENCHMARK, run_event_study,
+                                        run_persona_study)
+    from engine.backtest.vintages import (DEFAULT_HOLD_DAYS, DEFAULT_STEP_DAYS,
+                                           run_vintage_study)
+
+    print(f"[scheduler][{_now()}] backtest warm (default studies)")
+    with job_run("backtest_warm", target="default") as (session, stats):
+        cached_study(session, "event", {"benchmark": DEFAULT_BENCHMARK},
+                     lambda: run_event_study(session, benchmark=DEFAULT_BENCHMARK))
+        cached_study(session, "personas",
+                     {"benchmark": DEFAULT_BENCHMARK, "personas": None},
+                     lambda: run_persona_study(session, benchmark=DEFAULT_BENCHMARK))
+        cached_study(session, "vintages",
+                     {"benchmark": DEFAULT_BENCHMARK, "step": DEFAULT_STEP_DAYS,
+                      "hold": DEFAULT_HOLD_DAYS},
+                     lambda: run_vintage_study(session, benchmark=DEFAULT_BENCHMARK,
+                                               step_days=DEFAULT_STEP_DAYS,
+                                               hold_days=DEFAULT_HOLD_DAYS))
+        stats["warmed"] = ["event", "personas", "vintages"]
 
 
 # A daily job to catch up on boot: its job_runs `job_type`, the cadence its
@@ -423,42 +481,82 @@ def job_analyze_and_score():
 CatchupSpec = namedtuple("CatchupSpec", "label job_type cadence fn")
 
 
+def _trigger_period(trigger, ref: datetime | None = None) -> timedelta:
+    """The nominal spacing between consecutive fires of a trigger — the job's cadence.
+    Interval triggers report it directly; cron triggers are measured from two
+    consecutive fire times (a fallback of one day covers a trigger that never fires
+    again)."""
+    if isinstance(trigger, IntervalTrigger):
+        return trigger.interval
+    ref = ref or datetime.now(timezone.utc)
+    t1 = trigger.get_next_fire_time(None, ref)
+    if t1 is None:
+        return timedelta(days=1)
+    t2 = trigger.get_next_fire_time(t1, t1)
+    return (t2 - t1) if t2 else timedelta(days=1)
+
+
 def _catchup_specs() -> list[CatchupSpec]:
-    day = timedelta(days=1)
-    return [
-        CatchupSpec("refresh", "refresh", day, job_refresh),
-        CatchupSpec("discover", "discover_ipos", day, job_discover),
-        CatchupSpec("upcoming", "discover_upcoming", day, job_upcoming),
-        CatchupSpec("index_prices", "index_prices", day, job_index_prices),
-        CatchupSpec("dq_audit", "dq_audit", day, job_dq_audit),
-    ]
+    """Derive the boot catch-up set from the live schedule instead of a hand-kept
+    list: every CRON job that writes a job_type. Interval jobs (price rotation,
+    heartbeat) fire often enough to self-heal, and untracked jobs (reap) have no
+    last-run to judge. Each spec carries its OWN cadence, so a weekly job is only
+    re-fired after a whole week+slack is missed, not merely a day. Registry order is
+    preserved so the sweep stays sequenced. Using the scheduler's safe-wrapped
+    callable also publishes the job's sched_id, so its catch-up run is attributable."""
+    specs: list[CatchupSpec] = []
+    for job in build_scheduler().get_jobs():
+        _description, job_type = _JOB_META[job.id]
+        if job_type is None or isinstance(job.trigger, IntervalTrigger):
+            continue
+        specs.append(CatchupSpec(job.id, job_type, _trigger_period(job.trigger), job.func))
+    return specs
 
 
-def _last_success(session, job_type: str) -> datetime | None:
-    """When a job of this type last completed WITHOUT failing (success/partial).
+def _last_success(session, job_type: str, sched_id: str | None = None) -> datetime | None:
+    """When a job last completed WITHOUT failing (success/partial).
 
-    A run stuck at 'running' or ended in 'error' is not proof the work got done,
-    so it never counts as the last-good time — an outage that errored every night
-    would otherwise look fresh and suppress its own catch-up."""
+    A run stuck at 'running' or ended in 'error' is not proof the work got done, so
+    it never counts as the last-good time — an outage that errored every night would
+    otherwise look fresh and suppress its own catch-up.
+
+    When several scheduler jobs share one job_type (refresh + refresh_stuck), `sched_id`
+    narrows to this job's own runs so a busy daily sibling can't mask a weekly job's
+    missed window. Runs predating the sched_id stamp are untagged: if THIS job_type has
+    no tagged run at all we fall back to the plain latest (back-compat); if it has tagged
+    runs but none under this id, this id genuinely has not succeeded (None)."""
     from db.models import JobRun
 
-    return session.scalar(
-        select(JobRun.started_at)
-        .where(JobRun.job_type == job_type,
-               JobRun.status.in_(("success", "partial")))
-        .order_by(JobRun.started_at.desc())
-        .limit(1)
+    base = select(JobRun.started_at).where(
+        JobRun.job_type == job_type,
+        JobRun.status.in_(("success", "partial")),
     )
+    if sched_id is not None:
+        match = session.scalar(
+            base.where(JobRun.stats["sched_id"].as_string() == sched_id)
+            .order_by(JobRun.started_at.desc()).limit(1)
+        )
+        if match is not None:
+            return match
+        any_tagged = session.scalar(
+            select(JobRun.id)
+            .where(JobRun.job_type == job_type,
+                   JobRun.stats["sched_id"].as_string().isnot(None))
+            .limit(1)
+        )
+        if any_tagged is not None:
+            return None
+    return session.scalar(base.order_by(JobRun.started_at.desc()).limit(1))
 
 
 def _catchup_plan(session, now: datetime, specs) -> list[CatchupSpec]:
-    """Pure decision: the daily jobs overdue for a run — never run, or whose last
-    good run predates its cadence plus slack. Returned in registry order so the
-    catch-up runs them in a stable, sequenced sweep."""
+    """Pure decision: the jobs overdue for a run — never run, or whose last good run
+    predates its cadence plus slack. Returned in registry order so the catch-up runs
+    them in a stable, sequenced sweep."""
     slack = timedelta(hours=CATCHUP_SLACK_HOURS)
     due = []
     for spec in specs:
-        last = _last_success(session, spec.job_type)
+        last = _last_success(session, spec.job_type, spec.label)
         if last is None or now - last > spec.cadence + slack:
             due.append(spec)
     return due
@@ -507,98 +605,103 @@ def build_scheduler() -> BlockingScheduler:
     )
     # Daily upcoming-IPO check at 13:30 UTC — after Indian market close, before
     # the 14:00 listed-discovery so promotion's twin-merge sees prior discoveries.
-    sched.add_job(safe(job_upcoming), CronTrigger(hour=13, minute=30), id="upcoming",
+    sched.add_job(safe(job_upcoming, "upcoming"), CronTrigger(hour=13, minute=30), id="upcoming",
                   misfire_grace_time=MISFIRE_DAILY)
     # Daily discovery at 14:00 UTC — APPEND-ONLY (adds new companies).
-    sched.add_job(safe(job_discover), CronTrigger(hour=14, minute=0), id="discover",
+    sched.add_job(safe(job_discover, "discover"), CronTrigger(hour=14, minute=0), id="discover",
                   misfire_grace_time=MISFIRE_DAILY)
     # Daily data refresh at 02:00 UTC (hash-gated; snapshot added only when data changed).
-    sched.add_job(safe(job_refresh), CronTrigger(hour=2, minute=0), id="refresh",
+    sched.add_job(safe(job_refresh, "refresh"), CronTrigger(hour=2, minute=0), id="refresh",
                   misfire_grace_time=MISFIRE_DAILY)
     # Full-universe price rotation every PRICE_INTERVAL_HOURS — least-recently-priced
     # first, so every active stock is repriced within a couple of trading days. Jitter
     # de-syncs it from the other jobs so bursts don't collide into a throttle.
-    sched.add_job(safe(job_price_refresh),
+    sched.add_job(safe(job_price_refresh, "price_refresh"),
                   IntervalTrigger(hours=PRICE_INTERVAL_HOURS, jitter=300),
                   id="price_refresh", misfire_grace_time=MISFIRE_HOURLY)
     # Daily bhavcopy EOD prices at 13:15 UTC (18:45 IST) — after NSE/BSE publish their
     # end-of-day files. Two whole-exchange downloads reprice the entire universe, so the
     # yfinance price rotation is left only the names the bhavcopy doesn't cover.
-    sched.add_job(safe(job_bhavcopy), CronTrigger(hour=13, minute=15), id="bhavcopy",
+    sched.add_job(safe(job_bhavcopy, "bhavcopy"), CronTrigger(hour=13, minute=15), id="bhavcopy",
                   misfire_grace_time=MISFIRE_DAILY)
     # Weekly retry of parked (unfetchable/stale) stocks — Sunday 06:00 UTC. Closes the
     # dead-end: a recovered symbol auto-revives instead of needing a manual run.
-    sched.add_job(safe(job_refresh_stuck), CronTrigger(day_of_week="sun", hour=6, minute=0),
+    sched.add_job(safe(job_refresh_stuck, "refresh_stuck"), CronTrigger(day_of_week="sun", hour=6, minute=0),
                   id="refresh_stuck", misfire_grace_time=MISFIRE_DAILY)
     # Weekly screener enrichment (fundamentals move quarterly) — Sunday 03:00 UTC.
-    sched.add_job(safe(job_enrich), CronTrigger(day_of_week="sun", hour=3, minute=0),
+    sched.add_job(safe(job_enrich, "enrich"), CronTrigger(day_of_week="sun", hour=3, minute=0),
                   id="enrich", misfire_grace_time=MISFIRE_DAILY)
     # Monthly AMFI release check (new Jan/Jul reclassifications auto-ingest) — 5th, 04:00 UTC.
-    sched.add_job(safe(job_amfi), CronTrigger(day=5, hour=4, minute=0), id="amfi",
+    sched.add_job(safe(job_amfi, "amfi"), CronTrigger(day=5, hour=4, minute=0), id="amfi",
                   misfire_grace_time=MISFIRE_DAILY)
     # Hourly analysis batch drains the backlog over time (credential- and cap-gated).
-    sched.add_job(safe(job_analyze_and_score), CronTrigger(minute=30), id="analyze",
+    sched.add_job(safe(job_analyze_and_score, "analyze"), CronTrigger(minute=30), id="analyze",
                   misfire_grace_time=MISFIRE_HOURLY)
     # Hourly composite reconcile at :50 — heals any composites orphaned by an
     # interrupted analyze batch (analysis and scoring never drift apart).
-    sched.add_job(safe(job_score), CronTrigger(minute=50), id="score",
+    sched.add_job(safe(job_score, "score"), CronTrigger(minute=50), id="score",
                   misfire_grace_time=MISFIRE_HOURLY)
     # Hourly orphan reap at :10 — the startup pass alone can never clear a run
     # stranded by the very restart that ran it (the row is seconds old and spared).
-    sched.add_job(safe(job_reap), CronTrigger(minute=10), id="reap",
+    sched.add_job(safe(job_reap, "reap"), CronTrigger(minute=10), id="reap",
                   misfire_grace_time=MISFIRE_HOURLY)
+    # Hourly backtest warm at :55 — after analyze (:30) and score (:50) so it picks
+    # up the hour's fresh composites. Moves the ~25s study compute off the request
+    # path so the dashboard's backtest tabs load from cache.
+    sched.add_job(safe(job_backtest_warm, "backtest_warm"), CronTrigger(minute=55),
+                  id="backtest_warm", misfire_grace_time=MISFIRE_HOURLY)
     # Daily benchmark bars at 12:00 UTC — after NSE close (10:00 UTC) so the
     # day's index close is final before the evening jobs read it.
-    sched.add_job(safe(job_index_prices), CronTrigger(hour=12, minute=0), id="index_prices",
+    sched.add_job(safe(job_index_prices, "index_prices"), CronTrigger(hour=12, minute=0), id="index_prices",
                   misfire_grace_time=MISFIRE_DAILY)
     # Nightly data-quality audit at 05:00 UTC — after refresh (02:00) so it scores fresh data.
-    sched.add_job(safe(job_dq_audit), CronTrigger(hour=5, minute=0), id="dq_audit",
+    sched.add_job(safe(job_dq_audit, "dq_audit"), CronTrigger(hour=5, minute=0), id="dq_audit",
                   misfire_grace_time=MISFIRE_DAILY)
     # Daily cross-source reconciliation at 15:00 UTC — after the day's bhavcopy (13:15),
     # shareholding, and snapshot refreshes have landed, so it compares the freshest reads.
-    sched.add_job(safe(job_reconcile), CronTrigger(hour=15, minute=0), id="reconcile",
+    sched.add_job(safe(job_reconcile, "reconcile"), CronTrigger(hour=15, minute=0), id="reconcile",
                   misfire_grace_time=MISFIRE_DAILY)
     # Daily corporate announcements at 12:45 UTC — NSE+BSE feeds serve only the recent
     # window, so a daily poll is the natural cadence (append-only, deduped).
-    sched.add_job(safe(job_announcements), CronTrigger(hour=12, minute=45),
+    sched.add_job(safe(job_announcements, "announcements"), CronTrigger(hour=12, minute=45),
                   id="announcements", misfire_grace_time=MISFIRE_DAILY)
     # Daily bulk/block deals at 12:30 UTC (18:00 IST) — after the Indian market close so
     # the session's large-deal snapshot is final.
-    sched.add_job(safe(job_bulk_deals), CronTrigger(hour=12, minute=30), id="bulk_deals",
+    sched.add_job(safe(job_bulk_deals, "bulk_deals"), CronTrigger(hour=12, minute=30), id="bulk_deals",
                   misfire_grace_time=MISFIRE_DAILY)
     # Daily fresh-results report trigger at 13:15 UTC — after the announcements poll, so
     # a result announced today has its document pulled the same day.
-    sched.add_job(safe(job_reports_fresh), CronTrigger(hour=13, minute=15),
+    sched.add_job(safe(job_reports_fresh, "reports_fresh"), CronTrigger(hour=13, minute=15),
                   id="reports_fresh", misfire_grace_time=MISFIRE_DAILY)
     # Daily corporate-event calendar at 13:00 UTC — NSE's forward-looking board-meeting /
     # results schedule, the trigger source for event-driven fetching (append-only, deduped).
-    sched.add_job(safe(job_calendar), CronTrigger(hour=13, minute=0), id="calendar",
+    sched.add_job(safe(job_calendar, "calendar"), CronTrigger(hour=13, minute=0), id="calendar",
                   misfire_grace_time=MISFIRE_DAILY)
     # Event trigger every 2h across the IST market+evening window (04:00–14:00 UTC) —
     # chases a universe stock's results date the day it lands instead of waiting for the
     # blind rotations. Cheap when nothing is due (a bounded calendar query).
-    sched.add_job(safe(job_event_chase), CronTrigger(hour="4-15/2", minute=20),
+    sched.add_job(safe(job_event_chase, "event_chase"), CronTrigger(hour="4-15/2", minute=20),
                   id="event_chase", misfire_grace_time=MISFIRE_HOURLY)
     # Weekly full report sweep — Sunday 05:30 UTC (budget-bounded).
-    sched.add_job(safe(job_reports), CronTrigger(day_of_week="sun", hour=5, minute=30),
+    sched.add_job(safe(job_reports, "reports"), CronTrigger(day_of_week="sun", hour=5, minute=30),
                   id="reports", misfire_grace_time=MISFIRE_DAILY)
     # Daily document extraction at 14:30 UTC — after reports_fresh (13:15) so a filing
     # downloaded today is extracted the same day (deterministic, OCR-capable, zero LLM).
-    sched.add_job(safe(job_extract_documents), CronTrigger(hour=14, minute=30),
+    sched.add_job(safe(job_extract_documents, "extract_documents"), CronTrigger(hour=14, minute=30),
                   id="extract_documents", misfire_grace_time=MISFIRE_DAILY)
     # Weekly shareholding sweep — Sunday 07:30 UTC (quarterly data, weekly is ample).
-    sched.add_job(safe(job_shareholding), CronTrigger(day_of_week="sun", hour=7, minute=30),
+    sched.add_job(safe(job_shareholding, "shareholding"), CronTrigger(day_of_week="sun", hour=7, minute=30),
                   id="shareholding", misfire_grace_time=MISFIRE_DAILY)
     # Weekly gap-fill sweep — Saturday 04:00 UTC (bounded; identity fill is free).
-    sched.add_job(safe(job_dq_fill), CronTrigger(day_of_week="sat", hour=4, minute=0),
+    sched.add_job(safe(job_dq_fill, "dq_fill"), CronTrigger(day_of_week="sat", hour=4, minute=0),
                   id="dq_fill", misfire_grace_time=MISFIRE_DAILY)
     # Weekly raw-payload archive retention — Sunday 02:30 UTC. Prunes files past the
     # disk budget / max age (oldest-first), keeping the index record of what existed.
-    sched.add_job(safe(job_archive_prune), CronTrigger(day_of_week="sun", hour=2, minute=30),
+    sched.add_job(safe(job_archive_prune, "archive_prune"), CronTrigger(day_of_week="sun", hour=2, minute=30),
                   id="archive_prune", misfire_grace_time=MISFIRE_DAILY)
     # Dead-man's switch every 5 min — pings the external monitor so a total outage
     # (which kills every on-box alerter) is caught off-box. No-op unless the URL is set.
-    sched.add_job(safe(job_heartbeat),
+    sched.add_job(safe(job_heartbeat, "heartbeat"),
                   IntervalTrigger(minutes=HEARTBEAT_INTERVAL_MIN),
                   id="heartbeat", misfire_grace_time=MISFIRE_HOURLY)
     return sched
@@ -626,6 +729,7 @@ _JOB_META: dict[str, tuple[str, str | None]] = {
     "analyze":       ("Drain the analysis backlog (credential- and cap-gated)", "analyze"),
     "score":         ("Reconcile composites orphaned by an interrupted analyze batch", "score_reconcile"),
     "reap":          ("Error out job_runs stranded 'running' by a restart", None),
+    "backtest_warm": ("Pre-compute the default backtest studies into the cache (off the request path)", "backtest_warm"),
     "index_prices":  ("Refresh benchmark index bars for the backtest comparator", "index_prices"),
     "dq_audit":      ("Score every active stock's data quality", "dq_audit"),
     "reconcile":     ("Compare the same fact across its sources; flag divergences + score source trust", "reconcile"),
@@ -637,7 +741,8 @@ _JOB_META: dict[str, tuple[str, str | None]] = {
     "reports_fresh": ("Download documents for freshly-announced results (daily trigger)", "corporate_filings"),
     "reports":       ("Weekly report sweep — results/annual-report docs for active universe", "corporate_filings"),
     "extract_documents": ("Extract filing text + statutory financials (deterministic, OCR, zero LLM)", "extract_documents"),
-    "shareholding":  ("Sweep active-universe NSE shareholding patterns (quarterly)", "shareholding"),
+    "shareholding":  ("NSE shareholding sweep — PROVISIONAL: source endpoint retired/moved, "
+                      "0 rows ever; re-enable path documented in shareholding.py", "shareholding"),
     "archive_prune": ("Prune archived raw payloads past disk budget / max age (keeps the index record)", "archive_prune"),
     "heartbeat":     ("Ping the external dead-man's switch (a bare ping, writes no job_run)", None),
 }

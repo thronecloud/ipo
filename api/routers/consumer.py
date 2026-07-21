@@ -8,6 +8,7 @@ from fastapi import APIRouter, Depends, HTTPException, Query
 from sqlalchemy import distinct, func, select
 from sqlalchemy.orm import Session
 
+from engine.backtest.cache import cached_study
 from engine.backtest.study import (
     COUNCIL,
     DEFAULT_BENCHMARK,
@@ -538,8 +539,13 @@ def backtest(
     """Point-in-time event study: forward/excess returns of every scored cohort
     member, grouped by confidence tier, LCB/composite quintile and consensus
     recommendation, plus Spearman ICs. Computed on demand (512-stock cohort is
-    cheap); unpriced names are reported, never dropped."""
-    return run_event_study(db, benchmark=benchmark)
+    cheap); unpriced names are reported, never dropped. Cached per (benchmark,
+    data-version): recomputed only when new composites are scored or new bars land,
+    so repeat loads return instantly instead of blocking behind the /api proxy."""
+    return cached_study(
+        db, "event", {"benchmark": benchmark},
+        lambda: run_event_study(db, benchmark=benchmark),
+    )
 
 
 @router.get("/backtest/personas")
@@ -561,7 +567,12 @@ def backtest_personas(
         unknown = [s for s in subset if s not in COUNCIL]
         if unknown:
             raise HTTPException(status_code=400, detail=f"Unknown persona(s): {unknown}")
-    return run_persona_study(db, benchmark=benchmark, personas=subset)
+    # LRU-cached per subset (sorted so member order can't spawn duplicate keys).
+    return cached_study(
+        db, "personas",
+        {"benchmark": benchmark, "personas": sorted(subset) if subset else None},
+        lambda: run_persona_study(db, benchmark=benchmark, personas=subset),
+    )
 
 
 @router.get("/backtest/vintages")
@@ -577,5 +588,9 @@ def backtest_vintages(
     Each window forms the cohort of stocks whose latest composite as of that date
     exists (no lookahead), measures forward excess/hit rate/IC over the hold
     horizon with bootstrap CIs, and stratifies by the dominant prompt_version and
-    model era. Also returns an IC-decay curve averaged across the windows."""
-    return run_vintage_study(db, benchmark=benchmark, step_days=step, hold_days=hold)
+    model era. Also returns an IC-decay curve averaged across the windows. Cached per
+    (benchmark, step, hold, data-version) so repeat loads skip the walk-forward sweep."""
+    return cached_study(
+        db, "vintages", {"benchmark": benchmark, "step": step, "hold": hold},
+        lambda: run_vintage_study(db, benchmark=benchmark, step_days=step, hold_days=hold),
+    )

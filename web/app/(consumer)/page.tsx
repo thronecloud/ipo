@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useCallback, useMemo, useState } from "react";
+import { Suspense, useCallback, useMemo, useState } from "react";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { api, StockQuery } from "@/lib/api";
 import { useAsync, useDebounced, useLocalStorage } from "@/lib/hooks";
 import type { Meta, StockList, StockRow } from "@/lib/types";
@@ -19,7 +20,11 @@ import { ErrorState, EmptyState, TableSkeleton } from "@/components/States";
 
 const PAGE_SIZE = 50;
 
-export default function DiscoveryPage() {
+function DiscoveryBody() {
+  const searchParams = useSearchParams();
+  const router = useRouter();
+  const pathname = usePathname();
+
   const [filters, setFilters] = useLocalStorage<Filters>(
     "wi.filters",
     DEFAULT_FILTERS,
@@ -29,12 +34,16 @@ export default function DiscoveryPage() {
     PERSONA_SLUGS,
   );
   const [watchlist, setWatchlist] = useLocalStorage<string[]>("wi.watchlist", []);
-  // Default rank key is the LCB — composite minus a confidence penalty —
-  // so conviction the engine can't back doesn't float to the top.
-  const [sort, setSort] = useState<SortState>({
-    key: "lcb",
-    order: "desc",
-  });
+  // Sort lives in the URL so a ranked view is shareable. Default rank key is the
+  // LCB — composite minus a confidence penalty — so conviction the engine can't
+  // back doesn't float to the top.
+  const sortKey = searchParams.get("sort") ?? "lcb";
+  const sortOrder: "asc" | "desc" =
+    searchParams.get("order") === "asc" ? "asc" : "desc";
+  const sort = useMemo<SortState>(
+    () => ({ key: sortKey, order: sortOrder }),
+    [sortKey, sortOrder],
+  );
   const [page, setPage] = useState(1);
 
   const debouncedQ = useDebounced(filters.q, 350);
@@ -111,11 +120,18 @@ export default function DiscoveryPage() {
   }, [data, filters.watchlistOnly, watchlist, selectedPersonas, sort, total]);
 
   function handleSort(key: string) {
-    setSort((s) =>
-      s.key === key
-        ? { key, order: s.order === "desc" ? "asc" : "desc" }
-        : { key, order: key === "symbol" ? "asc" : "desc" },
-    );
+    const order: "asc" | "desc" =
+      sort.key === key
+        ? sort.order === "desc"
+          ? "asc"
+          : "desc"
+        : key === "symbol"
+          ? "asc"
+          : "desc";
+    const params = new URLSearchParams(searchParams.toString());
+    params.set("sort", key);
+    params.set("order", order);
+    router.replace(`${pathname}?${params.toString()}`, { scroll: false });
     setPage(1);
   }
 
@@ -222,7 +238,7 @@ export default function DiscoveryPage() {
               {r.composite_updated_at && (
                 <span
                   className="num mt-0.5 block text-[9px] leading-none text-muted"
-                  title={`Last analyzed ${new Date(r.composite_updated_at).toLocaleString("en-IN")}`}
+                  title={`Score updated ${new Date(r.composite_updated_at).toLocaleString("en-IN")}`}
                 >
                   {relTime(r.composite_updated_at)}
                 </span>
@@ -411,6 +427,15 @@ export default function DiscoveryPage() {
         )}
       </div>
     </div>
+  );
+}
+
+export default function DiscoveryPage() {
+  // useSearchParams needs a Suspense boundary to keep the shell prerenderable.
+  return (
+    <Suspense fallback={null}>
+      <DiscoveryBody />
+    </Suspense>
   );
 }
 

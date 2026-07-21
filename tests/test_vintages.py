@@ -180,6 +180,23 @@ def test_window_mean_excess_ci_present(db_session):
     assert win["net_mean_excess_ci"] is not None
 
 
+# ── zero-window explanation ───────────────────────────────────────
+
+def test_zero_windows_emits_explanatory_note(db_session):
+    # A 5-bar benchmark leaves no forward room for a 63-day hold, so no window
+    # forms. The payload must SAY so, not return a silently empty windows list.
+    st = make_stock(db_session, "NOWIN")
+    _hist(db_session, st, info_date=MON, composite=70.0)
+    repo.upsert_daily_prices(db_session, st.id, _bars(MON, [100.0] * 5))
+    _seed_benchmark(db_session, MON, 5)
+    db_session.commit()
+
+    report = run_vintage_study(db_session, benchmark=BENCH, step_days=21,
+                               hold_days=63, n_boot=50)
+    assert report["windows"] == []
+    assert "note" in report and "hold=63" in report["note"]
+
+
 # ── API contract ──────────────────────────────────────────────────
 
 def test_api_vintages_contract(db_session):

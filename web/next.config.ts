@@ -9,6 +9,13 @@ const nextConfig: NextConfig = {
   turbopack: {
     root: __dirname,
   },
+  experimental: {
+    // The /api/* rewrite proxies to FastAPI; a cold backtest study can take ~25s,
+    // and the default 30s proxy timeout 500s the dashboard when it does. The engine
+    // caches those studies (and a scheduler job warms them), so this is only the
+    // safety margin for the first uncached compute after new data lands.
+    proxyTimeout: 120_000,
+  },
   async rewrites() {
     return [
       {

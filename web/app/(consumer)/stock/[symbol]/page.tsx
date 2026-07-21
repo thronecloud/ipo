@@ -93,6 +93,17 @@ export default function StockPage() {
     return map;
   }, [fullCouncil]);
 
+  // Genuine "last analysed": the freshest per-persona analysis behind the
+  // composite. Distinct from composite.updated_at (when the score was recomputed).
+  const lastAnalyzedAt = useMemo<string | null>(() => {
+    let max: string | null = null;
+    for (const c of data?.council ?? []) {
+      if (c.analyzed_at && (max === null || c.analyzed_at > max))
+        max = c.analyzed_at;
+    }
+    return max;
+  }, [data]);
+
   if (error) {
     return (
       <div className="mx-auto max-w-2xl py-10">
@@ -236,7 +247,16 @@ export default function StockPage() {
                 className="num text-[11px] text-muted"
                 title={new Date(comp.updated_at).toLocaleString("en-IN")}
               >
-                Last analyzed {relTime(comp.updated_at)}
+                Score updated {relTime(comp.updated_at)}
+              </span>
+            )}
+
+            {analyzed && lastAnalyzedAt && (
+              <span
+                className="num text-[11px] text-muted"
+                title={new Date(lastAnalyzedAt).toLocaleString("en-IN")}
+              >
+                Last analysed {relTime(lastAnalyzedAt)}
               </span>
             )}
 

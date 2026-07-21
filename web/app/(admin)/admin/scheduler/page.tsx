@@ -242,6 +242,53 @@ function SloSection({ slos }: { slos: SloReport[] }) {
   );
 }
 
+// Flag cell. When the payload carries an explicit lifecycle `state`, each value
+// gets a distinct badge; without it (older payloads) we fall back to the missed
+// boolean. A past-due-within-grace job is "due", never a bare timestamp.
+function StateFlag({ job }: { job: SchedulerJob }) {
+  const state = job.state;
+  if (state == null) {
+    return job.missed === true ? (
+      <Badge tone="terracotta">Missed</Badge>
+    ) : null;
+  }
+  switch (state) {
+    case "due":
+      return <Badge tone="brass">Due</Badge>;
+    case "missed":
+      return <Badge tone="terracotta">Missed</Badge>;
+    case "never_ran":
+      return <Badge tone="muted">Never ran</Badge>;
+    case "disabled":
+      return <Badge tone="muted">Disabled</Badge>;
+    case "untracked":
+    default:
+      return null;
+  }
+}
+
+function Badge({
+  tone,
+  children,
+}: {
+  tone: "brass" | "terracotta" | "muted";
+  children: React.ReactNode;
+}) {
+  const cls =
+    tone === "brass"
+      ? "border-brass/50 bg-brass/10 text-brass"
+      : tone === "terracotta"
+        ? "border-terracotta/50 bg-terracotta/10 text-terracotta"
+        : "border-hairline bg-panel2/60 text-muted";
+  return (
+    <span
+      className={`rounded-sm border px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide ${cls}`}
+    >
+      {children}
+    </span>
+  );
+}
+
 function JobRows({ job }: { job: SchedulerJob }) {
   const [open, setOpen] = useState(false);
   const last = job.last_run;
@@ -303,11 +350,7 @@ function JobRows({ job }: { job: SchedulerJob }) {
           {job.next_expected ? relTime(job.next_expected) : DASH}
         </td>
         <td className="px-3 py-2.5">
-          {job.missed === true && (
-            <span className="rounded-sm border border-terracotta/50 bg-terracotta/10 px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-terracotta">
-              Missed
-            </span>
-          )}
+          <StateFlag job={job} />
         </td>
       </tr>
       {open && (
@@ -329,7 +372,9 @@ export default function SchedulerPage() {
     { refreshMs: 15000 },
   );
 
-  const missedCount = (data?.jobs ?? []).filter((j) => j.missed === true).length;
+  const missedCount = (data?.jobs ?? []).filter((j) =>
+    j.state == null ? j.missed === true : j.state === "missed",
+  ).length;
   const breachedCount = (data?.slos ?? []).filter((s) => s.breached).length;
 
   return (

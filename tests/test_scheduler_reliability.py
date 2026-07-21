@@ -181,3 +181,122 @@ def test_run_catch_up_is_a_noop_when_nothing_is_stale(db_session):
     assert db_session.scalar(
         select(JobRun).where(JobRun.job_type == "scheduler_catchup")
     ) is None
+
+
+# ---------- catch-up specs derived from the manifest ----------
+
+def test_catchup_specs_come_from_the_manifest_cadence_aware():
+    """The catch-up set is derived from the live schedule, not a hand-kept list: every
+    CRON job with a job_type, each carrying its own cadence. Interval and untracked
+    jobs are excluded."""
+    specs = {s.label: s for s in sched._catchup_specs()}
+
+    # Weekly jobs are covered now (the old list only had 5 daily jobs) with a 7-day
+    # cadence, so they aren't re-fired until a whole week + slack is missed.
+    assert specs["enrich"].cadence == timedelta(days=7)
+    assert specs["refresh_stuck"].cadence == timedelta(days=7)
+    # A daily job keeps a one-day cadence.
+    assert specs["refresh"].cadence == timedelta(days=1)
+    # Interval jobs (price rotation, heartbeat) and untracked jobs (reap) are excluded.
+    assert "price_refresh" not in specs
+    assert "heartbeat" not in specs
+    assert "reap" not in specs
+
+
+def test_catchup_specs_match_the_manifest_ids():
+    from apscheduler.triggers.interval import IntervalTrigger
+
+    manifest = {e.id: e for e in sched.schedule_manifest()}
+    expected = {
+        e.id for e in manifest.values()
+        if e.job_type is not None and not isinstance(e.trigger, IntervalTrigger)
+    }
+    assert {s.label for s in sched._catchup_specs()} == expected
+
+
+def _tagged_run(session, job_type, sched_id, started_at, status="success"):
+    session.add(JobRun(job_type=job_type, target="all", status=status,
+                       started_at=started_at, finished_at=started_at,
+                       stats={"sched_id": sched_id}))
+    session.commit()
+
+
+def test_catchup_separates_siblings_that_share_a_job_type(db_session):
+    """refresh_stuck writes job_type 'refresh', same as the daily refresh. A recent
+    daily refresh must not make the weekly refresh_stuck look fresh — sched_id keeps
+    their last-success times apart, so a missed weekly window still catches up."""
+    now = datetime.now(timezone.utc)
+    _tagged_run(db_session, "refresh", "refresh", now - timedelta(hours=2))       # daily, fresh
+    _tagged_run(db_session, "refresh", "refresh_stuck", now - timedelta(days=10)) # weekly, stale
+
+    specs = [
+        sched.CatchupSpec("refresh", "refresh", timedelta(days=1), lambda: None),
+        sched.CatchupSpec("refresh_stuck", "refresh", timedelta(days=7), lambda: None),
+    ]
+    due = sched._catchup_plan(db_session, now, specs)
+    assert [s.label for s in due] == ["refresh_stuck"]  # only the stale sibling
+
+
+# ---------- analyze mechanical freeze + skip runs ----------
+
+def test_analysis_enabled_zero_hard_gates_even_with_a_token(monkeypatch):
+    monkeypatch.setenv("CLAUDE_CODE_OAUTH_TOKEN", "tok")
+    monkeypatch.setenv("ANALYSIS_ENABLED", "0")
+    assert sched.analysis_available() is False
+    monkeypatch.setenv("ANALYSIS_ENABLED", "1")
+    assert sched.analysis_available() is True  # token now honoured
+
+
+def test_frozen_analyze_writes_a_skipped_run_and_does_not_analyze(db_session, monkeypatch):
+    monkeypatch.setenv("ANALYSIS_ENABLED", "0")
+    called = {"n": 0}
+    monkeypatch.setattr(sched, "run_incremental",
+                        lambda *a, **k: called.__setitem__("n", called["n"] + 1))
+
+    sched.job_analyze_and_score()
+
+    row = db_session.scalar(select(JobRun).where(JobRun.job_type == "analyze")
+                            .order_by(JobRun.id.desc()))
+    assert row is not None and row.stats["skipped"] == "disabled"
+    assert called["n"] == 0  # a frozen tick never spends the plan
+
+
+def test_uncredentialed_analyze_writes_a_skipped_run(db_session, monkeypatch):
+    monkeypatch.setenv("ANALYSIS_ENABLED", "1")
+    monkeypatch.setattr(sched, "analysis_available", lambda: False)
+    monkeypatch.setattr(sched, "run_incremental", lambda *a, **k: 1 / 0)  # must not run
+
+    sched.job_analyze_and_score()
+
+    row = db_session.scalar(select(JobRun).where(JobRun.job_type == "analyze")
+                            .order_by(JobRun.id.desc()))
+    assert row.stats["skipped"] == "no_credential"
+
+
+def test_capped_analyze_writes_a_skipped_run(db_session, monkeypatch):
+    monkeypatch.setenv("ANALYSIS_ENABLED", "1")
+    monkeypatch.setattr(sched, "analysis_available", lambda: True)
+    monkeypatch.setattr(sched, "ANALYZE_DAILY_CAP", 5)
+    monkeypatch.setattr(sched, "run_incremental", lambda *a, **k: 1 / 0)  # must not run
+    # Today's analyze already spent the cap (success + error both count).
+    db_session.add(JobRun(job_type="analyze", target="all", status="success",
+                          started_at=datetime.now(timezone.utc),
+                          finished_at=datetime.now(timezone.utc),
+                          stats={"success": 3, "error": 2}))
+    db_session.commit()
+
+    sched.job_analyze_and_score()
+
+    row = db_session.scalar(select(JobRun).where(JobRun.job_type == "analyze",
+                                                 JobRun.target == "skipped")
+                            .order_by(JobRun.id.desc()))
+    assert row is not None and row.stats["skipped"].startswith("daily_cap")
+
+
+def test_skipped_runs_do_not_advance_the_daily_cap(db_session, monkeypatch):
+    # A skipped tick carries no success/error, so it must count as zero against the cap
+    # — otherwise a run of skips would look like spend and suppress real analysis.
+    monkeypatch.setenv("ANALYSIS_ENABLED", "0")
+    sched.job_analyze_and_score()
+    sched.job_analyze_and_score()
+    assert sched.analyses_done_today() == 0

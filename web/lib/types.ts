@@ -219,6 +219,13 @@ export interface Usage {
   backlog: number;
 }
 
+export type SchedulerJobState =
+  | "due"
+  | "never_ran"
+  | "disabled"
+  | "missed"
+  | "untracked";
+
 export interface SchedulerJob {
   id: string;
   description: string;
@@ -228,6 +235,7 @@ export interface SchedulerJob {
   last_run: JobRun | null;
   next_expected: string | null;
   missed: boolean | null;
+  state?: SchedulerJobState | null; // absent on older payloads; fall back to `missed`
   recent_runs: JobRun[];
 }
 

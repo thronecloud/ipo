@@ -420,13 +420,29 @@ def usage(db: Session = Depends(get_db)):
 
 # ---- scheduler (Engine Room) ---------------------------------------------
 
-def _latest_run(db: Session, job_type: str) -> JobRun | None:
-    return db.scalar(
-        select(JobRun)
-        .where(JobRun.job_type == job_type)
-        .order_by(JobRun.id.desc())
-        .limit(1)
-    )
+def _latest_run(db: Session, job_type: str, sched_id: str | None = None) -> JobRun | None:
+    """The latest run of this job_type. When several scheduler jobs share a job_type
+    (refresh + refresh_stuck → "refresh", reports + reports_fresh → "corporate_filings"),
+    `sched_id` narrows to this job's own runs so the dashboard stops showing a sibling's
+    run as this one's. Untagged legacy runs fall back to the plain latest; once any run
+    of this job_type is tagged, a sibling with no tagged run reads as never-run (None)."""
+    base = select(JobRun).where(JobRun.job_type == job_type)
+    if sched_id is not None:
+        match = db.scalar(
+            base.where(JobRun.stats["sched_id"].as_string() == sched_id)
+            .order_by(JobRun.id.desc()).limit(1)
+        )
+        if match is not None:
+            return match
+        any_tagged = db.scalar(
+            select(JobRun.id)
+            .where(JobRun.job_type == job_type,
+                   JobRun.stats["sched_id"].as_string().isnot(None))
+            .limit(1)
+        )
+        if any_tagged is not None:
+            return None
+    return db.scalar(base.order_by(JobRun.id.desc()).limit(1))
 
 
 def _next_after(trigger, last: datetime) -> datetime | None:
@@ -439,44 +455,64 @@ def _next_after(trigger, last: datetime) -> datetime | None:
     return trigger.get_next_fire_time(last, last)
 
 
+# A missed run may hide behind at most this much slack. Without the cap the grace is
+# one full cadence, so a weekly job stays green for a whole week after a skipped run
+# and a monthly one for a month — the miss surfaces far too late to act on.
+GRACE_CAP = timedelta(hours=24)
+
+
 def _cadence_grace(trigger, ref: datetime) -> timedelta:
-    """One nominal cadence period of slack before a skipped run counts as missed —
-    i.e. the job has to miss a whole cycle, not merely run a little late."""
+    """Slack before a skipped run counts as missed: one nominal cadence, capped at 24h.
+    The job still has to fully miss its next fire (frequent jobs get their whole cadence),
+    but a weekly/monthly job no longer needs a full cycle of staleness to be flagged."""
     from apscheduler.triggers.interval import IntervalTrigger
 
     if isinstance(trigger, IntervalTrigger):
-        return trigger.interval
+        return min(trigger.interval, GRACE_CAP)
     t1 = trigger.get_next_fire_time(None, ref)
     if t1 is None:
-        return timedelta(hours=6)
+        return min(timedelta(hours=6), GRACE_CAP)
     t2 = trigger.get_next_fire_time(t1, t1)
-    return (t2 - t1) if t2 else timedelta(hours=6)
+    period = (t2 - t1) if t2 else timedelta(hours=6)
+    return min(period, GRACE_CAP)
 
 
-def _scheduler_job(db: Session, entry, now: datetime, drill: bool) -> SchedulerJob:
+def _scheduler_job(db: Session, entry, now: datetime, drill: bool,
+                   disabled: bool = False) -> SchedulerJob:
     from apscheduler.triggers.interval import IntervalTrigger
 
     kind = "interval" if isinstance(entry.trigger, IntervalTrigger) else "cron"
 
-    # Untracked (reap): writes no job_run, so there is nothing to join against.
+    # Untracked (reap, heartbeat): writes no job_run, so there is nothing to join against.
     if entry.job_type is None:
         return SchedulerJob(
             id=entry.id, description=entry.description, job_type=None,
             cadence=entry.cadence, trigger_kind=kind,
             last_run=None,
             next_expected=entry.trigger.get_next_fire_time(None, now),
-            missed=None, recent_runs=[],
+            missed=None, state="untracked", recent_runs=[],
         )
 
-    last = _latest_run(db, entry.job_type)
+    last = _latest_run(db, entry.job_type, entry.id)
     if last is None:
         # Declared and tracked, but no run on record — overdue by definition.
         next_expected = entry.trigger.get_next_fire_time(None, now)
-        missed = True
+        missed, state = True, "never_ran"
     else:
         next_expected = _next_after(entry.trigger, last.started_at)
         grace = _cadence_grace(entry.trigger, last.started_at)
-        missed = bool(next_expected and now > next_expected + grace)
+        if next_expected is None or now <= next_expected:
+            missed, state = False, "ok"
+        elif now <= next_expected + grace:
+            # Past its expected fire, but still inside grace — due, not yet missed.
+            missed, state = False, "due"
+        else:
+            missed, state = True, "missed"
+
+    # A gated job (analyze frozen off) is not late — it is intentionally idle. This
+    # wins over the timing verdict so a disabled job never reads as missed.
+    if disabled:
+        missed, state = False, "disabled"
 
     recent: list = []
     if drill:
@@ -494,7 +530,7 @@ def _scheduler_job(db: Session, entry, now: datetime, drill: bool) -> SchedulerJ
         id=entry.id, description=entry.description, job_type=entry.job_type,
         cadence=entry.cadence, trigger_kind=kind,
         last_run=_job_row(last) if last else None,
-        next_expected=next_expected, missed=missed, recent_runs=recent,
+        next_expected=next_expected, missed=missed, state=state, recent_runs=recent,
     )
 
 
@@ -506,11 +542,15 @@ def scheduler(db: Session = Depends(get_db), job: str | None = None):
     ?job=<id> to also get that job's last 10 runs. The `slos` block carries the
     per-dataset freshness compliance the Engine Room shows above the schedule."""
     from engine.quality.slo import compute_slos
-    from engine.scheduler import schedule_manifest
+    from engine.scheduler import analysis_available, schedule_manifest
 
     now = datetime.now(timezone.utc)
+    # Analyze is the one gated job: when the mechanical freeze (ANALYSIS_ENABLED=0) or a
+    # missing credential blocks it, its idle ticks are intentional, not missed runs.
+    analyze_disabled = not analysis_available()
     jobs = [
-        _scheduler_job(db, entry, now, drill=(job == entry.id))
+        _scheduler_job(db, entry, now, drill=(job == entry.id),
+                       disabled=(entry.id == "analyze" and analyze_disabled))
         for entry in schedule_manifest()
     ]
     return SchedulerOverview(now=now, jobs=jobs, slos=compute_slos(db, now))

@@ -7,6 +7,7 @@ Every scraper/fetcher/analyzer goes through these functions so that:
 - and every action is wrapped in a JobRun for the admin dashboard.
 """
 
+import contextvars
 import hashlib
 import json
 from collections import Counter
@@ -80,6 +81,16 @@ def _item_error_ratio(stats: dict) -> float | None:
     return None
 
 
+# Which scheduler job id triggered the current run, set by the scheduler's `safe()`
+# wrapper. Several scheduler jobs write the SAME job_type (refresh + refresh_stuck →
+# "refresh", reports + reports_fresh → "corporate_filings"); stamping the id into the
+# stats lets the dashboard tell their runs apart. Unset outside the scheduler (manual
+# CLI, the admin launcher) → no sched_id is written, so nothing is disturbed.
+sched_id_var: contextvars.ContextVar[str | None] = contextvars.ContextVar(
+    "sched_id", default=None
+)
+
+
 @contextmanager
 def job_run(job_type: str, target: str = "all"):
     """Wrap a unit of engine work in a JobRun row. Yields (session, stats_dict)."""
@@ -90,6 +101,9 @@ def job_run(job_type: str, target: str = "all"):
     session.add(job)
     session.commit()
     stats: dict = {}
+    sid = sched_id_var.get()
+    if sid is not None:
+        stats["sched_id"] = sid
     try:
         yield session, stats
         # Honesty gate: a run where most items failed is "partial", never a clean

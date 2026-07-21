@@ -189,6 +189,21 @@ def db_session(test_database):
     session.close()
 
 
+@pytest.fixture(autouse=True)
+def _isolate_backtest_cache(tmp_path, monkeypatch):
+    """Keep the data-versioned backtest cache from leaking across tests. Each test
+    truncates the DB and reseeds, but two tests can land identical (max computed_at,
+    max bar date) tokens; without isolation an in-process or on-disk hit from the
+    previous test would answer with stale data. A per-test file plus a clear on both
+    sides guarantees every test computes fresh."""
+    import engine.backtest.cache as bc
+
+    monkeypatch.setenv("BACKTEST_CACHE_PATH", str(tmp_path / "backtest_cache.json"))
+    bc.clear()
+    yield
+    bc.clear()
+
+
 @pytest.fixture()
 def seeded_stock_with_quote(db_session):
     """One stock whose latest yfinance snapshot carries yfinance-native scales:

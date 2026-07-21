@@ -473,31 +473,51 @@ export default function BacktestPage() {
             ) : !pdata ? (
               <Skeleton style={{ height: 300 }} />
             ) : (
-              <EquityCurve
-                points={pdata.subset.curve}
-                benchmarkLabel={`${data.benchmark} benchmark`}
-                loading={ploading}
-              />
+              <div className="relative">
+                <EquityCurve
+                  points={pdata.subset.curve}
+                  benchmarkLabel={`${data.benchmark} benchmark`}
+                  loading={ploading}
+                />
+                {/* A basket of one (or none) is not a curve. Keep the dot, but say
+                    so plainly instead of leaving a lone point unexplained. */}
+                {!ploading && pdata.subset.n_buy <= 1 && (
+                  <div className="pointer-events-none absolute inset-0 flex items-center justify-center px-4">
+                    <p className="max-w-xs rounded-md border border-brass/30 bg-ink/85 px-4 py-3 text-center text-xs leading-relaxed text-muted">
+                      Only {pdata.subset.n_buy} BUY{" "}
+                      {pdata.subset.n_buy === 1 ? "pick" : "picks"} in this
+                      selection — curves need a basket. Try selecting a subset of
+                      investors.
+                    </p>
+                  </div>
+                )}
+              </div>
             )}
-            {pdata && (
-              <p className="mt-2 text-[11px] text-muted">
-                {pdata.subset.n_buy} BUY {pdata.subset.n_buy === 1 ? "pick" : "picks"} in
-                this selection ({pdata.subset.n_buy_priced} with prices) ·{" "}
-                {pdata.subset.n_avoid} AVOID.
-                {pdata.subset.n_thin > 0 && (
-                  <span
-                    title="Below the liquidity floor (₹25 lakh/day median traded value) — their contribution to this basket may be unrealizable in size."
-                  >
-                    {" "}
-                    <span className="text-brass">{pdata.subset.n_thin}</span>{" "}
-                    of these {pdata.subset.n_thin === 1 ? "is" : "are"} thin.
-                  </span>
-                )}{" "}
-                The dashed line is the same basket after 85 bps/side trading
-                costs. The basket can shrink at longer horizons as forward prices
-                run out — hover any point for its size.
-              </p>
-            )}
+            {pdata &&
+              (ploading ? (
+                <p className="mt-2 flex items-center gap-1.5 text-[11px] text-muted">
+                  <span className="skeleton inline-block h-1 w-6 rounded-full" aria-hidden />
+                  Recomputing for the selected investors…
+                </p>
+              ) : (
+                <p className="mt-2 text-[11px] text-muted">
+                  {pdata.subset.n_buy} BUY {pdata.subset.n_buy === 1 ? "pick" : "picks"} in
+                  this selection ({pdata.subset.n_buy_priced} with prices) ·{" "}
+                  {pdata.subset.n_avoid} AVOID.
+                  {pdata.subset.n_thin > 0 && (
+                    <span
+                      title="Below the liquidity floor (₹25 lakh/day median traded value) — their contribution to this basket may be unrealizable in size."
+                    >
+                      {" "}
+                      <span className="text-brass">{pdata.subset.n_thin}</span>{" "}
+                      of these {pdata.subset.n_thin === 1 ? "is" : "are"} thin.
+                    </span>
+                  )}{" "}
+                  The dashed line is the same basket after 85 bps/side trading
+                  costs. The basket can shrink at longer horizons as forward prices
+                  run out — hover any point for its size.
+                </p>
+              ))}
           </div>
           <div className="lg:border-l lg:border-hairline lg:pl-4">
             <PersonaWeighting selected={selected} onChange={setSelected} />

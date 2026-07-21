@@ -120,21 +120,40 @@ def test_snapshots_calendar_age(db_session):
     fresh = make_stock(db_session, "SNAPOK")
     stale = make_stock(db_session, "SNAPOLD")
     make_stock(db_session, "SNAPNONE")                           # active, no snapshot
+    # Target is 21d (the refresh cadence's real reach); 18d is fresh, 25d is stale.
     db_session.add(StockSnapshot(stock_id=fresh.id, source="yfinance",
-                                 captured_at=NOW - timedelta(days=1), content_hash="a"))
+                                 captured_at=NOW - timedelta(days=18), content_hash="a"))
     db_session.add(StockSnapshot(stock_id=stale.id, source="yfinance",
-                                 captured_at=NOW - timedelta(days=10), content_hash="b"))
+                                 captured_at=NOW - timedelta(days=25), content_hash="b"))
     # A screener snapshot must not count toward the yfinance SLO.
     db_session.add(StockSnapshot(stock_id=stale.id, source="screener",
                                  captured_at=NOW, content_hash="c"))
     db_session.commit()
 
     rep = _report(compute_slos(db_session, NOW), "snapshots")
+    assert rep["target"] == "≤ 21 days"
     assert rep["population"] == 3
-    assert rep["compliant"] == 1                                 # only SNAPOK (1d ≤ 7d)
+    assert rep["compliant"] == 1                                 # only SNAPOK (18d ≤ 21d)
     assert rep["missing"] == 1                                   # SNAPNONE
     offenders = {o["label"] for o in rep["offenders"]}
     assert {"SNAPOLD", "SNAPNONE"} == offenders
+
+
+def test_shareholding_is_provisional_and_never_breaches(db_session):
+    # The shareholding collector is known-broken, so its dataset reads grey, not red:
+    # even a stale-past-target pattern must not flip `breached`.
+    old = make_stock(db_session, "SHPROV")
+    db_session.add(ShareholdingPattern(stock_id=old.id,
+                                       period_end=NOW.date() - timedelta(days=400)))
+    db_session.commit()
+
+    rep = _report(compute_slos(db_session, NOW), "shareholding")
+    assert rep["provisional"] is True
+    assert rep["compliant"] == 0            # 400d is well past quarter+45d
+    assert rep["breached"] is False         # provisional → grey, not a breach
+    # Non-provisional datasets carry the flag too, set False.
+    price = _report(compute_slos(db_session, NOW), "price_bars")
+    assert price["provisional"] is False
 
 
 # ---------- shareholding: population = active WITH a pattern ----------

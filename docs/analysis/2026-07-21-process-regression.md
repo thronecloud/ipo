@@ -4,7 +4,7 @@ _Generated 2026-07-21 (UTC) · read-only · cohort = earliest point-in-time view
 
 ## Findings summary — most actionable improvements
 
-1. **The composite carries almost no forward signal — and what little it has points the wrong way.** Composite-vs-return IC (to-date) = **-0.1**. Best-20 realized performers averaged composite **32.9**; worst-20 averaged **31.1** — a separation of only **+1.9** points on 0–100. *Action: the composite must be validated against realized excess return as a gate before it is trusted; today it is not predictive.*
+1. **The composite carries no measurable forward signal.** Composite-vs-return IC (to-date) = **-0.1**, but its 95% bootstrap CI **crosses zero** (see the dated addendum), so the sign is not distinguishable from zero — read this as "no signal either way," **not** "points the wrong way." Best-20 realized performers averaged composite **32.9**; worst-20 averaged **31.1** — a separation of only **+1.9** points on 0–100. *Action: the composite must be validated against realized excess return as a gate before it is trusted; today it is not shown to be predictive.*
 2. **The recommendation ladder is inverted.** Mean to-date excess: BUY **+4.7%**, HOLD **+5.4%**, AVOID **+8.0%**. AVOID beat BUY. *Action: recalibrate the score→band mapping against outcomes; the current bands anti-select.*
 3. **The council is chronically bearish, so it never takes a position that could be right.** Cohort recs: BUY=14, HOLD=141, AVOID=417. With so few BUYs, HOLD/AVOID become an undifferentiated dumping ground — exactly the 'HOLD for both best and worst' the review flagged. *Action: the personas' absolute-valuation lens rejects almost everything in a momentum tape; add a relative/what-would-change-my-mind rubric and price-momentum context.*
 4. **See section (b): identify and down-weight the personas whose IC is ≈0 or negative** — they add noise, not signal, to the mean-of-10 composite. *Action: weight council members by realized IC instead of equal-weighting.*
@@ -88,6 +88,8 @@ Decile 1 = lowest composite, 10 = highest. A calibrated score is monotone increa
 | 5d | 354 | -0.1 |
 | 21d | 354 | -0.1 |
 | 63d | 0 | — |
+
+> These point ICs omit their uncertainty. With a 95% bootstrap CI attached (dated addendum below), the to-date IC is **-0.1, CI [-0.199, +0.008]** — the interval straddles zero, so the correct reading is "no measurable signal," not a negative one. The 5d/21d ICs are the same magnitude on similar n and are read the same way.
 
 ### Per-persona information coefficient (score vs to-date excess)
 
@@ -205,4 +207,23 @@ Dominant prompt_version across the cohort: {'v1': 453, 'v3': 10, 'v4': 109}
 | claude-opus-4-8 | 23 | 0 | — | — | REFUSED (n<25) |
 | opus | 86 | 7 | — | — | REFUSED (n<25) |
 | sonnet | 367 | 349 | -3.3% | -0.1 | reported |
+
+---
+
+## Addendum (2026-07-21): confidence intervals on the headline ICs
+
+_The body above reports point estimates without their uncertainty. This addendum restates the headline numbers with 95% bootstrap CIs (stock as the resample unit) and corrects the interpretation. Nothing in the body is deleted — the point estimates stand; what changes is the strength of the claim they can carry._
+
+**Composite IC, to-date: -0.1, 95% CI [-0.199, +0.008].**
+
+The interval **includes zero**. A CI that straddles zero means the estimate is statistically indistinguishable from no correlation: we cannot say the composite has negative skill, and we cannot say it has positive skill. The honest verdict is **"no measurable signal either way,"** not "the composite points the wrong way." The two original phrasings that overclaimed a *negative* signal are corrected accordingly:
+
+- Finding 1 ("what little it has points the wrong way") → the sign is not distinguishable from zero.
+- The recommendation-ladder inversion (finding 2, "AVOID beat BUY") rests on **n=13 BUY** names vs 239 AVOID; a 13-name mean-excess is itself a wide-CI quantity. The *direction* (BUY−AVOID spread -3.3% to-date) is suggestive of anti-selection but is not, on this cohort, a measured negative-skill result. Treat it as a flag to investigate, not a proven inversion.
+
+**What is and isn't supported by this cohort:**
+
+- Supported: the composite is **not demonstrated to be predictive** — the case for gating it on realized excess return before trusting it stands on its own (a null result is still a reason not to trust an unvalidated score).
+- Supported: the **discrimination failure** — best-20 vs worst-20 composite separation of +1.9 points, and same-recommendation collisions 140+ points apart — these are descriptive facts, not inferential claims, and remain as stated.
+- **Not** supported: any claim that the composite has *negative* skill, or that AVOID is *reliably* better than BUY. Those need a CI that excludes zero, which this cohort does not provide (and, per section d, the whole cohort is the v1/sonnet price-blind era — a prod run with the v4/v5 corpus is the prerequisite for any era verdict at all).
 

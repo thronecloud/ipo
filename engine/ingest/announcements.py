@@ -3,8 +3,14 @@ Corporate announcements — the NSE and BSE corporate-filings feeds, pulled dire
 
 NSE: https://www.nseindia.com/api/corporate-announcements?index=equities (JSON list,
 needs the homepage cookie dance).
-BSE: https://api.bseindia.com/BseIndiaAPI/api/AnnGetData/w (JSON {"Table": [...]},
-needs a bseindia.com Referer).
+BSE: https://api.bseindia.com/BseIndiaAPI/api/XbrlAnnouncementCategory/w (JSON
+{"Table": [...], "Table1": [{"ROWCNT": n}]}, needs a bseindia.com Referer/Origin).
+
+The BSE feed is PAGED (~50 rows/page): fetching page 1 only truncated every busy day.
+We loop pages until one comes back empty, so a day with hundreds of filings is fully
+ingested; the shared `PoliteSession` paces the loop per-host. The predecessor endpoint
+`AnnGetData/w` was retired by BSE (it now answers "No Record Found!" for every query);
+`XbrlAnnouncementCategory/w` takes the same query params and returns the same row shape.
 
 Both feeds re-serve the same recent window on every poll, so ingestion is idempotent:
 each row carries a dedup key of (exchange, source announcement id OR content hash) and
@@ -33,8 +39,13 @@ from engine.repo import job_run
 
 NSE_ANNOUNCEMENTS = f"{NSE_BASE}/api/corporate-announcements?index=equities"
 NSE_ANN_REFERER = f"{NSE_BASE}/companies-listing/corporate-filings-announcements"
-BSE_ANNOUNCEMENTS = "https://api.bseindia.com/BseIndiaAPI/api/AnnGetData/w"
+BSE_ANNOUNCEMENTS = "https://api.bseindia.com/BseIndiaAPI/api/XbrlAnnouncementCategory/w"
+BSE_ANN_REFERER = f"{BSE_BASE}/corporates/ann/"
 BSE_ATTACH_BASE = "https://www.bseindia.com/xml-data/corpfiling/AttachLive/"
+
+# Hard ceiling on the BSE page loop — a normal busy day is a handful of pages; this
+# only guards against a feed that never returns an empty page.
+BSE_MAX_PAGES = 50
 
 # Announcement categories that the report fetcher treats as downloadable results /
 # annual reports. Matched case-insensitively as substrings against the category text.
@@ -166,20 +177,45 @@ def _fetch_nse_announcements() -> list:
     return nse_session().get_json(NSE_ANNOUNCEMENTS, referer=NSE_ANN_REFERER)
 
 
-def _fetch_bse_announcements(days: int = 3) -> dict:
-    # BSE returns "No Record Found!" for an empty date window, so ask for the last few
-    # days explicitly (YYYYMMDD). The feed pages; page 1 is the most recent.
-    from datetime import date, timedelta
-    today = date.today()
-    return bse_session().get_json(
+def _bse_table(payload) -> list:
+    """The row list out of one BSE page payload. An empty window answers with the
+    bare string "No Record Found!" (or a Table-less dict), both of which yield []."""
+    if isinstance(payload, dict):
+        rows = payload.get("Table")
+        return rows if isinstance(rows, list) else []
+    return []
+
+
+def _fetch_bse_page(http, pageno: int, prev_date: str, to_date: str) -> dict:
+    # BSE returns "No Record Found!" for an empty date window, so ask for the window
+    # explicitly (YYYYMMDD). strSearch=P selects by the date range; strType=C = equity.
+    return http.get_json(
         BSE_ANNOUNCEMENTS,
-        params={"pageno": "1", "strCat": "-1", "subcategory": "-1", "strScrip": "",
-                "strSearch": "P", "strType": "C",
-                "strPrevDate": (today - timedelta(days=days)).strftime("%Y%m%d"),
-                "strToDate": today.strftime("%Y%m%d")},
-        referer=f"{BSE_BASE}/",
+        params={"pageno": str(pageno), "strCat": "-1", "subcategory": "-1",
+                "strScrip": "", "strSearch": "P", "strType": "C",
+                "strPrevDate": prev_date, "strToDate": to_date},
+        referer=BSE_ANN_REFERER,
         headers={"Origin": BSE_BASE},
     )
+
+
+def _fetch_bse_announcements(days: int = 3) -> dict:
+    """Every BSE announcement in the last `days`, across ALL pages. The feed serves
+    ~50 rows/page; we walk pages on one paced session until a page comes back empty,
+    then return the accumulated rows as a single {"Table": [...]} payload so the
+    parser and archive stay page-agnostic."""
+    from datetime import date, timedelta
+    today = date.today()
+    prev_date = (today - timedelta(days=days)).strftime("%Y%m%d")
+    to_date = today.strftime("%Y%m%d")
+    http = bse_session()
+    rows: list = []
+    for pageno in range(1, BSE_MAX_PAGES + 1):
+        page = _bse_table(_fetch_bse_page(http, pageno, prev_date, to_date))
+        if not page:
+            break
+        rows.extend(page)
+    return {"Table": rows}
 
 
 def fetch_announcements(exchanges=("NSE", "BSE"), verbose=True) -> dict:

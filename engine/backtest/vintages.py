@@ -262,7 +262,7 @@ def run_vintage_study(session, benchmark: str = DEFAULT_BENCHMARK,
             "n_windows": len(per_window),
         })
 
-    return {
+    out = {
         "benchmark": benchmark,
         "benchmark_bars": len(bench),
         "step_days": step_days,
@@ -273,3 +273,13 @@ def run_vintage_study(session, benchmark: str = DEFAULT_BENCHMARK,
         "windows": windows,
         "ic_decay": ic_decay,
     }
+    if not windows:
+        # Zero windows is a shape, not a signal: no T left enough forward room. Say
+        # why, so an empty chart doesn't read as "the study ran and found nothing".
+        out["note"] = (
+            f"no vintage windows formed: insufficient forward history at "
+            f"hold={hold_days} trading days (benchmark has {len(bench)} bars, "
+            f"earliest view {earliest.isoformat() if earliest else 'n/a'}). "
+            f"Try a shorter hold or a longer price series."
+        )
+    return out

@@ -53,7 +53,20 @@ class SloSpec:
     unit: str               # "trading_days" | "days"
     target_text: str        # human target, e.g. "≤ 1 trading day"
     objective_pct: float = 100.0   # compliance below this reads as breached
+    provisional: bool = False      # collector known-broken → render neutral (grey),
+    #                                not red; the freshness number is not yet a
+    #                                contract we hold the pipeline to.
 
+
+# The snapshot target is set to what the refresh cadence can actually deliver, not
+# to an aspiration. The active universe is ~2.5k stocks; yfinance throttles a nightly
+# refresh to ~100-150 viable snapshots per run, so a full pass over the universe takes
+# ~20 nights. Measured on prod (2026-07): a ≤7d or ≤14d target sits at 3.6% compliance,
+# while ≤21d clears 100% — the population's oldest snapshot is ~18d. 21 days (three
+# weeks) is thus the tightest target the ~20-night refresh cycle satisfies with slack
+# for throttled nights; anything tighter is permanently red by construction, not by
+# any real staleness the cadence could fix.
+SNAPSHOT_TARGET_DAYS = 21
 
 SLO_SPECS: list[SloSpec] = [
     SloSpec("price_bars", "Newest daily price bar per active stock",
@@ -61,11 +74,12 @@ SLO_SPECS: list[SloSpec] = [
     SloSpec("announcements", "Newest corporate announcement across the feed",
             1, "days", "≤ 1 day"),
     SloSpec("snapshots", "Newest yfinance snapshot per active stock",
-            7, "days", "≤ 7 days"),
+            SNAPSHOT_TARGET_DAYS, "days", "≤ 21 days"),
     SloSpec("index_prices", "Newest bar per benchmark index",
             1, "trading_days", "≤ 1 trading day"),
     SloSpec("shareholding", "Newest shareholding pattern per active stock (that has one)",
-            QUARTER_DAYS + SHAREHOLDING_GRACE_DAYS, "days", "≤ quarter + 45d"),
+            QUARTER_DAYS + SHAREHOLDING_GRACE_DAYS, "days", "≤ quarter + 45d",
+            provisional=True),
     SloSpec("dq_audit", "Recency of the last successful data-quality audit",
             2, "days", "≤ 2 days"),
 ]
@@ -218,7 +232,12 @@ def _summarize(spec: SloSpec, members: list[tuple[str, float | None]]) -> dict:
     )[:TOP_OFFENDERS]
 
     compliance_pct = round(100 * compliant / population, 1) if population else None
-    breached = compliance_pct is not None and compliance_pct < spec.objective_pct
+    # A provisional dataset (collector known-broken) is never "breached": its
+    # staleness is a plumbing outage we already know about, so it must read neutral
+    # (grey), never red — a red here would be crying wolf, not telling the truth.
+    breached = (not spec.provisional
+                and compliance_pct is not None
+                and compliance_pct < spec.objective_pct)
 
     return {
         "dataset": spec.dataset,
@@ -226,6 +245,7 @@ def _summarize(spec: SloSpec, members: list[tuple[str, float | None]]) -> dict:
         "target": spec.target_text,
         "unit": spec.unit,
         "objective_pct": spec.objective_pct,
+        "provisional": spec.provisional,
         "population": population,
         "compliant": compliant,
         "compliance_pct": compliance_pct,
