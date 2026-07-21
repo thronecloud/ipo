@@ -453,6 +453,39 @@ export interface CohortBlock {
   };
 }
 
+// A per-sector IC: either a bootstrap CI, or a refusal when the sector has too
+// few measured names to correlate honestly.
+export type SectorIc = CI | { insufficient: true; n: number };
+
+export function icInsufficient(ic: SectorIc): ic is { insufficient: true; n: number } {
+  return (ic as { insufficient?: true }).insufficient === true;
+}
+
+// Cross-sectional factor attribution over the measured cohort at one horizon.
+// Excess returns are regressed on [intercept, centred log size, sector dummies];
+// the intercept is the residual alpha and the residuals are the tilt-stripped
+// excess returns. raw_ic (composite vs excess) beside residual_ic (composite vs
+// residual) says whether the score picks or just tilts.
+export interface AttributionBlock {
+  horizon: number; // trading days the regression was run at
+  n: number; // stocks in the regression (score + market cap + excess return)
+  measured: number; // stocks in the per-sector IC cohort (score + return)
+  insufficient: boolean; // true -> too few names; every estimate below is null
+  reason: string | null;
+  dummies_dropped: boolean; // design still singular after pooling -> sectors shed
+  size_dropped: boolean; // log size degenerate -> size term shed
+  reference_sector: string | null; // the held-out baseline dummy
+  modeled_sectors: string[]; // sectors that carry a dummy (excludes the reference)
+  pooled_into_other: string[]; // named sectors folded into "other"
+  alpha: number | null; // residual alpha (the intercept)
+  size_loading: number | null; // per-unit-log-size tilt
+  sector_loadings: Record<string, number>; // per modeled sector, vs the reference
+  r2: number | null;
+  raw_ic: CI | null; // composite vs excess return, over the regression cohort
+  residual_ic: CI | null; // composite vs tilt-stripped residual, same cohort
+  per_sector_ic: Record<string, SectorIc>;
+}
+
 export interface BacktestStudy {
   benchmark: string;
   benchmark_bars: number;
@@ -478,6 +511,9 @@ export interface BacktestStudy {
     composite: Record<string, CI | null>; // bootstrap band on the rank correlation
     lcb: Record<string, CI | null>;
   };
+  // Skill vs tilt: excess returns regressed on size + sector at one horizon, so
+  // the composite's IC can be read raw AND with the tilt stripped out.
+  attribution: AttributionBlock;
   overall: BacktestBucket;
   cohort: CohortBlock;
   delisting_return_policy: number;

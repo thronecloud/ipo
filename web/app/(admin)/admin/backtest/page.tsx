@@ -25,6 +25,7 @@ import PersonaWeighting from "@/components/PersonaWeighting";
 import EquityCurve from "@/components/EquityCurve";
 import VintageSignals from "@/components/VintageSignals";
 import PersonaRanking, { Metric } from "@/components/PersonaRanking";
+import AttributionPanel from "@/components/AttributionPanel";
 import { Panel, PanelHeader } from "@/components/Panel";
 import { ErrorState, Skeleton, TableSkeleton } from "@/components/States";
 
@@ -717,6 +718,15 @@ export default function BacktestPage() {
             </table>
           </div>
         </div>
+      </Panel>
+
+      {/* skill vs tilt — is the score picking, or riding a size/sector bet? */}
+      <Panel>
+        <PanelHeader
+          title="Attribution — skill or tilt?"
+          hint="raw vs tilt-stripped IC"
+        />
+        <AttributionPanel attr={data.attribution} />
       </Panel>
 
       {/* winners / losers */}

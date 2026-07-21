@@ -447,8 +447,19 @@ def _cohort_block(records: list[dict], horizons) -> tuple[dict, list[dict]]:
 
 # ---------- the study ----------
 
+def _attribution_horizon(horizons: tuple, chosen: int | None) -> int:
+    """The horizon the factor attribution runs at: an explicit choice when valid,
+    else a ~1-month default (21td) when present, else the middle of the set."""
+    if chosen is not None and chosen in horizons:
+        return chosen
+    if 21 in horizons:
+        return 21
+    return horizons[len(horizons) // 2]
+
+
 def run_event_study(session, benchmark: str = DEFAULT_BENCHMARK,
-                    horizons=DEFAULT_HORIZONS, n_boot: int = N_BOOT) -> dict:
+                    horizons=DEFAULT_HORIZONS, n_boot: int = N_BOOT,
+                    attribution_horizon: int | None = None) -> dict:
     horizons = tuple(horizons)
     cohort = _cohort(session)
     bench = _benchmark_series(session, benchmark)
@@ -467,6 +478,8 @@ def run_event_study(session, benchmark: str = DEFAULT_BENCHMARK,
             "symbol": stock.symbol,
             "company_name": stock.company_name,
             "status": stock.status,
+            "sector": stock.sector,
+            "mcap": stock.ipo_mcap_cr,
             "composite": hist.composite_score,
             "lcb": hist.lcb,
             "tier": hist.confidence_tier,
@@ -519,6 +532,12 @@ def run_event_study(session, benchmark: str = DEFAULT_BENCHMARK,
     thin_free = [r for r in stocks if not r.get("thin")]
     any_thin = len(thin_free) != len(stocks)
 
+    # Local import breaks the import cycle: attribution reads spearman from this
+    # module, so it must load after this module is fully defined.
+    from engine.backtest.attribution import run_attribution
+    attr_h = _attribution_horizon(horizons, attribution_horizon)
+    attribution = run_attribution(priced_rows, attr_h, n_boot=n_boot)
+
     return {
         "benchmark": benchmark,
         "benchmark_bars": len(bench),
@@ -538,6 +557,9 @@ def run_event_study(session, benchmark: str = DEFAULT_BENCHMARK,
         "by_composite_quintile": _group(priced_rows, lambda r: r.get("composite_quintile")),
         "ic": ic,
         "ic_ci": ic_ci,
+        # Skill vs tilt: excess returns regressed on size + sector, so the
+        # composite's IC can be read raw and tilt-stripped (see attribution.py).
+        "attribution": attribution,
         "overall": _bucket_stats(stocks, horizons, n_boot=n_boot),
         # Cohort completeness is a first-class output: measured vs excluded, with
         # per-reason counts and the presumed fate of the vanished names.
