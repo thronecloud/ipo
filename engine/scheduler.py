@@ -22,6 +22,7 @@ Run:  python -m engine.scheduler   (host or container — see docker-compose.yml
 import os
 import traceback
 from collections import namedtuple
+from dataclasses import dataclass
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -414,6 +415,97 @@ def build_scheduler() -> BlockingScheduler:
     sched.add_job(safe(job_dq_fill), CronTrigger(day_of_week="sat", hour=4, minute=0),
                   id="dq_fill", misfire_grace_time=MISFIRE_DAILY)
     return sched
+
+
+# The declared schedule, as data the Engine Room dashboard can join against the
+# job_runs history. Keyed by the scheduler job id (`add_job(..., id=)`); each maps
+# to a human description and the job_runs.job_type the job actually writes.
+#
+# The id and the job_type are NOT interchangeable: several jobs write a job_type
+# that differs from their scheduler id (discover -> discover_ipos, enrich ->
+# screener_enrich, amfi -> amfi_smallcap, upcoming -> discover_upcoming, score ->
+# score_reconcile, price_refresh -> backfill_prices). `refresh` and `refresh_stuck`
+# both write "refresh". `reap` writes NO job_run (a direct UPDATE with no wrapper),
+# so its last-run cannot be tracked — job_type is None and the dashboard says so.
+_JOB_META: dict[str, tuple[str, str | None]] = {
+    "upcoming":      ("Discover pre-listing IPOs, then promote due ones", "discover_upcoming"),
+    "discover":      ("Discover newly-listed IPOs on screener (append-only)", "discover_ipos"),
+    "refresh":       ("Re-pull yfinance snapshots for the active universe", "refresh"),
+    "price_refresh": ("Full-universe price rotation, least-recently-priced first", "backfill_prices"),
+    "refresh_stuck": ("Weekly retry of parked (unfetchable / stale) stocks", "refresh"),
+    "enrich":        ("Screener fundamentals batch (fundamentals move quarterly)", "screener_enrich"),
+    "amfi":          ("AMFI Jan/Jul reclassification release check", "amfi_smallcap"),
+    "analyze":       ("Drain the analysis backlog (credential- and cap-gated)", "analyze"),
+    "score":         ("Reconcile composites orphaned by an interrupted analyze batch", "score_reconcile"),
+    "reap":          ("Error out job_runs stranded 'running' by a restart", None),
+    "index_prices":  ("Refresh benchmark index bars for the backtest comparator", "index_prices"),
+    "dq_audit":      ("Score every active stock's data quality", "dq_audit"),
+    "dq_fill":       ("Close the data gaps the latest audit flagged", "dq_fill"),
+}
+
+_DOW = {"mon": "Mon", "tue": "Tue", "wed": "Wed", "thu": "Thu",
+        "fri": "Fri", "sat": "Sat", "sun": "Sun"}
+
+
+@dataclass(frozen=True)
+class ScheduledJob:
+    id: str                 # scheduler job id (add_job id=)
+    description: str        # human-readable purpose
+    job_type: str | None   # the job_runs.job_type it writes, or None if untracked
+    cadence: str           # human trigger text, e.g. "daily 02:00 UTC" / "every 2h"
+    trigger: object        # the live apscheduler trigger (for next-fire arithmetic)
+
+
+def _cadence_text(trigger) -> str:
+    """Render a trigger as a compact human cadence."""
+    if isinstance(trigger, IntervalTrigger):
+        secs = int(trigger.interval.total_seconds())
+        if secs % 3600 == 0:
+            return f"every {secs // 3600}h"
+        if secs % 60 == 0:
+            return f"every {secs // 60}m"
+        return f"every {secs}s"
+    f = {fld.name: str(fld) for fld in trigger.fields}
+    minute = f.get("minute", "0")
+    hour = f.get("hour", "*")
+    if hour == "*":
+        return f"hourly :{int(minute):02d}"
+    hhmm = f"{int(hour):02d}:{int(minute):02d} UTC"
+    dow = f.get("day_of_week", "*")
+    day = f.get("day", "*")
+    if dow != "*":
+        return f"{_DOW.get(dow, dow)} {hhmm}"
+    if day != "*":
+        return f"monthly day {day} {hhmm}"
+    return f"daily {hhmm}"
+
+
+def schedule_manifest() -> list[ScheduledJob]:
+    """The declared schedule as data — every scheduler job with its human cadence
+    and the job_runs.job_type it writes.
+
+    build_scheduler() wires the jobs into an in-memory store but starts nothing, so
+    this is safe to call from the API without a running scheduler and without side
+    effects. Triggers come straight from build_scheduler(), so the manifest can never
+    drift from what actually runs; only the description + job_type mapping is added
+    here, and a job present in build_scheduler() but missing from _JOB_META raises."""
+    manifest = []
+    for job in build_scheduler().get_jobs():
+        try:
+            description, job_type = _JOB_META[job.id]
+        except KeyError:
+            raise RuntimeError(
+                f"scheduler job '{job.id}' has no _JOB_META entry — add its "
+                f"description and job_runs.job_type so the Engine Room can show it"
+            )
+        manifest.append(ScheduledJob(
+            id=job.id,
+            description=description,
+            job_type=job_type,
+            cadence=_cadence_text(job.trigger),
+            trigger=job.trigger,
+        ))
+    return manifest
 
 
 def main():

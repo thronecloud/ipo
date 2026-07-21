@@ -25,6 +25,8 @@ from api.schemas import (
     JobRunResponse,
     ModelUsage,
     PersonaDistribution,
+    SchedulerJob,
+    SchedulerOverview,
     Usage,
 )
 from db.models import (
@@ -341,6 +343,102 @@ def usage(db: Session = Depends(get_db)):
         total_analyses=total_analyses,
         backlog=max(stocks_total - scored, 0),
     )
+
+
+# ---- scheduler (Engine Room) ---------------------------------------------
+
+def _latest_run(db: Session, job_type: str) -> JobRun | None:
+    return db.scalar(
+        select(JobRun)
+        .where(JobRun.job_type == job_type)
+        .order_by(JobRun.id.desc())
+        .limit(1)
+    )
+
+
+def _next_after(trigger, last: datetime) -> datetime | None:
+    """The first scheduled fire strictly after `last`. For interval triggers this
+    is last+interval (ignoring jitter); for cron, apscheduler's own arithmetic."""
+    from apscheduler.triggers.interval import IntervalTrigger
+
+    if isinstance(trigger, IntervalTrigger):
+        return last + trigger.interval
+    return trigger.get_next_fire_time(last, last)
+
+
+def _cadence_grace(trigger, ref: datetime) -> timedelta:
+    """One nominal cadence period of slack before a skipped run counts as missed —
+    i.e. the job has to miss a whole cycle, not merely run a little late."""
+    from apscheduler.triggers.interval import IntervalTrigger
+
+    if isinstance(trigger, IntervalTrigger):
+        return trigger.interval
+    t1 = trigger.get_next_fire_time(None, ref)
+    if t1 is None:
+        return timedelta(hours=6)
+    t2 = trigger.get_next_fire_time(t1, t1)
+    return (t2 - t1) if t2 else timedelta(hours=6)
+
+
+def _scheduler_job(db: Session, entry, now: datetime, drill: bool) -> SchedulerJob:
+    from apscheduler.triggers.interval import IntervalTrigger
+
+    kind = "interval" if isinstance(entry.trigger, IntervalTrigger) else "cron"
+
+    # Untracked (reap): writes no job_run, so there is nothing to join against.
+    if entry.job_type is None:
+        return SchedulerJob(
+            id=entry.id, description=entry.description, job_type=None,
+            cadence=entry.cadence, trigger_kind=kind,
+            last_run=None,
+            next_expected=entry.trigger.get_next_fire_time(None, now),
+            missed=None, recent_runs=[],
+        )
+
+    last = _latest_run(db, entry.job_type)
+    if last is None:
+        # Declared and tracked, but no run on record — overdue by definition.
+        next_expected = entry.trigger.get_next_fire_time(None, now)
+        missed = True
+    else:
+        next_expected = _next_after(entry.trigger, last.started_at)
+        grace = _cadence_grace(entry.trigger, last.started_at)
+        missed = bool(next_expected and now > next_expected + grace)
+
+    recent: list = []
+    if drill:
+        recent = [
+            _job_row(j)
+            for j in db.scalars(
+                select(JobRun)
+                .where(JobRun.job_type == entry.job_type)
+                .order_by(JobRun.id.desc())
+                .limit(10)
+            ).all()
+        ]
+
+    return SchedulerJob(
+        id=entry.id, description=entry.description, job_type=entry.job_type,
+        cadence=entry.cadence, trigger_kind=kind,
+        last_run=_job_row(last) if last else None,
+        next_expected=next_expected, missed=missed, recent_runs=recent,
+    )
+
+
+@router.get("/scheduler", response_model=SchedulerOverview)
+def scheduler(db: Session = Depends(get_db), job: str | None = None):
+    """Join the declared schedule (expected cadence + next fire) against the
+    job_runs history (last run, status, stats, error) so the Engine Room can show,
+    per job, when it was supposed to run, whether it did, and how it ended. Pass
+    ?job=<id> to also get that job's last 10 runs."""
+    from engine.scheduler import schedule_manifest
+
+    now = datetime.now(timezone.utc)
+    jobs = [
+        _scheduler_job(db, entry, now, drill=(job == entry.id))
+        for entry in schedule_manifest()
+    ]
+    return SchedulerOverview(now=now, jobs=jobs)
 
 
 # ---- job launcher --------------------------------------------------------

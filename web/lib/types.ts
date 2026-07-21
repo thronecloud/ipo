@@ -219,6 +219,23 @@ export interface Usage {
   backlog: number;
 }
 
+export interface SchedulerJob {
+  id: string;
+  description: string;
+  job_type: string | null;
+  cadence: string;
+  trigger_kind: "cron" | "interval";
+  last_run: JobRun | null;
+  next_expected: string | null;
+  missed: boolean | null;
+  recent_runs: JobRun[];
+}
+
+export interface SchedulerOverview {
+  now: string;
+  jobs: SchedulerJob[];
+}
+
 export type JobType =
   | "discover"
   | "refresh"

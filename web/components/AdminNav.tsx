@@ -7,6 +7,7 @@ const LINKS = [
   { href: "/admin", label: "Overview" },
   { href: "/admin/data-quality", label: "Data Quality" },
   { href: "/admin/jobs", label: "Jobs" },
+  { href: "/admin/scheduler", label: "Scheduler" },
   { href: "/admin/coverage", label: "Coverage" },
   { href: "/admin/personas", label: "Personas" },
   { href: "/admin/backtest", label: "Backtest" },

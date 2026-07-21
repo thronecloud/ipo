@@ -263,6 +263,23 @@ class Usage(BaseModel):
     backlog: int
 
 
+class SchedulerJob(BaseModel):
+    id: str                          # scheduler job id
+    description: str
+    job_type: str | None = None      # job_runs.job_type it writes; None if untracked
+    cadence: str                     # human trigger text, e.g. "daily 02:00 UTC"
+    trigger_kind: str                # "cron" | "interval"
+    last_run: JobRow | None = None
+    next_expected: datetime | None = None
+    missed: bool | None = None       # None when the job writes no job_run (untracked)
+    recent_runs: list[JobRow] = []   # last 10, only on ?job= drill-down
+
+
+class SchedulerOverview(BaseModel):
+    now: datetime
+    jobs: list[SchedulerJob]
+
+
 class JobRunRequest(BaseModel):
     job: str
     args: dict = {}

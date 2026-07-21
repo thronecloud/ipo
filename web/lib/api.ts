@@ -17,6 +17,7 @@ import type {
   JobType,
   Meta,
   PersonaDistribution,
+  SchedulerOverview,
   StockDetail,
   StockList,
   Usage,
@@ -139,6 +140,9 @@ export const api = {
     get<PersonaDistribution[]>("/api/admin/personas/distribution", signal),
 
   adminUsage: (signal?: AbortSignal) => get<Usage>("/api/admin/usage", signal),
+
+  adminScheduler: (job?: string, signal?: AbortSignal) =>
+    get<SchedulerOverview>(`/api/admin/scheduler${toQS({ job })}`, signal),
 
   adminDataQuality: (signal?: AbortSignal) =>
     get<DataQualityOverview>("/api/admin/data-quality", signal),
