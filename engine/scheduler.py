@@ -34,6 +34,7 @@ from sqlalchemy import select
 from engine.analysis.engine import run_incremental
 from engine.ingest.amfi import auto_reingest
 from engine.ingest.announcements import fetch_announcements
+from engine.ingest.bhavcopy import fetch_bhavcopy
 from engine.ingest.bulk_deals import fetch_bulk_deals
 from engine.ingest.discover import discover_ipos
 from engine.ingest.reports import fetch_reports
@@ -216,6 +217,14 @@ def job_price_refresh():
     print(f"[scheduler][{_now()}] price refresh (batch={PRICE_BATCH}, oldest first)")
     backfill_prices(statuses=("active",), limit=PRICE_BATCH,
                     oldest_first=True, verbose=False)
+
+
+def job_bhavcopy():
+    # Two official EOD files (NSE zip + BSE csv) carry every listed equity's OHLCV,
+    # replacing the throttled per-stock yfinance price rotation. Idempotent; a
+    # not-yet-published file is counted, not retried. Runs post-publication.
+    print(f"[scheduler][{_now()}] bhavcopy EOD prices (NSE+BSE)")
+    fetch_bhavcopy(verbose=False)
 
 
 def job_enrich():
@@ -440,6 +449,11 @@ def build_scheduler() -> BlockingScheduler:
     sched.add_job(safe(job_price_refresh),
                   IntervalTrigger(hours=PRICE_INTERVAL_HOURS, jitter=300),
                   id="price_refresh", misfire_grace_time=MISFIRE_HOURLY)
+    # Daily bhavcopy EOD prices at 13:15 UTC (18:45 IST) — after NSE/BSE publish their
+    # end-of-day files. Two whole-exchange downloads reprice the entire universe, so the
+    # yfinance price rotation is left only the names the bhavcopy doesn't cover.
+    sched.add_job(safe(job_bhavcopy), CronTrigger(hour=13, minute=15), id="bhavcopy",
+                  misfire_grace_time=MISFIRE_DAILY)
     # Weekly retry of parked (unfetchable/stale) stocks — Sunday 06:00 UTC. Closes the
     # dead-end: a recovered symbol auto-revives instead of needing a manual run.
     sched.add_job(safe(job_refresh_stuck), CronTrigger(day_of_week="sun", hour=6, minute=0),
@@ -511,6 +525,7 @@ _JOB_META: dict[str, tuple[str, str | None]] = {
     "discover":      ("Discover newly-listed IPOs on screener (append-only)", "discover_ipos"),
     "refresh":       ("Re-pull yfinance snapshots for the active universe", "refresh"),
     "price_refresh": ("Full-universe price rotation, least-recently-priced first", "backfill_prices"),
+    "bhavcopy":      ("Ingest NSE + BSE end-of-day bhavcopy (whole-universe OHLCV)", "bhavcopy"),
     "refresh_stuck": ("Weekly retry of parked (unfetchable / stale) stocks", "refresh"),
     "enrich":        ("Screener fundamentals batch (fundamentals move quarterly)", "screener_enrich"),
     "amfi":          ("AMFI Jan/Jul reclassification release check", "amfi_smallcap"),
