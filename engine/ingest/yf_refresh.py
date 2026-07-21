@@ -27,6 +27,8 @@ from src.fetch_stock_data import safe_fetch, serialize_dataframe, serialize_info
 
 REFRESH_DELAY = 2.0
 PARK_THRESHOLD = 3  # consecutive failures before an active stock is parked as "stale"
+OUTAGE_RATIO = 0.5  # soft-fail fraction above which the batch is a source outage
+OUTAGE_MIN_BATCH = 3  # below this, "everything failed" is just a targeted retry failing
 
 
 def names_agree(a: str | None, b: str | None) -> bool:
@@ -245,6 +247,7 @@ def refresh(universe=None, symbols=None, statuses=("active", "new"), promote=Tru
         counts = {"new_snapshot": 0, "unchanged": 0, "no_symbol": 0, "error": 0,
                   "promoted": 0, "unfetchable": 0, "parked": 0, "revived": 0,
                   "soft_fail": 0, "bars_rebased": 0, "identity_mismatch": 0}
+        soft_failed: list[Stock] = []
         for i, stock in enumerate(stocks):
             was_new = stock.status == "new"
             res = refresh_one(session, stock, counts)
@@ -292,7 +295,32 @@ def refresh(universe=None, symbols=None, statuses=("active", "new"), promote=Tru
                 # Soft failure: a transient error OR a below-viability (minimal) snapshot.
                 # Give grace via the failure counter; park only after PARK_THRESHOLD — a
                 # single blip no longer exiles a freshly-discovered stock forever.
+                # Bump/park decisions are DEFERRED to batch end: only there can we
+                # tell one dead stock from a source outage, and an outage must not
+                # penalise stocks at all (else three outage nights park the universe).
                 counts["soft_fail"] += 1
+                soft_failed.append(stock)
+
+            if verbose:
+                tag = "new" if was_new else stock.status
+                print(f"  [{i+1}/{len(stocks)}] {stock.symbol} ({tag}): {res}")
+            session.commit()
+            if i < len(stocks) - 1:
+                time.sleep(delay)
+
+        # Source-outage circuit breaker: when most of the batch soft-failed the
+        # source is down, not the stocks. Suppress every bump and park (no counter
+        # penalty — the stocks did nothing wrong) and page once, not per stock.
+        if len(stocks) >= OUTAGE_MIN_BATCH and len(soft_failed) / len(stocks) > OUTAGE_RATIO:
+            counts["source_outage"] = True
+            from engine.notify import notify_safe
+            notify_safe("yfinance outage — parking suppressed",
+                        f"{len(soft_failed)} of {len(stocks)} stocks soft-failed in one "
+                        f"refresh batch — treating this as a source outage. No failure "
+                        f"counters bumped, no stocks parked. Re-run once yfinance recovers.",
+                        tags="warning")
+        else:
+            for stock in soft_failed:
                 n = bump_fetch_failures(session, stock)
                 if promote and n >= PARK_THRESHOLD:
                     if stock.status == "new":
@@ -308,13 +336,7 @@ def refresh(universe=None, symbols=None, statuses=("active", "new"), promote=Tru
                                     f"change. Retry sweep runs weekly; or "
                                     f"engine.run refresh --status stale --symbols {stock.symbol}",
                                     tags="package")
-
-            if verbose:
-                tag = "new" if was_new else stock.status
-                print(f"  [{i+1}/{len(stocks)}] {stock.symbol} ({tag}): {res}")
             session.commit()
-            if i < len(stocks) - 1:
-                time.sleep(delay)
 
         stats.update({"processed": len(stocks), **counts})
     return stats

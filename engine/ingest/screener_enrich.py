@@ -18,6 +18,20 @@ from src.fetch_screener_data import scrape_company_page
 
 DELAY = 1.5
 
+# HTTP statuses that mean the host is throttling/banning us rather than that a
+# single page is missing. scrape_company_page swallows the response into a string
+# error (requests.HTTPError stringifies as "<status> <reason> Error: … for url"),
+# so the status survives only as the leading token of that message.
+_RATE_LIMIT_STATUSES = ("429", "403")
+
+
+class RateLimited(Exception):
+    """screener.in returned 429/403 — stop the batch, don't deepen the ban."""
+
+
+def _looks_rate_limited(err: str | None) -> bool:
+    return bool(err) and err.split(" ", 1)[0] in _RATE_LIMIT_STATUSES
+
 
 def _fin_score(data: dict) -> int:
     return sum(len(data.get(k, {})) for k in ("profit_loss", "quarterly_results",
@@ -25,7 +39,11 @@ def _fin_score(data: dict) -> int:
 
 
 def scrape_best(symbol: str, screener_url: str | None = None):
-    """Try consolidated then standalone; keep whichever has the richest statements."""
+    """Try consolidated then standalone; keep whichever has the richest statements.
+
+    Raises RateLimited on a 429/403 — once the host is throttling us every further
+    URL returns the same, so there is nothing to gain by trying the rest.
+    """
     candidates, seen = [], set()
     for u in ([screener_url] if screener_url else []) + [
         f"https://www.screener.in/company/{symbol}/consolidated/",
@@ -39,6 +57,8 @@ def scrape_best(symbol: str, screener_url: str | None = None):
     for url in candidates:
         data, err = scrape_company_page(url)
         if not data:
+            if _looks_rate_limited(err):
+                raise RateLimited(err)
             continue
         score = _fin_score(data)
         if score > best_score:
@@ -83,19 +103,34 @@ def enrich(universe=None, symbols=None, limit=0, delay=DELAY, verbose=True):
             stocks = stocks[:limit]
 
         counts = Counter()
+        processed = 0
         for i, stock in enumerate(stocks):
             try:
                 res = enrich_one(session, stock)
+            except RateLimited as e:
+                # Circuit breaker: the host is banning us. Every remaining stock
+                # would 429 too, returning no_data across the batch and recording
+                # a false "success". Abort now, flag it, and page once.
+                from engine.notify import notify_safe
+                notify_safe("screener enrichment rate-limited (batch aborted)",
+                            f"screener.in returned '{e}' — aborted after {processed} "
+                            f"of {len(stocks)} stocks to stop hammering a rate-limiting "
+                            f"host. Re-run once the ban clears.", tags="warning")
+                stats["rate_limited"] = True
+                if verbose:
+                    print(f"  [{i+1}/{len(stocks)}] {stock.symbol}: rate_limited — aborting batch")
+                break
             except Exception as e:
                 res = "error"
                 if verbose:
                     print(f"      {stock.symbol}: {e}")
             counts[res] += 1
+            processed += 1
             if verbose:
                 print(f"  [{i+1}/{len(stocks)}] {stock.symbol}: {res}")
             session.commit()
             if i < len(stocks) - 1:
                 time.sleep(delay)
 
-        stats.update({"processed": len(stocks), **dict(counts)})
+        stats.update({"processed": processed, **dict(counts)})
     return stats

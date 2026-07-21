@@ -49,20 +49,29 @@ SCORE_MIN, SCORE_MAX = 0, 10
 JOB_ERROR_RATIO_PARTIAL = 0.5
 # Stats keys that can serve as the item total, in preference order.
 _JOB_TOTAL_KEYS = ("planned", "processed", "stocks", "audited", "total")
+# Outcomes that mean an item produced no usable data. A batch that is all
+# no_data (a scraper IP-ban) or all soft_fail (a source outage) accomplished
+# nothing — it must never be recorded as a clean success just because it never
+# raised. Keying the ratio off "error" alone missed both.
+FAILURE_KEYS = ("error", "no_data", "soft_fail")
+
+
+def _failed_items(stats: dict) -> int:
+    return sum(v for k in FAILURE_KEYS
+              if isinstance(v := stats.get(k), int) and v > 0)
 
 
 def _item_error_ratio(stats: dict) -> float | None:
     """Fraction of failed items in a job's stats, or None when not measurable."""
-    errors = stats.get("error")
-    if not isinstance(errors, int) or errors <= 0:
-        return 0.0 if isinstance(errors, int) else None
+    failed = _failed_items(stats)
     for key in _JOB_TOTAL_KEYS:
         total = stats.get(key)
         if isinstance(total, int) and total > 0:
-            return errors / total
+            return failed / total
     success = stats.get("success")
     if isinstance(success, int):
-        return errors / (errors + success)
+        denom = failed + success
+        return failed / denom if denom else 0.0
     return None
 
 
@@ -83,7 +92,7 @@ def job_run(job_type: str, target: str = "all"):
         ratio = _item_error_ratio(stats)
         if ratio is not None and ratio >= JOB_ERROR_RATIO_PARTIAL:
             job.status = "partial"
-            job.error = (f"{stats.get('error')} item error(s) — "
+            job.error = (f"{_failed_items(stats)} item error(s) — "
                          f"{ratio:.0%} of the batch failed")[:4000]
             from engine.notify import notify_safe
             notify_safe(f"engine job degraded: {job_type}",
