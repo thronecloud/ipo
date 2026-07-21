@@ -123,6 +123,19 @@ services:
       YF_BACKOFF_JITTER: ${YF_BACKOFF_JITTER:-0.5}
       YF_CIRCUIT_MIN_ATTEMPTS: ${YF_CIRCUIT_MIN_ATTEMPTS:-8}
       YF_CIRCUIT_RATIO: ${YF_CIRCUIT_RATIO:-0.5}
+      # NSE/BSE direct scrapers: polite pacing + report-fetch disk guards.
+      SCRAPE_MIN_INTERVAL: ${SCRAPE_MIN_INTERVAL:-1.5}
+      SCRAPE_BACKOFF_CAP: ${SCRAPE_BACKOFF_CAP:-60}
+      SCRAPE_REPORT_MAX_MB: ${SCRAPE_REPORT_MAX_MB:-25}
+      SCRAPE_REPORTS_BUDGET_MB: ${SCRAPE_REPORTS_BUDGET_MB:-200}
+      SCHED_SHAREHOLDING_BATCH: ${SCHED_SHAREHOLDING_BATCH:-150}
+      SCHED_REPORTS_BATCH: ${SCHED_REPORTS_BATCH:-200}
+      SCHED_REPORTS_FRESH_DAYS: ${SCHED_REPORTS_FRESH_DAYS:-2}
+      SCHED_REPORTS_FRESH_BUDGET_MB: ${SCHED_REPORTS_FRESH_BUDGET_MB:-50}
+    volumes:
+      # Downloaded filings must outlive the container — they feed the extraction
+      # pipeline. (data/reports is gitignored; the budget caps growth per run.)
+      - ./data:/app/data
     depends_on:
       api:
         condition: service_healthy   # api runs migrations first

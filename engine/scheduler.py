@@ -33,8 +33,12 @@ from sqlalchemy import select
 
 from engine.analysis.engine import run_incremental
 from engine.ingest.amfi import auto_reingest
+from engine.ingest.announcements import fetch_announcements
+from engine.ingest.bulk_deals import fetch_bulk_deals
 from engine.ingest.discover import discover_ipos
+from engine.ingest.reports import fetch_reports
 from engine.ingest.screener_enrich import enrich
+from engine.ingest.shareholding import fetch_shareholding
 from engine.ingest.index_prices import refresh_index_prices
 from engine.ingest.upcoming import promote_listed, register_upcoming
 from engine.ingest.yf_refresh import refresh
@@ -65,6 +69,13 @@ PRICE_INTERVAL_HOURS = _int("SCHED_PRICE_INTERVAL_HOURS", 2)
 ANALYZE_DAILY_CAP = _int("SCHED_ANALYZE_DAILY_CAP", 200)
 # Bounded gap-fill sweep per weekly tick (identity is free; network parts capped).
 DQ_FILL_BATCH = _int("SCHED_DQ_FILL_BATCH", 150)
+# Exchange-feed sweep bounds. Shareholding and the weekly report sweep walk the active
+# universe; the daily report trigger only chases results announced in the last few days
+# (with a smaller download budget) so an unattended run can never fill the disk.
+SHAREHOLDING_BATCH = _int("SCHED_SHAREHOLDING_BATCH", 150)
+REPORTS_BATCH = _int("SCHED_REPORTS_BATCH", 200)
+REPORTS_FRESH_DAYS = _int("SCHED_REPORTS_FRESH_DAYS", 2)
+REPORTS_FRESH_BUDGET_MB = _int("SCHED_REPORTS_FRESH_BUDGET_MB", 50)
 # Grace window before a still-"running" job_run is treated as dead. The api
 # container launches detached engine jobs of its own, so a scheduler restart must
 # not error work that is genuinely in flight elsewhere. The slowest bounded batch
@@ -227,6 +238,40 @@ def job_index_prices():
     # must never lag the stock series it is compared against.
     print(f"[scheduler][{_now()}] index prices refresh")
     refresh_index_prices(verbose=False)
+
+
+def job_announcements():
+    # Daily poll of the NSE + BSE corporate-announcement feeds (append-only, deduped).
+    print(f"[scheduler][{_now()}] corporate announcements (NSE+BSE)")
+    fetch_announcements(verbose=False)
+
+
+def job_bulk_deals():
+    # Daily after-market-close poll of NSE's bulk/block large-deal snapshot.
+    print(f"[scheduler][{_now()}] bulk/block deals (NSE)")
+    fetch_bulk_deals(verbose=False)
+
+
+def job_shareholding():
+    # Weekly sweep of the active universe's NSE shareholding patterns (quarterly data).
+    print(f"[scheduler][{_now()}] shareholding sweep (batch={SHAREHOLDING_BATCH})")
+    fetch_shareholding(limit=SHAREHOLDING_BATCH, verbose=False)
+
+
+def job_reports():
+    # Weekly full report sweep: results/annual-report documents for the active universe,
+    # bounded by the per-run download budget.
+    print(f"[scheduler][{_now()}] report fetch — full sweep (batch={REPORTS_BATCH})")
+    fetch_reports(limit=REPORTS_BATCH, verbose=False)
+
+
+def job_reports_fresh():
+    # Daily trigger: download only documents for results announced in the last few days,
+    # with a small budget — the "fresh results" path the weekly sweep would otherwise lag.
+    since = datetime.now(timezone.utc) - timedelta(days=REPORTS_FRESH_DAYS)
+    print(f"[scheduler][{_now()}] report fetch — fresh (since {REPORTS_FRESH_DAYS}d)")
+    fetch_reports(limit=REPORTS_BATCH, budget_mb=REPORTS_FRESH_BUDGET_MB,
+                  since=since, include_annual_reports=False, verbose=False)
 
 
 def job_score():
@@ -411,6 +456,24 @@ def build_scheduler() -> BlockingScheduler:
     # Nightly data-quality audit at 05:00 UTC — after refresh (02:00) so it scores fresh data.
     sched.add_job(safe(job_dq_audit), CronTrigger(hour=5, minute=0), id="dq_audit",
                   misfire_grace_time=MISFIRE_DAILY)
+    # Daily corporate announcements at 12:45 UTC — NSE+BSE feeds serve only the recent
+    # window, so a daily poll is the natural cadence (append-only, deduped).
+    sched.add_job(safe(job_announcements), CronTrigger(hour=12, minute=45),
+                  id="announcements", misfire_grace_time=MISFIRE_DAILY)
+    # Daily bulk/block deals at 12:30 UTC (18:00 IST) — after the Indian market close so
+    # the session's large-deal snapshot is final.
+    sched.add_job(safe(job_bulk_deals), CronTrigger(hour=12, minute=30), id="bulk_deals",
+                  misfire_grace_time=MISFIRE_DAILY)
+    # Daily fresh-results report trigger at 13:15 UTC — after the announcements poll, so
+    # a result announced today has its document pulled the same day.
+    sched.add_job(safe(job_reports_fresh), CronTrigger(hour=13, minute=15),
+                  id="reports_fresh", misfire_grace_time=MISFIRE_DAILY)
+    # Weekly full report sweep — Sunday 05:30 UTC (budget-bounded).
+    sched.add_job(safe(job_reports), CronTrigger(day_of_week="sun", hour=5, minute=30),
+                  id="reports", misfire_grace_time=MISFIRE_DAILY)
+    # Weekly shareholding sweep — Sunday 07:30 UTC (quarterly data, weekly is ample).
+    sched.add_job(safe(job_shareholding), CronTrigger(day_of_week="sun", hour=7, minute=30),
+                  id="shareholding", misfire_grace_time=MISFIRE_DAILY)
     # Weekly gap-fill sweep — Saturday 04:00 UTC (bounded; identity fill is free).
     sched.add_job(safe(job_dq_fill), CronTrigger(day_of_week="sat", hour=4, minute=0),
                   id="dq_fill", misfire_grace_time=MISFIRE_DAILY)
@@ -441,6 +504,11 @@ _JOB_META: dict[str, tuple[str, str | None]] = {
     "index_prices":  ("Refresh benchmark index bars for the backtest comparator", "index_prices"),
     "dq_audit":      ("Score every active stock's data quality", "dq_audit"),
     "dq_fill":       ("Close the data gaps the latest audit flagged", "dq_fill"),
+    "announcements": ("Poll NSE + BSE corporate-announcement feeds (append-only, deduped)", "corporate_announcements"),
+    "bulk_deals":    ("Poll NSE bulk/block large-deal snapshot after market close", "bulk_deals"),
+    "reports_fresh": ("Download documents for freshly-announced results (daily trigger)", "corporate_filings"),
+    "reports":       ("Weekly report sweep — results/annual-report docs for active universe", "corporate_filings"),
+    "shareholding":  ("Sweep active-universe NSE shareholding patterns (quarterly)", "shareholding"),
 }
 
 _DOW = {"mon": "Mon", "tue": "Tue", "wed": "Wed", "thu": "Thu",

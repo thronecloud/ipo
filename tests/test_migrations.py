@@ -35,6 +35,12 @@ PROVENANCE_REV = "d1f7a3c9e5b2"
 PRE_COMPOSITE_PROVENANCE_REV = "d1f7a3c9e5b2"
 COMPOSITE_PROVENANCE_REV = "e2b5c8a41f96"
 
+# Exchange-feed tables: added as new, empty tables (no backfill).
+EXCHANGE_FEEDS_REV = "c7f1a9d3e820"
+EXCHANGE_FEED_TABLES = (
+    "corporate_announcements", "corporate_filings", "bulk_deals", "shareholding_patterns",
+)
+
 # Structural drift we refuse to allow. modify_*/index reflection noise is ignored;
 # a new/removed table or column (the untracked-model trap) is not.
 STRUCTURAL = {"add_table", "remove_table", "add_column", "remove_column"}
@@ -90,6 +96,33 @@ def _alembic(rev, env):
         ["alembic", "upgrade", rev],
         cwd=PROJECT_ROOT, env=env, capture_output=True, text=True,
     )
+
+
+def test_exchange_feed_tables_created_empty_and_backfill_free():
+    """The four direct-feed tables are added as new, empty tables — nothing to
+    backfill. Upgrading to their revision must create each with zero rows and leave
+    the pre-existing schema untouched."""
+    _admin(f"DROP DATABASE IF EXISTS {PARITY_DB} WITH (FORCE)")
+    _admin(f"CREATE DATABASE {PARITY_DB}")
+    try:
+        env = {**os.environ, "DATABASE_URL": PARITY_URL}
+        # Schema at the revision *before* the exchange feeds, then seed a stock so a
+        # (hypothetical, unwanted) backfill would have something to touch.
+        r = _alembic(COMPOSITE_PROVENANCE_REV, env)
+        assert r.returncode == 0, f"pre-exchange-feeds upgrade failed:\n{r.stderr}"
+        with psycopg.connect(PARITY_DSN, autocommit=True) as conn:
+            conn.execute(
+                "INSERT INTO stocks (symbol, universe, status, first_seen, last_updated) "
+                "VALUES ('SEED', '[]'::jsonb, 'active', now(), now())"
+            )
+        r = _alembic(EXCHANGE_FEEDS_REV, env)
+        assert r.returncode == 0, f"exchange-feeds upgrade failed:\n{r.stderr}"
+        with psycopg.connect(PARITY_DSN, autocommit=True) as conn:
+            for table in EXCHANGE_FEED_TABLES:
+                (n,) = conn.execute(f"SELECT count(*) FROM {table}").fetchone()
+                assert n == 0, f"{table} should be empty after a backfill-free migration"
+    finally:
+        _admin(f"DROP DATABASE IF EXISTS {PARITY_DB} WITH (FORCE)")
 
 
 def test_provenance_migration_backfills_preexisting_values_as_unknown():

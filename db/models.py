@@ -378,6 +378,134 @@ class JobRun(Base):
     error: Mapped[str | None] = mapped_column(Text)
 
 
+class CorporateAnnouncement(Base):
+    """A corporate filing/announcement pulled directly from an exchange feed.
+
+    Append-only. The raw exchange symbol is always kept (announcements arrive from
+    NSE/BSE keyed by their own ticker, not our internal id); `stock_id` is resolved
+    to our universe where the symbol matches and left NULL otherwise — a non-universe
+    company's announcement is still a fact worth storing. Dedup is on
+    (exchange, dedup_hash): the source announcement id when the feed gives one, else a
+    content hash, so re-running a daily poll over the same window never duplicates rows.
+    """
+
+    __tablename__ = "corporate_announcements"
+    __table_args__ = (
+        UniqueConstraint("exchange", "dedup_hash", name="uq_corp_ann_exchange_hash"),
+        Index("ix_corp_ann_symbol", "symbol"),
+        Index("ix_corp_ann_announced", "announced_at"),
+        Index("ix_corp_ann_stock", "stock_id"),
+    )
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    stock_id: Mapped[int | None] = mapped_column(
+        ForeignKey("stocks.id", ondelete="SET NULL")
+    )
+    symbol: Mapped[str | None] = mapped_column(String(64))     # raw exchange ticker/scrip
+    exchange: Mapped[str] = mapped_column(String(8))           # NSE / BSE
+    headline: Mapped[str | None] = mapped_column(Text)
+    category: Mapped[str | None] = mapped_column(String(256))
+    attachment_url: Mapped[str | None] = mapped_column(String(1024))
+    announced_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+    announcement_id: Mapped[str | None] = mapped_column(String(128))  # source-native id when present
+    dedup_hash: Mapped[str] = mapped_column(String(64))
+    raw: Mapped[dict | None] = mapped_column(JSONType)
+    fetched_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
+
+
+class CorporateFiling(Base):
+    """A report/document downloaded to disk for a stock in our active universe.
+
+    Populated by the autonomous report fetcher off results/annual-report announcements
+    and the NSE annual-reports endpoint. `source_url` is the hard idempotency key per
+    stock — a URL already fetched is never downloaded again — and `sha256` is the
+    content-dedup key (the same PDF republished under a new URL is recognised and not
+    stored twice). `status` records the outcome so a run stopped by the size cap or the
+    per-run download budget is observable rather than silently missing.
+    """
+
+    __tablename__ = "corporate_filings"
+    __table_args__ = (
+        UniqueConstraint("stock_id", "source_url", name="uq_filing_stock_url"),
+        Index("ix_filing_stock", "stock_id"),
+        Index("ix_filing_sha256", "sha256"),
+    )
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    stock_id: Mapped[int] = mapped_column(ForeignKey("stocks.id", ondelete="CASCADE"))
+    symbol: Mapped[str | None] = mapped_column(String(64))
+    filing_type: Mapped[str | None] = mapped_column(String(64))   # results / annual_report / other
+    period: Mapped[str | None] = mapped_column(String(64))
+    source_url: Mapped[str] = mapped_column(String(1024))
+    local_path: Mapped[str | None] = mapped_column(String(512))
+    sha256: Mapped[str | None] = mapped_column(String(64))
+    size_bytes: Mapped[int | None] = mapped_column(BigInteger)
+    status: Mapped[str | None] = mapped_column(String(32))        # downloaded / duplicate / skipped_cap / skipped_budget / failed
+    fetched_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
+
+
+class BulkDeal(Base):
+    """A single bulk or block deal reported by the exchange after market close.
+
+    Append-only. Symbol is resolved to our universe where it matches, NULL otherwise.
+    Dedup on `dedup_hash` (deal_date + symbol + client + side + quantity + source): the
+    daily large-deal snapshot re-serves the same day's deals on every poll, so the hash
+    keeps a re-run idempotent.
+    """
+
+    __tablename__ = "bulk_deals"
+    __table_args__ = (
+        UniqueConstraint("dedup_hash", name="uq_bulk_deal_hash"),
+        Index("ix_bulk_deal_symbol", "symbol"),
+        Index("ix_bulk_deal_date", "deal_date"),
+        Index("ix_bulk_deal_stock", "stock_id"),
+    )
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    stock_id: Mapped[int | None] = mapped_column(
+        ForeignKey("stocks.id", ondelete="SET NULL")
+    )
+    symbol: Mapped[str | None] = mapped_column(String(64))
+    exchange: Mapped[str] = mapped_column(String(8), default="NSE")
+    deal_date: Mapped[date | None] = mapped_column(Date)
+    client_name: Mapped[str | None] = mapped_column(String(512))
+    buy_sell: Mapped[str | None] = mapped_column(String(8))       # BUY / SELL
+    quantity: Mapped[int | None] = mapped_column(BigInteger)
+    avg_price: Mapped[float | None] = mapped_column(Float)
+    source: Mapped[str] = mapped_column(String(8))               # bulk / block
+    dedup_hash: Mapped[str] = mapped_column(String(64))
+    raw: Mapped[dict | None] = mapped_column(JSONType)
+    fetched_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
+
+
+class ShareholdingPattern(Base):
+    """A quarter's shareholding split for a stock, from the NSE shareholding feed.
+
+    One row per (stock, period_end) — the natural quarterly grain — so a weekly sweep
+    that re-sees an already-stored quarter is a no-op. Percentages are nullable (a feed
+    may omit a category); `raw` keeps the untouched source record for anything we don't
+    lift into a column.
+    """
+
+    __tablename__ = "shareholding_patterns"
+    __table_args__ = (
+        UniqueConstraint("stock_id", "period_end", name="uq_shp_stock_period"),
+        Index("ix_shp_stock_period", "stock_id", "period_end"),
+    )
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    stock_id: Mapped[int] = mapped_column(ForeignKey("stocks.id", ondelete="CASCADE"))
+    symbol: Mapped[str | None] = mapped_column(String(64))
+    period_end: Mapped[date] = mapped_column(Date)
+    promoter_pct: Mapped[float | None] = mapped_column(Float)
+    fii_pct: Mapped[float | None] = mapped_column(Float)
+    dii_pct: Mapped[float | None] = mapped_column(Float)
+    public_pct: Mapped[float | None] = mapped_column(Float)
+    pledged_pct: Mapped[float | None] = mapped_column(Float)
+    raw: Mapped[dict | None] = mapped_column(JSONType)
+    fetched_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
+
+
 class StockInsight(Base):
     """Distilled, reusable takeaways — the seed of the memory/knowledge layer."""
 
