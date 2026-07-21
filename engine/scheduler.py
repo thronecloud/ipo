@@ -21,11 +21,13 @@ Run:  python -m engine.scheduler   (host or container — see docker-compose.yml
 
 import os
 import traceback
+from collections import namedtuple
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from apscheduler.schedulers.blocking import BlockingScheduler
 from apscheduler.triggers.cron import CronTrigger
+from apscheduler.triggers.interval import IntervalTrigger
 from sqlalchemy import select
 
 from engine.analysis.engine import run_incremental
@@ -51,6 +53,13 @@ def _int(env, default):
 ANALYZE_BATCH = _int("SCHED_ANALYZE_BATCH", 20)
 REFRESH_BATCH = _int("SCHED_REFRESH_BATCH", 100)
 ENRICH_BATCH = _int("SCHED_ENRICH_BATCH", 50)
+# Dedicated daily price rotation (problem: the snapshot refresh only reaches its
+# own batch, so most of the 2400-stock universe carries bars weeks old). This
+# pass uses the snapshot-decoupled backfill, walks the FULL active universe in
+# least-recently-priced order, and runs often enough that the whole universe is
+# covered inside two trading days. Chunked so one run stays polite to yfinance.
+PRICE_BATCH = _int("SCHED_PRICE_BATCH", 220)
+PRICE_INTERVAL_HOURS = _int("SCHED_PRICE_INTERVAL_HOURS", 2)
 # Hard ceiling on persona analyses per UTC day (Max-plan protection).
 ANALYZE_DAILY_CAP = _int("SCHED_ANALYZE_DAILY_CAP", 200)
 # Bounded gap-fill sweep per weekly tick (identity is free; network parts capped).
@@ -61,6 +70,17 @@ DQ_FILL_BATCH = _int("SCHED_DQ_FILL_BATCH", 150)
 # is 25 analyze pairs x the 300s backend cap ~= 2h; 24h clears that by an order of
 # magnitude while still catching zombies, which otherwise persist forever.
 REAP_ORPHAN_HOURS = _int("SCHED_REAP_ORPHAN_HOURS", 24)
+
+# Misfire grace: how long after a missed trigger APScheduler may still run a job.
+# Daily jobs get hours (a container down through 02:00 still runs when it wakes at
+# 04:00); the hourly ticks get minutes (a stale hourly run is pointless — the next
+# hour's is due anyway). Beyond the grace window, the startup catch-up below is the
+# backstop so a whole day's daily run is never silently skipped.
+MISFIRE_DAILY = _int("SCHED_MISFIRE_DAILY", 6 * 3600)
+MISFIRE_HOURLY = _int("SCHED_MISFIRE_HOURLY", 300)
+# Slack added to a daily job's cadence before the boot catch-up considers it
+# overdue — absorbs normal jitter so a run a few hours late isn't re-fired.
+CATCHUP_SLACK_HOURS = _int("SCHED_CATCHUP_SLACK_HOURS", 6)
 
 
 def _now() -> str:
@@ -171,6 +191,17 @@ def job_refresh_stuck():
     refresh(statuses=("unfetchable", "stale"), limit=REFRESH_BATCH, verbose=False)
 
 
+def job_price_refresh():
+    # Snapshot-decoupled price-only pass over the FULL active universe, least-
+    # recently-priced first. Runs on a short interval so the whole universe is
+    # repriced within a couple of trading days — the nightly snapshot refresh only
+    # ever reaches its own batch, which left most stocks with weeks-old bars.
+    from engine.ingest.yf_refresh import backfill_prices
+    print(f"[scheduler][{_now()}] price refresh (batch={PRICE_BATCH}, oldest first)")
+    backfill_prices(statuses=("active",), limit=PRICE_BATCH,
+                    oldest_first=True, verbose=False)
+
+
 def job_enrich():
     print(f"[scheduler][{_now()}] screener enrich (batch={ENRICH_BATCH})")
     enrich(limit=ENRICH_BATCH, verbose=False)
@@ -248,6 +279,83 @@ def job_analyze_and_score():
     run_incremental(limit=batch, verbose=False)
 
 
+# A daily job to catch up on boot: its job_runs `job_type`, the cadence its
+# freshness is judged against, and the callable that runs it once.
+CatchupSpec = namedtuple("CatchupSpec", "label job_type cadence fn")
+
+
+def _catchup_specs() -> list[CatchupSpec]:
+    day = timedelta(days=1)
+    return [
+        CatchupSpec("refresh", "refresh", day, job_refresh),
+        CatchupSpec("discover", "discover_ipos", day, job_discover),
+        CatchupSpec("upcoming", "discover_upcoming", day, job_upcoming),
+        CatchupSpec("index_prices", "index_prices", day, job_index_prices),
+        CatchupSpec("dq_audit", "dq_audit", day, job_dq_audit),
+    ]
+
+
+def _last_success(session, job_type: str) -> datetime | None:
+    """When a job of this type last completed WITHOUT failing (success/partial).
+
+    A run stuck at 'running' or ended in 'error' is not proof the work got done,
+    so it never counts as the last-good time — an outage that errored every night
+    would otherwise look fresh and suppress its own catch-up."""
+    from db.models import JobRun
+
+    return session.scalar(
+        select(JobRun.started_at)
+        .where(JobRun.job_type == job_type,
+               JobRun.status.in_(("success", "partial")))
+        .order_by(JobRun.started_at.desc())
+        .limit(1)
+    )
+
+
+def _catchup_plan(session, now: datetime, specs) -> list[CatchupSpec]:
+    """Pure decision: the daily jobs overdue for a run — never run, or whose last
+    good run predates its cadence plus slack. Returned in registry order so the
+    catch-up runs them in a stable, sequenced sweep."""
+    slack = timedelta(hours=CATCHUP_SLACK_HOURS)
+    due = []
+    for spec in specs:
+        last = _last_success(session, spec.job_type)
+        if last is None or now - last > spec.cadence + slack:
+            due.append(spec)
+    return due
+
+
+def run_catch_up(specs=None, now=None) -> list[str]:
+    """On boot, run each overdue daily job once — SEQUENCED (one at a time, never a
+    thundering herd) and observable (every job writes its own job_run, and the sweep
+    itself is recorded as a `scheduler_catchup` run). Returns the labels caught up."""
+    from db.base import SessionLocal
+
+    specs = _catchup_specs() if specs is None else specs
+    now = now or datetime.now(timezone.utc)
+
+    session = SessionLocal()
+    try:
+        due = _catchup_plan(session, now, specs)
+    finally:
+        session.close()
+    if not due:
+        return []
+
+    print(f"[scheduler][{_now()}] catch-up: {', '.join(s.label for s in due)}")
+    with job_run("scheduler_catchup", target=",".join(s.label for s in due)) as (_s, stats):
+        ran: list[str] = []
+        for spec in due:
+            try:
+                spec.fn()                      # sequenced — the next starts only when this returns
+                ran.append(spec.label)
+            except Exception:
+                print(f"[scheduler][{_now()}] catch-up FAILED in {spec.label}:")
+                traceback.print_exc()
+        stats["caught_up"] = ran
+    return ran
+
+
 def build_scheduler() -> BlockingScheduler:
     # Default to UTC so schedules are unambiguous across hosts.
     sched = BlockingScheduler(
@@ -255,38 +363,56 @@ def build_scheduler() -> BlockingScheduler:
         job_defaults={
             "coalesce": True,          # collapse missed runs into one
             "max_instances": 1,        # a job never overlaps itself
-            "misfire_grace_time": 3600,
+            "misfire_grace_time": MISFIRE_DAILY,
         },
     )
     # Daily upcoming-IPO check at 13:30 UTC — after Indian market close, before
     # the 14:00 listed-discovery so promotion's twin-merge sees prior discoveries.
-    sched.add_job(safe(job_upcoming), CronTrigger(hour=13, minute=30), id="upcoming")
+    sched.add_job(safe(job_upcoming), CronTrigger(hour=13, minute=30), id="upcoming",
+                  misfire_grace_time=MISFIRE_DAILY)
     # Daily discovery at 14:00 UTC — APPEND-ONLY (adds new companies).
-    sched.add_job(safe(job_discover), CronTrigger(hour=14, minute=0), id="discover")
+    sched.add_job(safe(job_discover), CronTrigger(hour=14, minute=0), id="discover",
+                  misfire_grace_time=MISFIRE_DAILY)
     # Daily data refresh at 02:00 UTC (hash-gated; snapshot added only when data changed).
-    sched.add_job(safe(job_refresh), CronTrigger(hour=2, minute=0), id="refresh")
+    sched.add_job(safe(job_refresh), CronTrigger(hour=2, minute=0), id="refresh",
+                  misfire_grace_time=MISFIRE_DAILY)
+    # Full-universe price rotation every PRICE_INTERVAL_HOURS — least-recently-priced
+    # first, so every active stock is repriced within a couple of trading days. Jitter
+    # de-syncs it from the other jobs so bursts don't collide into a throttle.
+    sched.add_job(safe(job_price_refresh),
+                  IntervalTrigger(hours=PRICE_INTERVAL_HOURS, jitter=300),
+                  id="price_refresh", misfire_grace_time=MISFIRE_HOURLY)
     # Weekly retry of parked (unfetchable/stale) stocks — Sunday 06:00 UTC. Closes the
     # dead-end: a recovered symbol auto-revives instead of needing a manual run.
-    sched.add_job(safe(job_refresh_stuck), CronTrigger(day_of_week="sun", hour=6, minute=0), id="refresh_stuck")
+    sched.add_job(safe(job_refresh_stuck), CronTrigger(day_of_week="sun", hour=6, minute=0),
+                  id="refresh_stuck", misfire_grace_time=MISFIRE_DAILY)
     # Weekly screener enrichment (fundamentals move quarterly) — Sunday 03:00 UTC.
-    sched.add_job(safe(job_enrich), CronTrigger(day_of_week="sun", hour=3, minute=0), id="enrich")
+    sched.add_job(safe(job_enrich), CronTrigger(day_of_week="sun", hour=3, minute=0),
+                  id="enrich", misfire_grace_time=MISFIRE_DAILY)
     # Monthly AMFI release check (new Jan/Jul reclassifications auto-ingest) — 5th, 04:00 UTC.
-    sched.add_job(safe(job_amfi), CronTrigger(day=5, hour=4, minute=0), id="amfi")
+    sched.add_job(safe(job_amfi), CronTrigger(day=5, hour=4, minute=0), id="amfi",
+                  misfire_grace_time=MISFIRE_DAILY)
     # Hourly analysis batch drains the backlog over time (credential- and cap-gated).
-    sched.add_job(safe(job_analyze_and_score), CronTrigger(minute=30), id="analyze")
+    sched.add_job(safe(job_analyze_and_score), CronTrigger(minute=30), id="analyze",
+                  misfire_grace_time=MISFIRE_HOURLY)
     # Hourly composite reconcile at :50 — heals any composites orphaned by an
     # interrupted analyze batch (analysis and scoring never drift apart).
-    sched.add_job(safe(job_score), CronTrigger(minute=50), id="score")
+    sched.add_job(safe(job_score), CronTrigger(minute=50), id="score",
+                  misfire_grace_time=MISFIRE_HOURLY)
     # Hourly orphan reap at :10 — the startup pass alone can never clear a run
     # stranded by the very restart that ran it (the row is seconds old and spared).
-    sched.add_job(safe(job_reap), CronTrigger(minute=10), id="reap")
+    sched.add_job(safe(job_reap), CronTrigger(minute=10), id="reap",
+                  misfire_grace_time=MISFIRE_HOURLY)
     # Daily benchmark bars at 12:00 UTC — after NSE close (10:00 UTC) so the
     # day's index close is final before the evening jobs read it.
-    sched.add_job(safe(job_index_prices), CronTrigger(hour=12, minute=0), id="index_prices")
+    sched.add_job(safe(job_index_prices), CronTrigger(hour=12, minute=0), id="index_prices",
+                  misfire_grace_time=MISFIRE_DAILY)
     # Nightly data-quality audit at 05:00 UTC — after refresh (02:00) so it scores fresh data.
-    sched.add_job(safe(job_dq_audit), CronTrigger(hour=5, minute=0), id="dq_audit")
+    sched.add_job(safe(job_dq_audit), CronTrigger(hour=5, minute=0), id="dq_audit",
+                  misfire_grace_time=MISFIRE_DAILY)
     # Weekly gap-fill sweep — Saturday 04:00 UTC (bounded; identity fill is free).
-    sched.add_job(safe(job_dq_fill), CronTrigger(day_of_week="sat", hour=4, minute=0), id="dq_fill")
+    sched.add_job(safe(job_dq_fill), CronTrigger(day_of_week="sat", hour=4, minute=0),
+                  id="dq_fill", misfire_grace_time=MISFIRE_DAILY)
     return sched
 
 
@@ -300,6 +426,10 @@ def main():
             print(f"[scheduler][{_now()}] reaped {n} orphaned job_run(s)")
     finally:
         session.close()
+
+    # Backstop for downtime longer than the misfire grace: run each daily job that
+    # missed its window, once and sequenced, before the recurring schedule starts.
+    run_catch_up()
 
     sched = build_scheduler()
     print(f"Living engine scheduler starting at {_now()}. Jobs:")

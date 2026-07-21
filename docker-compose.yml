@@ -111,6 +111,18 @@ services:
       SCHED_ANALYZE_DAILY_CAP: ${SCHED_ANALYZE_DAILY_CAP:-200}
       SCHED_REFRESH_BATCH: ${SCHED_REFRESH_BATCH:-100}
       SCHED_ENRICH_BATCH: ${SCHED_ENRICH_BATCH:-50}
+      # Full-universe daily price rotation (least-recently-priced first).
+      SCHED_PRICE_BATCH: ${SCHED_PRICE_BATCH:-220}
+      SCHED_PRICE_INTERVAL_HOURS: ${SCHED_PRICE_INTERVAL_HOURS:-2}
+      # Misfire grace (seconds) + boot catch-up slack (hours) for missed jobs.
+      SCHED_MISFIRE_DAILY: ${SCHED_MISFIRE_DAILY:-21600}
+      SCHED_MISFIRE_HOURLY: ${SCHED_MISFIRE_HOURLY:-300}
+      SCHED_CATCHUP_SLACK_HOURS: ${SCHED_CATCHUP_SLACK_HOURS:-6}
+      # yfinance throttle handling: backoff ceiling/jitter + in-run circuit breaker.
+      YF_BACKOFF_CAP: ${YF_BACKOFF_CAP:-60}
+      YF_BACKOFF_JITTER: ${YF_BACKOFF_JITTER:-0.5}
+      YF_CIRCUIT_MIN_ATTEMPTS: ${YF_CIRCUIT_MIN_ATTEMPTS:-8}
+      YF_CIRCUIT_RATIO: ${YF_CIRCUIT_RATIO:-0.5}
     depends_on:
       api:
         condition: service_healthy   # api runs migrations first

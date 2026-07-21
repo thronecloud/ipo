@@ -11,8 +11,8 @@ from datetime import date, datetime, timedelta, timezone
 
 from db.models import CompositeScoreHistory
 from engine import repo
-from engine.backtest.study import run_event_study, spearman
-from tests.factories import make_stock
+from engine.backtest.study import run_event_study, run_persona_study, spearman
+from tests.factories import make_analysis, make_stock
 
 
 BENCH = "BSE-SMLCAP.BO"
@@ -185,3 +185,139 @@ def test_spearman_basics():
     assert spearman([1, 2, 3], [30, 20, 10]) == -1.0
     assert spearman([1, 2], [1, 1]) is None          # zero variance
     assert spearman([1], [2]) is None                 # too short
+
+
+# ── per-persona study ─────────────────────────────────────────────
+
+MON_NOON = datetime(2026, 1, 5, 12, 0, tzinfo=timezone.utc)  # == the cohort cutoff
+
+
+def _verdict(session, stock, persona, score, rec, *, at=None):
+    """A persona's verdict on a stock, dated on/before the view formation."""
+    make_analysis(session, stock, persona, score, recommendation=rec,
+                  analyzed_at=at or MON_NOON)
+
+
+def _persona(report, slug):
+    return next(p for p in report["personas"] if p["persona"] == slug)
+
+
+def test_persona_curve_rebased_and_forward_return(db_session):
+    # Buffett BUYs a +10% winner; Munger AVOIDs it. Curve rebases to 100 at entry.
+    st = make_stock(db_session, "PP1")
+    _history_row(db_session, st, info_date=MON, composite=80.0)
+    repo.upsert_daily_prices(db_session, st.id, _bars(MON, [100.0, 100.0, 110.0]))
+    _seed_benchmark(db_session, MON)
+    _verdict(db_session, st, "warren_buffett", 9, "BUY")
+    _verdict(db_session, st, "charlie_munger", 2, "AVOID")
+    db_session.commit()
+
+    report = run_persona_study(db_session, benchmark=BENCH, horizons=(1,))
+    assert report["curve_offsets"] == [0, 1]
+    buffett = _persona(report, "warren_buffett")
+    assert buffett["n_buy"] == 1 and buffett["n_avoid"] == 0
+    assert buffett["curve"] == [
+        {"t": 0, "portfolio": 100.0, "benchmark": 100.0, "n": 1},
+        {"t": 1, "portfolio": 110.0, "benchmark": 100.0, "n": 1},
+    ]
+    assert abs(buffett["stats"]["mean_return"][1] - 10.0) < 1e-9
+    assert abs(buffett["stats"]["hit_rate"][1] - 100.0) < 1e-9
+
+    munger = _persona(report, "charlie_munger")
+    assert munger["n_buy"] == 0 and munger["n_avoid"] == 1 and munger["curve"] == []
+
+
+def test_persona_buy_minus_avoid_spread(db_session):
+    # Buffett BUYs a +10% winner and AVOIDs a -10% loser (flat benchmark, so
+    # excess == raw). Spread = mean_excess(BUY) - mean_excess(AVOID) = +20.
+    win = make_stock(db_session, "PPW")
+    lose = make_stock(db_session, "PPL")
+    _history_row(db_session, win, info_date=MON, composite=80.0)
+    _history_row(db_session, lose, info_date=MON, composite=40.0)
+    repo.upsert_daily_prices(db_session, win.id, _bars(MON, [100.0, 100.0, 110.0]))
+    repo.upsert_daily_prices(db_session, lose.id, _bars(MON, [100.0, 100.0, 90.0]))
+    _seed_benchmark(db_session, MON)
+    _verdict(db_session, win, "warren_buffett", 9, "BUY")
+    _verdict(db_session, lose, "warren_buffett", 2, "AVOID")
+    db_session.commit()
+
+    report = run_persona_study(db_session, benchmark=BENCH, horizons=(1,))
+    buffett = _persona(report, "warren_buffett")
+    assert buffett["n_buy"] == 1 and buffett["n_avoid"] == 1
+    assert abs(buffett["spread"][1] - 20.0) < 1e-6
+
+
+def test_subset_consensus_matches_single_persona(db_session):
+    # Two personas both BUY the winner. The subset over one persona must equal
+    # that persona's individual result (compute.ts parity, engine-side).
+    st = make_stock(db_session, "PPS")
+    _history_row(db_session, st, info_date=MON, composite=80.0)
+    repo.upsert_daily_prices(db_session, st.id, _bars(MON, [100.0, 100.0, 110.0]))
+    _seed_benchmark(db_session, MON)
+    _verdict(db_session, st, "warren_buffett", 9, "BUY")
+    _verdict(db_session, st, "charlie_munger", 8, "BUY")
+    db_session.commit()
+
+    report = run_persona_study(db_session, benchmark=BENCH, horizons=(1,),
+                               personas=["warren_buffett"])
+    buffett = _persona(report, "warren_buffett")
+    assert report["subset"]["personas"] == ["warren_buffett"]
+    assert report["subset"]["curve"] == buffett["curve"]
+    assert report["subset"]["n_buy"] == buffett["n_buy"] == 1
+
+    # A two-persona subset: both BUY -> consensus BUY -> the stock is a pick.
+    both = run_persona_study(db_session, benchmark=BENCH, horizons=(1,),
+                             personas=["warren_buffett", "charlie_munger"])
+    assert both["subset"]["personas"] == ["warren_buffett", "charlie_munger"]
+    assert both["subset"]["n_buy"] == 1
+
+
+def test_persona_verdict_after_information_date_is_excluded(db_session):
+    # A verdict dated AFTER the view formed must not leak in (no lookahead).
+    st = make_stock(db_session, "PPX")
+    _history_row(db_session, st, info_date=MON, composite=80.0)
+    repo.upsert_daily_prices(db_session, st.id, _bars(MON, [100.0, 100.0, 110.0]))
+    _seed_benchmark(db_session, MON)
+    _verdict(db_session, st, "warren_buffett", 9, "BUY",
+             at=datetime(2026, 3, 1, 12, 0, tzinfo=timezone.utc))  # months later
+    db_session.commit()
+
+    report = run_persona_study(db_session, benchmark=BENCH, horizons=(1,))
+    buffett = _persona(report, "warren_buffett")
+    assert buffett["n_buy"] == 0 and buffett["curve"] == []
+
+
+def test_api_backtest_personas_endpoint(db_session):
+    from fastapi.testclient import TestClient
+    from api.main import app
+
+    st = make_stock(db_session, "PPAPI")
+    _history_row(db_session, st, info_date=MON, composite=80.0)
+    repo.upsert_daily_prices(db_session, st.id, _bars(MON, [100.0, 100.0, 110.0]))
+    _seed_benchmark(db_session, MON)
+    _verdict(db_session, st, "warren_buffett", 9, "BUY")
+    db_session.commit()
+
+    with TestClient(app) as client:
+        resp = client.get("/api/backtest/personas", params={"benchmark": BENCH})
+    assert resp.status_code == 200
+    body = resp.json()
+    assert len(body["personas"]) == 10
+    assert body["council"][0] == "warren_buffett"
+    buffett = next(p for p in body["personas"] if p["persona"] == "warren_buffett")
+    assert set(buffett) >= {"persona", "n_buy", "n_avoid", "stats", "spread", "curve"}
+    assert buffett["n_buy"] == 1
+    assert body["subset"]["personas"] == body["council"]  # default = full council
+    assert len(body["council"]) == 10
+
+    # personas= narrows the subset consensus.
+    with TestClient(app) as client:
+        one = client.get("/api/backtest/personas",
+                         params={"benchmark": BENCH, "personas": "warren_buffett"})
+    assert one.status_code == 200
+    assert one.json()["subset"]["personas"] == ["warren_buffett"]
+
+    # unknown slug is a 400, not a silent drop.
+    with TestClient(app) as client:
+        bad = client.get("/api/backtest/personas", params={"personas": "nobody"})
+    assert bad.status_code == 400

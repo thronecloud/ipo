@@ -146,7 +146,10 @@ def test_scheduler_reaps_orphans_recurrently_not_only_at_boot():
     """
     from engine.scheduler import build_scheduler
 
-    jobs = {j.id: j for j in build_scheduler().get_jobs()}
+    # Only cron-triggered jobs have `.fields`; interval jobs (e.g. the price
+    # rotation) are excluded — the collision check is about cron minutes.
+    jobs = {j.id: j for j in build_scheduler().get_jobs()
+            if hasattr(j.trigger, "fields")}
     assert "reap" in jobs, "orphan reap must be scheduled, not only run at startup"
 
     fields = {f.name: str(f) for f in jobs["reap"].trigger.fields}

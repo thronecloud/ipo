@@ -16,11 +16,18 @@ Honesty rules (violating any of these makes the numbers lies):
   side rather than assuming either works.
 """
 
-from datetime import date
+from datetime import date, datetime, time, timezone
 
 from sqlalchemy import select
 
-from db.models import CompositeScoreHistory, DailyPrice, IndexPrice, Stock
+from db.models import Analysis, CompositeScoreHistory, DailyPrice, IndexPrice, Stock
+from src.personas import PERSONAS
+
+# Canonical council order — every per-persona result is emitted in this sequence.
+COUNCIL = list(PERSONAS.keys())
+# Recommendation precedence on a tie (mirrors web/lib/compute.ts so an engine-side
+# subset consensus matches what the council selector recomputes client-side).
+REC_PRIORITY = ("BUY", "HOLD", "AVOID")
 
 # Nifty 500: the deepest benchmark series Yahoo still updates (BSE-SMLCAP.BO
 # froze 2024-05-30; ^CNXSC serves a single bar).
@@ -142,6 +149,51 @@ def _last_on_or_before(series: list[tuple[date, float]], d: date) -> tuple[date,
     return prev
 
 
+def _measure(series: list[tuple[date, float]], bench: list[tuple[date, float]],
+             info_date: date, horizons) -> tuple[int | None, dict]:
+    """Entry + forward/excess returns for one stock. Pure; shared by both studies.
+
+    Entry = first close STRICTLY after info_date (no lookahead). Returns
+    (entry_idx, measurement); measurement carries None-filled returns when the
+    stock has no usable bar after the information date.
+    """
+    m = {
+        "entry_date": None, "entry_price": None,
+        "returns": {h: None for h in horizons},
+        "excess": {h: None for h in horizons},
+        "latest_date": None, "latest_price": None,
+        "return_to_date": None, "excess_to_date": None,
+    }
+    entry_idx = next((i for i, (d, _) in enumerate(series) if d > info_date), None)
+    if entry_idx is None:
+        return None, m
+
+    entry_d, entry_px = series[entry_idx]
+    m["entry_date"], m["entry_price"] = entry_d, entry_px
+    last_d, last_px = series[-1]
+    m["latest_date"], m["latest_price"] = last_d, last_px
+    if entry_px:
+        m["return_to_date"] = _pct(entry_px, last_px)
+
+    b_entry = _first_on_or_after(bench, entry_d)
+    for h in horizons:
+        if entry_idx + h < len(series) and entry_px:
+            exit_d, exit_px = series[entry_idx + h]
+            m["returns"][h] = _pct(entry_px, exit_px)
+            if b_entry:
+                b_exit = _last_on_or_before(bench, exit_d)
+                if b_exit and b_exit[0] > b_entry[0] and b_entry[1]:
+                    m["excess"][h] = m["returns"][h] - _pct(b_entry[1], b_exit[1])
+                elif b_exit and b_entry[1]:
+                    # Same-bar window (thin benchmark): 0% benchmark move.
+                    m["excess"][h] = m["returns"][h]
+    if b_entry and b_entry[1] and m["return_to_date"] is not None:
+        b_exit = _last_on_or_before(bench, last_d)
+        if b_exit:
+            m["excess_to_date"] = m["return_to_date"] - _pct(b_entry[1], b_exit[1])
+    return entry_idx, m
+
+
 # ---------- aggregation ----------
 
 def _bucket_stats(rows: list[dict], horizons) -> dict:
@@ -189,8 +241,7 @@ def run_event_study(session, benchmark: str = DEFAULT_BENCHMARK,
             hist.information_date.date() if hist.information_date else hist.as_of_date
         )
         series = prices.get(hist.stock_id, [])
-        # Entry: first close STRICTLY after the information date (no lookahead).
-        entry_idx = next((i for i, (d, _) in enumerate(series) if d > info_date), None)
+        _, meas = _measure(series, bench, info_date, horizons)
 
         row = {
             "symbol": stock.symbol,
@@ -202,38 +253,8 @@ def run_event_study(session, benchmark: str = DEFAULT_BENCHMARK,
             "recommendation": hist.consensus_recommendation,
             "coverage": hist.analysis_coverage,
             "information_date": info_date,
-            "entry_date": None, "entry_price": None,
-            "returns": {h: None for h in horizons},
-            "excess": {h: None for h in horizons},
-            "latest_date": None, "latest_price": None, "return_to_date": None,
-            "excess_to_date": None,
+            **meas,
         }
-
-        if entry_idx is not None:
-            entry_d, entry_px = series[entry_idx]
-            row["entry_date"], row["entry_price"] = entry_d, entry_px
-            last_d, last_px = series[-1]
-            row["latest_date"], row["latest_price"] = last_d, last_px
-            if entry_px:
-                row["return_to_date"] = _pct(entry_px, last_px)
-
-            b_entry = _first_on_or_after(bench, entry_d)
-            for h in horizons:
-                if entry_idx + h < len(series) and entry_px:
-                    exit_d, exit_px = series[entry_idx + h]
-                    row["returns"][h] = _pct(entry_px, exit_px)
-                    if b_entry:
-                        b_exit = _last_on_or_before(bench, exit_d)
-                        if b_exit and b_exit[0] > b_entry[0] and b_entry[1]:
-                            row["excess"][h] = row["returns"][h] - _pct(b_entry[1], b_exit[1])
-                        elif b_exit and b_entry[1]:
-                            # Same-bar window (thin benchmark): 0% benchmark move.
-                            row["excess"][h] = row["returns"][h]
-            if b_entry and b_entry[1] and row["return_to_date"] is not None:
-                b_exit = _last_on_or_before(bench, last_d)
-                if b_exit:
-                    row["excess_to_date"] = row["return_to_date"] - _pct(b_entry[1], b_exit[1])
-
         stocks.append(row)
 
     priced_rows = [r for r in stocks if r["entry_price"] is not None]
@@ -280,4 +301,184 @@ def run_event_study(session, benchmark: str = DEFAULT_BENCHMARK,
         "by_composite_quintile": _group(priced_rows, lambda r: r.get("composite_quintile")),
         "ic": ic,
         "overall": _bucket_stats(stocks, horizons),
+    }
+
+
+# ---------- per-persona study ----------
+
+def _cutoff(hist) -> datetime:
+    """Point-in-time boundary for a cohort row: the moment its view formed.
+
+    Only persona verdicts dated on/before this count — no lookahead. Rows that
+    predate information_date tracking fall back to the end of their as_of_date.
+    """
+    if hist.information_date:
+        return hist.information_date
+    return datetime.combine(hist.as_of_date, time.max, tzinfo=timezone.utc)
+
+
+def _persona_verdicts(session, cutoffs: dict[int, datetime]) -> dict[int, dict[str, tuple]]:
+    """stock_id -> {persona: (score, recommendation)}, latest verdict per persona
+    that was known at the stock's cutoff (survivorship- and lookahead-safe)."""
+    if not cutoffs:
+        return {}
+    rows = session.execute(
+        select(Analysis.stock_id, Analysis.persona, Analysis.score,
+               Analysis.recommendation, Analysis.analyzed_at)
+        .where(Analysis.stock_id.in_(list(cutoffs)))
+        .order_by(Analysis.stock_id, Analysis.persona,
+                  Analysis.analyzed_at.desc(), Analysis.id.desc())
+    ).all()
+    out: dict[int, dict[str, tuple]] = {}
+    seen: set[tuple[int, str]] = set()
+    for sid, persona, score, rec, at in rows:
+        cutoff = cutoffs.get(sid)
+        if cutoff is not None and at is not None and at > cutoff:
+            continue
+        key = (sid, persona)
+        if key in seen:
+            continue
+        seen.add(key)
+        out.setdefault(sid, {})[persona] = (score, rec)
+    return out
+
+
+def _subset_consensus(verdicts: dict[str, tuple], subset) -> tuple[float | None, str | None, int]:
+    """(composite 0-100, consensus rec, coverage) over the chosen personas —
+    the engine-side twin of web/lib/compute.ts recompute()."""
+    scores = [verdicts[p][0] for p in subset
+              if p in verdicts and verdicts[p][0] is not None]
+    recs = [verdicts[p][1] for p in subset
+            if p in verdicts and verdicts[p][1]]
+    if not scores:
+        return None, None, 0
+    composite = round(sum(scores) / len(scores) * 10, 1)
+    counts = {r: 0 for r in REC_PRIORITY}
+    for r in recs:
+        if r in counts:
+            counts[r] += 1
+    consensus, best = None, -1
+    for r in REC_PRIORITY:
+        if counts[r] > best:
+            best, consensus = counts[r], r
+    return composite, (consensus if recs else None), len(scores)
+
+
+def _mean_excess(rows: list[dict], h) -> float | None:
+    vals = [r["excess"][h] for r in rows if r["excess"].get(h) is not None]
+    return sum(vals) / len(vals) if vals else None
+
+
+def _equity_curve(picks: list[dict], bench, offsets) -> list[dict]:
+    """Equal-weighted portfolio value (rebased to 100 at entry) at each
+    trading-day offset, alongside the same picks' benchmark path. Each pick
+    enters at its own information_date, so offsets align by days-held, and the
+    basket shrinks as far-out bars run out — every point reports its own count.
+    """
+    curve = []
+    for t in offsets:
+        p_ratios, b_ratios = [], []
+        for m in picks:
+            ei, series = m["entry_idx"], m["series"]
+            if ei is None or ei + t >= len(series):
+                continue
+            entry_px = series[ei][1]
+            if not entry_px:
+                continue
+            exit_d, exit_px = series[ei + t]
+            p_ratios.append(exit_px / entry_px)
+            b_entry = _first_on_or_after(bench, series[ei][0])
+            b_exit = _last_on_or_before(bench, exit_d)
+            if b_entry and b_exit and b_entry[1]:
+                b_ratios.append(b_exit[1] / b_entry[1])
+        if p_ratios:
+            curve.append({
+                "t": t,
+                "portfolio": round(100 * sum(p_ratios) / len(p_ratios), 4),
+                "benchmark": round(100 * sum(b_ratios) / len(b_ratios), 4) if b_ratios else None,
+                "n": len(p_ratios),
+            })
+    return curve
+
+
+def _portfolio(members: list[dict], subset, bench, horizons, offsets) -> dict:
+    """Summary stats + equity curve for the BUY picks of a persona subset,
+    plus the BUY-minus-AVOID excess spread (the signal's directional edge)."""
+    buys, avoids = [], []
+    for m in members:
+        cons = _subset_consensus(m["verdicts"], subset)[1]
+        if cons == "BUY":
+            buys.append(m)
+        elif cons == "AVOID":
+            avoids.append(m)
+    buy_meas = [m["meas"] for m in buys]
+    avoid_meas = [m["meas"] for m in avoids]
+    spread = {}
+    for h in horizons:
+        b, a = _mean_excess(buy_meas, h), _mean_excess(avoid_meas, h)
+        spread[h] = (b - a) if (b is not None and a is not None) else None
+    return {
+        "n_buy": len(buys),
+        "n_avoid": len(avoids),
+        "n_buy_priced": sum(1 for m in buys if m["entry_idx"] is not None),
+        "stats": _bucket_stats(buy_meas, horizons),
+        "spread": spread,
+        "curve": _equity_curve(buys, bench, offsets),
+    }
+
+
+def _normalize_personas(personas) -> list[str]:
+    """Validated subset in canonical council order; empty/unknown -> full council."""
+    if not personas:
+        return list(COUNCIL)
+    wanted = set(personas)
+    subset = [p for p in COUNCIL if p in wanted]
+    return subset or list(COUNCIL)
+
+
+def run_persona_study(session, benchmark: str = DEFAULT_BENCHMARK,
+                      horizons=DEFAULT_HORIZONS, personas=None) -> dict:
+    """Per-investor performance: for every council member (and for a chosen
+    subset consensus), the forward performance of its top-conviction BUY picks
+    vs the benchmark — an equity curve plus hit rate / mean excess / BUY-AVOID
+    spread. Same point-in-time cohort and no-lookahead rules as run_event_study.
+    """
+    horizons = tuple(horizons)
+    offsets = list(range(0, max(horizons) + 1)) if horizons else [0]
+    subset = _normalize_personas(personas)
+
+    cohort = _cohort(session)
+    bench = _benchmark_series(session, benchmark)
+    prices = _price_series(session, [h.stock_id for h, _ in cohort])
+    verdicts = _persona_verdicts(session, {h.stock_id: _cutoff(h) for h, _ in cohort})
+
+    members: list[dict] = []
+    for hist, stock in cohort:
+        info_date = (
+            hist.information_date.date() if hist.information_date else hist.as_of_date
+        )
+        series = prices.get(hist.stock_id, [])
+        entry_idx, meas = _measure(series, bench, info_date, horizons)
+        members.append({
+            "symbol": stock.symbol,
+            "verdicts": verdicts.get(hist.stock_id, {}),
+            "series": series,
+            "entry_idx": entry_idx,
+            "meas": meas,
+        })
+
+    per_persona = [
+        {"persona": slug, **_portfolio(members, [slug], bench, horizons, offsets)}
+        for slug in COUNCIL
+    ]
+
+    return {
+        "benchmark": benchmark,
+        "benchmark_bars": len(bench),
+        "horizons": list(horizons),
+        "curve_offsets": offsets,
+        "cohort_size": len(members),
+        "council": list(COUNCIL),
+        "personas": per_persona,
+        "subset": {"personas": subset, **_portfolio(members, subset, bench, horizons, offsets)},
     }

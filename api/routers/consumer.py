@@ -8,7 +8,12 @@ from fastapi import APIRouter, Depends, HTTPException, Query
 from sqlalchemy import distinct, func, select
 from sqlalchemy.orm import Session
 
-from engine.backtest.study import DEFAULT_BENCHMARK, run_event_study
+from engine.backtest.study import (
+    COUNCIL,
+    DEFAULT_BENCHMARK,
+    run_event_study,
+    run_persona_study,
+)
 from src.fetch_screener_data import parse_number
 
 from api.deps import (
@@ -530,3 +535,25 @@ def backtest(
     recommendation, plus Spearman ICs. Computed on demand (512-stock cohort is
     cheap); unpriced names are reported, never dropped."""
     return run_event_study(db, benchmark=benchmark)
+
+
+@router.get("/backtest/personas")
+def backtest_personas(
+    benchmark: str = Query(DEFAULT_BENCHMARK),
+    personas: str | None = Query(
+        None,
+        description="Comma-separated persona slugs; the subset consensus is "
+        "computed over these. Omitted or empty -> the full council.",
+    ),
+    db: Session = Depends(get_db),
+):
+    """Per-investor backtest: each council member's (and a chosen subset's)
+    top-conviction BUY picks vs the benchmark — equity curve + hit rate, mean
+    excess return, and BUY-minus-AVOID spread. Same point-in-time cohort and
+    no-lookahead rules as /backtest."""
+    subset = [s.strip() for s in personas.split(",") if s.strip()] if personas else None
+    if subset:
+        unknown = [s for s in subset if s not in COUNCIL]
+        if unknown:
+            raise HTTPException(status_code=400, detail=f"Unknown persona(s): {unknown}")
+    return run_persona_study(db, benchmark=benchmark, personas=subset)

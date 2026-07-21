@@ -6,13 +6,15 @@ no-op (no duplicate row) — this is the "never store the same data twice" rule.
 Reuses the proven serializers from the original fetcher.
 """
 
+import os
+import random
 import re
 import time
 
 import yfinance as yf
-from sqlalchemy import select
+from sqlalchemy import func, select
 
-from db.models import Stock
+from db.models import DailyPrice, Stock
 from engine.repo import (
     add_snapshot,
     bump_fetch_failures,
@@ -25,10 +27,76 @@ from engine.repo import (
 )
 from src.fetch_stock_data import safe_fetch, serialize_dataframe, serialize_info, serialize_value
 
+
+def _float(env, default):
+    try:
+        return float(os.environ.get(env, default))
+    except (TypeError, ValueError):
+        return default
+
+
 REFRESH_DELAY = 2.0
 PARK_THRESHOLD = 3  # consecutive failures before an active stock is parked as "stale"
 OUTAGE_RATIO = 0.5  # soft-fail fraction above which the batch is a source outage
 OUTAGE_MIN_BATCH = 3  # below this, "everything failed" is just a targeted retry failing
+
+# --- throttle handling -----------------------------------------------------
+# yfinance rate-limits a rapid burst: a batch fired at a fixed cadence returns
+# 76-78% errors. On each fetch error we back off exponentially with jitter so
+# the burst slows and the provider recovers; a success resets the pace to base.
+BACKOFF_CAP = _float("YF_BACKOFF_CAP", 60.0)      # seconds — ceiling on any single wait
+BACKOFF_JITTER = _float("YF_BACKOFF_JITTER", 0.5)  # fraction of the delay added as jitter
+# In-run circuit breaker: once enough of a batch has errored, further requests
+# only feed the throttle and record garbage, so we stop and let the outage
+# breaker below classify the run (which suppresses parking). The threshold meets
+# OUTAGE_RATIO, so a tripped circuit is always seen as an outage — the two
+# breakers interlock: circuit stops the burst, outage spares the stocks.
+CIRCUIT_MIN_ATTEMPTS = int(_float("YF_CIRCUIT_MIN_ATTEMPTS", 8))
+CIRCUIT_RATIO = _float("YF_CIRCUIT_RATIO", OUTAGE_RATIO)
+
+
+def next_delay(base, consecutive_failures, cap=BACKOFF_CAP, jitter=BACKOFF_JITTER,
+               rng=random):
+    """Seconds to wait before the next fetch. Base pace while healthy; on a run of
+    failures, exponential backoff (base·2ⁿ, capped) plus up to `jitter`·delay of
+    random jitter so concurrent clients don't re-fire in lockstep."""
+    if consecutive_failures <= 0:
+        return base
+    delay = min(base * (2 ** consecutive_failures), cap)
+    return delay + rng.uniform(0, delay * jitter)
+
+
+class _Pacer:
+    """Adaptive inter-request pacing: base delay while fetches succeed, exponential
+    backoff (with jitter) across a run of failures, reset on the next success."""
+
+    def __init__(self, base, cap=BACKOFF_CAP, jitter=BACKOFF_JITTER, rng=random):
+        self.base, self.cap, self.jitter, self.rng = base, cap, jitter, rng
+        self.fails = 0
+
+    def record(self, ok: bool):
+        self.fails = 0 if ok else self.fails + 1
+
+    def sleep(self):
+        time.sleep(next_delay(self.base, self.fails, self.cap, self.jitter, self.rng))
+
+
+def _tripped(errors: int, processed: int) -> bool:
+    """True once enough of the batch has errored to call it a throttle/outage."""
+    return processed >= CIRCUIT_MIN_ATTEMPTS and errors / processed > CIRCUIT_RATIO
+
+
+def _history_rows(yf_symbol):
+    """Fetch one symbol's full OHLCV history → (rows, errored). `errored` is True
+    only when the provider call RAISED (throttle/network) — an empty-but-successful
+    response is ([], False), so genuine no-data names don't drive the backoff."""
+    try:
+        hist = yf.Ticker(yf_symbol).history(period="max")
+    except Exception as e:
+        from src.utils import log
+        log(f"    {yf_symbol}: history fetch failed - {e}")
+        return [], True
+    return _price_rows(hist), False
 
 
 def names_agree(a: str | None, b: str | None) -> bool:
@@ -172,13 +240,18 @@ def refresh_one(session, stock: Stock, counts=None) -> str:
 
 
 def backfill_prices(universe=None, symbols=None, statuses=("active", "new"),
-                    limit=0, delay=1.0, verbose=True):
+                    limit=0, delay=1.0, oldest_first=False, verbose=True):
     """Populate daily_prices for a set of stocks WITHOUT creating snapshots.
 
     Decoupled from the snapshot/analysis pipeline: it fetches only yfinance
     history, inserting new OHLCV bars and correcting any the provider has since
     rebased. Safe to run alongside analysis — it never changes a stock's latest
     snapshot hash, so it can't retrigger staleness.
+
+    `oldest_first` orders the batch by how stale each stock's newest bar is
+    (never-priced stocks first, then the oldest bar). A chunked daily pass with
+    this ordering self-heals: whatever the previous run couldn't reach floats to
+    the front of the next, so no active name lags the rotation for long.
     """
     _t = universe or (symbols and f"{len(symbols)} symbols") or "all"
     with job_run("backfill_prices", target=_t) as (session, stats):
@@ -189,22 +262,35 @@ def backfill_prices(universe=None, symbols=None, statuses=("active", "new"),
             q = q.where(Stock.status.in_(list(statuses)))
         if universe:
             q = q.where(universe_contains(universe))
-        stocks = session.scalars(q.order_by(Stock.symbol)).all()
+        if oldest_first:
+            newest_bar = (
+                select(DailyPrice.stock_id,
+                       func.max(DailyPrice.date).label("last_bar"))
+                .group_by(DailyPrice.stock_id)
+                .subquery()
+            )
+            q = (q.outerjoin(newest_bar, Stock.id == newest_bar.c.stock_id)
+                  .order_by(newest_bar.c.last_bar.asc().nulls_first(), Stock.symbol))
+        else:
+            q = q.order_by(Stock.symbol)
+        stocks = session.scalars(q).all()
         if limit:
             stocks = stocks[:limit]
 
         counts = {"stocks": 0, "bars_added": 0, "bars_rebased": 0, "no_symbol": 0,
                   "error": 0, "no_history": 0}
+        pacer = _Pacer(base=delay)
+        processed = 0
         for i, stock in enumerate(stocks):
             if not stock.yf_symbol:
                 counts["no_symbol"] += 1
                 continue
-            hist = safe_fetch(
-                lambda: yf.Ticker(stock.yf_symbol).history(period="max"),
-                "history", stock.yf_symbol,
-            )
-            rows = _price_rows(hist)
-            if not rows:
+            rows, errored = _history_rows(stock.yf_symbol)
+            processed += 1
+            pacer.record(ok=not errored)
+            if errored:
+                counts["error"] += 1
+            elif not rows:
                 counts["no_history"] += 1
             else:
                 counts["bars_added"] += upsert_daily_prices(session, stock.id, rows, counts)
@@ -212,8 +298,20 @@ def backfill_prices(universe=None, symbols=None, statuses=("active", "new"),
             session.commit()
             if verbose:
                 print(f"  [{i+1}/{len(stocks)}] {stock.symbol}: +{len(rows)} bars")
+
+            # Same throttle circuit breaker as refresh: stop the burst once the
+            # provider is clearly rate-limiting, rather than draining the chunk
+            # into a wall of errors. The next run's oldest-first ordering picks
+            # up exactly where this one bailed.
+            if _tripped(counts["error"], processed):
+                counts["circuit_broken"] = True
+                if verbose:
+                    print(f"  circuit broken: {counts['error']}/{processed} errored — "
+                          f"stopping to let yfinance recover")
+                break
+
             if i < len(stocks) - 1:
-                time.sleep(delay)
+                pacer.sleep()
 
         stats.update(counts)
     return stats
@@ -248,11 +346,21 @@ def refresh(universe=None, symbols=None, statuses=("active", "new"), promote=Tru
                   "promoted": 0, "unfetchable": 0, "parked": 0, "revived": 0,
                   "soft_fail": 0, "bars_rebased": 0, "identity_mismatch": 0}
         soft_failed: list[Stock] = []
+        pacer = _Pacer(base=delay)
+        processed = 0
+        fetch_errors = 0
         for i, stock in enumerate(stocks):
             was_new = stock.status == "new"
             res = refresh_one(session, stock, counts)
             key = "error" if res.startswith("error") else res
             counts[key] = counts.get(key, 0) + 1
+            processed += 1
+            errored = res.startswith("error")
+            if errored:
+                fetch_errors += 1
+            # Pace off provider errors only: a clean fetch (even a no_symbol skip)
+            # keeps us at base; a throttle error stretches the next wait.
+            pacer.record(ok=not errored)
 
             if res == "identity_mismatch":
                 # A wrong-company payload: don't promote, don't park, don't bump
@@ -268,7 +376,7 @@ def refresh(universe=None, symbols=None, statuses=("active", "new"), promote=Tru
                     print(f"  [{i+1}/{len(stocks)}] {stock.symbol}: identity_mismatch")
                 session.commit()
                 if i < len(stocks) - 1:
-                    time.sleep(delay)
+                    pacer.sleep()
                 continue
 
             got_snapshot = res in ("new_snapshot", "unchanged")
@@ -305,17 +413,32 @@ def refresh(universe=None, symbols=None, statuses=("active", "new"), promote=Tru
                 tag = "new" if was_new else stock.status
                 print(f"  [{i+1}/{len(stocks)}] {stock.symbol} ({tag}): {res}")
             session.commit()
+
+            # In-run circuit breaker: once the error rate says "throttle", stop —
+            # further requests only deepen the throttle and record garbage. The
+            # outage breaker below then sees a mostly-failed run and spares the
+            # stocks (threshold meets OUTAGE_RATIO, so this interlock always holds).
+            if _tripped(fetch_errors, processed):
+                counts["circuit_broken"] = True
+                if verbose:
+                    print(f"  circuit broken: {fetch_errors}/{processed} errored — "
+                          f"stopping to let yfinance recover")
+                break
+
             if i < len(stocks) - 1:
-                time.sleep(delay)
+                pacer.sleep()
 
         # Source-outage circuit breaker: when most of the batch soft-failed the
         # source is down, not the stocks. Suppress every bump and park (no counter
         # penalty — the stocks did nothing wrong) and page once, not per stock.
-        if len(stocks) >= OUTAGE_MIN_BATCH and len(soft_failed) / len(stocks) > OUTAGE_RATIO:
+        # Denominator is what we actually attempted (`processed`), not the planned
+        # batch — a circuit break stops early, and diluting by unfetched stocks
+        # would wrongly clear the outage and park the throttled names.
+        if processed >= OUTAGE_MIN_BATCH and len(soft_failed) / processed > OUTAGE_RATIO:
             counts["source_outage"] = True
             from engine.notify import notify_safe
             notify_safe("yfinance outage — parking suppressed",
-                        f"{len(soft_failed)} of {len(stocks)} stocks soft-failed in one "
+                        f"{len(soft_failed)} of {processed} stocks soft-failed in one "
                         f"refresh batch — treating this as a source outage. No failure "
                         f"counters bumped, no stocks parked. Re-run once yfinance recovers.",
                         tags="warning")
@@ -338,5 +461,5 @@ def refresh(universe=None, symbols=None, statuses=("active", "new"), promote=Tru
                                     tags="package")
             session.commit()
 
-        stats.update({"processed": len(stocks), **counts})
+        stats.update({"processed": processed, **counts})
     return stats

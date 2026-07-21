@@ -191,8 +191,7 @@ def test_backfill_records_rebased_bars_without_inflating_added(db_session, monke
     db_session.commit()
 
     split = [dict(bars[0], open=100.0, high=101.0, low=99.0, close=100.0)]
-    monkeypatch.setattr(yfr, "safe_fetch", lambda fn, *a, **k: None)
-    monkeypatch.setattr(yfr, "_price_rows", lambda hist: split)
+    monkeypatch.setattr(yfr, "_history_rows", lambda sym: (split, False))
     stats = yfr.backfill_prices(symbols=["BFREBASE"], delay=0, verbose=False)
 
     assert stats["bars_rebased"] == 1
