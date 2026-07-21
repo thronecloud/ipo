@@ -519,6 +519,21 @@ def dead_letter_pairs(session, stock_id: int, threshold: int) -> set:
 
 # ---------- scoring ----------
 
+# Ties break toward caution: this is a research tool, not a sales sheet, so AVOID
+# beats HOLD beats BUY when the council splits evenly.
+_CONSENSUS_CAUTION_ORDER = {"AVOID": 0, "HOLD": 1, "BUY": 2}
+
+
+def _consensus_from_votes(recs: dict[str, int], composite: float) -> str:
+    """The council's verdict is its modal vote, not a threshold on the composite —
+    ten HOLDs must never read as BUY just because the mean rounds to 60. Highest
+    count wins; equal counts break toward caution. The composite is the tiebreak
+    ONLY when no persona recorded a recommendation to count."""
+    if not recs:
+        return "BUY" if composite >= 60 else "HOLD" if composite >= 40 else "AVOID"
+    return min(recs, key=lambda r: (-recs[r], _CONSENSUS_CAUTION_ORDER[r]))
+
+
 def recompute_scores_for_stock(session, stock: Stock):
     """Recompute the composite score for one stock from its latest per-persona analyses.
 
@@ -550,7 +565,8 @@ def recompute_scores_for_stock(session, stock: Stock):
     }
     composite = round(sum(persona_scores.values()) / len(persona_scores) * 10, 1)
     recs = [latest[p].recommendation for p in sorted(latest) if latest[p].recommendation]
-    consensus = "BUY" if composite >= 60 else "HOLD" if composite >= 40 else "AVOID"
+    rec_counts = dict(Counter(sorted(recs)))
+    consensus = _consensus_from_votes(rec_counts, composite)
     # The date the view actually FORMED (max analyzed_at) — the point-in-time key.
     information_date = max(latest[p].analyzed_at for p in latest)
 
@@ -564,7 +580,7 @@ def recompute_scores_for_stock(session, stock: Stock):
         composite_score=round(composite, 1),
         persona_scores=persona_scores,
         consensus_recommendation=consensus,
-        recommendation_counts=dict(Counter(sorted(recs))),
+        recommendation_counts=rec_counts,
         analysis_coverage=len(persona_scores),
         total_personas=TOTAL_PERSONAS,
         scoring_method=SCORING_METHOD,

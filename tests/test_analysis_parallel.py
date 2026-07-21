@@ -67,7 +67,7 @@ def test_seasoned_stock_has_no_recency_block(db_session):
 
 
 def test_prompt_version_bumped():
-    assert eng.PROMPT_VERSION == "v4"
+    assert eng.PROMPT_VERSION == "v5"
 
 
 # ---------- 2. parallel persona execution ----------

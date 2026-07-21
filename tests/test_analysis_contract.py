@@ -49,6 +49,26 @@ def test_validate_accepts_valid():
     assert validate_analysis_result(r) is r
 
 
+@pytest.mark.parametrize("score,rec", [
+    (8, "HOLD"), (8, "AVOID"),   # a BUY-band score cannot be HOLD/AVOID
+    (5, "BUY"), (5, "AVOID"),    # a HOLD-band score cannot be BUY/AVOID
+    (2, "BUY"), (2, "HOLD"),     # an AVOID-band score cannot be BUY/HOLD
+])
+def test_validate_rejects_recommendation_contradicting_score(score, rec):
+    with pytest.raises(AnalysisContractError):
+        validate_analysis_result(_valid_result(score, rec))
+
+
+@pytest.mark.parametrize("score,rec", [
+    (10, "BUY"), (7, "BUY"),     # score >= 7 -> BUY
+    (6, "HOLD"), (4, "HOLD"),    # score 4-6 -> HOLD
+    (3, "AVOID"), (0, "AVOID"),  # score <= 3 -> AVOID
+])
+def test_validate_accepts_consistent_score_and_recommendation(score, rec):
+    r = _valid_result(score, rec)
+    assert validate_analysis_result(r) is r
+
+
 def test_save_analysis_rejects_and_writes_nothing(db_session):
     stock = make_stock(db_session, "CONTRACT1")
     payload = yf_payload()

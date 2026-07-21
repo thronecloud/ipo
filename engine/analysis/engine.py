@@ -33,7 +33,7 @@ from src.personas import PERSONAS, get_persona_slugs
 
 log = logging.getLogger(__name__)
 
-PROMPT_VERSION = "v4"  # v1 = imported; v2 = corrected scales; v3 = research-grounded revamp (said-vs-did, verified thresholds, screener-aware); v4 = recent-IPO recency context (gaps ≠ red flags)
+PROMPT_VERSION = "v5"  # v1 = imported; v2 = corrected scales; v3 = research-grounded revamp (said-vs-did, verified thresholds, screener-aware); v4 = recent-IPO recency context (gaps ≠ red flags); v5 = BUY/HOLD/AVOID defined as score bands in prompt + schema
 
 # A (stock, persona) that failed this many times on the SAME data_hash is
 # dead-lettered: find_work stops planning it (it was silently re-burning the

@@ -15,6 +15,11 @@ VALID_RECOMMENDATIONS = {"BUY", "HOLD", "AVOID"}
 SCORE_MIN, SCORE_MAX = 0, 10
 
 
+def _recommendation_for_score(score: int) -> str:
+    """The recommendation the score band mandates (BUY >= 7, HOLD 4-6, AVOID <= 3)."""
+    return "BUY" if score >= 7 else "HOLD" if score >= 4 else "AVOID"
+
+
 class AnalysisContractError(ValueError):
     """Raised when an LLM analysis result violates ANALYSIS_JSON_SCHEMA or its ranges."""
 
@@ -39,4 +44,9 @@ def validate_analysis_result(result) -> dict:
     rec = result.get("recommendation")
     if rec not in VALID_RECOMMENDATIONS:
         raise AnalysisContractError(f"recommendation {rec!r} not in {sorted(VALID_RECOMMENDATIONS)}")
+
+    expected = _recommendation_for_score(score)
+    if rec != expected:
+        raise AnalysisContractError(
+            f"recommendation {rec!r} contradicts score {score} (band requires {expected!r})")
     return result

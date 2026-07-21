@@ -44,10 +44,10 @@ def test_coverage_does_not_bias_consensus(db_session):
     """P0-3 invariant: 4 personas @10 and 10 personas @10 are both 100/BUY —
     partial coverage no longer structurally caps the score."""
     s4 = make_stock(db_session, "COV4")
-    _seed_scores(db_session, s4, [10, 10, 10, 10])
+    _seed_scores(db_session, s4, [10, 10, 10, 10], rec="BUY")
     r4 = recompute_scores_for_stock(db_session, s4)
     s10 = make_stock(db_session, "COV10")
-    _seed_scores(db_session, s10, [10] * 10)
+    _seed_scores(db_session, s10, [10] * 10, rec="BUY")
     r10 = recompute_scores_for_stock(db_session, s10)
     db_session.commit()
     assert r4.composite_score == 100.0 and r4.consensus_recommendation == "BUY"
@@ -65,19 +65,66 @@ def test_scores_clamped_defensively(db_session):
     assert row.composite_score == 75.0                       # mean(10,5)=7.5 -> 75
 
 
-def _consensus(db_session, symbol, scores):
+def test_consensus_does_not_contradict_a_unanimous_council(db_session):
+    """Ten HOLDs at score 6 produce composite 60.0, which the old threshold rule
+    labelled BUY while recommendation_counts said {'HOLD': 10}. The council's
+    actual vote governs the consensus, not the composite."""
+    stock = make_stock(db_session, "UNANIMOUS")
+    for persona in PERSONA_POOL:
+        make_analysis(db_session, stock, persona, 6, "HOLD")
+    row = recompute_scores_for_stock(db_session, stock)
+    db_session.commit()
+
+    assert row.composite_score == 60.0
+    assert row.consensus_recommendation == "HOLD"
+    assert row.recommendation_counts == {"HOLD": 10}
+
+
+def test_consensus_is_the_modal_vote(db_session):
+    """The most common recommendation wins, even when the composite would round
+    the other way."""
+    stock = make_stock(db_session, "MODAL")
+    votes = [("BUY", 8)] * 3 + [("HOLD", 5)] * 5 + [("AVOID", 2)] * 2
+    for persona, (rec, score) in zip(PERSONA_POOL, votes):
+        make_analysis(db_session, stock, persona, score, rec)
+    row = recompute_scores_for_stock(db_session, stock)
+    db_session.commit()
+
+    assert row.recommendation_counts == {"AVOID": 2, "BUY": 3, "HOLD": 5}
+    assert row.consensus_recommendation == "HOLD"
+
+
+def test_consensus_breaks_ties_toward_caution(db_session):
+    """Equal BUY and AVOID counts resolve to AVOID — a research tool, not a sales
+    sheet, errs on the cautious side (AVOID > HOLD > BUY at equal counts)."""
+    stock = make_stock(db_session, "TIE")
+    votes = [("BUY", 8)] * 5 + [("AVOID", 2)] * 5
+    for persona, (rec, score) in zip(PERSONA_POOL, votes):
+        make_analysis(db_session, stock, persona, score, rec)
+    row = recompute_scores_for_stock(db_session, stock)
+    db_session.commit()
+
+    assert row.recommendation_counts == {"AVOID": 5, "BUY": 5}
+    assert row.consensus_recommendation == "AVOID"
+
+
+def _consensus_no_votes(db_session, symbol, scores):
+    """Consensus when personas scored but recorded no recommendation."""
     stock = make_stock(db_session, symbol)
-    _seed_scores(db_session, stock, scores)
+    for persona, score in zip(PERSONA_POOL, scores):
+        make_analysis(db_session, stock, persona, score, None)
     row = recompute_scores_for_stock(db_session, stock)
     db_session.commit()
     return row.consensus_recommendation
 
 
-def test_consensus_boundaries_on_0_100_scale(db_session):
-    assert _consensus(db_session, "BUY60", [6]) == "BUY"      # 60 -> BUY
-    assert _consensus(db_session, "HOLD50", [5]) == "HOLD"    # 50 -> HOLD
-    assert _consensus(db_session, "HOLD40", [4]) == "HOLD"    # 40 -> HOLD boundary
-    assert _consensus(db_session, "AVOID30", [3]) == "AVOID"  # 30 -> AVOID
+def test_consensus_falls_back_to_composite_when_no_votes(db_session):
+    """With no recommendations to count, consensus falls back to the composite
+    threshold on the 0-100 scale (>=60 BUY, >=40 HOLD, else AVOID)."""
+    assert _consensus_no_votes(db_session, "BUY60", [6]) == "BUY"      # 60 -> BUY
+    assert _consensus_no_votes(db_session, "HOLD50", [5]) == "HOLD"    # 50 -> HOLD
+    assert _consensus_no_votes(db_session, "HOLD40", [4]) == "HOLD"    # 40 -> HOLD boundary
+    assert _consensus_no_votes(db_session, "AVOID30", [3]) == "AVOID"  # 30 -> AVOID
 
 
 def test_latest_analysis_wins_per_persona(db_session):

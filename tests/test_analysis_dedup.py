@@ -43,7 +43,7 @@ def _snap(session, symbol):
 def test_same_natural_key_upserts_single_row(db_session):
     stock, snap = _snap(db_session, "DEDUP1")
     r1 = save_analysis(db_session, stock, snap, "warren_buffett", "m1", "v3",
-                       _valid_result(4, "AVOID"), {})
+                       _valid_result(3, "AVOID"), {})
     db_session.commit()
     r2 = save_analysis(db_session, stock, snap, "warren_buffett", "m1", "v3",
                        _valid_result(8, "BUY"), {})
@@ -62,7 +62,7 @@ def test_refresh_bumps_analyzed_at(db_session):
     """The upsert must move analyzed_at forward — staleness/recompute keys off it."""
     stock, snap = _snap(db_session, "DEDUP2")
     save_analysis(db_session, stock, snap, "warren_buffett", "m1", "v3",
-                  _valid_result(4, "AVOID"), {})
+                  _valid_result(3, "AVOID"), {})
     db_session.commit()
     first = db_session.scalar(select(Analysis.analyzed_at).where(Analysis.stock_id == stock.id))
     save_analysis(db_session, stock, snap, "warren_buffett", "m1", "v3",

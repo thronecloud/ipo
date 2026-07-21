@@ -32,6 +32,12 @@ Be concise and specific. Use numbers from the data. If a SCREENER FUNDAMENTALS
 section is present, weigh the multi-year trends, quarterly momentum, ROCE, and
 promoter/FII/DII shareholding heavily — they matter more than a single snapshot.
 Score 0-10 (integer). Most stocks should score 3-5. A 7+ is rare. 9-10 is once-in-a-decade.
+
+RECOMMENDATION — must be consistent with your score:
+  BUY    score >= 7  — you would deploy capital at today's price
+  HOLD   score 4-6   — a business you respect, but not at this price
+  AVOID  score <= 3  — you would not own this at any reasonable price
+
 Keep investment_thesis to 2 sentences. Keep detailed_analysis to 2 short paragraphs max.
 Limit key_strengths and key_risks to 3 items each. Be brief — one line per item.
 """
@@ -458,12 +464,14 @@ ANALYSIS_JSON_SCHEMA = {
     "properties": {
         "score": {
             "type": "integer",
+            "minimum": 0,
+            "maximum": 10,
             "description": "Investment score from 0 to 10 (integer). 0=worst, 10=best. Most stocks should be 3-5."
         },
         "recommendation": {
             "type": "string",
             "enum": ["BUY", "HOLD", "AVOID"],
-            "description": "Investment recommendation"
+            "description": "Must be consistent with the score: BUY if score >= 7, HOLD if score 4-6, AVOID if score <= 3."
         },
         "investment_thesis": {
             "type": "string",
