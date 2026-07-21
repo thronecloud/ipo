@@ -9,7 +9,9 @@ import type {
   BacktestBucket,
   BacktestStock,
   BacktestStudy,
+  CI,
   PersonaStudy,
+  Verdict,
 } from "@/lib/types";
 import { composite, compositeColor, pct, shortDate, DASH } from "@/lib/format";
 import { PERSONA_ORDER, PERSONA_SLUGS } from "@/lib/personas";
@@ -44,6 +46,29 @@ function horizonTitle(h: number): string {
 function signColor(v: number | null | undefined): string {
   if (v == null) return "var(--color-muted)";
   return v >= 0 ? "var(--color-sage)" : "var(--color-terracotta)";
+}
+
+const VERDICT_LABEL: Record<Verdict, string> = {
+  positive: "positive",
+  negative: "negative",
+  "indistinguishable from zero": "≈ zero",
+};
+
+function verdictColor(v: Verdict): string {
+  if (v === "positive") return "var(--color-sage)";
+  if (v === "negative") return "var(--color-terracotta)";
+  return "var(--color-muted)";
+}
+
+function isNoise(ci: CI | null | undefined): boolean {
+  return ci != null && ci.verdict === "indistinguishable from zero";
+}
+
+// Full interval + verdict for a tooltip, e.g. "95% CI −1.2 to +4.8 · ≈ zero".
+function ciRange(ci: CI | null | undefined): string {
+  if (!ci) return "too few names to bootstrap a CI";
+  const f = (x: number) => `${x > 0 ? "+" : ""}${x.toFixed(1)}`;
+  return `95% CI ${f(ci.ci_low)} to ${f(ci.ci_high)} · ${ci.verdict}`;
 }
 
 export default function BacktestPage() {
@@ -263,6 +288,14 @@ export default function BacktestPage() {
 
   const unpriced = data.cohort_size - data.priced;
   const hit21 = data.overall.hit_rate?.["21"] ?? null;
+  const hit21ci = data.overall.hit_rate_ci?.["21"] ?? null;
+  const hit21Verdict = hit21ci
+    ? hit21ci.verdict === "positive"
+      ? "beats a coin flip"
+      : hit21ci.verdict === "negative"
+        ? "worse than a coin flip"
+        : "like a coin flip"
+    : null;
   const availableHorizons = data.horizons.filter(
     (h) => data.overall.mean_excess?.[String(h)] != null,
   );
@@ -331,7 +364,19 @@ export default function BacktestPage() {
         <StatCard
           label="Beat benchmark @ 1 month"
           value={hit21 == null ? DASH : `${hit21.toFixed(0)}%`}
-          sub="of priced names, 21 trading days on"
+          sub={
+            <span title={hit21ci ? ciRange(hit21ci) : undefined}>
+              of priced names, 21 trading days on
+              {hit21Verdict && (
+                <>
+                  {" · "}
+                  <span style={{ color: verdictColor(hit21ci!.verdict) }}>
+                    {hit21Verdict}
+                  </span>
+                </>
+              )}
+            </span>
+          }
           accent={hit21 == null ? undefined : hit21 >= 50 ? "var(--color-sage)" : "var(--color-terracotta)"}
         />
       </div>
@@ -505,13 +550,24 @@ export default function BacktestPage() {
                     </td>
                     {data.horizons.map((h) => {
                       const rho = data.ic[key]?.[String(h)] ?? null;
+                      const ci = data.ic_ci?.[key]?.[String(h)] ?? null;
                       return (
                         <td
                           key={h}
-                          className="num px-3 py-2 text-right text-xs"
-                          style={{ color: signColor(rho) }}
+                          className="px-3 py-2 text-right align-top"
+                          title={ci ? ciRange(ci) : undefined}
                         >
-                          {rho == null ? DASH : rho.toFixed(3)}
+                          <div className="num text-xs" style={{ color: signColor(rho) }}>
+                            {rho == null ? DASH : rho.toFixed(3)}
+                          </div>
+                          {ci && (
+                            <div
+                              className="text-[9px] uppercase tracking-wide"
+                              style={{ color: verdictColor(ci.verdict) }}
+                            >
+                              {VERDICT_LABEL[ci.verdict]}
+                            </div>
+                          )}
                         </td>
                       );
                     })}
@@ -703,6 +759,7 @@ function BucketRow({
         const mean = bucket.mean_excess?.[k] ?? null;
         const med = bucket.median_excess?.[k] ?? null;
         const hit = bucket.hit_rate?.[k] ?? null;
+        const meanCi = bucket.mean_excess_ci?.[k] ?? null;
         if (mean == null && med == null && hit == null) {
           return (
             <td key={h} className="num px-3 py-2 text-right text-xs text-muted">
@@ -714,9 +771,11 @@ function BucketRow({
           <td
             key={h}
             className="num whitespace-nowrap px-3 py-2 text-right text-xs"
-            title={`mean excess ${pct(mean)} · median ${med == null ? DASH : pct(med)} · ${hit == null ? DASH : `${hit.toFixed(0)}% beat benchmark`}`}
+            title={`mean excess ${pct(mean)} · median ${med == null ? DASH : pct(med)} · ${hit == null ? DASH : `${hit.toFixed(0)}% beat benchmark`}${meanCi ? ` · ${ciRange(meanCi)}` : ""}`}
           >
-            <span style={{ color: signColor(mean) }}>{pct(mean)}</span>
+            <span style={{ color: isNoise(meanCi) ? "var(--color-muted)" : signColor(mean) }}>
+              {pct(mean)}
+            </span>
             <span className="text-muted"> / {med == null ? DASH : pct(med)}</span>
             <span className="text-muted"> · </span>
             <span className="text-paper/80">

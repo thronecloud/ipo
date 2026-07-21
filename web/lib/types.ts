@@ -288,6 +288,22 @@ export interface JobRunResponse {
 // All returns are percentages already (3.95 = +3.95%); null = horizon not
 // yet computable. Horizon-keyed dicts arrive JSON-stringified: {"5": …}.
 
+// Whether a bootstrap interval clears its null hypothesis. Zero for excess /
+// spread / rank correlation; a coin flip for hit rate.
+export type Verdict = "positive" | "negative" | "indistinguishable from zero";
+
+// Block-bootstrap CI over the cohort's stocks (the independent unit). `point`
+// is the raw estimate; [ci_low, ci_high] is a 95% percentile band; `n` is the
+// number of stocks it rests on. null in place of a CI means the cohort was too
+// small to bootstrap honestly.
+export interface CI {
+  point: number;
+  ci_low: number;
+  ci_high: number;
+  verdict: Verdict;
+  n: number;
+}
+
 export interface BacktestStock {
   symbol: string;
   company_name: string | null;
@@ -317,6 +333,9 @@ export interface BacktestBucket {
   median_excess: Record<string, number | null>;
   hit_rate: Record<string, number | null>; // % of names beating the benchmark
   mean_return: Record<string, number | null>;
+  // Bootstrap CIs for the two hypothesis-bearing stats (vs zero / vs coin flip).
+  mean_excess_ci: Record<string, CI | null>;
+  hit_rate_ci: Record<string, CI | null>;
 }
 
 export interface BacktestStudy {
@@ -335,6 +354,10 @@ export interface BacktestStudy {
     composite: Record<string, number | null>; // Spearman rho, -1..1
     lcb: Record<string, number | null>;
   };
+  ic_ci: {
+    composite: Record<string, CI | null>; // bootstrap band on the rank correlation
+    lcb: Record<string, CI | null>;
+  };
   overall: BacktestBucket;
 }
 
@@ -346,6 +369,10 @@ export interface EquityPoint {
   portfolio: number; // rebased to 100
   benchmark: number | null; // rebased to 100
   n: number; // basket size at this offset
+  // p5/p95 band of the portfolio mean from resampling the picks (rebased to
+  // 100). null where the basket is too small to bootstrap.
+  p5: number | null;
+  p95: number | null;
 }
 
 // Forward performance of one signal's top-conviction (BUY) picks.
@@ -355,6 +382,7 @@ export interface PortfolioResult {
   n_buy_priced: number;
   stats: BacktestBucket; // over the BUY picks
   spread: Record<string, number | null>; // BUY excess minus AVOID excess, per horizon
+  spread_ci: Record<string, CI | null>; // bootstrap band on the spread (vs zero)
   curve: EquityPoint[];
 }
 

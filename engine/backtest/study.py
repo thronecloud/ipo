@@ -21,6 +21,7 @@ from datetime import date, datetime, time, timezone
 from sqlalchemy import select
 
 from db.models import Analysis, CompositeScoreHistory, DailyPrice, IndexPrice, Stock
+from engine.backtest.stats import bootstrap_ci, bootstrap_paths, verdict
 from src.personas import PERSONAS
 
 # Canonical council order — every per-persona result is emitted in this sequence.
@@ -35,6 +36,14 @@ DEFAULT_BENCHMARK = "^CRSLDX"
 # Trading-day horizons: ~1w, 1m, 3m, 6m.
 DEFAULT_HORIZONS = (5, 21, 63, 126)
 QUINTILES = 5
+# Bootstrap draws for scalar summary CIs (IC, mean excess, hit rate, spread).
+N_BOOT = 2000
+# Equity-curve bands re-average every offset on every draw, so a full 2000 over
+# a wide horizon is visibly slow; 500 keeps the p5/p95 envelope stable while the
+# on-demand endpoint stays snappy.
+CURVE_N_BOOT = 500
+# Hit rate's null hypothesis is a coin flip vs the benchmark, not zero.
+COINFLIP = 50.0
 
 
 # ---------- statistics ----------
@@ -196,11 +205,20 @@ def _measure(series: list[tuple[date, float]], bench: list[tuple[date, float]],
 
 # ---------- aggregation ----------
 
-def _bucket_stats(rows: list[dict], horizons) -> dict:
+def _mean_of(vals: list[float]) -> float | None:
+    return sum(vals) / len(vals) if vals else None
+
+
+def _hit_of(vals: list[float]) -> float | None:
+    return 100.0 * sum(1 for v in vals if v > 0) / len(vals) if vals else None
+
+
+def _bucket_stats(rows: list[dict], horizons, n_boot: int = N_BOOT) -> dict:
     stats = {
         "n": len(rows),
         "priced": sum(1 for r in rows if r["entry_price"] is not None),
         "mean_excess": {}, "median_excess": {}, "hit_rate": {}, "mean_return": {},
+        "mean_excess_ci": {}, "hit_rate_ci": {},
     }
     for h in horizons:
         vals = [r["excess"][h] for r in rows if r["excess"].get(h) is not None]
@@ -212,12 +230,27 @@ def _bucket_stats(rows: list[dict], horizons) -> dict:
             stats["median_excess"][h] = (
                 svals[mid] if len(svals) % 2 else (svals[mid - 1] + svals[mid]) / 2
             )
-            stats["hit_rate"][h] = 100.0 * sum(1 for v in vals if v > 0) / len(vals)
+            stats["hit_rate"][h] = _hit_of(vals)
         else:
             stats["mean_excess"][h] = None
             stats["median_excess"][h] = None
             stats["hit_rate"][h] = None
         stats["mean_return"][h] = sum(rets) / len(rets) if rets else None
+
+        # Bootstrap the two hypothesis-bearing stats over the stocks. Mean excess
+        # is tested against zero (did the basket beat the benchmark?); hit rate
+        # against a coin flip (does it beat the benchmark more than half the time?).
+        def _excess(sample, _h=h):
+            return _mean_of([r["excess"][_h] for r in sample if r["excess"].get(_h) is not None])
+
+        def _hit(sample, _h=h):
+            return _hit_of([r["excess"][_h] for r in sample if r["excess"].get(_h) is not None])
+
+        stats["mean_excess_ci"][h] = bootstrap_ci(rows, _excess, n_boot=n_boot)
+        hr_ci = bootstrap_ci(rows, _hit, n_boot=n_boot)
+        if hr_ci is not None:
+            hr_ci["verdict"] = verdict(hr_ci["ci_low"] - COINFLIP, hr_ci["ci_high"] - COINFLIP)
+        stats["hit_rate_ci"][h] = hr_ci
     return stats
 
 
@@ -229,7 +262,7 @@ def _quintile_of(rank_pos: int, n: int) -> int:
 # ---------- the study ----------
 
 def run_event_study(session, benchmark: str = DEFAULT_BENCHMARK,
-                    horizons=DEFAULT_HORIZONS) -> dict:
+                    horizons=DEFAULT_HORIZONS, n_boot: int = N_BOOT) -> dict:
     horizons = tuple(horizons)
     cohort = _cohort(session)
     bench = _benchmark_series(session, benchmark)
@@ -273,19 +306,24 @@ def run_event_study(session, benchmark: str = DEFAULT_BENCHMARK,
         for r in rows:
             groups.setdefault(keyfn(r), []).append(r)
         return {
-            k: _bucket_stats(v, horizons)
+            k: _bucket_stats(v, horizons, n_boot=n_boot)
             for k, v in sorted(groups.items(), key=lambda kv: str(kv[0]))
             if k is not None
         }
 
+    def _rho(sample):
+        return spearman([p[0] for p in sample], [p[1] for p in sample])
+
     ic = {"composite": {}, "lcb": {}}
+    ic_ci = {"composite": {}, "lcb": {}}
     for h in horizons:
         for key in ("composite", "lcb"):
             pairs = [
                 (r[key], r["returns"][h]) for r in priced_rows
                 if r[key] is not None and r["returns"].get(h) is not None
             ]
-            ic[key][h] = spearman([p[0] for p in pairs], [p[1] for p in pairs])
+            ic[key][h] = _rho(pairs)
+            ic_ci[key][h] = bootstrap_ci(pairs, _rho, n_boot=n_boot)
 
     return {
         "benchmark": benchmark,
@@ -300,7 +338,8 @@ def run_event_study(session, benchmark: str = DEFAULT_BENCHMARK,
         "by_lcb_quintile": _group(priced_rows, lambda r: r.get("lcb_quintile")),
         "by_composite_quintile": _group(priced_rows, lambda r: r.get("composite_quintile")),
         "ic": ic,
-        "overall": _bucket_stats(stocks, horizons),
+        "ic_ci": ic_ci,
+        "overall": _bucket_stats(stocks, horizons, n_boot=n_boot),
     }
 
 
@@ -369,39 +408,55 @@ def _mean_excess(rows: list[dict], h) -> float | None:
     return sum(vals) / len(vals) if vals else None
 
 
-def _equity_curve(picks: list[dict], bench, offsets) -> list[dict]:
+def _equity_curve(picks: list[dict], bench, offsets, n_boot: int = CURVE_N_BOOT) -> list[dict]:
     """Equal-weighted portfolio value (rebased to 100 at entry) at each
-    trading-day offset, alongside the same picks' benchmark path. Each pick
-    enters at its own information_date, so offsets align by days-held, and the
-    basket shrinks as far-out bars run out — every point reports its own count.
+    trading-day offset, alongside the same picks' benchmark path and a p5/p95
+    band from resampling the picks. Each pick enters at its own information_date,
+    so offsets align by days-held, and the basket shrinks as far-out bars run
+    out — every point reports its own count.
     """
+    # One rebased-ratio path per pick (None where its bar for that offset is
+    # missing); the band resamples these whole paths so it stays coherent.
+    pick_paths: list[dict] = []
+    for m in picks:
+        ei, series = m["entry_idx"], m["series"]
+        path: dict = {}
+        if ei is not None and series and series[ei][1]:
+            entry_px = series[ei][1]
+            for t in offsets:
+                if ei + t < len(series):
+                    path[t] = series[ei + t][1] / entry_px
+        pick_paths.append(path)
+
+    band = bootstrap_paths(pick_paths, offsets, n_boot=n_boot)
+
     curve = []
     for t in offsets:
-        p_ratios, b_ratios = [], []
+        p_ratios = [pp[t] for pp in pick_paths if t in pp]
+        b_ratios = []
         for m in picks:
             ei, series = m["entry_idx"], m["series"]
-            if ei is None or ei + t >= len(series):
+            if ei is None or ei + t >= len(series) or not series[ei][1]:
                 continue
-            entry_px = series[ei][1]
-            if not entry_px:
-                continue
-            exit_d, exit_px = series[ei + t]
-            p_ratios.append(exit_px / entry_px)
             b_entry = _first_on_or_after(bench, series[ei][0])
-            b_exit = _last_on_or_before(bench, exit_d)
+            b_exit = _last_on_or_before(bench, series[ei + t][0])
             if b_entry and b_exit and b_entry[1]:
                 b_ratios.append(b_exit[1] / b_entry[1])
         if p_ratios:
+            lo, hi = band.get(t, (None, None))
             curve.append({
                 "t": t,
                 "portfolio": round(100 * sum(p_ratios) / len(p_ratios), 4),
                 "benchmark": round(100 * sum(b_ratios) / len(b_ratios), 4) if b_ratios else None,
                 "n": len(p_ratios),
+                "p5": round(100 * lo, 4) if lo is not None else None,
+                "p95": round(100 * hi, 4) if hi is not None else None,
             })
     return curve
 
 
-def _portfolio(members: list[dict], subset, bench, horizons, offsets) -> dict:
+def _portfolio(members: list[dict], subset, bench, horizons, offsets,
+               n_boot: int = N_BOOT, curve_n_boot: int = CURVE_N_BOOT) -> dict:
     """Summary stats + equity curve for the BUY picks of a persona subset,
     plus the BUY-minus-AVOID excess spread (the signal's directional edge)."""
     buys, avoids = [], []
@@ -413,17 +468,31 @@ def _portfolio(members: list[dict], subset, bench, horizons, offsets) -> dict:
             avoids.append(m)
     buy_meas = [m["meas"] for m in buys]
     avoid_meas = [m["meas"] for m in avoids]
-    spread = {}
+    spread, spread_ci = {}, {}
     for h in horizons:
         b, a = _mean_excess(buy_meas, h), _mean_excess(avoid_meas, h)
         spread[h] = (b - a) if (b is not None and a is not None) else None
+        # Resample the whole picked cohort (BUYs and AVOIDs together, each a
+        # stock) and re-measure the gap; a draw missing either side is skipped.
+        tagged = ([("BUY", m["excess"].get(h)) for m in buy_meas]
+                  + [("AVOID", m["excess"].get(h)) for m in avoid_meas])
+
+        def _spread(sample):
+            bv = [v for lab, v in sample if lab == "BUY" and v is not None]
+            av = [v for lab, v in sample if lab == "AVOID" and v is not None]
+            if not bv or not av:
+                return None
+            return sum(bv) / len(bv) - sum(av) / len(av)
+
+        spread_ci[h] = bootstrap_ci(tagged, _spread, n_boot=n_boot)
     return {
         "n_buy": len(buys),
         "n_avoid": len(avoids),
         "n_buy_priced": sum(1 for m in buys if m["entry_idx"] is not None),
-        "stats": _bucket_stats(buy_meas, horizons),
+        "stats": _bucket_stats(buy_meas, horizons, n_boot=n_boot),
         "spread": spread,
-        "curve": _equity_curve(buys, bench, offsets),
+        "spread_ci": spread_ci,
+        "curve": _equity_curve(buys, bench, offsets, n_boot=curve_n_boot),
     }
 
 
@@ -437,7 +506,8 @@ def _normalize_personas(personas) -> list[str]:
 
 
 def run_persona_study(session, benchmark: str = DEFAULT_BENCHMARK,
-                      horizons=DEFAULT_HORIZONS, personas=None) -> dict:
+                      horizons=DEFAULT_HORIZONS, personas=None,
+                      n_boot: int = N_BOOT, curve_n_boot: int = CURVE_N_BOOT) -> dict:
     """Per-investor performance: for every council member (and for a chosen
     subset consensus), the forward performance of its top-conviction BUY picks
     vs the benchmark — an equity curve plus hit rate / mean excess / BUY-AVOID
@@ -468,7 +538,8 @@ def run_persona_study(session, benchmark: str = DEFAULT_BENCHMARK,
         })
 
     per_persona = [
-        {"persona": slug, **_portfolio(members, [slug], bench, horizons, offsets)}
+        {"persona": slug,
+         **_portfolio(members, [slug], bench, horizons, offsets, n_boot, curve_n_boot)}
         for slug in COUNCIL
     ]
 
@@ -480,5 +551,6 @@ def run_persona_study(session, benchmark: str = DEFAULT_BENCHMARK,
         "cohort_size": len(members),
         "council": list(COUNCIL),
         "personas": per_persona,
-        "subset": {"personas": subset, **_portfolio(members, subset, bench, horizons, offsets)},
+        "subset": {"personas": subset,
+                   **_portfolio(members, subset, bench, horizons, offsets, n_boot, curve_n_boot)},
     }

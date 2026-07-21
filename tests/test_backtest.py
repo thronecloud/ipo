@@ -160,6 +160,44 @@ def test_ic_positive_when_score_orders_returns(db_session):
     assert abs(report["ic"]["lcb"][1] - 1.0) < 1e-9
 
 
+RISING = [100.0, 100.0, 102.0, 104.0, 106.0, 108.0, 110.0, 112.0]  # entry idx1, reaches horizon 5
+
+
+def test_event_study_ci_flags_true_effect(db_session):
+    # Six names, every one +10% over a flat benchmark: the mean-excess CI must
+    # clear zero (verdict positive) and the hit rate must clear the coin flip.
+    for i in range(6):
+        st = make_stock(db_session, f"CIP{i}")
+        _history_row(db_session, st, info_date=MON, composite=70.0 + i)
+        repo.upsert_daily_prices(db_session, st.id, _bars(MON, [100.0, 100.0, 110.0]))
+    _seed_benchmark(db_session, MON)
+    db_session.commit()
+
+    report = run_event_study(db_session, benchmark=BENCH, horizons=(1,), n_boot=500)
+    ci = report["overall"]["mean_excess_ci"][1]
+    assert ci is not None and ci["ci_low"] > 0 and ci["verdict"] == "positive"
+    assert report["overall"]["hit_rate_ci"][1]["verdict"] == "positive"
+    # Zero-variance returns leave the IC undefined, but the CI key still exists.
+    assert 1 in report["ic_ci"]["composite"]
+
+
+def test_event_study_ci_straddles_zero_on_noise(db_session):
+    # Three winners (+10%) and three losers (-10%): mean excess ~ 0, so the CI
+    # must straddle zero and read as indistinguishable.
+    for i in range(6):
+        last = 110.0 if i < 3 else 90.0
+        st = make_stock(db_session, f"CIN{i}")
+        _history_row(db_session, st, info_date=MON, composite=60.0 + i)
+        repo.upsert_daily_prices(db_session, st.id, _bars(MON, [100.0, 100.0, last]))
+    _seed_benchmark(db_session, MON)
+    db_session.commit()
+
+    report = run_event_study(db_session, benchmark=BENCH, horizons=(1,), n_boot=1000)
+    ci = report["overall"]["mean_excess_ci"][1]
+    assert ci["ci_low"] < 0 < ci["ci_high"]
+    assert ci["verdict"] == "indistinguishable from zero"
+
+
 def test_api_backtest_endpoint(db_session):
     from fastapi.testclient import TestClient
     from api.main import app
@@ -216,9 +254,10 @@ def test_persona_curve_rebased_and_forward_return(db_session):
     assert report["curve_offsets"] == [0, 1]
     buffett = _persona(report, "warren_buffett")
     assert buffett["n_buy"] == 1 and buffett["n_avoid"] == 0
+    # A single pick can't support a band — p5/p95 are honestly None, not the point.
     assert buffett["curve"] == [
-        {"t": 0, "portfolio": 100.0, "benchmark": 100.0, "n": 1},
-        {"t": 1, "portfolio": 110.0, "benchmark": 100.0, "n": 1},
+        {"t": 0, "portfolio": 100.0, "benchmark": 100.0, "n": 1, "p5": None, "p95": None},
+        {"t": 1, "portfolio": 110.0, "benchmark": 100.0, "n": 1, "p5": None, "p95": None},
     ]
     assert abs(buffett["stats"]["mean_return"][1] - 10.0) < 1e-9
     assert abs(buffett["stats"]["hit_rate"][1] - 100.0) < 1e-9
@@ -321,3 +360,55 @@ def test_api_backtest_personas_endpoint(db_session):
     with TestClient(app) as client:
         bad = client.get("/api/backtest/personas", params={"personas": "nobody"})
     assert bad.status_code == 400
+
+
+def test_api_backtest_ci_fields(db_session):
+    from fastapi.testclient import TestClient
+    from api.main import app
+
+    for i in range(4):
+        st = make_stock(db_session, f"APIC{i}")
+        _history_row(db_session, st, info_date=MON, composite=70.0 + i, tier="high")
+        repo.upsert_daily_prices(db_session, st.id, _bars(MON, RISING))
+    _seed_benchmark(db_session, MON)
+    db_session.commit()
+
+    with TestClient(app) as client:
+        resp = client.get("/api/backtest", params={"benchmark": BENCH})
+    assert resp.status_code == 200
+    body = resp.json()
+    # Horizon-keyed dicts arrive JSON-stringified: {"5": …}.
+    assert "ic_ci" in body and "composite" in body["ic_ci"]
+    ov = body["overall"]
+    assert "mean_excess_ci" in ov and "hit_rate_ci" in ov
+    ci = ov["mean_excess_ci"]["5"]
+    assert ci is not None
+    assert set(ci) >= {"point", "ci_low", "ci_high", "verdict", "n"}
+    assert ci["verdict"] == "positive"  # four rising names beat a flat benchmark
+    assert body["by_tier"]["high"]["mean_excess_ci"]["5"] is not None
+
+
+def test_api_backtest_personas_ci_fields(db_session):
+    from fastapi.testclient import TestClient
+    from api.main import app
+
+    for i in range(4):
+        st = make_stock(db_session, f"PPC{i}")
+        _history_row(db_session, st, info_date=MON, composite=80.0)
+        repo.upsert_daily_prices(db_session, st.id, _bars(MON, RISING))
+        _verdict(db_session, st, "warren_buffett", 9, "BUY")
+    _seed_benchmark(db_session, MON)
+    db_session.commit()
+
+    with TestClient(app) as client:
+        resp = client.get("/api/backtest/personas", params={"benchmark": BENCH})
+    assert resp.status_code == 200
+    body = resp.json()
+    buffett = next(p for p in body["personas"] if p["persona"] == "warren_buffett")
+    assert "spread_ci" in buffett
+    # Curve points carry the p5/p95 band alongside the mean path.
+    assert buffett["curve"]
+    assert set(buffett["curve"][0]) >= {"t", "portfolio", "p5", "p95", "n"}
+    # Four BUYs and no AVOID: the spread is undefined, so its CI is honestly None.
+    assert buffett["spread_ci"]["5"] is None
+    assert "spread_ci" in body["subset"]

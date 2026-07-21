@@ -31,6 +31,37 @@ function linePath(
   return d.trim();
 }
 
+// Filled polygon for the p5/p95 uncertainty band: p95 forward along the top,
+// p5 back along the bottom. Contiguous runs only — a gap (a point without a
+// band) closes the current polygon so the fill never bridges missing data.
+function bandArea(
+  pts: EquityPoint[],
+  x: (t: number) => number,
+  y: (v: number) => number,
+): string {
+  let d = "";
+  let run: EquityPoint[] = [];
+  const flush = () => {
+    if (run.length >= 2) {
+      run.forEach((p, i) => {
+        d += `${i ? "L" : "M"}${x(p.t).toFixed(1)} ${y(p.p95 as number).toFixed(1)} `;
+      });
+      for (let i = run.length - 1; i >= 0; i--) {
+        const p = run[i];
+        d += `L${x(p.t).toFixed(1)} ${y(p.p5 as number).toFixed(1)} `;
+      }
+      d += "Z ";
+    }
+    run = [];
+  };
+  for (const p of pts) {
+    if (p.p5 != null && p.p95 != null) run.push(p);
+    else flush();
+  }
+  flush();
+  return d.trim();
+}
+
 export default function EquityCurve({
   points,
   benchmarkLabel,
@@ -59,6 +90,8 @@ export default function EquityCurve({
     for (const p of points) {
       vals.push(p.portfolio);
       if (p.benchmark != null) vals.push(p.benchmark);
+      if (p.p5 != null) vals.push(p.p5);
+      if (p.p95 != null) vals.push(p.p95);
     }
     let lo = vals.length ? Math.min(...vals, 100) : 90;
     let hi = vals.length ? Math.max(...vals, 100) : 110;
@@ -122,6 +155,8 @@ export default function EquityCurve({
 
   const portfolioPath = linePath(points, (p) => p.portfolio, geom.x, geom.y);
   const benchPath = linePath(points, (p) => p.benchmark, geom.x, geom.y);
+  const bandPath = bandArea(points, geom.x, geom.y);
+  const hasBand = bandPath.length > 0;
   const last = points[points.length - 1];
   const finalRet = last.portfolio - 100;
   const finalExcess =
@@ -141,6 +176,15 @@ export default function EquityCurve({
           />
           <span className="text-muted">{benchmarkLabel}</span>
         </span>
+        {hasBand && (
+          <span
+            className="flex items-center gap-1.5"
+            title="5th–95th percentile of the portfolio's value from resampling the picks — how much the path could wander given so few names."
+          >
+            <span className="inline-block h-2.5 w-4 rounded-[1px] bg-brass/20" />
+            <span className="text-muted">5–95% band</span>
+          </span>
+        )}
         <span className="num ml-auto text-muted">
           {last.t}d held ·{" "}
           <span style={{ color: finalRet >= 0 ? "var(--color-sage)" : "var(--color-terracotta)" }}>
@@ -208,6 +252,10 @@ export default function EquityCurve({
           trading days held
         </text>
 
+        {/* uncertainty band, drawn first so both lines sit on top of it */}
+        {hasBand && (
+          <path d={bandPath} fill="var(--color-brass)" fillOpacity={0.14} stroke="none" />
+        )}
         <path d={benchPath} fill="none" stroke="var(--color-muted)" strokeWidth={1.5} />
         <path d={portfolioPath} fill="none" stroke="var(--color-brass)" strokeWidth={2} />
 

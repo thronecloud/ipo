@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo } from "react";
-import type { PersonaResult } from "@/lib/types";
+import type { CI, PersonaResult } from "@/lib/types";
 import { PERSONA_BY_SLUG } from "@/lib/personas";
 import { DASH } from "@/lib/format";
 
@@ -24,11 +24,24 @@ function valueOf(p: PersonaResult, metric: Metric, h: string): number | null {
   return p.stats.mean_excess?.[h] ?? null;
 }
 
+function ciOf(p: PersonaResult, metric: Metric, h: string): CI | null {
+  if (metric === "hit_rate") return p.stats.hit_rate_ci?.[h] ?? null;
+  if (metric === "spread") return p.spread_ci?.[h] ?? null;
+  return p.stats.mean_excess_ci?.[h] ?? null;
+}
+
 function fmt(v: number | null, metric: Metric): string {
   if (v == null) return DASH;
   if (metric === "hit_rate") return `${v.toFixed(0)}%`;
   const sign = v > 0 ? "+" : "";
   return `${sign}${v.toFixed(1)}`;
+}
+
+// e.g. "95% CI −1.2 to +4.8 · indistinguishable from zero"
+function ciNote(ci: CI | null): string {
+  if (!ci) return "too few names to bootstrap a CI";
+  const f = (x: number) => `${x > 0 ? "+" : ""}${x.toFixed(1)}`;
+  return `95% CI ${f(ci.ci_low)} to ${f(ci.ci_high)} · ${ci.verdict}`;
 }
 
 export default function PersonaRanking({
@@ -48,7 +61,11 @@ export default function PersonaRanking({
   const sel = new Set(selected);
 
   const rows = useMemo(() => {
-    const withVal = personas.map((p) => ({ p, v: valueOf(p, metric, h) }));
+    const withVal = personas.map((p) => ({
+      p,
+      v: valueOf(p, metric, h),
+      ci: ciOf(p, metric, h),
+    }));
     // Nulls (no picks / no data at this horizon) sink to the bottom.
     return withVal.sort((a, b) => {
       if (a.v == null && b.v == null) return 0;
@@ -73,14 +90,17 @@ export default function PersonaRanking({
         council; click a name to add or drop it from the selected set above.
       </p>
       <div className="space-y-1">
-        {rows.map(({ p, v }) => {
+        {rows.map(({ p, v, ci }) => {
           const meta = PERSONA_BY_SLUG[p.persona];
           const on = sel.has(p.persona);
           const pos = v != null && v >= 0;
           const frac = v == null ? 0 : Math.min(1, Math.abs(v) / maxAbs);
+          // A value whose CI straddles its null is noise; mute it so the eye
+          // doesn't rank on a number the data can't support.
+          const noise = ci != null && ci.verdict === "indistinguishable from zero";
           const title =
             `${meta?.name ?? p.persona}: ${fmt(v, metric)} at ${horizon}d · ` +
-            `${p.n_buy} BUY / ${p.n_avoid} AVOID picks`;
+            `${p.n_buy} BUY / ${p.n_avoid} AVOID picks · ${ciNote(ci)}`;
           return (
             <button
               key={p.persona}
@@ -135,7 +155,7 @@ export default function PersonaRanking({
                 className="num w-14 shrink-0 text-right text-[11px]"
                 style={{
                   color:
-                    v == null
+                    v == null || noise
                       ? "var(--color-muted)"
                       : diverging
                         ? pos
