@@ -468,3 +468,58 @@ export interface PersonaStudy {
   personas: PersonaResult[];
   subset: SubsetResult;
 }
+
+// ── Walk-forward vintages + prompt-era attribution ────────────────
+// The event study rolled through time: one window per formation date, each with
+// mean excess / hit rate / IC over the hold horizon (+ bootstrap CIs), split by
+// the dominant prompt_version and model era, plus an IC-decay curve.
+
+// One era's slice within a window. `insufficient` true -> too few measured names
+// to print a number; only era_n / n are meaningful there.
+export interface EraSlice {
+  era_n: number; // stocks in this era's cohort for the window
+  n: number; // measured (contributed a hold-horizon return)
+  insufficient: boolean;
+  mean_excess?: number | null;
+  mean_excess_ci?: CI | null;
+  hit_rate?: number | null;
+  hit_rate_ci?: CI | null;
+  ic?: number | null;
+  ic_ci?: CI | null;
+}
+
+export interface VintageWindow {
+  date: string; // formation date "YYYY-MM-DD"
+  n_cohort: number; // stocks whose latest view existed as of this date
+  n: number; // measured at the hold horizon
+  mean_excess: number | null;
+  mean_excess_ci: CI | null;
+  hit_rate: number | null;
+  hit_rate_ci: CI | null;
+  ic: number | null;
+  ic_ci: CI | null;
+  eras: {
+    prompt_version: Record<string, EraSlice>;
+    model: Record<string, EraSlice>;
+  };
+  ic_by_horizon: Record<string, number | null>;
+}
+
+export interface IcDecayPoint {
+  horizon: number; // trading days
+  ic: number | null; // mean IC across windows at this horizon
+  ic_ci: CI | null; // bootstrap band over the windows
+  n_windows: number;
+}
+
+export interface VintageStudy {
+  benchmark: string;
+  benchmark_bars: number;
+  step_days: number;
+  hold_days: number;
+  decay_horizons: number[];
+  min_era_n: number;
+  window_dates: string[];
+  windows: VintageWindow[];
+  ic_decay: IcDecayPoint[];
+}

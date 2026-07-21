@@ -21,6 +21,7 @@ import type {
   StockDetail,
   StockList,
   Usage,
+  VintageStudy,
 } from "./types";
 
 const ABSOLUTE_BASE = process.env.NEXT_PUBLIC_API_BASE ?? "http://localhost:8000";
@@ -123,6 +124,15 @@ export const api = {
   backtestPersonas: (personas?: string[], signal?: AbortSignal) =>
     get<PersonaStudy>(
       `/api/backtest/personas${toQS({ personas: personas?.length ? personas.join(",") : undefined })}`,
+      signal,
+    ),
+
+  backtestVintages: (
+    opts: { step?: number; hold?: number } = {},
+    signal?: AbortSignal,
+  ) =>
+    get<VintageStudy>(
+      `/api/backtest/vintages${toQS(opts as Record<string, unknown>)}`,
       signal,
     ),
 

@@ -14,6 +14,11 @@ from engine.backtest.study import (
     run_event_study,
     run_persona_study,
 )
+from engine.backtest.vintages import (
+    DEFAULT_HOLD_DAYS,
+    DEFAULT_STEP_DAYS,
+    run_vintage_study,
+)
 from src.fetch_screener_data import parse_number
 
 from api.deps import (
@@ -557,3 +562,20 @@ def backtest_personas(
         if unknown:
             raise HTTPException(status_code=400, detail=f"Unknown persona(s): {unknown}")
     return run_persona_study(db, benchmark=benchmark, personas=subset)
+
+
+@router.get("/backtest/vintages")
+def backtest_vintages(
+    benchmark: str = Query(DEFAULT_BENCHMARK),
+    step: int = Query(DEFAULT_STEP_DAYS, ge=1, le=252,
+                      description="Trading days between rolling formation dates."),
+    hold: int = Query(DEFAULT_HOLD_DAYS, ge=1, le=252,
+                      description="Trading-day holding horizon each window is measured over."),
+    db: Session = Depends(get_db),
+):
+    """Walk-forward vintages: the point-in-time event study rolled through time.
+    Each window forms the cohort of stocks whose latest composite as of that date
+    exists (no lookahead), measures forward excess/hit rate/IC over the hold
+    horizon with bootstrap CIs, and stratifies by the dominant prompt_version and
+    model era. Also returns an IC-decay curve averaged across the windows."""
+    return run_vintage_study(db, benchmark=benchmark, step_days=step, hold_days=hold)

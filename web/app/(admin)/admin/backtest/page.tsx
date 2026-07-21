@@ -13,6 +13,7 @@ import type {
   CohortBlock,
   PersonaStudy,
   Verdict,
+  VintageStudy,
 } from "@/lib/types";
 import { composite, compositeColor, pct, shortDate, DASH } from "@/lib/format";
 import { PERSONA_ORDER, PERSONA_SLUGS } from "@/lib/personas";
@@ -22,6 +23,7 @@ import RecChip from "@/components/RecChip";
 import TierChip from "@/components/TierChip";
 import PersonaWeighting from "@/components/PersonaWeighting";
 import EquityCurve from "@/components/EquityCurve";
+import VintageSignals from "@/components/VintageSignals";
 import PersonaRanking, { Metric } from "@/components/PersonaRanking";
 import { Panel, PanelHeader } from "@/components/Panel";
 import { ErrorState, Skeleton, TableSkeleton } from "@/components/States";
@@ -97,6 +99,13 @@ export default function BacktestPage() {
     loading: ploading,
     error: perror,
   } = useAsync<PersonaStudy>(personaFetcher, [subsetKey]);
+
+  const vintageFetcher = useCallback((s: AbortSignal) => api.backtestVintages({}, s), []);
+  const {
+    data: vdata,
+    loading: vloading,
+    error: verror,
+  } = useAsync<VintageStudy>(vintageFetcher, []);
 
   const [metric, setMetric] = useState<Metric>("mean_excess");
   const [focusH, setFocusH] = useState<number>(21);
@@ -498,6 +507,24 @@ export default function BacktestPage() {
           )}
         </div>
       </Panel>
+
+      {/* signal over time — the study rolled forward, with era attribution */}
+      {verror ? (
+        <Panel>
+          <PanelHeader title="Signal over time" editorial />
+          <p className="px-4 py-8 text-center text-sm text-terracotta">{verror}</p>
+        </Panel>
+      ) : !vdata ? (
+        <Panel>
+          <div className="p-4">
+            <Skeleton style={{ height: 280 }} />
+          </div>
+        </Panel>
+      ) : (
+        <div className={vloading ? "opacity-60 transition-opacity" : "transition-opacity"}>
+          <VintageSignals data={vdata} benchmark={data.benchmark} />
+        </div>
+      )}
 
       {/* ── TABLES AFTER ─────────────────────────────────────────── */}
 
