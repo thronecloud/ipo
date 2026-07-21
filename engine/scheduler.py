@@ -36,6 +36,7 @@ from engine.analysis.engine import run_incremental
 from engine.ingest.amfi import auto_reingest
 from engine.ingest.announcements import fetch_announcements
 from engine.ingest.bhavcopy import fetch_bhavcopy
+from engine.ingest.corporate_calendar import chase_events, fetch_calendar
 from engine.ingest.bulk_deals import fetch_bulk_deals
 from engine.ingest.discover import discover_ipos
 from engine.ingest.reports import fetch_reports
@@ -272,6 +273,20 @@ def job_bulk_deals():
     # Daily after-market-close poll of NSE's bulk/block large-deal snapshot.
     print(f"[scheduler][{_now()}] bulk/block deals (NSE)")
     fetch_bulk_deals(verbose=False)
+
+
+def job_calendar():
+    # Daily poll of NSE's corporate event calendar — the upcoming board-meeting/results
+    # dates that drive event-driven fetching (append-only, deduped).
+    print(f"[scheduler][{_now()}] corporate events calendar (NSE)")
+    fetch_calendar(verbose=False)
+
+
+def job_event_chase():
+    # Event trigger: for universe stocks whose results date is today/yesterday and not
+    # yet chased, fire the targeted refresh chain and queue their analysis (no LLM call).
+    print(f"[scheduler][{_now()}] event chase (fresh results)")
+    chase_events(verbose=False)
 
 
 def job_shareholding():
@@ -534,6 +549,15 @@ def build_scheduler() -> BlockingScheduler:
     # a result announced today has its document pulled the same day.
     sched.add_job(safe(job_reports_fresh), CronTrigger(hour=13, minute=15),
                   id="reports_fresh", misfire_grace_time=MISFIRE_DAILY)
+    # Daily corporate-event calendar at 13:00 UTC — NSE's forward-looking board-meeting /
+    # results schedule, the trigger source for event-driven fetching (append-only, deduped).
+    sched.add_job(safe(job_calendar), CronTrigger(hour=13, minute=0), id="calendar",
+                  misfire_grace_time=MISFIRE_DAILY)
+    # Event trigger every 2h across the IST market+evening window (04:00–14:00 UTC) —
+    # chases a universe stock's results date the day it lands instead of waiting for the
+    # blind rotations. Cheap when nothing is due (a bounded calendar query).
+    sched.add_job(safe(job_event_chase), CronTrigger(hour="4-15/2", minute=20),
+                  id="event_chase", misfire_grace_time=MISFIRE_HOURLY)
     # Weekly full report sweep — Sunday 05:30 UTC (budget-bounded).
     sched.add_job(safe(job_reports), CronTrigger(day_of_week="sun", hour=5, minute=30),
                   id="reports", misfire_grace_time=MISFIRE_DAILY)
@@ -582,6 +606,8 @@ _JOB_META: dict[str, tuple[str, str | None]] = {
     "dq_fill":       ("Close the data gaps the latest audit flagged", "dq_fill"),
     "announcements": ("Poll NSE + BSE corporate-announcement feeds (append-only, deduped)", "corporate_announcements"),
     "bulk_deals":    ("Poll NSE bulk/block large-deal snapshot after market close", "bulk_deals"),
+    "calendar":      ("Poll NSE's corporate event calendar (upcoming results/board-meeting dates)", "corporate_calendar"),
+    "event_chase":   ("Chase fresh results dates: targeted refresh chain + queue analysis (no LLM)", "event_chase"),
     "reports_fresh": ("Download documents for freshly-announced results (daily trigger)", "corporate_filings"),
     "reports":       ("Weekly report sweep — results/annual-report docs for active universe", "corporate_filings"),
     "extract_documents": ("Extract filing text + statutory financials (deterministic, OCR, zero LLM)", "extract_documents"),
@@ -616,7 +642,11 @@ def _cadence_text(trigger) -> str:
     hour = f.get("hour", "*")
     if hour == "*":
         return f"hourly :{int(minute):02d}"
-    hhmm = f"{int(hour):02d}:{int(minute):02d} UTC"
+    try:
+        hhmm = f"{int(hour):02d}:{int(minute):02d} UTC"
+    except ValueError:
+        # A range / step / list of hours (an event window, not a single fire time).
+        return f"hours {hour} at :{int(minute):02d} UTC"
     dow = f.get("day_of_week", "*")
     day = f.get("day", "*")
     if dow != "*":

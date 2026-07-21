@@ -571,6 +571,64 @@ class ExtractedFinancial(Base):
     extracted_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
 
 
+class CorporateEvent(Base):
+    """An upcoming corporate event (board meeting / results date) off the NSE
+    event-calendar feed.
+
+    Forward-looking and re-served whole on every poll, so ingestion is idempotent —
+    dedup on (symbol, event_date, purpose_hash). `stock_id` is resolved to our universe
+    where the symbol matches and left NULL otherwise (a non-universe company's meeting is
+    still a fact). `chased_at` records that the event trigger has already fired the
+    targeted refresh chain for this event, so a stock's results date fires exactly one
+    chase however often the trigger runs.
+    """
+
+    __tablename__ = "corporate_events"
+    __table_args__ = (
+        UniqueConstraint("symbol", "event_date", "purpose_hash",
+                         name="uq_corp_event_symbol_date_purpose"),
+        Index("ix_corp_event_symbol", "symbol"),
+        Index("ix_corp_event_date", "event_date"),
+        Index("ix_corp_event_stock", "stock_id"),
+    )
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    stock_id: Mapped[int | None] = mapped_column(
+        ForeignKey("stocks.id", ondelete="SET NULL")
+    )
+    symbol: Mapped[str] = mapped_column(String(64))            # raw exchange ticker
+    event_type: Mapped[str | None] = mapped_column(String(32))  # results / other
+    event_date: Mapped[date] = mapped_column(Date)
+    purpose_text: Mapped[str | None] = mapped_column(Text)
+    purpose_hash: Mapped[str] = mapped_column(String(64))
+    source: Mapped[str] = mapped_column(String(8), default="NSE")
+    chased_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+    raw: Mapped[dict | None] = mapped_column(JSONType)
+    fetched_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
+
+
+class AnalysisQueue(Base):
+    """A pending signal that a stock's analysis should be refreshed.
+
+    Written by the event trigger when a results date arrives (reason='results') — not an
+    LLM call, just a prioritisation signal. The analyze job prefers queued stocks
+    (oldest-first) ahead of its normal sweep and marks the rows consumed once it has
+    worked the stock; an empty queue leaves the analyze ordering unchanged.
+    """
+
+    __tablename__ = "analysis_queue"
+    __table_args__ = (
+        Index("ix_analysis_queue_pending", "consumed_at", "queued_at"),
+        Index("ix_analysis_queue_stock", "stock_id"),
+    )
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    stock_id: Mapped[int] = mapped_column(ForeignKey("stocks.id", ondelete="CASCADE"))
+    reason: Mapped[str] = mapped_column(String(32), default="results")
+    queued_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
+    consumed_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+
+
 class StockInsight(Base):
     """Distilled, reusable takeaways — the seed of the memory/knowledge layer."""
 

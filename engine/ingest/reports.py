@@ -26,7 +26,7 @@ import os
 import re
 from datetime import datetime, timezone
 
-from sqlalchemy import exists, select
+from sqlalchemy import exists, func, or_, select
 from sqlalchemy.dialects.postgresql import insert as pg_insert
 
 from db.models import CorporateAnnouncement, CorporateFiling, Stock
@@ -166,18 +166,24 @@ def _fetch_annual_reports(http, symbol: str):
 
 
 def fetch_reports(limit=200, budget_mb=None, since=None, include_annual_reports=True,
-                  verbose=True) -> dict:
+                  symbols=None, verbose=True) -> dict:
     """Download report documents for the active universe. `since` restricts the
     announcement candidates to those announced at/after it (the fresh-results trigger);
-    None sweeps everything. `limit` bounds how many active stocks are considered."""
+    None sweeps everything. `symbols` narrows the sweep to specific tickers (the event
+    trigger's targeted per-stock chase); None sweeps the whole active universe. `limit`
+    bounds how many active stocks are considered."""
     budget_bytes = (BUDGET_MB if budget_mb is None else budget_mb) * _MB
     max_file_bytes = MAX_FILE_MB * _MB
-    with job_run("corporate_filings", target=f"active/{limit}") as (session, stats):
+    target = f"{len(symbols)} symbols" if symbols else f"active/{limit}"
+    with job_run("corporate_filings", target=target) as (session, stats):
         counts = {"candidates": 0, "downloaded": 0, "duplicate": 0, "skipped_existing": 0,
                   "skipped_cap": 0, "skipped_budget": 0, "failed": 0, "bytes": 0}
-        stocks = session.scalars(
-            select(Stock).where(Stock.status == "active").order_by(Stock.id).limit(limit)
-        ).all()
+        q = select(Stock).where(Stock.status == "active")
+        if symbols:
+            keys = [s.upper() for s in symbols]
+            q = q.where(or_(func.upper(Stock.symbol).in_(keys),
+                            func.upper(Stock.nse_symbol).in_(keys)))
+        stocks = session.scalars(q.order_by(Stock.id).limit(limit)).all()
         stock_ids = [s.id for s in stocks]
         if not stock_ids:
             stats.update(counts)

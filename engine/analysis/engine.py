@@ -12,9 +12,9 @@ import logging
 import time
 from concurrent.futures import ThreadPoolExecutor
 
-from sqlalchemy import select
+from sqlalchemy import func, select, update
 
-from db.models import Stock
+from db.models import AnalysisQueue, Stock
 from engine.analysis.backend import default_model, get_backend
 from engine.analysis.errors import is_transient
 from engine.analysis.prompt import build_user_prompt
@@ -60,8 +60,25 @@ def is_dead_lettered(session, stock_id: int, persona: str, data_hash: str,
 
 
 def find_work(session, personas, universe=None, symbols=None, force=False, limit=0):
-    """Yield (stock, snapshot, persona_slug) tuples that need analysis."""
-    q = select(Stock).order_by(Stock.symbol)
+    """Yield (stock, snapshot, persona_slug) tuples that need analysis.
+
+    Selection prefers stocks with a pending analysis_queue row (an event trigger flagged
+    their results stale), oldest-queued first, ahead of the normal symbol-ordered sweep.
+    An empty queue leaves the ordering unchanged (every stock's queued time is NULL, so
+    the tiebreak is symbol as before)."""
+    # min pending queued_at per stock — the reprioritisation key.
+    pending = (
+        select(AnalysisQueue.stock_id.label("stock_id"),
+               func.min(AnalysisQueue.queued_at).label("queued_at"))
+        .where(AnalysisQueue.consumed_at.is_(None))
+        .group_by(AnalysisQueue.stock_id)
+        .subquery()
+    )
+    q = (
+        select(Stock)
+        .outerjoin(pending, Stock.id == pending.c.stock_id)
+        .order_by(pending.c.queued_at.asc().nullslast(), Stock.symbol)
+    )
     if symbols:
         q = q.where(Stock.symbol.in_([s.upper() for s in symbols]))
     if universe:
@@ -82,6 +99,22 @@ def find_work(session, personas, universe=None, symbols=None, force=False, limit
             if limit and len(work) >= limit:
                 return work
     return work
+
+
+def consume_queue(session, stock_ids) -> int:
+    """Mark pending analysis_queue rows for these stocks consumed. Idempotent — an
+    already-consumed row is untouched. Returns the number newly consumed."""
+    if not stock_ids:
+        return 0
+    from db.models import utcnow
+    result = session.execute(
+        update(AnalysisQueue)
+        .where(AnalysisQueue.stock_id.in_(set(stock_ids)),
+               AnalysisQueue.consumed_at.is_(None))
+        .values(consumed_at=utcnow())
+        .execution_options(synchronize_session=False)
+    )
+    return result.rowcount
 
 
 def run_incremental(personas=None, universe=None, symbols=None, model=None, force=False,
@@ -116,6 +149,11 @@ def run_incremental(personas=None, universe=None, symbols=None, model=None, forc
                 groups[-1][2].append(slug)
             else:
                 groups.append((stock, snap, [slug]))
+
+        # Consume the queue for stocks this run is working: the event trigger's staleness
+        # signal has been acted on, so it no longer reprioritises future runs.
+        consumed = consume_queue(session, [g[0].id for g in groups])
+        stats["queue_consumed"] = consumed
 
         touched_stock_ids = set()
         i = -1
