@@ -295,6 +295,24 @@ export default function DiscoveryPage() {
           );
         },
       },
+      {
+        key: "analyzed",
+        header: "Last analysed",
+        sortKey: "last_analyzed",
+        align: "right",
+        width: 96,
+        render: (r) =>
+          r.last_analyzed_at == null ? (
+            <span className="num text-xs text-muted">{DASH}</span>
+          ) : (
+            <span
+              className="num text-xs text-muted"
+              title={`Last analysed ${new Date(r.last_analyzed_at).toLocaleString("en-IN")}`}
+            >
+              {relTime(r.last_analyzed_at)}
+            </span>
+          ),
+      },
     ];
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedPersonas, total, page, watchlist, filters.consensus, patchFilters]);

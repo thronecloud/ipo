@@ -114,6 +114,19 @@ def _quote_fields(raw, fallback: tuple | None, issue_price: float | None) -> dic
     })
 
 
+def _last_analyzed_sq():
+    """stock_id -> max(analyzed_at) across all its analyses. One grouped scan;
+    powers both the last_analyzed sort and the list row's timestamp (no N+1)."""
+    return (
+        select(
+            Analysis.stock_id.label("stock_id"),
+            func.max(Analysis.analyzed_at).label("last_analyzed_at"),
+        )
+        .group_by(Analysis.stock_id)
+        .subquery()
+    )
+
+
 def _latest_composite_sq():
     """DISTINCT ON (stock_id) latest composite score row."""
     return (
@@ -183,11 +196,13 @@ def list_stocks(
 ):
     snap = _latest_yf_snapshot_sq()
     cs = _latest_composite_sq()
+    la = _last_analyzed_sq()
 
     base = (
-        select(Stock, cs, snap)
+        select(Stock, cs, snap, la.c.last_analyzed_at)
         .outerjoin(cs, cs.c.stock_id == Stock.id)
         .outerjoin(snap, snap.c.stock_id == Stock.id)
+        .outerjoin(la, la.c.stock_id == Stock.id)
     )
 
     # --- filters (all pushed to SQL) ---
@@ -217,6 +232,7 @@ def list_stocks(
         "revenue_growth": snap.c.revenue_growth,
         "composite_score": cs.c.composite_score,
         "lcb": cs.c.lcb,
+        "last_analyzed": la.c.last_analyzed_at,
     }
     if sort in sort_map:
         col = sort_map[sort]
@@ -268,6 +284,7 @@ def list_stocks(
                 consensus_recommendation=consensus_rec,
                 analysis_coverage=coverage,
                 composite_updated_at=row._mapping.get("computed_at"),
+                last_analyzed_at=row._mapping.get("last_analyzed_at"),
                 per_persona=per_persona_by_stock.get(stock.id, {}),
                 **_quote_fields(row._mapping, quote_fb.get(stock.id), stock.issue_price),
             )

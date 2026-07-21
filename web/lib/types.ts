@@ -40,6 +40,7 @@ export interface StockRow {
   consensus_recommendation: Recommendation | null;
   analysis_coverage: number;
   composite_updated_at: string | null;
+  last_analyzed_at: string | null; // max analyzed_at over its analyses
   per_persona: Record<string, PerPersonaVerdict>;
   current_price: number | null; // rupees
   market_cap_cr: number | null; // crore

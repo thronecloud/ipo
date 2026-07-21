@@ -45,6 +45,7 @@ class StockListItem(BaseModel):
     consensus_recommendation: str | None = None
     analysis_coverage: int | None = None
     composite_updated_at: datetime | None = None
+    last_analyzed_at: datetime | None = None   # max analyzed_at over its analyses
     per_persona: dict[str, PersonaVerdict] = {}
     current_price: float | None = None       # rupees
     market_cap_cr: float | None = None       # crore

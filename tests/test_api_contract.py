@@ -111,6 +111,45 @@ def test_stocks_pagination(client, seeded):
     assert b1["page"] == 1 and b1["page_size"] == 2
 
 
+# ---------- last_analyzed_at: analysis recency ----------
+
+def test_stocks_list_exposes_last_analyzed_at(client, seeded):
+    r = client.get("/api/stocks")
+    assert r.status_code == 200
+    by_symbol = {i["symbol"]: i for i in r.json()["items"]}
+    # ALPHA carries analyses; BETA (snapshot only) and GAMMA (bare) carry none.
+    assert by_symbol["ALPHA"]["last_analyzed_at"] is not None
+    assert by_symbol["BETA"]["last_analyzed_at"] is None
+    assert by_symbol["GAMMA"]["last_analyzed_at"] is None
+
+
+def test_stocks_list_sorts_by_last_analyzed(client, db_session):
+    """Recency sort orders on max(analyzed_at); a stock with zero analyses is
+    NULL and sinks to the bottom in BOTH directions, never 500ing the sort."""
+    from factories import make_analysis, make_stock, utc
+
+    old = make_stock(db_session, "OLDAN", universe=["ipo_2025"])
+    new = make_stock(db_session, "NEWAN", universe=["ipo_2025"])
+    make_stock(db_session, "BAREAN", universe=["ipo_2025"])  # zero analyses
+    make_analysis(db_session, old, "warren_buffett", 6, "HOLD", analyzed_at=utc(-10_000))
+    make_analysis(db_session, new, "warren_buffett", 6, "HOLD", analyzed_at=utc(-1))
+    db_session.commit()
+
+    desc = client.get(
+        "/api/stocks", params={"sort": "last_analyzed", "order": "desc"}
+    ).json()["items"]
+    d = [i["symbol"] for i in desc]
+    assert d.index("NEWAN") < d.index("OLDAN")  # most recent first
+    assert d[-1] == "BAREAN" and desc[-1]["last_analyzed_at"] is None  # NULLs last
+
+    asc = client.get(
+        "/api/stocks", params={"sort": "last_analyzed", "order": "asc"}
+    ).json()["items"]
+    a = [i["symbol"] for i in asc]
+    assert a.index("OLDAN") < a.index("NEWAN")  # oldest first
+    assert a[-1] == "BAREAN" and asc[-1]["last_analyzed_at"] is None  # NULLs still last
+
+
 # ---------- /api/stocks/{symbol} ----------
 
 def test_stock_detail_council_order(client, seeded):
