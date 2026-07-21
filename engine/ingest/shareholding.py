@@ -14,6 +14,7 @@ from sqlalchemy import select
 from sqlalchemy.dialects.postgresql import insert as pg_insert
 
 from db.models import ShareholdingPattern, Stock
+from engine.ingest.archive import archive_safe
 from engine.ingest.exchange_base import NSE_BASE, clean, nse_session, to_float
 from engine.repo import job_run
 
@@ -125,13 +126,16 @@ def fetch_shareholding(limit=100, verbose=True) -> dict:
     """Sweep the active universe (bounded), pulling each stock's shareholding pattern.
     Weekly cron. One stock's feed failing does not sink the sweep."""
     with job_run("shareholding", target=f"active/{limit}") as (session, stats):
-        counts = {"stocks": 0, "added": 0, "no_data": 0, "soft_fail": 0}
+        counts = {"stocks": 0, "added": 0, "no_data": 0, "soft_fail": 0,
+                  "archive_failed": 0}
         http = nse_session()
         for stock in _active_universe(session, limit):
             symbol = stock.nse_symbol or stock.symbol
             counts["stocks"] += 1
             try:
-                rows = parse_nse_shareholding(_fetch_shareholding(http, symbol))
+                raw = _fetch_shareholding(http, symbol)
+                archive_safe("shareholding", symbol, raw, counts)
+                rows = parse_nse_shareholding(raw)
             except Exception as e:      # noqa: BLE001 — skip one, keep sweeping
                 counts["soft_fail"] += 1
                 if verbose:

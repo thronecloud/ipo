@@ -66,6 +66,14 @@ os.environ["DATABASE_URL"] = TEST_DATABASE_URL
 os.environ["NTFY_TOPIC"] = ""
 os.environ["NOTIFY_WEBHOOK_URL"] = ""
 
+# The raw-payload archive writes compressed files to disk. Point it at a throwaway
+# per-run tree so the wired fetch seams never pollute the repo's data/ dir during
+# tests; the archive tests override this per-test with their own tmp_path.
+import tempfile  # noqa: E402
+
+ARCHIVE_ROOT = str(Path(tempfile.gettempdir()) / f"ipo_archive_{TEST_RUN_ID}")
+os.environ.setdefault("ARCHIVE_ROOT", ARCHIVE_ROOT)
+
 import psycopg  # noqa: E402
 import pytest  # noqa: E402
 from sqlalchemy import text  # noqa: E402
@@ -161,6 +169,8 @@ def test_database():
     db_base.engine.dispose()
     _admin_execute(f"DROP DATABASE IF EXISTS {TEST_DB_NAME} WITH (FORCE)")
     _admin_execute(f"DROP DATABASE IF EXISTS {PARITY_DB_NAME} WITH (FORCE)")
+    import shutil
+    shutil.rmtree(os.environ.get("ARCHIVE_ROOT", ARCHIVE_ROOT), ignore_errors=True)
     owner.close()
 
 

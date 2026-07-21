@@ -348,6 +348,14 @@ def job_reconcile():
     reconcile(verbose=False)
 
 
+def job_archive_prune():
+    # Weekly retention sweep: reclaim archived raw-payload bytes past the disk budget
+    # and past the max age, oldest-first, keeping the index record of what existed.
+    from engine.ingest.archive import prune_archive
+    print(f"[scheduler][{_now()}] archive prune (raw payload retention)")
+    prune_archive(verbose=False)
+
+
 def job_reap():
     # A restart strands its own in-flight runs, and the boot-time reap spares them
     # for being seconds old. Recurring so those rows are cleared within the hour
@@ -584,6 +592,10 @@ def build_scheduler() -> BlockingScheduler:
     # Weekly gap-fill sweep — Saturday 04:00 UTC (bounded; identity fill is free).
     sched.add_job(safe(job_dq_fill), CronTrigger(day_of_week="sat", hour=4, minute=0),
                   id="dq_fill", misfire_grace_time=MISFIRE_DAILY)
+    # Weekly raw-payload archive retention — Sunday 02:30 UTC. Prunes files past the
+    # disk budget / max age (oldest-first), keeping the index record of what existed.
+    sched.add_job(safe(job_archive_prune), CronTrigger(day_of_week="sun", hour=2, minute=30),
+                  id="archive_prune", misfire_grace_time=MISFIRE_DAILY)
     # Dead-man's switch every 5 min — pings the external monitor so a total outage
     # (which kills every on-box alerter) is caught off-box. No-op unless the URL is set.
     sched.add_job(safe(job_heartbeat),
@@ -626,6 +638,7 @@ _JOB_META: dict[str, tuple[str, str | None]] = {
     "reports":       ("Weekly report sweep — results/annual-report docs for active universe", "corporate_filings"),
     "extract_documents": ("Extract filing text + statutory financials (deterministic, OCR, zero LLM)", "extract_documents"),
     "shareholding":  ("Sweep active-universe NSE shareholding patterns (quarterly)", "shareholding"),
+    "archive_prune": ("Prune archived raw payloads past disk budget / max age (keeps the index record)", "archive_prune"),
     "heartbeat":     ("Ping the external dead-man's switch (a bare ping, writes no job_run)", None),
 }
 

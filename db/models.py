@@ -701,6 +701,37 @@ class SourceTrust(Base):
     computed_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
 
 
+class RawPayload(Base):
+    """The compressed raw bytes of a fetch, archived BEFORE parsing.
+
+    Every ingest seam writes its untouched source response here first, so a parser
+    bug is a re-run away from recovery instead of permanent data loss, and the state
+    of the world as-known-at any past fetch can be reconstructed. Keyed by content:
+    `sha256` (of the raw, uncompressed bytes) is UNIQUE, so an unchanged daily poll
+    is stored once — the same digest returns the existing row rather than growing the
+    archive. `path` is the on-disk location of the compressed file; the retention job
+    NULLs it and stamps `pruned_at` when the file is deleted for age/budget, keeping
+    the RECORD that the payload once existed even after its bytes are gone.
+    """
+
+    __tablename__ = "raw_payloads"
+    __table_args__ = (
+        UniqueConstraint("sha256", name="uq_raw_payload_sha256"),
+        Index("ix_raw_payload_source_entity", "source", "entity"),
+        Index("ix_raw_payload_source_fetched", "source", "fetched_at"),
+    )
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    source: Mapped[str] = mapped_column(String(32))              # announcements / bhavcopy / ...
+    entity: Mapped[str] = mapped_column(String(128))            # exchange / symbol / date key
+    fetched_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
+    sha256: Mapped[str] = mapped_column(String(64))
+    path: Mapped[str | None] = mapped_column(String(512))       # NULL once pruned
+    bytes: Mapped[int | None] = mapped_column(BigInteger)       # stored (compressed) size on disk
+    content_type: Mapped[str | None] = mapped_column(String(64))
+    pruned_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+
+
 class StockInsight(Base):
     """Distilled, reusable takeaways — the seed of the memory/knowledge layer."""
 

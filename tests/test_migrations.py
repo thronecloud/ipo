@@ -53,6 +53,10 @@ CALENDAR_TABLES = ("corporate_events", "analysis_queue")
 RECONCILE_REV = "55233f9342f8"
 RECONCILE_TABLES = ("source_discrepancies", "source_trust")
 
+# Raw-payload archive index: added as a new, empty table (no backfill).
+ARCHIVE_REV = "a1c93f7e2d84"
+ARCHIVE_TABLES = ("raw_payloads",)
+
 # Structural drift we refuse to allow. modify_*/index reflection noise is ignored;
 # a new/removed table or column (the untracked-model trap) is not.
 STRUCTURAL = {"add_table", "remove_table", "add_column", "remove_column"}
@@ -218,6 +222,33 @@ def test_reconciliation_tables_created_empty_and_backfill_free():
         assert r.returncode == 0, f"reconcile upgrade failed:\n{r.stderr}"
         with psycopg.connect(PARITY_DSN, autocommit=True) as conn:
             for table in RECONCILE_TABLES:
+                (n,) = conn.execute(f"SELECT count(*) FROM {table}").fetchone()
+                assert n == 0, f"{table} should be empty after a backfill-free migration"
+    finally:
+        _admin(f"DROP DATABASE IF EXISTS {PARITY_DB} WITH (FORCE)")
+
+
+def test_raw_payloads_table_created_empty_and_backfill_free():
+    """The raw_payloads archive index is added as a new, empty table. Upgrading to its
+    revision over a schema that already holds a stock must create it with zero rows and
+    touch nothing pre-existing."""
+    _admin(f"DROP DATABASE IF EXISTS {PARITY_DB} WITH (FORCE)")
+    _admin(f"CREATE DATABASE {PARITY_DB}")
+    try:
+        env = {**os.environ, "DATABASE_URL": PARITY_URL}
+        # Schema at the revision *before* the archive table, with a stock so a
+        # (hypothetical, unwanted) backfill would have something to touch.
+        r = _alembic(RECONCILE_REV, env)
+        assert r.returncode == 0, f"pre-archive upgrade failed:\n{r.stderr}"
+        with psycopg.connect(PARITY_DSN, autocommit=True) as conn:
+            conn.execute(
+                "INSERT INTO stocks (symbol, universe, status, first_seen, last_updated) "
+                "VALUES ('SEED', '[]'::jsonb, 'active', now(), now())"
+            )
+        r = _alembic(ARCHIVE_REV, env)
+        assert r.returncode == 0, f"archive upgrade failed:\n{r.stderr}"
+        with psycopg.connect(PARITY_DSN, autocommit=True) as conn:
+            for table in ARCHIVE_TABLES:
                 (n,) = conn.execute(f"SELECT count(*) FROM {table}").fetchone()
                 assert n == 0, f"{table} should be empty after a backfill-free migration"
     finally:

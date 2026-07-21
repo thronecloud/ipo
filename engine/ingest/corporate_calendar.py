@@ -32,6 +32,7 @@ from sqlalchemy.dialects.postgresql import insert as pg_insert
 
 from db.models import AnalysisQueue, CorporateEvent, Stock, utcnow
 from engine.ingest.announcements import fetch_announcements
+from engine.ingest.archive import archive_safe
 from engine.ingest.exchange_base import NSE_BASE, clean, nse_session, resolve_stock_id
 from engine.ingest.reports import fetch_reports
 from engine.ingest.yf_refresh import refresh_one
@@ -130,8 +131,10 @@ def fetch_calendar(verbose=True) -> dict:
     """Poll NSE's event-calendar feed and store new rows. Daily cron (append-only,
     deduped)."""
     with job_run("corporate_calendar", target="NSE") as (session, stats):
-        counts = {"processed": 0, "added": 0, "unmatched": 0}
-        rows = parse_event_calendar(_fetch_event_calendar())
+        counts = {"processed": 0, "added": 0, "unmatched": 0, "archive_failed": 0}
+        raw = _fetch_event_calendar()
+        archive_safe("corporate_calendar", "NSE", raw, counts)
+        rows = parse_event_calendar(raw)
         counts["processed"] = len(rows)
         upsert_events(session, rows, counts)
         session.commit()

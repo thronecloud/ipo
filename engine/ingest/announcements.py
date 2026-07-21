@@ -20,6 +20,7 @@ from datetime import datetime, timezone
 from sqlalchemy.dialects.postgresql import insert as pg_insert
 
 from db.models import CorporateAnnouncement
+from engine.ingest.archive import archive_safe
 from engine.ingest.exchange_base import (
     BSE_BASE,
     NSE_BASE,
@@ -184,10 +185,13 @@ def _fetch_bse_announcements(days: int = 3) -> dict:
 def fetch_announcements(exchanges=("NSE", "BSE"), verbose=True) -> dict:
     """Poll the configured exchange announcement feeds and store new rows. Daily cron."""
     with job_run("corporate_announcements", target=",".join(exchanges)) as (session, stats):
-        counts = {"processed": 0, "added": 0, "unmatched": 0, "soft_fail": 0}
+        counts = {"processed": 0, "added": 0, "unmatched": 0, "soft_fail": 0,
+                  "archive_failed": 0}
         if "NSE" in exchanges:
             try:
-                rows = parse_nse_announcements(_fetch_nse_announcements())
+                raw = _fetch_nse_announcements()
+                archive_safe("announcements", "NSE", raw, counts)
+                rows = parse_nse_announcements(raw)
                 counts["processed"] += len(rows)
                 upsert_announcements(session, rows, counts)
                 session.commit()
@@ -199,7 +203,9 @@ def fetch_announcements(exchanges=("NSE", "BSE"), verbose=True) -> dict:
                     print(f"  NSE announcements FAILED: {e}")
         if "BSE" in exchanges:
             try:
-                rows = parse_bse_announcements(_fetch_bse_announcements())
+                raw = _fetch_bse_announcements()
+                archive_safe("announcements", "BSE", raw, counts)
+                rows = parse_bse_announcements(raw)
                 counts["processed"] += len(rows)
                 upsert_announcements(session, rows, counts)
                 session.commit()

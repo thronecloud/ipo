@@ -141,10 +141,15 @@ services:
       SCHED_REPORTS_FRESH_BUDGET_MB: ${SCHED_REPORTS_FRESH_BUDGET_MB:-50}
       # Deterministic (zero-LLM) document extraction: per-run page ceiling.
       EXTRACT_PAGE_BUDGET: ${EXTRACT_PAGE_BUDGET:-2000}
+      # Raw-payload archive: compressed source bytes stored before parsing so a parser
+      # bug is replayable. The weekly retention job (Sun 02:30 UTC) prunes files past
+      # the disk budget / max age, oldest-first, keeping the index record.
+      ARCHIVE_BUDGET_MB: ${ARCHIVE_BUDGET_MB:-500}
+      ARCHIVE_RETENTION_DAYS: ${ARCHIVE_RETENTION_DAYS:-180}
     volumes:
-      # Downloaded filings and their extracted text must outlive the container — they
-      # feed (and are produced by) the extraction pipeline. (data/reports + data/extracted
-      # are gitignored; the budgets cap growth per run.)
+      # Downloaded filings, extracted text, and archived raw payloads must outlive the
+      # container — they feed (and are produced by) the ingest/extraction pipeline.
+      # (data/reports + data/extracted + data/archive are gitignored; budgets cap growth.)
       - ./data:/app/data
     depends_on:
       api:

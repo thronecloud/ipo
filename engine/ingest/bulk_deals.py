@@ -14,6 +14,7 @@ from datetime import datetime, timezone
 from sqlalchemy.dialects.postgresql import insert as pg_insert
 
 from db.models import BulkDeal
+from engine.ingest.archive import archive_safe
 from engine.ingest.exchange_base import (
     NSE_BASE,
     clean,
@@ -119,8 +120,10 @@ def _fetch_largedeals() -> dict:
 def fetch_bulk_deals(verbose=True) -> dict:
     """Poll NSE's large-deal snapshot and store new bulk/block deals. Daily cron."""
     with job_run("bulk_deals", target="NSE") as (session, stats):
-        counts = {"processed": 0, "added": 0, "unmatched": 0}
-        rows = parse_largedeals(_fetch_largedeals())
+        counts = {"processed": 0, "added": 0, "unmatched": 0, "archive_failed": 0}
+        raw = _fetch_largedeals()
+        archive_safe("bulk_deals", "NSE", raw, counts)
+        rows = parse_largedeals(raw)
         counts["processed"] = len(rows)
         upsert_bulk_deals(session, rows, counts)
         session.commit()

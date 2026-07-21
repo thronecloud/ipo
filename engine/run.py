@@ -89,6 +89,11 @@ def cmd_extract(a):
     print(run_extraction(page_budget=a.page_budget, limit=a.limit, force=a.force))
 
 
+def cmd_replay(a):
+    from engine.ingest.archive import replay
+    print(replay(source=a.source, since=a.since, entity=a.entity))
+
+
 def cmd_indexes(a):
     print(refresh_index_prices(symbols=a.symbols or None))
 
@@ -236,6 +241,13 @@ def main():
     ex.add_argument("--force", action="store_true",
                     help="re-extract filings already extracted (idempotent replace)")
     ex.set_defaults(func=cmd_extract)
+
+    rp = sub.add_parser("replay", help="Re-parse archived raw payloads through the normal upsert paths")
+    rp.add_argument("--source", required=True,
+                    help="archived source to replay (e.g. announcements, corporate_calendar)")
+    rp.add_argument("--since", default=None, help="only payloads fetched on/after this ISO date")
+    rp.add_argument("--entity", default=None, help="narrow to one entity (exchange / symbol)")
+    rp.set_defaults(func=cmd_replay)
 
     ix = sub.add_parser("indexes", help="Refresh benchmark index price series")
     ix.add_argument("--symbols", nargs="*", default=None)

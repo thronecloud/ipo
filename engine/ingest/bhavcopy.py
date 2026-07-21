@@ -33,6 +33,7 @@ from datetime import date, datetime, timedelta, timezone
 from sqlalchemy import func, select
 
 from db.models import JobRun, Stock
+from engine.ingest.archive import archive_safe
 from engine.ingest.exchange_base import (
     BSE_BASE,
     bse_session,
@@ -244,6 +245,10 @@ def _fetch_one_exchange(session, exchange: str, candidates: list[date],
         text = _load_csv(exchange, d)
         if text is None:
             continue
+        # Archive the raw EOD file BEFORE parse_udiff, so a parser bug over a
+        # whole-exchange file is replayable rather than a lost trading day.
+        archive_safe("bhavcopy", f"{exchange}-{d.isoformat()}", text, counts,
+                     content_type="text/csv")
         bars = parse_udiff(text)
         counts["processed"] = counts.get("processed", 0) + len(bars)
         return ingest_bars(session, exchange, bars, counts), d
@@ -275,7 +280,7 @@ def fetch_bhavcopy(on_date: date | None = None, exchanges=("NSE", "BSE"),
     with job_run("bhavcopy", target=",".join(exchanges)) as (session, stats):
         counts = {"processed": 0, "bars_added": 0, "bars_rebased": 0, "unmatched": 0,
                   "matched_stocks": 0, "not_published": 0, "soft_fail": 0,
-                  "universe_missing": 0}
+                  "universe_missing": 0, "archive_failed": 0}
         target = on_date or _ist_today()
         candidates = _trading_candidates(target, _last_ingested_date(session))
         priced: set[int] = set()
