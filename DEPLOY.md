@@ -123,3 +123,26 @@ Resurrect on a fresh always-on host: clone → put the dump in `backups/` → wr
 auto-restores the newest dump on first boot; Caddy fetches HTTPS automatically.
 
 `.env` and `DEPLOY_SECRETS.txt` are gitignored — secrets never enter the repo.
+
+## Dead-man's switch (catch a total outage)
+
+`NTFY_TOPIC` alerts when a *job* fails — but it lives on the box, so if the whole
+host goes down (power, kernel panic, someone trips the plug) nothing pages you: the
+alerter is a corpse too. The scheduler therefore pings an **external** monitor every
+5 minutes, and that monitor alerts when the pings *stop*. Setting it up is a one-time
+owner account action:
+
+1. **Create a check.** Sign in to [healthchecks.io](https://healthchecks.io) (free),
+   click **Add Check**, name it `wisdominvest-scheduler`, and set **Period = 5 min**,
+   **Grace = 10 min**. Copy its ping URL (looks like `https://hc-ping.com/<uuid>`).
+2. **Wire it in.** Put `SCHED_HEARTBEAT_URL=https://hc-ping.com/<uuid>` in `.env`, then
+   `docker compose up -d` (recreates the scheduler with the env). Within 5 min the
+   check flips to **up**; the scheduler logs `heartbeat OK`.
+3. **Point the alert at yourself.** In the check's **Integrations**, add email/Slack/
+   Telegram/ntfy. Now if the box is down for >15 min, healthchecks pages you — from
+   its infrastructure, not yours.
+
+ntfy alternative: set `SCHED_HEARTBEAT_URL=https://ntfy.sh/<topic>` and configure an
+ntfy **watchdog** (a scheduled "no message in N minutes → alert") on that topic — same
+idea, absence-of-ping is the signal. Unset `SCHED_HEARTBEAT_URL` and the heartbeat job
+is a silent no-op.

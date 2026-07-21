@@ -26,6 +26,7 @@ from dataclasses import dataclass
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
+import requests
 from apscheduler.schedulers.blocking import BlockingScheduler
 from apscheduler.triggers.cron import CronTrigger
 from apscheduler.triggers.interval import IntervalTrigger
@@ -87,6 +88,14 @@ EXTRACT_PAGE_BUDGET = _int("EXTRACT_PAGE_BUDGET", 2000)
 # is 25 analyze pairs x the 300s backend cap ~= 2h; 24h clears that by an order of
 # magnitude while still catching zombies, which otherwise persist forever.
 REAP_ORPHAN_HOURS = _int("SCHED_REAP_ORPHAN_HOURS", 24)
+
+# Dead-man's switch: a lightweight external heartbeat. Every tick GETs
+# SCHED_HEARTBEAT_URL (a healthchecks.io-style ping URL); when the box dies the
+# pings stop and the EXTERNAL monitor alerts — the alerter no longer lives on the
+# corpse. Unset => the job is a no-op. See docker-compose.yml / DEPLOY.md.
+HEARTBEAT_URL = os.environ.get("SCHED_HEARTBEAT_URL", "").strip()
+HEARTBEAT_INTERVAL_MIN = _int("SCHED_HEARTBEAT_INTERVAL_MIN", 5)
+HEARTBEAT_TIMEOUT_S = _int("SCHED_HEARTBEAT_TIMEOUT_S", 5)
 
 # Misfire grace: how long after a missed trigger APScheduler may still run a job.
 # Daily jobs get hours (a container down through 02:00 still runs when it wakes at
@@ -330,6 +339,37 @@ def job_reap():
         session.close()
 
 
+# Last observed heartbeat state, so a FAILED/OK transition is logged once — not
+# every 5 minutes. None = not yet pinged.
+_heartbeat_state: dict[str, bool | None] = {"ok": None}
+
+
+def job_heartbeat():
+    """Ping the external dead-man's switch. No-op unless SCHED_HEARTBEAT_URL is set.
+
+    The whole point is that this lives OFF the box: while the scheduler is alive it
+    pings on a cadence, and the external monitor (healthchecks.io / ntfy) alerts when
+    the pings STOP — so a total outage, which kills every on-box alerter, is finally
+    caught. Never raises (a dead switch must not take the daemon with it), and logs
+    only on a state change so a persistent outage doesn't spam the log every tick."""
+    if not HEARTBEAT_URL:
+        return
+    try:
+        resp = requests.get(HEARTBEAT_URL, timeout=HEARTBEAT_TIMEOUT_S)
+        resp.raise_for_status()
+        ok, detail = True, ""
+    except Exception as e:
+        ok, detail = False, str(e)[:200]
+
+    if ok != _heartbeat_state["ok"]:
+        if ok:
+            print(f"[scheduler][{_now()}] heartbeat OK")
+        else:
+            print(f"[scheduler][{_now()}] heartbeat FAILED (external monitor "
+                  f"will alert if pings keep stopping): {detail}")
+        _heartbeat_state["ok"] = ok
+
+
 def job_analyze_and_score():
     if not analysis_available():
         print(f"[scheduler][{_now()}] analyze SKIPPED — no Claude credential "
@@ -507,6 +547,11 @@ def build_scheduler() -> BlockingScheduler:
     # Weekly gap-fill sweep — Saturday 04:00 UTC (bounded; identity fill is free).
     sched.add_job(safe(job_dq_fill), CronTrigger(day_of_week="sat", hour=4, minute=0),
                   id="dq_fill", misfire_grace_time=MISFIRE_DAILY)
+    # Dead-man's switch every 5 min — pings the external monitor so a total outage
+    # (which kills every on-box alerter) is caught off-box. No-op unless the URL is set.
+    sched.add_job(safe(job_heartbeat),
+                  IntervalTrigger(minutes=HEARTBEAT_INTERVAL_MIN),
+                  id="heartbeat", misfire_grace_time=MISFIRE_HOURLY)
     return sched
 
 
@@ -541,6 +586,7 @@ _JOB_META: dict[str, tuple[str, str | None]] = {
     "reports":       ("Weekly report sweep — results/annual-report docs for active universe", "corporate_filings"),
     "extract_documents": ("Extract filing text + statutory financials (deterministic, OCR, zero LLM)", "extract_documents"),
     "shareholding":  ("Sweep active-universe NSE shareholding patterns (quarterly)", "shareholding"),
+    "heartbeat":     ("Ping the external dead-man's switch (a bare ping, writes no job_run)", None),
 }
 
 _DOW = {"mon": "Mon", "tue": "Tue", "wed": "Wed", "thu": "Thu",

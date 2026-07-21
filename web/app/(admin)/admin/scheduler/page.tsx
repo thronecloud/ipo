@@ -3,7 +3,12 @@
 import { useCallback, useState } from "react";
 import { api } from "@/lib/api";
 import { useAsync } from "@/lib/hooks";
-import type { JobRun, SchedulerJob, SchedulerOverview } from "@/lib/types";
+import type {
+  JobRun,
+  SchedulerJob,
+  SchedulerOverview,
+  SloReport,
+} from "@/lib/types";
 import { relTime, shortDate, DASH } from "@/lib/format";
 import { Panel, PanelHeader } from "@/components/Panel";
 import { ErrorState, TableSkeleton, EmptyState } from "@/components/States";
@@ -116,6 +121,127 @@ function DrillDown({ jobId }: { jobId: string }) {
   );
 }
 
+function lagText(lag: number | null, unit: SloReport["unit"]): string {
+  if (lag == null) return "never";
+  const u = unit === "trading_days" ? "td" : "d";
+  return `${Number.isInteger(lag) ? lag : lag.toFixed(1)}${u}`;
+}
+
+function SloRow({ slo }: { slo: SloReport }) {
+  const [open, setOpen] = useState(false);
+  const hasOffenders = slo.offenders.length > 0;
+  const pctColor = slo.breached
+    ? "var(--color-terracotta)"
+    : slo.compliance_pct == null
+      ? "var(--color-muted)"
+      : "var(--color-sage)";
+  const pctText =
+    slo.compliance_pct == null ? "n/a" : `${slo.compliance_pct.toFixed(1)}%`;
+
+  return (
+    <>
+      <tr
+        className={`border-b border-hairline/50 align-top last:border-0 ${
+          hasOffenders ? "cursor-pointer hover:bg-panel2/40" : ""
+        }`}
+        onClick={() => hasOffenders && setOpen((v) => !v)}
+      >
+        <td className="px-3 py-2.5">
+          <div className="flex items-center gap-1.5">
+            <span
+              className="text-muted transition-transform"
+              style={{
+                transform: open ? "rotate(90deg)" : "none",
+                visibility: hasOffenders ? "visible" : "hidden",
+              }}
+              aria-hidden
+            >
+              ▸
+            </span>
+            <span className="num text-xs font-medium text-paper">{slo.dataset}</span>
+          </div>
+          <div className="mt-0.5 pl-4 text-[10px] leading-snug text-muted">
+            {slo.description}
+          </div>
+        </td>
+        <td className="num px-3 py-2.5 text-xs text-paper/90">{slo.target}</td>
+        <td className="num px-3 py-2.5 text-right">
+          <span className="text-sm font-semibold" style={{ color: pctColor }}>
+            {pctText}
+          </span>
+        </td>
+        <td className="num px-3 py-2.5 text-right text-xs text-muted">
+          {slo.population === 0 ? DASH : `${slo.compliant}/${slo.population}`}
+        </td>
+        <td className="num px-3 py-2.5 text-right text-xs text-muted">
+          {slo.worst_lag == null && slo.missing === 0
+            ? DASH
+            : lagText(slo.worst_lag, slo.unit)}
+        </td>
+      </tr>
+      {open && hasOffenders && (
+        <tr>
+          <td colSpan={5} className="p-0">
+            <div className="border-t border-hairline bg-panel2/40 px-4 py-3">
+              <div className="mb-1.5 text-[10px] uppercase tracking-wide text-muted">
+                Worst offenders{slo.missing > 0 ? ` · ${slo.missing} never fetched` : ""}
+              </div>
+              <div className="flex flex-wrap gap-1.5">
+                {slo.offenders.map((o) => (
+                  <span
+                    key={o.label}
+                    className="num rounded-sm border border-terracotta/40 bg-terracotta/10 px-1.5 py-0.5 text-[10px] text-terracotta"
+                  >
+                    {o.label}
+                    <span className="ml-1 text-terracotta/70">
+                      {o.missing ? "never" : lagText(o.lag, slo.unit)}
+                    </span>
+                  </span>
+                ))}
+              </div>
+            </div>
+          </td>
+        </tr>
+      )}
+    </>
+  );
+}
+
+function SloSection({ slos }: { slos: SloReport[] }) {
+  if (slos.length === 0) return null;
+  const breached = slos.filter((s) => s.breached).length;
+  return (
+    <Panel>
+      <PanelHeader
+        title="Freshness SLOs"
+        hint={
+          breached > 0
+            ? `${breached} dataset${breached > 1 ? "s" : ""} under target`
+            : "all datasets within target"
+        }
+      />
+      <div className="w-full overflow-x-auto">
+        <table className="w-full border-collapse text-sm">
+          <thead>
+            <tr className="border-b border-hairline text-[10px] uppercase tracking-wide text-muted">
+              <th className="px-3 py-2 text-left font-semibold">Dataset</th>
+              <th className="px-3 py-2 text-left font-semibold">Target</th>
+              <th className="px-3 py-2 text-right font-semibold">Compliance</th>
+              <th className="px-3 py-2 text-right font-semibold">Within</th>
+              <th className="px-3 py-2 text-right font-semibold">Worst</th>
+            </tr>
+          </thead>
+          <tbody>
+            {slos.map((s) => (
+              <SloRow key={s.dataset} slo={s} />
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </Panel>
+  );
+}
+
 function JobRows({ job }: { job: SchedulerJob }) {
   const [open, setOpen] = useState(false);
   const last = job.last_run;
@@ -204,17 +330,23 @@ export default function SchedulerPage() {
   );
 
   const missedCount = (data?.jobs ?? []).filter((j) => j.missed === true).length;
+  const breachedCount = (data?.slos ?? []).filter((s) => s.breached).length;
 
   return (
     <div className="space-y-5">
       <div className="flex items-baseline justify-between">
         <h1 className="serif text-2xl font-semibold text-paper">Scheduler</h1>
-        {missedCount > 0 && (
-          <span className="num text-xs font-semibold text-terracotta">
-            {missedCount} missed
-          </span>
-        )}
+        <div className="num flex items-baseline gap-3 text-xs font-semibold">
+          {breachedCount > 0 && (
+            <span className="text-terracotta">{breachedCount} SLO breached</span>
+          )}
+          {missedCount > 0 && (
+            <span className="text-terracotta">{missedCount} missed</span>
+          )}
+        </div>
       </div>
+
+      {data && <SloSection slos={data.slos} />}
 
       <Panel>
         <PanelHeader

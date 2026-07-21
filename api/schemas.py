@@ -275,9 +275,31 @@ class SchedulerJob(BaseModel):
     recent_runs: list[JobRow] = []   # last 10, only on ?job= drill-down
 
 
+class SloOffender(BaseModel):
+    label: str                       # stock symbol / index symbol / feed name
+    lag: float | None = None         # freshness lag in the SLO's unit; None = never fetched
+    missing: bool = False            # true when the member has no data at all
+
+
+class SloReport(BaseModel):
+    dataset: str
+    description: str
+    target: str                      # human target, e.g. "≤ 1 trading day"
+    unit: str                        # "trading_days" | "days"
+    objective_pct: float             # compliance below this reads as breached
+    population: int
+    compliant: int
+    compliance_pct: float | None = None   # None when the population is empty (n/a)
+    worst_lag: float | None = None
+    missing: int = 0                 # members with no data at all
+    breached: bool = False
+    offenders: list[SloOffender] = []
+
+
 class SchedulerOverview(BaseModel):
     now: datetime
     jobs: list[SchedulerJob]
+    slos: list[SloReport] = []
 
 
 class JobRunRequest(BaseModel):

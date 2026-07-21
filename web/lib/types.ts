@@ -231,9 +231,31 @@ export interface SchedulerJob {
   recent_runs: JobRun[];
 }
 
+export interface SloOffender {
+  label: string; // stock / index symbol, or feed name
+  lag: number | null; // freshness lag in the SLO's unit; null = never fetched
+  missing: boolean; // true when the member has no data at all
+}
+
+export interface SloReport {
+  dataset: string;
+  description: string;
+  target: string; // human target, e.g. "≤ 1 trading day"
+  unit: "trading_days" | "days";
+  objective_pct: number;
+  population: number;
+  compliant: number;
+  compliance_pct: number | null; // null when population is empty (n/a)
+  worst_lag: number | null;
+  missing: number;
+  breached: boolean;
+  offenders: SloOffender[];
+}
+
 export interface SchedulerOverview {
   now: string;
   jobs: SchedulerJob[];
+  slos: SloReport[];
 }
 
 export type JobType =
@@ -338,6 +360,41 @@ export interface BacktestBucket {
   hit_rate_ci: Record<string, CI | null>;
 }
 
+// Cohort completeness: how many scored names actually got measured, why the
+// rest didn't, and the presumed fate + conservative policy return of the
+// vanished ones. Additive accounting — the measurement math for measured stocks
+// is unchanged.
+export interface CohortBlock {
+  scored: number;
+  priceable: number; // has >=1 price bar
+  measured: number; // contributed >=1 forward-horizon return
+  excluded: {
+    no_bars: number;
+    bars_predate_view: number;
+    insufficient_forward: number;
+  };
+  excluded_symbols: {
+    no_bars: string[];
+    bars_predate_view: string[];
+    insufficient_forward: string[];
+  };
+  presumed_outcomes: { delisted: number; merged: number; unknown: number };
+  presumed_symbols: { delisted: string[]; merged: string[]; unknown: string[] };
+  policy: {
+    delisting_return: number; // the documented conservative loss constant
+    applied_constant: number; // delisted names assigned the constant
+    applied_actual_last: number; // delisted names using their real last-price return
+    excluded_merged: number; // merged: excluded-with-reason, no synthetic return
+    excluded_unknown: number; // unknown: excluded-with-reason
+    symbols: {
+      constant: string[];
+      actual_last: string[];
+      merged: string[];
+      unknown: string[];
+    };
+  };
+}
+
 export interface BacktestStudy {
   benchmark: string;
   benchmark_bars: number;
@@ -359,6 +416,11 @@ export interface BacktestStudy {
     lcb: Record<string, CI | null>;
   };
   overall: BacktestBucket;
+  cohort: CohortBlock;
+  delisting_return_policy: number;
+  // The SAME overall stat recomputed with presumed-delisted names folded back in
+  // via the policy. null when no policy row applied.
+  overall_with_policy: BacktestBucket | null;
 }
 
 // ── Per-persona backtest (equity curves + summary stats) ─────────
@@ -400,6 +462,8 @@ export interface PersonaStudy {
   horizons: number[];
   curve_offsets: number[];
   cohort_size: number;
+  cohort: CohortBlock;
+  delisting_return_policy: number;
   council: string[];
   personas: PersonaResult[];
   subset: SubsetResult;

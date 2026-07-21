@@ -118,6 +118,13 @@ services:
       SCHED_MISFIRE_DAILY: ${SCHED_MISFIRE_DAILY:-21600}
       SCHED_MISFIRE_HOURLY: ${SCHED_MISFIRE_HOURLY:-300}
       SCHED_CATCHUP_SLACK_HOURS: ${SCHED_CATCHUP_SLACK_HOURS:-6}
+      # Dead-man's switch: an external ping URL the scheduler GETs every 5 min. When
+      # the box dies the pings stop and the OFF-box monitor alerts (the on-box alerter
+      # can't page you about its own host being down). Two ways to get a URL:
+      #   healthchecks.io — create a check, use its ping URL (auto-alerts on silence).
+      #   ntfy — SCHED_HEARTBEAT_URL=https://ntfy.sh/<topic> plus a separate ntfy
+      #          "grace"/watchdog so absence of pings alerts. Unset => heartbeat no-ops.
+      SCHED_HEARTBEAT_URL: ${SCHED_HEARTBEAT_URL:-}
       # yfinance throttle handling: backoff ceiling/jitter + in-run circuit breaker.
       YF_BACKOFF_CAP: ${YF_BACKOFF_CAP:-60}
       YF_BACKOFF_JITTER: ${YF_BACKOFF_JITTER:-0.5}

@@ -430,7 +430,9 @@ def scheduler(db: Session = Depends(get_db), job: str | None = None):
     """Join the declared schedule (expected cadence + next fire) against the
     job_runs history (last run, status, stats, error) so the Engine Room can show,
     per job, when it was supposed to run, whether it did, and how it ended. Pass
-    ?job=<id> to also get that job's last 10 runs."""
+    ?job=<id> to also get that job's last 10 runs. The `slos` block carries the
+    per-dataset freshness compliance the Engine Room shows above the schedule."""
+    from engine.quality.slo import compute_slos
     from engine.scheduler import schedule_manifest
 
     now = datetime.now(timezone.utc)
@@ -438,7 +440,7 @@ def scheduler(db: Session = Depends(get_db), job: str | None = None):
         _scheduler_job(db, entry, now, drill=(job == entry.id))
         for entry in schedule_manifest()
     ]
-    return SchedulerOverview(now=now, jobs=jobs)
+    return SchedulerOverview(now=now, jobs=jobs, slos=compute_slos(db, now))
 
 
 # ---- job launcher --------------------------------------------------------
