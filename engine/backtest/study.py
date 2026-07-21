@@ -45,6 +45,25 @@ CURVE_N_BOOT = 500
 # Hit rate's null hypothesis is a coin flip vs the benchmark, not zero.
 COINFLIP = 50.0
 
+# ── delisting policy ──────────────────────────────────────────────
+# Stocks that vanished from the price data are not neutral: delisted names skew
+# toward failures, so dropping them flatters the backtest. This POLICY assigns a
+# conservative synthetic return to presumed-delisted exclusions so a with-policy
+# statistic can be reported alongside the measured-only one. Documented so a
+# reader can strip it back out.
+#
+# A single blunt -100% would over-punish (many "delistings" are symbol changes
+# or merges, not zeroes), so the constant is a documented conservative loss and
+# merges/unknowns get NO synthetic return at all — they stay excluded-with-reason.
+DELISTING_RETURN = -50.0
+# status -> presumed outcome. 'stale' is the auto-park state after repeated fetch
+# failures (delisting / symbol change, per Stock.status); 'unfetchable' likewise
+# never returns data. 'listed_merged' is an explicit merge. Everything else with
+# no bars (active/new data gaps, upcoming, withdrawn pre-listing) is 'unknown' —
+# not assumed dead.
+PRESUMED_DELISTED_STATUSES = frozenset({"unfetchable", "stale"})
+PRESUMED_MERGED_STATUSES = frozenset({"listed_merged"})
+
 
 # ---------- statistics ----------
 
@@ -259,6 +278,105 @@ def _quintile_of(rank_pos: int, n: int) -> int:
     return min(QUINTILES, rank_pos * QUINTILES // n + 1)
 
 
+# ---------- cohort completeness + delisting policy ----------
+
+def _classify(series: list, entry_idx: int | None, meas: dict, horizons) -> str:
+    """One of: measured | no_bars | bars_predate_view | insufficient_forward.
+
+    A partition of the cohort, disjoint from the measurement math. 'measured'
+    means the stock contributed at least one forward-horizon return; the three
+    exclusion reasons name exactly why the others did not.
+    """
+    if not series:
+        return "no_bars"
+    if entry_idx is None:
+        return "bars_predate_view"
+    if not any(meas["returns"].get(h) is not None for h in horizons):
+        return "insufficient_forward"
+    return "measured"
+
+
+def _presumed_outcome(status: str | None) -> str:
+    """delisted | merged | unknown — the fate we impute to an excluded stock."""
+    if status in PRESUMED_MERGED_STATUSES:
+        return "merged"
+    if status in PRESUMED_DELISTED_STATUSES:
+        return "delisted"
+    return "unknown"
+
+
+def _cohort_block(records: list[dict], horizons) -> tuple[dict, list[dict]]:
+    """Cohort completeness accounting + synthetic policy rows.
+
+    ``records`` is one dict per scored stock: {symbol, status, series,
+    entry_idx, meas}. Returns (cohort_block, policy_rows) where policy_rows are
+    minimal measurement dicts (entry_price/excess/returns) for the presumed-
+    delisted exclusions, ready to fold into a with-policy bucket. Every policy
+    application is counted separately so a reader can strip it back out.
+    """
+    excluded: dict[str, list[str]] = {
+        "no_bars": [], "bars_predate_view": [], "insufficient_forward": [],
+    }
+    presumed: dict[str, list[str]] = {"delisted": [], "merged": [], "unknown": []}
+    applied: dict[str, list[str]] = {
+        "constant": [], "actual_last": [], "merged": [], "unknown": [],
+    }
+    policy_rows: list[dict] = []
+    measured = priceable = 0
+
+    for rec in records:
+        series, entry_idx, meas = rec["series"], rec["entry_idx"], rec["meas"]
+        if series:
+            priceable += 1
+        cls = _classify(series, entry_idx, meas, horizons)
+        if cls == "measured":
+            measured += 1
+            continue
+
+        excluded[cls].append(rec["symbol"])
+        outcome = _presumed_outcome(rec["status"])
+        presumed[outcome].append(rec["symbol"])
+
+        if outcome == "delisted":
+            # A stock that traded AFTER the view has an actual return to its last
+            # bar — use it in place of the blunt constant. One that never traded
+            # post-view (no_bars / bars_predate_view) gets the documented loss.
+            if meas["return_to_date"] is not None:
+                applied["actual_last"].append(rec["symbol"])
+                ex = (meas["excess_to_date"] if meas["excess_to_date"] is not None
+                      else meas["return_to_date"])
+                ret = meas["return_to_date"]
+            else:
+                applied["constant"].append(rec["symbol"])
+                ex = ret = DELISTING_RETURN
+            policy_rows.append({
+                "entry_price": meas["entry_price"] if meas["entry_price"] is not None else 1.0,
+                "excess": {h: ex for h in horizons},
+                "returns": {h: ret for h in horizons},
+            })
+        else:
+            applied[outcome].append(rec["symbol"])  # merged / unknown: no synthetic return
+
+    block = {
+        "scored": len(records),
+        "priceable": priceable,
+        "measured": measured,
+        "excluded": {k: len(v) for k, v in excluded.items()},
+        "excluded_symbols": excluded,
+        "presumed_outcomes": {k: len(v) for k, v in presumed.items()},
+        "presumed_symbols": presumed,
+        "policy": {
+            "delisting_return": DELISTING_RETURN,
+            "applied_constant": len(applied["constant"]),
+            "applied_actual_last": len(applied["actual_last"]),
+            "excluded_merged": len(applied["merged"]),
+            "excluded_unknown": len(applied["unknown"]),
+            "symbols": applied,
+        },
+    }
+    return block, policy_rows
+
+
 # ---------- the study ----------
 
 def run_event_study(session, benchmark: str = DEFAULT_BENCHMARK,
@@ -269,12 +387,13 @@ def run_event_study(session, benchmark: str = DEFAULT_BENCHMARK,
     prices = _price_series(session, [h.stock_id for h, _ in cohort])
 
     stocks: list[dict] = []
+    records: list[dict] = []
     for hist, stock in cohort:
         info_date = (
             hist.information_date.date() if hist.information_date else hist.as_of_date
         )
         series = prices.get(hist.stock_id, [])
-        _, meas = _measure(series, bench, info_date, horizons)
+        entry_idx, meas = _measure(series, bench, info_date, horizons)
 
         row = {
             "symbol": stock.symbol,
@@ -289,6 +408,10 @@ def run_event_study(session, benchmark: str = DEFAULT_BENCHMARK,
             **meas,
         }
         stocks.append(row)
+        records.append({"symbol": stock.symbol, "status": stock.status,
+                        "series": series, "entry_idx": entry_idx, "meas": meas})
+
+    cohort_block, policy_rows = _cohort_block(records, horizons)
 
     priced_rows = [r for r in stocks if r["entry_price"] is not None]
 
@@ -340,6 +463,18 @@ def run_event_study(session, benchmark: str = DEFAULT_BENCHMARK,
         "ic": ic,
         "ic_ci": ic_ci,
         "overall": _bucket_stats(stocks, horizons, n_boot=n_boot),
+        # Cohort completeness is a first-class output: measured vs excluded, with
+        # per-reason counts and the presumed fate of the vanished names.
+        "cohort": cohort_block,
+        "delisting_return_policy": DELISTING_RETURN,
+        # Sensitivity guard: the SAME overall stat recomputed with the presumed-
+        # delisted names folded back in via the policy. None when no policy row
+        # was applied, so a reader can see both the measured-only and the
+        # policy-augmented number and the gap between them.
+        "overall_with_policy": (
+            _bucket_stats(stocks + policy_rows, horizons, n_boot=n_boot)
+            if policy_rows else None
+        ),
     }
 
 
@@ -531,11 +666,14 @@ def run_persona_study(session, benchmark: str = DEFAULT_BENCHMARK,
         entry_idx, meas = _measure(series, bench, info_date, horizons)
         members.append({
             "symbol": stock.symbol,
+            "status": stock.status,
             "verdicts": verdicts.get(hist.stock_id, {}),
             "series": series,
             "entry_idx": entry_idx,
             "meas": meas,
         })
+
+    cohort_block, _ = _cohort_block(members, horizons)
 
     per_persona = [
         {"persona": slug,
@@ -549,6 +687,8 @@ def run_persona_study(session, benchmark: str = DEFAULT_BENCHMARK,
         "horizons": list(horizons),
         "curve_offsets": offsets,
         "cohort_size": len(members),
+        "cohort": cohort_block,
+        "delisting_return_policy": DELISTING_RETURN,
         "council": list(COUNCIL),
         "personas": per_persona,
         "subset": {"personas": subset,

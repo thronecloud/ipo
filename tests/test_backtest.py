@@ -388,6 +388,172 @@ def test_api_backtest_ci_fields(db_session):
     assert body["by_tier"]["high"]["mean_excess_ci"]["5"] is not None
 
 
+# ── cohort completeness + delisting policy ────────────────────────
+
+# Weekdays before MON=2026-01-05, so every bar is on/before the view forms.
+PRE_VIEW_START = date(2025, 12, 29)
+
+
+def test_cohort_accounting_partitions_stocks(db_session):
+    # One stock of each kind, so the four-way partition is exact.
+    measured = make_stock(db_session, "COM1")
+    _history_row(db_session, measured, info_date=MON, composite=70.0)
+    repo.upsert_daily_prices(db_session, measured.id, _bars(MON, RISING))
+
+    no_bars = make_stock(db_session, "COM2")  # no daily prices at all
+    _history_row(db_session, no_bars, info_date=MON, composite=60.0)
+
+    predate = make_stock(db_session, "COM3")
+    _history_row(db_session, predate, info_date=MON, composite=50.0)
+    repo.upsert_daily_prices(db_session, predate.id,
+                             _bars(PRE_VIEW_START, [100.0, 100.0, 100.0]))
+
+    insufficient = make_stock(db_session, "COM4")
+    _history_row(db_session, insufficient, info_date=MON, composite=55.0)
+    # Entry exists (bar after MON) but never reaches the 5-day horizon.
+    repo.upsert_daily_prices(db_session, insufficient.id,
+                             _bars(MON, [100.0, 100.0, 110.0, 120.0]))
+    _seed_benchmark(db_session, MON)
+    db_session.commit()
+
+    report = run_event_study(db_session, benchmark=BENCH, horizons=(5,))
+    c = report["cohort"]
+    assert c["scored"] == 4
+    assert c["priceable"] == 3          # everyone but the no-bars name
+    assert c["measured"] == 1
+    assert c["excluded"] == {
+        "no_bars": 1, "bars_predate_view": 1, "insufficient_forward": 1,
+    }
+    assert c["excluded_symbols"]["no_bars"] == ["COM2"]
+    assert c["excluded_symbols"]["bars_predate_view"] == ["COM3"]
+    assert c["excluded_symbols"]["insufficient_forward"] == ["COM4"]
+
+
+def test_presumed_outcome_from_status(db_session):
+    # No-bars stocks classified by status: fetch-dead -> delisted, merge ->
+    # merged, a live-but-ungathered name -> unknown (not assumed dead).
+    for sym, status in (("PO1", "unfetchable"), ("PO2", "stale"),
+                        ("PO3", "listed_merged"), ("PO4", "active")):
+        st = make_stock(db_session, sym, status=status)
+        _history_row(db_session, st, info_date=MON, composite=60.0)
+    _seed_benchmark(db_session, MON)
+    db_session.commit()
+
+    report = run_event_study(db_session, benchmark=BENCH, horizons=(5,))
+    p = report["cohort"]["presumed_outcomes"]
+    assert p == {"delisted": 2, "merged": 1, "unknown": 1}
+    assert report["cohort"]["presumed_symbols"]["merged"] == ["PO3"]
+
+
+def test_delisting_policy_constant_and_actual_last(db_session):
+    # A no-bars delisted name gets the documented -50% constant; a delisted name
+    # that DID trade after the view uses its actual last-price return instead.
+    dead = make_stock(db_session, "DP1", status="unfetchable")  # no bars
+    _history_row(db_session, dead, info_date=MON, composite=60.0)
+
+    traded = make_stock(db_session, "DP2", status="stale")
+    _history_row(db_session, traded, info_date=MON, composite=55.0)
+    # Entry 100 -> last 120 (+20%), but never reaches the 5-day horizon.
+    repo.upsert_daily_prices(db_session, traded.id,
+                             _bars(MON, [100.0, 100.0, 110.0, 120.0]))
+    _seed_benchmark(db_session, MON)
+    db_session.commit()
+
+    report = run_event_study(db_session, benchmark=BENCH, horizons=(5,))
+    pol = report["cohort"]["policy"]
+    assert report["delisting_return_policy"] == -50.0
+    assert pol["delisting_return"] == -50.0
+    assert pol["applied_constant"] == 1 and pol["symbols"]["constant"] == ["DP1"]
+    assert pol["applied_actual_last"] == 1 and pol["symbols"]["actual_last"] == ["DP2"]
+
+
+def test_policy_both_ways_diverge(db_session):
+    # One measured winner (+10%) plus two vanished names folded back via policy
+    # (-50% constant, +20% actual). Measured-only overall != policy-augmented.
+    win = make_stock(db_session, "BW1")
+    _history_row(db_session, win, info_date=MON, composite=70.0)
+    repo.upsert_daily_prices(db_session, win.id, _bars(MON, RISING))  # +10% @ h=5
+
+    dead = make_stock(db_session, "BW2", status="unfetchable")  # -> -50 constant
+    _history_row(db_session, dead, info_date=MON, composite=60.0)
+
+    traded = make_stock(db_session, "BW3", status="stale")  # -> +20 actual
+    _history_row(db_session, traded, info_date=MON, composite=55.0)
+    repo.upsert_daily_prices(db_session, traded.id,
+                             _bars(MON, [100.0, 100.0, 110.0, 120.0]))
+    _seed_benchmark(db_session, MON)
+    db_session.commit()
+
+    report = run_event_study(db_session, benchmark=BENCH, horizons=(5,))
+    measured_only = report["overall"]["mean_excess"][5]
+    with_policy = report["overall_with_policy"]["mean_excess"][5]
+    assert abs(measured_only - 10.0) < 1e-9          # only the winner is measured
+    # (10 - 50 + 20) / 3 = -6.667
+    assert abs(with_policy - (-20.0 / 3.0)) < 1e-6
+    assert measured_only != with_policy
+
+
+def test_overall_with_policy_none_when_no_policy_applied(db_session):
+    # No delisted exclusions -> nothing to fold in -> the with-policy stat is
+    # honestly None, not a copy of the measured one.
+    st = make_stock(db_session, "NP1")
+    _history_row(db_session, st, info_date=MON, composite=70.0)
+    repo.upsert_daily_prices(db_session, st.id, _bars(MON, RISING))
+    _seed_benchmark(db_session, MON)
+    db_session.commit()
+
+    report = run_event_study(db_session, benchmark=BENCH, horizons=(5,))
+    assert report["overall_with_policy"] is None
+    assert report["cohort"]["policy"]["applied_constant"] == 0
+    assert report["cohort"]["policy"]["applied_actual_last"] == 0
+
+
+def test_persona_study_reports_cohort(db_session):
+    st = make_stock(db_session, "PC1")
+    _history_row(db_session, st, info_date=MON, composite=80.0)
+    repo.upsert_daily_prices(db_session, st.id, _bars(MON, RISING))
+    dead = make_stock(db_session, "PC2", status="unfetchable")
+    _history_row(db_session, dead, info_date=MON, composite=60.0)
+    _seed_benchmark(db_session, MON)
+    _verdict(db_session, st, "warren_buffett", 9, "BUY")
+    db_session.commit()
+
+    report = run_persona_study(db_session, benchmark=BENCH, horizons=(5,))
+    c = report["cohort"]
+    assert c["scored"] == 2 and c["measured"] == 1
+    assert c["excluded"]["no_bars"] == 1
+    assert c["presumed_outcomes"]["delisted"] == 1
+    assert report["delisting_return_policy"] == -50.0
+
+
+def test_api_backtest_cohort_contract(db_session):
+    from fastapi.testclient import TestClient
+    from api.main import app
+
+    win = make_stock(db_session, "ACC1")
+    _history_row(db_session, win, info_date=MON, composite=70.0)
+    repo.upsert_daily_prices(db_session, win.id, _bars(MON, RISING))
+    dead = make_stock(db_session, "ACC2", status="unfetchable")
+    _history_row(db_session, dead, info_date=MON, composite=60.0)
+    _seed_benchmark(db_session, MON)
+    db_session.commit()
+
+    with TestClient(app) as client:
+        resp = client.get("/api/backtest", params={"benchmark": BENCH})
+    assert resp.status_code == 200
+    body = resp.json()
+    assert body["delisting_return_policy"] == -50.0
+    c = body["cohort"]
+    assert set(c) >= {"scored", "priceable", "measured", "excluded",
+                      "presumed_outcomes", "policy"}
+    assert c["scored"] == 2 and c["measured"] == 1
+    assert c["excluded"]["no_bars"] == 1
+    assert c["policy"]["applied_constant"] == 1
+    # with-policy overall is present and horizon-keyed as JSON strings.
+    assert body["overall_with_policy"] is not None
+    assert "5" in body["overall_with_policy"]["mean_excess"]
+
+
 def test_api_backtest_personas_ci_fields(db_session):
     from fastapi.testclient import TestClient
     from api.main import app

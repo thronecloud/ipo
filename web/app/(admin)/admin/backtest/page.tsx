@@ -10,6 +10,7 @@ import type {
   BacktestStock,
   BacktestStudy,
   CI,
+  CohortBlock,
   PersonaStudy,
   Verdict,
 } from "@/lib/types";
@@ -296,6 +297,16 @@ export default function BacktestPage() {
         ? "worse than a coin flip"
         : "like a coin flip"
     : null;
+  // Sensitivity guard: the SAME hit rate with the presumed-delisted names folded
+  // back in via the policy. When it exists, show it as the headline and the
+  // measured-only number + delta live in the tooltip.
+  const hit21Policy = data.overall_with_policy?.hit_rate?.["21"] ?? null;
+  const hasPolicy = data.overall_with_policy != null;
+  const hit21Shown = hasPolicy && hit21Policy != null ? hit21Policy : hit21;
+  const hit21Delta =
+    hasPolicy && hit21Policy != null && hit21 != null
+      ? hit21Policy - hit21
+      : null;
   const availableHorizons = data.horizons.filter(
     (h) => data.overall.mean_excess?.[String(h)] != null,
   );
@@ -315,6 +326,9 @@ export default function BacktestPage() {
           <span className="text-paper">{data.benchmark}</span> (Nifty 500)
         </span>
       </div>
+
+      {/* cohort completeness — how much of the scored universe we actually saw */}
+      <CohortSummary cohort={data.cohort} policy={data.delisting_return_policy} />
 
       {/* honesty note */}
       <div className="rounded-md border border-brass/30 bg-brass/5 px-4 py-2.5 text-xs leading-relaxed text-muted">
@@ -363,11 +377,29 @@ export default function BacktestPage() {
         />
         <StatCard
           label="Beat benchmark @ 1 month"
-          value={hit21 == null ? DASH : `${hit21.toFixed(0)}%`}
+          value={hit21Shown == null ? DASH : `${hit21Shown.toFixed(0)}%`}
           sub={
-            <span title={hit21ci ? ciRange(hit21ci) : undefined}>
-              of priced names, 21 trading days on
-              {hit21Verdict && (
+            <span
+              title={
+                hasPolicy && hit21 != null && hit21Delta != null
+                  ? `with delisting policy: ${hit21Shown!.toFixed(0)}% · measured-only: ${hit21.toFixed(0)}% · delta ${hit21Delta > 0 ? "+" : ""}${hit21Delta.toFixed(0)}pp${hit21ci ? ` · ${ciRange(hit21ci)}` : ""}`
+                  : hit21ci
+                    ? ciRange(hit21ci)
+                    : undefined
+              }
+            >
+              {hasPolicy ? "policy-adjusted, " : "of priced names, "}21 trading
+              days on
+              {hasPolicy && hit21Delta != null && (
+                <>
+                  {" · "}
+                  <span style={{ color: signColor(hit21Delta) }}>
+                    {hit21Delta > 0 ? "+" : ""}
+                    {hit21Delta.toFixed(0)}pp vs measured-only
+                  </span>
+                </>
+              )}
+              {!hasPolicy && hit21Verdict && (
                 <>
                   {" · "}
                   <span style={{ color: verdictColor(hit21ci!.verdict) }}>
@@ -377,7 +409,7 @@ export default function BacktestPage() {
               )}
             </span>
           }
-          accent={hit21 == null ? undefined : hit21 >= 50 ? "var(--color-sage)" : "var(--color-terracotta)"}
+          accent={hit21Shown == null ? undefined : hit21Shown >= 50 ? "var(--color-sage)" : "var(--color-terracotta)"}
         />
       </div>
 
@@ -646,6 +678,128 @@ function Toggle({
           </button>
         );
       })}
+    </div>
+  );
+}
+
+// ── cohort completeness banner ────────────────────────────────────
+// "measured N of M scored (K excluded: …)" — prominent, with an expandable
+// breakdown and a caution line when coverage is thin. Vanishing names are not
+// neutral (delisted skews toward failures), so this refuses to hide them.
+
+function CohortSummary({
+  cohort,
+  policy,
+}: {
+  cohort: CohortBlock;
+  policy: number;
+}) {
+  const { scored, measured, excluded, presumed_outcomes: outcomes } = cohort;
+  const totalExcluded =
+    excluded.no_bars + excluded.bars_predate_view + excluded.insufficient_forward;
+  const ratio = scored > 0 ? measured / scored : 1;
+  const partial = ratio < 0.8;
+  const pol = cohort.policy;
+  const policyApplied = pol.applied_constant + pol.applied_actual_last;
+
+  const reasonBits = [
+    excluded.no_bars > 0 ? `${excluded.no_bars} no price bars` : null,
+    excluded.bars_predate_view > 0
+      ? `${excluded.bars_predate_view} bars predate the view`
+      : null,
+    excluded.insufficient_forward > 0
+      ? `${excluded.insufficient_forward} too little forward data`
+      : null,
+  ].filter(Boolean);
+
+  return (
+    <details className="group rounded-md border border-hairline bg-panel/60 px-4 py-3">
+      <summary className="flex cursor-pointer list-none flex-wrap items-baseline gap-x-2 gap-y-1">
+        <span className="text-sm text-paper">
+          Measured{" "}
+          <span
+            className="num font-semibold"
+            style={{ color: partial ? "var(--color-terracotta)" : "var(--color-sage)" }}
+          >
+            {measured.toLocaleString("en-IN")}
+          </span>{" "}
+          of{" "}
+          <span className="num font-semibold text-paper">
+            {scored.toLocaleString("en-IN")}
+          </span>{" "}
+          scored
+        </span>
+        {totalExcluded > 0 && (
+          <span className="num text-xs text-muted">
+            ({totalExcluded.toLocaleString("en-IN")} excluded:{" "}
+            {reasonBits.join(" · ")})
+          </span>
+        )}
+        <span className="ml-auto text-[11px] text-brass group-open:hidden">
+          breakdown ▾
+        </span>
+        <span className="ml-auto hidden text-[11px] text-brass group-open:inline">
+          hide ▴
+        </span>
+      </summary>
+
+      {partial && (
+        <p className="mt-2 text-xs font-medium text-terracotta">
+          Results describe a partial cohort ({(ratio * 100).toFixed(0)}% of scored
+          names measured) — treat with caution.
+        </p>
+      )}
+
+      <div className="mt-3 grid grid-cols-1 gap-3 text-xs text-muted sm:grid-cols-3">
+        <div>
+          <div className="mb-1 text-[10px] uppercase tracking-wide text-muted/80">
+            Excluded, by reason
+          </div>
+          <Row label="No price bars" value={excluded.no_bars} />
+          <Row label="Bars predate the view" value={excluded.bars_predate_view} />
+          <Row
+            label="Too little forward data"
+            value={excluded.insufficient_forward}
+          />
+        </div>
+        <div>
+          <div className="mb-1 text-[10px] uppercase tracking-wide text-muted/80">
+            Presumed fate of the vanished
+          </div>
+          <Row label="Delisted" value={outcomes.delisted} />
+          <Row label="Merged" value={outcomes.merged} />
+          <Row label="Unknown / data gap" value={outcomes.unknown} />
+        </div>
+        <div>
+          <div className="mb-1 text-[10px] uppercase tracking-wide text-muted/80">
+            Delisting return policy
+          </div>
+          <p className="leading-relaxed">
+            Presumed-delisted names are folded back in at a documented{" "}
+            <span className="num text-paper">{policy.toFixed(0)}%</span> loss
+            (merged / unknown stay excluded, no synthetic return).
+          </p>
+          <Row label="Assigned the constant" value={pol.applied_constant} />
+          <Row
+            label="Used actual last price"
+            value={pol.applied_actual_last}
+          />
+          {policyApplied === 0 && (
+            <p className="mt-1 text-[11px] text-muted/80">
+              No policy return applied to this cohort.
+            </p>
+          )}
+        </div>
+      </div>
+    </details>
+  );
+}
+
+function Row({ label, value }: { label: string; value: number }) {
+  return (
+    <div className="flex items-baseline justify-between gap-2 py-0.5">
+      <span>{label}</span>
+      <span className="num text-paper/80">{value.toLocaleString("en-IN")}</span>
     </div>
   );
 }
