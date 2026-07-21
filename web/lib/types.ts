@@ -301,6 +301,43 @@ export interface DataQualityOverview {
   discrepancies: DQDiscrepancy[];
 }
 
+export interface TrustRow {
+  source: string;
+  fact: string;
+  agreements: number;
+  comparisons: number;
+  agreement_rate: number | null;
+  window_start: string | null;
+}
+
+export interface ReconciliationDiscrepancy {
+  symbol: string;
+  company_name: string | null;
+  fact: string;
+  fact_key: string;
+  source_a: string;
+  value_a: number | null;
+  source_b: string;
+  value_b: number | null;
+  divergence_pct: number | null;
+  detected_at: string | null;
+}
+
+export interface ReconciliationOverview {
+  last_run_at: string | null;
+  stocks: number;
+  compared: number;
+  agreements: number;
+  discrepancies: number;
+  new_discrepancies: number;
+  resolved: number;
+  stale: number;
+  missing: number;
+  open_count: number;
+  trust: TrustRow[];
+  open: ReconciliationDiscrepancy[];
+}
+
 export interface JobRunResponse {
   launched: boolean;
   job: string;

@@ -4,7 +4,10 @@ import Link from "next/link";
 import { useCallback } from "react";
 import { api } from "@/lib/api";
 import { useAsync } from "@/lib/hooks";
-import type { DataQualityOverview } from "@/lib/types";
+import type {
+  DataQualityOverview,
+  ReconciliationOverview,
+} from "@/lib/types";
 import { relTime, titleCase } from "@/lib/format";
 import { Panel, PanelHeader } from "@/components/Panel";
 import { Meter } from "@/components/Bars";
@@ -40,10 +43,38 @@ function coverageColor(pct: number | null) {
   return "var(--color-terracotta)";
 }
 
+function trustColor(rate: number | null) {
+  if (rate == null) return "var(--color-muted)";
+  if (rate >= 0.95) return "var(--color-sage)";
+  if (rate >= 0.8) return "var(--color-brass)";
+  return "var(--color-terracotta)";
+}
+
+// price / market_cap diverge in relative %, promoter_pct in absolute points.
+function divergenceLabel(fact: string, value: number | null) {
+  if (value == null) return "—";
+  return fact === "promoter_pct"
+    ? `${value.toFixed(2)}pts`
+    : `${value.toFixed(2)}%`;
+}
+
+function fmtValue(v: number | null) {
+  if (v == null) return "—";
+  const abs = Math.abs(v);
+  if (abs >= 1e7) return v.toExponential(2);
+  return v.toLocaleString("en-IN", { maximumFractionDigits: 2 });
+}
+
 export default function DataQualityPage() {
   const fetcher = useCallback((s: AbortSignal) => api.adminDataQuality(s), []);
   const { data, loading, error, refetch } =
     useAsync<DataQualityOverview>(fetcher, []);
+
+  const reconFetcher = useCallback(
+    (s: AbortSignal) => api.adminReconciliation(s),
+    [],
+  );
+  const { data: recon } = useAsync<ReconciliationOverview>(reconFetcher, []);
 
   const grades = data?.grades ?? {};
   const gradeTotal = Object.values(grades).reduce((a, b) => a + b, 0) || 1;
@@ -276,7 +307,140 @@ export default function DataQualityPage() {
           </Panel>
         </>
       )}
+
+      {recon && <ReconciliationSection recon={recon} />}
     </div>
+  );
+}
+
+function ReconciliationSection({ recon }: { recon: ReconciliationOverview }) {
+  return (
+    <>
+      {/* Per-source-per-fact trust */}
+      <Panel>
+        <PanelHeader
+          title="Cross-source trust"
+          hint="rolling 90d agreement rate, per source × fact"
+          right={
+            recon.last_run_at ? (
+              <span className="num text-xs text-muted">
+                {recon.compared.toLocaleString("en-IN")} compared ·{" "}
+                {recon.stale.toLocaleString("en-IN")} stale · {relTime(recon.last_run_at)}
+              </span>
+            ) : undefined
+          }
+        />
+        {recon.trust.length === 0 ? (
+          <div className="px-4 py-6 text-center text-sm text-muted">
+            No reconciliation has run yet.
+          </div>
+        ) : (
+          <div className="w-full overflow-x-auto">
+            <table className="w-full border-collapse text-sm">
+              <thead>
+                <tr className="border-b border-hairline text-[10px] uppercase tracking-wide text-muted">
+                  <th className="px-3 py-2 text-left font-semibold">Fact</th>
+                  <th className="px-3 py-2 text-left font-semibold">Source</th>
+                  <th className="px-3 py-2 text-right font-semibold">Agreement</th>
+                  <th className="px-3 py-2 text-right font-semibold">Comparisons</th>
+                </tr>
+              </thead>
+              <tbody>
+                {recon.trust.map((t) => (
+                  <tr
+                    key={`${t.fact}:${t.source}`}
+                    className="border-b border-hairline/60 last:border-0"
+                  >
+                    <td className="px-3 py-1.5 text-xs text-paper">
+                      {titleCase(t.fact.replace(/_/g, " "))}
+                    </td>
+                    <td className="num px-3 py-1.5 text-xs text-paper/80">
+                      {t.source}
+                    </td>
+                    <td
+                      className="num px-3 py-1.5 text-right font-semibold"
+                      style={{ color: trustColor(t.agreement_rate) }}
+                    >
+                      {t.agreement_rate == null
+                        ? "—"
+                        : `${(t.agreement_rate * 100).toFixed(1)}%`}
+                    </td>
+                    <td className="num px-3 py-1.5 text-right text-muted">
+                      {t.agreements.toLocaleString("en-IN")}/
+                      {t.comparisons.toLocaleString("en-IN")}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
+      </Panel>
+
+      {/* Open discrepancies */}
+      <Panel>
+        <PanelHeader
+          title="Open discrepancies"
+          hint="same fact, two sources, beyond tolerance — flagged, never overwritten"
+          right={
+            <span className="num text-xs text-muted">
+              {recon.open_count.toLocaleString("en-IN")} open
+            </span>
+          }
+        />
+        {recon.open.length === 0 ? (
+          <div className="px-4 py-6 text-center text-sm text-muted">
+            No open discrepancies — sources agree.
+          </div>
+        ) : (
+          <div className="w-full overflow-x-auto">
+            <table className="w-full border-collapse text-sm">
+              <thead>
+                <tr className="border-b border-hairline text-[10px] uppercase tracking-wide text-muted">
+                  <th className="px-3 py-2 text-left font-semibold">Symbol</th>
+                  <th className="px-3 py-2 text-left font-semibold">Fact</th>
+                  <th className="px-3 py-2 text-left font-semibold">A vs B</th>
+                  <th className="px-3 py-2 text-right font-semibold">Divergence</th>
+                  <th className="px-3 py-2 text-right font-semibold">Detected</th>
+                </tr>
+              </thead>
+              <tbody>
+                {recon.open.map((d, i) => (
+                  <tr
+                    key={`${d.symbol}:${d.fact}:${d.fact_key}:${i}`}
+                    className="border-b border-hairline/60 last:border-0"
+                  >
+                    <td className="px-3 py-1.5">
+                      <Link
+                        href={`/stock/${encodeURIComponent(d.symbol)}`}
+                        className="num text-paper hover:text-brass"
+                      >
+                        {d.symbol}
+                      </Link>
+                    </td>
+                    <td className="px-3 py-1.5 text-xs text-paper/80">
+                      {titleCase(d.fact.replace(/_/g, " "))}
+                      <span className="text-muted"> · {d.fact_key}</span>
+                    </td>
+                    <td className="num px-3 py-1.5 text-xs text-muted">
+                      {d.source_a} {fmtValue(d.value_a)}
+                      <span className="text-paper/40"> vs </span>
+                      {d.source_b} {fmtValue(d.value_b)}
+                    </td>
+                    <td className="num px-3 py-1.5 text-right text-xs text-terracotta">
+                      {divergenceLabel(d.fact, d.divergence_pct)}
+                    </td>
+                    <td className="num px-3 py-1.5 text-right text-[11px] text-muted">
+                      {d.detected_at ? relTime(d.detected_at) : "—"}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
+      </Panel>
+    </>
   );
 }
 

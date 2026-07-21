@@ -17,6 +17,7 @@ import type {
   JobType,
   Meta,
   PersonaDistribution,
+  ReconciliationOverview,
   SchedulerOverview,
   StockDetail,
   StockList,
@@ -156,6 +157,9 @@ export const api = {
 
   adminDataQuality: (signal?: AbortSignal) =>
     get<DataQualityOverview>("/api/admin/data-quality", signal),
+
+  adminReconciliation: (signal?: AbortSignal) =>
+    get<ReconciliationOverview>("/api/admin/reconciliation", signal),
 
   runJob: async (
     job: JobType,

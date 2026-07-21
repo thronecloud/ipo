@@ -49,6 +49,10 @@ EXTRACTION_TABLES = ("extracted_documents", "extracted_financials")
 CALENDAR_REV = "f2a8d1c40b73"
 CALENDAR_TABLES = ("corporate_events", "analysis_queue")
 
+# Cross-source reconciliation tables: added as new, empty tables (no backfill).
+RECONCILE_REV = "55233f9342f8"
+RECONCILE_TABLES = ("source_discrepancies", "source_trust")
+
 # Structural drift we refuse to allow. modify_*/index reflection noise is ignored;
 # a new/removed table or column (the untracked-model trap) is not.
 STRUCTURAL = {"add_table", "remove_table", "add_column", "remove_column"}
@@ -187,6 +191,33 @@ def test_calendar_tables_created_empty_and_backfill_free():
         assert r.returncode == 0, f"calendar upgrade failed:\n{r.stderr}"
         with psycopg.connect(PARITY_DSN, autocommit=True) as conn:
             for table in CALENDAR_TABLES:
+                (n,) = conn.execute(f"SELECT count(*) FROM {table}").fetchone()
+                assert n == 0, f"{table} should be empty after a backfill-free migration"
+    finally:
+        _admin(f"DROP DATABASE IF EXISTS {PARITY_DB} WITH (FORCE)")
+
+
+def test_reconciliation_tables_created_empty_and_backfill_free():
+    """The two cross-source reconciliation tables are added as new, empty tables.
+    Upgrading to their revision over a schema that already holds a stock must create each
+    with zero rows and touch nothing pre-existing."""
+    _admin(f"DROP DATABASE IF EXISTS {PARITY_DB} WITH (FORCE)")
+    _admin(f"CREATE DATABASE {PARITY_DB}")
+    try:
+        env = {**os.environ, "DATABASE_URL": PARITY_URL}
+        # Schema at the revision *before* the reconciliation tables, with a stock so a
+        # (hypothetical, unwanted) backfill would have something to touch.
+        r = _alembic(CALENDAR_REV, env)
+        assert r.returncode == 0, f"pre-reconcile upgrade failed:\n{r.stderr}"
+        with psycopg.connect(PARITY_DSN, autocommit=True) as conn:
+            conn.execute(
+                "INSERT INTO stocks (symbol, universe, status, first_seen, last_updated) "
+                "VALUES ('SEED', '[]'::jsonb, 'active', now(), now())"
+            )
+        r = _alembic(RECONCILE_REV, env)
+        assert r.returncode == 0, f"reconcile upgrade failed:\n{r.stderr}"
+        with psycopg.connect(PARITY_DSN, autocommit=True) as conn:
+            for table in RECONCILE_TABLES:
                 (n,) = conn.execute(f"SELECT count(*) FROM {table}").fetchone()
                 assert n == 0, f"{table} should be empty after a backfill-free migration"
     finally:

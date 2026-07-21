@@ -339,6 +339,15 @@ def job_dq_fill():
     gapfill(limit=DQ_FILL_BATCH, verbose=False)
 
 
+def job_reconcile():
+    # Daily cross-source reconciliation: compare the same fact across its sources (price
+    # bhavcopy-vs-yfinance, market cap computed-vs-published, promoter NSE-vs-screener),
+    # flag fresh divergences, and refresh the rolling trust scores. DB-only, no network.
+    from engine.quality.reconcile import reconcile
+    print(f"[scheduler][{_now()}] reconcile (cross-source)")
+    reconcile(verbose=False)
+
+
 def job_reap():
     # A restart strands its own in-flight runs, and the boot-time reap spares them
     # for being seconds old. Recurring so those rows are cleared within the hour
@@ -537,6 +546,10 @@ def build_scheduler() -> BlockingScheduler:
     # Nightly data-quality audit at 05:00 UTC — after refresh (02:00) so it scores fresh data.
     sched.add_job(safe(job_dq_audit), CronTrigger(hour=5, minute=0), id="dq_audit",
                   misfire_grace_time=MISFIRE_DAILY)
+    # Daily cross-source reconciliation at 15:00 UTC — after the day's bhavcopy (13:15),
+    # shareholding, and snapshot refreshes have landed, so it compares the freshest reads.
+    sched.add_job(safe(job_reconcile), CronTrigger(hour=15, minute=0), id="reconcile",
+                  misfire_grace_time=MISFIRE_DAILY)
     # Daily corporate announcements at 12:45 UTC — NSE+BSE feeds serve only the recent
     # window, so a daily poll is the natural cadence (append-only, deduped).
     sched.add_job(safe(job_announcements), CronTrigger(hour=12, minute=45),
@@ -603,6 +616,7 @@ _JOB_META: dict[str, tuple[str, str | None]] = {
     "reap":          ("Error out job_runs stranded 'running' by a restart", None),
     "index_prices":  ("Refresh benchmark index bars for the backtest comparator", "index_prices"),
     "dq_audit":      ("Score every active stock's data quality", "dq_audit"),
+    "reconcile":     ("Compare the same fact across its sources; flag divergences + score source trust", "reconcile"),
     "dq_fill":       ("Close the data gaps the latest audit flagged", "dq_fill"),
     "announcements": ("Poll NSE + BSE corporate-announcement feeds (append-only, deduped)", "corporate_announcements"),
     "bulk_deals":    ("Poll NSE bulk/block large-deal snapshot after market close", "bulk_deals"),

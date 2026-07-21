@@ -629,6 +629,78 @@ class AnalysisQueue(Base):
     consumed_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
 
 
+class SourceDiscrepancy(Base):
+    """One open (or resolved) disagreement between two sources about the same fact.
+
+    The same fact now arrives from several places — a price bar from bhavcopy and from
+    yfinance, a market cap published by yfinance and one we can compute from its own
+    shares×price, promoter holding from the NSE pattern feed and from the screener scrape.
+    The reconciler compares them and, where they diverge beyond the fact's tolerance,
+    records a row here. Correctness never mutates source data (the engine flags, the human
+    decides) — this table IS the flag.
+
+    Dedup is on (stock_id, fact, fact_key): `fact_key` is the fact's date-ish grain (the
+    bar date for price, the snapshot day for market cap, the fiscal quarter for promoter
+    holding), so re-detecting the same disagreement updates the one row rather than
+    appending. `resolved_at` is set the moment a later comparison of the same key agrees;
+    a subsequent re-divergence re-opens it (resolved_at back to NULL).
+
+    `divergence_pct` carries the magnitude in the fact's native comparison unit — a
+    relative percent for price/market_cap, an absolute percentage-point gap for promoter
+    holding — so it is read alongside `fact`, never on its own.
+    """
+
+    __tablename__ = "source_discrepancies"
+    __table_args__ = (
+        UniqueConstraint("stock_id", "fact", "fact_key",
+                         name="uq_source_disc_stock_fact_key"),
+        Index("ix_source_disc_stock", "stock_id"),
+        Index("ix_source_disc_open", "resolved_at"),
+        Index("ix_source_disc_detected", "detected_at"),
+    )
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    stock_id: Mapped[int] = mapped_column(
+        ForeignKey("stocks.id", ondelete="CASCADE"), index=True
+    )
+    fact: Mapped[str] = mapped_column(String(32))          # price / market_cap / promoter_pct
+    fact_key: Mapped[str] = mapped_column(String(32))      # date-ish dedup grain
+    source_a: Mapped[str] = mapped_column(String(32))
+    value_a: Mapped[float | None] = mapped_column(Float)
+    source_b: Mapped[str] = mapped_column(String(32))
+    value_b: Mapped[float | None] = mapped_column(Float)
+    divergence_pct: Mapped[float | None] = mapped_column(Float)
+    detected_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
+    resolved_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+
+
+class SourceTrust(Base):
+    """A source's rolling agreement rate for one fact — how often, over the last 90 days
+    of comparisons, this source agreed with the other source it was checked against.
+
+    Materialized small: the reconcile job recomputes one row per (source, fact) each run
+    by summing the per-run comparison tallies across the trailing window (stored in each
+    reconcile job_run's stats), so the trust score is a plain `agreements / comparisons`
+    read against a genuine rolling window rather than a value that drifts forever. A
+    pairwise comparison credits BOTH sides equally — with two sources per fact the rate is
+    symmetric; the per-source grain is what lets a third source, added later, be told apart.
+    `window_start` is the earliest comparison the counts cover.
+    """
+
+    __tablename__ = "source_trust"
+    __table_args__ = (
+        UniqueConstraint("source", "fact", name="uq_source_trust_source_fact"),
+    )
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    source: Mapped[str] = mapped_column(String(32))
+    fact: Mapped[str] = mapped_column(String(32))
+    agreements: Mapped[int] = mapped_column(Integer, default=0)
+    comparisons: Mapped[int] = mapped_column(Integer, default=0)
+    window_start: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+    computed_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
+
+
 class StockInsight(Base):
     """Distilled, reusable takeaways — the seed of the memory/knowledge layer."""
 

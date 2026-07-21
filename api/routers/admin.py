@@ -25,8 +25,11 @@ from api.schemas import (
     JobRunResponse,
     ModelUsage,
     PersonaDistribution,
+    ReconciliationDiscrepancy,
+    ReconciliationOverview,
     SchedulerJob,
     SchedulerOverview,
+    TrustRow,
     Usage,
 )
 from db.models import (
@@ -34,6 +37,8 @@ from db.models import (
     CompositeScore,
     DataQualityReport,
     JobRun,
+    SourceDiscrepancy,
+    SourceTrust,
     Stock,
     StockSnapshot,
 )
@@ -42,7 +47,7 @@ router = APIRouter(prefix="/api/admin", tags=["admin"])
 
 # Jobs that map to `python -m engine.run <job>`.
 ALLOWED_JOBS = {"discover", "refresh", "enrich", "analyze", "score", "status",
-                "backfill", "dq_audit", "dq_fill"}
+                "backfill", "dq_audit", "dq_fill", "reconcile"}
 ANALYZE_MAX_LIMIT = 25  # refuse a bare analyze; require a small limit
 
 
@@ -256,6 +261,74 @@ def data_quality(db: Session = Depends(get_db)):
         missing=stats.get("missing", {}),
         worst=worst,
         discrepancies=discrepancies[:50],
+    )
+
+
+@router.get("/reconciliation", response_model=ReconciliationOverview)
+def reconciliation(db: Session = Depends(get_db), limit: int = 100):
+    """Cross-source reconciliation: the per-source-per-fact trust scores and the current
+    open discrepancies. Run-level counts come from the last reconcile job; the trust rows
+    and open list are read live from source_trust / source_discrepancies."""
+    last = db.scalar(
+        select(JobRun)
+        .where(JobRun.job_type == "reconcile", JobRun.status.in_(("success", "partial")))
+        .order_by(JobRun.id.desc())
+        .limit(1)
+    )
+    stats = (last.stats if last else None) or {}
+
+    trust = [
+        TrustRow(
+            source=t.source,
+            fact=t.fact,
+            agreements=t.agreements,
+            comparisons=t.comparisons,
+            agreement_rate=(round(t.agreements / t.comparisons, 4)
+                            if t.comparisons else None),
+            window_start=t.window_start,
+        )
+        for t in db.scalars(
+            select(SourceTrust).order_by(SourceTrust.fact, SourceTrust.source)
+        ).all()
+    ]
+
+    open_count = db.scalar(
+        select(func.count(SourceDiscrepancy.id)).where(
+            SourceDiscrepancy.resolved_at.is_(None)
+        )
+    ) or 0
+
+    rows = db.execute(
+        select(SourceDiscrepancy, Stock.symbol, Stock.company_name)
+        .join(Stock, Stock.id == SourceDiscrepancy.stock_id)
+        .where(SourceDiscrepancy.resolved_at.is_(None))
+        .order_by(SourceDiscrepancy.divergence_pct.desc().nulls_last(),
+                  SourceDiscrepancy.detected_at.desc())
+        .limit(max(1, min(limit, 500)))
+    ).all()
+    open_list = [
+        ReconciliationDiscrepancy(
+            symbol=sym, company_name=name, fact=d.fact, fact_key=d.fact_key,
+            source_a=d.source_a, value_a=d.value_a,
+            source_b=d.source_b, value_b=d.value_b,
+            divergence_pct=d.divergence_pct, detected_at=d.detected_at,
+        )
+        for d, sym, name in rows
+    ]
+
+    return ReconciliationOverview(
+        last_run_at=last.finished_at if last else None,
+        stocks=stats.get("stocks", 0),
+        compared=stats.get("compared", 0),
+        agreements=stats.get("agreements", 0),
+        discrepancies=stats.get("discrepancies", 0),
+        new_discrepancies=stats.get("new_discrepancies", 0),
+        resolved=stats.get("resolved", 0),
+        stale=stats.get("stale", 0),
+        missing=stats.get("missing", 0),
+        open_count=open_count,
+        trust=trust,
+        open=open_list,
     )
 
 

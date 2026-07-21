@@ -79,6 +79,11 @@ def cmd_dq_fill(a):
                   limit=a.limit, delay=a.delay))
 
 
+def cmd_reconcile(a):
+    from engine.quality.reconcile import reconcile
+    print(reconcile(limit=a.limit))
+
+
 def cmd_extract(a):
     from engine.extract.run import run_extraction
     print(run_extraction(page_budget=a.page_budget, limit=a.limit, force=a.force))
@@ -220,6 +225,10 @@ def main():
     df.add_argument("--delay", type=float, default=None,
                     help="seconds between network requests (set 6-8 to avoid screener rate limits)")
     df.set_defaults(func=cmd_dq_fill)
+
+    rc = sub.add_parser("reconcile", help="Cross-source reconciliation: flag divergences + score source trust")
+    rc.add_argument("--limit", type=int, default=0)
+    rc.set_defaults(func=cmd_reconcile)
 
     ex = sub.add_parser("extract", help="Extract text + statutory financials from downloaded filings")
     ex.add_argument("--page-budget", type=int, default=None)

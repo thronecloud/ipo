@@ -217,6 +217,43 @@ class DataQualityOverview(BaseModel):
     discrepancies: list[DQDiscrepancy] = []
 
 
+class TrustRow(BaseModel):
+    source: str
+    fact: str
+    agreements: int
+    comparisons: int
+    agreement_rate: float | None = None   # agreements/comparisons, computed on read
+    window_start: datetime | None = None
+
+
+class ReconciliationDiscrepancy(BaseModel):
+    symbol: str
+    company_name: str | None = None
+    fact: str
+    fact_key: str
+    source_a: str
+    value_a: float | None = None
+    source_b: str
+    value_b: float | None = None
+    divergence_pct: float | None = None
+    detected_at: datetime | None = None
+
+
+class ReconciliationOverview(BaseModel):
+    last_run_at: datetime | None = None
+    stocks: int = 0
+    compared: int = 0
+    agreements: int = 0
+    discrepancies: int = 0
+    new_discrepancies: int = 0
+    resolved: int = 0
+    stale: int = 0
+    missing: int = 0
+    open_count: int = 0
+    trust: list[TrustRow] = []
+    open: list[ReconciliationDiscrepancy] = []
+
+
 class JobRow(BaseModel):
     id: int
     job_type: str
