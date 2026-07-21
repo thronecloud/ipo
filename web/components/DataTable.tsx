@@ -11,6 +11,7 @@ export interface Column<T> {
   width?: number | string;
   className?: string;
   headerClassName?: string;
+  title?: string; // native tooltip explaining the column
 }
 
 export interface SortState {
@@ -67,6 +68,7 @@ export default function DataTable<T>({
                   key={c.key}
                   scope="col"
                   style={{ width: c.width }}
+                  title={c.title}
                   className={`${pad} ${alignCls} text-[10px] font-semibold uppercase tracking-[0.1em] text-muted ${c.headerClassName ?? ""}`}
                 >
                   {sortable ? (

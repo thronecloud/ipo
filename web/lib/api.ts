@@ -12,6 +12,7 @@ import type {
   CoverageRow,
   DataQualityOverview,
   JobRun,
+  PersonaStudy,
   JobRunResponse,
   JobType,
   Meta,
@@ -117,6 +118,12 @@ export const api = {
 
   backtest: (signal?: AbortSignal) =>
     get<BacktestStudy>("/api/backtest", signal),
+
+  backtestPersonas: (personas?: string[], signal?: AbortSignal) =>
+    get<PersonaStudy>(
+      `/api/backtest/personas${toQS({ personas: personas?.length ? personas.join(",") : undefined })}`,
+      signal,
+    ),
 
   // ── Admin endpoints ───────────────────────────────────────────
   adminOverview: (signal?: AbortSignal) =>

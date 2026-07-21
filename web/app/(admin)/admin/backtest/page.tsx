@@ -4,18 +4,42 @@ import Link from "next/link";
 import { useCallback, useMemo, useState } from "react";
 import type { ReactNode } from "react";
 import { api } from "@/lib/api";
-import { useAsync } from "@/lib/hooks";
-import type { BacktestBucket, BacktestStock, BacktestStudy } from "@/lib/types";
+import { useAsync, useDebounced, useLocalStorage } from "@/lib/hooks";
+import type {
+  BacktestBucket,
+  BacktestStock,
+  BacktestStudy,
+  PersonaStudy,
+} from "@/lib/types";
 import { composite, compositeColor, pct, shortDate, DASH } from "@/lib/format";
+import { PERSONA_ORDER, PERSONA_SLUGS } from "@/lib/personas";
 import StatCard from "@/components/StatCard";
 import DataTable, { Column, SortState } from "@/components/DataTable";
 import RecChip from "@/components/RecChip";
 import TierChip from "@/components/TierChip";
+import PersonaWeighting from "@/components/PersonaWeighting";
+import EquityCurve from "@/components/EquityCurve";
+import PersonaRanking, { Metric } from "@/components/PersonaRanking";
 import { Panel, PanelHeader } from "@/components/Panel";
 import { ErrorState, Skeleton, TableSkeleton } from "@/components/States";
 
 const TIER_ORDER = ["high", "moderate", "mixed", "provisional"];
 const QUINTILE_ORDER = ["5", "4", "3", "2", "1"];
+
+// Plain-language names for the trading-day horizons (spelled out so nobody has
+// to know that 21 bars ≈ a month).
+const HORIZON_LABEL: Record<number, string> = {
+  5: "1 week",
+  21: "1 month",
+  63: "3 months",
+  126: "6 months",
+};
+function horizonLabel(h: number): string {
+  return HORIZON_LABEL[h] ?? `${h} days`;
+}
+function horizonTitle(h: number): string {
+  return `${h} trading days${HORIZON_LABEL[h] ? ` ≈ ${HORIZON_LABEL[h]}` : ""}`;
+}
 
 function signColor(v: number | null | undefined): string {
   if (v == null) return "var(--color-muted)";
@@ -23,8 +47,33 @@ function signColor(v: number | null | undefined): string {
 }
 
 export default function BacktestPage() {
-  const fetcher = useCallback((s: AbortSignal) => api.backtest(s), []);
-  const { data, loading, error, refetch } = useAsync<BacktestStudy>(fetcher, []);
+  const studyFetcher = useCallback((s: AbortSignal) => api.backtest(s), []);
+  const { data, loading, error, refetch } = useAsync<BacktestStudy>(
+    studyFetcher,
+    [],
+  );
+
+  // Council subset for the equity curve + per-persona comparison. Persisted so
+  // a chosen lens survives reloads.
+  const [selected, setSelected] = useLocalStorage<string[]>(
+    "backtest.council",
+    PERSONA_SLUGS,
+  );
+  const full = selected.length >= PERSONA_ORDER.length || selected.length === 0;
+  const subsetKey = useDebounced(full ? "" : [...selected].sort().join(","), 250);
+  const personaFetcher = useCallback(
+    (s: AbortSignal) =>
+      api.backtestPersonas(subsetKey ? subsetKey.split(",") : undefined, s),
+    [subsetKey],
+  );
+  const {
+    data: pdata,
+    loading: ploading,
+    error: perror,
+  } = useAsync<PersonaStudy>(personaFetcher, [subsetKey]);
+
+  const [metric, setMetric] = useState<Metric>("mean_excess");
+  const [focusH, setFocusH] = useState<number>(21);
 
   const [wSort, setWSort] = useState<SortState>({
     key: "excess_to_date",
@@ -69,6 +118,19 @@ export default function BacktestPage() {
     );
   }
 
+  const togglePersona = useCallback(
+    (slug: string) => {
+      setSelected((prev) => {
+        const base = prev.length === 0 ? PERSONA_SLUGS : prev;
+        const next = new Set(base);
+        if (next.has(slug)) next.delete(slug);
+        else next.add(slug);
+        return PERSONA_SLUGS.filter((s) => next.has(s));
+      });
+    },
+    [setSelected],
+  );
+
   const winnerColumns: Column<BacktestStock>[] = useMemo(
     () => [
       {
@@ -98,6 +160,7 @@ export default function BacktestPage() {
         header: "Composite",
         sortKey: "composite",
         align: "right",
+        title: "Average of the 10 persona scores, on a 0-100 scale.",
         render: (r) => (
           <span className="num text-xs" style={{ color: compositeColor(r.composite) }}>
             {composite(r.composite)}
@@ -106,9 +169,11 @@ export default function BacktestPage() {
       },
       {
         key: "lcb",
-        header: "LCB",
+        header: "Conf-adj",
         sortKey: "lcb",
         align: "right",
+        title:
+          "Confidence-adjusted score: the composite minus a penalty for how much the personas disagree. Our conservative ranking key.",
         render: (r) => (
           <span className="num text-xs" style={{ color: compositeColor(r.lcb) }}>
             {composite(r.lcb)}
@@ -117,7 +182,7 @@ export default function BacktestPage() {
       },
       {
         key: "tier",
-        header: "Tier",
+        header: "Confidence",
         render: (r) => <TierChip tier={r.tier} size="xs" />,
       },
       {
@@ -130,6 +195,7 @@ export default function BacktestPage() {
         header: "Entry",
         sortKey: "entry_date",
         align: "right",
+        title: "First close strictly after the day the view formed (no lookahead).",
         render: (r) => (
           <span className="num whitespace-nowrap text-xs text-muted">
             {shortDate(r.entry_date)}
@@ -141,6 +207,7 @@ export default function BacktestPage() {
         header: "Return",
         sortKey: "return_to_date",
         align: "right",
+        title: "Price change from entry to the latest close.",
         render: (r) => (
           <span className="num text-xs" style={{ color: signColor(r.return_to_date) }}>
             {pct(r.return_to_date)}
@@ -149,9 +216,10 @@ export default function BacktestPage() {
       },
       {
         key: "excess",
-        header: "Excess",
+        header: "Excess vs bench",
         sortKey: "excess_to_date",
         align: "right",
+        title: "Return minus the benchmark's return over the same window.",
         render: (r) => (
           <span className="num text-xs" style={{ color: signColor(r.excess_to_date) }}>
             {pct(r.excess_to_date)}
@@ -180,6 +248,11 @@ export default function BacktestPage() {
           ))}
         </div>
         <Panel>
+          <div className="p-4">
+            <Skeleton style={{ height: 300 }} />
+          </div>
+        </Panel>
+        <Panel>
           <TableSkeleton rows={8} />
         </Panel>
       </div>
@@ -196,14 +269,17 @@ export default function BacktestPage() {
   const unavailable = data.horizons.filter(
     (h) => !availableHorizons.includes(h),
   );
+  const selectionLabel = full
+    ? "the full council"
+    : `${selected.length} selected ${selected.length === 1 ? "investor" : "investors"}`;
 
   return (
     <div className="space-y-5">
       <div className="flex flex-wrap items-baseline justify-between gap-2">
         <h1 className="serif text-2xl font-semibold text-paper">Backtest</h1>
         <span className="num text-xs text-muted">
-          point-in-time event study · vs{" "}
-          <span className="text-paper">{data.benchmark}</span>
+          did the scores pick winners? · vs{" "}
+          <span className="text-paper">{data.benchmark}</span> (Nifty 500)
         </span>
       </div>
 
@@ -214,7 +290,12 @@ export default function BacktestPage() {
         </span>{" "}
         — one cohort, ~2.5 months of forward data since 2026-04-20.
         {unavailable.length > 0 && (
-          <> The {unavailable.map((h) => `${h}d`).join(" / ")} horizons are not yet computable.</>
+          <>
+            {" "}
+            The{" "}
+            {unavailable.map((h) => horizonLabel(h)).join(" / ")} horizons are
+            not yet computable.
+          </>
         )}{" "}
         These numbers are calibration data for the confidence layer, not
         validation of it.
@@ -228,13 +309,13 @@ export default function BacktestPage() {
           sub="earliest scored view per stock"
         />
         <StatCard
-          label="Priced"
+          label="With prices"
           value={data.priced.toLocaleString("en-IN")}
           sub={
             unpriced > 0 ? (
               <span className="text-terracotta">
                 {unpriced.toLocaleString("en-IN")} of{" "}
-                {data.cohort_size.toLocaleString("en-IN")} unpriced — coverage gap
+                {data.cohort_size.toLocaleString("en-IN")} have no price history
               </span>
             ) : (
               "full price coverage"
@@ -248,17 +329,104 @@ export default function BacktestPage() {
           sub={`Nifty 500 · ${data.benchmark_bars} bars`}
         />
         <StatCard
-          label="Hit rate @21d"
+          label="Beat benchmark @ 1 month"
           value={hit21 == null ? DASH : `${hit21.toFixed(0)}%`}
-          sub="of priced names beat the benchmark"
+          sub="of priced names, 21 trading days on"
           accent={hit21 == null ? undefined : hit21 >= 50 ? "var(--color-sage)" : "var(--color-terracotta)"}
         />
       </div>
 
-      {/* grouped excess-return tables */}
+      {/* ── CHARTS FIRST ─────────────────────────────────────────── */}
+
+      {/* equity curve of the selected council + picker */}
+      <Panel>
+        <PanelHeader
+          title="Growth of a BUY basket"
+          editorial
+          hint={
+            <span title="An equal-weighted portfolio of the picks the selected council rates BUY, each entered the day after its view formed, rebased to 100.">
+              {selectionLabel}, ₹100 at entry
+            </span>
+          }
+        />
+        <div className="grid grid-cols-1 gap-4 p-4 lg:grid-cols-[1fr_220px]">
+          <div>
+            {perror ? (
+              <p className="py-16 text-center text-sm text-terracotta">{perror}</p>
+            ) : !pdata ? (
+              <Skeleton style={{ height: 300 }} />
+            ) : (
+              <EquityCurve
+                points={pdata.subset.curve}
+                benchmarkLabel={`${data.benchmark} benchmark`}
+                loading={ploading}
+              />
+            )}
+            {pdata && (
+              <p className="mt-2 text-[11px] text-muted">
+                {pdata.subset.n_buy} BUY {pdata.subset.n_buy === 1 ? "pick" : "picks"} in
+                this selection ({pdata.subset.n_buy_priced} with prices) ·{" "}
+                {pdata.subset.n_avoid} AVOID. The basket can shrink at longer
+                horizons as forward prices run out — hover any point for its size.
+              </p>
+            )}
+          </div>
+          <div className="lg:border-l lg:border-hairline lg:pl-4">
+            <PersonaWeighting selected={selected} onChange={setSelected} />
+          </div>
+        </div>
+      </Panel>
+
+      {/* per-persona comparison */}
+      <Panel>
+        <PanelHeader
+          title="Each investor's record"
+          editorial
+          right={
+            <div className="flex flex-wrap items-center gap-2">
+              <Toggle
+                options={[
+                  { key: "mean_excess", label: "Excess return" },
+                  { key: "hit_rate", label: "Hit rate" },
+                  { key: "spread", label: "BUY–AVOID edge" },
+                ]}
+                value={metric}
+                onChange={(v) => setMetric(v as Metric)}
+              />
+              <Toggle
+                options={data.horizons.map((h) => ({
+                  key: String(h),
+                  label: horizonLabel(h),
+                  title: horizonTitle(h),
+                }))}
+                value={String(focusH)}
+                onChange={(v) => setFocusH(Number(v))}
+              />
+            </div>
+          }
+        />
+        <div className="p-4">
+          {perror ? (
+            <p className="py-8 text-center text-sm text-terracotta">{perror}</p>
+          ) : !pdata ? (
+            <TableSkeleton rows={10} />
+          ) : (
+            <PersonaRanking
+              personas={pdata.personas}
+              metric={metric}
+              horizon={focusH}
+              selected={full ? [] : selected}
+              onToggle={togglePersona}
+            />
+          )}
+        </div>
+      </Panel>
+
+      {/* ── TABLES AFTER ─────────────────────────────────────────── */}
+
       <BucketTable
-        title="By confidence tier"
-        hint="excess vs benchmark per horizon"
+        title="By confidence level"
+        hint="excess return vs benchmark, per horizon"
         buckets={data.by_tier}
         order={TIER_ORDER}
         horizons={data.horizons}
@@ -268,42 +436,56 @@ export default function BacktestPage() {
 
       <div className="grid grid-cols-1 gap-5 xl:grid-cols-2">
         <BucketTable
-          title="By LCB quintile"
-          hint="5 = best"
+          title="By confidence-adjusted score"
+          hint="cohort split into fifths · 5 = highest scored"
           buckets={data.by_lcb_quintile}
           order={QUINTILE_ORDER}
           horizons={data.horizons}
-          labelFor={(k) => <span className="num text-paper">Q{k}</span>}
+          labelFor={(k) => (
+            <span className="num text-paper" title={`Fifth ${k} of 5 (5 = highest)`}>
+              Fifth {k}
+            </span>
+          )}
         />
         <BucketTable
-          title="By composite quintile"
-          hint="5 = best"
+          title="By composite score"
+          hint="cohort split into fifths · 5 = highest scored"
           buckets={data.by_composite_quintile}
           order={QUINTILE_ORDER}
           horizons={data.horizons}
-          labelFor={(k) => <span className="num text-paper">Q{k}</span>}
+          labelFor={(k) => (
+            <span className="num text-paper" title={`Fifth ${k} of 5 (5 = highest)`}>
+              Fifth {k}
+            </span>
+          )}
         />
       </div>
 
-      {/* IC panel */}
+      {/* rank-correlation panel (formerly "IC") */}
       <Panel>
         <PanelHeader
-          title="Information coefficient"
-          hint="Spearman rank IC per horizon, -1..1"
+          title="Does a higher score predict a higher return?"
+          hint="rank correlation, −1 to +1"
         />
         <div className="p-4">
           <p className="mb-3 text-xs text-muted">
-            Rank correlation between score and forward return; &gt;0 means
-            higher scores → higher returns.
+            How closely the score order matches the return order across the
+            cohort (Spearman rank correlation). +1 means higher scores lined up
+            perfectly with higher returns, 0 means no relationship, −1 means the
+            opposite. Reported at each horizon.
           </p>
           <div className="w-full overflow-x-auto">
             <table className="w-full border-collapse text-sm">
               <thead>
                 <tr className="border-b border-hairline text-[10px] uppercase tracking-wide text-muted">
-                  <th className="px-3 py-2 text-left font-semibold">Signal</th>
+                  <th className="px-3 py-2 text-left font-semibold">Score</th>
                   {data.horizons.map((h) => (
-                    <th key={h} className="px-3 py-2 text-right font-semibold">
-                      {h}d
+                    <th
+                      key={h}
+                      className="px-3 py-2 text-right font-semibold"
+                      title={horizonTitle(h)}
+                    >
+                      {horizonLabel(h)}
                     </th>
                   ))}
                 </tr>
@@ -311,8 +493,15 @@ export default function BacktestPage() {
               <tbody>
                 {(["composite", "lcb"] as const).map((key) => (
                   <tr key={key} className="border-b border-hairline/60 last:border-0">
-                    <td className="px-3 py-2 text-xs uppercase tracking-wide text-paper/80">
-                      {key === "lcb" ? "LCB" : "Composite"}
+                    <td
+                      className="px-3 py-2 text-xs text-paper/80"
+                      title={
+                        key === "lcb"
+                          ? "Composite minus a disagreement penalty."
+                          : "Average of the 10 persona scores."
+                      }
+                    >
+                      {key === "lcb" ? "Confidence-adjusted" : "Composite"}
                     </td>
                     {data.horizons.map((h) => {
                       const rho = data.ic[key]?.[String(h)] ?? null;
@@ -337,8 +526,8 @@ export default function BacktestPage() {
       {/* winners / losers */}
       <Panel>
         <PanelHeader
-          title="Winners & losers"
-          hint="all priced cohort members, since entry"
+          title="Every priced name, since entry"
+          hint="the whole cohort with a price — sortable"
           right={
             <div className="flex items-center gap-3">
               <input
@@ -369,6 +558,38 @@ export default function BacktestPage() {
           />
         )}
       </Panel>
+    </div>
+  );
+}
+
+// ── small segmented toggle (mirrors PriceChart) ───────────────────
+function Toggle({
+  options,
+  value,
+  onChange,
+}: {
+  options: { key: string; label: string; title?: string }[];
+  value: string;
+  onChange: (key: string) => void;
+}) {
+  return (
+    <div className="inline-flex overflow-hidden rounded-sm border border-hairline">
+      {options.map((o) => {
+        const active = o.key === value;
+        return (
+          <button
+            key={o.key}
+            onClick={() => onChange(o.key)}
+            aria-pressed={active}
+            title={o.title}
+            className={`px-2 py-1 text-[11px] font-medium transition-colors ${
+              active ? "bg-brass/15 text-brass" : "text-muted hover:text-paper"
+            }`}
+          >
+            {o.label}
+          </button>
+        );
+      })}
     </div>
   );
 }
@@ -405,7 +626,10 @@ function BucketTable({
         title={title}
         hint={hint}
         right={
-          <span className="num text-[10px] text-muted">
+          <span
+            className="num text-[10px] text-muted"
+            title="Each cell shows: mean excess return / median excess return · share of names that beat the benchmark."
+          >
             mean / median excess · hit rate
           </span>
         }
@@ -415,10 +639,19 @@ function BucketTable({
           <thead>
             <tr className="border-b border-hairline text-[10px] uppercase tracking-wide text-muted">
               <th className="px-3 py-2 text-left font-semibold">Group</th>
-              <th className="px-3 py-2 text-right font-semibold">Priced/N</th>
+              <th
+                className="px-3 py-2 text-right font-semibold"
+                title="Names with a price / total in the group."
+              >
+                Priced / total
+              </th>
               {horizons.map((h) => (
-                <th key={h} className="px-3 py-2 text-right font-semibold">
-                  {h}d
+                <th
+                  key={h}
+                  className="px-3 py-2 text-right font-semibold"
+                  title={horizonTitle(h)}
+                >
+                  {horizonLabel(h)}
                 </th>
               ))}
             </tr>
@@ -478,7 +711,11 @@ function BucketRow({
           );
         }
         return (
-          <td key={h} className="num whitespace-nowrap px-3 py-2 text-right text-xs">
+          <td
+            key={h}
+            className="num whitespace-nowrap px-3 py-2 text-right text-xs"
+            title={`mean excess ${pct(mean)} · median ${med == null ? DASH : pct(med)} · ${hit == null ? DASH : `${hit.toFixed(0)}% beat benchmark`}`}
+          >
             <span style={{ color: signColor(mean) }}>{pct(mean)}</span>
             <span className="text-muted"> / {med == null ? DASH : pct(med)}</span>
             <span className="text-muted"> · </span>

@@ -320,3 +320,42 @@ export interface BacktestStudy {
   };
   overall: BacktestBucket;
 }
+
+// ── Per-persona backtest (equity curves + summary stats) ─────────
+// One trading-day-offset point of an equal-weighted BUY-pick portfolio,
+// rebased to 100 at entry, alongside the same picks' benchmark path.
+export interface EquityPoint {
+  t: number; // trading days since entry
+  portfolio: number; // rebased to 100
+  benchmark: number | null; // rebased to 100
+  n: number; // basket size at this offset
+}
+
+// Forward performance of one signal's top-conviction (BUY) picks.
+export interface PortfolioResult {
+  n_buy: number;
+  n_avoid: number;
+  n_buy_priced: number;
+  stats: BacktestBucket; // over the BUY picks
+  spread: Record<string, number | null>; // BUY excess minus AVOID excess, per horizon
+  curve: EquityPoint[];
+}
+
+export interface PersonaResult extends PortfolioResult {
+  persona: string; // council slug
+}
+
+export interface SubsetResult extends PortfolioResult {
+  personas: string[]; // the chosen subset, canonical order
+}
+
+export interface PersonaStudy {
+  benchmark: string;
+  benchmark_bars: number;
+  horizons: number[];
+  curve_offsets: number[];
+  cohort_size: number;
+  council: string[];
+  personas: PersonaResult[];
+  subset: SubsetResult;
+}
