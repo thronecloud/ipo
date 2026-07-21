@@ -1,10 +1,16 @@
 import type { ConfidenceTier } from "@/lib/types";
 
 // Confidence-tier chip — same visual grammar as RecChip.
-// high = agreement across independent axes; moderate = concordant but tepid;
-// mixed = the axes disagree on direction; provisional = an axis is missing.
+// high = agreement across independent axes; high_bearish = the same conviction
+// pointing down (confidently bad is not a green badge); moderate = concordant
+// but tepid; mixed = the axes disagree on direction; provisional = an axis is missing.
 const STYLES: Record<ConfidenceTier, { fg: string; bg: string; bd: string }> = {
   high: { fg: "text-sage", bg: "bg-sage/10", bd: "border-sage/40" },
+  high_bearish: {
+    fg: "text-terracotta",
+    bg: "bg-terracotta/10",
+    bd: "border-terracotta/40",
+  },
   moderate: { fg: "text-paper/70", bg: "bg-hairline/20", bd: "border-hairline" },
   mixed: { fg: "text-brass", bg: "bg-brass/10", bd: "border-brass/40" },
   provisional: { fg: "text-muted", bg: "bg-hairline/10", bd: "border-hairline" },
@@ -32,7 +38,7 @@ export default function TierChip({
     <span
       className={`inline-flex items-center rounded-sm border font-semibold uppercase tracking-wide ${s.fg} ${s.bg} ${s.bd} ${pad}`}
     >
-      {tier}
+      {String(tier).replace("_", " ")}
     </span>
   );
 }

@@ -125,10 +125,11 @@ def test_recompute_persists_confidence_layer(db_session):
 
 
 def test_recompute_appends_pointintime_history(db_session):
-    """Tier 2.5: each recompute appends one point-in-time history row, idempotent per day."""
+    """Tier 2.5: an adequately-covered recompute appends one point-in-time history
+    row, idempotent per day."""
     from db.models import CompositeScoreHistory
     stock = make_stock(db_session, "HIST1")
-    _seed_scores(db_session, stock, [7, 8, 3])  # -> composite 60.0
+    _seed_scores(db_session, stock, [7, 8, 3, 6, 6, 6, 6])  # 7 axes covered -> composite 60.0
     recompute_scores_for_stock(db_session, stock)
     db_session.commit()
 
@@ -138,7 +139,7 @@ def test_recompute_appends_pointintime_history(db_session):
     assert len(rows) == 1
     assert rows[0].composite_score == 60.0
     assert rows[0].information_date is not None      # the date the view formed
-    assert rows[0].analysis_coverage == 3
+    assert rows[0].analysis_coverage == 7
 
     # Same-day re-recompute refreshes the point, never duplicates it.
     recompute_scores_for_stock(db_session, stock)
@@ -149,6 +150,21 @@ def test_recompute_appends_pointintime_history(db_session):
         )
     )
     assert n == 1
+
+
+def test_history_row_is_not_written_below_minimum_coverage(db_session):
+    """A history row is point-in-time research evidence and the backtest takes the
+    EARLIEST row per stock — entering the study on a single opinion never self-heals."""
+    from db.models import CompositeScoreHistory
+    stock = make_stock(db_session, "THIN")
+    make_analysis(db_session, stock, "warren_buffett", 7, "BUY")
+    recompute_scores_for_stock(db_session, stock)
+    db_session.commit()
+
+    rows = db_session.scalars(
+        select(CompositeScoreHistory).where(CompositeScoreHistory.stock_id == stock.id)
+    ).all()
+    assert rows == []
 
 
 def test_reconcile_rescores_old_scoring_method(db_session):

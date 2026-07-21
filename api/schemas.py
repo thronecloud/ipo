@@ -41,7 +41,7 @@ class StockListItem(BaseModel):
     status: str | None = None
     composite_score: float | None = None
     lcb: float | None = None                 # rank key: composite minus confidence penalty
-    confidence_tier: str | None = None       # high/moderate/provisional/mixed
+    confidence_tier: str | None = None       # high/high_bearish/moderate/provisional/mixed
     consensus_recommendation: str | None = None
     analysis_coverage: int | None = None
     composite_updated_at: datetime | None = None

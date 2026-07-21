@@ -41,6 +41,11 @@ assert TOTAL_PERSONAS > 0, "PERSONAS is empty — the council must have members"
 SCORING_METHOD = "coverage_weighted_mean_x10_0_to_100"
 SCORE_MIN, SCORE_MAX = 0, 10
 
+# A history row is point-in-time research evidence and the backtest takes the EARLIEST
+# row per stock. Writing one after persona #1 lands permanently enters that stock into
+# the study on a single opinion, and it never self-heals as coverage fills in.
+MIN_COVERAGE_FOR_HISTORY = 7
+
 
 # ---------- job observability ----------
 
@@ -578,27 +583,29 @@ def recompute_scores_for_stock(session, stock: Stock):
 
     # Append-only point-in-time history — one row per (stock, day), idempotent within
     # the day (a re-recompute refreshes, never duplicates). This is what a backtest
-    # reads; deferring it loses cohorts permanently.
-    hist = dict(
-        stock_id=stock.id,
-        as_of_date=utcnow().date(),
-        information_date=information_date,
-        composite_score=vals["composite_score"],
-        persona_scores=persona_scores,
-        axis_scores=conf["axis_scores"],
-        confidence_tier=conf["confidence_tier"],
-        score_stderr_eff=conf["score_stderr_eff"],
-        lcb=conf["lcb"],
-        factor_version=conf["factor_version"],
-        consensus_recommendation=consensus,
-        analysis_coverage=len(persona_scores),
-    )
-    hstmt = pg_insert(CompositeScoreHistory).values(**hist)
-    hstmt = hstmt.on_conflict_do_update(
-        index_elements=["stock_id", "as_of_date"],
-        set_={k: hstmt.excluded[k] for k in hist if k not in ("stock_id", "as_of_date")},
-    )
-    session.execute(hstmt)
+    # reads, and it takes the earliest row per stock, so a thin-coverage row would
+    # anchor the whole study; only write once coverage clears the minimum bar.
+    if len(persona_scores) >= MIN_COVERAGE_FOR_HISTORY:
+        hist = dict(
+            stock_id=stock.id,
+            as_of_date=utcnow().date(),
+            information_date=information_date,
+            composite_score=vals["composite_score"],
+            persona_scores=persona_scores,
+            axis_scores=conf["axis_scores"],
+            confidence_tier=conf["confidence_tier"],
+            score_stderr_eff=conf["score_stderr_eff"],
+            lcb=conf["lcb"],
+            factor_version=conf["factor_version"],
+            consensus_recommendation=consensus,
+            analysis_coverage=len(persona_scores),
+        )
+        hstmt = pg_insert(CompositeScoreHistory).values(**hist)
+        hstmt = hstmt.on_conflict_do_update(
+            index_elements=["stock_id", "as_of_date"],
+            set_={k: hstmt.excluded[k] for k in hist if k not in ("stock_id", "as_of_date")},
+        )
+        session.execute(hstmt)
     session.flush()
     return session.scalar(
         select(CompositeScore).where(CompositeScore.stock_id == stock.id)

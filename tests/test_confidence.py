@@ -72,11 +72,29 @@ def test_redundancy_immune():
     assert four_core["axis_scores"]["core"] == two_core["axis_scores"]["core"]
 
 
-# 6 — LCB ranks a thin/narrow-axis high score BELOW a cross-axis-concordant lower score
-def test_lcb_penalizes_narrow_coverage():
-    narrow = C.compute_confidence({"warren_buffett": 7}, 72.0)     # 1 axis, "confident" 72
-    broad = C.compute_confidence(_all(7), 68.0)                    # all 4 axes, concordant 68
-    assert broad["lcb"] > narrow["lcb"]
+# 6 — a full council outranks a thin high scorer even where the thin score is HIGHER
+def test_full_council_outranks_a_thin_high_scorer_across_the_range():
+    """The old test pinned this at a 4-point gap, inside the coverage penalty,
+    so it passed while the invariant was false. Assert it where it matters."""
+    thin = C.compute_confidence({"warren_buffett": 9}, 90.0)       # 1 axis, "confident" 90
+    broad = C.compute_confidence(_all(8), 80.0)                    # all 4 axes, concordant 80
+    assert broad["lcb"] > thin["lcb"]
+
+
+# 6b — a single axis tells us nothing about dispersion; it must not read as certainty
+def test_single_axis_stock_is_not_credited_with_zero_uncertainty():
+    """n=1 previously yielded stderr_eff 0.0 — maximum confidence from minimum
+    information, the exact inversion of the truth."""
+    one = C.compute_confidence({"warren_buffett": 9}, 90.0)
+    assert one["score_stderr_eff"] > 0.0
+
+
+# 6c — the tier gate is direction-aware: conviction alone is not a green 'high'
+def test_tier_is_not_high_for_a_unanimously_bearish_stock():
+    """abs(composite-50)>=15 is direction-blind, so a unanimously bearish stock
+    was auto-promoted to 'high' and rendered as if it were a strong buy."""
+    bearish = C.compute_confidence(_all(2), 20.0)
+    assert bearish["confidence_tier"] != "high"
 
 
 # 7 — determinism

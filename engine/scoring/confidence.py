@@ -40,6 +40,11 @@ MAG_THRESHOLD = 15.0    # |composite-50| for "strong" conviction
 K_DISP = 1.0            # LCB dispersion weight
 K_COV = 3.0             # LCB per-missing-axis coverage penalty
 
+# A single axis tells us nothing about dispersion. Charging 0.0 credits the thinnest
+# possible evidence with perfect confidence; use the population-scale prior instead so
+# one opinion is never more certain than a full council.
+SOLO_STDERR_PRIOR = 15.0
+
 
 def persona_axis(slug: str) -> str:
     try:
@@ -74,7 +79,8 @@ def compute_confidence(persona_scores: dict[str, int], composite: float) -> dict
 
     directions = {_direction(axis_scores[ax]) for ax in present}
     concordant = not (1 in directions and -1 in directions)  # no straddle of neutral
-    magnitude = abs(composite - NEUTRAL)
+    signed = composite - NEUTRAL
+    magnitude = abs(signed)
 
     if not full_coverage:
         tier = "provisional"
@@ -82,11 +88,14 @@ def compute_confidence(persona_scores: dict[str, int], composite: float) -> dict
         tier = "mixed"
     elif magnitude < MAG_THRESHOLD:
         tier = "moderate"
-    else:
+    elif signed > 0:
         tier = "high"
+    else:
+        tier = "high_bearish"
 
     vals = [axis_scores[ax] for ax in present]
-    stderr_eff = round(statistics.pstdev(vals) / (n_present ** 0.5), 3) if n_present > 1 else 0.0
+    stderr_eff = (round(statistics.pstdev(vals) / (n_present ** 0.5), 3)
+                  if n_present > 1 else SOLO_STDERR_PRIOR)
     # Penalize BOTH real cross-axis disagreement AND thin coverage, so a single-axis
     # "confident-looking" stock cannot outrank a genuine cross-axis agreement.
     lcb = round(composite - K_DISP * stderr_eff - K_COV * (len(AXES) - n_present), 3)

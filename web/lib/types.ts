@@ -1,7 +1,7 @@
 // ── API contract types (mirror docs/DASHBOARDS_SPEC.md) ─────────────────
 
 export type Recommendation = "BUY" | "HOLD" | "AVOID";
-export type ConfidenceTier = "high" | "moderate" | "provisional" | "mixed";
+export type ConfidenceTier = "high" | "high_bearish" | "moderate" | "provisional" | "mixed";
 export type CapCategory = "small" | "mid" | "large";
 export type DataQuality = "full" | "partial" | "limited" | "minimal";
 export type StockStatus = "active" | "new" | "unfetchable";
