@@ -41,6 +41,10 @@ EXCHANGE_FEED_TABLES = (
     "corporate_announcements", "corporate_filings", "bulk_deals", "shareholding_patterns",
 )
 
+# Document-extraction tables: added as new, empty tables (no backfill).
+EXTRACTION_REV = "d4b1f7e0a9c2"
+EXTRACTION_TABLES = ("extracted_documents", "extracted_financials")
+
 # Structural drift we refuse to allow. modify_*/index reflection noise is ignored;
 # a new/removed table or column (the untracked-model trap) is not.
 STRUCTURAL = {"add_table", "remove_table", "add_column", "remove_column"}
@@ -119,6 +123,39 @@ def test_exchange_feed_tables_created_empty_and_backfill_free():
         assert r.returncode == 0, f"exchange-feeds upgrade failed:\n{r.stderr}"
         with psycopg.connect(PARITY_DSN, autocommit=True) as conn:
             for table in EXCHANGE_FEED_TABLES:
+                (n,) = conn.execute(f"SELECT count(*) FROM {table}").fetchone()
+                assert n == 0, f"{table} should be empty after a backfill-free migration"
+    finally:
+        _admin(f"DROP DATABASE IF EXISTS {PARITY_DB} WITH (FORCE)")
+
+
+def test_extraction_tables_created_empty_and_backfill_free():
+    """The two extraction tables are added as new, empty tables. Upgrading to their
+    revision over a schema that already holds a downloaded filing must create each with
+    zero rows and touch nothing pre-existing."""
+    _admin(f"DROP DATABASE IF EXISTS {PARITY_DB} WITH (FORCE)")
+    _admin(f"CREATE DATABASE {PARITY_DB}")
+    try:
+        env = {**os.environ, "DATABASE_URL": PARITY_URL}
+        # Schema at the revision *before* extraction, with a stock + a downloaded filing so
+        # a (hypothetical, unwanted) backfill would have something to touch.
+        r = _alembic(EXCHANGE_FEEDS_REV, env)
+        assert r.returncode == 0, f"pre-extraction upgrade failed:\n{r.stderr}"
+        with psycopg.connect(PARITY_DSN, autocommit=True) as conn:
+            conn.execute(
+                "INSERT INTO stocks (symbol, universe, status, first_seen, last_updated) "
+                "VALUES ('SEED', '[]'::jsonb, 'active', now(), now())"
+            )
+            (stock_id,) = conn.execute("SELECT id FROM stocks WHERE symbol='SEED'").fetchone()
+            conn.execute(
+                "INSERT INTO corporate_filings "
+                "(stock_id, source_url, status, fetched_at) "
+                "VALUES (%s, 'https://x/a.pdf', 'downloaded', now())", (stock_id,)
+            )
+        r = _alembic(EXTRACTION_REV, env)
+        assert r.returncode == 0, f"extraction upgrade failed:\n{r.stderr}"
+        with psycopg.connect(PARITY_DSN, autocommit=True) as conn:
+            for table in EXTRACTION_TABLES:
                 (n,) = conn.execute(f"SELECT count(*) FROM {table}").fetchone()
                 assert n == 0, f"{table} should be empty after a backfill-free migration"
     finally:

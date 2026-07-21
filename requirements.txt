@@ -18,6 +18,14 @@ pydantic>=2.6.0
 # AMFI xlsx parsing (universe classification)
 openpyxl>=3.1.0
 
+# Document extraction: native PDF text (PyMuPDF), ruled-table parsing (pdfplumber),
+# and OCR for scanned pages (pytesseract -> the tesseract-ocr system binary). Pages are
+# rasterized in-memory by PyMuPDF, so no poppler/pdf2image is needed.
+pymupdf>=1.24.0
+pdfplumber>=0.11.0
+pytesseract>=0.3.10
+Pillow>=10.0.0
+
 # LLM analysis output contract enforcement
 jsonschema>=4.0.0
 

@@ -132,9 +132,12 @@ services:
       SCHED_REPORTS_BATCH: ${SCHED_REPORTS_BATCH:-200}
       SCHED_REPORTS_FRESH_DAYS: ${SCHED_REPORTS_FRESH_DAYS:-2}
       SCHED_REPORTS_FRESH_BUDGET_MB: ${SCHED_REPORTS_FRESH_BUDGET_MB:-50}
+      # Deterministic (zero-LLM) document extraction: per-run page ceiling.
+      EXTRACT_PAGE_BUDGET: ${EXTRACT_PAGE_BUDGET:-2000}
     volumes:
-      # Downloaded filings must outlive the container — they feed the extraction
-      # pipeline. (data/reports is gitignored; the budget caps growth per run.)
+      # Downloaded filings and their extracted text must outlive the container — they
+      # feed (and are produced by) the extraction pipeline. (data/reports + data/extracted
+      # are gitignored; the budgets cap growth per run.)
       - ./data:/app/data
     depends_on:
       api:

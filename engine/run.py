@@ -79,6 +79,11 @@ def cmd_dq_fill(a):
                   limit=a.limit, delay=a.delay))
 
 
+def cmd_extract(a):
+    from engine.extract.run import run_extraction
+    print(run_extraction(page_budget=a.page_budget, limit=a.limit, force=a.force))
+
+
 def cmd_indexes(a):
     print(refresh_index_prices(symbols=a.symbols or None))
 
@@ -215,6 +220,13 @@ def main():
     df.add_argument("--delay", type=float, default=None,
                     help="seconds between network requests (set 6-8 to avoid screener rate limits)")
     df.set_defaults(func=cmd_dq_fill)
+
+    ex = sub.add_parser("extract", help="Extract text + statutory financials from downloaded filings")
+    ex.add_argument("--page-budget", type=int, default=None)
+    ex.add_argument("--limit", type=int, default=None)
+    ex.add_argument("--force", action="store_true",
+                    help="re-extract filings already extracted (idempotent replace)")
+    ex.set_defaults(func=cmd_extract)
 
     ix = sub.add_parser("indexes", help="Refresh benchmark index price series")
     ix.add_argument("--symbols", nargs="*", default=None)

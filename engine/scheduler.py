@@ -37,6 +37,7 @@ from engine.ingest.announcements import fetch_announcements
 from engine.ingest.bulk_deals import fetch_bulk_deals
 from engine.ingest.discover import discover_ipos
 from engine.ingest.reports import fetch_reports
+from engine.extract.run import run_extraction
 from engine.ingest.screener_enrich import enrich
 from engine.ingest.shareholding import fetch_shareholding
 from engine.ingest.index_prices import refresh_index_prices
@@ -76,6 +77,9 @@ SHAREHOLDING_BATCH = _int("SCHED_SHAREHOLDING_BATCH", 150)
 REPORTS_BATCH = _int("SCHED_REPORTS_BATCH", 200)
 REPORTS_FRESH_DAYS = _int("SCHED_REPORTS_FRESH_DAYS", 2)
 REPORTS_FRESH_BUDGET_MB = _int("SCHED_REPORTS_FRESH_BUDGET_MB", 50)
+# Per-run page ceiling for the deterministic document-extraction pass — keeps a single
+# daily run bounded no matter how large the just-downloaded filing backlog is.
+EXTRACT_PAGE_BUDGET = _int("EXTRACT_PAGE_BUDGET", 2000)
 # Grace window before a still-"running" job_run is treated as dead. The api
 # container launches detached engine jobs of its own, so a scheduler restart must
 # not error work that is genuinely in flight elsewhere. The slowest bounded batch
@@ -272,6 +276,14 @@ def job_reports_fresh():
     print(f"[scheduler][{_now()}] report fetch — fresh (since {REPORTS_FRESH_DAYS}d)")
     fetch_reports(limit=REPORTS_BATCH, budget_mb=REPORTS_FRESH_BUDGET_MB,
                   since=since, include_annual_reports=False, verbose=False)
+
+
+def job_extract_documents():
+    # Daily deterministic (zero-LLM) extraction of the downloaded-filing backlog: native
+    # text + per-page OCR fallback, plus statutory results-table parsing. Runs after
+    # reports_fresh (13:15) so a document pulled today is extracted the same day.
+    print(f"[scheduler][{_now()}] extract documents (budget={EXTRACT_PAGE_BUDGET} pages)")
+    run_extraction(page_budget=EXTRACT_PAGE_BUDGET, verbose=False)
 
 
 def job_score():
@@ -471,6 +483,10 @@ def build_scheduler() -> BlockingScheduler:
     # Weekly full report sweep — Sunday 05:30 UTC (budget-bounded).
     sched.add_job(safe(job_reports), CronTrigger(day_of_week="sun", hour=5, minute=30),
                   id="reports", misfire_grace_time=MISFIRE_DAILY)
+    # Daily document extraction at 14:30 UTC — after reports_fresh (13:15) so a filing
+    # downloaded today is extracted the same day (deterministic, OCR-capable, zero LLM).
+    sched.add_job(safe(job_extract_documents), CronTrigger(hour=14, minute=30),
+                  id="extract_documents", misfire_grace_time=MISFIRE_DAILY)
     # Weekly shareholding sweep — Sunday 07:30 UTC (quarterly data, weekly is ample).
     sched.add_job(safe(job_shareholding), CronTrigger(day_of_week="sun", hour=7, minute=30),
                   id="shareholding", misfire_grace_time=MISFIRE_DAILY)
@@ -508,6 +524,7 @@ _JOB_META: dict[str, tuple[str, str | None]] = {
     "bulk_deals":    ("Poll NSE bulk/block large-deal snapshot after market close", "bulk_deals"),
     "reports_fresh": ("Download documents for freshly-announced results (daily trigger)", "corporate_filings"),
     "reports":       ("Weekly report sweep — results/annual-report docs for active universe", "corporate_filings"),
+    "extract_documents": ("Extract filing text + statutory financials (deterministic, OCR, zero LLM)", "extract_documents"),
     "shareholding":  ("Sweep active-universe NSE shareholding patterns (quarterly)", "shareholding"),
 }
 

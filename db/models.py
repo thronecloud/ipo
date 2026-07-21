@@ -506,6 +506,71 @@ class ShareholdingPattern(Base):
     fetched_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
 
 
+class ExtractedDocument(Base):
+    """The per-filing outcome of the deterministic document-extraction pipeline.
+
+    One row per corporate_filings document (filing_id is unique — re-extracting a
+    filing replaces its row rather than appending). The full page text is written to
+    `text_path` on disk (data/extracted/{sha256}.txt, gitignored) rather than the DB;
+    this row keeps only the provenance a consumer needs to trust and locate it:
+    `method_summary` counts how many pages came from the native text layer vs Tesseract
+    OCR, `confidence` is the mean per-page extraction confidence (native text = 1.0, an
+    OCR page = tesseract's own mean word confidence), and `pages`/`pages_ocr` size the
+    scan burden. Zero LLM is involved anywhere in producing this.
+    """
+
+    __tablename__ = "extracted_documents"
+    __table_args__ = (
+        UniqueConstraint("filing_id", name="uq_extracted_doc_filing"),
+        Index("ix_extracted_doc_stock", "stock_id"),
+    )
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    filing_id: Mapped[int] = mapped_column(
+        ForeignKey("corporate_filings.id", ondelete="CASCADE")
+    )
+    stock_id: Mapped[int] = mapped_column(ForeignKey("stocks.id", ondelete="CASCADE"))
+    extracted_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
+    method_summary: Mapped[dict | None] = mapped_column(JSONType)   # {"native": n, "ocr": m}
+    pages: Mapped[int | None] = mapped_column(Integer)
+    pages_ocr: Mapped[int | None] = mapped_column(Integer)
+    char_count: Mapped[int | None] = mapped_column(Integer)
+    confidence: Mapped[float | None] = mapped_column(Float)         # 0..1 mean per-page
+    text_path: Mapped[str | None] = mapped_column(String(512))
+
+
+class ExtractedFinancial(Base):
+    """A single statutory line item parsed out of a results/annual-report filing.
+
+    Deterministic table parse — no LLM. `value_cr` is the value normalized to crores
+    from whatever unit the filing declared ("Rs. in Lakhs" -> /100, "in Million" -> /10),
+    with the detected unit kept in `unit_detected` for audit; a filing whose unit could
+    not be read leaves `value_cr` NULL. Rows are keyed to their filing, and re-extracting
+    a filing deletes and re-inserts them (idempotent). `confidence` carries the extraction
+    confidence of the page the row came from.
+    """
+
+    __tablename__ = "extracted_financials"
+    __table_args__ = (
+        Index("ix_extracted_fin_filing", "filing_id"),
+        Index("ix_extracted_fin_stock", "stock_id"),
+        Index("ix_extracted_fin_metric", "metric"),
+    )
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    filing_id: Mapped[int] = mapped_column(
+        ForeignKey("corporate_filings.id", ondelete="CASCADE")
+    )
+    stock_id: Mapped[int] = mapped_column(ForeignKey("stocks.id", ondelete="CASCADE"))
+    metric: Mapped[str] = mapped_column(String(64))            # canonical: revenue_from_operations, ...
+    raw_label: Mapped[str | None] = mapped_column(String(512))  # the label as printed
+    period_label: Mapped[str | None] = mapped_column(String(128))
+    value_cr: Mapped[float | None] = mapped_column(Float)
+    unit_detected: Mapped[str | None] = mapped_column(String(32))
+    confidence: Mapped[float | None] = mapped_column(Float)
+    extracted_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
+
+
 class StockInsight(Base):
     """Distilled, reusable takeaways — the seed of the memory/knowledge layer."""
 
